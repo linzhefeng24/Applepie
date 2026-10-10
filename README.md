@@ -14,3 +14,9 @@
 ## 查看与下载
 
 打开 `images/ink-raven.png` 查看原图，并使用 GitHub 的下载按钮保存。
+
+## 月夜屋顶场景
+
+为后续 5 秒动态视频制作的横向场景图：月光、哥特建筑、薄雾与湿润屋顶。
+
+![墨鸦月夜屋顶场景](images/ink-raven-moonlit-rooftop.png)
