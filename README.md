@@ -1,15 +1,16 @@
-# 慢慢的死亡笔记 · Ink Raven
+# 死亡笔记 · Ink Raven
 
 ## React + TypeScript 网页项目
 
-围绕慢慢形象制作的纯前端日记本：死亡笔记封面、原作规则概述、可书写的笔记页。
+围绕原创死神墨鸦形象制作的纯前端日记本：死亡笔记封面、原作规则概述、可书写的笔记页。
 
 - [网页源码与运行说明](web/)
-- [下载独立源码包](downloads/manman-notebook-react-ts.zip)
+- [下载免安装版](downloads/death-note-offline.zip)
+- [下载独立源码包](downloads/death-note-react-ts.zip)
 - [封面预览](web/preview/cover-desktop.png) · [规则页预览](web/preview/rules-desktop.png) · [笔记页预览](web/preview/notebook-desktop.png)
 - [浏览器功能验证记录](web/preview/validation.json)
 
-支持多页笔记、自动保存、刷新恢复、文本导出和删除确认；适配电脑与手机。首页暂用静态图片，按 `web/README.md` 可接入背景视频。笔记仅保存在当前浏览器，不上传到服务器。
+支持多页笔记、自动保存、刷新恢复、文本导出和删除确认；适配电脑与手机。首页已启用 5 秒循环背景视频，免安装版解压后双击 HTML 即可打开。笔记仅保存在当前浏览器，不上传到服务器。
 
 ![网页封面预览](web/preview/cover-desktop.png)
 

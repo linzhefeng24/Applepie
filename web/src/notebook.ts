@@ -14,6 +14,7 @@ interface StoredNotebook {
   activeId: string
 }
 
+// Keep the existing key so renaming the app preserves previously saved notes.
 const STORAGE_KEY = 'manman-notebook:v1'
 
 export function today() {

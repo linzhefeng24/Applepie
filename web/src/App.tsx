@@ -53,14 +53,14 @@ function App() {
       </div>
       <div className="grain" aria-hidden="true" />
       <header className="header">
-        <button className="brand" onClick={() => navigate('cover')} aria-label="慢慢的死亡笔记，返回封面">
+        <button className="brand" onClick={() => navigate('cover')} aria-label="死亡笔记，返回封面">
           <span className="brand-symbol"><Feather size={22} strokeWidth={1.4} /></span>
-          <span className="brand-text">慢慢的死亡笔记<span>THE MIDNIGHT NOTEBOOK</span></span>
+          <span className="brand-text">死亡笔记<span>DEATH NOTE</span></span>
         </button>
         <nav className="navigation" aria-label="主要导航">
           {nav.map(item => <button key={item.page} aria-current={page === item.page ? 'page' : undefined} onClick={() => navigate(item.page)}><item.icon size={15} strokeWidth={1.5} /><span>{item.label}</span></button>)}
         </nav>
-        <span className="header-note"><span className="status-dot" />夜还很长，慢慢写。</span>
+        <span className="header-note"><span className="status-dot" />夜还很长，写下你的故事。</span>
       </header>
       <main id="main-content" tabIndex={-1} ref={mainRef}>
         {page === 'cover' && <Cover key="cover" navigate={navigate} savedPages={notebook.notes.filter(n => n.title.trim() || n.content.trim()).length} />}
@@ -82,10 +82,10 @@ function Cover({ navigate, savedPages }: { navigate: (page: Page) => void; saved
       <div className="cover-copy">
         <div className="eyebrow"><span />A NOTEBOOK AFTER DARK</div>
         <h1>有些话，<br />只适合<span className="italic-title">写下来。</span></h1>
-        <p className="cover-description">夜色替你保守秘密。<br />慢慢在这里，陪你记下每一个普通的今天。</p>
+        <p className="cover-description">夜色替你保守秘密。<br />在死亡笔记里，记下每一个普通的今天。</p>
         <button className="primary-button" onClick={() => navigate('notebook')}>翻开笔记<ArrowRight size={17} /></button>
         <button className="text-button" onClick={() => navigate('rules')}>在书写之前，读一读规则<ArrowUpRight size={14} /></button>
-        <div className="cover-note"><span className="little-star">✦</span><p>“名字写下去很容易。<br /><span>你真的想好了吗？”</span></p><span className="quote-author">— 慢慢</span></div>
+        <div className="cover-note"><span className="little-star">✦</span><p>“名字写下去很容易。<br /><span>你真的想好了吗？”</span></p><span className="quote-author">— 墨鸦</span></div>
       </div>
       <div className="book-stage">
         <div className="book-orbit" aria-hidden="true" />
@@ -183,9 +183,9 @@ function Notebook({ notebook }: { notebook: NotebookState }) {
           <div className="sidebar-heading"><span>我的书页<small>{notes.length}</small></span><button onClick={newNote} aria-label="新建一页" title="新建一页"><Plus size={18} /></button></div>
           <button className="new-note-button" onClick={newNote}><Plus size={15} />写新的一页</button>
           <div className="note-list">{notes.map(note => <button key={note.id} className={`note-list-item ${note.id === activeId ? 'selected' : ''}`} onClick={() => setActiveId(note.id)} aria-current={note.id === activeId ? 'true' : undefined}>
-            <span className="note-date">{note.date.replaceAll('-', '.')}<ChevronRight size={12} /></span><span className="note-title">{note.title.trim() || '无题之页'}</span><span className="note-excerpt">{note.content.trim() || '故事还没开始，慢慢在等你。'}</span>
+            <span className="note-date">{note.date.replaceAll('-', '.')}<ChevronRight size={12} /></span><span className="note-title">{note.title.trim() || '无题之页'}</span><span className="note-excerpt">{note.content.trim() || '故事还没开始，书页在等你。'}</span>
           </button>)}</div>
-          <div className="sidebar-whisper"><Feather size={22} strokeWidth={1} /><p>不必写得漂亮。<br />写得像你，就好。</p><span>— 慢慢</span></div>
+          <div className="sidebar-whisper"><Feather size={22} strokeWidth={1} /><p>不必写得漂亮。<br />写得像你，就好。</p><span>— 墨鸦</span></div>
         </aside>
         <div className="editor-panel">
           <div className="editor-toolbar"><div className={`save-indicator ${saveState}`} role="status">{saveState === 'saved' ? <CheckCheck size={14} /> : saveState === 'error' ? <X size={14} /> : <span className="saving-dot" />}<span>{saveState === 'saved' ? '已保存到此设备' : saveState === 'error' ? '暂未保存' : '正在保存…'}</span></div><div className="editor-actions"><button onClick={exportNote} title="导出文本" aria-label="导出当前笔记"><Download size={16} /><span>导出</span></button><span className="toolbar-separator" /><button onClick={() => setDeleteOpen(true)} title="删除当前页" aria-label="删除当前页"><Trash2 size={15} /></button></div></div>
@@ -194,8 +194,8 @@ function Notebook({ notebook }: { notebook: NotebookState }) {
             <div className="paper-meta"><span>{activeNote.date.replaceAll('-', ' / ')}</span><span>PAGE {String(notes.findIndex(n => n.id === activeNote.id) + 1).padStart(2, '0')}</span></div>
             <input className="note-title-input" aria-label="笔记标题" placeholder="给今天一个名字…" value={activeNote.title} onChange={e => updateNote({ title: e.target.value })} maxLength={120} />
             <span className="paper-title-line" />
-            <textarea ref={contentRef} className="note-content-input" aria-label="笔记正文" placeholder={'今天发生了什么？\n\n也许是一场雨，一个梦，或一句没有说出口的话。\n慢慢在这里，听你慢慢写。'} value={activeNote.content} onChange={e => updateNote({ content: e.target.value })} spellCheck={false} />
-            <div className="paper-footer"><span><Feather size={13} />慢慢，陪你写下去。</span><span>{count} 字</span></div>
+            <textarea ref={contentRef} className="note-content-input" aria-label="笔记正文" placeholder={'今天发生了什么？\n\n也许是一场雨，一个梦，或一句没有说出口的话。\n把想说的话，留在这张书页上。'} value={activeNote.content} onChange={e => updateNote({ content: e.target.value })} spellCheck={false} />
+            <div className="paper-footer"><span><Feather size={13} />死亡笔记，收藏你的文字。</span><span>{count} 字</span></div>
           </div>
         </div>
       </div>
