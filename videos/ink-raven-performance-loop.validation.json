@@ -1,0 +1,27 @@
+{
+  "file": "ink-raven-performance-loop.mp4",
+  "sha256": "71402ac23ab56e26bbc01e33ff3500c93e21a7d58b1aa1ebe6e1fa6c136d7ee9",
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1916,
+        "height": 1080,
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "24/1",
+        "avg_frame_rate": "24/1",
+        "nb_read_frames": "120"
+      }
+    ],
+    "format": {
+      "duration": "5.000000",
+      "size": "37556638"
+    }
+  },
+  "decoded_frames": 120,
+  "first_frame_md5": "2e0376afb01fc8d9425d26fee9de94c1",
+  "last_frame_md5": "2e0376afb01fc8d9425d26fee9de94c1",
+  "decoded_first_last_identical": true
+}
