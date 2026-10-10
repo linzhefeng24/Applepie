@@ -4,6 +4,10 @@
 
 ## 双击打开（无需安装）
 
+完整版 `downloads/death-note-react-ts.zip` 同时包含 `src/` 源码与 `offline/` 运行版。全部解压后，双击根目录 **打开笔记本.html**，这个简短入口会打开已生成的运行版，不需要安装或输入命令。
+
+浏览器运行的是源码生成的 JavaScript，无法直接运行 TSX。修改 `src/` 后，开发者运行 `npm run export:offline` 更新运行版，入口文件无需修改。请保留 `offline/` 文件夹。
+
 下载仓库 `downloads/death-note-offline.zip`，全部解压后双击 **打开笔记本.html**，使用 Chrome 或 Edge 即可。无需 Node.js、命令或网络，包含首页背景视频。请保留同目录的 assets 文件夹。
 
 笔记存储与浏览器和本地文件位置有关，请固定文件位置、使用同一个浏览器，并导出重要笔记。
