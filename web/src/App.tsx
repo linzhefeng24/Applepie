@@ -6,7 +6,7 @@ import { ruleFilters, rules } from './rules'
 type Page = 'cover' | 'rules' | 'notebook'
 type NotebookState = ReturnType<typeof useNotebook>
 const background = `${import.meta.env.BASE_URL}assets/ink-raven-modern-city.png`
-const homeVideo = import.meta.env.VITE_HOME_VIDEO_URL as string | undefined
+const homeVideo = (import.meta.env.VITE_HOME_VIDEO_URL as string | undefined) || `${import.meta.env.BASE_URL}assets/cover-background.mp4`
 
 function getPage(): Page {
   const hash = location.hash.replace('#', '')
@@ -49,7 +49,7 @@ function App() {
       <button className="skip-link" onClick={() => { mainRef.current?.focus(); mainRef.current?.scrollIntoView() }}>跳到内容</button>
       <div className="scene" aria-hidden="true">
         <img src={background} alt="" />
-        {homeVideo && !videoFailed && <video ref={videoRef} src={homeVideo} autoPlay muted loop playsInline poster={background} onError={() => setVideoFailed(true)} />}
+        {page === 'cover' && !videoFailed && <video ref={videoRef} src={homeVideo} autoPlay muted loop playsInline poster={background} onError={() => setVideoFailed(true)} />}
       </div>
       <div className="grain" aria-hidden="true" />
       <header className="header">
