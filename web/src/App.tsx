@@ -60,7 +60,7 @@ function App() {
         <nav className="navigation" aria-label="主要导航">
           {nav.map(item => <button key={item.page} aria-current={page === item.page ? 'page' : undefined} onClick={() => navigate(item.page)}><item.icon size={15} strokeWidth={1.5} /><span>{item.label}</span></button>)}
         </nav>
-        <span className="header-note"><span className="status-dot" />夜还很长，写下你的故事。</span>
+        <span className="header-note"><span className="status-dot" />落笔之前，先读规则。</span>
       </header>
       <main id="main-content" tabIndex={-1} ref={mainRef}>
         {page === 'cover' && <Cover key="cover" navigate={navigate} savedPages={notebook.notes.filter(n => n.title.trim() || n.content.trim()).length} />}
@@ -69,7 +69,7 @@ function App() {
       </main>
       <footer className="footer">
         <span><span className="footer-index">{page === 'cover' ? '01' : page === 'rules' ? '02' : '03'}</span><span className="footer-line" />{page === 'cover' ? 'THE COVER' : page === 'rules' ? 'THE RULES' : 'YOUR WORDS'}</span>
-        <span className="footer-whisper">日常会消逝，文字会留下。</span>
+        <span className="footer-whisper">名字、规则，以及选择的代价。</span>
         <span className="footer-local"><LockKeyhole size={11} />笔记仅保存在当前浏览器</span>
       </footer>
     </div>
@@ -80,9 +80,9 @@ function Cover({ navigate, savedPages }: { navigate: (page: Page) => void; saved
   return (
     <section className="cover-page page-enter">
       <div className="cover-copy">
-        <div className="eyebrow"><span />A NOTEBOOK AFTER DARK</div>
-        <h1>有些话，<br />只适合<span className="italic-title">写下来。</span></h1>
-        <p className="cover-description">夜色替你保守秘密。<br />在死亡笔记里，记下每一个普通的今天。</p>
+        <div className="eyebrow"><span />THE PRICE OF A NAME</div>
+        <h1>一个名字，<br /><span className="italic-title">改写命运。</span></h1>
+        <p className="cover-description">当一本笔记拥有改写命运的力量，<br />谁有资格决定正义？</p>
         <button className="primary-button" onClick={() => navigate('notebook')}>翻开笔记<ArrowRight size={17} /></button>
         <button className="text-button" onClick={() => navigate('rules')}>在书写之前，读一读规则<ArrowUpRight size={14} /></button>
         <div className="cover-note"><span className="little-star">✦</span><p>“名字写下去很容易。<br /><span>你真的想好了吗？”</span></p><span className="quote-author">— 墨鸦</span></div>
@@ -93,12 +93,12 @@ function Cover({ navigate, savedPages }: { navigate: (page: Page) => void; saved
           <span className="book-spine" />
           <span className="book-cover">
             <span className="book-corner corner-tl" /><span className="book-corner corner-tr" /><span className="book-corner corner-bl" /><span className="book-corner corner-br" />
-            <span className="book-edition">A PRIVATE COLLECTION OF DAYS</span>
+            <span className="book-edition">THE HUMAN WHOSE NAME IS WRITTEN</span>
             <span className="book-name">DEATH<br />NOTE</span>
             <span className="book-divider" />
             <span className="book-chinese">死 亡 笔 记</span>
-            <span className="book-seal"><Feather size={28} strokeWidth={1} /><span>MM</span></span>
-            <span className="book-bottom">THIS NOTEBOOK BELONGS TO YOU</span>
+            <span className="book-seal"><Feather size={28} strokeWidth={1} /><span>DN</span></span>
+            <span className="book-bottom">EVERY CHOICE HAS A PRICE</span>
           </span>
           <span className="book-pages" />
           <span className="book-ribbon" />
@@ -176,30 +176,30 @@ function Notebook({ notebook }: { notebook: NotebookState }) {
 
   return (
     <section className="notebook-page page-enter">
-      <div className="notebook-heading"><div><div className="eyebrow"><span />YOUR WORDS, YOUR WORLD</div><h1>把今天，<em>留在这一页。</em></h1></div><span className="notebook-today"><Moon size={15} />{formatDate(today())}</span></div>
+      <div className="notebook-heading"><div><div className="eyebrow"><span />NAME. RULE. CONSEQUENCE.</div><h1>翻开书页，<em>写下你的选择。</em></h1></div><span className="notebook-today"><Moon size={15} />{formatDate(today())}</span></div>
       {error && <div className="storage-error" role="alert">{error}<button onClick={exportNote}>导出当前页<Download size={14} /></button></div>}
       <div className="notebook-shell">
         <aside className="note-sidebar" aria-label="笔记列表">
           <div className="sidebar-heading"><span>我的书页<small>{notes.length}</small></span><button onClick={newNote} aria-label="新建一页" title="新建一页"><Plus size={18} /></button></div>
           <button className="new-note-button" onClick={newNote}><Plus size={15} />写新的一页</button>
           <div className="note-list">{notes.map(note => <button key={note.id} className={`note-list-item ${note.id === activeId ? 'selected' : ''}`} onClick={() => setActiveId(note.id)} aria-current={note.id === activeId ? 'true' : undefined}>
-            <span className="note-date">{note.date.replaceAll('-', '.')}<ChevronRight size={12} /></span><span className="note-title">{note.title.trim() || '无题之页'}</span><span className="note-excerpt">{note.content.trim() || '故事还没开始，书页在等你。'}</span>
+            <span className="note-date">{note.date.replaceAll('-', '.')}<ChevronRight size={12} /></span><span className="note-title">{note.title.trim() || '无题之页'}</span><span className="note-excerpt">{note.content.trim() || '空白书页，等待落笔。'}</span>
           </button>)}</div>
-          <div className="sidebar-whisper"><Feather size={22} strokeWidth={1} /><p>不必写得漂亮。<br />写得像你，就好。</p><span>— 墨鸦</span></div>
+          <div className="sidebar-whisper"><Feather size={22} strokeWidth={1} /><p>你写下的是名字。<br />还是你所相信的正义？</p><span>— 墨鸦</span></div>
         </aside>
         <div className="editor-panel">
           <div className="editor-toolbar"><div className={`save-indicator ${saveState}`} role="status">{saveState === 'saved' ? <CheckCheck size={14} /> : saveState === 'error' ? <X size={14} /> : <span className="saving-dot" />}<span>{saveState === 'saved' ? '已保存到此设备' : saveState === 'error' ? '暂未保存' : '正在保存…'}</span></div><div className="editor-actions"><button onClick={exportNote} title="导出文本" aria-label="导出当前笔记"><Download size={16} /><span>导出</span></button><span className="toolbar-separator" /><button onClick={() => setDeleteOpen(true)} title="删除当前页" aria-label="删除当前页"><Trash2 size={15} /></button></div></div>
           <div className="paper">
             <span className="paper-ribbon" aria-hidden="true" />
             <div className="paper-meta"><span>{activeNote.date.replaceAll('-', ' / ')}</span><span>PAGE {String(notes.findIndex(n => n.id === activeNote.id) + 1).padStart(2, '0')}</span></div>
-            <input className="note-title-input" aria-label="笔记标题" placeholder="给今天一个名字…" value={activeNote.title} onChange={e => updateNote({ title: e.target.value })} maxLength={120} />
+            <input className="note-title-input" aria-label="笔记标题" placeholder="名字 / 记录标题…" value={activeNote.title} onChange={e => updateNote({ title: e.target.value })} maxLength={120} />
             <span className="paper-title-line" />
-            <textarea ref={contentRef} className="note-content-input" aria-label="笔记正文" placeholder={'今天发生了什么？\n\n也许是一场雨，一个梦，或一句没有说出口的话。\n把想说的话，留在这张书页上。'} value={activeNote.content} onChange={e => updateNote({ content: e.target.value })} spellCheck={false} />
-            <div className="paper-footer"><span><Feather size={13} />死亡笔记，收藏你的文字。</span><span>{count} 字</span></div>
+            <textarea ref={contentRef} className="note-content-input" aria-label="笔记正文" placeholder={'名字：\n\n规则与条件：\n\n你的选择，以及它的代价：'} value={activeNote.content} onChange={e => updateNote({ content: e.target.value })} spellCheck={false} />
+            <div className="paper-footer"><span><Feather size={13} />每一次落笔，都意味着选择。</span><span>{count} 字</span></div>
           </div>
         </div>
       </div>
-      <div className="notebook-bottom"><span><LockKeyhole size={12} />自动保存于当前浏览器，清除浏览器数据会删除笔记。重要内容记得导出。</span><span>{writtenPages} 页故事 · {notes.length} 张书页</span></div>
+      <div className="notebook-bottom"><span><LockKeyhole size={12} />自动保存于当前浏览器，清除浏览器数据会删除笔记。重要内容记得导出。</span><span>{writtenPages} 页记录 · {notes.length} 张书页</span></div>
       <dialog ref={dialogRef} className="delete-dialog" onCancel={() => setDeleteOpen(false)} aria-labelledby="delete-title">
         <div className="dialog-icon"><FileText size={24} strokeWidth={1.2} /></div><h2 id="delete-title">要撕下这一页吗？</h2><p>“{activeNote.title.trim() || '无题之页'}”将被删除。<br />如果还想留住它，请先导出。</p><div className="dialog-buttons"><button className="outline-button" onClick={() => setDeleteOpen(false)}>留下这一页</button><button className="delete-confirm" onClick={() => { deleteNote(); setDeleteOpen(false) }}><Check size={15} />确认删除</button></div>
       </dialog>
