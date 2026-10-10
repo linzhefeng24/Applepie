@@ -309,6 +309,7 @@ main { flex: 1; outline: none !important; }
 /* A single uninterrupted book leaf for writing names. */
 .name-page { width: min(920px, calc(100% - 48px)); margin: 40px auto 30px; }
 .name-paper { padding: 52px 70px 56px; background: radial-gradient(ellipse at 0% 50%, #c0b29b22, transparent 55%), #e8e2d5; color: #302f29; box-shadow: inset 9px 0 22px #97897326, 0 18px 65px #0006; border-radius: 2px; }
+.paper-opening { margin: 0 0 30px; text-align: center; color: #625742; opacity: .35; font-family: var(--serif-cn); font-size: 13px; line-height: 1.8; letter-spacing: 3px; user-select: none; }
 .name-writing { --ruled-line: 52px; position: relative; background: repeating-linear-gradient(to bottom, transparent 0, transparent 42px, #84775e45 42px, #84775e45 43px, transparent 43px, transparent var(--ruled-line)); }
 .interline-rules { position: absolute; inset: 0; pointer-events: none; user-select: none; color: #625742; opacity: .23; font-family: var(--serif-cn); font-size: 12px; letter-spacing: 1px; line-height: 18px; }
 .interline-rules span { position: absolute; right: 0; top: calc(var(--ruled-line) + 20px); text-align: right; max-width: 100%; }

@@ -170,6 +170,7 @@ function Notebook({ notebook }: { notebook: NotebookState }) {
     <section className="name-page page-enter" aria-label="死亡笔记书页">
       {error && <div className="storage-error" role="alert">{error}<button onClick={exportNote}>导出内容<Download size={14} /></button></div>}
       <div className="name-paper">
+        <p className="paper-opening" aria-hidden="true">落笔之前，你仍有选择。</p>
         <div className="name-writing">
           <div className="interline-rules" aria-hidden="true">
             <span>神不回答。于是，人拿起了笔。</span>
