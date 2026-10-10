@@ -1,24 +1,11 @@
 {
-  "browser": "Chromium",
-  "desktop": "1440x960",
-  "mobile": "390x844",
+  "status": "passed",
+  "mode": "standalone HTML served locally",
   "checks": [
-    "editing",
-    "autosave",
-    "reload persistence",
-    "multiple pages",
-    "export",
-    "delete confirmation",
-    "navigation",
-    "rule filters",
-    "rule search",
-    "annotations",
-    "empty search results",
-    "responsive layouts",
-    "malformed storage preservation",
-    "no browser errors",
-    "automatic editor height"
+    "single name textarea with no title or sidebar",
+    "autosave and reload recovery",
+    "desktop and mobile layout",
+    "production build"
   ],
-  "result": "passed",
-  "mode": "production build"
+  "note": "Direct file URL validation unavailable under cloud browser policy."
 }

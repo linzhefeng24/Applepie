@@ -1,6 +1,6 @@
 import { useEffect, useLayoutEffect, useRef, useState } from 'react'
-import { ArrowDown, ArrowRight, ArrowUpRight, BookOpen, Check, CheckCheck, ChevronDown, ChevronRight, Download, Feather, FileText, LockKeyhole, Moon, Plus, Search, Trash2, X } from 'lucide-react'
-import { formatDate, today, useNotebook } from './notebook'
+import { ArrowDown, ArrowRight, ArrowUpRight, BookOpen, ChevronDown, Download, Feather, LockKeyhole, Moon, Search, X } from 'lucide-react'
+import { today, useNotebook } from './notebook'
 import { ruleFilters, rules } from './rules'
 
 type Page = 'cover' | 'rules' | 'notebook'
@@ -142,12 +142,9 @@ function Rules({ navigate }: { navigate: (page: Page) => void }) {
 }
 
 function Notebook({ notebook }: { notebook: NotebookState }) {
-  const { notes, activeNote, activeId, setActiveId, saveState, error, updateNote, newNote, deleteNote, exportNote, saveNow } = notebook
-  const [deleteOpen, setDeleteOpen] = useState(false)
-  const dialogRef = useRef<HTMLDialogElement>(null)
+  const { notes, activeNote, activeId, setActiveId, saveState, error, updateNote, exportNote, saveNow } = notebook
   const contentRef = useRef<HTMLTextAreaElement>(null)
-  const count = Array.from(activeNote.content.replace(/\s/g, '')).length
-  const writtenPages = notes.filter(n => n.title.trim() || n.content.trim()).length
+  const pageIndex = notes.findIndex(note => note.id === activeId)
 
   useLayoutEffect(() => {
     const resizeEditor = () => {
@@ -169,40 +166,17 @@ function Notebook({ notebook }: { notebook: NotebookState }) {
     return () => window.removeEventListener('keydown', shortcut)
   }, [saveNow])
 
-  useEffect(() => {
-    if (deleteOpen) dialogRef.current?.showModal()
-    else dialogRef.current?.close()
-  }, [deleteOpen])
-
   return (
-    <section className="notebook-page page-enter">
-      <div className="notebook-heading"><div><div className="eyebrow"><span />NAME. RULE. CONSEQUENCE.</div><h1>翻开书页，<em>写下你的选择。</em></h1></div><span className="notebook-today"><Moon size={15} />{formatDate(today())}</span></div>
-      {error && <div className="storage-error" role="alert">{error}<button onClick={exportNote}>导出当前页<Download size={14} /></button></div>}
-      <div className="notebook-shell">
-        <aside className="note-sidebar" aria-label="笔记列表">
-          <div className="sidebar-heading"><span>我的书页<small>{notes.length}</small></span><button onClick={newNote} aria-label="新建一页" title="新建一页"><Plus size={18} /></button></div>
-          <button className="new-note-button" onClick={newNote}><Plus size={15} />写新的一页</button>
-          <div className="note-list">{notes.map(note => <button key={note.id} className={`note-list-item ${note.id === activeId ? 'selected' : ''}`} onClick={() => setActiveId(note.id)} aria-current={note.id === activeId ? 'true' : undefined}>
-            <span className="note-date">{note.date.replaceAll('-', '.')}<ChevronRight size={12} /></span><span className="note-title">{note.title.trim() || '无题之页'}</span><span className="note-excerpt">{note.content.trim() || '空白书页，等待落笔。'}</span>
-          </button>)}</div>
-          <div className="sidebar-whisper"><Feather size={22} strokeWidth={1} /><p>你写下的是名字。<br />还是你所相信的正义？</p><span>— 墨鸦</span></div>
-        </aside>
-        <div className="editor-panel">
-          <div className="editor-toolbar"><div className={`save-indicator ${saveState}`} role="status">{saveState === 'saved' ? <CheckCheck size={14} /> : saveState === 'error' ? <X size={14} /> : <span className="saving-dot" />}<span>{saveState === 'saved' ? '已保存到此设备' : saveState === 'error' ? '暂未保存' : '正在保存…'}</span></div><div className="editor-actions"><button onClick={exportNote} title="导出文本" aria-label="导出当前笔记"><Download size={16} /><span>导出</span></button><span className="toolbar-separator" /><button onClick={() => setDeleteOpen(true)} title="删除当前页" aria-label="删除当前页"><Trash2 size={15} /></button></div></div>
-          <div className="paper">
-            <span className="paper-ribbon" aria-hidden="true" />
-            <div className="paper-meta"><span>{activeNote.date.replaceAll('-', ' / ')}</span><span>PAGE {String(notes.findIndex(n => n.id === activeNote.id) + 1).padStart(2, '0')}</span></div>
-            <input className="note-title-input" aria-label="笔记标题" placeholder="名字 / 记录标题…" value={activeNote.title} onChange={e => updateNote({ title: e.target.value })} maxLength={120} />
-            <span className="paper-title-line" />
-            <textarea ref={contentRef} className="note-content-input" aria-label="笔记正文" placeholder={'名字：\n\n规则与条件：\n\n你的选择，以及它的代价：'} value={activeNote.content} onChange={e => updateNote({ content: e.target.value })} spellCheck={false} />
-            <div className="paper-footer"><span><Feather size={13} />每一次落笔，都意味着选择。</span><span>{count} 字</span></div>
-          </div>
-        </div>
+    <section className="name-page page-enter" aria-label="死亡笔记书页">
+      {error && <div className="storage-error" role="alert">{error}<button onClick={exportNote}>导出内容<Download size={14} /></button></div>}
+      <div className="name-paper">
+        <p className="name-rule" aria-hidden="true">The human whose name is written in this note shall die.</p>
+        <textarea ref={contentRef} className="names-input" aria-label="写下名字" value={activeNote.content} onChange={event => updateNote({ content: event.target.value })} spellCheck={false} />
       </div>
-      <div className="notebook-bottom"><span><LockKeyhole size={12} />自动保存于当前浏览器，清除浏览器数据会删除笔记。重要内容记得导出。</span><span>{writtenPages} 页记录 · {notes.length} 张书页</span></div>
-      <dialog ref={dialogRef} className="delete-dialog" onCancel={() => setDeleteOpen(false)} aria-labelledby="delete-title">
-        <div className="dialog-icon"><FileText size={24} strokeWidth={1.2} /></div><h2 id="delete-title">要撕下这一页吗？</h2><p>“{activeNote.title.trim() || '无题之页'}”将被删除。<br />如果还想留住它，请先导出。</p><div className="dialog-buttons"><button className="outline-button" onClick={() => setDeleteOpen(false)}>留下这一页</button><button className="delete-confirm" onClick={() => { deleteNote(); setDeleteOpen(false) }}><Check size={15} />确认删除</button></div>
-      </dialog>
+      <div className="name-page-foot">
+        {notes.length > 1 && <nav aria-label="已有书页"><button disabled={pageIndex <= 0} onClick={() => setActiveId(notes[pageIndex - 1].id)}>上一页</button><button disabled={pageIndex >= notes.length - 1} onClick={() => setActiveId(notes[pageIndex + 1].id)}>下一页</button></nav>}
+        <span role="status">{saveState === 'saved' ? '已保存' : saveState === 'error' ? '暂未保存' : '保存中…'}</span>
+      </div>
     </section>
   )
 }

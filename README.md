@@ -10,7 +10,7 @@
 - [封面预览](web/preview/cover-desktop.png) · [规则页预览](web/preview/rules-desktop.png) · [笔记页预览](web/preview/notebook-desktop.png)
 - [浏览器功能验证记录](web/preview/validation.json)
 
-支持多页笔记、自动保存、刷新恢复、文本导出和删除确认；适配电脑与手机。首页已启用 5 秒循环背景视频，免安装版解压后双击 HTML 即可打开。笔记仅保存在当前浏览器，不上传到服务器。
+书写页去除标题和分区，直接写名字，支持自动保存与刷新恢复；适配电脑与手机。首页已启用 5 秒循环背景视频，免安装版解压后双击 HTML 即可打开。笔记仅保存在当前浏览器，不上传到服务器。
 
 ![网页封面预览](web/preview/cover-desktop.png)
 
