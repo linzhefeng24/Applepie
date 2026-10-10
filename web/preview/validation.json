@@ -1,0 +1,24 @@
+{
+  "browser": "Chromium",
+  "desktop": "1440x960",
+  "mobile": "390x844",
+  "checks": [
+    "editing",
+    "autosave",
+    "reload persistence",
+    "multiple pages",
+    "export",
+    "delete confirmation",
+    "navigation",
+    "rule filters",
+    "rule search",
+    "annotations",
+    "empty search results",
+    "responsive layouts",
+    "malformed storage preservation",
+    "no browser errors",
+    "automatic editor height"
+  ],
+  "result": "passed",
+  "mode": "production build"
+}

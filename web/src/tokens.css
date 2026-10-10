@@ -1,0 +1,11 @@
+:root {
+  --night: #111311;
+  --ivory: #e8e5d9;
+  --gold: #c5b697;
+  --paper: #eee8da;
+  --ink: #424336;
+  --line: #c4b89126;
+  --sans: 'Inter', 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  --serif-cn: 'Noto Serif CJK SC', 'Songti SC', 'STSong', 'SimSun', serif;
+  --serif-en: 'Cormorant Garamond', Georgia, serif;
+}
