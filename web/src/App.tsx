@@ -170,8 +170,15 @@ function Notebook({ notebook }: { notebook: NotebookState }) {
     <section className="name-page page-enter" aria-label="死亡笔记书页">
       {error && <div className="storage-error" role="alert">{error}<button onClick={exportNote}>导出内容<Download size={14} /></button></div>}
       <div className="name-paper">
-        <p className="name-rule" aria-hidden="true">The human whose name is written in this note shall die.</p>
-        <textarea ref={contentRef} className="names-input" aria-label="写下名字" value={activeNote.content} onChange={event => updateNote({ content: event.target.value })} spellCheck={false} />
+        <div className="name-writing">
+          <div className="interline-rules" aria-hidden="true">
+            <span>神不回答。于是，人拿起了笔。</span>
+            <span>正义，是谁写下的名字？</span>
+            <span>墨迹会干，审判不会结束。</span>
+            <span>当你凝视结局，结局也在等你。</span>
+          </div>
+          <textarea ref={contentRef} className="names-input" aria-label="写下名字" value={activeNote.content} onChange={event => updateNote({ content: event.target.value })} spellCheck={false} />
+        </div>
       </div>
       <div className="name-page-foot">
         {notes.length > 1 && <nav aria-label="已有书页"><button disabled={pageIndex <= 0} onClick={() => setActiveId(notes[pageIndex - 1].id)}>上一页</button><button disabled={pageIndex >= notes.length - 1} onClick={() => setActiveId(notes[pageIndex + 1].id)}>下一页</button></nav>}
