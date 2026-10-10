@@ -2,6 +2,14 @@
 
 纯前端 React + TypeScript 日记本，无后端、无 API Key。
 
+## 双击打开（无需安装）
+
+下载仓库 `downloads/manman-notebook-offline.zip`，全部解压后双击 **打开笔记本.html**，使用 Chrome 或 Edge 即可。无需 Node.js、命令或网络，包含首页背景视频。请保留同目录的 assets 文件夹。
+
+笔记存储与浏览器和本地文件位置有关，请固定文件位置、使用同一个浏览器，并导出重要笔记。
+
+开发者可运行 `npm run export:offline` 重新生成 `offline/` 免安装版本。
+
 ## 本地运行
 
 需要 Node.js 22.12+ 或 Node.js 24。

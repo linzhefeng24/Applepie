@@ -10,7 +10,8 @@
     "dev": "vite --host 0.0.0.0",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview --host 0.0.0.0",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "export:offline": "npm run build && node scripts/export-offline.mjs"
   },
   "dependencies": {
     "@fontsource/caveat": "^5.2.0",
