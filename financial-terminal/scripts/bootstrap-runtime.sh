@@ -5,6 +5,7 @@ set -euo pipefail
 ROOT=${ROOT:-$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)}
 source "$ROOT/scripts/runtime-env.sh"
 source "$ROOT/scripts/apt-official.sh"
+source "$ROOT/scripts/python-packages.sh"
 
 aperture_java_ok() {
  local major
@@ -78,7 +79,8 @@ aperture_bootstrap_runtime() {
   echo '当前 Python 与项目依赖不兼容，正在为本项目安装 Python 3.12（不替换系统 Python）…'
   if ! python3 -c 'import venv,ensurepip' >/dev/null 2>&1; then aperture_apt_install python3-venv; fi
   if [[ ! -x "$APERTURE_RUNTIME_DIR/uv-bootstrap/bin/python" ]]; then python3 -m venv "$APERTURE_RUNTIME_DIR/uv-bootstrap"; fi
-  "$APERTURE_RUNTIME_DIR/uv-bootstrap/bin/python" -m pip install 'uv==0.9.27'
+  source "$ROOT/scripts/config.sh"
+  aperture_pip_install "$APERTURE_RUNTIME_DIR/uv-bootstrap/bin/python" 'uv==0.9.27'
   export UV_PYTHON_INSTALL_DIR="$APERTURE_RUNTIME_DIR/python-installs"
   "$APERTURE_RUNTIME_DIR/uv-bootstrap/bin/uv" python install 3.12 --no-bin
   local python_binary
