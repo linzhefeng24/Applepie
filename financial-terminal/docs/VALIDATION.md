@@ -11,7 +11,7 @@
 | Scala 编译 | 通过 | 39 个 Scala 源文件；强类型业务响应与所有服务构建成功 |
 | Scala 格式 | 通过 | `scalafmtCheckAll` |
 | 前端严格类型与生产构建 | 通过 | `tsc -b && vite build`；使用锁文件 |
-| 数值与配置单元测试 | **20 项通过** | `quant/tests/test_engine.py` |
+| 数值与配置单元测试 | **25 项通过** | `quant/tests/test_engine.py` |
 | 真数据库 HTTP 集成测试 | 通过 | `scripts/verify-api.py` |
 | Chromium 真实用户流程 | **2 项通过** | `frontend/tests/workflow.spec.ts`，生产构建、实际后端，无 API mock |
 | 完整安装脚本 | 通过 | 实际执行 `scripts/setup.sh`，重复安装/构建/数据校验/数值测试全部成功 |
@@ -83,3 +83,13 @@
 - 最新本机单元测试共 20 项，通过了 WSL 路径识别、默认数据库路径和显式目录覆盖规则。Ubuntu 完整测试包包含之前的 18/19 项；最后增加的配置用例另在本机执行通过。
 
 系统软件源安装仍需要用户的 sudo 权限和网络；脚本不能绕过这些前提。尚未适配原生 Windows、macOS 或无 apt 的发行版自动安装。
+
+## 无关第三方 APT 源错误的兼容性
+
+新增 5 项源配置测试，覆盖 resolute 官方源、安全更新源、Ubuntu ports 架构、Debian keyring、非法字段拒绝，以及 update/install 共用隔离源和索引且保持验签。最新本机共 25 项测试通过。
+
+安装器为当前调用生成官方来源配置，使用系统发行版 archive keyring，隔离 sourceparts 和 package lists；不修改 `/etc/apt/`，不读取 Docker/NodeSource 源，不启用未签名软件包。普通系统 apt 操作的第三方源问题不会被伪称为已修复。
+
+Ubuntu 26.04 的系统 Python 过新时，自动使用项目专用的兼容 Python；已有损坏或不兼容虚拟环境会保留在 `.run/` 后重建，避免因 pandas 没有对应 wheel 而要求用户安装 C 编译器。
+
+最终在干净 Ubuntu 26.04 resolute 容器中预置启用的 Docker 源，并指定不存在的 Docker keyring：安装器使用官方源完成 Java/Node/兼容 Python/PostgreSQL 安装；25 项单元测试、前后端构建、完整应用启动和真实 API/优化/回测/报告测试全部通过。停止后 Docker 源文件 SHA256 与安装前一致，测试容器退出码为 0。此次验证不要求联系 Docker 软件源，也未导入其密钥。
