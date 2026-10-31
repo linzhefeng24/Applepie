@@ -16,14 +16,19 @@ def current():
  sources.extend(ROOT/n for n in ['frontend/config.ts','frontend/vite.config.ts','frontend/index.html'])
  return dict(root=str(ROOT),dependencies=digest(dependencies),sources=digest(sources))
 def runtime_exists():
- files=['.venv/bin/python','.run/classpath','frontend/node_modules/.package-lock.json','frontend/dist/index.html']
+ from settings import read_settings
+ python=Path(read_settings()['PYTHON_BIN'])
+ if not python.exists():return False
+ files=['.run/classpath','frontend/node_modules/.package-lock.json','frontend/dist/index.html']
  if not all((ROOT/n).exists() for n in files):return False
  runtime=subprocess.run([sys.executable,str(ROOT/'scripts/backend-runtime.py'),'check'],stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL).returncode
  if runtime==2:return False
  if runtime!=0 and not all((ROOT/n).exists() for n in ['.tools/sbt-launch.jar','.tools/repositories']):return False
  # Preserve the venv path; resolving its executable symlink would lose its installed packages.
- result=subprocess.run([str(ROOT/'.venv/bin/python'),'-c','import sys;assert (3,12)<=sys.version_info[:2]<(3,14);import numpy,scipy,pandas,pyarrow,psycopg'],stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
- return result.returncode==0
+ try:
+  result=subprocess.run([str(python),'-c','import sys;assert (3,12)<=sys.version_info[:2]<(3,14);import numpy,scipy,pandas,pyarrow,psycopg'],stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
+  return result.returncode==0
+ except OSError:return False
 if __name__=='__main__':
  mode=sys.argv[1];now=current()
  if mode=='save':STATE.parent.mkdir(exist_ok=True);STATE.write_text(json.dumps(now,indent=2));raise SystemExit(0)

@@ -48,7 +48,16 @@ def read_settings(root=ROOT,environ=None):
     for service in ['MARKET','PORTFOLIO','ANALYSIS','QUANT']:
         values.setdefault(service+'_URL',f"http://{values['SERVICE_HOST']}:{values[service+'_PORT']}")
     values.setdefault('FRONTEND_URL',f"http://{values['FRONTEND_HOST']}:{values['FRONTEND_PORT']}")
-    values['PYTHON_BIN']=str((root/values.get('PYTHON_BIN','.venv/bin/python')).absolute())
+    venv=values.get('APERTURE_VENV_DIR')
+    if not venv:
+        if windows_drive_project(root,environment):
+            requirements=root/'quant/requirements.txt'
+            dep_hash=hashlib.sha256(requirements.read_bytes() if requirements.exists() else b'').hexdigest()[:16]
+            cache=Path(environment.get('XDG_CACHE_HOME',str(Path.home()/'.cache')))
+            venv=str(cache/'aperture'/'venvs'/dep_hash/'venv')
+        else:venv='.venv'
+    values['APERTURE_VENV_DIR']=str((root/venv).absolute())
+    values['PYTHON_BIN']=str((root/values.get('PYTHON_BIN',str(Path(values['APERTURE_VENV_DIR'])/'bin/python'))).absolute())
     return values
 if __name__=='__main__':
     import sys
