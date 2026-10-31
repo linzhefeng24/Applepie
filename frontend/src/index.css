@@ -1,0 +1,63 @@
+@import "tailwindcss";
+@theme {
+  --font-sans:
+    "Inter", "Noto Sans SC", "Microsoft YaHei", system-ui, sans-serif;
+}
+@layer base {
+  body {
+    @apply m-0 bg-[#0b1018] text-slate-300 antialiased;
+  }
+  button,
+  a,
+  input,
+  select {
+    @apply outline-none focus-visible:ring-2 focus-visible:ring-[#b7ed77]/60;
+  }
+  button {
+    @apply cursor-pointer transition-colors disabled:cursor-not-allowed disabled:opacity-40;
+  }
+  input,
+  select {
+    @apply min-w-0 rounded-md border border-white/10 bg-[#0b121d] px-3 py-2 text-xs text-slate-200;
+    color-scheme: dark;
+  }
+  th {
+    @apply whitespace-nowrap px-4 py-3 text-left text-[10px] font-normal text-slate-500;
+  }
+  td {
+    @apply whitespace-nowrap border-t border-white/[.05] px-4 py-3 text-xs;
+  }
+  ::selection {
+    @apply bg-lime-300/20;
+  }
+}
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg border border-white/10 px-4 py-2 text-xs text-slate-300 hover:bg-white/5;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg bg-[#b7ed77] px-4 py-2.5 text-xs font-semibold text-[#152019] hover:bg-[#c9f59d];
+  }
+  .field {
+    @apply flex min-w-0 flex-col gap-2 text-[11px] text-slate-400;
+  }
+  .table-scroll {
+    @apply overflow-x-auto;
+  }
+}
+@media print {
+  aside,
+  header,
+  nav,
+  .no-print {
+    display: none !important;
+  }
+  main {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  body {
+    background: white;
+    color: black;
+  }
+}

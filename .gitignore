@@ -1,0 +1,13 @@
+data/raw/
+data/pg/
+.tools/
+.run/
+**/target/
+**/node_modules/
+**/dist/
+**/__pycache__/
+.venv/
+.env
+frontend/test-results/
+frontend/playwright-report/
+*.tsbuildinfo
