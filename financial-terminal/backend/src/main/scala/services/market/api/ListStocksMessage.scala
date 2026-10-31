@@ -15,7 +15,7 @@ final case class ListStocksMessage() extends NoRequestMessage[ListStocksResponse
       quotes <- services.market.tables.DailyBarTable.DailyBarTable.latest(connection)
       provenance <- IO
         .blocking(
-          Files.readString(Path.of(sys.env.getOrElse("DATA_DIR", "../data"), "provenance.json"))
+          Files.readString(Path.of(sys.env.getOrElse("DATA_DIR", "data"), "provenance.json"))
         )
         .flatMap(s => IO.fromEither(io.circe.parser.parse(s)))
     yield ListStocksResponse(stocks, quotes, provenance)

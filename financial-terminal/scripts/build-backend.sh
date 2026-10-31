@@ -6,6 +6,6 @@ mkdir -p "$ROOT/.run"
 python3 - "$ROOT" <<'PY'
 from pathlib import Path
 import sys
-r=Path(sys.argv[1]);lines=(r/'.run/compile.log').read_text().splitlines();cp=next(s for s in reversed(lines) if s.startswith('/') and '.jar' in s);(r/'.run/classpath').write_text(cp)
+r=Path(sys.argv[1]);lines=(r/'.run/compile.log').read_text().splitlines();cp=next(s for s in reversed(lines) if s.startswith('/') and '.jar' in s);(r/'.run/classpath').write_text(cp);(r/'.run/build-root').write_text(str(r.resolve()))
 PY
 echo 'Scala services compiled.'

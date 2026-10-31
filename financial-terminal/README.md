@@ -16,21 +16,21 @@
 已在当前云环境安装、构建和验证。使用现有 checkout，不需要创建 worktree。
 
 ```bash
-cd /workspace/Applepie/financial-terminal
+cd financial-terminal
 ./scripts/start-services.sh
 ```
 
 生产前端端口为 `4173`；该端口由 Vite preview 提供，用于课程本地演示。开发前端使用：
 
 ```bash
-cd /workspace/Applepie/financial-terminal/frontend
+cd financial-terminal/frontend
 npm run dev
 ```
 
 开发前端端口为 `5173`，前后端请求由 Vite 代理。后端和计算服务仅监听本机。停止本项目服务：
 
 ```bash
-cd /workspace/Applepie/financial-terminal
+cd financial-terminal
 ./scripts/stop-services.sh              # 保留数据库运行
 ./scripts/stop-services.sh --database   # 同时停止本项目数据库
 ```
@@ -39,10 +39,10 @@ cd /workspace/Applepie/financial-terminal
 
 ## 首次安装与复现
 
-工具基线：Debian 13 x86_64（当前云环境）、JDK 21、Node 24、npm 11、Python 3.12、curl、dpkg-deb。PostgreSQL 17 安装于项目 `.tools/`，不需要 root；二进制依赖当前系统的 libpq/ICU/LLVM 等运行库。其他系统可参考源码配置自行部署，不将 Debian 二进制视为跨平台发行包。
+工具基线：Debian 13 x86_64（当前云环境）、JDK 21、Node 24、npm 11、Python 3.12、curl、dpkg-deb。安装脚本优先使用 `PG_BIN` 指定或 PATH 中的 PostgreSQL；未找到时，仅在 Debian 13 x86_64 自动下载经过哈希验证的本地包（无需 root）。其他 Linux 环境应先安装 PostgreSQL，或使用已有数据库。自动下载的 Debian 二进制依赖系统的 libpq/ICU/LLVM 等运行库，不作为跨平台发行包。
 
 ```bash
-cd /workspace/Applepie/financial-terminal
+cd financial-terminal
 ./scripts/setup.sh
 ./scripts/start-services.sh
 ```
@@ -98,3 +98,22 @@ cd frontend && npm run test:e2e
 ## 范围
 
 这是可运行的课程研究软件。没有实盘交易、自动行情更新、全市场因子数据、真实财报或账户系统。高阶矩优化为样本估计，MVSK 非凸，多起点求解不保证全局最优。请用回测和审计数据讨论方法，不以某次历史表现作为投资结论。
+
+## 目录与连接配置
+
+项目可以解压到任意可写目录（包括带空格的目录）。上述 `cd financial-terminal` 是相对于解压目录的示例；请按自己的位置进入项目，而非创建 `/workspace`。脚本根据自身位置定位项目，数据路径相对于项目根目录解析。
+
+默认值统一放在 `config/defaults.json`。可复制 `.env.example` 为 `.env`，只填写需要覆盖的项；优先级为 **进程环境变量 > .env > 默认值**。数据库口令不会进入 Git。服务、前端及验证脚本读取同一份配置。
+
+```bash
+# 从项目目录启动，并临时覆盖端口（也可以写入 .env）
+MARKET_PORT=8201 PORTFOLIO_PORT=8202 ANALYSIS_PORT=8203 QUANT_PORT=8204 FRONTEND_PORT=4273 bash scripts/start-services.sh
+```
+
+可配置 `DATA_DIR`、`PG_DATA_DIR`、`PG_BIN`、`PG_SHARE`、`PG_SOCKET_DIR`、`DB_HOST/PORT/NAME/USER/PASSWORD`、各服务端口与 `MARKET_URL/QUANT_URL`。端口是可覆盖的默认值，不是必须占用的固定端口。更改运行服务的配置前，先使用原配置停止进程。
+
+已有 PostgreSQL：在 `.env` 设置 `MANAGE_POSTGRES=false` 和数据库连接信息，提前建立空数据库并授予表创建权限；脚本将验证连接，且不会启动、停止或初始化外部 PostgreSQL。需要非默认 PostgreSQL 安装位置时设置 `PG_BIN`；启动脚本自动定位已下载包内的可执行文件，不绑定版本目录。
+
+搬移已经安装过的项目之前先停止服务。启动时会检查 Java classpath 的生成位置，位置变化或依赖失效时自动重建；这类绝对路径只存在于忽略的运行缓存。Python 虚拟环境本身不保证可搬移，请在新目录重新执行 setup（需要时先移除旧 `.venv` 后重建）。
+
+浏览器测试优先使用 `CHROMIUM_PATH`，其次搜索 PATH，最后使用 Playwright 自己安装的 Chromium，不依赖 `/usr/bin/chromium`。

@@ -20,7 +20,7 @@ object Main extends IOApp.Simple:
       Map("market" -> "8101", "portfolio" -> "8102", "analysis" -> "8103")(service)
     )
     .toInt
-  private val data = Path.of(sys.env.getOrElse("DATA_DIR", "../data"))
+  private val data = Path.of(sys.env.getOrElse("DATA_DIR", "data"))
   private val initialize: IO[Unit] = service match
     case "market" =>
       Database.transaction(c =>
@@ -39,7 +39,7 @@ object Main extends IOApp.Simple:
     case _           => Nil
   def run: IO[Unit] = initialize *> EmberServerBuilder
     .default[IO]
-    .withHost(Host.fromString("127.0.0.1").get)
+    .withHost(Host.fromString(sys.env.getOrElse("SERVICE_HOST", "127.0.0.1")).get)
     .withPort(Port.fromInt(portNumber).get)
     .withHttpApp(APIMessageRouter.routes(service, entries).orNotFound)
     .build

@@ -1,6 +1,9 @@
 """Local numerical microservice; no database access, no external network calls."""
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
-import json, traceback
+import json, traceback, os, sys
+from pathlib import Path
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]/"scripts"))
+from settings import read_settings
 from threading import BoundedSemaphore
 from engine import analyze, backtest
 slots=BoundedSemaphore(2)
@@ -21,4 +24,5 @@ class Handler(BaseHTTPRequestHandler):
             traceback.print_exc();self.reply(500,dict(error='数值计算失败'))
         finally:slots.release()
 if __name__=='__main__':
-    print('quant ready on 8104',flush=True);ThreadingHTTPServer(('127.0.0.1',8104),Handler).serve_forever()
+    cfg=read_settings();host=cfg['SERVICE_HOST'];port=int(cfg['QUANT_PORT'])
+    print(f'quant ready on {host}:{port}',flush=True);ThreadingHTTPServer((host,port),Handler).serve_forever()

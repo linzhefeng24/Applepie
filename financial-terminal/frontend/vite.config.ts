@@ -1,19 +1,35 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwind from "@tailwindcss/vite";
-const proxy = Object.fromEntries(
-  [
-    ["market", 8101],
-    ["portfolio", 8102],
-    ["analysis", 8103],
-  ].map(([s, p]) => [
-    `/api/${s}`,
-    { target: `http://127.0.0.1:${p}`, changeOrigin: true, timeout: 180000 },
-  ]),
-);
-export default defineConfig({
-  plugins: [react(), tailwind()],
-  server: { port: 5173, strictPort: true, proxy },
-  preview: { port: 4173, strictPort: true, proxy },
-  build: { minify: false },
+import { readConfig } from "./config";
+export default defineConfig(({ mode }) => {
+  const cfg = readConfig(mode);
+  const proxy = Object.fromEntries(
+    ["market", "portfolio", "analysis"].map((service) => [
+      `/api/${service}`,
+      {
+        target:
+          cfg[service.toUpperCase() + "_URL"] ||
+          `http://${cfg.SERVICE_HOST}:${cfg[service.toUpperCase() + "_PORT"]}`,
+        changeOrigin: true,
+        timeout: 180000,
+      },
+    ]),
+  );
+  return {
+    plugins: [react(), tailwind()],
+    server: {
+      host: cfg.FRONTEND_HOST,
+      port: Number(cfg.DEV_PORT),
+      strictPort: true,
+      proxy,
+    },
+    preview: {
+      host: cfg.FRONTEND_HOST,
+      port: Number(cfg.FRONTEND_PORT),
+      strictPort: true,
+      proxy,
+    },
+    build: { minify: false },
+  };
 });

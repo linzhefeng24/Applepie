@@ -4,6 +4,8 @@ import argparse, hashlib, io, json, zipfile
 import numpy as np
 import pandas as pd
 ROOT = Path(__file__).resolve().parents[1]
+from settings import read_settings
+DATA = Path(read_settings()["DATA_DIR"])
 SHA = '3228a7935ab3b8fffa857c44cddf2795f6b37e76e965ab2787d364afd435a693'
 SYMBOLS = {
  'AAPL':('Apple','科技'), 'AMZN':('Amazon','消费'), 'GOOG':('Alphabet','科技'),
@@ -38,10 +40,10 @@ def prepare(archive: Path):
    stocks.append(dict(symbol=symbol,name=name,sector=sector,currency='USD',firstDate=daily.date.iloc[0],lastDate=daily.date.iloc[-1],sessions=len(daily),source=','.join(sources)))
    audits.append(dict(symbol=symbol,rawMinutes=raw,duplicates=duplicates,rejectedMinutes=rejected,sources=sources,dailyRows=len(daily),sessionsUnder300Minutes=int((daily.minutes<300).sum()),dailyMovesOver25Pct=jumps))
    print(symbol,raw,'->',len(daily),flush=True)
- out=ROOT/'data';pd.concat(frames).to_csv(out/'daily.csv',index=False,float_format='%.8f')
+ out=DATA;out.mkdir(parents=True,exist_ok=True);pd.concat(frames).to_csv(out/'daily.csv',index=False,float_format='%.8f')
  (out/'stocks.json').write_text(json.dumps(stocks,ensure_ascii=False,indent=2))
  report=dict(release='https://github.com/linzhefeng24/Applepie/releases/tag/data_v1',asset='part1.zip',sha256=SHA,selection='32 named US-listed equities/ADR and gold ETF from part1 only; part2/part3 not imported',frequency='daily from all valid recorded minutes, not exchange consolidated official daily bars',timezone='naive source timestamps; session date retained; timezone not verified',adjustment='unknown; no corporate-action or dividend data supplied; price returns, not total returns',volume='sum of source minute volume; source includes IEX, not whole-market volume',financials='not supplied: revenue, ROE, PE, PB, dividends unavailable',aggregation='stable chronological sort; duplicate timestamps keep last; discard nonfinite/nonpositive/inconsistent OHLC or negative volume; first open/max high/min low/last close/sum volume',survivorship='curated teaching subset; not suitable for claims about unbiased whole-market strategy performance',symbols=len(stocks),rows=sum(x['dailyRows'] for x in audits),audits=audits)
  report['dailyCsvSha256']=hashlib.file_digest((out/'daily.csv').open('rb'),'sha256').hexdigest()
  (out/'provenance.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
 if __name__=='__main__':
- parser=argparse.ArgumentParser();parser.add_argument('--archive',type=Path,default=ROOT/'data/raw/part1.zip');prepare(parser.parse_args().archive)
+ parser=argparse.ArgumentParser();parser.add_argument('--archive',type=Path,default=DATA/'raw/part1.zip');prepare(parser.parse_args().archive)

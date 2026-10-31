@@ -5,10 +5,10 @@
   "type": "module",
   "packageManager": "npm@11.9.0",
   "scripts": {
-    "dev": "vite --host 0.0.0.0",
+    "dev": "vite",
     "build": "tsc -b && vite build",
     "typecheck": "tsc -b",
-    "preview": "vite preview --host 0.0.0.0",
+    "preview": "vite preview",
     "test:e2e": "playwright test"
   },
   "dependencies": {

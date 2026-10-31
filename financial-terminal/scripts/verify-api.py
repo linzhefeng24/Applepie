@@ -4,7 +4,9 @@ import json,urllib.request,urllib.error,csv,math,sys
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'quant'))
 from engine import statistics
 ROOT=Path(__file__).resolve().parents[1]
-BASE={'market':'http://127.0.0.1:8101','portfolio':'http://127.0.0.1:8102','analysis':'http://127.0.0.1:8103'}
+from settings import read_settings
+CFG=read_settings()
+BASE={s:CFG[s.upper()+'_URL'] for s in ['market','portfolio','analysis']}
 def post(service,name,body):
  r=urllib.request.Request(f'{BASE[service]}/api/{service}/{name}',data=json.dumps(body).encode(),headers={'Content-Type':'application/json'})
  with urllib.request.urlopen(r,timeout=180) as response:return json.load(response)
@@ -13,7 +15,7 @@ def bad(service,name,body):
  except urllib.error.HTTPError as e:assert e.code==400;return
  raise AssertionError('Invalid input accepted')
 market=post('market','liststocks',{});assert len(market['stocks'])==32 and len(market['quotes'])==32
-with (ROOT/'data/daily.csv').open() as f:expected=[x for x in csv.DictReader(f) if x['symbol']=='AAPL']
+with (Path(CFG['DATA_DIR'])/'daily.csv').open() as f:expected=[x for x in csv.DictReader(f) if x['symbol']=='AAPL']
 stock=post('market','getstock',dict(symbol='AAPL',start='2022-03-07',end='2026-10-23'))
 assert len(stock['bars'])==len(expected)==1164
 for a,b in zip(stock['bars'],expected):

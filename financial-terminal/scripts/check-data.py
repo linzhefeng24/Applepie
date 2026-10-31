@@ -1,8 +1,9 @@
 from pathlib import Path
 import hashlib,json,csv
-r=Path(__file__).resolve().parents[1];p=json.loads((r/'data/provenance.json').read_text());stocks=json.loads((r/'data/stocks.json').read_text())
-assert hashlib.file_digest((r/'data/daily.csv').open('rb'),'sha256').hexdigest()==p['dailyCsvSha256'], 'Daily data hash mismatch'
-with (r/'data/daily.csv').open() as f:rows=list(csv.DictReader(f))
+from settings import read_settings
+DATA=Path(read_settings()['DATA_DIR']);p=json.loads((DATA/'provenance.json').read_text());stocks=json.loads((DATA/'stocks.json').read_text())
+assert hashlib.file_digest((DATA/'daily.csv').open('rb'),'sha256').hexdigest()==p['dailyCsvSha256'], 'Daily data hash mismatch'
+with (DATA/'daily.csv').open() as f:rows=list(csv.DictReader(f))
 assert len(rows)==p['rows'] and len(stocks)==p['symbols']
 assert len({(x['symbol'],x['date']) for x in rows})==len(rows)
 assert {s['symbol'] for s in stocks}=={x['symbol'] for x in rows}
