@@ -3,6 +3,7 @@
 set -euo pipefail
 ROOT=$(cd "$(dirname "$0")/.." && pwd)
 cd "$ROOT"
+source scripts/runtime-env.sh
 mkdir -p .tools .run
 for tool in java node npm python3 curl sha256sum; do command -v "$tool" >/dev/null || { echo "Missing required tool: $tool"; exit 1; }; done
 node -e 'if(+process.versions.node.split(".")[0]<24)process.exit(1)' || { echo 'Node 24+ required'; exit 1; }
@@ -39,8 +40,10 @@ EOF
 [[ -d .venv ]] || python3 -m venv .venv
 .venv/bin/python -m pip install -r quant/requirements.txt
 if [[ "$MANAGE_POSTGRES" == true ]]; then
+ fresh_cluster=false
  "$PG_BIN/postgres" --version
  if [[ ! -f "$PG_DATA_DIR/PG_VERSION" ]]; then
+  fresh_cluster=true
   share=(); [[ -z "$PG_SHARE" ]] || share=(-L "$PG_SHARE")
   "$PG_BIN/initdb" -D "$PG_DATA_DIR" "${share[@]}" --auth-local=trust --auth-host=scram-sha-256 --username="$DB_USER" --no-locale --encoding=UTF8
  fi
@@ -48,7 +51,7 @@ if [[ "$MANAGE_POSTGRES" == true ]]; then
  if ! "$PG_BIN/pg_ctl" -D "$PG_DATA_DIR" status >/dev/null 2>&1; then
   "$PG_BIN/pg_ctl" -D "$PG_DATA_DIR" -l "$ROOT/.run/postgres.log" -o "-h $DB_HOST -p $DB_PORT -k '$PG_SOCKET_DIR'" start
  fi
- if [[ -z "${DB_PASSWORD:-}" ]]; then
+ if [[ "$fresh_cluster" == true || -z "${DB_PASSWORD:-}" ]]; then
   "$PYTHON_BIN" scripts/bootstrap-db.py
   source scripts/config.sh
  fi

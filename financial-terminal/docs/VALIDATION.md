@@ -11,7 +11,7 @@
 | Scala 编译 | 通过 | 39 个 Scala 源文件；强类型业务响应与所有服务构建成功 |
 | Scala 格式 | 通过 | `scalafmtCheckAll` |
 | 前端严格类型与生产构建 | 通过 | `tsc -b && vite build`；使用锁文件 |
-| 数值与配置单元测试 | **18 项通过** | `quant/tests/test_engine.py` |
+| 数值与配置单元测试 | **20 项通过** | `quant/tests/test_engine.py` |
 | 真数据库 HTTP 集成测试 | 通过 | `scripts/verify-api.py` |
 | Chromium 真实用户流程 | **2 项通过** | `frontend/tests/workflow.spec.ts`，生产构建、实际后端，无 API mock |
 | 完整安装脚本 | 通过 | 实际执行 `scripts/setup.sh`，重复安装/构建/数据校验/数值测试全部成功 |
@@ -71,3 +71,15 @@
 ## 根目录一键启动入口
 
 已在新的项目目录使用 `bash run.sh` 实际完成：首次项目依赖安装、新 PostgreSQL 初始化、前后端构建、全部服务就绪检查；第二次运行复用依赖和进程；`restart` 重启应用及本地数据库；重启后的真实 API/分析/回测/报告测试通过；`stop` 停止测试实例并保留数据。该测试复用了已验证的 PostgreSQL/sbt 下载缓存，基础 Java/Node/Python 来自主机。未声称可以在没有基础开发工具的电脑上安装这些系统工具。
+
+## 缺少基础工具时的自动安装
+
+已在本任务创建的干净 Ubuntu 24.04、Ubuntu 22.04 容器中，以普通用户和 sudo 安装权限测试基础依赖安装。容器预先只准备 sudo 和本次测试代理的 CA 信任；没有预装 Java、Node、Python 或 PostgreSQL。
+
+- Ubuntu 24.04：自动安装 Java 21、项目专用 Node 24、系统 Python 3.12/venv、PostgreSQL 16，随后 `bash run.sh` 完成依赖安装、数据库初始化、前后端构建、服务启动；真实 API / 优化 / 回测 / 报告测试通过。
+- Ubuntu 22.04：自动安装 Java 21、项目专用 Node 24、通过固定版本 uv 安装项目专用 Python 3.12、PostgreSQL；同样完成整个应用启动及真实 API 测试。
+- 两个容器都成功停止应用和项目数据库。包签名、TLS 与 Node 官方 SHA256 校验保持开启；sudo 调用保留代理变量。
+- Ubuntu 22.04 测试还模拟 WSL 的 `/mnt/d/Downloads/APERTURE` 路径和 WSL 环境标记，确认数据库目录位于 Linux 用户状态目录而非项目所在的 Windows 盘路径。容器不是真实 Windows/DrvFS，未把它称为真实 WSL 内核验证。
+- 最新本机单元测试共 20 项，通过了 WSL 路径识别、默认数据库路径和显式目录覆盖规则。Ubuntu 完整测试包包含之前的 18/19 项；最后增加的配置用例另在本机执行通过。
+
+系统软件源安装仍需要用户的 sudo 权限和网络；脚本不能绕过这些前提。尚未适配原生 Windows、macOS 或无 apt 的发行版自动安装。

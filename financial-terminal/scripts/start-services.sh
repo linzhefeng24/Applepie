@@ -2,6 +2,7 @@
 set -euo pipefail
 ROOT=$(cd "$(dirname "$0")/.." && pwd)
 cd "$ROOT"
+source scripts/runtime-env.sh
 source scripts/config.sh
 mkdir -p .run
 if [[ "$MANAGE_POSTGRES" == true ]]; then
