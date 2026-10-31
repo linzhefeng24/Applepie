@@ -30,16 +30,40 @@ start() {
  nohup setsid "$@" > ".run/$name.log" 2>&1 < /dev/null & echo $! > ".run/$name.pid"
  python3 scripts/processes.py record "$name"
 }
+# Reference data owns the stock table; wait for its initialization before dependent services.
+start market env SERVICE=market HTTP_PORT="$MARKET_PORT" java -XX:ActiveProcessorCount=2 -Xmx256m -cp "$(cat .run/classpath)" Main
+"$PYTHON_BIN" - <<'PYMARKET'
+import os,time,urllib.request
+for attempt in range(60):
+ try:
+  with urllib.request.urlopen(os.environ['MARKET_URL']+'/health',timeout=2) as r:assert r.status==200
+  break
+ except Exception:
+  if attempt==59:raise
+  time.sleep(.5)
+PYMARKET
+# Watchlist creates the legacy research schema; serialize first-time schema creation.
+start watchlist env SERVICE=watchlist HTTP_PORT="$WATCHLIST_PORT" java -XX:ActiveProcessorCount=2 -Xmx256m -cp "$(cat .run/classpath)" Main
+"$PYTHON_BIN" - <<'PYWATCH'
+import os,time,urllib.request
+for attempt in range(60):
+ try:
+  with urllib.request.urlopen(os.environ['WATCHLIST_URL']+'/health',timeout=2) as r:assert r.status==200
+  break
+ except Exception:
+  if attempt==59:raise
+  time.sleep(.5)
+PYWATCH
 start quant env OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 "$PYTHON_BIN" quant/server.py
-for service in market portfolio analysis; do
+for service in history statistics reports optimization backtest; do
  key="${service^^}_PORT"
- start "$service" env SERVICE="$service" HTTP_PORT="${!key}" java -XX:ActiveProcessorCount=2 -Xmx384m -cp "$(cat .run/classpath)" Main
+ start "$service" env SERVICE="$service" HTTP_PORT="${!key}" java -XX:ActiveProcessorCount=2 -Xmx256m -cp "$(cat .run/classpath)" Main
 done
 if [[ -f frontend/dist/index.html ]]; then start frontend npm --prefix frontend run preview; fi
 "$PYTHON_BIN" - <<'PY'
 import urllib.request,time,os
 from pathlib import Path
-urls=[os.environ[k+'_URL']+'/health' for k in ['MARKET','PORTFOLIO','ANALYSIS','QUANT']]
+urls=[os.environ[k+'_URL']+'/health' for k in ['MARKET','HISTORY','STATISTICS','WATCHLIST','REPORTS','OPTIMIZATION','BACKTEST','QUANT']]
 if Path('frontend/dist/index.html').exists():urls.append(os.environ['FRONTEND_URL'])
 for url in urls:
  for attempt in range(60):

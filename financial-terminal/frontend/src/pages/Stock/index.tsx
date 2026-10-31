@@ -43,7 +43,7 @@ export function StockPage() {
     <>
       <PageTitle
         eyebrow="EQUITY RESEARCH"
-        title="个股研究"
+        title="证券分析"
         description="历史价格、年度表现、收益分布与数据质量。"
       />
       <div className="mb-6 flex flex-wrap items-end gap-3">

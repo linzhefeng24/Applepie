@@ -6,7 +6,7 @@ test("真实数据库：股票、自选、比较、量化、回测、报告和�
   const errors: string[] = [];
   page.on("pageerror", (e) => errors.push(e.message));
   await page.goto("/");
-  await expect(page.getByRole("heading", { name: "行情工作台" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "证券筛选" })).toBeVisible();
   await expect(
     page.locator("table").getByText("Apple", { exact: true }),
   ).toBeVisible();
@@ -15,7 +15,7 @@ test("真实数据库：股票、自选、比较、量化、回测、报告和�
     fullPage: true,
   });
   const watchBefore = await (
-    await request.post("/api/portfolio/listwatchlist", { data: {} })
+    await request.post("/api/watchlist/listwatchlist", { data: {} })
   ).json();
   const wasSelected = watchBefore.symbols.includes("AAPL");
   await page
@@ -30,11 +30,11 @@ test("真实数据库：股票、自选、比较、量化、回测、报告和�
       exact: true,
     }),
   ).toBeVisible();
-  await request.post("/api/portfolio/setwatchlist", {
+  await request.post("/api/watchlist/setwatchlist", {
     data: { symbol: "AAPL", selected: wasSelected },
   });
   await page.getByRole("textbox", { name: "搜索股票" }).fill("AAPL");
-  await expect(page.locator("tbody tr")).toHaveCount(1);
+  await expect(page.locator(".screen-table tbody tr")).toHaveCount(1);
   await page.getByRole("button", { name: "研究 AAPL", exact: true }).click();
   await expect(
     page.getByRole("heading", { name: "历年行情指标" }),
@@ -63,9 +63,9 @@ test("真实数据库：股票、自选、比较、量化、回测、报告和�
   });
   const title = "E2E " + Date.now();
   await page.getByLabel("报告名称").fill(title);
-  await page.getByRole("button", { name: "保存到研究档案" }).click();
+  await page.getByRole("button", { name: "保存到报告管理" }).click();
   await expect(
-    page.getByText("已保存参数与完整结果，可在「研究档案」中查看和导出。"),
+    page.getByText("已保存参数与完整结果，可在「报告管理」中查看和导出。"),
   ).toBeVisible();
   await page.goto("/reports");
   await page.getByRole("button").filter({ hasText: title }).click();
@@ -94,13 +94,13 @@ test("真实数据库：股票、自选、比较、量化、回测、报告和�
   await page.getByRole("button", { name: "导出 CSV" }).click();
   expect((await csvPromise).suggestedFilename()).toBe("backtest-curves.csv");
   const all = await (
-    await request.post("/api/portfolio/listreports", { data: {} })
+    await request.post("/api/reports/listreports", { data: {} })
   ).json();
   const created = all.reports.find((r: { title: string }) => r.title === title);
   expect(created).toBeTruthy();
   expect(
     (
-      await request.post("/api/portfolio/deletereport", {
+      await request.post("/api/reports/deletereport", {
         data: { id: created.id },
       })
     ).ok(),
@@ -115,17 +115,19 @@ test("空区间、无效日期与手机布局", async ({ page, request }) => {
   await page.getByLabel("起始日期", { exact: true }).fill("2027-01-01");
   await page.getByLabel("截止日期", { exact: true }).fill("2027-12-31");
   await expect(page.getByText("当前区间没有行情，请调整日期。")).toBeVisible();
-  const invalid = await request.post("/api/market/getstock", {
+  const invalid = await request.post("/api/statistics/getstock", {
     data: { symbol: "AAPL", start: "2026-01-01", end: "2022-01-01" },
   });
   expect(invalid.status()).toBe(400);
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto("/");
-  await expect(page.getByRole("heading", { name: "行情工作台" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "证券筛选" })).toBeVisible();
   await page.getByLabel("展开导航").click();
-  await page.getByRole("link", { name: "量化实验室 Quant laboratory" }).click();
+  await page
+    .getByRole("link", { name: "组合优化 Portfolio optimization" })
+    .click();
   await expect(
-    page.getByRole("heading", { name: "量化实验室", exact: true }),
+    page.getByRole("heading", { name: "组合优化", exact: true }),
   ).toBeVisible();
   await page.screenshot({
     path: "../docs/screenshots/mobile.png",

@@ -4,7 +4,7 @@ import type {
   BacktestResult,
   Parameters,
 } from "../../objects/analysis";
-import { SaveReportMessage } from "../../apis/portfolio/SaveReportMessage";
+import { SaveReportMessage } from "../../apis/reports/SaveReportMessage";
 import { ErrorBox } from "../../components/ui/Panel";
 export function SaveResult({
   kind,
@@ -48,12 +48,12 @@ export function SaveResult({
           disabled={busy || !title.trim()}
           onClick={save}
         >
-          {busy ? "保存中…" : "保存到研究档案"}
+          {busy ? "保存中…" : "保存到报告管理"}
         </button>
       </div>
       {state === "saved" ? (
         <p role="status" className="mt-2 text-xs text-[#b7ed77]">
-          已保存参数与完整结果，可在「研究档案」中查看和导出。
+          已保存参数与完整结果，可在「报告管理」中查看和导出。
         </p>
       ) : (
         state && <ErrorBox error={state} />

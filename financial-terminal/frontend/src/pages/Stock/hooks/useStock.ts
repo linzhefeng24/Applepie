@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { GetStockMessage } from "../../../apis/market/GetStockMessage";
+import { GetStockMessage } from "../../../apis/statistics/GetStockMessage";
 import type { StockResult } from "../../../objects/market";
 export type StockState =
   | { status: "loading" }

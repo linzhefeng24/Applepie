@@ -5,10 +5,10 @@
 
 ## 实施顺序
 1. 数据审计：校验下载的 SHA256；检查文件格式、交易所、日期、字段、复权情况。选取有足够重叠历史的代表性股票和日频数据，保存来源及精简规则。
-2. 数据库：PostgreSQL；market 服务拥有股票/日线表，portfolio 服务拥有自选/报告表，analysis 服务负责分析请求，计算工作进程不访问数据库。
+2. 数据库：PostgreSQL；market/history 分别维护证券/日线表，watchlist/reports 分别维护自选/报告表，statistics/optimization/backtest 分别处理统计/组合优化/回测，计算工作进程不访问数据库。
 3. 后端：Scala 3 + Cats Effect IO + http4s + Circe + PostgreSQL。每个领域服务独立端口/进程，通过 HTTP 协作。每个 API 为 Message 类、plan(connection): IO[Response]；每张表单独文件夹、初始化类、私有 SQL 与公开 IO 方法；核心计算纯函数，副作用在边界。
 4. 数值服务：Python NumPy/SciPy，统计/MVSK/最小方差/均值方差/等权/风险平价；直接以组合收益序列计算三四阶矩，多起点约束求解并报告收敛。回测滚动估计，收盘后调仓仅影响未来收益，扣除换手成本。
-5. 前端：React + TypeScript + Vite + Tailwind + Zustand + ECharts。市场总览、个股研究、量化实验室、回测和研究报告；按页面拆分 hooks/functions/objects/components，局部状态就近存放；加载/错误/空状态清楚。
+5. 前端：React + TypeScript + Vite + Tailwind + Zustand + ECharts。证券筛选、证券分析、组合优化、策略回测、报告管理和数据中心；按页面拆分 hooks/functions/objects/components，局部状态就近存放；加载/错误/空状态清楚。
 6. 验证：数据聚合一致性、无未来数据泄漏、权重约束与高阶矩、持仓漂移/交易费；Scala 编译与 API 功能测试、前端类型检查和构建、实际数据库和服务联调。
 
 ## 第一版边界

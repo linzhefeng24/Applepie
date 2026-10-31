@@ -13,7 +13,7 @@ export function download(name: string, text: string, type = "text/plain") {
   setTimeout(() => URL.revokeObjectURL(url), 1000);
 }
 export function exportReport(r: ResearchReport) {
-  const base = `# ${r.title}\n\n${r.kind === "analysis" ? "量化实验" : "滚动样本外回测"} · ${r.result.start} — ${r.result.end}\n\n标的：${r.result.symbols.join(", ")}\n\n## 参数\n\n\`\`\`json\n${JSON.stringify(r.parameters, null, 2)}\n\`\`\`\n\n## 结果\n\n`;
+  const base = `# ${r.title}\n\n${r.kind === "analysis" ? "组合分析" : "滚动样本外回测"} · ${r.result.start} — ${r.result.end}\n\n标的：${r.result.symbols.join(", ")}\n\n## 参数\n\n\`\`\`json\n${JSON.stringify(r.parameters, null, 2)}\n\`\`\`\n\n## 结果\n\n`;
   const rows =
     r.kind === "analysis"
       ? (r.result as AnalysisResult).models

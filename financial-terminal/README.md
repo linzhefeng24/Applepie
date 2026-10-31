@@ -4,12 +4,13 @@
 
 ## 已实现
 
-- **行情工作台**：紧凑行情表、排序、行业与自选筛选、CSV 导出、选中证券联动图表与风险指标；板块样本热力图、涨跌排行、历史行情横栏。
-- **终端导航**：固定工作区标签，Ctrl+K 全局证券搜索、键盘选择，Alt+1–5 切换工作区；支持窄屏横向表格与折叠菜单。
-- **个股研究**：日 K / 折线、MA20 / MA60（使用可见区间前的真实历史预热）、源成交量、1M–全历史切换、双股票共同日期归一比较、收益分布、2022–2026 年行情指标、数据质量。指标包括收益、波动、最大回撤、Sharpe、偏度、超额峰度。
-- **量化实验室**：等权、最小方差、均值—方差、MVSK、风险平价；2–10 个标的、权重上限、高阶矩偏好、多起点优化与收敛状态、相关性热力图、权重与分布。
-- **回测**：固定滚动估计窗口、滞后一整个收盘的信号、漂移持仓、交易费、同口径基准、净值与回撤、调仓审计、CSV 导出。
-- **研究档案**：PostgreSQL 保存完整参数和结果；浏览、删除、Markdown / JSON 导出和浏览器打印为 PDF。
+- **证券筛选**：股票/ADR/ETF、行业、自选、数值条件；20项可选指标列、顺序、排序、紧凑行高和浏览器保存显示配置。
+- **曲线与指标**：价格、累计收益、回撤、滚动波动；MA、BOLL、MACD、RSI、成交量；缩放、悬浮与PNG下载。
+- **证券分析**：双证券共同日期比较、年度行情指标、收益分布、数据质量。
+- **组合优化**：等权、最小方差、均值—方差、MVSK、风险平价；权重约束、相关性与收敛信息。
+- **策略回测**：滚动窗口、信号延迟、权重漂移与交易成本；对照净值、回撤、调仓审计和CSV。
+- **数据中心**：历史OHLCV分页查询、单只/多只/组合成分CSV或JSON下载、可选技术指标、来源审计、API与OpenAPI。
+- **报告管理**：PostgreSQL保存完整参数和结果，查询、删除、JSON/Markdown导出与打印。
 - 清楚区分加载、错误、空数据、计算中、就绪、求解失败回退；支持手机布局。
 
 [下载 APERTURE.zip](https://github.com/linzhefeng24/Applepie/raw/refs/heads/main/downloads/APERTURE.zip)（不包含原 C++ 工程和课件）。
@@ -125,7 +126,7 @@ cd frontend && npm run test:e2e
 
 ```bash
 # 从项目目录启动，并临时覆盖端口（也可以写入 .env）
-MARKET_PORT=8201 PORTFOLIO_PORT=8202 ANALYSIS_PORT=8203 QUANT_PORT=8204 FRONTEND_PORT=4273 bash scripts/start-services.sh
+MARKET_PORT=8201 WATCHLIST_PORT=8202 OPTIMIZATION_PORT=8203 QUANT_PORT=8204 BACKTEST_PORT=8205 HISTORY_PORT=8206 STATISTICS_PORT=8207 REPORTS_PORT=8208 FRONTEND_PORT=4273 bash scripts/start-services.sh
 ```
 
 可配置 `DATA_DIR`、`PG_DATA_DIR`、`PG_BIN`、`PG_SHARE`、`PG_SOCKET_DIR`、`DB_HOST/PORT/NAME/USER/PASSWORD`、各服务端口与 `MARKET_URL/QUANT_URL`。端口是可覆盖的默认值，不是必须占用的固定端口。更改运行服务的配置前，先使用原配置停止进程。
@@ -171,3 +172,10 @@ python3 scripts/package-release.py
 如果旧版本卡在 `getting org.scala-sbt sbt`，先查看 `.run/compile.log`。出现 Maven `Connection timed out` 时，可使用含运行包的正式下载 ZIP 覆盖代码；保留 `.env`、`.venv`、`.tools` 和数据库。新版普通启动不会重新走 sbt 下载。
 
 Python 引导直接下载并校验原生 uv 工具，通过 uv 创建环境和安装依赖，不调用旧环境的 pip。旧 `uv-bootstrap` 即使缺少 `pip._vendor.packaging` 也不会阻塞启动；损坏的项目 Python 环境会保留备份后重建，依赖导入失败会自动重装一次。
+
+
+## 服务与课程规范
+
+七个独立 Scala 服务（证券目录、历史行情、统计、自选、报告、组合优化、回测）加一个 Python 数值服务；各自端口、日志、路由和消息文件。所有业务 API 采用 Cats Effect IO 的 plan(connection)，SQL 仅在所属 Table。详见 [课程与示例对照](docs/COURSE-ALIGNMENT.md)、[API](docs/API.md)、[功能范围与参考](docs/FEATURES.md)。
+
+本次服务拆分需要使用完整安装包，旧启动小补丁不适用于新拓扑。升级前在旧目录 `bash run.sh stop`，然后将完整包解压到干净目录启动，避免残留旧源码参与运行包指纹校验。WSL 工具与 Python 依赖缓存仍可复用。

@@ -5,7 +5,15 @@ import { readConfig } from "./config";
 export default defineConfig(({ mode }) => {
   const cfg = readConfig(mode);
   const proxy = Object.fromEntries(
-    ["market", "portfolio", "analysis"].map((service) => [
+    [
+      "market",
+      "history",
+      "statistics",
+      "watchlist",
+      "reports",
+      "optimization",
+      "backtest",
+    ].map((service) => [
       `/api/${service}`,
       {
         target:

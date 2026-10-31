@@ -24,6 +24,11 @@ def read_settings(root=ROOT,environ=None):
             values[key]=' '.join(parts);file_keys.add(key)
     environment=dict(os.environ if environ is None else environ)
     values.update(environment)
+    # Preserve old explicit port overrides when upgrading from the three-service layout.
+    for new,old in [('WATCHLIST','PORTFOLIO'),('OPTIMIZATION','ANALYSIS')]:
+        for suffix in ['_PORT','_URL']:
+            if new+suffix not in file_keys and new+suffix not in environment and (old+suffix in file_keys or old+suffix in environment):
+                values[new+suffix]=values[old+suffix]
     # PostgreSQL cannot use default Windows-drive permissions. Keep WSL database state on Linux.
     explicit_pg_data='PG_DATA_DIR' in file_keys or 'PG_DATA_DIR' in environment
     if not explicit_pg_data and windows_drive_project(root,environment):
@@ -45,7 +50,7 @@ def read_settings(root=ROOT,environ=None):
             if pgconfig.exists():values['PG_SHARE']=subprocess.check_output([str(pgconfig),'--sharedir'],text=True).strip()
     elif values['PG_SHARE']:values['PG_SHARE']=str((root/values['PG_SHARE']).resolve())
     values['PG_SOCKET_DIR']=str((root/values['PG_SOCKET_DIR']).resolve()) if values.get('PG_SOCKET_DIR') else str(Path(tempfile.gettempdir())/('aperture-pg-'+hashlib.sha256(str(root).encode()).hexdigest()[:12]))
-    for service in ['MARKET','PORTFOLIO','ANALYSIS','QUANT']:
+    for service in ['MARKET','HISTORY','STATISTICS','WATCHLIST','REPORTS','OPTIMIZATION','BACKTEST','QUANT']:
         values.setdefault(service+'_URL',f"http://{values['SERVICE_HOST']}:{values[service+'_PORT']}")
     values.setdefault('FRONTEND_URL',f"http://{values['FRONTEND_HOST']}:{values['FRONTEND_PORT']}")
     venv=values.get('APERTURE_VENV_DIR')
@@ -63,7 +68,7 @@ if __name__=='__main__':
     import sys
     cfg=read_settings()
     # Emit only application keys, not unrelated inherited credentials or process environment.
-    keys=set(json.loads((ROOT/'config/defaults.json').read_text()))|{'DB_PASSWORD','MARKET_URL','PORTFOLIO_URL','ANALYSIS_URL','QUANT_URL','FRONTEND_URL','PYTHON_BIN'}
+    keys=set(json.loads((ROOT/'config/defaults.json').read_text()))|{'DB_PASSWORD','MARKET_URL','HISTORY_URL','STATISTICS_URL','WATCHLIST_URL','REPORTS_URL','OPTIMIZATION_URL','BACKTEST_URL','QUANT_URL','FRONTEND_URL','PYTHON_BIN'}
     if sys.argv[1:] == ['--shell']:
         print('\n'.join('export '+k+'='+shlex.quote(cfg[k]) for k in sorted(keys) if k in cfg))
     else:raise SystemExit('Use --shell only inside eval; do not print settings containing credentials.')

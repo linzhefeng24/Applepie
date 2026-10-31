@@ -68,6 +68,7 @@ export function PricePanel({
         label="历史价格与股票比较"
         height={315}
         option={priceChart(visible, comparison, mode, averages, data.bars)}
+        exportName={`aperture-${data.stock.symbol}-price`}
       />
     </Panel>
   );

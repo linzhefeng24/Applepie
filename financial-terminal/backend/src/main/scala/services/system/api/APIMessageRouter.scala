@@ -7,16 +7,16 @@ import org.http4s.circe.*
 import org.http4s.dsl.io.*
 import services.system.Database
 object APIMessageRouter:
-  final case class Registration(name: String, execute: Json => IO[Json])
-  def register[M <: APIMessage[A]: Decoder, A: Encoder](name: String): Registration =
-    Registration(
+  def register[M <: APIMessage[A]: Decoder, A: Encoder](name: String): APIRegistration =
+    APIRegistration(
       name.stripSuffix("Message").toLowerCase,
       json =>
         IO.fromEither(json.as[M].left.map(e => new IllegalArgumentException(e.getMessage)))
           .flatMap(message => Database.transaction(message.plan))
           .map(_.asJson)
     )
-  def routes(service: String, entries: List[Registration]): HttpRoutes[IO] = HttpRoutes.of[IO] {
+  def routes(service: String, entries: List[APIRegistration]): HttpRoutes[IO] = HttpRoutes.of[IO] {
+    case GET -> Root / "api" / `service` / "openapi.json" => Ok(OpenApi.document(service, entries))
     case GET -> Root / "health" =>
       Database
         .transaction(c =>
