@@ -109,3 +109,14 @@ uv 引导安装与 quant/requirements.txt 依赖安装统一通过同一入口�
 在含空格和括号的新目录中测试正式运行包，故意阻止 Maven curl 下载、将 sbt 编译入口设为立即失败，并确保没有 sbt launcher：`bash run.sh` 成功启动；全部真实 API/数值/优化/回测/报告检查通过；Chromium 的 2 项完整用户流程也通过。最后再次验证每次启动的 JAR 校验与重启流程。测试复用了已安装的 Java/Node/Python/PostgreSQL 工具，未把它声称为在另一台原生 WSL 上验证。
 
 新增 6 项运行包回归测试，覆盖打包与顺序、带空格目录搬移、源码变更、损坏 JAR、缺失清单及路径逃逸拒绝；最新合计 33 项单元测试通过。发布包中的完整源码没有移除。GitHub 自动源码 ZIP 不含生成的运行包，用户应选择正式 APERTURE.zip。
+
+
+## 损坏 pip 引导恢复与 WSL Linux 缓存
+
+不再依赖旧 uv-bootstrap 的 pip：标准库通过官方 PyPI HTTPS 元数据下载固定版本 uv wheel，验证 SHA256 后提取指定的原生 ELF 文件；每次复用也校验二进制。uv 直接创建兼容 Python 环境并安装依赖。WSL 的 Windows 盘项目将运行时和 Python 环境放在 Linux 用户目录，项目依赖环境按 requirements 内容复用，显式路径配置仍受尊重。
+
+37 项单元测试通过，新增原生工具下载校验、损坏缓存重新获取、错误校验和拒绝、uv 不调用目标 Python 的 pip、哈希策略保留、WSL 环境目录及覆盖设置检查。额外实际测试损坏项目虚拟环境：保留备份并创建新的可用环境。
+
+Ubuntu 26.04 容器中模拟 WSL 和 `/mnt/d/Downloads/APERTURE (3)/APERTURE` 路径，预先创建 Python 3.14 引导环境并删除 pip 的 packaging，确认复现用户同样的 ModuleNotFoundError。新版成功绕过它，安装独立 Python 3.12、依赖、数据库并构建启动全部服务；37 项测试和真实 API（五种优化方法、四种滚动回测、报告持久化等）通过，停止成功，容器退出码 0。还保留了错误 Docker 源及全局私有 pip/npm 源，安装没有修改这些配置。本测试模拟 WSL 路径选择，没有声称在原生 Windows NTFS 上验证。
+
+提供仅包含启动脚本、配置及说明的 APERTURE-startup-fix.zip，可覆盖旧下载目录，保留 .env、数据库和 backend/runtime。完整 APERTURE.zip 同步更新。

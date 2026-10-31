@@ -92,7 +92,7 @@ npm --prefix frontend run build   # 前端生产构建
 重新从原始包生成：
 
 ```bash
-.venv/bin/python scripts/prepare_data.py --archive data/raw/part1.zip
+python3 scripts/run-python.py scripts/prepare_data.py --archive data/raw/part1.zip
 python3 scripts/check-data.py
 ```
 
@@ -101,8 +101,8 @@ python3 scripts/check-data.py
 服务启动后：
 
 ```bash
-OPENBLAS_NUM_THREADS=1 .venv/bin/python -m unittest discover -s quant/tests -v
-OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/verify-api.py
+OPENBLAS_NUM_THREADS=1 python3 scripts/run-python.py -m unittest discover -s quant/tests -v
+OPENBLAS_NUM_THREADS=1 python3 scripts/run-python.py scripts/verify-api.py
 npm --prefix frontend run typecheck
 npm --prefix frontend run build
 cd frontend && npm run test:e2e
@@ -129,7 +129,7 @@ MARKET_PORT=8201 PORTFOLIO_PORT=8202 ANALYSIS_PORT=8203 QUANT_PORT=8204 FRONTEND
 
 已有 PostgreSQL：在 `.env` 设置 `MANAGE_POSTGRES=false` 和数据库连接信息，提前建立空数据库并授予表创建权限；脚本将验证连接，且不会启动、停止或初始化外部 PostgreSQL。需要非默认 PostgreSQL 安装位置时设置 `PG_BIN`；启动脚本自动定位已下载包内的可执行文件，不绑定版本目录。
 
-搬移已经安装过的项目之前先停止服务。启动时会检查 Java classpath 的生成位置，位置变化或依赖失效时自动重建；这类绝对路径只存在于忽略的运行缓存。Python 虚拟环境本身不保证可搬移，请在新目录重新执行 setup（需要时先移除旧 `.venv` 后重建）。
+搬移已经安装过的项目之前先停止服务。启动时会检查 Java classpath 的生成位置，位置变化或依赖失效时自动重建；这类绝对路径只存在于忽略的运行缓存。Python 虚拟环境本身不保证可搬移。WSL 中位于 `/mnt/c`、`/mnt/d` 等 Windows 盘的项目，会自动将工具放入 Linux 用户目录 `~/.local/share/aperture/runtimes`，将 Python 环境放入 `~/.cache/aperture/venvs`；重复解压的相同依赖版本可以复用这些缓存。可通过 `APERTURE_RUNTIME_DIR`、`APERTURE_VENV_DIR` 覆盖位置。
 
 浏览器测试优先使用 `CHROMIUM_PATH`，其次搜索 PATH，最后使用 Playwright 自己安装的 Chromium，不依赖 `/usr/bin/chromium`。
 
@@ -166,3 +166,5 @@ python3 scripts/package-release.py
 ```
 
 如果旧版本卡在 `getting org.scala-sbt sbt`，先查看 `.run/compile.log`。出现 Maven `Connection timed out` 时，可使用含运行包的正式下载 ZIP 覆盖代码；保留 `.env`、`.venv`、`.tools` 和数据库。新版普通启动不会重新走 sbt 下载。
+
+Python 引导直接下载并校验原生 uv 工具，通过 uv 创建环境和安装依赖，不调用旧环境的 pip。旧 `uv-bootstrap` 即使缺少 `pip._vendor.packaging` 也不会阻塞启动；损坏的项目 Python 环境会保留备份后重建，依赖导入失败会自动重装一次。

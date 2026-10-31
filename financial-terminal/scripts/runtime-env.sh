@@ -1,5 +1,13 @@
-# Project-local tools are activated only for this launcher and its child processes.
-APERTURE_RUNTIME_DIR="$ROOT/.tools/runtimes"
+# Keep WSL unpacked runtimes on Linux, not in Windows Downloads or copied virtualenvs.
+if [[ -z ${APERTURE_RUNTIME_DIR:-} ]]; then
+ if [[ -n ${WSL_DISTRO_NAME:-} && "$ROOT" =~ ^/mnt/[a-zA-Z]/ ]]; then
+  APERTURE_RUNTIME_DIR="${XDG_DATA_HOME:-$HOME/.local/share}/aperture/runtimes"
+ else
+  APERTURE_RUNTIME_DIR="$ROOT/.tools/runtimes"
+ fi
+fi
+[[ "$APERTURE_RUNTIME_DIR" == /* ]] || APERTURE_RUNTIME_DIR="$ROOT/$APERTURE_RUNTIME_DIR"
+export APERTURE_RUNTIME_DIR
 if [[ -x "$APERTURE_RUNTIME_DIR/java/bin/java" ]]; then
  export JAVA_HOME="$APERTURE_RUNTIME_DIR/java"
  export PATH="$JAVA_HOME/bin:$PATH"

@@ -46,14 +46,16 @@ EOF
 else
  echo '检测到可用的预编译 Scala 运行包，跳过 sbt/Maven 工具下载。'
 fi
-if [[ -d .venv ]] && ! .venv/bin/python -c 'import sys;sys.exit(0 if (3,12)<=sys.version_info[:2]<(3,14) else 1)' >/dev/null 2>&1; then
- backup="$ROOT/.run/venv-backup-$(date +%s)-$$"
- mv .venv "$backup"
- echo '检测到损坏或不兼容的旧虚拟环境，已保留在 .run/ 中并重新创建。'
-fi
-[[ -d .venv ]] || python3 -m venv .venv
+APERTURE_UV_BIN=$(python3 "$ROOT/scripts/bootstrap-uv.py")
+export APERTURE_UV_BIN
+python3 scripts/ensure-project-venv.py
 echo '[1/6] 安装 Python 数值计算依赖…'
 aperture_pip_install "$PYTHON_BIN" -r quant/requirements.txt
+if ! "$PYTHON_BIN" -c 'import numpy,scipy,pandas,pyarrow,psycopg' >/dev/null 2>&1; then
+ echo '检测到依赖文件缺失，正在重装固定版本依赖…'
+ APERTURE_REINSTALL=1 aperture_pip_install "$PYTHON_BIN" -r quant/requirements.txt
+ "$PYTHON_BIN" -c 'import numpy,scipy,pandas,pyarrow,psycopg'
+fi
 echo '[2/6] 初始化并验证数据库与精简行情数据…'
 if [[ "$MANAGE_POSTGRES" == true ]]; then
  fresh_cluster=false
@@ -90,5 +92,5 @@ scripts/build-backend.sh
 echo '[5/6] 构建前端页面…'
 npm --prefix frontend run build
 echo '[6/6] 执行数值与配置检查…'
-OPENBLAS_NUM_THREADS=1 .venv/bin/python -m unittest discover -s quant/tests -v
+OPENBLAS_NUM_THREADS=1 "$PYTHON_BIN" -m unittest discover -s quant/tests -v
 echo 'Setup complete. Start services with scripts/start-services.sh.'

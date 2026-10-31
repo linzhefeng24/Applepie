@@ -20,6 +20,12 @@ class ConfigurationTests(unittest.TestCase):
   binary=self.root/'.tools/pg/anything/version/bin';binary.mkdir(parents=True);(binary/'pg_ctl').touch();share=self.root/'.tools/pg/anything/share';share.mkdir();(share/'postgres.bki').touch();cfg=read_settings(self.root,environ={'PATH':''});self.assertEqual(cfg['PG_BIN'],str(binary));self.assertEqual(cfg['PG_SHARE'],str(share))
  def test_python_executable_preserves_venv_symlink_location(self):
   binary=self.root/'.venv/bin';binary.mkdir(parents=True);(binary/'python').symlink_to(sys.executable);cfg=read_settings(self.root,environ={'PATH':''});self.assertEqual(cfg['PYTHON_BIN'],str(binary/'python'))
+ def test_wsl_venv_uses_linux_cache_and_respects_override(self):
+  with patch('settings.windows_drive_project',return_value=True):
+   cfg=read_settings(self.root,environ={'PATH':'','XDG_CACHE_HOME':'/linux/cache'})
+   self.assertTrue(cfg['PYTHON_BIN'].startswith('/linux/cache/aperture/venvs/'))
+   cfg=read_settings(self.root,environ={'PATH':'','APERTURE_VENV_DIR':'custom env'})
+   self.assertEqual(cfg['PYTHON_BIN'],str(self.root/'custom env/bin/python'))
  def test_wsl_windows_drive_detection(self):
   self.assertTrue(windows_drive_project('/mnt/d/Downloads/APERTURE',{'WSL_DISTRO_NAME':'Ubuntu'}))
   self.assertFalse(windows_drive_project('/home/user/APERTURE',{'WSL_DISTRO_NAME':'Ubuntu'}))

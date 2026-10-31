@@ -71,25 +71,23 @@ aperture_bootstrap_runtime() {
  command -v xz >/dev/null || packages+=(xz-utils)
  command -v sha256sum >/dev/null || packages+=(coreutils)
  command -v setsid >/dev/null || packages+=(util-linux)
- command -v python3 >/dev/null || packages+=(python3 python3-venv)
+ command -v python3 >/dev/null || packages+=(python3)
  if ! aperture_java_ok && ! aperture_use_installed_java; then packages+=(openjdk-21-jdk-headless); fi
  if [[ ${#packages[@]} -gt 0 ]]; then aperture_apt_install "${packages[@]}"; fi
  if ! aperture_java_ok; then aperture_use_installed_java || { echo 'JDK 21 安装后仍不可用。请检查 apt 输出。'; return 1; }; fi
+ # uv is a verified native tool; a damaged pip bootstrap cannot prevent it from starting.
+ source "$ROOT/scripts/config.sh"
+ APERTURE_UV_BIN=$(python3 "$ROOT/scripts/bootstrap-uv.py")
+ export APERTURE_UV_BIN
  if ! aperture_python_ok; then
-  echo '当前 Python 与项目依赖不兼容，正在为本项目安装 Python 3.12（不替换系统 Python）…'
-  if ! python3 -c 'import venv,ensurepip' >/dev/null 2>&1; then aperture_apt_install python3-venv; fi
-  if [[ ! -x "$APERTURE_RUNTIME_DIR/uv-bootstrap/bin/python" ]]; then python3 -m venv "$APERTURE_RUNTIME_DIR/uv-bootstrap"; fi
-  source "$ROOT/scripts/config.sh"
-  aperture_pip_install "$APERTURE_RUNTIME_DIR/uv-bootstrap/bin/python" 'uv==0.9.27'
+  echo '正在准备项目专用 Python 3.12（不替换系统 Python，不使用旧 pip 环境）…'
   export UV_PYTHON_INSTALL_DIR="$APERTURE_RUNTIME_DIR/python-installs"
-  "$APERTURE_RUNTIME_DIR/uv-bootstrap/bin/uv" python install 3.12 --no-bin
+  "$APERTURE_UV_BIN" --no-config python install 3.12 --no-bin
   local python_binary
-  python_binary=$("$APERTURE_RUNTIME_DIR/uv-bootstrap/bin/uv" python find --managed-python 3.12)
+  python_binary=$("$APERTURE_UV_BIN" --no-config python find --managed-python 3.12)
   aperture_link "$(dirname "$(dirname "$python_binary")")" "$APERTURE_RUNTIME_DIR/python"
   source "$ROOT/scripts/runtime-env.sh"
  fi
- # A distro Python may exist without the separate venv/ensurepip package.
- if ! python3 -c 'import venv,ensurepip' >/dev/null 2>&1; then aperture_apt_install python3-venv; fi
  if ! aperture_node_ok; then
   echo '正在为本项目安装 Node 24（不替换系统 Node）…'
   local arch manifest checksum filename version directory archive
