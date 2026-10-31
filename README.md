@@ -34,11 +34,21 @@ bash run.sh help       # 查看说明
 
 服务在后台运行，关闭当前终端后仍继续运行。日志位于 `.run/`，安装失败会显示原因，不会误报启动成功。自选和报告保存在本地 PostgreSQL 中；重复启动不清空这些记录。
 
-### 基础环境
+### 自动准备基础环境
 
-脚本支持 **Linux / Windows WSL**。机器需要预先安装 **JDK 21+、Node 24+、Python 3.12+** 以及 curl 等常用命令；脚本会检查并明确指出缺少的工具。这里的一键启动包含项目依赖、构建和各服务启动，不承诺在没有任何开发工具的电脑上直接运行。
+在 Ubuntu 22.04/24.04（包括 Windows WSL）和 Debian 13 中，直接运行 `bash run.sh`。缺少基础工具时会自动处理：
 
-首次安装需要联网。PostgreSQL 优先使用 `PG_BIN` 指定或 PATH 中的安装；未找到时仅在 Debian 13 x86_64 自动下载经过哈希验证的项目内安装包。其他 Linux 环境请先安装 PostgreSQL 或在 `.env` 设置已有数据库连接，见 `.env.example`。自动下载的 Debian 二进制不作为跨平台发行包。脚本不需要创建 Git worktree。
+- Java 21 和 PostgreSQL：从发行版官方软件源安装，保留包签名验证。
+- Node：版本不足 24 时，从 Node 官方下载并校验 SHA256，安装到项目 `.tools/runtimes/`，不替换系统 Node。
+- Python：版本不足 3.12 时，通过固定版本 uv 安装项目专用 Python，不替换系统 Python；自动安装所需 venv 工具。
+
+安装系统包时可能提示 **sudo 密码**，输入你的 Linux 用户密码即可。请使用普通用户执行 `bash run.sh`，**不要使用 `sudo bash run.sh`**；PostgreSQL 不能以 root 运行。首次安装需要联网；如果没有 sudo 权限，脚本会说明缺少的权限，不能跳过系统权限要求。
+
+Scala 业务代码运行在 JVM 上，sbt 编译也需要 Java，因此安装 Java 是 Scala 工具链的一部分，并不要求编写 Java。
+
+在 WSL 中，如果项目位于 `/mnt/c`、`/mnt/d` 等 Windows 盘，默认会将 PostgreSQL 数据放在 Linux 用户的状态目录，并在私有 `.env` 中保留该位置，避免 Windows 文件权限导致数据库启动失败。已有 `.env` 中明确设置的 `PG_DATA_DIR` 会优先使用。
+
+使用已有数据库时可在 `.env` 设置 `MANAGE_POSTGRES=false` 和连接信息，自动安装逻辑会跳过 PostgreSQL 系统包。机器已有符合版本的工具时直接复用。不会修改你的 shell 配置文件或替换系统的 Node/Python。
 
 配置优先级是环境变量 > `.env` > `config/defaults.json`。首次管理本地数据库时自动生成口令，保存在被 Git 忽略的 `.env`；没有外部付费 API 密钥要求。
 

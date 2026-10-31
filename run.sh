@@ -12,7 +12,8 @@ APERTURE 金融终端
   bash run.sh setup     强制重新安装项目依赖并构建，再启动
   bash run.sh help      查看说明
 
-需要 Linux / WSL、JDK 21+、Node 24+、Python 3.12+。
+Ubuntu / Debian（含 WSL）会自动安装缺少的 Java、Node、Python、PostgreSQL。
+系统包安装可能提示 sudo 密码；不要使用 sudo bash run.sh。
 首次安装需要网络。自定义配置见 .env.example，日志在 .run/。
 EOF
 }
@@ -22,22 +23,14 @@ if [[ $# -gt 1 ]]; then usage; exit 2; fi
 if [[ "$(uname -s)" != Linux ]]; then
  echo '当前一键脚本支持 Linux。Windows 请在 WSL 终端运行；尚未适配原生 Windows/macOS。'; exit 1
 fi
-if ! command -v python3 >/dev/null; then echo '缺少 Python 3.12+，请先安装并确保 python3 在 PATH 中。'; exit 1; fi
-if [[ "$mode" == stop ]]; then bash scripts/stop-services.sh --database; exit; fi
-missing=0
-for tool in java node npm curl sha256sum setsid; do
- if ! command -v "$tool" >/dev/null; then echo "缺少基础工具：$tool"; missing=1; fi
-done
-[[ "$missing" == 0 ]] || { echo '请先安装 JDK 21+、Node 24+、Python 3.12+，然后再次运行同一个命令。'; exit 1; }
-python3 - <<'PY'
-import subprocess,re,sys
-if sys.version_info<(3,12):raise SystemExit('需要 Python 3.12+。')
-node=subprocess.check_output(['node','--version'],text=True)
-if int(node.lstrip('v').split('.')[0])<24:raise SystemExit('需要 Node 24+。')
-java=subprocess.run(['java','-version'],capture_output=True,text=True,check=True)
-match=re.search(r'version "(\d+)',java.stderr+java.stdout)
-if not match or int(match[1])<21:raise SystemExit('需要 JDK 21+。')
-PY
+source scripts/runtime-env.sh
+if [[ "$mode" == stop ]]; then
+ if ! command -v python3 >/dev/null; then echo '当前没有可用的 Python，无法读取进程记录；若从未启动过则无需停止。'; exit 1; fi
+ bash scripts/stop-services.sh --database; exit
+fi
+if [[ $EUID -eq 0 ]]; then echo '请使用普通用户运行 bash run.sh，不要使用 sudo bash run.sh；需要安装系统依赖时脚本会单独调用 sudo。'; exit 1; fi
+# Missing base tools are installed automatically; sudo itself handles any password prompt.
+source scripts/bootstrap-runtime.sh
 mkdir -p .run
 if [[ "$mode" == restart ]]; then bash scripts/stop-services.sh --database; fi
 # Do not reinstall for every launch. Invalidate on relocation or dependency changes.

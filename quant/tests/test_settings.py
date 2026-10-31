@@ -1,7 +1,8 @@
 import json,sys,tempfile,unittest
+from unittest.mock import patch
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[2]/'scripts'))
-from settings import ROOT,read_settings
+from settings import ROOT,read_settings,windows_drive_project
 class ConfigurationTests(unittest.TestCase):
  def setUp(self):
   self.temp=tempfile.TemporaryDirectory(prefix='aperture config ');self.root=Path(self.temp.name);(self.root/'config').mkdir();(self.root/'config/defaults.json').write_text((ROOT/'config/defaults.json').read_text())
@@ -19,4 +20,15 @@ class ConfigurationTests(unittest.TestCase):
   binary=self.root/'.tools/pg/anything/version/bin';binary.mkdir(parents=True);(binary/'pg_ctl').touch();share=self.root/'.tools/pg/anything/share';share.mkdir();(share/'postgres.bki').touch();cfg=read_settings(self.root,environ={'PATH':''});self.assertEqual(cfg['PG_BIN'],str(binary));self.assertEqual(cfg['PG_SHARE'],str(share))
  def test_python_executable_preserves_venv_symlink_location(self):
   binary=self.root/'.venv/bin';binary.mkdir(parents=True);(binary/'python').symlink_to(sys.executable);cfg=read_settings(self.root,environ={'PATH':''});self.assertEqual(cfg['PYTHON_BIN'],str(binary/'python'))
+ def test_wsl_windows_drive_detection(self):
+  self.assertTrue(windows_drive_project('/mnt/d/Downloads/APERTURE',{'WSL_DISTRO_NAME':'Ubuntu'}))
+  self.assertFalse(windows_drive_project('/home/user/APERTURE',{'WSL_DISTRO_NAME':'Ubuntu'}))
+  self.assertFalse(windows_drive_project('/mnt/d/Downloads/APERTURE',{}))
+ def test_wsl_default_database_uses_linux_state_and_respects_override(self):
+  with patch('settings.windows_drive_project',return_value=True):
+   cfg=read_settings(self.root,environ={'PATH':'','XDG_STATE_HOME':str(self.root/'linux-state')})
+   self.assertTrue(cfg['PG_DATA_DIR'].startswith(str(self.root/'linux-state/aperture')))
+   (self.root/'.env').write_text('PG_DATA_DIR="my explicit database"\n')
+   overridden=read_settings(self.root,environ={'PATH':'','XDG_STATE_HOME':str(self.root/'linux-state')})
+   self.assertEqual(overridden['PG_DATA_DIR'],str(self.root/'my explicit database'))
 if __name__=='__main__':unittest.main()
