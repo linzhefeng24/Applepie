@@ -1,0 +1,402 @@
+{
+  "release": "https://github.com/linzhefeng24/Applepie/releases/tag/data_v1",
+  "asset": "part1.zip",
+  "sha256": "3228a7935ab3b8fffa857c44cddf2795f6b37e76e965ab2787d364afd435a693",
+  "selection": "32 named US-listed equities/ADR and gold ETF from part1 only; part2/part3 not imported",
+  "frequency": "daily from all valid recorded minutes, not exchange consolidated official daily bars",
+  "timezone": "naive source timestamps; session date retained; timezone not verified",
+  "adjustment": "unknown; no corporate-action or dividend data supplied; price returns, not total returns",
+  "volume": "sum of source minute volume; source includes IEX, not whole-market volume",
+  "financials": "not supplied: revenue, ROE, PE, PB, dividends unavailable",
+  "aggregation": "stable chronological sort; duplicate timestamps keep last; discard nonfinite/nonpositive/inconsistent OHLC or negative volume; first open/max high/min low/last close/sum volume",
+  "survivorship": "curated teaching subset; not suitable for claims about unbiased whole-market strategy performance",
+  "symbols": 32,
+  "rows": 37247,
+  "audits": [
+    {
+      "symbol": "AAPL",
+      "rawMinutes": 438787,
+      "duplicates": 0,
+      "rejectedMinutes": 0,
+      "sources": [
+        "iex"
+      ],
+      "dailyRows": 1164,
+      "sessionsUnder300Minutes": 10,
+      "dailyMovesOver25Pct": 0
+    },
+    {
+      "symbol": "AMZN",
+      "rawMinutes": 438275,
+      "duplicates": 0,
+      "rejectedMinutes": 0,
+      "sources": [
+        "iex"
+      ],
+      "dailyRows": 1164,
+      "sessionsUnder300Minutes": 10,
+      "dailyMovesOver25Pct": 0
+    },
+    {
+      "symbol": "GOOG",
+      "rawMinutes": 430265,
+      "duplicates": 0,
+      "rejectedMinutes": 0,
+      "sources": [
+        "iex"
+      ],
+      "dailyRows": 1164,
+      "sessionsUnder300Minutes": 17,
+      "dailyMovesOver25Pct": 0
+    },
+    {
+      "symbol": "AMD",
+      "rawMinutes": 438491,
+      "duplicates": 0,
+      "rejectedMinutes": 0,
+      "sources": [
+        "iex"
+      ],
+      "dailyRows": 1164,
+      "sessionsUnder300Minutes": 10,
+      "dailyMovesOver25Pct": 0
+    },
+    {
+      "symbol": "ADBE",
+      "rawMinutes": 423250,
+      "duplicates": 0,
+      "rejectedMinutes": 0,
+      "sources": [
+        "iex"
+      ],
+      "dailyRows": 1164,
+      "sessionsUnder300Minutes": 13,
+      "dailyMovesOver25Pct": 0
+    },
+    {
+      "symbol": "AVGO",
+      "rawMinutes": 425208,
+      "duplicates": 0,
+      "rejectedMinutes": 0,
+      "sources": [
+        "iex"
+      ],
+      "dailyRows": 1164,
+      "sessionsUnder300Minutes": 16,
+      "dailyMovesOver25Pct": 0
+    },
+    {
+      "symbol": "ASML",
+      "rawMinutes": 356851,
+      "duplicates": 0,
+      "rejectedMinutes": 0,
+      "sources": [
+        "iex"
+      ],
+      "dailyRows": 1164,
+      "sessionsUnder300Minutes": 487,
+      "dailyMovesOver25Pct": 0
+    },
+    {
+      "symbol": "AMAT",
+      "rawMinutes": 428407,
+      "duplicates": 0,
+      "rejectedMinutes": 0,
+      "sources": [
+        "iex"
+      ],
+      "dailyRows": 1164,
+      "sessionsUnder300Minutes": 10,
+      "dailyMovesOver25Pct": 0
+    },
+    {
+      "symbol": "BAC",
+      "rawMinutes": 435403,
+      "duplicates": 0,
+      "rejectedMinutes": 0,
+      "sources": [
+        "iex"
+      ],
+      "dailyRows": 1163,
+      "sessionsUnder300Minutes": 11,
+      "dailyMovesOver25Pct": 0
+    },
+    {
+      "symbol": "C",
+      "rawMinutes": 433083,
+      "duplicates": 0,
+      "rejectedMinutes": 0,
+      "sources": [
+        "iex"
+      ],
+      "dailyRows": 1164,
+      "sessionsUnder300Minutes": 11,
+      "dailyMovesOver25Pct": 0
+    },
+    {
+      "symbol": "GS",
+      "rawMinutes": 400852,
+      "duplicates": 0,
+      "rejectedMinutes": 0,
+      "sources": [
+        "iex"
+      ],
+      "dailyRows": 1164,
+      "sessionsUnder300Minutes": 79,
+      "dailyMovesOver25Pct": 0
+    },
+    {
+      "symbol": "AXP",
+      "rawMinutes": 407148,
+      "duplicates": 0,
+      "rejectedMinutes": 0,
+      "sources": [
+        "iex"
+      ],
+      "dailyRows": 1164,
+      "sessionsUnder300Minutes": 47,
+      "dailyMovesOver25Pct": 0
+    },
+    {
+      "symbol": "BLK",
+      "rawMinutes": 351078,
+      "duplicates": 0,
+      "rejectedMinutes": 0,
+      "sources": [
+        "iex"
+      ],
+      "dailyRows": 1164,
+      "sessionsUnder300Minutes": 520,
+      "dailyMovesOver25Pct": 0
+    },
+    {
+      "symbol": "BRK-B",
+      "rawMinutes": 405603,
+      "duplicates": 0,
+      "rejectedMinutes": 0,
+      "sources": [
+        "iex"
+      ],
+      "dailyRows": 1164,
+      "sessionsUnder300Minutes": 53,
+      "dailyMovesOver25Pct": 0
+    },
+    {
+      "symbol": "ABBV",
+      "rawMinutes": 418109,
+      "duplicates": 0,
+      "rejectedMinutes": 0,
+      "sources": [
+        "iex"
+      ],
+      "dailyRows": 1164,
+      "sessionsUnder300Minutes": 14,
+      "dailyMovesOver25Pct": 0
+    },
+    {
+      "symbol": "ABT",
+      "rawMinutes": 419255,
+      "duplicates": 0,
+      "rejectedMinutes": 0,
+      "sources": [
+        "iex"
+      ],
+      "dailyRows": 1164,
+      "sessionsUnder300Minutes": 21,
+      "dailyMovesOver25Pct": 0
+    },
+    {
+      "symbol": "AMGN",
+      "rawMinutes": 395873,
+      "duplicates": 0,
+      "rejectedMinutes": 0,
+      "sources": [
+        "iex"
+      ],
+      "dailyRows": 1164,
+      "sessionsUnder300Minutes": 96,
+      "dailyMovesOver25Pct": 0
+    },
+    {
+      "symbol": "GILD",
+      "rawMinutes": 420188,
+      "duplicates": 0,
+      "rejectedMinutes": 0,
+      "sources": [
+        "iex"
+      ],
+      "dailyRows": 1164,
+      "sessionsUnder300Minutes": 19,
+      "dailyMovesOver25Pct": 0
+    },
+    {
+      "symbol": "CVX",
+      "rawMinutes": 429314,
+      "duplicates": 0,
+      "rejectedMinutes": 0,
+      "sources": [
+        "iex"
+      ],
+      "dailyRows": 1164,
+      "sessionsUnder300Minutes": 11,
+      "dailyMovesOver25Pct": 0
+    },
+    {
+      "symbol": "COP",
+      "rawMinutes": 424879,
+      "duplicates": 0,
+      "rejectedMinutes": 0,
+      "sources": [
+        "iex"
+      ],
+      "dailyRows": 1164,
+      "sessionsUnder300Minutes": 17,
+      "dailyMovesOver25Pct": 0
+    },
+    {
+      "symbol": "BP",
+      "rawMinutes": 399006,
+      "duplicates": 0,
+      "rejectedMinutes": 0,
+      "sources": [
+        "iex"
+      ],
+      "dailyRows": 1164,
+      "sessionsUnder300Minutes": 124,
+      "dailyMovesOver25Pct": 0
+    },
+    {
+      "symbol": "COST",
+      "rawMinutes": 400759,
+      "duplicates": 0,
+      "rejectedMinutes": 0,
+      "sources": [
+        "iex"
+      ],
+      "dailyRows": 1164,
+      "sessionsUnder300Minutes": 59,
+      "dailyMovesOver25Pct": 0
+    },
+    {
+      "symbol": "HD",
+      "rawMinutes": 419998,
+      "duplicates": 0,
+      "rejectedMinutes": 0,
+      "sources": [
+        "iex"
+      ],
+      "dailyRows": 1164,
+      "sessionsUnder300Minutes": 14,
+      "dailyMovesOver25Pct": 0
+    },
+    {
+      "symbol": "DIS",
+      "rawMinutes": 431318,
+      "duplicates": 0,
+      "rejectedMinutes": 0,
+      "sources": [
+        "iex"
+      ],
+      "dailyRows": 1164,
+      "sessionsUnder300Minutes": 11,
+      "dailyMovesOver25Pct": 0
+    },
+    {
+      "symbol": "CAT",
+      "rawMinutes": 405074,
+      "duplicates": 0,
+      "rejectedMinutes": 0,
+      "sources": [
+        "iex"
+      ],
+      "dailyRows": 1164,
+      "sessionsUnder300Minutes": 46,
+      "dailyMovesOver25Pct": 0
+    },
+    {
+      "symbol": "GE",
+      "rawMinutes": 416562,
+      "duplicates": 0,
+      "rejectedMinutes": 0,
+      "sources": [
+        "iex"
+      ],
+      "dailyRows": 1164,
+      "sessionsUnder300Minutes": 44,
+      "dailyMovesOver25Pct": 0
+    },
+    {
+      "symbol": "BA",
+      "rawMinutes": 416965,
+      "duplicates": 0,
+      "rejectedMinutes": 0,
+      "sources": [
+        "iex"
+      ],
+      "dailyRows": 1164,
+      "sessionsUnder300Minutes": 28,
+      "dailyMovesOver25Pct": 0
+    },
+    {
+      "symbol": "F",
+      "rawMinutes": 415025,
+      "duplicates": 0,
+      "rejectedMinutes": 0,
+      "sources": [
+        "iex"
+      ],
+      "dailyRows": 1164,
+      "sessionsUnder300Minutes": 25,
+      "dailyMovesOver25Pct": 0
+    },
+    {
+      "symbol": "GM",
+      "rawMinutes": 431445,
+      "duplicates": 0,
+      "rejectedMinutes": 0,
+      "sources": [
+        "iex"
+      ],
+      "dailyRows": 1164,
+      "sessionsUnder300Minutes": 10,
+      "dailyMovesOver25Pct": 0
+    },
+    {
+      "symbol": "CRM",
+      "rawMinutes": 430764,
+      "duplicates": 0,
+      "rejectedMinutes": 0,
+      "sources": [
+        "iex"
+      ],
+      "dailyRows": 1164,
+      "sessionsUnder300Minutes": 12,
+      "dailyMovesOver25Pct": 0
+    },
+    {
+      "symbol": "CSCO",
+      "rawMinutes": 435686,
+      "duplicates": 0,
+      "rejectedMinutes": 0,
+      "sources": [
+        "iex"
+      ],
+      "dailyRows": 1164,
+      "sessionsUnder300Minutes": 10,
+      "dailyMovesOver25Pct": 0
+    },
+    {
+      "symbol": "GLD",
+      "rawMinutes": 316937,
+      "duplicates": 0,
+      "rejectedMinutes": 0,
+      "sources": [
+        "iex"
+      ],
+      "dailyRows": 1164,
+      "sessionsUnder300Minutes": 608,
+      "dailyMovesOver25Pct": 0
+    }
+  ],
+  "dailyCsvSha256": "fe3641307cbde22df7611dfbd8e552cfbac375c28efaf6a9ff2435a1e130e3c2"
+}

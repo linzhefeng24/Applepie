@@ -1,0 +1,322 @@
+[
+  {
+    "symbol": "AAPL",
+    "name": "Apple",
+    "sector": "科技",
+    "currency": "USD",
+    "firstDate": "2022-03-07",
+    "lastDate": "2026-10-23",
+    "sessions": 1164,
+    "source": "iex"
+  },
+  {
+    "symbol": "AMZN",
+    "name": "Amazon",
+    "sector": "消费",
+    "currency": "USD",
+    "firstDate": "2022-03-07",
+    "lastDate": "2026-10-23",
+    "sessions": 1164,
+    "source": "iex"
+  },
+  {
+    "symbol": "GOOG",
+    "name": "Alphabet",
+    "sector": "科技",
+    "currency": "USD",
+    "firstDate": "2022-03-07",
+    "lastDate": "2026-10-23",
+    "sessions": 1164,
+    "source": "iex"
+  },
+  {
+    "symbol": "AMD",
+    "name": "AMD",
+    "sector": "半导体",
+    "currency": "USD",
+    "firstDate": "2022-03-07",
+    "lastDate": "2026-10-23",
+    "sessions": 1164,
+    "source": "iex"
+  },
+  {
+    "symbol": "ADBE",
+    "name": "Adobe",
+    "sector": "软件",
+    "currency": "USD",
+    "firstDate": "2022-03-07",
+    "lastDate": "2026-10-23",
+    "sessions": 1164,
+    "source": "iex"
+  },
+  {
+    "symbol": "AVGO",
+    "name": "Broadcom",
+    "sector": "半导体",
+    "currency": "USD",
+    "firstDate": "2022-03-07",
+    "lastDate": "2026-10-23",
+    "sessions": 1164,
+    "source": "iex"
+  },
+  {
+    "symbol": "ASML",
+    "name": "ASML",
+    "sector": "半导体",
+    "currency": "USD",
+    "firstDate": "2022-03-07",
+    "lastDate": "2026-10-23",
+    "sessions": 1164,
+    "source": "iex"
+  },
+  {
+    "symbol": "AMAT",
+    "name": "Applied Materials",
+    "sector": "半导体",
+    "currency": "USD",
+    "firstDate": "2022-03-07",
+    "lastDate": "2026-10-23",
+    "sessions": 1164,
+    "source": "iex"
+  },
+  {
+    "symbol": "BAC",
+    "name": "Bank of America",
+    "sector": "金融",
+    "currency": "USD",
+    "firstDate": "2022-03-07",
+    "lastDate": "2026-10-23",
+    "sessions": 1163,
+    "source": "iex"
+  },
+  {
+    "symbol": "C",
+    "name": "Citigroup",
+    "sector": "金融",
+    "currency": "USD",
+    "firstDate": "2022-03-07",
+    "lastDate": "2026-10-23",
+    "sessions": 1164,
+    "source": "iex"
+  },
+  {
+    "symbol": "GS",
+    "name": "Goldman Sachs",
+    "sector": "金融",
+    "currency": "USD",
+    "firstDate": "2022-03-07",
+    "lastDate": "2026-10-23",
+    "sessions": 1164,
+    "source": "iex"
+  },
+  {
+    "symbol": "AXP",
+    "name": "American Express",
+    "sector": "金融",
+    "currency": "USD",
+    "firstDate": "2022-03-07",
+    "lastDate": "2026-10-23",
+    "sessions": 1164,
+    "source": "iex"
+  },
+  {
+    "symbol": "BLK",
+    "name": "BlackRock",
+    "sector": "金融",
+    "currency": "USD",
+    "firstDate": "2022-03-07",
+    "lastDate": "2026-10-23",
+    "sessions": 1164,
+    "source": "iex"
+  },
+  {
+    "symbol": "BRK-B",
+    "name": "Berkshire Hathaway B",
+    "sector": "金融",
+    "currency": "USD",
+    "firstDate": "2022-03-07",
+    "lastDate": "2026-10-23",
+    "sessions": 1164,
+    "source": "iex"
+  },
+  {
+    "symbol": "ABBV",
+    "name": "AbbVie",
+    "sector": "医疗",
+    "currency": "USD",
+    "firstDate": "2022-03-07",
+    "lastDate": "2026-10-23",
+    "sessions": 1164,
+    "source": "iex"
+  },
+  {
+    "symbol": "ABT",
+    "name": "Abbott",
+    "sector": "医疗",
+    "currency": "USD",
+    "firstDate": "2022-03-07",
+    "lastDate": "2026-10-23",
+    "sessions": 1164,
+    "source": "iex"
+  },
+  {
+    "symbol": "AMGN",
+    "name": "Amgen",
+    "sector": "医疗",
+    "currency": "USD",
+    "firstDate": "2022-03-07",
+    "lastDate": "2026-10-23",
+    "sessions": 1164,
+    "source": "iex"
+  },
+  {
+    "symbol": "GILD",
+    "name": "Gilead",
+    "sector": "医疗",
+    "currency": "USD",
+    "firstDate": "2022-03-07",
+    "lastDate": "2026-10-23",
+    "sessions": 1164,
+    "source": "iex"
+  },
+  {
+    "symbol": "CVX",
+    "name": "Chevron",
+    "sector": "能源",
+    "currency": "USD",
+    "firstDate": "2022-03-07",
+    "lastDate": "2026-10-23",
+    "sessions": 1164,
+    "source": "iex"
+  },
+  {
+    "symbol": "COP",
+    "name": "ConocoPhillips",
+    "sector": "能源",
+    "currency": "USD",
+    "firstDate": "2022-03-07",
+    "lastDate": "2026-10-23",
+    "sessions": 1164,
+    "source": "iex"
+  },
+  {
+    "symbol": "BP",
+    "name": "BP ADR",
+    "sector": "能源",
+    "currency": "USD",
+    "firstDate": "2022-03-07",
+    "lastDate": "2026-10-23",
+    "sessions": 1164,
+    "source": "iex"
+  },
+  {
+    "symbol": "COST",
+    "name": "Costco",
+    "sector": "消费",
+    "currency": "USD",
+    "firstDate": "2022-03-07",
+    "lastDate": "2026-10-23",
+    "sessions": 1164,
+    "source": "iex"
+  },
+  {
+    "symbol": "HD",
+    "name": "Home Depot",
+    "sector": "消费",
+    "currency": "USD",
+    "firstDate": "2022-03-07",
+    "lastDate": "2026-10-23",
+    "sessions": 1164,
+    "source": "iex"
+  },
+  {
+    "symbol": "DIS",
+    "name": "Disney",
+    "sector": "消费",
+    "currency": "USD",
+    "firstDate": "2022-03-07",
+    "lastDate": "2026-10-23",
+    "sessions": 1164,
+    "source": "iex"
+  },
+  {
+    "symbol": "CAT",
+    "name": "Caterpillar",
+    "sector": "工业",
+    "currency": "USD",
+    "firstDate": "2022-03-07",
+    "lastDate": "2026-10-23",
+    "sessions": 1164,
+    "source": "iex"
+  },
+  {
+    "symbol": "GE",
+    "name": "GE Aerospace",
+    "sector": "工业",
+    "currency": "USD",
+    "firstDate": "2022-03-07",
+    "lastDate": "2026-10-23",
+    "sessions": 1164,
+    "source": "iex"
+  },
+  {
+    "symbol": "BA",
+    "name": "Boeing",
+    "sector": "工业",
+    "currency": "USD",
+    "firstDate": "2022-03-07",
+    "lastDate": "2026-10-23",
+    "sessions": 1164,
+    "source": "iex"
+  },
+  {
+    "symbol": "F",
+    "name": "Ford",
+    "sector": "汽车",
+    "currency": "USD",
+    "firstDate": "2022-03-07",
+    "lastDate": "2026-10-23",
+    "sessions": 1164,
+    "source": "iex"
+  },
+  {
+    "symbol": "GM",
+    "name": "General Motors",
+    "sector": "汽车",
+    "currency": "USD",
+    "firstDate": "2022-03-07",
+    "lastDate": "2026-10-23",
+    "sessions": 1164,
+    "source": "iex"
+  },
+  {
+    "symbol": "CRM",
+    "name": "Salesforce",
+    "sector": "软件",
+    "currency": "USD",
+    "firstDate": "2022-03-07",
+    "lastDate": "2026-10-23",
+    "sessions": 1164,
+    "source": "iex"
+  },
+  {
+    "symbol": "CSCO",
+    "name": "Cisco",
+    "sector": "科技",
+    "currency": "USD",
+    "firstDate": "2022-03-07",
+    "lastDate": "2026-10-23",
+    "sessions": 1164,
+    "source": "iex"
+  },
+  {
+    "symbol": "GLD",
+    "name": "SPDR Gold Shares",
+    "sector": "黄金ETF",
+    "currency": "USD",
+    "firstDate": "2022-03-07",
+    "lastDate": "2026-10-23",
+    "sessions": 1164,
+    "source": "iex"
+  }
+]

@@ -1,0 +1,593 @@
+--- Slide 1 ---
+无代码零基础软件制作
+袁洋
+
+--- Slide 2 ---
+通知
+补退选的同学可以通过特殊原因选课再选一下
+目前还有
+14
+个名额，
+5
+个同学等待
+VPN
+、
+GPT
+账户我们下周一统一发放
+GPT
+账户怎么注册一会说
+
+--- Slide 3 ---
+环境配置
+
+--- Slide 4 ---
+配置环境
+推荐使用
+windows+wsl
+如果你使用别的系统，那么请你自己探索
+Intellij
+Webstorm
+Vpn
+Plugins: scala
+Git
+NodeJS, 
+npm
+postgresql
+
+--- Slide 5 ---
+Windows
+请使用英文用户名
+如果你不小心使用了中文用户名，可以再创建一个英文用户
+课程结束之后删掉即可
+不要使用中文目录名，推荐类似：
+C:\zerocode\projectA
+非常重要！
+
+--- Slide 6 ---
+安装
+WSL
+打开
+powershell
+管理员身份
+按任意键即可安装
+再次输入
+wsl
+，即可进入
+linux
+
+--- Slide 7 ---
+安装
+ 
+intellij
+你可以用
+ 
+XXX@thu.edu.cn
+ 
+获取
+ultimate
+版本
+但是免费版完全够用
+
+--- Slide 8 ---
+安装
+ 
+Webstorm
+Webstorm
+ 
+是免费的
+你也可以使用
+vscode
+我更喜欢
+webstorm
+看前端代码
+
+--- Slide 9 ---
+VPN
+下载清华云中的
+wireguard-amd64-0.5.3.msi
+双击安装
+打开
+wireguard
+点击新建隧道
+选择我们发的
+vpn
+文件即可
+请确保使用时你可以上网，并且没有打开其他的
+VPN
+连接之后，就可以上
+google
+和
+chatgpt
+
+--- Slide 10 ---
+安装
+ 
+sbt
+打开
+ 
+Intellij
+, 
+点
+new project
+选择
+ empty project
+Setting-> Plugins -> Scala
+
+--- Slide 11 ---
+安装
+ git
+安装
+ git
+推荐默认配置
+
+--- Slide 12 ---
+创建一个空的
+Scala
+项目
+File -> New -> Project
+选择
+ Scala
+Location 
+不要有
+中文
+路径
+Sbt
+Openjdk-22
+Sbt
+ 1.10.0
+Scala 3.4.2
+或者选一个别的
+Scala 3.XX
+的版本也可以
+
+--- Slide 13 ---
+安装
+ 
+sbt
+你可能需要下载
+Scala SDK 3.4.2
+Import 
+sbt
+ project 
+会需要开
+VPN, 
+而且如果你的
+VPN
+不给力，可能需要等几个小时
+
+--- Slide 14 ---
+试着跑一下
+ hello world!
+如果你找不到绿箭头，那么把
+Intellij
+关掉
+删掉
+.idea
+文件夹，再打开
+Intellij
+如果你还有问题，推荐删除
+ c:/Users/xxxx/AppData/Local/Coursier/cache/v1/, 
+然后重新安装
+ SBT
+
+--- Slide 15 ---
+安装
+postgresql
+Postgresql
+最新版本 
+18.6
+然后运行
+pgadmin4
+
+--- Slide 16 ---
+注册
+GPT
+首先，注册一个
+163
+邮箱，可以使用手机注册
+然后，使用
+VPN
+登录
+chat.openai.com
+使用你的
+163
+邮箱注册新的账户
+注册成功之后，助教会集中获取
+session token
+https://chatgpt.com/api/auth/session
+把账户所有信息提供给代充（
+危险！！
+）
+
+--- Slide 17 ---
+安装
+codex
+Windows
+桌面版
+https://chatgpt.com/zh-Hans-CN/download/
+下载安装即可
+Linux
+版本
+进入
+wsl
+输入： 
+curl –
+fsSL
+ 
+https://chatgpt.com/codex/install.sh
+ | 
+sh
+然后输入
+codex
+即可运行
+
+--- Slide 18 ---
+前端
+
+--- Slide 19 ---
+前端
+ 
+推荐安装
+ 
+nodejs
+  24
+
+--- Slide 20 ---
+常见问题
+如果你有任何问题，请你尝试问
+GPT
+，或者
+Kimi, 
+Deepseek
+, GLM
+等模型
+例如，如何运行后端系统？如何运行前端系统？
+让模型帮你干就好了
+
+--- Slide 21 ---
+常见问题
+后端如果你有很多微服务，一次打开一个，不要一次打开很多个
+项目分析会失效
+
+--- Slide 22 ---
+代码语言简介
+
+--- Slide 23 ---
+前端和后端
+前端
+: typescript + react
+主要关注数据的展示
+Css
+风格，人机交互等等
+有“时间线”的概念
+后端
+: scala
+关注纯函数
+没有“脏东西”
+没有脏东西是不可能的！看怎么包装和处理
+分布式计算
+不同的优化对象
+
+--- Slide 24 ---
+签到：黑板上写的是什么？
+A
+B
+A
+B
+提交
+C
+C
+D
+D
+单选题
+1
+分
+
+--- Slide 25 ---
+请填写你的学号，例如：
+2025XXXXXX 
+[
+填空
+1]
+ 
+作答
+填空题
+1
+分
+
+--- Slide 26 ---
+Scala
+
+--- Slide 27 ---
+Scala 3 
+入门
+Scala 
+是一种非常强大、优美的语言
+支持各种各样的风格，比如
+C
+风格、函数式、面向对象等等
+官方网站：
+https://www.scala-lang.org/
+我只教我认为最好的风格
+最适合
+AI
+来写
+最适合人类来检查
+衣柜收纳学
+
+--- Slide 28 ---
+声明式编程
+只关心你
+要什么
+，不关心
+怎么实现
+贯穿全项目的理念，从代码每行怎么写，到项目如何组织
+和代码怎么写没关系，和表达方式有关系
+看不太懂没关系，一张白纸好作画
+
+--- Slide 29 ---
+val
+ 
+和
+ var
+val
+: value, 
+值，不可变
+var: variable
+，变量，可变
+在我们的系统中，不要使用变量！
+因为没有变量，所以你的代码会更容易理解，不会出错
+“
+事件溯源
+”
+类型的想法，保留中间的每个步骤
+value1
+value2value3value4
+而不是：
+value
+valuevaluevalue
+变量是洪水猛兽，千万不要用
+
+--- Slide 30 ---
+基础类型
+val
+ x: Int =1  //
+显式定义类型
+val
+ x = 1   //
+隐式定义类型，编译器算出类型
+val
+ x = 1000L // 
+val
+ x: Long = 1000
+val
+ y = 2.2D   // 
+val
+ y: Double = 2.2
+val
+ z = 3.3F    // 
+val
+ z: Float = 3.3
+val
+ quote= """
+这是一个字符串
+                         可以换行写，只要你用三个引号包起来就行了
+"""
+
+--- Slide 31 ---
+For 
+循环
+我们不准使用
+for 
+循环，为什么？
+使用 
+map/
+flatMap
+/filter
+更好
+顺便提一句：什么是一个
+collection
+（数据包袱）？
+
+--- Slide 32 ---
+.map
+val
+ a= List(1,2,3).map(
+i
+ => 
+i
+*2)    //
+ 
+List(2,4,6)
+val
+ b= List(1,2,3).map(_ * 2
+）      
+// List(2,4,6)
+val
+ 
+nums
+ = (1 to 10).
+toList
+           //List(1,2,3,4,5,6,7,8,9,10)
+Val x=
+nums.filter
+(_ > 3).filter(_ < 7).map(_ * 10)
+// 
+结果： 
+x
+是 
+List(40, 50, 60)
+还有另一种
+Map[String, Int]
+映射表：例如，姓名 
+-> 
+选了多少课
+
+--- Slide 33 ---
+Flatmap
+和
+Flatten
+等
+flatMap
+=
+map+flatten
+val
+ 
+a=
+ 
+List(10,
+ 
+20,
+ 
+30,
+ 
+40,
+ 
+10)
+ 
+  // List(10,
+ 
+20,
+ 
+30,
+ 
+40,
+ 
+10)
+ 
+a.drop
+(2)                                  // List(30, 40, 10)
+a.dropWhile
+(_ < 25)                 // List(30, 40, 10)
+a.filter
+(_ < 25)                          // List(10, 20, 10)
+a.slice
+(2,4)                               // List(30, 40)
+a.tail
+                                        // List(20, 30, 40, 10)
+a.take
+(3)                                  // List(10, 20, 30)
+a.takeWhile
+(_ < 30)                 // List(10, 20)
+val
+ a = List(List(1,2), List(3,4))  
+a.flatten
+                                  // List(1,2,3,4)
+val
+ 
+nums
+=List(“one”, “two”)  
+nums.map
+(_.
+toUpperCase
+)     // List(“ONE”, “TWO”)
+nums.flatMap
+(_.
+toUpperCase
+) // List(‘O’, ‘N’, ‘E’, ‘T’, 
+‘
+W’,
+ 
+‘O’)
+
+--- Slide 34 ---
+函数是第一公民，可以被当做参数使用
+例如，如果你定义了一个函数：
+def double(
+i
+: Int) : Int = 
+i
+*2
+那你可以把这个函数当做一个东西，传给别人：
+val
+ x = 
+ints.map
+(double)
+即：
+ints
+中的每个数，都会被当做输入参数传给
+double
+函数，然后返回的结果成为新的数据包袱中的一员，合并成
+x
+
+--- Slide 35 ---
+第一次作业操作流程介绍
+打开
+codex
+，按照如下顺序要求：
+设计
+IP
+
+选一个
+IP
+用
+image-gen
+画个图
+
+修改图片背景
+
+使用即梦做一个视频，首尾相连
+
+做一个小软件（
+2
+个页面）
+
+把视频嵌入到软件的首页
+我想要做一个心情日记本。但是我想要先设计一个可爱的卡通形象，作为我的
+IP
+。你帮我想想，有什么好的卡通形象呢？先帮我用文字设计一下
+我想要慢慢。那么，下面请你使用
+image-gen
+帮我生成一张慢慢的照片吧
+非常好！我下面想要给慢慢的这个图片加一个好看的背景，之后用于做一个
+5
+秒的动态视频，请你帮我用
+image-gen
+加上这个背景吧
+很好，下面请你围绕这个图片，生成一个
+5
+秒的，给
+kling-video-v3
+的提示词，具体到每一秒是什么，要求首尾帧一致。我已经把老师给我的模型如何调用的方案
+tokenhub_student_quickstart.txt
+放入了当前的文件夹，请你参考这个方案，调用
+kling-video-v3
+帮我生成视频。助教已经把腾讯云的
+key
+给我了，为了保证
+key
+的安全，请你假设它已经写入到了
+某个配置文件中，之后我会填入的。
+非常好。我想要做一个简单的纯前端的
+react+typescript
+项目，就是关于这个日记本的，请你先围绕慢慢的形象帮我做一个吧，之后我会把视频插入，成为首页的背景。请你做一个
+2
+个页面的简单的项目
+很好，请你把我新做的视频加到项目里，成为首页的背景吧
+
+--- Slide 36 ---
+请填写你的学号，例如：
+2025XXXXXX 
+[
+填空
+1]
+ 
+作答
+填空题
+1
+分
+
+--- Slide 37 ---
+签到：黑板上写的是什么？
+A
+B
+A
+B
+提交
+C
+C
+D
+D
+单选题
+1
+分
