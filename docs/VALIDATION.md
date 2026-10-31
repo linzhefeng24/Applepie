@@ -120,3 +120,12 @@ uv 引导安装与 quant/requirements.txt 依赖安装统一通过同一入口�
 Ubuntu 26.04 容器中模拟 WSL 和 `/mnt/d/Downloads/APERTURE (3)/APERTURE` 路径，预先创建 Python 3.14 引导环境并删除 pip 的 packaging，确认复现用户同样的 ModuleNotFoundError。新版成功绕过它，安装独立 Python 3.12、依赖、数据库并构建启动全部服务；37 项测试和真实 API（五种优化方法、四种滚动回测、报告持久化等）通过，停止成功，容器退出码 0。还保留了错误 Docker 源及全局私有 pip/npm 源，安装没有修改这些配置。本测试模拟 WSL 路径选择，没有声称在原生 Windows NTFS 上验证。
 
 提供仅包含启动脚本、配置及说明的 APERTURE-startup-fix.zip，可覆盖旧下载目录，保留 .env、数据库和 backend/runtime。完整 APERTURE.zip 同步更新。
+
+
+## 启动补丁与测试文件一致性修复
+
+用户日志确认上次小补丁遗漏 quant/tests：新安装器导出了 APERTURE_UV_BIN，旧测试继承该变量，误走原生 uv 分支，最终因没有预期 JSON 而报 StopIteration。这是发布补丁缺失配套测试导致的兼容性错误。
+
+新增 scripts/package-startup-patch.py：从同一 Git HEAD 打包脚本、配置、运行时执行的全部 quant/tests 和依赖清单，强制检查关键测试文件存在，通过 ZIP 校验后再替换成品，避免再次手工筛选遗漏。
+
+验证使用旧完整包（7d0e2b9）加遗漏测试的旧补丁（30ecf11）重建用户当前目录，继承 APERTURE_UV_BIN 后准确复现 StopIteration；覆盖修正版补丁后 37 项测试全部通过，预编译运行包检查通过。额外放置 .env 与数据库文件标记并确认覆盖后内容不变，JAR 清单哈希不变。此次修复仅补齐发布内容，没有绕过或删除失败测试。
