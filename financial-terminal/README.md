@@ -11,7 +11,7 @@
 - **研究档案**：PostgreSQL 保存完整参数和结果；浏览、删除、Markdown / JSON 导出和浏览器打印为 PDF。
 - 清楚区分加载、错误、空数据、计算中、就绪、求解失败回退；支持手机布局。
 
-[下载仅含金融终端的 ZIP](https://github.com/linzhefeng24/Applepie/archive/refs/heads/financial-terminal.zip)（不包含原 C++ 工程和课件）。
+[下载 APERTURE.zip](https://github.com/linzhefeng24/Applepie/raw/refs/heads/main/downloads/APERTURE.zip)（不包含原 C++ 工程和课件）。
 
 ## 一个命令启动
 
