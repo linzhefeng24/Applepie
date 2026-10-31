@@ -11,7 +11,7 @@
 | Scala 编译 | 通过 | 39 个 Scala 源文件；强类型业务响应与所有服务构建成功 |
 | Scala 格式 | 通过 | `scalafmtCheckAll` |
 | 前端严格类型与生产构建 | 通过 | `tsc -b && vite build`；使用锁文件 |
-| 数值与配置单元测试 | **25 项通过** | `quant/tests/test_engine.py` |
+| 数值与配置单元测试 | **27 项通过** | `quant/tests/test_engine.py` |
 | 真数据库 HTTP 集成测试 | 通过 | `scripts/verify-api.py` |
 | Chromium 真实用户流程 | **2 项通过** | `frontend/tests/workflow.spec.ts`，生产构建、实际后端，无 API mock |
 | 完整安装脚本 | 通过 | 实际执行 `scripts/setup.sh`，重复安装/构建/数据校验/数值测试全部成功 |
@@ -93,3 +93,11 @@
 Ubuntu 26.04 的系统 Python 过新时，自动使用项目专用的兼容 Python；已有损坏或不兼容虚拟环境会保留在 `.run/` 后重建，避免因 pandas 没有对应 wheel 而要求用户安装 C 编译器。
 
 最终在干净 Ubuntu 26.04 resolute 容器中预置启用的 Docker 源，并指定不存在的 Docker keyring：安装器使用官方源完成 Java/Node/兼容 Python/PostgreSQL 安装；25 项单元测试、前后端构建、完整应用启动和真实 API/优化/回测/报告测试全部通过。停止后 Docker 源文件 SHA256 与安装前一致，测试容器退出码为 0。此次验证不要求联系 Docker 软件源，也未导入其密钥。
+
+## 全局 Python / npm 私有源隔离
+
+新增两个回归测试，验证子进程清除全局 pip 索引、额外索引、trusted-host 和安装目标，使用独立配置且保留显式 CA/代理；父进程环境不变；拒绝 HTTP 项目源。本机合计 27 项测试通过。
+
+uv 引导安装与 quant/requirements.txt 依赖安装统一通过同一入口，默认 PyPI 官方 HTTPS，禁用全局配置读取，仅接受预编译 wheel。npm ci 使用项目独立的配置文件和官方 HTTPS registry，并保持严格 TLS。可用项目专用环境变量选择 HTTPS 镜像。
+
+在干净 Ubuntu 26.04 容器中，同时预置：全局 `/etc/pip.conf` 指向不可访问 Nexus、额外私有 Python 索引、环境变量重复指定这些源、全局 npmrc 指向不可访问私有源，以及之前的错误 Docker 源。uv 安装、兼容 Python、项目全部 Python/npm 依赖、27 项单元测试、前后端构建、应用启动及真实 API / 优化 / 回测 / 报告验证全部通过。退出前核对 pip.conf、npmrc、Docker 源文件 SHA256 均未改变，测试退出码为 0。随后额外保留了用户显式的 pip 哈希校验策略，并用回归用例确认未被清除。

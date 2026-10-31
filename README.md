@@ -138,3 +138,9 @@ MARKET_PORT=8201 PORTFOLIO_PORT=8202 ANALYSIS_PORT=8203 QUANT_PORT=8204 FRONTEND
 如果系统中 Docker 等源缺少签名公钥，普通 `apt update` 可能失败。APERTURE 安装器为本次安装准备临时的官方源配置与独立索引，update 和 install 都使用同一份配置；官方仓库仍须通过系统 keyring 验签，未关闭任何签名检查。
 
 这不会修复或改写你的 Docker 源；系统原有第三方源保持原样。APERTURE 不依赖 Docker，可独立安装。WSL 的 localhost 代理提示属于另一项网络配置，不能把它与软件源签名错误混为一谈。
+
+### 全局 pip / npm 指向无法访问的私有源
+
+项目安装使用独立的软件源，不修改用户的 pip.conf、pip.ini 或 npmrc。默认 Python 源为 PyPI 官方 HTTPS，npm 为官方 HTTPS registry；全局 Nexus 私有源、额外 Python 索引和安装目标设置不会带入项目安装。TLS 校验保持开启，并保留显式的证书和代理环境设置。
+
+如果确需自己的镜像，可在 `.env` 设置 `APERTURE_PYPI_INDEX_URL` 和 `APERTURE_NPM_REGISTRY`（只接受 HTTPS）。uv 引导工具和全部 Python 依赖都通过同一个项目安装入口下载，避免引导成功后又在另一个阶段使用旧的全局源。

@@ -16,5 +16,7 @@
   "PG_DATA_DIR": "data/pg",
   "PG_BIN": "",
   "PG_SHARE": "",
-  "PG_SOCKET_DIR": ""
+  "PG_SOCKET_DIR": "",
+  "APERTURE_PYPI_INDEX_URL": "https://pypi.org/simple",
+  "APERTURE_NPM_REGISTRY": "https://registry.npmjs.org/"
 }

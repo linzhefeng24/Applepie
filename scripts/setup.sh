@@ -4,6 +4,7 @@ set -euo pipefail
 ROOT=$(cd "$(dirname "$0")/.." && pwd)
 cd "$ROOT"
 source scripts/runtime-env.sh
+source scripts/python-packages.sh
 mkdir -p .tools .run
 for tool in java node npm python3 curl sha256sum; do command -v "$tool" >/dev/null || { echo "Missing required tool: $tool"; exit 1; }; done
 node -e 'if(+process.versions.node.split(".")[0]<24)process.exit(1)' || { echo 'Node 24+ required'; exit 1; }
@@ -43,7 +44,7 @@ if [[ -d .venv ]] && ! .venv/bin/python -c 'import sys;sys.exit(0 if (3,12)<=sys
  echo '检测到损坏或不兼容的旧虚拟环境，已保留在 .run/ 中并重新创建。'
 fi
 [[ -d .venv ]] || python3 -m venv .venv
-.venv/bin/python -m pip install -r quant/requirements.txt
+aperture_pip_install "$PYTHON_BIN" -r quant/requirements.txt
 if [[ "$MANAGE_POSTGRES" == true ]]; then
  fresh_cluster=false
  "$PG_BIN/postgres" --version
@@ -69,7 +70,10 @@ print('Configured PostgreSQL connection verified.')
 PYDB
 if [[ ! -f "$DATA_DIR/daily.csv" ]]; then "$PYTHON_BIN" scripts/prepare_data.py; fi
 python3 scripts/check-data.py
-npm --prefix frontend ci --no-audit --no-fund
+[[ "$APERTURE_NPM_REGISTRY" == https://* ]] || { echo '项目 npm 软件源必须使用 HTTPS。'; exit 1; }
+: > .run/npm-userconfig
+: > .run/npm-globalconfig
+npm --userconfig "$ROOT/.run/npm-userconfig" --globalconfig "$ROOT/.run/npm-globalconfig" --registry "$APERTURE_NPM_REGISTRY" --strict-ssl=true --prefix frontend ci --no-audit --no-fund
 scripts/build-backend.sh
 npm --prefix frontend run build
 OPENBLAS_NUM_THREADS=1 .venv/bin/python -m unittest discover -s quant/tests -v
