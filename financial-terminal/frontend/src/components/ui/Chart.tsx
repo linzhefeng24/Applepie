@@ -1,6 +1,12 @@
 import { useEffect, useRef } from "react";
 import * as echarts from "echarts/core";
-import { LineChart, BarChart, PieChart, HeatmapChart } from "echarts/charts";
+import {
+  LineChart,
+  BarChart,
+  PieChart,
+  HeatmapChart,
+  CandlestickChart,
+} from "echarts/charts";
 import {
   GridComponent,
   TooltipComponent,
@@ -11,6 +17,7 @@ import {
 import { CanvasRenderer } from "echarts/renderers";
 import type { EChartsCoreOption } from "echarts/core";
 echarts.use([
+  CandlestickChart,
   LineChart,
   BarChart,
   PieChart,
@@ -37,7 +44,7 @@ export function Chart({
     const chart = echarts.init(ref.current, undefined, { renderer: "canvas" });
     chart.setOption({
       backgroundColor: "transparent",
-      color: ["#b7ed77", "#67c8f1", "#c1a0ff", "#f4bd73", "#f08c9d"],
+      color: ["#55c9a3", "#e9b45b", "#c1a0ff", "#f4bd73", "#f08c9d"],
       textStyle: {
         color: "#8a98ae",
         fontFamily: "ui-monospace, monospace",

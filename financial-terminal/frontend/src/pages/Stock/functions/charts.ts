@@ -1,6 +1,14 @@
 import type { Bar, StockResult } from "../../../objects/market";
 import { axis } from "../../../components/ui/Chart";
-export function priceChart(data: StockResult, comparison: StockResult | null) {
+export function priceChart(
+  data: StockResult,
+  comparison: StockResult | null,
+  mode: "line" | "candle" = "line",
+  averages = true,
+  history: Bar[] = data.bars,
+) {
+  if (!comparison && mode === "candle")
+    return candleChart(data, averages, history);
   const bars = data.bars;
   const dateSet = new Set(comparison?.bars.map((b) => b.date) || []);
   const aligned = comparison ? bars.filter((b) => dateSet.has(b.date)) : bars;
@@ -112,6 +120,115 @@ export function distribution(bars: Bar[]) {
           borderRadius: [2, 2, 0, 0],
         },
         data: counts,
+      },
+    ],
+  };
+}
+
+function candleChart(data: StockResult, averages: boolean, history: Bar[]) {
+  const bars = data.bars;
+  function average(period: number) {
+    const offset = history.findIndex((b) => b.date === bars[0]?.date);
+    return bars.map((_, index) => {
+      const i = offset + index;
+      return i < period - 1
+        ? null
+        : history
+            .slice(i - period + 1, i + 1)
+            .reduce((total, b) => total + b.close, 0) / period;
+    });
+  }
+  return {
+    animation: false,
+    tooltip: { trigger: "axis", axisPointer: { type: "cross" } },
+    legend: {
+      data: averages ? ["MA20", "MA60"] : [],
+      top: 0,
+      textStyle: { color: "#8a98ae" },
+    },
+    grid: [
+      { left: 55, right: 48, top: 32, height: "57%" },
+      { left: 55, right: 48, top: "74%", height: "14%" },
+    ],
+    xAxis: [
+      {
+        ...axis,
+        type: "category",
+        data: bars.map((b) => b.date),
+        axisLabel: { show: false },
+        boundaryGap: true,
+      },
+      {
+        ...axis,
+        type: "category",
+        gridIndex: 1,
+        data: bars.map((b) => b.date),
+        boundaryGap: true,
+      },
+    ],
+    yAxis: [
+      { ...axis, scale: true, position: "right", splitNumber: 4 },
+      {
+        ...axis,
+        gridIndex: 1,
+        splitNumber: 1,
+        axisLabel: { show: false },
+        splitLine: { show: false },
+      },
+    ],
+    dataZoom: [
+      { type: "inside", xAxisIndex: [0, 1] },
+      {
+        type: "slider",
+        xAxisIndex: [0, 1],
+        height: 12,
+        bottom: 2,
+        borderColor: "transparent",
+        fillerColor: "#e9b45b20",
+        textStyle: { color: "#68788e" },
+      },
+    ],
+    series: [
+      {
+        name: data.stock.symbol,
+        type: "candlestick",
+        data: bars.map((b) => [b.open, b.close, b.low, b.high]),
+        itemStyle: {
+          color: "#55c9a3",
+          color0: "#f07b88",
+          borderColor: "#55c9a3",
+          borderColor0: "#f07b88",
+        },
+      },
+      ...(averages
+        ? [
+            {
+              name: "MA20",
+              type: "line",
+              data: average(20),
+              showSymbol: false,
+              lineStyle: { width: 1, color: "#e9b45b" },
+              itemStyle: { color: "#e9b45b" },
+            },
+            {
+              name: "MA60",
+              type: "line",
+              data: average(60),
+              showSymbol: false,
+              lineStyle: { width: 1, color: "#82a7ed" },
+              itemStyle: { color: "#82a7ed" },
+            },
+          ]
+        : []),
+      {
+        name: "源成交量",
+        type: "bar",
+        xAxisIndex: 1,
+        yAxisIndex: 1,
+        data: bars.map((b) => ({
+          value: b.volume,
+          itemStyle: { color: b.close >= b.open ? "#55c9a350" : "#f07b8850" },
+        })),
       },
     ],
   };

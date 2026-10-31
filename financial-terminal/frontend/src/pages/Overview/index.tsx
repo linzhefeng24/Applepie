@@ -1,125 +1,249 @@
-import { StockPool } from "./components/StockPool";
 import { useMemo, useState } from "react";
-import { useNavigate, Link } from "react-router-dom";
-import {
-  Search,
-  ArrowUpRight,
-  Star,
-  ArrowRight,
-  Layers,
-  FlaskConical,
-} from "lucide-react";
+import { Link } from "react-router-dom";
+import { ArrowUpRight, Activity } from "lucide-react";
+import { StockPool } from "./components/StockPool";
 import {
   useMarket,
-  useWatchlist,
-  setWatchlist,
+  useSelectedStock,
   selectStock,
+  setSymbols,
 } from "../../stores/research";
-import { SetWatchlistMessage } from "../../apis/portfolio/SetWatchlistMessage";
-import { Panel, Notice, ErrorBox, Empty, Tag } from "../../components/ui/Panel";
-import { PageTitle } from "../../components/ui/PageTitle";
-import { Metric } from "../../components/ui/Metrics";
-import { number, percent, compact } from "../../utils/format";
+import { Panel, Loading, ErrorBox } from "../../components/ui/Panel";
+import { PricePanel } from "../Stock/components/PricePanel";
+import { useStock } from "../Stock/hooks/useStock";
+import { number, percent } from "../../utils/format";
 export function OverviewPage() {
   const market = useMarket()!;
-  const first = market.stocks.reduce(
-    (a, b) => (a < b.firstDate ? a : b.firstDate),
-    "9999",
-  );
-  const last = market.stocks.reduce(
-    (a, b) => (a > b.lastDate ? a : b.lastDate),
+  const symbol = useSelectedStock();
+  const [sector, setSector] = useState("全部行业");
+  const selected =
+    market.stocks.find((s) => s.symbol === symbol) || market.stocks[0];
+  const detail = useStock(
+    selected.symbol,
+    selected.firstDate,
+    selected.lastDate,
     "",
   );
+  const quotes = market.stocks.flatMap((s) =>
+    market.quotes[s.symbol] ? [{ ...s, ...market.quotes[s.symbol] }] : [],
+  );
+  const gainers = quotes.filter((q) => q.changePct > 0).length;
+  const losers = quotes.filter((q) => q.changePct < 0).length;
+  const ranked = [...quotes].sort((a, b) => b.changePct - a.changePct);
+  const sectors = useMemo(
+    () =>
+      Array.from(new Set(market.stocks.map((s) => s.sector))).map((name) => {
+        const stocks = market.stocks.filter((s) => s.sector === name);
+        const valid = stocks.filter((s) =>
+          Number.isFinite(market.quotes[s.symbol]?.changePct),
+        );
+        return {
+          name,
+          stocks,
+          change: valid.length
+            ? valid.reduce((a, s) => a + market.quotes[s.symbol].changePct, 0) /
+              valid.length
+            : null,
+        };
+      }),
+    [market],
+  );
+  const last = quotes.reduce((date, q) => (q.date > date ? q.date : date), "");
   return (
     <>
-      <PageTitle
-        eyebrow="MARKET INTELLIGENCE"
-        title="把市场，变成你的研究。"
-        description="从一只股票开始，探索收益、风险与组合的更多可能。"
-        action={
+      <div className="desk-title">
+        <div>
+          <div className="desk-eyebrow">MARKET MONITOR / 01</div>
+          <h1>行情工作台</h1>
+        </div>
+        <div className="flex items-center gap-3">
+          <span className="hidden text-[11px] text-slate-500 md:block">
+            最新可用日线 · 非实时行情
+          </span>
           <Link to="/lab" className="btn-primary">
-            开启量化实验 <ArrowUpRight size={14} />
-          </Link>
-        }
-      />
-      <div className="mb-6 grid grid-cols-2 gap-3 xl:grid-cols-4">
-        <Metric
-          label="研究标的"
-          value={String(market.stocks.length).padStart(2, "0")}
-          note="美股 / ADR / 黄金 ETF · 精选子集"
-        />
-        <Metric
-          label="日线数据"
-          value={compact(market.provenance.rows)}
-          note="由真实分钟行情聚合"
-        />
-        <Metric
-          label="历史覆盖"
-          value="2022 — 2026"
-          note={`${first} → ${last}`}
-        />
-        <Metric label="量化模型" value="05" note="MVSK / MVO / 风险平价等" />
-      </div>
-      <div className="mb-6 grid gap-4 xl:grid-cols-[1.8fr_1fr]">
-        <div className="relative overflow-hidden rounded-xl border border-[#b7ed77]/15 bg-gradient-to-br from-[#19291f] via-[#13221f] to-[#111823] p-6">
-          <div className="absolute -right-5 top-1 font-mono text-[135px] font-thin tracking-[-.15em] text-[#b7ed77]/[.045]">
-            μσ
-          </div>
-          <Tag>RESEARCH NOTE / 001</Tag>
-          <h2 className="relative mt-5 text-xl leading-relaxed text-white">
-            收益之外，
-            <br />
-            还有分布的形状。
-          </h2>
-          <p className="relative mt-3 max-w-sm text-xs leading-6 text-slate-400">
-            用均值、方差、偏度与峰度观察组合。将 MVSK
-            与经典模型放在同一组历史数据上，检验想法。
-          </p>
-          <Link
-            to="/lab"
-            className="relative mt-5 inline-flex items-center gap-2 text-xs text-[#b7ed77]"
-          >
-            进入量化实验室 <ArrowRight size={14} />
+            组合研究 <ArrowUpRight size={13} />
           </Link>
         </div>
-        <Panel
-          title="一条完整的研究路径"
-          subtitle="FROM OBSERVATION TO VALIDATION"
-        >
-          <div className="space-y-5 px-5 pb-6">
-            {[
-              ["01", "观察个股", "价格趋势与年度收益分布", "/stocks"],
-              ["02", "构建组合", "五种模型与权重约束", "/lab"],
-              ["03", "检验与记录", "滚动回测，保存研究结论", "/backtest"],
-            ].map(([n, t, d, path]) => (
-              <Link key={n} to={path} className="flex items-center gap-4">
-                <span className="font-mono text-lg text-slate-700">{n}</span>
-                <div className="flex-1">
-                  <div className="text-xs text-slate-200">{t}</div>
-                  <div className="mt-1 text-[10px] text-slate-500">{d}</div>
-                </div>
-                <ArrowUpRight size={14} className="text-slate-600" />
+      </div>
+      <div className="market-summary">
+        <div>
+          <label>证券覆盖</label>
+          <strong>
+            {market.stocks.length}
+            <small> EQUITIES / ETF</small>
+          </strong>
+        </div>
+        <div>
+          <label>上涨 / 下跌 / 持平</label>
+          <strong>
+            <span className="positive">{gainers}</span>
+            <span className="text-slate-600"> / </span>
+            <span className="negative">{losers}</span>
+            <small> / {quotes.length - gainers - losers}</small>
+          </strong>
+        </div>
+        <div>
+          <label>日线观测</label>
+          <strong>{market.provenance.rows.toLocaleString()}</strong>
+        </div>
+        <div>
+          <label>最新数据日</label>
+          <strong className="!text-base">{last}</strong>
+        </div>
+        <div>
+          <label>研究模型</label>
+          <strong>
+            05<small> MVSK + CLASSIC</small>
+          </strong>
+        </div>
+      </div>
+      <div className="desk-workspace">
+        <StockPool sector={sector} setSector={setSector} />
+        <div className="space-y-3 min-w-0">
+          <Panel
+            title="证券速览"
+            subtitle="与左侧行情表联动"
+            action={
+              <span className="panel-code">SECURITY / {selected.symbol}</span>
+            }
+          >
+            <div className="quote-detail">
+              <div>
+                <strong>{selected.symbol}</strong>
+                <span>{selected.name}</span>
+                <small>
+                  {selected.sector} · USD ·{" "}
+                  {market.quotes[selected.symbol]?.date}
+                </small>
+              </div>
+              <div className="text-right">
+                <b>{number(market.quotes[selected.symbol]?.close)}</b>
+                <span
+                  className={
+                    market.quotes[selected.symbol]?.changePct >= 0
+                      ? "positive"
+                      : "negative"
+                  }
+                >
+                  {percent(market.quotes[selected.symbol]?.changePct)}
+                </span>
+              </div>
+            </div>
+            <div className="flex gap-2 px-3 pb-3">
+              <Link to="/stocks" className="btn flex-1">
+                完整个股研究 <ArrowUpRight size={12} />
               </Link>
+              <Link
+                to="/lab"
+                className="btn flex-1"
+                onClick={() =>
+                  setSymbols([
+                    selected.symbol,
+                    ...market.stocks
+                      .filter((s) => s.symbol !== selected.symbol)
+                      .slice(0, 4)
+                      .map((s) => s.symbol),
+                  ])
+                }
+              >
+                构建组合
+              </Link>
+            </div>
+          </Panel>
+          {detail.status === "ready" && detail.data.bars.length > 0 ? (
+            <PricePanel data={detail.data} comparison={null} />
+          ) : detail.status === "error" ? (
+            <ErrorBox error={detail.error} />
+          ) : (
+            <Loading />
+          )}
+          {detail.status === "ready" && (
+            <Panel title="历史风险画像" subtitle="全可用区间 · 252 日年化">
+              <div className="risk-grid">
+                {[
+                  ["区间收益", percent(detail.data.metrics.totalReturn)],
+                  ["年化波动", percent(detail.data.metrics.volatility)],
+                  ["最大回撤", percent(detail.data.metrics.maxDrawdown)],
+                  ["Sharpe", number(detail.data.metrics.sharpe)],
+                ].map(([label, value]) => (
+                  <div key={label}>
+                    <label>{label}</label>
+                    <strong>{value}</strong>
+                  </div>
+                ))}
+              </div>
+            </Panel>
+          )}
+        </div>
+      </div>
+      <div className="desk-bottom-grid">
+        <Panel
+          title="板块表现"
+          subtitle="当前样本末日涨跌的等权均值；点击筛选观察池"
+          action={<span className="panel-code">SECTOR MAP</span>}
+        >
+          <div className="sector-map">
+            {sectors.map((s) => (
+              <button
+                key={s.name}
+                onClick={() =>
+                  setSector(sector === s.name ? "全部行业" : s.name)
+                }
+                aria-pressed={sector === s.name}
+                className={`${s.change !== null && s.change >= 0 ? "sector-up" : "sector-down"} ${sector === s.name ? "sector-active" : ""}`}
+              >
+                <span>{s.name}</span>
+                <strong>{s.change === null ? "—" : percent(s.change)}</strong>
+                <small>{s.stocks.length} 个标的</small>
+              </button>
             ))}
           </div>
         </Panel>
+        <Panel
+          title="涨跌榜"
+          subtitle="样本末日较前日 · 非全市场排行"
+          action={<Activity size={14} className="text-slate-500" />}
+        >
+          <div className="movers-grid">
+            {[ranked.slice(0, 4), [...ranked].reverse().slice(0, 4)].map(
+              (list, i) => (
+                <div key={i}>
+                  <div className="movers-label">
+                    {i === 0 ? "涨幅排序" : "跌幅排序"}
+                  </div>
+                  {list.map((s) => (
+                    <button
+                      key={s.symbol}
+                      onClick={() => {
+                        selectStock(s.symbol);
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                      }}
+                    >
+                      <strong>{s.symbol}</strong>
+                      <span>{number(s.close)}</span>
+                      <em
+                        className={s.changePct >= 0 ? "positive" : "negative"}
+                      >
+                        {percent(s.changePct)}
+                      </em>
+                    </button>
+                  ))}
+                </div>
+              ),
+            )}
+          </div>
+        </Panel>
       </div>
-      <StockPool />
-      <div className="mt-5">
-        <Notice>
-          <strong>数据边界：</strong>当前使用 data_v1 / part1.zip 中的 32
-          个精选标的。未导入的股票不可查询；未提供财报、复权说明及分红。分钟成交量并非全市场成交量。
-          <details className="mt-2">
-            <summary className="cursor-pointer">查看数据校验与来源</summary>
-            <div className="mt-2 break-all font-mono text-[10px]">
-              SHA256: {market.provenance.sha256}
-              <br />
-              {market.provenance.rows.toLocaleString()} 行日线 · 无插值 · OHLCV
-              聚合
-            </div>
-          </details>
-        </Notice>
-      </div>
+      <details className="data-disclosure">
+        <summary>数据范围与来源 · 32 个精选标的 · 点击查看</summary>
+        <p>
+          由源分钟行情聚合日线，复权状态未知，未计分红；成交量不代表全市场成交量。未提供财报，不展示虚构的估值或财务指标。不同标的可用日期不同，涨跌按各自最后两个观测计算。
+        </p>
+        <p className="break-all font-mono">
+          {market.provenance.release} / {market.provenance.asset} · SHA256{" "}
+          {market.provenance.sha256}
+        </p>
+      </details>
     </>
   );
 }

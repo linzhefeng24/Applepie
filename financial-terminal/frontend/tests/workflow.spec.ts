@@ -6,10 +6,10 @@ test("真实数据库：股票、自选、比较、量化、回测、报告和�
   const errors: string[] = [];
   page.on("pageerror", (e) => errors.push(e.message));
   await page.goto("/");
+  await expect(page.getByRole("heading", { name: "行情工作台" })).toBeVisible();
   await expect(
-    page.getByRole("heading", { name: "把市场，变成你的研究。" }),
+    page.locator("table").getByText("Apple", { exact: true }),
   ).toBeVisible();
-  await expect(page.getByText("Apple", { exact: true })).toBeVisible();
   await page.screenshot({
     path: "../docs/screenshots/overview.png",
     fullPage: true,
@@ -121,9 +121,7 @@ test("空区间、无效日期与手机布局", async ({ page, request }) => {
   expect(invalid.status()).toBe(400);
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto("/");
-  await expect(
-    page.getByRole("heading", { name: "把市场，变成你的研究。" }),
-  ).toBeVisible();
+  await expect(page.getByRole("heading", { name: "行情工作台" })).toBeVisible();
   await page.getByLabel("展开导航").click();
   await page.getByRole("link", { name: "量化实验室 Quant laboratory" }).click();
   await expect(
