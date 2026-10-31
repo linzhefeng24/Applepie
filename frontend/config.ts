@@ -6,7 +6,7 @@ export function readConfig(mode = "development"): Record<string, string> {
   const defaults = JSON.parse(
     readFileSync(new URL("../config/defaults.json", import.meta.url), "utf8"),
   ) as Record<string, string>;
-  return {
+  const result = {
     ...defaults,
     ...loadEnv(mode, projectRoot, ""),
     ...Object.fromEntries(
@@ -15,4 +15,15 @@ export function readConfig(mode = "development"): Record<string, string> {
       ),
     ),
   };
+  const explicit = { ...loadEnv(mode, projectRoot, ""), ...process.env };
+  for (const [next, old] of [
+    ["WATCHLIST", "PORTFOLIO"],
+    ["OPTIMIZATION", "ANALYSIS"],
+  ]) {
+    for (const suffix of ["_PORT", "_URL"]) {
+      if (!explicit[next + suffix] && explicit[old + suffix])
+        result[next + suffix] = explicit[old + suffix]!;
+    }
+  }
+  return result;
 }

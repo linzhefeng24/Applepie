@@ -8,8 +8,8 @@ import {
   ErrorBox,
   Tag,
 } from "../../components/ui/Panel";
-import { ListReportsMessage } from "../../apis/portfolio/ListReportsMessage";
-import { DeleteReportMessage } from "../../apis/portfolio/DeleteReportMessage";
+import { ListReportsMessage } from "../../apis/reports/ListReportsMessage";
+import { DeleteReportMessage } from "../../apis/reports/DeleteReportMessage";
 import type {
   ResearchReport,
   AnalysisResult,
@@ -51,7 +51,7 @@ export function ReportsPage() {
     <>
       <PageTitle
         eyebrow="RESEARCH ARCHIVE"
-        title="研究档案"
+        title="报告管理"
         description="保存的参数、结果与方法，共同构成一份可以复现的研究。"
       />
       {error && <ErrorBox error={error} retry={() => setNonce((n) => n + 1)} />}{" "}
@@ -111,7 +111,7 @@ export function ReportsPage() {
           {!reports.length ? (
             <div className="py-14 text-center">
               <Files size={32} className="mx-auto text-slate-700" />
-              <Empty text="还没有研究记录。在量化实验室或回测中运行一次实验，再保存结果。" />
+              <Empty text="还没有研究记录。在组合优化或回测中运行一次分析，再保存结果。" />
             </div>
           ) : (
             <div className="divide-y divide-white/5">

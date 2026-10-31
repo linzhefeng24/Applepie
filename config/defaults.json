@@ -19,5 +19,11 @@
   "PG_SOCKET_DIR": "",
   "APERTURE_PYPI_INDEX_URL": "https://pypi.org/simple",
   "APERTURE_NPM_REGISTRY": "https://registry.npmjs.org/",
-  "APERTURE_VENV_DIR": ""
+  "APERTURE_VENV_DIR": "",
+  "WATCHLIST_PORT": "8102",
+  "OPTIMIZATION_PORT": "8103",
+  "BACKTEST_PORT": "8105",
+  "HISTORY_PORT": "8106",
+  "STATISTICS_PORT": "8107",
+  "REPORTS_PORT": "8108"
 }

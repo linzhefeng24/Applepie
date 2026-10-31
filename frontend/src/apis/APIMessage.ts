@@ -1,5 +1,12 @@
 export abstract class APIMessage<T> {
-  abstract readonly service: "market" | "analysis" | "portfolio";
+  abstract readonly service:
+    | "market"
+    | "history"
+    | "statistics"
+    | "watchlist"
+    | "reports"
+    | "optimization"
+    | "backtest";
   protected body(): unknown {
     const { service: _, ...fields } = this;
     return fields;

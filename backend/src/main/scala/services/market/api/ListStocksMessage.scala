@@ -12,7 +12,7 @@ final case class ListStocksMessage() extends NoRequestMessage[ListStocksResponse
   def plan(connection: Connection): IO[ListStocksResponse] =
     for
       stocks <- StockTable.list(connection)
-      quotes <- services.market.tables.DailyBarTable.DailyBarTable.latest(connection)
+      quotes <- services.history.tables.DailyBarTable.DailyBarTable.latest(connection)
       provenance <- IO
         .blocking(
           Files.readString(Path.of(sys.env.getOrElse("DATA_DIR", "data"), "provenance.json"))

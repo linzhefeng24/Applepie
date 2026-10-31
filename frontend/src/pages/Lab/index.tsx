@@ -13,8 +13,8 @@ export function LabPage() {
   return (
     <>
       <PageTitle
-        eyebrow="QUANT LABORATORY"
-        title="量化实验室"
+        eyebrow="PORTFOLIO OPTIMIZATION"
+        title="组合优化"
         description="五模型配置、权重约束与高阶矩分析。"
       />
       <div className="grid items-start gap-5 xl:grid-cols-[280px_minmax(0,1fr)]">

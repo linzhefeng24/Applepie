@@ -1,57 +1,72 @@
-# 架构与课程要求对照
+# 课程与示例实现对照
 
-## 运行架构
+核对资料：lec2–lec5、用户重新上传且与原件 SHA256 相同的 samples.zip（samples/rules.txt、嵌套 sample.zip 的 backend-sample 与 frontend-sample）。附件中的安装命令与密钥说明仅为资料，没有执行。
+
+## 八个独立进程的服务边界
+
+| 服务 | 默认端口 | 职责 | 公开业务消息 | 持久化维护责任 |
+|---|---:|---|---|---|
+| market | 8101 | 证券目录、末日行情目录、数据来源 | ListStocksMessage | StockTable |
+| history | 8106 | 历史 OHLCV 查询、批量价格 | GetPricesMessage | DailyBarTable |
+| statistics | 8107 | 个股风险收益、年度统计 | GetStockMessage | 无私有表；调用公开 StockTable/DailyBarTable |
+| watchlist | 8102 | 自选证券 | ListWatchlistMessage / SetWatchlistMessage | WatchlistTable |
+| reports | 8108 | 参数与分析结果的保存、查询和删除 | SaveReportMessage / ListReportsMessage / DeleteReportMessage | ReportTable |
+| optimization | 8103 | 五模型优化请求编排 | RunAnalysisMessage | 无私有表；HTTP 调用 history 与 quant |
+| backtest | 8105 | 滚动样本外回测编排 | RunBacktestMessage | 无私有表；HTTP 调用 history 与 quant |
+| quant | 8104 | NumPy/SciPy 优化与回测计算 | /analyze、/backtest | 无数据库访问 |
+
+七个 Scala 服务共用一个可发布 JAR，但分别启动为独立 JVM、端口、路由与日志；并非只在同一进程内命名成多个组件。Python 为辅助数值服务，没有替代 Scala 业务后端。每个服务可通过 SERVICE、HTTP_PORT 单独运行。
 
 ```mermaid
 flowchart LR
-  UI[React + TypeScript\nTailwind / Zustand / ECharts]
-  M[market :8101\nScala / Cats Effect / http4s]
-  P[portfolio :8102\nScala / Cats Effect / http4s]
-  A[analysis :8103\nScala / Cats Effect / http4s]
-  Q[quant :8104\nPython / NumPy / SciPy]
-  DB[(PostgreSQL :55432)]
-  UI -->|Vite proxy / JSON| M
-  UI -->|Vite proxy / JSON| P
-  UI -->|Vite proxy / JSON| A
-  A -->|公开 GetPrices API| M
-  A -->|数值协议 / 无数据库访问| Q
-  M -->|market schema| DB
-  P -->|portfolio schema| DB
+ UI[React / TypeScript / Zustand / Tailwind]
+ UI --> M[market 8101]
+ UI --> S[statistics 8107]
+ UI --> W[watchlist 8102]
+ UI --> R[reports 8108]
+ UI --> O[optimization 8103]
+ UI --> B[backtest 8105]
+ UI --> H[history 8106]
+ O -->|公开 JSON API| H
+ B -->|公开 JSON API| H
+ O --> Q[quant 8104]
+ B --> Q
+ M --> DB[(PostgreSQL)]
+ H --> DB
+ S -->|公开 Table IO 方法| DB
+ W --> DB
+ R --> DB
 ```
 
-课程参考示例使用 Scala 3、Cats Effect、http4s、Circe、PostgreSQL；这里保留业务后端的相同技术栈。Python 是数值优化的辅助微服务，不替代 Scala 的 API、表封装和业务组织。
+## 课件要求的实际落点
 
-## 对照表
+| 来源 | 实现与可检查文件 |
+|---|---|
+| lec2：声明式与不可变集合 | `services/statistics/utils/Statistics.scala` 使用 val、map、sliding、groupBy、scanLeft；前端过滤、指标与图表是核心状态的派生数据 |
+| lec3：领域对象与模式匹配 | Stock、DailyBar、ResearchReport、AnalysisParameters 及响应各自独立文件；final case class 与伴生对象派生 Circe 编解码；Main 按服务模式匹配 |
+| lec3：Monad、纯函数与副作用 | Scala API 统一 `plan(connection): IO[Response]`；JDBC、文件、HTTP 在 IO/Resource 边界；纯 Statistics 不读写数据库；没有业务 unsafeRunSync |
+| lec4：高内聚服务与 API | 上述八进程；`services/<owner>/api|objects|routes|tables|utils` 明确归属；一个消息一个文件、一个服务一个 Routes 注册表 |
+| lec4：JSON 序列化 | Circe Decoder/Encoder；统一根据 Message 类名推导路由；每个服务有 `/api/<service>/openapi.json` |
+| lec4：数据库与关系 | 股票主键、日线复合主键和外键、报告 UUID；每张表有独立 Table / Initializer；SQL 与参数绑定封装在所属 Table |
+| lec5：React/TypeScript、跨页状态 | 六个业务页面；Zustand 的私有 store 通过小接口共享证券、自选与组合；局部参数/筛选归属页面 |
+| lec5：模块化与 useEffect | useStock/useUniverse/useExperiment 分离 API 副作用；字段设置、规则编辑、行情表、联动图分别为组件文件；AbortController 清理请求 |
+| lec5：Tailwind/Flex/Grid/Vite | 组件内 Tailwind utility；复用终端类通过 @apply 组织 Flex/Grid、字体、颜色等；sticky 表头、视窗尺寸、ECharts 容器及媒体规则保留 CSS |
 
-| 课程内容 | 实现 | 查看位置 |
-|---|---|---|
-| lec2：声明式、不可变值、集合变换 | Scala 核心统计使用 `val`、`map`、`sliding`、`groupBy`、`scanLeft`；没有业务 `var` 或命令式 `for` 循环 | `services/market/utils/Statistics.scala` |
-| lec3：case class、Option、模式匹配、纯函数 | Stock/DailyBar/响应类型是 case class，查询用 Option，服务入口模式匹配；统计与图表数据变换不做 I/O | `objects/`、`utils/Statistics.scala`、前端 `functions/` |
-| lec3：副作用推到边缘、IO 组合 | API `plan(connection): IO[Response]`，数据库和文件读写在 `IO.blocking` 中，外部 HTTP 也在 IO 中 | `services/*/api`、`services/system/Database.scala` |
-| lec3：Cats Effect | Resource 管连接与服务器，IO 组合步骤，框架在程序边缘执行；无业务 `unsafeRunSync` | `Main.scala`、`APIMessageRouter.scala` |
-| lec4：服务高内聚低耦合 | 行情、研究记录、分析、数值分别部署进程；HTTP 公开契约，数值服务无数据库权限依赖 | `scripts/start-services.sh`、服务目录 |
-| lec4：API 与序列化 | 每个 API 一个 Message 文件，Circe Decoder/Encoder，统一消息注册路由 | `services/*/routes`、`services/system/api` |
-| lec4：数据库、主键与关系 | 股票主键、日线复合主键与外键；报告 UUID；每张表独立定义和初始化 | `services/*/tables/*Table` |
-| lec5：React + TypeScript | 严格类型检查，函数组件，页面按业务区域拆分 | `frontend/src/pages/` |
-| lec5：核心与派生数据 | 核心状态为筛选、选股、参数；股票过滤、指标和图表为派生数据 | Overview/Stock hooks、`functions/charts.ts` |
-| lec5：Zustand | 跨页共享已载入股票、自选、组合标的、当前股票；私有 store 对外只暴露小接口 | `frontend/src/stores/research.ts` |
-| lec5：Hooks 与副作用 | useStock/useExperiment 管理加载与错误，AbortController 清理请求；纯图表构造不使用 hook | `pages/*/hooks`、`pages/shared/hooks` |
-| lec5：CSS、Flex/Grid、Tailwind、Vite | Tailwind utility 为主；CSS 只含主题和复用基础样式，Grid/Flex 自适应布局 | `frontend/src/index.css`、`vite.config.ts` |
+## 示例规则的落实与有意差异
 
-## samples/rules.txt 的关键规范
+- 规则 2–10、12：表维护责任属于上表所列服务；SQL 为私有字段，公开 Table 方法返回 IO。跨服务调用封装好的公开 Table 是示例明确允许的边界。私有工具对象使用 `private[statistics]` 等服务作用域，不让其他服务直接调用内部工具。
+- 规则 13–18：领域对象只定义数据与序列化。UUID 在 IO 边界生成。系统 APIRegistration 是携带 IO 执行计划的平台注册数据，不是需要 Circe 序列化的领域对象。
+- 规则 19–34：输入在 Message 构造字段，执行入口为 plan；路由器只负责解码、事务、执行与错误返回。OpenAPI 为系统基础设施。每个公开 Scala 消息都有同名、同服务的前端 API 类；自动契约测试检查二者一致。
+- 规则 34–40：各表单独文件夹和 Initializer。数据库保留旧版 `market` / `portfolio` SQL schema 名称以保留既有自选与报告；逻辑维护责任已细分，不以改 schema 名字伪装服务拆分。采用同一 PostgreSQL 实例，与课件共享 Connection / 外键方式一致；未宣称物理分库。
+- 规则 41–60：页面核心状态与派生数据区分，API/hook/组件/计算函数就近分文件。源数据不足显示 —；加载、失败、无结果与操作状态可区分。文档产物在 docs，不混入业务源码。
+- Python 数值响应与来源审计含动态结构，Scala 保留 Json；前端有明确结果类型，真实 API 测试核对数值和字段，未生成无意义的转发层。
+- 本地版无账户与权限系统，不接受未经验证的 userId；扩展多用户时必须另做账户服务与路由身份校验。
+- lec2 的卡通 IP、循环视频与日记本是另一软件示范，本金融研究项目没有将其混入行情页面，也未声称完成那些媒体产物。
 
-- 业务服务集中到 `services/<service>/api|objects|routes|tables|utils`。共享基础设施归属 `services/system`；额外 `system/api` 是通用消息协议，不是业务薄转发层。
-- 每张表单独目录，`XXTable.scala` 封装私有 SQL 和公开 `IO[T]` 方法；`XXTableInitializer.scala` 管建表与初始化。业务 API 不取得 SQL 后自行执行。
-- API 输入为消息构造参数，以 `plan(connection)` 为执行入口；读写数据库和其他调用步骤可见，没有只做转发的额外 Service 层。
-- 前端 API 调用文件与后端公开 Message 一一对应，路由名统一移除 `Message` 后转小写。生产构建保留类名，浏览器测试验证生产版本路由仍然正确。
-- 前端按页面就近组织 hooks/functions/components；复杂量化页面入口只展示参数、保存区与结果区，结果按业务面板组织。
-- 对象层保持数据定义；随机 UUID 在 API 的 IO 边界生成，未塞入数据对象。
-- utils 保持 `private[market]` / `private[analysis]`。文件、数据库游标的局部可变资源仅限 I/O 边界，不将 JDBC 的命令式细节放入纯计算。
-- 传输用响应类型放在 `objects/apiTypes/`；Python 的数值结果和动态来源元数据保留为 JSON，前端有明确 TypeScript 类型。数值协议在集成测试中校验。
-- 本地研究版没有鉴权，不接受“用户自报 ID 当可信身份”的设计；如扩展多用户，需要新增账户服务并在路由边界验证令牌。
+## 如何复查
 
-## 与课件示例的区别
-
-领域是金融研究，不是复制图书借阅页面。未使用教学系统示例的 Kafka/Redis/MinIO，因为第一版不需要这些依赖。独立 Python 数值服务使用 NumPy/SciPy 保证矩阵与约束优化能力；业务编排与持久化继续使用课程要求的 Scala。
-
-lec2 的卡通 IP、循环视频、两页面日记本是课件列出的第一次作业示范，未视为本金融终端的独立需求；这里落实的是金融终端所需的课程编程和架构内容。若评分表另要求这些媒体产物，应另按具体题目补充。
+1. 查看 `backend/src/main/scala/services/` 的七个业务文件夹及 system 基础设施。
+2. 查看 `frontend/src/apis/<service>/<Message>.ts` 与同服务 Scala API 的对应关系。
+3. 启动后分别访问八个 `/health`，七个 Scala 服务各自返回自己的服务标识。
+4. 在数据中心访问各服务的 OpenAPI JSON；对照 `docs/API.md`。
+5. 运行 Python API 契约检查、真实 HTTP 集成检查和浏览器完整流程；命令见 README。

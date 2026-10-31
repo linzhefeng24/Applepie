@@ -4,8 +4,8 @@ import type {
   BacktestResult,
   Parameters,
 } from "../../../objects/analysis";
-import { RunAnalysisMessage } from "../../../apis/analysis/RunAnalysisMessage";
-import { RunBacktestMessage } from "../../../apis/analysis/RunBacktestMessage";
+import { RunAnalysisMessage } from "../../../apis/optimization/RunAnalysisMessage";
+import { RunBacktestMessage } from "../../../apis/backtest/RunBacktestMessage";
 export type Experiment<T> =
   | { status: "idle" }
   | { status: "running" }

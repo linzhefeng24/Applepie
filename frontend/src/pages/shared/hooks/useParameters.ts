@@ -1,11 +1,15 @@
 import { useState } from "react";
-import { useSymbols } from "../../../stores/research";
+import { useSymbols, useMarket } from "../../../stores/research";
 import type { Parameters } from "../../../objects/analysis";
 export function useParameters() {
   const symbols = useSymbols();
+  const market = useMarket()!;
   const [fields, setFields] = useState<Omit<Parameters, "symbols">>({
-    start: "2022-03-07",
-    end: "2026-10-23",
+    start: market.stocks.reduce(
+      (d, s) => (s.firstDate < d ? s.firstDate : d),
+      "9999",
+    ),
+    end: market.stocks.reduce((d, s) => (s.lastDate > d ? s.lastDate : d), ""),
     maxWeight: 0.4,
     riskAversion: 3,
     skewPreference: 1,

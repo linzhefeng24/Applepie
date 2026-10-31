@@ -27,7 +27,7 @@ export function ParameterForm({
     !p.end ||
     p.start >= p.end;
   return (
-    <Panel title="实验参数" subtitle="固定输入，让每次研究可复现">
+    <Panel title="优化参数" subtitle="固定输入，让每次研究可复现">
       <div className="space-y-5 px-5 pb-5">
         <div>
           <div className="mb-2 flex justify-between text-[11px] text-slate-400">
@@ -62,7 +62,7 @@ export function ParameterForm({
             估计 / 回测数据起点
             <input
               type="date"
-              aria-label="实验开始日期"
+              aria-label="分析开始日期"
               value={p.start}
               onChange={(e) => update("start", e.target.value)}
             />
@@ -71,7 +71,7 @@ export function ParameterForm({
             数据截止日期
             <input
               type="date"
-              aria-label="实验结束日期"
+              aria-label="分析结束日期"
               value={p.end}
               onChange={(e) => update("end", e.target.value)}
             />

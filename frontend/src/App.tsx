@@ -11,7 +11,7 @@ import {
   Aperture,
   LayoutDashboard,
   ChartNoAxesCombined,
-  FlaskConical,
+  SlidersHorizontal,
   History,
   Files,
   Database,
@@ -23,35 +23,37 @@ import { CommandSearch } from "./components/CommandSearch";
 import { selectStock } from "./stores/research";
 import { number, percent } from "./utils/format";
 import { ListStocksMessage } from "./apis/market/ListStocksMessage";
-import { ListWatchlistMessage } from "./apis/portfolio/ListWatchlistMessage";
+import { ListWatchlistMessage } from "./apis/watchlist/ListWatchlistMessage";
 import { setMarket, setWatchlist, useMarket } from "./stores/research";
 import { ErrorBox, Loading } from "./components/ui/Panel";
 import { OverviewPage } from "./pages/Overview";
 import { StockPage } from "./pages/Stock";
 import { LabPage } from "./pages/Lab";
 import { BacktestPage } from "./pages/Backtest";
+import { DataPage } from "./pages/Data";
 import { ReportsPage } from "./pages/Reports";
 const navigation = [
   {
     path: "/",
-    name: "行情工作台",
-    en: "Market monitor",
+    name: "证券筛选",
+    en: "Security screener",
     icon: LayoutDashboard,
   },
   {
     path: "/stocks",
-    name: "个股研究",
-    en: "Market research",
+    name: "证券分析",
+    en: "Security analysis",
     icon: ChartNoAxesCombined,
   },
   {
     path: "/lab",
-    name: "量化实验室",
-    en: "Quant laboratory",
-    icon: FlaskConical,
+    name: "组合优化",
+    en: "Portfolio optimization",
+    icon: SlidersHorizontal,
   },
   { path: "/backtest", name: "策略回测", en: "Backtesting", icon: History },
-  { path: "/reports", name: "研究档案", en: "Research archive", icon: Files },
+  { path: "/reports", name: "报告管理", en: "Reports", icon: Files },
+  { path: "/data", name: "数据中心", en: "Data access", icon: Database },
 ];
 export function App() {
   const market = useMarket();
@@ -91,7 +93,7 @@ export function App() {
         event.preventDefault();
         setCommand((v) => !v);
       }
-      if (event.altKey && /^[1-5]$/.test(event.key)) {
+      if (event.altKey && /^[1-6]$/.test(event.key)) {
         event.preventDefault();
         navigate(navigation[Number(event.key) - 1].path);
       }
@@ -167,7 +169,7 @@ export function App() {
           <button onClick={() => setCommand(true)}>
             <Command size={12} /> 全局搜索 <kbd>Ctrl K</kbd>
           </button>
-          <small>Alt + 1—5 切换工作区</small>
+          <small>Alt + 1—6 切换工作区</small>
         </div>
       </aside>
       <div className="terminal-body">
@@ -225,11 +227,12 @@ export function App() {
               <Route path="/lab" element={<LabPage />} />
               <Route path="/backtest" element={<BacktestPage />} />
               <Route path="/reports" element={<ReportsPage />} />
+              <Route path="/data" element={<DataPage />} />
               <Route
                 path="*"
                 element={
                   <div>
-                    页面不存在 <Link to="/">返回行情工作台</Link>
+                    页面不存在 <Link to="/">返回证券筛选</Link>
                   </div>
                 }
               />
