@@ -37,7 +37,7 @@ local
 maven-central: https://repo.maven.apache.org/maven2
 EOF
 [[ -d .venv ]] || python3 -m venv .venv
-.venv/bin/pip install -r quant/requirements.txt
+.venv/bin/python -m pip install -r quant/requirements.txt
 if [[ "$MANAGE_POSTGRES" == true ]]; then
  "$PG_BIN/postgres" --version
  if [[ ! -f "$PG_DATA_DIR/PG_VERSION" ]]; then

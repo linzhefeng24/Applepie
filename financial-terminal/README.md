@@ -11,45 +11,50 @@
 - **研究档案**：PostgreSQL 保存完整参数和结果；浏览、删除、Markdown / JSON 导出和浏览器打印为 PDF。
 - 清楚区分加载、错误、空数据、计算中、就绪、求解失败回退；支持手机布局。
 
-## 运行
+[下载仅含金融终端的 ZIP](https://github.com/linzhefeng24/Applepie/archive/refs/heads/financial-terminal.zip)（不包含原 C++ 工程和课件）。
 
-已在当前云环境安装、构建和验证。使用现有 checkout，不需要创建 worktree。
+## 一个命令启动
 
-```bash
-cd financial-terminal
-./scripts/start-services.sh
-```
-
-生产前端端口为 `4173`；该端口由 Vite preview 提供，用于课程本地演示。开发前端使用：
+只需要下载本项目目录，进入该目录的终端运行：
 
 ```bash
-cd financial-terminal/frontend
-npm run dev
+bash run.sh
 ```
 
-开发前端端口为 `5173`，前后端请求由 Vite 代理。后端和计算服务仅监听本机。停止本项目服务：
+也可以在任意目录指定脚本位置执行，例如 `bash "/你自己的目录/financial-terminal/run.sh"`。脚本自动定位项目，不要求目录必须叫 financial-terminal 或放在固定位置。
+
+第一次会自动安装项目依赖、初始化本地数据库、构建前后端并启动全部服务。以后运行同一命令会复用已安装依赖；依赖清单、项目位置或源码变化时会重新安装或构建。启动成功后打印浏览器访问地址，默认端口 4173。无需自己分别启动数据库和多个微服务。
 
 ```bash
-cd financial-terminal
-./scripts/stop-services.sh              # 保留数据库运行
-./scripts/stop-services.sh --database   # 同时停止本项目数据库
+bash run.sh stop       # 停止本项目应用及项目管理的数据库，保留数据
+bash run.sh restart    # 重启
+bash run.sh setup      # 强制刷新依赖、重新构建并启动
+bash run.sh help       # 查看说明
 ```
 
-修改 Scala 后先运行 `./scripts/build-backend.sh`，再停止并重启服务。修改前端后运行 `npm --prefix frontend run build` 更新生产演示构建。日常开发直接使用 Vite dev。
+服务在后台运行，关闭当前终端后仍继续运行。日志位于 `.run/`，安装失败会显示原因，不会误报启动成功。自选和报告保存在本地 PostgreSQL 中；重复启动不清空这些记录。
 
-## 首次安装与复现
+### 基础环境
 
-工具基线：Debian 13 x86_64（当前云环境）、JDK 21、Node 24、npm 11、Python 3.12、curl、dpkg-deb。安装脚本优先使用 `PG_BIN` 指定或 PATH 中的 PostgreSQL；未找到时，仅在 Debian 13 x86_64 自动下载经过哈希验证的本地包（无需 root）。其他 Linux 环境应先安装 PostgreSQL，或使用已有数据库。自动下载的 Debian 二进制依赖系统的 libpq/ICU/LLVM 等运行库，不作为跨平台发行包。
+脚本支持 **Linux / Windows WSL**。机器需要预先安装 **JDK 21+、Node 24+、Python 3.12+** 以及 curl 等常用命令；脚本会检查并明确指出缺少的工具。这里的一键启动包含项目依赖、构建和各服务启动，不承诺在没有任何开发工具的电脑上直接运行。
+
+首次安装需要联网。PostgreSQL 优先使用 `PG_BIN` 指定或 PATH 中的安装；未找到时仅在 Debian 13 x86_64 自动下载经过哈希验证的项目内安装包。其他 Linux 环境请先安装 PostgreSQL 或在 `.env` 设置已有数据库连接，见 `.env.example`。自动下载的 Debian 二进制不作为跨平台发行包。脚本不需要创建 Git worktree。
+
+配置优先级是环境变量 > `.env` > `config/defaults.json`。首次管理本地数据库时自动生成口令，保存在被 Git 忽略的 `.env`；没有外部付费 API 密钥要求。
+
+### 开发与检查
+
+需要单独操作时仍可使用原有脚本：
 
 ```bash
-cd financial-terminal
-./scripts/setup.sh
-./scripts/start-services.sh
+bash scripts/setup.sh              # 安装和构建
+bash scripts/start-services.sh     # 只启动服务
+bash scripts/build-backend.sh      # 只编译 Scala
+npm --prefix frontend run dev     # 前端热更新，默认 5173
+npm --prefix frontend run build   # 前端生产构建
 ```
 
-安装脚本校验固定的 sbt 和 PostgreSQL 下载哈希，使用锁文件安装前端，安装固定版本数值依赖，验证精简数据、构建前后端并执行数值测试。首次运行随机生成本地数据库口令并保存至被 Git 忽略的 `.env`，不包含外部 API 密钥。不要把 `.env` 提交到 Git。
-
-恢复环境时保留依赖、数据库和文件，但进程需要重启。`start-services.sh` 会重新导入行情表（事务内刷新）而保留自选与报告；它是重复运行安全的。停止脚本只处理有归属记录且启动时间匹配的本项目进程。
+源码下载不包含运行中的进程、数据库口令或依赖缓存；首次运行将创建这些本地状态。发布云环境快照后恢复时，也需要重新执行启动命令。
 
 ## 服务与数据归属
 
