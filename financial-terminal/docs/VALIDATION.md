@@ -127,3 +127,5 @@ Ubuntu 26.04 容器中模拟 WSL 和 `/mnt/d/Downloads/APERTURE (3)/APERTURE` �
 用户日志确认上次小补丁遗漏 quant/tests：新安装器导出了 APERTURE_UV_BIN，旧测试继承该变量，误走原生 uv 分支，最终因没有预期 JSON 而报 StopIteration。这是发布补丁缺失配套测试导致的兼容性错误。
 
 新增 scripts/package-startup-patch.py：从同一 Git HEAD 打包脚本、配置、运行时执行的全部 quant/tests 和依赖清单，强制检查关键测试文件存在，通过 ZIP 校验后再替换成品，避免再次手工筛选遗漏。
+
+验证使用旧完整包（7d0e2b9）加遗漏测试的旧补丁（30ecf11）重建用户当前目录，继承 APERTURE_UV_BIN 后准确复现 StopIteration；覆盖修正版补丁后 37 项测试全部通过，预编译运行包检查通过。额外放置 .env 与数据库文件标记并确认覆盖后内容不变，JAR 清单哈希不变。此次修复仅补齐发布内容，没有绕过或删除失败测试。
