@@ -36,11 +36,11 @@ bash run.sh help       # 查看说明
 
 ### 自动准备基础环境
 
-在 Ubuntu 22.04/24.04（包括 Windows WSL）和 Debian 13 中，直接运行 `bash run.sh`。缺少基础工具时会自动处理：
+在 Ubuntu 22.04/24.04/26.04（包括 Windows WSL）和 Debian 13 中，直接运行 `bash run.sh`。缺少基础工具时会自动处理：
 
-- Java 21 和 PostgreSQL：从发行版官方软件源安装，保留包签名验证。
+- Java 21 和 PostgreSQL：本次安装使用隔离的发行版官方源与索引，保留发行版签名校验；不会读取或修改系统中的 Docker、NodeSource 等第三方源。
 - Node：版本不足 24 时，从 Node 官方下载并校验 SHA256，安装到项目 `.tools/runtimes/`，不替换系统 Node。
-- Python：版本不足 3.12 时，通过固定版本 uv 安装项目专用 Python，不替换系统 Python；自动安装所需 venv 工具。
+- Python：版本不在 3.12–3.13 范围时，通过固定版本 uv 安装项目专用 Python，不替换系统 Python；自动安装所需 venv 工具；损坏或不兼容的旧虚拟环境会备份到 `.run/` 后重建。
 
 安装系统包时可能提示 **sudo 密码**，输入你的 Linux 用户密码即可。请使用普通用户执行 `bash run.sh`，**不要使用 `sudo bash run.sh`**；PostgreSQL 不能以 root 运行。首次安装需要联网；如果没有 sudo 权限，脚本会说明缺少的权限，不能跳过系统权限要求。
 
@@ -132,3 +132,9 @@ MARKET_PORT=8201 PORTFOLIO_PORT=8202 ANALYSIS_PORT=8203 QUANT_PORT=8204 FRONTEND
 搬移已经安装过的项目之前先停止服务。启动时会检查 Java classpath 的生成位置，位置变化或依赖失效时自动重建；这类绝对路径只存在于忽略的运行缓存。Python 虚拟环境本身不保证可搬移，请在新目录重新执行 setup（需要时先移除旧 `.venv` 后重建）。
 
 浏览器测试优先使用 `CHROMIUM_PATH`，其次搜索 PATH，最后使用 Playwright 自己安装的 Chromium，不依赖 `/usr/bin/chromium`。
+
+### 系统已有第三方源报错
+
+如果系统中 Docker 等源缺少签名公钥，普通 `apt update` 可能失败。APERTURE 安装器为本次安装准备临时的官方源配置与独立索引，update 和 install 都使用同一份配置；官方仓库仍须通过系统 keyring 验签，未关闭任何签名检查。
+
+这不会修复或改写你的 Docker 源；系统原有第三方源保持原样。APERTURE 不依赖 Docker，可独立安装。WSL 的 localhost 代理提示属于另一项网络配置，不能把它与软件源签名错误混为一谈。

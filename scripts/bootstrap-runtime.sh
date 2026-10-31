@@ -4,6 +4,7 @@
 set -euo pipefail
 ROOT=${ROOT:-$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)}
 source "$ROOT/scripts/runtime-env.sh"
+source "$ROOT/scripts/apt-official.sh"
 
 aperture_java_ok() {
  local major
@@ -11,7 +12,7 @@ aperture_java_ok() {
  major=$(java -version 2>&1 | sed -nE 's/.*version "([0-9]+).*/\1/p' | head -1)
  [[ "$major" =~ ^[0-9]+$ && "$major" -ge 21 ]]
 }
-aperture_python_ok() { command -v python3 >/dev/null && python3 -c 'import sys;sys.exit(0 if sys.version_info>=(3,12) else 1)'; }
+aperture_python_ok() { command -v python3 >/dev/null && python3 -c 'import sys;sys.exit(0 if (3,12)<=sys.version_info[:2]<(3,14) else 1)'; }
 aperture_node_ok() { command -v node >/dev/null && command -v npm >/dev/null && node -e 'if(+process.versions.node.split(".")[0]<24)process.exit(1)'; }
 aperture_link() {
  if [[ -e "$2" && ! -L "$2" ]]; then echo "工具目录已存在且不是链接，未覆盖：$2"; return 1; fi
@@ -23,9 +24,12 @@ aperture_apt_install() {
   if [[ ! -r /etc/os-release ]] || ! command -v apt-get >/dev/null; then
    echo '自动安装基础工具目前支持 Ubuntu / Debian（含 WSL）；请在该环境运行。'; return 1
   fi
-  local aperture_os_id
+  local aperture_os_id aperture_os_suite aperture_os_arch
   aperture_os_id=$(. /etc/os-release; printf '%s' "$ID")
   case "$aperture_os_id" in ubuntu|debian) ;; *) echo '此发行版暂不支持自动安装。'; return 1;; esac
+  aperture_os_suite=$(. /etc/os-release; printf '%s' "${VERSION_CODENAME:-${UBUNTU_CODENAME:-}}")
+  aperture_os_arch=$(dpkg --print-architecture)
+  aperture_prepare_apt_options "$aperture_os_id" "$aperture_os_suite" "$aperture_os_arch"
   APERTURE_APT=(apt-get)
   if [[ $EUID -ne 0 ]]; then
    if ! command -v sudo >/dev/null; then echo '安装系统依赖需要管理员权限，但没有 sudo。请由管理员提供 sudo 或预装依赖。'; return 1; fi
@@ -33,14 +37,14 @@ aperture_apt_install() {
    sudo -v
    APERTURE_APT=(sudo --preserve-env=http_proxy,https_proxy,HTTP_PROXY,HTTPS_PROXY,no_proxy,NO_PROXY apt-get)
   fi
-  "${APERTURE_APT[@]}" update
+  "${APERTURE_APT[@]}" "${APERTURE_APT_OPTIONS[@]}" update
   APERTURE_APT_READY=1
  fi
  # apt preserves distribution package signatures. Never add unverified package sources.
  if [[ $EUID -eq 0 ]]; then
-  DEBIAN_FRONTEND=noninteractive "${APERTURE_APT[@]}" install -y --no-install-recommends "$@"
+  DEBIAN_FRONTEND=noninteractive "${APERTURE_APT[@]}" "${APERTURE_APT_OPTIONS[@]}" install -y --no-install-recommends "$@"
  else
-  sudo --preserve-env=http_proxy,https_proxy,HTTP_PROXY,HTTPS_PROXY,no_proxy,NO_PROXY env DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends "$@"
+  sudo --preserve-env=http_proxy,https_proxy,HTTP_PROXY,HTTPS_PROXY,no_proxy,NO_PROXY env DEBIAN_FRONTEND=noninteractive apt-get "${APERTURE_APT_OPTIONS[@]}" install -y --no-install-recommends "$@"
  fi
 }
 aperture_use_installed_java() {
@@ -71,7 +75,7 @@ aperture_bootstrap_runtime() {
  if [[ ${#packages[@]} -gt 0 ]]; then aperture_apt_install "${packages[@]}"; fi
  if ! aperture_java_ok; then aperture_use_installed_java || { echo 'JDK 21 安装后仍不可用。请检查 apt 输出。'; return 1; }; fi
  if ! aperture_python_ok; then
-  echo '系统 Python 版本较旧，正在为本项目安装 Python 3.12（不替换系统 Python）…'
+  echo '当前 Python 与项目依赖不兼容，正在为本项目安装 Python 3.12（不替换系统 Python）…'
   if ! python3 -c 'import venv,ensurepip' >/dev/null 2>&1; then aperture_apt_install python3-venv; fi
   if [[ ! -x "$APERTURE_RUNTIME_DIR/uv-bootstrap/bin/python" ]]; then python3 -m venv "$APERTURE_RUNTIME_DIR/uv-bootstrap"; fi
   "$APERTURE_RUNTIME_DIR/uv-bootstrap/bin/python" -m pip install 'uv==0.9.27'

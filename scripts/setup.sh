@@ -37,6 +37,11 @@ cat > .tools/repositories <<'EOF'
 local
 maven-central: https://repo.maven.apache.org/maven2
 EOF
+if [[ -d .venv ]] && ! .venv/bin/python -c 'import sys;sys.exit(0 if (3,12)<=sys.version_info[:2]<(3,14) else 1)' >/dev/null 2>&1; then
+ backup="$ROOT/.run/venv-backup-$(date +%s)-$$"
+ mv .venv "$backup"
+ echo '检测到损坏或不兼容的旧虚拟环境，已保留在 .run/ 中并重新创建。'
+fi
 [[ -d .venv ]] || python3 -m venv .venv
 .venv/bin/python -m pip install -r quant/requirements.txt
 if [[ "$MANAGE_POSTGRES" == true ]]; then

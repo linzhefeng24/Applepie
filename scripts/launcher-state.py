@@ -19,7 +19,7 @@ def runtime_exists():
  files=['.venv/bin/python','.tools/sbt-launch.jar','.tools/repositories','.run/classpath','frontend/node_modules/.package-lock.json','frontend/dist/index.html']
  if not all((ROOT/n).exists() for n in files):return False
  # Preserve the venv path; resolving its executable symlink would lose its installed packages.
- result=subprocess.run([str(ROOT/'.venv/bin/python'),'-c','import numpy,scipy,pandas,pyarrow,psycopg'],stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
+ result=subprocess.run([str(ROOT/'.venv/bin/python'),'-c','import sys;assert (3,12)<=sys.version_info[:2]<(3,14);import numpy,scipy,pandas,pyarrow,psycopg'],stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
  return result.returncode==0
 if __name__=='__main__':
  mode=sys.argv[1];now=current()
