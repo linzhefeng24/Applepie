@@ -12,10 +12,10 @@ export function Metric({
   positive?: boolean;
 }) {
   return (
-    <div className="min-w-0 rounded-xl border border-white/[.08] bg-[#111823] p-5">
+    <div className="min-w-0 rounded border border-white/[.08] bg-[#111823] p-3">
       <div className="text-[11px] text-slate-400">{label}</div>
       <div
-        className={`mt-3 font-mono text-2xl tracking-tight ${positive === undefined ? "text-slate-100" : positive ? "text-[#b7ed77]" : "text-rose-300"}`}
+        className={`mt-2 font-mono text-xl tracking-tight ${positive === undefined ? "text-slate-100" : positive ? "text-[#55c9a3]" : "text-rose-300"}`}
       >
         {value}
       </div>

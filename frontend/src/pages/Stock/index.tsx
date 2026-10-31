@@ -19,15 +19,23 @@ import {
   Tag,
 } from "../../components/ui/Panel";
 import { Metrics } from "../../components/ui/Metrics";
-import { Chart, axis } from "../../components/ui/Chart";
 import { useStock } from "./hooks/useStock";
-import { priceChart, distribution } from "./functions/charts";
-import { number, percent, compact } from "../../utils/format";
+import { number, percent } from "../../utils/format";
 export function StockPage() {
   const market = useMarket()!;
   const symbol = useSelectedStock();
-  const [start, setStart] = useState("2022-03-07");
-  const [end, setEnd] = useState("2026-10-23");
+  const [start, setStart] = useState(
+    market.stocks.reduce(
+      (date, s) => (s.firstDate < date ? s.firstDate : date),
+      "9999",
+    ),
+  );
+  const [end, setEnd] = useState(
+    market.stocks.reduce(
+      (date, s) => (s.lastDate > date ? s.lastDate : date),
+      "",
+    ),
+  );
   const [compare, setCompare] = useState("");
   const state = useStock(symbol, start, end, compare);
   const audit = market.provenance.audits.find((x) => x.symbol === symbol);
@@ -36,7 +44,7 @@ export function StockPage() {
       <PageTitle
         eyebrow="EQUITY RESEARCH"
         title="个股研究"
-        description="把价格轨迹、年度表现和收益分布放在一起看。"
+        description="历史价格、年度表现、收益分布与数据质量。"
       />
       <div className="mb-6 flex flex-wrap items-end gap-3">
         <label className="field">

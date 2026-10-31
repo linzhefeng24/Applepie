@@ -1,5 +1,12 @@
 import { useEffect, useState } from "react";
-import { NavLink, Routes, Route, useLocation, Link } from "react-router-dom";
+import {
+  NavLink,
+  Routes,
+  Route,
+  useLocation,
+  Link,
+  useNavigate,
+} from "react-router-dom";
 import {
   Aperture,
   LayoutDashboard,
@@ -7,10 +14,14 @@ import {
   FlaskConical,
   History,
   Files,
-  ArrowUpRight,
   Database,
   Menu,
+  Search,
+  Command,
 } from "lucide-react";
+import { CommandSearch } from "./components/CommandSearch";
+import { selectStock } from "./stores/research";
+import { number, percent } from "./utils/format";
 import { ListStocksMessage } from "./apis/market/ListStocksMessage";
 import { ListWatchlistMessage } from "./apis/portfolio/ListWatchlistMessage";
 import { setMarket, setWatchlist, useMarket } from "./stores/research";
@@ -21,7 +32,12 @@ import { LabPage } from "./pages/Lab";
 import { BacktestPage } from "./pages/Backtest";
 import { ReportsPage } from "./pages/Reports";
 const navigation = [
-  { path: "/", name: "研究概览", en: "Overview", icon: LayoutDashboard },
+  {
+    path: "/",
+    name: "行情工作台",
+    en: "Market monitor",
+    icon: LayoutDashboard,
+  },
   {
     path: "/stocks",
     name: "个股研究",
@@ -65,94 +81,136 @@ export function App() {
       });
     return () => abort.abort();
   }, [nonce]);
+  const navigate = useNavigate();
+  const [command, setCommand] = useState(false);
+  const [now, setNow] = useState(new Date());
+  useEffect(() => {
+    const timer = window.setInterval(() => setNow(new Date()), 1000);
+    function keys(event: KeyboardEvent) {
+      if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === "k") {
+        event.preventDefault();
+        setCommand((v) => !v);
+      }
+      if (event.altKey && /^[1-5]$/.test(event.key)) {
+        event.preventDefault();
+        navigate(navigation[Number(event.key) - 1].path);
+      }
+    }
+    window.addEventListener("keydown", keys);
+    return () => {
+      clearInterval(timer);
+      window.removeEventListener("keydown", keys);
+    };
+  }, [navigate]);
+  const last = market?.stocks.reduce(
+    (date, s) => (s.lastDate > date ? s.lastDate : date),
+    "",
+  );
   return (
-    <div className="min-h-screen">
-      <aside
-        className={`${menu ? "flex" : "hidden"} fixed inset-y-0 left-0 z-40 w-60 flex-col border-r border-white/[.07] bg-[#0d141e] lg:flex`}
-      >
-        <Link to="/" className="flex items-center gap-3 px-6 py-8">
-          <div className="rounded-lg bg-[#b7ed77] p-2 text-[#17231e]">
-            <Aperture size={23} />
-          </div>
-          <div>
-            <div className="text-sm font-bold tracking-[.17em] text-white">
-              APERTURE
-            </div>
-            <div className="mt-1 font-mono text-[8px] tracking-[.22em] text-slate-500">
-              FINANCIAL RESEARCH
-            </div>
-          </div>
+    <div className="terminal-shell">
+      {command && <CommandSearch close={() => setCommand(false)} />}
+      <header className="terminal-topbar">
+        <Link to="/" className="terminal-brand">
+          <Aperture size={22} />
+          <strong>
+            APERTURE<span>TERMINAL</span>
+          </strong>
         </Link>
-        <div className="px-6 pb-3 pt-6 text-[9px] tracking-[.22em] text-slate-600">
-          WORKSPACE / 研究空间
+        <button className="terminal-search" onClick={() => setCommand(true)}>
+          <Search size={14} />
+          <span>搜索证券 / 公司 / 行业</span>
+          <kbd>Ctrl K</kbd>
+        </button>
+        <div className="ml-auto hidden items-center gap-4 text-[10px] sm:flex">
+          <span className="historical-badge">历史数据</span>
+          <span className="font-mono text-slate-400">USD</span>
+          <span className="font-mono text-slate-500">
+            {now.toISOString().slice(11, 19)} UTC
+          </span>
         </div>
-        <nav className="space-y-1 px-3">
-          {navigation.map(({ path, name, en, icon: Icon }) => (
+        <button
+          aria-label="展开导航"
+          className="ml-2 lg:hidden"
+          onClick={() => setMenu(!menu)}
+        >
+          <Menu size={18} />
+        </button>
+      </header>
+      <aside className={`terminal-sidebar ${menu ? "mobile-open" : ""}`}>
+        <div className="sidebar-label">RESEARCH WORKSPACE</div>
+        <nav>
+          {navigation.map(({ path, name, en, icon: Icon }, i) => (
             <NavLink
               key={path}
               to={path}
               end={path === "/"}
               className={({ isActive }) =>
-                `flex items-center gap-3 rounded-lg px-4 py-3.5 ${isActive ? "bg-[#b7ed77]/10 text-[#b7ed77]" : "text-slate-500 hover:bg-white/[.03] hover:text-slate-300"}`
+                `terminal-nav ${isActive ? "active" : ""}`
               }
             >
-              <Icon size={17} />
-              <div>
-                <div className="text-xs font-medium">{name}</div>
-                <div className="mt-1 font-mono text-[9px] opacity-50">{en}</div>
-              </div>
+              <Icon size={16} />
+              <span>
+                <strong>{name}</strong>
+                <small>{en}</small>
+              </span>
+              <kbd>{i + 1}</kbd>
             </NavLink>
           ))}
         </nav>
-        <div className="mt-auto p-5">
-          <div className="rounded-lg border border-white/[.07] bg-white/[.02] p-4">
-            <Database size={15} className="text-[#b7ed77]" />
-            <div className="mt-3 text-xs text-slate-300">
-              你的数据，你的研究
-            </div>
-            <div className="mt-2 text-[10px] leading-5 text-slate-600">
-              真实历史行情 · 本地数据库
-              <br />
-              课程项目 / 独立微服务
-            </div>
-          </div>
-          <div className="mt-5 flex justify-between font-mono text-[9px] text-slate-600">
-            <span>APERTURE v1.0</span>
-            <span>LOCAL</span>
-          </div>
+        <div className="sidebar-bottom">
+          <Database size={14} />
+          <span>本地历史数据库</span>
+          <p>
+            {market?.stocks.length || "—"} 个标的 ·{" "}
+            {market?.provenance.rows.toLocaleString() || "—"} 日线
+          </p>
+          <button onClick={() => setCommand(true)}>
+            <Command size={12} /> 全局搜索 <kbd>Ctrl K</kbd>
+          </button>
+          <small>Alt + 1—5 切换工作区</small>
         </div>
       </aside>
-      <div className="lg:ml-60">
-        <header className="sticky top-0 z-30 flex h-16 items-center justify-between border-b border-white/[.07] bg-[#0b1018]/95 px-5 backdrop-blur md:px-8">
-          <div className="flex items-center gap-3">
-            <button
-              aria-label="展开导航"
-              onClick={() => setMenu(!menu)}
-              className="lg:hidden"
+      <div className="terminal-body">
+        <div className="terminal-ticker" aria-label="历史行情快照">
+          {market?.stocks.slice(0, 9).map((s) => {
+            const q = market.quotes[s.symbol];
+            return (
+              <button
+                key={s.symbol}
+                onClick={() => {
+                  selectStock(s.symbol);
+                  navigate("/stocks");
+                }}
+              >
+                <strong>{s.symbol}</strong>
+                <span>{number(q?.close)}</span>
+                <em className={q?.changePct >= 0 ? "positive" : "negative"}>
+                  {q?.changePct >= 0 ? "+" : ""}
+                  {percent(q?.changePct)}
+                </em>
+              </button>
+            );
+          })}
+        </div>
+        <div className="workspace-tabs">
+          {navigation.map(({ path, name }, i) => (
+            <NavLink
+              end={path === "/"}
+              key={path}
+              to={path}
+              className={({ isActive }) => (isActive ? "active" : "")}
             >
-              <Menu size={19} />
-            </button>
-            <div className="font-mono text-[10px] tracking-wider text-slate-600">
-              WORKSPACE <span className="mx-2 text-slate-700">/</span>
-              <span className="text-slate-300">
-                {navigation.find((n) => n.path === location.pathname)?.en ||
-                  "Research"}
-              </span>
-            </div>
-          </div>
-          <div className="flex items-center gap-4">
-            <span className="hidden font-mono text-[10px] text-slate-500 sm:block">
-              HISTORICAL DATA · USD
-            </span>
-            <span className="flex items-center gap-2 rounded-full border border-[#b7ed77]/15 bg-[#b7ed77]/5 px-3 py-1 text-[10px] text-[#b7ed77]">
-              <span className="h-1 w-1 rounded-full bg-current" />
-              {market ? "数据已载入" : "连接中"}
-            </span>
-          </div>
-        </header>
-        <main className="mx-auto max-w-[1600px] p-5 md:p-8">
+              <span className="font-mono opacity-50">0{i + 1}</span>
+              {name}
+            </NavLink>
+          ))}
+          <span className="ml-auto hidden text-[10px] text-slate-600 xl:block">
+            历史快照 / {last || "载入中"}
+          </span>
+        </div>
+        <main className="terminal-main">
           {watchError && (
-            <div className="mb-4">
+            <div className="mb-3">
               <ErrorBox error={watchError} />
             </div>
           )}
@@ -171,23 +229,27 @@ export function App() {
                 path="*"
                 element={
                   <div>
-                    页面不存在{" "}
-                    <Link to="/" className="underline">
-                      返回概览
-                    </Link>
+                    页面不存在 <Link to="/">返回行情工作台</Link>
                   </div>
                 }
               />
             </Routes>
           )}
-          <footer className="mt-10 flex flex-wrap justify-between gap-2 border-t border-white/[.05] pt-4 text-[9px] text-slate-600">
-            <span>APERTURE / 从数据出发，让研究有据可循。</span>
-            <span>
-              历史研究工具 · 不含实盘交易 · 不构成投资建议{" "}
-              <ArrowUpRight size={10} className="inline" />
-            </span>
-          </footer>
         </main>
+        <footer className="terminal-status">
+          <span>
+            <i className={market ? "connected" : ""} />
+            {error
+              ? "行情连接失败"
+              : market
+                ? "历史行情已载入"
+                : "正在连接数据服务"}
+          </span>
+          <span>截至 {last || "—"} · 各标的末日可能不同</span>
+          <span className="ml-auto">
+            APERTURE / RESEARCH · 历史研究，不含实盘交易
+          </span>
+        </footer>
       </div>
     </div>
   );

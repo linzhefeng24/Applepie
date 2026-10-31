@@ -13,10 +13,8 @@ export function Panel({
   className?: string;
 }) {
   return (
-    <section
-      className={`rounded-xl border border-white/[.08] bg-[#111823] ${className}`}
-    >
-      <div className="flex flex-wrap items-center justify-between gap-3 px-5 pt-5 pb-4">
+    <section className={`terminal-panel ${className}`}>
+      <div className="panel-heading">
         <div>
           <h2 className="text-sm font-semibold tracking-wide text-slate-100">
             {title}

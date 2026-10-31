@@ -1,33 +1,62 @@
 import { useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Search, ArrowUpRight, Star } from "lucide-react";
+import {
+  Search,
+  ArrowUpRight,
+  Star,
+  Download,
+  ArrowDownUp,
+} from "lucide-react";
 import {
   useMarket,
   useWatchlist,
   setWatchlist,
   selectStock,
+  useSelectedStock,
 } from "../../../stores/research";
 import { SetWatchlistMessage } from "../../../apis/portfolio/SetWatchlistMessage";
 import { Panel, ErrorBox, Empty, Tag } from "../../../components/ui/Panel";
 import { number, percent, compact } from "../../../utils/format";
-export function StockPool() {
+export function StockPool({
+  sector,
+  setSector,
+}: {
+  sector: string;
+  setSector: (value: string) => void;
+}) {
+  const selected = useSelectedStock();
+  const [sort, setSort] = useState("symbol");
+  const [ascending, setAscending] = useState(true);
   const market = useMarket()!;
   const watch = useWatchlist();
   const [q, setQ] = useState("");
-  const [sector, setSector] = useState("全部行业");
   const [onlyWatch, setOnlyWatch] = useState(false);
   const [error, setError] = useState("");
   const [busy, setBusy] = useState<string | null>(null);
   const nav = useNavigate();
   const stocks = useMemo(
     () =>
-      market.stocks.filter(
-        (s) =>
-          (!onlyWatch || watch.includes(s.symbol)) &&
-          (sector === "全部行业" || s.sector === sector) &&
-          `${s.symbol} ${s.name}`.toLowerCase().includes(q.toLowerCase()),
-      ),
-    [market, q, sector, onlyWatch, watch],
+      [...market.stocks]
+        .sort((a, b) => {
+          const qa = market.quotes[a.symbol],
+            qb = market.quotes[b.symbol];
+          const value =
+            sort === "symbol"
+              ? a.symbol.localeCompare(b.symbol)
+              : sort === "close"
+                ? (qa?.close || 0) - (qb?.close || 0)
+                : sort === "volume"
+                  ? (qa?.volume || 0) - (qb?.volume || 0)
+                  : (qa?.changePct || 0) - (qb?.changePct || 0);
+          return ascending ? value : -value;
+        })
+        .filter(
+          (s) =>
+            (!onlyWatch || watch.includes(s.symbol)) &&
+            (sector === "全部行业" || s.sector === sector) &&
+            `${s.symbol} ${s.name}`.toLowerCase().includes(q.toLowerCase()),
+        ),
+    [market, q, sector, onlyWatch, watch, sort, ascending],
   );
   async function toggle(symbol: string) {
     setBusy(symbol);
@@ -43,10 +72,52 @@ export function StockPool() {
       setBusy(null);
     }
   }
+  function exportRows() {
+    const csv =
+      "\uFEFF代码,公司,行业,收盘价,涨跌幅(%),源成交量,数据日\n" +
+      stocks
+        .map((s) => {
+          const quote = market.quotes[s.symbol];
+          return [
+            s.symbol,
+            s.name,
+            s.sector,
+            quote?.close,
+            quote ? quote.changePct * 100 : undefined,
+            quote?.volume,
+            quote?.date,
+          ]
+            .map((v) => '"' + String(v ?? "").replaceAll('"', '""') + '"')
+            .join(",");
+        })
+        .join("\n");
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(
+      new Blob([csv], { type: "text/csv;charset=utf-8" }),
+    );
+    a.download = "aperture-market.csv";
+    a.click();
+    setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+  }
+  function column(key: string, label: string) {
+    return (
+      <button
+        onClick={() => {
+          setSort(key);
+          setAscending(sort === key ? !ascending : key === "symbol");
+        }}
+        className="sort-heading"
+      >
+        {label}
+        <ArrowDownUp size={10} />
+        {sort === key ? <span>{ascending ? "↑" : "↓"}</span> : null}
+      </button>
+    );
+  }
   return (
     <Panel
-      title="股票观察池"
-      subtitle="最后一个可用交易日的源行情 · 非实时价格"
+      title="行情观察池"
+      subtitle="点击行联动图表 · 点击代码进入研究"
       action={
         <div className="flex gap-2">
           <button
@@ -55,6 +126,13 @@ export function StockPool() {
           >
             <Star size={12} />
             {onlyWatch ? "我的自选" : "全部标的"}
+          </button>
+          <button
+            className="btn"
+            aria-label="导出行情 CSV"
+            onClick={exportRows}
+          >
+            <Download size={12} /> CSV
           </button>
           <Tag>{stocks.length} SYMBOLS</Tag>
         </div>
@@ -84,18 +162,17 @@ export function StockPool() {
         </select>
       </div>
       {error && <ErrorBox error={error} />}
-      <div className="table-scroll">
+      <div className="table-scroll quote-table-scroll">
         <table className="w-full">
           <thead>
             <tr>
               <th></th>
-              <th>标的 / SYMBOL</th>
+              <th>{column("symbol", "标的 / SYMBOL")}</th>
               <th>行业</th>
-              <th>最新源价格 / USD</th>
-              <th>较前日</th>
-              <th>源成交量</th>
+              <th>{column("close", "收盘 / USD")}</th>
+              <th>{column("change", "涨跌幅")}</th>
+              <th>{column("volume", "源成交量")}</th>
               <th>交易日</th>
-              <th>历史记录</th>
               <th></th>
             </tr>
           </thead>
@@ -103,12 +180,19 @@ export function StockPool() {
             {stocks.map((s) => {
               const quote = market.quotes[s.symbol];
               return (
-                <tr key={s.symbol} className="group hover:bg-white/[.025]">
+                <tr
+                  key={s.symbol}
+                  className={`quote-row ${selected === s.symbol ? "selected" : ""}`}
+                  onClick={() => selectStock(s.symbol)}
+                >
                   <td>
                     <button
                       aria-label={`${watch.includes(s.symbol) ? "移除" : "添加"}自选 ${s.symbol}`}
                       disabled={busy !== null}
-                      onClick={() => toggle(s.symbol)}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        toggle(s.symbol);
+                      }}
                       className={
                         watch.includes(s.symbol)
                           ? "text-[#b7ed77]"
@@ -144,7 +228,7 @@ export function StockPool() {
                     {number(quote?.close)}
                   </td>
                   <td
-                    className={`font-mono ${quote?.changePct >= 0 ? "text-[#b7ed77]" : "text-rose-300"}`}
+                    className={`font-mono ${quote?.changePct >= 0 ? "text-[#55c9a3]" : "text-rose-300"}`}
                   >
                     {quote?.changePct >= 0 ? "+" : ""}
                     {percent(quote?.changePct)}
@@ -155,7 +239,6 @@ export function StockPool() {
                   <td className="font-mono text-[10px] text-slate-500">
                     {quote?.date}
                   </td>
-                  <td className="font-mono text-slate-500">{s.sessions} 日</td>
                   <td>
                     <button
                       aria-label={`研究 ${s.symbol}`}
