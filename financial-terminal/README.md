@@ -23,7 +23,7 @@ bash run.sh
 
 也可以在任意目录指定脚本位置执行，例如 `bash "/你自己的目录/financial-terminal/run.sh"`。脚本自动定位项目，不要求目录必须叫 financial-terminal 或放在固定位置。
 
-第一次会自动安装项目依赖、初始化本地数据库、构建前后端并启动全部服务。以后运行同一命令会复用已安装依赖；依赖清单、项目位置或源码变化时会重新安装或构建。启动成功后打印浏览器访问地址，默认端口 4173。无需自己分别启动数据库和多个微服务。
+正式下载包包含预编译 Scala 后端及其依赖。第一次会自动安装其余项目依赖、初始化本地数据库、构建前端并启动全部服务；正常启动不下载 sbt 或 Maven 依赖。以后运行同一命令会复用已安装依赖；依赖清单、项目位置或源码变化时会重新安装或构建。启动成功后打印浏览器访问地址，默认端口 4173。无需自己分别启动数据库和多个微服务。
 
 ```bash
 bash run.sh stop       # 停止本项目应用及项目管理的数据库，保留数据
@@ -144,3 +144,25 @@ MARKET_PORT=8201 PORTFOLIO_PORT=8202 ANALYSIS_PORT=8203 QUANT_PORT=8204 FRONTEND
 项目安装使用独立的软件源，不修改用户的 pip.conf、pip.ini 或 npmrc。默认 Python 源为 PyPI 官方 HTTPS，npm 为官方 HTTPS registry；全局 Nexus 私有源、额外 Python 索引和安装目标设置不会带入项目安装。TLS 校验保持开启，并保留显式的证书和代理环境设置。
 
 如果确需自己的镜像，可在 `.env` 设置 `APERTURE_PYPI_INDEX_URL` 和 `APERTURE_NPM_REGISTRY`（只接受 HTTPS）。uv 引导工具和全部 Python 依赖都通过同一个项目安装入口下载，避免引导成功后又在另一个阶段使用旧的全局源。
+
+### npm 安装完成后暂时没有新输出
+
+接下来是首次 Scala/sbt 构建，可能需要下载 Maven 依赖。新版会实时显示构建日志，并每 20 秒报告进程仍在运行；安装分为六个有明确标记的阶段。长时间等待时，应查看日志判断是否有下载或网络错误，不能只凭没有命令提示符断言构建正常。
+
+旧版安装已经在运行时，不需要重新安装；在另一个终端进入同一项目目录后运行 `tail -n 40 .run/compile.log` 查看最新内容，或 `tail -f .run/compile.log` 持续观察。结束观察用 Ctrl+C；这只停止该终端的 tail，不会停止原终端的构建。
+
+### Maven 仓库连接超时
+
+正式发布的 `APERTURE.zip` 自带 `backend/runtime/`，其中应用 JAR 和 40 个运行依赖都有 SHA256 清单。脚本校验包内容与 Scala 源码指纹后，直接生成当前目录的 Java 类路径，跳过 sbt/Maven 下载；这是同一份 Scala 后端的预编译运行包，完整源码仍在。
+
+GitHub 自动生成的源码 ZIP、普通 Git 克隆不包含生成的运行包，开发者需要自行源码构建。Scala 源码变更后也会要求重建，损坏的运行包会停止使用，不会放宽校验。
+
+```bash
+# 开发者明确从源码构建（需要访问 Maven）
+APERTURE_BUILD_FROM_SOURCE=1 bash scripts/setup.sh
+# 提交源码后，生成后端发布运行包，再打包独立 ZIP
+python3 scripts/backend-runtime.py pack
+python3 scripts/package-release.py
+```
+
+如果旧版本卡在 `getting org.scala-sbt sbt`，先查看 `.run/compile.log`。出现 Maven `Connection timed out` 时，可使用含运行包的正式下载 ZIP 覆盖代码；保留 `.env`、`.venv`、`.tools` 和数据库。新版普通启动不会重新走 sbt 下载。

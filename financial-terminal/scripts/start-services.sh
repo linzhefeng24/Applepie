@@ -12,6 +12,8 @@ if [[ "$MANAGE_POSTGRES" == true ]]; then
   "$PG_BIN/pg_ctl" -D "$PG_DATA_DIR" -l "$ROOT/.run/postgres.log" -o "-h $DB_HOST -p $DB_PORT -k '$PG_SOCKET_DIR'" start
  fi
 fi
+# Verify packaged JARs on every explicit start, even if an old classpath cache exists.
+if [[ -d backend/runtime ]]; then bash scripts/build-backend.sh; fi
 # Java classpaths are generated machine-local artifacts. Rebuild when moved or when entries vanished.
 if ! python3 - <<'PY'
 from pathlib import Path

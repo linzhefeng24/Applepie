@@ -1,6 +1,6 @@
 # 验证记录
 
-验证日期：2026-10-31。以下均在当前云实例实际执行，非仅列出建议命令。
+初始验证日期：2026-10-31；最新启动与发布修复验证：2026-11-01（Asia/Shanghai）。以下均在当前云实例实际执行，非仅列出建议命令。
 
 | 检查 | 结果 | 证据 / 入口 |
 |---|---|---|
@@ -11,7 +11,7 @@
 | Scala 编译 | 通过 | 39 个 Scala 源文件；强类型业务响应与所有服务构建成功 |
 | Scala 格式 | 通过 | `scalafmtCheckAll` |
 | 前端严格类型与生产构建 | 通过 | `tsc -b && vite build`；使用锁文件 |
-| 数值与配置单元测试 | **27 项通过** | `quant/tests/test_engine.py` |
+| 数值与配置单元测试 | **33 项通过** | `quant/tests/test_engine.py` |
 | 真数据库 HTTP 集成测试 | 通过 | `scripts/verify-api.py` |
 | Chromium 真实用户流程 | **2 项通过** | `frontend/tests/workflow.spec.ts`，生产构建、实际后端，无 API mock |
 | 完整安装脚本 | 通过 | 实际执行 `scripts/setup.sh`，重复安装/构建/数据校验/数值测试全部成功 |
@@ -101,3 +101,11 @@ Ubuntu 26.04 的系统 Python 过新时，自动使用项目专用的兼容 Pyth
 uv 引导安装与 quant/requirements.txt 依赖安装统一通过同一入口，默认 PyPI 官方 HTTPS，禁用全局配置读取，仅接受预编译 wheel。npm ci 使用项目独立的配置文件和官方 HTTPS registry，并保持严格 TLS。可用项目专用环境变量选择 HTTPS 镜像。
 
 在干净 Ubuntu 26.04 容器中，同时预置：全局 `/etc/pip.conf` 指向不可访问 Nexus、额外私有 Python 索引、环境变量重复指定这些源、全局 npmrc 指向不可访问私有源，以及之前的错误 Docker 源。uv 安装、兼容 Python、项目全部 Python/npm 依赖、27 项单元测试、前后端构建、应用启动及真实 API / 优化 / 回测 / 报告验证全部通过。退出前核对 pip.conf、npmrc、Docker 源文件 SHA256 均未改变，测试退出码为 0。随后额外保留了用户显式的 pip 哈希校验策略，并用回归用例确认未被清除。
+
+## 预编译 Scala 运行包与构建进度
+
+正式下载包增加应用 JAR、40 个运行依赖和 SHA256/源码指纹清单。正常 setup/start 会校验并启用运行包，不下载 sbt/Maven；源码构建仍保留，日志实时输出、每 20 秒报告构建进程存活。通过受控失败测试确认：即便 tee 正常退出，sbt 的退出码 17 仍被正确返回。
+
+在含空格和括号的新目录中测试正式运行包，故意阻止 Maven curl 下载、将 sbt 编译入口设为立即失败，并确保没有 sbt launcher：`bash run.sh` 成功启动；全部真实 API/数值/优化/回测/报告检查通过；Chromium 的 2 项完整用户流程也通过。最后再次验证每次启动的 JAR 校验与重启流程。测试复用了已安装的 Java/Node/Python/PostgreSQL 工具，未把它声称为在另一台原生 WSL 上验证。
+
+新增 6 项运行包回归测试，覆盖打包与顺序、带空格目录搬移、源码变更、损坏 JAR、缺失清单及路径逃逸拒绝；最新合计 33 项单元测试通过。发布包中的完整源码没有移除。GitHub 自动源码 ZIP 不含生成的运行包，用户应选择正式 APERTURE.zip。
