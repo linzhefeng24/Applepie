@@ -32,19 +32,29 @@ PYOS
  dpkg-deb -x .tools/pg-client.deb .tools/pg
  source scripts/config.sh
 fi
+need_sbt=true
+if [[ ${APERTURE_BUILD_FROM_SOURCE:-0} != 1 ]]; then
+ if python3 scripts/backend-runtime.py check; then need_sbt=false; else status=$?; [[ $status -eq 1 ]] || exit "$status"; fi
+fi
+if [[ "$need_sbt" == true ]]; then
 fetch_checked https://repo.maven.apache.org/maven2/org/scala-sbt/sbt-launch/1.10.7/sbt-launch-1.10.7.jar .tools/sbt-launch.jar 3cca02818047327a83efde776103a1ef92f76f72c062badbbb062499a3270c07
 cat > .tools/repositories <<'EOF'
 [repositories]
 local
 maven-central: https://repo.maven.apache.org/maven2
 EOF
+else
+ echo '检测到可用的预编译 Scala 运行包，跳过 sbt/Maven 工具下载。'
+fi
 if [[ -d .venv ]] && ! .venv/bin/python -c 'import sys;sys.exit(0 if (3,12)<=sys.version_info[:2]<(3,14) else 1)' >/dev/null 2>&1; then
  backup="$ROOT/.run/venv-backup-$(date +%s)-$$"
  mv .venv "$backup"
  echo '检测到损坏或不兼容的旧虚拟环境，已保留在 .run/ 中并重新创建。'
 fi
 [[ -d .venv ]] || python3 -m venv .venv
+echo '[1/6] 安装 Python 数值计算依赖…'
 aperture_pip_install "$PYTHON_BIN" -r quant/requirements.txt
+echo '[2/6] 初始化并验证数据库与精简行情数据…'
 if [[ "$MANAGE_POSTGRES" == true ]]; then
  fresh_cluster=false
  "$PG_BIN/postgres" --version
@@ -70,11 +80,15 @@ print('Configured PostgreSQL connection verified.')
 PYDB
 if [[ ! -f "$DATA_DIR/daily.csv" ]]; then "$PYTHON_BIN" scripts/prepare_data.py; fi
 python3 scripts/check-data.py
+echo '[3/6] 安装前端依赖…'
 [[ "$APERTURE_NPM_REGISTRY" == https://* ]] || { echo '项目 npm 软件源必须使用 HTTPS。'; exit 1; }
 : > .run/npm-userconfig
 : > .run/npm-globalconfig
 npm --userconfig "$ROOT/.run/npm-userconfig" --globalconfig "$ROOT/.run/npm-globalconfig" --registry "$APERTURE_NPM_REGISTRY" --strict-ssl=true --prefix frontend ci --no-audit --no-fund
+echo '[4/6] 准备 Scala 后端（发布包直接校验；源码版才编译）…'
 scripts/build-backend.sh
+echo '[5/6] 构建前端页面…'
 npm --prefix frontend run build
+echo '[6/6] 执行数值与配置检查…'
 OPENBLAS_NUM_THREADS=1 .venv/bin/python -m unittest discover -s quant/tests -v
 echo 'Setup complete. Start services with scripts/start-services.sh.'
