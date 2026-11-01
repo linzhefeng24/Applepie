@@ -22,9 +22,9 @@ import {
 import { CommandSearch } from "./components/CommandSearch";
 import { selectStock } from "./stores/research";
 import { number, percent } from "./utils/format";
-import {loadMarket} from "./functions/loadMarket";
-import {AccountPage} from "./pages/Account";
-import {useIdentity} from "./auth/AuthGate";
+import { loadMarket } from "./functions/loadMarket";
+import { AccountPage } from "./pages/Account";
+import { useIdentity } from "./auth/AuthGate";
 import { ListWatchlistMessage } from "./apis/watchlist/ListWatchlistMessage";
 import { setMarket, setWatchlist, useMarket } from "./stores/research";
 import { ErrorBox, Loading } from "./components/ui/Panel";
@@ -34,6 +34,9 @@ import { LabPage } from "./pages/Lab";
 import { BacktestPage } from "./pages/Backtest";
 import { DataPage } from "./pages/Data";
 import { ReportsPage } from "./pages/Reports";
+import { ComparePage } from "./pages/Compare";
+import { RiskPage } from "./pages/Risk";
+import { QualityPage } from "./pages/Quality";
 const navigation = [
   {
     path: "/",
@@ -56,6 +59,19 @@ const navigation = [
   { path: "/backtest", name: "策略回测", en: "Backtesting", icon: History },
   { path: "/reports", name: "报告管理", en: "Reports", icon: Files },
   { path: "/data", name: "数据中心", en: "Data access", icon: Database },
+  {
+    path: "/compare",
+    name: "证券对比",
+    en: "Security comparison",
+    icon: ChartNoAxesCombined,
+  },
+  {
+    path: "/risk",
+    name: "组合风险分析",
+    en: "Portfolio risk",
+    icon: SlidersHorizontal,
+  },
+  { path: "/quality", name: "数据质量审计", en: "Data audit", icon: Database },
 ];
 export function App() {
   const market = useMarket();
@@ -95,7 +111,7 @@ export function App() {
         event.preventDefault();
         setCommand((v) => !v);
       }
-      if (event.altKey && /^[1-6]$/.test(event.key)) {
+      if (event.altKey && /^[1-9]$/.test(event.key)) {
         event.preventDefault();
         navigate(navigation[Number(event.key) - 1].path);
       }
@@ -161,7 +177,9 @@ export function App() {
             </NavLink>
           ))}
         </nav>
-        <Link to="/account" className="terminal-nav">账户 / {identity.user.displayName} · {identity.user.role}</Link>
+        <Link to="/account" className="terminal-nav">
+          账户 / {identity.user.displayName} · {identity.user.role}
+        </Link>
         <div className="sidebar-bottom">
           <Database size={14} />
           <span>本地历史数据库</span>
@@ -172,7 +190,7 @@ export function App() {
           <button onClick={() => setCommand(true)}>
             <Command size={12} /> 全局搜索 <kbd>Ctrl K</kbd>
           </button>
-          <small>Alt + 1—6 切换工作区</small>
+          <small>Alt + 1—9 切换工作区</small>
         </div>
       </aside>
       <div className="terminal-body">
@@ -231,6 +249,9 @@ export function App() {
               <Route path="/backtest" element={<BacktestPage />} />
               <Route path="/reports" element={<ReportsPage />} />
               <Route path="/data" element={<DataPage />} />
+              <Route path="/compare" element={<ComparePage />} />
+              <Route path="/risk" element={<RiskPage />} />
+              <Route path="/quality" element={<QualityPage />} />
               <Route path="/account" element={<AccountPage />} />
               <Route
                 path="*"
