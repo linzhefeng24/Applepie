@@ -82,6 +82,7 @@ print('Configured PostgreSQL connection verified.')
 PYDB
 if [[ ! -f "$DATA_DIR/daily.csv" ]]; then "$PYTHON_BIN" scripts/prepare_data.py; fi
 python3 scripts/check-data.py
+python3 scripts/check-minute-data.py
 echo '[3/6] 安装前端依赖…'
 [[ "$APERTURE_NPM_REGISTRY" == https://* ]] || { echo '项目 npm 软件源必须使用 HTTPS。'; exit 1; }
 : > .run/npm-userconfig

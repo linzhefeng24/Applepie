@@ -1,0 +1,329 @@
+{
+  "sourceSha256": "3228a7935ab3b8fffa857c44cddf2795f6b37e76e965ab2787d364afd435a693",
+  "sourceResolution": "1min",
+  "timezone": "source timestamps have no timezone; retained without conversion",
+  "selection": "latest 60 recorded sessions per symbol",
+  "symbols": [
+    {
+      "symbol": "AAPL",
+      "file": "AAPL.csv.gz",
+      "sha256": "54292727fc4eb41d35841633bfb026bb1e38deefae91737188fa2d5b8013c04d",
+      "rows": 22612,
+      "start": "2026-07-31 09:30:00",
+      "end": "2026-10-23 15:59:00",
+      "duplicates": 0,
+      "rejected": 0
+    },
+    {
+      "symbol": "AMZN",
+      "file": "AMZN.csv.gz",
+      "sha256": "6a1faa15424bbdcc8cff802cc1c3047d9df089b13bc22e02f788fafce3c048d7",
+      "rows": 22682,
+      "start": "2026-07-31 09:30:00",
+      "end": "2026-10-23 15:59:00",
+      "duplicates": 0,
+      "rejected": 0
+    },
+    {
+      "symbol": "GOOG",
+      "file": "GOOG.csv.gz",
+      "sha256": "3ac16ee674813db1aac66425de2cbe10dac0377c826b37d31cef544a5de0b7fa",
+      "rows": 22702,
+      "start": "2026-07-31 09:30:00",
+      "end": "2026-10-23 15:59:00",
+      "duplicates": 0,
+      "rejected": 0
+    },
+    {
+      "symbol": "AMD",
+      "file": "AMD.csv.gz",
+      "sha256": "bee75f2195df775ca4df7d8f45b8d8fcb691cfd8bae4f0c1e73b5493b6fe4cf5",
+      "rows": 22655,
+      "start": "2026-07-31 09:34:00",
+      "end": "2026-10-23 15:58:00",
+      "duplicates": 0,
+      "rejected": 0
+    },
+    {
+      "symbol": "ADBE",
+      "file": "ADBE.csv.gz",
+      "sha256": "4ec2e971e9016c524720cd23c53365ce3b23b7438adb5d18472e14368d7bf938",
+      "rows": 22415,
+      "start": "2026-07-31 09:30:00",
+      "end": "2026-10-23 15:59:00",
+      "duplicates": 0,
+      "rejected": 0
+    },
+    {
+      "symbol": "AVGO",
+      "file": "AVGO.csv.gz",
+      "sha256": "3958e6044eda653117606f565df25e9198d7b6953bcc763428e97998cb9f3145",
+      "rows": 22762,
+      "start": "2026-07-31 09:38:00",
+      "end": "2026-10-23 15:52:00",
+      "duplicates": 0,
+      "rejected": 0
+    },
+    {
+      "symbol": "ASML",
+      "file": "ASML.csv.gz",
+      "sha256": "a6f920338b46e38350aa376b6e31bc62dd38192f1a2c1e2291dcd3c70276bb78",
+      "rows": 22293,
+      "start": "2026-07-31 09:39:00",
+      "end": "2026-10-23 15:59:00",
+      "duplicates": 0,
+      "rejected": 0
+    },
+    {
+      "symbol": "AMAT",
+      "file": "AMAT.csv.gz",
+      "sha256": "f7fbddcaa2a11782d0f56c0d50b3c980682be83aa0407ee02ee6522623196982",
+      "rows": 22576,
+      "start": "2026-07-31 09:31:00",
+      "end": "2026-10-23 15:59:00",
+      "duplicates": 0,
+      "rejected": 0
+    },
+    {
+      "symbol": "BAC",
+      "file": "BAC.csv.gz",
+      "sha256": "e3725dd098d79c47895d64ef60a299aaa84fbace2c4ca63163a06bbd89abedae",
+      "rows": 22671,
+      "start": "2026-07-31 09:33:00",
+      "end": "2026-10-23 15:53:00",
+      "duplicates": 0,
+      "rejected": 0
+    },
+    {
+      "symbol": "C",
+      "file": "C.csv.gz",
+      "sha256": "9b7a1b0cc23951447e28fc532ac8c3ee5b232e36993b7f6e6a3f5a1b92d3814e",
+      "rows": 22435,
+      "start": "2026-07-31 09:35:00",
+      "end": "2026-10-23 15:54:00",
+      "duplicates": 0,
+      "rejected": 0
+    },
+    {
+      "symbol": "GS",
+      "file": "GS.csv.gz",
+      "sha256": "429a3ccb27a8797237d614f52422d3a840e42cd01dd6a53cb27742197cf19997",
+      "rows": 21722,
+      "start": "2026-07-31 09:39:00",
+      "end": "2026-10-23 15:53:00",
+      "duplicates": 0,
+      "rejected": 0
+    },
+    {
+      "symbol": "AXP",
+      "file": "AXP.csv.gz",
+      "sha256": "23f57bff58cc35569d01e5801f07813b06e08699487e2ffc02af782f5b0b283a",
+      "rows": 22031,
+      "start": "2026-07-31 09:30:00",
+      "end": "2026-10-23 15:59:00",
+      "duplicates": 0,
+      "rejected": 0
+    },
+    {
+      "symbol": "BLK",
+      "file": "BLK.csv.gz",
+      "sha256": "2c11a0722432772866dc656a7f46d0bf9559da27659a57885712914a72866cf7",
+      "rows": 18972,
+      "start": "2026-07-31 09:31:00",
+      "end": "2026-10-23 15:59:00",
+      "duplicates": 0,
+      "rejected": 0
+    },
+    {
+      "symbol": "BRK-B",
+      "file": "BRK-B.csv.gz",
+      "sha256": "cde28cbcc4999d29eaa7a115e61ab4a0b6165ddcace620837f51dcc6ee21b691",
+      "rows": 22003,
+      "start": "2026-07-31 09:32:00",
+      "end": "2026-10-23 15:59:00",
+      "duplicates": 0,
+      "rejected": 0
+    },
+    {
+      "symbol": "ABBV",
+      "file": "ABBV.csv.gz",
+      "sha256": "1b522e18a4d0df9dc08d076996a9225d3b475123879ab19b2c5f9715b3d4be74",
+      "rows": 21767,
+      "start": "2026-07-31 09:30:00",
+      "end": "2026-10-23 15:57:00",
+      "duplicates": 0,
+      "rejected": 0
+    },
+    {
+      "symbol": "ABT",
+      "file": "ABT.csv.gz",
+      "sha256": "07a240886576e8c2c84ea1f17972e053ebfd9e3035ac4194fc27886f0f2de884",
+      "rows": 22568,
+      "start": "2026-07-31 09:30:00",
+      "end": "2026-10-23 15:59:00",
+      "duplicates": 0,
+      "rejected": 0
+    },
+    {
+      "symbol": "AMGN",
+      "file": "AMGN.csv.gz",
+      "sha256": "f6633bae0037ff48d4713d9cf79c12bc2d9ecb08b381eeb51a86b2d67484019f",
+      "rows": 21604,
+      "start": "2026-07-31 09:30:00",
+      "end": "2026-10-23 15:56:00",
+      "duplicates": 0,
+      "rejected": 0
+    },
+    {
+      "symbol": "GILD",
+      "file": "GILD.csv.gz",
+      "sha256": "072d00805e2d4d78e0194808a78e05d10797d00568cb6b178174d19d64c0d649",
+      "rows": 21945,
+      "start": "2026-07-31 09:30:00",
+      "end": "2026-10-23 15:54:00",
+      "duplicates": 0,
+      "rejected": 0
+    },
+    {
+      "symbol": "CVX",
+      "file": "CVX.csv.gz",
+      "sha256": "6c87147b6d94ba4b605d4050dfe15f03ca0e14651681a62e6b7903632771db8b",
+      "rows": 22531,
+      "start": "2026-07-31 09:34:00",
+      "end": "2026-10-23 15:58:00",
+      "duplicates": 0,
+      "rejected": 0
+    },
+    {
+      "symbol": "COP",
+      "file": "COP.csv.gz",
+      "sha256": "244ca2f35c63e73751ce4f0769a530d967186c0eea358e502ce985bebd4ca45a",
+      "rows": 22517,
+      "start": "2026-07-31 09:34:00",
+      "end": "2026-10-23 15:59:00",
+      "duplicates": 0,
+      "rejected": 0
+    },
+    {
+      "symbol": "BP",
+      "file": "BP.csv.gz",
+      "sha256": "5a1801a47cb45d598588fb06f681ab96c2e47ee6fd09f95c3fd3b5f87c2f5042",
+      "rows": 22445,
+      "start": "2026-07-31 09:30:00",
+      "end": "2026-10-23 15:59:00",
+      "duplicates": 0,
+      "rejected": 0
+    },
+    {
+      "symbol": "COST",
+      "file": "COST.csv.gz",
+      "sha256": "b3e97f21348296ff4892ad1ece56aaf6b07807d097c0aa4e656f38f9ef25fd1c",
+      "rows": 21564,
+      "start": "2026-07-31 09:30:00",
+      "end": "2026-10-23 15:59:00",
+      "duplicates": 0,
+      "rejected": 0
+    },
+    {
+      "symbol": "HD",
+      "file": "HD.csv.gz",
+      "sha256": "52fe609ca7ba9158f30d8696ad8de1368406d546718ea2306d84a25b037865a9",
+      "rows": 22403,
+      "start": "2026-07-31 09:30:00",
+      "end": "2026-10-23 15:59:00",
+      "duplicates": 0,
+      "rejected": 0
+    },
+    {
+      "symbol": "DIS",
+      "file": "DIS.csv.gz",
+      "sha256": "8bdc557c92c10a863ef73c0fd3c255866823a353f04f3af2f5217afa758c4d67",
+      "rows": 22545,
+      "start": "2026-07-31 09:30:00",
+      "end": "2026-10-23 15:54:00",
+      "duplicates": 0,
+      "rejected": 0
+    },
+    {
+      "symbol": "CAT",
+      "file": "CAT.csv.gz",
+      "sha256": "f75bce02eedaad57db36f9f7a3d08e7178fc3911f9c998fef0c489feb6944a76",
+      "rows": 21967,
+      "start": "2026-07-31 09:31:00",
+      "end": "2026-10-23 15:59:00",
+      "duplicates": 0,
+      "rejected": 0
+    },
+    {
+      "symbol": "GE",
+      "file": "GE.csv.gz",
+      "sha256": "b2d2a8da08ac33fd882b765112fd550c0aa27d14003316631b34850406ca1b50",
+      "rows": 22330,
+      "start": "2026-07-31 09:30:00",
+      "end": "2026-10-23 15:50:00",
+      "duplicates": 0,
+      "rejected": 0
+    },
+    {
+      "symbol": "BA",
+      "file": "BA.csv.gz",
+      "sha256": "16e5533ae97423f11cda7ec4d889f323942e773d8f10fe3c2c9f9003ff6e0818",
+      "rows": 22152,
+      "start": "2026-07-31 09:30:00",
+      "end": "2026-10-23 15:58:00",
+      "duplicates": 0,
+      "rejected": 0
+    },
+    {
+      "symbol": "F",
+      "file": "F.csv.gz",
+      "sha256": "4d4e63b3a7acfe4bf65a7afe12aa1b88af78e9f837adc8a2bf2a50c85e4277af",
+      "rows": 21690,
+      "start": "2026-07-31 09:30:00",
+      "end": "2026-10-23 15:59:00",
+      "duplicates": 0,
+      "rejected": 0
+    },
+    {
+      "symbol": "GM",
+      "file": "GM.csv.gz",
+      "sha256": "3d5029272e272fc9851b5498ba38e0e5ecada2bad56753d6eeb94f87090dec70",
+      "rows": 22276,
+      "start": "2026-07-31 09:30:00",
+      "end": "2026-10-23 15:58:00",
+      "duplicates": 0,
+      "rejected": 0
+    },
+    {
+      "symbol": "CRM",
+      "file": "CRM.csv.gz",
+      "sha256": "d51a75d50a2bf3c4017a344bb8d6a6db0f4e86e224798ff0e15def3f6aea1c8a",
+      "rows": 22498,
+      "start": "2026-07-31 09:37:00",
+      "end": "2026-10-23 15:59:00",
+      "duplicates": 0,
+      "rejected": 0
+    },
+    {
+      "symbol": "CSCO",
+      "file": "CSCO.csv.gz",
+      "sha256": "76d7e0f262d50802790207e40d3c1151e485fd680880c6b7287fa4049401d65a",
+      "rows": 22723,
+      "start": "2026-07-31 09:30:00",
+      "end": "2026-10-23 15:59:00",
+      "duplicates": 0,
+      "rejected": 0
+    },
+    {
+      "symbol": "GLD",
+      "file": "GLD.csv.gz",
+      "sha256": "c4c7f0ac80faf2712319cf3c42459d8a2e8b4837a9847aad071f88e48cf1abee",
+      "rows": 20941,
+      "start": "2026-07-31 09:30:00",
+      "end": "2026-10-23 15:59:00",
+      "duplicates": 0,
+      "rejected": 0
+    }
+  ],
+  "rows": 708997
+}

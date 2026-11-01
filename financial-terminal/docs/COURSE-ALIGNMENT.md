@@ -7,7 +7,7 @@
 | 服务 | 默认端口 | 职责 | 公开业务消息 | 持久化维护责任 |
 |---|---:|---|---|---|
 | market | 8101 | 证券目录、末日行情目录、数据来源 | ListStocksMessage | StockTable |
-| history | 8106 | 历史 OHLCV 查询、批量价格 | GetPricesMessage | DailyBarTable |
+| history | 8106 | 历史 OHLCV 查询、批量价格 | GetPricesMessage / GetBarsMessage / ListFrequenciesMessage | DailyBarTable / MinuteBarTable / ImportStateTable |
 | statistics | 8107 | 个股风险收益、年度统计 | GetStockMessage | 无私有表；调用公开 StockTable/DailyBarTable |
 | watchlist | 8102 | 自选证券 | ListWatchlistMessage / SetWatchlistMessage | WatchlistTable |
 | reports | 8108 | 参数与分析结果的保存、查询和删除 | SaveReportMessage / ListReportsMessage / DeleteReportMessage | ReportTable |
@@ -70,3 +70,5 @@ flowchart LR
 3. 启动后分别访问八个 `/health`，七个 Scala 服务各自返回自己的服务标识。
 4. 在数据中心访问各服务的 OpenAPI JSON；对照 `docs/API.md`。
 5. 运行 Python API 契约检查、真实 HTTP 集成检查和浏览器完整流程；命令见 README。
+
+多频率扩展继续归属 history 服务：每个新消息、响应、频率对象分别一个文件；分钟记录和导入版本表有各自Table及Initializer。CSV/GZIP读取和COPY在IO.blocking中；公开接口只调用所属表方法，聚合SQL不进入路由器。

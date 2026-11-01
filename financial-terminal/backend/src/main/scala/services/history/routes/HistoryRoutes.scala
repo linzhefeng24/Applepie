@@ -5,5 +5,7 @@ import services.history.api.*
 import services.history.objects.apiTypes.*
 object HistoryRoutes:
   val apiMessages = List(
-    register[GetPricesMessage, GetPricesResponse](classOf[GetPricesMessage].getSimpleName)
+    register[GetPricesMessage, GetPricesResponse](classOf[GetPricesMessage].getSimpleName),
+    register[ListFrequenciesMessage, ListFrequenciesResponse](classOf[ListFrequenciesMessage].getSimpleName),
+    register[GetBarsMessage, GetBarsResponse](classOf[GetBarsMessage].getSimpleName)
   )

@@ -1752,3 +1752,8 @@ kbd {
 .api-spec-links a {
   @apply text-[#d6b77b];
 }
+.frequency-note {
+  @apply px-2 py-1 text-[9px] text-[#8295ae];
+  border-bottom: 1px solid #263240;
+  line-height: 1.7;
+}

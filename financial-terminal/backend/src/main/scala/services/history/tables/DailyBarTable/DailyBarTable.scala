@@ -57,3 +57,15 @@ object DailyBarTable:
       finally r.close()
     finally s.close()
   }
+
+  private val calendarSql = """SELECT to_char(bucket,'YYYY-MM-DD'),(array_agg(open ORDER BY date))[1],max(high),min(low),(array_agg(close ORDER BY date DESC))[1],sum(volume),sum(minutes) FROM (SELECT *,date_trunc(?,date::timestamp) AS bucket FROM market.daily_bar WHERE symbol=? AND date BETWEEN ?::date AND ?::date) q GROUP BY bucket ORDER BY bucket LIMIT 5001"""
+  def aggregate(connection:Connection,symbol:String,start:String,end:String,frequency:String):IO[List[DailyBar]] =
+    if frequency=="1d" then find(connection,symbol,start,end) else IO.blocking {
+      val unit=Map("1mo"->"month","1y"->"year").getOrElse(frequency,throw new IllegalArgumentException("Unsupported calendar frequency"))
+      val s=connection.prepareStatement(calendarSql)
+      try
+        s.setString(1,unit);s.setString(2,symbol);s.setString(3,start);s.setString(4,end)
+        val r=s.executeQuery()
+        try Iterator.continually(r.next()).takeWhile(identity).map(_=>DailyBar(r.getString(1),r.getDouble(2),r.getDouble(3),r.getDouble(4),r.getDouble(5),r.getLong(6),r.getInt(7))).toList finally r.close()
+      finally s.close()
+    }

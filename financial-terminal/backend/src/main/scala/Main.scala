@@ -13,6 +13,7 @@ import services.optimization.routes.OptimizationRoutes
 import services.backtest.routes.BacktestRoutes
 import services.market.tables.StockTable.StockTableInitializer
 import services.history.tables.DailyBarTable.DailyBarTableInitializer
+import services.history.tables.MinuteBarTable.MinuteBarTableInitializer
 import services.watchlist.tables.WatchlistTable.WatchlistTableInitializer
 import services.reports.tables.ReportTable.ReportTableInitializer
 
@@ -25,7 +26,7 @@ object Main extends IOApp.Simple:
   private val data = Path.of(sys.env.getOrElse("DATA_DIR", "data"))
   private val initialize: IO[Unit] = service match
     case "market" => Database.transaction(c => StockTableInitializer.initialize(c, data))
-    case "history" => Database.transaction(c => DailyBarTableInitializer.initialize(c, data))
+    case "history" => Database.transaction(c => DailyBarTableInitializer.initialize(c, data) *> MinuteBarTableInitializer.initialize(c, data))
     case "watchlist" => Database.transaction(WatchlistTableInitializer.initialize)
     case "reports" => Database.transaction(ReportTableInitializer.initialize)
     case "statistics" | "optimization" | "backtest" => IO.unit

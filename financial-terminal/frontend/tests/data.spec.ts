@@ -14,8 +14,13 @@ test("历史数据访问、精度、JSON/CSV 下载及 OpenAPI", async ({
   await page.getByLabel("数据起始日期").fill("2026-01-01");
   await page.getByLabel("数据截止日期").fill("2026-10-23");
   await page.getByLabel("包含技术指标").check();
-  const result = await request.post("/api/statistics/getstock", {
-    data: { symbol: "AAPL", start: "2026-01-01", end: "2026-10-23" },
+  const result = await request.post("/api/history/getbars", {
+    data: {
+      symbol: "AAPL",
+      start: "2026-01-01",
+      end: "2026-10-23",
+      frequency: "1d",
+    },
   });
   const source = await result.json();
   await page.getByLabel("数据下载格式").selectOption("JSON");
@@ -42,7 +47,7 @@ test("历史数据访问、精度、JSON/CSV 下载及 OpenAPI", async ({
   await expect(page.locator(".data-quality tbody tr")).toHaveCount(32);
   await page.getByRole("button", { name: "API 访问", exact: true }).click();
   await expect(page.locator(".api-reference pre")).toContainText(
-    "/api/statistics/getstock",
+    "/api/history/getbars",
   );
   for (const service of [
     "market",

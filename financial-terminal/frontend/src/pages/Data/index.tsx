@@ -1,4 +1,7 @@
-import { useMemo, useState } from "react";
+import { useHistoricalRows } from "../../hooks/useHistoricalRows";
+import { ListFrequenciesMessage } from "../../apis/history/ListFrequenciesMessage";
+import type { FrequencyOption } from "../../objects/frequency";
+import { useEffect, useMemo, useState } from "react";
 import { useMarket, useSelectedStock, useSymbols } from "../../stores/research";
 import { useUniverse } from "../Overview/hooks/useUniverse";
 import { technical, assetType } from "../Overview/functions/marketMath";
@@ -27,15 +30,47 @@ export function DataPage() {
   const [start, setStart] = useState(first),
     [end, setEnd] = useState(last);
   const invalid = !start || !end || start > end;
+  const [frequency, setFrequency] = useState("1d"),
+    [frequencies, setFrequencies] = useState<FrequencyOption[]>([]);
+  useEffect(() => {
+    const abort = new AbortController();
+    new ListFrequenciesMessage(selected[0] || active)
+      .send(abort.signal)
+      .then((r) => setFrequencies(r.frequencies))
+      .catch(() => setFrequencies([]));
+    return () => abort.abort();
+  }, [selected[0], active]);
+  const historical = useHistoricalRows(
+    selected,
+    start,
+    end,
+    frequency,
+    universe.data,
+  );
+  function changeFrequency(value: string) {
+    setFrequency(value);
+    setPage(0);
+    if (value.endsWith("min")) {
+      const available = frequencies.find((f) => f.code === value);
+      if (available?.available) {
+        const last = available.end.slice(0, 10);
+        const day = new Date(last + "T00:00:00Z");
+        day.setUTCDate(day.getUTCDate() - 6);
+        setStart(day.toISOString().slice(0, 10));
+        setEnd(last);
+      }
+    }
+  }
   const records = useMemo(
     () =>
       market.stocks
         .filter((s) => selected.includes(s.symbol))
         .flatMap((stock) => {
-          const history = universe.data[stock.symbol]?.bars || [],
+          const history = historical.data[stock.symbol] || [],
             t = include ? technical(history) : null;
           return history.flatMap((bar, i) =>
-            bar.date >= start && bar.date <= end
+            frequency !== "1d" ||
+            (bar.date.slice(0, 10) >= start && bar.date.slice(0, 10) <= end)
               ? [
                   {
                     symbol: stock.symbol,
@@ -48,10 +83,13 @@ export function DataPage() {
               : [],
           );
         }),
-    [market, selected, universe.data, start, end, include],
+    [market, selected, historical.data, start, end, include, frequency],
   );
   const ready =
-    selected.every((s) => universe.data[s]) && selected.length > 0 && !invalid;
+    selected.every((s) => historical.data[s]) &&
+    historical.errors.length === 0 &&
+    selected.length > 0 &&
+    !invalid;
   const display = useMemo(
     () =>
       [...records].sort(
@@ -75,7 +113,7 @@ export function DataPage() {
   ];
   function exportData() {
     if (!ready) return;
-    const base = `aperture-history-${selected.length === 1 ? selected[0] : "multi"}-${start}-${end}`;
+    const base = `aperture-history-${frequency}-${selected.length === 1 ? selected[0] : "multi"}-${start}-${end}`;
     if (format === "JSON") {
       download(
         base + ".json",
@@ -85,6 +123,7 @@ export function DataPage() {
               symbols: selected,
               start,
               end,
+              frequency,
               includeIndicators: include,
             },
             provenance: market.provenance,
@@ -113,8 +152,8 @@ export function DataPage() {
       .join("\n");
     download(base + ".csv", "\uFEFF" + csv, "text/csv;charset=utf-8");
   }
-  const request = { symbol: selected[0] || active, start, end },
-    example = `curl '${location.origin}/api/statistics/getstock' \\\n  -H 'Content-Type: application/json' \\\n  --data '${JSON.stringify(request)}'`;
+  const request = { symbol: selected[0] || active, start, end, frequency },
+    example = `curl '${location.origin}/api/history/getbars' \\\n  -H 'Content-Type: application/json' \\\n  --data '${JSON.stringify(request)}'`;
   return (
     <div className="data-workspace">
       <h1 className="sr-only">数据中心</h1>
@@ -179,6 +218,23 @@ export function DataPage() {
           ))}
         </nav>
         <div className="screen-toolbar">
+          <select
+            aria-label="数据频率"
+            value={frequency}
+            onChange={(e) => changeFrequency(e.target.value)}
+          >
+            {frequencies.length ? (
+              frequencies
+                .filter((f) => f.available || f.code !== "1y")
+                .map((f) => (
+                  <option key={f.code} value={f.code} disabled={!f.available}>
+                    {f.label}
+                  </option>
+                ))
+            ) : (
+              <option value="1d">日</option>
+            )}
+          </select>
           <label>起始</label>
           <input
             aria-label="数据起始日期"
@@ -206,7 +262,7 @@ export function DataPage() {
               checked={include}
               onChange={(e) => setInclude(e.target.checked)}
             />
-            附加 MA20 / MA60 / RSI14
+            附加 MA20 / MA60 / RSI14（按K线根数）
           </label>
           <span className="ml-auto" />
           <select
@@ -225,6 +281,9 @@ export function DataPage() {
             下载数据 ({records.length.toLocaleString()})
           </button>
         </div>
+        {historical.errors.length > 0 && (
+          <ErrorBox error={historical.errors.join("；")} />
+        )}
         {invalid && <ErrorBox error="起始日期不能晚于截止日期。" />}
         {universe.errors.length > 0 && (
           <div className="screen-error">
@@ -286,7 +345,9 @@ export function DataPage() {
               <span>
                 {records.length.toLocaleString()} 行 · {selected.length} 个证券
               </span>
-              <span>下载保留原始精度；界面价格显示4位小数</span>
+              <span>
+                下载保留原始精度；非日频指标基于查询结果，不足周期留空
+              </span>
               <span className="ml-auto" />
               <button
                 disabled={current === 0}
@@ -397,7 +458,8 @@ export function DataPage() {
             </div>
             <p>
               在应用运行期间可通过同源 HTTP
-              接口查询。不需要数据库密码。下列请求读取当前所选证券的价格、区间统计与年度指标。
+              接口查询。不需要数据库密码。下列请求读取当前所选证券及频率的
+              OHLCV；区间统计和年度指标使用 statistics 接口。
             </p>
             <pre>{example}</pre>
             <button
@@ -428,6 +490,16 @@ export function DataPage() {
                   <td>证券、末日行情、数据来源</td>
                 </tr>
                 <tr>
+                  <td>/api/history/listfrequencies</td>
+                  <td>symbol</td>
+                  <td>可用频率、真实日期范围与查询上限</td>
+                </tr>
+                <tr>
+                  <td>/api/history/getbars</td>
+                  <td>symbol, start, end, frequency</td>
+                  <td>所选频率 OHLCV；不补齐缺失观测</td>
+                </tr>
+                <tr>
                   <td>/api/statistics/getstock</td>
                   <td>symbol, start, end</td>
                   <td>OHLCV、风险收益统计、年度指标</td>
@@ -451,6 +523,13 @@ export function DataPage() {
           </div>
         )}
         <div className="data-footer">
+          {frequency !== "1d" && (
+            <span>
+              可用 {frequencies.find((f) => f.code === frequency)?.start} —{" "}
+              {frequencies.find((f) => f.code === frequency)?.end} ·
+              每次每证券最多5000根K线 ·{" "}
+            </span>
+          )}
           指标载入 {Object.keys(universe.data).length} / {market.stocks.length}{" "}
           · 数据为历史研究样本 · 不含财报、新闻、盘口或实时交易接口
         </div>

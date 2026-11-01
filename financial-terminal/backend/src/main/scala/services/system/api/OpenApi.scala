@@ -21,6 +21,8 @@ object OpenApi:
     "model" -> Json.obj("type" -> "string".asJson,
       "enum" -> List("equal", "minvariance", "meanvariance", "mvsk", "riskparity").asJson))
   private val schemas = Map(
+    "listfrequencies" -> fields("symbol" -> text),
+    "getbars" -> fields("symbol" -> text,"start" -> date,"end" -> date,"frequency" -> Json.obj("type" -> "string".asJson,"enum" -> List("1y","1mo","1d","5min","2min","1min").asJson)),
     "liststocks" -> fields(), "listwatchlist" -> fields(), "listreports" -> fields(),
     "getstock" -> fields("symbol" -> text, "start" -> date, "end" -> date),
     "getprices" -> fields("symbols" -> symbols(10), "start" -> date, "end" -> date),
