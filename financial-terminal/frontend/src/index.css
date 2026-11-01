@@ -1757,3 +1757,7 @@ kbd {
   border-bottom: 1px solid #263240;
   line-height: 1.7;
 }
+
+/* Keep all ten destinations reachable on short displays. */
+.terminal-sidebar { overflow-y: auto; }
+.terminal-sidebar nav { flex-shrink: 0; }
