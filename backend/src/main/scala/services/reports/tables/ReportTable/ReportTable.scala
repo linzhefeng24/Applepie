@@ -6,11 +6,11 @@ import io.circe.parser.parse
 import services.reports.objects.ResearchReport
 object ReportTable:
   private val listSql =
-    "SELECT id::text,title,kind,created_at::text,parameters::text,result::text FROM portfolio.report ORDER BY created_at DESC LIMIT 50"
-  def list(connection: Connection): IO[List[ResearchReport]] = IO.blocking {
+    "SELECT id::text,title,kind,created_at::text,parameters::text,result::text FROM reports.report WHERE user_id=?::uuid ORDER BY created_at DESC LIMIT 50"
+  def list(connection: Connection,userId:String): IO[List[ResearchReport]] = IO.blocking {
     val s = connection.prepareStatement(listSql)
     try
-      val r = s.executeQuery()
+      s.setString(1,userId);val r = s.executeQuery()
       try
         Iterator
           .continually(r.next())
@@ -30,10 +30,11 @@ object ReportTable:
     finally s.close()
   }
   private val insertSql =
-    "INSERT INTO portfolio.report(id,title,kind,parameters,result) VALUES (?::uuid,?,?,?::jsonb,?::jsonb)"
+    "INSERT INTO reports.report(id,title,kind,parameters,result,user_id) VALUES (?::uuid,?,?,?::jsonb,?::jsonb,?::uuid)"
   def insert(
       connection: Connection,
       id: String,
+      userId:String,
       title: String,
       kind: String,
       parameters: Json,
@@ -42,12 +43,12 @@ object ReportTable:
     val s = connection.prepareStatement(insertSql)
     try {
       s.setString(1, id); s.setString(2, title); s.setString(3, kind);
-      s.setString(4, parameters.noSpaces); s.setString(5, result.noSpaces); s.executeUpdate(); ()
+      s.setString(4, parameters.noSpaces); s.setString(5, result.noSpaces);s.setString(6,userId); s.executeUpdate(); ()
     } finally s.close()
   }
-  private val deleteSql = "DELETE FROM portfolio.report WHERE id=?::uuid"
-  def delete(connection: Connection, id: String): IO[Unit] = IO.blocking {
+  private val deleteSql = "DELETE FROM reports.report WHERE id=?::uuid AND user_id=?::uuid"
+  def delete(connection: Connection, id: String,userId:String): IO[Unit] = IO.blocking {
     val s = connection.prepareStatement(deleteSql);
-    try { s.setString(1, id); s.executeUpdate(); () }
+    try { s.setString(1, id);s.setString(2,userId); s.executeUpdate(); () }
     finally s.close()
   }

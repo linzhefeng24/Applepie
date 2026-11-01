@@ -4,11 +4,11 @@ import io.circe.{Decoder, Json}
 import io.circe.generic.semiauto.*
 import io.circe.syntax.*
 import java.sql.Connection
-import services.system.api.APIMessage
+import services.system.api.StatelessMessage
 import services.optimization.objects.AnalysisParameters
 import services.optimization.utils.Remote
-final case class RunAnalysisMessage(parameters: AnalysisParameters) extends APIMessage[Json]:
-  def plan(connection: Connection): IO[Json] =
+final case class RunAnalysisMessage(parameters: AnalysisParameters) extends StatelessMessage[Json]:
+  def plan: IO[Json] =
     for
       _ <- IO {
         require(parameters.symbols.size >= 2 && parameters.symbols.size <= 10, "选择 2–10 个标的");
@@ -18,7 +18,7 @@ final case class RunAnalysisMessage(parameters: AnalysisParameters) extends APIM
         )
       }
       prices <- Remote.post(
-        sys.env.getOrElse("HISTORY_URL", "http://127.0.0.1:8106") + "/api/history/getprices",
+        sys.env("DAILY_URL") + "/api/daily/getprices",
         Json.obj(
           "symbols" -> parameters.symbols.asJson,
           "start" -> parameters.start.asJson,
@@ -26,7 +26,7 @@ final case class RunAnalysisMessage(parameters: AnalysisParameters) extends APIM
         )
       )
       result <- Remote.post(
-        sys.env.getOrElse("QUANT_URL", "http://127.0.0.1:8104") + "/analyze",
+        sys.env("QUANT_OPTIMIZER_URL") + "/analyze",
         Json.obj(
           "parameters" -> parameters.asJson,
           "series" -> prices.hcursor.downField("series").focus.getOrElse(Json.obj())

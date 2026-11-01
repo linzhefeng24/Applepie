@@ -29,7 +29,7 @@ class EngineTests(unittest.TestCase):
  def test_signal_lag_and_training_window(self):
   r=np.random.default_rng(1).normal(0,.01,(100,3));dates=[f'{i:04d}' for i in range(101)];calls=[]
   def capture(sample,*args):calls.append(sample.copy());return dict(weights=[1/3]*3,converged=True)
-  with patch('engine.optimize',side_effect=capture):out=simulate(r,dates,'equal',P)
+  with patch('backtesting.simulation.optimize',side_effect=capture):out=simulate(r,dates,'equal',P)
   np.testing.assert_array_equal(calls[0],r[:60]);t=out['trades'][0];self.assertLess(t['signalEnd'],t['executionDate']);self.assertLess(t['executionDate'],t['returnDate']);self.assertEqual(t['signalEnd'],dates[60]);self.assertEqual(t['executionDate'],dates[61])
  def test_future_changes_do_not_change_prior_backtest(self):
   r=np.random.default_rng(2).normal(0,.01,(130,3));dates=[f'{i:04d}' for i in range(131)];a=simulate(r,dates,'minvariance',P);changed=r.copy();changed[100:]=.2; b=simulate(changed,dates,'minvariance',P)

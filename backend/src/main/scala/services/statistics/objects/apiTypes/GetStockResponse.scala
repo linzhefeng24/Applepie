@@ -2,8 +2,8 @@ package services.statistics.objects.apiTypes
 import io.circe.{Encoder, Decoder, Json}
 import io.circe.generic.semiauto.*
 final case class GetStockResponse(
-    stock: services.market.objects.Stock,
-    bars: List[services.history.objects.DailyBar],
+    stock: services.catalog.objects.Stock,
+    bars: List[services.daily.objects.DailyBar],
     metrics: Json,
     annual: Json
 )

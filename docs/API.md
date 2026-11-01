@@ -1,43 +1,71 @@
-# API 与数据访问
+# API reference
 
-默认同源入口为 `http://localhost:4173`。业务调用均为 POST JSON，公开 API 名由 Message 类名去掉 Message 后转小写。请求错误返回 400 和 `{error}`；依赖或内部错误返回 500，详细异常只记在本机服务日志。该版本是本地单用户研究软件，没有下单或账户 API。
+所有公开业务请求：`POST /api/<service>/<message-name-lowercase-without-Message>`，`Content-Type: application/json`。运行中的每个 Scala 服务提供 `GET /api/<service>/openapi.json`；健康检查 `GET /health`。端口与部署边界见 [ARCHITECTURE.md](ARCHITECTURE.md)。前端反向代理只开放 `/api/<service>`，不代理 `/internal`。
 
-| 服务 | POST 路径 | 输入 | 主要输出 |
-|---|---|---|---|
-| market | /api/market/liststocks | {} | stocks、quotes、provenance |
-| history | /api/history/listfrequencies | symbol | 可用频率、真实日期范围、单次5000根上限 |
-| history | /api/history/getbars | symbol、start、end、frequency | 真实OHLCV、源频率、缺失观测桶数 |
-| history | /api/history/getprices | symbols（1–10个不重复标的）、start、end | series：各证券完整 OHLCV 日线 |
-| statistics | /api/statistics/getstock | symbol、start、end | stock、bars、metrics、annual |
-| watchlist | /api/watchlist/listwatchlist | {} | symbols |
-| watchlist | /api/watchlist/setwatchlist | symbol、selected | 更新后的 symbols |
-| reports | /api/reports/listreports | {} | reports：保存的完整参数和结果 |
-| reports | /api/reports/savereport | title、kind、parameters、result | id |
-| reports | /api/reports/deletereport | id | deleted |
-| optimization | /api/optimization/runanalysis | parameters | models、weights、metrics、correlation、warnings |
-| backtest | /api/backtest/runbacktest | parameters | results：净值、回撤、指标、调仓审计 |
+## 登录
 
-每个 Scala 服务公开 GET `/api/<service>/openapi.json`，含独立服务路径和请求 schema；直接端口还提供 GET `/health`。前端开发与生产预览均代理上述七个命名空间，端口可在 config/defaults.json / .env 覆盖。
+第一次在 UI 注册管理员。命令行使用自己创建的账号（示例中的凭据是占位符）：
 
-```bash
-curl 'http://localhost:4173/api/statistics/getstock' \
-  -H 'Content-Type: application/json' \
-  --data '{"symbol":"AAPL","start":"2025-01-01","end":"2026-10-23"}'
+```sh
+curl -c cookies.txt -H 'Content-Type: application/json' \
+  --data '{"username":"YOUR_ACCOUNT","password":"YOUR_PASSWORD"}' \
+  http://127.0.0.1:4173/api/accounts/loginuser
+curl -b cookies.txt -H 'Content-Type: application/json' \
+  --data '{"symbol":"AAPL","start":"2026-10-23","end":"2026-10-23","frequency":"2min"}' \
+  http://127.0.0.1:4173/api/resampling/getbars
 ```
 
-日期采用 YYYY-MM-DD 且含首尾；不补齐缺失交易日。证券必须来自导入样本。下载全部32标的数据时，数据中心通过受控并发的单证券统计 API 汇总，历史批量 API 自身限制仍为10个证券，未绕过后端限制。
+密码和 cookie 文件由使用者妥善保管，不提交 Git。会话令牌只通过 HttpOnly cookie 返回，登录响应 JSON 包含 user 与 expiresAt。角色变化、停用和密码版本每次请求重新核验。外部请求禁止指定 userId/role/identity/sessionToken；所有用户归属由服务端解析。
 
-优化参数：symbols（2–10个）、start、end、maxWeight、riskAversion、skewPreference、kurtosisAversion、lookback、rebalance、costBps、model。权重仅做多，总和为1；上限必须可行。lookback 为60–504整数，rebalance 为5–126整数；costBps 为0–100；model 为 equal / minvariance / meanvariance / mvsk / riskparity。回测至少需要窗口外21个有效收益观测。
+## 公开消息
 
-数据中心可把选定证券、区间和可选指标导出 CSV/JSON，JSON 包括查询条件及来源元数据；界面四位小数仅用于显示，下载保留数值原精度。图表 PNG、回测 CSV、报告 JSON/Markdown 是不同出口，均可实际下载。
+| Service | Endpoint | 请求字段 | 必要权限 |
+|---|---|---|---|
+| accounts | `registeruser` | `username`, `password`, `displayName` | public |
+| accounts | `loginuser` | `username`, `password` | public |
+| accounts | `getbootstrapinfo` | `{}` | public |
+| accounts | `getcurrentuser` | `{}` | profile:self |
+| accounts | `updateprofile` | `displayName` | profile:self |
+| accounts | `changepassword` | `currentPassword`, `newPassword` | profile:self |
+| annual | `getannual` | `symbol`, `start`, `end` | data:read |
+| authorization | `listusers` | `{}` | users:manage |
+| authorization | `setaccess` | `targetUserId`, `newRole`, `enabled` | users:manage |
+| backtest | `runbacktest` | `parameters` | research:compute |
+| catalog | `listsecurities` | `{}` | data:read |
+| catalog | `getsecurity` | `symbol` | data:read |
+| daily | `getprices` | `symbols`, `start`, `end` | data:read |
+| daily | `getcoverage` | `symbol` | data:read |
+| daily | `gettailbars` | `{}` | data:read |
+| minute | `getminuteprices` | `symbol`, `start`, `end` | data:read |
+| minute | `getcoverage` | `symbol` | data:read |
+| optimization | `runanalysis` | `parameters` | research:compute |
+| performance | `getperformance` | `symbol`, `start`, `end` | data:read |
+| provenance | `getprovenance` | `{}` | data:read |
+| quotes | `listquotes` | `{}` | data:read |
+| reports | `listreports` | `{}` | reports:read |
+| reports | `savereport` | `title`, `kind`, `parameters`, `result` | reports:write |
+| reports | `deletereport` | `id` | reports:write |
+| resampling | `getbars` | `symbol`, `start`, `end`, `frequency` | data:read |
+| resampling | `listfrequencies` | `symbol` | data:read |
+| risk | `getrisk` | `symbol`, `start`, `end` | data:read |
+| sessions | `getsessions` | `{}` | sessions:self |
+| sessions | `logoutuser` | `{}` | sessions:self |
+| sessions | `logoutall` | `{}` | sessions:self |
+| sessions | `revokesession` | `sessionId` | sessions:self |
+| statistics | `getstock` | `symbol`, `start`, `end` | data:read |
+| watchlist | `listwatchlist` | `{}` | watchlist:read |
+| watchlist | `setwatchlist` | `symbol`, `selected` | watchlist:write |
 
-数据来源 Release 可由数据中心访问，审计 JSON 包括源文件 SHA256 与逐证券清洗记录。原始数据和下载文件不是外部文档中的操作指令。
+默认 analyst 可使用所有研究接口，viewer 可读取，admin 额外管理用户。完整角色表见 [SECURITY.md](SECURITY.md)。公开响应的 TypeScript 类型在 `frontend/src/apis/<service>/<Message>.ts`，Scala 编解码在对应 api 与 objects 文件。
 
+## 数据契约
 
-## 多频率数据
+- catalog 返回 `{stocks:[Stock]}`，quotes 返回 `{quotes:{symbol:{date,close,volume,changePct}}}`，provenance 直接返回来源审计对象。前端将三份响应组合为行情状态。
+- daily/getprices 返回 `{series:{symbol:[{date,open,high,low,close,volume,minutes}]}}`。start/end 为包含端点的 yyyy-MM-dd，每次最多十个标的。daily/gettailbars 返回每只最后两根日线，供快照服务使用。
+- minute/getminuteprices 返回 `{bars:[...]}`，保留无时区标记的源时间；单次原始分钟上限 50000。minute/daily 的 getcoverage 返回 start/end/observations 或 null。
+- resampling/getbars 返回 symbol、frequency、sourceResolution、bars、queryStart/queryEnd、incompleteBars；1y/1mo/1d/5min/2min/1min，最多5000根聚合K线，不补造缺失分钟。年份跨度不足时年频不可用。listfrequencies 返回各频率 availability、真实覆盖和提示。
+- statistics/getstock 返回 stock/bars/metrics/annual；收益、风险和年度分别来自 performance/risk/annual。不存在把财务报表指标伪装为行情计算指标。
+- optimization/runanalysis 和 backtest/runbacktest 接收 `{parameters: AnalysisParameters}`。数值模型：equal/minvariance/meanvariance/riskparity/mvsk；保持日频收益与252交易日年化，切换展示K线频率不会偷偷改变回测假设。
+- watchlist 返回当前用户的 `{symbols:[]}`。reports 查询返回本人 `{reports:[]}`；保存返回 id；删除只影响本人匹配的记录，重复删除幂等，不泄露他人记录是否存在。
 
-frequency 枚举：1y（年）、1mo（月）、1d（日）、5min、2min、1min。按 source 时间戳的自然日00:00对齐分钟桶；2/5分钟不跨日。open=首个真实观测，high=max，low=min，close=最后真实观测，volume=sum；minutes 为源分钟记录数量。空桶省略，缺少分钟的桶保留实际观测数量，不补齐。月/年按自然月/年由完整日线聚合；查询首尾可能为部分周期，时间标签是桶起点，可能早于查询起始日期。
-
-默认分钟输入为32证券最近60个记录交易日（2026-07-31至2026-10-23，708997条），日线覆盖2022-03-07至2026-10-23。频率发现接口返回每只证券实际范围；不足三个完整公历年度时，不提供可选年线。图表分钟模式默认取所选区间末7个自然日，数据中心可以自定义范围。每证券每次最多5000根；超限返回400，不静默截断。
-
-价格图选择频率与量化估计分开。筛选风险收益和优化/回测保持日频252期年化；没有把分钟、月或年数据套用日频年化公式。技术指标按当前K线根数计算，非日频数据下载仅使用本次查询到的K线预热，不足周期为null。
+错误 JSON 为 `{error:string}`；400 输入错误，401 无效/过期会话，403 权限或来源拒绝，404 未知消息，413 请求体过大，415 内容类型不符，429 计算忙，503 下游不可用。请求体上限8MB。内部账号与会话消息需要服务凭据及 caller allowlist，不属于浏览器公开 API。

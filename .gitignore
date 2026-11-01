@@ -12,3 +12,7 @@ frontend/test-results/
 frontend/playwright-report/
 *.tsbuildinfo
 backend/runtime/
+
+data/services/
+
+/test-results/

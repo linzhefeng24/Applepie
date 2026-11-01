@@ -19,6 +19,7 @@ export function readConfig(mode = "development"): Record<string, string> {
   for (const [next, old] of [
     ["WATCHLIST", "PORTFOLIO"],
     ["OPTIMIZATION", "ANALYSIS"],
+    ["CATALOG", "MARKET"], ["DAILY", "HISTORY"], ["QUANT_OPTIMIZER", "QUANT"],
   ]) {
     for (const suffix of ["_PORT", "_URL"]) {
       if (!explicit[next + suffix] && explicit[old + suffix])

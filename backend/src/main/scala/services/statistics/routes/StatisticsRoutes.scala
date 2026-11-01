@@ -1,9 +1,8 @@
 package services.statistics.routes
 import io.circe.Json
-import services.system.api.APIMessageRouter.register
+import services.system.api.APIMessageRouter.{register,registerInternal}
 import services.statistics.api.*
-import services.statistics.objects.apiTypes.*
 object StatisticsRoutes:
-  val apiMessages = List(
-    register[GetStockMessage, GetStockResponse](classOf[GetStockMessage].getSimpleName)
+  val apiMessages=List(
+    register[GetStockMessage,services.statistics.objects.apiTypes.GetStockResponse](classOf[GetStockMessage].getSimpleName,permission="data:read",ownerBound=false)
   )

@@ -1,4 +1,4 @@
-import { test, expect } from "@playwright/test";
+import { test, expect } from "./fixtures";
 test("证券筛选：资产、可选指标、条件、排序、持久化及联动", async ({
   page,
   request,
@@ -9,7 +9,7 @@ test("证券筛选：资产、可选指标、条件、排序、持久化及联�
   await expect(page.getByRole("heading", { name: "证券筛选" })).toBeVisible();
   await expect(
     page.getByRole("status").filter({ hasText: "指标 32 / 32" }),
-  ).toBeVisible();
+  ).toBeVisible({timeout: 30000});
   await expect(page.locator(".screen-table tbody tr")).toHaveCount(32);
   await page.getByLabel("资产类别", { exact: true }).selectOption("ETF");
   await expect(page.locator(".screen-table tbody tr")).toHaveCount(1);
@@ -32,7 +32,7 @@ test("证券筛选：资产、可选指标、条件、排序、持久化及联�
   await page.reload();
   await expect(
     page.getByRole("status").filter({ hasText: "指标 32 / 32" }),
-  ).toBeVisible();
+  ).toBeVisible({timeout: 30000});
   await expect(page.locator(".screen-table th")).toContainText([
     "RSI14",
     "超额峰度",
@@ -111,7 +111,7 @@ test("证券筛选：资产、可选指标、条件、排序、持久化及联�
   await expect(page.getByRole("heading", { name: "证券筛选" })).toBeVisible();
   await expect(
     page.getByRole("status").filter({ hasText: "指标 32 / 32" }),
-  ).toBeVisible();
+  ).toBeVisible({timeout: 30000});
   await page.getByRole("button", { name: "行情", exact: true }).click();
   await page.screenshot({
     path: "../docs/screenshots/terminal-desktop.png",

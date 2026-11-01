@@ -6,10 +6,13 @@ from engine import statistics
 ROOT=Path(__file__).resolve().parents[1]
 from settings import read_settings
 CFG=read_settings()
-BASE={s:CFG[s.upper()+'_URL'] for s in ['market','history','statistics','watchlist','reports','optimization','backtest']}
+BASE={s:CFG[s.upper()+'_URL'] for s in [x['name'] for x in json.loads((ROOT/'config/services.json').read_text()) if x['kind']=='scala']}
+import importlib.util
+spec=importlib.util.spec_from_file_location('auth_client',ROOT/'scripts/auth-client.py');auth=importlib.util.module_from_spec(spec);spec.loader.exec_module(auth)
+opener=auth.authenticated(CFG['FRONTEND_URL'])
 def post(service,name,body):
  r=urllib.request.Request(f'{BASE[service]}/api/{service}/{name}',data=json.dumps(body).encode(),headers={'Content-Type':'application/json'})
- with urllib.request.urlopen(r,timeout=180) as response:return json.load(response)
+ with opener.open(r,timeout=180) as response:return json.load(response)
 def bad(service,name,body):
  try:post(service,name,body)
  except urllib.error.HTTPError as e:assert e.code==400;return
@@ -19,7 +22,7 @@ for service,url in BASE.items():
  with urllib.request.urlopen(url+f'/api/{service}/openapi.json') as response:spec=json.load(response)
  assert spec['openapi']=='3.0.3' and spec['paths']
  assert all(path.startswith(f'/api/{service}/') for path in spec['paths'])
-market=post('market','liststocks',{});assert len(market['stocks'])==32 and len(market['quotes'])==32
+market={**post('catalog','listsecurities',{}),**post('quotes','listquotes',{})};assert len(market['stocks'])==32 and len(market['quotes'])==32
 with (Path(CFG['DATA_DIR'])/'daily.csv').open() as f:expected=[x for x in csv.DictReader(f) if x['symbol']=='AAPL']
 stock=post('statistics','getstock',dict(symbol='AAPL',start='2022-03-07',end='2026-10-23'))
 assert len(stock['bars'])==len(expected)==1164

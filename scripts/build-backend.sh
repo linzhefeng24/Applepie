@@ -18,7 +18,14 @@ heartbeat_pid=$!
 cleanup() { kill "$heartbeat_pid" 2>/dev/null || true; wait "$heartbeat_pid" 2>/dev/null || true; }
 trap cleanup EXIT
 # pipefail preserves the actual sbt failure; tee must not turn a failed build into success.
-"$ROOT/scripts/sbt.sh" compile 'export Runtime / fullClasspath' 2>&1 | tee "$ROOT/.run/compile.log" | python3 -u -c 'import sys
+mapfile -t exports < <(python3 - "$ROOT" <<'PYEXPORT'
+import json,sys
+from pathlib import Path
+for s in json.loads((Path(sys.argv[1])/'config/services.json').read_text()):
+ if s['kind']=='scala':print('export '+s['name']+' / Runtime / fullClasspath')
+PYEXPORT
+)
+"$ROOT/scripts/sbt.sh" compile "${exports[@]}" 2>&1 | tee "$ROOT/.run/compile.log" | python3 -u -c 'import sys
 for line in sys.stdin:
  # The generated Java classpath is retained in the file but need not flood the terminal.
  if not (line.startswith("/") and ".jar" in line and ":" in line):
@@ -28,6 +35,13 @@ trap - EXIT
 python3 - "$ROOT" <<'PY'
 from pathlib import Path
 import sys
-r=Path(sys.argv[1]);lines=(r/'.run/compile.log').read_text().splitlines();cp=next(s for s in reversed(lines) if s.startswith('/') and '.jar' in s);(r/'.run/classpath').write_text(cp);(r/'.run/build-root').write_text(str(r.resolve()))
+import json
+r=Path(sys.argv[1]);lines=(r/'.run/compile.log').read_text().splitlines()
+names=[s['name'] for s in json.loads((r/'config/services.json').read_text()) if s['kind']=='scala']
+classpaths=[s for s in lines if s.startswith('/') and '.jar' in s]
+assert len(classpaths)==len(names),(len(classpaths),len(names))
+(r/'.run/source-classpaths.json').write_text(json.dumps(dict(zip(names,classpaths))))
+(r/'.run/service-classpaths.json').write_text(json.dumps({name:dict(mainClass=f'services.{name}.routes.ServiceMain',classpath=cp) for name,cp in zip(names,classpaths)}))
+(r/'.run/build-root').write_text(str(r.resolve()))
 PY
 echo 'Scala 后端构建完成。'

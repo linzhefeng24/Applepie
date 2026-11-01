@@ -19,7 +19,7 @@ def runtime_exists():
  from settings import read_settings
  python=Path(read_settings()['PYTHON_BIN'])
  if not python.exists():return False
- files=['.run/classpath','frontend/node_modules/.package-lock.json','frontend/dist/index.html']
+ files=['.run/service-classpaths.json','frontend/node_modules/.package-lock.json','frontend/dist/index.html']
  if not all((ROOT/n).exists() for n in files):return False
  runtime=subprocess.run([sys.executable,str(ROOT/'scripts/backend-runtime.py'),'check'],stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL).returncode
  if runtime==2:return False

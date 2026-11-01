@@ -1,4 +1,4 @@
-import { test, expect } from "@playwright/test";
+import { test, expect } from "./fixtures";
 test("真实数据库：股票、自选、比较、量化、回测、报告和导出", async ({
   page,
   request,

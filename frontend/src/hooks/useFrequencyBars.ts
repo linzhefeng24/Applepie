@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import type { Bar } from "../objects/market";
 import type { FrequencyOption } from "../objects/frequency";
-import { ListFrequenciesMessage } from "../apis/history/ListFrequenciesMessage";
-import { GetBarsMessage } from "../apis/history/GetBarsMessage";
+import { ListFrequenciesMessage } from "../apis/resampling/ListFrequenciesMessage";
+import { GetBarsMessage } from "../apis/resampling/GetBarsMessage";
 const cache = new Map<string, FrequencyOption[]>();
 export function useFrequencyBars(
   symbol: string,
