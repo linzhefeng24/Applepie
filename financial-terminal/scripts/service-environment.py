@@ -2,6 +2,7 @@
 from pathlib import Path
 import hashlib,json,os,secrets,subprocess,sys,tempfile
 from settings import ROOT,read_settings,windows_drive_project
+from managed_postgres import postmaster_state,archive_stale_pid,connect_ready,diagnostics
 REGISTRY=json.loads((ROOT/'config/services.json').read_text())
 def private_json(path,value):
  path.parent.mkdir(parents=True,exist_ok=True)
@@ -47,9 +48,20 @@ def prepare(start=True):
       if cfg.get('PG_SHARE'):cmd+=['-L',cfg['PG_SHARE']]
       subprocess.run(cmd,check=True,stdout=subprocess.DEVNULL)
      finally:Path(pw).unlink(missing_ok=True)
-    if subprocess.run([str(pg/'pg_ctl'),'-D',str(cluster),'status'],stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL).returncode:
-     subprocess.run([str(pg/'pg_ctl'),'-D',str(cluster),'-l',str(ROOT/'.run'/f'postgres-{name}.log'),'-o',f"-h 127.0.0.1 -p {port} -k '{socket}' -c shared_buffers=16MB -c max_connections=24",'start'],check=True,stdout=subprocess.DEVNULL)
-    with psycopg.connect(host='127.0.0.1',port=port,dbname='postgres',user='aperture_admin',password=secret['adminPassword'],autocommit=True) as c:
+    log=ROOT/'.run'/f'postgres-{name}.log'
+    state=postmaster_state(cluster)
+    if state=='stale':
+     if not archive_stale_pid(cluster):raise RuntimeError('数据库进程状态发生变化，请重新运行；未删除任何数据。')
+     print(f'检测到 {name} 的过期进程记录，已保留备份；正在重新启动数据库。',flush=True)
+     state='stopped'
+    if state=='unknown':raise RuntimeError(f'无法确认 {name} 的数据库进程身份；未向进程发送信号。请检查 {log}')
+    try:
+     if state=='stopped':
+      subprocess.run([str(pg/'pg_ctl'),'-D',str(cluster),'-l',str(log),'-w','-t','60','-o',f"-h 127.0.0.1 -p {port} -k '{socket}' -c shared_buffers=16MB -c max_connections=24",'start'],check=True,stdout=subprocess.DEVNULL)
+     admin=connect_ready(psycopg.connect,dict(host='127.0.0.1',port=port,dbname='postgres',user='aperture_admin',password=secret['adminPassword'],autocommit=True))
+    except Exception as error:
+     raise RuntimeError(diagnostics(name,log)) from error
+    with admin as c:
      if not c.execute('SELECT 1 FROM pg_roles WHERE rolname=%s',(user,)).fetchone():c.execute(sql.SQL('CREATE ROLE {} LOGIN PASSWORD {}').format(sql.Identifier(user),sql.Literal(secret['password'])))
      if not c.execute('SELECT 1 FROM pg_database WHERE datname=%s',(db,)).fetchone():c.execute(sql.SQL('CREATE DATABASE {} OWNER {}').format(sql.Identifier(db),sql.Identifier(user)))
      c.execute(sql.SQL('REVOKE ALL ON DATABASE {} FROM PUBLIC').format(sql.Identifier(db)))
@@ -69,5 +81,8 @@ if __name__=='__main__':
   cfg,base,_=configuration()
   for s in REGISTRY:
    cluster=base/s['name']
-   if s['database'] and (cluster/'PG_VERSION').exists():subprocess.run([str(Path(cfg['PG_BIN'])/'pg_ctl'),'-D',str(cluster),'stop','-m','fast'],stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
+   if s['database'] and (cluster/'PG_VERSION').exists():
+    state=postmaster_state(cluster)
+    if state=='running':subprocess.run([str(Path(cfg['PG_BIN'])/'pg_ctl'),'-D',str(cluster),'stop','-m','fast'],stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
+    elif state in {'stale','unknown'}:print(f'跳过 {s["name"]}：进程记录为 {state}，不向未经确认的进程发送停止信号。')
  else:prepare()
