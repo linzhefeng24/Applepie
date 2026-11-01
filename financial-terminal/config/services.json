@@ -1,0 +1,135 @@
+[
+  {
+    "name": "catalog",
+    "port": 8101,
+    "kind": "scala",
+    "database": true,
+    "dbPort": 55441
+  },
+  {
+    "name": "quotes",
+    "port": 8110,
+    "kind": "scala",
+    "database": false,
+    "dbPort": null
+  },
+  {
+    "name": "provenance",
+    "port": 8111,
+    "kind": "scala",
+    "database": false,
+    "dbPort": null
+  },
+  {
+    "name": "daily",
+    "port": 8106,
+    "kind": "scala",
+    "database": true,
+    "dbPort": 55442
+  },
+  {
+    "name": "minute",
+    "port": 8112,
+    "kind": "scala",
+    "database": true,
+    "dbPort": 55443
+  },
+  {
+    "name": "resampling",
+    "port": 8113,
+    "kind": "scala",
+    "database": false,
+    "dbPort": null
+  },
+  {
+    "name": "statistics",
+    "port": 8107,
+    "kind": "scala",
+    "database": false,
+    "dbPort": null
+  },
+  {
+    "name": "performance",
+    "port": 8114,
+    "kind": "scala",
+    "database": false,
+    "dbPort": null
+  },
+  {
+    "name": "risk",
+    "port": 8115,
+    "kind": "scala",
+    "database": false,
+    "dbPort": null
+  },
+  {
+    "name": "annual",
+    "port": 8116,
+    "kind": "scala",
+    "database": false,
+    "dbPort": null
+  },
+  {
+    "name": "watchlist",
+    "port": 8102,
+    "kind": "scala",
+    "database": true,
+    "dbPort": 55444
+  },
+  {
+    "name": "reports",
+    "port": 8108,
+    "kind": "scala",
+    "database": true,
+    "dbPort": 55445
+  },
+  {
+    "name": "optimization",
+    "port": 8103,
+    "kind": "scala",
+    "database": false,
+    "dbPort": null
+  },
+  {
+    "name": "backtest",
+    "port": 8105,
+    "kind": "scala",
+    "database": false,
+    "dbPort": null
+  },
+  {
+    "name": "accounts",
+    "port": 8109,
+    "kind": "scala",
+    "database": true,
+    "dbPort": 55446
+  },
+  {
+    "name": "sessions",
+    "port": 8117,
+    "kind": "scala",
+    "database": true,
+    "dbPort": 55447
+  },
+  {
+    "name": "authorization",
+    "port": 8118,
+    "kind": "scala",
+    "database": true,
+    "dbPort": 55448
+  },
+  {
+    "name": "quant_optimizer",
+    "port": 8104,
+    "kind": "python",
+    "database": false,
+    "entry": "quant/optimizer_server.py"
+  },
+  {
+    "name": "quant_backtest",
+    "port": 8119,
+    "kind": "python",
+    "database": false,
+    "entry": "quant/backtest_server.py"
+  }
+]

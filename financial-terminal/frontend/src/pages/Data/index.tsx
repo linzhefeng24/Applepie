@@ -1,5 +1,5 @@
 import { useHistoricalRows } from "../../hooks/useHistoricalRows";
-import { ListFrequenciesMessage } from "../../apis/history/ListFrequenciesMessage";
+import { ListFrequenciesMessage } from "../../apis/resampling/ListFrequenciesMessage";
 import type { FrequencyOption } from "../../objects/frequency";
 import { useEffect, useMemo, useState } from "react";
 import { useMarket, useSelectedStock, useSymbols } from "../../stores/research";
@@ -153,7 +153,7 @@ export function DataPage() {
     download(base + ".csv", "\uFEFF" + csv, "text/csv;charset=utf-8");
   }
   const request = { symbol: selected[0] || active, start, end, frequency },
-    example = `curl '${location.origin}/api/history/getbars' \\\n  -H 'Content-Type: application/json' \\\n  --data '${JSON.stringify(request)}'`;
+    example = `# 先登录并将会话保存在 cookies.txt，再查询数据\ncurl '${location.origin}/api/resampling/getbars' -b cookies.txt \\\n  -H 'Content-Type: application/json' \\\n  --data '${JSON.stringify(request)}'`;
   return (
     <div className="data-workspace">
       <h1 className="sr-only">数据中心</h1>
@@ -438,8 +438,7 @@ export function DataPage() {
             <h2>本地数据访问</h2>
             <div className="api-spec-links">
               {[
-                "market",
-                "history",
+                "catalog", "quotes", "provenance", "daily", "minute", "resampling", "performance", "risk", "annual", "accounts", "sessions", "authorization",
                 "statistics",
                 "watchlist",
                 "reports",
@@ -457,8 +456,7 @@ export function DataPage() {
               ))}
             </div>
             <p>
-              在应用运行期间可通过同源 HTTP
-              接口查询。不需要数据库密码。下列请求读取当前所选证券及频率的
+              登录后可通过同源 HTTP 接口查询。命令行先调用 accounts/loginuser 并保存会话 cookie。下列请求读取当前所选证券及频率的
               OHLCV；区间统计和年度指标使用 statistics 接口。
             </p>
             <pre>{example}</pre>
@@ -485,17 +483,19 @@ export function DataPage() {
               </thead>
               <tbody>
                 <tr>
-                  <td>/api/market/liststocks</td>
+                  <td>/api/catalog/listsecurities</td>
                   <td>{"{}"}</td>
-                  <td>证券、末日行情、数据来源</td>
+                  <td>证券目录</td>
                 </tr>
+                <tr><td>/api/quotes/listquotes</td><td>{"{}"}</td><td>已导入历史数据的最新快照</td></tr>
+                <tr><td>/api/provenance/getprovenance</td><td>{"{}"}</td><td>来源及质量审计</td></tr>
                 <tr>
-                  <td>/api/history/listfrequencies</td>
+                  <td>/api/resampling/listfrequencies</td>
                   <td>symbol</td>
                   <td>可用频率、真实日期范围与查询上限</td>
                 </tr>
                 <tr>
-                  <td>/api/history/getbars</td>
+                  <td>/api/resampling/getbars</td>
                   <td>symbol, start, end, frequency</td>
                   <td>所选频率 OHLCV；不补齐缺失观测</td>
                 </tr>
@@ -505,7 +505,7 @@ export function DataPage() {
                   <td>OHLCV、风险收益统计、年度指标</td>
                 </tr>
                 <tr>
-                  <td>/api/history/getprices</td>
+                  <td>/api/daily/getprices</td>
                   <td>symbols, start, end</td>
                   <td>多证券历史价格</td>
                 </tr>

@@ -32,3 +32,5 @@ export const setSymbols = (v: string[]) =>
   useResearchStore.getState().setSymbols(v);
 export const selectStock = (v: string) =>
   useResearchStore.getState().selectStock(v);
+
+export const clearResearch = () => useResearchStore.setState({market:null,watchlist:[],symbols:["AAPL","AMZN","GOOG","BAC","GLD"],selectedStock:"AAPL"});

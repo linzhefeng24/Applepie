@@ -7,8 +7,8 @@ import io.circe.syntax.*
 import java.sql.Connection
 import services.system.api.NoRequestMessage
 import services.watchlist.tables.WatchlistTable.WatchlistTable
-final case class ListWatchlistMessage() extends NoRequestMessage[WatchlistResponse]:
+final case class ListWatchlistMessage(userId:String) extends NoRequestMessage[WatchlistResponse]:
   def plan(connection: Connection): IO[WatchlistResponse] =
-    WatchlistTable.list(connection).map(xs => WatchlistResponse(xs))
+    WatchlistTable.list(connection,userId).map(xs => WatchlistResponse(xs))
 object ListWatchlistMessage:
   given Decoder[ListWatchlistMessage] = deriveDecoder

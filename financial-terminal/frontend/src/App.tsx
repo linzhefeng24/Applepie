@@ -22,7 +22,9 @@ import {
 import { CommandSearch } from "./components/CommandSearch";
 import { selectStock } from "./stores/research";
 import { number, percent } from "./utils/format";
-import { ListStocksMessage } from "./apis/market/ListStocksMessage";
+import {loadMarket} from "./functions/loadMarket";
+import {AccountPage} from "./pages/Account";
+import {useIdentity} from "./auth/AuthGate";
 import { ListWatchlistMessage } from "./apis/watchlist/ListWatchlistMessage";
 import { setMarket, setWatchlist, useMarket } from "./stores/research";
 import { ErrorBox, Loading } from "./components/ui/Panel";
@@ -57,6 +59,7 @@ const navigation = [
 ];
 export function App() {
   const market = useMarket();
+  const identity = useIdentity();
   const [error, setError] = useState("");
   const [watchError, setWatchError] = useState("");
   const [menu, setMenu] = useState(false);
@@ -68,8 +71,7 @@ export function App() {
   useEffect(() => {
     const abort = new AbortController();
     setError("");
-    new ListStocksMessage()
-      .send(abort.signal)
+    loadMarket(abort.signal)
       .then(setMarket)
       .catch((e) => {
         if (e.name !== "AbortError") setError(e.message);
@@ -159,6 +161,7 @@ export function App() {
             </NavLink>
           ))}
         </nav>
+        <Link to="/account" className="terminal-nav">账户 / {identity.user.displayName} · {identity.user.role}</Link>
         <div className="sidebar-bottom">
           <Database size={14} />
           <span>本地历史数据库</span>
@@ -228,6 +231,7 @@ export function App() {
               <Route path="/backtest" element={<BacktestPage />} />
               <Route path="/reports" element={<ReportsPage />} />
               <Route path="/data" element={<DataPage />} />
+              <Route path="/account" element={<AccountPage />} />
               <Route
                 path="*"
                 element={

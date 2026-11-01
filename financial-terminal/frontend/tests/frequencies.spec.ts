@@ -1,4 +1,4 @@
-import { test, expect } from "@playwright/test";
+import { test, expect } from "./fixtures";
 import { readFile } from "node:fs/promises";
 test("分钟、月年曲线与按所选频率下载真实数据", async ({ page, request }) => {
   const errors: string[] = [];
@@ -24,7 +24,7 @@ test("分钟、月年曲线与按所选频率下载真实数据", async ({ page,
   const button = page.getByRole("button", { name: /下载数据/ });
   await expect(button).toBeEnabled();
   const expected = await (
-    await request.post("/api/history/getbars", {
+    await request.post("/api/resampling/getbars", {
       data: {
         symbol: "AAPL",
         start: "2026-10-23",

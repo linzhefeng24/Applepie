@@ -8,7 +8,7 @@ import java.sql.Connection
 import java.util.UUID
 import services.system.api.APIMessage
 import services.reports.tables.ReportTable.ReportTable
-final case class SaveReportMessage(title: String, kind: String, parameters: Json, result: Json)
+final case class SaveReportMessage(userId:String,title: String, kind: String, parameters: Json, result: Json)
     extends APIMessage[SaveReportResponse]:
   def plan(connection: Connection): IO[SaveReportResponse] =
     for
@@ -31,7 +31,7 @@ final case class SaveReportMessage(title: String, kind: String, parameters: Json
         )
       }
       id <- IO(UUID.randomUUID().toString)
-      _ <- ReportTable.insert(connection, id, title.trim, kind, parameters, result)
+      _ <- ReportTable.insert(connection, id,userId, title.trim, kind, parameters, result)
     yield SaveReportResponse(id)
 object SaveReportMessage:
   given Decoder[SaveReportMessage] = deriveDecoder

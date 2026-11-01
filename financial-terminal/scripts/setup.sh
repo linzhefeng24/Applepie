@@ -57,29 +57,7 @@ if ! "$PYTHON_BIN" -c 'import numpy,scipy,pandas,pyarrow,psycopg' >/dev/null 2>&
  "$PYTHON_BIN" -c 'import numpy,scipy,pandas,pyarrow,psycopg'
 fi
 echo '[2/6] 初始化并验证数据库与精简行情数据…'
-if [[ "$MANAGE_POSTGRES" == true ]]; then
- fresh_cluster=false
- "$PG_BIN/postgres" --version
- if [[ ! -f "$PG_DATA_DIR/PG_VERSION" ]]; then
-  fresh_cluster=true
-  share=(); [[ -z "$PG_SHARE" ]] || share=(-L "$PG_SHARE")
-  "$PG_BIN/initdb" -D "$PG_DATA_DIR" "${share[@]}" --auth-local=trust --auth-host=scram-sha-256 --username="$DB_USER" --no-locale --encoding=UTF8
- fi
- mkdir -p "$PG_SOCKET_DIR"; chmod 700 "$PG_SOCKET_DIR"
- if ! "$PG_BIN/pg_ctl" -D "$PG_DATA_DIR" status >/dev/null 2>&1; then
-  "$PG_BIN/pg_ctl" -D "$PG_DATA_DIR" -l "$ROOT/.run/postgres.log" -o "-h $DB_HOST -p $DB_PORT -k '$PG_SOCKET_DIR'" start
- fi
- if [[ "$fresh_cluster" == true || -z "${DB_PASSWORD:-}" ]]; then
-  "$PYTHON_BIN" scripts/bootstrap-db.py
-  source scripts/config.sh
- fi
-fi
-"$PYTHON_BIN" - <<'PYDB'
-import os,psycopg
-with psycopg.connect(host=os.environ['DB_HOST'],port=os.environ['DB_PORT'],dbname=os.environ['DB_NAME'],user=os.environ['DB_USER'],password=os.environ.get('DB_PASSWORD','')) as c:
- assert c.execute('SELECT 1').fetchone()==(1,)
-print('Configured PostgreSQL connection verified.')
-PYDB
+"$PYTHON_BIN" scripts/service-environment.py
 if [[ ! -f "$DATA_DIR/daily.csv" ]]; then "$PYTHON_BIN" scripts/prepare_data.py; fi
 python3 scripts/check-data.py
 python3 scripts/check-minute-data.py

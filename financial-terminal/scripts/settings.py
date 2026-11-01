@@ -25,7 +25,7 @@ def read_settings(root=ROOT,environ=None):
     environment=dict(os.environ if environ is None else environ)
     values.update(environment)
     # Preserve old explicit port overrides when upgrading from the three-service layout.
-    for new,old in [('WATCHLIST','PORTFOLIO'),('OPTIMIZATION','ANALYSIS')]:
+    for new,old in [('WATCHLIST','PORTFOLIO'),('OPTIMIZATION','ANALYSIS'),('CATALOG','MARKET'),('DAILY','HISTORY'),('QUANT_OPTIMIZER','QUANT')]:
         for suffix in ['_PORT','_URL']:
             if new+suffix not in file_keys and new+suffix not in environment and (old+suffix in file_keys or old+suffix in environment):
                 values[new+suffix]=values[old+suffix]
@@ -50,7 +50,10 @@ def read_settings(root=ROOT,environ=None):
             if pgconfig.exists():values['PG_SHARE']=subprocess.check_output([str(pgconfig),'--sharedir'],text=True).strip()
     elif values['PG_SHARE']:values['PG_SHARE']=str((root/values['PG_SHARE']).resolve())
     values['PG_SOCKET_DIR']=str((root/values['PG_SOCKET_DIR']).resolve()) if values.get('PG_SOCKET_DIR') else str(Path(tempfile.gettempdir())/('aperture-pg-'+hashlib.sha256(str(root).encode()).hexdigest()[:12]))
-    for service in ['MARKET','HISTORY','STATISTICS','WATCHLIST','REPORTS','OPTIMIZATION','BACKTEST','QUANT']:
+    service_names=['MARKET','HISTORY','STATISTICS','WATCHLIST','REPORTS','OPTIMIZATION','BACKTEST','QUANT']
+    registry=root/'config/services.json'
+    if registry.exists():service_names += [s['name'].upper() for s in json.loads(registry.read_text())]
+    for service in service_names:
         values.setdefault(service+'_URL',f"http://{values['SERVICE_HOST']}:{values[service+'_PORT']}")
     values.setdefault('FRONTEND_URL',f"http://{values['FRONTEND_HOST']}:{values['FRONTEND_PORT']}")
     venv=values.get('APERTURE_VENV_DIR')

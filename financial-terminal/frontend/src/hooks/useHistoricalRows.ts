@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import type { Bar, StockResult } from "../objects/market";
-import { GetBarsMessage } from "../apis/history/GetBarsMessage";
+import { GetBarsMessage } from "../apis/resampling/GetBarsMessage";
 export function useHistoricalRows(
   symbols: string[],
   start: string,

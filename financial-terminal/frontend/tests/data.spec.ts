@@ -1,4 +1,4 @@
-import { test, expect } from "@playwright/test";
+import { test, expect } from "./fixtures";
 import { readFile } from "node:fs/promises";
 test("历史数据访问、精度、JSON/CSV 下载及 OpenAPI", async ({
   page,
@@ -14,7 +14,7 @@ test("历史数据访问、精度、JSON/CSV 下载及 OpenAPI", async ({
   await page.getByLabel("数据起始日期").fill("2026-01-01");
   await page.getByLabel("数据截止日期").fill("2026-10-23");
   await page.getByLabel("包含技术指标").check();
-  const result = await request.post("/api/history/getbars", {
+  const result = await request.post("/api/resampling/getbars", {
     data: {
       symbol: "AAPL",
       start: "2026-01-01",
@@ -47,11 +47,10 @@ test("历史数据访问、精度、JSON/CSV 下载及 OpenAPI", async ({
   await expect(page.locator(".data-quality tbody tr")).toHaveCount(32);
   await page.getByRole("button", { name: "API 访问", exact: true }).click();
   await expect(page.locator(".api-reference pre")).toContainText(
-    "/api/history/getbars",
+    "/api/resampling/getbars",
   );
   for (const service of [
-    "market",
-    "history",
+    "catalog", "quotes", "provenance", "daily", "minute", "resampling", "performance", "risk", "annual", "accounts", "sessions", "authorization",
     "statistics",
     "watchlist",
     "reports",

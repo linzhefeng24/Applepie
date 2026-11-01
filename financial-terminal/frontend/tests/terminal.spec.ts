@@ -1,4 +1,4 @@
-import { test, expect } from "@playwright/test";
+import { test, expect } from "./fixtures";
 test("证券筛选：资产、可选指标、条件、排序、持久化及联动", async ({
   page,
   request,

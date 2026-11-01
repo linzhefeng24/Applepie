@@ -13,7 +13,7 @@ with zipfile.ZipFile(io.BytesIO(source)) as archive:
     for item in archive.infolist():
         if item.is_dir():continue
         rel=Path(item.filename).relative_to('APERTURE')
-        if str(rel).startswith('backend/src/main/') or str(rel) in {'backend/build.sbt','backend/project/build.properties','backend/project/plugins.sbt'}:selected.append((rel,item))
+        if str(rel).startswith('backend/src/main/') or str(rel) in {'backend/build.sbt','backend/project/build.properties','backend/project/plugins.sbt','config/services.json'}:selected.append((rel,item))
     minute_manifest=json.loads(archive.read('APERTURE/data/minutes/manifest.json'))
     for item in minute_manifest['symbols']:
         name=item['file']

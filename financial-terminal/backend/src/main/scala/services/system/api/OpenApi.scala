@@ -23,7 +23,18 @@ object OpenApi:
   private val schemas = Map(
     "listfrequencies" -> fields("symbol" -> text),
     "getbars" -> fields("symbol" -> text,"start" -> date,"end" -> date,"frequency" -> Json.obj("type" -> "string".asJson,"enum" -> List("1y","1mo","1d","5min","2min","1min").asJson)),
-    "liststocks" -> fields(), "listwatchlist" -> fields(), "listreports" -> fields(),
+    "listsecurities" -> fields(), "listquotes" -> fields(), "getprovenance" -> fields(), "gettailbars" -> fields(),
+    "getsecurity" -> fields("symbol" -> text), "getcoverage" -> fields("symbol" -> text),
+    "getminuteprices" -> fields("symbol" -> text,"start" -> date,"end" -> date),
+    "getperformance" -> fields("symbol" -> text,"start" -> date,"end" -> date),
+    "getrisk" -> fields("symbol" -> text,"start" -> date,"end" -> date),
+    "getannual" -> fields("symbol" -> text,"start" -> date,"end" -> date),
+    "registeruser" -> fields("username" -> text,"password" -> Json.obj("type" -> "string".asJson,"format" -> "password".asJson,"minLength" -> 10.asJson,"maxLength" -> 128.asJson),"displayName" -> text),
+    "loginuser" -> fields("username" -> text,"password" -> Json.obj("type" -> "string".asJson,"format" -> "password".asJson)),
+    "getbootstrapinfo" -> fields(), "getcurrentuser" -> fields(), "updateprofile" -> fields("displayName" -> text),
+    "changepassword" -> fields("currentPassword" -> text,"newPassword" -> text),
+    "getsessions" -> fields(), "logoutuser" -> fields(), "logoutall" -> fields(), "revokesession" -> fields("sessionId" -> text),
+    "listusers" -> fields(), "setaccess" -> fields("targetUserId" -> text,"newRole" -> Json.obj("type" -> "string".asJson,"enum" -> List("admin","analyst","viewer").asJson),"enabled" -> scalar("boolean")), "listwatchlist" -> fields(), "listreports" -> fields(),
     "getstock" -> fields("symbol" -> text, "start" -> date, "end" -> date),
     "getprices" -> fields("symbols" -> symbols(10), "start" -> date, "end" -> date),
     "setwatchlist" -> fields("symbol" -> text, "selected" -> scalar("boolean")),
@@ -37,16 +48,22 @@ object OpenApi:
     "openapi" -> "3.0.3".asJson,
     "info" -> Json.obj("title" -> s"APERTURE $service API".asJson, "version" -> "2.0.0".asJson,
       "description" -> "Local historical research service. POST JSON; dates are inclusive. No live order execution.".asJson),
+    "components" -> Json.obj("securitySchemes" -> Json.obj("sessionCookie" -> Json.obj("type" -> "apiKey".asJson,"in" -> "cookie".asJson,"name" -> "aperture_session".asJson))),
     "servers" -> Json.arr(Json.obj("url" -> "/".asJson)),
     "paths" -> Json.obj(entries.map { registration =>
       s"/api/$service/${registration.name}" -> Json.obj("post" -> Json.obj(
         "operationId" -> s"${service}_${registration.name}".asJson,
+        "x-required-permission" -> registration.permission.asJson,
+        "security" -> (if registration.permission=="public" then Json.arr() else Json.arr(Json.obj("sessionCookie" -> Json.arr()))),
         "requestBody" -> Json.obj("required" -> true.asJson, "content" -> Json.obj(
           "application/json" -> Json.obj("schema" -> schemas.getOrElse(registration.name, fields())))),
         "responses" -> Json.obj(
           "200" -> Json.obj("description" -> "Successful typed message response; see API reference for response fields.".asJson,
             "content" -> Json.obj("application/json" -> Json.obj("schema" -> scalar("object")))),
           "400" -> Json.obj("description" -> "Invalid JSON, dates, symbol or constraints. JSON error field.".asJson),
+          "401" -> Json.obj("description" -> "Missing, expired or revoked session.".asJson),
+          "403" -> Json.obj("description" -> "Permission or request origin denied.".asJson),
+          "503" -> Json.obj("description" -> "Dependency unavailable.".asJson),
           "500" -> Json.obj("description" -> "Service or dependency failure. JSON error field; details stay in local logs.".asJson)
         )
       ))

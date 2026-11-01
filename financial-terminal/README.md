@@ -10,6 +10,7 @@
 - **组合优化**：等权、最小方差、均值—方差、MVSK、风险平价；权重约束、相关性与收敛信息。
 - **策略回测**：滚动窗口、信号延迟、权重漂移与交易成本；对照净值、回撤、调仓审计和CSV。
 - **数据中心**：历史OHLCV分页查询、单只/多只/组合成分CSV或JSON下载、可选技术指标、来源审计、API与OpenAPI。
+- **账户与权限**：注册、登录、角色授权、会话撤销、修改密码；每个用户独立保存自选和报告。
 - **报告管理**：PostgreSQL保存完整参数和结果，查询、删除、JSON/Markdown导出与打印。
 - 清楚区分加载、错误、空数据、计算中、就绪、求解失败回退；支持手机布局。
 
@@ -50,11 +51,11 @@ bash run.sh help       # 查看说明
 
 Scala 业务代码运行在 JVM 上，sbt 编译也需要 Java，因此安装 Java 是 Scala 工具链的一部分，并不要求编写 Java。
 
-在 WSL 中，如果项目位于 `/mnt/c`、`/mnt/d` 等 Windows 盘，默认会将 PostgreSQL 数据放在 Linux 用户的状态目录，并在私有 `.env` 中保留该位置，避免 Windows 文件权限导致数据库启动失败。已有 `.env` 中明确设置的 `PG_DATA_DIR` 会优先使用。
+在 WSL 中，如果项目位于 `/mnt/c`、`/mnt/d` 等 Windows 盘，默认会将 PostgreSQL 数据放在 Linux 用户的状态目录，并在私有状态目录中保留凭据，避免 Windows 文件权限导致数据库启动失败。已有 `.env` 中明确设置的 `PG_DATA_DIR` 会优先使用。
 
-使用已有数据库时可在 `.env` 设置 `MANAGE_POSTGRES=false` 和连接信息，自动安装逻辑会跳过 PostgreSQL 系统包。机器已有符合版本的工具时直接复用。不会修改你的 shell 配置文件或替换系统的 Node/Python。
+使用已有数据库时可在 `.env` 设置 `MANAGE_POSTGRES=false` 和各服务的 `<SERVICE>_DB_*` 连接信息，自动安装逻辑会跳过 PostgreSQL 系统包。机器已有符合版本的工具时直接复用。不会修改你的 shell 配置文件或替换系统的 Node/Python。
 
-配置优先级是环境变量 > `.env` > `config/defaults.json`。首次管理本地数据库时自动生成口令，保存在被 Git 忽略的 `.env`；没有外部付费 API 密钥要求。
+配置优先级是环境变量 > `.env` > `config/defaults.json`。首次管理本地数据库时为八个独立实例生成不同口令，保存在状态目录的 0600 credentials.json 中；没有外部付费 API 密钥要求。
 
 ### 开发与检查
 
@@ -72,15 +73,7 @@ npm --prefix frontend run build   # 前端生产构建
 
 ## 服务与数据归属
 
-| 服务 | 技术 / 端口 | 业务职责 / 数据归属 |
-|---|---|---|
-| market | Scala 3 / 8101 | 股票、日线、历史指标；拥有 `market` schema |
-| portfolio | Scala 3 / 8102 | 自选、研究报告；拥有 `portfolio` schema |
-| analysis | Scala 3 / 8103 | 分析请求与参数校验；HTTP 调用行情和数值服务，无业务表 |
-| quant | Python / 8104 | 纯数值计算；不访问数据库，不调用外部网络 |
-| PostgreSQL | 17 / 55432 | 独立 schema，开发实例共享本地数据库 |
-
-三个 Scala 服务为**不同进程、不同端口**，共享构建产物，通过 `SERVICE` 选择服务入口。并非只把文件夹命名为“微服务”。该课程版采用同一个本地数据库用户，schema 表示维护归属，不提供生产级安全隔离。前端是一个本地共享研究空间，没有登录和用户权限系统。
+17 个 Scala 服务分别构建和启动，两个 Python 数值 worker 分别处理优化与回测。八个持久化服务各有独立 PostgreSQL 实例、应用角色与口令；无状态服务只通过 HTTP 获取数据。账户、会话、权限独立，自选和报告按用户隔离。完整清单、默认端口与单服务发布方式见 [服务架构](docs/ARCHITECTURE.md)。
 
 [架构与课程要求对照](docs/COURSE-ALIGNMENT.md) · [原始实施计划](docs/PLAN.md) · [数据与指标口径](docs/DATA-AND-METHODS.md) · [验证记录](docs/VALIDATION.md)
 
@@ -157,7 +150,7 @@ MARKET_PORT=8201 WATCHLIST_PORT=8202 OPTIMIZATION_PORT=8203 QUANT_PORT=8204 BACK
 
 ### Maven 仓库连接超时
 
-正式发布的 `APERTURE.zip` 自带 `backend/runtime/`，其中应用 JAR 和 40 个运行依赖都有 SHA256 清单。脚本校验包内容与 Scala 源码指纹后，直接生成当前目录的 Java 类路径，跳过 sbt/Maven 下载；这是同一份 Scala 后端的预编译运行包，完整源码仍在。
+正式发布的 `APERTURE.zip` 自带 `backend/runtime/`，其中17 个业务 JAR、两个共享基础库及第三方依赖都有 SHA256 清单。脚本校验包内容与 Scala 源码指纹后，直接生成当前目录的 Java 类路径，跳过 sbt/Maven 下载；这是同一份 Scala 后端的预编译运行包，完整源码仍在。
 
 GitHub 自动生成的源码 ZIP、普通 Git 克隆不包含生成的运行包，开发者需要自行源码构建。Scala 源码变更后也会要求重建，损坏的运行包会停止使用，不会放宽校验。
 
@@ -176,7 +169,7 @@ Python 引导直接下载并校验原生 uv 工具，通过 uv 创建环境和�
 
 ## 服务与课程规范
 
-七个独立 Scala 服务（证券目录、历史行情、统计、自选、报告、组合优化、回测）加一个 Python 数值服务；各自端口、日志、路由和消息文件。所有业务 API 采用 Cats Effect IO 的 plan(connection)，SQL 仅在所属 Table。详见 [课程与示例对照](docs/COURSE-ALIGNMENT.md)、[API](docs/API.md)、[功能范围与参考](docs/FEATURES.md)。
+17 个独立 Scala 服务加两个 Python 数值服务，各自端口、日志、路由和消息文件。业务 API 采用 Cats Effect IO，数据库事务仅在所属服务的 Table 中执行，无状态编排不持有数据库连接。详见 [课程与示例对照](docs/COURSE-ALIGNMENT.md)、[API](docs/API.md)、[功能范围与参考](docs/FEATURES.md)。
 
 本次服务拆分需要使用完整安装包，旧启动小补丁不适用于新拓扑。升级前在旧目录 `bash run.sh stop`，然后将完整包解压到干净目录启动，避免残留旧源码参与运行包指纹校验。WSL 工具与 Python 依赖缓存仍可复用。
 
@@ -198,3 +191,7 @@ bash run.sh
 也可用 `--sessions 120` 只保留最近120个记录交易日。脚本验证原始包SHA256，生成确定性的压缩输入；历史服务按清单校验和增量判断是否需要重新导入。导入在事务中进行，失败不会留下半批分钟记录。默认完整安装包始终是60个交易日子集，不包含用户另外扩展的全历史。
 
 分钟价格、成交量等用于真实频率图表/下载；已有组合优化与回测仍明确采用日频，避免混用252期年化。
+
+## 独立服务与用户隔离
+
+现为 **19 个服务、17 个独立 Scala 发布 JAR、8 个独立 PostgreSQL 实例**。第一次打开页面先创建管理员账户；后续注册默认为分析员，无默认密码。详见 [服务部署与边界](docs/ARCHITECTURE.md)、[账户权限](docs/SECURITY.md)、[课程示例对照](docs/COURSE-ALIGNMENT.md)。旧匿名报告需明确指定归属后迁移，启动器不会擅自分配。

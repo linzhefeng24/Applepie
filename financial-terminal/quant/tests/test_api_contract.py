@@ -11,7 +11,7 @@ class ApiContractTests(unittest.TestCase):
     source=route.parents[1]/'api'/f'{message}.scala'
     self.assertTrue(source.exists(),str(source))
     self.assertIn(f'package services.{owner}.api',source.read_text())
-    self.assertRegex(source.read_text(),r'def plan\(connection: Connection\): IO\[')
+    self.assertRegex(source.read_text(),r'def plan(?:\(connection: Connection\))?: IO\[')
     backend.add((owner,message))
   frontend=set()
   for message in (ROOT/'frontend/src/apis').glob('*/*Message.ts'):

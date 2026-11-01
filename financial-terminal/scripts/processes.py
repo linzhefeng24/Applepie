@@ -1,8 +1,8 @@
 """Manage only process IDs whose start time, cwd and command match this project's records."""
 from pathlib import Path
-import os, signal, sys, time
+import json,os, signal, sys, time
 ROOT=Path(__file__).resolve().parents[1]
-NAMES={'market','history','statistics','watchlist','reports','optimization','backtest','portfolio','analysis','quant','frontend'}
+NAMES={s['name'] for s in json.loads((ROOT/'config/services.json').read_text())}|{'market','history','statistics','watchlist','reports','optimization','backtest','portfolio','analysis','quant','frontend'}
 def identity(pid):
     proc=Path(f'/proc/{pid}')
     stat=(proc/'stat').read_text().rsplit(')',1)[1].split()
@@ -17,7 +17,8 @@ def owned(name):
         if found is None:return None
         stamp,command=found;marker=ROOT/f'.run/{name}.started'
         if not marker.exists() or marker.read_text()!=stamp:return None
-        match={'quant':'quant/server.py','frontend':'npm'}.get(name,' Main')
+        match={'quant':'quant/server.py','frontend':'npm','quant_optimizer':'quant/optimizer_server.py','quant_backtest':'quant/backtest_server.py'}.get(name,'services.'+name+'.routes.ServiceMain')
+        if name in {'market','history','analysis','portfolio'}:match=' Main'
         return pid if match in command else None
     except (OSError,ValueError):return None
 if __name__=='__main__':

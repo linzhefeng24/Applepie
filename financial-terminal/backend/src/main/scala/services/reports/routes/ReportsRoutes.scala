@@ -1,11 +1,10 @@
 package services.reports.routes
 import io.circe.Json
-import services.system.api.APIMessageRouter.register
+import services.system.api.APIMessageRouter.{register,registerInternal}
 import services.reports.api.*
-import services.reports.objects.apiTypes.*
 object ReportsRoutes:
-  val apiMessages = List(
-    register[ListReportsMessage, ListReportsResponse](classOf[ListReportsMessage].getSimpleName),
-    register[SaveReportMessage, SaveReportResponse](classOf[SaveReportMessage].getSimpleName),
-    register[DeleteReportMessage, DeleteReportResponse](classOf[DeleteReportMessage].getSimpleName)
+  val apiMessages=List(
+    register[ListReportsMessage,services.reports.objects.apiTypes.ListReportsResponse](classOf[ListReportsMessage].getSimpleName,permission="reports:read",ownerBound=true),
+    register[SaveReportMessage,services.reports.objects.apiTypes.SaveReportResponse](classOf[SaveReportMessage].getSimpleName,permission="reports:write",ownerBound=true),
+    register[DeleteReportMessage,services.reports.objects.apiTypes.DeleteReportResponse](classOf[DeleteReportMessage].getSimpleName,permission="reports:write",ownerBound=true)
   )
