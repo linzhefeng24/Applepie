@@ -63,7 +63,7 @@ curl -b cookies.txt -H 'Content-Type: application/json' \
 - catalog 返回 `{stocks:[Stock]}`，quotes 返回 `{quotes:{symbol:{date,close,volume,changePct}}}`，provenance 直接返回来源审计对象。前端将三份响应组合为行情状态。
 - daily/getprices 返回 `{series:{symbol:[{date,open,high,low,close,volume,minutes}]}}`。start/end 为包含端点的 yyyy-MM-dd，每次最多十个标的。daily/gettailbars 返回每只最后两根日线，供快照服务使用。
 - minute/getminuteprices 返回 `{bars:[...]}`，保留无时区标记的源时间；单次原始分钟上限 50000。minute/daily 的 getcoverage 返回 start/end/observations 或 null。
-- resampling/getbars 返回 symbol、frequency、sourceResolution、bars、requestedStart/requestedEnd、incompleteBars；1y/1mo/1d/5min/2min/1min，最多5000根聚合K线，不补造缺失分钟。年份跨度不足时年频不可用。listfrequencies 返回各频率 availability、真实覆盖和提示。
+- resampling/getbars 返回 symbol、frequency、sourceResolution、bars、queryStart/queryEnd、incompleteBars；1y/1mo/1d/5min/2min/1min，最多5000根聚合K线，不补造缺失分钟。年份跨度不足时年频不可用。listfrequencies 返回各频率 availability、真实覆盖和提示。
 - statistics/getstock 返回 stock/bars/metrics/annual；收益、风险和年度分别来自 performance/risk/annual。不存在把财务报表指标伪装为行情计算指标。
 - optimization/runanalysis 和 backtest/runbacktest 接收 `{parameters: AnalysisParameters}`。数值模型：equal/minvariance/meanvariance/riskparity/mvsk；保持日频收益与252交易日年化，切换展示K线频率不会偷偷改变回测假设。
 - watchlist 返回当前用户的 `{symbols:[]}`。reports 查询返回本人 `{reports:[]}`；保存返回 id；删除只影响本人匹配的记录，重复删除幂等，不泄露他人记录是否存在。

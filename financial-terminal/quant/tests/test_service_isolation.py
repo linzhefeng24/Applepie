@@ -25,3 +25,16 @@ class ServiceIsolationTests(unittest.TestCase):
   if m['format']!=2:self.skipTest('Legacy local runtime awaiting repack')
   for name,entry in m['services'].items():
    self.assertEqual([p for p in entry['classpath'] if p.startswith('services/')],[f'services/{name}.jar'])
+
+ def test_process_environment_strips_foreign_database_credentials(self):
+  import importlib.util,os,sys,tempfile
+  from unittest.mock import patch
+  sys.path.insert(0,str(ROOT/'scripts'))
+  spec=importlib.util.spec_from_file_location('service_env_test',ROOT/'scripts/service-environment.py');module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
+  with tempfile.TemporaryDirectory() as folder:
+   base=Path(folder);(base/'.run/service-env').mkdir(parents=True)
+   (base/'.run/service-env/risk.json').write_text(json.dumps({'SERVICE':'risk','INTERNAL_SERVICE_TOKEN':'own-token'}))
+   with patch.object(module,'ROOT',base),patch.dict(os.environ,{'DB_PASSWORD':'foreign','ACCOUNTS_DB_PASSWORD':'foreign','PGPASSWORD':'foreign','PGPASSFILE':'foreign','DATABASE_URL':'foreign','INTERNAL_SERVICE_TOKEN':'foreign'}):
+    env=module.environment('risk')
+    self.assertEqual(env['INTERNAL_SERVICE_TOKEN'],'own-token')
+    for key in ['DB_PASSWORD','ACCOUNTS_DB_PASSWORD','PGPASSWORD','PGPASSFILE','DATABASE_URL']:self.assertNotIn(key,env)

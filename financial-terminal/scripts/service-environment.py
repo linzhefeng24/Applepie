@@ -62,7 +62,7 @@ def prepare(start=True):
 
 def environment(name):
  # Remove all inherited database/internal credentials before adding only this process's own settings.
- env={k:v for k,v in os.environ.items() if not (k.startswith('DB_') or '_DB_' in k or k in ['INTERNAL_SERVICE_TOKEN','TRUSTED_SERVICE_HASHES'])}
+ env={k:v for k,v in os.environ.items() if not (k.startswith(('DB_','PG_')) or k in {'PGPASSWORD','PGPASSFILE','PGSERVICEFILE','PGSERVICE','PGHOST','PGHOSTADDR','PGPORT','PGDATABASE','PGUSER','DATABASE_URL'} or '_DB_' in k or k in ['INTERNAL_SERVICE_TOKEN','TRUSTED_SERVICE_HASHES'])}
  env.update(json.loads((ROOT/'.run/service-env'/f'{name}.json').read_text()));return env
 if __name__=='__main__':
  if sys.argv[1:] == ['stop']:

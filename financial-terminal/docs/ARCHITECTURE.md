@@ -63,3 +63,5 @@ watchlist → catalog（校验证券）
 ## 数值代码
 
 `quant/optimization/models/` 每种优化模型一个模块；目标函数、约束投影、求解和分析编排分别在对应模块。`quant/backtesting/` 单独维护回测与模拟循环。`quant/shared/` 只含验证、对齐和纯统计函数。`quant/engine.py` 仅为旧测试/脚本保留兼容导出。回测 worker 在本进程复用优化纯函数库，不调用优化 worker，也不共享计算进程。
+
+Python worker 也可分别发布：`python3 scripts/package-service.py quant_optimizer /tmp/optimizer.zip` 或 quant_backtest。独立包只带该 worker 的入口、需要的计算模块和 NumPy/SciPy 版本约束，不包含另一 worker 的路由、数据库客户端或凭据。
