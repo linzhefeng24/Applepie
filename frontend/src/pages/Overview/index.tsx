@@ -331,7 +331,7 @@ export function OverviewPage() {
           </button>
         </div>
         <div className="screen-period">
-          <label>统计区间</label>
+          <label>统计区间（日频）</label>
           <input
             aria-label="筛选起始日期"
             type="date"

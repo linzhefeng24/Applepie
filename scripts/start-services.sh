@@ -54,6 +54,7 @@ for attempt in range(60):
   if attempt==59:raise
   time.sleep(.5)
 PYWATCH
+echo '正在启动数据与计算服务；首次导入真实分钟数据可能需要一会儿…'
 start quant env OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 "$PYTHON_BIN" quant/server.py
 for service in history statistics reports optimization backtest; do
  key="${service^^}_PORT"
@@ -66,11 +67,15 @@ from pathlib import Path
 urls=[os.environ[k+'_URL']+'/health' for k in ['MARKET','HISTORY','STATISTICS','WATCHLIST','REPORTS','OPTIMIZATION','BACKTEST','QUANT']]
 if Path('frontend/dist/index.html').exists():urls.append(os.environ['FRONTEND_URL'])
 for url in urls:
- for attempt in range(60):
+ deadline=time.monotonic()+180
+ attempt=0
+ while True:
   try:
    with urllib.request.urlopen(url,timeout=2) as r:assert r.status==200
    print(f'Ready: {url}');break
   except Exception:
-   if attempt==59:raise
+   if time.monotonic()>=deadline:raise
+   attempt+=1
+   if attempt%20==0:print(f'等待服务 {url}；首次分钟数据导入仍可能在进行，日志见 .run/。',flush=True)
    time.sleep(.5)
 PY

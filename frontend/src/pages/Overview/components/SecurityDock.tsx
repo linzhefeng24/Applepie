@@ -1,3 +1,4 @@
+import { useFrequencyBars } from "../../../hooks/useFrequencyBars";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import type { Stock, StockResult } from "../../../objects/market";
@@ -21,12 +22,28 @@ export function SecurityDock({
     [tab, setTab] = useState("年度指标");
   const nav = useNavigate();
   const [curve, setCurve] = useState("price");
-  const history = data?.bars.filter((b) => b.date <= end) || [],
-    bars = history.filter((b) => b.date >= start),
+  const frequencyState = useFrequencyBars(
+    stock.symbol,
+    data?.bars || [],
+    start,
+    end,
+  );
+  const history = frequencyState.bars,
+    bars =
+      frequencyState.frequency === "1d"
+        ? history.filter((b) => b.date >= start)
+        : history,
     last = history.at(-1),
     ta = technical(history),
     offset = history.length - bars.length;
-  const paths = curves(history, start);
+  const paths = curves(
+    history,
+    frequencyState.frequency === "1d" ? start : history[0]?.date || start,
+  );
+  const setFrequency = (value: string) => {
+    frequencyState.setFrequency(value);
+    if (value !== "1d") setCurve("price");
+  };
   const dates = bars.map((b) => b.date),
     line = (
       name: string,
@@ -211,6 +228,21 @@ export function SecurityDock({
         <div className="dock-chart">
           <div className="dock-chart-toolbar">
             <select
+              aria-label="K线频率"
+              value={frequencyState.frequency}
+              onChange={(e) => setFrequency(e.target.value)}
+            >
+              {frequencyState.options.length ? (
+                frequencyState.options.map((f) => (
+                  <option key={f.code} value={f.code} disabled={!f.available}>
+                    {f.label}
+                  </option>
+                ))
+              ) : (
+                <option value="1d">日</option>
+              )}
+            </select>
+            <select
               aria-label="图表类型"
               value={mode}
               onChange={(e) => setMode(e.target.value)}
@@ -219,6 +251,7 @@ export function SecurityDock({
               <option value="line">收盘线</option>
             </select>
             <select
+              disabled={frequencyState.frequency !== "1d"}
               aria-label="曲线指标"
               value={curve}
               onChange={(e) => setCurve(e.target.value)}
@@ -252,10 +285,10 @@ export function SecurityDock({
               <option value="RSI">RSI (14)</option>
             </select>
             <span>
-              {start} — {end}
+              {frequencyState.queryStart} — {frequencyState.queryEnd}
             </span>
           </div>
-          {data && bars.length ? (
+          {bars.length ? (
             <Chart
               label="联动历史行情图"
               height={210}
@@ -264,11 +297,28 @@ export function SecurityDock({
             />
           ) : (
             <div className="screen-empty">
-              {data ? "当前区间没有行情" : "正在读取证券历史…"}
+              {frequencyState.error ||
+                (frequencyState.loading
+                  ? "正在读取此频率行情…"
+                  : "当前区间没有行情")}
             </div>
           )}
         </div>
         <div className="dock-data">
+          {frequencyState.frequency !== "1d" && (
+            <div className="frequency-note">
+              {frequencyState.selected?.label}线 · 可用{" "}
+              {frequencyState.selected?.start} — {frequencyState.selected?.end}
+              <br />
+              {frequencyState.minute
+                ? "图表默认显示所选区间末7个自然日；自定义分钟区间请到数据中心。"
+                : "月/年线由实际日线聚合，首尾周期可能不完整；年线显示截至日全部可用历史。"}{" "}
+              均线按当前K线根数计算。
+              {frequencyState.incomplete > 0
+                ? ` ${frequencyState.incomplete}根分钟桶不足完整观测，不补齐。`
+                : ""}
+            </div>
+          )}
           <div className="dock-tabs">
             {["年度指标", "数据口径"].map((t) => (
               <button

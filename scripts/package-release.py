@@ -1,6 +1,6 @@
 """Create APERTURE.zip from tracked source plus verified, prebuilt Scala dependencies."""
 from pathlib import Path
-import io,subprocess,sys,zipfile,importlib.util,hashlib
+import io,subprocess,sys,zipfile,importlib.util,hashlib,json
 ROOT=Path(__file__).resolve().parents[1]
 spec=importlib.util.spec_from_file_location('backend_runtime',ROOT/'scripts/backend-runtime.py');runtime=importlib.util.module_from_spec(spec);spec.loader.exec_module(runtime)
 if runtime.validated(ROOT) is None:raise SystemExit('请先编译并运行 scripts/backend-runtime.py pack')
@@ -14,6 +14,11 @@ with zipfile.ZipFile(io.BytesIO(source)) as archive:
         if item.is_dir():continue
         rel=Path(item.filename).relative_to('APERTURE')
         if str(rel).startswith('backend/src/main/') or str(rel) in {'backend/build.sbt','backend/project/build.properties','backend/project/plugins.sbt'}:selected.append((rel,item))
+    minute_manifest=json.loads(archive.read('APERTURE/data/minutes/manifest.json'))
+    for item in minute_manifest['symbols']:
+        name=item['file']
+        if name!=item['symbol']+'.csv.gz' or '/' in name:raise SystemExit('分钟数据清单文件名异常')
+        if hashlib.sha256(archive.read('APERTURE/data/minutes/'+name)).hexdigest()!=item['sha256']:raise SystemExit('Git HEAD 中分钟数据校验失败')
     fingerprint=hashlib.sha256()
     for rel,item in sorted(selected,key=lambda pair:pair[0]):fingerprint.update(str(rel).encode());fingerprint.update(archive.read(item))
     if fingerprint.hexdigest()!=runtime.source_hash(ROOT):raise SystemExit('Git HEAD 中的 Scala 源码与运行包不一致，请先提交源码再发布。')

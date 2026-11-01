@@ -5,6 +5,7 @@ import numpy as np
 import pandas as pd
 ROOT = Path(__file__).resolve().parents[1]
 from settings import read_settings
+from clean_minutes import clean_minutes
 DATA = Path(read_settings()["DATA_DIR"])
 SHA = '3228a7935ab3b8fffa857c44cddf2795f6b37e76e965ab2787d364afd435a693'
 SYMBOLS = {
@@ -27,11 +28,7 @@ def prepare(archive: Path):
    member=f'part1/{symbol}_clean_1min.parquet'
    d=pd.read_parquet(io.BytesIO(z.read(member)))
    raw=len(d);sources=sorted(d.source.dropna().unique().tolist())
-   d=d.sort_values('datetime',kind='stable'); duplicates=int(d.datetime.duplicated().sum())
-   d=d.drop_duplicates('datetime',keep='last')
-   numeric=d[['Open','High','Low','Close','Volume']].to_numpy()
-   valid=np.isfinite(numeric).all(axis=1)&(d[['Open','High','Low','Close']]>0).all(axis=1)&(d.Volume>=0)&(d.High>=d[['Open','Close','Low']].max(axis=1))&(d.Low<=d[['Open','Close','High']].min(axis=1))
-   rejected=int((~valid).sum());d=d[valid].copy()
+   d,duplicates,rejected=clean_minutes(d)
    # Source timestamps are naive; retain their recorded session date, do not invent UTC conversion.
    d['date']=d.datetime.dt.strftime('%Y-%m-%d')
    daily=d.groupby('date',sort=True).agg(open=('Open','first'),high=('High','max'),low=('Low','min'),close=('Close','last'),volume=('Volume','sum'),minutes=('Close','size')).reset_index()
