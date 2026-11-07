@@ -1,8 +1,17 @@
-[下载完整程序 ZIP（约23 MB，含模型资源）](https://raw.githubusercontent.com/linzhefeng24/Applepie/main/tools/muscle_slider_studio_20261107.zip)
+# 果蝇肌肉微调台 v1.0.1
 
-![实际界面演示](https://raw.githubusercontent.com/linzhefeng24/Applepie/main/tools/muscle_slider_studio_preview_20261107.png)
+- [完整修正版ZIP（含模型资源）](https://raw.githubusercontent.com/linzhefeng24/Applepie/main/tools/muscle_slider_studio_20261107_v1_0_1.zip)
+- [已有安装的小补丁ZIP，只替换两个文件](https://raw.githubusercontent.com/linzhefeng24/Applepie/main/tools/muscle_slider_studio_utf8_patch_20261107.zip)
+
+已安装旧版：关闭程序，将补丁中的core.py和start_windows.cmd覆盖到原来包含server.py的目录，再双击start_windows.cmd。保留原data、.venv、user_data文件夹。
+
+修复了Windows默认GBK读取UTF-8配置导致的UnicodeDecodeError；包含配置读取、已保存项目读取、项目写入和启动器UTF-8模式。已用模拟GBK默认编码及带BOM项目文件回归测试。
+
+临时启动也可使用：`.\.venv\Scripts\python.exe -X utf8 server.py`。
 
 # 果蝇肌肉微调台
+
+当前版本：**1.0.1**。已修复Windows默认GBK编码读取UTF-8配置导致启动失败的问题。所有运行时配置/项目读写显式使用UTF-8，Windows启动器也启用Python UTF-8模式。
 
 在浏览器中手工修改六条腿130块肌肉在各时间段的激励，连续物理回测、观看参考对比视频、保存项目及实际轨迹。包含原后腿修正版A/B和提前小幅迭代A/B的输入、对应模型和全部所需网格；运行时不需要另找服务器。
 
