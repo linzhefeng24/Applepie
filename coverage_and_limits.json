@@ -1,0 +1,21 @@
+{
+  "snapshot_started_utc": "2026-11-07T08:34:32.542953+00:00",
+  "scope": "Available project execution audit; not a complete verbatim conversation export",
+  "missing_or_unavailable": [
+    "Complete current ChatGPT/Codex message and tool-call export is not exposed by available tools.",
+    "Internal hidden chain-of-thought is not provided; a decision-rationale summary is included.",
+    "Commands/stdout not saved in project files cannot be reconstructed as an exact complete historical transcript."
+  ],
+  "original_user_archive": {
+    "path": "/workspace/uploads/b1d50512-37b8-49fb-b31d-ba9acaa2b635.jsonl",
+    "bytes": 583377099,
+    "url": "https://github.com/linzhefeng24/Applepie/releases/download/data_v2/b1d50512-37b8-49fb-b31d-ba9acaa2b635.jsonl",
+    "included_in_new_archives": false,
+    "reason": "Original user-provided historical archive, separately available; not the current conversation."
+  },
+  "core_files_selected": 17549,
+  "data_files_selected": 1067,
+  "core_bytes_selected": 805185397,
+  "data_bytes_selected": 3325425351,
+  "source_files_referenced_by_brain": 680
+}
