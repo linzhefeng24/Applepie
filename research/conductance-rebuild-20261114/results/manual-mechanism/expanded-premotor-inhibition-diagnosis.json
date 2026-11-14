@@ -1,0 +1,388 @@
+{
+  "numerical_failure": false,
+  "nodes": 2553,
+  "cells": [
+    {
+      "body_id": "10072",
+      "type": "IN17A001",
+      "leg": "T2_RHS",
+      "rate_hz": 5.833333333333334,
+      "mean_soma_mV": -71.47773422642967,
+      "mean_exc_current_pA": 86.58219619148389,
+      "mean_inh_current_pA": -100.77116872531407,
+      "mean_coupling_current_pA": 3.2272850090606777
+    },
+    {
+      "body_id": "10093",
+      "type": "DNg100",
+      "leg": "_LHS",
+      "rate_hz": 70.83333333333334,
+      "mean_soma_mV": -43.440284790630116,
+      "mean_exc_current_pA": 0.012517393334229234,
+      "mean_inh_current_pA": -0.0001403686834544452,
+      "mean_coupling_current_pA": -123.80894393354257
+    },
+    {
+      "body_id": "10215",
+      "type": "IN19A007",
+      "leg": "T3_LHS",
+      "rate_hz": 0.8333333333333334,
+      "mean_soma_mV": -71.61681868971675,
+      "mean_exc_current_pA": 4.024589889183612,
+      "mean_inh_current_pA": -17.04276398445612,
+      "mean_coupling_current_pA": 1.7588178475009106
+    },
+    {
+      "body_id": "10242",
+      "type": "IN19A007",
+      "leg": "T1_LHS",
+      "rate_hz": 6.666666666666667,
+      "mean_soma_mV": -69.71533045327418,
+      "mean_exc_current_pA": 20.29404873071576,
+      "mean_inh_current_pA": -25.187279287284007,
+      "mean_coupling_current_pA": -3.0639583702980295
+    },
+    {
+      "body_id": "10252",
+      "type": "IN19A007",
+      "leg": "T2_RHS",
+      "rate_hz": 5.0,
+      "mean_soma_mV": -71.1811501619938,
+      "mean_exc_current_pA": 25.11273239733475,
+      "mean_inh_current_pA": -33.27831615062215,
+      "mean_coupling_current_pA": -2.523548501035013
+    },
+    {
+      "body_id": "10339",
+      "type": "DNg100",
+      "leg": "_RHS",
+      "rate_hz": 70.83333333333334,
+      "mean_soma_mV": -43.436367747576966,
+      "mean_exc_current_pA": 0.07299242727671877,
+      "mean_inh_current_pA": 0.0,
+      "mean_coupling_current_pA": -123.87578485084846
+    },
+    {
+      "body_id": "10346",
+      "type": "IN19A007",
+      "leg": "T3_RHS",
+      "rate_hz": 5.0,
+      "mean_soma_mV": -69.67552040600225,
+      "mean_exc_current_pA": 22.22425118487429,
+      "mean_inh_current_pA": -26.3838916628656,
+      "mean_coupling_current_pA": -3.8181622752183118
+    },
+    {
+      "body_id": "10427",
+      "type": "IN19A007",
+      "leg": "T1_RHS",
+      "rate_hz": 7.5,
+      "mean_soma_mV": -70.29470555297947,
+      "mean_exc_current_pA": 16.719879091256963,
+      "mean_inh_current_pA": -25.658818636639136,
+      "mean_coupling_current_pA": -0.1888690915533605
+    },
+    {
+      "body_id": "10498",
+      "type": "IN17A001",
+      "leg": "T3_LHS",
+      "rate_hz": 0.8333333333333334,
+      "mean_soma_mV": -67.8798202613747,
+      "mean_exc_current_pA": 50.63869294151448,
+      "mean_inh_current_pA": -50.375732462465066,
+      "mean_coupling_current_pA": -5.265669807162187
+    },
+    {
+      "body_id": "10558",
+      "type": "IN17A001",
+      "leg": "T3_RHS",
+      "rate_hz": 5.833333333333334,
+      "mean_soma_mV": -70.69624740982816,
+      "mean_exc_current_pA": 61.333902715237805,
+      "mean_inh_current_pA": -70.90184220817616,
+      "mean_coupling_current_pA": 0.6098839109229849
+    },
+    {
+      "body_id": "10559",
+      "type": "IN17A001",
+      "leg": "T2_LHS",
+      "rate_hz": 5.833333333333334,
+      "mean_soma_mV": -70.94643906835346,
+      "mean_exc_current_pA": 82.73339886878297,
+      "mean_inh_current_pA": -94.728232878601,
+      "mean_coupling_current_pA": 1.7835814870306004
+    },
+    {
+      "body_id": "10690",
+      "type": "IN17A001",
+      "leg": "T1_RHS",
+      "rate_hz": 7.5,
+      "mean_soma_mV": -70.81896496845918,
+      "mean_exc_current_pA": 88.10481388755552,
+      "mean_inh_current_pA": -101.92255789876552,
+      "mean_coupling_current_pA": 4.077670542327863
+    },
+    {
+      "body_id": "10707",
+      "type": "IN17A001",
+      "leg": "T1_LHS",
+      "rate_hz": 7.5,
+      "mean_soma_mV": -71.10765936875879,
+      "mean_exc_current_pA": 80.57466904297075,
+      "mean_inh_current_pA": -93.66106638856694,
+      "mean_coupling_current_pA": 3.2239124207200036
+    },
+    {
+      "body_id": "11680",
+      "type": "IN19A007",
+      "leg": "T2_LHS",
+      "rate_hz": 5.833333333333334,
+      "mean_soma_mV": -69.76653152252229,
+      "mean_exc_current_pA": 20.00423288247471,
+      "mean_inh_current_pA": -23.348370269574218,
+      "mean_coupling_current_pA": -4.378348049876859
+    },
+    {
+      "body_id": "11751",
+      "type": "INXXX466",
+      "leg": "T1_LHS",
+      "rate_hz": 6.666666666666667,
+      "mean_soma_mV": -72.63008373164298,
+      "mean_exc_current_pA": 18.591239532294857,
+      "mean_inh_current_pA": -31.370253895898887,
+      "mean_coupling_current_pA": 0.0054394955137496955
+    },
+    {
+      "body_id": "11767",
+      "type": "INXXX466",
+      "leg": "T2_LHS",
+      "rate_hz": 5.833333333333334,
+      "mean_soma_mV": -73.24152093660344,
+      "mean_exc_current_pA": 16.38031248081429,
+      "mean_inh_current_pA": -32.38754089276428,
+      "mean_coupling_current_pA": 1.8769514044253568
+    },
+    {
+      "body_id": "12107",
+      "type": "INXXX466",
+      "leg": "T2_RHS",
+      "rate_hz": 5.833333333333334,
+      "mean_soma_mV": -73.11886191892077,
+      "mean_exc_current_pA": 19.69787142941886,
+      "mean_inh_current_pA": -34.50486411443459,
+      "mean_coupling_current_pA": 0.9589917629040853
+    },
+    {
+      "body_id": "12315",
+      "type": "INXXX466",
+      "leg": "T3_LHS",
+      "rate_hz": 0.8333333333333334,
+      "mean_soma_mV": -72.0982692980246,
+      "mean_exc_current_pA": 1.5955011101472947,
+      "mean_inh_current_pA": -16.092263733851944,
+      "mean_coupling_current_pA": 2.2959192272604447
+    },
+    {
+      "body_id": "12953",
+      "type": "IN16B036",
+      "leg": "T3_LHS",
+      "rate_hz": 0.0,
+      "mean_soma_mV": -70.23373084945057,
+      "mean_exc_current_pA": 0.3482185614381031,
+      "mean_inh_current_pA": -9.062019700531314,
+      "mean_coupling_current_pA": -0.25782124100357284
+    },
+    {
+      "body_id": "13186",
+      "type": "IN16B036",
+      "leg": "T2_LHS",
+      "rate_hz": 5.833333333333334,
+      "mean_soma_mV": -68.76067375365278,
+      "mean_exc_current_pA": 9.075080764401086,
+      "mean_inh_current_pA": -12.737215292180512,
+      "mean_coupling_current_pA": -2.856927146307022
+    },
+    {
+      "body_id": "13698",
+      "type": "INXXX466",
+      "leg": "T1_RHS",
+      "rate_hz": 7.5,
+      "mean_soma_mV": -72.04751627016523,
+      "mean_exc_current_pA": 14.133986631403838,
+      "mean_inh_current_pA": -26.91001227689825,
+      "mean_coupling_current_pA": 0.569656247599031
+    },
+    {
+      "body_id": "13905",
+      "type": "IN16B036",
+      "leg": "T1_LHS",
+      "rate_hz": 5.0,
+      "mean_soma_mV": -67.92344374526145,
+      "mean_exc_current_pA": 7.412715297163851,
+      "mean_inh_current_pA": -7.623411987110356,
+      "mean_coupling_current_pA": -4.746734981491781
+    },
+    {
+      "body_id": "14096",
+      "type": "IN16B036",
+      "leg": "T1_RHS",
+      "rate_hz": 0.8333333333333334,
+      "mean_soma_mV": -69.07985544752955,
+      "mean_exc_current_pA": 4.660956816002513,
+      "mean_inh_current_pA": -9.038109518833398,
+      "mean_coupling_current_pA": -2.6010165754603745
+    },
+    {
+      "body_id": "17322",
+      "type": "IN16B036",
+      "leg": "T2_RHS",
+      "rate_hz": 5.833333333333334,
+      "mean_soma_mV": -69.34356368699721,
+      "mean_exc_current_pA": 8.54885666253403,
+      "mean_inh_current_pA": -14.29335746507955,
+      "mean_coupling_current_pA": -1.768262788994418
+    },
+    {
+      "body_id": "152696",
+      "type": "INXXX466",
+      "leg": "T3_RHS",
+      "rate_hz": 5.0,
+      "mean_soma_mV": -73.34022848910848,
+      "mean_exc_current_pA": 12.705155529412115,
+      "mean_inh_current_pA": -29.36192774136364,
+      "mean_coupling_current_pA": 2.4209638452769364
+    },
+    {
+      "body_id": "156245",
+      "type": "IN16B036",
+      "leg": "T3_RHS",
+      "rate_hz": 4.166666666666667,
+      "mean_soma_mV": -68.7204964890349,
+      "mean_exc_current_pA": 4.53705118825504,
+      "mean_inh_current_pA": -8.394901513438878,
+      "mean_coupling_current_pA": -2.570601645101734
+    },
+    {
+      "body_id": "12134",
+      "type": "Ti flexor MN",
+      "leg": "T1_LHS",
+      "rate_hz": 5.833333333333334,
+      "mean_soma_mV": -57.429300723291334,
+      "mean_exc_current_pA": 9.304695449923644,
+      "mean_inh_current_pA": -1.709435105931816,
+      "mean_coupling_current_pA": -25.03259860603549
+    },
+    {
+      "body_id": "11657",
+      "type": "Ti extensor MN",
+      "leg": "T1_LHS",
+      "rate_hz": 6.666666666666667,
+      "mean_soma_mV": -65.05751495173712,
+      "mean_exc_current_pA": 19.458166043734504,
+      "mean_inh_current_pA": -37.696012063935534,
+      "mean_coupling_current_pA": -7.412984788137831
+    },
+    {
+      "body_id": "10710",
+      "type": "Ti flexor MN",
+      "leg": "T2_LHS",
+      "rate_hz": 4.166666666666667,
+      "mean_soma_mV": -59.03945706885931,
+      "mean_exc_current_pA": 2.5586772782505407,
+      "mean_inh_current_pA": -0.34897523122621926,
+      "mean_coupling_current_pA": -20.63759867524225
+    },
+    {
+      "body_id": "10737",
+      "type": "Ti extensor MN",
+      "leg": "T2_LHS",
+      "rate_hz": 5.0,
+      "mean_soma_mV": -57.04587752339171,
+      "mean_exc_current_pA": 19.459277985687596,
+      "mean_inh_current_pA": -10.616270299778531,
+      "mean_coupling_current_pA": -25.25284128328292
+    },
+    {
+      "body_id": "12585",
+      "type": "Ti flexor MN",
+      "leg": "T3_LHS",
+      "rate_hz": 0.0,
+      "mean_soma_mV": -60.13038664409398,
+      "mean_exc_current_pA": 5.696602364589142e-17,
+      "mean_inh_current_pA": -0.4259694351124564,
+      "mean_coupling_current_pA": -18.90897340221944
+    },
+    {
+      "body_id": "10347",
+      "type": "Ti extensor MN",
+      "leg": "T3_LHS",
+      "rate_hz": 5.833333333333334,
+      "mean_soma_mV": -49.81326813109903,
+      "mean_exc_current_pA": 41.97546393296828,
+      "mean_inh_current_pA": -10.46382504468673,
+      "mean_coupling_current_pA": -45.144091373836886
+    },
+    {
+      "body_id": "13163",
+      "type": "Ti flexor MN",
+      "leg": "T1_RHS",
+      "rate_hz": 8.333333333333334,
+      "mean_soma_mV": -55.03903960732108,
+      "mean_exc_current_pA": 20.221445996962238,
+      "mean_inh_current_pA": -5.784716421481644,
+      "mean_coupling_current_pA": -30.15253838327939
+    },
+    {
+      "body_id": "11706",
+      "type": "Ti extensor MN",
+      "leg": "T1_RHS",
+      "rate_hz": 18.333333333333336,
+      "mean_soma_mV": -58.19386950983228,
+      "mean_exc_current_pA": 114.37296673252742,
+      "mean_inh_current_pA": -111.54929559995607,
+      "mean_coupling_current_pA": -21.50707998351289
+    },
+    {
+      "body_id": "13280",
+      "type": "Ti flexor MN",
+      "leg": "T2_RHS",
+      "rate_hz": 5.833333333333334,
+      "mean_soma_mV": -57.74396016431681,
+      "mean_exc_current_pA": 9.078126820499262,
+      "mean_inh_current_pA": -3.1225995790588215,
+      "mean_coupling_current_pA": -23.72811087728911
+    },
+    {
+      "body_id": "10461",
+      "type": "Ti extensor MN",
+      "leg": "T2_RHS",
+      "rate_hz": 27.5,
+      "mean_soma_mV": -54.0176354019309,
+      "mean_exc_current_pA": 170.70660246141122,
+      "mean_inh_current_pA": -155.22109968010133,
+      "mean_coupling_current_pA": -30.846775324651535
+    },
+    {
+      "body_id": "18491",
+      "type": "Ti flexor MN",
+      "leg": "T3_RHS",
+      "rate_hz": 13.333333333333334,
+      "mean_soma_mV": -59.990949827451004,
+      "mean_exc_current_pA": 25.585965210346462,
+      "mean_inh_current_pA": -28.582686866902428,
+      "mean_coupling_current_pA": -17.327249148245937
+    },
+    {
+      "body_id": "10462",
+      "type": "Ti extensor MN",
+      "leg": "T3_RHS",
+      "rate_hz": 61.66666666666667,
+      "mean_soma_mV": -43.96193910043292,
+      "mean_exc_current_pA": 177.28391823682674,
+      "mean_inh_current_pA": -130.88016944353595,
+      "mean_coupling_current_pA": -53.49767354074822
+    }
+  ],
+  "u_policy": "all candidate pools, common causal20ms filter /50Hz; zero for unmapped; no fitted time curves or per-leg phase",
+  "status": "requires manual trace inspection; no automatic pass or selection"
+}

@@ -23,8 +23,8 @@
     },
     {
       "path": "MANUAL_MECHANISM.md",
-      "bytes": 2522,
-      "sha256": "01d1abd9fcc6a214e013cc19d978dca29a5a9968979a3c068934a9c6b4dfb2b1"
+      "bytes": 4254,
+      "sha256": "f77222e3683bd21e38628d5f82cf0dcc92db2a3d28874fd385582c4440f34dac"
     },
     {
       "path": "MECHANISMS.md",
@@ -223,8 +223,8 @@
     },
     {
       "path": "data/experimental-source/BON1-ED5e.csv",
-      "bytes": 9522,
-      "sha256": "2294a66e3888703c23d264e7c5efef77dfd8bc4a994c40c0884a0af4e7450f11"
+      "bytes": 9478,
+      "sha256": "65f845f0ccaf2e20a6564106145802b946d6fbac97800340dcf0d13e8caca9af"
     },
     {
       "path": "data/experimental-source/BON1-extraction.json",
@@ -245,6 +245,11 @@
       "path": "data/experimental-source/manifest.json",
       "bytes": 838,
       "sha256": "9ab43e8563da7c0c460d1561326a08cc418c46241a9b86d3cb33c76638998158"
+    },
+    {
+      "path": "data/malecns-source-manifest.json",
+      "bytes": 1154,
+      "sha256": "b19fc74c5f64338ce656c3239e93b78db7bbd570d8beef62eb2336de167243ce"
     },
     {
       "path": "data/model-130-channel-candidate-crosswalk.csv",
@@ -308,8 +313,8 @@
     },
     {
       "path": "extract_bon1_source.py",
-      "bytes": 1722,
-      "sha256": "102fafa20d38a8eb2027e24c9d6d10aa534400f2fe8bff24c11aa12542c52329"
+      "bytes": 1742,
+      "sha256": "a0e80f973e3dc7659a16994cc362ed571da137e5a4dc57894cd20b8ffcdc0dc8"
     },
     {
       "path": "finalize_asymmetry.py",
@@ -387,6 +392,11 @@
       "sha256": "05f535f29f1284dda59e7225e94171976312d410c5f254543e9260fd363a097b"
     },
     {
+      "path": "plot_manual_network.py",
+      "bytes": 3453,
+      "sha256": "3b81d455506bbb63ab394d191e1832f741c651dc8fff45123041e7a1e6f9ca4d"
+    },
+    {
       "path": "plot_saturation.py",
       "bytes": 1174,
       "sha256": "d07d7cbb42f9fb4bdce325efe38f8a012da6f7ecf9aca7437de463f6040508b7"
@@ -405,6 +415,11 @@
       "path": "prepare_manual_network.py",
       "bytes": 2171,
       "sha256": "5efe557ea1d13791037442e2804903053016db8776b7f6c3b20c0f5093cd6a0a"
+    },
+    {
+      "path": "prepare_mcns_steering.py",
+      "bytes": 4228,
+      "sha256": "6fb5ba0891db784ed6a6d1fdf38a355b86db1b3efc3e53b9002eae33f6191bed"
     },
     {
       "path": "probe_all_legs.py",
@@ -1782,6 +1797,46 @@
       "sha256": "8fd80afd2afd98ef65ecaf92d2adefb17fb10f1474b061a45c7b6a65db9c2d50"
     },
     {
+      "path": "results/manual-direct-plot.log",
+      "bytes": 48,
+      "sha256": "e0a46db3e7d086b6ed55477f9c8cc5ec4dbe4b6ef804e1372e9a4a6dc5a6b01a"
+    },
+    {
+      "path": "results/manual-expanded-baseline.log",
+      "bytes": 177,
+      "sha256": "9e7c5e8f0bf840601e730d63f39fbc6c9880d5c7cd0efaede46a1d9e108aff26"
+    },
+    {
+      "path": "results/manual-expanded-extensor-gain.log",
+      "bytes": 182,
+      "sha256": "eb7cd5273ef81caa1714801f675c07756569e96e222d52e0a302b3e947373c0b"
+    },
+    {
+      "path": "results/manual-expanded-plot.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "results/manual-expanded-premotor-inhibition.log",
+      "bytes": 188,
+      "sha256": "4d078b7c9a12a5272b011571f293164a362d4c88f61cec109142e35c88efba3b"
+    },
+    {
+      "path": "results/manual-expanded-trace-MN.log",
+      "bytes": 177,
+      "sha256": "6ec5a024a346249fdf10e40198397cec5b7dec15b7f34174768ae8e05025a813"
+    },
+    {
+      "path": "results/manual-extensor-plot.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "results/manual-inhibition-plot.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
       "path": "results/manual-mechanism/connectivity.npz",
       "bytes": 309133,
       "sha256": "cea807562aa63cd8c9862b6493d9401dde59fe785774eb119c7b73b17e573fc8"
@@ -1792,14 +1847,114 @@
       "sha256": "7f85c8a9439f8c704fb5ea2688a1bb393a30ee90b172e56f1399d3a8651c5724"
     },
     {
+      "path": "results/manual-mechanism/direct-baseline-currents.png",
+      "bytes": 370541,
+      "sha256": "8078489d32bdfe53840f1c1c78de0ce21d93e1580df5d0cda4943da2655a3a7f"
+    },
+    {
       "path": "results/manual-mechanism/direct-baseline-diagnosis.json",
       "bytes": 11106,
       "sha256": "2615bcdbce28a9755b661cb7b4b7cfb48059cfede731cd96bd9ed3fa8894c71a"
     },
     {
+      "path": "results/manual-mechanism/direct-baseline-routes.png",
+      "bytes": 455623,
+      "sha256": "d9050420fcc97d5e22ee331277dc5bbf92ba6016c7b44525664f3cb913c3cad3"
+    },
+    {
       "path": "results/manual-mechanism/direct-baseline.npz",
       "bytes": 5532164,
       "sha256": "bba6827147195e92212efd09befcc3017bb5914da24187a06cae16525471e7b8"
+    },
+    {
+      "path": "results/manual-mechanism/expanded-baseline-config.json",
+      "bytes": 58746,
+      "sha256": "7956dcebd0b80a8df843b3e961432fcec61280f298b2c8d4fdfffb15d2089fb0"
+    },
+    {
+      "path": "results/manual-mechanism/expanded-baseline-currents.png",
+      "bytes": 346820,
+      "sha256": "fbc754fbbd313bf5dfc5db0afe4a8dbaa772e59dabe220db67a98dcd7d783b97"
+    },
+    {
+      "path": "results/manual-mechanism/expanded-baseline-diagnosis.json",
+      "bytes": 11490,
+      "sha256": "9dba7e1b57f16a4abb1c76f420f7bb48ad5c3b3e6f91734ae6fb0393b55de1ce"
+    },
+    {
+      "path": "results/manual-mechanism/expanded-baseline-routes.png",
+      "bytes": 629355,
+      "sha256": "6044cc2da2148d18286226dc568780127cb98be52d2fa778d3576c0cd7abeabe"
+    },
+    {
+      "path": "results/manual-mechanism/expanded-baseline.npz",
+      "bytes": 7148952,
+      "sha256": "0e9de424ffc633faf69f0e2136ca4f3d146dc42e9cde105c0f422a4596437758"
+    },
+    {
+      "path": "results/manual-mechanism/expanded-extensor-gain-config.json",
+      "bytes": 58856,
+      "sha256": "28cc7b490e7c73ab1dacc11396700c1b9e9887904273dd88b5f5031f42b772c1"
+    },
+    {
+      "path": "results/manual-mechanism/expanded-extensor-gain-currents.png",
+      "bytes": 346841,
+      "sha256": "7a82d2b2a3e6c370bc506189e139814ad7e682969380998ef1d16e0a20b62221"
+    },
+    {
+      "path": "results/manual-mechanism/expanded-extensor-gain-diagnosis.json",
+      "bytes": 12106,
+      "sha256": "fe8719781a43af80f0fe6d9b460e255895fb32f457efcaa172f4e2d5b5e66070"
+    },
+    {
+      "path": "results/manual-mechanism/expanded-extensor-gain-routes.png",
+      "bytes": 570451,
+      "sha256": "328b67e8dfd3aa501a841bfc3f87b877057fdfd188ae6ade42598dd611454c31"
+    },
+    {
+      "path": "results/manual-mechanism/expanded-extensor-gain.npz",
+      "bytes": 7491079,
+      "sha256": "a8f5f0b9b91cf68dac4ca27df1f5b42e7646d92e90444881fc6b5b126fa5eaad"
+    },
+    {
+      "path": "results/manual-mechanism/expanded-premotor-inhibition-config.json",
+      "bytes": 58771,
+      "sha256": "f93568800b8d94b9b1a62e35c42eff50e32519a5f2c136d9c12611e4b246c5de"
+    },
+    {
+      "path": "results/manual-mechanism/expanded-premotor-inhibition-currents.png",
+      "bytes": 328353,
+      "sha256": "35aec3989c6c26a61b28f28bbab7aaff5fc88b6e1008cb6ffff81f9ed11c6c5c"
+    },
+    {
+      "path": "results/manual-mechanism/expanded-premotor-inhibition-diagnosis.json",
+      "bytes": 12213,
+      "sha256": "cbab6c90741924846fb70f7bc383a1fb3bd09e6efc0930deed9587dcb050f13d"
+    },
+    {
+      "path": "results/manual-mechanism/expanded-premotor-inhibition-routes.png",
+      "bytes": 574205,
+      "sha256": "93286cf1b4552b24e5f3664e5d4c44c08778408bc631a9968e94f85fc5c0c1d3"
+    },
+    {
+      "path": "results/manual-mechanism/expanded-premotor-inhibition.npz",
+      "bytes": 7468783,
+      "sha256": "ffd68b60a74095d6d0219b998180c3ab2f3307c448e6b5b51707fd41c4114638"
+    },
+    {
+      "path": "results/manual-mechanism/expanded-trace-MN-config.json",
+      "bytes": 58772,
+      "sha256": "4f91b0dae186af28b7cd57c5c7439d90989ffbfa0af21d8e3b064f17d0413aaa"
+    },
+    {
+      "path": "results/manual-mechanism/expanded-trace-MN-diagnosis.json",
+      "bytes": 12116,
+      "sha256": "7e7daf2dfce71567d48a0603922b409b9eb3d6899fb2ca697d0b4257b09d7256"
+    },
+    {
+      "path": "results/manual-mechanism/expanded-trace-MN.npz",
+      "bytes": 7495004,
+      "sha256": "8ed5b6f0e29af6d1aee547b14abb2fb9e970b3aae48b5a72f67f4278b5342097"
     },
     {
       "path": "results/manual-mechanism/network-manifest.json",
@@ -1810,6 +1965,51 @@
       "path": "results/manual-mechanism/neurons.json",
       "bytes": 1019039,
       "sha256": "ed298a1c4180810e09b9d48155dbe4b8e5526752f0324ac2e628ca87e3d8efab"
+    },
+    {
+      "path": "results/mcns-steering-baseline.log",
+      "bytes": 1199,
+      "sha256": "fa0085f1025980d2dd7fb63361aacab3219721ebc0fed3db070f7fb8d7c83f54"
+    },
+    {
+      "path": "results/mcns-steering-prepare.log",
+      "bytes": 68,
+      "sha256": "4d77b82ba9c544ed8893303f28d754a9f101c66e33deccc8d9548f4fee00c754"
+    },
+    {
+      "path": "results/mcns-steering/baseline-config.json",
+      "bytes": 2152,
+      "sha256": "a4ecc119db420922c672d6450aacebc53db38912b869bb7075c15b6d639af5c9"
+    },
+    {
+      "path": "results/mcns-steering/baseline-diagnosis.json",
+      "bytes": 5203,
+      "sha256": "fb90d4ed010eb6130f1b60665c2a15ca169d6a9b2b6d9b310c897076a9034606"
+    },
+    {
+      "path": "results/mcns-steering/baseline.npz",
+      "bytes": 2979823,
+      "sha256": "375821fdfd490b5799628b311da5713a5ecd45575d7c6f51e910ff26cdb1c6fd"
+    },
+    {
+      "path": "results/mcns-steering/neurons.json",
+      "bytes": 223221,
+      "sha256": "43ee2f464e5bcf46739cfac4d3757425c77855750ff348912aed3099597f756b"
+    },
+    {
+      "path": "results/mcns-steering/signed-hypothesis-connectivity.npz",
+      "bytes": 76599,
+      "sha256": "b897957839c728fb82d5141111d24a95ea51677c325488a5aa658361f2fccafa"
+    },
+    {
+      "path": "results/mcns-steering/source-manifest.json",
+      "bytes": 1906,
+      "sha256": "e032453a34932abf98ad1aa42eec93a748d6e90938769c8e88fbe8c562e75103"
+    },
+    {
+      "path": "results/mcns-steering/unsigned-connectivity.npz",
+      "bytes": 76077,
+      "sha256": "54745065c387f714b001ca094670f8276de89345b15ba11c1774a9716abebaf8"
     },
     {
       "path": "results/motion-body-grid.log",
@@ -2097,6 +2297,11 @@
       "sha256": "588946d1204238dffdfcaf50e726a63532cccb6b422f70a7d24ef5c6df359061"
     },
     {
+      "path": "source-data-requirements.txt",
+      "bytes": 32,
+      "sha256": "65c80fa1f8c6287a304ad0cf15de5ede93375ed6224e016366e2b2be89e4de31"
+    },
+    {
       "path": "test_grouped.py",
       "bytes": 938,
       "sha256": "b6c7aed5f9723333d2024b20c5ac2dade9cab7af88c1581d258ecbc3b33002ab"
@@ -2113,8 +2318,13 @@
     },
     {
       "path": "trace_manual_network.py",
-      "bytes": 4360,
-      "sha256": "fda07a7ffdb6cb296258fa8aca92a5c8b41f2901d31b1da1371bf64d664050b1"
+      "bytes": 4651,
+      "sha256": "d953f29f7420965246ea64692aaaf9d8d6956ecfabb0ab97bac73ddfa07ce22f"
+    },
+    {
+      "path": "trace_mcns_steering.py",
+      "bytes": 3164,
+      "sha256": "584a857c59551e052dd63b16a17a7e43a2b7f77cb934fba52858985795a1b2a6"
     },
     {
       "path": "tune_downstream.py",

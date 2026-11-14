@@ -15,10 +15,16 @@ p=json.load(open(R/'configs/asymmetry-guarded.json'));p.update(dt_ms=.0125,durat
 # Record verified example MNs from each leg/muscle category after all 26 core
 # cells; every pool still remains represented in the complete spike array.
 for leg in ['LF','LM','LH','RF','RM','RH']:
- for term in ['tibia_flexor','tibia_extensor']:
-  hits=[i for i,x in enumerate(cross) if x['leg']==leg and term in x['model_channel']]
+ for term in ['Ti flexor','Ti extensor']:
+  hits=[i for i,x in enumerate(cross) if x['leg']==leg and term==x['candidate_target_labels']]
   for i in hits[:1]:
    if pools[i]:record.append(pools[i][0])
+if mode.endswith('extensor-gain'):
+ p['group_parameters']={**p.get('group_parameters',{}),'motor neuron|type:Ti extensor MN':{'excitatory_gain':.5}}
+if mode.endswith('premotor-inhibition'):
+ p['inhibitory_gain']=.1
+if mode.endswith('balanced-MN'):
+ p['inhibitory_gain']=.1;p['mn_gain']=3.
 if mode.endswith('weaker-I2'):
  p['I2_gain']=.75
 if mode.endswith('stronger-E1'):
