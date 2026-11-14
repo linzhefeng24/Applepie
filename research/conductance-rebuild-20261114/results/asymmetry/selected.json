@@ -1,0 +1,75 @@
+{
+  "trial": "flexor_slow",
+  "config": {
+    "dt_ms": 0.025,
+    "duration_ms": 1600.0,
+    "onset_ms": 200.0,
+    "drive_pA": 160.0,
+    "ge_nS_per_synapse": 0.012,
+    "gi_nS_per_synapse": 0.1,
+    "tau_e_rise_ms": 0.5,
+    "tau_e_decay_ms": 5.0,
+    "tau_i_rise_ms": 1.0,
+    "tau_i_decay_ms": 30.0,
+    "delay_ms": 1.5,
+    "c_soma_pF": 20.0,
+    "c_axon_pF": 2.5,
+    "rin_cpg_MOhm": 500.0,
+    "rin_mn_MOhm": 300.0,
+    "coupling_nS": 12.0,
+    "gNa_nS": 600.0,
+    "gK_nS": 180.0,
+    "gCa_nS": 0.3,
+    "gSK_nS": 1.0,
+    "gNaP_nS": 0.0,
+    "ca_tau_ms": 100.0,
+    "ca_alpha": 0.0002,
+    "ca_Kd_uM": 0.2,
+    "E_leak_mV": -65.0,
+    "E_Na_mV": 55.0,
+    "E_K_mV": -80.0,
+    "E_Ca_mV": 120.0,
+    "E_exc_mV": 0.0,
+    "E_inh_mV": -80.0,
+    "gate_speed": 1.0,
+    "inhibitory_gain": 0.03,
+    "I2_gain": 1.0,
+    "I2_leak_shift_mV": 0.0,
+    "mn_gain": 6.0,
+    "mn_leak_mV": -65.0,
+    "synaptic_delay_scope": "one global delay prior, not measured per edge",
+    "adult_scope": "Rin=300MOhm is unknown-type adult MN prior; fast/intermediate/slow exemplars tested separately",
+    "I1_gain": 1.0,
+    "background_exc_gain": 0.5,
+    "mn_SK_scale": 1.0,
+    "mn_profile": {
+      "leak_scale": 0.5719406364200305,
+      "mn_leak_mV": -50.857904405099035,
+      "coupling_nS": 4.0,
+      "gNaP_nS": 0.3,
+      "axon_bias_pA": 0.0,
+      "gate_speed": 1.0
+    },
+    "mn_profile_scope": "Unknown EM MN subtype: use adult intermediate reference, not a verified assignment",
+    "group_parameters": {
+      "motor neuron|type:Ti flexor MN": {
+        "gate_speed": 0.85
+      },
+      "motor neuron|type:Ti extensor MN": {
+        "gate_speed": 1.15
+      }
+    }
+  },
+  "metrics": {
+    "activation_train_RMSE": 0.48828139344473076,
+    "torque_train_normalized_RMSE": 1.0613877008237858,
+    "activation_holdout_RMSE": 0.5044033029437172,
+    "torque_holdout_normalized_RMSE": 1.1349753557657816,
+    "group_regularization": 0.0459458029815799,
+    "training_score": 0.5945120551330725
+  },
+  "periodic_MN": 41,
+  "numerical_failure": false,
+  "graph_scope": "1454-cell full-VNC-source induced subgraph; not intact full VNC",
+  "runtime_s": 8.930052995681763
+}

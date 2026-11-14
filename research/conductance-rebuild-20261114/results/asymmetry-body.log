@@ -1,0 +1,6 @@
+previous_readout repeated motion 1 up 0.912 amplitudes [55.5, 30.43, 3.66, 73.48, 24.06, 38.91]
+shared_baseline repeated motion 0 up 0.958 amplitudes [39.68, 10.74, 3.85, 26.41, 11.99, 2.35]
+selected repeated motion 0 up 0.958 amplitudes [41.41, 10.82, 4.19, 25.29, 12.09, 2.47]
+second_candidate repeated motion 0 up 0.958 amplitudes [43.34, 10.61, 4.15, 27.67, 12.56, 2.54]
+selected_mean repeated motion 0 up 0.961 amplitudes [35.38, 12.05, 3.23, 17.62, 11.86, 2.65]
+selected_zero repeated motion 0 up 0.962 amplitudes [18.04, 10.96, 5.01, 23.03, 9.49, 2.8]

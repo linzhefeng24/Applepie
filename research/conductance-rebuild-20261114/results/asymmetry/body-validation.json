@@ -1,0 +1,518 @@
+[
+  {
+    "case": "previous_readout",
+    "neural_candidate": "previous_readout",
+    "input": "dynamic",
+    "metrics": [
+      {
+        "leg": "LF",
+        "angle_peak_to_peak_deg": 55.50013702072348,
+        "peaks": 0,
+        "troughs": 0,
+        "repeated_motion": false,
+        "active_torque_std_native": 0.006327073918092732,
+        "positive_active_torque_mean_native": 0.0017068679550958322,
+        "negative_active_torque_mean_native": -0.0134912684081265,
+        "normalized_active_imbalance_std": 0.41630590533478123
+      },
+      {
+        "leg": "LM",
+        "angle_peak_to_peak_deg": 30.425206558934452,
+        "peaks": 0,
+        "troughs": 0,
+        "repeated_motion": false,
+        "active_torque_std_native": 0.00014369002877415068,
+        "positive_active_torque_mean_native": 0.0001958603447822267,
+        "negative_active_torque_mean_native": -5.214846117988078e-05,
+        "normalized_active_imbalance_std": 0.5793747049292463
+      },
+      {
+        "leg": "LH",
+        "angle_peak_to_peak_deg": 3.663909991968571,
+        "peaks": 0,
+        "troughs": 1,
+        "repeated_motion": false,
+        "active_torque_std_native": 0.00011451256088181399,
+        "positive_active_torque_mean_native": 0.00014011579195713137,
+        "negative_active_torque_mean_native": -4.156907384578981e-19,
+        "normalized_active_imbalance_std": 0.8172709105969224
+      },
+      {
+        "leg": "RF",
+        "angle_peak_to_peak_deg": 73.47691190103569,
+        "peaks": 2,
+        "troughs": 2,
+        "repeated_motion": true,
+        "active_torque_std_native": 0.0427392287318307,
+        "positive_active_torque_mean_native": 0.06153785972490788,
+        "negative_active_torque_mean_native": -0.012580282314386477,
+        "normalized_active_imbalance_std": 0.5766365366953228
+      },
+      {
+        "leg": "RM",
+        "angle_peak_to_peak_deg": 24.059133039690884,
+        "peaks": 0,
+        "troughs": 0,
+        "repeated_motion": false,
+        "active_torque_std_native": 0.0033773517833939615,
+        "positive_active_torque_mean_native": 0.013107367532361063,
+        "negative_active_torque_mean_native": -0.002788339093579433,
+        "normalized_active_imbalance_std": 0.21246943359425108
+      },
+      {
+        "leg": "RH",
+        "angle_peak_to_peak_deg": 38.907753373809534,
+        "peaks": 0,
+        "troughs": 0,
+        "repeated_motion": false,
+        "active_torque_std_native": 0.008957490505342391,
+        "positive_active_torque_mean_native": 0.0206006824679367,
+        "negative_active_torque_mean_native": -0.00010812469024291192,
+        "normalized_active_imbalance_std": 0.43254497648863105
+      }
+    ],
+    "repeated_motion_legs": 1,
+    "min_body_up_z": 0.9123603603084569,
+    "root_displacement_mm": [
+      0.16825131020632778,
+      -0.0195755636768759,
+      -0.365851424619799
+    ],
+    "finite": true,
+    "duration_s": 0.39999999999997227,
+    "adhesion": false,
+    "extra_applied_forces": false,
+    "physical_scope": "archived A initial state; original head/abdomen auxiliary controls; no intra-run reset",
+    "walking_validated": false
+  },
+  {
+    "case": "shared_baseline",
+    "neural_candidate": "shared_baseline",
+    "input": "dynamic",
+    "metrics": [
+      {
+        "leg": "LF",
+        "angle_peak_to_peak_deg": 39.681206214746624,
+        "peaks": 0,
+        "troughs": 0,
+        "repeated_motion": false,
+        "active_torque_std_native": 0.004730280503400836,
+        "positive_active_torque_mean_native": 7.664569156224576e-05,
+        "negative_active_torque_mean_native": -0.007220091432861283,
+        "normalized_active_imbalance_std": 0.6482733888778469
+      },
+      {
+        "leg": "LM",
+        "angle_peak_to_peak_deg": 10.73512513941936,
+        "peaks": 0,
+        "troughs": 0,
+        "repeated_motion": false,
+        "active_torque_std_native": 8.775582371789899e-05,
+        "positive_active_torque_mean_native": 0.00014482451820687302,
+        "negative_active_torque_mean_native": -5.164579090330335e-05,
+        "normalized_active_imbalance_std": 0.4466620127761259
+      },
+      {
+        "leg": "LH",
+        "angle_peak_to_peak_deg": 3.845763224713391,
+        "peaks": 0,
+        "troughs": 0,
+        "repeated_motion": false,
+        "active_torque_std_native": 0.00011786918899923104,
+        "positive_active_torque_mean_native": 0.00014648571623915942,
+        "negative_active_torque_mean_native": -4.1294369047924553e-19,
+        "normalized_active_imbalance_std": 0.8046462960715703
+      },
+      {
+        "leg": "RF",
+        "angle_peak_to_peak_deg": 26.407879579909903,
+        "peaks": 1,
+        "troughs": 1,
+        "repeated_motion": false,
+        "active_torque_std_native": 0.011938718963108249,
+        "positive_active_torque_mean_native": 0.019290145238915115,
+        "negative_active_torque_mean_native": -0.019789257214458903,
+        "normalized_active_imbalance_std": 0.3054990151743605
+      },
+      {
+        "leg": "RM",
+        "angle_peak_to_peak_deg": 11.98951898824814,
+        "peaks": 0,
+        "troughs": 1,
+        "repeated_motion": false,
+        "active_torque_std_native": 0.0012942799731875212,
+        "positive_active_torque_mean_native": 0.0006958386234930708,
+        "negative_active_torque_mean_native": -0.005262700277552765,
+        "normalized_active_imbalance_std": 0.21721431959777096
+      },
+      {
+        "leg": "RH",
+        "angle_peak_to_peak_deg": 2.345640928773546,
+        "peaks": 0,
+        "troughs": 0,
+        "repeated_motion": false,
+        "active_torque_std_native": 0.00021059613063410343,
+        "positive_active_torque_mean_native": 5.012875000291858e-06,
+        "negative_active_torque_mean_native": -0.0002656039697944192,
+        "normalized_active_imbalance_std": 0.7782077674945214
+      }
+    ],
+    "repeated_motion_legs": 0,
+    "min_body_up_z": 0.9578219273314386,
+    "root_displacement_mm": [
+      0.028674505076833647,
+      -0.1077894230556975,
+      -0.23360897252299492
+    ],
+    "finite": true,
+    "duration_s": 0.39999999999997227,
+    "adhesion": false,
+    "extra_applied_forces": false,
+    "physical_scope": "archived A initial state; original head/abdomen auxiliary controls; no intra-run reset",
+    "walking_validated": false
+  },
+  {
+    "case": "selected",
+    "neural_candidate": "flexor_slow",
+    "input": "dynamic",
+    "metrics": [
+      {
+        "leg": "LF",
+        "angle_peak_to_peak_deg": 41.40860530059046,
+        "peaks": 0,
+        "troughs": 0,
+        "repeated_motion": false,
+        "active_torque_std_native": 0.005067440360048476,
+        "positive_active_torque_mean_native": 7.244589281957198e-05,
+        "negative_active_torque_mean_native": -0.007937743157131296,
+        "normalized_active_imbalance_std": 0.6326243149129618
+      },
+      {
+        "leg": "LM",
+        "angle_peak_to_peak_deg": 10.815813432871979,
+        "peaks": 0,
+        "troughs": 0,
+        "repeated_motion": false,
+        "active_torque_std_native": 8.792659957288387e-05,
+        "positive_active_torque_mean_native": 0.00014508962251142416,
+        "negative_active_torque_mean_native": -5.1574917046953347e-05,
+        "normalized_active_imbalance_std": 0.4470892402378615
+      },
+      {
+        "leg": "LH",
+        "angle_peak_to_peak_deg": 4.185111406573986,
+        "peaks": 0,
+        "troughs": 0,
+        "repeated_motion": false,
+        "active_torque_std_native": 0.0002894401113096374,
+        "positive_active_torque_mean_native": 0.0003574796397356772,
+        "negative_active_torque_mean_native": -3.962457545026781e-19,
+        "normalized_active_imbalance_std": 0.8096688010641698
+      },
+      {
+        "leg": "RF",
+        "angle_peak_to_peak_deg": 25.29023023934957,
+        "peaks": 1,
+        "troughs": 1,
+        "repeated_motion": false,
+        "active_torque_std_native": 0.011974743453374197,
+        "positive_active_torque_mean_native": 0.019307311048153267,
+        "negative_active_torque_mean_native": -0.019802110742532276,
+        "normalized_active_imbalance_std": 0.3061856428730468
+      },
+      {
+        "leg": "RM",
+        "angle_peak_to_peak_deg": 12.09344793884279,
+        "peaks": 0,
+        "troughs": 1,
+        "repeated_motion": false,
+        "active_torque_std_native": 0.001301161784975175,
+        "positive_active_torque_mean_native": 0.0006963321344816089,
+        "negative_active_torque_mean_native": -0.005275939317918633,
+        "normalized_active_imbalance_std": 0.21786715412144256
+      },
+      {
+        "leg": "RH",
+        "angle_peak_to_peak_deg": 2.474614096789741,
+        "peaks": 0,
+        "troughs": 0,
+        "repeated_motion": false,
+        "active_torque_std_native": 0.00021031760580320302,
+        "positive_active_torque_mean_native": 5.006813827110774e-06,
+        "negative_active_torque_mean_native": -0.00026513587154018676,
+        "normalized_active_imbalance_std": 0.778542663545549
+      }
+    ],
+    "repeated_motion_legs": 0,
+    "min_body_up_z": 0.9583370031270829,
+    "root_displacement_mm": [
+      0.0414317476703773,
+      -0.10581058580455048,
+      -0.2361295894985843
+    ],
+    "finite": true,
+    "duration_s": 0.39999999999997227,
+    "adhesion": false,
+    "extra_applied_forces": false,
+    "physical_scope": "archived A initial state; original head/abdomen auxiliary controls; no intra-run reset",
+    "walking_validated": false
+  },
+  {
+    "case": "second_candidate",
+    "neural_candidate": "flexor_gain",
+    "input": "dynamic",
+    "metrics": [
+      {
+        "leg": "LF",
+        "angle_peak_to_peak_deg": 43.343127505929075,
+        "peaks": 0,
+        "troughs": 0,
+        "repeated_motion": false,
+        "active_torque_std_native": 0.005223609729359544,
+        "positive_active_torque_mean_native": 6.694044768135337e-05,
+        "negative_active_torque_mean_native": -0.008444364220150373,
+        "normalized_active_imbalance_std": 0.6137260893858084
+      },
+      {
+        "leg": "LM",
+        "angle_peak_to_peak_deg": 10.607602119797686,
+        "peaks": 0,
+        "troughs": 0,
+        "repeated_motion": false,
+        "active_torque_std_native": 8.777152891781923e-05,
+        "positive_active_torque_mean_native": 0.00014501658300538213,
+        "negative_active_torque_mean_native": -5.160101931691087e-05,
+        "normalized_active_imbalance_std": 0.44640727931340196
+      },
+      {
+        "leg": "LH",
+        "angle_peak_to_peak_deg": 4.150352183871217,
+        "peaks": 0,
+        "troughs": 0,
+        "repeated_motion": false,
+        "active_torque_std_native": 1.2197085914679956e-18,
+        "positive_active_torque_mean_native": 3.6216524170462237e-19,
+        "negative_active_torque_mean_native": -3.906975508760676e-19,
+        "normalized_active_imbalance_std": 1.2197085914679957e-06
+      },
+      {
+        "leg": "RF",
+        "angle_peak_to_peak_deg": 27.665063709460618,
+        "peaks": 1,
+        "troughs": 1,
+        "repeated_motion": false,
+        "active_torque_std_native": 0.011604673134041543,
+        "positive_active_torque_mean_native": 0.018925350287969076,
+        "negative_active_torque_mean_native": -0.020160519135066987,
+        "normalized_active_imbalance_std": 0.29690200845838394
+      },
+      {
+        "leg": "RM",
+        "angle_peak_to_peak_deg": 12.555101163639195,
+        "peaks": 0,
+        "troughs": 1,
+        "repeated_motion": false,
+        "active_torque_std_native": 0.0013151673983183404,
+        "positive_active_torque_mean_native": 0.000690937979532022,
+        "negative_active_torque_mean_native": -0.00524427432957569,
+        "normalized_active_imbalance_std": 0.22158725414088185
+      },
+      {
+        "leg": "RH",
+        "angle_peak_to_peak_deg": 2.541445888154099,
+        "peaks": 0,
+        "troughs": 0,
+        "repeated_motion": false,
+        "active_torque_std_native": 0.0002106027965326469,
+        "positive_active_torque_mean_native": 4.98147384803513e-06,
+        "negative_active_torque_mean_native": -0.0002658052971674255,
+        "normalized_active_imbalance_std": 0.7777440372839428
+      }
+    ],
+    "repeated_motion_legs": 0,
+    "min_body_up_z": 0.9578414834400437,
+    "root_displacement_mm": [
+      0.0364507673224128,
+      -0.10396807249526992,
+      -0.23768980866844105
+    ],
+    "finite": true,
+    "duration_s": 0.39999999999997227,
+    "adhesion": false,
+    "extra_applied_forces": false,
+    "physical_scope": "archived A initial state; original head/abdomen auxiliary controls; no intra-run reset",
+    "walking_validated": false
+  },
+  {
+    "case": "selected_mean",
+    "neural_candidate": "flexor_slow",
+    "input": "mean",
+    "metrics": [
+      {
+        "leg": "LF",
+        "angle_peak_to_peak_deg": 35.38447374563657,
+        "peaks": 0,
+        "troughs": 0,
+        "repeated_motion": false,
+        "active_torque_std_native": 0.0009408403752474188,
+        "positive_active_torque_mean_native": 7.383352193999239e-05,
+        "negative_active_torque_mean_native": -0.006417592616038168,
+        "normalized_active_imbalance_std": 0.14493585157551464
+      },
+      {
+        "leg": "LM",
+        "angle_peak_to_peak_deg": 12.050790932360101,
+        "peaks": 0,
+        "troughs": 0,
+        "repeated_motion": false,
+        "active_torque_std_native": 8.939448523648256e-05,
+        "positive_active_torque_mean_native": 0.0001461686656128437,
+        "negative_active_torque_mean_native": -5.123408925105854e-05,
+        "normalized_active_imbalance_std": 0.4528532810908079
+      },
+      {
+        "leg": "LH",
+        "angle_peak_to_peak_deg": 3.226505157624251,
+        "peaks": 0,
+        "troughs": 0,
+        "repeated_motion": false,
+        "active_torque_std_native": 7.900303461060955e-07,
+        "positive_active_torque_mean_native": 0.0002329929762956584,
+        "negative_active_torque_mean_native": -4.1045221849729433e-19,
+        "normalized_active_imbalance_std": 0.003390790394915501
+      },
+      {
+        "leg": "RF",
+        "angle_peak_to_peak_deg": 17.621315110760097,
+        "peaks": 0,
+        "troughs": 0,
+        "repeated_motion": false,
+        "active_torque_std_native": 0.0017272619283609403,
+        "positive_active_torque_mean_native": 0.0181434718592301,
+        "negative_active_torque_mean_native": -0.014080185798297123,
+        "normalized_active_imbalance_std": 0.05360229266082287
+      },
+      {
+        "leg": "RM",
+        "angle_peak_to_peak_deg": 11.86471827832138,
+        "peaks": 0,
+        "troughs": 1,
+        "repeated_motion": false,
+        "active_torque_std_native": 0.00029374543579294615,
+        "positive_active_torque_mean_native": 0.0006766048077904564,
+        "negative_active_torque_mean_native": -0.003442285522833296,
+        "normalized_active_imbalance_std": 0.0713166440992524
+      },
+      {
+        "leg": "RH",
+        "angle_peak_to_peak_deg": 2.6508086915891576,
+        "peaks": 0,
+        "troughs": 0,
+        "repeated_motion": false,
+        "active_torque_std_native": 4.804037239210688e-06,
+        "positive_active_torque_mean_native": 5.03716544720488e-06,
+        "negative_active_torque_mean_native": -0.0001699935765725211,
+        "normalized_active_imbalance_std": 0.027446819820196342
+      }
+    ],
+    "repeated_motion_legs": 0,
+    "min_body_up_z": 0.9610692957514879,
+    "root_displacement_mm": [
+      -0.046721195245002664,
+      -0.11604483896511911,
+      -0.23499803481416767
+    ],
+    "finite": true,
+    "duration_s": 0.39999999999997227,
+    "adhesion": false,
+    "extra_applied_forces": false,
+    "physical_scope": "archived A initial state; original head/abdomen auxiliary controls; no intra-run reset",
+    "walking_validated": false
+  },
+  {
+    "case": "selected_zero",
+    "neural_candidate": "flexor_slow",
+    "input": "zero",
+    "metrics": [
+      {
+        "leg": "LF",
+        "angle_peak_to_peak_deg": 18.03915683221834,
+        "peaks": 0,
+        "troughs": 0,
+        "repeated_motion": false,
+        "active_torque_std_native": 0.00010384548909785658,
+        "positive_active_torque_mean_native": 0.00011002606787603127,
+        "negative_active_torque_mean_native": -1.9912742546440105e-19,
+        "normalized_active_imbalance_std": 0.9438262322967075
+      },
+      {
+        "leg": "LM",
+        "angle_peak_to_peak_deg": 10.958487929758046,
+        "peaks": 0,
+        "troughs": 0,
+        "repeated_motion": false,
+        "active_torque_std_native": 8.364815417506663e-05,
+        "positive_active_torque_mean_native": 0.0001402214290646567,
+        "negative_active_torque_mean_native": -5.270334181679983e-05,
+        "normalized_active_imbalance_std": 0.4335791292786585
+      },
+      {
+        "leg": "LH",
+        "angle_peak_to_peak_deg": 5.008687353049343,
+        "peaks": 0,
+        "troughs": 0,
+        "repeated_motion": false,
+        "active_torque_std_native": 1.2348186580649719e-18,
+        "positive_active_torque_mean_native": 3.6764668129810667e-19,
+        "negative_active_torque_mean_native": -3.590601627766086e-19,
+        "normalized_active_imbalance_std": 1.234818658064972e-06
+      },
+      {
+        "leg": "RF",
+        "angle_peak_to_peak_deg": 23.029752795008374,
+        "peaks": 0,
+        "troughs": 0,
+        "repeated_motion": false,
+        "active_torque_std_native": 7.366240520779035e-05,
+        "positive_active_torque_mean_native": 8.987810453005015e-20,
+        "negative_active_torque_mean_native": -7.77596992443468e-05,
+        "normalized_active_imbalance_std": 0.9473082576659475
+      },
+      {
+        "leg": "RM",
+        "angle_peak_to_peak_deg": 9.492348109983386,
+        "peaks": 0,
+        "troughs": 1,
+        "repeated_motion": false,
+        "active_torque_std_native": 6.883156405521985e-05,
+        "positive_active_torque_mean_native": 0.0006151742946329689,
+        "negative_active_torque_mean_native": -0.0006725686180469192,
+        "normalized_active_imbalance_std": 0.053451324311291515
+      },
+      {
+        "leg": "RH",
+        "angle_peak_to_peak_deg": 2.799633014593744,
+        "peaks": 0,
+        "troughs": 0,
+        "repeated_motion": false,
+        "active_torque_std_native": 4.028082259409486e-06,
+        "positive_active_torque_mean_native": 4.668252534556206e-06,
+        "negative_active_torque_mean_native": -5.104306360835346e-19,
+        "normalized_active_imbalance_std": 0.862867256985698
+      }
+    ],
+    "repeated_motion_legs": 0,
+    "min_body_up_z": 0.9624537416501758,
+    "root_displacement_mm": [
+      0.04916007694737769,
+      -0.05388644532132879,
+      -0.31450518014593154
+    ],
+    "finite": true,
+    "duration_s": 0.39999999999997227,
+    "adhesion": false,
+    "extra_applied_forces": false,
+    "physical_scope": "archived A initial state; original head/abdomen auxiliary controls; no intra-run reset",
+    "walking_validated": false
+  }
+]

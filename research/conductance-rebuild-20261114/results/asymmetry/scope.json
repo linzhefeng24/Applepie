@@ -1,0 +1,9 @@
+{
+  "selection": "training score only, no holdout tuning",
+  "score": "activation train RMSE +0.10*normalized fixed-reference torque RMSE +0.002*group-prior penalty",
+  "readout": "Causal40ms spike filter,1ms delay; nonnegative constant gains0..10; native activation, no phase oracle",
+  "motion_validation_required": true,
+  "individual_offsets_enabled": false,
+  "structural_edges_modified": false,
+  "known_adult_intrinsic_targets_changed": false
+}

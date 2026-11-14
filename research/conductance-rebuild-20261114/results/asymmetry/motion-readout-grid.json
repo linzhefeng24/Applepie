@@ -1,0 +1,240 @@
+{
+  "criteria_frozen_before_body_runs": {
+    "peak_to_peak_deg": 5,
+    "min_peaks": 2,
+    "min_troughs": 2,
+    "prominence_deg": 2,
+    "evaluation_s": [
+      0.08,
+      0.4
+    ],
+    "min_body_up_z": 0.8
+  },
+  "trials": [
+    {
+      "name": "motion_tau2_gain0.75",
+      "tau_ms": 2.0,
+      "constant_gain_scale": 0.75,
+      "neural_candidate": "flexor_slow",
+      "group_parameters": {
+        "motor neuron|type:Ti flexor MN": {
+          "gate_speed": 0.85
+        },
+        "motor neuron|type:Ti extensor MN": {
+          "gate_speed": 1.15
+        }
+      },
+      "selection_scope": "Developmental actual-body motion criterion; no held-out walking claim"
+    },
+    {
+      "name": "motion_tau2_gain1",
+      "tau_ms": 2.0,
+      "constant_gain_scale": 1.0,
+      "neural_candidate": "flexor_slow",
+      "group_parameters": {
+        "motor neuron|type:Ti flexor MN": {
+          "gate_speed": 0.85
+        },
+        "motor neuron|type:Ti extensor MN": {
+          "gate_speed": 1.15
+        }
+      },
+      "selection_scope": "Developmental actual-body motion criterion; no held-out walking claim"
+    },
+    {
+      "name": "motion_tau2_gain1.5",
+      "tau_ms": 2.0,
+      "constant_gain_scale": 1.5,
+      "neural_candidate": "flexor_slow",
+      "group_parameters": {
+        "motor neuron|type:Ti flexor MN": {
+          "gate_speed": 0.85
+        },
+        "motor neuron|type:Ti extensor MN": {
+          "gate_speed": 1.15
+        }
+      },
+      "selection_scope": "Developmental actual-body motion criterion; no held-out walking claim"
+    },
+    {
+      "name": "motion_tau5_gain0.75",
+      "tau_ms": 5.0,
+      "constant_gain_scale": 0.75,
+      "neural_candidate": "flexor_slow",
+      "group_parameters": {
+        "motor neuron|type:Ti flexor MN": {
+          "gate_speed": 0.85
+        },
+        "motor neuron|type:Ti extensor MN": {
+          "gate_speed": 1.15
+        }
+      },
+      "selection_scope": "Developmental actual-body motion criterion; no held-out walking claim"
+    },
+    {
+      "name": "motion_tau5_gain1",
+      "tau_ms": 5.0,
+      "constant_gain_scale": 1.0,
+      "neural_candidate": "flexor_slow",
+      "group_parameters": {
+        "motor neuron|type:Ti flexor MN": {
+          "gate_speed": 0.85
+        },
+        "motor neuron|type:Ti extensor MN": {
+          "gate_speed": 1.15
+        }
+      },
+      "selection_scope": "Developmental actual-body motion criterion; no held-out walking claim"
+    },
+    {
+      "name": "motion_tau5_gain1.5",
+      "tau_ms": 5.0,
+      "constant_gain_scale": 1.5,
+      "neural_candidate": "flexor_slow",
+      "group_parameters": {
+        "motor neuron|type:Ti flexor MN": {
+          "gate_speed": 0.85
+        },
+        "motor neuron|type:Ti extensor MN": {
+          "gate_speed": 1.15
+        }
+      },
+      "selection_scope": "Developmental actual-body motion criterion; no held-out walking claim"
+    },
+    {
+      "name": "motion_tau10_gain0.75",
+      "tau_ms": 10.0,
+      "constant_gain_scale": 0.75,
+      "neural_candidate": "flexor_slow",
+      "group_parameters": {
+        "motor neuron|type:Ti flexor MN": {
+          "gate_speed": 0.85
+        },
+        "motor neuron|type:Ti extensor MN": {
+          "gate_speed": 1.15
+        }
+      },
+      "selection_scope": "Developmental actual-body motion criterion; no held-out walking claim"
+    },
+    {
+      "name": "motion_tau10_gain1",
+      "tau_ms": 10.0,
+      "constant_gain_scale": 1.0,
+      "neural_candidate": "flexor_slow",
+      "group_parameters": {
+        "motor neuron|type:Ti flexor MN": {
+          "gate_speed": 0.85
+        },
+        "motor neuron|type:Ti extensor MN": {
+          "gate_speed": 1.15
+        }
+      },
+      "selection_scope": "Developmental actual-body motion criterion; no held-out walking claim"
+    },
+    {
+      "name": "motion_tau10_gain1.5",
+      "tau_ms": 10.0,
+      "constant_gain_scale": 1.5,
+      "neural_candidate": "flexor_slow",
+      "group_parameters": {
+        "motor neuron|type:Ti flexor MN": {
+          "gate_speed": 0.85
+        },
+        "motor neuron|type:Ti extensor MN": {
+          "gate_speed": 1.15
+        }
+      },
+      "selection_scope": "Developmental actual-body motion criterion; no held-out walking claim"
+    },
+    {
+      "name": "motion_tau20_gain0.75",
+      "tau_ms": 20.0,
+      "constant_gain_scale": 0.75,
+      "neural_candidate": "flexor_slow",
+      "group_parameters": {
+        "motor neuron|type:Ti flexor MN": {
+          "gate_speed": 0.85
+        },
+        "motor neuron|type:Ti extensor MN": {
+          "gate_speed": 1.15
+        }
+      },
+      "selection_scope": "Developmental actual-body motion criterion; no held-out walking claim"
+    },
+    {
+      "name": "motion_tau20_gain1",
+      "tau_ms": 20.0,
+      "constant_gain_scale": 1.0,
+      "neural_candidate": "flexor_slow",
+      "group_parameters": {
+        "motor neuron|type:Ti flexor MN": {
+          "gate_speed": 0.85
+        },
+        "motor neuron|type:Ti extensor MN": {
+          "gate_speed": 1.15
+        }
+      },
+      "selection_scope": "Developmental actual-body motion criterion; no held-out walking claim"
+    },
+    {
+      "name": "motion_tau20_gain1.5",
+      "tau_ms": 20.0,
+      "constant_gain_scale": 1.5,
+      "neural_candidate": "flexor_slow",
+      "group_parameters": {
+        "motor neuron|type:Ti flexor MN": {
+          "gate_speed": 0.85
+        },
+        "motor neuron|type:Ti extensor MN": {
+          "gate_speed": 1.15
+        }
+      },
+      "selection_scope": "Developmental actual-body motion criterion; no held-out walking claim"
+    },
+    {
+      "name": "motion_tau40_gain0.75",
+      "tau_ms": 40.0,
+      "constant_gain_scale": 0.75,
+      "neural_candidate": "flexor_slow",
+      "group_parameters": {
+        "motor neuron|type:Ti flexor MN": {
+          "gate_speed": 0.85
+        },
+        "motor neuron|type:Ti extensor MN": {
+          "gate_speed": 1.15
+        }
+      },
+      "selection_scope": "Developmental actual-body motion criterion; no held-out walking claim"
+    },
+    {
+      "name": "motion_tau40_gain1",
+      "tau_ms": 40.0,
+      "constant_gain_scale": 1.0,
+      "neural_candidate": "flexor_slow",
+      "group_parameters": {
+        "motor neuron|type:Ti flexor MN": {
+          "gate_speed": 0.85
+        },
+        "motor neuron|type:Ti extensor MN": {
+          "gate_speed": 1.15
+        }
+      },
+      "selection_scope": "Developmental actual-body motion criterion; no held-out walking claim"
+    },
+    {
+      "name": "motion_tau40_gain1.5",
+      "tau_ms": 40.0,
+      "constant_gain_scale": 1.5,
+      "neural_candidate": "flexor_slow",
+      "group_parameters": {
+        "motor neuron|type:Ti flexor MN": {
+          "gate_speed": 0.85
+        },
+        "motor neuron|type:Ti extensor MN": {
+          "gate_speed": 1.15
+        }
+      },
+      "selection_scope": "Developmental actual-body motion criterion; no held-out walking claim"
+    }
+  ]
+}
