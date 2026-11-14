@@ -1,0 +1,22 @@
+{
+  "bundle_verified": true,
+  "original_control_identity": true,
+  "native_activation_max_error": 0.0,
+  "original_A_replay_metrics": {
+    "case": "A",
+    "duration_s": 0.39999999999997227,
+    "path_angle_rmse_deg": 9.328350971292931,
+    "terminal_angle_rmse_deg": 11.894855693203347,
+    "max_terminal_error_deg": 44.863932576893696,
+    "root_displacement_mm": [
+      1.4121096286211856,
+      0.2175867712779005,
+      -0.2628897463544805
+    ],
+    "min_body_up_z": 0.9889104691726948,
+    "extra_applied_forces": false,
+    "model_parameters_refit": false,
+    "long_term_stable_walking_established": false
+  },
+  "uses_original_workspace_model_directory": false
+}

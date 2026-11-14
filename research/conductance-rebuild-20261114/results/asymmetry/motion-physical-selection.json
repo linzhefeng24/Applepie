@@ -1,0 +1,210 @@
+{
+  "selected": {
+    "name": "motion_tau20_gain1",
+    "input_mode": "dynamic",
+    "metrics": [
+      {
+        "leg": "LF",
+        "peak_to_peak_deg": 58.41907356713616,
+        "peaks": 0,
+        "troughs": 1,
+        "harmonic_amplitude_deg": 4.507826844490263,
+        "repeated_motion": false,
+        "actuator_torque_std_native": 0.01108888759798626
+      },
+      {
+        "leg": "LM",
+        "peak_to_peak_deg": 27.233606437637462,
+        "peaks": 0,
+        "troughs": 0,
+        "harmonic_amplitude_deg": 0.38278788030578975,
+        "repeated_motion": false,
+        "actuator_torque_std_native": 8.651056772165672e-05
+      },
+      {
+        "leg": "LH",
+        "peak_to_peak_deg": 4.71460905539682,
+        "peaks": 0,
+        "troughs": 0,
+        "harmonic_amplitude_deg": 0.2960657289134004,
+        "repeated_motion": false,
+        "actuator_torque_std_native": 4.096622301350121e-06
+      },
+      {
+        "leg": "RF",
+        "peak_to_peak_deg": 75.22046145270303,
+        "peaks": 3,
+        "troughs": 2,
+        "harmonic_amplitude_deg": 14.179615296221227,
+        "repeated_motion": true,
+        "actuator_torque_std_native": 0.045782196587487035
+      },
+      {
+        "leg": "RM",
+        "peak_to_peak_deg": 19.963396165214014,
+        "peaks": 0,
+        "troughs": 0,
+        "harmonic_amplitude_deg": 1.4634465847524767,
+        "repeated_motion": false,
+        "actuator_torque_std_native": 0.003893583984932965
+      },
+      {
+        "leg": "RH",
+        "peak_to_peak_deg": 49.35048280887023,
+        "peaks": 0,
+        "troughs": 0,
+        "harmonic_amplitude_deg": 3.845384959232021,
+        "repeated_motion": false,
+        "actuator_torque_std_native": 0.010954442394420958
+      }
+    ],
+    "repeated_motion_legs": 1,
+    "min_body_up_z": 0.8823740169978715,
+    "physical_criterion_pass": true,
+    "finite": true,
+    "adhesion": false,
+    "extra_applied_forces": false,
+    "walking_validated": false
+  },
+  "mean_control": {
+    "name": "motion_tau20_gain1_mean",
+    "input_mode": "constant_mean",
+    "metrics": [
+      {
+        "leg": "LF",
+        "peak_to_peak_deg": 47.32385937068728,
+        "peaks": 0,
+        "troughs": 0,
+        "harmonic_amplitude_deg": 1.6874562976682708,
+        "repeated_motion": false,
+        "actuator_torque_std_native": 0.0027211788230414678
+      },
+      {
+        "leg": "LM",
+        "peak_to_peak_deg": 26.06765289848171,
+        "peaks": 0,
+        "troughs": 0,
+        "harmonic_amplitude_deg": 0.31119780133390806,
+        "repeated_motion": false,
+        "actuator_torque_std_native": 8.979483642029143e-05
+      },
+      {
+        "leg": "LH",
+        "peak_to_peak_deg": 3.225593463204811,
+        "peaks": 0,
+        "troughs": 1,
+        "harmonic_amplitude_deg": 0.5591944601953819,
+        "repeated_motion": false,
+        "actuator_torque_std_native": 1.967232441736346e-08
+      },
+      {
+        "leg": "RF",
+        "peak_to_peak_deg": 68.52883555031924,
+        "peaks": 0,
+        "troughs": 0,
+        "harmonic_amplitude_deg": 1.817735506195932,
+        "repeated_motion": false,
+        "actuator_torque_std_native": 0.008304913155237357
+      },
+      {
+        "leg": "RM",
+        "peak_to_peak_deg": 26.40384189603533,
+        "peaks": 0,
+        "troughs": 0,
+        "harmonic_amplitude_deg": 1.0898556008366107,
+        "repeated_motion": false,
+        "actuator_torque_std_native": 0.0008306772489658444
+      },
+      {
+        "leg": "RH",
+        "peak_to_peak_deg": 28.981703311531636,
+        "peaks": 0,
+        "troughs": 0,
+        "harmonic_amplitude_deg": 1.3456424402893985,
+        "repeated_motion": false,
+        "actuator_torque_std_native": 0.003554675016461454
+      }
+    ],
+    "repeated_motion_legs": 0,
+    "min_body_up_z": 0.901149925541659,
+    "physical_criterion_pass": false,
+    "finite": true,
+    "adhesion": false,
+    "extra_applied_forces": false,
+    "walking_validated": false
+  },
+  "zero_control": {
+    "name": "motion_tau20_gain1_zero",
+    "input_mode": "zero",
+    "metrics": [
+      {
+        "leg": "LF",
+        "peak_to_peak_deg": 18.03915683221834,
+        "peaks": 0,
+        "troughs": 0,
+        "harmonic_amplitude_deg": 0.7266949715944562,
+        "repeated_motion": false,
+        "actuator_torque_std_native": 0.0002609754103043854
+      },
+      {
+        "leg": "LM",
+        "peak_to_peak_deg": 10.958487929758046,
+        "peaks": 0,
+        "troughs": 0,
+        "harmonic_amplitude_deg": 0.5506173235223732,
+        "repeated_motion": false,
+        "actuator_torque_std_native": 8.36481541750667e-05
+      },
+      {
+        "leg": "LH",
+        "peak_to_peak_deg": 5.008687353049343,
+        "peaks": 0,
+        "troughs": 0,
+        "harmonic_amplitude_deg": 0.04561078753213206,
+        "repeated_motion": false,
+        "actuator_torque_std_native": 1.2348186580649719e-18
+      },
+      {
+        "leg": "RF",
+        "peak_to_peak_deg": 23.029752795008374,
+        "peaks": 0,
+        "troughs": 0,
+        "harmonic_amplitude_deg": 0.4198195214604129,
+        "repeated_motion": false,
+        "actuator_torque_std_native": 5.53655719815943e-05
+      },
+      {
+        "leg": "RM",
+        "peak_to_peak_deg": 9.492348109983386,
+        "peaks": 0,
+        "troughs": 1,
+        "harmonic_amplitude_deg": 0.8112455902968431,
+        "repeated_motion": false,
+        "actuator_torque_std_native": 6.883156405521892e-05
+      },
+      {
+        "leg": "RH",
+        "peak_to_peak_deg": 2.799633014593744,
+        "peaks": 0,
+        "troughs": 0,
+        "harmonic_amplitude_deg": 0.21480376248840036,
+        "repeated_motion": false,
+        "actuator_torque_std_native": 4.028082259409486e-06
+      }
+    ],
+    "repeated_motion_legs": 0,
+    "min_body_up_z": 0.9624537416501758,
+    "physical_criterion_pass": false,
+    "finite": true,
+    "adhesion": false,
+    "extra_applied_forces": false,
+    "walking_validated": false
+  },
+  "causal_contrast_legs": [
+    "RF"
+  ],
+  "minimum_goal_supported": true,
+  "selection_used_body_development_data": true,
+  "criterion": "At least2 peaks/troughs with2deg prominence and5deg excursion after80ms, upright>=.8; selected oscillation absent in constant-mean control and harmonic amplitude>1.5x control.",
+  "no_full_walking_claim": true
+}

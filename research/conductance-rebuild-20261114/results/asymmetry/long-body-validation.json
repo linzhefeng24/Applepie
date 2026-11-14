@@ -1,0 +1,310 @@
+[
+  {
+    "case": "dynamic",
+    "duration_s": 0.9999999999999062,
+    "min_body_up_z": 0.8575874067752935,
+    "min_body_up_z_first0_4s": 0.8823740169978715,
+    "root_displacement_mm": [
+      0.4091350186895001,
+      -0.21211006662657741,
+      -0.5520713616768858
+    ],
+    "metrics": [
+      {
+        "leg": "LF",
+        "peak_to_peak_deg_after0_4s": 4.462749155290453,
+        "peaks": 0,
+        "troughs": 0,
+        "repeated_motion_after0_4s": false
+      },
+      {
+        "leg": "LM",
+        "peak_to_peak_deg_after0_4s": 2.83152389878029,
+        "peaks": 0,
+        "troughs": 0,
+        "repeated_motion_after0_4s": false
+      },
+      {
+        "leg": "LH",
+        "peak_to_peak_deg_after0_4s": 5.0514422757872195,
+        "peaks": 0,
+        "troughs": 0,
+        "repeated_motion_after0_4s": false
+      },
+      {
+        "leg": "RF",
+        "peak_to_peak_deg_after0_4s": 14.3645937602124,
+        "peaks": 4,
+        "troughs": 5,
+        "repeated_motion_after0_4s": true
+      },
+      {
+        "leg": "RM",
+        "peak_to_peak_deg_after0_4s": 2.0257892925295238,
+        "peaks": 0,
+        "troughs": 0,
+        "repeated_motion_after0_4s": false
+      },
+      {
+        "leg": "RH",
+        "peak_to_peak_deg_after0_4s": 3.7588299597594883,
+        "peaks": 4,
+        "troughs": 4,
+        "repeated_motion_after0_4s": false
+      }
+    ],
+    "repeated_motion_legs_after0_4s": 1,
+    "upright_criterion_pass": true,
+    "finite": true,
+    "no_reset_or_rescue": true,
+    "adhesion": false,
+    "walking_validated": false,
+    "native_activation_max_error": 0.0
+  },
+  {
+    "case": "mean",
+    "duration_s": 0.9999999999999062,
+    "min_body_up_z": 0.8949584482103173,
+    "min_body_up_z_first0_4s": 0.8949584482103173,
+    "root_displacement_mm": [
+      -0.004919199461461125,
+      -0.08838329083749497,
+      -0.37644436917595325
+    ],
+    "metrics": [
+      {
+        "leg": "LF",
+        "peak_to_peak_deg_after0_4s": 6.630240294126409,
+        "peaks": 0,
+        "troughs": 0,
+        "repeated_motion_after0_4s": false
+      },
+      {
+        "leg": "LM",
+        "peak_to_peak_deg_after0_4s": 5.142093746098851,
+        "peaks": 0,
+        "troughs": 0,
+        "repeated_motion_after0_4s": false
+      },
+      {
+        "leg": "LH",
+        "peak_to_peak_deg_after0_4s": 0.6432474144061509,
+        "peaks": 0,
+        "troughs": 0,
+        "repeated_motion_after0_4s": false
+      },
+      {
+        "leg": "RF",
+        "peak_to_peak_deg_after0_4s": 0.0018042336005805737,
+        "peaks": 0,
+        "troughs": 0,
+        "repeated_motion_after0_4s": false
+      },
+      {
+        "leg": "RM",
+        "peak_to_peak_deg_after0_4s": 7.902610131166355,
+        "peaks": 1,
+        "troughs": 0,
+        "repeated_motion_after0_4s": false
+      },
+      {
+        "leg": "RH",
+        "peak_to_peak_deg_after0_4s": 2.4056352519820976,
+        "peaks": 0,
+        "troughs": 0,
+        "repeated_motion_after0_4s": false
+      }
+    ],
+    "repeated_motion_legs_after0_4s": 0,
+    "upright_criterion_pass": true,
+    "finite": true,
+    "no_reset_or_rescue": true,
+    "adhesion": false,
+    "walking_validated": false
+  },
+  {
+    "case": "fine",
+    "duration_s": 0.9999999999999062,
+    "min_body_up_z": 0.8116589699929959,
+    "min_body_up_z_first0_4s": 0.8486137350852339,
+    "root_displacement_mm": [
+      0.15206254033700223,
+      -0.24051455901464025,
+      -0.4453381874590373
+    ],
+    "metrics": [
+      {
+        "leg": "LF",
+        "peak_to_peak_deg_after0_4s": 3.729699198027909,
+        "peaks": 2,
+        "troughs": 2,
+        "repeated_motion_after0_4s": false
+      },
+      {
+        "leg": "LM",
+        "peak_to_peak_deg_after0_4s": 11.113691644865362,
+        "peaks": 0,
+        "troughs": 0,
+        "repeated_motion_after0_4s": false
+      },
+      {
+        "leg": "LH",
+        "peak_to_peak_deg_after0_4s": 1.68459119838435,
+        "peaks": 0,
+        "troughs": 0,
+        "repeated_motion_after0_4s": false
+      },
+      {
+        "leg": "RF",
+        "peak_to_peak_deg_after0_4s": 18.272225094548766,
+        "peaks": 4,
+        "troughs": 5,
+        "repeated_motion_after0_4s": true
+      },
+      {
+        "leg": "RM",
+        "peak_to_peak_deg_after0_4s": 4.859793599579192,
+        "peaks": 0,
+        "troughs": 0,
+        "repeated_motion_after0_4s": false
+      },
+      {
+        "leg": "RH",
+        "peak_to_peak_deg_after0_4s": 3.715670499773566,
+        "peaks": 4,
+        "troughs": 5,
+        "repeated_motion_after0_4s": false
+      }
+    ],
+    "repeated_motion_legs_after0_4s": 1,
+    "upright_criterion_pass": true,
+    "finite": true,
+    "no_reset_or_rescue": true,
+    "adhesion": false,
+    "walking_validated": false,
+    "native_activation_max_error": 0.0
+  },
+  {
+    "case": "E2_silenced",
+    "duration_s": 0.9999999999999062,
+    "min_body_up_z": 0.34656348834839446,
+    "min_body_up_z_first0_4s": 0.35098215577782677,
+    "root_displacement_mm": [
+      -0.23920171669210494,
+      -0.324423288941287,
+      -0.2657353197915234
+    ],
+    "metrics": [
+      {
+        "leg": "LF",
+        "peak_to_peak_deg_after0_4s": 18.631207290758248,
+        "peaks": 0,
+        "troughs": 0,
+        "repeated_motion_after0_4s": false
+      },
+      {
+        "leg": "LM",
+        "peak_to_peak_deg_after0_4s": 5.271126481330027,
+        "peaks": 0,
+        "troughs": 0,
+        "repeated_motion_after0_4s": false
+      },
+      {
+        "leg": "LH",
+        "peak_to_peak_deg_after0_4s": 5.2397692472850945,
+        "peaks": 0,
+        "troughs": 0,
+        "repeated_motion_after0_4s": false
+      },
+      {
+        "leg": "RF",
+        "peak_to_peak_deg_after0_4s": 0.05014438957476841,
+        "peaks": 0,
+        "troughs": 0,
+        "repeated_motion_after0_4s": false
+      },
+      {
+        "leg": "RM",
+        "peak_to_peak_deg_after0_4s": 3.5007439814377044,
+        "peaks": 0,
+        "troughs": 0,
+        "repeated_motion_after0_4s": false
+      },
+      {
+        "leg": "RH",
+        "peak_to_peak_deg_after0_4s": 1.3808110872995627,
+        "peaks": 0,
+        "troughs": 0,
+        "repeated_motion_after0_4s": false
+      }
+    ],
+    "repeated_motion_legs_after0_4s": 0,
+    "upright_criterion_pass": false,
+    "finite": true,
+    "no_reset_or_rescue": true,
+    "adhesion": false,
+    "walking_validated": false,
+    "native_activation_max_error": 0.0
+  },
+  {
+    "case": "zero",
+    "duration_s": 0.9999999999999062,
+    "min_body_up_z": 0.9624537416501758,
+    "min_body_up_z_first0_4s": 0.9624537416501758,
+    "root_displacement_mm": [
+      0.031404685644955986,
+      -0.043752744871259484,
+      -0.38158214447240657
+    ],
+    "metrics": [
+      {
+        "leg": "LF",
+        "peak_to_peak_deg_after0_4s": 9.006915076413215,
+        "peaks": 0,
+        "troughs": 0,
+        "repeated_motion_after0_4s": false
+      },
+      {
+        "leg": "LM",
+        "peak_to_peak_deg_after0_4s": 5.851271669791952,
+        "peaks": 0,
+        "troughs": 0,
+        "repeated_motion_after0_4s": false
+      },
+      {
+        "leg": "LH",
+        "peak_to_peak_deg_after0_4s": 1.8274606290999436,
+        "peaks": 0,
+        "troughs": 0,
+        "repeated_motion_after0_4s": false
+      },
+      {
+        "leg": "RF",
+        "peak_to_peak_deg_after0_4s": 4.948049574695801,
+        "peaks": 0,
+        "troughs": 0,
+        "repeated_motion_after0_4s": false
+      },
+      {
+        "leg": "RM",
+        "peak_to_peak_deg_after0_4s": 4.3674628842764545,
+        "peaks": 0,
+        "troughs": 0,
+        "repeated_motion_after0_4s": false
+      },
+      {
+        "leg": "RH",
+        "peak_to_peak_deg_after0_4s": 0.3327039910796553,
+        "peaks": 0,
+        "troughs": 0,
+        "repeated_motion_after0_4s": false
+      }
+    ],
+    "repeated_motion_legs_after0_4s": 0,
+    "upright_criterion_pass": true,
+    "finite": true,
+    "no_reset_or_rescue": true,
+    "adhesion": false,
+    "walking_validated": false
+  }
+]

@@ -9,7 +9,10 @@ ADDITIVE_BOUNDS={'E_leak_mV':(-5.,5.),'axon_bias_pA':(-10.,10.)}
 
 def group_key(row):
  typ=str(row.get('type','')).strip();cl=str(row.get('class','')).strip();nt=str(row.get('predictedNt','')).strip()
- if typ and typ not in {'unknown','Unknown','TBD','SNxxxx'}:return cl+'|type:'+typ
+ if typ and typ not in {'unknown','Unknown','TBD','SNxxxx'}:
+  key=cl+'|type:'+typ
+  if row.get('verified_motor_unit_subtype'):key+='|verified_unit:'+str(row['verified_motor_unit_subtype'])
+  return key
  return cl+'|hemilineage:'+str(row.get('hemilineage','unknown'))+'|NT:'+nt
 
 def resolve(metadata,group_parameters,individual_offsets=None):
@@ -17,7 +20,9 @@ def resolve(metadata,group_parameters,individual_offsets=None):
  are additive leak shifts only, limited to±2mV, opt-in and explicitly recorded.
  No changes to structural weights, edge direction, receptor sign or stimulus.
  """
- out={};assignments={}
+ out={};assignments={};available={group_key(row) for row in metadata}
+ unknown=set(group_parameters)-available
+ if unknown:raise KeyError('Parameter groups absent from this graph: '+', '.join(sorted(unknown)))
  for i,row in enumerate(metadata):
   key=group_key(row);assignments[str(row['bodyId'])]=key
   if key in group_parameters:out[i]=group_parameters[key]

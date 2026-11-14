@@ -7,7 +7,7 @@ import sys,json
 import numpy as np,mujoco
 from scipy.ndimage import gaussian_filter1d
 from scipy.signal import find_peaks
-R=Path(__file__).parent;O=R/'results/asymmetry';sys.path.insert(0,'/workspace/flymimic-twofile');from simulation import Simulation
+R=Path(__file__).parent;O=R/'results/asymmetry';from archived_model import Simulation
 spec=json.load(open(O/'motion-readout-grid.json'));records=[]
 
 def metrics(q,tau,frequency=spec['analysis_frequency_hz']):
