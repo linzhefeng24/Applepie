@@ -63,3 +63,42 @@ circuits are tracked. Steering extraction uses actual PFL3/PFL2→DNa03/LAL010�
 DNa02 pathways and inhibitory relays; functional PFL output side is inferred
 from its direct projection weights, not soma side. Unknown modulatory effects
 are kept as a stated missing mechanism, not represented as fast excitation.
+
+## Steering mechanism and source excitability
+
+A real484-cell MaleCNS path context gives left-output PFL3→left DNa02 excitation
+and right DNa02 hyperpolarization; right stimulation reverses the response.
+Direct DNa02 mutual inhibition is not imposed. PFL2 coactivation initially
+suppresses output because several PFL sources settle below spike threshold.
+A20ms restart probe did not establish persistent recovery, so a simple
+bistability explanation remains a hypothesis, not a confirmed mechanism.
+
+Hand-changing the shared PFL2/PFL3 axon bias by+5pA (no target-curve fitting)
+restores bilateral PFL2 recruitment and directional gain modulation. Under the
+same adjusted parameters, left PFL3 alone gives DNa02 L/R22/0Hz, right alone
+0/28Hz, bilateral PFL2 alone35/27Hz, and PFL2+left PFL3 gives44/0Hz. The off
+control is silent. The coactivation direction is retained at dt0.00625ms,
+though individual relay responses differ; full quantitative convergence is not
+claimed. These are qualitative neuronal responses, not angular-velocity fits.
+
+The3142-cell same-MaleCNS command context now includes verified type-level FG
+(CB0890→GNG458), BB(DNg60), P9(DNp09), Fdg(CB0038→GNG588), MDN and BRK/BON1
+candidates plus actual two-hop routes. The published identity XLSX is included.
+BPN type1 CL210 remains unresolved and is not replaced by a different subtype.
+
+P9 source activity fails under the initial network prior despite isolated-cell
+firing. Raising current160→200pA does not fix it. Hand-reducing K density in
+both P9 homologues by10%, then20%, raises steady-window source output from0
+to9 then40Hz, but several expected DN outputs remain suppressed. These are
+intermediate observations, not a successful stop/forward phenotype. Next manual
+comparison halves the shared brain inhibitory conductance and checks both P9
+and previously working steering responses before adoption.
+
+The edge traversal was made event-based to allow more manual experiments.
+Presynaptic row order and addition order are retained; three independent
+continuous-HH protocols give bitwise identical spikes, voltage, Ca, synaptic
+currents and conductances against revision6dda175. A first reference-loader
+cache failure is retained in event-traversal-cache-failure.log; the loader was
+fixed by disabling cache only for the immutable reference implementation.
+Fifteen regression checks pass. This is execution acceleration, not a neural
+approximation or parameter-selection algorithm.

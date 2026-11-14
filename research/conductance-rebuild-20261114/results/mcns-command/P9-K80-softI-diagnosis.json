@@ -1,0 +1,510 @@
+{
+  "condition": "P9-K80-softI",
+  "numerical_failure": false,
+  "cells": [
+    {
+      "body_id": "516367",
+      "type": "AN19A018",
+      "side": "L",
+      "nt": "acetylcholine",
+      "groups": [
+        "BRK"
+      ],
+      "mean_rate_hz": 0.0,
+      "mean_soma_mV": -67.00658552518368,
+      "mean_exc_pA": 0.712135974271448,
+      "mean_inh_pA": -1.314270491065969
+    },
+    {
+      "body_id": "44992",
+      "type": "AN19A018",
+      "side": "L",
+      "nt": "acetylcholine",
+      "groups": [
+        "BRK"
+      ],
+      "mean_rate_hz": 0.0,
+      "mean_soma_mV": -67.06081940035632,
+      "mean_exc_pA": 2.0208337097892755,
+      "mean_inh_pA": -2.841484731777036
+    },
+    {
+      "body_id": "523843",
+      "type": "AN19A018",
+      "side": "L",
+      "nt": "acetylcholine",
+      "groups": [
+        "BRK"
+      ],
+      "mean_rate_hz": 8.0,
+      "mean_soma_mV": -65.19651864050245,
+      "mean_exc_pA": 24.53846517389497,
+      "mean_inh_pA": -18.398170215120746
+    },
+    {
+      "body_id": "520135",
+      "type": "AN19A018",
+      "side": "L",
+      "nt": "acetylcholine",
+      "groups": [
+        "BRK"
+      ],
+      "mean_rate_hz": 0.0,
+      "mean_soma_mV": -66.69671199204896,
+      "mean_exc_pA": 1.517657504736681,
+      "mean_inh_pA": -0.7105198337176147
+    },
+    {
+      "body_id": "17510",
+      "type": "AN19A018",
+      "side": "L",
+      "nt": "acetylcholine",
+      "groups": [
+        "BRK"
+      ],
+      "mean_rate_hz": 26.0,
+      "mean_soma_mV": -60.565589019565145,
+      "mean_exc_pA": 55.478186002041575,
+      "mean_inh_pA": -24.197597784659933
+    },
+    {
+      "body_id": "14973",
+      "type": "AN19A018",
+      "side": "L",
+      "nt": "acetylcholine",
+      "groups": [
+        "BRK"
+      ],
+      "mean_rate_hz": 0.0,
+      "mean_soma_mV": -65.9620601011944,
+      "mean_exc_pA": 16.60956267413036,
+      "mean_inh_pA": -12.067246459507482
+    },
+    {
+      "body_id": "14863",
+      "type": "AN19A018",
+      "side": "R",
+      "nt": "acetylcholine",
+      "groups": [
+        "BRK"
+      ],
+      "mean_rate_hz": 8.0,
+      "mean_soma_mV": -66.29662112678433,
+      "mean_exc_pA": 19.68403880402419,
+      "mean_inh_pA": -17.910203342877686
+    },
+    {
+      "body_id": "16542",
+      "type": "AN19A018",
+      "side": "R",
+      "nt": "acetylcholine",
+      "groups": [
+        "BRK"
+      ],
+      "mean_rate_hz": 10.0,
+      "mean_soma_mV": -65.1304202199835,
+      "mean_exc_pA": 17.297498752994624,
+      "mean_inh_pA": -10.33928426686771
+    },
+    {
+      "body_id": "14113",
+      "type": "AN19A018",
+      "side": "R",
+      "nt": "acetylcholine",
+      "groups": [
+        "BRK"
+      ],
+      "mean_rate_hz": 0.0,
+      "mean_soma_mV": -67.58368305121496,
+      "mean_exc_pA": 6.338360957618099,
+      "mean_inh_pA": -9.354422408038577
+    },
+    {
+      "body_id": "24115",
+      "type": "AN19A018",
+      "side": "R",
+      "nt": "acetylcholine",
+      "groups": [
+        "BRK"
+      ],
+      "mean_rate_hz": 0.0,
+      "mean_soma_mV": -66.80897843438966,
+      "mean_exc_pA": 0.9065537255103606,
+      "mean_inh_pA": -0.6309219917749684
+    },
+    {
+      "body_id": "46961",
+      "type": "AN19A018",
+      "side": "R",
+      "nt": "acetylcholine",
+      "groups": [
+        "BRK"
+      ],
+      "mean_rate_hz": 0.0,
+      "mean_soma_mV": -67.0594009253669,
+      "mean_exc_pA": 0.16315092006922052,
+      "mean_inh_pA": -1.0142358431013745
+    },
+    {
+      "body_id": "74742",
+      "type": "AN19A018",
+      "side": "R",
+      "nt": "acetylcholine",
+      "groups": [
+        "BRK"
+      ],
+      "mean_rate_hz": 0.0,
+      "mean_soma_mV": -66.85394563664428,
+      "mean_exc_pA": 1.940197284489679,
+      "mean_inh_pA": -1.8442394813405016
+    },
+    {
+      "body_id": "523769",
+      "type": "DNa02",
+      "side": "L",
+      "nt": "acetylcholine",
+      "groups": [],
+      "mean_rate_hz": 11.0,
+      "mean_soma_mV": -64.40491222354792,
+      "mean_exc_pA": 53.41833570563595,
+      "mean_inh_pA": -35.89033410806519
+    },
+    {
+      "body_id": "10360",
+      "type": "DNa02",
+      "side": "R",
+      "nt": "acetylcholine",
+      "groups": [],
+      "mean_rate_hz": 9.0,
+      "mean_soma_mV": -69.31259925983781,
+      "mean_exc_pA": 19.238384094296286,
+      "mean_inh_pA": -27.324769888152968
+    },
+    {
+      "body_id": "10045",
+      "type": "DNg100",
+      "side": "L",
+      "nt": "acetylcholine",
+      "groups": [],
+      "mean_rate_hz": 1.0,
+      "mean_soma_mV": -74.02693434979493,
+      "mean_exc_pA": 25.457834507014063,
+      "mean_inh_pA": -43.62447843308794
+    },
+    {
+      "body_id": "10056",
+      "type": "DNg100",
+      "side": "R",
+      "nt": "acetylcholine",
+      "groups": [],
+      "mean_rate_hz": 2.0,
+      "mean_soma_mV": -73.47240634375812,
+      "mean_exc_pA": 29.33848178813587,
+      "mean_inh_pA": -46.35607311375349
+    },
+    {
+      "body_id": "11074",
+      "type": "DNg13",
+      "side": "L",
+      "nt": "acetylcholine",
+      "groups": [],
+      "mean_rate_hz": 1.0,
+      "mean_soma_mV": -68.51345143902503,
+      "mean_exc_pA": 5.63910595204864,
+      "mean_inh_pA": -7.549084403869107
+    },
+    {
+      "body_id": "512006",
+      "type": "DNg13",
+      "side": "R",
+      "nt": "acetylcholine",
+      "groups": [],
+      "mean_rate_hz": 2.0,
+      "mean_soma_mV": -68.42602832935589,
+      "mean_exc_pA": 4.293052500195082,
+      "mean_inh_pA": -6.4823319348448605
+    },
+    {
+      "body_id": "15105",
+      "type": "DNg55",
+      "side": "M",
+      "nt": "gaba",
+      "groups": [],
+      "mean_rate_hz": 2.0,
+      "mean_soma_mV": -66.17391130616029,
+      "mean_exc_pA": 12.878886743204752,
+      "mean_inh_pA": -5.757587258674741
+    },
+    {
+      "body_id": "11374",
+      "type": "DNg60",
+      "side": "L",
+      "nt": "gaba",
+      "groups": [
+        "BB"
+      ],
+      "mean_rate_hz": 0.0,
+      "mean_soma_mV": -66.81032284413416,
+      "mean_exc_pA": 4.318776286756611,
+      "mean_inh_pA": -3.904912772828577
+    },
+    {
+      "body_id": "188947",
+      "type": "DNg60",
+      "side": "R",
+      "nt": "gaba",
+      "groups": [
+        "BB"
+      ],
+      "mean_rate_hz": 1.0,
+      "mean_soma_mV": -68.16541548917917,
+      "mean_exc_pA": 2.867314204245716,
+      "mean_inh_pA": -8.588068124414457
+    },
+    {
+      "body_id": "10192",
+      "type": "DNg75",
+      "side": "L",
+      "nt": "acetylcholine",
+      "groups": [],
+      "mean_rate_hz": 27.0,
+      "mean_soma_mV": -62.36292337356299,
+      "mean_exc_pA": 170.8386287905235,
+      "mean_inh_pA": -137.77356763471226
+    },
+    {
+      "body_id": "520300",
+      "type": "DNg75",
+      "side": "R",
+      "nt": "acetylcholine",
+      "groups": [],
+      "mean_rate_hz": 11.0,
+      "mean_soma_mV": -70.2113311095413,
+      "mean_exc_pA": 111.3595529313647,
+      "mean_inh_pA": -119.98353687539893
+    },
+    {
+      "body_id": "13805",
+      "type": "DNg97",
+      "side": "L",
+      "nt": "acetylcholine",
+      "groups": [],
+      "mean_rate_hz": 1.0,
+      "mean_soma_mV": -71.03147042268122,
+      "mean_exc_pA": 20.502813806982264,
+      "mean_inh_pA": -30.24303791666027
+    },
+    {
+      "body_id": "230783",
+      "type": "DNg97",
+      "side": "R",
+      "nt": "acetylcholine",
+      "groups": [],
+      "mean_rate_hz": 1.0,
+      "mean_soma_mV": -68.75515501462117,
+      "mean_exc_pA": 37.48625121699355,
+      "mean_inh_pA": -38.67397433561884
+    },
+    {
+      "body_id": "10844",
+      "type": "DNge053",
+      "side": "L",
+      "nt": "acetylcholine",
+      "groups": [],
+      "mean_rate_hz": 1.0,
+      "mean_soma_mV": -70.41294103237495,
+      "mean_exc_pA": 17.93392195455774,
+      "mean_inh_pA": -26.918046690594807
+    },
+    {
+      "body_id": "11965",
+      "type": "DNge053",
+      "side": "R",
+      "nt": "acetylcholine",
+      "groups": [],
+      "mean_rate_hz": 1.0,
+      "mean_soma_mV": -71.22766730394366,
+      "mean_exc_pA": 8.79440799056839,
+      "mean_inh_pA": -20.87709883914425
+    },
+    {
+      "body_id": "10783",
+      "type": "DNp09",
+      "side": "L",
+      "nt": "acetylcholine",
+      "groups": [
+        "P9"
+      ],
+      "mean_rate_hz": 53.0,
+      "mean_soma_mV": -47.41337633630901,
+      "mean_exc_pA": 2.0444425326652307,
+      "mean_inh_pA": -50.35889617257178
+    },
+    {
+      "body_id": "11177",
+      "type": "DNp09",
+      "side": "R",
+      "nt": "acetylcholine",
+      "groups": [
+        "P9"
+      ],
+      "mean_rate_hz": 0.0,
+      "mean_soma_mV": -68.00151898879714,
+      "mean_exc_pA": 2.3859987877959314,
+      "mean_inh_pA": -9.158004619806416
+    },
+    {
+      "body_id": "520884",
+      "type": "GNG458",
+      "side": "L",
+      "nt": "gaba",
+      "groups": [
+        "FG"
+      ],
+      "mean_rate_hz": 0.0,
+      "mean_soma_mV": -66.91851404380331,
+      "mean_exc_pA": 0.7873570711285078,
+      "mean_inh_pA": -0.9982950833483314
+    },
+    {
+      "body_id": "26344",
+      "type": "GNG458",
+      "side": "R",
+      "nt": "gaba",
+      "groups": [
+        "FG"
+      ],
+      "mean_rate_hz": 1.0,
+      "mean_soma_mV": -67.05382213365534,
+      "mean_exc_pA": 3.3860792040446963,
+      "mean_inh_pA": -4.386347419196002
+    },
+    {
+      "body_id": "12617",
+      "type": "GNG588",
+      "side": "L",
+      "nt": "acetylcholine",
+      "groups": [
+        "Fdg"
+      ],
+      "mean_rate_hz": 0.0,
+      "mean_soma_mV": -67.29824674732714,
+      "mean_exc_pA": 0.036546630882056404,
+      "mean_inh_pA": -1.8653965648007789
+    },
+    {
+      "body_id": "14321",
+      "type": "GNG588",
+      "side": "R",
+      "nt": "acetylcholine",
+      "groups": [
+        "Fdg"
+      ],
+      "mean_rate_hz": 0.0,
+      "mean_soma_mV": -67.26804755724898,
+      "mean_exc_pA": 0.026533076830804588,
+      "mean_inh_pA": -1.7530849657510752
+    },
+    {
+      "body_id": "39880",
+      "type": "IN27X001",
+      "side": "L",
+      "nt": "gaba",
+      "groups": [
+        "BON1"
+      ],
+      "mean_rate_hz": 23.0,
+      "mean_soma_mV": -59.81020566912873,
+      "mean_exc_pA": 53.88526477766788,
+      "mean_inh_pA": -11.221210963206632
+    },
+    {
+      "body_id": "800041",
+      "type": "IN27X001",
+      "side": "R",
+      "nt": "gaba",
+      "groups": [
+        "BON1"
+      ],
+      "mean_rate_hz": 24.0,
+      "mean_soma_mV": -59.05971450419753,
+      "mean_exc_pA": 63.853575255096146,
+      "mean_inh_pA": -14.05203444246079
+    },
+    {
+      "body_id": "801246",
+      "type": "LBL40",
+      "side": "L",
+      "nt": "acetylcholine",
+      "groups": [],
+      "mean_rate_hz": 27.0,
+      "mean_soma_mV": -62.253911651820324,
+      "mean_exc_pA": 37.35838589213785,
+      "mean_inh_pA": -14.994918721667897
+    },
+    {
+      "body_id": "801214",
+      "type": "LBL40",
+      "side": "R",
+      "nt": "acetylcholine",
+      "groups": [],
+      "mean_rate_hz": 12.0,
+      "mean_soma_mV": -66.56523943998755,
+      "mean_exc_pA": 29.435308114534994,
+      "mean_inh_pA": -26.039481744291045
+    },
+    {
+      "body_id": "11288",
+      "type": "MDN",
+      "side": "L",
+      "nt": "acetylcholine",
+      "groups": [
+        "MDN"
+      ],
+      "mean_rate_hz": 1.0,
+      "mean_soma_mV": -67.19164771888728,
+      "mean_exc_pA": 4.271564114488614,
+      "mean_inh_pA": -5.512426616022274
+    },
+    {
+      "body_id": "12348",
+      "type": "MDN",
+      "side": "L",
+      "nt": "acetylcholine",
+      "groups": [
+        "MDN"
+      ],
+      "mean_rate_hz": 1.0,
+      "mean_soma_mV": -67.50812809121791,
+      "mean_exc_pA": 2.6382920502837717,
+      "mean_inh_pA": -5.426536299547306
+    },
+    {
+      "body_id": "10763",
+      "type": "MDN",
+      "side": "R",
+      "nt": "acetylcholine",
+      "groups": [
+        "MDN"
+      ],
+      "mean_rate_hz": 1.0,
+      "mean_soma_mV": -67.30744443255756,
+      "mean_exc_pA": 3.7703937248786734,
+      "mean_inh_pA": -5.535732112539181
+    },
+    {
+      "body_id": "11332",
+      "type": "MDN",
+      "side": "R",
+      "nt": "acetylcholine",
+      "groups": [
+        "MDN"
+      ],
+      "mean_rate_hz": 1.0,
+      "mean_soma_mV": -67.13524154103905,
+      "mean_exc_pA": 4.60735705986243,
+      "mean_inh_pA": -5.66064264894417
+    }
+  ],
+  "scope": "neuronal pathways; no body phenotype claim"
+}

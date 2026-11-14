@@ -23,8 +23,8 @@
     },
     {
       "path": "MANUAL_MECHANISM.md",
-      "bytes": 4254,
-      "sha256": "f77222e3683bd21e38628d5f82cf0dcc92db2a3d28874fd385582c4440f34dac"
+      "bytes": 6722,
+      "sha256": "e2f5f80c9e93cb2e83058102d26a06b5b2cabc2765460388507b99a4d49f7403"
     },
     {
       "path": "MECHANISMS.md",
@@ -102,6 +102,11 @@
       "sha256": "f8371d53e69d46bb25c778420b4417b5219724c3cfc7c5f66e952f45e8c32b2c"
     },
     {
+      "path": "check_event_traversal.py",
+      "bytes": 1791,
+      "sha256": "8726bd3265af1fccc37a780323e041cdeccca783330b3424a74807f65dca495a"
+    },
+    {
       "path": "checkpoint_manifest.py",
       "bytes": 848,
       "sha256": "f2d46e720831801aca7a5a0294fc01ee40fd87fd5babb9394cb46f49a099845e"
@@ -160,6 +165,11 @@
       "path": "configs/intermediate-adult-selected.json",
       "bytes": 1378,
       "sha256": "cfb3094b528bca5ee31026b5b8f16b08adcffca634acdcaf612d830d5b3ccb7d"
+    },
+    {
+      "path": "configs/mcns-steering-manual.json",
+      "bytes": 1501,
+      "sha256": "8c0f4f77b579c390bcad7ad82fe3e5ac44b25088613e4d6b2753ab613ce20a22"
     },
     {
       "path": "configs/motor-selected.json",
@@ -242,9 +252,19 @@
       "sha256": "4bed0445f10c61ad9a8d6d99192c0c2678f9e526979f0203a28c8fbf29c73704"
     },
     {
+      "path": "data/experimental-source/brk-neuron-identities.xlsx",
+      "bytes": 25598,
+      "sha256": "41c0f799193faf13477a7b537fa3d37d72d88c8cc048ad56f229536169c04d04"
+    },
+    {
       "path": "data/experimental-source/manifest.json",
       "bytes": 838,
       "sha256": "9ab43e8563da7c0c460d1561326a08cc418c46241a9b86d3cb33c76638998158"
+    },
+    {
+      "path": "data/feco-download-attempts.json",
+      "bytes": 700,
+      "sha256": "664d6d416b212c2da0bb97891e4932d8ebec42d2c003bd488a5b6b671ba77e36"
     },
     {
       "path": "data/malecns-source-manifest.json",
@@ -295,6 +315,11 @@
       "path": "data/tibia-reference-transmission.npz",
       "bytes": 2688,
       "sha256": "edc1a7ed5c09f8ed3dee5eac2c425463c48f50c0d76348357033df98cc3c928c"
+    },
+    {
+      "path": "diagnose_command_source.py",
+      "bytes": 968,
+      "sha256": "7be24c56024f2b33e5f47a132afc882dbfa63a23dbcd24334f6416f09c016aa0"
     },
     {
       "path": "excitation_probe.py",
@@ -368,8 +393,8 @@
     },
     {
       "path": "model.py",
-      "bytes": 9264,
-      "sha256": "7d440b1c5dd3a7a2e5209d52c2bef856dea98717a91b5cd3497ee594e3e6c798"
+      "bytes": 9529,
+      "sha256": "934572b4c9958a726d46726d70d0cf04178d877766611ecc0ae9f2b8bc5c5bba"
     },
     {
       "path": "motion_body_grid.py",
@@ -397,6 +422,11 @@
       "sha256": "3b81d455506bbb63ab394d191e1832f741c651dc8fff45123041e7a1e6f9ca4d"
     },
     {
+      "path": "plot_mcns_steering.py",
+      "bytes": 2304,
+      "sha256": "82736221ceba4da3925185fbc02991cc10370cb329b0276ff5101ed63bab3fe2"
+    },
+    {
       "path": "plot_saturation.py",
       "bytes": 1174,
       "sha256": "d07d7cbb42f9fb4bdce325efe38f8a012da6f7ecf9aca7437de463f6040508b7"
@@ -415,6 +445,11 @@
       "path": "prepare_manual_network.py",
       "bytes": 2171,
       "sha256": "5efe557ea1d13791037442e2804903053016db8776b7f6c3b20c0f5093cd6a0a"
+    },
+    {
+      "path": "prepare_mcns_command.py",
+      "bytes": 4948,
+      "sha256": "f2f6ab4d90a29c830f37804f2c2fe5671b0f46aaa802c9ed55e9ce5f215b507b"
     },
     {
       "path": "prepare_mcns_steering.py",
@@ -1347,6 +1382,21 @@
       "sha256": "36c93643ffae6efe1c92dfcdca1d36abb493d65adda5bf8a99fe7a221a59ff51"
     },
     {
+      "path": "results/event-traversal-cache-failure.log",
+      "bytes": 3147,
+      "sha256": "ad1894b858ee9547bb4502a8a9cfde41ac232d74551f2efd4569700ac35524c3"
+    },
+    {
+      "path": "results/event-traversal-regression.json",
+      "bytes": 1236,
+      "sha256": "df9b1dd7f2cb3f69d8ed72dfdea8e12032a63373cdeeb2cb7ea8789d074ddc83"
+    },
+    {
+      "path": "results/event-traversal-regression.log",
+      "bytes": 98,
+      "sha256": "920cddad2fb6e967b37b73fe9f3aa1f5d6bc4a5603e001b0e3fbb3432ed0707b"
+    },
+    {
       "path": "results/evidence-build.log",
       "bytes": 50,
       "sha256": "964eb0bd9dfc0a887cb84249c97be6909571d90cf6cfdfd9f7102b2314ba498b"
@@ -1792,6 +1842,11 @@
       "sha256": "3caacb2359fb42f345b5505c60f547212aa85fec4a927c03aa1113799421da46"
     },
     {
+      "path": "results/manual-current-tests.txt",
+      "bytes": 99,
+      "sha256": "641de9ab7f71f1289dc41021fb0b1c27e947eebf5d8852f715a2472c1c2f0b1e"
+    },
+    {
       "path": "results/manual-direct-baseline.log",
       "bytes": 177,
       "sha256": "8fd80afd2afd98ef65ecaf92d2adefb17fb10f1474b061a45c7b6a65db9c2d50"
@@ -1967,14 +2022,394 @@
       "sha256": "ed298a1c4180810e09b9d48155dbe4b8e5526752f0324ac2e628ca87e3d8efab"
     },
     {
+      "path": "results/mcns-command-P9-K80-softI.log",
+      "bytes": 231,
+      "sha256": "02306a0f398f338994e15c92a718ca680389299d9ae66e0072027ef3eacff294"
+    },
+    {
+      "path": "results/mcns-command-P9-K80.log",
+      "bytes": 224,
+      "sha256": "47459642ee8d76191b493c5750cbc5dcdd7935827ffefdfb7edfeec51f05af17"
+    },
+    {
+      "path": "results/mcns-command-P9-K90.log",
+      "bytes": 222,
+      "sha256": "c038cb3a93f539b19d00edd56d17847a089498a0b40ab0e07b45383822b2ed98"
+    },
+    {
+      "path": "results/mcns-command-P9-strong-drive.log",
+      "bytes": 231,
+      "sha256": "b1942a153b79c61b1edcdb1bc3c91c9f59b4bfc66d5d61ee6f1defeac281e527"
+    },
+    {
+      "path": "results/mcns-command-P9.log",
+      "bytes": 218,
+      "sha256": "b3dc776a67ff1bc8a11a39c1a827f3b69a2f59ecac33fbd51353190cebd6319d"
+    },
+    {
+      "path": "results/mcns-command-prepare.log",
+      "bytes": 96,
+      "sha256": "cfc498b7f67b11489c3f28f456460a49096e0e5eb5447d3631f30d9a397a6ae9"
+    },
+    {
+      "path": "results/mcns-command/P9-K80-config.json",
+      "bytes": 2730,
+      "sha256": "6d17941211c542e1f27be2581b915ab0c97b304a96a9f8823386822ef6ffd578"
+    },
+    {
+      "path": "results/mcns-command/P9-K80-diagnosis.json",
+      "bytes": 12129,
+      "sha256": "94e984c8b413208df937f53258a607e4f1a856963893fd394c0c61510ab53e59"
+    },
+    {
+      "path": "results/mcns-command/P9-K80-softI-config.json",
+      "bytes": 2730,
+      "sha256": "a48ed88ebb712ad026301957e96e0e9daec4885785998a4d51b8c16f6f66da26"
+    },
+    {
+      "path": "results/mcns-command/P9-K80-softI-diagnosis.json",
+      "bytes": 12158,
+      "sha256": "a140eb808562979376f6d9e1a852c37ee2f8c2bb7ab1f80cb81d2c5cb4477f54"
+    },
+    {
+      "path": "results/mcns-command/P9-K80-softI.npz",
+      "bytes": 6047328,
+      "sha256": "56ae3e5ad5fd1599dbc0d3135dbbcc837cdb9038212439527ac9d7268d03705a"
+    },
+    {
+      "path": "results/mcns-command/P9-K80.npz",
+      "bytes": 5982225,
+      "sha256": "5950a7f27fc7c5342d1188a9dc31938d84c53cde680841c5ecdc80349654e2fa"
+    },
+    {
+      "path": "results/mcns-command/P9-K90-config.json",
+      "bytes": 2730,
+      "sha256": "8dbdfb7d429c3d5ef61ec38a2b2049d41037064b451d341d597d6810dabaf9c6"
+    },
+    {
+      "path": "results/mcns-command/P9-K90-diagnosis.json",
+      "bytes": 12135,
+      "sha256": "76061cd10924a754bf707a12451a0cf408b4154b739ea22c3874d6c9c493dcad"
+    },
+    {
+      "path": "results/mcns-command/P9-K90.npz",
+      "bytes": 5840650,
+      "sha256": "5d4f0cc931d55919e49725a91fb3127dda9ce3e303894178a02c1cb75435ae85"
+    },
+    {
+      "path": "results/mcns-command/P9-config.json",
+      "bytes": 2667,
+      "sha256": "40fae65724a5ea1cecd06574a4df949e0ea114b184938a96aa5c67a8e691adf8"
+    },
+    {
+      "path": "results/mcns-command/P9-diagnosis.json",
+      "bytes": 12362,
+      "sha256": "0b0473e194febdcf5c76273c14a63baf77260f24409c1381fed611b2c80627db"
+    },
+    {
+      "path": "results/mcns-command/P9-strong-drive-config.json",
+      "bytes": 2712,
+      "sha256": "b11d24bb2a64a3230e181029efe67ef3bed73849007eda336445f2b31d38ab3d"
+    },
+    {
+      "path": "results/mcns-command/P9-strong-drive-diagnosis.json",
+      "bytes": 12370,
+      "sha256": "41360630ee9ac02ade57b7ee15ca50238b9003a4af14ca3af91693bbd67181ac"
+    },
+    {
+      "path": "results/mcns-command/P9-strong-drive.npz",
+      "bytes": 5223682,
+      "sha256": "182ebaf9a5bbdabbd40bf9d5ec3cd9b35a4076ad6c3d8a8ea8835c5bc15a182b"
+    },
+    {
+      "path": "results/mcns-command/P9.npz",
+      "bytes": 5222345,
+      "sha256": "5762de165ec3bd831bd5525af5e211ac5c101315f5ac9b0a68af0761364aff61"
+    },
+    {
+      "path": "results/mcns-command/identity-crosswalk.json",
+      "bytes": 420,
+      "sha256": "76b13b0c50400c55808baa1fd59f82225cecabaa96c8accb3655af98ae6d7899"
+    },
+    {
+      "path": "results/mcns-command/isolated-source-120.npz",
+      "bytes": 44888,
+      "sha256": "805690bf46d54559cb554cb4737ac053b5aad2e5a61eee5d42469b201bf3f868"
+    },
+    {
+      "path": "results/mcns-command/isolated-source-160.npz",
+      "bytes": 44972,
+      "sha256": "62c0626c1d7569d541f89ba08f915b61dc6607642cc7040d02c7feada6912a9e"
+    },
+    {
+      "path": "results/mcns-command/isolated-source-200.npz",
+      "bytes": 45006,
+      "sha256": "df51c17944079e53b57d51cb93842d85e1feacb1806e31d8d2cd1ba358244899"
+    },
+    {
+      "path": "results/mcns-command/isolated-source-240.npz",
+      "bytes": 44991,
+      "sha256": "32451463cf141f75fd4d481c841569c41e03ed6d7f3e30eb16f2d16d4c6c264b"
+    },
+    {
+      "path": "results/mcns-command/isolated-source-320.npz",
+      "bytes": 45051,
+      "sha256": "066c4f4a2c884c3fbcc83f59226f2cc4f635499684b4f80ffa4bd412ffa529f3"
+    },
+    {
+      "path": "results/mcns-command/isolated-source-80.npz",
+      "bytes": 33346,
+      "sha256": "d45c08573e7bf11a225a7b785fda1e0d9a2523a8c2e6181a1f6b409c29b0c41d"
+    },
+    {
+      "path": "results/mcns-command/isolated-source-states.json",
+      "bytes": 1296,
+      "sha256": "7eec529707f4ce2954293a3bfc0f539c3ffb2362d489bb13580b575aa95e5fe6"
+    },
+    {
+      "path": "results/mcns-command/neurons.json",
+      "bytes": 1431483,
+      "sha256": "03ac7739790a461e7412f8d205beb249374a60386220290bf70394b8c621e590"
+    },
+    {
+      "path": "results/mcns-command/signed-hypothesis-connectivity.npz",
+      "bytes": 1042932,
+      "sha256": "90923f953e75a6b96fb0a73d9e789b637e59c07227ee79fb217e0e472c49f69c"
+    },
+    {
+      "path": "results/mcns-command/source-manifest.json",
+      "bytes": 1999,
+      "sha256": "07ba3e58d57c02d8f3d5355bedb2c9cad216272aa0ede84a14f20f4787dbae67"
+    },
+    {
+      "path": "results/mcns-command/unsigned-connectivity.npz",
+      "bytes": 1104266,
+      "sha256": "4279b1bb06edd1e1f3882409a183ef477323501d151fdd5c1be36b8607f73577"
+    },
+    {
+      "path": "results/mcns-isolated-source.log",
+      "bytes": 940,
+      "sha256": "816018f47f59cd8ed4aa99a450f6434e9ac287b32589a007983cd22106670bb0"
+    },
+    {
+      "path": "results/mcns-steering-PFL2-coactivation.log",
+      "bytes": 1207,
+      "sha256": "8361dacd8a8bbe4606e2d6157181cbd45d3cd17ac6bbce71ea575308beac60bd"
+    },
+    {
+      "path": "results/mcns-steering-PFL2-only.log",
+      "bytes": 1196,
+      "sha256": "555fafad93a67e7eb11464cccc025d6d22e915bef04fd5f05107a062cd0756b7"
+    },
+    {
+      "path": "results/mcns-steering-PFL2-relay-gain.log",
+      "bytes": 1204,
+      "sha256": "66f47cd6ebcfb4a530186947b7a049b98678c9a1ff43ccd09bd1c07bf5ae3c71"
+    },
+    {
+      "path": "results/mcns-steering-PFL2-source-bias.log",
+      "bytes": 1210,
+      "sha256": "3192ece968b95580cb1096aa038a792210cf271c24ebdb89e8bea50238d9002c"
+    },
+    {
+      "path": "results/mcns-steering-PFL3-relay-gain.log",
+      "bytes": 1220,
+      "sha256": "c0051f1a4d13e35867124c03d99a14e1498dc29d4914e9ba515a4d325d289675"
+    },
+    {
+      "path": "results/mcns-steering-baseline-source-bias.log",
+      "bytes": 1213,
+      "sha256": "b9f0ecf57e8f046e85b91d2990c842554b5661dd0062ff5f801d285596b54426"
+    },
+    {
       "path": "results/mcns-steering-baseline.log",
       "bytes": 1199,
       "sha256": "fa0085f1025980d2dd7fb63361aacab3219721ebc0fed3db070f7fb8d7c83f54"
     },
     {
+      "path": "results/mcns-steering-control-source-bias.log",
+      "bytes": 1028,
+      "sha256": "595e4d0078b59d6a3d5820d0f42e5b9cf7d4790d611ee84013fed72f37e977dd"
+    },
+    {
+      "path": "results/mcns-steering-control.log",
+      "bytes": 1016,
+      "sha256": "b571ab3868c8b97aa16b2509be123156fc0e1897725bd1b1cd0b39a854b189ed"
+    },
+    {
+      "path": "results/mcns-steering-plot.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
       "path": "results/mcns-steering-prepare.log",
       "bytes": 68,
       "sha256": "4d77b82ba9c544ed8893303f28d754a9f101c66e33deccc8d9548f4fee00c754"
+    },
+    {
+      "path": "results/mcns-steering-restart.log",
+      "bytes": 1213,
+      "sha256": "47759a08e031eea249af2d117683a34d1823ca10274ff5bb15c5e3abf260f760"
+    },
+    {
+      "path": "results/mcns-steering-right-source-bias.log",
+      "bytes": 1217,
+      "sha256": "5222e9b448bf6edfce037c98de881cc08e7984e6006cac7e4b6b2b400678868c"
+    },
+    {
+      "path": "results/mcns-steering-right.log",
+      "bytes": 1207,
+      "sha256": "bdc920629c6153fbae39cabb23b320ff4f6d93fc02a4c40ea1781f2a32702f54"
+    },
+    {
+      "path": "results/mcns-steering-softI.log",
+      "bytes": 1226,
+      "sha256": "f5a36b004c8b898834a6aae06dc3ab2f25971d218d685b1ec279c9705a974a5d"
+    },
+    {
+      "path": "results/mcns-steering-source-bias-fine.log",
+      "bytes": 1229,
+      "sha256": "8426249efffabb1d1367cae7e371935abae8c67f4e0cd0f6c83e488f5cee1048"
+    },
+    {
+      "path": "results/mcns-steering-source-bias.log",
+      "bytes": 1223,
+      "sha256": "f59b9d57fda2103ef9e7527497c0d1912729592992acc1f58a18588eac3769c6"
+    },
+    {
+      "path": "results/mcns-steering/PFL2-coactivation-config.json",
+      "bytes": 2313,
+      "sha256": "f1d3777078da9de7e37d24ebc6fc0abb8b2f59de84cef7ad4216322652276424"
+    },
+    {
+      "path": "results/mcns-steering/PFL2-coactivation-diagnosis.json",
+      "bytes": 5217,
+      "sha256": "b769c4ed92979056dc06d22eb0921eebcdc9664cdfcaf9c255ad5aa86e7fdd55"
+    },
+    {
+      "path": "results/mcns-steering/PFL2-coactivation-restart-config.json",
+      "bytes": 2474,
+      "sha256": "6800b1ddb0f760e47c860471dea3dcbcb2a3600c233d14cc896d7cbbdcb01b20"
+    },
+    {
+      "path": "results/mcns-steering/PFL2-coactivation-restart-diagnosis.json",
+      "bytes": 8273,
+      "sha256": "ba464d5e5156bb6c6e51bfc5c33e72fb2c47c990e41a7e22417787580b30628c"
+    },
+    {
+      "path": "results/mcns-steering/PFL2-coactivation-restart.npz",
+      "bytes": 4683235,
+      "sha256": "0be2af83aff11f77173eb4ad0797eb0a04c2ad0b47b46c95650b3477572ed2ab"
+    },
+    {
+      "path": "results/mcns-steering/PFL2-coactivation-source-bias-config.json",
+      "bytes": 2620,
+      "sha256": "8e3869cec5689107055332ab104ebc5e901dce934fe1dd1e93d975c5726dbecd"
+    },
+    {
+      "path": "results/mcns-steering/PFL2-coactivation-source-bias-diagnosis.json",
+      "bytes": 8286,
+      "sha256": "590e1abed4986c7585446b175b4a9f62dd90ca85afd33ca335a344f2fc322956"
+    },
+    {
+      "path": "results/mcns-steering/PFL2-coactivation-source-bias-fine-config.json",
+      "bytes": 2621,
+      "sha256": "7e12b9498d2de3e8ee0c433cff41ba03a2c3ddf51dfba3c9903c9e5d90fef98e"
+    },
+    {
+      "path": "results/mcns-steering/PFL2-coactivation-source-bias-fine-diagnosis.json",
+      "bytes": 8287,
+      "sha256": "c8611a0bbbababacb1e3e8e6cd685d7e5df53eb0dd19a6f42393501f94b4e3d1"
+    },
+    {
+      "path": "results/mcns-steering/PFL2-coactivation-source-bias-fine.npz",
+      "bytes": 4763061,
+      "sha256": "fde3d63d3c85db8176a8868c3c4b2df0db498b7c57977f4cf69107d23af5faba"
+    },
+    {
+      "path": "results/mcns-steering/PFL2-coactivation-source-bias-softI-config.json",
+      "bytes": 2620,
+      "sha256": "17e752d8c95bc81592a9cbc689747221d6e2559f4cd7261c75b4feee47c6be84"
+    },
+    {
+      "path": "results/mcns-steering/PFL2-coactivation-source-bias-softI-diagnosis.json",
+      "bytes": 8298,
+      "sha256": "d703671c7541c0f686095fe2f4a15771af93fc2954dc61317957d944efbc5649"
+    },
+    {
+      "path": "results/mcns-steering/PFL2-coactivation-source-bias-softI.npz",
+      "bytes": 4776709,
+      "sha256": "f168f31bdf580bb6440ca82a86363ddfe06a4261c331d710c86b43a34c92b4f5"
+    },
+    {
+      "path": "results/mcns-steering/PFL2-coactivation-source-bias.npz",
+      "bytes": 4758664,
+      "sha256": "57d996cc60c95f7c7e1fcbe67c8dba06155f9a946d62e74035940f767d09e450"
+    },
+    {
+      "path": "results/mcns-steering/PFL2-coactivation.npz",
+      "bytes": 2962117,
+      "sha256": "5461727b060d8c0468e6f1304fea00cc9f176fbe4182849c4cb07c9a96bf182c"
+    },
+    {
+      "path": "results/mcns-steering/PFL2-only-config.json",
+      "bytes": 2153,
+      "sha256": "cb9376ccf843892dcfe4d2ada863da7119c3e23f4d7ae603d2e05ad9f907b548"
+    },
+    {
+      "path": "results/mcns-steering/PFL2-only-diagnosis.json",
+      "bytes": 5172,
+      "sha256": "ae766d740dfc7b0319ad406b808b6edd36bfc0cd49d13776e54758d0a232cc3b"
+    },
+    {
+      "path": "results/mcns-steering/PFL2-only-source-bias-config.json",
+      "bytes": 2460,
+      "sha256": "c2928e16ff88cb987143dbdf05c2dc6de59c9bd5db412e6720e4a8bbbdd4f5f9"
+    },
+    {
+      "path": "results/mcns-steering/PFL2-only-source-bias-diagnosis.json",
+      "bytes": 8239,
+      "sha256": "31d11495803841e0f194e5db72df4191d9405e26a2e9ca87b1da844fcd9a2920"
+    },
+    {
+      "path": "results/mcns-steering/PFL2-only-source-bias.npz",
+      "bytes": 4686372,
+      "sha256": "bafe633f5a7948ff3ee3c0238eb95a9164ff15e4fd1309b50fb9b2b0456735f8"
+    },
+    {
+      "path": "results/mcns-steering/PFL2-only.npz",
+      "bytes": 2859969,
+      "sha256": "d418610c3188f41d5191fa9dd1c2f5c5d87f49b7f76585e656f67c54b2bfa7b2"
+    },
+    {
+      "path": "results/mcns-steering/PFL2-relay-gain-config.json",
+      "bytes": 2238,
+      "sha256": "8a77f9cfcba938bb18bd485cb8f049f84d7efc2bb7f45c95fbc68210f32e73e7"
+    },
+    {
+      "path": "results/mcns-steering/PFL2-relay-gain-diagnosis.json",
+      "bytes": 5174,
+      "sha256": "fb8c402af7cfc679547cb39e4f7a24c766eac2530dd7953af70f58febcc02fe1"
+    },
+    {
+      "path": "results/mcns-steering/PFL2-relay-gain.npz",
+      "bytes": 2878511,
+      "sha256": "4115aab072bf7e7c992c1bccb4c4294ae75fd7b0ddb7b30d2a8bb66c7db5a3d1"
+    },
+    {
+      "path": "results/mcns-steering/PFL3-relay-gain-config.json",
+      "bytes": 2237,
+      "sha256": "124f3c41c358794eaafba57d12a6a9702e87d425a3d65c6c64e3b83152d2017f"
+    },
+    {
+      "path": "results/mcns-steering/PFL3-relay-gain-diagnosis.json",
+      "bytes": 5242,
+      "sha256": "9358d56668e7ff06f0dc726d5fde06a3224feffc2f6397a92006a190dd6bcbc2"
+    },
+    {
+      "path": "results/mcns-steering/PFL3-relay-gain.npz",
+      "bytes": 2935504,
+      "sha256": "359e369ab69b99a8907351735747bca1d78be69528959697adc8021cc66a2fe8"
     },
     {
       "path": "results/mcns-steering/baseline-config.json",
@@ -1987,9 +2422,59 @@
       "sha256": "fb90d4ed010eb6130f1b60665c2a15ca169d6a9b2b6d9b310c897076a9034606"
     },
     {
+      "path": "results/mcns-steering/baseline-source-bias-config.json",
+      "bytes": 2459,
+      "sha256": "f88597a13b92a4ef9bca6047c93d19d6ddd25eef952d79e9814360b06bb4eaf0"
+    },
+    {
+      "path": "results/mcns-steering/baseline-source-bias-diagnosis.json",
+      "bytes": 8277,
+      "sha256": "25d0188211f28c68fb2dc2bbc57f7ad5a34aeff0381a7add13c19a54e98e1827"
+    },
+    {
+      "path": "results/mcns-steering/baseline-source-bias.npz",
+      "bytes": 4722159,
+      "sha256": "8a92bdb2f042d00d951008c9f600a6413a0bfd8a5cfbff1399064a3c41553185"
+    },
+    {
       "path": "results/mcns-steering/baseline.npz",
       "bytes": 2979823,
       "sha256": "375821fdfd490b5799628b311da5713a5ecd45575d7c6f51e910ff26cdb1c6fd"
+    },
+    {
+      "path": "results/mcns-steering/control-config.json",
+      "bytes": 1938,
+      "sha256": "c0ee8c169ae31b2d23a2cd11998c882da03e760558218522c44dd0ba0fb3bce2"
+    },
+    {
+      "path": "results/mcns-steering/control-diagnosis.json",
+      "bytes": 3696,
+      "sha256": "dad85681d9aa946c6ffb5b2a7759be2d9a38d238304657b38b5b4a5bb6e1ad9e"
+    },
+    {
+      "path": "results/mcns-steering/control-source-bias-config.json",
+      "bytes": 2245,
+      "sha256": "5402b3fb445f5fca17a23d7f9f21c57281a745e3756b85ec5c9b366420dfcb06"
+    },
+    {
+      "path": "results/mcns-steering/control-source-bias-diagnosis.json",
+      "bytes": 6401,
+      "sha256": "3ab8b71f53db452f154a48fcfdc581e5a5e3de1d56b4c5bab8188c7d360039c1"
+    },
+    {
+      "path": "results/mcns-steering/control-source-bias.npz",
+      "bytes": 145682,
+      "sha256": "a135425391cae5bc931088d62509a3d1e312f78d6be4ef1f4059fd875c7fb984"
+    },
+    {
+      "path": "results/mcns-steering/control.npz",
+      "bytes": 60138,
+      "sha256": "f2acbbe5ed5b852784721508b96a0206498f2a4b48b872e47454b5ff84c4f8b6"
+    },
+    {
+      "path": "results/mcns-steering/manual-steering-traces.png",
+      "bytes": 771339,
+      "sha256": "538b83bafb7f16baeb5aad3220396bec27ec4d11eb705a1bebc8300aa870d720"
     },
     {
       "path": "results/mcns-steering/neurons.json",
@@ -1997,9 +2482,44 @@
       "sha256": "43ee2f464e5bcf46739cfac4d3757425c77855750ff348912aed3099597f756b"
     },
     {
+      "path": "results/mcns-steering/right-PFL3-config.json",
+      "bytes": 2155,
+      "sha256": "ebb6f8a2d95cbaaa6c9f82d5b4ebf3181c19cd90e069fc6c3e83f18111b280ce"
+    },
+    {
+      "path": "results/mcns-steering/right-PFL3-diagnosis.json",
+      "bytes": 5206,
+      "sha256": "00a0b14d07f72e56ca9fb6dc87d5bdd3caffdc903313bf9b11a89a1319afed6b"
+    },
+    {
+      "path": "results/mcns-steering/right-PFL3-source-bias-config.json",
+      "bytes": 2462,
+      "sha256": "269c6f81bc739ecf7e32e48f4e92eb37c9a29c8a98de31de58e946351163e2f4"
+    },
+    {
+      "path": "results/mcns-steering/right-PFL3-source-bias-diagnosis.json",
+      "bytes": 8262,
+      "sha256": "4ff49f162941e432bd115a39070313d3fea758a5142588e2c1aa6badcbcc39a0"
+    },
+    {
+      "path": "results/mcns-steering/right-PFL3-source-bias.npz",
+      "bytes": 4674638,
+      "sha256": "210ff91d0d88535a0f8fedbece46993f108894eff572f74c45a9862e6503f242"
+    },
+    {
+      "path": "results/mcns-steering/right-PFL3.npz",
+      "bytes": 2979276,
+      "sha256": "fca44020456104602a211dd2a85601549d7542722afc7d05f352603456f59dc2"
+    },
+    {
       "path": "results/mcns-steering/signed-hypothesis-connectivity.npz",
       "bytes": 76599,
       "sha256": "b897957839c728fb82d5141111d24a95ea51677c325488a5aa658361f2fccafa"
+    },
+    {
+      "path": "results/mcns-steering/source-adjustment-diagnosis.png",
+      "bytes": 255803,
+      "sha256": "c8e238c7d389d93122eedaea0d1ea33e4bcebf6ef057d7edbe3f0ad38cdf67fe"
     },
     {
       "path": "results/mcns-steering/source-manifest.json",
@@ -2322,9 +2842,14 @@
       "sha256": "d953f29f7420965246ea64692aaaf9d8d6956ecfabb0ab97bac73ddfa07ce22f"
     },
     {
+      "path": "trace_mcns_command.py",
+      "bytes": 3835,
+      "sha256": "6e4eb8220a52a0c82015a2bb06c2c812a9aed43ca827be40d3a4eff258ab5af3"
+    },
+    {
       "path": "trace_mcns_steering.py",
-      "bytes": 3164,
-      "sha256": "584a857c59551e052dd63b16a17a7e43a2b7f77cb934fba52858985795a1b2a6"
+      "bytes": 3941,
+      "sha256": "01a06c613facaec9bcf9052afdd9f32d3790fae728c218c96e37ce7970427414"
     },
     {
       "path": "tune_downstream.py",

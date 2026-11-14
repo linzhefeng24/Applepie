@@ -1,0 +1,22 @@
+[
+  {
+    "source_url": "https://datadryad.org/api/v2/files/4330035/download",
+    "file": "hook_flexion_03_bdn2.parquet",
+    "error": "HTTP Error 401: Unauthorized"
+  },
+  {
+    "source_url": "https://datadryad.org/api/v2/files/4330032/download",
+    "file": "claw_magnet_Mamiya2018.parquet",
+    "error": "HTTP Error 401: Unauthorized"
+  },
+  {
+    "source_url": "https://datadryad.org/api/v2/files/4330033/download",
+    "file": "hook_flexion_01_magnet_Mamiya2018.parquet",
+    "error": "HTTP Error 401: Unauthorized"
+  },
+  {
+    "source_url": "https://datadryad.org/downloads/file_stream/4330035",
+    "error": "HTTP403 Forbidden",
+    "status": "No data obtained; do not mark downloaded"
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "reference_revision": "6dda175",
+  "reference_model_sha256": "7d440b1c5dd3a7a2e5209d52c2bef856dea98717a91b5cd3497ee594e3e6c798",
+  "checks": [
+    {
+      "case": "recorded_core",
+      "checks": {
+        "spike_counts_1ms": "bitwise identical",
+        "voltage_first12": "bitwise identical",
+        "calcium_first12_uM": "bitwise identical",
+        "synaptic_currents_pA": "bitwise identical",
+        "synaptic_conductances_nS": "bitwise identical"
+      },
+      "numerical_failure": false
+    },
+    {
+      "case": "event_pulse_12",
+      "checks": {
+        "spike_counts_1ms": "bitwise identical",
+        "voltage_first12": "bitwise identical",
+        "calcium_first12_uM": "bitwise identical",
+        "synaptic_currents_pA": "bitwise identical",
+        "synaptic_conductances_nS": "bitwise identical"
+      },
+      "numerical_failure": false
+    },
+    {
+      "case": "event_pulse_40",
+      "checks": {
+        "spike_counts_1ms": "bitwise identical",
+        "voltage_first12": "bitwise identical",
+        "calcium_first12_uM": "bitwise identical",
+        "synaptic_currents_pA": "bitwise identical",
+        "synaptic_conductances_nS": "bitwise identical"
+      },
+      "numerical_failure": false
+    }
+  ]
+}

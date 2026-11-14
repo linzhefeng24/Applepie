@@ -28,7 +28,7 @@ def gates(v):
  return am,bm,ah,bh,an,bn
 
 @njit(cache=True)
-def _kernel(N,pre,post,ew,roles,drive,ablated,dt,steps,onset,delay,pars,cell,record_stride,waveform,waveform_dt,record_indices):
+def _kernel(N,pre,post,ew,roles,drive,ablated,dt,steps,onset,delay,pars,cell,record_stride,waveform,waveform_dt,record_indices,row_offsets):
  vs=np.empty(N);va=np.empty(N);mh=np.empty(N);hh=np.empty(N);nh=np.empty(N);ca=np.zeros(N)
  for j in range(N):
   vs[j]=cell[j,4];va[j]=vs[j];am,bm,ah,bh,an,bn=gates(va[j]);mh[j]=am/(am+bm);hh[j]=ah/(ah+bh);nh[j]=an/(an+bn)
@@ -41,9 +41,13 @@ def _kernel(N,pre,post,ew,roles,drive,ablated,dt,steps,onset,delay,pars,cell,rec
  for k in range(steps):
   xe*=de1;ye*=de2;xi*=di1;yi*=di2
   arrivals=delaybuf[k%(delay+1)]
-  for e in range(len(pre)):
-   i=pre[e];j=post[e]
-   if arrivals[i] and not ablated[i] and not ablated[j]:
+  # Row-major event traversal preserves the original addition order exactly.
+  # Inactive presynaptic rows have no events, so need not scan every edge.
+  for i in range(N):
+   if not arrivals[i] or ablated[i]:continue
+   for e in range(row_offsets[i],row_offsets[i+1]):
+    j=post[e]
+    if ablated[j]:continue
     w=ew[e]
     if w>0:
      inc=w*ge*cell[j,5]*cell[i,12]*norme;xe[j]+=inc;ye[j]+=inc
@@ -110,5 +114,5 @@ def simulate(weights,roles,config=None,drive=None,ablate=(),source_gains=None,ce
  if not np.isfinite(waveform_dt) or waveform_dt<=0:raise ValueError('Input sampling interval must be positive')
  names=['tau_e_rise_ms','tau_e_decay_ms','tau_i_rise_ms','tau_i_decay_ms','ge_nS_per_synapse','gi_nS_per_synapse','gNa_nS','gK_nS','gCa_nS','gSK_nS','gNaP_nS','ca_tau_ms','ca_alpha','ca_Kd_uM','E_Na_mV','E_K_mV','E_Ca_mV','E_exc_mV','E_inh_mV','gate_speed','axon_bias_pA']
  dt=p['dt_ms'];steps=round(p['duration_ms']/dt);mask=np.array([j in ablate for j in range(N)],dtype=np.bool_);stride=max(1,round(.5/dt))
- out=_kernel(N,pre.astype(np.int32),post.astype(np.int32),ew, np.zeros(N),np.asarray(drive,dtype=float),mask,dt,steps,p['onset_ms'],max(1,round(p['delay_ms']/dt)),np.array([p[x] for x in names]),cell,stride,waveform,waveform_dt,record_indices)
+ out=_kernel(N,pre.astype(np.int32),post.astype(np.int32),ew, np.zeros(N),np.asarray(drive,dtype=float),mask,dt,steps,p['onset_ms'],max(1,round(p['delay_ms']/dt)),np.array([p[x] for x in names]),cell,stride,waveform,waveform_dt,record_indices,np.r_[0,np.cumsum(np.bincount(pre,minlength=N))])
  return {'spike_counts_1ms':out[0],'voltage_first12':out[1],'final_vs':out[2],'final_va':out[3],'calcium_uM':out[4],'calcium_first12_uM':out[6],'record_indices':record_indices,'synaptic_currents_pA':out[7],'synaptic_conductances_nS':out[8],'numerical_failure':bool(out[5]),'config':p,'roles':roles,'cell_parameters':cell,'record_interval_ms':stride*dt,'valid_record_count':(steps+stride-1)//stride,'record_time_ms':np.arange((steps+stride-1)//stride)*stride*dt+dt}

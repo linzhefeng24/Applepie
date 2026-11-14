@@ -1,0 +1,37 @@
+{
+  "dataset": "MaleCNS v1.0, minconf0.5 significant connections",
+  "nodes": 3142,
+  "edges": 409265,
+  "command_sources": 24,
+  "measured_or_command_targets": 41,
+  "context": "all direct/two-hop command/stop/feeding\u2192command/stop/feeding/selected VNC output paths and induced connections; not full brain",
+  "sign_policy": "ACh excitatory, GABA inhibitory; glutamate inhibitory is an unverified receptor assumption; dopamine/octopamine/unclear edges retained unsigned but not represented as fast chemical conductance; missing modulatory mechanisms explicit",
+  "other_transmitters": [
+    "dopamine",
+    "histamine",
+    "octopamine",
+    "serotonin",
+    "unclear"
+  ],
+  "source_files": [
+    {
+      "source_url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/body-annotations-male-cns-v1.0-minconf-0.5.feather",
+      "local_cache": "/workspace/exports/malecns-source/body-annotations-male-cns-v1.0-minconf-0.5.feather",
+      "bytes": 14483314,
+      "sha256": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2"
+    },
+    {
+      "source_url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/connectome-weights-male-cns-v1.0-minconf-0.5-significant-only.feather",
+      "local_cache": "/workspace/exports/malecns-source/connectome-weights-male-cns-v1.0-minconf-0.5-significant-only.feather",
+      "bytes": 502169298,
+      "sha256": "5c536423a62a688e59e7b441f9c04d6272c9a1f017e35814cf561f8c275d9e9e"
+    },
+    {
+      "source_url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/body-neurotransmitters-male-cns-v1.0.feather",
+      "local_cache": "/workspace/exports/malecns-source/body-neurotransmitters-male-cns-v1.0.feather",
+      "bytes": 43282834,
+      "sha256": "95c9289220663abeb3409f3ad9e5a7f8a53f8093f5139d15502cd08da8879621"
+    }
+  ],
+  "identities": "within same MaleCNS namespace; MANC IDs are annotation links, not simulation identifiers"
+}
