@@ -70,3 +70,5 @@ python reproduce.py --full-network
 输入数据已随仓库保存，常规复现不需要原`/workspace`数据目录。`prepare.py`只用于重新导出作者CSV。身体恢复包位于[../assets/flymimic-legacy-AB-twofile.zip](../assets/flymimic-legacy-AB-twofile.zip)，校验值见`data/body-model-release.json`；Release上传端点曾返回401，因此没有声称存在Release资产。解压后，用独立环境安装`body-requirements.txt`，运行`python body_bridge.py --model-dir /解压目录`。
 
 主要来源：Pugliese等作者仓库https://github.com/smpuglie/Pugliese_2026；Azevedo等成年MN https://doi.org/10.7554/eLife.56754；Günay等详细模型方法https://doi.org/10.1371/journal.pcbi.1004189。本轮未冒称已复现完整ModelDB模型。历史原记录见[../monday-neural-work/](../monday-neural-work/)。
+
+See [shared-parameter asymmetric-motion validation](ASYMMETRY.md) for the latest actual body controls and unresolved constraints.

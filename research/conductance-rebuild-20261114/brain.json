@@ -247240,5 +247240,13 @@
     ],
     "audit_status": "See results/phenomena-audit.json; literature entries do not imply a passed test.",
     "muscle_backend": "Archived A/B130-muscle+11auxiliary model; see data/body-model-release.json and body_bridge.py; older global selection fields are historical."
+  },
+  "grouped_motion_experiment_20261114": {
+    "status": "partial model validation",
+    "summary": "results/asymmetry/summary.json",
+    "report": "ASYMMETRY.md",
+    "minimum_single_leg_motion_supported": true,
+    "six_leg_walking_validated": false,
+    "fine_E2_residual_periodic_MN": 1
   }
 }
