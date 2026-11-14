@@ -1,0 +1,251 @@
+{
+  "assays": [
+    {
+      "id": "BRK_BON1",
+      "source_ids": [
+        "10788",
+        "10564"
+      ],
+      "target_ids": [
+        "10441",
+        "10348"
+      ],
+      "evidence_pointer": "/vnc_walking_evidence/records/BRK_BON1_functional_excitation",
+      "source": "https://doi.org/10.1038/s41586-024-07854-7",
+      "expected": "increased",
+      "scope": "T1 BRK/BON1 IDs as published; current annotation differs; female explant vs male connectome; qualitative candidate assay",
+      "nodes": 36,
+      "edges": 361,
+      "context": "all direct and two-hop source-target paths, induced edges among retained nodes; missing external inputs and recurrent context",
+      "source_current_annotations": [
+        {
+          "bodyId": "10788",
+          "type": "AN19A018",
+          "instance": "AN19A018_T1_L",
+          "class": "ascending neuron",
+          "subclass": "BA",
+          "hemilineage": "19A",
+          "size": "3799800193",
+          "predictedNt": "acetylcholine",
+          "predictedNtProb": "0.8868496417999268",
+          "somaSide": "LHS",
+          "somaNeuromere": "T1",
+          "rootSide": "LHS",
+          "motor module": "",
+          "step contribution": ""
+        },
+        {
+          "bodyId": "10564",
+          "type": "AN19A018",
+          "instance": "AN19A018_T1_R",
+          "class": "ascending neuron",
+          "subclass": "BA",
+          "hemilineage": "19A",
+          "size": "3955693412",
+          "predictedNt": "acetylcholine",
+          "predictedNtProb": "0.8736998438835144",
+          "somaSide": "RHS",
+          "somaNeuromere": "T1",
+          "rootSide": "RHS",
+          "motor module": "",
+          "step contribution": ""
+        }
+      ],
+      "target_current_annotations": [
+        {
+          "bodyId": "10441",
+          "type": "IN27X001",
+          "instance": "IN27X001_T1_L",
+          "class": "intrinsic neuron",
+          "subclass": "BI",
+          "hemilineage": "27X",
+          "size": "8268470849",
+          "predictedNt": "gaba",
+          "predictedNtProb": "0.8121561408042908",
+          "somaSide": "LHS",
+          "somaNeuromere": "T1",
+          "rootSide": "",
+          "motor module": "",
+          "step contribution": ""
+        },
+        {
+          "bodyId": "10348",
+          "type": "IN27X001",
+          "instance": "IN27X001_T1_R",
+          "class": "intrinsic neuron",
+          "subclass": "BI",
+          "hemilineage": "27X",
+          "size": "8156027728",
+          "predictedNt": "gaba",
+          "predictedNtProb": "0.8565617203712463",
+          "somaSide": "RHS",
+          "somaNeuromere": "T1",
+          "rootSide": "",
+          "motor module": "",
+          "step contribution": ""
+        }
+      ],
+      "direct_signed_weights": [
+        [
+          227.0,
+          261.0
+        ],
+        [
+          272.0,
+          306.0
+        ]
+      ]
+    },
+    {
+      "id": "MDN_LBL40",
+      "source_ids": [
+        "13438",
+        "13809",
+        "14419",
+        "14523"
+      ],
+      "target_ids": [
+        "10994",
+        "11493"
+      ],
+      "evidence_pointer": "/vnc_walking_evidence/records/LBL40",
+      "source": "https://doi.org/10.1038/s41467-020-19936-x",
+      "expected": "increased",
+      "scope": "current type labels; not verified experimental-driver exact coverage; qualitative candidate assay",
+      "nodes": 42,
+      "edges": 358,
+      "context": "all direct and two-hop source-target paths, induced edges among retained nodes; missing external inputs and recurrent context",
+      "source_current_annotations": [
+        {
+          "bodyId": "13438",
+          "type": "MDN",
+          "instance": "DNxn049_CvC_L",
+          "class": "descending neuron",
+          "subclass": "xn",
+          "hemilineage": "NA",
+          "size": "1354470639",
+          "predictedNt": "acetylcholine",
+          "predictedNtProb": "0.9698650240898132",
+          "somaSide": "",
+          "somaNeuromere": "",
+          "rootSide": "LHS",
+          "motor module": "",
+          "step contribution": ""
+        },
+        {
+          "bodyId": "13809",
+          "type": "MDN",
+          "instance": "DNxn050_CvC_R",
+          "class": "descending neuron",
+          "subclass": "xn",
+          "hemilineage": "NA",
+          "size": "1279209411",
+          "predictedNt": "acetylcholine",
+          "predictedNtProb": "0.9635573029518127",
+          "somaSide": "",
+          "somaNeuromere": "",
+          "rootSide": "RHS",
+          "motor module": "",
+          "step contribution": ""
+        },
+        {
+          "bodyId": "14419",
+          "type": "MDN",
+          "instance": "DNxn050_CvC_R",
+          "class": "descending neuron",
+          "subclass": "xn",
+          "hemilineage": "NA",
+          "size": "1199736774",
+          "predictedNt": "acetylcholine",
+          "predictedNtProb": "0.956379234790802",
+          "somaSide": "",
+          "somaNeuromere": "",
+          "rootSide": "RHS",
+          "motor module": "",
+          "step contribution": ""
+        },
+        {
+          "bodyId": "14523",
+          "type": "MDN",
+          "instance": "DNxn049_CvC_L",
+          "class": "descending neuron",
+          "subclass": "xn",
+          "hemilineage": "NA",
+          "size": "1128821391",
+          "predictedNt": "acetylcholine",
+          "predictedNtProb": "0.9712410569190979",
+          "somaSide": "",
+          "somaNeuromere": "",
+          "rootSide": "LHS",
+          "motor module": "",
+          "step contribution": ""
+        }
+      ],
+      "target_current_annotations": [
+        {
+          "bodyId": "10994",
+          "type": "LBL40",
+          "instance": "IN07B105_T3_R",
+          "class": "intrinsic neuron",
+          "subclass": "BR",
+          "hemilineage": "07B",
+          "size": "2772364111",
+          "predictedNt": "acetylcholine",
+          "predictedNtProb": "0.8697938919067383",
+          "somaSide": "RHS",
+          "somaNeuromere": "T3",
+          "rootSide": "",
+          "motor module": "",
+          "step contribution": ""
+        },
+        {
+          "bodyId": "11493",
+          "type": "LBL40",
+          "instance": "IN07B105_T3_L",
+          "class": "intrinsic neuron",
+          "subclass": "BR",
+          "hemilineage": "07B",
+          "size": "2828423566",
+          "predictedNt": "acetylcholine",
+          "predictedNtProb": "0.8904968500137329",
+          "somaSide": "LHS",
+          "somaNeuromere": "T3",
+          "rootSide": "",
+          "motor module": "",
+          "step contribution": ""
+        }
+      ],
+      "direct_signed_weights": [
+        [
+          0.0,
+          118.0
+        ],
+        [
+          123.0,
+          0.0
+        ],
+        [
+          138.0,
+          0.0
+        ],
+        [
+          0.0,
+          109.0
+        ]
+      ]
+    }
+  ],
+  "inputs": {
+    "neuron-metadata.csv": {
+      "sha256": "ba3f17171b295671e5428a9d20a05fc715f2c45f8faa477826d058a24f8f74da",
+      "bytes": 2461820
+    },
+    "MANC-central-connections-20251006.npz": {
+      "sha256": "c8d85a80b30a6f680932bbeb2c2dda2754ad0fd8b1b6a3c1f2652ca62d4cab61",
+      "bytes": 4540619
+    }
+  },
+  "source_repository": "https://github.com/smpuglie/Pugliese_2026",
+  "orientation": "row presynaptic; author-signed weights unchanged",
+  "scope_warning": "No full-network or behavioral pass from a path-focused candidate assay"
+}

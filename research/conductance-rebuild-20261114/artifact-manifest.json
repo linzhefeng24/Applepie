@@ -17,6 +17,11 @@
       "sha256": "89b76d0a10ded519dc6cac2fd5c1cf748b06c3db0976d2efb2995a00366d0b74"
     },
     {
+      "path": "EXPERIMENTAL_CONSTRAINTS.md",
+      "bytes": 3524,
+      "sha256": "9d2e2ff99ec9cc6a5b80f2186e438c7903e2f984b90c38b214e31ebe52a7eb1a"
+    },
+    {
       "path": "MECHANISMS.md",
       "bytes": 3630,
       "sha256": "640996ba79f8d3a02c0d84fee773125411768c7a437c2c03247f7dad492cb2af"
@@ -257,6 +262,16 @@
       "sha256": "f264fe6780435fb7574e8d882a9030e8e1927166aa28662135a249aa20ec47a5"
     },
     {
+      "path": "experimental_panel.py",
+      "bytes": 3123,
+      "sha256": "44c056c7ca4e5964609ad81728210222d3f1256873e3ff3c063e4690d470f2e0"
+    },
+    {
+      "path": "experimental_priorities.py",
+      "bytes": 2447,
+      "sha256": "e722ecc80cc82fb5a8f5f3c04d1e2f21a78d2cdf8bb1998650c5619d95cf5d76"
+    },
+    {
       "path": "finalize_asymmetry.py",
       "bytes": 2636,
       "sha256": "124abed25a55797224a2a085b458dcbb17025859df5a04ce7e778f6ca97b20c0"
@@ -335,6 +350,11 @@
       "path": "prepare.py",
       "bytes": 2033,
       "sha256": "514d0a7a1db53aee236c2522d9df3207890c272539426ab11d9487d4d1a54cfc"
+    },
+    {
+      "path": "prepare_experimental_panel.py",
+      "bytes": 2539,
+      "sha256": "fa96dca87841d9c976864817a73dfdfc0008b1333a7628c5a0bb4e65dc2b2cfb"
     },
     {
       "path": "probe_all_legs.py",
@@ -1260,6 +1280,106 @@
       "path": "results/excitation-probe.log",
       "bytes": 26,
       "sha256": "998343634c02c04c46d82682a33a173d3ce7ed9895d16644182862fd53f611a4"
+    },
+    {
+      "path": "results/experimental-panel.log",
+      "bytes": 655,
+      "sha256": "09ceb86e0980fa1b6c7a0c9ab8644d51b1b32ae482663408cd8667551f14572a"
+    },
+    {
+      "path": "results/experimental-panel/BRK_BON1-connectivity.npz",
+      "bytes": 1985,
+      "sha256": "55ec1276456719f5590b2081c82eaaba63352da46f6e1eb0921cd55d2f14d957"
+    },
+    {
+      "path": "results/experimental-panel/BRK_BON1-gain1-control.npz",
+      "bytes": 21061,
+      "sha256": "ced4654a18543e891e3824803d07d35e4f37c21bc367f96b3613c860ebabbe6c"
+    },
+    {
+      "path": "results/experimental-panel/BRK_BON1-gain1-stimulated.npz",
+      "bytes": 709431,
+      "sha256": "fb021c2d7a2f9592cbf6c53cc3f7105ee0a75dc83dc7f67b60d12b62da63f229"
+    },
+    {
+      "path": "results/experimental-panel/BRK_BON1-gain1.5-control.npz",
+      "bytes": 21061,
+      "sha256": "ced4654a18543e891e3824803d07d35e4f37c21bc367f96b3613c860ebabbe6c"
+    },
+    {
+      "path": "results/experimental-panel/BRK_BON1-gain1.5-stimulated.npz",
+      "bytes": 711794,
+      "sha256": "b4d544af4a9eb133b8c4478cb1f1333a713b434ef5c4f64fd13f6b31515ba257"
+    },
+    {
+      "path": "results/experimental-panel/BRK_BON1-gain2-control.npz",
+      "bytes": 21061,
+      "sha256": "ced4654a18543e891e3824803d07d35e4f37c21bc367f96b3613c860ebabbe6c"
+    },
+    {
+      "path": "results/experimental-panel/BRK_BON1-gain2-stimulated.npz",
+      "bytes": 712623,
+      "sha256": "41c160b29f2cac08e39d5e07a97f50cad6280e95ad0c4a93a0d42396a061f356"
+    },
+    {
+      "path": "results/experimental-panel/BRK_BON1-neurons.json",
+      "bytes": 14271,
+      "sha256": "922871bafb0bb97652b721d415fab17bfeb8672919d12ace1c552b9aa973f73c"
+    },
+    {
+      "path": "results/experimental-panel/MDN_LBL40-connectivity.npz",
+      "bytes": 2036,
+      "sha256": "c5c81992b7c90996b8c9a0f68029878cd2f0db229af4221a9d121cdd2b5fc27f"
+    },
+    {
+      "path": "results/experimental-panel/MDN_LBL40-gain1-control.npz",
+      "bytes": 21093,
+      "sha256": "6674a064933fb9462b5da65add184c6ef71f5e48879d9d939e77cadc88d519b5"
+    },
+    {
+      "path": "results/experimental-panel/MDN_LBL40-gain1-stimulated.npz",
+      "bytes": 719495,
+      "sha256": "4955b4fa80074a21a3659ae206b775aca95dfcaad45a2ecfc1599a1ccd6cbc50"
+    },
+    {
+      "path": "results/experimental-panel/MDN_LBL40-gain1.5-control.npz",
+      "bytes": 21093,
+      "sha256": "6674a064933fb9462b5da65add184c6ef71f5e48879d9d939e77cadc88d519b5"
+    },
+    {
+      "path": "results/experimental-panel/MDN_LBL40-gain1.5-stimulated.npz",
+      "bytes": 721702,
+      "sha256": "7e53995c7ce64703d56f0c6be976c93ab278424bbbcde63416cf2f4109a17a0f"
+    },
+    {
+      "path": "results/experimental-panel/MDN_LBL40-gain2-control.npz",
+      "bytes": 21093,
+      "sha256": "6674a064933fb9462b5da65add184c6ef71f5e48879d9d939e77cadc88d519b5"
+    },
+    {
+      "path": "results/experimental-panel/MDN_LBL40-gain2-stimulated.npz",
+      "bytes": 721931,
+      "sha256": "45d937915f20727f398c7d6827a2874a732a2cc92db82f029295e14f222145cf"
+    },
+    {
+      "path": "results/experimental-panel/MDN_LBL40-neurons.json",
+      "bytes": 16538,
+      "sha256": "c2bf5ea83ada996bdcf97685c6a7ab44a53e5969364e055f5313fc5e6a33e8b9"
+    },
+    {
+      "path": "results/experimental-panel/protocol.json",
+      "bytes": 7386,
+      "sha256": "509ddc21e450d73c1250c14ffb7dfdf3ab8dad5f8abe79b85a7944c5639e878a"
+    },
+    {
+      "path": "results/experimental-panel/trials.json",
+      "bytes": 20262,
+      "sha256": "7a0614f64c074e16e991c9c89d47caa428b42d0b6dd7b21576b4a5d52b669dd8"
+    },
+    {
+      "path": "results/experimental-priority-queue.json",
+      "bytes": 89016,
+      "sha256": "37e2afa5883a80d7bbb404668fa39769a9150b173d6360179fe03748413dbe33"
     },
     {
       "path": "results/fine-0.003125-E2_silenced.log",

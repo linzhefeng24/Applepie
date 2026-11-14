@@ -1,0 +1,752 @@
+[
+  {
+    "assay": "BRK_BON1",
+    "target_excitatory_gain_multiplier": 1.0,
+    "config": {
+      "dt_ms": 0.00625,
+      "duration_ms": 2400.0,
+      "onset_ms": 400.0,
+      "drive_pA": 160.0,
+      "ge_nS_per_synapse": 0.012,
+      "gi_nS_per_synapse": 0.1,
+      "tau_e_rise_ms": 0.5,
+      "tau_e_decay_ms": 5.0,
+      "tau_i_rise_ms": 1.0,
+      "tau_i_decay_ms": 30.0,
+      "delay_ms": 1.5,
+      "c_soma_pF": 20.0,
+      "c_axon_pF": 2.5,
+      "rin_cpg_MOhm": 500.0,
+      "rin_mn_MOhm": 300.0,
+      "coupling_nS": 12.0,
+      "gNa_nS": 600.0,
+      "gK_nS": 180.0,
+      "gCa_nS": 0.3,
+      "gSK_nS": 1.0,
+      "gNaP_nS": 0.0,
+      "ca_tau_ms": 100.0,
+      "ca_alpha": 0.0002,
+      "ca_Kd_uM": 0.2,
+      "E_leak_mV": -65.0,
+      "E_Na_mV": 55.0,
+      "E_K_mV": -80.0,
+      "E_Ca_mV": 120.0,
+      "E_exc_mV": 0.0,
+      "E_inh_mV": -80.0,
+      "gate_speed": 1.0,
+      "inhibitory_gain": 0.03,
+      "I2_gain": 1.0,
+      "I2_leak_shift_mV": 0.0,
+      "mn_gain": 6.0,
+      "mn_leak_mV": -65.0,
+      "synaptic_delay_scope": "one global delay prior, not measured per edge",
+      "adult_scope": "Rin=300MOhm is unknown-type adult MN prior; fast/intermediate/slow exemplars tested separately",
+      "I1_gain": 1.0,
+      "background_exc_gain": 0.5,
+      "mn_SK_scale": 1.0,
+      "mn_profile": {
+        "leak_scale": 0.5719406364200305,
+        "mn_leak_mV": -50.857904405099035,
+        "coupling_nS": 4.0,
+        "gNaP_nS": 0.3,
+        "axon_bias_pA": 0.0,
+        "gate_speed": 1.0
+      },
+      "mn_profile_scope": "Unknown EM MN subtype: use adult intermediate reference, not a verified assignment",
+      "group_parameters": {
+        "intrinsic neuron|type:IN27X001": {
+          "excitatory_gain": 1.0
+        }
+      }
+    },
+    "config_sha256": "475bbb1a30edfb1a6defef8c4524552a333dece2750eb51a5bc6571f97428ab1",
+    "observed": {
+      "control": {
+        "target_rate_hz": [
+          0.0,
+          0.0
+        ],
+        "target_soma_mV": [
+          -67.76853368206345,
+          -67.76853368206345
+        ],
+        "target_final_model_calcium_uM": [
+          6.317847307341553e-07,
+          6.317847307341553e-07
+        ],
+        "source_rate_hz": [
+          0.0,
+          0.0
+        ],
+        "numerical_failure": false
+      },
+      "stimulated": {
+        "target_rate_hz": [
+          27.77777777777778,
+          41.11111111111111
+        ],
+        "target_soma_mV": [
+          -54.19230896148377,
+          -52.49749721447444
+        ],
+        "target_final_model_calcium_uM": [
+          0.018462749302167333,
+          0.03087084288371434
+        ],
+        "source_rate_hz": [
+          70.55555555555556,
+          70.55555555555556
+        ],
+        "numerical_failure": false
+      }
+    },
+    "delta_soma_mV": [
+      13.576224720579681,
+      15.271036467589006
+    ],
+    "delta_rate_hz": [
+      27.77777777777778,
+      41.11111111111111
+    ],
+    "delta_final_model_calcium_uM": [
+      0.0184621175174366,
+      0.030870211098983608
+    ],
+    "qualitative_model_direction_supported": true,
+    "status": "partial",
+    "limitations": [
+      "path-focused context",
+      "male anatomy vs experimental assay",
+      "uncalibrated model Ca and optogenetic current",
+      "not full duration time-resolved GCaMP fit",
+      "no behavioral conclusion"
+    ]
+  },
+  {
+    "assay": "MDN_LBL40",
+    "target_excitatory_gain_multiplier": 1.0,
+    "config": {
+      "dt_ms": 0.00625,
+      "duration_ms": 2400.0,
+      "onset_ms": 400.0,
+      "drive_pA": 160.0,
+      "ge_nS_per_synapse": 0.012,
+      "gi_nS_per_synapse": 0.1,
+      "tau_e_rise_ms": 0.5,
+      "tau_e_decay_ms": 5.0,
+      "tau_i_rise_ms": 1.0,
+      "tau_i_decay_ms": 30.0,
+      "delay_ms": 1.5,
+      "c_soma_pF": 20.0,
+      "c_axon_pF": 2.5,
+      "rin_cpg_MOhm": 500.0,
+      "rin_mn_MOhm": 300.0,
+      "coupling_nS": 12.0,
+      "gNa_nS": 600.0,
+      "gK_nS": 180.0,
+      "gCa_nS": 0.3,
+      "gSK_nS": 1.0,
+      "gNaP_nS": 0.0,
+      "ca_tau_ms": 100.0,
+      "ca_alpha": 0.0002,
+      "ca_Kd_uM": 0.2,
+      "E_leak_mV": -65.0,
+      "E_Na_mV": 55.0,
+      "E_K_mV": -80.0,
+      "E_Ca_mV": 120.0,
+      "E_exc_mV": 0.0,
+      "E_inh_mV": -80.0,
+      "gate_speed": 1.0,
+      "inhibitory_gain": 0.03,
+      "I2_gain": 1.0,
+      "I2_leak_shift_mV": 0.0,
+      "mn_gain": 6.0,
+      "mn_leak_mV": -65.0,
+      "synaptic_delay_scope": "one global delay prior, not measured per edge",
+      "adult_scope": "Rin=300MOhm is unknown-type adult MN prior; fast/intermediate/slow exemplars tested separately",
+      "I1_gain": 1.0,
+      "background_exc_gain": 0.5,
+      "mn_SK_scale": 1.0,
+      "mn_profile": {
+        "leak_scale": 0.5719406364200305,
+        "mn_leak_mV": -50.857904405099035,
+        "coupling_nS": 4.0,
+        "gNaP_nS": 0.3,
+        "axon_bias_pA": 0.0,
+        "gate_speed": 1.0
+      },
+      "mn_profile_scope": "Unknown EM MN subtype: use adult intermediate reference, not a verified assignment",
+      "group_parameters": {
+        "intrinsic neuron|type:LBL40": {
+          "excitatory_gain": 1.0
+        }
+      }
+    },
+    "config_sha256": "edc5453502c10938018744f3c246e3eb3ab6fc3917b95d5d82a48516bdf61717",
+    "observed": {
+      "control": {
+        "target_rate_hz": [
+          0.0,
+          0.0
+        ],
+        "target_soma_mV": [
+          -67.76853368206345,
+          -67.76853368206345
+        ],
+        "target_final_model_calcium_uM": [
+          6.317847307341553e-07,
+          6.317847307341553e-07
+        ],
+        "source_rate_hz": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "numerical_failure": false
+      },
+      "stimulated": {
+        "target_rate_hz": [
+          2.2222222222222223,
+          0.0
+        ],
+        "target_soma_mV": [
+          -59.361609336943424,
+          -60.30706609141886
+        ],
+        "target_final_model_calcium_uM": [
+          4.398967476319589e-06,
+          5.804911123175187e-06
+        ],
+        "source_rate_hz": [
+          71.11111111111111,
+          72.77777777777777,
+          72.77777777777777,
+          71.11111111111111
+        ],
+        "numerical_failure": false
+      }
+    },
+    "delta_soma_mV": [
+      8.406924345120025,
+      7.461467590644588
+    ],
+    "delta_rate_hz": [
+      2.2222222222222223,
+      0.0
+    ],
+    "delta_final_model_calcium_uM": [
+      3.7671827455854333e-06,
+      5.173126392441031e-06
+    ],
+    "qualitative_model_direction_supported": true,
+    "status": "partial",
+    "limitations": [
+      "path-focused context",
+      "male anatomy vs experimental assay",
+      "uncalibrated model Ca and optogenetic current",
+      "not full duration time-resolved GCaMP fit",
+      "no behavioral conclusion"
+    ]
+  },
+  {
+    "assay": "BRK_BON1",
+    "target_excitatory_gain_multiplier": 1.5,
+    "config": {
+      "dt_ms": 0.00625,
+      "duration_ms": 2400.0,
+      "onset_ms": 400.0,
+      "drive_pA": 160.0,
+      "ge_nS_per_synapse": 0.012,
+      "gi_nS_per_synapse": 0.1,
+      "tau_e_rise_ms": 0.5,
+      "tau_e_decay_ms": 5.0,
+      "tau_i_rise_ms": 1.0,
+      "tau_i_decay_ms": 30.0,
+      "delay_ms": 1.5,
+      "c_soma_pF": 20.0,
+      "c_axon_pF": 2.5,
+      "rin_cpg_MOhm": 500.0,
+      "rin_mn_MOhm": 300.0,
+      "coupling_nS": 12.0,
+      "gNa_nS": 600.0,
+      "gK_nS": 180.0,
+      "gCa_nS": 0.3,
+      "gSK_nS": 1.0,
+      "gNaP_nS": 0.0,
+      "ca_tau_ms": 100.0,
+      "ca_alpha": 0.0002,
+      "ca_Kd_uM": 0.2,
+      "E_leak_mV": -65.0,
+      "E_Na_mV": 55.0,
+      "E_K_mV": -80.0,
+      "E_Ca_mV": 120.0,
+      "E_exc_mV": 0.0,
+      "E_inh_mV": -80.0,
+      "gate_speed": 1.0,
+      "inhibitory_gain": 0.03,
+      "I2_gain": 1.0,
+      "I2_leak_shift_mV": 0.0,
+      "mn_gain": 6.0,
+      "mn_leak_mV": -65.0,
+      "synaptic_delay_scope": "one global delay prior, not measured per edge",
+      "adult_scope": "Rin=300MOhm is unknown-type adult MN prior; fast/intermediate/slow exemplars tested separately",
+      "I1_gain": 1.0,
+      "background_exc_gain": 0.5,
+      "mn_SK_scale": 1.0,
+      "mn_profile": {
+        "leak_scale": 0.5719406364200305,
+        "mn_leak_mV": -50.857904405099035,
+        "coupling_nS": 4.0,
+        "gNaP_nS": 0.3,
+        "axon_bias_pA": 0.0,
+        "gate_speed": 1.0
+      },
+      "mn_profile_scope": "Unknown EM MN subtype: use adult intermediate reference, not a verified assignment",
+      "group_parameters": {
+        "intrinsic neuron|type:IN27X001": {
+          "excitatory_gain": 1.5
+        }
+      }
+    },
+    "config_sha256": "0b287462d7564066b2e5ccf6bc04b21fb6862436c90503912ba1757e691cc246",
+    "observed": {
+      "control": {
+        "target_rate_hz": [
+          0.0,
+          0.0
+        ],
+        "target_soma_mV": [
+          -67.76853368206345,
+          -67.76853368206345
+        ],
+        "target_final_model_calcium_uM": [
+          6.317847307341553e-07,
+          6.317847307341553e-07
+        ],
+        "source_rate_hz": [
+          0.0,
+          0.0
+        ],
+        "numerical_failure": false
+      },
+      "stimulated": {
+        "target_rate_hz": [
+          67.22222222222221,
+          67.77777777777777
+        ],
+        "target_soma_mV": [
+          -50.56002999112389,
+          -49.67429539509824
+        ],
+        "target_final_model_calcium_uM": [
+          0.06374714996451922,
+          0.06910665816177534
+        ],
+        "source_rate_hz": [
+          67.77777777777777,
+          67.77777777777777
+        ],
+        "numerical_failure": false
+      }
+    },
+    "delta_soma_mV": [
+      17.20850369093956,
+      18.094238286965208
+    ],
+    "delta_rate_hz": [
+      67.22222222222221,
+      67.77777777777777
+    ],
+    "delta_final_model_calcium_uM": [
+      0.06374651817978848,
+      0.0691060263770446
+    ],
+    "qualitative_model_direction_supported": true,
+    "status": "partial",
+    "limitations": [
+      "path-focused context",
+      "male anatomy vs experimental assay",
+      "uncalibrated model Ca and optogenetic current",
+      "not full duration time-resolved GCaMP fit",
+      "no behavioral conclusion"
+    ]
+  },
+  {
+    "assay": "MDN_LBL40",
+    "target_excitatory_gain_multiplier": 1.5,
+    "config": {
+      "dt_ms": 0.00625,
+      "duration_ms": 2400.0,
+      "onset_ms": 400.0,
+      "drive_pA": 160.0,
+      "ge_nS_per_synapse": 0.012,
+      "gi_nS_per_synapse": 0.1,
+      "tau_e_rise_ms": 0.5,
+      "tau_e_decay_ms": 5.0,
+      "tau_i_rise_ms": 1.0,
+      "tau_i_decay_ms": 30.0,
+      "delay_ms": 1.5,
+      "c_soma_pF": 20.0,
+      "c_axon_pF": 2.5,
+      "rin_cpg_MOhm": 500.0,
+      "rin_mn_MOhm": 300.0,
+      "coupling_nS": 12.0,
+      "gNa_nS": 600.0,
+      "gK_nS": 180.0,
+      "gCa_nS": 0.3,
+      "gSK_nS": 1.0,
+      "gNaP_nS": 0.0,
+      "ca_tau_ms": 100.0,
+      "ca_alpha": 0.0002,
+      "ca_Kd_uM": 0.2,
+      "E_leak_mV": -65.0,
+      "E_Na_mV": 55.0,
+      "E_K_mV": -80.0,
+      "E_Ca_mV": 120.0,
+      "E_exc_mV": 0.0,
+      "E_inh_mV": -80.0,
+      "gate_speed": 1.0,
+      "inhibitory_gain": 0.03,
+      "I2_gain": 1.0,
+      "I2_leak_shift_mV": 0.0,
+      "mn_gain": 6.0,
+      "mn_leak_mV": -65.0,
+      "synaptic_delay_scope": "one global delay prior, not measured per edge",
+      "adult_scope": "Rin=300MOhm is unknown-type adult MN prior; fast/intermediate/slow exemplars tested separately",
+      "I1_gain": 1.0,
+      "background_exc_gain": 0.5,
+      "mn_SK_scale": 1.0,
+      "mn_profile": {
+        "leak_scale": 0.5719406364200305,
+        "mn_leak_mV": -50.857904405099035,
+        "coupling_nS": 4.0,
+        "gNaP_nS": 0.3,
+        "axon_bias_pA": 0.0,
+        "gate_speed": 1.0
+      },
+      "mn_profile_scope": "Unknown EM MN subtype: use adult intermediate reference, not a verified assignment",
+      "group_parameters": {
+        "intrinsic neuron|type:LBL40": {
+          "excitatory_gain": 1.5
+        }
+      }
+    },
+    "config_sha256": "c6c5d98a7e963ce5aa05dc63bbe439a8f6ddc30a3b6cb6aac238e70aa88a5e60",
+    "observed": {
+      "control": {
+        "target_rate_hz": [
+          0.0,
+          0.0
+        ],
+        "target_soma_mV": [
+          -67.76853368206345,
+          -67.76853368206345
+        ],
+        "target_final_model_calcium_uM": [
+          6.317847307341553e-07,
+          6.317847307341553e-07
+        ],
+        "source_rate_hz": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "numerical_failure": false
+      },
+      "stimulated": {
+        "target_rate_hz": [
+          13.88888888888889,
+          47.77777777777778
+        ],
+        "target_soma_mV": [
+          -55.44059940986442,
+          -55.52277363549008
+        ],
+        "target_final_model_calcium_uM": [
+          0.0014621435276533647,
+          0.051773073176002764
+        ],
+        "source_rate_hz": [
+          71.11111111111111,
+          72.77777777777777,
+          72.77777777777777,
+          71.11111111111111
+        ],
+        "numerical_failure": false
+      }
+    },
+    "delta_soma_mV": [
+      12.32793427219903,
+      12.245760046573366
+    ],
+    "delta_rate_hz": [
+      13.88888888888889,
+      47.77777777777778
+    ],
+    "delta_final_model_calcium_uM": [
+      0.0014615117429226305,
+      0.05177244139127203
+    ],
+    "qualitative_model_direction_supported": true,
+    "status": "partial",
+    "limitations": [
+      "path-focused context",
+      "male anatomy vs experimental assay",
+      "uncalibrated model Ca and optogenetic current",
+      "not full duration time-resolved GCaMP fit",
+      "no behavioral conclusion"
+    ]
+  },
+  {
+    "assay": "BRK_BON1",
+    "target_excitatory_gain_multiplier": 2.0,
+    "config": {
+      "dt_ms": 0.00625,
+      "duration_ms": 2400.0,
+      "onset_ms": 400.0,
+      "drive_pA": 160.0,
+      "ge_nS_per_synapse": 0.012,
+      "gi_nS_per_synapse": 0.1,
+      "tau_e_rise_ms": 0.5,
+      "tau_e_decay_ms": 5.0,
+      "tau_i_rise_ms": 1.0,
+      "tau_i_decay_ms": 30.0,
+      "delay_ms": 1.5,
+      "c_soma_pF": 20.0,
+      "c_axon_pF": 2.5,
+      "rin_cpg_MOhm": 500.0,
+      "rin_mn_MOhm": 300.0,
+      "coupling_nS": 12.0,
+      "gNa_nS": 600.0,
+      "gK_nS": 180.0,
+      "gCa_nS": 0.3,
+      "gSK_nS": 1.0,
+      "gNaP_nS": 0.0,
+      "ca_tau_ms": 100.0,
+      "ca_alpha": 0.0002,
+      "ca_Kd_uM": 0.2,
+      "E_leak_mV": -65.0,
+      "E_Na_mV": 55.0,
+      "E_K_mV": -80.0,
+      "E_Ca_mV": 120.0,
+      "E_exc_mV": 0.0,
+      "E_inh_mV": -80.0,
+      "gate_speed": 1.0,
+      "inhibitory_gain": 0.03,
+      "I2_gain": 1.0,
+      "I2_leak_shift_mV": 0.0,
+      "mn_gain": 6.0,
+      "mn_leak_mV": -65.0,
+      "synaptic_delay_scope": "one global delay prior, not measured per edge",
+      "adult_scope": "Rin=300MOhm is unknown-type adult MN prior; fast/intermediate/slow exemplars tested separately",
+      "I1_gain": 1.0,
+      "background_exc_gain": 0.5,
+      "mn_SK_scale": 1.0,
+      "mn_profile": {
+        "leak_scale": 0.5719406364200305,
+        "mn_leak_mV": -50.857904405099035,
+        "coupling_nS": 4.0,
+        "gNaP_nS": 0.3,
+        "axon_bias_pA": 0.0,
+        "gate_speed": 1.0
+      },
+      "mn_profile_scope": "Unknown EM MN subtype: use adult intermediate reference, not a verified assignment",
+      "group_parameters": {
+        "intrinsic neuron|type:IN27X001": {
+          "excitatory_gain": 2.0
+        }
+      }
+    },
+    "config_sha256": "fd683204ed756df45b3263ecad3498c1583ef92befa22f9c3b29a844322e5a7c",
+    "observed": {
+      "control": {
+        "target_rate_hz": [
+          0.0,
+          0.0
+        ],
+        "target_soma_mV": [
+          -67.76853368206345,
+          -67.76853368206345
+        ],
+        "target_final_model_calcium_uM": [
+          6.317847307341553e-07,
+          6.317847307341553e-07
+        ],
+        "source_rate_hz": [
+          0.0,
+          0.0
+        ],
+        "numerical_failure": false
+      },
+      "stimulated": {
+        "target_rate_hz": [
+          67.77777777777777,
+          67.77777777777777
+        ],
+        "target_soma_mV": [
+          -49.02874487985418,
+          -47.728626792415966
+        ],
+        "target_final_model_calcium_uM": [
+          0.07191244160032155,
+          0.07121799620771058
+        ],
+        "source_rate_hz": [
+          67.77777777777777,
+          67.77777777777777
+        ],
+        "numerical_failure": false
+      }
+    },
+    "delta_soma_mV": [
+      18.73978880220927,
+      20.039906889647483
+    ],
+    "delta_rate_hz": [
+      67.77777777777777,
+      67.77777777777777
+    ],
+    "delta_final_model_calcium_uM": [
+      0.07191180981559081,
+      0.07121736442297984
+    ],
+    "qualitative_model_direction_supported": true,
+    "status": "partial",
+    "limitations": [
+      "path-focused context",
+      "male anatomy vs experimental assay",
+      "uncalibrated model Ca and optogenetic current",
+      "not full duration time-resolved GCaMP fit",
+      "no behavioral conclusion"
+    ]
+  },
+  {
+    "assay": "MDN_LBL40",
+    "target_excitatory_gain_multiplier": 2.0,
+    "config": {
+      "dt_ms": 0.00625,
+      "duration_ms": 2400.0,
+      "onset_ms": 400.0,
+      "drive_pA": 160.0,
+      "ge_nS_per_synapse": 0.012,
+      "gi_nS_per_synapse": 0.1,
+      "tau_e_rise_ms": 0.5,
+      "tau_e_decay_ms": 5.0,
+      "tau_i_rise_ms": 1.0,
+      "tau_i_decay_ms": 30.0,
+      "delay_ms": 1.5,
+      "c_soma_pF": 20.0,
+      "c_axon_pF": 2.5,
+      "rin_cpg_MOhm": 500.0,
+      "rin_mn_MOhm": 300.0,
+      "coupling_nS": 12.0,
+      "gNa_nS": 600.0,
+      "gK_nS": 180.0,
+      "gCa_nS": 0.3,
+      "gSK_nS": 1.0,
+      "gNaP_nS": 0.0,
+      "ca_tau_ms": 100.0,
+      "ca_alpha": 0.0002,
+      "ca_Kd_uM": 0.2,
+      "E_leak_mV": -65.0,
+      "E_Na_mV": 55.0,
+      "E_K_mV": -80.0,
+      "E_Ca_mV": 120.0,
+      "E_exc_mV": 0.0,
+      "E_inh_mV": -80.0,
+      "gate_speed": 1.0,
+      "inhibitory_gain": 0.03,
+      "I2_gain": 1.0,
+      "I2_leak_shift_mV": 0.0,
+      "mn_gain": 6.0,
+      "mn_leak_mV": -65.0,
+      "synaptic_delay_scope": "one global delay prior, not measured per edge",
+      "adult_scope": "Rin=300MOhm is unknown-type adult MN prior; fast/intermediate/slow exemplars tested separately",
+      "I1_gain": 1.0,
+      "background_exc_gain": 0.5,
+      "mn_SK_scale": 1.0,
+      "mn_profile": {
+        "leak_scale": 0.5719406364200305,
+        "mn_leak_mV": -50.857904405099035,
+        "coupling_nS": 4.0,
+        "gNaP_nS": 0.3,
+        "axon_bias_pA": 0.0,
+        "gate_speed": 1.0
+      },
+      "mn_profile_scope": "Unknown EM MN subtype: use adult intermediate reference, not a verified assignment",
+      "group_parameters": {
+        "intrinsic neuron|type:LBL40": {
+          "excitatory_gain": 2.0
+        }
+      }
+    },
+    "config_sha256": "000588bd837b7396372ec015b79be1850705af5d0adaeb6761a8251a20b2cc89",
+    "observed": {
+      "control": {
+        "target_rate_hz": [
+          0.0,
+          0.0
+        ],
+        "target_soma_mV": [
+          -67.76853368206345,
+          -67.76853368206345
+        ],
+        "target_final_model_calcium_uM": [
+          6.317847307341553e-07,
+          6.317847307341553e-07
+        ],
+        "source_rate_hz": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "numerical_failure": false
+      },
+      "stimulated": {
+        "target_rate_hz": [
+          35.0,
+          71.66666666666667
+        ],
+        "target_soma_mV": [
+          -51.83707811763038,
+          -52.69493219617634
+        ],
+        "target_final_model_calcium_uM": [
+          0.02022119532343303,
+          0.0770329846001084
+        ],
+        "source_rate_hz": [
+          71.11111111111111,
+          72.77777777777777,
+          72.77777777777777,
+          71.11111111111111
+        ],
+        "numerical_failure": false
+      }
+    },
+    "delta_soma_mV": [
+      15.931455564433072,
+      15.07360148588711
+    ],
+    "delta_rate_hz": [
+      35.0,
+      71.66666666666667
+    ],
+    "delta_final_model_calcium_uM": [
+      0.0202205635387023,
+      0.07703235281537767
+    ],
+    "qualitative_model_direction_supported": true,
+    "status": "partial",
+    "limitations": [
+      "path-focused context",
+      "male anatomy vs experimental assay",
+      "uncalibrated model Ca and optogenetic current",
+      "not full duration time-resolved GCaMP fit",
+      "no behavioral conclusion"
+    ]
+  }
+]

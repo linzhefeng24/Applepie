@@ -1,0 +1,2100 @@
+{
+  "policy": "Prioritize measured neuronal activity and causal perturbations, then behavioral outcomes, before model-derived frequency targets or muscle trajectories. Do not impose unverified inhibitory motifs.",
+  "items": [
+    {
+      "id": "structure:13Balpha_10Balpha:0",
+      "pointer": "/key_structures/25/confirmed/0",
+      "phenomenon": "13Bα 紧张性编码股胫关节角，阈值约 90° 伸展，带滞回",
+      "tier": "experiment",
+      "source": "agrawal_2020",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:13Balpha_10Balpha:1",
+      "pointer": "/key_structures/25/confirmed/1",
+      "phenomenon": "10Bα 编码双向运动与振动，位置依赖；激活导致行走冻结",
+      "tier": "experiment",
+      "source": "agrawal_2020",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:19B_19A:1",
+      "pointer": "/key_structures/22/confirmed/1",
+      "phenomenon": "19B 数量有腿节段特异性",
+      "tier": "experiment",
+      "source": "takemura_2023_vnc",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:19B_19A:2",
+      "pointer": "/key_structures/22/confirmed/2",
+      "phenomenon": "双侧 19A 激活导致 T2 腿持续摆动",
+      "tier": "experiment",
+      "source": "harris_2015",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:9A:0",
+      "pointer": "/key_structures/23/confirmed/0",
+      "phenomenon": "chief 9A 提供 hook 轴突 57% 的突触前输入，并把自身 63% 的输出打向 hook",
+      "tier": "experiment",
+      "source": "dallmann_2025",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:9A:1",
+      "pointer": "/key_structures/23/confirmed/1",
+      "phenomenon": "hook 轴突的 GABA 能输入 83% 来自 9A hemilineage",
+      "tier": "experiment",
+      "source": "dallmann_2025",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:9A:2",
+      "pointer": "/key_structures/23/confirmed/2",
+      "phenomenon": "9A 钙活动在行走/理毛时高、静息/被动运动时低",
+      "tier": "experiment",
+      "source": "dallmann_2025",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:9A:3",
+      "pointer": "/key_structures/23/confirmed/3",
+      "phenomenon": "hook 在自主动作时被压低；claw 不被压低",
+      "tier": "experiment",
+      "source": "dallmann_2025",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:9A:4",
+      "pointer": "/key_structures/23/confirmed/4",
+      "phenomenon": "9A 激活降低行走速度；沉默不显著改变速度/运动学",
+      "tier": "experiment",
+      "source": "dallmann_2025",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:BPN:0",
+      "pointer": "/key_structures/16/confirmed/0",
+      "phenomenon": "激活驱动直线前行；在快速、长时程直线行走中被募集",
+      "tier": "experiment",
+      "source": "bidaye_2020",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:BPN:1",
+      "pointer": "/key_structures/16/confirmed/1",
+      "phenomenon": "快速直线长行走所必需",
+      "tier": "experiment",
+      "source": "bidaye_2020",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:DN_population:0",
+      "pointer": "/key_structures/19/confirmed/0",
+      "phenomenon": "多数被记录的 DN 编码行走；转向 DN 占比最大，速度 DN 较少；理毛/静息占少数",
+      "tier": "experiment",
+      "source": "aymanns_2022",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:DN_population:1",
+      "pointer": "/key_structures/19/confirmed/1",
+      "phenomenon": "DN 群体在自发与气味诱发行走中活动相似；少数只被刺激激活（非生理）",
+      "tier": "experiment",
+      "source": "braun_hurtak",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:DNa01:0",
+      "pointer": "/key_structures/4/confirmed/0",
+      "phenomenon": "钙活动（右减左）与身体角速度相关",
+      "tier": "experiment",
+      "source": "yang_2024",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:DNa02:0",
+      "pointer": "/key_structures/5/confirmed/0",
+      "phenomenon": "单侧激活缩短同侧三腿步幅（内侧腿）",
+      "tier": "experiment",
+      "source": "yang_2024",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:DNa02:1",
+      "pointer": "/key_structures/5/confirmed/1",
+      "phenomenon": "右减左钙信号预测角速度",
+      "tier": "experiment",
+      "source": "yang_2024",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:DNa02:2",
+      "pointer": "/key_structures/5/confirmed/2",
+      "phenomenon": "步态锁相放电调制",
+      "tier": "experiment",
+      "source": "yang_2024",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:DNa02:3",
+      "pointer": "/key_structures/5/confirmed/3",
+      "phenomenon": "接收中央复合体直接输入；轴突不跨中线",
+      "tier": "experiment",
+      "source": "yang_2024",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:DNb05_DNb06:0",
+      "pointer": "/key_structures/7/confirmed/0",
+      "phenomenon": "钙活动与角速度相关",
+      "tier": "experiment",
+      "source": "yang_2024",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:DNb08:0",
+      "pointer": "/key_structures/1/confirmed/0",
+      "phenomenon": "933 DN 筛查第二；光遗传激活驱动节律性腿运动",
+      "tier": "experiment",
+      "source": "pugliese_nature_2026",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:DNg100:0",
+      "pointer": "/key_structures/0/confirmed/0",
+      "phenomenon": "去头蝇光遗传激活产生六腿节律踏步并前行",
+      "tier": "experiment",
+      "source": "pugliese_nature_2026",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:DNg100:3",
+      "pointer": "/key_structures/0/confirmed/3",
+      "phenomenon": "激活驱动 9A 对 hook 的突触前抑制",
+      "tier": "experiment",
+      "source": "dallmann_2025",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:DNg11_DNg12:0",
+      "pointer": "/key_structures/14/confirmed/0",
+      "phenomenon": "DNg11 是前腿理毛的命令样 DN，不是行走命令",
+      "tier": "experiment",
+      "source": "namiki_2021",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:DNg11_DNg12:1",
+      "pointer": "/key_structures/14/confirmed/1",
+      "phenomenon": "文献 DNg12 是特定亚型，给 9A 提供兴奋性输入",
+      "tier": "experiment",
+      "source": "dallmann_2025",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:DNg13:0",
+      "pointer": "/key_structures/6/confirmed/0",
+      "phenomenon": "去极化 -> 同侧转；超极化 -> 对侧转",
+      "tier": "experiment",
+      "source": "yang_2024",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:DNg13:1",
+      "pointer": "/key_structures/6/confirmed/1",
+      "phenomenon": "延长对侧腿步幅（power 与 return 两相都延长）",
+      "tier": "experiment",
+      "source": "yang_2024",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:DNg13:2",
+      "pointer": "/key_structures/6/confirmed/2",
+      "phenomenon": "活动领先行为约 150 ms；动力学比 DNa02 慢",
+      "tier": "experiment",
+      "source": "yang_2024",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:DNg13:3",
+      "pointer": "/key_structures/6/confirmed/3",
+      "phenomenon": "无中央复合体直接输入；轴突跨中线",
+      "tier": "experiment",
+      "source": "yang_2024",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:DNg74:0",
+      "pointer": "/key_structures/13/confirmed/0",
+      "phenomenon": "静息时活跃的 GABA 能 DN；与兴奋性行走驱动 DN 一起控制 9A 对 hook 的突触前抑制",
+      "tier": "experiment",
+      "source": "dallmann_2025",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:DNg74:1",
+      "pointer": "/key_structures/13/confirmed/1",
+      "phenomenon": "DNg100 激活驱动 hook 轴突抑制",
+      "tier": "experiment",
+      "source": "dallmann_2025",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:DNp09:0",
+      "pointer": "/key_structures/2/confirmed/0",
+      "phenomenon": "156 个 DN 驱动系中唯一足以启动行走的类",
+      "tier": "experiment",
+      "source": "bidaye_2020",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:DNp09:1",
+      "pointer": "/key_structures/2/confirmed/1",
+      "phenomenon": "激活启动前行并带强同侧转向分量",
+      "tier": "experiment",
+      "source": "bidaye_2020",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:DNp09:2",
+      "pointer": "/key_structures/2/confirmed/2",
+      "phenomenon": "雄性求偶追雌所必需",
+      "tier": "experiment",
+      "source": "bidaye_2020",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:DNp09:3",
+      "pointer": "/key_structures/2/confirmed/3",
+      "phenomenon": "招募约 23 个下游 DN；去头不能单独驱动",
+      "tier": "experiment",
+      "source": "braun_hurtak",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:DopaMeander:0",
+      "pointer": "/key_structures/15/confirmed/0",
+      "phenomenon": "光遗传激活驱动前行和同侧转向",
+      "tier": "experiment",
+      "source": "dahlhoff_2026",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:DopaMeander:1",
+      "pointer": "/key_structures/15/confirmed/1",
+      "phenomenon": "飞行时被门控",
+      "tier": "experiment",
+      "source": "dahlhoff_2026",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:FeCO:0",
+      "pointer": "/key_structures/24/confirmed/0",
+      "phenomenon": "claw 紧张性编码位置，有滞回；hook 方向选择性编码运动（屈曲 DSI≈0.81）；club 双向编码运动（DSI≈0.12）+ 振动调谐 200–1600 Hz",
+      "tier": "experiment",
+      "source": "mamiya_2018; chen_2021",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:FeCO:1",
+      "pointer": "/key_structures/24/confirmed/1",
+      "phenomenon": "行走/理毛时 hook 被 9A 突触前抑制，claw 不被抑制",
+      "tier": "experiment",
+      "source": "dallmann_2025",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:MAN:0",
+      "pointer": "/key_structures/18/confirmed/0",
+      "phenomenon": "单独激活不引发后退，但抑制/缩短前行",
+      "tier": "experiment",
+      "source": "bidaye_2014",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:MAN:1",
+      "pointer": "/key_structures/18/confirmed/1",
+      "phenomenon": "维持后退",
+      "tier": "experiment",
+      "source": "sen_2017",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:MDN:0",
+      "pointer": "/key_structures/3/confirmed/0",
+      "phenomenon": "激活足以在去头蝇引发后退行走；单侧激活向对侧后退转",
+      "tier": "experiment",
+      "source": "bidaye_2014; sen_2017",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:MDN:1",
+      "pointer": "/key_structures/3/confirmed/1",
+      "phenomenon": "沉默降低后退速度",
+      "tier": "experiment",
+      "source": "dahlhoff_2026",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:MDN:2",
+      "pointer": "/key_structures/3/confirmed/2",
+      "phenomenon": "触角触碰输入，潜伏期与行为匹配",
+      "tier": "experiment",
+      "source": "dahlhoff_2026",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:MDN:3",
+      "pointer": "/key_structures/3/confirmed/3",
+      "phenomenon": "飞行时被门控",
+      "tier": "experiment",
+      "source": "dahlhoff_2026",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:PFL3_EPG_CX:0",
+      "pointer": "/key_structures/17/confirmed/0",
+      "phenomenon": "Δ7/EPG 用余弦活动包表示航向",
+      "tier": "experiment",
+      "source": "westeinde_2022",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:PFL3_EPG_CX:1",
+      "pointer": "/key_structures/17/confirmed/1",
+      "phenomenon": "PFL3>R 与 PFL3>L 的航向图相对 Δ7 偏移 ±67.5°",
+      "tier": "experiment",
+      "source": "westeinde_2022",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:PFL3_EPG_CX:3",
+      "pointer": "/key_structures/17/confirmed/3",
+      "phenomenon": "PFL3 直接/间接投射到 DNa02，构成 see-saw：偏左 -> 右侧 DNa02 兴奋、左侧抑制",
+      "tier": "experiment",
+      "source": "westeinde_2022; yang_2024",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:PFL3_EPG_CX:4",
+      "pointer": "/key_structures/17/confirmed/4",
+      "phenomenon": "PFL2 在朝向远离目标时被募集，只增加转向增益、不指定方向",
+      "tier": "experiment",
+      "source": "westeinde_2022",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:leg_MN_size_principle:0",
+      "pointer": "/key_structures/26/confirmed/0",
+      "phenomenon": "慢 MN 静息约 30 Hz；中/快静息沉默",
+      "tier": "experiment",
+      "source": "azevedo_2020",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:leg_MN_size_principle:1",
+      "pointer": "/key_structures/26/confirmed/1",
+      "phenomenon": "快 MN 每个 spike 约 10 µN；募集顺序慢→中→快",
+      "tier": "experiment",
+      "source": "azevedo_2020",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:leg_MN_size_principle:2",
+      "pointer": "/key_structures/26/confirmed/2",
+      "phenomenon": "行走时股胫关节屈伸约 10–20 次/秒",
+      "tier": "experiment",
+      "source": "azevedo_2020",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:tripod_coordination:0",
+      "pointer": "/key_structures/27/confirmed/0",
+      "phenomenon": "同侧三足组：前+后与对侧中腿同相；对侧腿反相",
+      "tier": "experiment",
+      "source": "strauss_heisenberg_1990; gowda_2018; deangelis_2019",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:tripod_coordination:1",
+      "pointer": "/key_structures/27/confirmed/1",
+      "phenomenon": "三足协调强度 TCS = 三腿同时摆动时间 / 任一腿摆动时间",
+      "tier": "experiment",
+      "source": "wosnitza_2013",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:tripod_coordination:2",
+      "pointer": "/key_structures/27/confirmed/2",
+      "phenomenon": "速度升高时三足协调增强；>10 BL/s 以三足为主",
+      "tier": "experiment",
+      "source": "wosnitza_2013",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:walking_kinematics:0",
+      "pointer": "/key_structures/28/confirmed/0",
+      "phenomenon": "自由行走速度 2–30 mm/s；步周期约 0.1 s",
+      "tier": "experiment",
+      "source": "wosnitza_2013; azevedo_2020",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:walking_kinematics:1",
+      "pointer": "/key_structures/28/confirmed/1",
+      "phenomenon": "速度主要由支撑相时长决定；摆动相时长随速度变化小",
+      "tier": "experiment",
+      "source": "deangelis_2019",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:walking_kinematics:2",
+      "pointer": "/key_structures/28/confirmed/2",
+      "phenomenon": "负载增加时摆动相缩短约 10 ms、支撑相变长，步周期基本不变",
+      "tier": "experiment",
+      "source": "mendes_2013",
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "vnc:13Balpha_9Aalpha_10Balpha",
+      "pointer": "/vnc_walking_evidence/records/5",
+      "phenomenon": "13Balpha encodes position and activation evokes tibia flexion. 9Aalpha integrates movement, vibration and joint position and can affect posture. 10Balpha encodes vibration in a position-dependent manner and activation pauses walking.",
+      "source": "https://doi.org/10.7554/eLife.60299",
+      "evidence": [
+        "electrophysiology/calcium during passive stimulation",
+        "optogenetic behavioral perturbation"
+      ],
+      "natural_walking_recording": null,
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel",
+      "testable_observations": [
+        {
+          "condition": "controlled passive joint stimulation",
+          "observable": "identified interneuron activity",
+          "relation": "position/motion/vibration tuning depends on subtype",
+          "evidence_class": "passive_tuning",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "qualitative evidence within stated scope; not an automatic universal hard constraint"
+        },
+        {
+          "condition": "10Balpha activation during walking",
+          "observable": "pausing",
+          "relation": "elicited",
+          "evidence_class": "causal_perturbation",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "qualitative evidence within stated scope; not an automatic universal hard constraint"
+        }
+      ]
+    },
+    {
+      "id": "vnc:13Bb_position_movement_convergence",
+      "pointer": "/vnc_walking_evidence/records/42",
+      "phenomenon": "Extension-tuned claw and hook inputs converge functionally on 13Bb. Calcium is phasic during extension over the tested range and tonic when the joint is already highly extended (reported above approximately 140 degrees). MLA eliminates the evoked responses.",
+      "source": "https://doi.org/10.1016/j.cub.2021.09.035",
+      "evidence": [
+        "calcium imaging",
+        "targeted sensory optogenetics",
+        "controlled joint motion",
+        "EM connectivity"
+      ],
+      "natural_walking_recording": false,
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel",
+      "testable_observations": [
+        {
+          "condition": "passive tibia extension",
+          "observable": "13Bb calcium",
+          "relation": "phasic rise",
+          "evidence_class": "passive_tuning",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "within the stated assay/population; not a universal hard neural constraint"
+        },
+        {
+          "condition": "held in extended positions in paper angle convention",
+          "observable": "13Bb calcium",
+          "relation": "tonic response above about 140 degrees",
+          "evidence_class": "passive_tuning",
+          "numeric_value": 140,
+          "unit": "degree",
+          "constraint_policy": "within the stated assay/population; not a universal hard neural constraint"
+        }
+      ]
+    },
+    {
+      "id": "vnc:5HT_VNC",
+      "pointer": "/vnc_walking_evidence/records/4",
+      "phenomenon": "A subset increases calcium at walk onset and correlates with bout speed. Activating the broader VNC serotonergic population slows walking; silencing increases speed.",
+      "source": "https://doi.org/10.1016/j.cub.2019.10.042",
+      "evidence": [
+        "behaving calcium imaging",
+        "population activation/inhibition"
+      ],
+      "natural_walking_recording": true,
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel",
+      "testable_observations": [
+        {
+          "condition": "spontaneous walk onset",
+          "observable": "calcium in imaged ascending serotonergic subset",
+          "relation": "increased",
+          "evidence_class": "measured_association",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "qualitative evidence within stated scope; not an automatic universal hard constraint"
+        },
+        {
+          "condition": "broad VNC serotonergic activation versus matched controls",
+          "observable": "walking speed",
+          "relation": "decreased",
+          "evidence_class": "causal_perturbation",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "qualitative evidence within stated scope; not an automatic universal hard constraint"
+        },
+        {
+          "condition": "VNC serotonergic inhibition versus matched controls",
+          "observable": "walking speed",
+          "relation": "increased",
+          "evidence_class": "causal_perturbation",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "qualitative evidence within stated scope; not an automatic universal hard constraint"
+        }
+      ]
+    },
+    {
+      "id": "vnc:9Ba_bilateral_club_integration",
+      "pointer": "/vnc_walking_evidence/records/40",
+      "phenomenon": "T1 9Ba calcium rises after either ipsilateral or contralateral T1 club stimulation. Nicotinic receptor antagonist MLA blocks the club-evoked response. Passive vibration evokes responses, supporting a bilateral vibration-processing role.",
+      "source": "https://doi.org/10.1016/j.cub.2021.09.035",
+      "evidence": [
+        "targeted sensory optogenetics",
+        "calcium imaging",
+        "receptor pharmacology",
+        "EM connectivity"
+      ],
+      "natural_walking_recording": false,
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel",
+      "testable_observations": [
+        {
+          "condition": "stimulate left or right T1 club axons",
+          "observable": "T1 9Ba calcium",
+          "relation": "increases from either side",
+          "evidence_class": "evoked_neural_response",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "within the stated assay/population; not a universal hard neural constraint"
+        },
+        {
+          "condition": "MLA 1 micromolar with club stimulation",
+          "observable": "evoked 9Ba calcium",
+          "relation": "blocked in tested assay",
+          "evidence_class": "pharmacological_perturbation",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "within the stated assay/population; not a universal hard neural constraint"
+        }
+      ]
+    },
+    {
+      "id": "vnc:BDN2_DNg100_activity_correction",
+      "pointer": "/vnc_walking_evidence/records/25",
+      "phenomenon": "BDN2 calcium traces during spontaneous walking are reported; current manifest labels BDN2 as DNg100. This supplies activity evidence but not an absolute firing rate.",
+      "source": "https://doi.org/10.1038/s41586-024-07854-7",
+      "evidence": [
+        "behaving calcium imaging"
+      ],
+      "natural_walking_recording": true,
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel",
+      "testable_observations": [
+        {
+          "condition": "spontaneous walking, recorded as BDN2",
+          "observable": "calcium activity",
+          "relation": "reported; absolute Hz unavailable",
+          "evidence_class": "measured_association",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "qualitative evidence within stated scope; not an automatic universal hard constraint"
+        }
+      ]
+    },
+    {
+      "id": "vnc:BRK_BON1_functional_excitation",
+      "pointer": "/vnc_walking_evidence/records/44",
+      "phenomenon": "BRK activation evokes BON1 calcium responses in a functional-connectivity assay, supporting a net excitatory effect. EM identifies BON1 as a major BRK postsynaptic partner.",
+      "source": "https://doi.org/10.1038/s41586-024-07854-7",
+      "evidence": [
+        "ex vivo optogenetic functional connectivity",
+        "calcium imaging",
+        "EM connectivity"
+      ],
+      "natural_walking_recording": false,
+      "priority": 1,
+      "validation": "candidate_assay_running",
+      "testable_observations": [
+        {
+          "condition": "BRK optogenetic activation in CNS explant",
+          "observable": "BON1 calcium relative to controls",
+          "relation": "increased",
+          "evidence_class": "evoked_neural_response",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "within the stated assay/population; not a universal hard neural constraint"
+        }
+      ]
+    },
+    {
+      "id": "vnc:BRK_behavioral_activity",
+      "pointer": "/vnc_walking_evidence/records/10",
+      "phenomenon": "BRK is recruited in a subset of stops, especially grooming/pushdown. Front- and hind-leg rubbing preferentially recruit corresponding segment BRKs; activity ramps before grooming alongside a walking-speed dip.",
+      "source": "https://doi.org/10.1038/s41586-024-07854-7",
+      "evidence": [
+        "behaving VNC calcium imaging"
+      ],
+      "natural_walking_recording": true,
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel",
+      "testable_observations": [
+        {
+          "condition": "transition to grooming in tested treadmill preparation",
+          "observable": "segment-related BRK calcium",
+          "relation": "increased around onset; not all halts",
+          "evidence_class": "measured_association",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "qualitative evidence within stated scope; not an automatic universal hard constraint"
+        }
+      ]
+    },
+    {
+      "id": "vnc:BRK_joint_angle_muscle_recruitment",
+      "pointer": "/vnc_walking_evidence/records/12",
+      "phenomenon": "In flexion, BRK recruits accessory flexor-a and extensor; in extension, accessory flexor-a and flexor-b. A subset of already active muscles can be inhibited as a resistance-like pattern emerges.",
+      "source": "https://doi.org/10.1038/s41586-024-07854-7",
+      "evidence": [
+        "muscle calcium imaging",
+        "optogenetics",
+        "controlled joint posture"
+      ],
+      "natural_walking_recording": false,
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel",
+      "testable_observations": [
+        {
+          "condition": "BRK activation with flexed Fe-Ti",
+          "observable": "muscle recruitment",
+          "relation": "accessory flexor-a plus extensor",
+          "evidence_class": "causal_perturbation",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "qualitative evidence within stated scope; not an automatic universal hard constraint"
+        },
+        {
+          "condition": "BRK activation with extended Fe-Ti",
+          "observable": "muscle recruitment",
+          "relation": "accessory flexor-a plus flexor-b",
+          "evidence_class": "causal_perturbation",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "qualitative evidence within stated scope; not an automatic universal hard constraint"
+        }
+      ]
+    },
+    {
+      "id": "vnc:CxHP8",
+      "pointer": "/vnc_walking_evidence/records/3",
+      "phenomenon": "Calcium indicates anterior joint-limit encoding, including during spontaneous behavior. Activation moves the leg posteriorly; silencing subtly but significantly changes coxa/tarsus position near swing-to-stance.",
+      "source": "https://doi.org/10.1038/s41467-026-69333-z",
+      "evidence": [
+        "passive and behaving calcium imaging",
+        "EM connectivity",
+        "activation/silencing"
+      ],
+      "natural_walking_recording": true,
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel",
+      "testable_observations": [
+        {
+          "condition": "coxa approaches anterior joint limit",
+          "observable": "CxHP8 calcium",
+          "relation": "increased",
+          "evidence_class": "measured_association",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "qualitative evidence within stated scope; not an automatic universal hard constraint"
+        },
+        {
+          "condition": "CxHP8 silencing during forward walking",
+          "observable": "swing-to-stance coxa/tarsus position",
+          "relation": "shifted versus controls",
+          "evidence_class": "causal_perturbation",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "qualitative evidence within stated scope; not an automatic universal hard constraint"
+        }
+      ]
+    },
+    {
+      "id": "vnc:LAL_PS_ANcontra_stride_contribution",
+      "pointer": "/vnc_walking_evidence/records/38",
+      "phenomenon": "Silencing these ANs reduces stride-coupled HS voltage oscillation amplitude without a detected overall walking-speed/turning-speed deficit. Activating the ANs evokes HS responses, although direct chemical AN-to-HS synapses were not found.",
+      "source": "https://doi.org/10.1016/j.neuron.2022.04.008",
+      "evidence": [
+        "ascending-neuron perturbation",
+        "downstream whole-cell recording",
+        "EM connectivity"
+      ],
+      "natural_walking_recording": true,
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel",
+      "testable_observations": [
+        {
+          "condition": "AN-pair silencing during walking",
+          "observable": "HS stride-coupled voltage component",
+          "relation": "reduced amplitude",
+          "evidence_class": "causal_perturbation",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "within the stated assay/population; not a universal hard neural constraint"
+        },
+        {
+          "condition": "same manipulation",
+          "observable": "overall translational/angular velocity",
+          "relation": "no detected change in tested conditions",
+          "evidence_class": "causal_perturbation",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "within the stated assay/population; not a universal hard neural constraint"
+        }
+      ]
+    },
+    {
+      "id": "vnc:LAL_PS_ANcontra_walking_activity",
+      "pointer": "/vnc_walking_evidence/records/37",
+      "phenomenon": "LAL-PS-ANcontra innervates front/middle leg neuropils, crosses in the VNC, and projects to contralateral PS/LAL. Axonal calcium positively correlates with forward velocity, is relatively insensitive to angular velocity, and is greater during walking than front-leg grooming.",
+      "source": "https://doi.org/10.1016/j.neuron.2022.04.008",
+      "evidence": [
+        "behaving calcium imaging",
+        "anatomical tracing"
+      ],
+      "natural_walking_recording": true,
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel",
+      "testable_observations": [
+        {
+          "condition": "walking bouts in tested preparation",
+          "observable": "LAL-PS-ANcontra axonal calcium versus forward velocity",
+          "relation": "positive relationship",
+          "evidence_class": "measured_association",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "within the stated assay/population; not a universal hard neural constraint"
+        },
+        {
+          "condition": "walking versus front-leg grooming",
+          "observable": "AN calcium",
+          "relation": "larger during walking",
+          "evidence_class": "measured_association",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "within the stated assay/population; not a universal hard neural constraint"
+        }
+      ]
+    },
+    {
+      "id": "vnc:LBL40",
+      "pointer": "/vnc_walking_evidence/records/1",
+      "phenomenon": "MDN activation evokes LBL40 calcium; LBL40 activation drives hindleg tibia flexion; suppression interferes with backward stance power stroke. LUM9 is an identified downstream tibia-flexor motor neuron.",
+      "source": "https://doi.org/10.1038/s41467-020-19936-x",
+      "evidence": [
+        "stimulus-evoked calcium imaging",
+        "activation/silencing",
+        "leg kinematics"
+      ],
+      "natural_walking_recording": null,
+      "priority": 1,
+      "validation": "candidate_assay_running",
+      "testable_observations": [
+        {
+          "condition": "MDN stimulation",
+          "observable": "LBL40 calcium",
+          "relation": "increased",
+          "evidence_class": "evoked_neural_response",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "qualitative evidence within stated scope; not an automatic universal hard constraint"
+        },
+        {
+          "condition": "LBL40 activation in tested preparation",
+          "observable": "hindleg tibia flexion",
+          "relation": "increased",
+          "evidence_class": "causal_perturbation",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "qualitative evidence within stated scope; not an automatic universal hard constraint"
+        }
+      ]
+    },
+    {
+      "id": "vnc:LUL130",
+      "pointer": "/vnc_walking_evidence/records/2",
+      "phenomenon": "MDN evokes calcium in T3 and less strongly T2; activating LUL130 lifts hindlegs and initiates swing; silencing impairs MDN-induced backward walking.",
+      "source": "https://doi.org/10.1038/s41467-020-19936-x",
+      "evidence": [
+        "stimulus-evoked calcium imaging",
+        "activation/silencing",
+        "leg kinematics"
+      ],
+      "natural_walking_recording": null,
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel",
+      "testable_observations": [
+        {
+          "condition": "LUL130 activation in tested preparation",
+          "observable": "hindleg elevation/swing initiation",
+          "relation": "elicited",
+          "evidence_class": "causal_perturbation",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "qualitative evidence within stated scope; not an automatic universal hard constraint"
+        }
+      ]
+    },
+    {
+      "id": "vnc:MN_recruitment_and_rest",
+      "pointer": "/vnc_walking_evidence/records/16",
+      "phenomenon": "Slow MNs typically recruit before intermediate then fast MNs. Slow cells can spike near 30 Hz at rest while fast/intermediate cells are silent; pools differ in force regime.",
+      "source": "https://doi.org/10.7554/eLife.56754",
+      "evidence": [
+        "whole-cell electrophysiology",
+        "EMG",
+        "force measurement",
+        "behavioral perturbation"
+      ],
+      "natural_walking_recording": false,
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel",
+      "testable_observations": [
+        {
+          "condition": "typical voluntary tibia flexion",
+          "observable": "recruitment order",
+          "relation": "slow before intermediate before fast; exceptions allowed",
+          "evidence_class": "measured_electrophysiology",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "qualitative evidence within stated scope; not an automatic universal hard constraint"
+        },
+        {
+          "condition": "rest under recorded conditions",
+          "observable": "slow MN firing",
+          "relation": "approximately 30 Hz",
+          "evidence_class": "measured_electrophysiology",
+          "numeric_value": 30,
+          "unit": "Hz",
+          "constraint_policy": "qualitative evidence within stated scope; not an automatic universal hard constraint"
+        }
+      ]
+    },
+    {
+      "id": "vnc:MN_reflex_reversal",
+      "pointer": "/vnc_walking_evidence/records/17",
+      "phenomenon": "Extension usually evokes excitatory PSPs in flexor MNs (resistance reflex), but occasionally produces inhibitory PSPs during active movement. Slow MNs are particularly sensitive to small displacement.",
+      "source": "https://doi.org/10.7554/eLife.56754",
+      "evidence": [
+        "whole-cell electrophysiology",
+        "controlled joint movement"
+      ],
+      "natural_walking_recording": false,
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel",
+      "testable_observations": [
+        {
+          "condition": "passive tibia extension",
+          "observable": "flexor MN sensory PSP",
+          "relation": "usually excitatory",
+          "evidence_class": "measured_electrophysiology",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "qualitative evidence within stated scope; not an automatic universal hard constraint"
+        },
+        {
+          "condition": "extension stimulus during some active movements",
+          "observable": "flexor MN sensory PSP",
+          "relation": "can reverse to inhibitory",
+          "evidence_class": "measured_electrophysiology",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "qualitative evidence within stated scope; not an automatic universal hard constraint"
+        }
+      ]
+    },
+    {
+      "id": "vnc:MN_selective_derecruitment",
+      "pointer": "/vnc_walking_evidence/records/18",
+      "phenomenon": "Some rapid leg-waving bouts violate usual slow-to-fast recruitment; slow MN spiking appears inhibited despite other movement-related activity.",
+      "source": "https://doi.org/10.7554/eLife.56754",
+      "evidence": [
+        "whole-cell electrophysiology",
+        "behavioral correlation"
+      ],
+      "natural_walking_recording": false,
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel",
+      "testable_observations": [
+        {
+          "condition": "some rapid leg-waving bouts",
+          "observable": "slow MN activity",
+          "relation": "can be suppressed despite active movement",
+          "evidence_class": "measured_electrophysiology",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "qualitative evidence within stated scope; not an automatic universal hard constraint"
+        }
+      ]
+    },
+    {
+      "id": "vnc:VNC_population_walking_grooming",
+      "pointer": "/vnc_walking_evidence/records/24",
+      "phenomenon": "Population calcium maps show behavior-related spatial activity patterns; ROIs can have different walking/grooming associations.",
+      "source": "https://doi.org/10.1038/s41467-018-06857-z",
+      "evidence": [
+        "behaving two-photon calcium imaging"
+      ],
+      "natural_walking_recording": true,
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel",
+      "testable_observations": [
+        {
+          "condition": "natural walking versus grooming",
+          "observable": "VNC calcium spatial maps",
+          "relation": "behavior-dependent associations",
+          "evidence_class": "measured_association",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "qualitative evidence within stated scope; not an automatic universal hard constraint"
+        }
+      ]
+    },
+    {
+      "id": "vnc:active_passive_stride_signal_context",
+      "pointer": "/vnc_walking_evidence/records/39",
+      "phenomenon": "HS voltage is stride-coupled and has side-dependent phase relationships during walking. Passive motion induces weaker oscillations with an opposite phase relation under this assay. The readout is a membrane-potential component, not a spike-rate oscillation.",
+      "source": "https://doi.org/10.1016/j.neuron.2022.04.008",
+      "evidence": [
+        "whole-cell electrophysiology",
+        "leg tracking",
+        "passive mechanical perturbation"
+      ],
+      "natural_walking_recording": true,
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel",
+      "testable_observations": [
+        {
+          "condition": "walking versus passive one-front-leg motion",
+          "observable": "HS oscillation amplitude",
+          "relation": "walking larger in reported assay",
+          "evidence_class": "measured_electrophysiology",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "within the stated assay/population; not a universal hard neural constraint"
+        },
+        {
+          "condition": "same comparison",
+          "observable": "HS phase relative to leg motion",
+          "relation": "different/opposite in tested assay",
+          "evidence_class": "measured_electrophysiology",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "within the stated assay/population; not a universal hard neural constraint"
+        }
+      ]
+    },
+    {
+      "id": "vnc:chief_9A_hook_gating",
+      "pointer": "/vnc_walking_evidence/records/0",
+      "phenomenon": "9A calcium increases during self-generated leg movements; hook axon signals are suppressed during walking/grooming while claw position signals are retained. Passive displacement does not equivalently recruit 9A.",
+      "source": "https://doi.org/10.1038/s41586-025-09554-2",
+      "evidence": [
+        "behaving calcium imaging",
+        "EM connectivity",
+        "optogenetic perturbation"
+      ],
+      "natural_walking_recording": true,
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel",
+      "testable_observations": [
+        {
+          "condition": "self-generated walking/grooming versus rest/passive displacement",
+          "observable": "9A calcium",
+          "relation": "increased",
+          "evidence_class": "measured_association",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "qualitative evidence within stated scope; not an automatic universal hard constraint"
+        },
+        {
+          "condition": "self-generated walking/grooming",
+          "observable": "hook axonal transmission relative to passive movement prediction",
+          "relation": "suppressed",
+          "evidence_class": "measured_association",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "qualitative evidence within stated scope; not an automatic universal hard constraint"
+        },
+        {
+          "condition": "same voluntary movement context",
+          "observable": "claw position channel",
+          "relation": "retained; not suppressed like hook",
+          "evidence_class": "measured_association",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "qualitative evidence within stated scope; not an automatic universal hard constraint"
+        }
+      ]
+    },
+    {
+      "id": "vnc:chordotonal_silencing_all_speed_kinematics",
+      "pointer": "/vnc_walking_evidence/records/30",
+      "phenomenon": "Chordotonal silencing reduces step frequency and increases step length across tested speed bins, with larger kinematic deviations at faster speeds. Interleg coordination is affected relatively little compared with single-leg kinematics.",
+      "source": "https://doi.org/10.1016/j.cub.2024.08.006",
+      "evidence": [
+        "genetic silencing",
+        "walking 3D kinematics"
+      ],
+      "natural_walking_recording": false,
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel",
+      "testable_observations": [
+        {
+          "condition": "iav-GAL4>Kir2.1 at matched walking speeds",
+          "observable": "step frequency",
+          "relation": "lower than controls across tested bins",
+          "evidence_class": "causal_perturbation",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "scope-limited evidence; not automatically a universal hard constraint"
+        },
+        {
+          "condition": "same manipulation",
+          "observable": "step length",
+          "relation": "larger than controls",
+          "evidence_class": "causal_perturbation",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "scope-limited evidence; not automatically a universal hard constraint"
+        }
+      ]
+    },
+    {
+      "id": "vnc:dMAN_pushdown",
+      "pointer": "/vnc_walking_evidence/records/9",
+      "phenomenon": "Calcium events correlate with six-leg pushdown behavior, rather than serving as a simple backward-walking activity label.",
+      "source": "https://doi.org/10.1038/s41467-018-06857-z",
+      "evidence": [
+        "behaving calcium imaging"
+      ],
+      "natural_walking_recording": false,
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel",
+      "testable_observations": [
+        {
+          "condition": "natural six-leg pushdown bouts",
+          "observable": "dMAN calcium",
+          "relation": "increased",
+          "evidence_class": "measured_association",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "qualitative evidence within stated scope; not an automatic universal hard constraint"
+        }
+      ]
+    },
+    {
+      "id": "vnc:hemilineage10B_population_activation",
+      "pointer": "/vnc_walking_evidence/records/15",
+      "phenomenon": "Broad 10B activation causes erratic leg movements and pivoting, with net movement often backward. This differs from the walking-pausing phenotype obtained by stimulating identified 10Balpha cells.",
+      "source": "https://doi.org/10.7554/eLife.04493",
+      "evidence": [
+        "thermogenetic population activation",
+        "behavioral video"
+      ],
+      "natural_walking_recording": false,
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel",
+      "testable_observations": [
+        {
+          "condition": "broad 10B heat activation in decapitated adult",
+          "observable": "net movement",
+          "relation": "often backward-biased, erratic",
+          "evidence_class": "causal_perturbation",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "qualitative evidence within stated scope; not an automatic universal hard constraint"
+        }
+      ]
+    },
+    {
+      "id": "vnc:hemilineage13B_tonic_posture",
+      "pointer": "/vnc_walking_evidence/records/27",
+      "phenomenon": "Progressive lateral leg extension and tarsal elevation can leave animals resting on their coxae; this is a tonic postural phenotype rather than coordinated walking.",
+      "source": "https://doi.org/10.7554/eLife.04493",
+      "evidence": [
+        "thermogenetic population activation",
+        "behavioral video"
+      ],
+      "natural_walking_recording": false,
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel",
+      "testable_observations": [
+        {
+          "condition": "13B thermal activation in decapitated",
+          "observable": "posture",
+          "relation": "tonic lateral leg extension and raised tarsi",
+          "evidence_class": "causal_perturbation",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "qualitative evidence within stated scope; not an automatic universal hard constraint"
+        }
+      ]
+    },
+    {
+      "id": "vnc:hemilineage19A_segmental_movement",
+      "pointer": "/vnc_walking_evidence/records/28",
+      "phenomenon": "T2 legs wave continuously during stimulation while T1/T3 legs remain stationary in the tested preparation.",
+      "source": "https://doi.org/10.7554/eLife.04493",
+      "evidence": [
+        "thermogenetic population activation",
+        "behavioral video"
+      ],
+      "natural_walking_recording": false,
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel",
+      "testable_observations": [
+        {
+          "condition": "19A thermal activation in decapitated",
+          "observable": "T2 versus T1/T3 movement",
+          "relation": "T2 waving with T1/T3 stationary in tested preparation",
+          "evidence_class": "causal_perturbation",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "qualitative evidence within stated scope; not an automatic universal hard constraint"
+        }
+      ]
+    },
+    {
+      "id": "vnc:hemilineage1A_forward",
+      "pointer": "/vnc_walking_evidence/records/26",
+      "phenomenon": "The animals move forward with clear intersegmental limb coordination, but erratic stepping that is not the normal intact-fly tripod gait.",
+      "source": "https://doi.org/10.7554/eLife.04493",
+      "evidence": [
+        "thermogenetic population activation",
+        "behavioral video"
+      ],
+      "natural_walking_recording": false,
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel",
+      "testable_observations": [
+        {
+          "condition": "1A thermal activation in decapitated",
+          "observable": "forward displacement and intersegmental leg coordination",
+          "relation": "elicited; not normal tripod gait",
+          "evidence_class": "causal_perturbation",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "qualitative evidence within stated scope; not an automatic universal hard constraint"
+        }
+      ]
+    },
+    {
+      "id": "vnc:hemilineage23B_intersegmental_movement",
+      "pointer": "/vnc_walking_evidence/records/29",
+      "phenomenon": "Increasing thermal drive produces higher-frequency intersegmental leg movements, while coordination of joints within a leg remains poor.",
+      "source": "https://doi.org/10.7554/eLife.04493",
+      "evidence": [
+        "thermogenetic population activation",
+        "behavioral video"
+      ],
+      "natural_walking_recording": false,
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel",
+      "testable_observations": [
+        {
+          "condition": "23B thermal activation in decapitated",
+          "observable": "leg coordination",
+          "relation": "intersegmental movement frequency rises; intraleg coordination poor",
+          "evidence_class": "causal_perturbation",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "qualitative evidence within stated scope; not an automatic universal hard constraint"
+        }
+      ]
+    },
+    {
+      "id": "vnc:inhibition_gates_sensory_adaptation",
+      "pointer": "/vnc_walking_evidence/records/43",
+      "phenomenon": "Some tested cells reveal sensory-evoked calcium only after picrotoxin. 10Ba club responses and 13Bb hook-extension responses adapt during prolonged activation, with adaptation shaped by inhibition; 13Ba claw responses can remain elevated in the corresponding assay.",
+      "source": "https://doi.org/10.1016/j.cub.2021.09.035",
+      "evidence": [
+        "calcium imaging",
+        "prolonged sensory stimulation",
+        "inhibitory receptor pharmacology"
+      ],
+      "natural_walking_recording": false,
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel",
+      "testable_observations": [
+        {
+          "condition": "inhibitory receptor blockade during sensory stimulation",
+          "observable": "previously masked calcium responses",
+          "relation": "unmasked in tested classes",
+          "evidence_class": "pharmacological_perturbation",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "within the stated assay/population; not a universal hard neural constraint"
+        },
+        {
+          "condition": "prolonged club stimulation in tested 10Ba cells",
+          "observable": "calcium response",
+          "relation": "adapts; inhibition contributes to response dynamics",
+          "evidence_class": "pharmacological_perturbation",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "within the stated assay/population; not a universal hard neural constraint"
+        }
+      ]
+    },
+    {
+      "id": "vnc:mechanosensory_split_belt_feedback",
+      "pointer": "/vnc_walking_evidence/records/8",
+      "phenomenon": "During 40% belt-speed asymmetry, flies adapt spatial foot placement and stance distance, particularly through middle-leg adjustments. Stance duration did not detectably change across conditions in Fig. 5D.",
+      "source": "https://doi.org/10.1016/j.cub.2024.08.006",
+      "evidence": [
+        "sensory silencing",
+        "precise mechanical perturbation",
+        "3D kinematics"
+      ],
+      "natural_walking_recording": null,
+      "priority": 1,
+      "validation": "not_revalidated_in_joint_experimental_panel",
+      "testable_observations": [
+        {
+          "condition": "40% belt-speed asymmetry in tested protocol",
+          "observable": "middle-leg step/stance distance",
+          "relation": "changes to support forward heading",
+          "evidence_class": "behavioral_mechanical_perturbation",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "scope-limited evidence; not automatically a universal hard constraint"
+        },
+        {
+          "condition": "same split-belt condition",
+          "observable": "stance duration",
+          "relation": "no detected change in this experiment; not an exact equality law",
+          "evidence_class": "behavioral_mechanical_perturbation",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "scope-limited evidence; not automatically a universal hard constraint"
+        }
+      ]
+    },
+    {
+      "id": "structure:19B_19A:0",
+      "pointer": "/key_structures/22/confirmed/0",
+      "phenomenon": "19B→19A 抑制，前腿左右交替效应最强",
+      "tier": "preprint",
+      "source": "pugliese_2026_exp",
+      "priority": 2,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:19B_19A:3",
+      "pointer": "/key_structures/22/confirmed/3",
+      "phenomenon": "去掉前腿会削弱中/后腿左右耦合；前腿耦合最强；FeCO 沉默只轻微削弱耦合，不是必需",
+      "tier": "preprint",
+      "source": "pugliese_2026_exp",
+      "priority": 2,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:DNa03:0",
+      "pointer": "/key_structures/8/confirmed/0",
+      "phenomenon": "单侧沉默使角速度向对侧偏置",
+      "tier": "preprint",
+      "source": "feng_2024_lal013",
+      "priority": 2,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:DNa03:1",
+      "pointer": "/key_structures/8/confirmed/1",
+      "phenomenon": "目标导向导航/航向修正所必需；PFL3/LAL121 下游",
+      "tier": "preprint",
+      "source": "feng_2024_lal013",
+      "priority": 2,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:DNg16:0",
+      "pointer": "/key_structures/12/confirmed/0",
+      "phenomenon": "单独激活不引发行走",
+      "tier": "preprint",
+      "source": "pugliese_2026_exp",
+      "priority": 2,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:DNg16:1",
+      "pointer": "/key_structures/12/confirmed/1",
+      "phenomenon": "与 DNg100 共激活 -> 速度和步频没有升高，反而小幅下降",
+      "tier": "preprint",
+      "source": "pugliese_2026_exp",
+      "priority": 2,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:DNg55:0",
+      "pointer": "/key_structures/11/confirmed/0",
+      "phenomenon": "单独激活不引发行走",
+      "tier": "preprint",
+      "source": "pugliese_2026_exp",
+      "priority": 2,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:DNg55:1",
+      "pointer": "/key_structures/11/confirmed/1",
+      "phenomenon": "与 DNg100 共激活 -> 步频显著升高，但协调下降、变异升高、步幅缩短",
+      "tier": "preprint",
+      "source": "pugliese_2026_exp",
+      "priority": 2,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:DNg75:0",
+      "pointer": "/key_structures/9/confirmed/0",
+      "phenomenon": "单独激活不引发行走",
+      "tier": "preprint",
+      "source": "pugliese_2026_exp",
+      "priority": 2,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:DNg75:1",
+      "pointer": "/key_structures/9/confirmed/1",
+      "phenomenon": "与 DNg100 共激活 -> 步频和三足协调显著升高",
+      "tier": "preprint",
+      "source": "pugliese_2026_exp",
+      "priority": 2,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:DNg75:2",
+      "pointer": "/key_structures/9/confirmed/2",
+      "phenomenon": "位于 FeCO/CPG 基序上游",
+      "tier": "preprint",
+      "source": "pugliese_2026_exp",
+      "priority": 2,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:DNg97:0",
+      "pointer": "/key_structures/10/confirmed/0",
+      "phenomenon": "单独激活 -> 慢速前行",
+      "tier": "preprint",
+      "source": "pugliese_2026_exp",
+      "priority": 2,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:DNg97:1",
+      "pointer": "/key_structures/10/confirmed/1",
+      "phenomenon": "与 DNg100 共激活 -> 速度、步频、三足协调大幅升高，接近 BPN 水平；步幅略增",
+      "tier": "preprint",
+      "source": "pugliese_2026_exp",
+      "priority": 2,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:DNg97:2",
+      "pointer": "/key_structures/10/confirmed/2",
+      "phenomenon": "驱动前腿左右交替、前腿关节角改变",
+      "tier": "preprint",
+      "source": "pugliese_2026_exp",
+      "priority": 2,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "vnc:10Ba_intersegmental_functional_map",
+      "pointer": "/vnc_walking_evidence/records/41",
+      "phenomenon": "Stimulating T1L club afferents evokes local T1L and intersegmental T2R 10Ba responses. MLA eliminates the T2R response but leaves a local residual. A six-by-six response map shows leg-dependent intersegmental routing.",
+      "source": "https://doi.org/10.1016/j.cub.2021.09.035",
+      "evidence": [
+        "targeted sensory optogenetics",
+        "six-neuromere calcium map",
+        "receptor pharmacology",
+        "EM connectivity"
+      ],
+      "natural_walking_recording": false,
+      "priority": 2,
+      "validation": "not_revalidated_in_joint_experimental_panel",
+      "testable_observations": [
+        {
+          "condition": "T1L club stimulation",
+          "observable": "10Ba calcium in T1L and T2R",
+          "relation": "evoked in both regions",
+          "evidence_class": "evoked_neural_response",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "within the stated assay/population; not a universal hard neural constraint"
+        },
+        {
+          "condition": "MLA during T1L club stimulation",
+          "observable": "local versus T2R response",
+          "relation": "T2R abolished while local residual remains",
+          "evidence_class": "pharmacological_perturbation",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "within the stated assay/population; not a universal hard neural constraint"
+        }
+      ]
+    },
+    {
+      "id": "vnc:BANC_local_feedback_architecture",
+      "pointer": "/vnc_walking_evidence/records/22",
+      "phenomenon": "Effectors are primarily influenced by sensory neurons from the same body part; local loops are linked by ascending/descending, behavior-centered modules.",
+      "source": "https://doi.org/10.1038/s41586-026-10735-w",
+      "evidence": [
+        "EM connectomics"
+      ],
+      "natural_walking_recording": false,
+      "priority": 2,
+      "validation": "not_revalidated_in_joint_experimental_panel",
+      "testable_observations": [
+        {
+          "condition": "BANC EM connectivity",
+          "observable": "effector sensory inputs",
+          "relation": "primarily body-part-local loops linked by long-range modules",
+          "evidence_class": "connectome_inference",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "qualitative evidence within stated scope; not an automatic universal hard constraint"
+        }
+      ]
+    },
+    {
+      "id": "vnc:BRK_processed_example_alignment",
+      "pointer": "/vnc_walking_evidence/records/34",
+      "phenomenon": "The processed example shows positive correlations between front BRK1/2 and front-leg-rub regressors, and hind BRK5/6 and hind-leg-rub regressors. This is a secondary descriptive check of the published example, not a new population experiment.",
+      "source": "https://doi.org/10.1038/s41586-024-07854-7",
+      "evidence": [
+        "source-data inspection",
+        "descriptive secondary analysis"
+      ],
+      "natural_walking_recording": true,
+      "priority": 2,
+      "validation": "not_revalidated_in_joint_experimental_panel",
+      "testable_observations": [
+        {
+          "condition": "provided Fig. 6e processed example only",
+          "observable": "BRK1 versus convolved front-leg rub",
+          "relation": "positive Pearson correlation",
+          "evidence_class": "secondary_data_check",
+          "numeric_value": 0.4102434780992851,
+          "unit": "Pearson r",
+          "constraint_policy": "scope-limited evidence; not automatically a universal hard constraint"
+        },
+        {
+          "condition": "same processed example",
+          "observable": "BRK6 versus convolved hind-leg rub",
+          "relation": "positive Pearson correlation",
+          "evidence_class": "secondary_data_check",
+          "numeric_value": 0.4944821430467986,
+          "unit": "Pearson r",
+          "constraint_policy": "scope-limited evidence; not automatically a universal hard constraint"
+        }
+      ]
+    },
+    {
+      "id": "vnc:BRK_stance_gated_braking",
+      "pointer": "/vnc_walking_evidence/records/11",
+      "phenomenon": "Mid-swing stimulation lets the ongoing swing finish, then locks the leg on landing. Mid-stance stimulation locks the leg immediately. BRK arrests MDN- or BDN2-driven stepping even without the head, supporting a VNC-specific braking component.",
+      "source": "https://doi.org/10.1038/s41586-024-07854-7",
+      "evidence": [
+        "phase-specific optogenetics",
+        "leg kinematics",
+        "decapitated intervention"
+      ],
+      "natural_walking_recording": false,
+      "priority": 2,
+      "validation": "not_revalidated_in_joint_experimental_panel",
+      "testable_observations": [
+        {
+          "condition": "BRK activation during stance",
+          "observable": "continued leg stepping",
+          "relation": "arrested",
+          "evidence_class": "causal_perturbation",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "qualitative evidence within stated scope; not an automatic universal hard constraint"
+        },
+        {
+          "condition": "BRK activation mid-swing",
+          "observable": "ongoing swing",
+          "relation": "completes before arrest on contact",
+          "evidence_class": "causal_perturbation",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "qualitative evidence within stated scope; not an automatic universal hard constraint"
+        }
+      ]
+    },
+    {
+      "id": "vnc:CPG_pruning_solution_variability",
+      "pointer": "/vnc_walking_evidence/records/31",
+      "phenomenon": "Most frequent converged sets differ: MANC E1/E2/I1, mCNS and BANC E1/E2/I2, FANC E1/E2/E3/I2. Rare alternative sets also occur. These are pruning outcomes, not natural firing or empirical necessity of I1.",
+      "source": "https://doi.org/10.1038/s41586-026-11195-y",
+      "evidence": [
+        "published supplementary model results"
+      ],
+      "natural_walking_recording": false,
+      "priority": 2,
+      "validation": "not_revalidated_in_joint_experimental_panel",
+      "testable_observations": [
+        {
+          "condition": "published pruning screens for each dataset",
+          "observable": "converged circuit identity",
+          "relation": "dataset-dependent alternatives include I1 or I2; FANC most frequent set also has E3",
+          "evidence_class": "model_prediction",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "scope-limited evidence; not automatically a universal hard constraint"
+        }
+      ]
+    },
+    {
+      "id": "vnc:CPG_screen_metric_version",
+      "pointer": "/vnc_walking_evidence/records/33",
+      "phenomenon": "Published Table 1 reports mean motor rhythmicity scores 0.973341 for MANC body 10093 and 0.959630 for body 10339, both DNg100. The inherited 0.840 value is retained as a legacy metric pending protocol/version reconciliation.",
+      "source": "https://doi.org/10.1038/s41586-026-11195-y",
+      "evidence": [
+        "published supplementary model screen"
+      ],
+      "natural_walking_recording": false,
+      "priority": 2,
+      "validation": "not_revalidated_in_joint_experimental_panel",
+      "testable_observations": [
+        {
+          "condition": "published Table 1 screen; body 10093",
+          "observable": "mean motor rhythmicity score",
+          "relation": "reported value",
+          "evidence_class": "model_prediction",
+          "numeric_value": 0.973341,
+          "unit": "dimensionless",
+          "constraint_policy": "scope-limited evidence; not automatically a universal hard constraint"
+        },
+        {
+          "condition": "published Table 1 screen; body 10339",
+          "observable": "mean motor rhythmicity score",
+          "relation": "reported value",
+          "evidence_class": "model_prediction",
+          "numeric_value": 0.95963,
+          "unit": "dimensionless",
+          "constraint_policy": "scope-limited evidence; not automatically a universal hard constraint"
+        }
+      ]
+    },
+    {
+      "id": "vnc:DNb08_load_dependent_rhythmic_output",
+      "pointer": "/vnc_walking_evidence/records/32",
+      "phenomenon": "DNb08-driven movements were more consistent with unloaded legs, while DNg100 reliably drove treadmill walking. DNb08 recruits tibia extensor but not coxa remotor MNs in the reported comparison; greater mechanosensory input to E4/E5 is an anatomical explanation to test.",
+      "source": "https://doi.org/10.1038/s41586-026-11195-y",
+      "evidence": [
+        "published experimental summary",
+        "connectome-guided hypothesis"
+      ],
+      "natural_walking_recording": false,
+      "priority": 2,
+      "validation": "not_revalidated_in_joint_experimental_panel",
+      "testable_observations": [
+        {
+          "condition": "DNb08 activation with unloaded versus loaded legs",
+          "observable": "rhythmic leg movement",
+          "relation": "more consistent when unloaded in reported experiments",
+          "evidence_class": "published_supplement_experimental_summary",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "scope-limited evidence; not automatically a universal hard constraint"
+        }
+      ]
+    },
+    {
+      "id": "vnc:FeCO_pathway_divergence",
+      "pointer": "/vnc_walking_evidence/records/6",
+      "phenomenon": "Claw/hook target local motor control networks; club-related signals preferentially integrate across legs and ascend to brain mechanosensory regions.",
+      "source": "https://doi.org/10.1038/s41467-025-59302-3",
+      "evidence": [
+        "EM connectomics"
+      ],
+      "natural_walking_recording": false,
+      "priority": 2,
+      "validation": "not_revalidated_in_joint_experimental_panel",
+      "testable_observations": [
+        {
+          "condition": "EM connectivity",
+          "observable": "claw/hook outputs",
+          "relation": "preferential local motor pathways",
+          "evidence_class": "connectome_inference",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "qualitative evidence within stated scope; not an automatic universal hard constraint"
+        },
+        {
+          "condition": "EM connectivity",
+          "observable": "club and 8B/10B pathways",
+          "relation": "multi-leg integration and ascending mechanosensory routing",
+          "evidence_class": "connectome_inference",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "qualitative evidence within stated scope; not an automatic universal hard constraint"
+        }
+      ]
+    },
+    {
+      "id": "vnc:MN_Rdl_GABAA_inhibition_walking",
+      "pointer": "/vnc_walking_evidence/records/35",
+      "phenomenon": "Reducing Rdl receptor expression reduces walking speed, swing/stance amplitude and the occupancy of three-leg swing concurrency. Fig. 4 has longer swing duration without a detectable stance-duration change. Adult-stage restriction gives similar deficits; protecting VNC expression with Tsh-Gal80 removes the walking phenotype. No specific upstream inhibitory interneuron was identified. ",
+      "source": "https://doi.org/10.1073/pnas.1713869115",
+      "evidence": [
+        "receptor RNAi",
+        "adult-stage restriction",
+        "spatial genetic control",
+        "high-speed walking kinematics"
+      ],
+      "natural_walking_recording": false,
+      "priority": 2,
+      "validation": "not_revalidated_in_joint_experimental_panel",
+      "testable_observations": [
+        {
+          "condition": "OK371 Rdl RNAi versus controls",
+          "observable": "walking speed",
+          "relation": "decreased",
+          "evidence_class": "causal_perturbation",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "within the stated assay/population; not a universal hard neural constraint"
+        },
+        {
+          "condition": "same broad-MN condition, Fig.4",
+          "observable": "swing and stance amplitudes",
+          "relation": "decreased",
+          "evidence_class": "causal_perturbation",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "within the stated assay/population; not a universal hard neural constraint"
+        },
+        {
+          "condition": "same broad-MN condition, Fig.4",
+          "observable": "swing duration / stance duration",
+          "relation": "swing longer; stance not detectably changed",
+          "evidence_class": "causal_perturbation",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "within the stated assay/population; not a universal hard neural constraint"
+        },
+        {
+          "condition": "Tsh-Gal80 protects VNC while brain knockdown remains",
+          "observable": "walking deficit",
+          "relation": "not detected in tested controls",
+          "evidence_class": "spatial_genetic_control",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "within the stated assay/population; not a universal hard neural constraint"
+        }
+      ]
+    },
+    {
+      "id": "vnc:MN_subset_Rdl_differential_kinematics",
+      "pointer": "/vnc_walking_evidence/records/36",
+      "phenomenon": "Subset-specific knockdown reduces walking speed and stance amplitude; swing amplitude is not detectably changed. Both swing and stance durations are longer, unlike the unchanged stance duration in the broad-driver Fig.4 comparison.",
+      "source": "https://doi.org/10.1073/pnas.1713869115",
+      "evidence": [
+        "subset receptor RNAi",
+        "walking kinematics"
+      ],
+      "natural_walking_recording": false,
+      "priority": 2,
+      "validation": "not_revalidated_in_joint_experimental_panel",
+      "testable_observations": [
+        {
+          "condition": "VGN subset Rdl RNAi",
+          "observable": "stance amplitude",
+          "relation": "decreased",
+          "evidence_class": "causal_perturbation",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "within the stated assay/population; not a universal hard neural constraint"
+        },
+        {
+          "condition": "same subset condition",
+          "observable": "swing amplitude",
+          "relation": "no detected change",
+          "evidence_class": "causal_perturbation",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "within the stated assay/population; not a universal hard neural constraint"
+        },
+        {
+          "condition": "same subset condition",
+          "observable": "swing and stance durations",
+          "relation": "both increased",
+          "evidence_class": "causal_perturbation",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "within the stated assay/population; not a universal hard neural constraint"
+        }
+      ]
+    },
+    {
+      "id": "vnc:campaniform_load_feedback_2026",
+      "pointer": "/vnc_walking_evidence/records/19",
+      "phenomenon": "The preprint reports muscle calcium responses to CS activation. CS silencing reduces achievable walking speed, with smaller and longer-lasting stance excursions and impaired interleg coordination/posture.",
+      "source": "https://doi.org/10.64898/2026.07.22.740025",
+      "evidence": [
+        "preprint",
+        "sensory optogenetics",
+        "muscle calcium",
+        "walking kinematics"
+      ],
+      "natural_walking_recording": false,
+      "priority": 2,
+      "validation": "not_revalidated_in_joint_experimental_panel",
+      "testable_observations": [
+        {
+          "condition": "CS inhibition during freely walking in preprint",
+          "observable": "speed, stance and coordination",
+          "relation": "reduced speed, shorter/longer-lasting stance excursions, impaired coordination",
+          "evidence_class": "preprint_perturbation_abstract",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "qualitative evidence within stated scope; not an automatic universal hard constraint"
+        }
+      ]
+    },
+    {
+      "id": "vnc:central_peripheral_coordination_2026",
+      "pointer": "/vnc_walking_evidence/records/21",
+      "phenomenon": "The preprint reports per-leg rhythms revealed by reduced proprioception; load/contact and descending signals shape intraleg movement; central coupling supports interleg coordination, with sensory/DN modulation.",
+      "source": "https://doi.org/10.64898/2026.04.29.721658",
+      "evidence": [
+        "preprint",
+        "sensory-deprivation behavior",
+        "connectome-guided circuit hypotheses"
+      ],
+      "natural_walking_recording": false,
+      "priority": 2,
+      "validation": "not_revalidated_in_joint_experimental_panel",
+      "testable_observations": [
+        {
+          "condition": "reduced proprioception in preprint",
+          "observable": "per-leg rhythm",
+          "relation": "persists/revealed; load and descending signals shape step microstructure",
+          "evidence_class": "preprint_behavior_abstract",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "qualitative evidence within stated scope; not an automatic universal hard constraint"
+        }
+      ]
+    },
+    {
+      "id": "vnc:fCO_subsets_kinematics_vs_coordination",
+      "pointer": "/vnc_walking_evidence/records/20",
+      "phenomenon": "Combined inhibition of subsets of club and hook resembles whole-fCO inhibition, whereas individually tested subsets do not strongly change spatial kinematics; effects on interleg temporal coordination are comparatively minor.",
+      "source": "https://doi.org/10.1242/jeb.244245",
+      "evidence": [
+        "sensory optogenetic inhibition",
+        "walking kinematics"
+      ],
+      "natural_walking_recording": false,
+      "priority": 2,
+      "validation": "not_revalidated_in_joint_experimental_panel",
+      "testable_observations": [
+        {
+          "condition": "tested fCO subset inhibition",
+          "observable": "interleg temporal coordination",
+          "relation": "comparatively minor effect in tested subsets",
+          "evidence_class": "perturbation_abstract",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "qualitative evidence within stated scope; not an automatic universal hard constraint"
+        }
+      ]
+    },
+    {
+      "id": "vnc:hemilineage21A_posture",
+      "pointer": "/vnc_walking_evidence/records/14",
+      "phenomenon": "Activation flexes femur-tibia joints and pulls legs toward the body; elimination produces abnormal walking with laterally protruding hindleg joint geometry.",
+      "source": "https://doi.org/10.7554/elife.106042",
+      "evidence": [
+        "population optogenetics",
+        "neuronal ablation",
+        "leg posture/behavior"
+      ],
+      "natural_walking_recording": false,
+      "priority": 2,
+      "validation": "not_revalidated_in_joint_experimental_panel",
+      "testable_observations": [
+        {
+          "condition": "21A activation in tethered preparation",
+          "observable": "femur-tibia flexion",
+          "relation": "increased",
+          "evidence_class": "causal_perturbation",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "qualitative evidence within stated scope; not an automatic universal hard constraint"
+        },
+        {
+          "condition": "developmental 21A elimination",
+          "observable": "hindleg posture",
+          "relation": "lateral protrusion and abnormal walking",
+          "evidence_class": "developmental_perturbation",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "qualitative evidence within stated scope; not an automatic universal hard constraint"
+        }
+      ]
+    },
+    {
+      "id": "vnc:hemilineage9A_population_activation",
+      "pointer": "/vnc_walking_evidence/records/13",
+      "phenomenon": "Activating the broad 9A population extends legs and can evoke erratic walking in decapitated flies; the movement stops with stimulus offset.",
+      "source": "https://doi.org/10.7554/elife.106042",
+      "evidence": [
+        "population optogenetics",
+        "behavioral video"
+      ],
+      "natural_walking_recording": false,
+      "priority": 2,
+      "validation": "not_revalidated_in_joint_experimental_panel",
+      "testable_observations": [
+        {
+          "condition": "broad 9A activation, >3 s, decapitated",
+          "observable": "leg posture/movement",
+          "relation": "extended legs and erratic locomotion",
+          "evidence_class": "causal_perturbation",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "qualitative evidence within stated scope; not an automatic universal hard constraint"
+        }
+      ]
+    },
+    {
+      "id": "vnc:putative_three_cell_CPG",
+      "pointer": "/vnc_walking_evidence/records/7",
+      "phenomenon": "Connectome simulations identify two excitatory and one inhibitory interneuron as a minimal rhythm-generating circuit across six legs/four datasets; DNb08-induced rhythmic leg movement is experimentally validated.",
+      "source": "https://doi.org/10.1038/s41586-026-11195-y",
+      "evidence": [
+        "connectome-constrained simulations",
+        "DNb08 optogenetic validation at pathway level"
+      ],
+      "natural_walking_recording": false,
+      "priority": 2,
+      "validation": "not_revalidated_in_joint_experimental_panel",
+      "testable_observations": [
+        {
+          "condition": "specified connectome dynamics under tonic input",
+          "observable": "minimal three-interneuron network output",
+          "relation": "oscillatory; necessity/sufficiency only in those simulations",
+          "evidence_class": "model_prediction",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "qualitative evidence within stated scope; not an automatic universal hard constraint"
+        }
+      ]
+    },
+    {
+      "id": "vnc:sensorimotor_delay_model",
+      "pointer": "/vnc_walking_evidence/records/23",
+      "phenomenon": "Simulated robustness deteriorates as sensorimotor delays exceed the tested physiological operating regime.",
+      "source": "https://doi.org/10.7554/eLife.99005",
+      "evidence": [
+        "computational model"
+      ],
+      "natural_walking_recording": false,
+      "priority": 2,
+      "validation": "not_revalidated_in_joint_experimental_panel",
+      "testable_observations": [
+        {
+          "condition": "increased feedback/actuation delay in specific controller model",
+          "observable": "perturbation robustness",
+          "relation": "decreases outside tested regime",
+          "evidence_class": "model_prediction",
+          "numeric_value": null,
+          "unit": null,
+          "constraint_policy": "qualitative evidence within stated scope; not an automatic universal hard constraint"
+        }
+      ]
+    },
+    {
+      "id": "structure:DNb08:1",
+      "pointer": "/key_structures/1/confirmed/1",
+      "phenomenon": "其通路汇聚到 E1-E2-E4-E5-I2 五神经元 motif",
+      "tier": "model",
+      "source": "pugliese_nature_2026",
+      "priority": 3,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:DNg100:1",
+      "pointer": "/key_structures/0/confirmed/1",
+      "phenomenon": "933 个兴奋性 DN 节律筛查第一",
+      "tier": "model",
+      "source": "pugliese_nature_2026",
+      "priority": 3,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:DNg100:2",
+      "pointer": "/key_structures/0/confirmed/2",
+      "phenomenon": "固定电流剂量–反应（仓库 scores.csv 等三份表，512 组重复 × 180–340，推断为本型）",
+      "tier": "model",
+      "source": "pugliese_nature_2026",
+      "priority": 3,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:E1_E2_E4_E5_I2:0",
+      "pointer": "/key_structures/21/confirmed/0",
+      "phenomenon": "DNb08 通路汇聚到该五神经元网络；与 E1-E2-I1 共享同一 E/I motif",
+      "tier": "model",
+      "source": "pugliese_nature_2026",
+      "priority": 3,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:E1_E2_I1:0",
+      "pointer": "/key_structures/20/confirmed/0",
+      "phenomenon": "正式补充表显示模型剪枝存在不同候选解：MANC 常见 E1/E2/I1，mCNS/BANC 常见 E1/E2/I2；FANC 最常见解还包含 E3。不得解读为 I1 在所有数据集均为唯一必要抑制单元。",
+      "tier": "model",
+      "source": "pugliese_nature_2026",
+      "priority": 3,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:E1_E2_I1:1",
+      "pointer": "/key_structures/20/confirmed/1",
+      "phenomenon": "DNg100 与 DNb08 两条下行通路都汇聚到 E1/E2 节点",
+      "tier": "model",
+      "source": "pugliese_nature_2026",
+      "priority": 3,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:E1_E2_I1:2",
+      "pointer": "/key_structures/20/confirmed/2",
+      "phenomenon": "E1/E2 沉默取消节律；I1/I2 单独不是必需",
+      "tier": "model",
+      "source": "pugliese_nature_2026",
+      "priority": 3,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:E1_E2_I1:3",
+      "pointer": "/key_structures/20/confirmed/3",
+      "phenomenon": "独立 spiking 复现：tonic drive 6.9-15.4 Hz（约 14 Hz）",
+      "tier": "model",
+      "source": "zenodo_replication_2026",
+      "priority": 3,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:E1_E2_I1:4",
+      "pointer": "/key_structures/20/confirmed/4",
+      "phenomenon": "独立复现中移除 I1/I2/adaptation 后节律反而增强（rhythm score 14.97 → 23.53），提示抑制是分布的",
+      "tier": "model",
+      "source": "zenodo_replication_2026",
+      "priority": 3,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    },
+    {
+      "id": "structure:PFL3_EPG_CX:2",
+      "pointer": "/key_structures/17/confirmed/2",
+      "phenomenon": "PFL3 R−L 随方向误差呈正弦变化，像 resolver servomechanism；非线性是必需的（线性时目标项抵消）",
+      "tier": "model",
+      "source": "westeinde_2022",
+      "priority": 3,
+      "validation": "not_revalidated_in_joint_experimental_panel"
+    }
+  ],
+  "count": 126,
+  "warning": "Overlapping literature observations, not independent tests; no majority-pass claim. Existing scoped baseline results remain in phenomena-audit.json.",
+  "joint_objective": "Match response directions across available measured circuits using shared bounded unknown parameters. Preserve per-assay identity and context; no calcium-to-Hz conversion.",
+  "next_requirements": [
+    "verified dataset/version identity for MF14/LUL130 and brain steering populations",
+    "presynaptic sensory axon compartments and calibrated sensory stimuli for 9A/hook/claw",
+    "brain and proprioceptive feedback for step-phase steering and stopping",
+    "condition-matched readouts for FG/BB/BRK, MDN behavior and hunger state"
+  ]
+}
