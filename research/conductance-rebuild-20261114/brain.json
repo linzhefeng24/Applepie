@@ -247247,6 +247247,15 @@
     "report": "ASYMMETRY.md",
     "minimum_single_leg_motion_supported": true,
     "six_leg_walking_validated": false,
-    "fine_E2_residual_periodic_MN": 1
+    "fine_E2_residual_periodic_MN": 1,
+    "gain_reduction_followup": {
+      "scale": 0.5,
+      "RF_range_deg": 50.28516195133657,
+      "mean_input_range_deg": 5.099840454635348,
+      "mean_input_peaks": 0,
+      "joint_upper_limit_fraction": 0.0,
+      "fine_step_test_pending": true,
+      "six_leg_walking_validated": false
+    }
   }
 }

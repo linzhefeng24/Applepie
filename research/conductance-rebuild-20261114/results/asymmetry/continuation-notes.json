@@ -1,0 +1,23 @@
+{
+  "source": "independently run continuation, not historical recovery",
+  "excitation_probe": {
+    "command": "OPENBLAS_NUM_THREADS=1 NUMBA_NUM_THREADS=1 python excitation_probe.py",
+    "shared_change": "Ti extensor MN excitatory_gain x0.75, with selected Ti flexor gate_speed x0.85",
+    "dt_ms": 0.00625,
+    "baseline_periodic_MN": 41,
+    "E2_ablated_periodic_MN": 1,
+    "residual_id": 26132,
+    "residual_type": "Sternotrochanter MN",
+    "residual_hz": 5.0761421319796955,
+    "strict_multispike_burst": false,
+    "accepted_as_ablation_solution": false
+  },
+  "saturation_search": {
+    "predeclared_scales": [0.75, 0.5],
+    "changed": "one uniform scale on fixed NMJ gains before clipping, same actual neural spikes",
+    "command_prepare": "OPENBLAS_NUM_THREADS=1 /workspace/server-motor-import/.venv/bin/python reduce_saturation.py --prepare",
+    "command_body": "MUJOCO_GL=egl OPENBLAS_NUM_THREADS=1 /workspace/reproduction/.venv/bin/python reduce_saturation.py",
+    "initial_failed_launch": "Body-only environment lacked numba when importing neural preparation; split preparation and replay into existing pinned environments; no scientific result from failed launch."
+  },
+  "randomness": "deterministic integration; no newly added stochastic input"
+}

@@ -1,0 +1,9 @@
+{
+  "joint_limits_deg": [
+    -77.34930234266115,
+    74.48451336700703
+  ],
+  "fraction_samples_within_1degree_of_upper_limit": 0.5038320559813395,
+  "RF_extensor_fraction_activation_above_0_95": 0.1599466844385205,
+  "RF_flexor_fraction_activation_above_0_95": 0.0
+}

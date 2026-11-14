@@ -1,0 +1,9 @@
+{
+  "checks_passed": true,
+  "scope": "saved exploratory gain-half physical run and matched mean; not a neural/fine-step convergence test",
+  "criteria": [
+    "repeated RF motion and upright",
+    "no upper-limit occupancy within one degree",
+    "no repeated motion in upright matched-mean control"
+  ]
+}

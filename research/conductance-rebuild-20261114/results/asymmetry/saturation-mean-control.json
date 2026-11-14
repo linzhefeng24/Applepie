@@ -1,0 +1,13 @@
+[
+  {
+    "input_mode": "mean-",
+    "uniform_readout_scale": 0.5,
+    "RF_range_deg": 5.099840454635348,
+    "peaks": 0,
+    "troughs": 0,
+    "min_body_up": 0.9438451227898532,
+    "fraction_near_upper_limit": 0.0,
+    "passes_repetition_and_upright": false,
+    "no_reset_or_rescue": true
+  }
+]

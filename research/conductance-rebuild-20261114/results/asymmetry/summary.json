@@ -387,5 +387,44 @@
       "native_activation_max_error": 0.0
     }
   ],
-  "SK_hypothesis": "extensor SK_scale=0.5 failed to remove residual: E2=1, baseline=42 periodic MN"
+  "SK_hypothesis": "extensor SK_scale=0.5 failed to remove residual: E2=1, baseline=42 periodic MN",
+  "gain_reduction_followup": {
+    "rhythmic": [
+      {
+        "uniform_readout_scale": 0.75,
+        "RF_range_deg": 45.069422350759034,
+        "peaks": 4,
+        "troughs": 5,
+        "min_body_up": 0.8992390067228865,
+        "fraction_near_upper_limit": 0.31866666666666665,
+        "passes_repetition_and_upright": true,
+        "no_reset_or_rescue": true
+      },
+      {
+        "uniform_readout_scale": 0.5,
+        "RF_range_deg": 50.28516195133657,
+        "peaks": 4,
+        "troughs": 5,
+        "min_body_up": 0.9145375345739717,
+        "fraction_near_upper_limit": 0.0,
+        "passes_repetition_and_upright": true,
+        "no_reset_or_rescue": true
+      }
+    ],
+    "matched_mean": [
+      {
+        "input_mode": "mean-",
+        "uniform_readout_scale": 0.5,
+        "RF_range_deg": 5.099840454635348,
+        "peaks": 0,
+        "troughs": 0,
+        "min_body_up": 0.9438451227898532,
+        "fraction_near_upper_limit": 0.0,
+        "passes_repetition_and_upright": false,
+        "no_reset_or_rescue": true
+      }
+    ],
+    "fine_step_validation": "not run for this new readout scale",
+    "six_leg_gait": false
+  }
 }

@@ -2,7 +2,7 @@
 from pathlib import Path
 import hashlib,json,subprocess
 R=Path(__file__).resolve().parent
-paths=subprocess.check_output(['git','ls-files','--cached','--others','--exclude-standard','-z','--',str(R)],cwd=R).decode().split('\0')
+paths=subprocess.check_output(['git','ls-files','--full-name','--cached','--others','--exclude-standard','-z','--',str(R)],cwd=R).decode().split('\0')
 root=Path(subprocess.check_output(['git','rev-parse','--show-toplevel'],cwd=R).decode().strip());records=[]
 for name in sorted(set(paths)):
  p=root/name
