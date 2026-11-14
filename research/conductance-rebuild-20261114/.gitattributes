@@ -1,0 +1,2 @@
+# Preserve the original BOM/CRLF annotation CSV byte-for-byte.
+data/model-130-channel-candidate-crosswalk.csv -text whitespace=cr-at-eol

@@ -2,6 +2,11 @@
   "scope": "Versioned code, inputs, configs and actual outputs; caches excluded; this manifest excludes itself.",
   "artifacts": [
     {
+      "path": ".gitattributes",
+      "bytes": 137,
+      "sha256": "7384ef4f651e89b4ed0a0d7164951e40a03274d5ba927661e58b4a2ecf2340c9"
+    },
+    {
       "path": ".gitignore",
       "bytes": 25,
       "sha256": "594e65118e21b90bedd2100c193ed1ed0388bc0d03a0c33d7289386e48d5a159"
@@ -243,8 +248,8 @@
     },
     {
       "path": "report.py",
-      "bytes": 10303,
-      "sha256": "9ca19d83b5b7007609b637e4da9eef067b68fb59272a48923c0824c19410789c"
+      "bytes": 10264,
+      "sha256": "781a4b88118c55e0e7fcc9399e53b3f2b1d82092650d7534c7c5becd2ff21fea"
     },
     {
       "path": "reproduce.py",
@@ -258,8 +263,8 @@
     },
     {
       "path": "results/adult-MN-calibration.png",
-      "bytes": 115691,
-      "sha256": "ed74d6b5ccaf3afef3139b6c90421c0baf6713e80798eaf05c002b33020928ea"
+      "bytes": 115819,
+      "sha256": "a2011c6ea699010bea5c26c7b27dc0ee4f14c402afa5002e1f26ce8a81d333b8"
     },
     {
       "path": "results/adult-all-legs-probe.log",
@@ -788,8 +793,8 @@
     },
     {
       "path": "results/phenomena-audit.json",
-      "bytes": 14972,
-      "sha256": "4ee2fa7718503b50fc9ae820e5e2998fd84c3d3685dde981585209273589cdf9"
+      "bytes": 14973,
+      "sha256": "998bd77157f11c48ce9f9726b67b91436a48a7e2de03938e2cc48a85aa1e6d5e"
     },
     {
       "path": "results/regulatory-DN-tuning.json",
