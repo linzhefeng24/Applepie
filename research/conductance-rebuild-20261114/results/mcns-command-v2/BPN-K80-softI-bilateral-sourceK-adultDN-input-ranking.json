@@ -1,0 +1,418 @@
+[
+  {
+    "target_body_id": "10045",
+    "target_type": "DNg100",
+    "side": "L",
+    "source_conductance_ranking": [
+      {
+        "source_body_id": "11006",
+        "type": "DNge129",
+        "nt": "gaba",
+        "source_hz": 10.0,
+        "signed_weight": -521.0,
+        "fraction_rate_weight": 0.13114836630921814
+      },
+      {
+        "source_body_id": "10856",
+        "type": "DNge129",
+        "nt": "gaba",
+        "source_hz": 11.0,
+        "signed_weight": -417.0,
+        "fraction_rate_weight": 0.11546594170064944
+      },
+      {
+        "source_body_id": "516820",
+        "type": "GNG127",
+        "nt": "gaba",
+        "source_hz": 9.0,
+        "signed_weight": -310.0,
+        "fraction_rate_weight": 0.07023108291798821
+      },
+      {
+        "source_body_id": "11982",
+        "type": "GNG127",
+        "nt": "gaba",
+        "source_hz": 8.0,
+        "signed_weight": -262.0,
+        "fraction_rate_weight": 0.05276141569752807
+      },
+      {
+        "source_body_id": "26344",
+        "type": "GNG458",
+        "nt": "gaba",
+        "source_hz": 3.0,
+        "signed_weight": -493.0,
+        "fraction_rate_weight": 0.037230025675879776
+      },
+      {
+        "source_body_id": "512165",
+        "type": "GNG555",
+        "nt": "gaba",
+        "source_hz": 7.0,
+        "signed_weight": -183.0,
+        "fraction_rate_weight": 0.03224588430750642
+      },
+      {
+        "source_body_id": "10180",
+        "type": "AN02A002",
+        "nt": "glutamate",
+        "source_hz": 3.0,
+        "signed_weight": -417.0,
+        "fraction_rate_weight": 0.03149071137290439
+      },
+      {
+        "source_body_id": "512456",
+        "type": "GNG555",
+        "nt": "gaba",
+        "source_hz": 6.0,
+        "signed_weight": -206.0,
+        "fraction_rate_weight": 0.031113124905603383
+      },
+      {
+        "source_body_id": "10671",
+        "type": "AN02A002",
+        "nt": "glutamate",
+        "source_hz": 3.0,
+        "signed_weight": -381.0,
+        "fraction_rate_weight": 0.02877208880833711
+      },
+      {
+        "source_body_id": "12612",
+        "type": "GNG581",
+        "nt": "gaba",
+        "source_hz": 4.0,
+        "signed_weight": -256.0,
+        "fraction_rate_weight": 0.025776569501082414
+      },
+      {
+        "source_body_id": "12000",
+        "type": "DNge099",
+        "nt": "glutamate",
+        "source_hz": 6.0,
+        "signed_weight": -132.0,
+        "fraction_rate_weight": 0.01993656547349343
+      },
+      {
+        "source_body_id": "12039",
+        "type": "DNge135",
+        "nt": "gaba",
+        "source_hz": 6.0,
+        "signed_weight": -132.0,
+        "fraction_rate_weight": 0.01993656547349343
+      }
+    ],
+    "warning": "Approximate attribution; do not interpret this as measured transmitter conductance or fitted parameter"
+  },
+  {
+    "target_body_id": "10056",
+    "target_type": "DNg100",
+    "side": "R",
+    "source_conductance_ranking": [
+      {
+        "source_body_id": "10856",
+        "type": "DNge129",
+        "nt": "gaba",
+        "source_hz": 11.0,
+        "signed_weight": -481.0,
+        "fraction_rate_weight": 0.1327062954602458
+      },
+      {
+        "source_body_id": "11006",
+        "type": "DNge129",
+        "nt": "gaba",
+        "source_hz": 10.0,
+        "signed_weight": -460.0,
+        "fraction_rate_weight": 0.11537496864810634
+      },
+      {
+        "source_body_id": "516820",
+        "type": "GNG127",
+        "nt": "gaba",
+        "source_hz": 9.0,
+        "signed_weight": -270.0,
+        "fraction_rate_weight": 0.060948081264108354
+      },
+      {
+        "source_body_id": "11982",
+        "type": "GNG127",
+        "nt": "gaba",
+        "source_hz": 8.0,
+        "signed_weight": -253.0,
+        "fraction_rate_weight": 0.05076498620516679
+      },
+      {
+        "source_body_id": "26344",
+        "type": "GNG458",
+        "nt": "gaba",
+        "source_hz": 3.0,
+        "signed_weight": -512.0,
+        "fraction_rate_weight": 0.03852520692249812
+      },
+      {
+        "source_body_id": "10180",
+        "type": "AN02A002",
+        "nt": "glutamate",
+        "source_hz": 3.0,
+        "signed_weight": -390.0,
+        "fraction_rate_weight": 0.029345372460496615
+      },
+      {
+        "source_body_id": "10671",
+        "type": "AN02A002",
+        "nt": "glutamate",
+        "source_hz": 3.0,
+        "signed_weight": -381.0,
+        "fraction_rate_weight": 0.028668171557562076
+      },
+      {
+        "source_body_id": "12612",
+        "type": "GNG581",
+        "nt": "gaba",
+        "source_hz": 4.0,
+        "signed_weight": -261.0,
+        "fraction_rate_weight": 0.02618510158013544
+      },
+      {
+        "source_body_id": "512456",
+        "type": "GNG555",
+        "nt": "gaba",
+        "source_hz": 6.0,
+        "signed_weight": -164.0,
+        "fraction_rate_weight": 0.024680210684725357
+      },
+      {
+        "source_body_id": "512165",
+        "type": "GNG555",
+        "nt": "gaba",
+        "source_hz": 7.0,
+        "signed_weight": -136.0,
+        "fraction_rate_weight": 0.023877602207173314
+      },
+      {
+        "source_body_id": "12039",
+        "type": "DNge135",
+        "nt": "gaba",
+        "source_hz": 6.0,
+        "signed_weight": -154.0,
+        "fraction_rate_weight": 0.023175319789315276
+      },
+      {
+        "source_body_id": "12000",
+        "type": "DNge099",
+        "nt": "glutamate",
+        "source_hz": 6.0,
+        "signed_weight": -152.0,
+        "fraction_rate_weight": 0.02287434161023326
+      }
+    ],
+    "warning": "Approximate attribution; do not interpret this as measured transmitter conductance or fitted parameter"
+  },
+  {
+    "target_body_id": "13805",
+    "target_type": "DNg97",
+    "side": "L",
+    "source_conductance_ranking": [
+      {
+        "source_body_id": "519705",
+        "type": "VES104",
+        "nt": "gaba",
+        "source_hz": 6.0,
+        "signed_weight": -418.0,
+        "fraction_rate_weight": 0.11634811653367971
+      },
+      {
+        "source_body_id": "10872",
+        "type": "CB0677",
+        "nt": "gaba",
+        "source_hz": 6.0,
+        "signed_weight": -248.0,
+        "fraction_rate_weight": 0.06902950454629801
+      },
+      {
+        "source_body_id": "11982",
+        "type": "GNG127",
+        "nt": "gaba",
+        "source_hz": 8.0,
+        "signed_weight": -165.0,
+        "fraction_rate_weight": 0.06123585080719985
+      },
+      {
+        "source_body_id": "516680",
+        "type": "DNg64",
+        "nt": "gaba",
+        "source_hz": 6.0,
+        "signed_weight": -171.0,
+        "fraction_rate_weight": 0.047596956763778064
+      },
+      {
+        "source_body_id": "13445",
+        "type": "DNge046",
+        "nt": "gaba",
+        "source_hz": 10.0,
+        "signed_weight": -70.0,
+        "fraction_rate_weight": 0.032473557246242346
+      },
+      {
+        "source_body_id": "519773",
+        "type": "DNge119",
+        "nt": "glutamate",
+        "source_hz": 6.0,
+        "signed_weight": -107.0,
+        "fraction_rate_weight": 0.029782891074410837
+      },
+      {
+        "source_body_id": "521527",
+        "type": "LAL073",
+        "nt": "glutamate",
+        "source_hz": 4.0,
+        "signed_weight": -130.0,
+        "fraction_rate_weight": 0.024123213954351456
+      },
+      {
+        "source_body_id": "11222",
+        "type": "DNg111",
+        "nt": "glutamate",
+        "source_hz": 3.0,
+        "signed_weight": -170.0,
+        "fraction_rate_weight": 0.02365930599369085
+      },
+      {
+        "source_body_id": "12794",
+        "type": "DNg44",
+        "nt": "glutamate",
+        "source_hz": 9.0,
+        "signed_weight": -56.0,
+        "fraction_rate_weight": 0.02338096121729449
+      },
+      {
+        "source_body_id": "516820",
+        "type": "GNG127",
+        "nt": "gaba",
+        "source_hz": 9.0,
+        "signed_weight": -56.0,
+        "fraction_rate_weight": 0.02338096121729449
+      },
+      {
+        "source_body_id": "83661",
+        "type": "DNge046",
+        "nt": "gaba",
+        "source_hz": 10.0,
+        "signed_weight": -48.0,
+        "fraction_rate_weight": 0.022267582111709035
+      },
+      {
+        "source_body_id": "242405",
+        "type": "DNge046",
+        "nt": "gaba",
+        "source_hz": 12.0,
+        "signed_weight": -39.0,
+        "fraction_rate_weight": 0.02171089255891631
+      }
+    ],
+    "warning": "Approximate attribution; do not interpret this as measured transmitter conductance or fitted parameter"
+  },
+  {
+    "target_body_id": "230783",
+    "target_type": "DNg97",
+    "side": "R",
+    "source_conductance_ranking": [
+      {
+        "source_body_id": "10243",
+        "type": "VES104",
+        "nt": "gaba",
+        "source_hz": 5.0,
+        "signed_weight": -476.0,
+        "fraction_rate_weight": 0.11524307573116405
+      },
+      {
+        "source_body_id": "516820",
+        "type": "GNG127",
+        "nt": "gaba",
+        "source_hz": 9.0,
+        "signed_weight": -195.0,
+        "fraction_rate_weight": 0.08497966298663567
+      },
+      {
+        "source_body_id": "10215",
+        "type": "CB0677",
+        "nt": "gaba",
+        "source_hz": 7.0,
+        "signed_weight": -244.0,
+        "fraction_rate_weight": 0.08270385434824715
+      },
+      {
+        "source_body_id": "14234",
+        "type": "DNg64",
+        "nt": "gaba",
+        "source_hz": 7.0,
+        "signed_weight": -148.0,
+        "fraction_rate_weight": 0.05016463296533023
+      },
+      {
+        "source_body_id": "242405",
+        "type": "DNge046",
+        "nt": "gaba",
+        "source_hz": 12.0,
+        "signed_weight": -76.0,
+        "fraction_rate_weight": 0.044160371876815804
+      },
+      {
+        "source_body_id": "83661",
+        "type": "DNge046",
+        "nt": "gaba",
+        "source_hz": 10.0,
+        "signed_weight": -81.0,
+        "fraction_rate_weight": 0.03922138291690878
+      },
+      {
+        "source_body_id": "11706",
+        "type": "DNg111",
+        "nt": "glutamate",
+        "source_hz": 6.0,
+        "signed_weight": -132.0,
+        "fraction_rate_weight": 0.03834979662986636
+      },
+      {
+        "source_body_id": "11982",
+        "type": "GNG127",
+        "nt": "gaba",
+        "source_hz": 8.0,
+        "signed_weight": -71.0,
+        "fraction_rate_weight": 0.027503389502227388
+      },
+      {
+        "source_body_id": "22047",
+        "type": "AN00A006",
+        "nt": "gaba",
+        "source_hz": 4.0,
+        "signed_weight": -138.0,
+        "fraction_rate_weight": 0.02672864613596746
+      },
+      {
+        "source_body_id": "519773",
+        "type": "DNge119",
+        "nt": "glutamate",
+        "source_hz": 6.0,
+        "signed_weight": -85.0,
+        "fraction_rate_weight": 0.024694944799535153
+      },
+      {
+        "source_body_id": "10935",
+        "type": "GNG011",
+        "nt": "gaba",
+        "source_hz": 10.0,
+        "signed_weight": -48.0,
+        "fraction_rate_weight": 0.023242300987797792
+      },
+      {
+        "source_body_id": "10671",
+        "type": "AN02A002",
+        "nt": "glutamate",
+        "source_hz": 3.0,
+        "signed_weight": -148.0,
+        "fraction_rate_weight": 0.02149912841371296
+      }
+    ],
+    "warning": "Approximate attribution; do not interpret this as measured transmitter conductance or fitted parameter"
+  }
+]

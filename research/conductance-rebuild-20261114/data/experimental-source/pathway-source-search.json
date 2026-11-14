@@ -1,0 +1,247 @@
+[
+  {
+    "query": "DOI:10.1038/s41467-020-19936-x",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1038%2Fs41467-020-19936-x&format=json&pageSize=5",
+    "hitCount": 1,
+    "results": [
+      {
+        "id": "33268800",
+        "source": "MED",
+        "pmid": "33268800",
+        "pmcid": "PMC7710706",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC7710706"
+          ]
+        },
+        "doi": "10.1038/s41467-020-19936-x",
+        "title": "Distributed control of motor circuits for backward walking in Drosophila.",
+        "authorString": "Feng K, Sen R, Minegishi R, D\u00fcbbert M, Bockem\u00fchl T, B\u00fcschges A, Dickson BJ.",
+        "journalTitle": "Nat Commun",
+        "issue": "1",
+        "journalVolume": "11",
+        "pubYear": "2020",
+        "journalIssn": "2041-1723",
+        "pageInfo": "6166",
+        "pubType": "research support, non-u.s. gov't; research-article; journal article",
+        "isOpenAccess": "Y",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "citedByCount": 60,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "Y",
+        "hasBook": "N",
+        "hasSuppl": "Y",
+        "hasLabsLinks": "Y",
+        "hasTMAccessionNumbers": "N",
+        "firstPublicationDate": "2020-12-02",
+        "firstIndexDate": "2020-12-04"
+      }
+    ]
+  },
+  {
+    "query": "\"MF14\" AND Drosophila",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%22MF14%22+AND+Drosophila&format=json&pageSize=5",
+    "hitCount": 10,
+    "results": [
+      {
+        "id": "41756116",
+        "source": "MED",
+        "pmid": "41756116",
+        "pmcid": "PMC12933199",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12933199"
+          ]
+        },
+        "doi": "10.3389/fphar.2025.1720314",
+        "title": "Miquelianin and spiraeoside from &lt;i&gt;Filipendula ulmaria&lt;/i&gt; mitigate \u03b1-synuclein accumulation in &lt;i&gt;C.elegans&lt;/i&gt; and reduce the expression of neuroinflammatory cytokines in human microglia.",
+        "authorString": "Redl M, Weisenburger S, Wasilewicz A, Grienke U, Lehner MD, Bredenbr\u00f6ker D, Rollinger JM.",
+        "journalTitle": "Front Pharmacol",
+        "journalVolume": "16",
+        "pubYear": "2025",
+        "journalIssn": "1663-9812",
+        "pageInfo": "1720314",
+        "pubType": "research-article; journal article",
+        "isOpenAccess": "Y",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "citedByCount": 2,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "Y",
+        "hasBook": "N",
+        "hasSuppl": "Y",
+        "hasLabsLinks": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        },
+        "firstPublicationDate": "2026-02-11",
+        "firstIndexDate": "2026-02-27"
+      },
+      {
+        "id": "42688739",
+        "source": "MED",
+        "pmid": "42688739",
+        "pmcid": "PMC13535509",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13535509"
+          ]
+        },
+        "doi": "10.3897/zookeys.1290.198096",
+        "title": "The operculate micro land snails from the Alycaeinae (Caenogastropoda, Cyclophoridae) in Laos, with description of new species.",
+        "authorString": "Jirapatrasilp P, Inkhavilay K, Somvongsa C, Malavong B, Janjai T, Jeratthitikul E, Likhitrakarn N, Srisonchai R, Sutcharit C.",
+        "journalTitle": "Zookeys",
+        "journalVolume": "1290",
+        "pubYear": "2026",
+        "journalIssn": "1313-2989; 1313-2970; ",
+        "pageInfo": "257-291",
+        "pubType": "research-article; journal article",
+        "isOpenAccess": "Y",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "citedByCount": 0,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "Y",
+        "hasBook": "N",
+        "hasSuppl": "Y",
+        "hasLabsLinks": "N",
+        "hasTMAccessionNumbers": "Y",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        },
+        "firstPublicationDate": "2026-08-25",
+        "firstIndexDate": "2026-09-04"
+      },
+      {
+        "id": "39914594",
+        "source": "MED",
+        "pmid": "39914594",
+        "pmcid": "PMC11870190",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC11870190"
+          ]
+        },
+        "doi": "10.1016/j.virusres.2025.199529",
+        "title": "Isolation, characterization and genomic analysis of bacteriophages for biocontrol of vibriosis caused by Vibrio alginolyticus.",
+        "authorString": "Chaichana N, Rattanaburee R, Surachat K, Sermwittayawong D, Sermwittayawong N.",
+        "journalTitle": "Virus Res",
+        "journalVolume": "353",
+        "pubYear": "2025",
+        "journalIssn": "0168-1702; 1872-7492; ",
+        "pageInfo": "199529",
+        "pubType": "research support, non-u.s. gov't; research-article; journal article",
+        "isOpenAccess": "Y",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "citedByCount": 7,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "Y",
+        "hasBook": "N",
+        "hasSuppl": "Y",
+        "hasLabsLinks": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "gen",
+            "doi"
+          ]
+        },
+        "firstPublicationDate": "2025-02-11",
+        "firstIndexDate": "2025-02-07"
+      },
+      {
+        "id": "37848027",
+        "source": "MED",
+        "pmid": "37848027",
+        "pmcid": "PMC10842633",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC10842633"
+          ]
+        },
+        "doi": "10.1016/j.devcel.2023.09.003",
+        "title": "Combined inactivation of RB and Hippo converts differentiating Drosophila photoreceptors into eye progenitor cells through derepression of homothorax.",
+        "authorString": "Rader AE, Bayarmagnai B, Frolov MV.",
+        "journalTitle": "Dev Cell",
+        "issue": "21",
+        "journalVolume": "58",
+        "pubYear": "2023",
+        "journalIssn": "1534-5807; 1878-1551; ",
+        "pageInfo": "2261-2274.e6",
+        "pubType": "research-article; journal article; research support, n.i.h., extramural",
+        "isOpenAccess": "N",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "citedByCount": 3,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "Y",
+        "hasBook": "N",
+        "hasSuppl": "Y",
+        "hasLabsLinks": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "geo",
+            "gen",
+            "cellosaurus",
+            "doi"
+          ]
+        },
+        "firstPublicationDate": "2023-10-16",
+        "firstIndexDate": "2023-10-18"
+      },
+      {
+        "id": "30477200",
+        "source": "MED",
+        "pmid": "30477200",
+        "pmcid": "PMC6316228",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC6316228"
+          ]
+        },
+        "doi": "10.3390/cells7120230",
+        "title": "Decreasing Phosphatidylcholine on the Surface of the Lipid Droplet Correlates with Altered Protein Binding and Steatosis.",
+        "authorString": "Listenberger L, Townsend E, Rickertsen C, Hains A, Brown E, Inwards EG, Stoeckman AK, Matis MP, Sampathkumar RS, Osna NA, Kharbanda KK.",
+        "journalTitle": "Cells",
+        "issue": "12",
+        "journalVolume": "7",
+        "pubYear": "2018",
+        "journalIssn": "2073-4409",
+        "pageInfo": "E230",
+        "pubType": "research-article; journal article",
+        "isOpenAccess": "Y",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "citedByCount": 35,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "Y",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "Y",
+        "hasTMAccessionNumbers": "N",
+        "firstPublicationDate": "2018-11-24",
+        "firstIndexDate": "2018-11-27"
+      }
+    ]
+  }
+]

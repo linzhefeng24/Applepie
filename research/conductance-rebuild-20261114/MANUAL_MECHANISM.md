@@ -102,3 +102,41 @@ cache failure is retained in event-traversal-cache-failure.log; the loader was
 fixed by disabling cache only for the immutable reference implementation.
 Fifteen regression checks pass. This is execution acceleration, not a neural
 approximation or parameter-selection algorithm.
+
+## Manual checkpoint: shared candidate r4
+
+The source identity table resolves BPN type 1 to the CL210_a family (10 MaleCNS
+cells; exact experimental driver coverage remains uncertain). The revised
+command context contains 3088 cells and 398481 signed-hypothesis edges. Only the
+six publication-linked BRK cells receive BRK stimulation; other AN19A018 cells
+are not silently treated as part of that driver.
+
+Manual adjustments restore MDN recruitment of LBL40 and BRK recruitment of
+BON1 in this larger context. Source-cell K conductance is reduced by 20%,
+cholinergic DN followers share the same reduction and +5 pA axonal bias, and
+DNg100/DNg97/DNge053 receive twice the effective excitatory gain. These remain
+unmeasured candidate parameters, not identified biological channel densities.
+The shared inhibitory prior is 0.006. Complete failed and intermediate runs are
+retained beside the candidate; no scalar loss selected this bank.
+
+Under the latest command-only profile BPN recruits DNg100 L/R 26/25 Hz;
+adding FG gives 2/2 Hz, while adding BB gives 23/23 Hz. This difference agrees
+with the paper's selective FG/BPN versus BB/P9 mechanism; forcing BB to suppress
+BPN equally would be an erroneous target. Those DN-level paper coactivation
+results include model predictions, distinct from the experimentally measured
+behavioral interventions. MDN+FG and MDN+BB retain LBL40 output, but require a
+same-profile baseline and pulse/recovery test before comparative claims.
+
+The frozen r4 bank also includes the previously hand-tested PFL source bias.
+Combining profiles can change network responses: earlier results are NOT
+inherited as joint passes. pulse_neural_panel.py tests a fixed candidate with
+command onset, a later halt pulse, and recovery, recording full neuronal traces
+and input/code identities. It does not optimize or threshold endpoint losses.
+
+The Feng source supplement identifies MF09=LUL130 and MF14=LUL152. MF14's
+T1/T2 excitation versus T3 inhibition is an experimental constraint; an exact
+EM identity is still missing. INXXX468 is a family-level LUL130 candidate, not
+an established individual-cell identity. Current provisional responses do not
+yet reproduce stronger T3 LUL130 recruitment. Missing mappings are not filled
+with invented neurons. Large public raw source caches remain outside git;
+source manifests mark their archive status explicitly.

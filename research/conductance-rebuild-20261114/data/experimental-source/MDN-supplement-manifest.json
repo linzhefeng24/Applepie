@@ -1,0 +1,17 @@
+[
+  {
+    "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-020-19936-x/MediaObjects/41467_2020_19936_MOESM13_ESM.xlsx",
+    "file": "MDN-MOESM13.xlsx",
+    "bytes": 14228,
+    "sha256": "7a94feec8d82316ea412c681543f7076aee9c7b5e1b1a3d44b706607e09cd2b3"
+  },
+  {
+    "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-020-19936-x/MediaObjects/41467_2020_19936_MOESM1_ESM.pdf",
+    "file": "MDN-MOESM1.pdf",
+    "bytes": 46839512,
+    "sha256": "874bb49f9377ce3e047030bb045bf7fcf5c1d0bd173284df7630b6ef5c22f114",
+    "raw_local_cache": "/workspace/exports/experimental-source-cache/MDN-MOESM1.pdf",
+    "derived_tracked_text": "MDN-supplement.txt",
+    "raw_release_uploaded": false
+  }
+]

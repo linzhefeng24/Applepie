@@ -19,7 +19,7 @@ def load(scope='motor',full_vnc=False):
  elif scope=='onehop':keep=set(core)|set(W[core].nonzero()[1])|{i for i,x in enumerate(rows) if x['class']=='motor neuron'}
  elif scope=='full':keep=set(range(len(rows)))
  else:raise ValueError(scope)
- order=core+sorted(keep-set(core));metadata=[rows[i] for i in order];matrix=W[order][:,order].toarray()
+ order=core+sorted(keep-set(core));metadata=[{**rows[i],'connectome_namespace':'MANC'} for i in order];matrix=W[order][:,order].toarray()
  roles=['DN','E1','E2','I1','I2']+['MN' if rows[i]['class']=='motor neuron' else 'other' for i in order[5:]]
  return matrix,roles,metadata
 
@@ -30,5 +30,5 @@ def simulate_network(weights,roles,metadata,params,drive=None,ablate=(),drive_wa
  gains=np.array([source.get(str(row['bodyId']),1.) for row in metadata],dtype=float)
  if not np.isfinite(gains).all() or np.any(gains<=0):raise ValueError('Source conductance scales must be finite positive; no edge removal or sign flip')
  from grouped_parameters import resolve
- overrides,_=resolve(metadata,params.get('group_parameters',{}),params.get('individual_leak_offsets_mV',{}))
+ overrides,_=resolve(metadata,params.get('group_parameters',{}),params.get('individual_leak_offsets_mV',{}),params.get('class_parameters',{}),params.get('family_parameters',{}),params.get('cell_parameters',{}))
  return simulate(weights,roles,params,drive=drive,ablate=ablate,source_gains=gains,cell_overrides=overrides,drive_waveform=drive_waveform,record_indices=record_indices)

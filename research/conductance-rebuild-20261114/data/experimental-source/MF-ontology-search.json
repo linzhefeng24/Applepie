@@ -1,0 +1,322 @@
+[
+  {
+    "name": "LUL152",
+    "provider": "OLS",
+    "url": "https://www.ebi.ac.uk/ols4/api/search?q=LUL152&ontology=fbbt&rows=10",
+    "response": {
+      "response": {
+        "docs": [
+          {
+            "iri": "http://purl.obolibrary.org/obo/FBbt_00051102",
+            "ontology_name": "fbbt",
+            "ontology_prefix": "FBbt",
+            "short_form": "FBbt_00051102",
+            "description": [
+              "Cell type described in Feng et al. (2020), nomenclature scheme explained in Ehrhardt et al. (2023).",
+              "Unilateral neuron of the LUL152 group of the adult ventral nerve cord that primarily arborizes in the leg neuropil (Feng et al. 2020; Ehrhardt et al., 2023). It is an interneuron that arborizes mainly within one neuromere of the VNC (Feng et al. 2020; Ehrhardt et al., 2023). It has its soma in the prothoracic, mesothoracic or metathoracic neuromere (Feng et al., 2020). There is 1 of these cells per hemineuromere (Feng et al., 2020)."
+            ],
+            "label": "adult LUL152 neuron of ventral nerve cord",
+            "obo_id": "FBbt:00051102",
+            "type": "class",
+            "exact_synonyms": [
+              "LUL152",
+              "adult MF14 neuron"
+            ]
+          },
+          {
+            "iri": "http://purl.obolibrary.org/obo/FBbt_00051132",
+            "ontology_name": "fbbt",
+            "ontology_prefix": "FBbt",
+            "short_form": "FBbt_00051132",
+            "description": [
+              "Cell type described in Feng et al. (2020), nomenclature scheme explained in Ehrhardt et al. (2023).",
+              "Adult LUL152 neuron with its soma in the prothoracic neuromere (Feng et al., 2020). It is weakly excited downstream of moonwalker descending neuron activity (Feng et al., 2020). There is 1 of these cells per hemineuromere (Feng et al., 2020)."
+            ],
+            "label": "adult prothoracic LUL152 neuron",
+            "obo_id": "FBbt:00051132",
+            "type": "class"
+          },
+          {
+            "iri": "http://purl.obolibrary.org/obo/FBbt_00051150",
+            "ontology_name": "fbbt",
+            "ontology_prefix": "FBbt",
+            "short_form": "FBbt_00051150",
+            "description": [
+              "Cell type described in Feng et al. (2020), nomenclature scheme explained in Ehrhardt et al. (2023).",
+              "Adult LUL152 neuron with its soma in the mesothoracic neuromere (Feng et al., 2020). It is weakly excited downstream of moonwalker descending neuron activity (Feng et al., 2020). There is 1 of these cells per hemineuromere (Feng et al., 2020)."
+            ],
+            "label": "adult mesothoracic LUL152 neuron",
+            "obo_id": "FBbt:00051150",
+            "type": "class"
+          },
+          {
+            "iri": "http://purl.obolibrary.org/obo/FBbt_00051167",
+            "ontology_name": "fbbt",
+            "ontology_prefix": "FBbt",
+            "short_form": "FBbt_00051167",
+            "description": [
+              "Cell type described in Feng et al. (2020), nomenclature scheme explained in Ehrhardt et al. (2023).",
+              "Adult LUL152 neuron with its soma in the metathoracic neuromere (Feng et al., 2020). It is inhibited downstream of moonwalker descending neuron activity (Feng et al., 2020). There is 1 of these cells per hemineuromere (Feng et al., 2020)."
+            ],
+            "label": "adult metathoracic LUL152 neuron",
+            "obo_id": "FBbt:00051167",
+            "type": "class"
+          }
+        ],
+        "numFound": 4,
+        "start": 0
+      },
+      "responseHeader": {
+        "QTime": 0,
+        "status": 0
+      },
+      "facet_counts": {
+        "facet_fields": {
+          "ontologyPreferredPrefix": [
+            "FBbt",
+            "4"
+          ],
+          "isDefiningOntology": [
+            "true",
+            "4"
+          ],
+          "ontologyId": [
+            "fbbt",
+            "4"
+          ],
+          "ontologyIri": [
+            "http://purl.obolibrary.org/obo/fbbt.owl",
+            "4"
+          ],
+          "isObsolete": [
+            "false",
+            "4"
+          ],
+          "type": [
+            "class",
+            "4"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "LBL52",
+    "provider": "OLS",
+    "url": "https://www.ebi.ac.uk/ols4/api/search?q=LBL52&ontology=fbbt&rows=10",
+    "response": {
+      "response": {
+        "docs": [
+          {
+            "iri": "http://purl.obolibrary.org/obo/FBbt_00051101",
+            "ontology_name": "fbbt",
+            "ontology_prefix": "FBbt",
+            "short_form": "FBbt_00051101",
+            "description": [
+              "Cell type described in Feng et al. (2020), nomenclature scheme explained in Ehrhardt et al. (2023).",
+              "Bilateral neuron of the LBL52 group of the adult ventral nerve cord that primarily arborizes in the leg neuropil (Feng et al. 2020; Ehrhardt et al., 2023). It is an interneuron that arborizes mainly within one neuromere of the VNC (Feng et al. 2020; Ehrhardt et al., 2023). It has its soma in the prothoracic, mesothoracic or metathoracic neuromere (Feng et al., 2020). There are approximately 5 of these cells per hemineuromere and they are heterogeneous (Feng et al., 2020)."
+            ],
+            "label": "adult LBL52 neuron of ventral nerve cord",
+            "obo_id": "FBbt:00051101",
+            "type": "class",
+            "exact_synonyms": [
+              "LBL52",
+              "adult MF13 neuron"
+            ]
+          },
+          {
+            "iri": "http://purl.obolibrary.org/obo/FBbt_00051131",
+            "ontology_name": "fbbt",
+            "ontology_prefix": "FBbt",
+            "short_form": "FBbt_00051131",
+            "description": [
+              "Cell type described in Feng et al. (2020), nomenclature scheme explained in Ehrhardt et al. (2023).",
+              "Adult LBL52 neuron with its soma in the prothoracic neuromere (Feng et al., 2020). It is strongly excited downstream of moonwalker descending neuron activity (Feng et al., 2020). There are approximately 5 of these cells per hemineuromere and they are heterogeneous (Feng et al., 2020)."
+            ],
+            "narrow_synonyms": [
+              "adult MT109 neuron"
+            ],
+            "label": "adult prothoracic LBL52 neuron",
+            "obo_id": "FBbt:00051131",
+            "type": "class"
+          },
+          {
+            "iri": "http://purl.obolibrary.org/obo/FBbt_00051149",
+            "ontology_name": "fbbt",
+            "ontology_prefix": "FBbt",
+            "short_form": "FBbt_00051149",
+            "description": [
+              "Cell type described in Feng et al. (2020), nomenclature scheme explained in Ehrhardt et al. (2023).",
+              "Adult LBL52 neuron with its soma in the mesothoracic neuromere (Feng et al., 2020). It is strongly excited downstream of moonwalker descending neuron activity (Feng et al., 2020). There are approximately 5 of these cells per hemineuromere and they are heterogeneous (Feng et al., 2020)."
+            ],
+            "narrow_synonyms": [
+              "adult MT208 neuron"
+            ],
+            "label": "adult mesothoracic LBL52 neuron",
+            "obo_id": "FBbt:00051149",
+            "type": "class"
+          },
+          {
+            "iri": "http://purl.obolibrary.org/obo/FBbt_00051166",
+            "ontology_name": "fbbt",
+            "ontology_prefix": "FBbt",
+            "short_form": "FBbt_00051166",
+            "description": [
+              "Cell type described in Feng et al. (2020), nomenclature scheme explained in Ehrhardt et al. (2023).",
+              "Adult LBL52 neuron with its soma in the metathoracic neuromere (Feng et al., 2020). It is weakly excited downstream of moonwalker descending neuron activity (Feng et al., 2020). There are approximately 5 of these cells per hemineuromere and they are heterogeneous (Feng et al., 2020)."
+            ],
+            "narrow_synonyms": [
+              "adult MT325 neuron"
+            ],
+            "label": "adult metathoracic LBL52 neuron",
+            "obo_id": "FBbt:00051166",
+            "type": "class"
+          }
+        ],
+        "numFound": 4,
+        "start": 0
+      },
+      "responseHeader": {
+        "QTime": 0,
+        "status": 0
+      },
+      "facet_counts": {
+        "facet_fields": {
+          "ontologyPreferredPrefix": [
+            "FBbt",
+            "4"
+          ],
+          "isDefiningOntology": [
+            "true",
+            "4"
+          ],
+          "ontologyId": [
+            "fbbt",
+            "4"
+          ],
+          "ontologyIri": [
+            "http://purl.obolibrary.org/obo/fbbt.owl",
+            "4"
+          ],
+          "isObsolete": [
+            "false",
+            "4"
+          ],
+          "type": [
+            "class",
+            "4"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "LBA22",
+    "provider": "OLS",
+    "url": "https://www.ebi.ac.uk/ols4/api/search?q=LBA22&ontology=fbbt&rows=10",
+    "response": {
+      "response": {
+        "docs": [
+          {
+            "iri": "http://purl.obolibrary.org/obo/FBbt_00051113",
+            "ontology_name": "fbbt",
+            "ontology_prefix": "FBbt",
+            "short_form": "FBbt_00051113",
+            "description": [
+              "Cell type described in Feng et al. (2020), nomenclature scheme explained in Ehrhardt et al. (2023).",
+              "Bilateral neuron of the LBA22 group of the adult ventral nerve cord that primarily arborizes in the leg neuropil (Feng et al. 2020; Ehrhardt et al., 2023). It is an ascending neuron (Feng et al. 2020; Ehrhardt et al., 2023). It has its soma in the prothoracic, mesothoracic or metathoracic neuromere (Feng et al., 2020). There are 1 or 2 of these cells per hemineuromere (Feng et al., 2020)."
+            ],
+            "label": "adult LBA22 neuron of ventral nerve cord",
+            "obo_id": "FBbt:00051113",
+            "type": "class",
+            "exact_synonyms": [
+              "LBA22",
+              "adult MF25 neuron"
+            ]
+          },
+          {
+            "iri": "http://purl.obolibrary.org/obo/FBbt_00051137",
+            "ontology_name": "fbbt",
+            "ontology_prefix": "FBbt",
+            "short_form": "FBbt_00051137",
+            "description": [
+              "Cell type described in Feng et al. (2020), nomenclature scheme explained in Ehrhardt et al. (2023).",
+              "Adult LBA22 neuron with its soma in the prothoracic neuromere (Feng et al., 2020). It is strongly excited downstream of moonwalker descending neuron activity (Feng et al., 2020). There are 1 or 2 of these cells per hemineuromere (Feng et al., 2020)."
+            ],
+            "label": "adult prothoracic LBA22 neuron",
+            "obo_id": "FBbt:00051137",
+            "type": "class"
+          },
+          {
+            "iri": "http://purl.obolibrary.org/obo/FBbt_00051154",
+            "ontology_name": "fbbt",
+            "ontology_prefix": "FBbt",
+            "short_form": "FBbt_00051154",
+            "description": [
+              "Cell type described in Feng et al. (2020), nomenclature scheme explained in Ehrhardt et al. (2023).",
+              "Adult LBA22 neuron with its soma in the mesothoracic neuromere (Feng et al., 2020). It is weakly excited downstream of moonwalker descending neuron activity (Feng et al., 2020). There are 1 or 2 of these cells per hemineuromere (Feng et al., 2020)."
+            ],
+            "label": "adult mesothoracic LBA22 neuron",
+            "obo_id": "FBbt:00051154",
+            "type": "class"
+          },
+          {
+            "iri": "http://purl.obolibrary.org/obo/FBbt_00051170",
+            "ontology_name": "fbbt",
+            "ontology_prefix": "FBbt",
+            "short_form": "FBbt_00051170",
+            "description": [
+              "Cell type described in Feng et al. (2020), nomenclature scheme explained in Ehrhardt et al. (2023).",
+              "Adult LBA22 neuron with its soma in the metathoracic neuromere (Feng et al., 2020). It is strongly excited downstream of moonwalker descending neuron activity (Feng et al., 2020). There are 1 or 2 of these cells per hemineuromere (Feng et al., 2020)."
+            ],
+            "label": "adult metathoracic LBA22 neuron",
+            "obo_id": "FBbt:00051170",
+            "type": "class"
+          }
+        ],
+        "numFound": 4,
+        "start": 0
+      },
+      "responseHeader": {
+        "QTime": 0,
+        "status": 0
+      },
+      "facet_counts": {
+        "facet_fields": {
+          "ontologyPreferredPrefix": [
+            "FBbt",
+            "4"
+          ],
+          "isDefiningOntology": [
+            "true",
+            "4"
+          ],
+          "ontologyId": [
+            "fbbt",
+            "4",
+            "ncbitaxon",
+            "1"
+          ],
+          "ontologyIri": [
+            "http://purl.obolibrary.org/obo/fbbt.owl",
+            "4"
+          ],
+          "isObsolete": [
+            "false",
+            "4"
+          ],
+          "type": [
+            "class",
+            "4"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "LUL152",
+    "provider": "VFB",
+    "url": "https://solr.virtualflybrain.org/solr/vfb_json/select?q=LUL152&rows=10&wt=json",
+    "error": "HTTP Error 403: Forbidden"
+  }
+]

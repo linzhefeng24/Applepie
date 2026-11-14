@@ -1,0 +1,8 @@
+{
+  "FG": "FlyWire CB0890 from Sapkal2024 SupplementaryTable3 -> MaleCNS flywireType CB0890 (GNG458), type-level homolog",
+  "BB": "DNg60, same paper table and MaleCNS synonyms",
+  "Fdg": "CB0038 -> GNG588, Shiu2022 annotation",
+  "P9": "DNp09, no inclusion of DNp71 sharing a hemibrain label",
+  "MDN": "DNp50 or explicit MANC MDN link",
+  "BPN_type1": "CL210_a matched by type-family prefix when --bpn; ten male cells vs twelve published female type1 IDs; population coverage remains uncertain, no substitution with SMP459/460/461"
+}

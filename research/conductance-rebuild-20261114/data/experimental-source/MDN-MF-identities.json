@@ -1,0 +1,27 @@
+{
+  "source": "https://doi.org/10.1038/s41467-020-19936-x",
+  "table": "SupplementaryData MOESM13.xlsx, Sheet1",
+  "verified_aliases": {
+    "MF01": "LBL40",
+    "MF09": "LUL130",
+    "MF13": "LBL52",
+    "MF14": "LUL152",
+    "MF25": "LBA22",
+    "MF33": "LUM9"
+  },
+  "cell_counts_per_hemisphere": {
+    "MF01": 1,
+    "MF09": 2,
+    "MF13": "approximately5 heterogeneous",
+    "MF14": 1,
+    "MF25": "1 or2",
+    "MF33": "approximately5"
+  },
+  "functional_observations_from_full_text_Fig3d": {
+    "MF09": "T3 strong; T1/T2 weaker",
+    "MF13": "strong in T1/T2",
+    "MF14": "T1/T2 excited; T3 inhibited",
+    "MF25": "strong in T1/T3"
+  },
+  "EM_identity_scope": "LUL130 has INXXX468 family support in BANC annotation; other aliases currently unresolved in available EM type tables. No fabricated identities or target curves."
+}

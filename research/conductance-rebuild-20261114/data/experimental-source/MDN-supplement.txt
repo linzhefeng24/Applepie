@@ -1,0 +1,1416 @@
+Distributed control of motor circuits for backward walking in Drosophila
+
+Kai Feng, Rajyashree Sen, Ryo Minegishi, Michael Dübbert, Till Bockemühl, Ansgar Büschges,
+and Barry J. Dickson
+
+
+
+
+Supplementary Information
+
+
+
+
+                                            1
+Supplementary Fig. 1. Comparison of cell types identified by trans-Tango and functional
+imaging. Cell types identified by both trans-Tango and functional imaging. All images are
+colorMIPs of registered confocal images. For each pair, the left image is an image of an MDN-
+responsive cell, segmented from an MCFO image obtained using the corresponding GAL4
+driver. The right images is an unsegmented stochastic trans-Tango sample that appears to include
+the same cell type.
+
+
+
+                                               2
+                                                                                                                                                                                                                                                                                              a
+
+
+
+
+                                                                                                                                                                                        b
+                                                                                                                                                                ΔF/F0                                                                                           ΔF/F0
+
+
+
+
+                                                                                                                            -0.5
+                                                                                                                                   -0.4
+                                                                                                                                          -0.3
+                                                                                                                                                 -0.2
+                                                                                                                                                        -0.1
+                                                                                                                                                                                                                             -1.0
+                                                                                                                                                                                                                                    -0.8
+                                                                                                                                                                                                                                           -0.6
+                                                                                                                                                                                                                                                  -0.4
+                                                                                                                                                                                                                                                         -0.2
+
+
+
+
+                                                                                                                                                                     0
+                                                                                                                                                                         1
+                                                                                                                                                                             2
+                                                                                                                                                                                 3
+                                                                                                                                                                                                                                                                      0
+                                                                                                                                                                                                                                                                          1
+                                                                                                                                                                                                                                                                              2
+                                                                                                                                                                                                                                                                                  3
+                                                                                                                                                                                                                                                                                      4
+                                                                                                                                                                                                                                                                                          5
+
+
+
+
+                                                                                                                                                               0.0
+                                                                                                                                                                                                                                                                0.0
+                                                                                                       MF19-T3 (VT056582)                                                                               MF19-T3 (VT056582)
+                                                                                                       MF01-T3 (VT029570)                                                                               MF01-T3 (VT029570)
+                                                                                                       MF33-T3 (SS50996)                                                                                MF33-T3 (SS50996)
+                                                                                                       MF32-T3 (VT002223)                                                                               MF32-T3 (VT002223)
+                                                                                                       MF13-T1 (73B05)                                                                                  MF13-T1 (73B05)
+                                                                                                       MF09-T3 (VT062245)                                                                               MF09-T3 (VT062245)
+                                                                                                       MF24-T2 (VT007722)                                                                               MF24-T2 (VT007722)
+                                                                                                       MF16-T2 (VT030541)                                                                               MF16-T2 (VT030541)
+                                                                                                       MF17-T3 (VT026669)                                                                               MF17-T3 (VT026669)
+                                                                                                       MF13-T2 (73B05)                                                                                  MF13-T2 (73B05)
+                                                                                                       MF07-T3 (VT014974)                                                                               MF07-T3 (VT014974)
+                                                                                                       MF29-T3 (VT056808)                                                                               MF29-T3 (VT056808)
+                                                                                                       MF20-T3 (VT000353)                                                                               MF20-T3 (VT000353)
+                                                                                                       MF11-T2 (VT021842)                                                                               MF11-T2 (VT021842)
+                                                                                                       MF21-T3 (29G03)                                                                                  MF21-T3 (29G03)
+                                                                                                       MF18-T2 (VT039419)                                                                               MF18-T2 (VT039419)
+                                                                                                       MF27-T3 (VT044492)                                                                               MF27-T3 (VT044492)
+                                                                                                       MF11-T2 (VT021842)                                                                               MF11-T2 (VT021842)
+                                                                                                       MF02-T3 (28F07)                                                                                  MF02-T3 (28F07)
+                                                                                                       MF16-T1 (82F02)                                                                                  MF16-T1 (82F02)
+                                                                                                       MF24-T1 (VT007722)                                                                               MF24-T1 (VT007722)
+                                                                                                       MF25-T3 (VT000254)                                                                               MF25-T3 (VT000254)
+                                                                                                       MF11-T1 (VT021842)                                                                               MF11-T1 (VT021842)
+                                                                                                       MF28-T3 (VT001497)                                                                               MF28-T3 (VT001497)
+                                                                                                       MF10-T1 (VT002075)                                                                               MF10-T1 (VT002075)
+                                                                                                       MF16-T1 (VT030541)                                                                               MF16-T1 (VT030541)
+                                                                                                       MF23-T1 (19D12)                                                                                  MF23-T1 (19D12)
+                                                                                                       MF03-T3 (VT019902)                                                                               MF03-T3 (VT019902)
+                                                                                                       MF14-T2 (VT002996)                                                                               MF14-T2 (VT002996)
+
+
+
+
+3
+                                                                                                       MF25-T1 (VT000254)                                                                               MF25-T1 (VT000254)
+                                                                                                       MF16-T2 (82F02)                                                                                  MF16-T2 (82F02)
+                                                                                                       MF10-T3 (VT002075)                                                                               MF10-T3 (VT002075)
+                                                                                                       MF10-T2 (VT002075)                                                                               MF10-T2 (VT002075)
+                                                                                                       MF14-T1 (70B03)                                                                                  MF14-T1 (70B03)
+                                                                                                       MF31-T3 (VT057467)                                                                               MF31-T3 (VT057467)
+
+                                                                                                                                                                                     Maximal response
+                                                                                                                                                                                                                                                                                              Maximal response
+
+
+
+
+                                                                                                       MF26-T1 (VT010555)                                                                               MF26-T1 (VT010555)
+                                                                                                       MF33-T2 (SS50996)                                                                                MF33-T2 (SS50996)
+                                                                                                       MF06-T3 (92G01)                                                                                  MF06-T3 (92G01)
+                                                                                                       MF22-T2 (VT040713)                                                                               MF22-T2 (VT040713)
+                                                                                                       MF30-T3 (VT048580)                                                                               MF30-T3 (VT048580)
+                                                                                                       MF33-T1 (SS50996)                                                                                MF33-T1 (SS50996)
+                                                                                                       MF14-T2 (70B03)                                                                                  MF14-T2 (70B03)
+                                                                                                       MF05-T3 (VT008473)                                                                               MF05-T3 (VT008473)
+                                                                                                       MF09-T2 (VT062245)                                                                               MF09-T2 (VT062245)
+                                                                                                       MF30-T3 (22C10)                                                                                  MF30-T3 (22C10)
+                                                                                                       MF12-T3 (VT038219)                                                                               MF12-T3 (VT038219)
+                                                                                                       MF14-T1 (VT002996)                                                                               MF14-T1 (VT002996)
+                                                                                                       MF13-T3 (73B05)                                                                                  MF13-T3 (73B05)
+                                                                                                       MF25-T2 (VT000254)                                                                               MF25-T2 (VT000254)
+                                                                                                       MF12-T1 (VT038219)                                                                               MF12-T1 (VT038219)
+                                                                                                       MF12-T2 (VT038219)                                                                               MF12-T2 (VT038219)
+                                                                                                       MF09-T1 (VT062245)                                                                               MF09-T1 (VT062245)
+                                                                                                       MF08-T3 (VT044964)                                                                               MF08-T3 (VT044964)
+                                                                                                       MF08-T3 (VT043924)                                                                               MF08-T3 (VT043924)
+                                                                                                       MF15-T1 (VT019345)                                                                               MF15-T1 (VT019345)
+                                                                                                       MF14-T3 (VT002996)                                                                               MF14-T3 (VT002996)
+                                                                                                       MF15-T1 (VT048146)                                                                               MF15-T1 (VT048146)
+                                                                                                       MF15-T3 (VT019345)                                                                               MF15-T3 (VT019345)
+                                                                                                       MF14-T3 (70B03)                                                                                  MF14-T3 (70B03)
+                                                                                                       MF15-T3 (VT048146)                                                                               MF15-T3 (VT048146)
+                                                                                                       MF04-T3 (VT046303)                                                                               MF04-T3 (VT046303)
+                                                                                                       MF04-T3 (VT026669)                                                                               MF04-T3 (VT026669)
+
+
+
+
+    cell upon (a) 20-s or (b) 1-s photoactivation of MDNs. Each data point (circle) represents a
+
+
+    T2, and T3 cells, respectively. For some cell types, two independent driver lines were used.
+    Black font indicates SS lines shown in Fig. 3. Source data are provided as a Source Data file.
+    single fly, and bars show mean ± s.e.m. N ≥ 5 flies for each genotype. Samples are ordered in
+    both plots by their response to the 20-s stimulus. "-T1", "-T2", and "-T3" suffixes indicate T1,
+    Supplementary Fig. 2. Calcium responses of MF cell types. Maximal DF/F responses of each
+4
+Supplementary Fig. 3. Anatomical and functional analysis of split-Gal4 lines labeling
+MDN-downstream neurons. a, Confocal images of central nervous systems for each split-
+GAL4 line shown in Fig. 4a, stained to reveal all synapses (nc82, magenta) and the targeted
+neurons (CsChrimson-mVenus, detected using anti-GFP, green). b, Box-and-whisker plots for
+the forward walking distance during 45 s without optogenetic stimulation (top), and total
+backward walking distance for the same flies during 9 successive 5-s red light pulses. Boxes
+show median and interquartile ranges. Bars extend down to the larger of the minimum value or
+the 25 percentile minus 1.5 times the interquartile range, and up to the smaller of the maximum
+value or the 75 percentile plus 1.5 times the interquartile range. Outliers are shown as circles.
+Positive and negative control lines are labeled in red and green, respectively. Green dashed lines
+show the median for the negative control, for comparison. Lines are ordered by the median
+backward walking distance. Source data are provided as a Source Data file.
+
+
+
+                   a
+
+
+
+
+                          SS47938 > TNT    MDN > CsChrimson-tdTomato   MDN > CsChrimson-tdTomato
+                                                                            SS47938 > TNT
+
+
+
+
+                   b
+
+
+
+
+                                                                                                   50 μm
+
+                          SS50974 > TNT    MDN > CsChrimson-tdTomato   MDN > CsChrimson-tdTomato
+                                                                            SS50974 > TNT
+
+
+
+
+Supplementary Fig. 4. Expression of CsChrimson and TNT in flies with two split drivers.
+Confocal images of the central nervous systems of flies in which CsChrimson was expressed in
+MDN using a split-LexA driver and TNT was expressed in either LBL40 (a) or LUL130 (b)
+using a split-GAL4 driver. Samples were stained with anti-TNT (green), anti-RFP (to visualize
+CsChrimson-tdTomato, red) and nc82 (all synapses, blue).
+
+
+
+
+                                                      5
+a                                      Decapitated fly       b                                      Intact fly                         c                                  Step frequency
+                             Foreleg                                                      Foreleg
+                       180                                                          180
+                                                                                                                                                             8
+                                                                                                                                                                                           0.0043
+
+
+
+
+                                                                                                                                       Step frequency (Hz)
+                        0                                                            0
+
+
+
+
+                                                             Joint angle (degree)
+Joint angle (degree)
+
+
+
+
+                                                                                                                                                             6
+                             Midleg                                                       Midleg
+                       180                                                          180
+                                                                                                                                                                  0.011
+                                                                                                                                                             4                  0.14
+
+                        0                                                            0                               Body-Coxa
+                             Hindleg                                                      Hindleg                    Coxa-Trochanter                         2
+                       180                                                          180
+                                                                                                                     Femur-Tibia
+                                                                                                                     Tibia-Tarsus                            0
+                                                                                                                     Tarsus-Ground                               D     I       D     I     D     I
+                        0                                                            0
+                         0                               7                                0                      7                                               Hindleg       Midleg      Foreleg
+                                           Time (s)                                                 Time (s)
+
+
+
+Supplementary Fig. 5. The backward walking program is largely intact in decapitated flies.
+a and b, Representative time series of joint angles in a decapitated (a) and intact (b)
+MDN>CsChrimson fly. Red bars indicate the 5-s red light stimulation. c, Backward step
+frequency for each leg in decapitated (D) and intact (I) flies N = 7 flies for each group. Error bars
+show mean ± s.e.m.. P values are shown in italics, two-tailed unpaired t-tests. Source data are
+provided as a Source Data file.
+
+
+
+
+                                                                                                            6
+        a   Hindleg full image stack              b     5-s red light onset    c       Hindleg joint angles
+                                                                                                                             d                                    Maximal flexion
+
+                                                                                                                                                                       0.0012
+                                                                                                                                                                            0.0004
+                                                        0ms                                                                                                                         0.0022
+                                                                                   LUM9: SS50996>CsChrimson                                          0
+
+
+
+
+                                                                                                                             Δ F-T angle (degree)
+                                                                                                                                                    -20
+
+                                                        40ms
+                                                                                                                                                    -40
+            Hindleg selected z-sections                                            LBL40: SS47938>CsChrimson
+
+                                                                                                                                                    -60
+                                                                                                                 100°
+                                                        200ms                                                                                       -80
+                                                                                                                                                           LUM9: LBL40: LBL40:
+                                                                                   LBL40: SS46243>CsChrimson                                                                        Empty-SS
+                                                                                                                                                          SS50996 SS47938 SS46243
+                                                                                                                   1s
+                                                                                                                                                            (n = 7) (n = 9) (n = 6) (n = 6)
+                                                                                                                    Coxa-Trochanter
+            SS50996>mVenus                                                                                          Femur-Tibia
+            Mhc-RFP                50 μm
+                                                        Overlay         1 mm
+                                                                                     Empty-SS>CsChrimson
+
+
+
+        e                                                                                              f
+                                                                                            ΔF/F0
+
+                                                                                     100%
+
+                                                                                            20 s
+                                                                                                                         LBL40>tdT,GFP11 LUM9>GFP1-10
+
+
+
+
+                                                                                                                         LBL40>tdT,GFP11                       UAS-GFP1-10
+
+
+
+
+                                          50 μm                       50 μm
+                                                                                                                         LexAop-tdT,GFP11 LUM9>GFP1-10                                       50 μm
+                            MDN                        MDN>CsChrimson                                          GRASP              tdTomato                        GFP1-10               Merge
+                            LUM9                      SS50996>GCaMP6s
+
+
+
+
+Supplementary Fig. 6. LBL40 triggers tibia flexion through LUM9. a, Top, maximum
+intensity projection of live fluorescence image of a hindleg, showing LUM9 innervation
+(mVenus, green) and all leg muscles (RFP, red). Bottom, selected z-slices highlighting
+innervation of the tibia reductor muscle (dashed line). b, Selected frames from a representative
+video of LUM9 activation in a suspended, decapitated fly, during a 5-s red light stimulus from t
+= 0 ms. Arrows indicate the femur-tibia angles. Dashed line with arrows in the overlay image
+indicates sequence of movement. Flies were suspended rather than placed on a ball because
+simultaneous activation of foreleg and hindleg tibia flexor muscles in a fly on a ball would
+generate opposing pulling forces, potentially resulting in little or no movement of either joint. c,
+Hindleg joint angle time series, showing two representative traces for each genotype. Red shade
+indicates a 5-s pulse of red light. A short black line marks the origin for each trace (t = 0 s, 0
+degrees). Arrows indicate the initial femur-tibia flexion; arrowheads indicate extension events.
+The second set of traces is from the video shown in (b). d, Maximal femur-tibia joint angle
+change within 1 s after red light onset. Bars indicate mean ± s.e.m. P values are shown in italics,
+two-tailed Mann-Whitney tests. Source data are provided as a Source Data file. e, Left, registered
+segmented image of MDN (red), LUM9 (blue), and all synapses (gray, nc82). Scale bar: 50 μm.
+Middle, activated voxels (cyan) from calcium imaging of LUM9 upon MDN activation. Right,
+averaged responses for LUM9 to MDN activation (mean ± s.e.m., N = 7 flies), upon either a
+single 20-s stimulus or two 1-s light pulses (red shading). f, Live GFP fluorescence images
+showing reconstituted GFP (green) at likely synaptic connections between LBL40 (red,
+tdTomato live fluorescence, co-expressed with GFP11) and LUM9 (blue, anti-GFP staining
+against GFP1-10). The imaged areas correspond to the dashed box in e.
+
+
+
+                                                                                      7
+          a                                                              Red Only Blue/Red
+                                                                                                                                        b                                                                                         Blue/Red Red Only
+                                                                                      25 s                                                                                                                                  25 s
+                                                     Ctrl trial                                                                                                Ctrl trial
+                                                                        10 s                10 s          5s                                                                                                 10 s                10 s            5s
+                                                     Exp trial                                                                                                 Exp trial
+
+
+
+                                               Ctrl trial                           Blue/Red        Red Only                                            Ctrl trial                                                       Blue/Red         Red Only
+                       180                                                                                                                       180
+                                                           N = 8; n = 89, n = 103                         Empty-SS                                               N = 8; n = 103, n = 109                                                           Empty-SS
+
+
+
+
+                         0                                                                                                                         0
+                       180                                                                                                                       180
+Joint angle (degree)
+
+
+
+
+                                                                                                                          Joint angle (degree)
+                                                          N = 9; n = 256, n = 263                  LBL40: SS47938                                                N = 9; n = 266, n = 257                                                 LBL40: SS47938
+
+
+
+
+                         0                                                                                                                         0
+                       180                                N = 8; n = 206, n = 199              LUL130: SS50974                                   180             N = 8; n = 193, n = 192                                                LUL130: SS50974
+
+
+
+
+                              0                                                                                                                       0
+                              -0.2 0                                           1.3 -0.2 0                       1.3                                   -0.2 0                                                        1.3 -0.2 0                           1.3
+                                                             Time (s)                              Time (s)                                                          Time (s)                                                           Time (s)
+                                               Exp trial                             Blue/Red        Red Only                                           Exp trial                                                           Blue/Red       Red Only
+                       180                                                                                                                       180                                                                                               Empty-SS
+                                                           N = 8; n = 100, n = 97                         Empty-SS                                                 N = 8; n = 86, n = 106
+
+
+
+
+                         0                                                                                                                         0
+                       180                                                                                                                       180
+Joint angle (degree)
+
+
+
+
+                                                                                                                          Joint angle (degree)
+
+
+
+
+                                                          N = 9; n = 264, n = 177                  LBL40: SS47938                                                N = 9; n = 202, n = 125                                                 LBL40: SS47938
+
+
+
+
+                         0                                                                                                                         0
+                       180                                 N = 8; n = 198, n = 85              LUL130: SS50974                                   180               N = 8; n = 233, n = 60                                               LUL130: SS50974
+
+
+
+
+                               0                                                                                                                      0
+                               -0.2 0                                          1.3 -0.2 0                       1.3                                   -0.2 0                                                        1.3 -0.2 0                           1.3
+                                                             Time (s)                              Time (s)                                                           Time (s)                                                          Time (s)
+
+          c                                          Empty-SS
+                                           180
+                        Joint angle (degree)
+
+
+
+
+                                             0                                                                                                                                                           Hindleg tarsal amputation
+                                           180
+                                                                                                                                                                                                                                        0.0003
+                                                                                                                                                                                                         8
+                                                                                                                                                                            Oscillation frequency (Hz)
+
+
+
+
+                                                 0                                                                                                                                                       6
+                                                     0                                       Time (s)                                            28                                                                 0.097
+
+                                                         LUL130: SS50974                                                                                                                                 4
+                                           180
+                                                                                                                                                                                                         2
+                        Joint angle (degree)
+
+
+
+
+                                             0                                                                                                                                                           0
+                                           180                                                                                                                                                                 Ctrl Exp            Ctrl Exp
+                                                                                                                                                                                                               Empty-SS            SS50974
+
+
+                                                 0
+                                                     0                                       Time (s)                                            28
+
+
+
+
+                                                                                                                      8
+Supplementary Fig. 7. Acute silencing of LBL40 or LUL130 leads to distinct defects in
+backward walking. a and b, Overlaid and average time series of femur-tibia joint angle for all
+the steps extracted from the indicated time windows. The same dataset as shown in Fig. 7 were
+analyzed using within-trial comparisons. c, Left, representative time series of joint angles in
+hindlegs amputated at tarsus. Red bar indicates red-light stimulus; blue bar indicates blue-light
+stimulus. Right, quantification of oscillation frequency of amputated hindlegs. N = 7 flies for
+Empty-SS and N = 8 for SS50974. Error bars show mean ± s.e.m. P values are shown in italics,
+two-tailed paired t-tests. Source data are provided as a Source Data file.
+
+
+
+
+                                                 9
+ FULL GENOTYPE                                           SOURCE                    SHORT GENOTYPE
+ w; VT044845-ZpGAL4DBD (attP40); VT050660-p65ADZp        ref. 1                    MDN-1-GAL4
+ (attP2)
+ w; VT049484-ZpGAL4DBD (attP40); VT050660-p65ADZp        ref. 1                    MDN+MAN-1-GAL4
+ (attP2)
+ w; VT044845-LexAp65 (attP40); +                         ref. 2                    MDN-LexAp65
+ w; VT049484-ZpLexADBD (JK22c); +                        ref. 3                    N/A
+ w; VT050660-p65ADZp (attP40); +                         ref. 4                    N/A
+ Vienna Tiles GAL4/LexA lines                            ref. 4                    See Supplementary
+                                                                                   Table 2
+ GMR GAL4/LexA lines                                     ref. 5                    See Supplementary
+                                                                                   Table 2
+ Split GAL4 lines                                        refs. 4,6                 See Supplementary
+                                                                                   Table 2
+ w; BPp65ADZpUw* (attP40); BPZpGALDBDUw* (attP2)         ref. 7                    N/A
+ UAS-myrGFP,QUAS-mtdTomato(3xHA); trans-Tango; +         ref. 8                    N/A
+ UAS-myrGFP, QUAS-mtdTomato(3xHA); trans-Tango, tubP-    ref. 8                    N/A
+ FRT-QS-FRT; +
+ w; ;MKRS, hsFLP86E/TM6B, Tb1                            Bloomington Drosophila    N/A
+                                                         Stock Center (BDSC)
+                                                         279
+ yw, UAS-myrGFP.QUAS-mtdTomato-3xHA (su(Hw)attP8),       BDSC 77480                N/A
+ hs-FLP1; trans-Tango (attP40), FRT G13, tub-QS/CyO; +
+ LexAop2-Syn21-opGCamp6s (su(HW)8), 10XUAS Syn21-        David Anderson, Barret    N/A
+ Chrimson88-tdt3.1 (attP18); Sp/CyO; TM2/TM6             Pfeiffer and Allan Wong
+ w; +; 13XLexAop2-CsChrimson-tdTomato (VK00005),         Vivek Jayaraman9,10       N/A
+ 20XUAS Syn21-opGCaMP6s-p10-bp (su(Hw)attP1)
+ w; VGlutLexA; +                                         ref. 11                   N/A
+ R57C10-Flp2::PEST (attP18); brp::Snap; pJFRC201-        Gerry Rubin12,13          N/A
+ 10XUAS-FRT>STOP>FRT-myr::smGFP-HA (VK00005),
+ pJFRC240-10XUAS-FRT>STOP>FRT-myr::smGFP-V5-
+ THS-10XUAS-FRT>STOP>FRT-myr::smGFP-FLAG
+ (su(Hw)attP1)
+ pJFRC300-20XUAS-FRT-dSTOP-FRTCsChrimson::mVenus         ref. 14                   N/A
+ (attP18), hs-FLP-PESTOpt (attP3); +; +
+ 13XLexAop2-CsChrimson-tdTomato (attP18); +; +           Vivek Jayaraman10         N/A
+ 20XUAS-CsChrimson-mVenus (attP18); +; +                 Vivek Jayaraman10         N/A
+ w; UAS-TNT-E; +                                         ref. 15                   N/A
+ w; +; UAS-GtACR2                                        ref. 16                   N/A
+ w; CoinFLP-LexA::GAD-.GAL4 (attP40), LexAop-            BDSC 58755; ref. 17       N/A
+ rCD2.RFP; UAS-CD4-spGFP1-10, LexAop-CD4-
+ spGFP11/TM6C, Sb
+ w; ;13XLexAop2-IVS-myr::GFP (attP2)                     ref. 18                   N/A
+ w; pJFRC48-13XLexAop2-IVS-myrtdTomato (su(Hw)attP5);    Gerry Rubin               N/A
+ +
+ yw, UAS-mCD8-GFP; Mhc-RFP; +                            Richard Mann19            N/A
+
+Supplementary Table 1 | Fly Stocks.
+
+
+
+
+                                                 10
+FIGURE            GENOTYPE                                                                  ABBREVIATED
+                                                                                            GENOTYPE
+Fig. 1 and        20XUAS-CsChrimson-mVenus (attP18), w / w; V0T44845-                       N/A
+Supplementary     ZpGAL4DBD(attP40) / +; VT050660-p65ADZp (attP2) / +
+Fig. 5
+Fig. 2a           20XUAS-CsChrimson-mVenus (attP18), w / w, UAS-myrGFP, QUAS-               trans-Tango
+                  mtdTomato(3xHA) (su(Hw)attP8); VT044845-ZpGAL4DBD (attP40) / trans-
+                  Tango ; VT050660-p65ADZp (attP2) / +
+Fig. 2b, 2c and   20XUAS-CsChrimson-mVenus (attP18), w / yw, UAS-myrGFP, QUAS-              Stochastic trans-Tango
+Supplementary     mtdTomato(3xHA) (su(Hw)attP8), hsFLP1; VT044845-ZpGAL4DBD (attP40) /
+Fig. 1            trans-Tango, tubP-FRT-QS-FRT; VT050660-p65ADZp (attP2) / +
+Fig. 2b, 2c and   20XUAS-CsChrimson-mVenus (attP18), w / w, UAS-myrGFP, QUAS-               Stochastic trans-Tango
+Supplementary     mtdTomato(3xHA) (su(Hw)attP8); VT044845-ZpGAL4DBD (attP40) / trans-
+Fig. 1            Tango, tubP-FRT-QS-FRT; VT050660-p65ADZp (attP2) / MKRS,
+                  P{ry[+t7.2]=hsFLP}86E
+Fig. 3b           LexAop2-Syn21-opGCamp6s (su(HW)8), 10XUAS Syn21-Chrimson88-tdt3.1         57C10>GCaMP6s
+                  (attP18), w / w; VT044845-ZpGAL4DBD (attP40) / + ; VT050660-p65ADZp
+                  (attP2) / 57C10-LexA (attP2)
+Fig. 3b           LexAop2-Syn21-opGCamp6s (su(HW)8), 10XUAS Syn21-Chrimson88-tdt3.1         VGlut>GCaMP6s
+                  (attP18), w / w; VT044845-ZpGAL4DBD (attP40) / VGlutLexA; VT050660-
+                  p65ADZp (attP2) / +
+Fig. 3d,          w / w, VT049484-ZpLexADBD (JK22c) / +; VT050660-p65ADZp (attP2),          MF01
+Supplementary     13XLexAop2-CsChrimson-tdTomato (VK00005), 20XUAS Syn21-opGCaMP6s-
+Fig. 2 and Fig.   p10-bp (su(Hw)attP1) / VT029570-GAL4 (attP2)
+5a
+Fig. 3c,d and     LexAop2-Syn21-opGCamp6s (su(HW)8), 10XUAS Syn21-Chrimson88-tdt3.1         MF02
+Supplementary     (attP18), w / w; VT044845-ZpGAL4DBD (attP40) / 28F07-LexA (attP40) ;
+Fig. 2            VT050660-p65ADZp (attP2) / +
+Fig. 3d and       w / w, VT049484-ZpLexADBD (JK22c) / +; VT050660-p65ADZp (attP2),          MF03
+Supplementary     13XLexAop2-CsChrimson-tdTomato (VK00005), 20XUAS Syn21-opGCaMP6s-
+Fig. 2            p10-bp (su(Hw)attP1) / VT019902-GAL4 (attP2)
+Fig. 3d and       w / w, VT049484-ZpLexADBD (JK22c) / +; VT050660-p65ADZp (attP2),          MF04
+Supplementary     13XLexAop2-CsChrimson-tdTomato (VK00005), 20XUAS Syn21-opGCaMP6s-
+Fig. 2            p10-bp (su(Hw)attP1) / VT046303-GAL4 (attP2)
+Fig. 3d and       w / w, VT049484-ZpLexADBD (JK22c) / +; VT050660-p65ADZp (attP2),          MF05
+Supplementary     13XLexAop2-CsChrimson-tdTomato (VK00005), 20XUAS Syn21-opGCaMP6s-
+Fig. 2            p10-bp (su(Hw)attP1) / VT008473-GAL4 (attP2)
+Fig. 3d and       w / w, VT049484-ZpLexADBD (JK22c) / +; VT050660-p65ADZp (attP2),          MF06
+Supplementary     13XLexAop2-CsChrimson-tdTomato (VK00005), 20XUAS Syn21-opGCaMP6s-
+Fig. 2            p10-bp (su(Hw)attP1) / 92G01-GAL4 (attP2)
+Fig. 3d and       w / w, VT049484-ZpLexADBD (JK22c) / +; VT050660-p65ADZp (attP2),          MF07
+Supplementary     13XLexAop2-CsChrimson-tdTomato (VK00005), 20XUAS Syn21-opGCaMP6s-
+Fig. 2            p10-bp (su(Hw)attP1) / VT014974-GAL4 (attP2)
+Fig. 3d and       LexAop2-Syn21-opGCamp6s (su(HW)8), 10XUAS Syn21-Chrimson88-tdt3.1         MF08
+Supplementary     (attP18), w / w; VT044845-ZpGAL4DBD (attP40) / VT043924-LexA (JK22c) ;
+Fig. 2            VT050660-p65ADZp (attP2) / +
+Fig. 3d,          w / w, VT049484-ZpLexADBD (JK22c) / +; VT050660-p65ADZp (attP2),          MF09
+Supplementary     13XLexAop2-CsChrimson-tdTomato (VK00005), 20XUAS Syn21-opGCaMP6s-
+Fig. 2 and Fig.   p10-bp (su(Hw)attP1) / VT062245-GAL4 (attP2)
+6a
+Fig. 3d and       w / w, VT049484-ZpLexADBD (JK22c) / +; VT050660-p65ADZp (attP2),          MF10
+Supplementary     13XLexAop2-CsChrimson-tdTomato (VK00005), 20XUAS Syn21-opGCaMP6s-
+Fig. 2            p10-bp (su(Hw)attP1) / VT002075-GAL4 (attP2)
+Fig. 3d and       LexAop2-Syn21-opGCamp6s (su(HW)8), 10XUAS Syn21-Chrimson88-tdt3.1         MF11
+Supplementary     (attP18), w / w; VT044845-ZpGAL4DBD (attP40) / VT021842-LexA (attP40) ;
+Fig. 2            VT050660-p65ADZp (attP2) / +
+Fig. 3d and       w / w, VT049484-ZpLexADBD (JK22c) / +; VT050660-p65ADZp (attP2),          MF12
+Supplementary     13XLexAop2-CsChrimson-tdTomato (VK00005), 20XUAS Syn21-opGCaMP6s-
+Fig. 2            p10-bp (su(Hw)attP1) / VT038219-GAL4 (attP2)
+
+
+
+
+                                                       11
+Fig. 3d and     LexAop2-Syn21-opGCamp6s (su(HW)8), 10XUAS Syn21-Chrimson88-tdt3.1         MF13
+Supplementary   (attP18), w / w; VT044845-ZpGAL4DBD (attP40) / 73B05-LexA (attP40) ;
+Fig. 2          VT050660-p65ADZp (attP2) / +
+Fig. 3d and     w / w, VT049484-ZpLexADBD (JK22c) / +; VT050660-p65ADZp (attP2),          MF14
+Supplementary   13XLexAop2-CsChrimson-tdTomato (VK00005), 20XUAS Syn21-opGCaMP6s-
+Fig. 2          p10-bp (su(Hw)attP1) / VT002996-GAL4 (attP2)
+Fig. 3d and     w / w, VT049484-ZpLexADBD (JK22c) / +; VT050660-p65ADZp (attP2),          MF15
+Supplementary   13XLexAop2-CsChrimson-tdTomato (VK00005), 20XUAS Syn21-opGCaMP6s-
+Fig. 2          p10-bp (su(Hw)attP1) / VT019345-GAL4 (attP2)
+Fig. 3d and     w / w, VT049484-ZpLexADBD (JK22c) / +; VT050660-p65ADZp (attP2),          MF16
+Supplementary   13XLexAop2-CsChrimson-tdTomato (VK00005), 20XUAS Syn21-opGCaMP6s-
+Fig. 2          p10-bp (su(Hw)attP1) / 82F02-GAL4 (attP2)
+Fig. 3d and     LexAop2-Syn21-opGCamp6s (su(HW)8), 10XUAS Syn21-Chrimson88-tdt3.1         MF17
+Supplementary   (attP18), w / w; VT044845-ZpGAL4DBD (attP40) / VT026669-LexA (attP40) ;
+Fig. 2          VT050660-p65ADZp (attP2) / +
+Fig. 3d and     w / w, VT049484-ZpLexADBD (JK22c) / +; VT050660-p65ADZp (attP2),          MF18
+Supplementary   13XLexAop2-CsChrimson-tdTomato (VK00005), 20XUAS Syn21-opGCaMP6s-
+Fig. 2          p10-bp (su(Hw)attP1) / VT039419-GAL4 (attP2)
+Fig. 3d and     w / w, VT049484-ZpLexADBD (JK22c) / +; VT050660-p65ADZp (attP2),          MF19
+Supplementary   13XLexAop2-CsChrimson-tdTomato (VK00005), 20XUAS Syn21-opGCaMP6s-
+Fig. 2          p10-bp (su(Hw)attP1) / VT056582-GAL4 (attP2)
+Fig. 3d and     w / w, VT049484-ZpLexADBD (JK22c) / +; VT050660-p65ADZp (attP2),          MF20
+Supplementary   13XLexAop2-CsChrimson-tdTomato (VK00005), 20XUAS Syn21-opGCaMP6s-
+Fig. 2          p10-bp (su(Hw)attP1) / VT000353-GAL4 (attP2)
+Fig. 3d and     w / w, VT049484-ZpLexADBD (JK22c) / +; VT050660-p65ADZp (attP2),          MF21
+Supplementary   13XLexAop2-CsChrimson-tdTomato (VK00005), 20XUAS Syn21-opGCaMP6s-
+Fig. 2          p10-bp (su(Hw)attP1) / 29G03-GAL4 (attP2)
+Fig. 3d and     w / w, VT049484-ZpLexADBD (JK22c) / +; VT050660-p65ADZp (attP2),          MF22
+Supplementary   13XLexAop2-CsChrimson-tdTomato (VK00005), 20XUAS Syn21-opGCaMP6s-
+Fig. 2          p10-bp (su(Hw)attP1) / VT040713-GAL4 (attP2)
+Fig. 3d and     w / w, VT049484-ZpLexADBD (JK22c) / +; VT050660-p65ADZp (attP2),          MF23
+Supplementary   13XLexAop2-CsChrimson-tdTomato (VK00005), 20XUAS Syn21-opGCaMP6s-
+Fig. 2          p10-bp (su(Hw)attP1) / 19D12-GAL4 (attP2)
+Fig. 3d and     w / w, VT049484-ZpLexADBD (JK22c) / +; VT050660-p65ADZp (attP2),          MF24
+Supplementary   13XLexAop2-CsChrimson-tdTomato (VK00005), 20XUAS Syn21-opGCaMP6s-
+Fig. 2          p10-bp (su(Hw)attP1) / VT007722-GAL4 (attP2)
+Fig. 3e and     w / w, VT049484-ZpLexADBD (JK22c) / +; VT050660-p65ADZp (attP2),          MF25
+Supplementary   13XLexAop2-CsChrimson-tdTomato (VK00005), 20XUAS Syn21-opGCaMP6s-
+Fig. 2          p10-bp (su(Hw)attP1) / VT000254-GAL4 (attP2)
+Fig. 3e and     w / w, VT049484-ZpLexADBD (JK22c) / +; VT050660-p65ADZp (attP2),          MF26
+Supplementary   13XLexAop2-CsChrimson-tdTomato (VK00005), 20XUAS Syn21-opGCaMP6s-
+Fig. 2          p10-bp (su(Hw)attP1) / VT010555-GAL4 (attP2)
+Fig. 3e and     LexAop2-Syn21-opGCamp6s (su(HW)8), 10XUAS Syn21-Chrimson88-tdt3.1         MF27
+Supplementary   (attP18), w / w; VT044845-ZpGAL4DBD (attP40) / +; VT050660-p65ADZp
+Fig. 2          (attP2) / VT044492-LexA (attP2)
+Fig. 3e and     w / w, VT049484-ZpLexADBD (JK22c) / +; VT050660-p65ADZp (attP2),          MF28
+Supplementary   13XLexAop2-CsChrimson-tdTomato (VK00005), 20XUAS Syn21-opGCaMP6s-
+Fig. 2          p10-bp (su(Hw)attP1) / VT001497-GAL4 (attP2)
+Fig. 3e and     w / w, VT049484-ZpLexADBD (JK22c) / +; VT050660-p65ADZp (attP2),          MF29
+Supplementary   13XLexAop2-CsChrimson-tdTomato (VK00005), 20XUAS Syn21-opGCaMP6s-
+Fig. 2          p10-bp (su(Hw)attP1) / VT056808-GAL4 (attP2)
+Fig. 3e and     w / w, VT049484-ZpLexADBD (JK22c) / +; VT050660-p65ADZp (attP2),          MF30
+Supplementary   13XLexAop2-CsChrimson-tdTomato (VK00005), 20XUAS Syn21-opGCaMP6s-
+Fig. 2          p10-bp (su(Hw)attP1) / 22C10-GAL4 (attP2)
+Fig. 3e and     w / w, VT049484-ZpLexADBD (JK22c) / +; VT050660-p65ADZp (attP2),          MF31
+Supplementary   13XLexAop2-CsChrimson-tdTomato (VK00005), 20XUAS Syn21-opGCaMP6s-
+Fig. 2          p10-bp (su(Hw)attP1) / VT057467-GAL4 (attP2)
+Fig. 3e and     w / w, VT049484-ZpLexADBD (JK22c) / +; VT050660-p65ADZp (attP2),          MF32
+Supplementary   13XLexAop2-CsChrimson-tdTomato (VK00005), 20XUAS Syn21-opGCaMP6s-
+Fig. 2          p10-bp (su(Hw)attP1) / VT002223-GAL4 (attP2)
+
+
+
+
+                                                     12
+Fig. 3f and     LexAop2-Syn21-opGCamp6s (su(HW)8), 10XUAS Syn21-Chrimson88-tdt3.1        MF33
+Supplementary   (attP18), w / w; VT044845-ZpGAL4DBD (attP40) / 31H05-p65ADZp (attP40);
+Fig. 2          VT050660-p65ADZp (attP2) / VT011123-ZpGAL4DBD (attP2)
+Fig. 3d and     R57C10-Flp2::PEST (attp18), w / w; brp::Snap / +; pJFRC201-10XUAS-       MF01
+Supplementary   FRT>STOP>FRT-myr::smGFP-HA (VK00005), pJFRC240-10XUAS-
+Fig. 1          FRT>STOP>FRT-myr::smGFP-V5-THS-10XUAS-FRT>STOP>FRT-
+                myr::smGFP-FLAG (su(Hw)attP1) / VT029570-GAL4 (attP2)
+Fig. 3c,d and   R57C10-Flp2::PEST (attp18), w / w; brp::Snap / +; pJFRC201-10XUAS-       MF02
+Supplementary   FRT>STOP>FRT-myr::smGFP-HA (VK00005), pJFRC240-10XUAS-
+Fig. 1          FRT>STOP>FRT-myr::smGFP-V5-THS-10XUAS-FRT>STOP>FRT-
+                myr::smGFP-FLAG (su(Hw)attP1) / 28F07-GAL4 (attP2)
+Fig. 3d and     R57C10-Flp2::PEST (attp18), w / w; brp::Snap / +; pJFRC201-10XUAS-       MF03
+Supplementary   FRT>STOP>FRT-myr::smGFP-HA (VK00005), pJFRC240-10XUAS-
+Fig. 1          FRT>STOP>FRT-myr::smGFP-V5-THS-10XUAS-FRT>STOP>FRT-
+                myr::smGFP-FLAG (su(Hw)attP1) / VT019902-GAL4 (attP2)
+Fig. 3d         R57C10-Flp2::PEST (attp18), w / w; brp::Snap / +; pJFRC201-10XUAS-       MF04
+                FRT>STOP>FRT-myr::smGFP-HA (VK00005), pJFRC240-10XUAS-
+                FRT>STOP>FRT-myr::smGFP-V5-THS-10XUAS-FRT>STOP>FRT-
+                myr::smGFP-FLAG (su(Hw)attP1) / VT046303-GAL4 (attP2)
+Fig. 3d         R57C10-Flp2::PEST (attp18), w / w; brp::Snap / +; pJFRC201-10XUAS-       MF05
+                FRT>STOP>FRT-myr::smGFP-HA (VK00005), pJFRC240-10XUAS-
+                FRT>STOP>FRT-myr::smGFP-V5-THS-10XUAS-FRT>STOP>FRT-
+                myr::smGFP-FLAG (su(Hw)attP1) / VT008473-GAL4 (attP2)
+Fig. 3d and     R57C10-Flp2::PEST (attp18), w / w; brp::Snap / +; pJFRC201-10XUAS-       MF06
+Supplementary   FRT>STOP>FRT-myr::smGFP-HA (VK00005), pJFRC240-10XUAS-
+Fig. 1          FRT>STOP>FRT-myr::smGFP-V5-THS-10XUAS-FRT>STOP>FRT-
+                myr::smGFP-FLAG (su(Hw)attP1) / 92G01-GAL4 (attP2)
+Fig. 3d         R57C10-Flp2::PEST (attp18), w / w; brp::Snap / +; pJFRC201-10XUAS-       MF07
+                FRT>STOP>FRT-myr::smGFP-HA (VK00005), pJFRC240-10XUAS-
+                FRT>STOP>FRT-myr::smGFP-V5-THS-10XUAS-FRT>STOP>FRT-
+                myr::smGFP-FLAG (su(Hw)attP1) / VT014974-GAL4 (attP2)
+Fig. 3d         R57C10-Flp2::PEST (attp18), w / w; brp::Snap / +; pJFRC201-10XUAS-       MF08
+                FRT>STOP>FRT-myr::smGFP-HA (VK00005), pJFRC240-10XUAS-
+                FRT>STOP>FRT-myr::smGFP-V5-THS-10XUAS-FRT>STOP>FRT-
+                myr::smGFP-FLAG (su(Hw)attP1) / VT043924-GAL4 (attP2)
+Fig. 3d and     R57C10-Flp2::PEST (attp18), w / w; brp::Snap / +; pJFRC201-10XUAS-       MF09
+Supplementary   FRT>STOP>FRT-myr::smGFP-HA (VK00005), pJFRC240-10XUAS-
+Fig. 1          FRT>STOP>FRT-myr::smGFP-V5-THS-10XUAS-FRT>STOP>FRT-
+                myr::smGFP-FLAG (su(Hw)attP1) / VT062245-GAL4 (attP2)
+Fig. 3d and     R57C10-Flp2::PEST (attp18), w / w; brp::Snap / +; pJFRC201-10XUAS-       MF10
+Supplementary   FRT>STOP>FRT-myr::smGFP-HA (VK00005), pJFRC240-10XUAS-
+Fig. 1          FRT>STOP>FRT-myr::smGFP-V5-THS-10XUAS-FRT>STOP>FRT-
+                myr::smGFP-FLAG (su(Hw)attP1) / VT002075-GAL4 (attP2)
+Fig. 3d         R57C10-Flp2::PEST (attp18), w / w; brp::Snap / +; pJFRC201-10XUAS-       MF11
+                FRT>STOP>FRT-myr::smGFP-HA (VK00005), pJFRC240-10XUAS-
+                FRT>STOP>FRT-myr::smGFP-V5-THS-10XUAS-FRT>STOP>FRT-
+                myr::smGFP-FLAG (su(Hw)attP1) / VT021842-GAL4 (attP2)
+Fig. 3d and     R57C10-Flp2::PEST (attp18), w / w; brp::Snap / +; pJFRC201-10XUAS-       MF12
+Supplementary   FRT>STOP>FRT-myr::smGFP-HA (VK00005), pJFRC240-10XUAS-
+Fig. 1          FRT>STOP>FRT-myr::smGFP-V5-THS-10XUAS-FRT>STOP>FRT-
+                myr::smGFP-FLAG (su(Hw)attP1) / VT038219-GAL4 (attP2)
+Fig. 3d and     R57C10-Flp2::PEST (attp18), w / w; 73B05-p65ADZp (attp40); 42H01-        MF13
+Supplementary   ZpGAL4DBD (attp2), pJFRC201-10XUAS-FRT>STOP>FRT-myr::smGFP-HA
+Fig. 1          (VK00005), pJFRC240-10XUAS-FRT>STOP>FRT-myr::smGFP-V5-THS-
+                10XUAS-FRT>STOP>FRT-myr::smGFP-FLAG (su(Hw)attP1)
+Fig. 3d         R57C10-Flp2::PEST (attp18), w / w; brp::Snap / +; pJFRC201-10XUAS-       MF14
+                FRT>STOP>FRT-myr::smGFP-HA (VK00005), pJFRC240-10XUAS-
+                FRT>STOP>FRT-myr::smGFP-V5-THS-10XUAS-FRT>STOP>FRT-
+                myr::smGFP-FLAG (su(Hw)attP1) / VT002996-GAL4 (attP2)
+Fig. 3d         R57C10-Flp2::PEST (attp18), w / w; brp::Snap / +; pJFRC201-10XUAS-       MF15
+                FRT>STOP>FRT-myr::smGFP-HA (VK00005), pJFRC240-10XUAS-
+
+
+
+                                                    13
+                FRT>STOP>FRT-myr::smGFP-V5-THS-10XUAS-FRT>STOP>FRT-
+                myr::smGFP-FLAG (su(Hw)attP1) / VT019345-GAL4 (attP2)
+Fig. 3d and     R57C10-Flp2::PEST (attp18), w / w; brp::Snap / +; pJFRC201-10XUAS-   MF16
+Supplementary   FRT>STOP>FRT-myr::smGFP-HA (VK00005), pJFRC240-10XUAS-
+Fig. 1          FRT>STOP>FRT-myr::smGFP-V5-THS-10XUAS-FRT>STOP>FRT-
+                myr::smGFP-FLAG (su(Hw)attP1) / 82F02-GAL4 (attP2)
+Fig. 3d and     R57C10-Flp2::PEST (attp18), w / w; brp::Snap / +; pJFRC201-10XUAS-   MF17
+Supplementary   FRT>STOP>FRT-myr::smGFP-HA (VK00005), pJFRC240-10XUAS-
+Fig. 1          FRT>STOP>FRT-myr::smGFP-V5-THS-10XUAS-FRT>STOP>FRT-
+                myr::smGFP-FLAG (su(Hw)attP1) / VT026669-GAL4 (attP2)
+Fig. 3d and     R57C10-Flp2::PEST (attp18), w / w; brp::Snap / +; pJFRC201-10XUAS-   MF18
+Supplementary   FRT>STOP>FRT-myr::smGFP-HA (VK00005), pJFRC240-10XUAS-
+Fig. 1          FRT>STOP>FRT-myr::smGFP-V5-THS-10XUAS-FRT>STOP>FRT-
+                myr::smGFP-FLAG (su(Hw)attP1) / VT039419-GAL4 (attP2)
+Fig. 3d and     R57C10-Flp2::PEST (attp18), w / w; brp::Snap / +; pJFRC201-10XUAS-   MF19
+Supplementary   FRT>STOP>FRT-myr::smGFP-HA (VK00005), pJFRC240-10XUAS-
+Fig. 1          FRT>STOP>FRT-myr::smGFP-V5-THS-10XUAS-FRT>STOP>FRT-
+                myr::smGFP-FLAG (su(Hw)attP1) / VT056582-GAL4 (attP2)
+Fig. 3d and     R57C10-Flp2::PEST (attp18), w / w; brp::Snap / +; pJFRC201-10XUAS-   MF20
+Supplementary   FRT>STOP>FRT-myr::smGFP-HA (VK00005), pJFRC240-10XUAS-
+Fig. 1          FRT>STOP>FRT-myr::smGFP-V5-THS-10XUAS-FRT>STOP>FRT-
+                myr::smGFP-FLAG (su(Hw)attP1) / VT000353-GAL4 (attP2)
+Fig. 3d         R57C10-Flp2::PEST (attp18), w / w; brp::Snap / +; pJFRC201-10XUAS-   MF21
+                FRT>STOP>FRT-myr::smGFP-HA (VK00005), pJFRC240-10XUAS-
+                FRT>STOP>FRT-myr::smGFP-V5-THS-10XUAS-FRT>STOP>FRT-
+                myr::smGFP-FLAG (su(Hw)attP1) / 29G03-GAL4 (attP2)
+Fig. 3d and     R57C10-Flp2::PEST (attp18), w / w; brp::Snap / +; pJFRC201-10XUAS-   MF22
+Supplementary   FRT>STOP>FRT-myr::smGFP-HA (VK00005), pJFRC240-10XUAS-
+Fig. 1          FRT>STOP>FRT-myr::smGFP-V5-THS-10XUAS-FRT>STOP>FRT-
+                myr::smGFP-FLAG (su(Hw)attP1) / VT040713-GAL4 (attP2)
+Fig. 3d and     R57C10-Flp2::PEST (attp18), w / w; brp::Snap / +; pJFRC201-10XUAS-   MF23
+Supplementary   FRT>STOP>FRT-myr::smGFP-HA (VK00005), pJFRC240-10XUAS-
+Fig. 1          FRT>STOP>FRT-myr::smGFP-V5-THS-10XUAS-FRT>STOP>FRT-
+                myr::smGFP-FLAG (su(Hw)attP1) / 19D12-GAL4 (attP2)
+Fig. 3d and     R57C10-Flp2::PEST (attp18), w / w; brp::Snap / +; pJFRC201-10XUAS-   MF24
+Supplementary   FRT>STOP>FRT-myr::smGFP-HA (VK00005), pJFRC240-10XUAS-
+Fig. 1          FRT>STOP>FRT-myr::smGFP-V5-THS-10XUAS-FRT>STOP>FRT-
+                myr::smGFP-FLAG (su(Hw)attP1) / VT007722-GAL4 (attP2)
+Fig. 3e         R57C10-Flp2::PEST (attp18), w / w; brp::Snap / +; pJFRC201-10XUAS-   MF25
+                FRT>STOP>FRT-myr::smGFP-HA (VK00005), pJFRC240-10XUAS-
+                FRT>STOP>FRT-myr::smGFP-V5-THS-10XUAS-FRT>STOP>FRT-
+                myr::smGFP-FLAG (su(Hw)attP1) / VT000254-GAL4 (attP2)
+Fig. 3e and     R57C10-Flp2::PEST (attp18), w / w; brp::Snap / +; pJFRC201-10XUAS-   MF26
+Supplementary   FRT>STOP>FRT-myr::smGFP-HA (VK00005), pJFRC240-10XUAS-
+Fig. 1          FRT>STOP>FRT-myr::smGFP-V5-THS-10XUAS-FRT>STOP>FRT-
+                myr::smGFP-FLAG (su(Hw)attP1) / VT010555-GAL4 (attP2)
+Fig. 3e         R57C10-Flp2::PEST (attp18), w / w; brp::Snap / +; pJFRC201-10XUAS-   MF27
+                FRT>STOP>FRT-myr::smGFP-HA (VK00005), pJFRC240-10XUAS-
+                FRT>STOP>FRT-myr::smGFP-V5-THS-10XUAS-FRT>STOP>FRT-
+                myr::smGFP-FLAG (su(Hw)attP1) / VT044492-GAL4 (attP2)
+Fig. 3e and     R57C10-Flp2::PEST (attp18), w / w; brp::Snap / +; pJFRC201-10XUAS-   MF28
+Supplementary   FRT>STOP>FRT-myr::smGFP-HA (VK00005), pJFRC240-10XUAS-
+Fig. 1          FRT>STOP>FRT-myr::smGFP-V5-THS-10XUAS-FRT>STOP>FRT-
+                myr::smGFP-FLAG (su(Hw)attP1) / VT001497-GAL4 (attP2)
+Fig. 3e         R57C10-Flp2::PEST (attp18), w / w; brp::Snap / +; pJFRC201-10XUAS-   MF29
+                FRT>STOP>FRT-myr::smGFP-HA (VK00005), pJFRC240-10XUAS-
+                FRT>STOP>FRT-myr::smGFP-V5-THS-10XUAS-FRT>STOP>FRT-
+                myr::smGFP-FLAG (su(Hw)attP1) / VT056808-GAL4 (attP2)
+Fig. 3e and     R57C10-Flp2::PEST (attp18), w / w; brp::Snap / +; pJFRC201-10XUAS-   MF30
+Supplementary   FRT>STOP>FRT-myr::smGFP-HA (VK00005), pJFRC240-10XUAS-
+Fig. 1
+
+
+
+                                                     14
+                FRT>STOP>FRT-myr::smGFP-V5-THS-10XUAS-FRT>STOP>FRT-
+                myr::smGFP-FLAG (su(Hw)attP1) / 22c10-GAL4 (attP2)
+Fig. 3e         R57C10-Flp2::PEST (attp18), w / w; brp::Snap / +; pJFRC201-10XUAS-         MF31
+                FRT>STOP>FRT-myr::smGFP-HA (VK00005), pJFRC240-10XUAS-
+                FRT>STOP>FRT-myr::smGFP-V5-THS-10XUAS-FRT>STOP>FRT-
+                myr::smGFP-FLAG (su(Hw)attP1) / VT057467-GAL4 (attP2)
+Fig. 3e and     R57C10-Flp2::PEST (attp18), w / w; brp::Snap / +; pJFRC201-10XUAS-         MF32
+Supplementary   FRT>STOP>FRT-myr::smGFP-HA (VK00005), pJFRC240-10XUAS-
+Fig. 1          FRT>STOP>FRT-myr::smGFP-V5-THS-10XUAS-FRT>STOP>FRT-
+                myr::smGFP-FLAG (su(Hw)attP1) / VT002223-GAL4 (attP2)
+Fig. 3f         R57C10-Flp2::PEST (attp18), w / w; 31H05-p65ADZp (attp40) / +; VT011123-   MF33
+                ZpGAL4DBD (attp2), pJFRC201-10XUAS-FRT>STOP>FRT-myr::smGFP-HA
+                (VK00005), pJFRC240-10XUAS-FRT>STOP>FRT-myr::smGFP-V5-THS-
+                10XUAS-FRT>STOP>FRT-myr::smGFP-FLAG (su(Hw)attP1)
+Supplementary   LexAop2-Syn21-opGCamp6s (su(HW)8), 10XUAS Syn21-Chrimson88-tdt3.1          MF14 (70B03)
+Fig. 2          (attP18), w / w; VT044845-ZpGAL4DBD (attP40) / 70B03-LexA (attP40) ;
+                VT050660-p65ADZp (attP2) / +
+Supplementary   w / w, VT049484-ZpLexADBD (JK22c) / +; VT050660-p65ADZp (attP2),           MF30 (VT048580)
+Fig. 2          13XLexAop2-CsChrimson-tdTomato (VK00005), 20XUAS Syn21-opGCaMP6s-
+                p10-bp (su(Hw)attP1) / VT048580-GAL4 (attP2)
+Supplementary   LexAop2-Syn21-opGCamp6s (su(HW)8), 10XUAS Syn21-Chrimson88-tdt3.1          MF15 (VT048146)
+Fig. 2          (attP18), w / w; VT044845-ZpGAL4DBD (attP40) / VT048146-LexA (attP40) ;
+                VT050660-p65ADZp (attP2) / +
+Supplementary   LexAop2-Syn21-opGCamp6s (su(HW)8), 10XUAS Syn21-Chrimson88-tdt3.1          MF08 (VT044964)
+Fig. 2          (attP18), w / w; VT044845-ZpGAL4DBD (attP40) / VT044964-LexA (attP40) ;
+                VT050660-p65ADZp (attP2) / +
+Supplementary   w / w, VT049484-ZpLexADBD (JK22c) / +; VT050660-p65ADZp (attP2),           MF16 (VT030541)
+Fig. 2          13XLexAop2-CsChrimson-tdTomato (VK00005), 20XUAS Syn21-opGCaMP6s-
+                p10-bp (su(Hw)attP1) / VT030541-GAL4 (attP2)
+Supplementary   LexAop2-Syn21-opGCamp6s (su(HW)8), 10XUAS Syn21-Chrimson88-tdt3.1          MF04 (VT026669)
+Fig. 2          (attP18), w / w; VT044845-ZpGAL4DBD (attP40) / VT026669-LexA (attP40) ;
+                VT050660-p65ADZp (attP2) / +
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / pBPp65ADZpUw*                Empty-SS
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / pBPZpGAL4DBDUw* (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT044845-p65ADZp             MDN-1
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / VT050660-p65ADZp (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT050660-p65ADZp             MDN+MAN-1
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / VT049484-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / 73B05-p65ADZp (attP40);      SS27416
+Supplementary   VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato (VK00005) /
+Fig. 3b         42H01-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / 72E10-p65ADZp (attP40);      SS32496
+Supplementary   VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato (VK00005) /
+Fig. 3b         VT049904-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT043924-p65ADZp             SS33343
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / VT044964-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT033629-p65ADZp             SS33510
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / VT021799-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT044964-p65ADZp             SS33542
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / VT023795-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / 77B09-p65ADZp (attP40);      SS35560
+Supplementary   VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato (VK00005) /
+Fig. 3b         72c08-ZpGAL4DBD (attP2)
+
+
+
+
+                                                     15
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / 92A10-p65ADZp (attP40);   SS36194
+Supplementary   VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato (VK00005) /
+Fig. 3b         VT019902-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT001608-p65ADZp          SS38205
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / VT025916-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT063303-p65ADZp          SS39036
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / VT063741-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / 78A01-p65ADZp (attP40);   SS43697
+Supplementary   VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato (VK00005) /
+Fig. 3b         VT009084-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT064563-p65ADZp          SS44225
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / VT000254-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT065322-p65ADZp          SS44254
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / VT019902-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT065322-p65ADZp          SS44255
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / 92A10-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT005404-p65ADZp          SS46225
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / VT000254-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT033616-p65ADZp          SS46229
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / VT008473-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT029814-p65ADZp          SS46233
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / VT028464-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT006480-p65ADZp          SS46243
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / 24A02-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / 24A02-p65ADZp (attP40);   SS46253
+Supplementary   VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato (VK00005) /
+Fig. 3b         VT006480-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / 31H09-p65ADZp (attP40);   SS46258
+Supplementary   VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato (VK00005) /
+Fig. 3b         VT020829-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT043146-p65ADZp          SS46300
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / VT000254-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT026777-p65ADZp          SS46669
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / VT049125-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT037566-p65ADZp          SS46730
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / VT008808-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT058873-p65ADZp          SS47847
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / VT058566-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / 15D08-p65ADZp (attP40);   SS47863
+Supplementary   VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato (VK00005) /
+Fig. 3b         72E10-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT021418-p65ADZp          SS47921
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / 24A02-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / 24A02-p65ADZp (attP40);   SS47938
+Supplementary   VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato (VK00005) /
+Fig. 3b         VT021418-ZpGAL4DBD (attP2)
+
+
+
+
+                                                    16
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT008808-p65ADZp          SS48376
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / VT048646-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / 75B10-p65ADZp (attP40);   SS48718
+Supplementary   VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato (VK00005) /
+Fig. 3b         94E11-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT062245-p65ADZp          SS50974
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / VT050105-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT062245-p65ADZp          SS50975
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / VT021374-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / 24A02-p65ADZp (attP40);   SS50995
+Supplementary   VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato (VK00005) /
+Fig. 3b         VT000360-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / 31H05-p65ADZp (attP40);   SS50996
+Supplementary   VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato (VK00005) /
+Fig. 3b         VT011123-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT024602-p65ADZp          SS51817
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / VT021374-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT021418-p65ADZp          SS51843
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / VT012717-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / 23G01-p65ADZp (attP40);   SS51877
+Supplementary   VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato (VK00005) /
+Fig. 3b         VT037810-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / 28F07-p65ADZp (attP40);   SS51891
+Supplementary   VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato (VK00005) /
+Fig. 3b         VT008808-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / 47A08-p65ADZp (attP40);   SS51895
+Supplementary   VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato (VK00005) /
+Fig. 3b         VT029814-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / 70E04-p65ADZp (attP40);   SS51907
+Supplementary   VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato (VK00005) /
+Fig. 3b         VT021418-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / 24E12-p65ADZp (attP40);   SS53029
+Supplementary   VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato (VK00005) /
+Fig. 3b         VT019345-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / 24E12-p65ADZp (attP40);   SS53030
+Supplementary   VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato (VK00005) /
+Fig. 3b         VT048146-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / 81A04-p65ADZp (attP40);   SS53050
+Supplementary   VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato (VK00005) /
+Fig. 3b         81A06-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT002081-p65ADZp          SS53903
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / VT019345-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT029814-p65ADZp          SS57939
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / VT049340-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT049362-p65ADZp          SS57941
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / VT021374-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT029814-p65ADZp          SS57954
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / VT025717-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT019307-p65ADZp          SS57955
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / VT025717-ZpGAL4DBD (attP2)
+
+
+
+
+                                                    17
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT062633-p65ADZp          SS57977
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / VT008808-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT062633-p65ADZp          SS58000
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / 28F07-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT045608-p65ADZp          SS58002
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / 70B03-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT036874-p65ADZp          SS58005
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / 70B03-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT019902-p65ADZp          SS58006
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / 72D01-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT041421-p65ADZp          SS59209
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / VT000254-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT006545-p65ADZp          SS59225
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / 29G03-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT033282-p65ADZp          SS59229
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / 75H07-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT012719-p65ADZp          SS59230
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / 75H07-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT006555-p65ADZp          SS60232
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / VT002075-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT006555-p65ADZp          SS60234
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / VT050105-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT001497-p65ADZp          SS60585
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / VT049903-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT026993-p65ADZp          SS62148
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / VT044492-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT002223-p65ADZp          SS62883
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / VT004419-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT019307-p65ADZp          SS63843
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / 50C03-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT002223-p65ADZp          SS64165
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / 21E02-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / 78A04-p65ADZp (attP40);   SS64167
+Supplementary   VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato (VK00005) /
+Fig. 3b         24B11-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT044843-p65ADZp          SS64172
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / VT008808-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT056808-p65ADZp          SS64179
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / 24B11-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT058545-p65ADZp          SS64188
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / VT016278-ZpGAL4DBD (attP2)
+
+
+
+
+                                                    18
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT009674-p65ADZp          SS64190
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / VT021842-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / 24B11-p65ADZp (attP40);   SS64214
+Supplementary   VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato (VK00005) /
+Fig. 3b         78A04-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / 19D12-p65ADZp (attP40);   SS64225
+Supplementary   VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato (VK00005) /
+Fig. 3b         VT058545-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT008808-p65ADZp          SS64234
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / VT002042-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT024647-p65ADZp          SS65706
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / VT049344-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT045636-p65ADZp          SS65713
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / VT024647-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / 68A10-p65ADZp (attP40);   SS66965
+Supplementary   VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato (VK00005) /
+Fig. 3b         53C10-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT014336-p65ADZp          SS67323
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / 20F06-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT014336-p65ADZp          SS67324
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / 81A06-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT040713-p65ADZp          SS67354
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / VT045636-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / 20F06-p65ADZp (attP40);   SS67423
+Supplementary   VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato (VK00005) /
+Fig. 3b         81A06-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / 59F08-p65ADZp (attP40);   SS67463
+Supplementary   VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato (VK00005) /
+Fig. 3b         45E06-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / 65E11-p65ADZp (attP40);   SS67466
+Supplementary   VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato (VK00005) /
+Fig. 3b         VT000353-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / 82F02-p65ADZp (attP40);   SS67472
+Supplementary   VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato (VK00005) /
+Fig. 3b         VT049125-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT001608-p65ADZp          SS67878
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / VT014554-ZpGAL4DBD (attP2)
+Fig. 4b and     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT039419-p65ADZp          SS67907
+Supplementary   (attP40); VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato
+Fig. 3b         (VK00005) / VT014974-ZpGAL4DBD (attP2)
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; VT039419-p65ADZp (attP40) /   SS27416
+Fig. 3a         +; VT014974-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; 72E10-p65ADZp (attP40) / +;   SS32496
+Fig. 3a         VT049904-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; VT043924-p65ADZp (attP40) /   SS33343
+Fig. 3a         +; VT044964-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; VT033629-p65ADZp (attP40) /   SS33510
+Fig. 3a         +; VT021799-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; VT044964-p65ADZp (attP40) /   SS33542
+Fig. 3a         +; VT023795-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; 77B09-p65ADZp (attP40) / +;   SS35560
+Fig. 3a         72c08-ZpGAL4DBD (attP2) / +
+
+
+
+
+                                                    19
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; 92A10-p65ADZp (attP40) / +;   SS36194
+Fig. 3a         VT019902-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; VT001608-p65ADZp (attP40) /   SS38205
+Fig. 3a         +; VT025916-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; VT063303-p65ADZp (attP40) /   SS39036
+Fig. 3a         +; VT063741-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; 78A01-p65ADZp (attP40) / +;   SS43697
+Fig. 3a         VT009084-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; VT064563-p65ADZp (attP40) /   SS44225
+Fig. 3a         +; VT000254-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; VT065322-p65ADZp (attP40) /   SS44254
+Fig. 3a         +; VT019902-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; VT065322-p65ADZp (attP40) /   SS44255
+Fig. 3a         +; 92A10-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; VT005404-p65ADZp (attP40) /   SS46225
+Fig. 3a         +; VT000254-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; VT033616-p65ADZp (attP40) /   SS46229
+Fig. 3a         +; VT008473-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; VT029814-p65ADZp (attP40) /   SS46233
+Fig. 3a         +; VT028464-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; VT006480-p65ADZp (attP40) /   SS46243
+Fig. 3a         +; 24A02-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; 24A02-p65ADZp (attP40) / +;   SS46253
+Fig. 3a         VT006480-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; 31H09-p65ADZp (attP40) / +;   SS46258
+Fig. 3a         VT020829-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; VT043146-p65ADZp (attP40) /   SS46300
+Fig. 3a         +; VT000254-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; VT026777-p65ADZp (attP40) /   SS46669
+Fig. 3a         +; VT049125-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; VT037566-p65ADZp (attP40) /   SS46730
+Fig. 3a         +; VT008808-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; VT058873-p65ADZp (attP40) /   SS47847
+Fig. 3a         +; VT058566-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; 15D08-p65ADZp (attP40) / +;   SS47863
+Fig. 3a         72E10-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; VT021418-p65ADZp (attP40) /   SS47921
+Fig. 3a         +; 24A02-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; 24A02-p65ADZp (attP40) / +;   SS47938
+Fig. 3a         VT021418-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; VT008808-p65ADZp (attP40) /   SS48376
+Fig. 3a         +; VT048646-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; 75B10-p65ADZp (attP40) / +;   SS48718
+Fig. 3a         94E11-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; VT062245-p65ADZp (attP40) /   SS50974
+Fig. 3a         +; VT050105-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; VT062245-p65ADZp (attP40) /   SS50975
+Fig. 3a         +; VT021374-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; 24A02-p65ADZp (attP40) / +;   SS50995
+Fig. 3a         VT000360-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; 31H05-p65ADZp (attP40) / +;   SS50996
+Fig. 3a         VT011123-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; VT024602-p65ADZp (attP40) /   SS51817
+Fig. 3a         +; VT021374-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; VT021418-p65ADZp (attP40) /   SS51843
+Fig. 3a         +; VT012717-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; 23G01-p65ADZp (attP40) / +;   SS51877
+Fig. 3a         VT037810-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; 28F07-p65ADZp (attP40) / +;   SS51891
+Fig. 3a         VT008808-ZpGAL4DBD (attP2) / +
+
+
+
+
+                                                    20
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; 47A08-p65ADZp (attP40) / +;   SS51895
+Fig. 3a         VT029814-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; 70E04-p65ADZp (attP40) / +;   SS51907
+Fig. 3a         VT021418-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; 24E12-p65ADZp (attP40) / +;   SS53029
+Fig. 3a         VT019345-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; 24E12-p65ADZp (attP40) / +;   SS53030
+Fig. 3a         VT048146-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; 81A04-p65ADZp (attP40) / +;   SS53050
+Fig. 3a         81A06-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; VT002081-p65ADZp (attP40) /   SS53903
+Fig. 3a         +; VT019345-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; VT029814-p65ADZp (attP40) /   SS57939
+Fig. 3a         +; VT049340-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; VT049362-p65ADZp (attP40) /   SS57941
+Fig. 3a         +; VT021374-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; VT029814-p65ADZp (attP40) /   SS57954
+Fig. 3a         +; VT025717-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; VT019307-p65ADZp (attP40) /   SS57955
+Fig. 3a         +; VT025717-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; VT062633-p65ADZp (attP40) /   SS57977
+Fig. 3a         +; VT008808-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; VT062633-p65ADZp (attP40) /   SS58000
+Fig. 3a         +; 28F07-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; VT045608-p65ADZp (attP40) /   SS58002
+Fig. 3a         +; 70B03-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; VT036874-p65ADZp (attP40) /   SS58005
+Fig. 3a         +; 70B03-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; VT019902-p65ADZp (attP40) /   SS58006
+Fig. 3a         +; 72D01-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; VT041421-p65ADZp (attP40) /   SS59209
+Fig. 3a         +; VT000254-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; VT006545-p65ADZp (attP40) /   SS59225
+Fig. 3a         +; 29G03-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; VT033282-p65ADZp (attP40) /   SS59229
+Fig. 3a         +; 75H07-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; VT012719-p65ADZp (attP40) /   SS59230
+Fig. 3a         +; 75H07-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; VT006555-p65ADZp (attP40) /   SS60232
+Fig. 3a         +; VT002075-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; VT006555-p65ADZp (attP40) /   SS60234
+Fig. 3a         +; VT050105-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; VT001497-p65ADZp (attP40) /   SS60585
+Fig. 3a         +; VT049903-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; VT026993-p65ADZp (attP40) /   SS62148
+Fig. 3a         +; VT044492-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; VT002223-p65ADZp (attP40) /   SS62883
+Fig. 3a         +; VT004419-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; VT019307-p65ADZp (attP40) /   SS63843
+Fig. 3a         +; 50C03-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; VT002223-p65ADZp (attP40) /   SS64165
+Fig. 3a         +; 21E02-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; 78A04-p65ADZp (attP40) / +;   SS64167
+Fig. 3a         24B11-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; VT044843-p65ADZp (attP40) /   SS64172
+Fig. 3a         +; VT008808-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; VT056808-p65ADZp (attP40) /   SS64179
+Fig. 3a         +; 24B11-ZpGAL4DBD (attP2) / +
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; VT058545-p65ADZp (attP40) /   SS64188
+Fig. 3a         +; VT016278-ZpGAL4DBD (attP2) / +
+
+
+
+
+                                                    21
+Supplementary     20XUAS-CsChrimson-mVenus (attP18), w / w; VT009674-p65ADZp (attP40) /    SS64190
+Fig. 3a           +; VT021842-ZpGAL4DBD (attP2) / +
+Supplementary     20XUAS-CsChrimson-mVenus (attP18), w / w; 24B11-p65ADZp (attP40) / +;    SS64214
+Fig. 3a           78A04-ZpGAL4DBD (attP2) / +
+Supplementary     20XUAS-CsChrimson-mVenus (attP18), w / w; 19D12-p65ADZp (attP40) / +;    SS64225
+Fig. 3a           VT058545-ZpGAL4DBD (attP2) / +
+Supplementary     20XUAS-CsChrimson-mVenus (attP18), w / w; VT008808-p65ADZp (attP40) /    SS64234
+Fig. 3a           +; VT002042-ZpGAL4DBD (attP2) / +
+Supplementary     20XUAS-CsChrimson-mVenus (attP18), w / w; VT024647-p65ADZp (attP40) /    SS65706
+Fig. 3a           +; VT049344-ZpGAL4DBD (attP2) / +
+Supplementary     20XUAS-CsChrimson-mVenus (attP18), w / w; VT045636-p65ADZp (attP40) /    SS65713
+Fig. 3a           +; VT024647-ZpGAL4DBD (attP2) / +
+Supplementary     20XUAS-CsChrimson-mVenus (attP18), w / w; 68A10-p65ADZp (attP40) / +;    SS66965
+Fig. 3a           53C10-ZpGAL4DBD (attP2) / +
+Supplementary     20XUAS-CsChrimson-mVenus (attP18), w / w; VT014336-p65ADZp (attP40) /    SS67323
+Fig. 3a           +; 20F06-ZpGAL4DBD (attP2) / +
+Supplementary     20XUAS-CsChrimson-mVenus (attP18), w / w; VT014336-p65ADZp (attP40) /    SS67324
+Fig. 3a           +; 81A06-ZpGAL4DBD (attP2) / +
+Supplementary     20XUAS-CsChrimson-mVenus (attP18), w / w; VT040713-p65ADZp (attP40) /    SS67354
+Fig. 3a           +; VT045636-ZpGAL4DBD (attP2) / +
+Supplementary     20XUAS-CsChrimson-mVenus (attP18), w / w; 20F06-p65ADZp (attP40) / +;    SS67423
+Fig. 3a           81A06-ZpGAL4DBD (attP2) / +
+Supplementary     20XUAS-CsChrimson-mVenus (attP18), w / w; 59F08-p65ADZp (attP40) / +;    SS67463
+Fig. 3a           45E06-ZpGAL4DBD (attP2) / +
+Supplementary     20XUAS-CsChrimson-mVenus (attP18), w / w; 65E11-p65ADZp (attP40) / +;    SS67466
+Fig. 3a           VT000353-ZpGAL4DBD (attP2) / +
+Supplementary     20XUAS-CsChrimson-mVenus (attP18), w / w; 82F02-p65ADZp (attP40) / +;    SS67472
+Fig. 3a           VT049125-ZpGAL4DBD (attP2) / +
+Supplementary     20XUAS-CsChrimson-mVenus (attP18), w / w; VT001608-p65ADZp (attP40) /    SS67878
+Fig. 3a           +; VT014554-ZpGAL4DBD (attP2) / +
+Supplementary     20XUAS-CsChrimson-mVenus (attP18), w / w; VT039419-p65ADZp (attP40) /    SS67907
+Fig. 3a           +; VT014974-ZpGAL4DBD (attP2) / +
+Supplementary     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / 24A02-p65ADZp              MDN>Chrimson-tdTomato
+Fig. 4A           (attP40) ;VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato       SS47938>TNT
+                  (VK00005) / VT021418-ZpGAL4DBD (attP2)
+Supplementary     w / w, UAS-TNTe, VT049484-ZpLexADBD (JK22c) / VT062245-p65ADZp           MDN>Chrimson-tdTomato
+Fig. 4B           (attP40) ;VT050660-p65ADZp (attP2), 13XLexAop2-CsChrimson-tdTomato       SS50974>TNT
+                  (VK00005) / VT050105-ZpGAL4DBD (attP2)
+Fig. 5a, 6a and   pJFRC300-20XUAS-FRT-dSTOP-FRTCsChrimson::mVenus (attP18), hs-FLP-        MDN
+Supplementary     PESTOpt (attP3), w / w; VT044845-ZpGAL4DBD (attP40) / +; VT050660-
+Fig. 6e           p65ADZp (attP2) / +
+Fig. 5a,h         R57C10-Flp2::PEST (attp18), w / w; brp::Snap / +; pJFRC201-10XUAS-       LBL40
+                  FRT>STOP>FRT-myr::smGFP-HA (VK00005), pJFRC240-10XUAS-
+                  FRT>STOP>FRT-myr::smGFP-V5-THS-10XUAS-FRT>STOP>FRT-
+                  myr::smGFP-FLAG (su(Hw)attP1) / VT029570-GAL4 (attP2)
+Fig. 5b           20XUAS-CsChrimson-mVenus (attP18), w / w; 24A02-p65ADZp (attP40) / +;    SS47938>mVenus
+                  VT021418-ZpGAL4DBD (attP2) / +
+Fig. 5b           w / w, VT044845-LexAp65 (attp40) / 24A02-p65ADZp (attP40); 13XLexAop2-   MDN>CsChrimson
+                  CsChrimson-tdTomato (VK00005), 20XUAS Syn21-opGCaMP6s-p10-bp             SS47938>GCaMP6s
+                  (su(Hw)attP1) / VT021418-ZpGAL4DBD (attP2)
+Fig. 5b           20XUAS-CsChrimson-mVenus (attP18), w / w; VT006480-p65ADZp (attP40) /    SS46243>mVenus
+                  +; 24A02-ZpGAL4DBD (attP2) / +
+Fig. 5b           w / w, VT044845-LexAp65 (attp40) / VT006480-p65ADZp (attP40);            MDN>CsChrimson
+                  13XLexAop2-CsChrimson-tdTomato (VK00005), 20XUAS Syn21-opGCaMP6s-        SS46243>GCaMP6s
+                  p10-bp (su(Hw)attP1) / 24A02-ZpGAL4DBD (attP2)
+Fig. 5c-g and     20XUAS-CsChrimson-mVenus (attP18), w / w; 24A02-p65ADZp (attP40) / +;    SS47938>CsChrimson
+Supplementary     VT021418-ZpGAL4DBD (attP2) / +
+Fig. 6c,d
+Fig. 5d,e and     20XUAS-CsChrimson-mVenus (attP18), w / w; VT006480-p65ADZp (attP40) /    SS46243>CsChrimson
+Supplementary     +; 24A02-ZpGAL4DBD (attP2) / +
+Fig. 6c,d
+
+
+
+                                                       22
+Fig. 5d,e and   20XUAS-CsChrimson-mVenus (attP18), w / w; pBPp65ADZpUw* (attP40) / +;      Empty-SS>CsChrimson
+Supplementary   pBPZpGAL4DBDUw* (attP2) / +
+Fig. 6c,d
+Fig. 5h and     R57C10-Flp2::PEST (attp18), w / w; 31H05-p65ADZp (attp40) / +; VT011123-   LUM9
+Supplementary   ZpGAL4DBD (attp2), pJFRC201-10XUAS-FRT>STOP>FRT-myr::smGFP-HA
+Fig. 6e         (VK00005), pJFRC240-10XUAS-FRT>STOP>FRT-myr::smGFP-V5-THS-
+                10XUAS-FRT>STOP>FRT-myr::smGFP-FLAG (su(Hw)attP1)
+Fig. 5i         w / w; VT021418-LexAGADfl (attP40) / +; 13XLexAop2-IVS-myr::GFP (attP2)    VT021418>GFP
+                /+
+Fig. 5i         20XUAS-CsChrimson-mVenus (attP18), w / w; 31H05-p65ADZp (attP40) / +;      SS50996>mVenus
+                VT011123-ZpGAL4DBD (attP2) / +
+Fig. 5i         w / w; VT021418-LexAGADfl (attP40) / 31H05-p65ADZp (attP40);               VT021418>CsChrimson
+                13XLexAop2-CsChrimson-tdTomato (VK00005), 20XUAS Syn21-opGCaMP6s-          VT050996>GCaMP6s
+                p10-bp (su(Hw)attP1) / VT011123-ZpGAL4DBD (attP2)
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / yw; 31H05-p65ADZp (attP40) /        SS50996>mVenus
+Fig. 6a         Mhc-RFP; VT011123-ZpGAL4DBD (attP2) / +                                    Mhc-RFP
+
+Supplementary   20XUAS-CsChrimson-mVenus (attP18), w / w; 31H05-p65ADZp (attP40) / +;      SS50996>CsChrimson
+Fig. 6b-d       VT011123-ZpGAL4DBD (attP2) / +
+Supplementary   LexAop2-Syn21-opGCamp6s (su(HW)8), 10XUAS Syn21-Chrimson88-tdt3.1          MDN>CsChrimson
+Fig. 6e         (attP18), w / w; VT044845-ZpGAL4DBD (attP40) / 31H05-p65ADZp (attP40);     SS50996>GCaMP6s
+                VT050660-p65ADZp (attP2) / VT011123-ZpGAL4DBD (attP2)
+Supplementary   w / w; VT021418-LexAGADfl (attP40), pJFRC48-13XLexAop2-IVS-                LBL40>tdT, GFP11
+Fig. 6f         myrtdTomato (su(Hw)attP5) / 31H05-p65ADZp (attP40); P{w[+mC]=UAS-          LUM9>GFP1-10
+                CD4-spGFP1-10}3, P{w[+mC]=lexAop-CD4-spGFP11}3 / VT011123-
+                ZpGAL4DBD (attP2)
+Supplementary   w / w; VT021418-LexAGADfl (attP40), pJFRC48-13XLexAop2-IVS-                LBL40>tdT, GFP11
+Fig. 6f         myrtdTomato (su(Hw)attP5) / +; P{w[+mC]=UAS-CD4-spGFP1-10}3,               UAS-GFP1-10
+                P{w[+mC]=lexAop-CD4-spGFP11}3 / +
+Supplementary   w / w; pJFRC48-13XLexAop2-IVS-myrtdTomato (su(Hw)attP5) / 31H05-           LexAop-tdT, GFP11
+Fig. 6f         p65ADZp (attP40); P{w[+mC]=UAS-CD4-spGFP1-10}3, P{w[+mC]=lexAop-           LUM9>GFP1-10
+                CD4-spGFP11}3 / VT011123-ZpGAL4DBD (attP2)
+Fig. 6a         R57C10-Flp2::PEST (attp18), w / w; brp::Snap / +; pJFRC201-10XUAS-         LUL130
+                FRT>STOP>FRT-myr::smGFP-HA (VK00005), pJFRC240-10XUAS-
+                FRT>STOP>FRT-myr::smGFP-V5-THS-10XUAS-FRT>STOP>FRT-
+                myr::smGFP-FLAG (su(Hw)attP1) / VT062245-GAL4 (attP2)
+Fig. 6b         20XUAS-CsChrimson-mVenus (attP18), w / w; VT062245-p65ADZp (attP40) /      SS50974>mVenus
+                +; VT050105-ZpGAL4DBD (attP2) / +
+Fig. 6b         w / w, VT044845-LexAp65 (attp40) / VT062245-p65ADZp (attP40);              MDN>CsChrimson
+                13XLexAop2-CsChrimson-tdTomato (VK00005), 20XUAS Syn21-opGCaMP6s-          SS50974>GCaMP6s
+                p10-bp (su(Hw)attP1) / VT050105-ZpGAL4DBD (attP2)
+Fig. 6b         20XUAS-CsChrimson-mVenus (attP18), w / w; VT062245-p65ADZp (attP40) /      SS50975>mVenus
+                +; VT021374-ZpGAL4DBD (attP2) / +
+Fig. 6b         w / w, VT044845-LexAp65 (attp40) / VT062245-p65ADZp (attP40);              MDN>CsChrimson
+                13XLexAop2-CsChrimson-tdTomato (VK00005), 20XUAS Syn21-opGCaMP6s-          SS50975>GCaMP6s
+                p10-bp (su(Hw)attP1) / VT021374-ZpGAL4DBD (attP2)
+Fig. 6c-f       20XUAS-CsChrimson-mVenus (attP18), w / w; VT062245-p65ADZp (attP40) /      SS50974>CsChrimson
+                +; VT050105-ZpGAL4DBD (attP2) / +
+Fig. 6d,e,g,h   20XUAS-CsChrimson-mVenus (attP18), w / w; VT062245-p65ADZp (attP40) /      SS50975>CsChrimson
+                +; VT021374-ZpGAL4DBD (attP2) / +
+Fig. 6d,e       20XUAS-CsChrimson-mVenus (attP18), w / w; pBPp65ADZpUw* (attP40) / +;      Empty-SS>CsChrimson
+                pBPZpGAL4DBDUw* (attP2) / +
+Fig. 7b         13XLexAop2-CsChrimson-tdTomato (attP18), w / w; VT049484-ZpLexADBD         MDN>CsChrimson
+                (JK22c), VT050660-p65ADZp (attP40) / VT044845-ZpGAL4DBD (attP40);          MDN>GtACR2
+                UAS-GtACR2 (attP2) / VT050660-p65ADZp (attP2)
+Fig. 7c-g and   13XLexAop2-CsChrimson-tdTomato (attP18), w / w; VT049484-ZpLexADBD         Empty-SS
+Supplementary   (JK22c), VT050660-p65ADZp (attP40) / pBPp65ADZpUw* (attP40); UAS-
+Fig. 7          GtACR2 (attP2) / pBPZpGAL4DBDUw* (attP2)
+Fig. 7c-g and   13XLexAop2-CsChrimson-tdTomato (attP18), w / w; VT049484-ZpLexADBD         LBL40: SS47938
+Supplementary   (JK22c), VT050660-p65ADZp (attP40) / 24A02-p65ADZp (attP40); UAS-
+Fig. 7          GtACR2 (attP2) / VT021418-ZpGAL4DBD (attP2)
+
+
+
+                                                     23
+ Fig. 7c-g and   13XLexAop2-CsChrimson-tdTomato (attP18), w / w; VT049484-ZpLexADBD     LUL130: SS50974
+ Supplementary   (JK22c), VT050660-p65ADZp (attP40) / VT062245-p65ADZp (attP40); UAS-
+ Fig. 7          GtACR2 (attP2) / VT050105-ZpGAL4DBD (attP2)
+
+
+Supplementary Table 2 | Full genotypes of flies used in experiments.
+
+
+
+
+                                                     24
+Supplementary References
+
+1     Bidaye, S. S., Machacek, C., Wu, Y. & Dickson, B. J. Neuronal control of Drosophila
+      walking direction. Science 344, 97-101 (2014).
+2     Sen, R. et al. Moonwalker Descending Neurons mediate visually evoked retreat in
+      Drosophila. Curr Biol 27, 766-771 (2017).
+3     Sen, R., Wang, K. & Dickson, B. J. TwoLumps ascending neurons mediate touch-evoked
+      reversal of walking direction in Drosophila. Curr Biol 29, 4337-4344 (2019).
+4     Tirian, L. & Dickson, B. J. The VT GAL4, LexA, and split-GAL4 driver line collections
+      for targeted expression in the Drosophila nervous system. Preprint at
+      https://www.biorxiv.org/content/10.1101/198648v1 (2017).
+5     Jenett, A. et al. A GAL4-driver line resource for Drosophila neurobiology. Cell Rep 2,
+      991-1001 (2012).
+6     Dionne, H., Hibbard, K. L., Cavallaro, A., Kao, J. C. & Rubin, G. M. Genetic reagents
+      for making split-GAL4 lines in Drosophila. Genetics 209, 31-35 (2018).
+7     Hampel, S., Franconville, R., Simpson, J. H. & Seeds, A. M. A neural command circuit
+      for grooming movement control. Elife 4, e08758 (2015).
+8     Talay, M. et al. Transsynaptic mapping of second-order taste neurons in flies by trans-
+      Tango. Neuron 96, 783-795 (2017).
+9     Chen, T. W. et al. Ultrasensitive fluorescent proteins for imaging neuronal activity.
+      Nature 499, 295-300 (2013).
+10    Klapoetke, N. C. et al. Independent optical excitation of distinct neural populations. Nat
+      Methods 11, 338-346 (2014).
+11    Simpson, J. H. Rationally subdividing the fly nervous system with versatile expression
+      reagents. J Neurogenet 30, 185-194 (2016).
+12    Kohl, J. et al. Ultrafast tissue staining with chemical tags. Proc Natl Acad Sci U S A 111,
+      E3805-3814 (2014).
+13    Nern, A., Pfeiffer, B. D. & Rubin, G. M. Optimized tools for multicolor stochastic
+      labeling reveal diverse stereotyped cell arrangements in the fly visual system. Proc Natl
+      Acad Sci U S A 112, E2967-2976 (2015).
+14    Wu, M. et al. Visual projection neurons in the Drosophila lobula link feature detection to
+      distinct behavioral programs. Elife 5, e21022 (2016).
+15    Sweeney, S. T., Broadie, K., Keane, J., Niemann, H. & Okane, C. J. Targeted expression
+      of tetanus toxin light-chain in Drosophila specifically eliminates synaptic transmission
+      and causes behavioral defects. Neuron 14, 341-351 (1995).
+16    Mohammad, F. et al. Optogenetic inhibition of behavior with anion channelrhodopsins.
+      Nat Methods 14, 271-274 (2017).
+17    Bosch, J. A., Tran, N. H. & Hariharan, I. K. CoinFLP: a system for efficient mosaic
+      screening and for visualizing clonal boundaries in Drosophila. Development 142, 597-
+      606 (2015).
+18    Pfeiffer, B. D. et al. Refinement of tools for targeted gene expression in Drosophila.
+      Genetics 186, 735-755 (2010).
+19    Enriquez, J. et al. Specification of individual adult motor neuron morphologies by
+      combinatorial transcription factor codes. Neuron 86, 955-970 (2015).
+
+
+
+
+                                              25
+
