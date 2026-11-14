@@ -1,0 +1,435 @@
+{
+  "tests": [
+    {
+      "id": "E1_necessity",
+      "status": "pass",
+      "observed": {
+        "periodic_spiking_MN": 0,
+        "multispike_burst_MN": 0,
+        "core_mean_peak_frequency_hz": 0.0,
+        "core_periodic": false,
+        "MN_with_any_spikes": 3
+      },
+      "scope": "fixed adult-reference config, full T1 graph, current timestep"
+    },
+    {
+      "id": "E2_necessity",
+      "status": "pass",
+      "observed": {
+        "periodic_spiking_MN": 0,
+        "multispike_burst_MN": 0,
+        "core_mean_peak_frequency_hz": 8.928571428571429,
+        "core_periodic": false,
+        "MN_with_any_spikes": 10
+      },
+      "scope": "same config; cancels periodicity, does not imply every MN silent"
+    },
+    {
+      "id": "I2_connected_rhythm",
+      "status": "pass",
+      "observed": {
+        "periodic_spiking_MN": 33,
+        "multispike_burst_MN": 5,
+        "core_mean_peak_frequency_hz": 7.874015748031496,
+        "core_periodic": true,
+        "MN_with_any_spikes": 35
+      },
+      "scope": "I2 actual edges included, not deleted"
+    },
+    {
+      "id": "I1_I2_single_ablation_redundancy",
+      "status": "pass",
+      "observed": {
+        "I1_silenced": {
+          "periodic_spiking_MN": 34,
+          "multispike_burst_MN": 4,
+          "core_mean_peak_frequency_hz": 10.15254586683158,
+          "core_periodic": true,
+          "MN_with_any_spikes": 35
+        },
+        "I2_silenced": {
+          "periodic_spiking_MN": 37,
+          "multispike_burst_MN": 7,
+          "core_mean_peak_frequency_hz": 8.88888888888889,
+          "core_periodic": true,
+          "MN_with_any_spikes": 38
+        }
+      },
+      "scope": "full T1 network; does not assert individual redundancy in minimum core"
+    },
+    {
+      "id": "intact_stimulus_frequency_monotonic",
+      "status": "fail",
+      "observed": {
+        "pA": [
+          120,
+          160,
+          200,
+          240
+        ],
+        "Hz": [
+          8.51063829787234,
+          7.874015748031496,
+          7.936507936507937,
+          7.8125
+        ]
+      },
+      "scope": "model prediction; no biological absolute current equivalence"
+    },
+    {
+      "id": "adult_recruitment_order",
+      "status": "pass",
+      "observed": {
+        "fast": 320.0,
+        "intermediate": 160.0,
+        "slow": 0.0
+      },
+      "scope": "independent adult class exemplars, not mapped EM identities"
+    },
+    {
+      "id": "adult_Rin_and_rest",
+      "status": "partial",
+      "observed": {
+        "target_Rin_MOhm": [
+          150,
+          300,
+          700
+        ],
+        "model_Rin_MOhm": [
+          149.99999981565537,
+          299.9999999891898,
+          755.3551881908867
+        ],
+        "slow_rest_hz": 30.0
+      },
+      "scope": "Fitted class exemplars; slow differential Rin within8%, mean potential vs experimental RMP caution"
+    },
+    {
+      "id": "DNg75_behavior",
+      "status": "not_tested",
+      "observed": {
+        "baseline_neural_Hz": 7.874015748031496,
+        "coactivation_neural_Hz": 8.368200836820083,
+        "MN_classification": {
+          "periodic_spiking_MN": 35,
+          "multispike_burst_MN": 5,
+          "core_mean_peak_frequency_hz": 8.368200836820083,
+          "core_periodic": true,
+          "MN_with_any_spikes": 36
+        }
+      },
+      "scope": "Only neural surrogate computed; no physical velocity, tripod coordination or step-length test"
+    },
+    {
+      "id": "DNg97_behavior",
+      "status": "not_tested",
+      "observed": {
+        "baseline_neural_Hz": 7.874015748031496,
+        "coactivation_neural_Hz": 8.080841060467545,
+        "MN_classification": {
+          "periodic_spiking_MN": 31,
+          "multispike_burst_MN": 5,
+          "core_mean_peak_frequency_hz": 8.080841060467545,
+          "core_periodic": true,
+          "MN_with_any_spikes": 44
+        }
+      },
+      "scope": "Only neural surrogate computed; no physical velocity, tripod coordination or step-length test"
+    },
+    {
+      "id": "DNg55_behavior",
+      "status": "not_tested",
+      "observed": {
+        "baseline_neural_Hz": 7.874015748031496,
+        "coactivation_neural_Hz": 7.874015748031496,
+        "MN_classification": {
+          "periodic_spiking_MN": 33,
+          "multispike_burst_MN": 5,
+          "core_mean_peak_frequency_hz": 7.874015748031496,
+          "core_periodic": true,
+          "MN_with_any_spikes": 35
+        }
+      },
+      "scope": "Only neural surrogate computed; no physical velocity, tripod coordination or step-length test"
+    },
+    {
+      "id": "DNg16_behavior",
+      "status": "not_tested",
+      "observed": {
+        "baseline_neural_Hz": 7.874015748031496,
+        "coactivation_neural_Hz": 7.9052618422697165,
+        "MN_classification": {
+          "periodic_spiking_MN": 30,
+          "multispike_burst_MN": 6,
+          "core_mean_peak_frequency_hz": 7.9052618422697165,
+          "core_periodic": true,
+          "MN_with_any_spikes": 43
+        }
+      },
+      "scope": "Only neural surrogate computed; no physical velocity, tripod coordination or step-length test"
+    },
+    {
+      "id": "DNb08_MN_periodicity",
+      "status": "partial",
+      "observed": {
+        "periodic_spiking_MN": 30,
+        "multispike_burst_MN": 12,
+        "core_mean_peak_frequency_hz": 0.0,
+        "core_periodic": false,
+        "MN_with_any_spikes": 35
+      },
+      "scope": "Periodic MN output exists; expected5-cell circuit attribution not established"
+    },
+    {
+      "id": "all130_muscle_target_reproduction",
+      "status": "fail",
+      "observed": {
+        "tau_ms": 40.0,
+        "train_RMSE_mapped": 0.4794995364467645,
+        "holdout_RMSE_mapped": 0.4934912364418356,
+        "mapped_channels": 104,
+        "neural_signal_channels": 59,
+        "holdout_RMSE_all130_including_missing_zero_readouts": 0.48199088153946384
+      },
+      "scope": "104 candidate mappings;59 signal channels;26 missing; high held-out error; old0.446 three-channel score not directly comparable"
+    },
+    {
+      "id": "native_muscle_interface",
+      "status": "pass",
+      "observed": {
+        "derivative_error": 0.0,
+        "native_activation_error": 0.0,
+        "body_bridge": [
+          {
+            "condition": "archived_auxiliaries",
+            "duration_s": 0.39999999999997227,
+            "activation_bridge_max_error": 0.0,
+            "root_displacement_mm": [
+              0.06591046951155156,
+              0.07460556337085275,
+              -0.4059363554674823
+            ],
+            "min_body_up_z": 0.8199988491754407,
+            "joint_path_RMSE_deg": 16.299894755777938,
+            "finite": true,
+            "extra_applied_forces": false,
+            "continuous_without_state_reset": true,
+            "walking_validated": false,
+            "reason": "Only0.4s diagnostic; no body-to-neural feedback; head/abdomen auxiliaries retained; first condition also retains old adhesion."
+          },
+          {
+            "condition": "adhesion_off",
+            "duration_s": 0.39999999999997227,
+            "activation_bridge_max_error": 0.0,
+            "root_displacement_mm": [
+              0.16825131020632778,
+              -0.0195755636768759,
+              -0.365851424619799
+            ],
+            "min_body_up_z": 0.9123603603084569,
+            "joint_path_RMSE_deg": 16.132885746768693,
+            "finite": true,
+            "extra_applied_forces": false,
+            "continuous_without_state_reset": true,
+            "walking_validated": false,
+            "reason": "Only0.4s diagnostic; no body-to-neural feedback; head/abdomen auxiliaries retained; first condition also retains old adhesion."
+          }
+        ]
+      },
+      "scope": "Matches original MuJoCo3.3.2 activation law; interface agreement is not walking success"
+    },
+    {
+      "id": "PFL3_DNa03_LAL010_pushpull",
+      "status": "not_tested",
+      "observed": "No fabricated cells, edges, calcium-to-Hz targets or behavioral passes",
+      "scope": "Needs verified identity/version mapping and/or brain, sensory state and full body loop absent here"
+    },
+    {
+      "id": "DNa02_DNg13_phase_specific_turning",
+      "status": "not_tested",
+      "observed": "No fabricated cells, edges, calcium-to-Hz targets or behavioral passes",
+      "scope": "Needs verified identity/version mapping and/or brain, sensory state and full body loop absent here"
+    },
+    {
+      "id": "MDN_LBL40_LUM9_LUL130",
+      "status": "not_tested",
+      "observed": "No fabricated cells, edges, calcium-to-Hz targets or behavioral passes",
+      "scope": "Needs verified identity/version mapping and/or brain, sensory state and full body loop absent here"
+    },
+    {
+      "id": "MDN_MF14_T1T2_vsT3",
+      "status": "not_tested",
+      "observed": "No fabricated cells, edges, calcium-to-Hz targets or behavioral passes",
+      "scope": "Needs verified identity/version mapping and/or brain, sensory state and full body loop absent here"
+    },
+    {
+      "id": "DNg74_9A_hook_and_claw",
+      "status": "not_tested",
+      "observed": "No fabricated cells, edges, calcium-to-Hz targets or behavioral passes",
+      "scope": "Needs verified identity/version mapping and/or brain, sensory state and full body loop absent here"
+    },
+    {
+      "id": "BPN_P9_combo",
+      "status": "not_tested",
+      "observed": "No fabricated cells, edges, calcium-to-Hz targets or behavioral passes",
+      "scope": "Needs verified identity/version mapping and/or brain, sensory state and full body loop absent here"
+    },
+    {
+      "id": "FG_BB_BRK_direction_selective_stop",
+      "status": "not_tested",
+      "observed": "No fabricated cells, edges, calcium-to-Hz targets or behavioral passes",
+      "scope": "Needs verified identity/version mapping and/or brain, sensory state and full body loop absent here"
+    },
+    {
+      "id": "hunger_FG",
+      "status": "not_tested",
+      "observed": "No fabricated cells, edges, calcium-to-Hz targets or behavioral passes",
+      "scope": "Needs verified identity/version mapping and/or brain, sensory state and full body loop absent here"
+    },
+    {
+      "id": "load_and_split_belt_adaptation",
+      "status": "not_tested",
+      "observed": "No fabricated cells, edges, calcium-to-Hz targets or behavioral passes",
+      "scope": "Needs verified identity/version mapping and/or brain, sensory state and full body loop absent here"
+    },
+    {
+      "id": "six_leg_coordination",
+      "status": "not_tested",
+      "observed": "No fabricated cells, edges, calcium-to-Hz targets or behavioral passes",
+      "scope": "Needs verified identity/version mapping and/or brain, sensory state and full body loop absent here"
+    },
+    {
+      "id": "fine_network_confirmation",
+      "status": "partial",
+      "observed": [
+        {
+          "file": "fine-full-E2_silenced-dt0.003125.json",
+          "dt_ms": 0.003125,
+          "condition": "E2_silenced",
+          "periodic_MN": 0,
+          "core_Hz": 17.857142857142858
+        },
+        {
+          "file": "fine-full-baseline-dt0.003125.json",
+          "dt_ms": 0.003125,
+          "condition": "baseline",
+          "periodic_MN": 34,
+          "core_Hz": 7.936507936507937
+        },
+        {
+          "file": "fine-full-baseline-dt0.00625.json",
+          "dt_ms": 0.00625,
+          "condition": "baseline",
+          "periodic_MN": 34,
+          "core_Hz": 7.936507936507937
+        }
+      ],
+      "scope": "Coarse-step failed check retained; compare fine-grid results, do not claim all full-network conditions converged"
+    }
+  ],
+  "evidence_entries": 146,
+  "literature_entries_are_not_test_passes": true,
+  "classification": {
+    "baseline": {
+      "periodic_spiking_MN": 33,
+      "multispike_burst_MN": 5,
+      "core_mean_peak_frequency_hz": 7.874015748031496,
+      "core_periodic": true,
+      "MN_with_any_spikes": 35
+    },
+    "drive_120": {
+      "periodic_spiking_MN": 34,
+      "multispike_burst_MN": 5,
+      "core_mean_peak_frequency_hz": 8.51063829787234,
+      "core_periodic": true,
+      "MN_with_any_spikes": 35
+    },
+    "drive_200": {
+      "periodic_spiking_MN": 33,
+      "multispike_burst_MN": 4,
+      "core_mean_peak_frequency_hz": 7.936507936507937,
+      "core_periodic": true,
+      "MN_with_any_spikes": 35
+    },
+    "drive_240": {
+      "periodic_spiking_MN": 35,
+      "multispike_burst_MN": 5,
+      "core_mean_peak_frequency_hz": 7.8125,
+      "core_periodic": true,
+      "MN_with_any_spikes": 37
+    },
+    "E1_silenced": {
+      "periodic_spiking_MN": 0,
+      "multispike_burst_MN": 0,
+      "core_mean_peak_frequency_hz": 0.0,
+      "core_periodic": false,
+      "MN_with_any_spikes": 3
+    },
+    "E2_silenced": {
+      "periodic_spiking_MN": 0,
+      "multispike_burst_MN": 0,
+      "core_mean_peak_frequency_hz": 8.928571428571429,
+      "core_periodic": false,
+      "MN_with_any_spikes": 10
+    },
+    "I1_silenced": {
+      "periodic_spiking_MN": 34,
+      "multispike_burst_MN": 4,
+      "core_mean_peak_frequency_hz": 10.15254586683158,
+      "core_periodic": true,
+      "MN_with_any_spikes": 35
+    },
+    "I2_silenced": {
+      "periodic_spiking_MN": 37,
+      "multispike_burst_MN": 7,
+      "core_mean_peak_frequency_hz": 8.88888888888889,
+      "core_periodic": true,
+      "MN_with_any_spikes": 38
+    },
+    "DNg75_coactivation": {
+      "periodic_spiking_MN": 35,
+      "multispike_burst_MN": 5,
+      "core_mean_peak_frequency_hz": 8.368200836820083,
+      "core_periodic": true,
+      "MN_with_any_spikes": 36
+    },
+    "DNg97_coactivation": {
+      "periodic_spiking_MN": 31,
+      "multispike_burst_MN": 5,
+      "core_mean_peak_frequency_hz": 8.080841060467545,
+      "core_periodic": true,
+      "MN_with_any_spikes": 44
+    },
+    "DNg55_coactivation": {
+      "periodic_spiking_MN": 33,
+      "multispike_burst_MN": 5,
+      "core_mean_peak_frequency_hz": 7.874015748031496,
+      "core_periodic": true,
+      "MN_with_any_spikes": 35
+    },
+    "DNg16_coactivation": {
+      "periodic_spiking_MN": 30,
+      "multispike_burst_MN": 6,
+      "core_mean_peak_frequency_hz": 7.9052618422697165,
+      "core_periodic": true,
+      "MN_with_any_spikes": 43
+    },
+    "DNb08_alone": {
+      "periodic_spiking_MN": 30,
+      "multispike_burst_MN": 12,
+      "core_mean_peak_frequency_hz": 0.0,
+      "core_periodic": false,
+      "MN_with_any_spikes": 35
+    },
+    "no_DN": {
+      "periodic_spiking_MN": 0,
+      "multispike_burst_MN": 0,
+      "core_mean_peak_frequency_hz": 0.0,
+      "core_periodic": false,
+      "MN_with_any_spikes": 0
+    }
+  },
+  "configuration_sha256": "0d1e0cdf9432ae83c2e4583dd89247ec016c4627e0970769fa538544966c1420",
+  "unmodeled": "real EM geometry; measured adult per-cell ionic densities; full brain; receptor-specific peripheral NMJs; body-to-brain sensory feedback; electrical coupling",
+  "numerics": "Backward-Euler voltage/Rush-Larsen gates; coarse dt0.025ms exploratory; fine-grid checks separately reported"
+}

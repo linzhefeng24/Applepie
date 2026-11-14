@@ -1,0 +1,4 @@
+{'tau_ms': 2.0, 'train_RMSE_mapped': 0.4009011867243333, 'holdout_RMSE_mapped': 0.40629925903461805, 'mapped_channels': 104, 'neural_signal_channels': 98, 'holdout_RMSE_all130_including_missing_zero_readouts': 0.4117664384635297}
+{'tau_ms': 5.0, 'train_RMSE_mapped': 0.37762336691455295, 'holdout_RMSE_mapped': 0.3879839742775957, 'mapped_channels': 104, 'neural_signal_channels': 98, 'holdout_RMSE_all130_including_missing_zero_readouts': 0.39738341808418043}
+{'tau_ms': 10.0, 'train_RMSE_mapped': 0.36903257236093806, 'holdout_RMSE_mapped': 0.3813279691981804, 'mapped_channels': 104, 'neural_signal_channels': 98, 'holdout_RMSE_all130_including_missing_zero_readouts': 0.3921952901368435}
+{'tau_ms': 20.0, 'train_RMSE_mapped': 0.352249401089076, 'holdout_RMSE_mapped': 0.3700095772227764, 'mapped_channels': 104, 'neural_signal_channels': 98, 'holdout_RMSE_all130_including_missing_zero_readouts': 0.3834240463514753}

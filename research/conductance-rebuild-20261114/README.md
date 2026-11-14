@@ -1,9 +1,72 @@
-# Reimplementation of the current chat's missing conductance-network experiment
+# 双区室电导网络重做与多现象调参：2026-11-14
 
-This is NEW code, not a recovered Monday checkpoint. The user explicitly authorized reimplementation and further tuning. Preserve the verified muscle replay and old A/B model.
+**已重新实现并实际运行，补回局部节律、消融、成年MN和神经—肌肉接口实验；尚未完成全部现象、130通道轨迹或六腿正常行走。** 这不是找回了周一原始检查点。代码、数据、候选、失败结果、配置及图表全部纳入GitHub。
 
-Aim: two-compartment Hodgkin–Huxley conductance neurons, measured adult MN passive targets, conductance synapses and explicit delays; preserve author-published directed connectivity and signs. Restore rhythm/MN/readout experiments and audit non-rhythm observations without equating literature entries with passed simulations.
+## 本轮实际结果
 
-Stages are checkpointed and pushed independently. Incomplete or failed results are retained. No claim of fully calibrated adult ion channels, full reconstructed morphology, whole-six-leg neural walking, or uniquely identified biological parameters.
+|检查|结果|适用范围|
+|---|---|---|
+|I2接入后的节律|保留实际I2连接，核心与下游可产生周期输出|未删边、未翻转符号|
+|完整T1网络|4,604细胞，含144个前腿MN；细步长下34个MN呈周期性放电，核心约7.94Hz|是完整作者T1图，不是完整六腿VNC|
+|E1/E2必要性|成年参考MN配置下，消融任一者后周期MN从33降至0；E2在更细步长下从34降至0|33对应0.025ms、1.2s；34对应0.003125ms、1.0s。消除周期性不等于所有MN完全静默|
+|I1/I2部分冗余|单独消融I1或I2仍保留周期输出|完整T1网络；最小核心不必有相同冗余|
+|核心参数扰动|8个参数各±10%，16/16保留周期性；细步长重复亦16/16|这不是全网络全部未知参数已验证|
+|成年MN电阻/电位|快/中/慢细步长Rin约150/300/745MΩ；平均胞体电位约−68/−60/−48.17mV|慢型目标700MΩ仍有约6.4%误差；自发放电状态平均电位不完全等同实验RMP|
+|成年MN静息与募集|慢型约31.4Hz，快/中型静息沉默；测试电流下募集顺序慢→中→快|独立类型示例；未知EM细胞没有被冒称已确定快/中/慢身份|
+|肌肉接口|对照MuJoCo3.3.2原生导数、原轨迹激活动力学，以及实际身体回放，激活最大误差均为0|接口算对不代表行为拟合成功|
+|肌肉激活拟合|104路有候选MN池，其中59路在当前神经输出中有信号；留出RMSE约0.493|仍失败；26路无映射。与旧记录3路0.446的口径不同，不能声称改善|
+|身体诊断|无黏附条件0.4秒前移约0.168mm，最低竖直度0.912，角度RMSE约16.13°|没有救援力或段内重置；头/腹原辅助输入保留；不是正常行走验证|
 
-References: Günay et al. 2015 doi:10.1371/journal.pcbi.1004189 (detailed-model methodology; larval parameters are not assigned as adult measurements); Azevedo et al. 2020 doi:10.7554/eLife.56754 (adult flexor MN physiology); Pugliese et al. https://github.com/smpuglie/Pugliese_2026 (connectivity and model hypotheses); original current-chat evidence remains in ../monday-neural-work/.
+周期性单脉冲与多脉冲簇包络分别统计。基准T1粗步长中33个周期MN只有5个通过严格多脉冲簇标准；不能把这些名称混用。
+
+## 图表与逐项审计
+
+- [网络膜电位、全部MN脉冲、刺激调频和消融](results/network-validation.png)
+- [成年MN输入电阻、募集和静息放电](results/adult-MN-calibration.png)
+- [130通道目标/预测及留出误差](results/muscle-activation-fit.png)
+- [现象审计](results/phenomena-audit.json)；[周期脉冲与多脉冲簇分开统计](results/spiking-vs-burst-classification.json)
+- [细步长网络结果](results/fine-full-baseline-dt0.003125.json)；[细步长E2消融](results/fine-full-E2_silenced-dt0.003125.json)
+- [模型机制及不确定性](MECHANISMS.md)
+
+## 不只检查节律
+
+`brain.json`和`data/phenomena-inventory.json`整理了146条已有及本聊天补录的证据/约束条目，不是146个独立现象，也不代表146项通过。
+
+已做DNg75/DNg97/DNg55/DNg16共激活、DNb08单独激活和无下行输入对照。DNg75/97的神经频率方向有部分符合，但未测身体速度、步长或三足协调；DNg97未重现更强的协同效应。增大DNg97单细胞输出电导的额外尝试反而丢失目标节律，增大DNg55电导没有产生所需增频。全部失败尝试保留。
+
+其他已列入约束：PFL3/PFL2→DNa03/LAL010/DNa02、左右DNa02跷跷板、DNa02与DNg13的步相差异、MDN→LBL40→LUM9与LUL130、MF14节段特异净响应、DNg74⊣9A⊣hook、P9群体招募、BPN/P9组合、FG/BB/BRK方向选择停止、饥饿门控、负载及分带反馈。缺少已核验细胞映射、脑部或身体感觉闭环的项目明确标记NOT_TESTED；没有人为接边或规定其输出。
+
+## 仍未满足的关键条件
+
+1. **刺激—频率不是单调上升。** 改变突触积分时间的额外尝试也未修复，部分参数使节律消失；失败数据均保留。最小核心与完整网络的调频要求按论文分别处理。
+2. **未恢复完整130通道激活。** 较少限制的旧候选在104路上误差更小，但消融约束失败；不能从不同候选各挑最好值拼成“全部通过”。
+3. **没有神经驱动的正常六腿行走。** 1,454细胞的全VNC来源诱导子图用于覆盖各腿候选MN读出；它保留所有入选节点间的真实边，但不是完整23,532细胞VNC，也没有六腿闭环CPG/感觉系统。
+4. **生理参数仍非唯一。** 两区室几何、离子通道密度与动力学、突触功能强度和受体参数有大量先验。不能把经典HH门控说成逐个成年神经元实测。
+
+## 数值检查
+
+原0.025ms→0.0125ms的核心频率检查失败，原日志保留在`results/test-results-coarse-step.txt`。未放宽该阈值。更细0.003125/0.0015625ms核心检查通过；完整T1在0.00625/0.003125ms下频率均约7.94Hz、周期MN均34个。完整网络14条件扫描仍标为粗步长探索，不能由基准收敛推断每项都已收敛。
+
+独立检查包括源连接/I2、无输入静默、确定性及消融、细步长、成年募集、原生肌肉导数和身体激活接口；结果见`results/test-results.txt`。科学条件仍有FAIL和NOT_TESTED，与代码检查通过是两回事。
+
+## 文件与复现
+
+- `model.py`：双区室连续HH、NaP、Ca/SK、延迟电导突触；没有神经元电压重置或外加周期输入。
+- `configs/`：全部选中配置；`core-fine-selected.json`和`adult-network-fine.json`用于细步长确认。
+- `data/`：作者有向连接、显式神经元ID、目标激活、原生导数检查及候选MN映射。
+- `search_core.py`及各`tune_*.py`/`refine_*.py`：保留搜索范围、手动诊断后提出的候选和失败结果。
+- `intact_suite.py adult`：冻结配置下14种完整T1条件。
+- `muscle_readout.py adult`：前60%训练、后40%留出；选择仅看训练误差，不为每块肌肉任意生成时间曲线。
+- `body_bridge.py`：独立MuJoCo3.3.2环境的真实身体诊断。
+
+神经环境Python3.12，依赖`requirements.txt`。先从本目录运行：
+
+```bash
+python reproduce.py
+# 重新执行完整扫描和细步长网络确认（较慢）
+python reproduce.py --full-network
+```
+
+输入数据已随仓库保存，常规复现不需要原`/workspace`数据目录。`prepare.py`只用于重新导出作者CSV。身体恢复包位于[../assets/flymimic-legacy-AB-twofile.zip](../assets/flymimic-legacy-AB-twofile.zip)，校验值见`data/body-model-release.json`；Release上传端点曾返回401，因此没有声称存在Release资产。解压后，用独立环境安装`body-requirements.txt`，运行`python body_bridge.py --model-dir /解压目录`。
+
+主要来源：Pugliese等作者仓库https://github.com/smpuglie/Pugliese_2026；Azevedo等成年MN https://doi.org/10.7554/eLife.56754；Günay等详细模型方法https://doi.org/10.1371/journal.pcbi.1004189。本轮未冒称已复现完整ModelDB模型。历史原记录见[../monday-neural-work/](../monday-neural-work/)。

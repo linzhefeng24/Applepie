@@ -1,0 +1,730 @@
+{
+  "neural_spike_source": "adult-all-legs-subgraph.npz",
+  "candidate_filters": [
+    {
+      "tau_ms": 2.0,
+      "train_RMSE_mapped": 0.5101445605113921,
+      "holdout_RMSE_mapped": 0.5225945878748238,
+      "mapped_channels": 104,
+      "neural_signal_channels": 59,
+      "holdout_RMSE_all130_including_missing_zero_readouts": 0.5059371622564621
+    },
+    {
+      "tau_ms": 5.0,
+      "train_RMSE_mapped": 0.5023178231178232,
+      "holdout_RMSE_mapped": 0.5157919906051189,
+      "mapped_channels": 104,
+      "neural_signal_channels": 59,
+      "holdout_RMSE_all130_including_missing_zero_readouts": 0.5003213283372887
+    },
+    {
+      "tau_ms": 10.0,
+      "train_RMSE_mapped": 0.4957898833688427,
+      "holdout_RMSE_mapped": 0.5114197725721695,
+      "mapped_channels": 104,
+      "neural_signal_channels": 59,
+      "holdout_RMSE_all130_including_missing_zero_readouts": 0.4967177030804235
+    },
+    {
+      "tau_ms": 20.0,
+      "train_RMSE_mapped": 0.4881097964161141,
+      "holdout_RMSE_mapped": 0.5011173245329803,
+      "mapped_channels": 104,
+      "neural_signal_channels": 59,
+      "holdout_RMSE_all130_including_missing_zero_readouts": 0.4882450080532826
+    },
+    {
+      "tau_ms": 40.0,
+      "train_RMSE_mapped": 0.4794995364467645,
+      "holdout_RMSE_mapped": 0.4934912364418356,
+      "mapped_channels": 104,
+      "neural_signal_channels": 59,
+      "holdout_RMSE_all130_including_missing_zero_readouts": 0.48199088153946384
+    }
+  ],
+  "selection_policy": "minimum training RMSE only; last40 percent is holdout and never used for parameter selection",
+  "selected": {
+    "tau_ms": 40.0,
+    "train_RMSE_mapped": 0.4794995364467645,
+    "holdout_RMSE_mapped": 0.4934912364418356,
+    "mapped_channels": 104,
+    "neural_signal_channels": 59,
+    "holdout_RMSE_all130_including_missing_zero_readouts": 0.48199088153946384
+  },
+  "native_derivative_max_error": 0.0,
+  "native_activation_replay_max_error": 0.0,
+  "old_reported_three_channel_RMSE_0_446_comparable": false,
+  "reason_not_comparable": "New scope/graph and channel set; original readout checkpoint missing",
+  "MN_to_MTU_verified": false,
+  "missing_mapping_channels": [
+    "LF:coxa_levator_muscle_2",
+    "LF:trochanter_reductor_muscle_2",
+    "LF:tibial_depressor_muscle_2",
+    "RF:coxa_levator_muscle_2",
+    "RF:trochanter_reductor_muscle_2",
+    "RF:tibial_depressor_muscle_2",
+    "LM:tergopleural_promotor",
+    "LM:pleural_promotor",
+    "LM:tarsus_depressor",
+    "LM:tarsus_retro_depressor",
+    "LM:tarsus_levator",
+    "RM:tergopleural_promotor",
+    "RM:pleural_promotor",
+    "RM:tarsus_depressor",
+    "RM:tarsus_retro_depressor",
+    "RM:tarsus_levator",
+    "LH:tergopleural_promotor",
+    "LH:pleural_promotor",
+    "LH:tarsus_depressor",
+    "LH:tarsus_retro_depressor",
+    "LH:tarsus_levator",
+    "RH:tergopleural_promotor",
+    "RH:pleural_promotor",
+    "RH:tarsus_depressor",
+    "RH:tarsus_retro_depressor",
+    "RH:tarsus_levator"
+  ],
+  "candidate_pool_body_ids": {
+    "LF:FlyMimic:LFC_tergopleural_promotor_a": [
+      12396,
+      12686,
+      13490,
+      19319
+    ],
+    "LF:FlyMimic:LFC_tergopleural_promotor_b": [
+      12396,
+      12686,
+      13490,
+      19319
+    ],
+    "LF:FlyMimic:LFC_pleural_remotor_and_abductor": [
+      12096,
+      13628
+    ],
+    "LF:FlyMimic:LFC_pleural_promotor": [
+      12396,
+      12686,
+      13490,
+      19319
+    ],
+    "LF:FlyMimic:LFC_sternal_anterior_rotator": [
+      17176,
+      26566
+    ],
+    "LF:FlyMimic:LFC_sternal_posterior_rotator": [
+      19667,
+      24747,
+      29689,
+      163719
+    ],
+    "LF:FlyMimic:LFC_sternal_adductor": [
+      155853
+    ],
+    "LF:FlyMimic:LFF_trochanter_flexor_b": [
+      16963,
+      17226,
+      19771,
+      23299,
+      26613,
+      153142,
+      158694,
+      163686
+    ],
+    "LF:FlyMimic:LFF_sterno-tergo-trochanter_extensor_a": [
+      18579,
+      19652,
+      21753,
+      100515,
+      155633,
+      166309
+    ],
+    "LF:FlyMimic:LFF_sterno-tergo-trochanter_extensor_b": [
+      18579,
+      19652,
+      21753,
+      100515,
+      155633,
+      166309
+    ],
+    "LF:FlyMimic:LFF_accesory_trochanter_flexor": [
+      23048,
+      25475,
+      26588
+    ],
+    "LF:FlyMimic:LFF_trochanter_extensor": [
+      19929,
+      173560
+    ],
+    "LF:FlyMimic:LFF_trochanter_flexor_a": [
+      16963,
+      17226,
+      19771,
+      23299,
+      26613,
+      153142,
+      158694,
+      163686
+    ],
+    "LF:FlyMimic:LFTibia_flex_93434": [
+      12134,
+      14798,
+      15149,
+      15321,
+      17133
+    ],
+    "LF:FlyMimic:LFTibia_extensor_93932": [
+      11657,
+      12704
+    ],
+    "LF:coxa_levator_muscle_2": [],
+    "LF:femur_reductor": [
+      13920,
+      14949,
+      21944,
+      156857,
+      219894,
+      226276
+    ],
+    "LF:trochanter_reductor_muscle_2": [],
+    "LF:accessory_tibia_flexor": [
+      13397,
+      15023,
+      15791,
+      16632,
+      17885,
+      18412,
+      18554,
+      23698,
+      101043,
+      166374
+    ],
+    "LF:long_tendon_muscle_2": [
+      13156,
+      14069,
+      15818,
+      16711,
+      19092,
+      24139,
+      47642
+    ],
+    "LF:tibial_depressor_muscle_2": [],
+    "LF:tarsus_depressor": [
+      19468,
+      21749,
+      25674,
+      29487,
+      29554
+    ],
+    "LF:tarsus_retro_depressor": [
+      19468,
+      21749,
+      25674,
+      29487,
+      29554
+    ],
+    "LF:tarsus_levator": [
+      22358,
+      157320
+    ],
+    "LF:long_tendon_muscle_1": [
+      13156,
+      13952,
+      14069,
+      19092,
+      20612,
+      24139,
+      47642
+    ],
+    "RF:FlyMimic:LFC_tergopleural_promotor_a": [
+      12628,
+      13464,
+      16250,
+      20386
+    ],
+    "RF:FlyMimic:LFC_tergopleural_promotor_b": [
+      12628,
+      13464,
+      16250,
+      20386
+    ],
+    "RF:FlyMimic:LFC_pleural_remotor_and_abductor": [
+      14346,
+      16419
+    ],
+    "RF:FlyMimic:LFC_pleural_promotor": [
+      12628,
+      13464,
+      16250,
+      20386
+    ],
+    "RF:FlyMimic:LFC_sternal_anterior_rotator": [
+      13300,
+      22215
+    ],
+    "RF:FlyMimic:LFC_sternal_posterior_rotator": [
+      13942,
+      21241,
+      25767,
+      25892
+    ],
+    "RF:FlyMimic:LFC_sternal_adductor": [
+      21718
+    ],
+    "RF:FlyMimic:LFF_trochanter_flexor_b": [
+      18440,
+      19886,
+      20572,
+      20673,
+      21612,
+      41933,
+      159822
+    ],
+    "RF:FlyMimic:LFF_sterno-tergo-trochanter_extensor_a": [
+      18006,
+      19443,
+      20615,
+      22126,
+      23318,
+      23553
+    ],
+    "RF:FlyMimic:LFF_sterno-tergo-trochanter_extensor_b": [
+      18006,
+      19443,
+      20615,
+      22126,
+      23318,
+      23553
+    ],
+    "RF:FlyMimic:LFF_accesory_trochanter_flexor": [
+      14783,
+      16400,
+      22729
+    ],
+    "RF:FlyMimic:LFF_trochanter_extensor": [
+      14536,
+      27028
+    ],
+    "RF:FlyMimic:LFF_trochanter_flexor_a": [
+      18440,
+      19886,
+      20572,
+      20673,
+      21612,
+      41933,
+      159822
+    ],
+    "RF:FlyMimic:LFTibia_flex_93434": [
+      13163,
+      13283,
+      13399,
+      13563,
+      14848
+    ],
+    "RF:FlyMimic:LFTibia_extensor_93932": [
+      11706,
+      13115
+    ],
+    "RF:coxa_levator_muscle_2": [],
+    "RF:femur_reductor": [
+      11226,
+      12891,
+      18983,
+      24050,
+      28884,
+      29484
+    ],
+    "RF:trochanter_reductor_muscle_2": [],
+    "RF:accessory_tibia_flexor": [
+      12761,
+      13819,
+      14824,
+      15367,
+      18963,
+      19048,
+      20373,
+      20605,
+      26658,
+      26777
+    ],
+    "RF:long_tendon_muscle_2": [
+      11786,
+      15317,
+      16658,
+      17050,
+      27078,
+      154803
+    ],
+    "RF:tibial_depressor_muscle_2": [],
+    "RF:tarsus_depressor": [
+      15434,
+      16492,
+      16897,
+      154804,
+      165511
+    ],
+    "RF:tarsus_retro_depressor": [
+      15434,
+      16492,
+      16897,
+      154804,
+      165511
+    ],
+    "RF:tarsus_levator": [
+      15446,
+      16346,
+      19751
+    ],
+    "RF:long_tendon_muscle_1": [
+      11786,
+      15720,
+      16658,
+      27078,
+      154803,
+      166385
+    ],
+    "LM:tergopleural_promotor": [],
+    "LM:pleural_promotor": [],
+    "LM:pleural_remotor_and_abductor": [
+      17091,
+      21255,
+      219853
+    ],
+    "LM:sternal_anterior_rotator": [
+      16295,
+      20119
+    ],
+    "LM:sternal_posterior_rotator": [
+      15883,
+      49886,
+      154769,
+      172408
+    ],
+    "LM:sternal_adductor": [
+      13817
+    ],
+    "LM:tergotrochanter_extensor": [
+      15107
+    ],
+    "LM:sternotrochanter_extensor": [
+      26132,
+      166392
+    ],
+    "LM:trochanter_extensor": [
+      13904,
+      30306
+    ],
+    "LM:trochanter_flexor": [
+      19704,
+      22718,
+      23364,
+      153315,
+      155218,
+      156233,
+      167442
+    ],
+    "LM:accessory_trochanter_flexor": [
+      155216,
+      156180
+    ],
+    "LM:femur_reductor": [
+      29187,
+      45494,
+      158681
+    ],
+    "LM:tibia_extensor": [
+      10737,
+      11115
+    ],
+    "LM:tibia_flexor": [
+      10710,
+      15623,
+      16635,
+      100707,
+      153335
+    ],
+    "LM:accessory_tibia_flexor": [
+      13784,
+      14665,
+      14775,
+      17070,
+      21262,
+      24828,
+      25212
+    ],
+    "LM:long_tendon_muscle_2": [
+      12693,
+      17419,
+      24725,
+      25447
+    ],
+    "LM:tarsus_depressor": [],
+    "LM:tarsus_retro_depressor": [],
+    "LM:tarsus_levator": [],
+    "LM:long_tendon_muscle_1": [
+      12693,
+      15873,
+      25447,
+      101736
+    ],
+    "RM:tergopleural_promotor": [],
+    "RM:pleural_promotor": [],
+    "RM:pleural_remotor_and_abductor": [
+      19206,
+      41482,
+      166337
+    ],
+    "RM:sternal_anterior_rotator": [
+      24669,
+      219796
+    ],
+    "RM:sternal_posterior_rotator": [
+      11529,
+      16035,
+      102786,
+      104697
+    ],
+    "RM:sternal_adductor": [
+      171055
+    ],
+    "RM:tergotrochanter_extensor": [
+      175327
+    ],
+    "RM:sternotrochanter_extensor": [
+      18716,
+      19094
+    ],
+    "RM:trochanter_extensor": [
+      17930,
+      162833
+    ],
+    "RM:trochanter_flexor": [
+      15006,
+      19983,
+      34115,
+      157207,
+      158769,
+      171948,
+      218885
+    ],
+    "RM:accessory_trochanter_flexor": [
+      26370,
+      102019
+    ],
+    "RM:femur_reductor": [
+      16552,
+      35432,
+      42738
+    ],
+    "RM:tibia_extensor": [
+      10461,
+      11489
+    ],
+    "RM:tibia_flexor": [
+      13280,
+      18448,
+      167438,
+      192299
+    ],
+    "RM:accessory_tibia_flexor": [
+      13746,
+      14849,
+      16495,
+      18664,
+      24443,
+      162868,
+      166397
+    ],
+    "RM:long_tendon_muscle_2": [
+      13033,
+      17550,
+      26809,
+      35735,
+      48865,
+      28532466490
+    ],
+    "RM:tarsus_depressor": [],
+    "RM:tarsus_retro_depressor": [],
+    "RM:tarsus_levator": [],
+    "RM:long_tendon_muscle_1": [
+      13033,
+      19758,
+      26809,
+      35735,
+      48865,
+      162830
+    ],
+    "LH:tergopleural_promotor": [],
+    "LH:pleural_promotor": [],
+    "LH:pleural_remotor_and_abductor": [
+      14168,
+      18286
+    ],
+    "LH:sternal_anterior_rotator": [
+      18471,
+      164741
+    ],
+    "LH:sternal_posterior_rotator": [
+      14449,
+      15278,
+      27258,
+      11162403133
+    ],
+    "LH:sternal_adductor": [
+      29483
+    ],
+    "LH:tergotrochanter_extensor": [
+      159762
+    ],
+    "LH:sternotrochanter_extensor": [
+      152642,
+      157432,
+      157503
+    ],
+    "LH:trochanter_extensor": [
+      100826,
+      162912
+    ],
+    "LH:trochanter_flexor": [
+      21186,
+      23117,
+      24668,
+      162913,
+      166171
+    ],
+    "LH:accessory_trochanter_flexor": [
+      22487,
+      23974,
+      34004
+    ],
+    "LH:femur_reductor": [
+      14020,
+      21665
+    ],
+    "LH:tibia_extensor": [
+      10347,
+      13075
+    ],
+    "LH:tibia_flexor": [
+      12585,
+      13192,
+      13311,
+      14468
+    ],
+    "LH:accessory_tibia_flexor": [
+      12759,
+      14226,
+      15038,
+      17018,
+      19074,
+      25885,
+      176866
+    ],
+    "LH:long_tendon_muscle_2": [
+      14343,
+      15893,
+      21963,
+      23016,
+      27733,
+      158889
+    ],
+    "LH:tarsus_depressor": [],
+    "LH:tarsus_retro_depressor": [],
+    "LH:tarsus_levator": [],
+    "LH:long_tendon_muscle_1": [
+      15712,
+      15893,
+      21963,
+      23016,
+      27733,
+      61001
+    ],
+    "RH:tergopleural_promotor": [],
+    "RH:pleural_promotor": [],
+    "RH:pleural_remotor_and_abductor": [
+      14596,
+      15262
+    ],
+    "RH:sternal_anterior_rotator": [
+      11022,
+      11562
+    ],
+    "RH:sternal_posterior_rotator": [
+      11400,
+      17947,
+      28219,
+      154133
+    ],
+    "RH:sternal_adductor": [
+      20667
+    ],
+    "RH:tergotrochanter_extensor": [
+      13434
+    ],
+    "RH:sternotrochanter_extensor": [
+      13069,
+      152620,
+      152621
+    ],
+    "RH:trochanter_extensor": [
+      10866,
+      165340
+    ],
+    "RH:trochanter_flexor": [
+      17137,
+      22465,
+      26883,
+      28997,
+      40443,
+      41439,
+      96565
+    ],
+    "RH:accessory_trochanter_flexor": [
+      16903,
+      17693,
+      19613
+    ],
+    "RH:femur_reductor": [
+      12113,
+      16633
+    ],
+    "RH:tibia_extensor": [
+      10462,
+      13006
+    ],
+    "RH:tibia_flexor": [
+      18491,
+      21991,
+      37220
+    ],
+    "RH:accessory_tibia_flexor": [
+      12474,
+      12725,
+      12758,
+      13170,
+      16228,
+      19260,
+      20593
+    ],
+    "RH:long_tendon_muscle_2": [
+      14773,
+      15380,
+      16356,
+      23390,
+      29950,
+      166393
+    ],
+    "RH:tarsus_depressor": [],
+    "RH:tarsus_retro_depressor": [],
+    "RH:tarsus_levator": [],
+    "RH:long_tendon_muscle_1": [
+      10811,
+      13241,
+      15380,
+      23390,
+      29950,
+      166393
+    ]
+  },
+  "body_walking_tested": false,
+  "sources": "Author-signed full-VNC-source subgraph; candidate MN-muscle crosswalk; oldA target; native MuJoCo3.3.2 derivative oracle"
+}

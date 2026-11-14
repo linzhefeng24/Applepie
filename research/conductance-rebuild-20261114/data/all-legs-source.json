@@ -1,0 +1,10 @@
+{
+  "source_matrix_sha256": "c8d85a80b30a6f680932bbeb2c2dda2754ad0fd8b1b6a3c1f2652ca62d4cab61",
+  "source_matrix_name": "MANC-central-connections-20251006.npz",
+  "source_matrix_orientation": "rows presynaptic, columns postsynaptic",
+  "induced_neurons": 1454,
+  "motor_neurons_including_nonleg": 732,
+  "edges": 22859,
+  "scope": "all motor neurons and one-hop targets of five selected core cells; not the intact full VNC",
+  "full_source_coverage": "../reproduction/neuromuscular/available-chain/coverage.json"
+}

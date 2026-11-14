@@ -1,0 +1,15 @@
+...F...                                                                  [100%]
+=================================== FAILURES ===================================
+_________________ test_half_timestep_preserves_core_frequency __________________
+
+    def test_half_timestep_preserves_core_frequency():
+     w=np.load(R/'data/core.npz')['weights'];p=json.load(open(R/'configs/core-selected.json'));a=summarize(simulate(w,['DN','E1','E2','I1','I2'],p));b=summarize(simulate(w,['DN','E1','E2','I1','I2'],{**p,'dt_ms':p['dt_ms']/2}))
+>    assert b['cells'][1]['rhythmic'];assert abs(a['cells'][1]['burst_frequency_hz']/b['cells'][1]['burst_frequency_hz']-1)<.10
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E    assert 0.13636363636363624 < 0.1
+E     +  where 0.13636363636363624 = abs(((10.1010101010101 / 8.88888888888889) - 1))
+
+Applepie-research-sync/research/conductance-rebuild-20261114/test_scientific_checks.py:22: AssertionError
+=========================== short test summary info ============================
+FAILED Applepie-research-sync/research/conductance-rebuild-20261114/test_scientific_checks.py::test_half_timestep_preserves_core_frequency
+1 failed, 6 passed in 4.78s

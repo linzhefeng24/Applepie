@@ -1,0 +1,32 @@
+[
+  {
+    "dt_ms": 0.025,
+    "core_E1_frequency_hz": 10.1010101010101,
+    "core_E1_periodic": true,
+    "numerical_failure": false
+  },
+  {
+    "dt_ms": 0.0125,
+    "core_E1_frequency_hz": 8.88888888888889,
+    "core_E1_periodic": true,
+    "numerical_failure": false
+  },
+  {
+    "dt_ms": 0.00625,
+    "core_E1_frequency_hz": 8.928571428571429,
+    "core_E1_periodic": true,
+    "numerical_failure": false
+  },
+  {
+    "dt_ms": 0.003125,
+    "core_E1_frequency_hz": 10.204081632653061,
+    "core_E1_periodic": true,
+    "numerical_failure": false
+  },
+  {
+    "dt_ms": 0.0015625,
+    "core_E1_frequency_hz": 10.204081632653061,
+    "core_E1_periodic": true,
+    "numerical_failure": false
+  }
+]

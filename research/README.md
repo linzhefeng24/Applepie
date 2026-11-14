@@ -10,3 +10,6 @@ Existing input releases:
 - https://github.com/linzhefeng24/Applepie/releases/tag/2 — `motor_support.tar.gz`; its size and SHA-256 are preserved in the motor reproduction receipt.
 
 Paths in historical manifests describe the original execution workspace, not guaranteed current hosted URLs. Reproduction software is in the dedicated virtual environment; do not replace the older A/B model environment.
+
+- `conductance-rebuild-20261114/`: new two-compartment HH reimplementation, adult MN reference fits, actual core/full-T1 tests,146-entry evidence audit, causal muscle readout, native body-interface diagnostics and explicitly retained failures. See its README for scopes and fine-step confirmation.
+- `assets/`: archived two-file A/B muscle-model recovery bundle and integrity reference.

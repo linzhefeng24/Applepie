@@ -1,0 +1,15 @@
+{
+  "url": "https://github.com/linzhefeng24/Applepie/raw/refs/heads/main/research/assets/flymimic-legacy-AB-twofile.zip",
+  "bytes": 18557190,
+  "sha256": "60a720b2a367556c7408b82d6d63998039b091dab3652ea027fe42f4cb37267a",
+  "mujoco": "3.3.2",
+  "contents": [
+    "simulation.py",
+    "parameters.yaml"
+  ],
+  "scope": "Exact archived130-muscle+11auxiliary A/B model; not neural HH code",
+  "restore": "Extract into a directory and pass --model-dir to body_bridge.py",
+  "storage": "git_blob_fallback",
+  "repository_path": "research/assets/flymimic-legacy-AB-twofile.zip",
+  "release_upload_status": "Release creation succeeded but uploads.github.com returned401; asset is stored in git instead, no successful release-asset claim"
+}

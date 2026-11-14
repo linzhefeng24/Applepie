@@ -1,0 +1,100 @@
+{
+  "baseline": {
+    "periodic_spiking_MN": 33,
+    "multispike_burst_MN": 5,
+    "core_mean_peak_frequency_hz": 7.874015748031496,
+    "core_periodic": true,
+    "MN_with_any_spikes": 35
+  },
+  "drive_120": {
+    "periodic_spiking_MN": 34,
+    "multispike_burst_MN": 5,
+    "core_mean_peak_frequency_hz": 8.51063829787234,
+    "core_periodic": true,
+    "MN_with_any_spikes": 35
+  },
+  "drive_200": {
+    "periodic_spiking_MN": 33,
+    "multispike_burst_MN": 4,
+    "core_mean_peak_frequency_hz": 7.936507936507937,
+    "core_periodic": true,
+    "MN_with_any_spikes": 35
+  },
+  "drive_240": {
+    "periodic_spiking_MN": 35,
+    "multispike_burst_MN": 5,
+    "core_mean_peak_frequency_hz": 7.8125,
+    "core_periodic": true,
+    "MN_with_any_spikes": 37
+  },
+  "E1_silenced": {
+    "periodic_spiking_MN": 0,
+    "multispike_burst_MN": 0,
+    "core_mean_peak_frequency_hz": 0.0,
+    "core_periodic": false,
+    "MN_with_any_spikes": 3
+  },
+  "E2_silenced": {
+    "periodic_spiking_MN": 0,
+    "multispike_burst_MN": 0,
+    "core_mean_peak_frequency_hz": 8.928571428571429,
+    "core_periodic": false,
+    "MN_with_any_spikes": 10
+  },
+  "I1_silenced": {
+    "periodic_spiking_MN": 34,
+    "multispike_burst_MN": 4,
+    "core_mean_peak_frequency_hz": 10.15254586683158,
+    "core_periodic": true,
+    "MN_with_any_spikes": 35
+  },
+  "I2_silenced": {
+    "periodic_spiking_MN": 37,
+    "multispike_burst_MN": 7,
+    "core_mean_peak_frequency_hz": 8.88888888888889,
+    "core_periodic": true,
+    "MN_with_any_spikes": 38
+  },
+  "DNg75_coactivation": {
+    "periodic_spiking_MN": 35,
+    "multispike_burst_MN": 5,
+    "core_mean_peak_frequency_hz": 8.368200836820083,
+    "core_periodic": true,
+    "MN_with_any_spikes": 36
+  },
+  "DNg97_coactivation": {
+    "periodic_spiking_MN": 31,
+    "multispike_burst_MN": 5,
+    "core_mean_peak_frequency_hz": 8.080841060467545,
+    "core_periodic": true,
+    "MN_with_any_spikes": 44
+  },
+  "DNg55_coactivation": {
+    "periodic_spiking_MN": 33,
+    "multispike_burst_MN": 5,
+    "core_mean_peak_frequency_hz": 7.874015748031496,
+    "core_periodic": true,
+    "MN_with_any_spikes": 35
+  },
+  "DNg16_coactivation": {
+    "periodic_spiking_MN": 30,
+    "multispike_burst_MN": 6,
+    "core_mean_peak_frequency_hz": 7.9052618422697165,
+    "core_periodic": true,
+    "MN_with_any_spikes": 43
+  },
+  "DNb08_alone": {
+    "periodic_spiking_MN": 30,
+    "multispike_burst_MN": 12,
+    "core_mean_peak_frequency_hz": 0.0,
+    "core_periodic": false,
+    "MN_with_any_spikes": 35
+  },
+  "no_DN": {
+    "periodic_spiking_MN": 0,
+    "multispike_burst_MN": 0,
+    "core_mean_peak_frequency_hz": 0.0,
+    "core_periodic": false,
+    "MN_with_any_spikes": 0
+  }
+}

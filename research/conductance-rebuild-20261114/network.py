@@ -6,7 +6,9 @@ from scipy import sparse
 ROOT=Path(__file__).parent
 
 def load(scope='motor',full_vnc=False):
- if full_vnc:
+ if full_vnc and (ROOT/'data/all-legs-induced-connectivity.npz').exists():
+  rows=json.load(open(ROOT/'data/all-legs-induced-neurons.json'));W=sparse.load_npz(ROOT/'data/all-legs-induced-connectivity.npz');ids0=np.array([int(x['bodyId']) for x in rows])
+ elif full_vnc:
   import csv
   base=Path('/workspace/reproduction/neuromuscular/available-chain');rows=list(csv.DictReader(open(base/'neuron-metadata.csv')));W=sparse.load_npz(base/'MANC-central-connections-20251006.npz');ids0=np.array([int(x['bodyId']) for x in rows])
  else:
@@ -20,3 +22,11 @@ def load(scope='motor',full_vnc=False):
  order=core+sorted(keep-set(core));metadata=[rows[i] for i in order];matrix=W[order][:,order].toarray()
  roles=['DN','E1','E2','I1','I2']+['MN' if rows[i]['class']=='motor neuron' else 'other' for i in order[5:]]
  return matrix,roles,metadata
+
+
+def simulate_network(weights,roles,metadata,params,drive=None,ablate=()):
+ from model import simulate
+ source=params.get('source_gain_by_body_id',{})
+ gains=np.array([source.get(str(row['bodyId']),1.) for row in metadata],dtype=float)
+ if not np.isfinite(gains).all() or np.any(gains<=0):raise ValueError('Source conductance scales must be finite positive; no edge removal or sign flip')
+ return simulate(weights,roles,params,drive=drive,ablate=ablate,source_gains=gains)

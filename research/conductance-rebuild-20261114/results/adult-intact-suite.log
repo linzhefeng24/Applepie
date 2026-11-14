@@ -1,0 +1,28 @@
+Start baseline
+Finish baseline rhythmic MN 33 E1/E2 [(True, 7.87), (True, 7.87)] seconds 34.1
+Start drive_120
+Finish drive_120 rhythmic MN 34 E1/E2 [(True, 8.51), (True, 8.51)] seconds 33.1
+Start drive_200
+Finish drive_200 rhythmic MN 33 E1/E2 [(True, 7.94), (True, 7.94)] seconds 33.5
+Start drive_240
+Finish drive_240 rhythmic MN 35 E1/E2 [(True, 7.81), (True, 7.81)] seconds 32.5
+Start E1_silenced
+Finish E1_silenced rhythmic MN 0 E1/E2 [(False, 0.0), (False, 0.0)] seconds 34.3
+Start E2_silenced
+Finish E2_silenced rhythmic MN 0 E1/E2 [(False, 17.86), (False, 0.0)] seconds 35.9
+Start I1_silenced
+Finish I1_silenced rhythmic MN 34 E1/E2 [(True, 10.1), (True, 10.2)] seconds 35.0
+Start I2_silenced
+Finish I2_silenced rhythmic MN 37 E1/E2 [(True, 8.89), (True, 8.89)] seconds 33.2
+Start DNg75_coactivation
+Finish DNg75_coactivation rhythmic MN 35 E1/E2 [(True, 8.37), (True, 8.37)] seconds 33.3
+Start DNg97_coactivation
+Finish DNg97_coactivation rhythmic MN 31 E1/E2 [(True, 8.06), (True, 8.1)] seconds 33.1
+Start DNg55_coactivation
+Finish DNg55_coactivation rhythmic MN 33 E1/E2 [(True, 7.87), (True, 7.87)] seconds 34.2
+Start DNg16_coactivation
+Finish DNg16_coactivation rhythmic MN 30 E1/E2 [(True, 7.94), (True, 7.87)] seconds 33.1
+Start DNb08_alone
+Finish DNb08_alone rhythmic MN 30 E1/E2 [(False, 0.0), (False, 0.0)] seconds 34.1
+Start no_DN
+Finish no_DN rhythmic MN 0 E1/E2 [(False, 0.0), (False, 0.0)] seconds 35.8

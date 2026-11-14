@@ -18,3 +18,14 @@ def rhythm(counts,start_ms=400,min_cycles=4):
 def summarize(result):
  c=result['spike_counts_1ms'];out=[rhythm(c[:,j],int(max(400,result['config']['onset_ms']+200))) for j in range(c.shape[1])]
  return {'numerical_failure':result['numerical_failure'],'cells':out,'rhythmic_cells':sum(x['rhythmic'] for x in out),'rhythmic_MN':sum(x['rhythmic'] and r=='MN' for x,r in zip(out,result['roles']))}
+
+def burst_envelope(counts,start_ms=400):
+ """Strict multispike-burst test, separate from regular single spikes.
+ A tonic10Hz spike train is periodic spiking but not a30-100Hz intraburst
+ train with a10Hz envelope. Neither criterion is promoted to in-vivo truth.
+ """
+ c=np.asarray(counts)[start_ms:];times=np.repeat(np.arange(len(c)),np.maximum(c,0).astype(int))
+ if len(times)<8:return {'bursting':False,'complete_multispike_bursts':0,'burst_frequency_hz':0.}
+ cuts=np.r_[0,np.where(np.diff(times)>25)[0]+1,len(times)];bursts=[times[a:b] for a,b in zip(cuts[:-1],cuts[1:]) if b-a>=2 and times[a]>25 and times[b-1]<len(c)-25]
+ starts=np.array([b[0] for b in bursts]);freq=1000./np.median(np.diff(starts)) if len(starts)>1 else 0.;cv=float(np.std(np.diff(starts))/np.mean(np.diff(starts))) if len(starts)>2 else 1.
+ return {'bursting':bool(len(bursts)>=4 and 5<=freq<=25 and cv<.3),'complete_multispike_bursts':len(bursts),'burst_frequency_hz':float(freq),'interburst_cv':cv}
