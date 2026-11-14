@@ -1,0 +1,33 @@
+{
+  "orientation": "row presynaptic, column postsynaptic; source wTable explicit index; CSV first column verified against wTable order",
+  "source_repository": "https://github.com/smpuglie/Pugliese_2026",
+  "source_files": {
+    "W_20250813_DNtoMN_unsorted.csv": {
+      "sha256": "77d5f87c1596a40a7f46c8704008cb8c07c4efe663732034318ee98172d26d2d",
+      "bytes": 85037890
+    },
+    "wTable_20250813_DNtoMN_unsorted_withModules.csv": {
+      "sha256": "279c1262cfe2896e5d5d3e79cccf5058f3d27a8e4e1f706a371f597fab7674a8",
+      "bytes": 671375
+    }
+  },
+  "neurons": 4604,
+  "MN": 144,
+  "nonzero_directed_pairs": 196535,
+  "core_ids": [
+    10093,
+    10707,
+    11751,
+    13905,
+    10242
+  ],
+  "core_roles": [
+    "DNg100_L",
+    "E1_L",
+    "E2_L",
+    "I1_L",
+    "I2_L"
+  ],
+  "sign_policy": "Preserve author-signed weights; not biological negative synapse counts. Glutamate interpreted per author sign, not automatically at NMJ.",
+  "I2_identity_scope": "MANC IN19A007 LHS; verify somaSide from source"
+}
