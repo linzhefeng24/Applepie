@@ -10,7 +10,7 @@ from scipy.signal import find_peaks
 R=Path(__file__).parent;O=R/'results/asymmetry';sys.path.insert(0,'/workspace/flymimic-twofile');from simulation import Simulation
 spec=json.load(open(O/'motion-readout-grid.json'));records=[]
 
-def metrics(q,tau,frequency=8.):
+def metrics(q,tau,frequency=spec['analysis_frequency_hz']):
  result=[];t=np.arange(400,2000)*.0002;X=np.column_stack([np.ones(len(t)),t,np.sin(2*np.pi*frequency*t),np.cos(2*np.pi*frequency*t)])
  for j,leg in enumerate(['LF','LM','LH','RF','RM','RH']):
   a=gaussian_filter1d(np.rad2deg(q[400:,j]),10);hi,_=find_peaks(a,distance=150,prominence=2.);lo,_=find_peaks(-a,distance=150,prominence=2.);fit=np.linalg.lstsq(X,a,rcond=None)[0];span=float(np.ptp(a));result.append({'leg':leg,'peak_to_peak_deg':span,'peaks':len(hi),'troughs':len(lo),'harmonic_amplitude_deg':float(np.linalg.norm(fit[-2:])),'repeated_motion':bool(span>=5 and len(hi)>=2 and len(lo)>=2),'actuator_torque_std_native':float(np.std(tau[400:,j]))})
