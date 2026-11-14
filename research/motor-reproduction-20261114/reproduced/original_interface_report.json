@@ -1,0 +1,12 @@
+{
+  "forward_mm": 59.32284245193584,
+  "min_up": 0.9875809546847888,
+  "duration_s": 5.000000000001686,
+  "source": "saved prescribed MN sequence",
+  "sensory_feedback": false,
+  "cpg": false,
+  "servo": false,
+  "learned_MaleCNS": false,
+  "public_interface_replay": true,
+  "walking_pass": true
+}

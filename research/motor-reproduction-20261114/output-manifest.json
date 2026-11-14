@@ -1,0 +1,67 @@
+[
+  {
+    "file": "research/motor-reproduction-20261114/reproduced/README.md",
+    "bytes": 1637,
+    "sha256": "1a14d2445f5ad451648726e22f26f20bb31d8d5c2ecffbfbd37a7f0051c43c1d"
+  },
+  {
+    "file": "research/motor-reproduction-20261114/reproduced/first_replay.log",
+    "bytes": 814,
+    "sha256": "dee8598262ec7818f5e0d832640ddccefc783be6e3d6733532475a466f07acbd"
+  },
+  {
+    "file": "research/motor-reproduction-20261114/reproduced/original_interface_report.json",
+    "bytes": 298,
+    "sha256": "89a80606cd386eb3244836024ac92eb004da9b3fa458f88ab6d4006d6f89bb6a"
+  },
+  {
+    "file": "research/motor-reproduction-20261114/reproduced/render.log",
+    "bytes": 790,
+    "sha256": "4b669fcdb78c7b304511d88ad77a2c70d48e1bec5d81138059f9ab7fe02199c2"
+  },
+  {
+    "file": "research/motor-reproduction-20261114/reproduced/render_replay.py",
+    "bytes": 3854,
+    "sha256": "36837addb36faa864f86113520c929107ccba2c8987ca3c0cf601e48fb4bb506"
+  },
+  {
+    "file": "research/motor-reproduction-20261114/reproduced/reproduced_frame_000.png",
+    "bytes": 57275,
+    "sha256": "976fd04d655a603f7e4a3ea0a7828b1edac54bda5b5ea9bc6802db538253b649"
+  },
+  {
+    "file": "research/motor-reproduction-20261114/reproduced/reproduced_frame_124.png",
+    "bytes": 59958,
+    "sha256": "46bbbc31836988bf9a2fc06d583af0634092ebb24daee45df5d3d0817a34ebb6"
+  },
+  {
+    "file": "research/motor-reproduction-20261114/reproduced/reproduced_frame_249.png",
+    "bytes": 59248,
+    "sha256": "83f132097081d203a17d4a65aec2a76cda32372c282a82eaa9f00a838acfb0b6"
+  },
+  {
+    "file": "research/motor-reproduction-20261114/reproduced/reproduced_report.json",
+    "bytes": 625,
+    "sha256": "83dc83fdaf99231b8d502b9a70684b4a63325e7fcebce2a667975ba3baa33bee"
+  },
+  {
+    "file": "research/motor-reproduction-20261114/reproduced/reproduced_trajectory.npz",
+    "bytes": 8236051,
+    "sha256": "bf07f6eb452816306ebdf0670c4198db401d8768d90518a3ec16ab78603901ae"
+  },
+  {
+    "file": "research/motor-reproduction-20261114/reproduced/reproduced_walk.mp4",
+    "bytes": 1193403,
+    "sha256": "dd842223676b07f76d514f20908dfd8c7cab35a746be4b598cc496643ffff478"
+  },
+  {
+    "file": "research/motor-reproduction-20261114/reproduced/reproduced_walk_slow_025x.mp4",
+    "bytes": 1689866,
+    "sha256": "9161a85ce922bd1a451e6120d857a7ce7e8e165a1c11a013537d74c9814612b2"
+  },
+  {
+    "file": "research/motor-reproduction-20261114/reproduced/requirements-frozen.txt",
+    "bytes": 904,
+    "sha256": "f1d17ba38604ec01067673e35537b386d6ebd2eab721f7158fce1a87deb0b943"
+  }
+]

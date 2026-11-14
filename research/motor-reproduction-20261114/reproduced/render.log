@@ -1,0 +1,27 @@
+Replayed 1.0s / 5.0s; frames=50
+Replayed 2.0s / 5.0s; frames=100
+Replayed 3.0s / 5.0s; frames=150
+Replayed 4.0s / 5.0s; frames=200
+Replayed 5.0s / 5.0s; frames=250
+{
+  "forward_mm": 59.32284245193584,
+  "min_up": 0.9875809546847888,
+  "duration_s": 5.000000000001686,
+  "source": "saved prescribed MN sequence",
+  "sensory_feedback": false,
+  "cpg": false,
+  "servo": false,
+  "learned_MaleCNS": false,
+  "public_interface_replay": true,
+  "walking_pass": true,
+  "archived_report_exact_match": true,
+  "rendered_replay_exact_match": true,
+  "video_frames": 250,
+  "versions": {
+    "flygym": "2.1.0",
+    "mujoco": "3.9.0",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1"
+  },
+  "initialization": "Original 50 ms position-controlled warmup before walking clock; adhesion off during walking"
+}

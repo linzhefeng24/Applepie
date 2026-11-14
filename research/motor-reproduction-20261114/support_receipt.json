@@ -1,0 +1,50 @@
+{
+  "release": "https://github.com/linzhefeng24/Applepie/releases/tag/2",
+  "asset_bytes": 154451587,
+  "sha256": "436dcbce07c67def3731bb329a4dc53d13e84b2923279179eeba7463ec206153",
+  "program": "/workspace/server-motor-import/support/motor_experiments_20261013/walk_1khz/open_loop_program.npz",
+  "program_arrays": {
+    "group_excitation": {
+      "shape": [
+        5000,
+        78
+      ],
+      "dtype": "float64"
+    },
+    "dt_s": {
+      "shape": [],
+      "dtype": "float64"
+    },
+    "q_reference": {
+      "shape": [
+        42
+      ],
+      "dtype": "float64"
+    },
+    "body_ids": {
+      "shape": [
+        387
+      ],
+      "dtype": "int64"
+    },
+    "R": {
+      "shape": [
+        42,
+        78
+      ],
+      "dtype": "float64"
+    },
+    "graph_sha256": {
+      "shape": [],
+      "dtype": "<U64"
+    }
+  },
+  "program_duration_s": 5.0,
+  "input_finite_in_0_1": true,
+  "body_replay_performed_locally": false,
+  "runtime_missing": [
+    "flygym==2.1.0",
+    "flygym_demo",
+    "archived MuJoCo 3.9.0 environment"
+  ]
+}

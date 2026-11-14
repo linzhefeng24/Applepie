@@ -1,0 +1,42 @@
+[
+  {
+    "directory": "/workspace/neural-dynamics-research",
+    "exists": false,
+    "matches_elsewhere": []
+  },
+  {
+    "directory": "/workspace/conductance-cpg",
+    "exists": false,
+    "matches_elsewhere": []
+  },
+  {
+    "directory": "/workspace/cpg-muscle-pathways",
+    "exists": false,
+    "matches_elsewhere": []
+  },
+  {
+    "directory": "/workspace/cpg-refinement",
+    "exists": false,
+    "matches_elsewhere": []
+  },
+  {
+    "directory": "/workspace/brain-phenomena-update",
+    "exists": false,
+    "matches_elsewhere": []
+  },
+  {
+    "directory": "/workspace/brain-rhythm-update",
+    "exists": false,
+    "matches_elsewhere": []
+  },
+  {
+    "directory": "/workspace/brain-more-phenomena",
+    "exists": false,
+    "matches_elsewhere": []
+  },
+  {
+    "directory": "/workspace/brain-muscle-trajectory-update",
+    "exists": false,
+    "matches_elsewhere": []
+  }
+]
