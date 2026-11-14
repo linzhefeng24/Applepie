@@ -247257,5 +247257,14 @@
       "fine_step_test_pending": true,
       "six_leg_walking_validated": false
     }
+  },
+  "experimental_neuronal_panel": {
+    "report": "EXPERIMENTAL_CONSTRAINTS.md",
+    "results": "results/experimental-panel/summary.json",
+    "priority_policy": "measured neural responses/interventions before muscle trajectories and paper model predictions",
+    "status": "partial",
+    "new_full_experimental_passes": 0,
+    "new_qualitative_matches": 2,
+    "remaining_majority_unvalidated": true
   }
 }

@@ -243,6 +243,10 @@
     "MANC-central-connections-20251006.npz": {
       "sha256": "c8d85a80b30a6f680932bbeb2c2dda2754ad0fd8b1b6a3c1f2652ca62d4cab61",
       "bytes": 4540619
+    },
+    "matrix-neuron-IDs.csv": {
+      "sha256": "b2bcd34cbd75a43f51760cbaaa82c6fa4e1be6e1137b8398a2dccaad0d19726e",
+      "bytes": 275935
     }
   },
   "source_repository": "https://github.com/smpuglie/Pugliese_2026",

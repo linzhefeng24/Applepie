@@ -1,0 +1,202 @@
+{
+  "assays": [
+    {
+      "id": "BRK_BON1",
+      "status": "partial",
+      "baseline_delta_soma_mV": [
+        13.576224720579681,
+        15.271036467589006
+      ],
+      "finer_checks": [
+        {
+          "assay": "BRK_BON1",
+          "dose_pA": 0.0,
+          "dt_ms": 0.003125,
+          "delta_soma_mV": [
+            0.0,
+            0.0
+          ],
+          "delta_final_model_calcium_uM": [
+            0.0,
+            0.0
+          ],
+          "delta_rate_hz": [
+            0.0,
+            0.0
+          ],
+          "qualitative_direction_supported": false,
+          "numerical_failure": false,
+          "scope": "local-context qualitative proxy; not calibrated GCaMP or behavioral pass"
+        },
+        {
+          "assay": "BRK_BON1",
+          "dose_pA": 80.0,
+          "dt_ms": 0.003125,
+          "delta_soma_mV": [
+            -0.0011115955779530395,
+            -0.00110803548432159
+          ],
+          "delta_final_model_calcium_uM": [
+            2.5218978094989036e-11,
+            2.52339472111634e-11
+          ],
+          "delta_rate_hz": [
+            0.0,
+            0.0
+          ],
+          "qualitative_direction_supported": false,
+          "numerical_failure": false,
+          "scope": "local-context qualitative proxy; not calibrated GCaMP or behavioral pass"
+        },
+        {
+          "assay": "BRK_BON1",
+          "dose_pA": 160.0,
+          "dt_ms": 0.003125,
+          "delta_soma_mV": [
+            13.623945869873737,
+            15.448687816332466
+          ],
+          "delta_final_model_calcium_uM": [
+            0.02447402585607102,
+            0.043470720528937086
+          ],
+          "delta_rate_hz": [
+            29.444444444444443,
+            45.55555555555556
+          ],
+          "qualitative_direction_supported": true,
+          "numerical_failure": false,
+          "scope": "local-context qualitative proxy; not calibrated GCaMP or behavioral pass"
+        },
+        {
+          "assay": "BRK_BON1",
+          "dose_pA": 240.0,
+          "dt_ms": 0.003125,
+          "delta_soma_mV": [
+            15.057017801632249,
+            16.99914845546914
+          ],
+          "delta_final_model_calcium_uM": [
+            0.022564696051161907,
+            0.03619106952811883
+          ],
+          "delta_rate_hz": [
+            27.77777777777778,
+            45.55555555555556
+          ],
+          "qualitative_direction_supported": true,
+          "numerical_failure": false,
+          "scope": "local-context qualitative proxy; not calibrated GCaMP or behavioral pass"
+        }
+      ],
+      "selected_target_gain_multiplier": 1.0,
+      "config_sha256": "927f463a7088a9ecaa1cedb5f776e99197f07eb40481c91b6c1966434d7b7126",
+      "scope": "qualitative evoked response in path-focused HH circuit; not measured fluorescence or behavioral reproduction"
+    },
+    {
+      "id": "MDN_LBL40",
+      "status": "partial",
+      "baseline_delta_soma_mV": [
+        8.406924345120025,
+        7.461467590644588
+      ],
+      "finer_checks": [
+        {
+          "assay": "MDN_LBL40",
+          "dose_pA": 0.0,
+          "dt_ms": 0.003125,
+          "delta_soma_mV": [
+            0.0,
+            0.0
+          ],
+          "delta_final_model_calcium_uM": [
+            0.0,
+            0.0
+          ],
+          "delta_rate_hz": [
+            0.0,
+            0.0
+          ],
+          "qualitative_direction_supported": false,
+          "numerical_failure": false,
+          "scope": "local-context qualitative proxy; not calibrated GCaMP or behavioral pass"
+        },
+        {
+          "assay": "MDN_LBL40",
+          "dose_pA": 80.0,
+          "dt_ms": 0.003125,
+          "delta_soma_mV": [
+            -0.0011015617277934098,
+            -0.0011011510687097825
+          ],
+          "delta_final_model_calcium_uM": [
+            2.513981744865715e-11,
+            2.5111640471609163e-11
+          ],
+          "delta_rate_hz": [
+            0.0,
+            0.0
+          ],
+          "qualitative_direction_supported": false,
+          "numerical_failure": false,
+          "scope": "local-context qualitative proxy; not calibrated GCaMP or behavioral pass"
+        },
+        {
+          "assay": "MDN_LBL40",
+          "dose_pA": 160.0,
+          "dt_ms": 0.003125,
+          "delta_soma_mV": [
+            8.351719670055722,
+            7.459839554039512
+          ],
+          "delta_final_model_calcium_uM": [
+            3.7389148402022087e-06,
+            5.208473495634834e-06
+          ],
+          "delta_rate_hz": [
+            1.6666666666666665,
+            0.0
+          ],
+          "qualitative_direction_supported": true,
+          "numerical_failure": false,
+          "scope": "local-context qualitative proxy; not calibrated GCaMP or behavioral pass"
+        },
+        {
+          "assay": "MDN_LBL40",
+          "dose_pA": 240.0,
+          "dt_ms": 0.003125,
+          "delta_soma_mV": [
+            9.995045434966585,
+            8.528434418637893
+          ],
+          "delta_final_model_calcium_uM": [
+            4.369386524351207e-06,
+            4.7164547674298264e-06
+          ],
+          "delta_rate_hz": [
+            8.88888888888889,
+            0.0
+          ],
+          "qualitative_direction_supported": true,
+          "numerical_failure": false,
+          "scope": "local-context qualitative proxy; not calibrated GCaMP or behavioral pass"
+        }
+      ],
+      "selected_target_gain_multiplier": 1.0,
+      "config_sha256": "0cbfc70bd45800610014b782e7bc62c875540b957a389ffafe8fb53d7e4f97f1",
+      "scope": "qualitative evoked response in path-focused HH circuit; not measured fluorescence or behavioral reproduction"
+    }
+  ],
+  "full_experimental_phenomena_newly_passed": 0,
+  "partial_qualitative_matches": 2,
+  "selected_gain": "no extra target gain fitting; baseline sufficient",
+  "software": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "numba": "0.68.1",
+    "matplotlib": "3.11.2"
+  },
+  "dose_policy": "80pA may be subthreshold; light-to-current calibration absent, no corresponding experimental dose-response claim",
+  "source": "new independent simulation, not historical checkpoint recovery"
+}

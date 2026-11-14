@@ -18,8 +18,8 @@
     },
     {
       "path": "EXPERIMENTAL_CONSTRAINTS.md",
-      "bytes": 3524,
-      "sha256": "9d2e2ff99ec9cc6a5b80f2186e438c7903e2f984b90c38b214e31ebe52a7eb1a"
+      "bytes": 4142,
+      "sha256": "0117746fdc1be5f3e65f903ba368f1ae095175434f4ee235f3305cd790af7f08"
     },
     {
       "path": "MECHANISMS.md",
@@ -83,8 +83,8 @@
     },
     {
       "path": "brain.json",
-      "bytes": 11349418,
-      "sha256": "bddd5aac93d16fbd5e0fc3cc1d78a4d0ca0a7fc60f306f663bd42b193b6ca230"
+      "bytes": 11349823,
+      "sha256": "b8879bfd2e831158d28c2e9929672267008cb7a37557028e941b480e74cad29b"
     },
     {
       "path": "build_phenomena.py",
@@ -175,6 +175,11 @@
       "path": "configs/slow-tonic-selected.json",
       "bytes": 1345,
       "sha256": "836bcbc9df296f49da618c450641a7fd9bfc623c35856deea78740d47e8ee968"
+    },
+    {
+      "path": "confirm_experimental_panel.py",
+      "bytes": 1972,
+      "sha256": "9abc14f43fec358570eaf498cfdef957814fb99dab1a6cd6661bcaa0e0c8a32d"
     },
     {
       "path": "confirm_fine.py",
@@ -353,8 +358,8 @@
     },
     {
       "path": "prepare_experimental_panel.py",
-      "bytes": 2539,
-      "sha256": "fa96dca87841d9c976864817a73dfdfc0008b1333a7628c5a0bb4e65dc2b2cfb"
+      "bytes": 2719,
+      "sha256": "36cbdddb85d055dec97381e084ef2860e13b00a5c17fc5dd5fe0774d5afa2efa"
     },
     {
       "path": "probe_all_legs.py",
@@ -400,6 +405,11 @@
       "path": "report.py",
       "bytes": 10264,
       "sha256": "781a4b88118c55e0e7fcc9399e53b3f2b1d82092650d7534c7c5becd2ff21fea"
+    },
+    {
+      "path": "report_experimental_panel.py",
+      "bytes": 3018,
+      "sha256": "abf0154986edae2ac5bfaa3880a7ec93069a597ae4b65cda86dae8db5b7cceb4"
     },
     {
       "path": "reproduce.py",
@@ -1282,9 +1292,34 @@
       "sha256": "998343634c02c04c46d82682a33a173d3ce7ed9895d16644182862fd53f611a4"
     },
     {
+      "path": "results/experimental-panel-confirm.log",
+      "bytes": 439,
+      "sha256": "f9e0937b7fdf8402654a0087622a1b3daa30e8c5ddb2b539e9b3ecdd385a1f3a"
+    },
+    {
       "path": "results/experimental-panel.log",
       "bytes": 655,
       "sha256": "09ceb86e0980fa1b6c7a0c9ab8644d51b1b32ae482663408cd8667551f14572a"
+    },
+    {
+      "path": "results/experimental-panel/BRK_BON1-confirm-dose0.npz",
+      "bytes": 20126,
+      "sha256": "2c1cb4f1d37ea0c8f417dd04f5fa6f2f0ed7b6ec75e2173b5ace25f7a2d40c53"
+    },
+    {
+      "path": "results/experimental-panel/BRK_BON1-confirm-dose160.npz",
+      "bytes": 709247,
+      "sha256": "220dbfb8ebad87f0fc856859b815b143f60d3889a5bc919ae7021a2e6369e968"
+    },
+    {
+      "path": "results/experimental-panel/BRK_BON1-confirm-dose240.npz",
+      "bytes": 710407,
+      "sha256": "5fb95e26c44f25e6779226fd7c7904232350da3a4a061a624aa5bd9ca2ef2a7d"
+    },
+    {
+      "path": "results/experimental-panel/BRK_BON1-confirm-dose80.npz",
+      "bytes": 273240,
+      "sha256": "1f69875e0ff8b01eaf1632bcb6f02468eccfe5653e3c672ebb1fdd9f866b3cc0"
     },
     {
       "path": "results/experimental-panel/BRK_BON1-connectivity.npz",
@@ -1327,6 +1362,26 @@
       "sha256": "922871bafb0bb97652b721d415fab17bfeb8672919d12ace1c552b9aa973f73c"
     },
     {
+      "path": "results/experimental-panel/MDN_LBL40-confirm-dose0.npz",
+      "bytes": 20155,
+      "sha256": "69f112448cba62eea9ad0742ffde8e4e7ac72c850df10946cf3369467339cc38"
+    },
+    {
+      "path": "results/experimental-panel/MDN_LBL40-confirm-dose160.npz",
+      "bytes": 719181,
+      "sha256": "42e3ae7f560e46998d1ab39ec361652dff388b048678916e472ff6274c904ce5"
+    },
+    {
+      "path": "results/experimental-panel/MDN_LBL40-confirm-dose240.npz",
+      "bytes": 720251,
+      "sha256": "da65488a83519a65234797b761a3c3c611c2da158cfd8189af0a2247539e052b"
+    },
+    {
+      "path": "results/experimental-panel/MDN_LBL40-confirm-dose80.npz",
+      "bytes": 317371,
+      "sha256": "7d9d5a73424c222814d02425e08ca411f13f6e136a6915f9c5c1bd994a80e7de"
+    },
+    {
       "path": "results/experimental-panel/MDN_LBL40-connectivity.npz",
       "bytes": 2036,
       "sha256": "c5c81992b7c90996b8c9a0f68029878cd2f0db229af4221a9d121cdd2b5fc27f"
@@ -1367,9 +1422,24 @@
       "sha256": "c2bf5ea83ada996bdcf97685c6a7ab44a53e5969364e055f5313fc5e6a33e8b9"
     },
     {
+      "path": "results/experimental-panel/confirmation.json",
+      "bytes": 7715,
+      "sha256": "d5e5c760a90146904fcd21c4a1d65603b1515d9fbdc283cb85a2c034253e0e4c"
+    },
+    {
+      "path": "results/experimental-panel/neuronal-response.png",
+      "bytes": 70393,
+      "sha256": "f0f3bd01c71d39c558711860214ca5ffc612f37cbcf6e03eddbfe739b5bc4fba"
+    },
+    {
       "path": "results/experimental-panel/protocol.json",
-      "bytes": 7386,
-      "sha256": "509ddc21e450d73c1250c14ffb7dfdf3ab8dad5f8abe79b85a7944c5639e878a"
+      "bytes": 7530,
+      "sha256": "91815778155db601eb104eb2e920bbe56ef57a602a342020f05aa31b040854c6"
+    },
+    {
+      "path": "results/experimental-panel/summary.json",
+      "bytes": 6233,
+      "sha256": "aa2d0217093cf3f618f744b1cdeeade3db8b7858da283eadf521265df008b285"
     },
     {
       "path": "results/experimental-panel/trials.json",
