@@ -1,0 +1,3938 @@
+[
+  {
+    "trial": 22,
+    "parameters": {
+      "ge_nS_per_synapse": 0.012,
+      "gi_nS_per_synapse": 0.1,
+      "tau_i_decay_ms": 30.0
+    },
+    "summary": {
+      "numerical_failure": false,
+      "cells": [
+        {
+          "rhythmic": false,
+          "burst_frequency_hz": 23.80952380952381,
+          "interburst_cv": 0.18155791373608343,
+          "envelope_modulation": 0.3261657167521688,
+          "band_power_fraction": 0.5959606128791117,
+          "envelope_peaks": 30,
+          "mean_spikes_per_s": 70.71428571428571
+        },
+        {
+          "rhythmic": true,
+          "burst_frequency_hz": 10.1010101010101,
+          "interburst_cv": 0.12412004026530976,
+          "envelope_modulation": 7.177433212670448,
+          "band_power_fraction": 0.7353671585264723,
+          "envelope_peaks": 13,
+          "mean_spikes_per_s": 9.285714285714285
+        },
+        {
+          "rhythmic": true,
+          "burst_frequency_hz": 10.1010101010101,
+          "interburst_cv": 0.12348212302715793,
+          "envelope_modulation": 7.177433212670448,
+          "band_power_fraction": 0.7344140105331184,
+          "envelope_peaks": 13,
+          "mean_spikes_per_s": 9.285714285714285
+        },
+        {
+          "rhythmic": false,
+          "burst_frequency_hz": 3.0864197530864197,
+          "interburst_cv": 0.0014564506306623017,
+          "envelope_modulation": 5.526732783548048,
+          "band_power_fraction": 0.7860398186511539,
+          "envelope_peaks": 4,
+          "mean_spikes_per_s": 2.8571428571428568
+        },
+        {
+          "rhythmic": true,
+          "burst_frequency_hz": 10.1010101010101,
+          "interburst_cv": 0.12348212302715793,
+          "envelope_modulation": 7.177433212670448,
+          "band_power_fraction": 0.7344140105331185,
+          "envelope_peaks": 13,
+          "mean_spikes_per_s": 9.285714285714285
+        }
+      ],
+      "rhythmic_cells": 3,
+      "rhythmic_MN": 0
+    },
+    "score": 197.86299928454775,
+    "ablation": {
+      "E1": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          }
+        ],
+        "rhythmic_cells": 0,
+        "rhythmic_MN": 0
+      },
+      "E2": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 17.857142857142858,
+            "interburst_cv": 0.05536487638092099,
+            "envelope_modulation": 1.2802838550139997,
+            "band_power_fraction": 0.47426976728331327,
+            "envelope_peaks": 25,
+            "mean_spikes_per_s": 53.57142857142857
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          }
+        ],
+        "rhythmic_cells": 0,
+        "rhythmic_MN": 0
+      },
+      "I1": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 10.1010101010101,
+            "interburst_cv": 0.005059126228265308,
+            "envelope_modulation": 6.87465172599716,
+            "band_power_fraction": 0.724829763131774,
+            "envelope_peaks": 14,
+            "mean_spikes_per_s": 10.714285714285714
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 10.152284263959391,
+            "interburst_cv": 0.005076142131979695,
+            "envelope_modulation": 6.87465172599716,
+            "band_power_fraction": 0.7353699238153157,
+            "envelope_peaks": 15,
+            "mean_spikes_per_s": 10.714285714285714
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 10.152284263959391,
+            "interburst_cv": 0.005076142131979695,
+            "envelope_modulation": 6.87465172599716,
+            "band_power_fraction": 0.7368128785013445,
+            "envelope_peaks": 15,
+            "mean_spikes_per_s": 10.714285714285714
+          }
+        ],
+        "rhythmic_cells": 3,
+        "rhythmic_MN": 0
+      },
+      "I2": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 14.285714285714286,
+            "interburst_cv": 0.10399319492371385,
+            "envelope_modulation": 1.120017356361733,
+            "band_power_fraction": 0.5276872335793472,
+            "envelope_peaks": 21,
+            "mean_spikes_per_s": 57.14285714285714
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 14.285714285714286,
+            "interburst_cv": 0.09482958620562922,
+            "envelope_modulation": 1.126992848995531,
+            "band_power_fraction": 0.47682502209565175,
+            "envelope_peaks": 21,
+            "mean_spikes_per_s": 56.42857142857142
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          }
+        ],
+        "rhythmic_cells": 0,
+        "rhythmic_MN": 0
+      },
+      "both_inhibitors": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 17.857142857142858,
+            "interburst_cv": 0.05177130678380414,
+            "envelope_modulation": 1.2998156625658677,
+            "band_power_fraction": 0.5484499225194118,
+            "envelope_peaks": 25,
+            "mean_spikes_per_s": 53.57142857142857
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 17.857142857142858,
+            "interburst_cv": 0.008074546346880618,
+            "envelope_modulation": 1.3753383131999122,
+            "band_power_fraction": 0.5454671314705227,
+            "envelope_peaks": 25,
+            "mean_spikes_per_s": 52.857142857142854
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          }
+        ],
+        "rhythmic_cells": 0,
+        "rhythmic_MN": 0
+      }
+    },
+    "robustness_passed": 16,
+    "robustness_total": 16,
+    "excitatory_necessity": true,
+    "single_inhibitor_redundancy": false,
+    "selection_score": 275.86299928454775
+  },
+  {
+    "trial": 19,
+    "parameters": {
+      "ge_nS_per_synapse": 0.012,
+      "gi_nS_per_synapse": 0.05,
+      "tau_i_decay_ms": 30.0
+    },
+    "summary": {
+      "numerical_failure": false,
+      "cells": [
+        {
+          "rhythmic": false,
+          "burst_frequency_hz": 23.80952380952381,
+          "interburst_cv": 0.18155791373608343,
+          "envelope_modulation": 0.3261657167521688,
+          "band_power_fraction": 0.5959606128791117,
+          "envelope_peaks": 30,
+          "mean_spikes_per_s": 70.71428571428571
+        },
+        {
+          "rhythmic": true,
+          "burst_frequency_hz": 12.195121951219512,
+          "interburst_cv": 0.13294292075529712,
+          "envelope_modulation": 6.065869169997494,
+          "band_power_fraction": 0.7945040788069025,
+          "envelope_peaks": 17,
+          "mean_spikes_per_s": 12.142857142857142
+        },
+        {
+          "rhythmic": true,
+          "burst_frequency_hz": 12.269938650306749,
+          "interburst_cv": 0.1304440807362132,
+          "envelope_modulation": 6.065869169997494,
+          "band_power_fraction": 0.7959838534077275,
+          "envelope_peaks": 17,
+          "mean_spikes_per_s": 12.142857142857142
+        },
+        {
+          "rhythmic": false,
+          "burst_frequency_hz": 2.457002457002457,
+          "interburst_cv": 0.20259801033996586,
+          "envelope_modulation": 6.273475212160094,
+          "band_power_fraction": 0.7482540280255968,
+          "envelope_peaks": 4,
+          "mean_spikes_per_s": 3.571428571428571
+        },
+        {
+          "rhythmic": true,
+          "burst_frequency_hz": 12.269938650306749,
+          "interburst_cv": 0.13201810493706037,
+          "envelope_modulation": 6.065869169997494,
+          "band_power_fraction": 0.7932402396960851,
+          "envelope_peaks": 17,
+          "mean_spikes_per_s": 12.142857142857142
+        }
+      ],
+      "rhythmic_cells": 3,
+      "rhythmic_MN": 0
+    },
+    "score": 197.45053469177932,
+    "ablation": {
+      "E1": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          }
+        ],
+        "rhythmic_cells": 0,
+        "rhythmic_MN": 0
+      },
+      "E2": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 17.857142857142858,
+            "interburst_cv": 0.05536487638092099,
+            "envelope_modulation": 1.2802838550139997,
+            "band_power_fraction": 0.47426976728331327,
+            "envelope_peaks": 25,
+            "mean_spikes_per_s": 53.57142857142857
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          }
+        ],
+        "rhythmic_cells": 0,
+        "rhythmic_MN": 0
+      },
+      "I1": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 13.88888888888889,
+            "interburst_cv": 0.06727612395197337,
+            "envelope_modulation": 5.427356625787231,
+            "band_power_fraction": 0.7960602856585947,
+            "envelope_peaks": 19,
+            "mean_spikes_per_s": 13.57142857142857
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 13.88888888888889,
+            "interburst_cv": 0.06886972672942471,
+            "envelope_modulation": 5.427356625787231,
+            "band_power_fraction": 0.7933278677698575,
+            "envelope_peaks": 19,
+            "mean_spikes_per_s": 13.57142857142857
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 13.88888888888889,
+            "interburst_cv": 0.06636970899141369,
+            "envelope_modulation": 5.427356625787231,
+            "band_power_fraction": 0.7950080854358769,
+            "envelope_peaks": 19,
+            "mean_spikes_per_s": 13.57142857142857
+          }
+        ],
+        "rhythmic_cells": 3,
+        "rhythmic_MN": 0
+      },
+      "I2": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 14.285714285714286,
+            "interburst_cv": 0.06210053913797273,
+            "envelope_modulation": 1.1341947912523878,
+            "band_power_fraction": 0.46079538447581136,
+            "envelope_peaks": 20,
+            "mean_spikes_per_s": 56.42857142857142
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 14.285714285714286,
+            "interburst_cv": 0.06455196386333875,
+            "envelope_modulation": 1.1414414752647046,
+            "band_power_fraction": 0.5381167602275937,
+            "envelope_peaks": 20,
+            "mean_spikes_per_s": 55.71428571428571
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          }
+        ],
+        "rhythmic_cells": 0,
+        "rhythmic_MN": 0
+      },
+      "both_inhibitors": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 17.857142857142858,
+            "interburst_cv": 0.05177130678380414,
+            "envelope_modulation": 1.2998156625658677,
+            "band_power_fraction": 0.5484499225194118,
+            "envelope_peaks": 25,
+            "mean_spikes_per_s": 53.57142857142857
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 17.857142857142858,
+            "interburst_cv": 0.008074546346880618,
+            "envelope_modulation": 1.3753383131999122,
+            "band_power_fraction": 0.5454671314705227,
+            "envelope_peaks": 25,
+            "mean_spikes_per_s": 52.857142857142854
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          }
+        ],
+        "rhythmic_cells": 0,
+        "rhythmic_MN": 0
+      }
+    },
+    "robustness_passed": 16,
+    "robustness_total": 16,
+    "excitatory_necessity": true,
+    "single_inhibitor_redundancy": false,
+    "selection_score": 275.45053469177935
+  },
+  {
+    "trial": 17,
+    "parameters": {
+      "ge_nS_per_synapse": 0.012,
+      "gi_nS_per_synapse": 0.025,
+      "tau_i_decay_ms": 50.0
+    },
+    "summary": {
+      "numerical_failure": false,
+      "cells": [
+        {
+          "rhythmic": false,
+          "burst_frequency_hz": 23.80952380952381,
+          "interburst_cv": 0.18155791373608343,
+          "envelope_modulation": 0.3261657167521688,
+          "band_power_fraction": 0.5959606128791117,
+          "envelope_peaks": 30,
+          "mean_spikes_per_s": 70.71428571428571
+        },
+        {
+          "rhythmic": true,
+          "burst_frequency_hz": 11.764705882352942,
+          "interburst_cv": 0.1829196233378552,
+          "envelope_modulation": 6.87465172599716,
+          "band_power_fraction": 0.773096288279463,
+          "envelope_peaks": 15,
+          "mean_spikes_per_s": 10.714285714285714
+        },
+        {
+          "rhythmic": true,
+          "burst_frequency_hz": 11.764705882352942,
+          "interburst_cv": 0.18103677485851924,
+          "envelope_modulation": 6.87465172599716,
+          "band_power_fraction": 0.7710223616747199,
+          "envelope_peaks": 15,
+          "mean_spikes_per_s": 10.714285714285714
+        },
+        {
+          "rhythmic": false,
+          "burst_frequency_hz": 2.6315789473684212,
+          "interburst_cv": 0.0,
+          "envelope_modulation": 5.526732783548048,
+          "band_power_fraction": 0.799711189496036,
+          "envelope_peaks": 4,
+          "mean_spikes_per_s": 2.8571428571428568
+        },
+        {
+          "rhythmic": true,
+          "burst_frequency_hz": 11.764705882352942,
+          "interburst_cv": 0.18346221174768387,
+          "envelope_modulation": 6.87465172599716,
+          "band_power_fraction": 0.7738193737922741,
+          "envelope_peaks": 15,
+          "mean_spikes_per_s": 10.714285714285714
+        }
+      ],
+      "rhythmic_cells": 3,
+      "rhythmic_MN": 0
+    },
+    "score": 197.4155121266652,
+    "ablation": {
+      "E1": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          }
+        ],
+        "rhythmic_cells": 0,
+        "rhythmic_MN": 0
+      },
+      "E2": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 17.857142857142858,
+            "interburst_cv": 0.05536487638092099,
+            "envelope_modulation": 1.2802838550139997,
+            "band_power_fraction": 0.47426976728331327,
+            "envelope_peaks": 25,
+            "mean_spikes_per_s": 53.57142857142857
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          }
+        ],
+        "rhythmic_cells": 0,
+        "rhythmic_MN": 0
+      },
+      "I1": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 11.764705882352942,
+            "interburst_cv": 0.07799693823132295,
+            "envelope_modulation": 6.444985993122336,
+            "band_power_fraction": 0.7727807315709162,
+            "envelope_peaks": 16,
+            "mean_spikes_per_s": 11.428571428571427
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 11.764705882352942,
+            "interburst_cv": 0.07384596469729302,
+            "envelope_modulation": 6.444985993122336,
+            "band_power_fraction": 0.7715092415030581,
+            "envelope_peaks": 16,
+            "mean_spikes_per_s": 11.428571428571427
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 11.764705882352942,
+            "interburst_cv": 0.07799693823132295,
+            "envelope_modulation": 6.444985993122335,
+            "band_power_fraction": 0.7698363314014187,
+            "envelope_peaks": 16,
+            "mean_spikes_per_s": 11.428571428571427
+          }
+        ],
+        "rhythmic_cells": 3,
+        "rhythmic_MN": 0
+      },
+      "I2": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 17.857142857142858,
+            "interburst_cv": 0.00769800358919501,
+            "envelope_modulation": 1.2998156625658677,
+            "band_power_fraction": 0.5261070889864634,
+            "envelope_peaks": 25,
+            "mean_spikes_per_s": 53.57142857142857
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 17.857142857142858,
+            "interburst_cv": 0.0521977846851417,
+            "envelope_modulation": 1.2998156625658677,
+            "band_power_fraction": 0.5226215355041557,
+            "envelope_peaks": 25,
+            "mean_spikes_per_s": 53.57142857142857
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          }
+        ],
+        "rhythmic_cells": 0,
+        "rhythmic_MN": 0
+      },
+      "both_inhibitors": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 17.857142857142858,
+            "interburst_cv": 0.05177130678380414,
+            "envelope_modulation": 1.2998156625658677,
+            "band_power_fraction": 0.5484499225194118,
+            "envelope_peaks": 25,
+            "mean_spikes_per_s": 53.57142857142857
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 17.857142857142858,
+            "interburst_cv": 0.008074546346880618,
+            "envelope_modulation": 1.3753383131999122,
+            "band_power_fraction": 0.5454671314705227,
+            "envelope_peaks": 25,
+            "mean_spikes_per_s": 52.857142857142854
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          }
+        ],
+        "rhythmic_cells": 0,
+        "rhythmic_MN": 0
+      }
+    },
+    "robustness_passed": 16,
+    "robustness_total": 16,
+    "excitatory_necessity": true,
+    "single_inhibitor_redundancy": false,
+    "selection_score": 275.4155121266652
+  },
+  {
+    "trial": 1,
+    "parameters": {
+      "ge_nS_per_synapse": 0.009,
+      "gi_nS_per_synapse": 0.012,
+      "tau_i_decay_ms": 30.0
+    },
+    "summary": {
+      "numerical_failure": false,
+      "cells": [
+        {
+          "rhythmic": false,
+          "burst_frequency_hz": 23.80952380952381,
+          "interburst_cv": 0.18155791373608343,
+          "envelope_modulation": 0.3261657167521688,
+          "band_power_fraction": 0.5959606128791117,
+          "envelope_peaks": 30,
+          "mean_spikes_per_s": 70.71428571428571
+        },
+        {
+          "rhythmic": true,
+          "burst_frequency_hz": 10.638297872340425,
+          "interburst_cv": 0.12916144823444162,
+          "envelope_modulation": 6.444985993122335,
+          "band_power_fraction": 0.8362248752283915,
+          "envelope_peaks": 16,
+          "mean_spikes_per_s": 11.428571428571427
+        },
+        {
+          "rhythmic": true,
+          "burst_frequency_hz": 10.526315789473685,
+          "interburst_cv": 0.13208686004768758,
+          "envelope_modulation": 6.444985993122335,
+          "band_power_fraction": 0.8403115190445378,
+          "envelope_peaks": 16,
+          "mean_spikes_per_s": 11.428571428571427
+        },
+        {
+          "rhythmic": false,
+          "burst_frequency_hz": 0.0,
+          "interburst_cv": 1.0,
+          "envelope_modulation": 0.0,
+          "band_power_fraction": 0.0,
+          "envelope_peaks": 0,
+          "mean_spikes_per_s": 0.0
+        },
+        {
+          "rhythmic": true,
+          "burst_frequency_hz": 10.526315789473685,
+          "interburst_cv": 0.13208686004768758,
+          "envelope_modulation": 6.444985993122336,
+          "band_power_fraction": 0.8399179286456185,
+          "envelope_peaks": 16,
+          "mean_spikes_per_s": 11.428571428571427
+        }
+      ],
+      "rhythmic_cells": 3,
+      "rhythmic_MN": 0
+    },
+    "score": 198.2760652894964,
+    "ablation": {
+      "E1": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          }
+        ],
+        "rhythmic_cells": 0,
+        "rhythmic_MN": 0
+      },
+      "E2": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 17.857142857142858,
+            "interburst_cv": 0.008172204821821129,
+            "envelope_modulation": 2.0890399083757543,
+            "band_power_fraction": 0.009944294189047792,
+            "envelope_peaks": 24,
+            "mean_spikes_per_s": 35.71428571428571
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          }
+        ],
+        "rhythmic_cells": 0,
+        "rhythmic_MN": 0
+      },
+      "I1": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 10.638297872340425,
+            "interburst_cv": 0.12916144823444162,
+            "envelope_modulation": 6.444985993122335,
+            "band_power_fraction": 0.8362248752283915,
+            "envelope_peaks": 16,
+            "mean_spikes_per_s": 11.428571428571427
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 10.526315789473685,
+            "interburst_cv": 0.13208686004768758,
+            "envelope_modulation": 6.444985993122335,
+            "band_power_fraction": 0.8403115190445378,
+            "envelope_peaks": 16,
+            "mean_spikes_per_s": 11.428571428571427
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 10.526315789473685,
+            "interburst_cv": 0.13208686004768758,
+            "envelope_modulation": 6.444985993122336,
+            "band_power_fraction": 0.8399179286456185,
+            "envelope_peaks": 16,
+            "mean_spikes_per_s": 11.428571428571427
+          }
+        ],
+        "rhythmic_cells": 3,
+        "rhythmic_MN": 0
+      },
+      "I2": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 17.857142857142858,
+            "interburst_cv": 0.008074546346880618,
+            "envelope_modulation": 2.0890399083757543,
+            "band_power_fraction": 0.004932748302834997,
+            "envelope_peaks": 25,
+            "mean_spikes_per_s": 35.71428571428571
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 17.857142857142858,
+            "interburst_cv": 0.008074546346880618,
+            "envelope_modulation": 2.131673375893627,
+            "band_power_fraction": 0.03968609508038433,
+            "envelope_peaks": 25,
+            "mean_spikes_per_s": 35.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          }
+        ],
+        "rhythmic_cells": 0,
+        "rhythmic_MN": 0
+      },
+      "both_inhibitors": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 17.857142857142858,
+            "interburst_cv": 0.008074546346880618,
+            "envelope_modulation": 2.0890399083757543,
+            "band_power_fraction": 0.004932748302834997,
+            "envelope_peaks": 25,
+            "mean_spikes_per_s": 35.71428571428571
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 17.857142857142858,
+            "interburst_cv": 0.008074546346880618,
+            "envelope_modulation": 2.131673375893627,
+            "band_power_fraction": 0.03968609508038433,
+            "envelope_peaks": 25,
+            "mean_spikes_per_s": 35.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          }
+        ],
+        "rhythmic_cells": 0,
+        "rhythmic_MN": 0
+      }
+    },
+    "robustness_passed": 15,
+    "robustness_total": 16,
+    "excitatory_necessity": true,
+    "single_inhibitor_redundancy": false,
+    "selection_score": 273.2760652894964
+  },
+  {
+    "trial": 4,
+    "parameters": {
+      "ge_nS_per_synapse": 0.009,
+      "gi_nS_per_synapse": 0.025,
+      "tau_i_decay_ms": 30.0
+    },
+    "summary": {
+      "numerical_failure": false,
+      "cells": [
+        {
+          "rhythmic": false,
+          "burst_frequency_hz": 23.80952380952381,
+          "interburst_cv": 0.18155791373608343,
+          "envelope_modulation": 0.3261657167521688,
+          "band_power_fraction": 0.5959606128791117,
+          "envelope_peaks": 30,
+          "mean_spikes_per_s": 70.71428571428571
+        },
+        {
+          "rhythmic": true,
+          "burst_frequency_hz": 8.88888888888889,
+          "interburst_cv": 0.0044444444444444444,
+          "envelope_modulation": 7.177433212670448,
+          "band_power_fraction": 0.8115016693539627,
+          "envelope_peaks": 13,
+          "mean_spikes_per_s": 9.285714285714285
+        },
+        {
+          "rhythmic": true,
+          "burst_frequency_hz": 8.849557522123893,
+          "interburst_cv": 0.004379037589266926,
+          "envelope_modulation": 7.177433212670448,
+          "band_power_fraction": 0.812991912476016,
+          "envelope_peaks": 13,
+          "mean_spikes_per_s": 9.285714285714285
+        },
+        {
+          "rhythmic": false,
+          "burst_frequency_hz": 0.0,
+          "interburst_cv": 1.0,
+          "envelope_modulation": 0.0,
+          "band_power_fraction": 0.0,
+          "envelope_peaks": 0,
+          "mean_spikes_per_s": 0.0
+        },
+        {
+          "rhythmic": true,
+          "burst_frequency_hz": 8.849557522123893,
+          "interburst_cv": 0.004379037589266926,
+          "envelope_modulation": 7.177433212670448,
+          "band_power_fraction": 0.8103805381023736,
+          "envelope_peaks": 13,
+          "mean_spikes_per_s": 9.285714285714285
+        }
+      ],
+      "rhythmic_cells": 3,
+      "rhythmic_MN": 0
+    },
+    "score": 197.82510579533783,
+    "ablation": {
+      "E1": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          }
+        ],
+        "rhythmic_cells": 0,
+        "rhythmic_MN": 0
+      },
+      "E2": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 17.857142857142858,
+            "interburst_cv": 0.008172204821821129,
+            "envelope_modulation": 2.0890399083757543,
+            "band_power_fraction": 0.009944294189047792,
+            "envelope_peaks": 24,
+            "mean_spikes_per_s": 35.71428571428571
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          }
+        ],
+        "rhythmic_cells": 0,
+        "rhythmic_MN": 0
+      },
+      "I1": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 8.88888888888889,
+            "interburst_cv": 0.0044444444444444444,
+            "envelope_modulation": 7.177433212670448,
+            "band_power_fraction": 0.8115016693539627,
+            "envelope_peaks": 13,
+            "mean_spikes_per_s": 9.285714285714285
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 8.849557522123893,
+            "interburst_cv": 0.004379037589266926,
+            "envelope_modulation": 7.177433212670448,
+            "band_power_fraction": 0.812991912476016,
+            "envelope_peaks": 13,
+            "mean_spikes_per_s": 9.285714285714285
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 8.849557522123893,
+            "interburst_cv": 0.004379037589266926,
+            "envelope_modulation": 7.177433212670448,
+            "band_power_fraction": 0.8103805381023736,
+            "envelope_peaks": 13,
+            "mean_spikes_per_s": 9.285714285714285
+          }
+        ],
+        "rhythmic_cells": 3,
+        "rhythmic_MN": 0
+      },
+      "I2": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 17.857142857142858,
+            "interburst_cv": 0.008074546346880618,
+            "envelope_modulation": 2.0890399083757543,
+            "band_power_fraction": 0.004932748302834997,
+            "envelope_peaks": 25,
+            "mean_spikes_per_s": 35.71428571428571
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 17.857142857142858,
+            "interburst_cv": 0.008074546346880618,
+            "envelope_modulation": 2.131673375893627,
+            "band_power_fraction": 0.03968609508038433,
+            "envelope_peaks": 25,
+            "mean_spikes_per_s": 35.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          }
+        ],
+        "rhythmic_cells": 0,
+        "rhythmic_MN": 0
+      },
+      "both_inhibitors": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 17.857142857142858,
+            "interburst_cv": 0.008074546346880618,
+            "envelope_modulation": 2.0890399083757543,
+            "band_power_fraction": 0.004932748302834997,
+            "envelope_peaks": 25,
+            "mean_spikes_per_s": 35.71428571428571
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 17.857142857142858,
+            "interburst_cv": 0.008074546346880618,
+            "envelope_modulation": 2.131673375893627,
+            "band_power_fraction": 0.03968609508038433,
+            "envelope_peaks": 25,
+            "mean_spikes_per_s": 35.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          }
+        ],
+        "rhythmic_cells": 0,
+        "rhythmic_MN": 0
+      }
+    },
+    "robustness_passed": 15,
+    "robustness_total": 16,
+    "excitatory_necessity": true,
+    "single_inhibitor_redundancy": false,
+    "selection_score": 272.82510579533783
+  },
+  {
+    "trial": 44,
+    "parameters": {
+      "ge_nS_per_synapse": 0.027,
+      "gi_nS_per_synapse": 0.05,
+      "tau_i_decay_ms": 50.0
+    },
+    "summary": {
+      "numerical_failure": false,
+      "cells": [
+        {
+          "rhythmic": false,
+          "burst_frequency_hz": 23.80952380952381,
+          "interburst_cv": 0.18155791373608343,
+          "envelope_modulation": 0.3261657167521688,
+          "band_power_fraction": 0.5959606128791117,
+          "envelope_peaks": 30,
+          "mean_spikes_per_s": 70.71428571428571
+        },
+        {
+          "rhythmic": true,
+          "burst_frequency_hz": 10.92896174863388,
+          "interburst_cv": 0.060109289617486336,
+          "envelope_modulation": 6.87465172599716,
+          "band_power_fraction": 0.7582977958517259,
+          "envelope_peaks": 15,
+          "mean_spikes_per_s": 10.714285714285714
+        },
+        {
+          "rhythmic": true,
+          "burst_frequency_hz": 10.92896174863388,
+          "interburst_cv": 0.060109289617486336,
+          "envelope_modulation": 6.87465172599716,
+          "band_power_fraction": 0.758297795851726,
+          "envelope_peaks": 15,
+          "mean_spikes_per_s": 10.714285714285714
+        },
+        {
+          "rhythmic": true,
+          "burst_frequency_hz": 10.92896174863388,
+          "interburst_cv": 0.060997566549822295,
+          "envelope_modulation": 6.87465172599716,
+          "band_power_fraction": 0.7586662045084838,
+          "envelope_peaks": 15,
+          "mean_spikes_per_s": 10.714285714285714
+        },
+        {
+          "rhythmic": true,
+          "burst_frequency_hz": 10.92896174863388,
+          "interburst_cv": 0.06584783595532961,
+          "envelope_modulation": 6.87465172599716,
+          "band_power_fraction": 0.7627445457275678,
+          "envelope_peaks": 15,
+          "mean_spikes_per_s": 10.714285714285714
+        }
+      ],
+      "rhythmic_cells": 4,
+      "rhythmic_MN": 0
+    },
+    "score": 199.327868852459,
+    "ablation": {
+      "E1": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          }
+        ],
+        "rhythmic_cells": 0,
+        "rhythmic_MN": 0
+      },
+      "E2": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 17.857142857142858,
+            "interburst_cv": 0.00769800358919501,
+            "envelope_modulation": 4.379853868460952,
+            "band_power_fraction": 0.6815925462404961,
+            "envelope_peaks": 25,
+            "mean_spikes_per_s": 17.857142857142854
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 17.857142857142858,
+            "interburst_cv": 0.008074546346880618,
+            "envelope_modulation": 4.379853868460952,
+            "band_power_fraction": 0.6813176732792416,
+            "envelope_peaks": 25,
+            "mean_spikes_per_s": 17.857142857142854
+          }
+        ],
+        "rhythmic_cells": 2,
+        "rhythmic_MN": 0
+      },
+      "I1": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 17.857142857142858,
+            "interburst_cv": 0.00769800358919501,
+            "envelope_modulation": 4.379853868460952,
+            "band_power_fraction": 0.6815925462404961,
+            "envelope_peaks": 25,
+            "mean_spikes_per_s": 17.857142857142854
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 17.857142857142858,
+            "interburst_cv": 0.008074546346880618,
+            "envelope_modulation": 4.379853868460952,
+            "band_power_fraction": 0.6820714749797824,
+            "envelope_peaks": 25,
+            "mean_spikes_per_s": 17.857142857142854
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 17.857142857142858,
+            "interburst_cv": 0.008074546346880618,
+            "envelope_modulation": 4.379853868460952,
+            "band_power_fraction": 0.6813176732792416,
+            "envelope_peaks": 25,
+            "mean_spikes_per_s": 17.857142857142854
+          }
+        ],
+        "rhythmic_cells": 3,
+        "rhythmic_MN": 0
+      },
+      "I2": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 14.285714285714286,
+            "interburst_cv": 0.006702433944896185,
+            "envelope_modulation": 5.155988794497869,
+            "band_power_fraction": 0.8471225412028001,
+            "envelope_peaks": 19,
+            "mean_spikes_per_s": 14.285714285714285
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 14.285714285714286,
+            "interburst_cv": 0.008389366338058165,
+            "envelope_modulation": 5.155988794497869,
+            "band_power_fraction": 0.8539637708233954,
+            "envelope_peaks": 20,
+            "mean_spikes_per_s": 14.285714285714285
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 14.285714285714286,
+            "interburst_cv": 0.006610599450844197,
+            "envelope_modulation": 5.155988794497869,
+            "band_power_fraction": 0.8577139314694724,
+            "envelope_peaks": 20,
+            "mean_spikes_per_s": 14.285714285714285
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          }
+        ],
+        "rhythmic_cells": 3,
+        "rhythmic_MN": 0
+      },
+      "both_inhibitors": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.529411764705884,
+            "interburst_cv": 0.23294053803770237,
+            "envelope_modulation": 0.3070779412314816,
+            "band_power_fraction": 0.6516426206586605,
+            "envelope_peaks": 27,
+            "mean_spikes_per_s": 71.42857142857142
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.19981947548198167,
+            "envelope_modulation": 0.3070779412314816,
+            "band_power_fraction": 0.6310018269687963,
+            "envelope_peaks": 28,
+            "mean_spikes_per_s": 71.42857142857142
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          }
+        ],
+        "rhythmic_cells": 0,
+        "rhythmic_MN": 0
+      }
+    },
+    "robustness_passed": 16,
+    "robustness_total": 16,
+    "excitatory_necessity": false,
+    "single_inhibitor_redundancy": true,
+    "selection_score": 262.327868852459
+  },
+  {
+    "trial": 34,
+    "parameters": {
+      "ge_nS_per_synapse": 0.018,
+      "gi_nS_per_synapse": 0.1,
+      "tau_i_decay_ms": 30.0
+    },
+    "summary": {
+      "numerical_failure": false,
+      "cells": [
+        {
+          "rhythmic": false,
+          "burst_frequency_hz": 23.80952380952381,
+          "interburst_cv": 0.18155791373608343,
+          "envelope_modulation": 0.3261657167521688,
+          "band_power_fraction": 0.5959606128791117,
+          "envelope_peaks": 30,
+          "mean_spikes_per_s": 70.71428571428571
+        },
+        {
+          "rhythmic": true,
+          "burst_frequency_hz": 10.1010101010101,
+          "interburst_cv": 0.005059126228265308,
+          "envelope_modulation": 6.87465172599716,
+          "band_power_fraction": 0.715777417452495,
+          "envelope_peaks": 14,
+          "mean_spikes_per_s": 10.714285714285714
+        },
+        {
+          "rhythmic": true,
+          "burst_frequency_hz": 10.152284263959391,
+          "interburst_cv": 0.005076142131979695,
+          "envelope_modulation": 6.87465172599716,
+          "band_power_fraction": 0.7327194649084062,
+          "envelope_peaks": 15,
+          "mean_spikes_per_s": 10.714285714285714
+        },
+        {
+          "rhythmic": true,
+          "burst_frequency_hz": 10.152284263959391,
+          "interburst_cv": 0.005076142131979695,
+          "envelope_modulation": 6.87465172599716,
+          "band_power_fraction": 0.7353699238153156,
+          "envelope_peaks": 15,
+          "mean_spikes_per_s": 10.714285714285714
+        },
+        {
+          "rhythmic": true,
+          "burst_frequency_hz": 10.152284263959391,
+          "interburst_cv": 0.005076142131979695,
+          "envelope_modulation": 6.87465172599716,
+          "band_power_fraction": 0.7368576732077657,
+          "envelope_peaks": 15,
+          "mean_spikes_per_s": 10.714285714285714
+        }
+      ],
+      "rhythmic_cells": 4,
+      "rhythmic_MN": 0
+    },
+    "score": 199.07597084068354,
+    "ablation": {
+      "E1": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          }
+        ],
+        "rhythmic_cells": 0,
+        "rhythmic_MN": 0
+      },
+      "E2": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 14.285714285714286,
+            "interburst_cv": 0.006855012258722274,
+            "envelope_modulation": 5.155988794497869,
+            "band_power_fraction": 0.8569952579816302,
+            "envelope_peaks": 20,
+            "mean_spikes_per_s": 14.285714285714285
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 14.285714285714286,
+            "interburst_cv": 0.006855012258722274,
+            "envelope_modulation": 5.155988794497869,
+            "band_power_fraction": 0.8567935689795719,
+            "envelope_peaks": 20,
+            "mean_spikes_per_s": 14.285714285714285
+          }
+        ],
+        "rhythmic_cells": 2,
+        "rhythmic_MN": 0
+      },
+      "I1": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 14.285714285714286,
+            "interburst_cv": 0.006855012258722274,
+            "envelope_modulation": 5.155988794497869,
+            "band_power_fraction": 0.8567942830564884,
+            "envelope_peaks": 20,
+            "mean_spikes_per_s": 14.285714285714285
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 14.285714285714286,
+            "interburst_cv": 0.006855012258722274,
+            "envelope_modulation": 5.155988794497869,
+            "band_power_fraction": 0.8563359276274057,
+            "envelope_peaks": 20,
+            "mean_spikes_per_s": 14.285714285714285
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 14.285714285714286,
+            "interburst_cv": 0.006610599450844197,
+            "envelope_modulation": 5.155988794497869,
+            "band_power_fraction": 0.8574898239549164,
+            "envelope_peaks": 20,
+            "mean_spikes_per_s": 14.285714285714285
+          }
+        ],
+        "rhythmic_cells": 3,
+        "rhythmic_MN": 0
+      },
+      "I2": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 11.904761904761905,
+            "interburst_cv": 0.005804478063467246,
+            "envelope_modulation": 6.444985993122336,
+            "band_power_fraction": 0.7739780696149037,
+            "envelope_peaks": 16,
+            "mean_spikes_per_s": 11.428571428571427
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 11.904761904761905,
+            "interburst_cv": 0.005804478063467246,
+            "envelope_modulation": 6.444985993122336,
+            "band_power_fraction": 0.7739780696149038,
+            "envelope_peaks": 16,
+            "mean_spikes_per_s": 11.428571428571427
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 11.904761904761905,
+            "interburst_cv": 0.005906325788119875,
+            "envelope_modulation": 6.444985993122336,
+            "band_power_fraction": 0.7723118545131799,
+            "envelope_peaks": 16,
+            "mean_spikes_per_s": 11.428571428571427
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          }
+        ],
+        "rhythmic_cells": 3,
+        "rhythmic_MN": 0
+      },
+      "both_inhibitors": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.21713182104240425,
+            "envelope_modulation": 0.3070779412314816,
+            "band_power_fraction": 0.5261010821390657,
+            "envelope_peaks": 29,
+            "mean_spikes_per_s": 71.42857142857142
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.20096897379789164,
+            "envelope_modulation": 0.3070779412314816,
+            "band_power_fraction": 0.6501741343102958,
+            "envelope_peaks": 28,
+            "mean_spikes_per_s": 71.42857142857142
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          }
+        ],
+        "rhythmic_cells": 0,
+        "rhythmic_MN": 0
+      }
+    },
+    "robustness_passed": 16,
+    "robustness_total": 16,
+    "excitatory_necessity": false,
+    "single_inhibitor_redundancy": true,
+    "selection_score": 262.07597084068357
+  },
+  {
+    "trial": 46,
+    "parameters": {
+      "ge_nS_per_synapse": 0.027,
+      "gi_nS_per_synapse": 0.1,
+      "tau_i_decay_ms": 30.0
+    },
+    "summary": {
+      "numerical_failure": false,
+      "cells": [
+        {
+          "rhythmic": false,
+          "burst_frequency_hz": 23.80952380952381,
+          "interburst_cv": 0.18155791373608343,
+          "envelope_modulation": 0.3261657167521688,
+          "band_power_fraction": 0.5959606128791117,
+          "envelope_peaks": 30,
+          "mean_spikes_per_s": 70.71428571428571
+        },
+        {
+          "rhythmic": true,
+          "burst_frequency_hz": 11.904761904761905,
+          "interburst_cv": 0.005804478063467246,
+          "envelope_modulation": 6.065869169997494,
+          "band_power_fraction": 0.7588802792970981,
+          "envelope_peaks": 16,
+          "mean_spikes_per_s": 12.142857142857142
+        },
+        {
+          "rhythmic": true,
+          "burst_frequency_hz": 11.904761904761905,
+          "interburst_cv": 0.005804478063467246,
+          "envelope_modulation": 6.065869169997494,
+          "band_power_fraction": 0.750343796637957,
+          "envelope_peaks": 16,
+          "mean_spikes_per_s": 12.142857142857142
+        },
+        {
+          "rhythmic": true,
+          "burst_frequency_hz": 11.904761904761905,
+          "interburst_cv": 0.005804478063467246,
+          "envelope_modulation": 6.444985993122336,
+          "band_power_fraction": 0.7739780696149038,
+          "envelope_peaks": 16,
+          "mean_spikes_per_s": 11.428571428571427
+        },
+        {
+          "rhythmic": true,
+          "burst_frequency_hz": 11.904761904761905,
+          "interburst_cv": 0.005906325788119875,
+          "envelope_modulation": 6.444985993122336,
+          "band_power_fraction": 0.7723118545131799,
+          "envelope_peaks": 16,
+          "mean_spikes_per_s": 11.428571428571427
+        }
+      ],
+      "rhythmic_cells": 4,
+      "rhythmic_MN": 0
+    },
+    "score": 199.03719331460343,
+    "ablation": {
+      "E1": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          }
+        ],
+        "rhythmic_cells": 0,
+        "rhythmic_MN": 0
+      },
+      "E2": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 17.857142857142858,
+            "interburst_cv": 0.008074546346880618,
+            "envelope_modulation": 4.379853868460952,
+            "band_power_fraction": 0.6820749197810465,
+            "envelope_peaks": 25,
+            "mean_spikes_per_s": 17.857142857142854
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 17.857142857142858,
+            "interburst_cv": 0.00769800358919501,
+            "envelope_modulation": 4.379853868460952,
+            "band_power_fraction": 0.6819432888815457,
+            "envelope_peaks": 25,
+            "mean_spikes_per_s": 17.857142857142854
+          }
+        ],
+        "rhythmic_cells": 2,
+        "rhythmic_MN": 0
+      },
+      "I1": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 17.857142857142858,
+            "interburst_cv": 0.008074546346880618,
+            "envelope_modulation": 4.379853868460952,
+            "band_power_fraction": 0.6820749197810465,
+            "envelope_peaks": 25,
+            "mean_spikes_per_s": 17.857142857142854
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 17.857142857142858,
+            "interburst_cv": 0.008074546346880618,
+            "envelope_modulation": 4.379853868460952,
+            "band_power_fraction": 0.6820714749797825,
+            "envelope_peaks": 25,
+            "mean_spikes_per_s": 17.857142857142854
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 17.857142857142858,
+            "interburst_cv": 0.00769800358919501,
+            "envelope_modulation": 4.379853868460952,
+            "band_power_fraction": 0.6819432888815457,
+            "envelope_peaks": 25,
+            "mean_spikes_per_s": 17.857142857142854
+          }
+        ],
+        "rhythmic_cells": 3,
+        "rhythmic_MN": 0
+      },
+      "I2": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 14.285714285714286,
+            "interburst_cv": 0.006702433944896185,
+            "envelope_modulation": 5.155988794497869,
+            "band_power_fraction": 0.8473513907169182,
+            "envelope_peaks": 19,
+            "mean_spikes_per_s": 14.285714285714285
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 14.285714285714286,
+            "interburst_cv": 0.006855012258722276,
+            "envelope_modulation": 5.155988794497869,
+            "band_power_fraction": 0.8544957765404964,
+            "envelope_peaks": 20,
+            "mean_spikes_per_s": 14.285714285714285
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 14.285714285714286,
+            "interburst_cv": 0.006855012258722274,
+            "envelope_modulation": 5.155988794497869,
+            "band_power_fraction": 0.8569467862030022,
+            "envelope_peaks": 20,
+            "mean_spikes_per_s": 14.285714285714285
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          }
+        ],
+        "rhythmic_cells": 3,
+        "rhythmic_MN": 0
+      },
+      "both_inhibitors": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.529411764705884,
+            "interburst_cv": 0.23294053803770237,
+            "envelope_modulation": 0.3070779412314816,
+            "band_power_fraction": 0.6516426206586605,
+            "envelope_peaks": 27,
+            "mean_spikes_per_s": 71.42857142857142
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.19981947548198167,
+            "envelope_modulation": 0.3070779412314816,
+            "band_power_fraction": 0.6310018269687963,
+            "envelope_peaks": 28,
+            "mean_spikes_per_s": 71.42857142857142
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          }
+        ],
+        "rhythmic_cells": 0,
+        "rhythmic_MN": 0
+      }
+    },
+    "robustness_passed": 16,
+    "robustness_total": 16,
+    "excitatory_necessity": false,
+    "single_inhibitor_redundancy": true,
+    "selection_score": 262.0371933146034
+  },
+  {
+    "trial": 59,
+    "parameters": {
+      "ge_nS_per_synapse": 0.045,
+      "gi_nS_per_synapse": 0.1,
+      "tau_i_decay_ms": 50.0
+    },
+    "summary": {
+      "numerical_failure": false,
+      "cells": [
+        {
+          "rhythmic": false,
+          "burst_frequency_hz": 23.80952380952381,
+          "interburst_cv": 0.18155791373608343,
+          "envelope_modulation": 0.3261657167521688,
+          "band_power_fraction": 0.5959606128791117,
+          "envelope_peaks": 30,
+          "mean_spikes_per_s": 70.71428571428571
+        },
+        {
+          "rhythmic": true,
+          "burst_frequency_hz": 10.416666666666666,
+          "interburst_cv": 0.05503986825134626,
+          "envelope_modulation": 6.87465172599716,
+          "band_power_fraction": 0.7411441673874666,
+          "envelope_peaks": 14,
+          "mean_spikes_per_s": 10.714285714285714
+        },
+        {
+          "rhythmic": true,
+          "burst_frequency_hz": 10.416666666666666,
+          "interburst_cv": 0.05769638320502123,
+          "envelope_modulation": 6.87465172599716,
+          "band_power_fraction": 0.7350746220356985,
+          "envelope_peaks": 14,
+          "mean_spikes_per_s": 10.714285714285714
+        },
+        {
+          "rhythmic": true,
+          "burst_frequency_hz": 10.416666666666666,
+          "interburst_cv": 0.05724669557327279,
+          "envelope_modulation": 6.6998063550698195,
+          "band_power_fraction": 0.7552115359565698,
+          "envelope_peaks": 14,
+          "mean_spikes_per_s": 9.999999999999998
+        },
+        {
+          "rhythmic": true,
+          "burst_frequency_hz": 10.416666666666666,
+          "interburst_cv": 0.05614415777075489,
+          "envelope_modulation": 6.87465172599716,
+          "band_power_fraction": 0.7325424622931604,
+          "envelope_peaks": 14,
+          "mean_spikes_per_s": 10.714285714285714
+        }
+      ],
+      "rhythmic_cells": 4,
+      "rhythmic_MN": 0
+    },
+    "score": 198.85298540938481,
+    "ablation": {
+      "E1": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          }
+        ],
+        "rhythmic_cells": 0,
+        "rhythmic_MN": 0
+      },
+      "E2": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 17.857142857142858,
+            "interburst_cv": 0.008074546346880618,
+            "envelope_modulation": 4.379853868460951,
+            "band_power_fraction": 0.6811844552126962,
+            "envelope_peaks": 25,
+            "mean_spikes_per_s": 17.857142857142854
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 17.857142857142858,
+            "interburst_cv": 0.008074546346880618,
+            "envelope_modulation": 4.379853868460952,
+            "band_power_fraction": 0.6819816210300945,
+            "envelope_peaks": 25,
+            "mean_spikes_per_s": 17.857142857142854
+          }
+        ],
+        "rhythmic_cells": 2,
+        "rhythmic_MN": 0
+      },
+      "I1": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 17.857142857142858,
+            "interburst_cv": 0.008074546346880618,
+            "envelope_modulation": 4.379853868460951,
+            "band_power_fraction": 0.6811844552126962,
+            "envelope_peaks": 25,
+            "mean_spikes_per_s": 17.857142857142854
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 17.857142857142858,
+            "interburst_cv": 0.008074546346880618,
+            "envelope_modulation": 4.379853868460952,
+            "band_power_fraction": 0.682167354637661,
+            "envelope_peaks": 25,
+            "mean_spikes_per_s": 17.857142857142854
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 17.857142857142858,
+            "interburst_cv": 0.008074546346880618,
+            "envelope_modulation": 4.379853868460952,
+            "band_power_fraction": 0.6819816210300945,
+            "envelope_peaks": 25,
+            "mean_spikes_per_s": 17.857142857142854
+          }
+        ],
+        "rhythmic_cells": 3,
+        "rhythmic_MN": 0
+      },
+      "I2": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 14.285714285714286,
+            "interburst_cv": 0.006925780889812251,
+            "envelope_modulation": 5.155988794497869,
+            "band_power_fraction": 0.846305424019965,
+            "envelope_peaks": 19,
+            "mean_spikes_per_s": 14.285714285714285
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 14.285714285714286,
+            "interburst_cv": 0.006855012258722276,
+            "envelope_modulation": 5.155988794497869,
+            "band_power_fraction": 0.8544957765404964,
+            "envelope_peaks": 20,
+            "mean_spikes_per_s": 14.285714285714285
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 14.285714285714286,
+            "interburst_cv": 0.006855012258722274,
+            "envelope_modulation": 5.155988794497869,
+            "band_power_fraction": 0.8566672552583069,
+            "envelope_peaks": 20,
+            "mean_spikes_per_s": 14.285714285714285
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          }
+        ],
+        "rhythmic_cells": 3,
+        "rhythmic_MN": 0
+      },
+      "both_inhibitors": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.529411764705884,
+            "interburst_cv": 0.23723158956942875,
+            "envelope_modulation": 0.3070779412314816,
+            "band_power_fraction": 0.6482235101557737,
+            "envelope_peaks": 27,
+            "mean_spikes_per_s": 71.42857142857142
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.24922841470916293,
+            "envelope_modulation": 0.3070779412314816,
+            "band_power_fraction": 0.6240463991299798,
+            "envelope_peaks": 28,
+            "mean_spikes_per_s": 71.42857142857142
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          }
+        ],
+        "rhythmic_cells": 0,
+        "rhythmic_MN": 0
+      }
+    },
+    "robustness_passed": 16,
+    "robustness_total": 16,
+    "excitatory_necessity": false,
+    "single_inhibitor_redundancy": true,
+    "selection_score": 261.8529854093848
+  },
+  {
+    "trial": 29,
+    "parameters": {
+      "ge_nS_per_synapse": 0.018,
+      "gi_nS_per_synapse": 0.025,
+      "tau_i_decay_ms": 50.0
+    },
+    "summary": {
+      "numerical_failure": false,
+      "cells": [
+        {
+          "rhythmic": false,
+          "burst_frequency_hz": 23.80952380952381,
+          "interburst_cv": 0.18155791373608343,
+          "envelope_modulation": 0.3261657167521688,
+          "band_power_fraction": 0.5959606128791117,
+          "envelope_peaks": 30,
+          "mean_spikes_per_s": 70.71428571428571
+        },
+        {
+          "rhythmic": true,
+          "burst_frequency_hz": 11.764705882352942,
+          "interburst_cv": 0.057389037029926336,
+          "envelope_modulation": 6.444985993122335,
+          "band_power_fraction": 0.7652577332759303,
+          "envelope_peaks": 16,
+          "mean_spikes_per_s": 11.428571428571427
+        },
+        {
+          "rhythmic": true,
+          "burst_frequency_hz": 11.764705882352942,
+          "interburst_cv": 0.05901120987849344,
+          "envelope_modulation": 6.444985993122336,
+          "band_power_fraction": 0.7662693084000006,
+          "envelope_peaks": 16,
+          "mean_spikes_per_s": 11.428571428571427
+        },
+        {
+          "rhythmic": true,
+          "burst_frequency_hz": 11.764705882352942,
+          "interburst_cv": 0.057389037029926336,
+          "envelope_modulation": 6.444985993122335,
+          "band_power_fraction": 0.7631972468407955,
+          "envelope_peaks": 16,
+          "mean_spikes_per_s": 11.428571428571427
+        },
+        {
+          "rhythmic": true,
+          "burst_frequency_hz": 11.764705882352942,
+          "interburst_cv": 0.055719657672323425,
+          "envelope_modulation": 6.444985993122336,
+          "band_power_fraction": 0.7642464933165721,
+          "envelope_peaks": 16,
+          "mean_spikes_per_s": 11.428571428571427
+        }
+      ],
+      "rhythmic_cells": 4,
+      "rhythmic_MN": 0
+    },
+    "score": 198.65329288310497,
+    "ablation": {
+      "E1": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          }
+        ],
+        "rhythmic_cells": 0,
+        "rhythmic_MN": 0
+      },
+      "E2": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 17.857142857142858,
+            "interburst_cv": 0.00817220482182113,
+            "envelope_modulation": 4.379853868460952,
+            "band_power_fraction": 0.6756637908551423,
+            "envelope_peaks": 24,
+            "mean_spikes_per_s": 17.857142857142854
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 17.857142857142858,
+            "interburst_cv": 0.008074546346880618,
+            "envelope_modulation": 4.379853868460952,
+            "band_power_fraction": 0.6815536414400475,
+            "envelope_peaks": 25,
+            "mean_spikes_per_s": 17.857142857142854
+          }
+        ],
+        "rhythmic_cells": 2,
+        "rhythmic_MN": 0
+      },
+      "I1": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 17.857142857142858,
+            "interburst_cv": 0.00817220482182113,
+            "envelope_modulation": 4.379853868460952,
+            "band_power_fraction": 0.6756637908551423,
+            "envelope_peaks": 24,
+            "mean_spikes_per_s": 17.857142857142854
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 17.857142857142858,
+            "interburst_cv": 0.008074546346880618,
+            "envelope_modulation": 4.379853868460952,
+            "band_power_fraction": 0.6800483524264019,
+            "envelope_peaks": 25,
+            "mean_spikes_per_s": 17.857142857142854
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 17.857142857142858,
+            "interburst_cv": 0.008074546346880618,
+            "envelope_modulation": 4.379853868460952,
+            "band_power_fraction": 0.6825846474870303,
+            "envelope_peaks": 25,
+            "mean_spikes_per_s": 17.857142857142854
+          }
+        ],
+        "rhythmic_cells": 3,
+        "rhythmic_MN": 0
+      },
+      "I2": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 14.285714285714286,
+            "interburst_cv": 0.006925780889812251,
+            "envelope_modulation": 5.155988794497869,
+            "band_power_fraction": 0.8493363974743071,
+            "envelope_peaks": 19,
+            "mean_spikes_per_s": 14.285714285714285
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 14.285714285714286,
+            "interburst_cv": 0.006855012258722274,
+            "envelope_modulation": 5.155988794497869,
+            "band_power_fraction": 0.8551352352844344,
+            "envelope_peaks": 20,
+            "mean_spikes_per_s": 14.285714285714285
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 14.285714285714286,
+            "interburst_cv": 0.006610599450844197,
+            "envelope_modulation": 5.155988794497869,
+            "band_power_fraction": 0.8576279453603523,
+            "envelope_peaks": 20,
+            "mean_spikes_per_s": 14.285714285714285
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          }
+        ],
+        "rhythmic_cells": 3,
+        "rhythmic_MN": 0
+      },
+      "both_inhibitors": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.21713182104240425,
+            "envelope_modulation": 0.3070779412314816,
+            "band_power_fraction": 0.5261010821390657,
+            "envelope_peaks": 29,
+            "mean_spikes_per_s": 71.42857142857142
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.20096897379789164,
+            "envelope_modulation": 0.3070779412314816,
+            "band_power_fraction": 0.6501741343102958,
+            "envelope_peaks": 28,
+            "mean_spikes_per_s": 71.42857142857142
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          }
+        ],
+        "rhythmic_cells": 0,
+        "rhythmic_MN": 0
+      }
+    },
+    "robustness_passed": 16,
+    "robustness_total": 16,
+    "excitatory_necessity": false,
+    "single_inhibitor_redundancy": true,
+    "selection_score": 261.653292883105
+  },
+  {
+    "trial": 31,
+    "parameters": {
+      "ge_nS_per_synapse": 0.018,
+      "gi_nS_per_synapse": 0.05,
+      "tau_i_decay_ms": 30.0
+    },
+    "summary": {
+      "numerical_failure": false,
+      "cells": [
+        {
+          "rhythmic": false,
+          "burst_frequency_hz": 23.80952380952381,
+          "interburst_cv": 0.18155791373608343,
+          "envelope_modulation": 0.3261657167521688,
+          "band_power_fraction": 0.5959606128791117,
+          "envelope_peaks": 30,
+          "mean_spikes_per_s": 70.71428571428571
+        },
+        {
+          "rhythmic": true,
+          "burst_frequency_hz": 12.345679012345679,
+          "interburst_cv": 0.061376929983953,
+          "envelope_modulation": 5.728876438330966,
+          "band_power_fraction": 0.785045968171096,
+          "envelope_peaks": 17,
+          "mean_spikes_per_s": 12.857142857142856
+        },
+        {
+          "rhythmic": true,
+          "burst_frequency_hz": 12.269938650306749,
+          "interburst_cv": 0.06252248702965055,
+          "envelope_modulation": 6.065869169997494,
+          "band_power_fraction": 0.8025536791828455,
+          "envelope_peaks": 17,
+          "mean_spikes_per_s": 12.142857142857142
+        },
+        {
+          "rhythmic": true,
+          "burst_frequency_hz": 12.269938650306749,
+          "interburst_cv": 0.0600915266297758,
+          "envelope_modulation": 6.065869169997494,
+          "band_power_fraction": 0.8026473363627308,
+          "envelope_peaks": 17,
+          "mean_spikes_per_s": 12.142857142857142
+        },
+        {
+          "rhythmic": true,
+          "burst_frequency_hz": 12.345679012345679,
+          "interburst_cv": 0.059572536438985,
+          "envelope_modulation": 6.065869169997494,
+          "band_power_fraction": 0.8025004507879144,
+          "envelope_peaks": 17,
+          "mean_spikes_per_s": 12.142857142857142
+        }
+      ],
+      "rhythmic_cells": 4,
+      "rhythmic_MN": 0
+    },
+    "score": 198.07269408360577,
+    "ablation": {
+      "E1": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          }
+        ],
+        "rhythmic_cells": 0,
+        "rhythmic_MN": 0
+      },
+      "E2": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 17.857142857142858,
+            "interburst_cv": 0.00769800358919501,
+            "envelope_modulation": 4.379853868460952,
+            "band_power_fraction": 0.681527240460796,
+            "envelope_peaks": 25,
+            "mean_spikes_per_s": 17.857142857142854
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 17.857142857142858,
+            "interburst_cv": 0.008074546346880618,
+            "envelope_modulation": 4.379853868460951,
+            "band_power_fraction": 0.6819816210300944,
+            "envelope_peaks": 25,
+            "mean_spikes_per_s": 17.857142857142854
+          }
+        ],
+        "rhythmic_cells": 2,
+        "rhythmic_MN": 0
+      },
+      "I1": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 17.857142857142858,
+            "interburst_cv": 0.00769800358919501,
+            "envelope_modulation": 4.379853868460952,
+            "band_power_fraction": 0.681527240460796,
+            "envelope_peaks": 25,
+            "mean_spikes_per_s": 17.857142857142854
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 17.857142857142858,
+            "interburst_cv": 0.008074546346880618,
+            "envelope_modulation": 4.379853868460952,
+            "band_power_fraction": 0.6824947642115349,
+            "envelope_peaks": 25,
+            "mean_spikes_per_s": 17.857142857142854
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 17.857142857142858,
+            "interburst_cv": 0.008074546346880618,
+            "envelope_modulation": 4.379853868460952,
+            "band_power_fraction": 0.6811284888729445,
+            "envelope_peaks": 25,
+            "mean_spikes_per_s": 17.857142857142854
+          }
+        ],
+        "rhythmic_cells": 3,
+        "rhythmic_MN": 0
+      },
+      "I2": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 14.285714285714286,
+            "interburst_cv": 0.006702433944896185,
+            "envelope_modulation": 5.155988794497869,
+            "band_power_fraction": 0.8468787878375282,
+            "envelope_peaks": 19,
+            "mean_spikes_per_s": 14.285714285714285
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 14.285714285714286,
+            "interburst_cv": 0.006610599450844197,
+            "envelope_modulation": 5.155988794497869,
+            "band_power_fraction": 0.8559116509037626,
+            "envelope_peaks": 20,
+            "mean_spikes_per_s": 14.285714285714285
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 14.285714285714286,
+            "interburst_cv": 0.006855012258722274,
+            "envelope_modulation": 5.155988794497869,
+            "band_power_fraction": 0.8569809568973986,
+            "envelope_peaks": 20,
+            "mean_spikes_per_s": 14.285714285714285
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          }
+        ],
+        "rhythmic_cells": 3,
+        "rhythmic_MN": 0
+      },
+      "both_inhibitors": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.21713182104240425,
+            "envelope_modulation": 0.3070779412314816,
+            "band_power_fraction": 0.5261010821390657,
+            "envelope_peaks": 29,
+            "mean_spikes_per_s": 71.42857142857142
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.20096897379789164,
+            "envelope_modulation": 0.3070779412314816,
+            "band_power_fraction": 0.6501741343102958,
+            "envelope_peaks": 28,
+            "mean_spikes_per_s": 71.42857142857142
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          }
+        ],
+        "rhythmic_cells": 0,
+        "rhythmic_MN": 0
+      }
+    },
+    "robustness_passed": 16,
+    "robustness_total": 16,
+    "excitatory_necessity": false,
+    "single_inhibitor_redundancy": true,
+    "selection_score": 261.07269408360577
+  },
+  {
+    "trial": 32,
+    "parameters": {
+      "ge_nS_per_synapse": 0.018,
+      "gi_nS_per_synapse": 0.05,
+      "tau_i_decay_ms": 50.0
+    },
+    "summary": {
+      "numerical_failure": false,
+      "cells": [
+        {
+          "rhythmic": false,
+          "burst_frequency_hz": 23.80952380952381,
+          "interburst_cv": 0.18155791373608343,
+          "envelope_modulation": 0.3261657167521688,
+          "band_power_fraction": 0.5959606128791117,
+          "envelope_peaks": 30,
+          "mean_spikes_per_s": 70.71428571428571
+        },
+        {
+          "rhythmic": true,
+          "burst_frequency_hz": 8.771929824561404,
+          "interburst_cv": 0.046882908497050645,
+          "envelope_modulation": 7.775552647059653,
+          "band_power_fraction": 0.7993464621447716,
+          "envelope_peaks": 12,
+          "mean_spikes_per_s": 8.571428571428571
+        },
+        {
+          "rhythmic": true,
+          "burst_frequency_hz": 8.771929824561404,
+          "interburst_cv": 0.046882908497050645,
+          "envelope_modulation": 7.775552647059653,
+          "band_power_fraction": 0.7993748562293936,
+          "envelope_peaks": 12,
+          "mean_spikes_per_s": 8.571428571428571
+        },
+        {
+          "rhythmic": true,
+          "burst_frequency_hz": 8.771929824561404,
+          "interburst_cv": 0.04849581732601096,
+          "envelope_modulation": 7.775552647059653,
+          "band_power_fraction": 0.8004180479005982,
+          "envelope_peaks": 12,
+          "mean_spikes_per_s": 8.571428571428571
+        },
+        {
+          "rhythmic": true,
+          "burst_frequency_hz": 8.771929824561404,
+          "interburst_cv": 0.046882908497050645,
+          "envelope_modulation": 7.775552647059653,
+          "band_power_fraction": 0.7993772663406585,
+          "envelope_peaks": 12,
+          "mean_spikes_per_s": 8.571428571428571
+        }
+      ],
+      "rhythmic_cells": 4,
+      "rhythmic_MN": 0
+    },
+    "score": 197.3031007395909,
+    "ablation": {
+      "E1": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          }
+        ],
+        "rhythmic_cells": 0,
+        "rhythmic_MN": 0
+      },
+      "E2": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 11.904761904761905,
+            "interburst_cv": 0.005804478063467246,
+            "envelope_modulation": 6.065869169997494,
+            "band_power_fraction": 0.755190966225827,
+            "envelope_peaks": 16,
+            "mean_spikes_per_s": 12.142857142857142
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 11.904761904761905,
+            "interburst_cv": 0.005804478063467246,
+            "envelope_modulation": 6.444985993122336,
+            "band_power_fraction": 0.77414095561741,
+            "envelope_peaks": 16,
+            "mean_spikes_per_s": 11.428571428571427
+          }
+        ],
+        "rhythmic_cells": 2,
+        "rhythmic_MN": 0
+      },
+      "I1": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 11.904761904761905,
+            "interburst_cv": 0.005804478063467246,
+            "envelope_modulation": 6.065869169997494,
+            "band_power_fraction": 0.755190966225827,
+            "envelope_peaks": 16,
+            "mean_spikes_per_s": 12.142857142857142
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 11.904761904761905,
+            "interburst_cv": 0.005906325788119875,
+            "envelope_modulation": 6.444985993122336,
+            "band_power_fraction": 0.773065816041968,
+            "envelope_peaks": 16,
+            "mean_spikes_per_s": 11.428571428571427
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 11.904761904761905,
+            "interburst_cv": 0.005804478063467246,
+            "envelope_modulation": 6.444985993122336,
+            "band_power_fraction": 0.773843783204394,
+            "envelope_peaks": 16,
+            "mean_spikes_per_s": 11.428571428571427
+          }
+        ],
+        "rhythmic_cells": 3,
+        "rhythmic_MN": 0
+      },
+      "I2": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 10.1010101010101,
+            "interburst_cv": 0.005059126228265308,
+            "envelope_modulation": 6.6998063550698195,
+            "band_power_fraction": 0.7548211997046187,
+            "envelope_peaks": 14,
+            "mean_spikes_per_s": 9.999999999999998
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 10.1010101010101,
+            "interburst_cv": 0.005059126228265308,
+            "envelope_modulation": 6.6998063550698195,
+            "band_power_fraction": 0.7548211997046188,
+            "envelope_peaks": 14,
+            "mean_spikes_per_s": 9.999999999999998
+          },
+          {
+            "rhythmic": true,
+            "burst_frequency_hz": 10.204081632653061,
+            "interburst_cv": 0.00506307867063114,
+            "envelope_modulation": 6.6998063550698195,
+            "band_power_fraction": 0.7525957645409993,
+            "envelope_peaks": 14,
+            "mean_spikes_per_s": 9.999999999999998
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          }
+        ],
+        "rhythmic_cells": 3,
+        "rhythmic_MN": 0
+      },
+      "both_inhibitors": {
+        "numerical_failure": false,
+        "cells": [
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.18155791373608343,
+            "envelope_modulation": 0.3261657167521688,
+            "band_power_fraction": 0.5959606128791117,
+            "envelope_peaks": 30,
+            "mean_spikes_per_s": 70.71428571428571
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.21713182104240425,
+            "envelope_modulation": 0.3070779412314816,
+            "band_power_fraction": 0.5261010821390657,
+            "envelope_peaks": 29,
+            "mean_spikes_per_s": 71.42857142857142
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 23.80952380952381,
+            "interburst_cv": 0.20096897379789164,
+            "envelope_modulation": 0.3070779412314816,
+            "band_power_fraction": 0.6501741343102958,
+            "envelope_peaks": 28,
+            "mean_spikes_per_s": 71.42857142857142
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          },
+          {
+            "rhythmic": false,
+            "burst_frequency_hz": 0.0,
+            "interburst_cv": 1.0,
+            "envelope_modulation": 0.0,
+            "band_power_fraction": 0.0,
+            "envelope_peaks": 0,
+            "mean_spikes_per_s": 0.0
+          }
+        ],
+        "rhythmic_cells": 0,
+        "rhythmic_MN": 0
+      }
+    },
+    "robustness_passed": 16,
+    "robustness_total": 16,
+    "excitatory_necessity": false,
+    "single_inhibitor_redundancy": true,
+    "selection_score": 260.3031007395909
+  }
+]

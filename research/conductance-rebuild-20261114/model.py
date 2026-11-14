@@ -14,7 +14,7 @@ DEFAULT=dict(dt_ms=.025,duration_ms=1800.,onset_ms=200.,drive_pA=160.,ge_nS_per_
  c_soma_pF=20.,c_axon_pF=2.5,rin_cpg_MOhm=500.,rin_mn_MOhm=300.,coupling_nS=12.,
  gNa_nS=600.,gK_nS=180.,gCa_nS=.3,gSK_nS=1.,gNaP_nS=0.,ca_tau_ms=100.,ca_alpha=.0002,ca_Kd_uM=.2,
  E_leak_mV=-65.,E_Na_mV=55.,E_K_mV=-80.,E_Ca_mV=120.,E_exc_mV=0.,E_inh_mV=-80.,
- gate_speed=1.,inhibitory_gain=1.,I2_gain=1.,I2_leak_shift_mV=0.,mn_gain=1.,mn_leak_mV=-65.,
+ gate_speed=1.,inhibitory_gain=1.,I1_gain=1.,I2_gain=1.,I2_leak_shift_mV=0.,mn_gain=1.,mn_leak_mV=-65.,
  synaptic_delay_scope='one global delay prior, not measured per edge',adult_scope='Rin=300MOhm is unknown-type adult MN prior; fast/intermediate/slow exemplars tested separately')
 
 @njit(cache=True)
@@ -83,7 +83,7 @@ def simulate(weights,roles,config=None,drive=None,ablate=()):
  cell=np.empty((N,8))
  for j,r in enumerate(roles):
   ismn=r=='MN';rin=p['rin_mn_MOhm'] if ismn else p['rin_cpg_MOhm'];gt=1000./rin;gLa=gt*.15;gc=p['coupling_nS'];gLs=gt-gc*gLa/(gc+gLa)
-  cell[j]=[p['c_soma_pF']*(2. if ismn else 1.),p['c_axon_pF'],gLs,gLa,p['mn_leak_mV'] if ismn else p['E_leak_mV'],p['mn_gain'] if ismn else 1.,p['I2_gain'] if r=='I2' else p['inhibitory_gain'],gc]
+  cell[j]=[p['c_soma_pF']*(2. if ismn else 1.),p['c_axon_pF'],gLs,gLa,p['mn_leak_mV'] if ismn else p['E_leak_mV'],p['mn_gain'] if ismn else 1.,p['I2_gain'] if r=='I2' else (p['I1_gain'] if r=='I1' else p['inhibitory_gain']),gc]
   if r=='I2':cell[j,4]+=p['I2_leak_shift_mV']
  if drive is None:drive=np.array([p['drive_pA'] if r=='DN' else 0. for r in roles])
  names=['tau_e_rise_ms','tau_e_decay_ms','tau_i_rise_ms','tau_i_decay_ms','ge_nS_per_synapse','gi_nS_per_synapse','gNa_nS','gK_nS','gCa_nS','gSK_nS','gNaP_nS','ca_tau_ms','ca_alpha','ca_Kd_uM','E_Na_mV','E_K_mV','E_Ca_mV','E_exc_mV','E_inh_mV','gate_speed']

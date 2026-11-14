@@ -1,0 +1,16 @@
+Core trials 28 elapsed 5.6
+Core trials 56 elapsed 6.8
+Core trials 84 elapsed 8.0
+Candidate 44 robustness 16 necessity False redundancy True
+Candidate 34 robustness 16 necessity False redundancy True
+Candidate 46 robustness 16 necessity False redundancy True
+Candidate 59 robustness 16 necessity False redundancy True
+Candidate 29 robustness 16 necessity False redundancy True
+Candidate 1 robustness 15 necessity True redundancy False
+Candidate 31 robustness 16 necessity False redundancy True
+Candidate 22 robustness 16 necessity True redundancy False
+Candidate 4 robustness 15 necessity True redundancy False
+Candidate 19 robustness 16 necessity True redundancy False
+Candidate 17 robustness 16 necessity True redundancy False
+Candidate 32 robustness 16 necessity False redundancy True
+SELECTED {"ge_nS_per_synapse": 0.012, "gi_nS_per_synapse": 0.1, "tau_i_decay_ms": 30.0} 16
