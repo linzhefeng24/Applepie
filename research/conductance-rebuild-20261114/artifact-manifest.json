@@ -22,6 +22,11 @@
       "sha256": "0117746fdc1be5f3e65f903ba368f1ae095175434f4ee235f3305cd790af7f08"
     },
     {
+      "path": "MANUAL_MECHANISM.md",
+      "bytes": 2522,
+      "sha256": "01d1abd9fcc6a214e013cc19d978dca29a5a9968979a3c068934a9c6b4dfb2b1"
+    },
+    {
       "path": "MECHANISMS.md",
       "bytes": 3630,
       "sha256": "640996ba79f8d3a02c0d84fee773125411768c7a437c2c03247f7dad492cb2af"
@@ -217,6 +222,31 @@
       "sha256": "0adbab8bf92451f33031077e872fd6bb9840019894f9080389f1a155e7a40b87"
     },
     {
+      "path": "data/experimental-source/BON1-ED5e.csv",
+      "bytes": 9522,
+      "sha256": "2294a66e3888703c23d264e7c5efef77dfd8bc4a994c40c0884a0af4e7450f11"
+    },
+    {
+      "path": "data/experimental-source/BON1-extraction.json",
+      "bytes": 811,
+      "sha256": "55b17bed54ce5d88df426ec7fddead62b9f9c71e898c908dfc4367f670692810"
+    },
+    {
+      "path": "data/experimental-source/brk-MOESM20.xlsx",
+      "bytes": 100129,
+      "sha256": "0af401255ff2b91b8fa0ba5849591fb5aadea654aa5990564e925bed0d9aa4b5"
+    },
+    {
+      "path": "data/experimental-source/brk-MOESM26.xlsx",
+      "bytes": 122155,
+      "sha256": "4bed0445f10c61ad9a8d6d99192c0c2678f9e526979f0203a28c8fbf29c73704"
+    },
+    {
+      "path": "data/experimental-source/manifest.json",
+      "bytes": 838,
+      "sha256": "9ab43e8563da7c0c460d1561326a08cc418c46241a9b86d3cb33c76638998158"
+    },
+    {
       "path": "data/model-130-channel-candidate-crosswalk.csv",
       "bytes": 32161,
       "sha256": "4e13f6ac17da8e6f6d3b4df0da7dcdd2e89c4ab59a47a7e521b07790fece03ae"
@@ -277,6 +307,11 @@
       "sha256": "e722ecc80cc82fb5a8f5f3c04d1e2f21a78d2cdf8bb1998650c5619d95cf5d76"
     },
     {
+      "path": "extract_bon1_source.py",
+      "bytes": 1722,
+      "sha256": "102fafa20d38a8eb2027e24c9d6d10aa534400f2fe8bff24c11aa12542c52329"
+    },
+    {
       "path": "finalize_asymmetry.py",
       "bytes": 2636,
       "sha256": "124abed25a55797224a2a085b458dcbb17025859df5a04ce7e778f6ca97b20c0"
@@ -293,8 +328,8 @@
     },
     {
       "path": "grouped_parameters.py",
-      "bytes": 3068,
-      "sha256": "3fc9e9c142aac961fe3861c965a02d3f944daaddc126b9d8b3041b84265c4e60"
+      "bytes": 3508,
+      "sha256": "41f4108f685173c16aa1fd9762892eb264d4330dadcb3ba038ee61bbb163e28f"
     },
     {
       "path": "guarded_fine.py",
@@ -312,6 +347,11 @@
       "sha256": "1468186bd41abebf19f1b92ef32d67e4f092651150e2db4c1b7e291ebc44ec3e"
     },
     {
+      "path": "joint_neural_fit.py",
+      "bytes": 4667,
+      "sha256": "a2214d9b384a36467945e822590a73c770c34c8868e1834893cd30350df356e0"
+    },
+    {
       "path": "long_motion_validation.py",
       "bytes": 3669,
       "sha256": "64399408c7b3b6c9cccd3a0110c1ebc68313e537b94c2f38ae3fdd232c6aa431"
@@ -323,8 +363,8 @@
     },
     {
       "path": "model.py",
-      "bytes": 7457,
-      "sha256": "5cb14b523d428ae45b8269de5205c5f4e369c48b7306273909f17a8021bef16f"
+      "bytes": 9264,
+      "sha256": "7d440b1c5dd3a7a2e5209d52c2bef856dea98717a91b5cd3497ee594e3e6c798"
     },
     {
       "path": "motion_body_grid.py",
@@ -343,8 +383,8 @@
     },
     {
       "path": "network.py",
-      "bytes": 2247,
-      "sha256": "fdf9d43ac71d7abe5e5030ce007c8bb7b80805631d138578ec98ffb42950319e"
+      "bytes": 2347,
+      "sha256": "05f535f29f1284dda59e7225e94171976312d410c5f254543e9260fd363a097b"
     },
     {
       "path": "plot_saturation.py",
@@ -360,6 +400,11 @@
       "path": "prepare_experimental_panel.py",
       "bytes": 2719,
       "sha256": "36cbdddb85d055dec97381e084ef2860e13b00a5c17fc5dd5fe0774d5afa2efa"
+    },
+    {
+      "path": "prepare_manual_network.py",
+      "bytes": 2171,
+      "sha256": "5efe557ea1d13791037442e2804903053016db8776b7f6c3b20c0f5093cd6a0a"
     },
     {
       "path": "probe_all_legs.py",
@@ -409,7 +454,7 @@
     {
       "path": "report_experimental_panel.py",
       "bytes": 3018,
-      "sha256": "abf0154986edae2ac5bfaa3880a7ec93069a597ae4b65cda86dae8db5b7cceb4"
+      "sha256": "c51cfb46a956f603b483c8405d9cafa9ffbe4d437ebc1186ab1312e8ce7d7f46"
     },
     {
       "path": "reproduce.py",
@@ -1272,6 +1317,11 @@
       "sha256": "ea570abd36612f7228c99bffd23b92d970e4a0156ec7c49b46620d1bf07b3dbc"
     },
     {
+      "path": "results/current-tracing-tests.txt",
+      "bytes": 100,
+      "sha256": "97c11da3f5e642df3253443e1f83e9c637115b0984742cee16fd647c36cc38c5"
+    },
+    {
       "path": "results/downstream-tuning.json",
       "bytes": 798883,
       "sha256": "626ce8007c5607261963f20ed2c9cd47805fbcb0401b3cf3aead165531820478"
@@ -1667,9 +1717,99 @@
       "sha256": "df0f87df43af0c9bf951f907c460bde12fdd579c7714c5a2100208e1a6ba6b5a"
     },
     {
+      "path": "results/joint-neural-fit.log",
+      "bytes": 4199,
+      "sha256": "0094e349818cf661c83868c5906e7b5f62752eba189b705b2ddf5d37f517bf39"
+    },
+    {
+      "path": "results/joint-neural-fit/Ca1000.npz",
+      "bytes": 1303126,
+      "sha256": "5f2e73217d54c7c70f440c97ccf237c8cef48984d52ffb7bcf061ec70ab0364c"
+    },
+    {
+      "path": "results/joint-neural-fit/Ca1000_weakSK.npz",
+      "bytes": 1304200,
+      "sha256": "955ebd09b56798bd1d5e6381b3f0c196d485d9f22a7be31a4d04b513c8531059"
+    },
+    {
+      "path": "results/joint-neural-fit/Ca2000.npz",
+      "bytes": 1305740,
+      "sha256": "9453ac11b97905368802f14fa4b78fdfda42d6b666f4c013c6a18d099da8f5c4"
+    },
+    {
+      "path": "results/joint-neural-fit/Ca2000_lessCa.npz",
+      "bytes": 1301079,
+      "sha256": "f1525a55430f3110f7f43a9a450a5d01227ac1833198c45961ee959897b95c67"
+    },
+    {
+      "path": "results/joint-neural-fit/Ca2000_weakSK.npz",
+      "bytes": 1305569,
+      "sha256": "17977df6583a1982e92f5171a5c7bedb54d550e66d11f6d57cdea656886b7282"
+    },
+    {
+      "path": "results/joint-neural-fit/Ca300.npz",
+      "bytes": 1285878,
+      "sha256": "ed0172e6bd77398f7f805e11812861ba5d89c8165cea234539d36b831e7185cb"
+    },
+    {
+      "path": "results/joint-neural-fit/Ca3000.npz",
+      "bytes": 1302845,
+      "sha256": "7a85a44c9903c92f01d89c9b4cf715baba8771085fd0467796585a760a042e87"
+    },
+    {
+      "path": "results/joint-neural-fit/STOPPED_BY_METHOD_CORRECTION.json",
+      "bytes": 326,
+      "sha256": "4fcf5d044cc0d378ce27377c6aa949fedc1604b913e10b5e5bb758771d04c298"
+    },
+    {
+      "path": "results/joint-neural-fit/baseline.npz",
+      "bytes": 1166551,
+      "sha256": "41a10dd794c2b5582b9de81375f0f4aa6422a988811f42e8d3bc713d424b1887"
+    },
+    {
+      "path": "results/joint-neural-fit/trials.json",
+      "bytes": 18511,
+      "sha256": "bbdcd8d458efb0030f49af6b9bcb953a284d7fe7c159eb73e5d5a54e783aa932"
+    },
+    {
       "path": "results/long-motion-validation.log",
       "bytes": 419,
       "sha256": "3caacb2359fb42f345b5505c60f547212aa85fec4a927c03aa1113799421da46"
+    },
+    {
+      "path": "results/manual-direct-baseline.log",
+      "bytes": 177,
+      "sha256": "8fd80afd2afd98ef65ecaf92d2adefb17fb10f1474b061a45c7b6a65db9c2d50"
+    },
+    {
+      "path": "results/manual-mechanism/connectivity.npz",
+      "bytes": 309133,
+      "sha256": "cea807562aa63cd8c9862b6493d9401dde59fe785774eb119c7b73b17e573fc8"
+    },
+    {
+      "path": "results/manual-mechanism/direct-baseline-config.json",
+      "bytes": 10369,
+      "sha256": "7f85c8a9439f8c704fb5ea2688a1bb393a30ee90b172e56f1399d3a8651c5724"
+    },
+    {
+      "path": "results/manual-mechanism/direct-baseline-diagnosis.json",
+      "bytes": 11106,
+      "sha256": "2615bcdbce28a9755b661cb7b4b7cfb48059cfede731cd96bd9ed3fa8894c71a"
+    },
+    {
+      "path": "results/manual-mechanism/direct-baseline.npz",
+      "bytes": 5532164,
+      "sha256": "bba6827147195e92212efd09befcc3017bb5914da24187a06cae16525471e7b8"
+    },
+    {
+      "path": "results/manual-mechanism/network-manifest.json",
+      "bytes": 8708,
+      "sha256": "0d5d654fc0cf3381fe2750d0ab32127081a49a3d7509065ff827fef460114e0e"
+    },
+    {
+      "path": "results/manual-mechanism/neurons.json",
+      "bytes": 1019039,
+      "sha256": "ed298a1c4180810e09b9d48155dbe4b8e5526752f0324ac2e628ca87e3d8efab"
     },
     {
       "path": "results/motion-body-grid.log",
@@ -1917,6 +2057,11 @@
       "sha256": "1a14f72813bfb123751928a303f1fa93d89cddce5e140d82ac6fb14d07c00c57"
     },
     {
+      "path": "results/temporal-tests.txt",
+      "bytes": 99,
+      "sha256": "3cd4b3f5b2cf1639b48f20a7b002336f7b5b27e307f7e04e193c8b2c3d235d01"
+    },
+    {
       "path": "results/test-results-coarse-step.txt",
       "bytes": 1261,
       "sha256": "fd04fbe1f73b39c6d2b0be1f3b69c384ec81c19ff9ca9de8400884e85644c94b"
@@ -1930,6 +2075,11 @@
       "path": "results/timestep-convergence.json",
       "bytes": 697,
       "sha256": "d3c7f4b16c7c995bb56fa6d3755c5eae0277291ecd470708ff1e634b81724b60"
+    },
+    {
+      "path": "results/waveform-regression-tests.txt",
+      "bytes": 100,
+      "sha256": "525826929558a917873e16818b70ba172b033e9bad29a120d3715c59f39e1f1d"
     },
     {
       "path": "search_core.py",
@@ -1955,6 +2105,16 @@
       "path": "test_scientific_checks.py",
       "bytes": 3073,
       "sha256": "80a710291f44c3e1aac4d45a7af1bb49bbe19c98d47188944b02076c31de1ee4"
+    },
+    {
+      "path": "test_temporal_protocol.py",
+      "bytes": 1243,
+      "sha256": "590b2fb36622885d0d2ca4d19149df6d39f7419786d5d26db8bcf2a0a1fbf843"
+    },
+    {
+      "path": "trace_manual_network.py",
+      "bytes": 4360,
+      "sha256": "fda07a7ffdb6cb296258fa8aca92a5c8b41f2901d31b1da1371bf64d664050b1"
     },
     {
       "path": "tune_downstream.py",

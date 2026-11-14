@@ -12,7 +12,7 @@ fig,ax=plt.subplots(1,2,figsize=(10,4),layout='constrained');summary=[]
 for j,a in enumerate(configs):
  r=next(x for x in rows if x['assay']==a and x['target_excitatory_gain_multiplier']==1);ns=len(json.load(open(O/(a+'-neurons.json'))));proto=next(x for x in json.load(open(O/'protocol.json'))['assays'] if x['id']==a);nt=len(proto['target_ids']);srcn=len(proto['source_ids'])
  for cond in ['control','stimulated']:
-  z=np.load(O/f'{a}-gain1-{cond}.npz');v=z['voltage'];t=np.arange(len(v))*.1;ax[j].plot(t,v[:,srcn:srcn+nt,0].mean(axis=1),label=cond,linewidth=.6)
+  z=np.load(O/f'{a}-gain1-{cond}.npz');v=z['voltage'];t=np.arange(len(v))*.5;ax[j].plot(t,v[:,srcn:srcn+nt,0].mean(axis=1),label=cond,linewidth=.6)
  ax[j].set(title=a,xlabel='Time (ms)',ylabel='Mean target soma voltage (mV)');ax[j].axvspan(400,2400,color='grey',alpha=.1);ax[j].legend()
  fine=[x for x in confirm['results'] if x['assay']==a];summary.append({'id':a,'status':'partial','baseline_delta_soma_mV':r['delta_soma_mV'],'finer_checks':fine,'selected_target_gain_multiplier':1.,'config_sha256':hashlib.sha256(json.dumps(configs[a],sort_keys=True).encode()).hexdigest(),'scope':'qualitative evoked response in path-focused HH circuit; not measured fluorescence or behavioral reproduction'})
 fig.savefig(O/'neuronal-response.png',dpi=150)

@@ -1,0 +1,47 @@
+baseline train 0.0817 held 0.2029
+Ca300 train 0.0769 held 0.2007
+Ca1000 train 0.048 held 0.1938
+Ca2000 train 0.0341 held 0.1908
+Ca3000 train 0.0282 held 0.1897
+Ca1000_weakSK train 0.048 held 0.1938
+Ca2000_weakSK train 0.0336 held 0.1907
+Ca2000_lessCa train 0.0326 held 0.1907
+Traceback (most recent call last):
+  File "/workspace/server-motor-import/.venv/lib/python3.12/site-packages/numba/core/serialize.py", line 30, in _numba_unpickle
+    def _numba_unpickle(address, bytedata, hashed):
+    
+KeyboardInterrupt
+
+The above exception was the direct cause of the following exception:
+
+SystemError: <function _numba_unpickle at 0x7f52b2b07600> returned a result with an exception set
+
+The above exception was the direct cause of the following exception:
+
+SystemError: <function _numba_unpickle at 0x7f52b2b07600> returned a result with an exception set
+
+The above exception was the direct cause of the following exception:
+
+SystemError: <function _numba_unpickle at 0x7f52b2b07600> returned a result with an exception set
+
+The above exception was the direct cause of the following exception:
+
+SystemError: <function _numba_unpickle at 0x7f52b2b07600> returned a result with an exception set
+
+The above exception was the direct cause of the following exception:
+
+SystemError: <function _numba_unpickle at 0x7f52b2b07600> returned a result with an exception set
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/Applepie-research-sync/research/conductance-rebuild-20261114/joint_neural_fit.py", line 33, in <module>
+    p={**base,'group_parameters':{key:{'calcium_tau_ms':ca_tau,'SK_scale':sk,'gCa_nS':.3*gca,'excitatory_gain':exc,'gate_speed':gate}}};wave=np.zeros((7002,len(meta)));wave[2000:4000,source]=160.;r=simulate_network(W,roles,meta,p,drive_waveform=wave);n=r['valid_record_count'];t=r['record_time_ms'];ca=r['calcium_first12_uM'][:n,target].mean(axis=1);q,pred=fit_indicator(ca,t);score=float(np.sqrt(np.mean((pred-train)**2))/amp);ho=float(np.sqrt(np.mean((pred-held)**2))/max(np.ptp(held),1.));row={'name':name,'parameters':p,'parameter_sha256':hashlib.sha256(json.dumps(p,sort_keys=True).encode()).hexdigest(),'indicator_gain_Kd_uM_tau_ms':np.exp(q).tolist(),'train_NRMSE':score,'holdout_NRMSE':ho,'numerical_failure':r['numerical_failure'],'objective_for_selection':'train NRMSE only; held-out brains are reported, never used for selection','target_peak_mean_rate_hz':float(r['spike_counts_1ms'][2000:4000,target].sum()/4)};records.append(row);np.savez_compressed(O/(name+'.npz'),spikes=r['spike_counts_1ms'],calcium=ca,time_ms=t,predicted_dff=pred,target_train=train,target_heldout=held,data_time_relative_s=relative,voltage=r['voltage_first12']);(O/'trials.json').write_text(json.dumps(records,indent=2));print(name,'train',round(score,4),'held',round(ho,4),flush=True)
+                                                                                                                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Applepie-research-sync/research/conductance-rebuild-20261114/network.py", line 34, in simulate_network
+    return simulate(weights,roles,params,drive=drive,ablate=ablate,source_gains=gains,cell_overrides=overrides,drive_waveform=drive_waveform)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Applepie-research-sync/research/conductance-rebuild-20261114/model.py", line 107, in simulate
+    out=_kernel(N,pre.astype(np.int32),post.astype(np.int32),ew, np.zeros(N),np.asarray(drive,dtype=float),mask,dt,steps,p['onset_ms'],max(1,round(p['delay_ms']/dt)),np.array([p[x] for x in names]),cell,stride,waveform,waveform_dt)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SystemError: CPUDispatcher(<function _kernel at 0x7f52b255eac0>) returned a result with an exception set

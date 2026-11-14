@@ -1,0 +1,21 @@
+{
+  "source": "https://doi.org/10.1038/s41586-024-07854-7",
+  "sheet": "Extended Data Figure 5e",
+  "sampling_hz": 6,
+  "time_axis": "43 samples, -2 to5s; onset0, pulse end2s; aligned to published figure axes and6Hz methods",
+  "source_sha256": "4bed0445f10c61ad9a8d6d99192c0c2678f9e526979f0203a28c8fbf29c73704",
+  "train_brains_1based": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "holdout_brains_1based": [
+    5,
+    6
+  ],
+  "readout": "GCaMP6s soma dF/F, not Hz",
+  "amplitude_policy": "retain source units; gain is indicator nuisance parameter, not inferred spike rate",
+  "source_fig5f_AUC": "per-brain0..2s values preserved in XLSX, separate from fluorescence trace fitting",
+  "large_source_file": "MOESM18 retained outside git cache; not used for BON1 fitting; original URL/hash remain in download manifest"
+}

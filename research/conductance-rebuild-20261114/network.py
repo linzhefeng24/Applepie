@@ -24,11 +24,11 @@ def load(scope='motor',full_vnc=False):
  return matrix,roles,metadata
 
 
-def simulate_network(weights,roles,metadata,params,drive=None,ablate=()):
+def simulate_network(weights,roles,metadata,params,drive=None,ablate=(),drive_waveform=None,record_indices=None):
  from model import simulate
  source=params.get('source_gain_by_body_id',{})
  gains=np.array([source.get(str(row['bodyId']),1.) for row in metadata],dtype=float)
  if not np.isfinite(gains).all() or np.any(gains<=0):raise ValueError('Source conductance scales must be finite positive; no edge removal or sign flip')
  from grouped_parameters import resolve
  overrides,_=resolve(metadata,params.get('group_parameters',{}),params.get('individual_leak_offsets_mV',{}))
- return simulate(weights,roles,params,drive=drive,ablate=ablate,source_gains=gains,cell_overrides=overrides)
+ return simulate(weights,roles,params,drive=drive,ablate=ablate,source_gains=gains,cell_overrides=overrides,drive_waveform=drive_waveform,record_indices=record_indices)

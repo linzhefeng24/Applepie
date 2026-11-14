@@ -1,0 +1,6 @@
+{
+  "status": "stopped before completion",
+  "reason": "User requests manual mechanism inspection rather than automatic selection by endpoint loss. Completed candidates are exploratory and not adopted.",
+  "selected_by_loss": false,
+  "retain": "all completed candidate trajectories and errors remain historical diagnostics"
+}

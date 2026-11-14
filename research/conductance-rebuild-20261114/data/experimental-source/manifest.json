@@ -1,0 +1,20 @@
+[
+  {
+    "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-024-07854-7/MediaObjects/41586_2024_7854_MOESM26_ESM.xlsx",
+    "file": "brk-MOESM26.xlsx",
+    "sha256": "4bed0445f10c61ad9a8d6d99192c0c2678f9e526979f0203a28c8fbf29c73704",
+    "bytes": 122155
+  },
+  {
+    "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-024-07854-7/MediaObjects/41586_2024_7854_MOESM18_ESM.xlsx",
+    "file": "brk-MOESM18.xlsx",
+    "sha256": "4c7e37aa6e78a211d0039cf818d0209ee305dc7e69fd9789d8fac4ea93a8abb9",
+    "bytes": 14470020
+  },
+  {
+    "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-024-07854-7/MediaObjects/41586_2024_7854_MOESM20_ESM.xlsx",
+    "file": "brk-MOESM20.xlsx",
+    "sha256": "0af401255ff2b91b8fa0ba5849591fb5aadea654aa5990564e925bed0d9aa4b5",
+    "bytes": 100129
+  }
+]
