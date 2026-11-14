@@ -29,4 +29,6 @@ def simulate_network(weights,roles,metadata,params,drive=None,ablate=()):
  source=params.get('source_gain_by_body_id',{})
  gains=np.array([source.get(str(row['bodyId']),1.) for row in metadata],dtype=float)
  if not np.isfinite(gains).all() or np.any(gains<=0):raise ValueError('Source conductance scales must be finite positive; no edge removal or sign flip')
- return simulate(weights,roles,params,drive=drive,ablate=ablate,source_gains=gains)
+ from grouped_parameters import resolve
+ overrides,_=resolve(metadata,params.get('group_parameters',{}),params.get('individual_leak_offsets_mV',{}))
+ return simulate(weights,roles,params,drive=drive,ablate=ablate,source_gains=gains,cell_overrides=overrides)

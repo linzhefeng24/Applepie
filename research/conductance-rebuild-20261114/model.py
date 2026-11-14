@@ -58,10 +58,10 @@ def _kernel(N,pre,post,ew,roles,drive,ablated,dt,steps,onset,delay,pars,cell,rec
    mh[j]=am/(am+bm)+(mh[j]-am/(am+bm))*np.exp(-dt*(am+bm)*cell[j,11])
    hh[j]=ah/(ah+bh)+(hh[j]-ah/(ah+bh))*np.exp(-dt*(ah+bh)*cell[j,11])
    nh[j]=an/(an+bn)+(nh[j]-an/(an+bn))*np.exp(-dt*(an+bn)*cell[j,11])
-   gNa=gna*mh[j]**3*hh[j];gK=gk*nh[j]**4
+   gNa=cell[j,13]*mh[j]**3*hh[j];gK=cell[j,14]*nh[j]**4
    # Instantaneous Ca activation and explicit intracellular concentration;
    # no imposed oscillatory current, phase clock or spike-triggered reset.
-   cainf=1./(1.+np.exp(-(v+25.)/6.));gCa=gca*cainf*cainf;gSK=gsk*cell[j,8]*ca[j]/(ca[j]+kd);gNaP=cell[j,9]/(1.+np.exp(-(vs[j]+50.)/5.))
+   cainf=1./(1.+np.exp(-(v+25.)/6.));gCa=cell[j,15]*cainf*cainf;gSK=gsk*cell[j,8]*ca[j]/(ca[j]+kd);gNaP=cell[j,9]/(1.+np.exp(-(vs[j]+50.)/5.))
    Cs,Ca,gLs,gLa,EL,gain,igain,gc=cell[j,:8]
    excit=ye[j]-xe[j];inhib=yi[j]-xi[j]
    A=Cs/dt+gLs+gc+excit+inhib+gNaP
@@ -70,7 +70,7 @@ def _kernel(N,pre,post,ew,roles,drive,ablated,dt,steps,onset,delay,pars,cell,rec
    rhs1=Cs/dt*vs[j]+gLs*EL+excit*ee+inhib*ei+gNaP*ena+inj
    rhs2=Ca/dt*v+gLa*(-54.4)+gNa*ena+(gK+gSK)*ek+gCa*eca+cell[j,10]
    den=A*B-gc*gc;newvs=(rhs1*B+gc*rhs2)/den;newva=(rhs2*A+gc*rhs1)/den
-   vs[j]=newvs;va[j]=newva;ca[j]=max(0.,ca[j]+dt*(-alpha*gCa*(newva-eca)-ca[j]/tc))
+   vs[j]=newvs;va[j]=newva;ca[j]=max(0.,ca[j]+dt*(-alpha*gCa*(newva-eca)-ca[j]/cell[j,16]))
    if v<0. and newva>=0.:
     counts[min(int(k*dt),counts.shape[0]-1),j]+=1;delaybuf[(k+delay)%(delay+1),j]=1
   if bad:break
@@ -78,7 +78,7 @@ def _kernel(N,pre,post,ew,roles,drive,ablated,dt,steps,onset,delay,pars,cell,rec
    voltage[k//record_stride,:,0]=vs[:min(N,12)];voltage[k//record_stride,:,1]=va[:min(N,12)]
  return counts,voltage,vs,va,ca,bad
 
-def simulate(weights,roles,config=None,drive=None,ablate=(),source_gains=None):
+def simulate(weights,roles,config=None,drive=None,ablate=(),source_gains=None,cell_overrides=None):
  p=DEFAULT.copy();p.update(config or {});W=np.asarray(weights);N=len(W);roles=list(roles)
  if W.shape!=(N,N) or not np.isfinite(W).all() or len(roles)!=N:raise ValueError('Finite square connectivity and one role per cell required')
  for key in ['dt_ms','duration_ms','tau_e_rise_ms','tau_e_decay_ms','tau_i_rise_ms','tau_i_decay_ms','c_soma_pF','c_axon_pF','rin_cpg_MOhm','rin_mn_MOhm','coupling_nS','ca_tau_ms','ca_Kd_uM']:
@@ -88,11 +88,14 @@ def simulate(weights,roles,config=None,drive=None,ablate=(),source_gains=None):
   source_gains=np.asarray(source_gains,dtype=float)
   if source_gains.shape!=(N,) or not np.isfinite(source_gains).all() or np.any(source_gains<=0):raise ValueError('Positive source gains required without sign flips')
  pre,post=np.nonzero(W);ew=W[pre,post].astype(float)
- cell=np.empty((N,13))
+ cell=np.empty((N,17))
  for j,r in enumerate(roles):
   ismn=r=='MN';mp=p.get('mn_profile',{}) if ismn else {};rin=p['rin_mn_MOhm'] if ismn else p['rin_cpg_MOhm'];gt=1000./rin;gLa=gt*.15;gc=mp.get('coupling_nS',p['coupling_nS']);gLs=gt-gc*gLa/(gc+gLa)
-  cell[j]=[p['c_soma_pF']*(2. if ismn else 1.),p['c_axon_pF'],gLs*mp.get('leak_scale',p['leak_scale']),gLa*mp.get('leak_scale',p['leak_scale']),mp.get('mn_leak_mV',p['mn_leak_mV']) if ismn else p['E_leak_mV'],p['mn_gain'] if ismn else (p['background_exc_gain'] if r=='other' else 1.),p['I2_gain'] if r=='I2' else (p['I1_gain'] if r=='I1' else p['inhibitory_gain']),gc,p['mn_SK_scale'] if ismn else 1.,mp.get('gNaP_nS',p['gNaP_nS']),mp.get('axon_bias_pA',p['axon_bias_pA']),mp.get('gate_speed',p['gate_speed']),source_gains[j] if source_gains is not None else 1.]
+  cell[j]=[p['c_soma_pF']*(2. if ismn else 1.),p['c_axon_pF'],gLs*mp.get('leak_scale',p['leak_scale']),gLa*mp.get('leak_scale',p['leak_scale']),mp.get('mn_leak_mV',p['mn_leak_mV']) if ismn else p['E_leak_mV'],p['mn_gain'] if ismn else (p['background_exc_gain'] if r=='other' else 1.),p['I2_gain'] if r=='I2' else (p['I1_gain'] if r=='I1' else p['inhibitory_gain']),gc,p['mn_SK_scale'] if ismn else 1.,mp.get('gNaP_nS',p['gNaP_nS']),mp.get('axon_bias_pA',p['axon_bias_pA']),mp.get('gate_speed',p['gate_speed']),source_gains[j] if source_gains is not None else 1.,p['gNa_nS'],p['gK_nS'],p['gCa_nS'],p['ca_tau_ms']]
   if r=='I2':cell[j,4]+=p['I2_leak_shift_mV']
+ if cell_overrides:
+  from grouped_parameters import apply
+  cell=apply(cell,cell_overrides)
  if drive is None:drive=np.array([p['drive_pA'] if r=='DN' else 0. for r in roles])
  names=['tau_e_rise_ms','tau_e_decay_ms','tau_i_rise_ms','tau_i_decay_ms','ge_nS_per_synapse','gi_nS_per_synapse','gNa_nS','gK_nS','gCa_nS','gSK_nS','gNaP_nS','ca_tau_ms','ca_alpha','ca_Kd_uM','E_Na_mV','E_K_mV','E_Ca_mV','E_exc_mV','E_inh_mV','gate_speed','axon_bias_pA']
  dt=p['dt_ms'];steps=round(p['duration_ms']/dt);mask=np.array([j in ablate for j in range(N)],dtype=np.bool_);stride=max(1,round(.5/dt))

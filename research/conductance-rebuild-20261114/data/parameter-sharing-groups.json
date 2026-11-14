@@ -1,0 +1,2733 @@
+{
+  "policy": "Shared within annotated type, regardless of side; no individual offsets by default. This is a modelling hypothesis, not verified biological equivalence.",
+  "groups": {
+    "descending neuron|type:DNg100": [
+      "10093"
+    ],
+    "intrinsic neuron|type:IN17A001": [
+      "10707",
+      "10498",
+      "10559"
+    ],
+    "intrinsic neuron|type:INXXX466": [
+      "11751"
+    ],
+    "intrinsic neuron|type:IN16B036": [
+      "13905"
+    ],
+    "intrinsic neuron|type:IN19A007": [
+      "10242"
+    ],
+    "intrinsic neuron|type:IN07B001": [
+      "10010",
+      "10018",
+      "10087"
+    ],
+    "motor neuron|type:hg1 MN": [
+      "10011",
+      "10123"
+    ],
+    "motor neuron|type:b1 MN": [
+      "10013",
+      "10017"
+    ],
+    "motor neuron|type:DLMn c-f": [
+      "10014",
+      "10088",
+      "10361",
+      "10592",
+      "10892",
+      "18309",
+      "162240",
+      "169914"
+    ],
+    "intrinsic neuron|type:IN14A012": [
+      "10019"
+    ],
+    "intrinsic neuron|type:IN09A004": [
+      "10051"
+    ],
+    "motor neuron|type:b3 MN": [
+      "10055",
+      "10067"
+    ],
+    "descending neuron|type:DNg108": [
+      "10058"
+    ],
+    "intrinsic neuron|type:IN16B020": [
+      "10060",
+      "11158"
+    ],
+    "motor neuron|type:b2 MN": [
+      "10064",
+      "10131"
+    ],
+    "intrinsic neuron|type:INXXX003": [
+      "10065"
+    ],
+    "motor neuron|type:TTMn": [
+      "10068",
+      "10110"
+    ],
+    "motor neuron|type:DLMn a, b": [
+      "10074",
+      "10589"
+    ],
+    "intrinsic neuron|type:IN10B001": [
+      "10075"
+    ],
+    "intrinsic neuron|type:IN08B001": [
+      "10089"
+    ],
+    "descending neuron|type:DNxl080": [
+      "10097"
+    ],
+    "motor neuron|type:i1 MN": [
+      "10115",
+      "10225"
+    ],
+    "intrinsic neuron|type:IN13B006": [
+      "10124",
+      "10705"
+    ],
+    "motor neuron|type:iii1 MN": [
+      "10129",
+      "10614"
+    ],
+    "motor neuron|type:hg3 MN": [
+      "10130",
+      "10931"
+    ],
+    "descending neuron|type:DNg16": [
+      "10138"
+    ],
+    "motor neuron|type:i2 MN": [
+      "10145",
+      "14390"
+    ],
+    "intrinsic neuron|type:IN01A001": [
+      "10152"
+    ],
+    "intrinsic neuron|type:IN19A002": [
+      "10176",
+      "10256",
+      "10258"
+    ],
+    "motor neuron|type:MNwm36": [
+      "10178",
+      "46457"
+    ],
+    "intrinsic neuron|type:IN13A003": [
+      "10185",
+      "10405",
+      "11025"
+    ],
+    "intrinsic neuron|type:IN19A003": [
+      "10192"
+    ],
+    "descending neuron|type:DNd02": [
+      "10194"
+    ],
+    "intrinsic neuron|type:IN19A001": [
+      "10196"
+    ],
+    "intrinsic neuron|type:IN19A008": [
+      "10199"
+    ],
+    "motor neuron|type:hg4 MN": [
+      "10200",
+      "10433"
+    ],
+    "intrinsic neuron|type:IN08A002": [
+      "10203",
+      "10332"
+    ],
+    "motor neuron|type:ps1 MN": [
+      "10204",
+      "10958"
+    ],
+    "ascending neuron|type:AN19B004": [
+      "10205"
+    ],
+    "intrinsic neuron|type:IN07B006": [
+      "10206"
+    ],
+    "descending neuron|type:DNg34": [
+      "10210"
+    ],
+    "ascending neuron|type:AN04B001": [
+      "10211",
+      "10314"
+    ],
+    "intrinsic neuron|type:IN05B094": [
+      "10214"
+    ],
+    "intrinsic neuron|type:IN19B003": [
+      "10220",
+      "10478"
+    ],
+    "intrinsic neuron|type:INXXX008": [
+      "10222",
+      "15067"
+    ],
+    "intrinsic neuron|type:IN19A016": [
+      "10236",
+      "11511",
+      "11747",
+      "12049"
+    ],
+    "intrinsic neuron|type:dPR1": [
+      "10267",
+      "10300"
+    ],
+    "motor neuron|type:tp2 MN": [
+      "10270",
+      "10766"
+    ],
+    "intrinsic neuron|type:IN03B011": [
+      "10271"
+    ],
+    "ascending neuron|type:AN06B002": [
+      "10278",
+      "10360"
+    ],
+    "descending neuron|type:DNxl049": [
+      "10279"
+    ],
+    "motor neuron|type:iii3 MN": [
+      "10287",
+      "100725"
+    ],
+    "descending neuron|type:DNxl134": [
+      "10291"
+    ],
+    "intrinsic neuron|type:IN19A011": [
+      "10308",
+      "101794"
+    ],
+    "intrinsic neuron|type:IN21A001": [
+      "10312",
+      "10692"
+    ],
+    "intrinsic neuron|type:IN19A005": [
+      "10317",
+      "10489"
+    ],
+    "ascending neuron|type:AN07B003": [
+      "10322"
+    ],
+    "intrinsic neuron|type:IN11B001": [
+      "10326",
+      "10729",
+      "18653",
+      "20190"
+    ],
+    "intrinsic neuron|type:IN01A002": [
+      "10328"
+    ],
+    "intrinsic neuron|type:IN27X004": [
+      "10330"
+    ],
+    "intrinsic neuron|type:IN09A002": [
+      "10342",
+      "10403",
+      "10810"
+    ],
+    "motor neuron|type:Ti extensor MN": [
+      "10347",
+      "10461",
+      "10462",
+      "10737",
+      "11115",
+      "11489",
+      "11657",
+      "11706",
+      "12704",
+      "13006",
+      "13075",
+      "13115"
+    ],
+    "motor neuron|type:MNad23": [
+      "10359",
+      "10505"
+    ],
+    "motor neuron|type:MNad22": [
+      "10383",
+      "10386",
+      "11242",
+      "11545"
+    ],
+    "intrinsic neuron|type:IN19B005": [
+      "10385"
+    ],
+    "intrinsic neuron|type:IN13A050": [
+      "10389",
+      "16910",
+      "17721",
+      "19697"
+    ],
+    "intrinsic neuron|type:IN12B003": [
+      "10390",
+      "20995"
+    ],
+    "motor neuron|type:ADNM1": [
+      "10407",
+      "20860"
+    ],
+    "ascending neuron|type:AN07B005": [
+      "10418"
+    ],
+    "ascending neuron|type:AN05B007": [
+      "10419"
+    ],
+    "intrinsic neuron|type:IN19A006": [
+      "10447",
+      "11065"
+    ],
+    "intrinsic neuron|type:IN19A009": [
+      "10453",
+      "10555"
+    ],
+    "intrinsic neuron|type:IN13B004": [
+      "10458",
+      "10620",
+      "10624"
+    ],
+    "motor neuron|type:MNad42": [
+      "10460",
+      "10782"
+    ],
+    "intrinsic neuron|type:INXXX032": [
+      "10472",
+      "10536"
+    ],
+    "motor neuron|type:MNad21": [
+      "10473",
+      "10482",
+      "10548",
+      "10616"
+    ],
+    "intrinsic neuron|type:IN05B008": [
+      "10480"
+    ],
+    "motor neuron|type:tp1 MN": [
+      "10521",
+      "10778"
+    ],
+    "motor neuron|type:MNad69": [
+      "10524",
+      "10676"
+    ],
+    "motor neuron|type:MNad68": [
+      "10527",
+      "10660"
+    ],
+    "ascending neuron|type:AN19A018": [
+      "10528",
+      "10788"
+    ],
+    "motor neuron|type:tpn MN": [
+      "10543",
+      "11294"
+    ],
+    "intrinsic neuron|type:IN18B005": [
+      "10545"
+    ],
+    "intrinsic neuron|type:IN19A015": [
+      "10551"
+    ],
+    "intrinsic neuron|type:IN19B004": [
+      "10561"
+    ],
+    "motor neuron|type:MNhm42": [
+      "10571",
+      "49582"
+    ],
+    "intrinsic neuron|type:IN14B001": [
+      "10575"
+    ],
+    "intrinsic neuron|type:IN19A018": [
+      "10582"
+    ],
+    "intrinsic neuron|type:IN07B007": [
+      "10593"
+    ],
+    "ascending neuron|type:AN03A002": [
+      "10604"
+    ],
+    "intrinsic neuron|type:IN14A002": [
+      "10608"
+    ],
+    "intrinsic neuron|type:IN19A010": [
+      "10609"
+    ],
+    "intrinsic neuron|type:IN16B016": [
+      "10617",
+      "10854",
+      "10961"
+    ],
+    "intrinsic neuron|type:IN19A004": [
+      "10618"
+    ],
+    "intrinsic neuron|type:IN13A001": [
+      "10640",
+      "11323",
+      "162539"
+    ],
+    "intrinsic neuron|type:IN08A005": [
+      "10653"
+    ],
+    "descending neuron|type:DNg97": [
+      "10656"
+    ],
+    "intrinsic neuron|type:IN01A005": [
+      "10661",
+      "10996"
+    ],
+    "motor neuron|type:DVMn 1a-c": [
+      "10669",
+      "10733",
+      "12330",
+      "14017",
+      "14898",
+      "38723486729"
+    ],
+    "intrinsic neuron|type:IN09A010": [
+      "10679"
+    ],
+    "motor neuron|type:ps2 MN": [
+      "10694",
+      "11054"
+    ],
+    "motor neuron|type:Ti flexor MN": [
+      "10710",
+      "12134",
+      "12585",
+      "13163",
+      "13192",
+      "13280",
+      "13283",
+      "13311",
+      "13399",
+      "13563",
+      "14468",
+      "14798",
+      "14848",
+      "15149",
+      "15321",
+      "15623",
+      "16635",
+      "17133",
+      "18448",
+      "18491",
+      "21991",
+      "37220",
+      "100707",
+      "153335",
+      "167438",
+      "192299"
+    ],
+    "intrinsic neuron|type:IN19B012": [
+      "10715"
+    ],
+    "intrinsic neuron|type:IN08A006": [
+      "10722"
+    ],
+    "intrinsic neuron|type:IN19A012": [
+      "10730",
+      "10828"
+    ],
+    "intrinsic neuron|type:IN10B002": [
+      "10752"
+    ],
+    "motor neuron|type:MNad19": [
+      "10753",
+      "11283",
+      "11768",
+      "11897",
+      "12638",
+      "13719"
+    ],
+    "ascending neuron|type:ANXXX006": [
+      "10769"
+    ],
+    "ascending neuron|type:AN14A003": [
+      "10772",
+      "11342"
+    ],
+    "intrinsic neuron|type:IN17A022": [
+      "10779",
+      "12205",
+      "12685"
+    ],
+    "intrinsic neuron|type:IN03A007": [
+      "10784",
+      "11320"
+    ],
+    "motor neuron|type:MNad34": [
+      "10787",
+      "14095"
+    ],
+    "motor neuron|type:ltm1-tibia MN": [
+      "10811",
+      "13241",
+      "13952",
+      "15712",
+      "15720",
+      "15873",
+      "19758",
+      "20612",
+      "61001",
+      "101736",
+      "162830",
+      "166385"
+    ],
+    "motor neuron|type:MNhm03": [
+      "10825",
+      "18566"
+    ],
+    "intrinsic neuron|type:IN19A013": [
+      "10826"
+    ],
+    "intrinsic neuron|type:IN03A004": [
+      "10827"
+    ],
+    "intrinsic neuron|type:IN16B014": [
+      "10834"
+    ],
+    "motor neuron|type:MNad41": [
+      "10840",
+      "10904"
+    ],
+    "intrinsic neuron|type:IN21A002": [
+      "10845",
+      "12533",
+      "15527"
+    ],
+    "intrinsic neuron|type:IN21A003": [
+      "10853",
+      "102868"
+    ],
+    "intrinsic neuron|type:IN00A002": [
+      "10860"
+    ],
+    "motor neuron|type:MNad67": [
+      "10865",
+      "11063"
+    ],
+    "motor neuron|type:Tr extensor MN": [
+      "10866",
+      "13904",
+      "14536",
+      "17930",
+      "19929",
+      "27028",
+      "30306",
+      "100826",
+      "162833",
+      "162912",
+      "165340",
+      "173560"
+    ],
+    "motor neuron|type:MNad66": [
+      "10872",
+      "12526"
+    ],
+    "intrinsic neuron|type:IN13A011": [
+      "10889"
+    ],
+    "intrinsic neuron|type:IN01A012": [
+      "10893",
+      "11015",
+      "23596"
+    ],
+    "intrinsic neuron|type:IN07B012": [
+      "10913"
+    ],
+    "motor neuron|type:MNad65": [
+      "10915",
+      "11265"
+    ],
+    "intrinsic neuron|type:INXXX464": [
+      "10927",
+      "11450",
+      "162543"
+    ],
+    "intrinsic neuron|type:IN08B006": [
+      "10938"
+    ],
+    "intrinsic neuron|type:IN09A006": [
+      "10939",
+      "11445",
+      "11837",
+      "11925"
+    ],
+    "intrinsic neuron|type:IN12B007": [
+      "10956"
+    ],
+    "motor neuron|type:MNhl68": [
+      "10968",
+      "13512",
+      "14339"
+    ],
+    "ascending neuron|type:AN19B014": [
+      "10981"
+    ],
+    "intrinsic neuron|type:IN09A003": [
+      "10983"
+    ],
+    "intrinsic neuron|type:IN17B008": [
+      "10991"
+    ],
+    "ascending neuron|type:AN19B009": [
+      "11006",
+      "11052"
+    ],
+    "intrinsic neuron|type:IN21A013": [
+      "11011"
+    ],
+    "ascending neuron|type:AN27X011": [
+      "11013"
+    ],
+    "intrinsic neuron|type:IN01A008": [
+      "11018"
+    ],
+    "motor neuron|type:Sternal anterior rotator MN": [
+      "11022",
+      "11562",
+      "13300",
+      "16295",
+      "17176",
+      "18471",
+      "20119",
+      "22215",
+      "24669",
+      "26566",
+      "164741",
+      "219796"
+    ],
+    "motor neuron|type:MNnm10": [
+      "11033",
+      "178721"
+    ],
+    "intrinsic neuron|type:IN09A076": [
+      "11037",
+      "23087"
+    ],
+    "intrinsic neuron|type:IN03B020": [
+      "11046"
+    ],
+    "intrinsic neuron|type:IN21A005": [
+      "11050"
+    ],
+    "motor neuron|type:MNnm08": [
+      "11059",
+      "11954"
+    ],
+    "intrinsic neuron|type:IN01A009": [
+      "11079",
+      "11258"
+    ],
+    "motor neuron|type:MNad64": [
+      "11097",
+      "11436"
+    ],
+    "intrinsic neuron|type:IN03A014": [
+      "11110"
+    ],
+    "intrinsic neuron|type:IN03A005": [
+      "11133"
+    ],
+    "intrinsic neuron|type:IN21A007": [
+      "11139",
+      "11425",
+      "11627"
+    ],
+    "intrinsic neuron|type:IN01A010": [
+      "11165",
+      "12307"
+    ],
+    "efferent neuron|type:EN00B008": [
+      "11170",
+      "11393",
+      "11675"
+    ],
+    "ascending neuron|type:AN17B008": [
+      "11173",
+      "11359",
+      "11361"
+    ],
+    "intrinsic neuron|type:IN19A026": [
+      "11182"
+    ],
+    "intrinsic neuron|type:IN01A015": [
+      "11191",
+      "11955",
+      "14767"
+    ],
+    "intrinsic neuron|type:IN14A001": [
+      "11212"
+    ],
+    "ascending neuron|type:AN23B004": [
+      "11213"
+    ],
+    "intrinsic neuron|type:IN13A008": [
+      "11217",
+      "12180",
+      "14478"
+    ],
+    "motor neuron|type:Fe reductor MN": [
+      "11226",
+      "12113",
+      "12891",
+      "13920",
+      "14020",
+      "14949",
+      "16552",
+      "16633",
+      "18983",
+      "21665",
+      "21944",
+      "24050",
+      "28884",
+      "29187",
+      "29484",
+      "35432",
+      "42738",
+      "45494",
+      "156857",
+      "158681",
+      "219894",
+      "226276"
+    ],
+    "motor neuron|type:MNad20": [
+      "11232",
+      "13356",
+      "15784",
+      "163733"
+    ],
+    "intrinsic neuron|type:IN03A006": [
+      "11236",
+      "12021"
+    ],
+    "motor neuron|type:MNhl02": [
+      "11274",
+      "11813"
+    ],
+    "ascending neuron|type:ANXXX008": [
+      "11285"
+    ],
+    "intrinsic neuron|type:INXXX036": [
+      "11324"
+    ],
+    "intrinsic neuron|type:IN19A014": [
+      "11331"
+    ],
+    "intrinsic neuron|type:IN08A008": [
+      "11353"
+    ],
+    "intrinsic neuron|type:IN08A007": [
+      "11367",
+      "11744"
+    ],
+    "motor neuron|type:MNxm01": [
+      "11372",
+      "12009"
+    ],
+    "motor neuron|type:MNad63": [
+      "11375",
+      "11428"
+    ],
+    "motor neuron|type:Sternal posterior rotator MN": [
+      "11400",
+      "11529",
+      "13942",
+      "14449",
+      "15278",
+      "15883",
+      "16035",
+      "17947",
+      "19667",
+      "21241",
+      "24747",
+      "25767",
+      "25892",
+      "27258",
+      "28219",
+      "29689",
+      "49886",
+      "102786",
+      "104697",
+      "154133",
+      "154769",
+      "163719",
+      "172408",
+      "11162403133"
+    ],
+    "intrinsic neuron|type:IN14B003": [
+      "11416"
+    ],
+    "intrinsic neuron|type:IN01A023": [
+      "11420",
+      "12303"
+    ],
+    "intrinsic neuron|type:IN13B013": [
+      "11456",
+      "11958",
+      "12069"
+    ],
+    "intrinsic neuron|type:IN12A007": [
+      "11475"
+    ],
+    "motor neuron|type:MNhl67": [
+      "11480",
+      "12504"
+    ],
+    "intrinsic neuron|type:IN13A037": [
+      "11509",
+      "18246"
+    ],
+    "intrinsic neuron|type:IN12B011": [
+      "11528",
+      "12471"
+    ],
+    "motor neuron|type:MNad62": [
+      "11549",
+      "14329"
+    ],
+    "motor neuron|type:MNad18": [
+      "11572",
+      "11585",
+      "12209",
+      "12841"
+    ],
+    "intrinsic neuron|type:IN11A005": [
+      "11583",
+      "16574"
+    ],
+    "intrinsic neuron|type:IN10B012": [
+      "11586",
+      "11775"
+    ],
+    "intrinsic neuron|type:IN21A010": [
+      "11589"
+    ],
+    "ascending neuron|type:AN01A014": [
+      "11597"
+    ],
+    "motor neuron|type:MNad17": [
+      "11624",
+      "11847",
+      "12468",
+      "12646",
+      "12682",
+      "13415"
+    ],
+    "intrinsic neuron|type:IN20A.22A001": [
+      "11636",
+      "11973"
+    ],
+    "motor neuron|type:MNad40": [
+      "11638",
+      "14613"
+    ],
+    "intrinsic neuron|type:IN13A006": [
+      "11640"
+    ],
+    "motor neuron|type:DVMn 2a, b": [
+      "11663",
+      "15098",
+      "15783",
+      "16559"
+    ],
+    "intrinsic neuron|type:IN06A028": [
+      "11678"
+    ],
+    "intrinsic neuron|type:IN01A018": [
+      "11688"
+    ],
+    "intrinsic neuron|type:IN19A024": [
+      "11710",
+      "11817"
+    ],
+    "intrinsic neuron|type:IN19A032": [
+      "11736"
+    ],
+    "ascending neuron|type:AN06B011": [
+      "11738"
+    ],
+    "intrinsic neuron|type:IN12B013": [
+      "11750",
+      "11778",
+      "12066",
+      "12150"
+    ],
+    "motor neuron|type:DVMn 3a, b": [
+      "11776",
+      "13228",
+      "13586",
+      "162114"
+    ],
+    "intrinsic neuron|type:IN13A014": [
+      "11780",
+      "18858"
+    ],
+    "motor neuron|type:ltm MN": [
+      "11786",
+      "12693",
+      "13033",
+      "13156",
+      "14069",
+      "15380",
+      "15893",
+      "16658",
+      "19092",
+      "21963",
+      "23016",
+      "23390",
+      "24139",
+      "25447",
+      "26809",
+      "27078",
+      "27733",
+      "29950",
+      "35735",
+      "47642",
+      "48865",
+      "154803",
+      "166393"
+    ],
+    "intrinsic neuron|type:IN16B033": [
+      "11792"
+    ],
+    "intrinsic neuron|type:IN19A020": [
+      "11799"
+    ],
+    "motor neuron|type:MNhl59": [
+      "11809",
+      "13543"
+    ],
+    "ascending neuron|type:ANXXX072": [
+      "11818"
+    ],
+    "motor neuron|type:MNad13": [
+      "11830",
+      "12269",
+      "12844",
+      "13297",
+      "13655",
+      "14853",
+      "15182",
+      "16178",
+      "16375",
+      "17576",
+      "23801",
+      "100612"
+    ],
+    "intrinsic neuron|type:IN01A022": [
+      "11910"
+    ],
+    "intrinsic neuron|type:IN17A016": [
+      "11924"
+    ],
+    "intrinsic neuron|type:IN06B022": [
+      "11934"
+    ],
+    "intrinsic neuron|type:IN21A015": [
+      "11941"
+    ],
+    "motor neuron|type:MNwm35": [
+      "11991",
+      "13665"
+    ],
+    "intrinsic neuron|type:IN13A010": [
+      "12026"
+    ],
+    "intrinsic neuron|type:IN01A016": [
+      "12045"
+    ],
+    "intrinsic neuron|type:IN16B029": [
+      "12061",
+      "12907"
+    ],
+    "intrinsic neuron|type:IN03A013": [
+      "12068"
+    ],
+    "intrinsic neuron|type:IN18B016": [
+      "12082"
+    ],
+    "motor neuron|type:Pleural remotor/abductor MN": [
+      "12096",
+      "13628",
+      "14168",
+      "14346",
+      "14596",
+      "15262",
+      "16419",
+      "17091",
+      "18286",
+      "19206",
+      "21255",
+      "41482",
+      "166337",
+      "219853"
+    ],
+    "intrinsic neuron|type:IN13A012": [
+      "12104"
+    ],
+    "ascending neuron|type:AN12B011": [
+      "12108"
+    ],
+    "intrinsic neuron|type:IN13A018": [
+      "12119"
+    ],
+    "intrinsic neuron|type:IN17A025": [
+      "12158",
+      "12610"
+    ],
+    "intrinsic neuron|type:IN10B023": [
+      "12175"
+    ],
+    "ascending neuron|type:AN08B022": [
+      "12177",
+      "16086"
+    ],
+    "ascending neuron|type:AN03A008": [
+      "12181"
+    ],
+    "motor neuron|type:MNad37": [
+      "12185"
+    ],
+    "motor neuron|type:MNml29": [
+      "12196",
+      "19773"
+    ],
+    "intrinsic neuron|type:INXXX056": [
+      "12199"
+    ],
+    "intrinsic neuron|type:IN03B032": [
+      "12203"
+    ],
+    "motor neuron|type:MNad36": [
+      "12225",
+      "12506"
+    ],
+    "intrinsic neuron|type:IN21A017": [
+      "12240",
+      "12283"
+    ],
+    "intrinsic neuron|type:IN21A014": [
+      "12248",
+      "100493"
+    ],
+    "intrinsic neuron|type:IN21A006": [
+      "12250"
+    ],
+    "intrinsic neuron|type:IN14A004": [
+      "12285"
+    ],
+    "intrinsic neuron|type:IN16B030": [
+      "12302",
+      "12998"
+    ],
+    "motor neuron|type:MNxm02": [
+      "12308",
+      "13072"
+    ],
+    "motor neuron|type:MNad27": [
+      "12314",
+      "12445"
+    ],
+    "intrinsic neuron|type:IN14A005": [
+      "12338"
+    ],
+    "ascending neuron|type:AN17A024": [
+      "12348"
+    ],
+    "motor neuron|type:MNad16": [
+      "12389",
+      "15296",
+      "17894",
+      "21057",
+      "22574",
+      "27105",
+      "33009",
+      "153863"
+    ],
+    "motor neuron|type:Tergopleural/Pleural promotor MN": [
+      "12396",
+      "12628",
+      "12686",
+      "13464",
+      "13490",
+      "16250",
+      "19319",
+      "20386"
+    ],
+    "intrinsic neuron|type:IN14A006": [
+      "12403"
+    ],
+    "motor neuron|type:Acc. ti flexor MN": [
+      "12474",
+      "12725",
+      "12758",
+      "12759",
+      "12761",
+      "13170",
+      "13397",
+      "13746",
+      "13784",
+      "13819",
+      "14226",
+      "14665",
+      "14775",
+      "14824",
+      "14849",
+      "15023",
+      "15038",
+      "15367",
+      "15791",
+      "16228",
+      "16495",
+      "16632",
+      "17018",
+      "17070",
+      "17885",
+      "18412",
+      "18554",
+      "18664",
+      "18963",
+      "19048",
+      "19074",
+      "19260",
+      "20373",
+      "20593",
+      "20605",
+      "21262",
+      "23698",
+      "24443",
+      "24828",
+      "25212",
+      "25885",
+      "26658",
+      "26777",
+      "101043",
+      "162868",
+      "166374",
+      "166397",
+      "176866"
+    ],
+    "intrinsic neuron|type:IN19A029": [
+      "12475"
+    ],
+    "motor neuron|type:MNad61": [
+      "12499",
+      "13418"
+    ],
+    "motor neuron|type:MNad15": [
+      "12509",
+      "12612",
+      "13105",
+      "15073"
+    ],
+    "motor neuron|type:MNad35": [
+      "12529",
+      "12756"
+    ],
+    "intrinsic neuron|type:INXXX083": [
+      "12597"
+    ],
+    "motor neuron|type:MNnm09": [
+      "12603",
+      "24149"
+    ],
+    "intrinsic neuron|type:IN11A003": [
+      "12630",
+      "14367"
+    ],
+    "intrinsic neuron|type:IN21A004": [
+      "12650"
+    ],
+    "intrinsic neuron|type:IN17A028": [
+      "12667"
+    ],
+    "intrinsic neuron|type:IN01A025": [
+      "12671",
+      "13771",
+      "28526",
+      "101801"
+    ],
+    "intrinsic neuron|type:IN16B032": [
+      "12708"
+    ],
+    "intrinsic neuron|type:IN26X003": [
+      "12732",
+      "152430"
+    ],
+    "ascending neuron|type:ANXXX005": [
+      "12749"
+    ],
+    "motor neuron|type:MNhl66": [
+      "12800",
+      "13095"
+    ],
+    "motor neuron|type:MNad14": [
+      "12802",
+      "12810",
+      "13486",
+      "13547",
+      "14241",
+      "15534",
+      "16367",
+      "16431"
+    ],
+    "ascending neuron|type:AN17B011": [
+      "12807"
+    ],
+    "descending neuron|type:DNxl109": [
+      "12847"
+    ],
+    "motor neuron|type:hg2 MN": [
+      "12927",
+      "22584"
+    ],
+    "intrinsic neuron|type:INXXX140": [
+      "12928"
+    ],
+    "intrinsic neuron|type:IN12B012": [
+      "12929"
+    ],
+    "ascending neuron|type:AN08B023": [
+      "12994"
+    ],
+    "ascending neuron|type:ANXXX130": [
+      "13025",
+      "14122"
+    ],
+    "motor neuron|type:MNml81": [
+      "13036",
+      "14828"
+    ],
+    "motor neuron|type:MNad38": [
+      "13050"
+    ],
+    "motor neuron|type:Sternotrochanter MN": [
+      "13069",
+      "18006",
+      "18579",
+      "18716",
+      "19094",
+      "20615",
+      "26132",
+      "100515",
+      "152620",
+      "152621",
+      "152642",
+      "157432",
+      "157503",
+      "166392"
+    ],
+    "ascending neuron|type:AN07B106": [
+      "13099"
+    ],
+    "intrinsic neuron|type:IN03B035": [
+      "13116",
+      "171350"
+    ],
+    "motor neuron|type:MNhl65": [
+      "13144",
+      "19480"
+    ],
+    "intrinsic neuron|type:IN19A036": [
+      "13145"
+    ],
+    "motor neuron|type:hiii2 MN": [
+      "13151",
+      "16016"
+    ],
+    "intrinsic neuron|type:IN09A012": [
+      "13157",
+      "14517",
+      "100513"
+    ],
+    "motor neuron|type:MNad09": [
+      "13182",
+      "13631",
+      "13760",
+      "14859",
+      "14883",
+      "15529",
+      "16730",
+      "100375"
+    ],
+    "motor neuron|type:MNad12": [
+      "13183",
+      "13225",
+      "14233",
+      "14787"
+    ],
+    "motor neuron|type:MNad58": [
+      "13188",
+      "25023"
+    ],
+    "ascending neuron|type:AN08B031": [
+      "13213"
+    ],
+    "motor neuron|type:STTMm": [
+      "13214",
+      "17316",
+      "22175",
+      "24493"
+    ],
+    "motor neuron|type:MNad08": [
+      "13242",
+      "13671",
+      "13899",
+      "15202",
+      "15846",
+      "159031"
+    ],
+    "intrinsic neuron|type:IN12A019": [
+      "13243",
+      "15223"
+    ],
+    "intrinsic neuron|type:INXXX468": [
+      "13246"
+    ],
+    "intrinsic neuron|type:IN08B037": [
+      "13284"
+    ],
+    "motor neuron|type:MNad26": [
+      "13298",
+      "13717"
+    ],
+    "intrinsic neuron|type:IN14A010": [
+      "13327",
+      "14270",
+      "160183"
+    ],
+    "intrinsic neuron|type:IN06B029": [
+      "13358"
+    ],
+    "intrinsic neuron|type:IN06B008": [
+      "13361"
+    ],
+    "motor neuron|type:MNad57": [
+      "13392",
+      "13493"
+    ],
+    "motor neuron|type:MNad11": [
+      "13403",
+      "13579",
+      "13878",
+      "13999",
+      "14008",
+      "18692",
+      "19486",
+      "19924"
+    ],
+    "intrinsic neuron|type:IN04B009": [
+      "13409",
+      "13798"
+    ],
+    "motor neuron|type:Tergotr. MN": [
+      "13434",
+      "15107",
+      "19443",
+      "19652",
+      "21753",
+      "22126",
+      "23318",
+      "23553",
+      "155633",
+      "159762",
+      "166309",
+      "175327"
+    ],
+    "motor neuron|type:MNad50": [
+      "13444",
+      "14234",
+      "15736"
+    ],
+    "ascending neuron|type:AN05B103": [
+      "13470"
+    ],
+    "motor neuron|type:MNxm03": [
+      "13478",
+      "16167"
+    ],
+    "motor neuron|type:MNad10": [
+      "13480",
+      "14123",
+      "14469",
+      "14602"
+    ],
+    "intrinsic neuron|type:IN03A017": [
+      "13501"
+    ],
+    "intrinsic neuron|type:INXXX089": [
+      "13508"
+    ],
+    "intrinsic neuron|type:IN14B009": [
+      "13520"
+    ],
+    "motor neuron|type:MNad59": [
+      "13526"
+    ],
+    "intrinsic neuron|type:IN03A018": [
+      "13545",
+      "14475"
+    ],
+    "intrinsic neuron|type:IN14B013": [
+      "13633"
+    ],
+    "intrinsic neuron|type:IN12A015": [
+      "13636"
+    ],
+    "intrinsic neuron|type:IN21A019": [
+      "13670"
+    ],
+    "intrinsic neuron|type:IN12B025": [
+      "13681",
+      "16334",
+      "17104",
+      "17142",
+      "19296",
+      "29191"
+    ],
+    "intrinsic neuron|type:IN21A024": [
+      "13712",
+      "14235"
+    ],
+    "motor neuron|type:MNad56": [
+      "13725",
+      "13797"
+    ],
+    "motor neuron|type:MNad07": [
+      "13733",
+      "14288",
+      "14768",
+      "22139"
+    ],
+    "motor neuron|type:MNhl64": [
+      "13740",
+      "29474"
+    ],
+    "motor neuron|type:MNad55": [
+      "13742",
+      "15094"
+    ],
+    "intrinsic neuron|type:IN09A016": [
+      "13753"
+    ],
+    "intrinsic neuron|type:IN21A016": [
+      "13768"
+    ],
+    "motor neuron|type:MNad54": [
+      "13806",
+      "14021",
+      "14407",
+      "14653"
+    ],
+    "ascending neuron|type:ANXXX109": [
+      "13811"
+    ],
+    "motor neuron|type:Sternal adductor MN": [
+      "13817",
+      "20667",
+      "21718",
+      "29483",
+      "155853",
+      "171055"
+    ],
+    "intrinsic neuron|type:IN01A038": [
+      "13833",
+      "14176",
+      "15467",
+      "17161",
+      "22813"
+    ],
+    "motor neuron|type:MNad53": [
+      "13836",
+      "14888",
+      "14983",
+      "16094"
+    ],
+    "intrinsic neuron|type:IN14B010": [
+      "13838",
+      "15172",
+      "15195"
+    ],
+    "intrinsic neuron|type:IN14A066": [
+      "13869"
+    ],
+    "ascending neuron|type:AN19A019": [
+      "13875",
+      "14014"
+    ],
+    "motor neuron|type:MNhl88": [
+      "13883",
+      "17905"
+    ],
+    "intrinsic neuron|type:IN02A015": [
+      "13897"
+    ],
+    "intrinsic neuron|type:IN21A020": [
+      "13921"
+    ],
+    "motor neuron|type:MNad25": [
+      "13924",
+      "14370"
+    ],
+    "motor neuron|type:MNad52": [
+      "13929",
+      "14708"
+    ],
+    "intrinsic neuron|type:IN20A.22A006": [
+      "13933",
+      "164010"
+    ],
+    "intrinsic neuron|type:IN17A061": [
+      "13944",
+      "15530"
+    ],
+    "motor neuron|type:MNnm13": [
+      "13974",
+      "15244"
+    ],
+    "intrinsic neuron|type:IN01A035": [
+      "13990"
+    ],
+    "ascending neuron|type:AN04B023": [
+      "14013",
+      "19912"
+    ],
+    "intrinsic neuron|type:IN03A020": [
+      "14046"
+    ],
+    "intrinsic neuron|type:IN17A052": [
+      "14073",
+      "14803"
+    ],
+    "motor neuron|type:FNM2": [
+      "14079",
+      "24975"
+    ],
+    "ascending neuron|type:AN06B040": [
+      "14138"
+    ],
+    "motor neuron|type:MNad51": [
+      "14159",
+      "18373"
+    ],
+    "intrinsic neuron|type:IN19A030": [
+      "14175"
+    ],
+    "intrinsic neuron|type:IN03A022": [
+      "14193",
+      "14801"
+    ],
+    "motor neuron|type:MNad06": [
+      "14211",
+      "14981",
+      "15059",
+      "15354",
+      "15388",
+      "18674",
+      "20425",
+      "101706"
+    ],
+    "motor neuron|type:hDVM MN": [
+      "14267",
+      "14322"
+    ],
+    "motor neuron|type:MNad33": [
+      "14341",
+      "15801"
+    ],
+    "motor neuron|type:ltm2-femur MN": [
+      "14343",
+      "14773",
+      "15317",
+      "15818",
+      "16356",
+      "16711",
+      "17050",
+      "17419",
+      "17550",
+      "24725",
+      "158889",
+      "28532466490"
+    ],
+    "intrinsic neuron|type:INXXX211": [
+      "14371"
+    ],
+    "intrinsic neuron|type:IN13A051": [
+      "14387",
+      "14416",
+      "14420",
+      "17731",
+      "18083"
+    ],
+    "intrinsic neuron|type:IN04B014": [
+      "14389"
+    ],
+    "motor neuron|type:MNad49": [
+      "14447",
+      "14505"
+    ],
+    "intrinsic neuron|type:IN02A020": [
+      "14453"
+    ],
+    "motor neuron|type:MNad32": [
+      "14461",
+      "17500"
+    ],
+    "intrinsic neuron|type:IN13B017": [
+      "14509"
+    ],
+    "intrinsic neuron|type:IN11A007": [
+      "14526",
+      "18967",
+      "101683"
+    ],
+    "motor neuron|type:ADNM2": [
+      "14549",
+      "17653"
+    ],
+    "intrinsic neuron|type:IN08B054": [
+      "14550",
+      "17046",
+      "155606"
+    ],
+    "intrinsic neuron|type:IN08B044": [
+      "14610"
+    ],
+    "motor neuron|type:MNhl75": [
+      "14622"
+    ],
+    "motor neuron|type:MNhl29": [
+      "14649",
+      "102123"
+    ],
+    "intrinsic neuron|type:IN01A028": [
+      "14671"
+    ],
+    "motor neuron|type:Acc. tr flexor MN": [
+      "14783",
+      "16400",
+      "16903",
+      "17693",
+      "19613",
+      "22487",
+      "22729",
+      "23048",
+      "23974",
+      "25475",
+      "26370",
+      "26588",
+      "34004",
+      "102019",
+      "155216",
+      "156180"
+    ],
+    "intrinsic neuron|type:IN13B040": [
+      "14804"
+    ],
+    "motor neuron|type:MNad24": [
+      "14871",
+      "15481"
+    ],
+    "intrinsic neuron|type:IN21A009": [
+      "14874"
+    ],
+    "intrinsic neuron|type:INXXX225": [
+      "14879"
+    ],
+    "motor neuron|type:MNad05": [
+      "14902",
+      "16227",
+      "16330",
+      "17179",
+      "17645",
+      "102953"
+    ],
+    "intrinsic neuron|type:IN14A007": [
+      "14912"
+    ],
+    "intrinsic neuron|type:IN03A036": [
+      "14927"
+    ],
+    "motor neuron|type:Tr flexor MN": [
+      "15006",
+      "16963",
+      "17137",
+      "17226",
+      "18440",
+      "19704",
+      "19771",
+      "19886",
+      "19983",
+      "20572",
+      "20673",
+      "21186",
+      "21612",
+      "22465",
+      "22718",
+      "23117",
+      "23299",
+      "23364",
+      "24668",
+      "26613",
+      "26883",
+      "28997",
+      "34115",
+      "40443",
+      "41439",
+      "41933",
+      "96565",
+      "153142",
+      "153315",
+      "155218",
+      "156233",
+      "157207",
+      "158694",
+      "158769",
+      "159822",
+      "162913",
+      "163686",
+      "166171",
+      "167442",
+      "171948",
+      "218885"
+    ],
+    "intrinsic neuron|type:IN13B059": [
+      "15043"
+    ],
+    "motor neuron|type:MNnm14": [
+      "15049",
+      "153756"
+    ],
+    "motor neuron|type:hi2 MN": [
+      "15057",
+      "16201",
+      "16222",
+      "20969"
+    ],
+    "intrinsic neuron|type:IN13B023": [
+      "15116"
+    ],
+    "ascending neuron|type:ANXXX191": [
+      "15185"
+    ],
+    "motor neuron|type:MNad31": [
+      "15215",
+      "15561"
+    ],
+    "intrinsic neuron|type:IN12B030": [
+      "15237"
+    ],
+    "intrinsic neuron|type:IN17A044": [
+      "15251"
+    ],
+    "intrinsic neuron|type:IN20A.22A030": [
+      "15265",
+      "24645"
+    ],
+    "intrinsic neuron|type:IN03A073": [
+      "15299",
+      "23537",
+      "154269"
+    ],
+    "intrinsic neuron|type:IN21A023": [
+      "15329",
+      "17053",
+      "152141"
+    ],
+    "motor neuron|type:Ta depressor MN": [
+      "15434",
+      "16492",
+      "16897",
+      "19468",
+      "21749",
+      "25674",
+      "29487",
+      "29554",
+      "154804",
+      "165511"
+    ],
+    "motor neuron|type:Ta levator MN": [
+      "15446",
+      "16346",
+      "19751",
+      "22358",
+      "157320"
+    ],
+    "intrinsic neuron|type:IN16B042": [
+      "15452",
+      "15806",
+      "15825",
+      "16322",
+      "16387",
+      "16789"
+    ],
+    "intrinsic neuron|type:IN03A028": [
+      "15460",
+      "19083"
+    ],
+    "motor neuron|type:MNad28": [
+      "15523",
+      "17160"
+    ],
+    "motor neuron|type:MNhl63": [
+      "15550",
+      "25599"
+    ],
+    "intrinsic neuron|type:IN08A031": [
+      "15552"
+    ],
+    "intrinsic neuron|type:IN13A038": [
+      "15583",
+      "17826",
+      "19906"
+    ],
+    "motor neuron|type:MNml80": [
+      "15616",
+      "17697",
+      "25956"
+    ],
+    "intrinsic neuron|type:IN13B026": [
+      "15665"
+    ],
+    "intrinsic neuron|type:IN03A034": [
+      "15690"
+    ],
+    "intrinsic neuron|type:IN23B028": [
+      "15716",
+      "17459",
+      "18934",
+      "154112",
+      "158915"
+    ],
+    "intrinsic neuron|type:IN03A040": [
+      "15724",
+      "16464"
+    ],
+    "motor neuron|type:MNhl01": [
+      "15735",
+      "221983"
+    ],
+    "intrinsic neuron|type:IN13B028": [
+      "15762",
+      "16008",
+      "17580"
+    ],
+    "intrinsic neuron|type:IN14B011": [
+      "15767"
+    ],
+    "motor neuron|type:MNnm07": [
+      "15789",
+      "26924"
+    ],
+    "motor neuron|type:MNad48": [
+      "15832",
+      "17030"
+    ],
+    "motor neuron|type:MNhl87": [
+      "15857",
+      "17761"
+    ],
+    "motor neuron|type:MNhl74": [
+      "15879"
+    ],
+    "intrinsic neuron|type:IN16B075": [
+      "15885"
+    ],
+    "intrinsic neuron|type:IN03A045": [
+      "15904",
+      "16147",
+      "16202",
+      "17317"
+    ],
+    "intrinsic neuron|type:IN21A022": [
+      "15914"
+    ],
+    "motor neuron|type:MNnm12": [
+      "15923",
+      "18717"
+    ],
+    "motor neuron|type:MNad47": [
+      "15937",
+      "17100"
+    ],
+    "intrinsic neuron|type:IN14A014": [
+      "15952",
+      "17143"
+    ],
+    "intrinsic neuron|type:IN19A117": [
+      "15963"
+    ],
+    "ascending neuron|type:AN14B012": [
+      "15967"
+    ],
+    "motor neuron|type:MNml85": [
+      "16017"
+    ],
+    "intrinsic neuron|type:IN03A031": [
+      "16019"
+    ],
+    "motor neuron|type:MNad30": [
+      "16068",
+      "20446"
+    ],
+    "intrinsic neuron|type:IN20A.22A018": [
+      "16097",
+      "20968",
+      "21249",
+      "22861"
+    ],
+    "ascending neuron|type:ANXXX255": [
+      "16107"
+    ],
+    "intrinsic neuron|type:IN08A024": [
+      "16146",
+      "19810"
+    ],
+    "intrinsic neuron|type:IN08B055": [
+      "16172"
+    ],
+    "intrinsic neuron|type:IN04B092": [
+      "16224"
+    ],
+    "intrinsic neuron|type:IN03A060": [
+      "16245",
+      "17094"
+    ],
+    "intrinsic neuron|type:INXXX269": [
+      "16265",
+      "18404"
+    ],
+    "motor neuron|type:MNad46": [
+      "16278",
+      "17583"
+    ],
+    "motor neuron|type:MNad03": [
+      "16305",
+      "16560",
+      "18060",
+      "27988",
+      "28921",
+      "30702"
+    ],
+    "ascending neuron|type:AN17A050": [
+      "16308"
+    ],
+    "ascending neuron|type:AN07B015": [
+      "16328"
+    ],
+    "intrinsic neuron|type:IN20A.22A012": [
+      "16395",
+      "16670"
+    ],
+    "intrinsic neuron|type:IN13B022": [
+      "16425"
+    ],
+    "motor neuron|type:MNad04": [
+      "16437",
+      "16501",
+      "16735",
+      "152119"
+    ],
+    "intrinsic neuron|type:IN03A046": [
+      "16477",
+      "16696",
+      "16755",
+      "16883",
+      "19185",
+      "101443"
+    ],
+    "motor neuron|type:MNml84": [
+      "16497"
+    ],
+    "intrinsic neuron|type:IN08B060": [
+      "16510"
+    ],
+    "intrinsic neuron|type:IN23B022": [
+      "16518",
+      "18122"
+    ],
+    "intrinsic neuron|type:IN06B056": [
+      "16568",
+      "17384",
+      "18067",
+      "18533",
+      "102730",
+      "155284"
+    ],
+    "intrinsic neuron|type:IN08A016": [
+      "16583"
+    ],
+    "intrinsic neuron|type:IN20A.22A016": [
+      "16612",
+      "21626"
+    ],
+    "motor neuron|type:MNad45": [
+      "16728",
+      "16750"
+    ],
+    "intrinsic neuron|type:IN16B039": [
+      "16759"
+    ],
+    "intrinsic neuron|type:IN13A027": [
+      "16811",
+      "17300"
+    ],
+    "intrinsic neuron|type:IN05B057": [
+      "16836"
+    ],
+    "intrinsic neuron|type:IN16B041": [
+      "16894"
+    ],
+    "motor neuron|type:MNad44": [
+      "16949",
+      "16956"
+    ],
+    "intrinsic neuron|type:IN03A051": [
+      "16997",
+      "17332",
+      "18413"
+    ],
+    "motor neuron|type:hi1 MN": [
+      "17022",
+      "20786"
+    ],
+    "motor neuron|type:MNml83": [
+      "17036"
+    ],
+    "intrinsic neuron|type:INXXX228": [
+      "17097"
+    ],
+    "intrinsic neuron|type:IN11A008": [
+      "17154"
+    ],
+    "intrinsic neuron|type:IN03A049": [
+      "17186"
+    ],
+    "intrinsic neuron|type:IN19A061": [
+      "17213"
+    ],
+    "motor neuron|type:MNhm43": [
+      "17216",
+      "24257"
+    ],
+    "intrinsic neuron|type:IN23B018": [
+      "17258"
+    ],
+    "intrinsic neuron|type:IN21A037": [
+      "17293"
+    ],
+    "motor neuron|type:MNad02": [
+      "17319",
+      "17719",
+      "18503",
+      "18551",
+      "19693",
+      "19824",
+      "20055",
+      "20115",
+      "24225",
+      "25810",
+      "27651",
+      "154153"
+    ],
+    "intrinsic neuron|type:IN03A039": [
+      "17345",
+      "17665"
+    ],
+    "motor neuron|type:MNad43": [
+      "17391",
+      "18376"
+    ],
+    "intrinsic neuron|type:IN14A017": [
+      "17513"
+    ],
+    "descending neuron|type:DNfl038": [
+      "17522"
+    ],
+    "intrinsic neuron|type:IN12B023": [
+      "17523"
+    ],
+    "intrinsic neuron|type:IN09A026": [
+      "17538"
+    ],
+    "intrinsic neuron|type:IN13A035": [
+      "17636",
+      "18500",
+      "18829",
+      "20692",
+      "21898"
+    ],
+    "intrinsic neuron|type:INXXX471": [
+      "17664"
+    ],
+    "intrinsic neuron|type:IN04B031": [
+      "17678",
+      "18605"
+    ],
+    "motor neuron|type:MNad29": [
+      "17688",
+      "153281"
+    ],
+    "intrinsic neuron|type:IN13A042": [
+      "17709",
+      "19803",
+      "20366"
+    ],
+    "intrinsic neuron|type:IN03A023": [
+      "17741"
+    ],
+    "intrinsic neuron|type:INXXX267": [
+      "17859"
+    ],
+    "intrinsic neuron|type:IN13A049": [
+      "17881"
+    ],
+    "intrinsic neuron|type:IN13B038": [
+      "17909"
+    ],
+    "intrinsic neuron|type:IN03A061": [
+      "17917",
+      "18394",
+      "21342"
+    ],
+    "motor neuron|type:MNml79": [
+      "17964",
+      "32253"
+    ],
+    "motor neuron|type:MNhl62": [
+      "17970",
+      "27479"
+    ],
+    "intrinsic neuron|type:IN14A028": [
+      "17997"
+    ],
+    "intrinsic neuron|type:IN13B055": [
+      "18015",
+      "23399"
+    ],
+    "intrinsic neuron|type:IN03A062": [
+      "18052",
+      "18494",
+      "20099",
+      "21759"
+    ],
+    "ascending neuron|type:AN19B044": [
+      "18061"
+    ],
+    "intrinsic neuron|type:IN03A072": [
+      "18126"
+    ],
+    "intrinsic neuron|type:IN09A021": [
+      "18140",
+      "156326"
+    ],
+    "intrinsic neuron|type:IN13A041": [
+      "18168",
+      "18773"
+    ],
+    "intrinsic neuron|type:IN04B070": [
+      "18253"
+    ],
+    "intrinsic neuron|type:IN13A033": [
+      "18294"
+    ],
+    "intrinsic neuron|type:IN01A071": [
+      "18302"
+    ],
+    "intrinsic neuron|type:IN21A047": [
+      "18550",
+      "21576"
+    ],
+    "intrinsic neuron|type:IN14A018": [
+      "18561",
+      "18869"
+    ],
+    "intrinsic neuron|type:IN13A063": [
+      "18592"
+    ],
+    "intrinsic neuron|type:IN03A069": [
+      "18631"
+    ],
+    "intrinsic neuron|type:IN04B037": [
+      "18831"
+    ],
+    "motor neuron|type:MNad01": [
+      "18939",
+      "19300",
+      "20052",
+      "21022",
+      "29602",
+      "155854"
+    ],
+    "intrinsic neuron|type:IN08A036": [
+      "19038"
+    ],
+    "intrinsic neuron|type:IN14A022": [
+      "19050"
+    ],
+    "intrinsic neuron|type:IN20A.22A024": [
+      "19162",
+      "100498"
+    ],
+    "intrinsic neuron|type:IN05B066": [
+      "19259"
+    ],
+    "intrinsic neuron|type:IN19A059": [
+      "19331"
+    ],
+    "intrinsic neuron|type:IN13B010": [
+      "19471"
+    ],
+    "intrinsic neuron|type:IN20A.22A015": [
+      "19493",
+      "19680",
+      "20037",
+      "21613"
+    ],
+    "intrinsic neuron|type:IN13B036": [
+      "19551"
+    ],
+    "intrinsic neuron|type:IN20A.22A061": [
+      "19659"
+    ],
+    "motor neuron|type:MNhl61": [
+      "19744",
+      "27757"
+    ],
+    "intrinsic neuron|type:IN21A035": [
+      "19816"
+    ],
+    "intrinsic neuron|type:IN03A067": [
+      "19862",
+      "163105"
+    ],
+    "intrinsic neuron|type:IN12B044": [
+      "20016",
+      "20293",
+      "23620"
+    ],
+    "intrinsic neuron|type:IN13B045": [
+      "20105"
+    ],
+    "intrinsic neuron|type:IN06B072": [
+      "20201"
+    ],
+    "intrinsic neuron|type:IN13B056": [
+      "20266"
+    ],
+    "intrinsic neuron|type:IN08A019": [
+      "20278"
+    ],
+    "intrinsic neuron|type:IN14A026": [
+      "20393",
+      "24603"
+    ],
+    "intrinsic neuron|type:IN19A064": [
+      "20404"
+    ],
+    "intrinsic neuron|type:IN13B066": [
+      "20504"
+    ],
+    "motor neuron|type:MNml78": [
+      "20551",
+      "30709",
+      "30781",
+      "35950",
+      "39941",
+      "167919"
+    ],
+    "ascending neuron|type:AN12B055": [
+      "20584",
+      "22478"
+    ],
+    "intrinsic neuron|type:IN20A.22A026": [
+      "20603",
+      "20965"
+    ],
+    "intrinsic neuron|type:IN09A027": [
+      "20640"
+    ],
+    "intrinsic neuron|type:IN13A062": [
+      "20715"
+    ],
+    "intrinsic neuron|type:IN05B073": [
+      "20739"
+    ],
+    "intrinsic neuron|type:IN13B047": [
+      "20872"
+    ],
+    "intrinsic neuron|type:IN08A044": [
+      "20931"
+    ],
+    "intrinsic neuron|type:IN20A.22A035": [
+      "20937",
+      "21588"
+    ],
+    "intrinsic neuron|type:IN08A027": [
+      "20988",
+      "23877",
+      "155172"
+    ],
+    "intrinsic neuron|type:IN19A088": [
+      "21052",
+      "26315",
+      "27043"
+    ],
+    "intrinsic neuron|type:IN20A.22A011": [
+      "21091"
+    ],
+    "intrinsic neuron|type:IN13A060": [
+      "21101"
+    ],
+    "intrinsic neuron|type:IN16B083": [
+      "21109"
+    ],
+    "intrinsic neuron|type:IN12B079": [
+      "21121",
+      "22277",
+      "24509",
+      "26554"
+    ],
+    "ascending neuron|type:AN08B106": [
+      "21154"
+    ],
+    "intrinsic neuron|type:IN09A045": [
+      "21182",
+      "24672"
+    ],
+    "intrinsic neuron|type:IN01A064": [
+      "21195",
+      "154106"
+    ],
+    "motor neuron|type:MNad39": [
+      "21264"
+    ],
+    "intrinsic neuron|type:IN03A084": [
+      "21373"
+    ],
+    "intrinsic neuron|type:IN03A085": [
+      "21483",
+      "25363"
+    ],
+    "ascending neuron|type:AN12B060": [
+      "21549",
+      "22136",
+      "23243",
+      "23439",
+      "100553"
+    ],
+    "intrinsic neuron|type:IN20A.22A036": [
+      "21586",
+      "21994"
+    ],
+    "intrinsic neuron|type:IN09A047": [
+      "21657"
+    ],
+    "intrinsic neuron|type:IN09A064": [
+      "21744",
+      "22830",
+      "22953",
+      "23103",
+      "25287",
+      "159312"
+    ],
+    "intrinsic neuron|type:IN19A069": [
+      "21751"
+    ],
+    "intrinsic neuron|type:IN08A026": [
+      "21872"
+    ],
+    "intrinsic neuron|type:IN03A094": [
+      "21879",
+      "24452"
+    ],
+    "intrinsic neuron|type:IN01A082": [
+      "21913",
+      "24527",
+      "25108",
+      "28516",
+      "29285"
+    ],
+    "intrinsic neuron|type:INXXX391": [
+      "21964"
+    ],
+    "intrinsic neuron|type:IN01B019": [
+      "22108"
+    ],
+    "intrinsic neuron|type:IN12B048": [
+      "22142",
+      "23774",
+      "24173",
+      "25608"
+    ],
+    "intrinsic neuron|type:IN20A.22A052": [
+      "22153",
+      "22757",
+      "25334"
+    ],
+    "intrinsic neuron|type:IN20A.22A025": [
+      "22224",
+      "24369"
+    ],
+    "intrinsic neuron|type:IN19A058": [
+      "22250"
+    ],
+    "intrinsic neuron|type:IN16B095": [
+      "22256"
+    ],
+    "intrinsic neuron|type:IN01B027": [
+      "22380"
+    ],
+    "intrinsic neuron|type:IN16B077": [
+      "22429"
+    ],
+    "intrinsic neuron|type:IN20A.22A053": [
+      "22457",
+      "23351"
+    ],
+    "intrinsic neuron|type:IN05B074": [
+      "22476"
+    ],
+    "intrinsic neuron|type:IN01A074": [
+      "22482",
+      "23975"
+    ],
+    "intrinsic neuron|type:IN08B092": [
+      "22566",
+      "24598",
+      "34313"
+    ],
+    "intrinsic neuron|type:IN12B058": [
+      "22622"
+    ],
+    "intrinsic neuron|type:IN12B042": [
+      "22727"
+    ],
+    "intrinsic neuron|type:IN13B078": [
+      "22739",
+      "24477"
+    ],
+    "intrinsic neuron|type:IN01B006": [
+      "22768",
+      "40987",
+      "158921"
+    ],
+    "intrinsic neuron|type:IN13B050": [
+      "22894"
+    ],
+    "intrinsic neuron|type:IN16B018": [
+      "22970"
+    ],
+    "intrinsic neuron|type:IN13B079": [
+      "22993"
+    ],
+    "intrinsic neuron|type:IN20A.22A056": [
+      "23336",
+      "23397"
+    ],
+    "intrinsic neuron|type:IN20A.22A041": [
+      "23528",
+      "23872"
+    ],
+    "intrinsic neuron|type:IN12B060": [
+      "23715"
+    ],
+    "intrinsic neuron|type:IN04B098": [
+      "23716"
+    ],
+    "ascending neuron|type:AN17B012": [
+      "23730"
+    ],
+    "intrinsic neuron|type:IN19A084": [
+      "23933"
+    ],
+    "motor neuron|type:MNnm11": [
+      "23937",
+      "102542"
+    ],
+    "intrinsic neuron|type:IN03A088": [
+      "23985"
+    ],
+    "intrinsic neuron|type:IN21A067": [
+      "24058"
+    ],
+    "intrinsic neuron|type:IN21A056": [
+      "24168"
+    ],
+    "intrinsic neuron|type:IN19A087": [
+      "24218"
+    ],
+    "intrinsic neuron|type:INXXX417": [
+      "24261"
+    ],
+    "intrinsic neuron|type:IN03A087": [
+      "24297"
+    ],
+    "intrinsic neuron|type:IN13B018": [
+      "24327"
+    ],
+    "intrinsic neuron|type:IN09A061": [
+      "24530"
+    ],
+    "intrinsic neuron|type:IN19A021": [
+      "24573"
+    ],
+    "intrinsic neuron|type:IN19A125": [
+      "24818"
+    ],
+    "intrinsic neuron|type:IN09A042": [
+      "24996",
+      "25199"
+    ],
+    "intrinsic neuron|type:IN13B090": [
+      "25021",
+      "26690"
+    ],
+    "intrinsic neuron|type:IN14A048": [
+      "25339"
+    ],
+    "intrinsic neuron|type:IN01B041": [
+      "25619",
+      "27552"
+    ],
+    "intrinsic neuron|type:IN13B072": [
+      "25760"
+    ],
+    "intrinsic neuron|type:IN01A030": [
+      "25780"
+    ],
+    "intrinsic neuron|type:IN16B115": [
+      "25821"
+    ],
+    "intrinsic neuron|type:IN20A.22A071": [
+      "25938",
+      "153118"
+    ],
+    "intrinsic neuron|type:IN08A049": [
+      "25945"
+    ],
+    "intrinsic neuron|type:IN14A076": [
+      "26036"
+    ],
+    "intrinsic neuron|type:IN04B108": [
+      "26083"
+    ],
+    "intrinsic neuron|type:IN21A070": [
+      "26474"
+    ],
+    "intrinsic neuron|type:IN14A081": [
+      "26817"
+    ],
+    "intrinsic neuron|type:IN19A102": [
+      "26870"
+    ],
+    "ascending neuron|type:AN12B089": [
+      "27046"
+    ],
+    "intrinsic neuron|type:IN16B102": [
+      "27128"
+    ],
+    "motor neuron|type:MNhl60": [
+      "27205",
+      "157709"
+    ],
+    "intrinsic neuron|type:IN08A039": [
+      "28035"
+    ],
+    "intrinsic neuron|type:IN14A009": [
+      "28051"
+    ],
+    "intrinsic neuron|type:IN14A093": [
+      "28120"
+    ],
+    "intrinsic neuron|type:IN09A092": [
+      "28269"
+    ],
+    "intrinsic neuron|type:IN16B122": [
+      "28286",
+      "155804"
+    ],
+    "intrinsic neuron|type:IN19A120": [
+      "28795",
+      "30214"
+    ],
+    "intrinsic neuron|type:IN09A083": [
+      "28806",
+      "28976"
+    ],
+    "intrinsic neuron|type:IN13B087": [
+      "29480"
+    ],
+    "intrinsic neuron|type:IN19A098": [
+      "30013"
+    ],
+    "intrinsic neuron|type:IN20A.22A092": [
+      "30446"
+    ],
+    "intrinsic neuron|type:IN11A044": [
+      "30965"
+    ],
+    "intrinsic neuron|type:IN20A.22A089": [
+      "33162"
+    ],
+    "intrinsic neuron|type:IN13B030": [
+      "33536"
+    ],
+    "motor neuron|type:MNhl70": [
+      "35407"
+    ],
+    "intrinsic neuron|type:IN19A080": [
+      "35638"
+    ],
+    "intrinsic neuron|type:IN09A089": [
+      "36015"
+    ],
+    "motor neuron|type:MNhl72": [
+      "37741"
+    ],
+    "intrinsic neuron|type:IN13B074": [
+      "45415"
+    ],
+    "motor neuron|type:MNnm03": [
+      "45594",
+      "156960"
+    ],
+    "|hemilineage:|NT:gaba": [
+      "47439"
+    ],
+    "intrinsic neuron|type:IN12B064": [
+      "55025"
+    ],
+    "ascending neuron|type:AN01B011": [
+      "79206"
+    ],
+    "intrinsic neuron|type:IN01B016": [
+      "100333"
+    ],
+    "intrinsic neuron|type:IN20A.22A076": [
+      "100337"
+    ],
+    "intrinsic neuron|type:IN03A010": [
+      "100492"
+    ],
+    "intrinsic neuron|type:IN26X001": [
+      "100524"
+    ],
+    "motor neuron|type:MNhl69": [
+      "100824"
+    ],
+    "intrinsic neuron|type:IN09A065": [
+      "100945"
+    ],
+    "intrinsic neuron|type:IN13B012": [
+      "101684"
+    ],
+    "motor neuron|type:MNml82": [
+      "101909"
+    ],
+    "intrinsic neuron|type:IN02A029": [
+      "102429"
+    ],
+    "intrinsic neuron|type:IN09A084": [
+      "102510",
+      "187539"
+    ],
+    "intrinsic neuron|type:IN21A083": [
+      "102621"
+    ],
+    "motor neuron|type:MNml77": [
+      "103416",
+      "200065"
+    ],
+    "intrinsic neuron|type:IN13B052": [
+      "152823"
+    ],
+    "intrinsic neuron|type:IN09A048": [
+      "153398"
+    ],
+    "intrinsic neuron|type:IN20A.22A055": [
+      "153484",
+      "162554"
+    ],
+    "intrinsic neuron|type:IN14A044": [
+      "154565"
+    ],
+    "intrinsic neuron|type:IN19A022": [
+      "154800"
+    ],
+    "intrinsic neuron|type:IN16B094": [
+      "155044"
+    ],
+    "intrinsic neuron|type:IN09A013": [
+      "155068"
+    ],
+    "intrinsic neuron|type:IN04B019": [
+      "155236"
+    ],
+    "motor neuron|type:MNml76": [
+      "156505",
+      "162825"
+    ],
+    "intrinsic neuron|type:IN13A070": [
+      "156920"
+    ],
+    "intrinsic neuron|type:IN19A096": [
+      "157077"
+    ],
+    "intrinsic neuron|type:IN03A089": [
+      "158041"
+    ],
+    "intrinsic neuron|type:IN21A078": [
+      "159348",
+      "162841"
+    ],
+    "intrinsic neuron|type:IN09A030": [
+      "162550"
+    ],
+    "motor neuron|type:MNml86": [
+      "162827"
+    ],
+    "motor neuron|type:MNhl73": [
+      "163009"
+    ],
+    "intrinsic neuron|type:IN20A.22A028": [
+      "163237"
+    ],
+    "intrinsic neuron|type:GFC4": [
+      "163891"
+    ],
+    "intrinsic neuron|type:IN19A095": [
+      "164357"
+    ],
+    "intrinsic neuron|type:IN20A.22A004": [
+      "165509"
+    ],
+    "ascending neuron|type:AN07B035": [
+      "166778"
+    ],
+    "intrinsic neuron|type:IN21A008": [
+      "171761"
+    ],
+    "motor neuron|type:MNhl71": [
+      "192364"
+    ]
+  },
+  "multiplier_prior": [
+    0.5,
+    2.0
+  ],
+  "individual_leak_prior_mV": [
+    -2,
+    2
+  ]
+}
