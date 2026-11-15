@@ -1,0 +1,390 @@
+{
+  "status": "descriptive model interventions, not all biological phenomena verified",
+  "interval_ms": [
+    200,
+    400
+  ],
+  "caveat": "only last200ms of body replay overlaps chief command; no repeating/warping body motion",
+  "conditions": [
+    {
+      "condition": "passive",
+      "legs": [
+        {
+          "leg": "LF",
+          "hook_terminal_spikes_200_400ms": [
+            11,
+            4
+          ],
+          "position_terminal_spikes_200_400ms": [
+            0,
+            10
+          ],
+          "load_touch_terminal_spikes_200_400ms": [
+            9,
+            14
+          ]
+        },
+        {
+          "leg": "LM",
+          "hook_terminal_spikes_200_400ms": [
+            2,
+            4
+          ],
+          "position_terminal_spikes_200_400ms": [
+            6,
+            0
+          ],
+          "load_touch_terminal_spikes_200_400ms": [
+            9,
+            15
+          ]
+        },
+        {
+          "leg": "LH",
+          "hook_terminal_spikes_200_400ms": [
+            6,
+            5
+          ],
+          "position_terminal_spikes_200_400ms": [
+            8,
+            2
+          ],
+          "load_touch_terminal_spikes_200_400ms": [
+            13,
+            15
+          ]
+        },
+        {
+          "leg": "RF",
+          "hook_terminal_spikes_200_400ms": [
+            5,
+            8
+          ],
+          "position_terminal_spikes_200_400ms": [
+            0,
+            8
+          ],
+          "load_touch_terminal_spikes_200_400ms": [
+            10,
+            11
+          ]
+        },
+        {
+          "leg": "RM",
+          "hook_terminal_spikes_200_400ms": [
+            8,
+            3
+          ],
+          "position_terminal_spikes_200_400ms": [
+            5,
+            0
+          ],
+          "load_touch_terminal_spikes_200_400ms": [
+            12,
+            14
+          ]
+        },
+        {
+          "leg": "RH",
+          "hook_terminal_spikes_200_400ms": [
+            3,
+            8
+          ],
+          "position_terminal_spikes_200_400ms": [
+            0,
+            15
+          ],
+          "load_touch_terminal_spikes_200_400ms": [
+            9,
+            14
+          ]
+        }
+      ]
+    },
+    {
+      "condition": "motor",
+      "legs": [
+        {
+          "leg": "LF",
+          "hook_terminal_spikes_200_400ms": [
+            1,
+            0
+          ],
+          "position_terminal_spikes_200_400ms": [
+            0,
+            10
+          ],
+          "load_touch_terminal_spikes_200_400ms": [
+            9,
+            14
+          ]
+        },
+        {
+          "leg": "LM",
+          "hook_terminal_spikes_200_400ms": [
+            0,
+            1
+          ],
+          "position_terminal_spikes_200_400ms": [
+            6,
+            0
+          ],
+          "load_touch_terminal_spikes_200_400ms": [
+            9,
+            15
+          ]
+        },
+        {
+          "leg": "LH",
+          "hook_terminal_spikes_200_400ms": [
+            1,
+            0
+          ],
+          "position_terminal_spikes_200_400ms": [
+            8,
+            2
+          ],
+          "load_touch_terminal_spikes_200_400ms": [
+            13,
+            15
+          ]
+        },
+        {
+          "leg": "RF",
+          "hook_terminal_spikes_200_400ms": [
+            0,
+            0
+          ],
+          "position_terminal_spikes_200_400ms": [
+            0,
+            8
+          ],
+          "load_touch_terminal_spikes_200_400ms": [
+            10,
+            11
+          ]
+        },
+        {
+          "leg": "RM",
+          "hook_terminal_spikes_200_400ms": [
+            0,
+            0
+          ],
+          "position_terminal_spikes_200_400ms": [
+            5,
+            0
+          ],
+          "load_touch_terminal_spikes_200_400ms": [
+            12,
+            14
+          ]
+        },
+        {
+          "leg": "RH",
+          "hook_terminal_spikes_200_400ms": [
+            0,
+            1
+          ],
+          "position_terminal_spikes_200_400ms": [
+            0,
+            15
+          ],
+          "load_touch_terminal_spikes_200_400ms": [
+            9,
+            14
+          ]
+        }
+      ]
+    },
+    {
+      "condition": "motor_web",
+      "legs": [
+        {
+          "leg": "LF",
+          "hook_terminal_spikes_200_400ms": [
+            9,
+            4
+          ],
+          "position_terminal_spikes_200_400ms": [
+            0,
+            10
+          ],
+          "load_touch_terminal_spikes_200_400ms": [
+            9,
+            14
+          ]
+        },
+        {
+          "leg": "LM",
+          "hook_terminal_spikes_200_400ms": [
+            2,
+            3
+          ],
+          "position_terminal_spikes_200_400ms": [
+            6,
+            0
+          ],
+          "load_touch_terminal_spikes_200_400ms": [
+            9,
+            15
+          ]
+        },
+        {
+          "leg": "LH",
+          "hook_terminal_spikes_200_400ms": [
+            6,
+            5
+          ],
+          "position_terminal_spikes_200_400ms": [
+            8,
+            2
+          ],
+          "load_touch_terminal_spikes_200_400ms": [
+            13,
+            15
+          ]
+        },
+        {
+          "leg": "RF",
+          "hook_terminal_spikes_200_400ms": [
+            4,
+            5
+          ],
+          "position_terminal_spikes_200_400ms": [
+            0,
+            8
+          ],
+          "load_touch_terminal_spikes_200_400ms": [
+            10,
+            11
+          ]
+        },
+        {
+          "leg": "RM",
+          "hook_terminal_spikes_200_400ms": [
+            5,
+            3
+          ],
+          "position_terminal_spikes_200_400ms": [
+            5,
+            0
+          ],
+          "load_touch_terminal_spikes_200_400ms": [
+            12,
+            14
+          ]
+        },
+        {
+          "leg": "RH",
+          "hook_terminal_spikes_200_400ms": [
+            3,
+            7
+          ],
+          "position_terminal_spikes_200_400ms": [
+            0,
+            15
+          ],
+          "load_touch_terminal_spikes_200_400ms": [
+            9,
+            14
+          ]
+        }
+      ]
+    },
+    {
+      "condition": "motor_chief_off",
+      "legs": [
+        {
+          "leg": "LF",
+          "hook_terminal_spikes_200_400ms": [
+            11,
+            4
+          ],
+          "position_terminal_spikes_200_400ms": [
+            0,
+            10
+          ],
+          "load_touch_terminal_spikes_200_400ms": [
+            9,
+            14
+          ]
+        },
+        {
+          "leg": "LM",
+          "hook_terminal_spikes_200_400ms": [
+            2,
+            4
+          ],
+          "position_terminal_spikes_200_400ms": [
+            6,
+            0
+          ],
+          "load_touch_terminal_spikes_200_400ms": [
+            9,
+            15
+          ]
+        },
+        {
+          "leg": "LH",
+          "hook_terminal_spikes_200_400ms": [
+            6,
+            5
+          ],
+          "position_terminal_spikes_200_400ms": [
+            8,
+            2
+          ],
+          "load_touch_terminal_spikes_200_400ms": [
+            13,
+            15
+          ]
+        },
+        {
+          "leg": "RF",
+          "hook_terminal_spikes_200_400ms": [
+            5,
+            8
+          ],
+          "position_terminal_spikes_200_400ms": [
+            0,
+            8
+          ],
+          "load_touch_terminal_spikes_200_400ms": [
+            10,
+            11
+          ]
+        },
+        {
+          "leg": "RM",
+          "hook_terminal_spikes_200_400ms": [
+            8,
+            3
+          ],
+          "position_terminal_spikes_200_400ms": [
+            5,
+            0
+          ],
+          "load_touch_terminal_spikes_200_400ms": [
+            12,
+            14
+          ]
+        },
+        {
+          "leg": "RH",
+          "hook_terminal_spikes_200_400ms": [
+            3,
+            8
+          ],
+          "position_terminal_spikes_200_400ms": [
+            0,
+            15
+          ],
+          "load_touch_terminal_spikes_200_400ms": [
+            9,
+            14
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "status": "unmeasured functional transduction priors; no fitted mechanoreceptor strain model",
+  "neutral_knee_deg": 0.0,
+  "hook_pA_per_deg_s": 0.5,
+  "claw_pA_per_deg": 18.0,
+  "load_max_pA": 160.0,
+  "load_half_bodyweights": 0.2,
+  "touch_max_pA": 160.0,
+  "touch_half_bodyweights": 0.05,
+  "force_units": "original model native units; load normalized by native mass times gravity",
+  "angle_convention": "Raw MuJoCo hinge coordinate, zero neutral; channel signs are coordinate signs, anatomical flexion/extension uncalibrated",
+  "source": "hook/claw qualitative roles from Dallmann2025 DOI10.1038/s41586-025-09554-2; numerical gains estimated; load/touch are functional proxies without identified EM cells",
+  "runtime": "body extraction MuJoCo3.3.2; neural transduction HH environment from conductance-rebuild",
+  "proprio_max_pA": 250.0,
+  "manual_change_reason": "Raw body angle excursions kept five of six position fibers subthreshold at gain6. Shared position-current gain18, unchanged saturation250pA, no per-leg timing or waveform tuning.",
+  "reference_body_weight_native": 1.916131322437611,
+  "load_calibration": "Fixed original-ground body weight, same calibration under altered gravity; no gravity-dependent receptor renormalization"
+}

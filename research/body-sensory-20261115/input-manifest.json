@@ -1,0 +1,12 @@
+{
+  "body_archive": {
+    "source_url": "https://github.com/linzhefeng24/Applepie/blob/2d4709de12c0912bdbb8b81d97ba5a2c0ca1ebbf/research/assets/flymimic-legacy-AB-twofile.zip",
+    "sha256": "60a720b2a367556c7408b82d6d63998039b091dab3652ea027fe42f4cb37267a",
+    "bytes": 18557190,
+    "source_revision": "2d4709de12c0912bdbb8b81d97ba5a2c0ca1ebbf",
+    "status": "existing asset referenced without duplication"
+  },
+  "neural_source": "../conductance-rebuild-20261114/results/sensory-command-context/source-manifest.json",
+  "seed": "deterministic; no random draws",
+  "software": "MuJoCo3.3.2 body; neural runtime versions per run; no body recompiled under3.9"
+}

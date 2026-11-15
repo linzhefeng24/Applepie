@@ -18,8 +18,8 @@
     },
     {
       "path": "CURRENT_MANUAL_STATE.json",
-      "bytes": 2080,
-      "sha256": "ccf6ff00514688734c26403e8f60da380e0aebc6046883fc6e2dc005c4e40ce3"
+      "bytes": 2193,
+      "sha256": "82cf117da91998e24453504c6b4cdbd257cfe974a912e66eaeffa3ff84d84583"
     },
     {
       "path": "EXPERIMENTAL_CONSTRAINTS.md",
@@ -113,8 +113,8 @@
     },
     {
       "path": "brain.json",
-      "bytes": 11359462,
-      "sha256": "57dbde1bb605679a8a5c89a6c604a80ae15005631030650204d853b4b84032e8"
+      "bytes": 11360767,
+      "sha256": "e5672aeebfb33dcf369e3af670615903e284fdb2c2c17edc1e78891393f6b09a"
     },
     {
       "path": "build_phenomena.py",
@@ -305,6 +305,21 @@
       "path": "configs/sensory-command-r3.json",
       "bytes": 6325,
       "sha256": "169b83968b4ebea7f85fad0d1d47285cc05757497e93f9d3e5c9015959443690"
+    },
+    {
+      "path": "configs/sensory-command-r4.json",
+      "bytes": 6406,
+      "sha256": "469cbff2f0aa8ea15f0c45f0e7dbce4932ad04e61eb50dd2a3a0380d8c467d4d"
+    },
+    {
+      "path": "configs/sensory-command-r5.json",
+      "bytes": 6586,
+      "sha256": "0cc074b1e43d1c52e44b46d3de82d6db8a26f6e7c23d4c411450527391d11264"
+    },
+    {
+      "path": "configs/sensory-command-r6.json",
+      "bytes": 6569,
+      "sha256": "eccb0a117f94221f7adf0db3a0bb8f736f9589dfae676186cfaf40fe32fb62f1"
     },
     {
       "path": "configs/sensory-terminal-prototype.json",
@@ -6557,6 +6572,186 @@
       "sha256": "361774373af1bbf4843d4558240c56b0dc1d1a48d9c61fdfbe9a7b2ed790fccd"
     },
     {
+      "path": "results/sensory-command-probes/r4/motor-config.json",
+      "bytes": 3406,
+      "sha256": "29485ccbabf434ebac37aef8b54a2e1fe9286384ffcb4832e3e3672859676a0f"
+    },
+    {
+      "path": "results/sensory-command-probes/r4/motor-diagnosis.json",
+      "bytes": 873,
+      "sha256": "6c6629aad51ce34ab693ae03347dacf721169d1c5dd01a4b64891831baa550a6"
+    },
+    {
+      "path": "results/sensory-command-probes/r4/motor.npz",
+      "bytes": 8150358,
+      "sha256": "5cf41e2c006da484a61079e8e8a67f4cba974674f90b8ba84686409868f2bf5b"
+    },
+    {
+      "path": "results/sensory-command-probes/r4/motor_chief_off-config.json",
+      "bytes": 3508,
+      "sha256": "8d2bf648107153c45d859c0a0ff103a6f7ea9170a2e50ba99d93d248e73e67da"
+    },
+    {
+      "path": "results/sensory-command-probes/r4/motor_chief_off-diagnosis.json",
+      "bytes": 811,
+      "sha256": "39e0fe35705cc3e78f27cc8b1ee29d6ce76d2aa9bd21ffdfe67ca19c47b0447e"
+    },
+    {
+      "path": "results/sensory-command-probes/r4/motor_chief_off.npz",
+      "bytes": 7424958,
+      "sha256": "da2bfce789d2dc2fb43ec50b5075754b89417b3c0027296bc0877a6c0bbe2737"
+    },
+    {
+      "path": "results/sensory-command-probes/r4/motor_web-config.json",
+      "bytes": 3440,
+      "sha256": "9b3938246242d9e1a39b384708e2ac606974eb00c155314871a4e941f9fbbc3b"
+    },
+    {
+      "path": "results/sensory-command-probes/r4/motor_web-diagnosis.json",
+      "bytes": 879,
+      "sha256": "5761a9eabd754ead9af6d227d945ca277bddf68e12abcb693607c469238ddea9"
+    },
+    {
+      "path": "results/sensory-command-probes/r4/motor_web.npz",
+      "bytes": 9707708,
+      "sha256": "9feaf3bd87ae4b7753d01a7c8c82dc9131ba79cad592fb6fa52033dc2a598681"
+    },
+    {
+      "path": "results/sensory-command-probes/r4/passive-config.json",
+      "bytes": 3382,
+      "sha256": "3b2a34477f296fc905a28cc22a4aa372b0922519d26347357d632cde48b16bba"
+    },
+    {
+      "path": "results/sensory-command-probes/r4/passive-diagnosis.json",
+      "bytes": 803,
+      "sha256": "9e3ad91febf4c2fc141d66b51c2ac6ef7c859480201a5b15c14822ed96c061c5"
+    },
+    {
+      "path": "results/sensory-command-probes/r4/passive.npz",
+      "bytes": 428369,
+      "sha256": "c36e69ba33d30f59dee5f57c3a376afba52af99695f1b675e7b92be66f484f04"
+    },
+    {
+      "path": "results/sensory-command-probes/r5/motor-config.json",
+      "bytes": 3582,
+      "sha256": "b05a7402b16567440760d1479b71ef3ed6d09f120ef9f454170923231218a78f"
+    },
+    {
+      "path": "results/sensory-command-probes/r5/motor-diagnosis.json",
+      "bytes": 873,
+      "sha256": "6c6629aad51ce34ab693ae03347dacf721169d1c5dd01a4b64891831baa550a6"
+    },
+    {
+      "path": "results/sensory-command-probes/r5/motor.npz",
+      "bytes": 8150358,
+      "sha256": "5cf41e2c006da484a61079e8e8a67f4cba974674f90b8ba84686409868f2bf5b"
+    },
+    {
+      "path": "results/sensory-command-probes/r5/motor_chief_off-config.json",
+      "bytes": 3684,
+      "sha256": "4efc45e62829e2b4a38e9bccb3b0f73702bd25955ef1b3834c2f528c994d37ff"
+    },
+    {
+      "path": "results/sensory-command-probes/r5/motor_chief_off-diagnosis.json",
+      "bytes": 811,
+      "sha256": "39e0fe35705cc3e78f27cc8b1ee29d6ce76d2aa9bd21ffdfe67ca19c47b0447e"
+    },
+    {
+      "path": "results/sensory-command-probes/r5/motor_chief_off.npz",
+      "bytes": 7424958,
+      "sha256": "da2bfce789d2dc2fb43ec50b5075754b89417b3c0027296bc0877a6c0bbe2737"
+    },
+    {
+      "path": "results/sensory-command-probes/r5/motor_web-config.json",
+      "bytes": 3616,
+      "sha256": "51603713c4204428dca6f83abeac76d76d5ba55e6aa2ca2c3f6f37e165a50f81"
+    },
+    {
+      "path": "results/sensory-command-probes/r5/motor_web-diagnosis.json",
+      "bytes": 835,
+      "sha256": "5d138cc8e00876fb9a642d1daa170bdcdd15d61bcf2e9ed63a788375d9af869d"
+    },
+    {
+      "path": "results/sensory-command-probes/r5/motor_web.npz",
+      "bytes": 9697219,
+      "sha256": "85ec258fe604cf010be8dbb9dbee3c06ba8557017046f64219a82cc85e1bf64c"
+    },
+    {
+      "path": "results/sensory-command-probes/r5/passive-config.json",
+      "bytes": 3558,
+      "sha256": "31caac3cd9592984a00653ec0c81f8eb9c58a5c8bc74cec5ff9b582e7577e70f"
+    },
+    {
+      "path": "results/sensory-command-probes/r5/passive-diagnosis.json",
+      "bytes": 803,
+      "sha256": "9e3ad91febf4c2fc141d66b51c2ac6ef7c859480201a5b15c14822ed96c061c5"
+    },
+    {
+      "path": "results/sensory-command-probes/r5/passive.npz",
+      "bytes": 428369,
+      "sha256": "c36e69ba33d30f59dee5f57c3a376afba52af99695f1b675e7b92be66f484f04"
+    },
+    {
+      "path": "results/sensory-command-probes/r6/motor-config.json",
+      "bytes": 3582,
+      "sha256": "04b8880ddbcd0ca0cd425568abd185073c424d0803ce181901bf603e597979a7"
+    },
+    {
+      "path": "results/sensory-command-probes/r6/motor-diagnosis.json",
+      "bytes": 873,
+      "sha256": "6c6629aad51ce34ab693ae03347dacf721169d1c5dd01a4b64891831baa550a6"
+    },
+    {
+      "path": "results/sensory-command-probes/r6/motor.npz",
+      "bytes": 8150358,
+      "sha256": "5cf41e2c006da484a61079e8e8a67f4cba974674f90b8ba84686409868f2bf5b"
+    },
+    {
+      "path": "results/sensory-command-probes/r6/motor_chief_off-config.json",
+      "bytes": 3684,
+      "sha256": "4a57d785d23d09c53f4237634589ad371af378cf1c73ee7b16fbc4cb1f22c7ad"
+    },
+    {
+      "path": "results/sensory-command-probes/r6/motor_chief_off-diagnosis.json",
+      "bytes": 811,
+      "sha256": "39e0fe35705cc3e78f27cc8b1ee29d6ce76d2aa9bd21ffdfe67ca19c47b0447e"
+    },
+    {
+      "path": "results/sensory-command-probes/r6/motor_chief_off.npz",
+      "bytes": 7424958,
+      "sha256": "da2bfce789d2dc2fb43ec50b5075754b89417b3c0027296bc0877a6c0bbe2737"
+    },
+    {
+      "path": "results/sensory-command-probes/r6/motor_web-config.json",
+      "bytes": 3616,
+      "sha256": "c4b90ce076661f08cf0d8c86f26c347be9468ecc5bd82442c8a1b0af5af3e2bd"
+    },
+    {
+      "path": "results/sensory-command-probes/r6/motor_web-diagnosis.json",
+      "bytes": 805,
+      "sha256": "a59c6b1b89146b61b22ac0ac1ada0a66e564666091985ebf254b89088cdaccb6"
+    },
+    {
+      "path": "results/sensory-command-probes/r6/motor_web.npz",
+      "bytes": 9699772,
+      "sha256": "18d8e5a11fb5f6b978de80c5eec58ebe6921321f220587e5518d4deda0937d8b"
+    },
+    {
+      "path": "results/sensory-command-probes/r6/passive-config.json",
+      "bytes": 3558,
+      "sha256": "77a6f29b7e881d1be2ab3c94d60c1385f013fafec24b8694cb0d59f9e5fbef24"
+    },
+    {
+      "path": "results/sensory-command-probes/r6/passive-diagnosis.json",
+      "bytes": 803,
+      "sha256": "9e3ad91febf4c2fc141d66b51c2ac6ef7c859480201a5b15c14822ed96c061c5"
+    },
+    {
+      "path": "results/sensory-command-probes/r6/passive.npz",
+      "bytes": 428369,
+      "sha256": "c36e69ba33d30f59dee5f57c3a376afba52af99695f1b675e7b92be66f484f04"
+    },
+    {
       "path": "results/sensory-command-r2-chief_LF.log",
       "bytes": 636,
       "sha256": "ccc820ded85d3752707430eb67d8654a10bef67c46427122c56c910631e0145e"
@@ -6603,6 +6798,66 @@
     },
     {
       "path": "results/sensory-command-r3-passive.log",
+      "bytes": 621,
+      "sha256": "1600320a82bddae81a5f50409fd6c85b62c88329428e134e9fe85bd69501df16"
+    },
+    {
+      "path": "results/sensory-command-r4-motor.log",
+      "bytes": 691,
+      "sha256": "1cd2edb4f40d77e8fb668ad9b922d212e89309ea2fd9fe32412ea89906d3111b"
+    },
+    {
+      "path": "results/sensory-command-r4-motor_chief_off.log",
+      "bytes": 629,
+      "sha256": "586925b07e771fc39bcd2c3ac4f8551f2e510317bd3af9d741ba38537e985e46"
+    },
+    {
+      "path": "results/sensory-command-r4-motor_web.log",
+      "bytes": 697,
+      "sha256": "8126faa9abe80fb1affd3358e2d3cf20f2ec1873c9d4dccfb2f5e1354b9d8b35"
+    },
+    {
+      "path": "results/sensory-command-r4-passive.log",
+      "bytes": 621,
+      "sha256": "1600320a82bddae81a5f50409fd6c85b62c88329428e134e9fe85bd69501df16"
+    },
+    {
+      "path": "results/sensory-command-r5-motor.log",
+      "bytes": 691,
+      "sha256": "1cd2edb4f40d77e8fb668ad9b922d212e89309ea2fd9fe32412ea89906d3111b"
+    },
+    {
+      "path": "results/sensory-command-r5-motor_chief_off.log",
+      "bytes": 629,
+      "sha256": "586925b07e771fc39bcd2c3ac4f8551f2e510317bd3af9d741ba38537e985e46"
+    },
+    {
+      "path": "results/sensory-command-r5-motor_web.log",
+      "bytes": 653,
+      "sha256": "80d3d06e32c403f5f18162665ef38ed7b65a7fe6be8f5c967422c2d283d95ed3"
+    },
+    {
+      "path": "results/sensory-command-r5-passive.log",
+      "bytes": 621,
+      "sha256": "1600320a82bddae81a5f50409fd6c85b62c88329428e134e9fe85bd69501df16"
+    },
+    {
+      "path": "results/sensory-command-r6-motor.log",
+      "bytes": 691,
+      "sha256": "1cd2edb4f40d77e8fb668ad9b922d212e89309ea2fd9fe32412ea89906d3111b"
+    },
+    {
+      "path": "results/sensory-command-r6-motor_chief_off.log",
+      "bytes": 629,
+      "sha256": "586925b07e771fc39bcd2c3ac4f8551f2e510317bd3af9d741ba38537e985e46"
+    },
+    {
+      "path": "results/sensory-command-r6-motor_web.log",
+      "bytes": 623,
+      "sha256": "fc8c56bbf862c3af92cd1f23c4ef2991481af69b122f255567c6da0f523a3d37"
+    },
+    {
+      "path": "results/sensory-command-r6-passive.log",
       "bytes": 621,
       "sha256": "1600320a82bddae81a5f50409fd6c85b62c88329428e134e9fe85bd69501df16"
     },
@@ -7268,8 +7523,8 @@
     },
     {
       "path": "sensory_terminal_model.py",
-      "bytes": 4845,
-      "sha256": "92529ffc87f0f72be9459c98e3fc1932737c918bfe31b5063336a5d518b9f306"
+      "bytes": 5523,
+      "sha256": "1621f3c4a9bfb963ab8aa7ba172e15ddeae25ebb0ad82343de04f2856c98a4ec"
     },
     {
       "path": "sensory_terminal_probe.py",
@@ -7303,8 +7558,8 @@
     },
     {
       "path": "test_sensory_terminal.py",
-      "bytes": 1554,
-      "sha256": "99db74b570dc192b810bd1fe7ae04bb3dd62f66102baa15313c2546ae23234f9"
+      "bytes": 2016,
+      "sha256": "bee9088f5c727d7439e30b61ef2de6a11848733e7065afd9d65a5e8b99391525"
     },
     {
       "path": "test_temporal_protocol.py",

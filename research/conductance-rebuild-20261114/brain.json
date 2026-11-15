@@ -247412,7 +247412,7 @@
     "observations": "results/frozen-neural-panel-unified-r8/observations.json",
     "condition_inventory": "results/manual-run-inventory.json"
   },
-  "latest_neural_review_namespace": "manual_completion_r9_20261115",
+  "latest_neural_review_namespace": "body_sensory_review_20261115",
   "manual_completion_r9_20261115": {
     "evidence_status": "independently rerun model outputs; not lab measurements or restored historical artifacts",
     "report": "MANUAL_COMPLETION_R9.md",
@@ -247438,5 +247438,32 @@
       "whole-network rhythm elimination under E2 ablation"
     ],
     "not_claimed": "Most brain.json phenomena passed; walking reproduced; exact biological parameters recovered"
+  },
+  "body_sensory_review_20261115": {
+    "status": "new implementation and independently rerun model; unmeasured sensory priors",
+    "report": "../body-sensory-20261115/RESULTS.md",
+    "source_bank": "configs/sensory-command-r6.json",
+    "sensory_parameters": "../body-sensory-20261115/parameters-position-r3.json",
+    "causal_review": "../body-sensory-20261115/results/causal-phenomena-review-position-r3.json",
+    "qualitative_progress": [
+      "actual six-leg mechanics replaces synthetic sine",
+      "six chief9A recruited with shared cell-type parameters",
+      "Web silences all six chiefs in stable window",
+      "actual-motion hook response suppressed and restored after chief ablation",
+      "six-leg position responses preserved under chief activation"
+    ],
+    "physical_checks": [
+      "no-ground load/touch signals and spikes zero",
+      "observed/unobserved AB final states identical",
+      "world contact-force transformation checked"
+    ],
+    "unresolved": [
+      "load/touch EM identity and calibrated strain model",
+      "claw population U-shaped tuning",
+      "sensory output reconnection to identified VNC",
+      "DN-generated AB movement",
+      "BRK and BB/BPN constraints"
+    ],
+    "not_claimed": "most brain phenomena passed or whole-network closed loop"
   }
 }

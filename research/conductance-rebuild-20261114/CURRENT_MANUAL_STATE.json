@@ -22,7 +22,8 @@
   "r8_complete_conditions": 18,
   "regression_checks_passed": 28,
   "r9_complete_conditions": 18,
-  "sensory_source_bank": "configs/sensory-command-r3.json",
+  "sensory_source_bank": "configs/sensory-command-r6.json",
   "sensory_terminal_bank": "configs/sensory-terminal-r2.json",
-  "sensory_status": "New mechanism hypothesis with six completed causal conditions, not recovered sensory EM cells or calibrated physiology"
+  "sensory_status": "Six chiefs recruited and Web-silenced in separate MANC assay; body mechanics drive HH sensory prototypes; identified sensory\u2192VNC output reconnection absent",
+  "latest_body_sensory_report": "../body-sensory-20261115/RESULTS.md"
 }
