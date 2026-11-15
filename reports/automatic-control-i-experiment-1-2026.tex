@@ -1,0 +1,287 @@
+% !TeX program = xelatex
+\documentclass[11pt,a4paper]{article}
+\usepackage{fontspec}
+\setmainfont{Noto Serif CJK SC}
+\setsansfont{Noto Sans CJK SC}
+\XeTeXlinebreaklocale "zh"
+\XeTeXlinebreakskip=0pt plus 1pt
+\usepackage[margin=24mm,headheight=15pt]{geometry}
+\usepackage{amsmath,amssymb,booktabs,array,graphicx}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc}
+\usepackage{caption,fancyhdr,indentfirst}
+\usepackage[unicode,hidelinks]{hyperref}
+\hypersetup{pdftitle={电机建模与二阶系统阶跃响应实验报告}}
+\renewcommand{\figurename}{图}
+\renewcommand{\tablename}{表}
+\renewcommand{\refname}{参考文献}
+\renewcommand{\abstractname}{摘\quad 要}
+\renewcommand{\contentsname}{目录}
+\renewcommand{\baselinestretch}{1.28}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{2pt}
+\setlength{\emergencystretch}{2em}
+\setlength{\textfloatsep}{13pt}
+\captionsetup{font=small,labelsep=quad}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small 自动控制原理Ⅰ}
+\fancyhead[R]{\small 实验一}
+\fancyfoot[C]{\small\thepage}
+\newcommand{\unit}[1]{\,\mathrm{#1}}
+\newcommand{\sect}[1]{\section{#1}}
+\tikzset{block/.style={draw,minimum height=9mm,minimum width=23mm,align=center},arr/.style={-{Stealth[length=2mm]},thick}}
+
+\begin{document}
+\begin{center}
+ {\LARGE\bfseries 电机建模与二阶系统阶跃响应}\par
+ \vspace{5pt}
+ {\large 自动控制原理Ⅰ实验报告}\par
+ \vspace{10pt}
+ 姓名：\underline{\hspace{24mm}}\quad 学号：\underline{\hspace{30mm}}\par
+ \vspace{4pt}
+ 班级：\underline{\hspace{24mm}}\quad 日期：\underline{\hspace{30mm}}
+\end{center}
+\vspace{4pt}
+
+\begin{abstract}
+基于QUBE-Servo实验平台，建立直流电机输入电压至转速的一阶模型，以及比例控制下的转角二阶闭环模型。通过方波输入比较转速响应，并利用位置阶跃响应分析超调量、调节时间和稳态误差。位置硬件实验测得稳态转角约为$1.158\unit{rad}$，超调量约为$10.3\%$，以实际稳态值为基准的$2\%$调节时间约为$0.324\unit{s}$。改变比例增益后，理论模型呈现过阻尼、临界阻尼附近及欠阻尼响应；低增益工况下，实际电机位置接近零，反映出线性模型对摩擦及驱动死区描述的不足。
+\end{abstract}
+
+\sect{实验目的与装置}
+掌握编码器读取、电压输出和转速滤波方法；建立电机一阶转速模型及二阶位置闭环模型；比较仿真与实际系统的动态、稳态性能，分析比例增益对阶跃响应的影响。
+
+实验采用QUBE-Servo系列旋转伺服装置，通过MATLAB/Simulink搭建模型，使用QUARC进行实时控制。模拟电压由HIL Write Analog输出，电机转角由编码器读取。编码器每转对应2048个计数，计数值$N$与转角的关系为
+\begin{equation}
+ \theta=\frac{2\pi}{2048}N.
+\end{equation}
+转角微分后经低通滤波得到转速估计，采用的滤波环节为
+\begin{equation}
+ G_f(s)=\frac{50}{s+50},\qquad
+ \widehat\Omega(s)=\frac{50s}{s+50}\Theta(s).
+\end{equation}
+
+\sect{理论建模}
+\subsection{电压至转速的一阶模型}
+电枢回路与机械运动方程分别为
+\begin{align}
+ V_m&=R_m i_m+L_m\frac{\mathrm di_m}{\mathrm dt}+k_m\omega_m,\\
+ J_{\mathrm{eq}}\frac{\mathrm d\omega_m}{\mathrm dt}&=k_t i_m.
+\end{align}
+忽略电枢电感所对应的快速动态以及摩擦转矩，消去$i_m$，得
+\begin{equation}
+ J_{\mathrm{eq}}R_m\dot\omega_m+k_tk_m\omega_m=k_tV_m.
+\end{equation}
+因此，电压至转速的传递函数为
+\begin{equation}
+ G_\omega(s)=\frac{\Omega_m(s)}{V_m(s)}
+ =\frac{K}{\tau s+1},\qquad
+ K=\frac1{k_m},\quad \tau=\frac{J_{\mathrm{eq}}R_m}{k_tk_m}.
+\end{equation}
+由指导书给出的参数\cite{guide}，取
+\begin{equation}
+ \boxed{G_\omega(s)=\frac{23.8095}{0.0995s+1}}.
+\end{equation}
+理想模型的稳态转速为$\omega_\infty=KV_m$，时间常数为$\tau$。
+
+\subsection{电压至转角的二阶闭环模型}
+对转速积分，得转角开环模型
+\begin{equation}
+ G_\theta(s)=\frac{K}{s(\tau s+1)}.
+\end{equation}
+采用比例增益$k_1$和单位负反馈，闭环传递函数为
+\begin{equation}
+ \Phi(s)=\frac{k_1K}{\tau s^2+s+k_1K}
+ =\frac{\omega_n^2}{s^2+2\xi\omega_n s+\omega_n^2}.
+\end{equation}
+对应参数为
+\begin{equation}
+ \omega_n=\sqrt{\frac{k_1K}{\tau}},\qquad
+ T=\sqrt{\frac{\tau}{k_1K}},\qquad
+ \xi=\frac1{2\sqrt{k_1K\tau}}.
+ \label{eq:parameters}
+\end{equation}
+临界阻尼条件$\xi=1$给出
+\begin{equation}
+ k_c=\frac1{4K\tau}=0.10553,\qquad T_c=2\tau=0.199\unit{s}.
+\end{equation}
+在标称模型下，$0<k_1<k_c$为过阻尼，$k_1=k_c$为临界阻尼，$k_1>k_c$为欠阻尼。
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[node distance=12mm,font=\small]
+ \node[circle,draw,minimum size=6mm] (sum) {$\Sigma$};
+ \node[block,right=of sum,minimum width=15mm] (gain) {$k_1$};
+ \node[block,right=of gain,minimum width=36mm] (motor) {$\displaystyle\frac{K}{s(\tau s+1)}$};
+ \coordinate[right=17mm of motor] (out);
+ \draw[arr] ($(sum.west)+(-16mm,0)$) node[left] {$r$} -- node[above,pos=.85] {$+$} (sum.west);
+ \draw[arr] (sum) -- (gain);
+ \draw[arr] (gain) -- node[above] {$u$} (motor);
+ \draw[arr] (motor) -- (out) node[right] {$\theta$};
+ \draw[arr] ($(out)+(-5mm,0)$) -- ++(0,-13mm) -| node[pos=.94,left] {$-$} (sum.south);
+\end{tikzpicture}
+\caption{电机位置比例控制闭环模型}
+\label{fig:loop}
+\end{figure}
+
+\subsection{动态性能指标}
+采用相对实际稳态值的超调量
+\begin{equation}
+ \sigma=\frac{y_{\max}-y_\infty}{y_\infty}\times100\%.
+\end{equation}
+$2\%$调节时间定义为响应进入$[0.98y_\infty,1.02y_\infty]$后不再越界所需的最短时间，从阶跃施加时刻起算。欠阻尼模型满足
+\begin{equation}
+ \sigma=\mathrm e^{-\pi\xi/\sqrt{1-\xi^2}}\times100\%,\qquad
+ t_s(2\%)\approx\frac{4T}{\xi},
+ \label{eq:metrics}
+\end{equation}
+其中调节时间近似式按指导书给定的阻尼范围使用，不用于临界阻尼和过阻尼响应的精确计算。
+
+\sect{实验方法}
+\subsection{一阶模型与硬件对比（指导书3.2、3.3）}
+将相同电压同时输入理论传递函数和实际电机。实际电机编码器输出经弧度换算、微分及低通滤波后，与模型转速在同一示波器中比较。记录方波电压及两条转速响应的稳态平台和过渡过程。
+
+\subsection{位置阶跃响应对比（指导书4.3第2步）}
+将理论位置闭环与实际电机闭环置于同一Simulink模型，施加$1\unit{rad}$阶跃参考。记录驱动信号及位置响应，并读取稳态值、峰值和误差带进入时间。单位增益时驱动电压与位置误差数值相同。
+
+\subsection{改变增益（指导书4.3第3步）}
+按图\ref{fig:loop}分别改变仿真支路和硬件支路的比例增益，比较不同阻尼工况。位置示波器比较参考位置、实际位置和仿真位置。对仿真响应与硬件响应分别计算性能指标，硬件未进入目标位置误差带时不记作完成跟踪。
+
+\sect{实验结果}
+\subsection{电机转速响应}
+方波输入下，两条转速曲线均表现出惯性上升和下降，平台约为120和104。以较高平台为基准，其相对差异为
+\begin{equation}
+ \delta=\frac{120-104}{120}\times100\%\approx13.3\%.
+\end{equation}
+原始记录未保留两条转速曲线的图例，故该值仅作为平台差异，不指定理论与实测的对应颜色。
+
+电压平台约为$4\unit{V}$，而标称模型对应的稳态转速为
+\begin{equation}
+ \omega_\infty=23.8095\times4\approx95.24\unit{rad/s}.
+\end{equation}
+标称计算值与记录平台不一致，表明需进一步校核实际使用的传递函数参数及速度换算比例。转速变化趋势与一阶惯性模型一致，但现有数据不支持认定标称模型的稳态幅值已得到验证。
+
+\subsection{单位增益位置响应：理论与硬件对比}
+由式\eqref{eq:parameters}，$k_1=1$时有
+\begin{equation}
+ T=0.06465\unit{s},\qquad \xi=0.32485.
+\end{equation}
+理论超调量约$33.99\%$，$2\%$调节时间近似为$0.796\unit{s}$。
+
+硬件位置响应的稳态值为$1.158\unit{rad}$，峰值为$1.277\unit{rad}$，故
+\begin{equation}
+ \sigma_{\mathrm{exp}}=
+ \frac{1.277-1.158}{1.158}\times100\%\approx10.3\%.
+\end{equation}
+测量中采用的误差带上下限约为1.135和$1.181\unit{rad}$，与$1.158\unit{rad}$附近的$\pm2\%$范围相符。阶跃开始于$1.000\unit{s}$，游标标记的进入时间约为$1.324\unit{s}$，得到
+\begin{equation}
+ t_{s,\mathrm{exp}}\approx1.324-1.000=0.324\unit{s}.
+\end{equation}
+该值由示波器游标读出，最终越界点的判断受照片分辨率限制。
+
+\begin{table}[htbp]
+\centering
+\caption{单位增益位置闭环的理论与实验结果}
+\begin{tabular}{lcc}
+\toprule
+指标 & 标称理论模型 & 硬件实验\\
+\midrule
+稳态转角/$\mathrm{rad}$ & 1 & 1.158\\
+超调量/$\%$ & 33.99 & 10.3\\
+$2\%$调节时间/$\mathrm{s}$ & 0.796（近似）& 0.324（游标）\\
+稳态误差/$\mathrm{rad}$ & 0 & $-0.158$\\
+\bottomrule
+\end{tabular}
+\label{tab:hardware}
+\end{table}
+
+驱动信号在阶跃后趋近$-0.16$，与位置误差
+\begin{equation}
+ e_\infty=1-1.158=-0.158\unit{rad}
+\end{equation}
+在数值上相符。实测位置终值偏离参考，不能将该响应视为理想单位静态增益模型的完全复现。
+
+\subsection{不同阻尼工况的仿真与硬件响应}
+三组蓝色理论响应的测量结果见表\ref{tab:damping}。其中，单调响应分别在绝对时间2.677和$2.165\unit{s}$达到最终值的$98\%$；欠阻尼响应峰值约为1.198，最后进入$0.98\sim1.02$误差带的游标时间为$1.767\unit{s}$。各时间均扣除$1\unit{s}$阶跃起始时间。
+
+\begin{table}[htbp]
+\centering
+\caption{不同阻尼工况下的理论仿真响应读数}
+\begin{tabular}{lccc}
+\toprule
+工况 & 峰值 & 超调量/$\%$ & $t_s(2\%)/\mathrm{s}$\\
+\midrule
+过阻尼 & 无超调 & 约0 & 1.677\\
+临界阻尼附近 & 无超调 & 约0 & 1.165\\
+欠阻尼 & 1.198 & 19.8 & 0.767\\
+\bottomrule
+\end{tabular}
+\label{tab:damping}
+\end{table}
+
+\paragraph{临界阻尼判别。}
+临界阻尼阶跃响应为
+\begin{equation}
+ y(t)=1-\left(1+\frac{t}{T_c}\right)\mathrm e^{-t/T_c}.
+\end{equation}
+令$y(t_s)=0.98$，解得$t_s/T_c=5.83392$，因此
+\begin{equation}
+ t_{s,c}=5.83392\times0.199=1.16095\unit{s}.
+\end{equation}
+其与测量值$1.165\unit{s}$相差约$0.35\%$，结合单调且无超调的曲线，可将该理论响应判为临界阻尼附近工况。
+
+\paragraph{过阻尼判别。}
+另一单调响应的调节时间为$1.677\unit{s}$。固定标称$K$与$\tau$，利用过阻尼阶跃响应反算得
+\begin{equation}
+ k_{1,\mathrm{eq}}\approx0.08067,\qquad \xi_{\mathrm{eq}}\approx1.144>1.
+\end{equation}
+因此，该理论曲线与过阻尼模型一致。此处增益为响应反算的等效值，原始增益设置未完整留存。
+
+\paragraph{欠阻尼判别。}
+由超调比例$M_p=0.198$可得
+\begin{equation}
+ \xi=\frac{-\ln M_p}{\sqrt{\pi^2+(\ln M_p)^2}}\approx0.458.
+\end{equation}
+对应标称模型的等效比例增益约为0.50。取$k_1=0.5$时，理论超调量为$19.69\%$，近似调节时间为$0.796\unit{s}$，与记录中的$19.8\%$和$0.767\unit{s}$相近。
+
+\paragraph{硬件响应。}
+两组低增益工况下，红色实际位置曲线接近零，未达到$1\unit{rad}$目标。表\ref{tab:damping}中的调节时间仅属于理论仿真，不能列为硬件跟踪指标。欠阻尼工况下，实际位置终值约为$0.79\unit{rad}$，存在约$0.21\unit{rad}$稳态误差。该曲线的峰值与最终越界时间未作统一读数，本报告不将蓝色仿真曲线的数据代入实际响应。
+
+\sect{分析与讨论}
+\subsection{低增益下的实际电机响应}
+比例控制满足
+\begin{equation}
+ u=k_1(r-\theta).
+\end{equation}
+初始位置为零且参考为$1\unit{rad}$时，驱动电压数值约等于$k_1$。低增益工况的驱动电压很小，静摩擦及驱动死区因而不可忽略。实际转角接近零，而线性仿真仍缓慢趋近参考，说明简化模型无法描述这一低电压区间。现有记录未测量起动阈值，尚不能量化静摩擦与驱动死区各自的贡献。
+
+在静止平衡时，摩擦可抵消一定范围内的电磁转矩，使非零位置误差对应的控制电压仍不能驱动电机。位置偏差也可能包含反馈比例或偏置影响，故稳态值偏离1的原因不能仅凭曲线归结为某一个参数。
+
+\subsection{比例增益与响应速度}
+增大比例增益使自然频率提高、阻尼比降低，响应由单调趋近转为带超调的振荡过程。但本模型中的$T$与$\xi$同时随增益变化，满足
+\begin{equation}
+ \frac{T}{\xi}=2\tau.
+\end{equation}
+在式\eqref{eq:metrics}的适用范围内，$t_s\approx8\tau$。因此，提高比例增益并不保证调节时间持续缩短，还可能增加超调并加剧实际系统中的振荡。
+
+\subsection{滤波与模型误差}
+降低低通滤波器截止频率可抑制编码器微分噪声，但会增大滞后；提高截止频率能保留较快的动态分量，也会保留更多噪声。仿真与实测的差异还包括电机参数偏差、未建模摩擦及电感动态等因素。对稳态幅值的比较，应先核对换算比例与实际模型参数，再讨论动力学差异。
+
+\subsection{由阶跃响应辨识参数}
+对标准欠阻尼响应，可由超调量求$\xi$，由相对阶跃起点的峰值时间$t_p$求自然频率，进而估计电机参数：
+\begin{equation}
+ \omega_n=\frac{\pi}{t_p\sqrt{1-\xi^2}},\qquad
+ \tau=\frac1{2\xi\omega_n},\qquad
+ K=\frac{\omega_n^2\tau}{k_1}.
+\end{equation}
+该方法要求已知实际比例增益，且响应可由标准二阶模型近似。明显存在死区或静摩擦的低增益响应不适合直接按该模型辨识。
+
+\sect{实验结论}
+一阶模型能够描述电机转速的主要惯性特征，但记录平台与标称模型存在差异，需要校核参数及速度换算。单位增益位置实验中，实际响应的超调量约为$10.3\%$，相对实际稳态值的$2\%$调节时间约为$0.324\unit{s}$，稳态位置误差约为$-0.158\unit{rad}$。
+
+改变增益后，理论仿真呈现过阻尼、临界阻尼附近及欠阻尼三类响应，其调节时间分别约为1.677、1.165和$0.767\unit{s}$。低增益硬件工况未完成目标跟踪，欠阻尼参数组的硬件响应也存在稳态偏差。实验表明，比例增益的选择既需考虑理论阻尼与超调，也需考虑实际电机的低电压非线性。
+
+\begin{thebibliography}{9}
+\bibitem{guide} 自动控制原理Ⅰ实验教学资料．2026秋自动控制原理Ⅰ实验指示书：实验一．2026年10月12日，9--18．
+\end{thebibliography}
+\end{document}
