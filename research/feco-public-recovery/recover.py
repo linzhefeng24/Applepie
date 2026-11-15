@@ -14,7 +14,7 @@ def sha(path):
 def main():
  repo=os.environ['GITHUB_REPOSITORY'];rev=os.environ['GITHUB_SHA'];manifest=json.load(open(R/'inputs.json'));releases=json.loads(gh('api',f'repos/{repo}/releases?per_page=100'));release=next((x for x in releases if x['tag_name']==TAG),None)
  if release is None:
-  gh('release','create',TAG,'--repo',repo,'--draft','--target',rev,'--title','Verified public FeCO inputs and access diagnostics','--notes','Public dataset sources and verified files only. Failure manifests distinguish unavailable downloads from recovered input.');release=next(x for x in json.loads(gh('api',f'repos/{repo}/releases?per_page=100')) if x['tag_name']==TAG)
+  release=json.loads(subprocess.check_output(['gh','api',f'repos/{repo}/releases','--input','-'],input=json.dumps({'tag_name':TAG,'target_commitish':rev,'name':'Verified public FeCO inputs and access diagnostics','body':'Public dataset sources and verified files only; failures are retained.','draft':True}),text=True))
  records=[]
  with tempfile.TemporaryDirectory() as directory:
   for item in manifest['inputs']:
@@ -31,7 +31,7 @@ def main():
       if existing:raise RuntimeError('Conflicting existing archive asset, never overwrite')
       gh('release','upload',TAG,str(path),'--repo',repo);assets=json.loads(gh('api',f'repos/{repo}/releases/{release["id"]}'))['assets'];asset=next(x for x in assets if x['name']==item['name']);assert asset['digest']=='sha256:'+item['sha256'];record.update(status='verified_release_asset',asset_id=asset['id'],asset_url=asset['browser_download_url']);break
      except urllib.error.HTTPError as error:record['attempts'].append({'public_url':url,'http_status':error.code})
-     except (TimeoutError,urllib.error.URLError) as error:record['attempts'].append({'public_url':url,'error_type':type(error).__name__})
+     except (TimeoutError,urllib.error.URLError,ConnectionError,OSError) as error:record['attempts'].append({'public_url':url,'error_type':type(error).__name__})
    path.unlink(missing_ok=True);records.append(record);print(item['name'],record['status'],flush=True)
   output={'dataset_doi':manifest['dataset_doi'],'dataset_version_id':manifest['dataset_version_id'],'workflow_code_revision':rev,'release_id':release['id'],'records':records,'interpretation':'Only verified_release_asset means recovered. Failed public downloads are not declared restored.'};path=Path(directory)/('recovery-'+rev+'.json');path.write_text(json.dumps(output,indent=2)+'\n');gh('release','upload',TAG,str(path),'--repo',repo)
 if __name__=='__main__':main()
