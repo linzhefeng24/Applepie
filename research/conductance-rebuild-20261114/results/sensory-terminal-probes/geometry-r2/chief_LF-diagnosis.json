@@ -1,0 +1,36 @@
+{
+  "mode": "chief_LF",
+  "numerical_failure": false,
+  "chief_source_rate_hz": 71.11111111111111,
+  "fiber_observations": [
+    {
+      "prototype_type": "hook_flexion",
+      "proximal_spikes": 8,
+      "terminal_spikes": 0,
+      "mean_terminal_Ca_uM": 8.878178856623924e-07,
+      "mean_release_proxy": 7.008764988401193e-16
+    },
+    {
+      "prototype_type": "hook_extension",
+      "proximal_spikes": 16,
+      "terminal_spikes": 0,
+      "mean_terminal_Ca_uM": 8.948828317036657e-07,
+      "mean_release_proxy": 7.173802270931217e-16
+    },
+    {
+      "prototype_type": "claw_flexion",
+      "proximal_spikes": 14,
+      "terminal_spikes": 14,
+      "mean_terminal_Ca_uM": 0.00789300284754258,
+      "mean_release_proxy": 0.004594400534727136
+    },
+    {
+      "prototype_type": "claw_extension",
+      "proximal_spikes": 28,
+      "terminal_spikes": 28,
+      "mean_terminal_Ca_uM": 0.0134022308697618,
+      "mean_release_proxy": 0.008752160334114875
+    }
+  ],
+  "status": "new mechanism hypothesis; not a recovered sensory connectome or a calibrated fluorescence fit"
+}

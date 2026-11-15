@@ -40,3 +40,12 @@ The public Dryad download response was a browser-validation page, not the data.
 The checksum checks correctly reject it; no challenge bypass is attempted. The
 raw data are NOT reported as recovered. The DOI's public metadata and published
 source notebooks still provide the verified chief9A identity and motif.
+
+The first terminal prototype incorrectly failed to recruit claw and loaded the
+proximal hook axon excessively. The shared geometry-r2 weakens distal axial
+coupling3→1nS and increases position-current gain4→6pA/degree. Passive propagation
+now reaches all four prototype terminals; direct chief activation blocks hook
+terminal spikes while retaining proximal hook spikes and unchanged claw output.
+The source r3 chief prior recruits leftT1 chief at~39Hz and DNg74 coactivation
+silences it. Run the full causal chain with actual source spikes, identical
+mechanical stimuli, chief ablation and local receptor-block control.

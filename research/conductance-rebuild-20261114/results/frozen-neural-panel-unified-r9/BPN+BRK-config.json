@@ -1,0 +1,257 @@
+{
+  "bank_sha256": "4c16d81c052a6e58a0b489559d08f43bc863d142817749ad8bcf4bc3aa3fa276",
+  "parameters": {
+    "dt_ms": 0.0125,
+    "duration_ms": 1600.0,
+    "onset_ms": 200.0,
+    "drive_pA": 160.0,
+    "ge_nS_per_synapse": 0.012,
+    "gi_nS_per_synapse": 0.006,
+    "tau_e_rise_ms": 0.5,
+    "tau_e_decay_ms": 5.0,
+    "tau_i_rise_ms": 1.0,
+    "tau_i_decay_ms": 30.0,
+    "delay_ms": 1.5,
+    "c_soma_pF": 20.0,
+    "c_axon_pF": 2.5,
+    "rin_cpg_MOhm": 500.0,
+    "rin_mn_MOhm": 300.0,
+    "coupling_nS": 12.0,
+    "gNa_nS": 600.0,
+    "gK_nS": 180.0,
+    "gCa_nS": 0.3,
+    "gSK_nS": 1.0,
+    "gNaP_nS": 0.0,
+    "ca_tau_ms": 100.0,
+    "ca_alpha": 0.0002,
+    "ca_Kd_uM": 0.2,
+    "E_leak_mV": -65.0,
+    "E_Na_mV": 55.0,
+    "E_K_mV": -80.0,
+    "E_Ca_mV": 120.0,
+    "E_exc_mV": 0.0,
+    "E_inh_mV": -80.0,
+    "gate_speed": 1.0,
+    "inhibitory_gain": 1.0,
+    "I2_gain": 1.0,
+    "I2_leak_shift_mV": 0.0,
+    "mn_gain": 6.0,
+    "mn_leak_mV": -65.0,
+    "synaptic_delay_scope": "one global delay prior, not measured per edge",
+    "adult_scope": "Rin=300MOhm is unknown-type adult MN prior; fast/intermediate/slow exemplars tested separately",
+    "I1_gain": 1.0,
+    "background_exc_gain": 1.0,
+    "mn_SK_scale": 1.0,
+    "mn_profile": {
+      "leak_scale": 0.5719406364200305,
+      "mn_leak_mV": -50.857904405099035,
+      "coupling_nS": 4.0,
+      "gNaP_nS": 0.3,
+      "axon_bias_pA": 0.0,
+      "gate_speed": 1.0
+    },
+    "mn_profile_scope": "Unknown EM MN subtype: use adult intermediate reference, not a verified assignment",
+    "group_parameters": {
+      "ascending_neuron|type:AN19A018": {
+        "axon_bias_pA": 5.0,
+        "K": 0.8,
+        "source_gain": 0.5
+      },
+      "cb_intrinsic|type:CL210_a": {
+        "axon_bias_pA": 5.0,
+        "K": 0.8
+      },
+      "descending_neuron|type:DNg60": {
+        "axon_bias_pA": 5.0,
+        "K": 0.8,
+        "inhibitory_gain": 4.0
+      },
+      "descending_neuron|type:DNp09": {
+        "axon_bias_pA": 5.0,
+        "K": 0.8
+      },
+      "cb_intrinsic|type:GNG458": {
+        "axon_bias_pA": 5.0,
+        "K": 0.8,
+        "inhibitory_gain": 2.0
+      },
+      "cb_intrinsic|type:GNG588": {
+        "axon_bias_pA": 5.0,
+        "K": 0.8
+      },
+      "descending_neuron|type:MDN": {
+        "axon_bias_pA": 5.0,
+        "K": 0.8
+      },
+      "descending_neuron|type:DNg100": {
+        "excitatory_gain": 2.0
+      },
+      "descending_neuron|type:DNg97": {
+        "excitatory_gain": 2.0
+      },
+      "descending_neuron|type:DNge053": {
+        "excitatory_gain": 2.0
+      },
+      "cb_intrinsic|type:PFL2": {
+        "axon_bias_pA": 5.0
+      },
+      "cb_intrinsic|type:PFL3": {
+        "axon_bias_pA": 5.0
+      },
+      "ascending_neuron|type:AN05B007": {
+        "excitatory_gain": 0.5
+      },
+      "cb_intrinsic|type:GNG555": {
+        "excitatory_gain": 0.5
+      },
+      "ascending_neuron|type:IN27X001": {
+        "calcium_tau_ms": 2000.0
+      },
+      "vnc_intrinsic|type:IN27X001": {
+        "calcium_tau_ms": 2000.0
+      }
+    },
+    "family_parameters": {
+      "descending neuron|NT:acetylcholine": {
+        "K": 0.8,
+        "axon_bias_pA": 0.0
+      }
+    }
+  },
+  "protocol": [
+    {
+      "population": "BPN",
+      "on_ms": 200,
+      "off_ms": 1500,
+      "current_pA": 160.0
+    },
+    {
+      "population": "BRK",
+      "on_ms": 450,
+      "off_ms": 950,
+      "current_pA": 160.0
+    }
+  ],
+  "selected_body_ids": {
+    "MDN": [
+      "10763",
+      "11288",
+      "11332",
+      "12348"
+    ],
+    "P9": [
+      "10783",
+      "11177"
+    ],
+    "BB": [
+      "11374",
+      "188947"
+    ],
+    "PFL2": [
+      "11557",
+      "11673",
+      "13031",
+      "13490",
+      "14729",
+      "19715",
+      "27492",
+      "511842",
+      "513034",
+      "518375",
+      "520573",
+      "522853"
+    ],
+    "Fdg": [
+      "12617",
+      "14321"
+    ],
+    "BRK": [
+      "14113",
+      "14863",
+      "14973",
+      "16542",
+      "17510",
+      "523843"
+    ],
+    "PFL3R": [
+      "15210",
+      "17000",
+      "17286",
+      "17290",
+      "26038",
+      "29836",
+      "108478",
+      "513032",
+      "519346",
+      "519351",
+      "523032",
+      "530071"
+    ],
+    "PFL3L": [
+      "18327",
+      "18803",
+      "18851",
+      "19009",
+      "23159",
+      "26488",
+      "35322",
+      "79549",
+      "513266",
+      "518378",
+      "520811",
+      "567101"
+    ],
+    "FG": [
+      "26344",
+      "520884"
+    ],
+    "BPN": [
+      "32983",
+      "35104",
+      "35781",
+      "36513",
+      "60694",
+      "63848",
+      "122182",
+      "519569",
+      "520058",
+      "520064"
+    ],
+    "BON1": [
+      "39880",
+      "800041"
+    ]
+  },
+  "unused_bank_groups": [],
+  "dataset": "MaleCNS_v1.0",
+  "graph_directory": "results/mcns-unified",
+  "randomness": "deterministic; no stochastic draws",
+  "numpy_version": "2.5.4",
+  "source_input_files": {
+    "neurons.json": "c1d7b00efd51aeab7942ef9acf97360362a5cb6fd034a58ba880e2de7aeb199e",
+    "signed-hypothesis-connectivity.npz": "9eb1f7c1544611e4c242267805b41d68a2cf2cb8ba07586fa5d39a9bb2b1f11e"
+  },
+  "code_hashes_at_start": {
+    "model.py": "934572b4c9958a726d46726d70d0cf04178d877766611ecc0ae9f2b8bc5c5bba",
+    "network.py": "2a17999c5873ddb2fb3cd321265f6ec58c23e4d80e40667b5a2c1a82fed38091",
+    "grouped_parameters.py": "cd1b05516f927bae1013319063f279cb5131a03b910ee913c11f6886b57e29db",
+    "pulse_neural_panel.py": "b885f2af0724db72e00e093a39234ea1b9bd2dbae886ad1082d8c10dcb09337b"
+  },
+  "effective_parameter_sha256": "ae448908a31f63268ab498838b5aba0a8aa25cb2c39401851a29fe66da02680e",
+  "command": [
+    "/workspace/server-motor-import/.venv/bin/python",
+    "pulse_neural_panel.py",
+    "BPN+BRK",
+    "configs/manual-neural-bank-r9.json",
+    "unified-r9",
+    "results/mcns-unified"
+  ],
+  "working_directory": "/workspace/Applepie-research-sync/research/conductance-rebuild-20261114",
+  "software_versions": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "numba": "0.68.1"
+  },
+  "python": "3.12.14",
+  "interpretation": "physiological changes fixed across conditions; observations and traces, no scalar optimization score"
+}
