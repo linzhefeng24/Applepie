@@ -1,0 +1,185 @@
+{
+  "bank_sha256": "40e491305ec16b7049c970a868af25f59afd02cd1f1a66e3b87b9a8c691c9436",
+  "parameters": {
+    "dt_ms": 0.0125,
+    "duration_ms": 1600.0,
+    "onset_ms": 200.0,
+    "drive_pA": 160.0,
+    "ge_nS_per_synapse": 0.012,
+    "gi_nS_per_synapse": 0.006,
+    "tau_e_rise_ms": 0.5,
+    "tau_e_decay_ms": 5.0,
+    "tau_i_rise_ms": 1.0,
+    "tau_i_decay_ms": 30.0,
+    "delay_ms": 1.5,
+    "c_soma_pF": 20.0,
+    "c_axon_pF": 2.5,
+    "rin_cpg_MOhm": 500.0,
+    "rin_mn_MOhm": 300.0,
+    "coupling_nS": 12.0,
+    "gNa_nS": 600.0,
+    "gK_nS": 180.0,
+    "gCa_nS": 0.3,
+    "gSK_nS": 1.0,
+    "gNaP_nS": 0.0,
+    "ca_tau_ms": 100.0,
+    "ca_alpha": 0.0002,
+    "ca_Kd_uM": 0.2,
+    "E_leak_mV": -65.0,
+    "E_Na_mV": 55.0,
+    "E_K_mV": -80.0,
+    "E_Ca_mV": 120.0,
+    "E_exc_mV": 0.0,
+    "E_inh_mV": -80.0,
+    "gate_speed": 1.0,
+    "inhibitory_gain": 1.0,
+    "I2_gain": 1.0,
+    "I2_leak_shift_mV": 0.0,
+    "mn_gain": 6.0,
+    "mn_leak_mV": -65.0,
+    "synaptic_delay_scope": "one global delay prior, not measured per edge",
+    "adult_scope": "Rin=300MOhm is unknown-type adult MN prior; fast/intermediate/slow exemplars tested separately",
+    "I1_gain": 1.0,
+    "background_exc_gain": 1.0,
+    "mn_SK_scale": 1.0,
+    "mn_profile": {
+      "leak_scale": 0.5719406364200305,
+      "mn_leak_mV": -50.857904405099035,
+      "coupling_nS": 4.0,
+      "gNaP_nS": 0.3,
+      "axon_bias_pA": 0.0,
+      "gate_speed": 1.0
+    },
+    "mn_profile_scope": "Unknown EM MN subtype: use adult intermediate reference, not a verified assignment",
+    "group_parameters": {
+      "ascending_neuron|type:AN19A018": {
+        "axon_bias_pA": 5.0,
+        "K": 0.8
+      },
+      "cb_intrinsic|type:CL210_a": {
+        "axon_bias_pA": 5.0,
+        "K": 0.8
+      },
+      "descending_neuron|type:DNg60": {
+        "axon_bias_pA": 5.0,
+        "K": 0.8
+      },
+      "descending_neuron|type:DNp09": {
+        "axon_bias_pA": 5.0,
+        "K": 0.8
+      },
+      "cb_intrinsic|type:GNG458": {
+        "axon_bias_pA": 5.0,
+        "K": 0.8
+      },
+      "cb_intrinsic|type:GNG588": {
+        "axon_bias_pA": 5.0,
+        "K": 0.8
+      },
+      "descending_neuron|type:MDN": {
+        "axon_bias_pA": 5.0,
+        "K": 0.8
+      },
+      "descending_neuron|type:DNg100": {
+        "excitatory_gain": 2.0
+      },
+      "descending_neuron|type:DNg97": {
+        "excitatory_gain": 2.0
+      },
+      "descending_neuron|type:DNge053": {
+        "excitatory_gain": 2.0
+      },
+      "cb_intrinsic|type:PFL2": {
+        "axon_bias_pA": 5.0
+      },
+      "vnc_intrinsic|type:INXXX468": {
+        "K": 0.9
+      }
+    },
+    "family_parameters": {
+      "descending neuron|NT:acetylcholine": {
+        "K": 0.8,
+        "axon_bias_pA": 5.0
+      }
+    }
+  },
+  "protocol": [
+    {
+      "population": "MDN",
+      "on_ms": 200,
+      "off_ms": 1500,
+      "current_pA": 160.0
+    }
+  ],
+  "selected_body_ids": {
+    "BRK": [
+      "523843",
+      "17510",
+      "14973",
+      "14863",
+      "16542",
+      "14113"
+    ],
+    "BPN": [
+      "519569",
+      "60694",
+      "36513",
+      "35781",
+      "32983",
+      "520064",
+      "35104",
+      "122182",
+      "63848",
+      "520058"
+    ],
+    "BB": [
+      "11374",
+      "188947"
+    ],
+    "P9": [
+      "10783",
+      "11177"
+    ],
+    "FG": [
+      "520884",
+      "26344"
+    ],
+    "Fdg": [
+      "12617",
+      "14321"
+    ],
+    "BON1": [
+      "39880",
+      "800041"
+    ],
+    "MDN": [
+      "11288",
+      "12348",
+      "10763",
+      "11332"
+    ],
+    "PFL2": [
+      "11673",
+      "520573"
+    ]
+  },
+  "unused_bank_groups": [
+    "cb_intrinsic|type:PFL3"
+  ],
+  "dataset": "MaleCNS_v1.0",
+  "graph_directory": "results/mcns-command-v2",
+  "randomness": "deterministic; no stochastic draws",
+  "numpy_version": "2.5.4",
+  "source_input_files": {
+    "neurons.json": "4b1ad3cf9b87ee17ba6945b24fcb9eff58eecaa2f62d54ab042e28b5d16f56d6",
+    "signed-hypothesis-connectivity.npz": "d3110c170e81444fbf88fc9a8d8dafd9ee43db5ee714ac035f40bdbceaac6172"
+  },
+  "code_hashes_at_start": {
+    "model.py": "934572b4c9958a726d46726d70d0cf04178d877766611ecc0ae9f2b8bc5c5bba",
+    "network.py": "2de473ecb457339f38131d08b73744ace0e6c7fedd56539318c50547e8f49092",
+    "grouped_parameters.py": "ede849929520f2b22447d89dab9a349af424dec20be2923534f1fef7db6ea195",
+    "pulse_neural_panel.py": "635bf70ed1b13fdef5b9758c505fe85d9df554a50604f06dcb901192fdce15bb"
+  },
+  "python": "3.12.14",
+  "interpretation": "physiological changes fixed across conditions; observations and traces, no scalar optimization score"
+}

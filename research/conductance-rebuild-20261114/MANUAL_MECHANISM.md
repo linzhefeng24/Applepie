@@ -140,3 +140,30 @@ an established individual-cell identity. Current provisional responses do not
 yet reproduce stronger T3 LUL130 recruitment. Missing mappings are not filled
 with invented neurons. Large public raw source caches remain outside git;
 source manifests mark their archive status explicitly.
+
+## Frozen-bank pulse observations and next manual changes
+
+Seventeen complete r4 pulse conditions now retain full traces, not just endpoint
+samples. FG reversibly reduces BPN-driven DNg100 from approximately 27–29 Hz to
+4.4 Hz bilaterally, while BB leaves about 24.4 Hz. P9+FG preserves substantial
+DNa02 recruitment and reduces oDN1/DNg97, but BB's wider inhibition is too weak.
+BRK recruits BON1 strongly but also incorrectly suppresses BPN-driven DNg100.
+These mismatches are retained, not counted as completed experimental passes.
+MDN-driven LBL40 persists during FG and BB pulses. Left/right PFL3 stimulation
+still reverses the DNa02 response in the same shared bank; PFL2 addition boosts
+the ipsilateral response but introduces some contralateral activity.
+
+A shared INXXX468 Kx0.9 probe unexpectedly suppresses LBL40 during part of the
+MDN response. Because these family candidates feed recurrent paths, this is not
+a local isolated-cell change. The probe is NOT adopted. Family identity and
+calcium interpretation remain uncertain; stronger T3 input/depolarization is
+already present, whereas a strong segment-specific Ca contrast is not.
+
+Actual BB source neurons fire about 71–73 Hz during the pulse, so source failure
+is not the explanation. Input-event inspection identifies direct BB inhibition
+of DNg97/DNa02, partly offset by recurrent disinhibition. The next hand test
+raises the shared BB inhibitory release gain from 1 to 2, leaving all connection
+counts and signs intact. BRK→BON1 direct input is strong; a separate shared BRK
+release reduction tests whether BON1 recruitment can remain while reducing
+unwanted ascending-network suppression. These are explicit unknown-release
+hypotheses, not literature-measured conductance values or loss optimization.

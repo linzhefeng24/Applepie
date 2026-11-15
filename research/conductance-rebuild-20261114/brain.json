@@ -247266,5 +247266,30 @@
     "new_full_experimental_passes": 0,
     "new_qualitative_matches": 2,
     "remaining_majority_unvalidated": true
+  },
+  "manual_neural_mechanism_r4": {
+    "status": "frozen candidate undergoing pulse/recovery inspection; earlier scoped matches not inherited",
+    "parameter_bank": "configs/manual-neural-bank-r4.json",
+    "method": "manual source voltage and pathway-current inspection; no automatic loss selection",
+    "priority": "measured neural intervention responses, then behavioral proxies and paper-model predictions; rough muscle asymmetry only",
+    "shared_parameters": "class, transmitter-family, type and explicitly qualified cell overrides; same type shares by default",
+    "results": "results/frozen-neural-panel-r4",
+    "verified_identities": {
+      "MF09": {
+        "name": "LUL130",
+        "source": "data/experimental-source/MDN-MF-identities.json",
+        "EM_candidate": "INXXX468 family only; exact cells unverified",
+        "observed_constraint": "stronger T3 response than T1/T2 to MDN activation",
+        "simulation_status": "not reproduced in preliminary family proxy"
+      },
+      "MF14": {
+        "name": "LUL152",
+        "ontology": "FBbt:00051102",
+        "observed_constraint": "T1/T2 weak excitation; T3 inhibition during MDN activation",
+        "EM_identity": null,
+        "simulation_status": "not tested; identity unresolved"
+      }
+    },
+    "interpretation_correction": "BB is expected to suppress BPN less strongly than FG. BB stronger broad inhibition should be checked in P9 context; oDN1/DNg97 is a forward-promoting output, not a turn output. Published coactivation DN traces partly originate in a rate-model prediction, not direct electrophysiological measurements."
   }
 }

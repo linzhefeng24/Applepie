@@ -1,0 +1,1147 @@
+{
+  "baseline": "BPN",
+  "case": "BPN+BRK",
+  "window_ms": [
+    500,
+    950
+  ],
+  "warning": "Compare real input event loads for manual interpretation, not optimization.\nRate x count x effective release approximates mean conductance away from pulse\nboundaries; it is not causal attribution or a measured physiological weight.\n",
+  "targets": [
+    {
+      "target_body": "523769",
+      "target_type": "DNa02",
+      "side": "L",
+      "largest_changes": [
+        {
+          "source_body": "10920",
+          "source_type": "GNG100",
+          "nt": "acetylcholine",
+          "signed_count": 139.0,
+          "baseline_hz": 24.444444444444443,
+          "pulse_hz": 13.333333333333332,
+          "signed_event_load_change": -1544.4444444444443
+        },
+        {
+          "source_body": "519228",
+          "source_type": "DNae005",
+          "nt": "acetylcholine",
+          "signed_count": 293.0,
+          "baseline_hz": 8.88888888888889,
+          "pulse_hz": 4.444444444444445,
+          "signed_event_load_change": -1302.2222222222222
+        },
+        {
+          "source_body": "519944",
+          "source_type": "LAL124",
+          "nt": "glutamate",
+          "signed_count": -130.0,
+          "baseline_hz": 8.88888888888889,
+          "pulse_hz": 2.2222222222222223,
+          "signed_event_load_change": 866.6666666666667
+        },
+        {
+          "source_body": "521190",
+          "source_type": "DNae007",
+          "nt": "acetylcholine",
+          "signed_count": 195.0,
+          "baseline_hz": 11.11111111111111,
+          "pulse_hz": 6.666666666666666,
+          "signed_event_load_change": -866.6666666666667
+        },
+        {
+          "source_body": "520117",
+          "source_type": "GNG562",
+          "nt": "gaba",
+          "signed_count": -168.0,
+          "baseline_hz": 13.333333333333332,
+          "pulse_hz": 17.77777777777778,
+          "signed_event_load_change": -746.666666666667
+        },
+        {
+          "source_body": "11416",
+          "source_type": "LAL083",
+          "nt": "glutamate",
+          "signed_count": -149.0,
+          "baseline_hz": 15.555555555555555,
+          "pulse_hz": 11.11111111111111,
+          "signed_event_load_change": 662.2222222222223
+        },
+        {
+          "source_body": "530155",
+          "source_type": "PS322",
+          "nt": "glutamate",
+          "signed_count": -140.0,
+          "baseline_hz": 15.555555555555555,
+          "pulse_hz": 11.11111111111111,
+          "signed_event_load_change": 622.2222222222223
+        },
+        {
+          "source_body": "10971",
+          "source_type": "DNa11",
+          "nt": "acetylcholine",
+          "signed_count": 224.0,
+          "baseline_hz": 8.88888888888889,
+          "pulse_hz": 6.666666666666666,
+          "signed_event_load_change": -497.777777777778
+        },
+        {
+          "source_body": "903602",
+          "source_type": "IN19A003",
+          "nt": "gaba",
+          "signed_count": -43.0,
+          "baseline_hz": 28.88888888888889,
+          "pulse_hz": 20.0,
+          "signed_event_load_change": 382.22222222222223
+        },
+        {
+          "source_body": "10868",
+          "source_type": "LAL083",
+          "nt": "glutamate",
+          "signed_count": -161.0,
+          "baseline_hz": 6.666666666666666,
+          "pulse_hz": 4.444444444444445,
+          "signed_event_load_change": 357.77777777777766
+        },
+        {
+          "source_body": "10517",
+          "source_type": "LAL124",
+          "nt": "glutamate",
+          "signed_count": -79.0,
+          "baseline_hz": 6.666666666666666,
+          "pulse_hz": 2.2222222222222223,
+          "signed_event_load_change": 351.11111111111103
+        },
+        {
+          "source_body": "17713",
+          "source_type": "AN04B003",
+          "nt": "acetylcholine",
+          "signed_count": 130.0,
+          "baseline_hz": 4.444444444444445,
+          "pulse_hz": 6.666666666666666,
+          "signed_event_load_change": 288.8888888888888
+        },
+        {
+          "source_body": "800880",
+          "source_type": "IN14B004",
+          "nt": "glutamate",
+          "signed_count": -61.0,
+          "baseline_hz": 6.666666666666666,
+          "pulse_hz": 2.2222222222222223,
+          "signed_event_load_change": 271.1111111111111
+        },
+        {
+          "source_body": "530154",
+          "source_type": "VES106",
+          "nt": "gaba",
+          "signed_count": -18.0,
+          "baseline_hz": 8.88888888888889,
+          "pulse_hz": 22.22222222222222,
+          "signed_event_load_change": -239.99999999999997
+        },
+        {
+          "source_body": "800420",
+          "source_type": "IN03B021",
+          "nt": "gaba",
+          "signed_count": -36.0,
+          "baseline_hz": 6.666666666666666,
+          "pulse_hz": 0.0,
+          "signed_event_load_change": 239.99999999999997
+        }
+      ]
+    },
+    {
+      "target_body": "10360",
+      "target_type": "DNa02",
+      "side": "R",
+      "largest_changes": [
+        {
+          "source_body": "12135",
+          "source_type": "GNG100",
+          "nt": "acetylcholine",
+          "signed_count": 135.0,
+          "baseline_hz": 33.333333333333336,
+          "pulse_hz": 13.333333333333332,
+          "signed_event_load_change": -2700.0000000000005
+        },
+        {
+          "source_body": "10070",
+          "source_type": "AOTU019",
+          "nt": "gaba",
+          "signed_count": -289.0,
+          "baseline_hz": 8.88888888888889,
+          "pulse_hz": 0.0,
+          "signed_event_load_change": 2568.888888888889
+        },
+        {
+          "source_body": "11233",
+          "source_type": "DNa11",
+          "nt": "acetylcholine",
+          "signed_count": 185.0,
+          "baseline_hz": 17.77777777777778,
+          "pulse_hz": 4.444444444444445,
+          "signed_event_load_change": -2466.666666666667
+        },
+        {
+          "source_body": "11625",
+          "source_type": "DNae005",
+          "nt": "acetylcholine",
+          "signed_count": 255.0,
+          "baseline_hz": 8.88888888888889,
+          "pulse_hz": 2.2222222222222223,
+          "signed_event_load_change": -1700.0
+        },
+        {
+          "source_body": "12086",
+          "source_type": "GNG562",
+          "nt": "gaba",
+          "signed_count": -138.0,
+          "baseline_hz": 15.555555555555555,
+          "pulse_hz": 8.88888888888889,
+          "signed_event_load_change": 919.9999999999999
+        },
+        {
+          "source_body": "11610",
+          "source_type": "DNae007",
+          "nt": "acetylcholine",
+          "signed_count": 186.0,
+          "baseline_hz": 8.88888888888889,
+          "pulse_hz": 4.444444444444445,
+          "signed_event_load_change": -826.6666666666667
+        },
+        {
+          "source_body": "11750",
+          "source_type": "LAL083",
+          "nt": "glutamate",
+          "signed_count": -185.0,
+          "baseline_hz": 15.555555555555555,
+          "pulse_hz": 11.11111111111111,
+          "signed_event_load_change": 822.2222222222223
+        },
+        {
+          "source_body": "519944",
+          "source_type": "LAL124",
+          "nt": "glutamate",
+          "signed_count": -107.0,
+          "baseline_hz": 8.88888888888889,
+          "pulse_hz": 2.2222222222222223,
+          "signed_event_load_change": 713.3333333333334
+        },
+        {
+          "source_body": "10975",
+          "source_type": "DNa03",
+          "nt": "acetylcholine",
+          "signed_count": 297.0,
+          "baseline_hz": 8.88888888888889,
+          "pulse_hz": 6.666666666666666,
+          "signed_event_load_change": -660.0000000000003
+        },
+        {
+          "source_body": "11441",
+          "source_type": "PS322",
+          "nt": "glutamate",
+          "signed_count": -127.0,
+          "baseline_hz": 11.11111111111111,
+          "pulse_hz": 6.666666666666666,
+          "signed_event_load_change": 564.4444444444445
+        },
+        {
+          "source_body": "14259",
+          "source_type": "LAL046",
+          "nt": "gaba",
+          "signed_count": -219.0,
+          "baseline_hz": 8.88888888888889,
+          "pulse_hz": 11.11111111111111,
+          "signed_event_load_change": -486.6666666666665
+        },
+        {
+          "source_body": "10517",
+          "source_type": "LAL124",
+          "nt": "glutamate",
+          "signed_count": -88.0,
+          "baseline_hz": 6.666666666666666,
+          "pulse_hz": 2.2222222222222223,
+          "signed_event_load_change": 391.11111111111103
+        },
+        {
+          "source_body": "11795",
+          "source_type": "LAL083",
+          "nt": "glutamate",
+          "signed_count": -172.0,
+          "baseline_hz": 8.88888888888889,
+          "pulse_hz": 6.666666666666666,
+          "signed_event_load_change": 382.2222222222224
+        },
+        {
+          "source_body": "14264",
+          "source_type": "DNde003",
+          "nt": "acetylcholine",
+          "signed_count": 49.0,
+          "baseline_hz": 8.88888888888889,
+          "pulse_hz": 2.2222222222222223,
+          "signed_event_load_change": -326.6666666666667
+        },
+        {
+          "source_body": "11455",
+          "source_type": "MBON32",
+          "nt": "gaba",
+          "signed_count": -49.0,
+          "baseline_hz": 15.555555555555555,
+          "pulse_hz": 8.88888888888889,
+          "signed_event_load_change": 326.66666666666663
+        }
+      ]
+    },
+    {
+      "target_body": "10045",
+      "target_type": "DNg100",
+      "side": "L",
+      "largest_changes": [
+        {
+          "source_body": "10856",
+          "source_type": "DNge129",
+          "nt": "gaba",
+          "signed_count": -417.0,
+          "baseline_hz": 20.0,
+          "pulse_hz": 35.55555555555556,
+          "signed_event_load_change": -6486.666666666667
+        },
+        {
+          "source_body": "12976",
+          "source_type": "AN05B007",
+          "nt": "gaba",
+          "signed_count": -123.0,
+          "baseline_hz": 15.555555555555555,
+          "pulse_hz": 62.22222222222222,
+          "signed_event_load_change": -5740.0
+        },
+        {
+          "source_body": "512165",
+          "source_type": "GNG555",
+          "nt": "gaba",
+          "signed_count": -183.0,
+          "baseline_hz": 8.88888888888889,
+          "pulse_hz": 40.0,
+          "signed_event_load_change": -5693.333333333333
+        },
+        {
+          "source_body": "10056",
+          "source_type": "DNg100",
+          "nt": "acetylcholine",
+          "signed_count": 119.0,
+          "baseline_hz": 26.666666666666664,
+          "pulse_hz": 6.666666666666666,
+          "signed_event_load_change": -4760.0
+        },
+        {
+          "source_body": "11213",
+          "source_type": "CB0244",
+          "nt": "acetylcholine",
+          "signed_count": 248.0,
+          "baseline_hz": 8.88888888888889,
+          "pulse_hz": 0.0,
+          "signed_event_load_change": -4408.888888888889
+        },
+        {
+          "source_body": "512456",
+          "source_type": "GNG555",
+          "nt": "gaba",
+          "signed_count": -206.0,
+          "baseline_hz": 8.88888888888889,
+          "pulse_hz": 28.88888888888889,
+          "signed_event_load_change": -4120.0
+        },
+        {
+          "source_body": "578647",
+          "source_type": "VES089",
+          "nt": "acetylcholine",
+          "signed_count": 298.0,
+          "baseline_hz": 6.666666666666666,
+          "pulse_hz": 0.0,
+          "signed_event_load_change": -3973.333333333333
+        },
+        {
+          "source_body": "12166",
+          "source_type": "CB0244",
+          "nt": "acetylcholine",
+          "signed_count": 210.0,
+          "baseline_hz": 8.88888888888889,
+          "pulse_hz": 0.0,
+          "signed_event_load_change": -3733.3333333333335
+        },
+        {
+          "source_body": "516820",
+          "source_type": "GNG127",
+          "nt": "gaba",
+          "signed_count": -310.0,
+          "baseline_hz": 22.22222222222222,
+          "pulse_hz": 11.11111111111111,
+          "signed_event_load_change": 3444.4444444444443
+        },
+        {
+          "source_body": "11297",
+          "source_type": "DNbe003",
+          "nt": "acetylcholine",
+          "signed_count": 183.0,
+          "baseline_hz": 8.88888888888889,
+          "pulse_hz": 0.0,
+          "signed_event_load_change": -3253.3333333333335
+        },
+        {
+          "source_body": "11111",
+          "source_type": "DNbe003",
+          "nt": "acetylcholine",
+          "signed_count": 172.0,
+          "baseline_hz": 8.88888888888889,
+          "pulse_hz": 0.0,
+          "signed_event_load_change": -3057.777777777778
+        },
+        {
+          "source_body": "519879",
+          "source_type": "VES089",
+          "nt": "acetylcholine",
+          "signed_count": 211.0,
+          "baseline_hz": 6.666666666666666,
+          "pulse_hz": 0.0,
+          "signed_event_load_change": -2813.333333333333
+        },
+        {
+          "source_body": "10180",
+          "source_type": "AN02A002",
+          "nt": "glutamate",
+          "signed_count": -417.0,
+          "baseline_hz": 8.88888888888889,
+          "pulse_hz": 2.2222222222222223,
+          "signed_event_load_change": 2780.0
+        },
+        {
+          "source_body": "10177",
+          "source_type": "DNg16",
+          "nt": "acetylcholine",
+          "signed_count": 81.0,
+          "baseline_hz": 17.77777777777778,
+          "pulse_hz": 2.2222222222222223,
+          "signed_event_load_change": -2520.0000000000005
+        },
+        {
+          "source_body": "10440",
+          "source_type": "DNg16",
+          "nt": "acetylcholine",
+          "signed_count": 71.0,
+          "baseline_hz": 17.77777777777778,
+          "pulse_hz": 2.2222222222222223,
+          "signed_event_load_change": -2208.888888888889
+        }
+      ]
+    },
+    {
+      "target_body": "10056",
+      "target_type": "DNg100",
+      "side": "R",
+      "largest_changes": [
+        {
+          "source_body": "10856",
+          "source_type": "DNge129",
+          "nt": "gaba",
+          "signed_count": -481.0,
+          "baseline_hz": 20.0,
+          "pulse_hz": 35.55555555555556,
+          "signed_event_load_change": -7482.222222222223
+        },
+        {
+          "source_body": "12976",
+          "source_type": "AN05B007",
+          "nt": "gaba",
+          "signed_count": -147.0,
+          "baseline_hz": 15.555555555555555,
+          "pulse_hz": 62.22222222222222,
+          "signed_event_load_change": -6860.0
+        },
+        {
+          "source_body": "10045",
+          "source_type": "DNg100",
+          "nt": "acetylcholine",
+          "signed_count": 119.0,
+          "baseline_hz": 28.88888888888889,
+          "pulse_hz": 2.2222222222222223,
+          "signed_event_load_change": -6346.666666666667
+        },
+        {
+          "source_body": "578647",
+          "source_type": "VES089",
+          "nt": "acetylcholine",
+          "signed_count": 319.0,
+          "baseline_hz": 6.666666666666666,
+          "pulse_hz": 0.0,
+          "signed_event_load_change": -4253.333333333333
+        },
+        {
+          "source_body": "512165",
+          "source_type": "GNG555",
+          "nt": "gaba",
+          "signed_count": -136.0,
+          "baseline_hz": 8.88888888888889,
+          "pulse_hz": 40.0,
+          "signed_event_load_change": -4231.111111111111
+        },
+        {
+          "source_body": "12166",
+          "source_type": "CB0244",
+          "nt": "acetylcholine",
+          "signed_count": 229.0,
+          "baseline_hz": 8.88888888888889,
+          "pulse_hz": 0.0,
+          "signed_event_load_change": -4071.1111111111113
+        },
+        {
+          "source_body": "11297",
+          "source_type": "DNbe003",
+          "nt": "acetylcholine",
+          "signed_count": 208.0,
+          "baseline_hz": 8.88888888888889,
+          "pulse_hz": 0.0,
+          "signed_event_load_change": -3697.777777777778
+        },
+        {
+          "source_body": "512456",
+          "source_type": "GNG555",
+          "nt": "gaba",
+          "signed_count": -164.0,
+          "baseline_hz": 8.88888888888889,
+          "pulse_hz": 28.88888888888889,
+          "signed_event_load_change": -3280.0
+        },
+        {
+          "source_body": "11213",
+          "source_type": "CB0244",
+          "nt": "acetylcholine",
+          "signed_count": 180.0,
+          "baseline_hz": 8.88888888888889,
+          "pulse_hz": 0.0,
+          "signed_event_load_change": -3200.0
+        },
+        {
+          "source_body": "519879",
+          "source_type": "VES089",
+          "nt": "acetylcholine",
+          "signed_count": 240.0,
+          "baseline_hz": 6.666666666666666,
+          "pulse_hz": 0.0,
+          "signed_event_load_change": -3199.9999999999995
+        },
+        {
+          "source_body": "516820",
+          "source_type": "GNG127",
+          "nt": "gaba",
+          "signed_count": -270.0,
+          "baseline_hz": 22.22222222222222,
+          "pulse_hz": 11.11111111111111,
+          "signed_event_load_change": 3000.0
+        },
+        {
+          "source_body": "12266",
+          "source_type": "DNg43",
+          "nt": "acetylcholine",
+          "signed_count": 90.0,
+          "baseline_hz": 17.77777777777778,
+          "pulse_hz": 2.2222222222222223,
+          "signed_event_load_change": -2800.0000000000005
+        },
+        {
+          "source_body": "11111",
+          "source_type": "DNbe003",
+          "nt": "acetylcholine",
+          "signed_count": 155.0,
+          "baseline_hz": 8.88888888888889,
+          "pulse_hz": 0.0,
+          "signed_event_load_change": -2755.5555555555557
+        },
+        {
+          "source_body": "10180",
+          "source_type": "AN02A002",
+          "nt": "glutamate",
+          "signed_count": -390.0,
+          "baseline_hz": 8.88888888888889,
+          "pulse_hz": 2.2222222222222223,
+          "signed_event_load_change": 2600.0
+        },
+        {
+          "source_body": "10440",
+          "source_type": "DNg16",
+          "nt": "acetylcholine",
+          "signed_count": 70.0,
+          "baseline_hz": 17.77777777777778,
+          "pulse_hz": 2.2222222222222223,
+          "signed_event_load_change": -2177.777777777778
+        }
+      ]
+    },
+    {
+      "target_body": "13805",
+      "target_type": "DNg97",
+      "side": "L",
+      "largest_changes": [
+        {
+          "source_body": "519879",
+          "source_type": "VES089",
+          "nt": "acetylcholine",
+          "signed_count": 215.0,
+          "baseline_hz": 6.666666666666666,
+          "pulse_hz": 0.0,
+          "signed_event_load_change": -2866.6666666666665
+        },
+        {
+          "source_body": "519705",
+          "source_type": "VES104",
+          "nt": "gaba",
+          "signed_count": -418.0,
+          "baseline_hz": 8.88888888888889,
+          "pulse_hz": 2.2222222222222223,
+          "signed_event_load_change": 2786.666666666667
+        },
+        {
+          "source_body": "520177",
+          "source_type": "AN05B097",
+          "nt": "acetylcholine",
+          "signed_count": 147.0,
+          "baseline_hz": 8.88888888888889,
+          "pulse_hz": 0.0,
+          "signed_event_load_change": -2613.3333333333335
+        },
+        {
+          "source_body": "578647",
+          "source_type": "VES089",
+          "nt": "acetylcholine",
+          "signed_count": 166.0,
+          "baseline_hz": 6.666666666666666,
+          "pulse_hz": 0.0,
+          "signed_event_load_change": -2213.333333333333
+        },
+        {
+          "source_body": "242405",
+          "source_type": "DNge046",
+          "nt": "gaba",
+          "signed_count": -39.0,
+          "baseline_hz": 17.77777777777778,
+          "pulse_hz": 62.22222222222222,
+          "signed_event_load_change": -1733.3333333333333
+        },
+        {
+          "source_body": "13445",
+          "source_type": "DNge046",
+          "nt": "gaba",
+          "signed_count": -70.0,
+          "baseline_hz": 17.77777777777778,
+          "pulse_hz": 40.0,
+          "signed_event_load_change": -1555.5555555555554
+        },
+        {
+          "source_body": "10103",
+          "source_type": "GNG104",
+          "nt": "acetylcholine",
+          "signed_count": 87.0,
+          "baseline_hz": 8.88888888888889,
+          "pulse_hz": 0.0,
+          "signed_event_load_change": -1546.6666666666667
+        },
+        {
+          "source_body": "83661",
+          "source_type": "DNge046",
+          "nt": "gaba",
+          "signed_count": -48.0,
+          "baseline_hz": 15.555555555555555,
+          "pulse_hz": 44.44444444444444,
+          "signed_event_load_change": -1386.6666666666665
+        },
+        {
+          "source_body": "519773",
+          "source_type": "DNge119",
+          "nt": "glutamate",
+          "signed_count": -107.0,
+          "baseline_hz": 24.444444444444443,
+          "pulse_hz": 13.333333333333332,
+          "signed_event_load_change": 1188.888888888889
+        },
+        {
+          "source_body": "10935",
+          "source_type": "GNG011",
+          "nt": "gaba",
+          "signed_count": -35.0,
+          "baseline_hz": 17.77777777777778,
+          "pulse_hz": 51.11111111111111,
+          "signed_event_load_change": -1166.6666666666665
+        },
+        {
+          "source_body": "10177",
+          "source_type": "DNg16",
+          "nt": "acetylcholine",
+          "signed_count": 37.0,
+          "baseline_hz": 17.77777777777778,
+          "pulse_hz": 2.2222222222222223,
+          "signed_event_load_change": -1151.1111111111113
+        },
+        {
+          "source_body": "805362",
+          "source_type": "AN27X011",
+          "nt": "acetylcholine",
+          "signed_count": 42.0,
+          "baseline_hz": 20.0,
+          "pulse_hz": 6.666666666666666,
+          "signed_event_load_change": -1120.0
+        },
+        {
+          "source_body": "10872",
+          "source_type": "CB0677",
+          "nt": "gaba",
+          "signed_count": -248.0,
+          "baseline_hz": 11.11111111111111,
+          "pulse_hz": 6.666666666666666,
+          "signed_event_load_change": 1102.2222222222222
+        },
+        {
+          "source_body": "11297",
+          "source_type": "DNbe003",
+          "nt": "acetylcholine",
+          "signed_count": 53.0,
+          "baseline_hz": 8.88888888888889,
+          "pulse_hz": 0.0,
+          "signed_event_load_change": -942.2222222222223
+        },
+        {
+          "source_body": "519567",
+          "source_type": "GNG104",
+          "nt": "acetylcholine",
+          "signed_count": 70.0,
+          "baseline_hz": 6.666666666666666,
+          "pulse_hz": 0.0,
+          "signed_event_load_change": -933.3333333333333
+        }
+      ]
+    },
+    {
+      "target_body": "230783",
+      "target_type": "DNg97",
+      "side": "R",
+      "largest_changes": [
+        {
+          "source_body": "242405",
+          "source_type": "DNge046",
+          "nt": "gaba",
+          "signed_count": -76.0,
+          "baseline_hz": 17.77777777777778,
+          "pulse_hz": 62.22222222222222,
+          "signed_event_load_change": -3377.777777777778
+        },
+        {
+          "source_body": "521191",
+          "source_type": "VES005",
+          "nt": "acetylcholine",
+          "signed_count": 229.0,
+          "baseline_hz": 8.88888888888889,
+          "pulse_hz": 2.2222222222222223,
+          "signed_event_load_change": -3053.3333333333335
+        },
+        {
+          "source_body": "578647",
+          "source_type": "VES089",
+          "nt": "acetylcholine",
+          "signed_count": 206.0,
+          "baseline_hz": 6.666666666666666,
+          "pulse_hz": 0.0,
+          "signed_event_load_change": -2746.6666666666665
+        },
+        {
+          "source_body": "11706",
+          "source_type": "DNg111",
+          "nt": "glutamate",
+          "signed_count": -132.0,
+          "baseline_hz": 28.88888888888889,
+          "pulse_hz": 11.11111111111111,
+          "signed_event_load_change": 2346.666666666667
+        },
+        {
+          "source_body": "83661",
+          "source_type": "DNge046",
+          "nt": "gaba",
+          "signed_count": -81.0,
+          "baseline_hz": 15.555555555555555,
+          "pulse_hz": 44.44444444444444,
+          "signed_event_load_change": -2339.9999999999995
+        },
+        {
+          "source_body": "516820",
+          "source_type": "GNG127",
+          "nt": "gaba",
+          "signed_count": -195.0,
+          "baseline_hz": 22.22222222222222,
+          "pulse_hz": 11.11111111111111,
+          "signed_event_load_change": 2166.6666666666665
+        },
+        {
+          "source_body": "519879",
+          "source_type": "VES089",
+          "nt": "acetylcholine",
+          "signed_count": 123.0,
+          "baseline_hz": 6.666666666666666,
+          "pulse_hz": 0.0,
+          "signed_event_load_change": -1639.9999999999998
+        },
+        {
+          "source_body": "10935",
+          "source_type": "GNG011",
+          "nt": "gaba",
+          "signed_count": -48.0,
+          "baseline_hz": 17.77777777777778,
+          "pulse_hz": 51.11111111111111,
+          "signed_event_load_change": -1599.9999999999998
+        },
+        {
+          "source_body": "14051",
+          "source_type": "VES067",
+          "nt": "acetylcholine",
+          "signed_count": 89.0,
+          "baseline_hz": 8.88888888888889,
+          "pulse_hz": 0.0,
+          "signed_event_load_change": -1582.2222222222224
+        },
+        {
+          "source_body": "10103",
+          "source_type": "GNG104",
+          "nt": "acetylcholine",
+          "signed_count": 83.0,
+          "baseline_hz": 8.88888888888889,
+          "pulse_hz": 0.0,
+          "signed_event_load_change": -1475.5555555555557
+        },
+        {
+          "source_body": "519567",
+          "source_type": "GNG104",
+          "nt": "acetylcholine",
+          "signed_count": 104.0,
+          "baseline_hz": 6.666666666666666,
+          "pulse_hz": 0.0,
+          "signed_event_load_change": -1386.6666666666665
+        },
+        {
+          "source_body": "520177",
+          "source_type": "AN05B097",
+          "nt": "acetylcholine",
+          "signed_count": 76.0,
+          "baseline_hz": 8.88888888888889,
+          "pulse_hz": 0.0,
+          "signed_event_load_change": -1351.111111111111
+        },
+        {
+          "source_body": "805362",
+          "source_type": "AN27X011",
+          "nt": "acetylcholine",
+          "signed_count": 42.0,
+          "baseline_hz": 20.0,
+          "pulse_hz": 6.666666666666666,
+          "signed_event_load_change": -1120.0
+        },
+        {
+          "source_body": "10243",
+          "source_type": "VES104",
+          "nt": "gaba",
+          "signed_count": -476.0,
+          "baseline_hz": 8.88888888888889,
+          "pulse_hz": 6.666666666666666,
+          "signed_event_load_change": 1057.7777777777783
+        },
+        {
+          "source_body": "519773",
+          "source_type": "DNge119",
+          "nt": "glutamate",
+          "signed_count": -85.0,
+          "baseline_hz": 24.444444444444443,
+          "pulse_hz": 13.333333333333332,
+          "signed_event_load_change": 944.4444444444445
+        }
+      ]
+    },
+    {
+      "target_body": "39880",
+      "target_type": "IN27X001",
+      "side": "L",
+      "largest_changes": [
+        {
+          "source_body": "14113",
+          "source_type": "AN19A018",
+          "nt": "acetylcholine",
+          "signed_count": 230.0,
+          "baseline_hz": 2.2222222222222223,
+          "pulse_hz": 71.11111111111111,
+          "signed_event_load_change": 15844.444444444443
+        },
+        {
+          "source_body": "14973",
+          "source_type": "AN19A018",
+          "nt": "acetylcholine",
+          "signed_count": 198.0,
+          "baseline_hz": 8.88888888888889,
+          "pulse_hz": 71.11111111111111,
+          "signed_event_load_change": 12320.000000000002
+        },
+        {
+          "source_body": "523843",
+          "source_type": "AN19A018",
+          "nt": "acetylcholine",
+          "signed_count": 192.0,
+          "baseline_hz": 8.88888888888889,
+          "pulse_hz": 51.11111111111111,
+          "signed_event_load_change": 8106.666666666665
+        },
+        {
+          "source_body": "16542",
+          "source_type": "AN19A018",
+          "nt": "acetylcholine",
+          "signed_count": 118.0,
+          "baseline_hz": 8.88888888888889,
+          "pulse_hz": 75.55555555555556,
+          "signed_event_load_change": 7866.666666666667
+        },
+        {
+          "source_body": "17510",
+          "source_type": "AN19A018",
+          "nt": "acetylcholine",
+          "signed_count": 157.0,
+          "baseline_hz": 24.444444444444443,
+          "pulse_hz": 73.33333333333333,
+          "signed_event_load_change": 7675.555555555555
+        },
+        {
+          "source_body": "14863",
+          "source_type": "AN19A018",
+          "nt": "acetylcholine",
+          "signed_count": 169.0,
+          "baseline_hz": 8.88888888888889,
+          "pulse_hz": 48.888888888888886,
+          "signed_event_load_change": 6760.0
+        },
+        {
+          "source_body": "13857",
+          "source_type": "DNge139",
+          "nt": "acetylcholine",
+          "signed_count": 78.0,
+          "baseline_hz": 8.88888888888889,
+          "pulse_hz": 55.55555555555556,
+          "signed_event_load_change": 3640.0000000000005
+        },
+        {
+          "source_body": "13022",
+          "source_type": "DNge139",
+          "nt": "acetylcholine",
+          "signed_count": 87.0,
+          "baseline_hz": 8.88888888888889,
+          "pulse_hz": 48.888888888888886,
+          "signed_event_load_change": 3480.0
+        },
+        {
+          "source_body": "17757",
+          "source_type": "AN19B001",
+          "nt": "acetylcholine",
+          "signed_count": 89.0,
+          "baseline_hz": 33.333333333333336,
+          "pulse_hz": 20.0,
+          "signed_event_load_change": -1186.666666666667
+        },
+        {
+          "source_body": "800012",
+          "source_type": "AN19B001",
+          "nt": "acetylcholine",
+          "signed_count": 60.0,
+          "baseline_hz": 28.88888888888889,
+          "pulse_hz": 15.555555555555555,
+          "signed_event_load_change": -800.0
+        },
+        {
+          "source_body": "44992",
+          "source_type": "AN19A018",
+          "nt": "acetylcholine",
+          "signed_count": 86.0,
+          "baseline_hz": 8.88888888888889,
+          "pulse_hz": 0.0,
+          "signed_event_load_change": -764.4444444444445
+        },
+        {
+          "source_body": "11527",
+          "source_type": "DNg101",
+          "nt": "acetylcholine",
+          "signed_count": 77.0,
+          "baseline_hz": 8.88888888888889,
+          "pulse_hz": 0.0,
+          "signed_event_load_change": -684.4444444444445
+        },
+        {
+          "source_body": "800041",
+          "source_type": "IN27X001",
+          "nt": "gaba",
+          "signed_count": -12.0,
+          "baseline_hz": 28.88888888888889,
+          "pulse_hz": 77.77777777777777,
+          "signed_event_load_change": -586.6666666666666
+        },
+        {
+          "source_body": "13685",
+          "source_type": "DNge008",
+          "nt": "acetylcholine",
+          "signed_count": 38.0,
+          "baseline_hz": 26.666666666666664,
+          "pulse_hz": 13.333333333333332,
+          "signed_event_load_change": -506.66666666666663
+        },
+        {
+          "source_body": "15105",
+          "source_type": "DNg55",
+          "nt": "gaba",
+          "signed_count": -110.0,
+          "baseline_hz": 8.88888888888889,
+          "pulse_hz": 13.333333333333332,
+          "signed_event_load_change": -488.8888888888887
+        }
+      ]
+    },
+    {
+      "target_body": "800041",
+      "target_type": "IN27X001",
+      "side": "R",
+      "largest_changes": [
+        {
+          "source_body": "14113",
+          "source_type": "AN19A018",
+          "nt": "acetylcholine",
+          "signed_count": 209.0,
+          "baseline_hz": 2.2222222222222223,
+          "pulse_hz": 71.11111111111111,
+          "signed_event_load_change": 14397.777777777777
+        },
+        {
+          "source_body": "14973",
+          "source_type": "AN19A018",
+          "nt": "acetylcholine",
+          "signed_count": 187.0,
+          "baseline_hz": 8.88888888888889,
+          "pulse_hz": 71.11111111111111,
+          "signed_event_load_change": 11635.555555555557
+        },
+        {
+          "source_body": "17510",
+          "source_type": "AN19A018",
+          "nt": "acetylcholine",
+          "signed_count": 207.0,
+          "baseline_hz": 24.444444444444443,
+          "pulse_hz": 73.33333333333333,
+          "signed_event_load_change": 10120.0
+        },
+        {
+          "source_body": "523843",
+          "source_type": "AN19A018",
+          "nt": "acetylcholine",
+          "signed_count": 236.0,
+          "baseline_hz": 8.88888888888889,
+          "pulse_hz": 51.11111111111111,
+          "signed_event_load_change": 9964.444444444443
+        },
+        {
+          "source_body": "16542",
+          "source_type": "AN19A018",
+          "nt": "acetylcholine",
+          "signed_count": 140.0,
+          "baseline_hz": 8.88888888888889,
+          "pulse_hz": 75.55555555555556,
+          "signed_event_load_change": 9333.333333333334
+        },
+        {
+          "source_body": "14863",
+          "source_type": "AN19A018",
+          "nt": "acetylcholine",
+          "signed_count": 182.0,
+          "baseline_hz": 8.88888888888889,
+          "pulse_hz": 48.888888888888886,
+          "signed_event_load_change": 7280.0
+        },
+        {
+          "source_body": "13857",
+          "source_type": "DNge139",
+          "nt": "acetylcholine",
+          "signed_count": 115.0,
+          "baseline_hz": 8.88888888888889,
+          "pulse_hz": 55.55555555555556,
+          "signed_event_load_change": 5366.666666666667
+        },
+        {
+          "source_body": "13022",
+          "source_type": "DNge139",
+          "nt": "acetylcholine",
+          "signed_count": 117.0,
+          "baseline_hz": 8.88888888888889,
+          "pulse_hz": 48.888888888888886,
+          "signed_event_load_change": 4680.0
+        },
+        {
+          "source_body": "17757",
+          "source_type": "AN19B001",
+          "nt": "acetylcholine",
+          "signed_count": 80.0,
+          "baseline_hz": 33.333333333333336,
+          "pulse_hz": 20.0,
+          "signed_event_load_change": -1066.666666666667
+        },
+        {
+          "source_body": "44992",
+          "source_type": "AN19A018",
+          "nt": "acetylcholine",
+          "signed_count": 91.0,
+          "baseline_hz": 8.88888888888889,
+          "pulse_hz": 0.0,
+          "signed_event_load_change": -808.8888888888889
+        },
+        {
+          "source_body": "800012",
+          "source_type": "AN19B001",
+          "nt": "acetylcholine",
+          "signed_count": 59.0,
+          "baseline_hz": 28.88888888888889,
+          "pulse_hz": 15.555555555555555,
+          "signed_event_load_change": -786.6666666666667
+        },
+        {
+          "source_body": "39880",
+          "source_type": "IN27X001",
+          "nt": "gaba",
+          "signed_count": -16.0,
+          "baseline_hz": 26.666666666666664,
+          "pulse_hz": 73.33333333333333,
+          "signed_event_load_change": -746.6666666666666
+        },
+        {
+          "source_body": "31952",
+          "source_type": "AN02A016",
+          "nt": "glutamate",
+          "signed_count": -84.0,
+          "baseline_hz": 6.666666666666666,
+          "pulse_hz": 0.0,
+          "signed_event_load_change": 560.0
+        },
+        {
+          "source_body": "15105",
+          "source_type": "DNg55",
+          "nt": "gaba",
+          "signed_count": -119.0,
+          "baseline_hz": 8.88888888888889,
+          "pulse_hz": 13.333333333333332,
+          "signed_event_load_change": -528.8888888888887
+        },
+        {
+          "source_body": "11527",
+          "source_type": "DNg101",
+          "nt": "acetylcholine",
+          "signed_count": 57.0,
+          "baseline_hz": 8.88888888888889,
+          "pulse_hz": 0.0,
+          "signed_event_load_change": -506.6666666666667
+        }
+      ]
+    }
+  ]
+}
