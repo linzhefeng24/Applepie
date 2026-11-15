@@ -1,7 +1,17 @@
 {
-  "status": "prepared_not_started",
-  "completed_updates": 0,
+  "completed_updates": 2,
   "minimum_updates": 1000,
   "complete": false,
-  "note": "Previous short trials are not counted. Each epoch is a full training-window forward/backward and Adam update; durable exact optimizer resume is enabled."
+  "best_training_step": 0,
+  "checkpoint_asset": "bptt-checkpoint-0002-8737e4481a4d.zip",
+  "bytes": 873933,
+  "sha256": "8737e4481a4d8d73a143968aae66677dff3f49dfc50958195e2dc894b30d9f4c",
+  "source_revision": "da9d0e17d1215879c894b9668dbc00cd77f03163",
+  "model_sha256": "858d1818b8d8394c95bb62a6ce60474cb534a83b94265ef8615e367c110d262c",
+  "best_training_objective": 0.32324452134521625,
+  "best_holdout_mse": 0.3033047947769171,
+  "best_max_relative_shift": 0.004002122500864915,
+  "run_url": "https://github.com/linzhefeng24/Applepie/actions/runs/43729808008",
+  "checkpoint_tag": "regularized-bptt-1000-20261115",
+  "definition": "one complete 200\u20131100ms training-window forward/backward pass and one Adam update; previous short trials do not count"
 }
