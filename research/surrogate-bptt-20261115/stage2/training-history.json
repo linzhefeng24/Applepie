@@ -1,0 +1,82 @@
+[
+  {
+    "epoch": 0,
+    "train_mse": 0.3240344174048838,
+    "holdout_mse": 0.3044851753140659,
+    "regularization": 0.0,
+    "objective": 0.3240344174048838,
+    "gradient_norm": 6.785001711031895e+37,
+    "max_relative_shift": 0.0,
+    "seconds": 71.1295852780022
+  },
+  {
+    "epoch": 1,
+    "train_mse": 0.3240615701356399,
+    "holdout_mse": 0.3041173681953668,
+    "regularization": 3.019475865346165e-08,
+    "objective": 0.32406160033039855,
+    "gradient_norm": 4.641850467910942e+37,
+    "max_relative_shift": 0.0009999916543423039,
+    "seconds": 35.84341162399505
+  },
+  {
+    "epoch": 2,
+    "train_mse": 0.32400246379373115,
+    "holdout_mse": 0.3043972445028825,
+    "regularization": 1.2061112634471176e-07,
+    "objective": 0.32400258440485746,
+    "gradient_norm": 3.6148283835677413e+37,
+    "max_relative_shift": 0.002000469598793198,
+    "seconds": 33.442445378008415
+  },
+  {
+    "epoch": 3,
+    "train_mse": 0.32391037724688343,
+    "holdout_mse": 0.30436082133406017,
+    "regularization": 2.714608867733892e-07,
+    "objective": 0.32391064870777025,
+    "gradient_norm": 3.329467252543084e+37,
+    "max_relative_shift": 0.0030015524874031367,
+    "seconds": 34.05940796100185
+  },
+  {
+    "epoch": 4,
+    "train_mse": 0.32387531428784394,
+    "holdout_mse": 0.30429348719140403,
+    "regularization": 4.829932231412449e-07,
+    "objective": 0.3238757972810671,
+    "gradient_norm": 2.6555773963725146e+37,
+    "max_relative_shift": 0.004006995135411252,
+    "seconds": 43.35916654900939
+  },
+  {
+    "epoch": 5,
+    "train_mse": 0.3238556875609138,
+    "holdout_mse": 0.30362023752024314,
+    "regularization": 7.551382644424748e-07,
+    "objective": 0.32385644269917824,
+    "gradient_norm": 2.155080796252102e+37,
+    "max_relative_shift": 0.0050157817761699725,
+    "seconds": 41.43495562100725
+  },
+  {
+    "epoch": 6,
+    "train_mse": 0.3239189770965349,
+    "holdout_mse": 0.3035758798043628,
+    "regularization": 1.08824489319368e-06,
+    "objective": 0.3239200653414281,
+    "gradient_norm": 2.2394743664098985e+37,
+    "max_relative_shift": 0.006028941148112723,
+    "seconds": 38.00564623399987
+  },
+  {
+    "epoch": 7,
+    "train_mse": 0.32389322393271724,
+    "holdout_mse": 0.3035962996047531,
+    "regularization": 1.4823580474840996e-06,
+    "objective": 0.3238947062907647,
+    "gradient_norm": 2.1719999733979515e+37,
+    "max_relative_shift": 0.007043382026674873,
+    "seconds": 36.37853300900315
+  }
+]

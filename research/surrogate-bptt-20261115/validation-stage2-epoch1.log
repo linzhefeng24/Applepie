@@ -1,0 +1,3 @@
+Original full hard network: stage2-epoch1 DN_drive
+{"protocol": "DN_drive", "train_mse_mapped": 0.3236912094774095, "holdout_mse_mapped": 0.3044819464319974, "holdout_mse_all130": 0.2822925160020255}
+Original full hard network: stage2-epoch1 quiet

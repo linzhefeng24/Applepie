@@ -98,5 +98,35 @@
     "gradient_norm": 2985.960537570576,
     "max_relative_shift": 0.028679247267758064,
     "seconds": 33.8742692359956
+  },
+  {
+    "epoch": 10,
+    "train_mse": 0.32608642138216887,
+    "holdout_mse": 0.3054374011881972,
+    "regularization": 2.174217085975215e-05,
+    "objective": 0.32610816355302863,
+    "gradient_norm": 126720.25670669111,
+    "max_relative_shift": 0.03211309682288565,
+    "seconds": 32.62812808500894
+  },
+  {
+    "epoch": 11,
+    "train_mse": 0.3264172346507379,
+    "holdout_mse": 0.305281779302763,
+    "regularization": 2.3830978692999216e-05,
+    "objective": 0.3264410656294309,
+    "gradient_norm": 183.53588957441036,
+    "max_relative_shift": 0.03517575704012964,
+    "seconds": 33.833867884008214
+  },
+  {
+    "epoch": 12,
+    "train_mse": 0.3260097086342217,
+    "holdout_mse": 0.3053098081200058,
+    "regularization": 2.628207490884649e-05,
+    "objective": 0.32603599070913053,
+    "gradient_norm": 4009.165189496511,
+    "max_relative_shift": 0.03786037935817807,
+    "seconds": 35.44164666401048
   }
 ]

@@ -8,6 +8,7 @@ from jax_hh import DifferentiableHH
 ROOT=Path(__file__).resolve().parent;R=Path(os.environ.get('BPTT_OUTPUT',str(ROOT)));R.mkdir(parents=True,exist_ok=True)
 ctx=DifferentiableHH();cfg=ctx.cfg
 (R/'method-config.json').write_text(json.dumps(cfg,indent=2)+'\n')
+(R/'method-source.json').write_text(json.dumps({'source_sha256':{p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in [ROOT/'jax_hh.py',ROOT/'train.py']},'baseline_model_sha256':ctx.model.sha256},indent=2)+'\n')
 (R/'checkpoints').mkdir(exist_ok=True)
 forward=jax.jit(ctx.forward);vg=jax.jit(jax.value_and_grad(ctx.loss,has_aux=True))
 raw=j.zeros((ctx.n_groups,len(cfg['train_fields'])));start=time.perf_counter()

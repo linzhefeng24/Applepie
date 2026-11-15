@@ -38,6 +38,11 @@ class DifferentiableHH:
    a=jax.nn.sigmoid((new-threshold)/width);b=jax.nn.sigmoid((threshold-old)/width)
    return -g*a*b*(1-b)/width,g*b*a*(1-a)/width
   spike.defvjp(sf,sb);self.spike=spike
+  @jax.custom_vjp
+  def state_clip(x):return x
+  def cf(x):return x,None
+  def cb(res,g):return (j.clip(g,-c.get('backward_state_clip',10.),c.get('backward_state_clip',10.)),)
+  state_clip.defvjp(cf,cb);self.state_clip=state_clip
 
  def parameters(self,raw):
   delta=self.cfg['relative_bound']*j.tanh(raw)
@@ -90,6 +95,7 @@ class DifferentiableHH:
    if self.cfg.get('bptt_truncate_ms'):
     boundary=((ms+1)%round(self.cfg['bptt_truncate_ms']))==0
     st=jax.tree_util.tree_map(lambda x:j.where(boundary,lax.stop_gradient(x),x),st)
+   if self.cfg.get('backward_state_clip'):st=jax.tree_util.tree_map(self.state_clip,st)
    value=filt/self.rate_scale;clipped=j.clip(value,0.,1.)
    if self.cfg.get('surrogate_readout_clip'):clipped=value+lax.stop_gradient(clipped-value)
    return st,(clipped,counts)
