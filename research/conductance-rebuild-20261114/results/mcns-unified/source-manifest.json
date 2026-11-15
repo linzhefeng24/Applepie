@@ -1,0 +1,18 @@
+{
+  "dataset": "MaleCNS v1.0 minconf0.5 significant-only",
+  "nodes": 3474,
+  "unsigned_edges": 501493,
+  "signed_edges": 455231,
+  "input_metadata_sha256": {
+    "mcns-command-v2": "4b1ad3cf9b87ee17ba6945b24fcb9eff58eecaa2f62d54ab042e28b5d16f56d6",
+    "mcns-steering": "43ee2f464e5bcf46739cfac4d3757425c77855750ff348912aed3099597f756b"
+  },
+  "raw_weights_sha256": "5c536423a62a688e59e7b441f9c04d6272c9a1f017e35814cf561f8c275d9e9e",
+  "submatrix_regression": {
+    "mcns-command-v2": "Both signed and unsigned original induced submatrices exactly retained.",
+    "mcns-steering": "Both signed and unsigned original induced submatrices exactly retained."
+  },
+  "context": "Union of command and steering cells with every original induced edge re-extracted; includes true between-context edges. Not full brain/VNC.",
+  "sign_policy": "ACh+, GABA-, Glu- (receptor sign unverified); other transmitters omitted from fast conductance, retained unsigned",
+  "new_edges_relative_to_old_graph_union": "May include cross-context edges absent from both isolated subgraphs, never fabricated edges."
+}
