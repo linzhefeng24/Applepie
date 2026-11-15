@@ -13,5 +13,26 @@
   "best_max_relative_shift": 0.08194982023661163,
   "run_url": "https://github.com/linzhefeng24/Applepie/actions/runs/43752600477",
   "checkpoint_tag": "regularized-bptt-1000-20261115",
-  "definition": "one complete 200\u20131100ms training-window forward/backward pass and one Adam update; previous short trials do not count"
+  "definition": "one complete 200\u20131100ms training-window forward/backward pass and one Adam update; previous short trials do not count",
+  "final_results": {
+    "completed_updates": 1000,
+    "best_training_step": 123,
+    "source_revision": "da9d0e17d1215879c894b9668dbc00cd77f03163",
+    "full_validation_status": "completed",
+    "assets": [
+      {
+        "file": "bptt-1000-full-validation.zip",
+        "bytes": 3157550,
+        "sha256": "569e64258dac14739684725603af5c5565b762bc04b29f03d6b2985a3415b4bf",
+        "url": "https://github.com/linzhefeng24/Applepie/releases/download/untagged-f5fa7dc236b6d9742d42/bptt-1000-full-validation.zip"
+      },
+      {
+        "file": "Regularized_BPTT_1000_Candidate.zip",
+        "bytes": 19561577,
+        "sha256": "980fa43dc03afa3f13de8446cf7bbd318c2ee63b1bfdfb1b10878e1992ff1b19",
+        "url": "https://github.com/linzhefeng24/Applepie/releases/download/untagged-f5fa7dc236b6d9742d42/Regularized_BPTT_1000_Candidate.zip"
+      }
+    ],
+    "scope": "Local boundary-replayed surrogate BPTT then original full-network hard-spike validation; not a guarantee of laboratory phenomena or anti-phase output."
+  }
 }
