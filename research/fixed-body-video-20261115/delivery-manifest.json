@@ -13,9 +13,8 @@
     "updated runtime code"
   ],
   "not_included": "unchanged base model.yaml and neural_state.npz; use the original single-model package",
-  "source_url": "https://github.com/linzhefeng24/Applepie/releases/download/untagged-0e59415f102e050cef9f/FixedBody_20261115.zip",
+  "source_url": "https://github.com/linzhefeng24/Applepie/releases/download/fixed-body-video-20261115/FixedBody_20261115.zip",
   "api_asset_url": "https://api.github.com/repos/linzhefeng24/Applepie/releases/assets/750328352",
-  "draft_release_url": "https://github.com/linzhefeng24/Applepie/releases/tag/untagged-0e59415f102e050cef9f",
   "backup_status": "confirmed uploaded; fresh download SHA and size verified",
   "status": "independent GitHub-runner replay; exact backed-up bytes are the final delivered ZIP and videos",
   "verification": {
@@ -32,5 +31,9 @@
     "neural_parameters_changed": false,
     "interpretation": "externally supported experiment; not free walking or balance"
   },
-  "local_vs_remote_scope": "Local earlier files remain separately under exports/fixedbody-local; their direct upload failed, not represented as exact backed-up assets."
+  "local_vs_remote_scope": "Local earlier files remain separately under exports/fixedbody-local; their direct upload failed, not represented as exact backed-up assets.",
+  "release_url": "https://github.com/linzhefeng24/Applepie/releases/tag/fixed-body-video-20261115",
+  "release_is_draft": false,
+  "publication_authorization": "User explicitly requested upload to GitHub with a working download link after draft returned 404.",
+  "public_download_verified": true
 }
