@@ -60,7 +60,7 @@
   "learning_rate_floor_fraction": 0.1,
   "chunk_updates": 50,
   "full_forward_eval_every": 25,
-  "warm_start": "stage2/checkpoints/epoch-005.npz",
+  "warm_start": "stage3/checkpoints/epoch-002.npz",
   "optimizer": "Adam with cosine learning-rate decay; no early stopping",
   "epoch_definition": "one complete 200\u20131100ms training-window forward/backward pass and one Adam update; previous short trials do not count",
   "training_prefix_end_ms": 1100,
