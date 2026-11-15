@@ -1,0 +1,16 @@
+{
+  "status": "independent replay equality and force-frame checks passed",
+  "conditions": [
+    {
+      "case": "A",
+      "observed_vs_unobserved_final_qpos_max_abs": 0.0,
+      "ground_frame_world_force_balance": "verified for horizontal plane"
+    },
+    {
+      "case": "B",
+      "observed_vs_unobserved_final_qpos_max_abs": 0.0,
+      "ground_frame_world_force_balance": "verified for horizontal plane"
+    }
+  ],
+  "ground_removal_contact_force_zero": true
+}

@@ -1,0 +1,165 @@
+{
+  "parameters": {
+    "dt_ms": 0.0125,
+    "duration_ms": 1400.0,
+    "onset_ms": 200.0,
+    "drive_pA": 160.0,
+    "ge_nS_per_synapse": 0.012,
+    "gi_nS_per_synapse": 0.006,
+    "tau_e_rise_ms": 0.5,
+    "tau_e_decay_ms": 5.0,
+    "tau_i_rise_ms": 1.0,
+    "tau_i_decay_ms": 30.0,
+    "delay_ms": 1.5,
+    "c_soma_pF": 20.0,
+    "c_axon_pF": 2.5,
+    "rin_cpg_MOhm": 500.0,
+    "rin_mn_MOhm": 300.0,
+    "coupling_nS": 12.0,
+    "gNa_nS": 600.0,
+    "gK_nS": 180.0,
+    "gCa_nS": 0.3,
+    "gSK_nS": 1.0,
+    "gNaP_nS": 0.0,
+    "ca_tau_ms": 100.0,
+    "ca_alpha": 0.0002,
+    "ca_Kd_uM": 0.2,
+    "E_leak_mV": -65.0,
+    "E_Na_mV": 55.0,
+    "E_K_mV": -80.0,
+    "E_Ca_mV": 120.0,
+    "E_exc_mV": 0.0,
+    "E_inh_mV": -80.0,
+    "gate_speed": 1.0,
+    "inhibitory_gain": 1.0,
+    "I2_gain": 1.0,
+    "I2_leak_shift_mV": 0.0,
+    "mn_gain": 6.0,
+    "mn_leak_mV": -65.0,
+    "synaptic_delay_scope": "one global delay prior, not measured per edge",
+    "adult_scope": "Rin=300MOhm is unknown-type adult MN prior; fast/intermediate/slow exemplars tested separately",
+    "I1_gain": 1.0,
+    "background_exc_gain": 1.0,
+    "mn_SK_scale": 1.0,
+    "mn_profile": {
+      "leak_scale": 0.5719406364200305,
+      "mn_leak_mV": -50.857904405099035,
+      "coupling_nS": 4.0,
+      "gNaP_nS": 0.3,
+      "axon_bias_pA": 0.0,
+      "gate_speed": 1.0
+    },
+    "mn_profile_scope": "Unknown EM MN subtype: use adult intermediate reference, not a verified assignment",
+    "group_parameters": {
+      "ascending_neuron|type:AN19A018": {
+        "axon_bias_pA": 5.0,
+        "K": 0.8,
+        "source_gain": 0.5
+      },
+      "cb_intrinsic|type:CL210_a": {
+        "axon_bias_pA": 5.0,
+        "K": 0.8
+      },
+      "descending_neuron|type:DNg60": {
+        "axon_bias_pA": 5.0,
+        "K": 0.8,
+        "inhibitory_gain": 4.0
+      },
+      "descending_neuron|type:DNp09": {
+        "axon_bias_pA": 5.0,
+        "K": 0.8
+      },
+      "cb_intrinsic|type:GNG458": {
+        "axon_bias_pA": 5.0,
+        "K": 0.8,
+        "inhibitory_gain": 2.0
+      },
+      "cb_intrinsic|type:GNG588": {
+        "axon_bias_pA": 5.0,
+        "K": 0.8
+      },
+      "descending_neuron|type:MDN": {
+        "axon_bias_pA": 5.0,
+        "K": 0.8
+      },
+      "descending_neuron|type:DNg100": {
+        "excitatory_gain": 2.0
+      },
+      "descending_neuron|type:DNg97": {
+        "excitatory_gain": 2.0
+      },
+      "descending_neuron|type:DNge053": {
+        "excitatory_gain": 2.0
+      },
+      "cb_intrinsic|type:PFL2": {
+        "axon_bias_pA": 5.0
+      },
+      "cb_intrinsic|type:PFL3": {
+        "axon_bias_pA": 5.0
+      },
+      "ascending_neuron|type:AN05B007": {
+        "excitatory_gain": 0.5
+      },
+      "cb_intrinsic|type:GNG555": {
+        "excitatory_gain": 0.5
+      },
+      "ascending_neuron|type:IN27X001": {
+        "calcium_tau_ms": 2000.0
+      },
+      "vnc_intrinsic|type:IN27X001": {
+        "calcium_tau_ms": 2000.0
+      },
+      "intrinsic_neuron|type:IN09A012": {
+        "K": 0.8,
+        "axon_bias_pA": 3.0,
+        "leak_soma": 0.75,
+        "leak_axon": 0.75,
+        "excitatory_gain": 1.5
+      }
+    },
+    "family_parameters": {
+      "descending neuron|NT:acetylcholine": {
+        "K": 0.8,
+        "axon_bias_pA": 0.0
+      }
+    },
+    "type_pair_conductance_gains": [
+      {
+        "namespace": "MANC",
+        "source_type": "DNg74",
+        "target_type": "IN09A012",
+        "gain": 2.0
+      }
+    ]
+  },
+  "parameter_sha256": "9dd9f8571427a73d4fb8b9e34c8b829302eef6a55dd214d9d830e30fb08a98ff",
+  "selection": "manual inspection of source voltage and excitation/inhibition, not minimum loss",
+  "status": "Manual r5: same chief excitation1.5, existing Web\u2192chief terminal efficacy2; check inhibition retained",
+  "manual_changes": [
+    "PFL2/PFL3 shared axon bias+5pA",
+    "named command types Kx0.8 and axon bias+5pA",
+    "cholinergic-DN family Kx0.8 and axon bias+5pA; not applied to generic inhibitory DN followers",
+    "brain inhibitory conductance0.006nS/count",
+    "DNg100/DNg97/DNge053 excitatory receptor gainx2",
+    "Both BB sources already fire strongly; double their unknown inhibitory release while retaining all edges and physiological source dynamics.",
+    "BB release2 improves inhibition of oDN1 but leaves turn output active; manual next step release4, an explicitly widened unknown effective-release prior, not measured physiological density.",
+    "Combine BRK release0.5 and AN05B007/GNG555 excitation0.5 to preserve local BON1 while reducing excess inhibition of descending commands.",
+    "Both BON1 homologues effective calcium removal time3000ms. Inspect measured prolonged fluorescence response after2s BRK pulse, separately accounting for unknown GCaMP binding; no loss fitting or arbitrary waveform. Ca/SK feedback remains coupled.",
+    "3000ms over-retains normalized fluorescence tail; next hand adjustment2000ms, unchanged fixed observation model.",
+    "r6/r7 postsynaptic gain changes are not adopted because FG/oDN1 contrast remains weak. Starting from r5, shared FG inhibitory release2 is the next direct-path hypothesis, alongside BON1 effectiveCa2000ms.",
+    "Remove generic+5pA axonal bias from cholinergic DN followers, retaining named command-source group biases. BB hyperpolarizes somata but axonal firing persists in r8; test control of the spike initiator rather than escalating inhibitory weights.",
+    "Initial actual chief9A cells receive motor excitation33\u201341pA but remain below firing threshold. Share K0.8 and+3pA axon bias across all six chief9A homologues; test motor recruitment, passive silence and DNg74 inhibition.",
+    "r2 recruits rightT1/T2 chief but leaves leftT1 below threshold. Share leak-density0.75 (roughly667MOhm prior rather than500) across six homologues; preserve K0.8,bias3 and test passive silence and web inhibition."
+  ],
+  "evidence_policy": "distinguish measured neural response, behavioural experiment and paper-model prediction; no exact GCaMP-to-Hz conversion",
+  "muscle_policy": "rough u(t), common time rescaling allowed, no body-walking or endpoint-error requirement",
+  "remaining": [
+    "BB must be evaluated primarily in P9 context, not forced to inhibit BPN like FG",
+    "MF14=LUL152 EM identity not yet resolved",
+    "regional MANC motor model remains a separately scoped assay; no cross-animal edges merged"
+  ],
+  "review_report": "MANUAL_RESULTS_20261115.md",
+  "reviewed_graph": "results/mcns-unified/source-manifest.json",
+  "reviewed_condition_count": 18,
+  "raw_input_release_manifest": "data/public-input-release-verified.json"
+}

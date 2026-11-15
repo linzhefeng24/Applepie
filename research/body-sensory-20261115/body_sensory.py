@@ -39,6 +39,8 @@ def transduce(mechanics,p):
  angle convention must be independently calibrated before anatomical claims.
  """
  q=np.asarray(mechanics['knee_deg']);v=np.asarray(mechanics['knee_velocity_deg_s']);load=np.asarray(mechanics['load_bodyweights']);touch=np.asarray(mechanics['foot_load_bodyweights'])
+ if 'ground_normal_native' in mechanics and 'reference_body_weight_native' in p:
+  load=np.asarray(mechanics['ground_normal_native'])/p['reference_body_weight_native'];touch=np.asarray(mechanics['foot_normal_native'])/p['reference_body_weight_native']
  if not all(np.isfinite(x).all() for x in (q,v,load,touch)) or np.any(load<0) or np.any(touch<0):raise ValueError('Invalid mechanics')
  hook=np.stack((np.maximum(-v,0),np.maximum(v,0)),axis=-1)*p['hook_pA_per_deg_s']
  claw=np.stack((np.maximum(p['neutral_knee_deg']-q,0),np.maximum(q-p['neutral_knee_deg'],0)),axis=-1)*p['claw_pA_per_deg']

@@ -1,0 +1,163 @@
+{
+  "status": "newly rerun body\u2192sensory-HH paired-input experiment; not closed-loop motor control",
+  "body_case": "A-gravity-1.5",
+  "chief_mode": "passive",
+  "time_mapping": "body and chief trial t=0 aligned; no periodic tiling; causal previous-sample hold for mechanics",
+  "duration_ms": 400.0,
+  "conditions": [
+    {
+      "leg": "LF",
+      "chief_MANC_body_id": 100513,
+      "chief_spikes": 0,
+      "numerical_failure": false,
+      "proprio_proximal_spikes": [
+        17,
+        13,
+        0,
+        7
+      ],
+      "proprio_terminal_spikes": [
+        17,
+        13,
+        0,
+        7
+      ],
+      "load_touch_terminal_spikes": [
+        15,
+        20
+      ]
+    },
+    {
+      "leg": "LM",
+      "chief_MANC_body_id": 13157,
+      "chief_spikes": 0,
+      "numerical_failure": false,
+      "proprio_proximal_spikes": [
+        9,
+        4,
+        0,
+        0
+      ],
+      "proprio_terminal_spikes": [
+        9,
+        4,
+        0,
+        0
+      ],
+      "load_touch_terminal_spikes": [
+        28,
+        31
+      ]
+    },
+    {
+      "leg": "LH",
+      "chief_MANC_body_id": 14517,
+      "chief_spikes": 0,
+      "numerical_failure": false,
+      "proprio_proximal_spikes": [
+        11,
+        9,
+        2,
+        0
+      ],
+      "proprio_terminal_spikes": [
+        11,
+        9,
+        2,
+        0
+      ],
+      "load_touch_terminal_spikes": [
+        24,
+        29
+      ]
+    },
+    {
+      "leg": "RF",
+      "chief_MANC_body_id": 165560,
+      "chief_spikes": 0,
+      "numerical_failure": false,
+      "proprio_proximal_spikes": [
+        10,
+        11,
+        0,
+        0
+      ],
+      "proprio_terminal_spikes": [
+        10,
+        11,
+        0,
+        0
+      ],
+      "load_touch_terminal_spikes": [
+        19,
+        22
+      ]
+    },
+    {
+      "leg": "RM",
+      "chief_MANC_body_id": 12443,
+      "chief_spikes": 0,
+      "numerical_failure": false,
+      "proprio_proximal_spikes": [
+        14,
+        4,
+        0,
+        0
+      ],
+      "proprio_terminal_spikes": [
+        14,
+        4,
+        0,
+        0
+      ],
+      "load_touch_terminal_spikes": [
+        21,
+        24
+      ]
+    },
+    {
+      "leg": "RH",
+      "chief_MANC_body_id": 12804,
+      "chief_spikes": 0,
+      "numerical_failure": false,
+      "proprio_proximal_spikes": [
+        7,
+        12,
+        0,
+        0
+      ],
+      "proprio_terminal_spikes": [
+        7,
+        12,
+        0,
+        0
+      ],
+      "load_touch_terminal_spikes": [
+        25,
+        27
+      ]
+    }
+  ],
+  "input_hashes": {
+    "/workspace/Applepie-research-sync/research/body-sensory-20261115/results/A-gravity-1.5/body-sensory.npz": "5fa9a71492ce4215e98ff695a2516f961da06beac84aff5f6925945ebcc65dd6",
+    "/workspace/Applepie-research-sync/research/conductance-rebuild-20261114/results/sensory-command-probes/r3/passive.npz": "361774373af1bbf4843d4558240c56b0dc1d1a48d9c61fdfbe9a7b2ed790fccd",
+    "/workspace/Applepie-research-sync/research/body-sensory-20261115/parameters.json": "ef3e18cd1d23fe73ac396eb00da4b46ae61415c4c571fd3b55b1fdd842c3010e",
+    "/workspace/Applepie-research-sync/research/conductance-rebuild-20261114/configs/sensory-terminal-r2.json": "455d48987fea03910f5a1f8f9dc75c8a7e78029ff817e3033540d24fb5685276"
+  },
+  "code_hashes": {
+    "/workspace/Applepie-research-sync/research/body-sensory-20261115/run_body_neurons.py": "e5257596a6a3d0e386e16e751608b84d7b656b0e9583b250afb25990e776a77b",
+    "/workspace/Applepie-research-sync/research/body-sensory-20261115/body_sensory.py": "4afad8556b3f135709acab914e8c0a06f967ccf61a03bacca7605ef3ef703248",
+    "/workspace/Applepie-research-sync/research/conductance-rebuild-20261114/sensory_terminal_model.py": "1621f3c4a9bfb963ab8aa7ba172e15ddeae25ebb0ad82343de04f2856c98a4ec",
+    "/workspace/Applepie-research-sync/research/conductance-rebuild-20261114/model.py": "934572b4c9958a726d46726d70d0cf04178d877766611ecc0ae9f2b8bc5c5bba"
+  },
+  "python": "3.12.14",
+  "numpy": "2.5.4",
+  "command": [
+    "/workspace/server-motor-import/.venv/bin/python",
+    "run_body_neurons.py",
+    "A-gravity-1.5",
+    "--chief-mode",
+    "passive"
+  ],
+  "randomness": "deterministic; no random draws"
+}
