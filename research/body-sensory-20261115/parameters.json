@@ -1,6 +1,6 @@
 {
   "status": "unmeasured functional transduction priors; no fitted mechanoreceptor strain model",
-  "neutral_knee_deg": 80.0,
+  "neutral_knee_deg": 0.0,
   "hook_pA_per_deg_s": 0.5,
   "claw_pA_per_deg": 6.0,
   "load_max_pA": 160.0,
@@ -8,7 +8,9 @@
   "touch_max_pA": 160.0,
   "touch_half_bodyweights": 0.05,
   "force_units": "original model native units; load normalized by native mass times gravity",
-  "angle_convention": "raw MuJoCo tibia hinge degrees; 80 degree neutral inherited prototype, anatomical flexion convention uncalibrated",
+  "angle_convention": "Raw MuJoCo hinge coordinate, zero neutral; channel signs are coordinate signs, anatomical flexion/extension uncalibrated",
   "source": "hook/claw qualitative roles from Dallmann2025 DOI10.1038/s41586-025-09554-2; numerical gains estimated; load/touch are functional proxies without identified EM cells",
-  "runtime": "body extraction MuJoCo3.3.2; neural transduction HH environment from conductance-rebuild"
+  "runtime": "body extraction MuJoCo3.3.2; neural transduction HH environment from conductance-rebuild",
+  "proprio_max_pA": 250.0,
+  "manual_change_reason": "r1 reused 80deg anatomical reference in raw hinge coordinates and kept one position channel always silent; use zero hinge reference and a shared saturating mechanical-current prior"
 }

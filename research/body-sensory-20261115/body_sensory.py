@@ -45,4 +45,6 @@ def transduce(mechanics,p):
  # Saturating compression/touch proxies, not calibrated receptor firing rates.
  load_i=p['load_max_pA']*load/(p['load_half_bodyweights']+load)
  touch_i=p['touch_max_pA']*touch/(p['touch_half_bodyweights']+touch)
- return dict(proprio_current_pA=np.concatenate((hook,claw),axis=-1),load_current_pA=load_i,touch_current_pA=touch_i)
+ current=np.concatenate((hook,claw),axis=-1)
+ if 'proprio_max_pA' in p:current=p['proprio_max_pA']*current/(p['proprio_max_pA']+current)
+ return dict(proprio_current_pA=current,load_current_pA=load_i,touch_current_pA=touch_i)

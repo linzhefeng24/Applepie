@@ -1,0 +1,5 @@
+{
+  "status": "failed initial body-neural run before integration",
+  "error": "integer chief body ID compared to string NPZ IDs; fixed namespace-preserving string comparison",
+  "model_outputs_written": false
+}
