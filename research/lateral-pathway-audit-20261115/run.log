@@ -1,0 +1,105 @@
+Running silence_left_INXXX464
+{
+  "pairs": [
+    {
+      "left_muscle": "LH:tibia_extensor",
+      "right_muscle": "RH:tibia_extensor",
+      "left_MN_ids": [
+        "800621",
+        "812953"
+      ],
+      "right_MN_ids": [
+        "800158",
+        "809935"
+      ],
+      "left_mean_u": 0.10814830020175344,
+      "right_mean_u": 0.3286175320409026,
+      "mean_abs_difference": 0.22237566444001505,
+      "zero_lag_correlation": 0.777275719758802,
+      "MN_counts": {
+        "800621": 12,
+        "812953": 0,
+        "800158": 27,
+        "809935": 10
+      }
+    },
+    {
+      "left_muscle": "LH:pleural_remotor_and_abductor",
+      "right_muscle": "RH:pleural_remotor_and_abductor",
+      "left_MN_ids": [
+        "800175"
+      ],
+      "right_MN_ids": [
+        "800290",
+        "800553"
+      ],
+      "left_mean_u": 0.4362426697140983,
+      "right_mean_u": 0.4547240739894152,
+      "mean_abs_difference": 0.09309097199931181,
+      "zero_lag_correlation": 0.9161836427593906,
+      "MN_counts": {
+        "800175": 29,
+        "800290": 21,
+        "800553": 38
+      }
+    }
+  ],
+  "DN_spike_array_equal_baseline": false,
+  "run_id": "9911768a72a4021e3fc38543359cb4845b815d5df128b66f815d395764dbc3b4",
+  "ablate_ids": [
+    "929612"
+  ]
+}
+Running silence_right_INXXX464
+{
+  "pairs": [
+    {
+      "left_muscle": "LH:tibia_extensor",
+      "right_muscle": "RH:tibia_extensor",
+      "left_MN_ids": [
+        "800621",
+        "812953"
+      ],
+      "right_MN_ids": [
+        "800158",
+        "809935"
+      ],
+      "left_mean_u": 0.11847874515937122,
+      "right_mean_u": 0.29628324409645984,
+      "mean_abs_difference": 0.18615739893469502,
+      "zero_lag_correlation": 0.7977228952417384,
+      "MN_counts": {
+        "800621": 14,
+        "812953": 0,
+        "800158": 24,
+        "809935": 10
+      }
+    },
+    {
+      "left_muscle": "LH:pleural_remotor_and_abductor",
+      "right_muscle": "RH:pleural_remotor_and_abductor",
+      "left_MN_ids": [
+        "800175"
+      ],
+      "right_MN_ids": [
+        "800290",
+        "800553"
+      ],
+      "left_mean_u": 0.4328426124835075,
+      "right_mean_u": 0.3843206400176111,
+      "mean_abs_difference": 0.08126258586527166,
+      "zero_lag_correlation": 0.9366235905096587,
+      "MN_counts": {
+        "800175": 31,
+        "800290": 17,
+        "800553": 32
+      }
+    }
+  ],
+  "DN_spike_array_equal_baseline": false,
+  "run_id": "ebf859c6cd852d051f5a6273d73b0c468a126595e7e511a9293afc1322fbd36c",
+  "ablate_ids": [
+    "902520"
+  ]
+}
+Complete

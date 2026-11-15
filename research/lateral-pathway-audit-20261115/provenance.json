@@ -1,0 +1,23 @@
+{
+  "python": "3.12.14",
+  "versions": {
+    "numpy": "2.5.4",
+    "numba": "0.68.1",
+    "scipy": "1.18.1",
+    "mujoco": "3.3.2",
+    "matplotlib": "3.11.2"
+  },
+  "code_revision": "7f44290b5d7a31ada3bf5078cbc4f0e1c07510b9",
+  "command": "OPENBLAS_NUM_THREADS=1 NUMBA_NUM_THREADS=1 PYTHONDONTWRITEBYTECODE=1 python research/lateral-pathway-audit-20261115/probe.py",
+  "randomness": "no random seed or stochastic input; frozen deterministic input",
+  "output_sha256": {
+    "README.md": "1fc90f6dc6b1950c943d860af67d5c54e693b0121bee0f373e6201b4c5a5e366",
+    "baseline_paths.png": "fc9b17dc49f9ac27f3af083c1e062e91fcd9084c291fa86206366e582eda0284",
+    "probe.py": "0162446f0ad0abbe40d9b59f42641f00078af9cc2d082f6ca2eac0cca849cfff",
+    "report.json": "f3ea34cece28af52b8e24cbaacafda4f1b6451d0afa5fb484f1430c8525c9fc7",
+    "run.log": "f976f9620c59f2d568b9606f32334d52e37d4a183540ac53bb547f273420c678",
+    "silence_left_INXXX464.npz": "8cec5400e462cf890204ab28f943586079adf8022b6f7fd11dbf090f977f2e61",
+    "silence_right_INXXX464.npz": "49f5ff9c83101f84bfaccb434c9486d365c2ee77d8e3c896296c7fd98831a787",
+    "summarize.py": "917a9486f9218a56eb2b7e217ba780c350134d37caca7c5b16dc19ad5a835193"
+  }
+}

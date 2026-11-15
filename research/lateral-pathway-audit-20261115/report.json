@@ -1,0 +1,209 @@
+{
+  "model_sha256": "858d1818b8d8394c95bb62a6ce60474cb534a83b94265ef8615e367c110d262c",
+  "baseline_neural_sha256": "4153fa8f1d29bb1bd987281d68d8407767bb9dd4e2ff1644673218b33e3fc027",
+  "window_ms": [
+    400,
+    1450
+  ],
+  "paths": {
+    "left": [
+      {
+        "pre": "10056",
+        "post": "800003",
+        "effective_signed_count": 140.0
+      },
+      {
+        "pre": "800003",
+        "post": "929612",
+        "effective_signed_count": 61.0
+      },
+      {
+        "pre": "929612",
+        "post": "800621",
+        "effective_signed_count": 38.0
+      }
+    ],
+    "right": [
+      {
+        "pre": "10045",
+        "post": "800114",
+        "effective_signed_count": 121.0
+      },
+      {
+        "pre": "800114",
+        "post": "902520",
+        "effective_signed_count": 69.0
+      },
+      {
+        "pre": "902520",
+        "post": "800158",
+        "effective_signed_count": 101.0
+      }
+    ]
+  },
+  "interpretation": "Candidate active routes, not uniquely identified rhythm generator or dominant causal pathway. Amplitude asymmetry differs from anti-phase alternation. Whole-cell silencing affects all inputs/outputs and recurrent routes.",
+  "conditions": {
+    "baseline": {
+      "pairs": [
+        {
+          "left_muscle": "LH:tibia_extensor",
+          "right_muscle": "RH:tibia_extensor",
+          "left_MN_ids": [
+            "800621",
+            "812953"
+          ],
+          "right_MN_ids": [
+            "800158",
+            "809935"
+          ],
+          "left_mean_u": 0.09523196025488008,
+          "right_mean_u": 0.2730902439171103,
+          "mean_abs_difference": 0.17785828366223022,
+          "zero_lag_correlation": 0.8852327205398134,
+          "MN_counts": {
+            "800621": 10,
+            "812953": 0,
+            "800158": 20,
+            "809935": 10
+          }
+        },
+        {
+          "left_muscle": "LH:pleural_remotor_and_abductor",
+          "right_muscle": "RH:pleural_remotor_and_abductor",
+          "left_MN_ids": [
+            "800175"
+          ],
+          "right_MN_ids": [
+            "800290",
+            "800553"
+          ],
+          "left_mean_u": 0.33785078743695535,
+          "right_mean_u": 0.3513441135889264,
+          "mean_abs_difference": 0.050849737503320114,
+          "zero_lag_correlation": 0.9536180935348262,
+          "MN_counts": {
+            "800175": 23,
+            "800290": 15,
+            "800553": 29
+          }
+        }
+      ],
+      "DN_spike_array_equal_baseline": true,
+      "run_id": "99da331bc3ad86641802f1034237277ab9974b64dcfdd253427ddd37e68957ec"
+    },
+    "silence_left_INXXX464": {
+      "pairs": [
+        {
+          "left_muscle": "LH:tibia_extensor",
+          "right_muscle": "RH:tibia_extensor",
+          "left_MN_ids": [
+            "800621",
+            "812953"
+          ],
+          "right_MN_ids": [
+            "800158",
+            "809935"
+          ],
+          "left_mean_u": 0.10814830020175344,
+          "right_mean_u": 0.3286175320409026,
+          "mean_abs_difference": 0.22237566444001505,
+          "zero_lag_correlation": 0.777275719758802,
+          "MN_counts": {
+            "800621": 12,
+            "812953": 0,
+            "800158": 27,
+            "809935": 10
+          }
+        },
+        {
+          "left_muscle": "LH:pleural_remotor_and_abductor",
+          "right_muscle": "RH:pleural_remotor_and_abductor",
+          "left_MN_ids": [
+            "800175"
+          ],
+          "right_MN_ids": [
+            "800290",
+            "800553"
+          ],
+          "left_mean_u": 0.4362426697140983,
+          "right_mean_u": 0.4547240739894152,
+          "mean_abs_difference": 0.09309097199931181,
+          "zero_lag_correlation": 0.9161836427593906,
+          "MN_counts": {
+            "800175": 29,
+            "800290": 21,
+            "800553": 38
+          }
+        }
+      ],
+      "DN_spike_array_equal_baseline": false,
+      "run_id": "9911768a72a4021e3fc38543359cb4845b815d5df128b66f815d395764dbc3b4",
+      "ablate_ids": [
+        "929612"
+      ]
+    },
+    "silence_right_INXXX464": {
+      "pairs": [
+        {
+          "left_muscle": "LH:tibia_extensor",
+          "right_muscle": "RH:tibia_extensor",
+          "left_MN_ids": [
+            "800621",
+            "812953"
+          ],
+          "right_MN_ids": [
+            "800158",
+            "809935"
+          ],
+          "left_mean_u": 0.11847874515937122,
+          "right_mean_u": 0.29628324409645984,
+          "mean_abs_difference": 0.18615739893469502,
+          "zero_lag_correlation": 0.7977228952417384,
+          "MN_counts": {
+            "800621": 14,
+            "812953": 0,
+            "800158": 24,
+            "809935": 10
+          }
+        },
+        {
+          "left_muscle": "LH:pleural_remotor_and_abductor",
+          "right_muscle": "RH:pleural_remotor_and_abductor",
+          "left_MN_ids": [
+            "800175"
+          ],
+          "right_MN_ids": [
+            "800290",
+            "800553"
+          ],
+          "left_mean_u": 0.4328426124835075,
+          "right_mean_u": 0.3843206400176111,
+          "mean_abs_difference": 0.08126258586527166,
+          "zero_lag_correlation": 0.9366235905096587,
+          "MN_counts": {
+            "800175": 31,
+            "800290": 17,
+            "800553": 32
+          }
+        }
+      ],
+      "DN_spike_array_equal_baseline": false,
+      "run_id": "ebf859c6cd852d051f5a6273d73b0c468a126595e7e511a9293afc1322fbd36c",
+      "ablate_ids": [
+        "902520"
+      ]
+    }
+  },
+  "baseline_actual_activation_means": {
+    "LH:tibia_extensor": 0.16599204412600801,
+    "RH:tibia_extensor": 0.3538355486893759
+  },
+  "conclusions": {
+    "amplitude_asymmetry_observed": true,
+    "anti_phase_alternation_established": false,
+    "unique_or_dominant_pathway_established": false,
+    "single_interneuron_silencing_did_not_abolish_target_output": true,
+    "DN_output_changed_in_interventions": true,
+    "scope": "Existing baseline shows actual muscle activation asymmetry. Whole-neuron perturbations change recurrent activity and do not isolate the direct path or its share. No new body replay was run for the two silencing conditions."
+  }
+}
