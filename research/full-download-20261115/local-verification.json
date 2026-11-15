@@ -1,0 +1,22 @@
+{
+  "status": "passed fresh extraction, full manifest and public interfaces",
+  "archive_sha256": "2bb357fef65b01fcb7b6dac0d79dd758ba92cb87c08cd60e8a34f5257fc38380",
+  "archive_bytes": 73742127,
+  "code_revision": "35380ada475fd3d138c24ac40bf043a6d35bcf64",
+  "model_sha256": "858d1818b8d8394c95bb62a6ce60474cb534a83b94265ef8615e367c110d262c",
+  "verified_files": 27,
+  "neurons": 3988,
+  "muscle_channels": 130,
+  "video_count": 3,
+  "state_fields": [
+    "actual_time_ms",
+    "neuron_ids",
+    "voltage",
+    "calcium",
+    "currents_pA",
+    "conductances_nS",
+    "gating_m_h_n"
+  ],
+  "independent_body_and_contact_interfaces": true,
+  "laboratory_experiments_newly_validated": []
+}

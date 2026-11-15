@@ -1,0 +1,42 @@
+{
+  "source_revision": "1e8a9170d0e658ac7869620726938c940ca29d60",
+  "inputs": [
+    {
+      "path": "research/conductance-rebuild-20261114/results/mcns-brake-extension/neurons.json",
+      "sha256": "30a2425f329a3155bf18f6d72f6d41d4b442afefa6fdad4547d65acfa165a9e1",
+      "bytes": 1999316
+    },
+    {
+      "path": "research/conductance-rebuild-20261114/results/mcns-brake-extension/unsigned-connectivity.npz",
+      "sha256": "483fb955fb9636009197fa74a1b4bed593538d927b29bc3389b7611fed62a6db",
+      "bytes": 1346000
+    },
+    {
+      "path": "research/brake-retuning-20261115/results/terminal-r2/BRK.npz",
+      "sha256": "fcbe27b6a9074062f43083d76dde73c32888465403ee0abf54c11593f0cb6b62",
+      "bytes": 8356327
+    },
+    {
+      "path": "research/brake-retuning-20261115/configs/brake-terminal-r2.json",
+      "sha256": "f28bd77e57ac8ab887bccdbdee56b5bc53526d5318db77953a0c44955c01bdeb",
+      "bytes": 6012
+    },
+    {
+      "path": "research/conductance-rebuild-20261114/data/model-130-channel-candidate-crosswalk.csv",
+      "sha256": "4e13f6ac17da8e6f6d3b4df0da7dcdd2e89c4ab59a47a7e521b07790fece03ae",
+      "bytes": 32161
+    },
+    {
+      "path": "research/assets/flymimic-legacy-AB-twofile.zip",
+      "sha256": "60a720b2a367556c7408b82d6d63998039b091dab3652ea027fe42f4cb37267a",
+      "bytes": 18557190
+    }
+  ],
+  "canonical_model_sha256": "858d1818b8d8394c95bb62a6ce60474cb534a83b94265ef8615e367c110d262c",
+  "nodes": 3988,
+  "unsigned_edges": 534428,
+  "MN_to_muscle_candidate_mapped_channels": 104,
+  "unmapped_channels": 26,
+  "origin": "new integrated delivery implementation, not a recovered historical checkpoint",
+  "one_model_only": true
+}
