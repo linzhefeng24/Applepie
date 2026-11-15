@@ -187,18 +187,36 @@ $2\%$调节时间/$\mathrm{s}$ & 0.796（近似）& 0.324（游标）\\
 在数值上相符。实测位置终值偏离参考，不能将该响应视为理想单位静态增益模型的完全复现。
 
 \subsection{不同增益下的阶跃响应（4.3.3）}
+实验分别设置$k_1=0.08$、$0.1055$和$0.5$，对应过阻尼、临界阻尼附近和欠阻尼三组。电机模型参数保持$K=23.8095$、$\tau=0.0995\unit{s}$不变。由式\eqref{eq:parameters}计算各组理论参数，结果见表\ref{tab:gain_parameters}。
+
+\begin{table}[H]
+\centering
+\caption{实验增益设置与理论参数}
+\begin{tabular}{lcccc}
+\hline
+工况 & $k_1$ & $T/\mathrm{s}$ & $\xi$ & 理论$t_s(2\%)/\mathrm{s}$\\
+\hline
+过阻尼 & 0.08 & 0.22856 & 1.14852 & 1.695\\
+临界阻尼附近 & 0.1055 & 0.19903 & 1.00013 & 1.161\\
+欠阻尼 & 0.5 & 0.09142 & 0.45941 & 0.796\\
+\hline
+\end{tabular}
+\label{tab:gain_parameters}
+\end{table}
+前两组理论调节时间由阶跃响应精确求解，欠阻尼组采用$4T/\xi$近似。由于临界增益取四舍五入值$0.1055$，该组阻尼比略大于1，与临界阻尼非常接近。
+
 三组蓝色理论响应的测量结果见表\ref{tab:damping}。其中，单调响应分别在绝对时间2.677和$2.165\unit{s}$达到最终值的$98\%$；欠阻尼响应峰值约为1.198，最后进入$0.98\sim1.02$误差带的游标时间为$1.767\unit{s}$。各时间均扣除$1\unit{s}$阶跃起始时间。
 
 \begin{table}[H]
 \centering
 \caption{不同阻尼工况下的理论仿真响应读数}
-\begin{tabular}{lccc}
+\begin{tabular}{lcccc}
 \hline
-工况 & 峰值 & 超调量/$\%$ & $t_s(2\%)/\mathrm{s}$\\
+工况 & $k_1$ & 峰值 & 超调量/$\%$ & $t_s(2\%)/\mathrm{s}$\\
 \hline
-过阻尼 & 无超调 & 约0 & 1.677\\
-临界阻尼附近 & 无超调 & 约0 & 1.165\\
-欠阻尼 & 1.198 & 19.8 & 0.767\\
+过阻尼 & 0.08 & 无超调 & 约0 & 1.677\\
+临界阻尼附近 & 0.1055 & 无超调 & 约0 & 1.165\\
+欠阻尼 & 0.5 & 1.198 & 19.8 & 0.767\\
 \hline
 \end{tabular}
 \label{tab:damping}
@@ -208,14 +226,14 @@ $2\%$调节时间/$\mathrm{s}$ & 0.796（近似）& 0.324（游标）\\
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.98\textwidth,trim=20 100 20 175,clip]{figs/control_experiment_1/overdamped.jpg}
-\caption{过阻尼参数组：仿真单调上升，实际转角接近零}
+\caption{过阻尼组（$k_1=0.08$）：仿真单调上升，实际转角接近零}
 \label{fig:overdamped}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.98\textwidth,trim=20 100 20 175,clip]{figs/control_experiment_1/critical.jpg}
-\caption{临界阻尼附近参数组：仿真调节时间约1.165 s}
+\caption{临界阻尼附近组（$k_1=0.1055$）：仿真调节时间约1.165 s}
 \label{fig:critical}
 \end{figure}
 \paragraph{临界阻尼判别。}
@@ -227,27 +245,27 @@ $2\%$调节时间/$\mathrm{s}$ & 0.796（近似）& 0.324（游标）\\
 \begin{equation}
  t_{s,c}=5.83392\times0.199=1.16095\unit{s}.
 \end{equation}
-其与测量值$1.165\unit{s}$相差约$0.35\%$，结合单调且无超调的曲线，可将该理论响应判为临界阻尼附近工况。
+实际设置$k_1=0.1055$时，理论调节时间为$1.16140\unit{s}$，与读图值$1.165\unit{s}$相差约$0.31\%$，符合临界阻尼附近的响应特征。
 
 \paragraph{过阻尼判别。}
-另一单调响应的调节时间为$1.677\unit{s}$。固定标称$K$与$\tau$，利用过阻尼阶跃响应反算得
+设置$k_1=0.08$时，由模型参数计算得到
 \begin{equation}
- k_{1,\mathrm{eq}}\approx0.08067,\qquad \xi_{\mathrm{eq}}\approx1.144>1.
+ T=0.22856\unit{s},\qquad \xi=1.14852>1.
 \end{equation}
-因此，该理论曲线与过阻尼模型一致。此处增益为响应反算的等效值，原始增益设置未完整留存。
+理论调节时间为$1.695\unit{s}$，读图值为$1.677\unit{s}$，相差约$1.06\%$。曲线单调上升且无超调，与过阻尼模型一致。
 
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.98\textwidth,trim=20 100 20 175,clip]{figs/control_experiment_1/underdamped_peak.jpg}
-\caption{欠阻尼参数组的仿真峰值测量}
+\caption{欠阻尼组（$k_1=0.5$）的仿真峰值测量}
 \label{fig:underdamped_peak}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.98\textwidth,trim=20 100 20 175,clip]{figs/control_experiment_1/underdamped_settling.jpg}
-\caption{欠阻尼参数组的仿真2\%调节时间测量}
+\caption{欠阻尼组（$k_1=0.5$）的仿真2\%调节时间测量}
 \label{fig:underdamped_settling}
 \end{figure}
 \paragraph{欠阻尼判别。}
@@ -255,7 +273,7 @@ $2\%$调节时间/$\mathrm{s}$ & 0.796（近似）& 0.324（游标）\\
 \begin{equation}
  \xi=\frac{-\ln M_p}{\sqrt{\pi^2+(\ln M_p)^2}}\approx0.458.
 \end{equation}
-对应标称模型的等效比例增益约为0.50。取$k_1=0.5$时，理论超调量为$19.69\%$，近似调节时间为$0.796\unit{s}$，与记录中的$19.8\%$和$0.767\unit{s}$相近。
+实验设置$k_1=0.5$时，理论阻尼比为$0.45941$，理论超调量为$19.69\%$，近似调节时间为$0.796\unit{s}$，与读图结果$19.8\%$和$0.767\unit{s}$相近。
 
 \paragraph{硬件响应。}
 两组低增益工况下，红色实际位置曲线接近零，未达到$1\unit{rad}$目标。表\ref{tab:damping}中的调节时间仅属于理论仿真，不能列为硬件跟踪指标。欠阻尼工况下，实际位置的稳态值约为$0.792\unit{rad}$、峰值约为$0.809\unit{rad}$（图\ref{fig:underdamped_hardware_peak}），故相对实际稳态值的超调量约为
@@ -266,7 +284,7 @@ $2\%$调节时间/$\mathrm{s}$ & 0.796（近似）& 0.324（游标）\\
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.98\textwidth,trim=20 100 20 175,clip]{figs/control_experiment_1/underdamped_hardware_peak.jpg}
-\caption{欠阻尼参数组的实际位置稳态值与峰值测量}
+\caption{欠阻尼组（$k_1=0.5$）的实际位置稳态值与峰值测量}
 \label{fig:underdamped_hardware_peak}
 \end{figure}
 
