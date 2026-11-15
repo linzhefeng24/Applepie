@@ -247308,7 +247308,7 @@
     "current_candidate": "configs/manual-neural-bank-r8.json",
     "graph": "results/mcns-unified/source-manifest.json",
     "results": "results/frozen-neural-panel-unified-r8",
-    "status": "same-bank checks in progress; no majority-pass claim",
+    "status": "18 r8 same-bank conditions complete; partial qualitative matches, not a majority-pass claim",
     "assessed_families": [
       {
         "id": "DNa02_opponent_response",
@@ -247328,7 +247328,7 @@
       {
         "id": "BRK_BON1_response_and_tail",
         "evidence": "measured GCaMP trace, source data included",
-        "status": "effectiveCa2000ms improves local shape with fixed uncalibrated observation prior; full unified2s protocol being checked",
+        "status": "2s unified-graph activation and sustained response shape retained under fixed uncalibrated observation prior; no absolute fluorescence fit or unique calcium-time inference",
         "source": "data/experimental-source/BON1-ED5e.csv"
       },
       {
@@ -247384,9 +247384,33 @@
       {
         "id": "muscle_activation_trends",
         "evidence": "model-derived u(t), not laboratory neuronal ground truth",
-        "status": "secondary regional MANC readout; residual antagonist coactivation and mapping gaps, no full gait claim"
+        "status": "Shared MANC type-pair efficacy0.2, without individual extensor overrides; sampled12/12 tibial MNs silent afterE1 ablation;337MN active count195→11. E2 residual activity and antagonist coactivation remain."
+      },
+      {
+        "id": "E1_motor_causal_dependency",
+        "evidence": "paper-model candidate and local causal model test, not an in-vivo ablation",
+        "status": "Shared MANC profile:12/12 inspected tibial MNs silent after allE1 cells ablated; active MN count195→11. Residual cells fire continuously; complete body behavior not tested.",
+        "results": "results/manual-mechanism/shared-motor-readout-review.json"
+      },
+      {
+        "id": "E2_motor_dependency",
+        "evidence": "paper-model candidate",
+        "status": "Shared MANC profile:E2 ablation retains activity in136MN; residual rhythm is not ruled out. Not a full pass."
+      },
+      {
+        "id": "real_I2_with_rhythm",
+        "evidence": "local model and paper-model hypothesis",
+        "status": "Intact six-leg MANC context includes real I2 cells and retains core/MN rhythmic outputs; no blanket robustness claim."
       }
     ],
-    "interpretation": "These overlapping families are not independent experiments and are not a denominator for a fabricated success percentage. Lab observations outrank model-only targets."
-  }
+    "interpretation": "These overlapping families are not independent experiments and are not a denominator for a fabricated success percentage. Lab observations outrank model-only targets.",
+    "report": "MANUAL_RESULTS_20261115.md",
+    "motor_candidate": "configs/manual-motor-bank-shared-r1.json",
+    "motor_causal_review": "results/manual-mechanism/shared-motor-readout-review.json",
+    "numerical_checks": "results/manual-numerical-checks.json",
+    "regression_tests": "results/pathway-regression-tests.txt",
+    "observations": "results/frozen-neural-panel-unified-r8/observations.json",
+    "condition_inventory": "results/manual-run-inventory.json"
+  },
+  "latest_neural_review_namespace": "manual_joint_review_20261115"
 }

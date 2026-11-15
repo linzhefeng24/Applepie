@@ -1,0 +1,2112 @@
+{
+  "analysis_code_sha256": "981b4e9254344631025966eab64a52426e91df63b28e46f2780c658fb1fbf280",
+  "method": "Inventory the entire motor readout as well as the12 inspected tibial MNs.\nNonzero spikes are not a test for rhythm; no loss or automatic parameter choice.\n",
+  "conditions": [
+    {
+      "mode": "expanded-right-extensors-third-direct-DN-weak",
+      "raw_sha256": "6a7bb2b0ea3b3832ffab4608f6db8b50691f1eadab143c43b2f580ef531f8a76",
+      "motor_neurons_total": 337,
+      "motor_neurons_with_post400ms_spikes": 195,
+      "active_motor_neurons": [
+        {
+          "body_id": "10347",
+          "type": "Ti extensor MN",
+          "rate_hz": 7.5
+        },
+        {
+          "body_id": "10461",
+          "type": "Ti extensor MN",
+          "rate_hz": 10.833333333333334
+        },
+        {
+          "body_id": "10462",
+          "type": "Ti extensor MN",
+          "rate_hz": 12.5
+        },
+        {
+          "body_id": "10710",
+          "type": "Ti flexor MN",
+          "rate_hz": 5.0
+        },
+        {
+          "body_id": "10737",
+          "type": "Ti extensor MN",
+          "rate_hz": 6.666666666666667
+        },
+        {
+          "body_id": "10811",
+          "type": "ltm1-tibia MN",
+          "rate_hz": 31.666666666666668
+        },
+        {
+          "body_id": "10866",
+          "type": "Tr extensor MN",
+          "rate_hz": 15.0
+        },
+        {
+          "body_id": "10968",
+          "type": "MNhl68",
+          "rate_hz": 31.666666666666668
+        },
+        {
+          "body_id": "11022",
+          "type": "Sternal anterior rotator MN",
+          "rate_hz": 17.5
+        },
+        {
+          "body_id": "11226",
+          "type": "Fe reductor MN",
+          "rate_hz": 8.333333333333334
+        },
+        {
+          "body_id": "11400",
+          "type": "Sternal posterior rotator MN",
+          "rate_hz": 31.666666666666668
+        },
+        {
+          "body_id": "11489",
+          "type": "Ti extensor MN",
+          "rate_hz": 20.0
+        },
+        {
+          "body_id": "11529",
+          "type": "Sternal posterior rotator MN",
+          "rate_hz": 11.666666666666668
+        },
+        {
+          "body_id": "11562",
+          "type": "Sternal anterior rotator MN",
+          "rate_hz": 42.5
+        },
+        {
+          "body_id": "11657",
+          "type": "Ti extensor MN",
+          "rate_hz": 7.5
+        },
+        {
+          "body_id": "11706",
+          "type": "Ti extensor MN",
+          "rate_hz": 17.5
+        },
+        {
+          "body_id": "11786",
+          "type": "ltm MN",
+          "rate_hz": 8.333333333333334
+        },
+        {
+          "body_id": "11813",
+          "type": "MNhl02",
+          "rate_hz": 8.333333333333334
+        },
+        {
+          "body_id": "12113",
+          "type": "Fe reductor MN",
+          "rate_hz": 5.0
+        },
+        {
+          "body_id": "12134",
+          "type": "Ti flexor MN",
+          "rate_hz": 7.5
+        },
+        {
+          "body_id": "12396",
+          "type": "Tergopleural/Pleural promotor MN",
+          "rate_hz": 37.5
+        },
+        {
+          "body_id": "12474",
+          "type": "Acc. ti flexor MN",
+          "rate_hz": 25.833333333333336
+        },
+        {
+          "body_id": "12504",
+          "type": "MNhl67",
+          "rate_hz": 60.0
+        },
+        {
+          "body_id": "12585",
+          "type": "Ti flexor MN",
+          "rate_hz": 4.166666666666667
+        },
+        {
+          "body_id": "12628",
+          "type": "Tergopleural/Pleural promotor MN",
+          "rate_hz": 9.166666666666668
+        },
+        {
+          "body_id": "12686",
+          "type": "Tergopleural/Pleural promotor MN",
+          "rate_hz": 68.33333333333334
+        },
+        {
+          "body_id": "12693",
+          "type": "ltm MN",
+          "rate_hz": 6.666666666666667
+        },
+        {
+          "body_id": "12704",
+          "type": "Ti extensor MN",
+          "rate_hz": 7.5
+        },
+        {
+          "body_id": "12725",
+          "type": "Acc. ti flexor MN",
+          "rate_hz": 34.16666666666667
+        },
+        {
+          "body_id": "12758",
+          "type": "Acc. ti flexor MN",
+          "rate_hz": 0.8333333333333334
+        },
+        {
+          "body_id": "12891",
+          "type": "Fe reductor MN",
+          "rate_hz": 7.5
+        },
+        {
+          "body_id": "13006",
+          "type": "Ti extensor MN",
+          "rate_hz": 20.833333333333336
+        },
+        {
+          "body_id": "13033",
+          "type": "ltm MN",
+          "rate_hz": 19.166666666666668
+        },
+        {
+          "body_id": "13069",
+          "type": "Sternotrochanter MN",
+          "rate_hz": 19.166666666666668
+        },
+        {
+          "body_id": "13115",
+          "type": "Ti extensor MN",
+          "rate_hz": 8.333333333333334
+        },
+        {
+          "body_id": "13156",
+          "type": "ltm MN",
+          "rate_hz": 15.0
+        },
+        {
+          "body_id": "13163",
+          "type": "Ti flexor MN",
+          "rate_hz": 16.666666666666668
+        },
+        {
+          "body_id": "13170",
+          "type": "Acc. ti flexor MN",
+          "rate_hz": 25.833333333333336
+        },
+        {
+          "body_id": "13241",
+          "type": "ltm1-tibia MN",
+          "rate_hz": 13.333333333333334
+        },
+        {
+          "body_id": "13280",
+          "type": "Ti flexor MN",
+          "rate_hz": 8.333333333333334
+        },
+        {
+          "body_id": "13283",
+          "type": "Ti flexor MN",
+          "rate_hz": 12.5
+        },
+        {
+          "body_id": "13300",
+          "type": "Sternal anterior rotator MN",
+          "rate_hz": 15.0
+        },
+        {
+          "body_id": "13399",
+          "type": "Ti flexor MN",
+          "rate_hz": 8.333333333333334
+        },
+        {
+          "body_id": "13434",
+          "type": "Tergotr. MN",
+          "rate_hz": 17.5
+        },
+        {
+          "body_id": "13464",
+          "type": "Tergopleural/Pleural promotor MN",
+          "rate_hz": 10.0
+        },
+        {
+          "body_id": "13490",
+          "type": "Tergopleural/Pleural promotor MN",
+          "rate_hz": 12.5
+        },
+        {
+          "body_id": "13563",
+          "type": "Ti flexor MN",
+          "rate_hz": 0.8333333333333334
+        },
+        {
+          "body_id": "13628",
+          "type": "Pleural remotor/abductor MN",
+          "rate_hz": 39.16666666666667
+        },
+        {
+          "body_id": "13746",
+          "type": "Acc. ti flexor MN",
+          "rate_hz": 20.0
+        },
+        {
+          "body_id": "13817",
+          "type": "Sternal adductor MN",
+          "rate_hz": 3.3333333333333335
+        },
+        {
+          "body_id": "13819",
+          "type": "Acc. ti flexor MN",
+          "rate_hz": 17.5
+        },
+        {
+          "body_id": "13904",
+          "type": "Tr extensor MN",
+          "rate_hz": 18.333333333333336
+        },
+        {
+          "body_id": "13920",
+          "type": "Fe reductor MN",
+          "rate_hz": 7.5
+        },
+        {
+          "body_id": "14020",
+          "type": "Fe reductor MN",
+          "rate_hz": 4.166666666666667
+        },
+        {
+          "body_id": "14168",
+          "type": "Pleural remotor/abductor MN",
+          "rate_hz": 4.166666666666667
+        },
+        {
+          "body_id": "14346",
+          "type": "Pleural remotor/abductor MN",
+          "rate_hz": 9.166666666666668
+        },
+        {
+          "body_id": "14468",
+          "type": "Ti flexor MN",
+          "rate_hz": 4.166666666666667
+        },
+        {
+          "body_id": "14536",
+          "type": "Tr extensor MN",
+          "rate_hz": 10.833333333333334
+        },
+        {
+          "body_id": "14596",
+          "type": "Pleural remotor/abductor MN",
+          "rate_hz": 11.666666666666668
+        },
+        {
+          "body_id": "14649",
+          "type": "MNhl29",
+          "rate_hz": 5.833333333333334
+        },
+        {
+          "body_id": "14773",
+          "type": "ltm2-femur MN",
+          "rate_hz": 0.8333333333333334
+        },
+        {
+          "body_id": "14783",
+          "type": "Acc. tr flexor MN",
+          "rate_hz": 40.0
+        },
+        {
+          "body_id": "14824",
+          "type": "Acc. ti flexor MN",
+          "rate_hz": 5.833333333333334
+        },
+        {
+          "body_id": "14848",
+          "type": "Ti flexor MN",
+          "rate_hz": 8.333333333333334
+        },
+        {
+          "body_id": "14949",
+          "type": "Fe reductor MN",
+          "rate_hz": 15.0
+        },
+        {
+          "body_id": "15006",
+          "type": "Tr flexor MN",
+          "rate_hz": 8.333333333333334
+        },
+        {
+          "body_id": "15107",
+          "type": "Tergotr. MN",
+          "rate_hz": 15.833333333333334
+        },
+        {
+          "body_id": "15149",
+          "type": "Ti flexor MN",
+          "rate_hz": 6.666666666666667
+        },
+        {
+          "body_id": "15262",
+          "type": "Pleural remotor/abductor MN",
+          "rate_hz": 70.83333333333334
+        },
+        {
+          "body_id": "15317",
+          "type": "ltm2-femur MN",
+          "rate_hz": 9.166666666666668
+        },
+        {
+          "body_id": "15321",
+          "type": "Ti flexor MN",
+          "rate_hz": 7.5
+        },
+        {
+          "body_id": "15367",
+          "type": "Acc. ti flexor MN",
+          "rate_hz": 1.6666666666666667
+        },
+        {
+          "body_id": "15434",
+          "type": "Ta depressor MN",
+          "rate_hz": 8.333333333333334
+        },
+        {
+          "body_id": "15446",
+          "type": "Ta levator MN",
+          "rate_hz": 7.5
+        },
+        {
+          "body_id": "15623",
+          "type": "Ti flexor MN",
+          "rate_hz": 5.0
+        },
+        {
+          "body_id": "15735",
+          "type": "MNhl01",
+          "rate_hz": 14.166666666666668
+        },
+        {
+          "body_id": "15883",
+          "type": "Sternal posterior rotator MN",
+          "rate_hz": 7.5
+        },
+        {
+          "body_id": "16035",
+          "type": "Sternal posterior rotator MN",
+          "rate_hz": 8.333333333333334
+        },
+        {
+          "body_id": "16228",
+          "type": "Acc. ti flexor MN",
+          "rate_hz": 17.5
+        },
+        {
+          "body_id": "16250",
+          "type": "Tergopleural/Pleural promotor MN",
+          "rate_hz": 12.5
+        },
+        {
+          "body_id": "16295",
+          "type": "Sternal anterior rotator MN",
+          "rate_hz": 6.666666666666667
+        },
+        {
+          "body_id": "16346",
+          "type": "Ta levator MN",
+          "rate_hz": 0.8333333333333334
+        },
+        {
+          "body_id": "16356",
+          "type": "ltm2-femur MN",
+          "rate_hz": 6.666666666666667
+        },
+        {
+          "body_id": "16419",
+          "type": "Pleural remotor/abductor MN",
+          "rate_hz": 6.666666666666667
+        },
+        {
+          "body_id": "16495",
+          "type": "Acc. ti flexor MN",
+          "rate_hz": 23.333333333333336
+        },
+        {
+          "body_id": "16633",
+          "type": "Fe reductor MN",
+          "rate_hz": 5.0
+        },
+        {
+          "body_id": "16635",
+          "type": "Ti flexor MN",
+          "rate_hz": 5.0
+        },
+        {
+          "body_id": "16903",
+          "type": "Acc. tr flexor MN",
+          "rate_hz": 10.833333333333334
+        },
+        {
+          "body_id": "16963",
+          "type": "Tr flexor MN",
+          "rate_hz": 7.5
+        },
+        {
+          "body_id": "17091",
+          "type": "Pleural remotor/abductor MN",
+          "rate_hz": 13.333333333333334
+        },
+        {
+          "body_id": "17133",
+          "type": "Ti flexor MN",
+          "rate_hz": 6.666666666666667
+        },
+        {
+          "body_id": "17176",
+          "type": "Sternal anterior rotator MN",
+          "rate_hz": 7.5
+        },
+        {
+          "body_id": "17316",
+          "type": "STTMm",
+          "rate_hz": 20.833333333333336
+        },
+        {
+          "body_id": "17693",
+          "type": "Acc. tr flexor MN",
+          "rate_hz": 5.0
+        },
+        {
+          "body_id": "17930",
+          "type": "Tr extensor MN",
+          "rate_hz": 20.0
+        },
+        {
+          "body_id": "17947",
+          "type": "Sternal posterior rotator MN",
+          "rate_hz": 5.0
+        },
+        {
+          "body_id": "18006",
+          "type": "Sternotrochanter MN",
+          "rate_hz": 10.833333333333334
+        },
+        {
+          "body_id": "18286",
+          "type": "Pleural remotor/abductor MN",
+          "rate_hz": 8.333333333333334
+        },
+        {
+          "body_id": "18412",
+          "type": "Acc. ti flexor MN",
+          "rate_hz": 8.333333333333334
+        },
+        {
+          "body_id": "18440",
+          "type": "Tr flexor MN",
+          "rate_hz": 8.333333333333334
+        },
+        {
+          "body_id": "18448",
+          "type": "Ti flexor MN",
+          "rate_hz": 7.5
+        },
+        {
+          "body_id": "18471",
+          "type": "Sternal anterior rotator MN",
+          "rate_hz": 5.833333333333334
+        },
+        {
+          "body_id": "18491",
+          "type": "Ti flexor MN",
+          "rate_hz": 21.666666666666668
+        },
+        {
+          "body_id": "18579",
+          "type": "Sternotrochanter MN",
+          "rate_hz": 7.5
+        },
+        {
+          "body_id": "18716",
+          "type": "Sternotrochanter MN",
+          "rate_hz": 20.0
+        },
+        {
+          "body_id": "18963",
+          "type": "Acc. ti flexor MN",
+          "rate_hz": 13.333333333333334
+        },
+        {
+          "body_id": "18983",
+          "type": "Fe reductor MN",
+          "rate_hz": 8.333333333333334
+        },
+        {
+          "body_id": "19048",
+          "type": "Acc. ti flexor MN",
+          "rate_hz": 12.5
+        },
+        {
+          "body_id": "19074",
+          "type": "Acc. ti flexor MN",
+          "rate_hz": 5.0
+        },
+        {
+          "body_id": "19094",
+          "type": "Sternotrochanter MN",
+          "rate_hz": 15.833333333333334
+        },
+        {
+          "body_id": "19206",
+          "type": "Pleural remotor/abductor MN",
+          "rate_hz": 20.0
+        },
+        {
+          "body_id": "19260",
+          "type": "Acc. ti flexor MN",
+          "rate_hz": 0.8333333333333334
+        },
+        {
+          "body_id": "19319",
+          "type": "Tergopleural/Pleural promotor MN",
+          "rate_hz": 13.333333333333334
+        },
+        {
+          "body_id": "19652",
+          "type": "Tergotr. MN",
+          "rate_hz": 10.833333333333334
+        },
+        {
+          "body_id": "19704",
+          "type": "Tr flexor MN",
+          "rate_hz": 6.666666666666667
+        },
+        {
+          "body_id": "19751",
+          "type": "Ta levator MN",
+          "rate_hz": 0.8333333333333334
+        },
+        {
+          "body_id": "19758",
+          "type": "ltm1-tibia MN",
+          "rate_hz": 22.5
+        },
+        {
+          "body_id": "19771",
+          "type": "Tr flexor MN",
+          "rate_hz": 7.5
+        },
+        {
+          "body_id": "19773",
+          "type": "MNml29",
+          "rate_hz": 0.8333333333333334
+        },
+        {
+          "body_id": "19886",
+          "type": "Tr flexor MN",
+          "rate_hz": 8.333333333333334
+        },
+        {
+          "body_id": "20119",
+          "type": "Sternal anterior rotator MN",
+          "rate_hz": 31.666666666666668
+        },
+        {
+          "body_id": "20386",
+          "type": "Tergopleural/Pleural promotor MN",
+          "rate_hz": 71.66666666666667
+        },
+        {
+          "body_id": "20593",
+          "type": "Acc. ti flexor MN",
+          "rate_hz": 4.166666666666667
+        },
+        {
+          "body_id": "20605",
+          "type": "Acc. ti flexor MN",
+          "rate_hz": 2.5
+        },
+        {
+          "body_id": "20667",
+          "type": "Sternal adductor MN",
+          "rate_hz": 5.0
+        },
+        {
+          "body_id": "20673",
+          "type": "Tr flexor MN",
+          "rate_hz": 6.666666666666667
+        },
+        {
+          "body_id": "21241",
+          "type": "Sternal posterior rotator MN",
+          "rate_hz": 1.6666666666666667
+        },
+        {
+          "body_id": "21255",
+          "type": "Pleural remotor/abductor MN",
+          "rate_hz": 6.666666666666667
+        },
+        {
+          "body_id": "21612",
+          "type": "Tr flexor MN",
+          "rate_hz": 8.333333333333334
+        },
+        {
+          "body_id": "21665",
+          "type": "Fe reductor MN",
+          "rate_hz": 4.166666666666667
+        },
+        {
+          "body_id": "21718",
+          "type": "Sternal adductor MN",
+          "rate_hz": 9.166666666666668
+        },
+        {
+          "body_id": "21944",
+          "type": "Fe reductor MN",
+          "rate_hz": 7.5
+        },
+        {
+          "body_id": "21991",
+          "type": "Ti flexor MN",
+          "rate_hz": 10.0
+        },
+        {
+          "body_id": "22215",
+          "type": "Sternal anterior rotator MN",
+          "rate_hz": 15.0
+        },
+        {
+          "body_id": "22465",
+          "type": "Tr flexor MN",
+          "rate_hz": 5.0
+        },
+        {
+          "body_id": "22718",
+          "type": "Tr flexor MN",
+          "rate_hz": 1.6666666666666667
+        },
+        {
+          "body_id": "22729",
+          "type": "Acc. tr flexor MN",
+          "rate_hz": 6.666666666666667
+        },
+        {
+          "body_id": "23117",
+          "type": "Tr flexor MN",
+          "rate_hz": 0.8333333333333334
+        },
+        {
+          "body_id": "23299",
+          "type": "Tr flexor MN",
+          "rate_hz": 7.5
+        },
+        {
+          "body_id": "23364",
+          "type": "Tr flexor MN",
+          "rate_hz": 1.6666666666666667
+        },
+        {
+          "body_id": "23974",
+          "type": "Acc. tr flexor MN",
+          "rate_hz": 4.166666666666667
+        },
+        {
+          "body_id": "24050",
+          "type": "Fe reductor MN",
+          "rate_hz": 8.333333333333334
+        },
+        {
+          "body_id": "24443",
+          "type": "Acc. ti flexor MN",
+          "rate_hz": 10.833333333333334
+        },
+        {
+          "body_id": "24493",
+          "type": "STTMm",
+          "rate_hz": 16.666666666666668
+        },
+        {
+          "body_id": "24669",
+          "type": "Sternal anterior rotator MN",
+          "rate_hz": 9.166666666666668
+        },
+        {
+          "body_id": "26132",
+          "type": "Sternotrochanter MN",
+          "rate_hz": 13.333333333333334
+        },
+        {
+          "body_id": "26566",
+          "type": "Sternal anterior rotator MN",
+          "rate_hz": 15.0
+        },
+        {
+          "body_id": "26883",
+          "type": "Tr flexor MN",
+          "rate_hz": 5.0
+        },
+        {
+          "body_id": "28219",
+          "type": "Sternal posterior rotator MN",
+          "rate_hz": 5.0
+        },
+        {
+          "body_id": "28997",
+          "type": "Tr flexor MN",
+          "rate_hz": 5.0
+        },
+        {
+          "body_id": "29689",
+          "type": "Sternal posterior rotator MN",
+          "rate_hz": 4.166666666666667
+        },
+        {
+          "body_id": "34004",
+          "type": "Acc. tr flexor MN",
+          "rate_hz": 4.166666666666667
+        },
+        {
+          "body_id": "34115",
+          "type": "Tr flexor MN",
+          "rate_hz": 5.0
+        },
+        {
+          "body_id": "37220",
+          "type": "Ti flexor MN",
+          "rate_hz": 5.0
+        },
+        {
+          "body_id": "40443",
+          "type": "Tr flexor MN",
+          "rate_hz": 5.0
+        },
+        {
+          "body_id": "41439",
+          "type": "Tr flexor MN",
+          "rate_hz": 0.8333333333333334
+        },
+        {
+          "body_id": "41482",
+          "type": "Pleural remotor/abductor MN",
+          "rate_hz": 6.666666666666667
+        },
+        {
+          "body_id": "41933",
+          "type": "Tr flexor MN",
+          "rate_hz": 0.8333333333333334
+        },
+        {
+          "body_id": "49886",
+          "type": "Sternal posterior rotator MN",
+          "rate_hz": 7.5
+        },
+        {
+          "body_id": "61001",
+          "type": "ltm1-tibia MN",
+          "rate_hz": 4.166666666666667
+        },
+        {
+          "body_id": "96565",
+          "type": "Tr flexor MN",
+          "rate_hz": 5.0
+        },
+        {
+          "body_id": "101043",
+          "type": "Acc. ti flexor MN",
+          "rate_hz": 2.5
+        },
+        {
+          "body_id": "102019",
+          "type": "Acc. tr flexor MN",
+          "rate_hz": 8.333333333333334
+        },
+        {
+          "body_id": "102786",
+          "type": "Sternal posterior rotator MN",
+          "rate_hz": 9.166666666666668
+        },
+        {
+          "body_id": "104697",
+          "type": "Sternal posterior rotator MN",
+          "rate_hz": 1.6666666666666667
+        },
+        {
+          "body_id": "152620",
+          "type": "Sternotrochanter MN",
+          "rate_hz": 19.166666666666668
+        },
+        {
+          "body_id": "152621",
+          "type": "Sternotrochanter MN",
+          "rate_hz": 22.5
+        },
+        {
+          "body_id": "152642",
+          "type": "Sternotrochanter MN",
+          "rate_hz": 5.0
+        },
+        {
+          "body_id": "153315",
+          "type": "Tr flexor MN",
+          "rate_hz": 1.6666666666666667
+        },
+        {
+          "body_id": "153335",
+          "type": "Ti flexor MN",
+          "rate_hz": 5.0
+        },
+        {
+          "body_id": "154133",
+          "type": "Sternal posterior rotator MN",
+          "rate_hz": 16.666666666666668
+        },
+        {
+          "body_id": "155218",
+          "type": "Tr flexor MN",
+          "rate_hz": 6.666666666666667
+        },
+        {
+          "body_id": "155853",
+          "type": "Sternal adductor MN",
+          "rate_hz": 7.5
+        },
+        {
+          "body_id": "156857",
+          "type": "Fe reductor MN",
+          "rate_hz": 7.5
+        },
+        {
+          "body_id": "157207",
+          "type": "Tr flexor MN",
+          "rate_hz": 8.333333333333334
+        },
+        {
+          "body_id": "157432",
+          "type": "Sternotrochanter MN",
+          "rate_hz": 5.0
+        },
+        {
+          "body_id": "157503",
+          "type": "Sternotrochanter MN",
+          "rate_hz": 5.0
+        },
+        {
+          "body_id": "158769",
+          "type": "Tr flexor MN",
+          "rate_hz": 8.333333333333334
+        },
+        {
+          "body_id": "159762",
+          "type": "Tergotr. MN",
+          "rate_hz": 5.0
+        },
+        {
+          "body_id": "162830",
+          "type": "ltm1-tibia MN",
+          "rate_hz": 7.5
+        },
+        {
+          "body_id": "162833",
+          "type": "Tr extensor MN",
+          "rate_hz": 19.166666666666668
+        },
+        {
+          "body_id": "162868",
+          "type": "Acc. ti flexor MN",
+          "rate_hz": 0.8333333333333334
+        },
+        {
+          "body_id": "162912",
+          "type": "Tr extensor MN",
+          "rate_hz": 5.0
+        },
+        {
+          "body_id": "164741",
+          "type": "Sternal anterior rotator MN",
+          "rate_hz": 8.333333333333334
+        },
+        {
+          "body_id": "165340",
+          "type": "Tr extensor MN",
+          "rate_hz": 9.166666666666668
+        },
+        {
+          "body_id": "166337",
+          "type": "Pleural remotor/abductor MN",
+          "rate_hz": 2.5
+        },
+        {
+          "body_id": "166392",
+          "type": "Sternotrochanter MN",
+          "rate_hz": 18.333333333333336
+        },
+        {
+          "body_id": "171055",
+          "type": "Sternal adductor MN",
+          "rate_hz": 5.0
+        },
+        {
+          "body_id": "171948",
+          "type": "Tr flexor MN",
+          "rate_hz": 8.333333333333334
+        },
+        {
+          "body_id": "175327",
+          "type": "Tergotr. MN",
+          "rate_hz": 15.833333333333334
+        },
+        {
+          "body_id": "176866",
+          "type": "Acc. ti flexor MN",
+          "rate_hz": 4.166666666666667
+        },
+        {
+          "body_id": "218885",
+          "type": "Tr flexor MN",
+          "rate_hz": 5.833333333333334
+        },
+        {
+          "body_id": "219796",
+          "type": "Sternal anterior rotator MN",
+          "rate_hz": 6.666666666666667
+        },
+        {
+          "body_id": "219853",
+          "type": "Pleural remotor/abductor MN",
+          "rate_hz": 6.666666666666667
+        },
+        {
+          "body_id": "226276",
+          "type": "Fe reductor MN",
+          "rate_hz": 7.5
+        }
+      ],
+      "inspected_tibial_cells": [
+        {
+          "body_id": "12134",
+          "type": "Ti flexor MN",
+          "leg": "T1_LHS",
+          "rate_hz": 7.5,
+          "mean_soma_mV": -55.22323673158079,
+          "mean_exc_current_pA": 16.109761079791678,
+          "mean_inh_current_pA": -0.9038092328890738,
+          "mean_coupling_current_pA": -31.027750485947855
+        },
+        {
+          "body_id": "11657",
+          "type": "Ti extensor MN",
+          "leg": "T1_LHS",
+          "rate_hz": 7.5,
+          "mean_soma_mV": -63.02096978987424,
+          "mean_exc_current_pA": 25.40905252987389,
+          "mean_inh_current_pA": -37.180140738918475,
+          "mean_coupling_current_pA": -11.598742988217179
+        },
+        {
+          "body_id": "10710",
+          "type": "Ti flexor MN",
+          "leg": "T2_LHS",
+          "rate_hz": 5.0,
+          "mean_soma_mV": -58.14581222683959,
+          "mean_exc_current_pA": 5.257273946669692,
+          "mean_inh_current_pA": -0.20160222081942394,
+          "mean_coupling_current_pA": -23.124512595363
+        },
+        {
+          "body_id": "10737",
+          "type": "Ti extensor MN",
+          "leg": "T2_LHS",
+          "rate_hz": 6.666666666666667,
+          "mean_soma_mV": -58.382604311019044,
+          "mean_exc_current_pA": 8.41613266873156,
+          "mean_inh_current_pA": -4.525147678324847,
+          "mean_coupling_current_pA": -22.07015178612787
+        },
+        {
+          "body_id": "12585",
+          "type": "Ti flexor MN",
+          "leg": "T3_LHS",
+          "rate_hz": 4.166666666666667,
+          "mean_soma_mV": -57.84212070876899,
+          "mean_exc_current_pA": 7.050023146523643,
+          "mean_inh_current_pA": -0.3477869927806511,
+          "mean_coupling_current_pA": -24.454399316083656
+        },
+        {
+          "body_id": "10347",
+          "type": "Ti extensor MN",
+          "leg": "T3_LHS",
+          "rate_hz": 7.5,
+          "mean_soma_mV": -56.70292114803667,
+          "mean_exc_current_pA": 22.841340990460388,
+          "mean_inh_current_pA": -13.623955456064596,
+          "mean_coupling_current_pA": -26.28223798305801
+        },
+        {
+          "body_id": "13163",
+          "type": "Ti flexor MN",
+          "leg": "T1_RHS",
+          "rate_hz": 16.666666666666668,
+          "mean_soma_mV": -51.531165942768034,
+          "mean_exc_current_pA": 28.804792076932916,
+          "mean_inh_current_pA": -3.248528098239103,
+          "mean_coupling_current_pA": -38.29129127290316
+        },
+        {
+          "body_id": "11706",
+          "type": "Ti extensor MN",
+          "leg": "T1_RHS",
+          "rate_hz": 17.5,
+          "mean_soma_mV": -58.719608418605546,
+          "mean_exc_current_pA": 88.47931292532115,
+          "mean_inh_current_pA": -86.05600257666607,
+          "mean_coupling_current_pA": -21.384753461098
+        },
+        {
+          "body_id": "13280",
+          "type": "Ti flexor MN",
+          "leg": "T2_RHS",
+          "rate_hz": 8.333333333333334,
+          "mean_soma_mV": -55.81998017161845,
+          "mean_exc_current_pA": 13.742188069791585,
+          "mean_inh_current_pA": -1.5900193413364632,
+          "mean_coupling_current_pA": -28.1983810556805
+        },
+        {
+          "body_id": "10461",
+          "type": "Ti extensor MN",
+          "leg": "T2_RHS",
+          "rate_hz": 10.833333333333334,
+          "mean_soma_mV": -63.664141958585105,
+          "mean_exc_current_pA": 62.09613736134438,
+          "mean_inh_current_pA": -76.57000680326566,
+          "mean_coupling_current_pA": -10.27230291213133
+        },
+        {
+          "body_id": "18491",
+          "type": "Ti flexor MN",
+          "leg": "T3_RHS",
+          "rate_hz": 21.666666666666668,
+          "mean_soma_mV": -51.92027199217562,
+          "mean_exc_current_pA": 43.155701166495874,
+          "mean_inh_current_pA": -17.85541401678457,
+          "mean_coupling_current_pA": -37.458016766097266
+        },
+        {
+          "body_id": "10462",
+          "type": "Ti extensor MN",
+          "leg": "T3_RHS",
+          "rate_hz": 12.5,
+          "mean_soma_mV": -59.243350329273525,
+          "mean_exc_current_pA": 55.19037291927236,
+          "mean_inh_current_pA": -54.525397173587386,
+          "mean_coupling_current_pA": -20.098350689527784
+        }
+      ],
+      "channels_with_nonzero_u_after400ms": 97,
+      "interpretation": "Activity counts do not establish oscillation, correct antagonist phase or locomotion. Unmapped channels are zero placeholders, not measured silence."
+    },
+    {
+      "mode": "expanded-right-extensors-third-direct-DN-weak-E1-silenced",
+      "raw_sha256": "d97571487fa8a3241231970b8379a85544ec85f09b509067bb57aebfde5f8cc4",
+      "motor_neurons_total": 337,
+      "motor_neurons_with_post400ms_spikes": 11,
+      "active_motor_neurons": [
+        {
+          "body_id": "11400",
+          "type": "Sternal posterior rotator MN",
+          "rate_hz": 35.833333333333336
+        },
+        {
+          "body_id": "11562",
+          "type": "Sternal anterior rotator MN",
+          "rate_hz": 35.833333333333336
+        },
+        {
+          "body_id": "12396",
+          "type": "Tergopleural/Pleural promotor MN",
+          "rate_hz": 35.833333333333336
+        },
+        {
+          "body_id": "12504",
+          "type": "MNhl67",
+          "rate_hz": 54.16666666666667
+        },
+        {
+          "body_id": "12686",
+          "type": "Tergopleural/Pleural promotor MN",
+          "rate_hz": 71.66666666666667
+        },
+        {
+          "body_id": "12725",
+          "type": "Acc. ti flexor MN",
+          "rate_hz": 35.0
+        },
+        {
+          "body_id": "13628",
+          "type": "Pleural remotor/abductor MN",
+          "rate_hz": 35.833333333333336
+        },
+        {
+          "body_id": "14783",
+          "type": "Acc. tr flexor MN",
+          "rate_hz": 47.5
+        },
+        {
+          "body_id": "15262",
+          "type": "Pleural remotor/abductor MN",
+          "rate_hz": 71.66666666666667
+        },
+        {
+          "body_id": "20119",
+          "type": "Sternal anterior rotator MN",
+          "rate_hz": 35.833333333333336
+        },
+        {
+          "body_id": "20386",
+          "type": "Tergopleural/Pleural promotor MN",
+          "rate_hz": 71.66666666666667
+        }
+      ],
+      "inspected_tibial_cells": [
+        {
+          "body_id": "12134",
+          "type": "Ti flexor MN",
+          "leg": "T1_LHS",
+          "rate_hz": 0.0,
+          "mean_soma_mV": -60.00001281325651,
+          "mean_exc_current_pA": 0.0,
+          "mean_inh_current_pA": -2.8608049258247212e-05,
+          "mean_coupling_current_pA": -19.21770469197027
+        },
+        {
+          "body_id": "11657",
+          "type": "Ti extensor MN",
+          "leg": "T1_LHS",
+          "rate_hz": 0.0,
+          "mean_soma_mV": -60.00000857890462,
+          "mean_exc_current_pA": 0.0,
+          "mean_inh_current_pA": -1.8827349645017696e-05,
+          "mean_coupling_current_pA": -19.217716041778196
+        },
+        {
+          "body_id": "10710",
+          "type": "Ti flexor MN",
+          "leg": "T2_LHS",
+          "rate_hz": 0.0,
+          "mean_soma_mV": -60.00000706434327,
+          "mean_exc_current_pA": 0.0,
+          "mean_inh_current_pA": -1.5794427774298624e-05,
+          "mean_coupling_current_pA": -19.21771963528587
+        },
+        {
+          "body_id": "10737",
+          "type": "Ti extensor MN",
+          "leg": "T2_LHS",
+          "rate_hz": 0.0,
+          "mean_soma_mV": -59.05662725611323,
+          "mean_exc_current_pA": 3.1408688409060113,
+          "mean_inh_current_pA": 0.0,
+          "mean_coupling_current_pA": -21.485083064466515
+        },
+        {
+          "body_id": "12585",
+          "type": "Ti flexor MN",
+          "leg": "T3_LHS",
+          "rate_hz": 0.0,
+          "mean_soma_mV": -59.99999997799265,
+          "mean_exc_current_pA": 0.0,
+          "mean_inh_current_pA": 0.0,
+          "mean_coupling_current_pA": -19.217738055232914
+        },
+        {
+          "body_id": "10347",
+          "type": "Ti extensor MN",
+          "leg": "T3_LHS",
+          "rate_hz": 0.0,
+          "mean_soma_mV": -57.4526434311766,
+          "mean_exc_current_pA": 8.401373569089031,
+          "mean_inh_current_pA": 0.0,
+          "mean_coupling_current_pA": -25.478120556158487
+        },
+        {
+          "body_id": "13163",
+          "type": "Ti flexor MN",
+          "leg": "T1_RHS",
+          "rate_hz": 0.0,
+          "mean_soma_mV": -56.183709645785214,
+          "mean_exc_current_pA": 13.072935053816138,
+          "mean_inh_current_pA": -0.5998174355009093,
+          "mean_coupling_current_pA": -28.742551953438348
+        },
+        {
+          "body_id": "11706",
+          "type": "Ti extensor MN",
+          "leg": "T1_RHS",
+          "rate_hz": 0.0,
+          "mean_soma_mV": -56.22800011947312,
+          "mean_exc_current_pA": 12.334950686224683,
+          "mean_inh_current_pA": 0.0,
+          "mean_coupling_current_pA": -28.6319526130383
+        },
+        {
+          "body_id": "13280",
+          "type": "Ti flexor MN",
+          "leg": "T2_RHS",
+          "rate_hz": 0.0,
+          "mean_soma_mV": -60.000159246082916,
+          "mean_exc_current_pA": 0.0,
+          "mean_inh_current_pA": -0.0003550265590292066,
+          "mean_coupling_current_pA": -19.217324119825903
+        },
+        {
+          "body_id": "10461",
+          "type": "Ti extensor MN",
+          "leg": "T2_RHS",
+          "rate_hz": 0.0,
+          "mean_soma_mV": -60.05329464785156,
+          "mean_exc_current_pA": 4.432729287426525,
+          "mean_inh_current_pA": -4.604172466461677,
+          "mean_coupling_current_pA": -19.089639721836335
+        },
+        {
+          "body_id": "18491",
+          "type": "Ti flexor MN",
+          "leg": "T3_RHS",
+          "rate_hz": 0.0,
+          "mean_soma_mV": -60.00267650190532,
+          "mean_exc_current_pA": 2.826397783064507e-15,
+          "mean_inh_current_pA": -0.0022600299188242317,
+          "mean_coupling_current_pA": -19.21604959063558
+        },
+        {
+          "body_id": "10462",
+          "type": "Ti extensor MN",
+          "leg": "T3_RHS",
+          "rate_hz": 0.0,
+          "mean_soma_mV": -58.01790860639517,
+          "mean_exc_current_pA": 7.522195305132454,
+          "mean_inh_current_pA": -0.9529234485179969,
+          "mean_coupling_current_pA": -24.05448303585778
+        }
+      ],
+      "channels_with_nonzero_u_after400ms": 31,
+      "interpretation": "Activity counts do not establish oscillation, correct antagonist phase or locomotion. Unmapped channels are zero placeholders, not measured silence."
+    },
+    {
+      "mode": "expanded-right-extensors-third-direct-DN-weak-E2-silenced",
+      "raw_sha256": "8554eb93aa55ed22e127db5f3ca4b27cd3cb5f11d39531f3b49dd43823c774df",
+      "motor_neurons_total": 337,
+      "motor_neurons_with_post400ms_spikes": 136,
+      "active_motor_neurons": [
+        {
+          "body_id": "10347",
+          "type": "Ti extensor MN",
+          "rate_hz": 10.833333333333334
+        },
+        {
+          "body_id": "10461",
+          "type": "Ti extensor MN",
+          "rate_hz": 14.166666666666668
+        },
+        {
+          "body_id": "10462",
+          "type": "Ti extensor MN",
+          "rate_hz": 23.333333333333336
+        },
+        {
+          "body_id": "10811",
+          "type": "ltm1-tibia MN",
+          "rate_hz": 46.66666666666667
+        },
+        {
+          "body_id": "10866",
+          "type": "Tr extensor MN",
+          "rate_hz": 36.66666666666667
+        },
+        {
+          "body_id": "10968",
+          "type": "MNhl68",
+          "rate_hz": 35.0
+        },
+        {
+          "body_id": "11022",
+          "type": "Sternal anterior rotator MN",
+          "rate_hz": 20.0
+        },
+        {
+          "body_id": "11400",
+          "type": "Sternal posterior rotator MN",
+          "rate_hz": 35.833333333333336
+        },
+        {
+          "body_id": "11489",
+          "type": "Ti extensor MN",
+          "rate_hz": 25.0
+        },
+        {
+          "body_id": "11529",
+          "type": "Sternal posterior rotator MN",
+          "rate_hz": 3.3333333333333335
+        },
+        {
+          "body_id": "11562",
+          "type": "Sternal anterior rotator MN",
+          "rate_hz": 50.0
+        },
+        {
+          "body_id": "11706",
+          "type": "Ti extensor MN",
+          "rate_hz": 25.0
+        },
+        {
+          "body_id": "11786",
+          "type": "ltm MN",
+          "rate_hz": 29.166666666666668
+        },
+        {
+          "body_id": "11813",
+          "type": "MNhl02",
+          "rate_hz": 8.333333333333334
+        },
+        {
+          "body_id": "12113",
+          "type": "Fe reductor MN",
+          "rate_hz": 0.8333333333333334
+        },
+        {
+          "body_id": "12396",
+          "type": "Tergopleural/Pleural promotor MN",
+          "rate_hz": 34.16666666666667
+        },
+        {
+          "body_id": "12474",
+          "type": "Acc. ti flexor MN",
+          "rate_hz": 32.5
+        },
+        {
+          "body_id": "12504",
+          "type": "MNhl67",
+          "rate_hz": 60.0
+        },
+        {
+          "body_id": "12628",
+          "type": "Tergopleural/Pleural promotor MN",
+          "rate_hz": 2.5
+        },
+        {
+          "body_id": "12686",
+          "type": "Tergopleural/Pleural promotor MN",
+          "rate_hz": 71.66666666666667
+        },
+        {
+          "body_id": "12693",
+          "type": "ltm MN",
+          "rate_hz": 8.333333333333334
+        },
+        {
+          "body_id": "12725",
+          "type": "Acc. ti flexor MN",
+          "rate_hz": 37.5
+        },
+        {
+          "body_id": "12758",
+          "type": "Acc. ti flexor MN",
+          "rate_hz": 4.166666666666667
+        },
+        {
+          "body_id": "13006",
+          "type": "Ti extensor MN",
+          "rate_hz": 35.833333333333336
+        },
+        {
+          "body_id": "13033",
+          "type": "ltm MN",
+          "rate_hz": 30.0
+        },
+        {
+          "body_id": "13069",
+          "type": "Sternotrochanter MN",
+          "rate_hz": 52.5
+        },
+        {
+          "body_id": "13115",
+          "type": "Ti extensor MN",
+          "rate_hz": 15.833333333333334
+        },
+        {
+          "body_id": "13156",
+          "type": "ltm MN",
+          "rate_hz": 14.166666666666668
+        },
+        {
+          "body_id": "13163",
+          "type": "Ti flexor MN",
+          "rate_hz": 22.5
+        },
+        {
+          "body_id": "13170",
+          "type": "Acc. ti flexor MN",
+          "rate_hz": 35.0
+        },
+        {
+          "body_id": "13241",
+          "type": "ltm1-tibia MN",
+          "rate_hz": 22.5
+        },
+        {
+          "body_id": "13280",
+          "type": "Ti flexor MN",
+          "rate_hz": 2.5
+        },
+        {
+          "body_id": "13283",
+          "type": "Ti flexor MN",
+          "rate_hz": 25.0
+        },
+        {
+          "body_id": "13399",
+          "type": "Ti flexor MN",
+          "rate_hz": 7.5
+        },
+        {
+          "body_id": "13434",
+          "type": "Tergotr. MN",
+          "rate_hz": 34.16666666666667
+        },
+        {
+          "body_id": "13464",
+          "type": "Tergopleural/Pleural promotor MN",
+          "rate_hz": 7.5
+        },
+        {
+          "body_id": "13490",
+          "type": "Tergopleural/Pleural promotor MN",
+          "rate_hz": 8.333333333333334
+        },
+        {
+          "body_id": "13628",
+          "type": "Pleural remotor/abductor MN",
+          "rate_hz": 36.66666666666667
+        },
+        {
+          "body_id": "13746",
+          "type": "Acc. ti flexor MN",
+          "rate_hz": 27.5
+        },
+        {
+          "body_id": "13817",
+          "type": "Sternal adductor MN",
+          "rate_hz": 4.166666666666667
+        },
+        {
+          "body_id": "13819",
+          "type": "Acc. ti flexor MN",
+          "rate_hz": 28.333333333333336
+        },
+        {
+          "body_id": "13904",
+          "type": "Tr extensor MN",
+          "rate_hz": 27.5
+        },
+        {
+          "body_id": "14346",
+          "type": "Pleural remotor/abductor MN",
+          "rate_hz": 2.5
+        },
+        {
+          "body_id": "14536",
+          "type": "Tr extensor MN",
+          "rate_hz": 25.0
+        },
+        {
+          "body_id": "14596",
+          "type": "Pleural remotor/abductor MN",
+          "rate_hz": 11.666666666666668
+        },
+        {
+          "body_id": "14649",
+          "type": "MNhl29",
+          "rate_hz": 11.666666666666668
+        },
+        {
+          "body_id": "14773",
+          "type": "ltm2-femur MN",
+          "rate_hz": 3.3333333333333335
+        },
+        {
+          "body_id": "14783",
+          "type": "Acc. tr flexor MN",
+          "rate_hz": 41.66666666666667
+        },
+        {
+          "body_id": "14824",
+          "type": "Acc. ti flexor MN",
+          "rate_hz": 9.166666666666668
+        },
+        {
+          "body_id": "14848",
+          "type": "Ti flexor MN",
+          "rate_hz": 1.6666666666666667
+        },
+        {
+          "body_id": "15006",
+          "type": "Tr flexor MN",
+          "rate_hz": 2.5
+        },
+        {
+          "body_id": "15107",
+          "type": "Tergotr. MN",
+          "rate_hz": 26.666666666666668
+        },
+        {
+          "body_id": "15262",
+          "type": "Pleural remotor/abductor MN",
+          "rate_hz": 71.66666666666667
+        },
+        {
+          "body_id": "15317",
+          "type": "ltm2-femur MN",
+          "rate_hz": 14.166666666666668
+        },
+        {
+          "body_id": "15321",
+          "type": "Ti flexor MN",
+          "rate_hz": 0.8333333333333334
+        },
+        {
+          "body_id": "15367",
+          "type": "Acc. ti flexor MN",
+          "rate_hz": 1.6666666666666667
+        },
+        {
+          "body_id": "15735",
+          "type": "MNhl01",
+          "rate_hz": 15.833333333333334
+        },
+        {
+          "body_id": "15883",
+          "type": "Sternal posterior rotator MN",
+          "rate_hz": 4.166666666666667
+        },
+        {
+          "body_id": "16035",
+          "type": "Sternal posterior rotator MN",
+          "rate_hz": 3.3333333333333335
+        },
+        {
+          "body_id": "16228",
+          "type": "Acc. ti flexor MN",
+          "rate_hz": 15.833333333333334
+        },
+        {
+          "body_id": "16356",
+          "type": "ltm2-femur MN",
+          "rate_hz": 6.666666666666667
+        },
+        {
+          "body_id": "16400",
+          "type": "Acc. tr flexor MN",
+          "rate_hz": 0.8333333333333334
+        },
+        {
+          "body_id": "16495",
+          "type": "Acc. ti flexor MN",
+          "rate_hz": 33.333333333333336
+        },
+        {
+          "body_id": "16897",
+          "type": "Ta depressor MN",
+          "rate_hz": 4.166666666666667
+        },
+        {
+          "body_id": "16903",
+          "type": "Acc. tr flexor MN",
+          "rate_hz": 19.166666666666668
+        },
+        {
+          "body_id": "17091",
+          "type": "Pleural remotor/abductor MN",
+          "rate_hz": 8.333333333333334
+        },
+        {
+          "body_id": "17316",
+          "type": "STTMm",
+          "rate_hz": 27.5
+        },
+        {
+          "body_id": "17550",
+          "type": "ltm2-femur MN",
+          "rate_hz": 0.8333333333333334
+        },
+        {
+          "body_id": "17693",
+          "type": "Acc. tr flexor MN",
+          "rate_hz": 9.166666666666668
+        },
+        {
+          "body_id": "17930",
+          "type": "Tr extensor MN",
+          "rate_hz": 27.5
+        },
+        {
+          "body_id": "17947",
+          "type": "Sternal posterior rotator MN",
+          "rate_hz": 5.0
+        },
+        {
+          "body_id": "18006",
+          "type": "Sternotrochanter MN",
+          "rate_hz": 25.0
+        },
+        {
+          "body_id": "18286",
+          "type": "Pleural remotor/abductor MN",
+          "rate_hz": 7.5
+        },
+        {
+          "body_id": "18412",
+          "type": "Acc. ti flexor MN",
+          "rate_hz": 8.333333333333334
+        },
+        {
+          "body_id": "18491",
+          "type": "Ti flexor MN",
+          "rate_hz": 25.833333333333336
+        },
+        {
+          "body_id": "18579",
+          "type": "Sternotrochanter MN",
+          "rate_hz": 10.833333333333334
+        },
+        {
+          "body_id": "18716",
+          "type": "Sternotrochanter MN",
+          "rate_hz": 28.333333333333336
+        },
+        {
+          "body_id": "18963",
+          "type": "Acc. ti flexor MN",
+          "rate_hz": 29.166666666666668
+        },
+        {
+          "body_id": "19048",
+          "type": "Acc. ti flexor MN",
+          "rate_hz": 28.333333333333336
+        },
+        {
+          "body_id": "19074",
+          "type": "Acc. ti flexor MN",
+          "rate_hz": 6.666666666666667
+        },
+        {
+          "body_id": "19094",
+          "type": "Sternotrochanter MN",
+          "rate_hz": 26.666666666666668
+        },
+        {
+          "body_id": "19206",
+          "type": "Pleural remotor/abductor MN",
+          "rate_hz": 27.5
+        },
+        {
+          "body_id": "19260",
+          "type": "Acc. ti flexor MN",
+          "rate_hz": 2.5
+        },
+        {
+          "body_id": "19613",
+          "type": "Acc. tr flexor MN",
+          "rate_hz": 1.6666666666666667
+        },
+        {
+          "body_id": "19652",
+          "type": "Tergotr. MN",
+          "rate_hz": 7.5
+        },
+        {
+          "body_id": "19758",
+          "type": "ltm1-tibia MN",
+          "rate_hz": 30.833333333333336
+        },
+        {
+          "body_id": "19773",
+          "type": "MNml29",
+          "rate_hz": 5.0
+        },
+        {
+          "body_id": "20119",
+          "type": "Sternal anterior rotator MN",
+          "rate_hz": 30.0
+        },
+        {
+          "body_id": "20386",
+          "type": "Tergopleural/Pleural promotor MN",
+          "rate_hz": 68.33333333333334
+        },
+        {
+          "body_id": "20593",
+          "type": "Acc. ti flexor MN",
+          "rate_hz": 3.3333333333333335
+        },
+        {
+          "body_id": "20605",
+          "type": "Acc. ti flexor MN",
+          "rate_hz": 3.3333333333333335
+        },
+        {
+          "body_id": "21241",
+          "type": "Sternal posterior rotator MN",
+          "rate_hz": 3.3333333333333335
+        },
+        {
+          "body_id": "21718",
+          "type": "Sternal adductor MN",
+          "rate_hz": 3.3333333333333335
+        },
+        {
+          "body_id": "21991",
+          "type": "Ti flexor MN",
+          "rate_hz": 19.166666666666668
+        },
+        {
+          "body_id": "22465",
+          "type": "Tr flexor MN",
+          "rate_hz": 4.166666666666667
+        },
+        {
+          "body_id": "23117",
+          "type": "Tr flexor MN",
+          "rate_hz": 5.0
+        },
+        {
+          "body_id": "24443",
+          "type": "Acc. ti flexor MN",
+          "rate_hz": 11.666666666666668
+        },
+        {
+          "body_id": "24493",
+          "type": "STTMm",
+          "rate_hz": 26.666666666666668
+        },
+        {
+          "body_id": "24669",
+          "type": "Sternal anterior rotator MN",
+          "rate_hz": 2.5
+        },
+        {
+          "body_id": "25212",
+          "type": "Acc. ti flexor MN",
+          "rate_hz": 1.6666666666666667
+        },
+        {
+          "body_id": "26132",
+          "type": "Sternotrochanter MN",
+          "rate_hz": 12.5
+        },
+        {
+          "body_id": "26883",
+          "type": "Tr flexor MN",
+          "rate_hz": 4.166666666666667
+        },
+        {
+          "body_id": "28997",
+          "type": "Tr flexor MN",
+          "rate_hz": 4.166666666666667
+        },
+        {
+          "body_id": "29689",
+          "type": "Sternal posterior rotator MN",
+          "rate_hz": 4.166666666666667
+        },
+        {
+          "body_id": "30306",
+          "type": "Tr extensor MN",
+          "rate_hz": 1.6666666666666667
+        },
+        {
+          "body_id": "34115",
+          "type": "Tr flexor MN",
+          "rate_hz": 2.5
+        },
+        {
+          "body_id": "40443",
+          "type": "Tr flexor MN",
+          "rate_hz": 4.166666666666667
+        },
+        {
+          "body_id": "41439",
+          "type": "Tr flexor MN",
+          "rate_hz": 4.166666666666667
+        },
+        {
+          "body_id": "49886",
+          "type": "Sternal posterior rotator MN",
+          "rate_hz": 5.0
+        },
+        {
+          "body_id": "61001",
+          "type": "ltm1-tibia MN",
+          "rate_hz": 5.0
+        },
+        {
+          "body_id": "96565",
+          "type": "Tr flexor MN",
+          "rate_hz": 5.833333333333334
+        },
+        {
+          "body_id": "100515",
+          "type": "Sternotrochanter MN",
+          "rate_hz": 0.8333333333333334
+        },
+        {
+          "body_id": "101043",
+          "type": "Acc. ti flexor MN",
+          "rate_hz": 8.333333333333334
+        },
+        {
+          "body_id": "102019",
+          "type": "Acc. tr flexor MN",
+          "rate_hz": 2.5
+        },
+        {
+          "body_id": "102786",
+          "type": "Sternal posterior rotator MN",
+          "rate_hz": 4.166666666666667
+        },
+        {
+          "body_id": "104697",
+          "type": "Sternal posterior rotator MN",
+          "rate_hz": 3.3333333333333335
+        },
+        {
+          "body_id": "152620",
+          "type": "Sternotrochanter MN",
+          "rate_hz": 41.66666666666667
+        },
+        {
+          "body_id": "152621",
+          "type": "Sternotrochanter MN",
+          "rate_hz": 57.5
+        },
+        {
+          "body_id": "152642",
+          "type": "Sternotrochanter MN",
+          "rate_hz": 5.0
+        },
+        {
+          "body_id": "154133",
+          "type": "Sternal posterior rotator MN",
+          "rate_hz": 20.833333333333336
+        },
+        {
+          "body_id": "157207",
+          "type": "Tr flexor MN",
+          "rate_hz": 2.5
+        },
+        {
+          "body_id": "157432",
+          "type": "Sternotrochanter MN",
+          "rate_hz": 5.0
+        },
+        {
+          "body_id": "157503",
+          "type": "Sternotrochanter MN",
+          "rate_hz": 5.0
+        },
+        {
+          "body_id": "158769",
+          "type": "Tr flexor MN",
+          "rate_hz": 2.5
+        },
+        {
+          "body_id": "159762",
+          "type": "Tergotr. MN",
+          "rate_hz": 5.0
+        },
+        {
+          "body_id": "162830",
+          "type": "ltm1-tibia MN",
+          "rate_hz": 11.666666666666668
+        },
+        {
+          "body_id": "162833",
+          "type": "Tr extensor MN",
+          "rate_hz": 26.666666666666668
+        },
+        {
+          "body_id": "162868",
+          "type": "Acc. ti flexor MN",
+          "rate_hz": 2.5
+        },
+        {
+          "body_id": "162912",
+          "type": "Tr extensor MN",
+          "rate_hz": 5.0
+        },
+        {
+          "body_id": "164741",
+          "type": "Sternal anterior rotator MN",
+          "rate_hz": 5.0
+        },
+        {
+          "body_id": "165340",
+          "type": "Tr extensor MN",
+          "rate_hz": 15.833333333333334
+        },
+        {
+          "body_id": "166392",
+          "type": "Sternotrochanter MN",
+          "rate_hz": 27.5
+        },
+        {
+          "body_id": "171055",
+          "type": "Sternal adductor MN",
+          "rate_hz": 6.666666666666667
+        },
+        {
+          "body_id": "171948",
+          "type": "Tr flexor MN",
+          "rate_hz": 2.5
+        },
+        {
+          "body_id": "175327",
+          "type": "Tergotr. MN",
+          "rate_hz": 26.666666666666668
+        },
+        {
+          "body_id": "218885",
+          "type": "Tr flexor MN",
+          "rate_hz": 2.5
+        }
+      ],
+      "inspected_tibial_cells": [
+        {
+          "body_id": "12134",
+          "type": "Ti flexor MN",
+          "leg": "T1_LHS",
+          "rate_hz": 0.0,
+          "mean_soma_mV": -59.881608966739854,
+          "mean_exc_current_pA": 0.9006070861785918,
+          "mean_inh_current_pA": -0.5209833544800989,
+          "mean_coupling_current_pA": -19.5094306492672
+        },
+        {
+          "body_id": "11657",
+          "type": "Ti extensor MN",
+          "leg": "T1_LHS",
+          "rate_hz": 0.0,
+          "mean_soma_mV": -62.273712014878875,
+          "mean_exc_current_pA": 2.8570357714734547,
+          "mean_inh_current_pA": -10.527267440857758,
+          "mean_coupling_current_pA": -14.128461393380961
+        },
+        {
+          "body_id": "10710",
+          "type": "Ti flexor MN",
+          "leg": "T2_LHS",
+          "rate_hz": 0.0,
+          "mean_soma_mV": -60.06848582805541,
+          "mean_exc_current_pA": 0.0,
+          "mean_inh_current_pA": -0.22665987848268998,
+          "mean_coupling_current_pA": -19.05542368878478
+        },
+        {
+          "body_id": "10737",
+          "type": "Ti extensor MN",
+          "leg": "T2_LHS",
+          "rate_hz": 0.0,
+          "mean_soma_mV": -59.763757276538925,
+          "mean_exc_current_pA": 4.4160833434875135,
+          "mean_inh_current_pA": -3.599001856373024,
+          "mean_coupling_current_pA": -19.78029080828651
+        },
+        {
+          "body_id": "12585",
+          "type": "Ti flexor MN",
+          "leg": "T3_LHS",
+          "rate_hz": 0.0,
+          "mean_soma_mV": -60.0888290970969,
+          "mean_exc_current_pA": 8.361254456531494e-16,
+          "mean_inh_current_pA": -0.291925470584554,
+          "mean_coupling_current_pA": -19.012923681986234
+        },
+        {
+          "body_id": "10347",
+          "type": "Ti extensor MN",
+          "leg": "T3_LHS",
+          "rate_hz": 10.833333333333334,
+          "mean_soma_mV": -56.225049115267645,
+          "mean_exc_current_pA": 20.46353774154758,
+          "mean_inh_current_pA": -10.324136587799744,
+          "mean_coupling_current_pA": -26.63903754953182
+        },
+        {
+          "body_id": "13163",
+          "type": "Ti flexor MN",
+          "leg": "T1_RHS",
+          "rate_hz": 22.5,
+          "mean_soma_mV": -51.313558557794494,
+          "mean_exc_current_pA": 26.026792425255564,
+          "mean_inh_current_pA": -2.901343340474122,
+          "mean_coupling_current_pA": -36.638767534700634
+        },
+        {
+          "body_id": "11706",
+          "type": "Ti extensor MN",
+          "leg": "T1_RHS",
+          "rate_hz": 25.0,
+          "mean_soma_mV": -60.82616927425514,
+          "mean_exc_current_pA": 63.714514156996664,
+          "mean_inh_current_pA": -72.61457727517491,
+          "mean_coupling_current_pA": -12.49041839266617
+        },
+        {
+          "body_id": "13280",
+          "type": "Ti flexor MN",
+          "leg": "T2_RHS",
+          "rate_hz": 2.5,
+          "mean_soma_mV": -55.994783540340165,
+          "mean_exc_current_pA": 13.278605094144565,
+          "mean_inh_current_pA": -1.2904388411229935,
+          "mean_coupling_current_pA": -28.646894588488944
+        },
+        {
+          "body_id": "10461",
+          "type": "Ti extensor MN",
+          "leg": "T2_RHS",
+          "rate_hz": 14.166666666666668,
+          "mean_soma_mV": -63.21686821931813,
+          "mean_exc_current_pA": 51.49943134670882,
+          "mean_inh_current_pA": -65.81003228218192,
+          "mean_coupling_current_pA": -9.80366915535257
+        },
+        {
+          "body_id": "18491",
+          "type": "Ti flexor MN",
+          "leg": "T3_RHS",
+          "rate_hz": 25.833333333333336,
+          "mean_soma_mV": -54.3990699929522,
+          "mean_exc_current_pA": 24.924671686300535,
+          "mean_inh_current_pA": -13.2478785955598,
+          "mean_coupling_current_pA": -27.544339926726014
+        },
+        {
+          "body_id": "10462",
+          "type": "Ti extensor MN",
+          "leg": "T3_RHS",
+          "rate_hz": 23.333333333333336,
+          "mean_soma_mV": -52.66803398532481,
+          "mean_exc_current_pA": 68.5043723316745,
+          "mean_inh_current_pA": -47.9405321289309,
+          "mean_coupling_current_pA": -35.498707716770234
+        }
+      ],
+      "channels_with_nonzero_u_after400ms": 88,
+      "interpretation": "Activity counts do not establish oscillation, correct antagonist phase or locomotion. Unmapped channels are zero placeholders, not measured silence."
+    }
+  ]
+}

@@ -42,3 +42,11 @@ This model is reduced two-compartment HH/Ca/SK dynamics with unmeasured active
 channel and synapse priors. Adult MN leak calibration does not establish adult
 cell-specific active kinetics. Glutamate-inhibitory sign is a receptor hypothesis;
 monoaminergic signalling and presynaptic sensory gating remain unimplemented.
+
+The network-layer `target_receptor_gains` and `type_pair_conductance_gains`
+are interpreted by `network.simulate_network`, not standalone `model.simulate`.
+The retained regional MANC bank is `configs/manual-motor-bank-shared-r1.json`;
+its explicit replay is `python trace_manual_network.py expanded-shared-extensor-direct-DN-weak`.
+Append `-E1-silenced` or `-E2-silenced` for matched ablation checks. This regional
+bank and the MaleCNS brain bank are distinct contexts, not one global end-to-end
+DN-to-muscle fitted parameter set.

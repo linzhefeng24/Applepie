@@ -1,5 +1,5 @@
 {
-  "stage": "r8 same-unified-graph multi-condition evaluation in progress",
+  "stage": "r8 same-graph review and shared-MANC causal checks completed",
   "not_claimed": "No majority of brain.json phenomena or complete behavioral replication",
   "r4_completed_conditions": 18,
   "r4_bank": "configs/manual-neural-bank-r4.json",
@@ -12,9 +12,13 @@
     "r6/r7 postsynaptic receptor probes and failed common LUL biases are preserved but not adopted"
   ],
   "unknown_parameter_scope": "All release and receptor gains unmeasured physiological hypotheses, same parameters within annotated type. Extended inhibitory-release prior0.1\u20135 is explicitly not a measured interval.",
-  "failed_candidate": "INXXX468 K0.9 perturbs recurrent circuit and LBL40, not adopted",
+  "failed_candidate": "r6/r7 receptor-gain conflicts and common INXXX468 K/bias probes retained; not adopted",
   "raw_source_archive": "All four public inputs verified in draft Release; data/public-input-release-verified.json",
   "unified_graph": "results/mcns-unified/source-manifest.json",
   "completed_condition_inventory": "results/manual-run-inventory.json",
-  "priority": "Measured neural interventions and complete temporal traces before muscle or paper-model-only predictions"
+  "priority": "Measured neural interventions and complete temporal traces before muscle or paper-model-only predictions",
+  "report": "MANUAL_RESULTS_20261115.md",
+  "motor_candidate": "configs/manual-motor-bank-shared-r1.json",
+  "r8_complete_conditions": 18,
+  "regression_checks_passed": 23
 }

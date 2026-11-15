@@ -1,7 +1,8 @@
 {
-  "kind": "completed deterministic simulation conditions, NOT independent biological experiments or satisfied phenomenon count",
-  "complete_runs": 93,
-  "runs": [
+  "kind": "Completed deterministic conditions, never a biological success percentage.",
+  "analysis_code_sha256": "de92c4774d90d7eaa513c3c0e837d543f55e7a6d2e9d95f2e6aa8a42a19765ee",
+  "complete_frozen_condition_runs": 113,
+  "frozen_runs": [
     {
       "directory": "results/frozen-neural-panel-BBrelease2",
       "case": "BPN+BB",
@@ -120,6 +121,12 @@
       "directory": "results/frozen-neural-panel-bon1-local-BON1Ca3000",
       "case": "BRK2s",
       "bank_sha256": "16c89840108494da36d774b953b86559d12625dda255a70e86b3aa46704683e2",
+      "numerical_failure": false
+    },
+    {
+      "directory": "results/frozen-neural-panel-bon1-local-Ca2000-fine",
+      "case": "BRK2s",
+      "bank_sha256": "b780f2b9626aa186ff3192f293b07e2be97b12096b08247f29fc11f11e735f36",
       "numerical_failure": false
     },
     {
@@ -558,6 +565,187 @@
       "directory": "results/frozen-neural-panel-unified-r7",
       "case": "P9",
       "bank_sha256": "5be79dfd1e7f58995ac0b13cb279aabf61e0d68cfe1a5b290ebf08caa00dc683",
+      "numerical_failure": false
+    },
+    {
+      "directory": "results/frozen-neural-panel-unified-r8",
+      "case": "BPN+BB",
+      "bank_sha256": "c124e457e90431bb85c930e0335fe09241d948e25abc7398d6ee19d7316a09f0",
+      "numerical_failure": false
+    },
+    {
+      "directory": "results/frozen-neural-panel-unified-r8",
+      "case": "BPN+BRK",
+      "bank_sha256": "c124e457e90431bb85c930e0335fe09241d948e25abc7398d6ee19d7316a09f0",
+      "numerical_failure": false
+    },
+    {
+      "directory": "results/frozen-neural-panel-unified-r8",
+      "case": "BPN+FG",
+      "bank_sha256": "c124e457e90431bb85c930e0335fe09241d948e25abc7398d6ee19d7316a09f0",
+      "numerical_failure": false
+    },
+    {
+      "directory": "results/frozen-neural-panel-unified-r8",
+      "case": "BPN",
+      "bank_sha256": "c124e457e90431bb85c930e0335fe09241d948e25abc7398d6ee19d7316a09f0",
+      "numerical_failure": false
+    },
+    {
+      "directory": "results/frozen-neural-panel-unified-r8",
+      "case": "BRK2s",
+      "bank_sha256": "c124e457e90431bb85c930e0335fe09241d948e25abc7398d6ee19d7316a09f0",
+      "numerical_failure": false
+    },
+    {
+      "directory": "results/frozen-neural-panel-unified-r8",
+      "case": "MDN+BB",
+      "bank_sha256": "c124e457e90431bb85c930e0335fe09241d948e25abc7398d6ee19d7316a09f0",
+      "numerical_failure": false
+    },
+    {
+      "directory": "results/frozen-neural-panel-unified-r8",
+      "case": "MDN+BRK",
+      "bank_sha256": "c124e457e90431bb85c930e0335fe09241d948e25abc7398d6ee19d7316a09f0",
+      "numerical_failure": false
+    },
+    {
+      "directory": "results/frozen-neural-panel-unified-r8",
+      "case": "MDN+FG",
+      "bank_sha256": "c124e457e90431bb85c930e0335fe09241d948e25abc7398d6ee19d7316a09f0",
+      "numerical_failure": false
+    },
+    {
+      "directory": "results/frozen-neural-panel-unified-r8",
+      "case": "MDN",
+      "bank_sha256": "c124e457e90431bb85c930e0335fe09241d948e25abc7398d6ee19d7316a09f0",
+      "numerical_failure": false
+    },
+    {
+      "directory": "results/frozen-neural-panel-unified-r8",
+      "case": "P9+BB",
+      "bank_sha256": "c124e457e90431bb85c930e0335fe09241d948e25abc7398d6ee19d7316a09f0",
+      "numerical_failure": false
+    },
+    {
+      "directory": "results/frozen-neural-panel-unified-r8",
+      "case": "P9+BRK",
+      "bank_sha256": "c124e457e90431bb85c930e0335fe09241d948e25abc7398d6ee19d7316a09f0",
+      "numerical_failure": false
+    },
+    {
+      "directory": "results/frozen-neural-panel-unified-r8",
+      "case": "P9+FG",
+      "bank_sha256": "c124e457e90431bb85c930e0335fe09241d948e25abc7398d6ee19d7316a09f0",
+      "numerical_failure": false
+    },
+    {
+      "directory": "results/frozen-neural-panel-unified-r8",
+      "case": "P9",
+      "bank_sha256": "c124e457e90431bb85c930e0335fe09241d948e25abc7398d6ee19d7316a09f0",
+      "numerical_failure": false
+    },
+    {
+      "directory": "results/frozen-neural-panel-unified-r8",
+      "case": "PFL2",
+      "bank_sha256": "c124e457e90431bb85c930e0335fe09241d948e25abc7398d6ee19d7316a09f0",
+      "numerical_failure": false
+    },
+    {
+      "directory": "results/frozen-neural-panel-unified-r8",
+      "case": "PFL3L+PFL2",
+      "bank_sha256": "c124e457e90431bb85c930e0335fe09241d948e25abc7398d6ee19d7316a09f0",
+      "numerical_failure": false
+    },
+    {
+      "directory": "results/frozen-neural-panel-unified-r8",
+      "case": "PFL3L",
+      "bank_sha256": "c124e457e90431bb85c930e0335fe09241d948e25abc7398d6ee19d7316a09f0",
+      "numerical_failure": false
+    },
+    {
+      "directory": "results/frozen-neural-panel-unified-r8",
+      "case": "PFL3R",
+      "bank_sha256": "c124e457e90431bb85c930e0335fe09241d948e25abc7398d6ee19d7316a09f0",
+      "numerical_failure": false
+    },
+    {
+      "directory": "results/frozen-neural-panel-unified-r8",
+      "case": "control",
+      "bank_sha256": "c124e457e90431bb85c930e0335fe09241d948e25abc7398d6ee19d7316a09f0",
+      "numerical_failure": false
+    },
+    {
+      "directory": "results/frozen-neural-panel-unified-r8-fine",
+      "case": "PFL3L",
+      "bank_sha256": "c124e457e90431bb85c930e0335fe09241d948e25abc7398d6ee19d7316a09f0",
+      "numerical_failure": false
+    }
+  ],
+  "complete_regional_motor_runs": 16,
+  "regional_motor_runs": [
+    {
+      "diagnosis": "results/manual-mechanism/direct-baseline-diagnosis.json",
+      "numerical_failure": false
+    },
+    {
+      "diagnosis": "results/manual-mechanism/expanded-RH-extensor-half-diagnosis.json",
+      "numerical_failure": false
+    },
+    {
+      "diagnosis": "results/manual-mechanism/expanded-RH-extensor-third-diagnosis.json",
+      "numerical_failure": false
+    },
+    {
+      "diagnosis": "results/manual-mechanism/expanded-baseline-diagnosis.json",
+      "numerical_failure": false
+    },
+    {
+      "diagnosis": "results/manual-mechanism/expanded-extensor-gain-diagnosis.json",
+      "numerical_failure": false
+    },
+    {
+      "diagnosis": "results/manual-mechanism/expanded-premotor-inhibition-diagnosis.json",
+      "numerical_failure": false
+    },
+    {
+      "diagnosis": "results/manual-mechanism/expanded-right-extensors-third-E1-silenced-diagnosis.json",
+      "numerical_failure": false
+    },
+    {
+      "diagnosis": "results/manual-mechanism/expanded-right-extensors-third-E2-silenced-diagnosis.json",
+      "numerical_failure": false
+    },
+    {
+      "diagnosis": "results/manual-mechanism/expanded-right-extensors-third-diagnosis.json",
+      "numerical_failure": false
+    },
+    {
+      "diagnosis": "results/manual-mechanism/expanded-right-extensors-third-direct-DN-weak-E1-silenced-diagnosis.json",
+      "numerical_failure": false
+    },
+    {
+      "diagnosis": "results/manual-mechanism/expanded-right-extensors-third-direct-DN-weak-E2-silenced-diagnosis.json",
+      "numerical_failure": false
+    },
+    {
+      "diagnosis": "results/manual-mechanism/expanded-right-extensors-third-direct-DN-weak-diagnosis.json",
+      "numerical_failure": false
+    },
+    {
+      "diagnosis": "results/manual-mechanism/expanded-shared-extensor-direct-DN-weak-E1-silenced-diagnosis.json",
+      "numerical_failure": false
+    },
+    {
+      "diagnosis": "results/manual-mechanism/expanded-shared-extensor-direct-DN-weak-E2-silenced-diagnosis.json",
+      "numerical_failure": false
+    },
+    {
+      "diagnosis": "results/manual-mechanism/expanded-shared-extensor-direct-DN-weak-diagnosis.json",
+      "numerical_failure": false
+    },
+    {
+      "diagnosis": "results/manual-mechanism/expanded-trace-MN-diagnosis.json",
       "numerical_failure": false
     }
   ]

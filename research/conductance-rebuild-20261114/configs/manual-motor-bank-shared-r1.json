@@ -1,0 +1,90 @@
+{
+  "parameters": {
+    "dt_ms": 0.0125,
+    "duration_ms": 1600.0,
+    "onset_ms": 200.0,
+    "drive_pA": 160.0,
+    "ge_nS_per_synapse": 0.012,
+    "gi_nS_per_synapse": 0.1,
+    "tau_e_rise_ms": 0.5,
+    "tau_e_decay_ms": 5.0,
+    "tau_i_rise_ms": 1.0,
+    "tau_i_decay_ms": 30.0,
+    "delay_ms": 1.5,
+    "c_soma_pF": 20.0,
+    "c_axon_pF": 2.5,
+    "rin_cpg_MOhm": 500.0,
+    "rin_mn_MOhm": 300.0,
+    "coupling_nS": 12.0,
+    "gNa_nS": 600.0,
+    "gK_nS": 180.0,
+    "gCa_nS": 0.3,
+    "gSK_nS": 1.0,
+    "gNaP_nS": 0.0,
+    "ca_tau_ms": 100.0,
+    "ca_alpha": 0.0002,
+    "ca_Kd_uM": 0.2,
+    "E_leak_mV": -65.0,
+    "E_Na_mV": 55.0,
+    "E_K_mV": -80.0,
+    "E_Ca_mV": 120.0,
+    "E_exc_mV": 0.0,
+    "E_inh_mV": -80.0,
+    "gate_speed": 1.0,
+    "inhibitory_gain": 0.03,
+    "I2_gain": 1.0,
+    "I2_leak_shift_mV": 0.0,
+    "mn_gain": 6.0,
+    "mn_leak_mV": -65.0,
+    "synaptic_delay_scope": "one global delay prior, not measured per edge",
+    "adult_scope": "Rin=300MOhm is unknown-type adult MN prior; fast/intermediate/slow exemplars tested separately",
+    "I1_gain": 1.0,
+    "background_exc_gain": 0.5,
+    "mn_SK_scale": 1.0,
+    "mn_profile": {
+      "leak_scale": 0.5719406364200305,
+      "mn_leak_mV": -50.857904405099035,
+      "coupling_nS": 4.0,
+      "gNaP_nS": 0.3,
+      "axon_bias_pA": 0.0,
+      "gate_speed": 1.0
+    },
+    "mn_profile_scope": "Unknown EM MN subtype: use adult intermediate reference, not a verified assignment",
+    "group_parameters": {
+      "motor neuron|type:Ti flexor MN": {
+        "gate_speed": 0.85
+      }
+    },
+    "type_pair_conductance_gains": [
+      {
+        "namespace": "MANC",
+        "source_type": "DNg100",
+        "target_type": "Ti extensor MN",
+        "gain": 0.2
+      }
+    ]
+  },
+  "parameter_sha256": "52c6090ac8fbd01aa24c398d5e1a9bfbf9dd51c605c90e947502e4f3e2ba3e6a",
+  "selection": "manual input-current and causal-ablation inspection, not a loss",
+  "scope": "MANC2553-cell regional assay, separate animal/context from unified MaleCNS brain bank",
+  "status": "candidate retained; same type shares physiology; no individual right-extensor excitatory gains",
+  "reason": "One shared DNg100\u2192Ti-extensor effective conductance gain0.2 replaces the earlier cell-specific gain0.3 adjustments. Stored anatomical counts and signs unchanged.",
+  "known_limitations": [
+    "antagonist coactivation remains",
+    "E2-ablation residual activity remains",
+    "not a full DN\u2192muscle end-to-end behavioral model"
+  ],
+  "source_configuration": "results/manual-mechanism/expanded-shared-extensor-direct-DN-weak-config.json",
+  "graph_sha256": "cea807562aa63cd8c9862b6493d9401dde59fe785774eb119c7b73b17e573fc8",
+  "source_code_hashes": {
+    "trace_manual_network.py": "442e935b3eeba281f844254d72d5c26bc42240ab138b74cbd727c523547daf0a",
+    "network.py": "648b157a5b7b2a3ba090bae9a6f384ff8a0fe4781cbc026b897dae466406210b",
+    "grouped_parameters.py": "cd1b05516f927bae1013319063f279cb5131a03b910ee913c11f6886b57e29db",
+    "model.py": "934572b4c9958a726d46726d70d0cf04178d877766611ecc0ae9f2b8bc5c5bba"
+  },
+  "stimulated_body_ids": [
+    "10093",
+    "10339"
+  ],
+  "causal_review": "results/manual-mechanism/shared-motor-readout-review.json"
+}

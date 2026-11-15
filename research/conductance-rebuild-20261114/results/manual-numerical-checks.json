@@ -1,0 +1,57 @@
+{
+  "interpretation": "One steering direction and one local calcium protocol only; qualitative retention, not full quantitative network convergence or parameter robustness",
+  "runs": [
+    {
+      "tag": "unified-r8",
+      "DNa02": [
+        {
+          "side": "R",
+          "rate_hz": 6.666666666666666,
+          "soma_mV": -72.44982042587428,
+          "model_Ca_uM": 0.006821737914202897,
+          "exc_pA": 94.99705865376383,
+          "inh_pA": -119.81583214925554
+        },
+        {
+          "side": "L",
+          "rate_hz": 48.888888888888886,
+          "soma_mV": -51.15639806809529,
+          "model_Ca_uM": 0.051585868108851844,
+          "exc_pA": 330.9568062774982,
+          "inh_pA": -250.94242529640206
+        }
+      ]
+    },
+    {
+      "tag": "unified-r8-fine",
+      "DNa02": [
+        {
+          "side": "R",
+          "rate_hz": 8.88888888888889,
+          "soma_mV": -72.59816511523154,
+          "model_Ca_uM": 0.008790175214323686,
+          "exc_pA": 96.61007624700174,
+          "inh_pA": -124.80144339770732
+        },
+        {
+          "side": "L",
+          "rate_hz": 44.44444444444444,
+          "soma_mV": -50.993695694801005,
+          "model_Ca_uM": 0.04495272548411176,
+          "exc_pA": 341.956533644051,
+          "inh_pA": -256.3414328189861
+        }
+      ]
+    },
+    {
+      "tag": "bon1-local-BON1Ca2000",
+      "Ca_peak_uM": 0.8811517974860228,
+      "Ca_at_7000ms_uM": 0.19679870353202297
+    },
+    {
+      "tag": "bon1-local-Ca2000-fine",
+      "Ca_peak_uM": 0.8763448735720015,
+      "Ca_at_7000ms_uM": 0.19544725694343434
+    }
+  ]
+}

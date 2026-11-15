@@ -1,0 +1,147 @@
+{
+  "bank_sha256": "b780f2b9626aa186ff3192f293b07e2be97b12096b08247f29fc11f11e735f36",
+  "parameters": {
+    "dt_ms": 0.00625,
+    "duration_ms": 7001.0,
+    "onset_ms": 200.0,
+    "drive_pA": 160.0,
+    "ge_nS_per_synapse": 0.012,
+    "gi_nS_per_synapse": 0.006,
+    "tau_e_rise_ms": 0.5,
+    "tau_e_decay_ms": 5.0,
+    "tau_i_rise_ms": 1.0,
+    "tau_i_decay_ms": 30.0,
+    "delay_ms": 1.5,
+    "c_soma_pF": 20.0,
+    "c_axon_pF": 2.5,
+    "rin_cpg_MOhm": 500.0,
+    "rin_mn_MOhm": 300.0,
+    "coupling_nS": 12.0,
+    "gNa_nS": 600.0,
+    "gK_nS": 180.0,
+    "gCa_nS": 0.3,
+    "gSK_nS": 1.0,
+    "gNaP_nS": 0.0,
+    "ca_tau_ms": 100.0,
+    "ca_alpha": 0.0002,
+    "ca_Kd_uM": 0.2,
+    "E_leak_mV": -65.0,
+    "E_Na_mV": 55.0,
+    "E_K_mV": -80.0,
+    "E_Ca_mV": 120.0,
+    "E_exc_mV": 0.0,
+    "E_inh_mV": -80.0,
+    "gate_speed": 1.0,
+    "inhibitory_gain": 1.0,
+    "I2_gain": 1.0,
+    "I2_leak_shift_mV": 0.0,
+    "mn_gain": 6.0,
+    "mn_leak_mV": -65.0,
+    "synaptic_delay_scope": "one global delay prior, not measured per edge",
+    "adult_scope": "Rin=300MOhm is unknown-type adult MN prior; fast/intermediate/slow exemplars tested separately",
+    "I1_gain": 1.0,
+    "background_exc_gain": 1.0,
+    "mn_SK_scale": 1.0,
+    "mn_profile": {
+      "leak_scale": 0.5719406364200305,
+      "mn_leak_mV": -50.857904405099035,
+      "coupling_nS": 4.0,
+      "gNaP_nS": 0.3,
+      "axon_bias_pA": 0.0,
+      "gate_speed": 1.0
+    },
+    "mn_profile_scope": "Unknown EM MN subtype: use adult intermediate reference, not a verified assignment",
+    "group_parameters": {
+      "ascending_neuron|type:AN19A018": {
+        "axon_bias_pA": 5.0,
+        "K": 0.8,
+        "source_gain": 0.5
+      },
+      "descending_neuron|type:DNg100": {
+        "excitatory_gain": 2.0
+      },
+      "ascending_neuron|type:AN05B007": {
+        "excitatory_gain": 0.5
+      },
+      "ascending_neuron|type:IN27X001": {
+        "calcium_tau_ms": 2000.0
+      },
+      "vnc_intrinsic|type:IN27X001": {
+        "calcium_tau_ms": 2000.0
+      }
+    },
+    "family_parameters": {
+      "descending neuron|NT:acetylcholine": {
+        "K": 0.8,
+        "axon_bias_pA": 5.0
+      }
+    }
+  },
+  "protocol": [
+    {
+      "population": "BRK",
+      "on_ms": 2000,
+      "off_ms": 4000,
+      "current_pA": 160.0
+    }
+  ],
+  "selected_body_ids": {
+    "BRK": [
+      "14113",
+      "14863",
+      "14973",
+      "16542",
+      "17510",
+      "523843"
+    ],
+    "BON1": [
+      "39880",
+      "800041"
+    ]
+  },
+  "unused_bank_groups": [
+    "cb_intrinsic|type:CL210_a",
+    "cb_intrinsic|type:GNG458",
+    "cb_intrinsic|type:GNG555",
+    "cb_intrinsic|type:GNG588",
+    "cb_intrinsic|type:PFL2",
+    "cb_intrinsic|type:PFL3",
+    "descending_neuron|type:DNg60",
+    "descending_neuron|type:DNg97",
+    "descending_neuron|type:DNge053",
+    "descending_neuron|type:DNp09",
+    "descending_neuron|type:MDN"
+  ],
+  "dataset": "MaleCNS_v1.0",
+  "graph_directory": "results/mcns-bon1-local",
+  "randomness": "deterministic; no stochastic draws",
+  "numpy_version": "2.5.4",
+  "source_input_files": {
+    "neurons.json": "079a32986d71f9f1bd82c918cf19937715f95a5a6f04fe227eaab3358b169aa4",
+    "signed-hypothesis-connectivity.npz": "fe0bebb4fe647113284911666ebed919599340b731d8b1fc42075a545ed5a712"
+  },
+  "code_hashes_at_start": {
+    "model.py": "934572b4c9958a726d46726d70d0cf04178d877766611ecc0ae9f2b8bc5c5bba",
+    "network.py": "648b157a5b7b2a3ba090bae9a6f384ff8a0fe4781cbc026b897dae466406210b",
+    "grouped_parameters.py": "cd1b05516f927bae1013319063f279cb5131a03b910ee913c11f6886b57e29db",
+    "pulse_neural_panel.py": "4fbd1db7737736781425f495e145ebdd125aedf4a22652fd6eea0b532f25632a"
+  },
+  "effective_parameter_sha256": "c64035b8d13684e26577ab00d12bf3643e83f78d40fc06e4d141156b89a3479f",
+  "command": [
+    "/workspace/server-motor-import/.venv/bin/python",
+    "pulse_neural_panel.py",
+    "BRK2s",
+    "configs/manual-neural-bank-BON1Ca2000.json",
+    "bon1-local-Ca2000-fine",
+    "results/mcns-bon1-local",
+    ".00625"
+  ],
+  "working_directory": "/workspace/Applepie-research-sync/research/conductance-rebuild-20261114",
+  "software_versions": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "numba": "0.68.1"
+  },
+  "python": "3.12.14",
+  "interpretation": "physiological changes fixed across conditions; observations and traces, no scalar optimization score"
+}

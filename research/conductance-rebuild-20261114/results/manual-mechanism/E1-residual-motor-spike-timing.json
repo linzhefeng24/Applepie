@@ -1,0 +1,115 @@
+{
+  "method": "Descriptive spike timing, no automatic rhythm criterion or objective",
+  "cells": [
+    {
+      "body_id": "11400",
+      "type": "Sternal posterior rotator MN",
+      "rate_hz": 35.833333333333336,
+      "ISI_ms_min_median_max": [
+        24.0,
+        28.0,
+        29.0
+      ]
+    },
+    {
+      "body_id": "11562",
+      "type": "Sternal anterior rotator MN",
+      "rate_hz": 35.833333333333336,
+      "ISI_ms_min_median_max": [
+        25.0,
+        28.0,
+        29.0
+      ]
+    },
+    {
+      "body_id": "12396",
+      "type": "Tergopleural/Pleural promotor MN",
+      "rate_hz": 35.833333333333336,
+      "ISI_ms_min_median_max": [
+        28.0,
+        28.0,
+        29.0
+      ]
+    },
+    {
+      "body_id": "12504",
+      "type": "MNhl67",
+      "rate_hz": 54.16666666666667,
+      "ISI_ms_min_median_max": [
+        14.0,
+        15.0,
+        27.0
+      ]
+    },
+    {
+      "body_id": "12686",
+      "type": "Tergopleural/Pleural promotor MN",
+      "rate_hz": 71.66666666666667,
+      "ISI_ms_min_median_max": [
+        14.0,
+        14.0,
+        15.0
+      ]
+    },
+    {
+      "body_id": "12725",
+      "type": "Acc. ti flexor MN",
+      "rate_hz": 35.0,
+      "ISI_ms_min_median_max": [
+        28.0,
+        28.0,
+        29.0
+      ]
+    },
+    {
+      "body_id": "13628",
+      "type": "Pleural remotor/abductor MN",
+      "rate_hz": 35.833333333333336,
+      "ISI_ms_min_median_max": [
+        28.0,
+        28.0,
+        29.0
+      ]
+    },
+    {
+      "body_id": "14783",
+      "type": "Acc. tr flexor MN",
+      "rate_hz": 47.5,
+      "ISI_ms_min_median_max": [
+        15.0,
+        21.5,
+        28.0
+      ]
+    },
+    {
+      "body_id": "15262",
+      "type": "Pleural remotor/abductor MN",
+      "rate_hz": 71.66666666666667,
+      "ISI_ms_min_median_max": [
+        14.0,
+        14.0,
+        15.0
+      ]
+    },
+    {
+      "body_id": "20119",
+      "type": "Sternal anterior rotator MN",
+      "rate_hz": 35.833333333333336,
+      "ISI_ms_min_median_max": [
+        28.0,
+        28.0,
+        29.0
+      ]
+    },
+    {
+      "body_id": "20386",
+      "type": "Tergopleural/Pleural promotor MN",
+      "rate_hz": 71.66666666666667,
+      "ISI_ms_min_median_max": [
+        14.0,
+        14.0,
+        15.0
+      ]
+    }
+  ]
+}

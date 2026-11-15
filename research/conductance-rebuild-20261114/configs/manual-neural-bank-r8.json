@@ -119,7 +119,7 @@
   },
   "parameter_sha256": "c124e457e90431bb85c930e0335fe09241d948e25abc7398d6ee19d7316a09f0",
   "selection": "manual inspection of source voltage and excitation/inhibition, not minimum loss",
-  "status": "manual r8 candidate: prioritize measured BON1 temporal response, then joint steering/stop checks",
+  "status": "retained working candidate after18 same-unified-graph conditions; partial qualitative matches with explicit unresolved conflicts",
   "manual_changes": [
     "PFL2/PFL3 shared axon bias+5pA",
     "named command types Kx0.8 and axon bias+5pA",
@@ -139,5 +139,9 @@
     "BB must be evaluated primarily in P9 context, not forced to inhibit BPN like FG",
     "MF14=LUL152 EM identity not yet resolved",
     "regional MANC motor model remains a separately scoped assay; no cross-animal edges merged"
-  ]
+  ],
+  "review_report": "MANUAL_RESULTS_20261115.md",
+  "reviewed_graph": "results/mcns-unified/source-manifest.json",
+  "reviewed_condition_count": 18,
+  "raw_input_release_manifest": "data/public-input-release-verified.json"
 }

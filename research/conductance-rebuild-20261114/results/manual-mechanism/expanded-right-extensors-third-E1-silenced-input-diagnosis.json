@@ -1,0 +1,172 @@
+{
+  "mode": "expanded-right-extensors-third-E1-silenced",
+  "window_ms": [
+    400,
+    1600
+  ],
+  "raw_result_sha256": "4cf49a2fa2498101e13cf26cbff00d2a68b5451cbab733af80eb11ea72473da5",
+  "graph_sha256": "cea807562aa63cd8c9862b6493d9401dde59fe785774eb119c7b73b17e573fc8",
+  "analysis_code_sha256": "96f3456575c7e65ad1ea16a54db80f5f5aa55458b36e13fe75e3083be40ab62c",
+  "type_pair_interventions": [],
+  "method": "Locate real remaining input sources after an ablation; no scalar objective.\nEvent-load ranks are descriptive proxies. Full target currents remain in NPZ.\n",
+  "targets": [
+    {
+      "target_body_id": "12134",
+      "target_type": "Ti flexor MN",
+      "target_rate_hz": 0.0,
+      "active_inputs": []
+    },
+    {
+      "target_body_id": "11657",
+      "target_type": "Ti extensor MN",
+      "target_rate_hz": 0.0,
+      "active_inputs": []
+    },
+    {
+      "target_body_id": "10710",
+      "target_type": "Ti flexor MN",
+      "target_rate_hz": 0.0,
+      "active_inputs": []
+    },
+    {
+      "target_body_id": "10737",
+      "target_type": "Ti extensor MN",
+      "target_rate_hz": 0.0,
+      "active_inputs": [
+        {
+          "body_id": "10093",
+          "type": "DNg100",
+          "rate_hz": 70.83333333333334,
+          "anatomical_signed_weight": 8.0,
+          "effective_signed_weight": 8.0,
+          "signed_event_load_proxy": 3400.0000000000005
+        }
+      ]
+    },
+    {
+      "target_body_id": "12585",
+      "target_type": "Ti flexor MN",
+      "target_rate_hz": 0.0,
+      "active_inputs": []
+    },
+    {
+      "target_body_id": "10347",
+      "target_type": "Ti extensor MN",
+      "target_rate_hz": 0.0,
+      "active_inputs": [
+        {
+          "body_id": "10093",
+          "type": "DNg100",
+          "rate_hz": 70.83333333333334,
+          "anatomical_signed_weight": 22.0,
+          "effective_signed_weight": 22.0,
+          "signed_event_load_proxy": 9350.000000000002
+        }
+      ]
+    },
+    {
+      "target_body_id": "13163",
+      "target_type": "Ti flexor MN",
+      "target_rate_hz": 0.0,
+      "active_inputs": [
+        {
+          "body_id": "10339",
+          "type": "DNg100",
+          "rate_hz": 70.83333333333334,
+          "anatomical_signed_weight": 7.0,
+          "effective_signed_weight": 7.0,
+          "signed_event_load_proxy": 2975.0000000000005
+        },
+        {
+          "body_id": "10370",
+          "type": "IN12B003",
+          "rate_hz": 35.833333333333336,
+          "anatomical_signed_weight": -7.0,
+          "effective_signed_weight": -7.0,
+          "signed_event_load_proxy": -7.525
+        }
+      ]
+    },
+    {
+      "target_body_id": "11706",
+      "target_type": "Ti extensor MN",
+      "target_rate_hz": 47.5,
+      "active_inputs": [
+        {
+          "body_id": "10339",
+          "type": "DNg100",
+          "rate_hz": 70.83333333333334,
+          "anatomical_signed_weight": 33.0,
+          "effective_signed_weight": 33.0,
+          "signed_event_load_proxy": 14025.000000000002
+        }
+      ]
+    },
+    {
+      "target_body_id": "13280",
+      "target_type": "Ti flexor MN",
+      "target_rate_hz": 0.0,
+      "active_inputs": []
+    },
+    {
+      "target_body_id": "10461",
+      "target_type": "Ti extensor MN",
+      "target_rate_hz": 0.0,
+      "active_inputs": [
+        {
+          "body_id": "10339",
+          "type": "DNg100",
+          "rate_hz": 70.83333333333334,
+          "anatomical_signed_weight": 37.0,
+          "effective_signed_weight": 37.0,
+          "signed_event_load_proxy": 4717.5
+        },
+        {
+          "body_id": "10488",
+          "type": "IN12B003",
+          "rate_hz": 35.833333333333336,
+          "anatomical_signed_weight": -64.0,
+          "effective_signed_weight": -64.0,
+          "signed_event_load_proxy": -68.8
+        },
+        {
+          "body_id": "11489",
+          "type": "Ti extensor MN",
+          "rate_hz": 71.66666666666667,
+          "anatomical_signed_weight": -9.0,
+          "effective_signed_weight": -9.0,
+          "signed_event_load_proxy": -19.35
+        }
+      ]
+    },
+    {
+      "target_body_id": "18491",
+      "target_type": "Ti flexor MN",
+      "target_rate_hz": 0.0,
+      "active_inputs": []
+    },
+    {
+      "target_body_id": "10462",
+      "target_type": "Ti extensor MN",
+      "target_rate_hz": 0.0,
+      "active_inputs": [
+        {
+          "body_id": "10339",
+          "type": "DNg100",
+          "rate_hz": 70.83333333333334,
+          "anatomical_signed_weight": 65.0,
+          "effective_signed_weight": 65.0,
+          "signed_event_load_proxy": 8287.5
+        },
+        {
+          "body_id": "10380",
+          "type": "IN09A002",
+          "rate_hz": 35.833333333333336,
+          "anatomical_signed_weight": -12.0,
+          "effective_signed_weight": -12.0,
+          "signed_event_load_proxy": -12.9
+        }
+      ]
+    }
+  ]
+}

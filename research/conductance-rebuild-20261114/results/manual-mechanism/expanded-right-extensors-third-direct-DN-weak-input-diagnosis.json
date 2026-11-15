@@ -1,0 +1,1660 @@
+{
+  "mode": "expanded-right-extensors-third-direct-DN-weak",
+  "window_ms": [
+    400,
+    1600
+  ],
+  "raw_result_sha256": "6a7bb2b0ea3b3832ffab4608f6db8b50691f1eadab143c43b2f580ef531f8a76",
+  "graph_sha256": "cea807562aa63cd8c9862b6493d9401dde59fe785774eb119c7b73b17e573fc8",
+  "analysis_code_sha256": "c2af45643ed9641eb591565c07a1aef89e0c6e23c56606c1ee80ede9036ee3ca",
+  "type_pair_interventions": [
+    {
+      "namespace": "MANC",
+      "source_type": "DNg100",
+      "target_type": "Ti extensor MN",
+      "gain": 0.2,
+      "affected_existing_edges": 8,
+      "source_body_ids": [
+        "10093",
+        "10339"
+      ],
+      "target_body_ids": [
+        "10347",
+        "10461",
+        "10462",
+        "10737",
+        "11115",
+        "11489",
+        "11657",
+        "11706",
+        "12704",
+        "13006",
+        "13075",
+        "13115"
+      ]
+    }
+  ],
+  "method": "Locate real remaining input sources after an ablation; no scalar objective.\nEvent-load ranks are descriptive proxies. Full target currents remain in NPZ.\n",
+  "targets": [
+    {
+      "target_body_id": "12134",
+      "target_type": "Ti flexor MN",
+      "target_rate_hz": 7.5,
+      "active_inputs": [
+        {
+          "body_id": "10827",
+          "type": "IN03A004",
+          "rate_hz": 6.666666666666667,
+          "anatomical_signed_weight": 104.0,
+          "effective_signed_weight": 104.0,
+          "signed_event_load_proxy": 4160.0
+        },
+        {
+          "body_id": "10715",
+          "type": "IN19B012",
+          "rate_hz": 7.5,
+          "anatomical_signed_weight": 26.0,
+          "effective_signed_weight": 26.0,
+          "signed_event_load_proxy": 1170.0
+        },
+        {
+          "body_id": "12283",
+          "type": "IN21A017",
+          "rate_hz": 5.0,
+          "anatomical_signed_weight": 8.0,
+          "effective_signed_weight": 8.0,
+          "signed_event_load_proxy": 240.0
+        },
+        {
+          "body_id": "162539",
+          "type": "IN13A001",
+          "rate_hz": 7.5,
+          "anatomical_signed_weight": -19.0,
+          "effective_signed_weight": -19.0,
+          "signed_event_load_proxy": -4.2749999999999995
+        },
+        {
+          "body_id": "10390",
+          "type": "IN12B003",
+          "rate_hz": 6.666666666666667,
+          "anatomical_signed_weight": -9.0,
+          "effective_signed_weight": -9.0,
+          "signed_event_load_proxy": -1.8000000000000003
+        },
+        {
+          "body_id": "24573",
+          "type": "IN19A021",
+          "rate_hz": 7.5,
+          "anatomical_signed_weight": -7.0,
+          "effective_signed_weight": -7.0,
+          "signed_event_load_proxy": -1.575
+        },
+        {
+          "body_id": "10834",
+          "type": "IN16B014",
+          "rate_hz": 7.5,
+          "anatomical_signed_weight": -5.0,
+          "effective_signed_weight": -5.0,
+          "signed_event_load_proxy": -1.125
+        }
+      ]
+    },
+    {
+      "target_body_id": "11657",
+      "target_type": "Ti extensor MN",
+      "target_rate_hz": 7.5,
+      "active_inputs": [
+        {
+          "body_id": "10220",
+          "type": "IN19B003",
+          "rate_hz": 7.5,
+          "anatomical_signed_weight": 54.0,
+          "effective_signed_weight": 54.0,
+          "signed_event_load_proxy": 2430.0
+        },
+        {
+          "body_id": "11751",
+          "type": "INXXX466",
+          "rate_hz": 7.5,
+          "anatomical_signed_weight": 37.0,
+          "effective_signed_weight": 37.0,
+          "signed_event_load_proxy": 1665.0
+        },
+        {
+          "body_id": "14803",
+          "type": "IN17A052",
+          "rate_hz": 7.5,
+          "anatomical_signed_weight": 17.0,
+          "effective_signed_weight": 17.0,
+          "signed_event_load_proxy": 765.0
+        },
+        {
+          "body_id": "100492",
+          "type": "IN03A010",
+          "rate_hz": 7.5,
+          "anatomical_signed_weight": 13.0,
+          "effective_signed_weight": 13.0,
+          "signed_event_load_proxy": 585.0
+        },
+        {
+          "body_id": "10828",
+          "type": "IN19A012",
+          "rate_hz": 15.833333333333334,
+          "anatomical_signed_weight": 5.0,
+          "effective_signed_weight": 5.0,
+          "signed_event_load_proxy": 475.0
+        },
+        {
+          "body_id": "10242",
+          "type": "IN19A007",
+          "rate_hz": 7.5,
+          "anatomical_signed_weight": -63.0,
+          "effective_signed_weight": -63.0,
+          "signed_event_load_proxy": -472.5
+        },
+        {
+          "body_id": "14073",
+          "type": "IN17A052",
+          "rate_hz": 7.5,
+          "anatomical_signed_weight": 5.0,
+          "effective_signed_weight": 5.0,
+          "signed_event_load_proxy": 225.0
+        },
+        {
+          "body_id": "10317",
+          "type": "IN19A005",
+          "rate_hz": 8.333333333333334,
+          "anatomical_signed_weight": -202.0,
+          "effective_signed_weight": -202.0,
+          "signed_event_load_proxy": -50.5
+        },
+        {
+          "body_id": "11744",
+          "type": "IN08A007",
+          "rate_hz": 7.5,
+          "anatomical_signed_weight": -84.0,
+          "effective_signed_weight": -84.0,
+          "signed_event_load_proxy": -18.9
+        },
+        {
+          "body_id": "11780",
+          "type": "IN13A014",
+          "rate_hz": 7.5,
+          "anatomical_signed_weight": -59.0,
+          "effective_signed_weight": -59.0,
+          "signed_event_load_proxy": -13.275
+        },
+        {
+          "body_id": "10196",
+          "type": "IN19A001",
+          "rate_hz": 10.0,
+          "anatomical_signed_weight": -26.0,
+          "effective_signed_weight": -26.0,
+          "signed_event_load_proxy": -7.800000000000001
+        },
+        {
+          "body_id": "101794",
+          "type": "IN19A011",
+          "rate_hz": 9.166666666666668,
+          "anatomical_signed_weight": -5.0,
+          "effective_signed_weight": -5.0,
+          "signed_event_load_proxy": -1.3750000000000002
+        }
+      ]
+    },
+    {
+      "target_body_id": "10710",
+      "target_type": "Ti flexor MN",
+      "target_rate_hz": 5.0,
+      "active_inputs": [
+        {
+          "body_id": "157964",
+          "type": "IN03A004",
+          "rate_hz": 5.0,
+          "anatomical_signed_weight": 32.0,
+          "effective_signed_weight": 32.0,
+          "signed_event_load_proxy": 960.0
+        },
+        {
+          "body_id": "11093",
+          "type": "IN19B012",
+          "rate_hz": 5.0,
+          "anatomical_signed_weight": 17.0,
+          "effective_signed_weight": 17.0,
+          "signed_event_load_proxy": 510.0
+        },
+        {
+          "body_id": "20995",
+          "type": "IN12B003",
+          "rate_hz": 18.333333333333336,
+          "anatomical_signed_weight": -5.0,
+          "effective_signed_weight": -5.0,
+          "signed_event_load_proxy": -2.7500000000000004
+        }
+      ]
+    },
+    {
+      "target_body_id": "10737",
+      "target_type": "Ti extensor MN",
+      "target_rate_hz": 6.666666666666667,
+      "active_inputs": [
+        {
+          "body_id": "10478",
+          "type": "IN19B003",
+          "rate_hz": 6.666666666666667,
+          "anatomical_signed_weight": 24.0,
+          "effective_signed_weight": 24.0,
+          "signed_event_load_proxy": 960.0
+        },
+        {
+          "body_id": "10093",
+          "type": "DNg100",
+          "rate_hz": 70.83333333333334,
+          "anatomical_signed_weight": 8.0,
+          "effective_signed_weight": 1.6,
+          "signed_event_load_proxy": 680.0000000000002
+        },
+        {
+          "body_id": "10730",
+          "type": "IN19A012",
+          "rate_hz": 5.0,
+          "anatomical_signed_weight": 5.0,
+          "effective_signed_weight": 5.0,
+          "signed_event_load_proxy": 150.0
+        },
+        {
+          "body_id": "157964",
+          "type": "IN03A004",
+          "rate_hz": 5.0,
+          "anatomical_signed_weight": 5.0,
+          "effective_signed_weight": 5.0,
+          "signed_event_load_proxy": 150.0
+        },
+        {
+          "body_id": "11450",
+          "type": "INXXX464",
+          "rate_hz": 1.6666666666666667,
+          "anatomical_signed_weight": 9.0,
+          "effective_signed_weight": 9.0,
+          "signed_event_load_proxy": 90.0
+        },
+        {
+          "body_id": "11367",
+          "type": "IN08A007",
+          "rate_hz": 6.666666666666667,
+          "anatomical_signed_weight": -132.0,
+          "effective_signed_weight": -132.0,
+          "signed_event_load_proxy": -26.400000000000002
+        },
+        {
+          "body_id": "11103",
+          "type": "IN13A014",
+          "rate_hz": 6.666666666666667,
+          "anatomical_signed_weight": -84.0,
+          "effective_signed_weight": -84.0,
+          "signed_event_load_proxy": -16.8
+        },
+        {
+          "body_id": "10308",
+          "type": "IN19A011",
+          "rate_hz": 28.333333333333336,
+          "anatomical_signed_weight": -13.0,
+          "effective_signed_weight": -13.0,
+          "signed_event_load_proxy": -11.05
+        },
+        {
+          "body_id": "11370",
+          "type": "IN12B012",
+          "rate_hz": 1.6666666666666667,
+          "anatomical_signed_weight": -8.0,
+          "effective_signed_weight": -8.0,
+          "signed_event_load_proxy": -0.4
+        }
+      ]
+    },
+    {
+      "target_body_id": "12585",
+      "target_type": "Ti flexor MN",
+      "target_rate_hz": 4.166666666666667,
+      "active_inputs": [
+        {
+          "body_id": "20948",
+          "type": "IN03A004",
+          "rate_hz": 4.166666666666667,
+          "anatomical_signed_weight": 73.0,
+          "effective_signed_weight": 73.0,
+          "signed_event_load_proxy": 1825.0000000000002
+        },
+        {
+          "body_id": "10790",
+          "type": "IN19B012",
+          "rate_hz": 4.166666666666667,
+          "anatomical_signed_weight": 16.0,
+          "effective_signed_weight": 16.0,
+          "signed_event_load_proxy": 400.0
+        },
+        {
+          "body_id": "11131",
+          "type": "IN21A006",
+          "rate_hz": 4.166666666666667,
+          "anatomical_signed_weight": -23.0,
+          "effective_signed_weight": -23.0,
+          "signed_event_load_proxy": -2.875
+        },
+        {
+          "body_id": "11826",
+          "type": "IN21A016",
+          "rate_hz": 1.6666666666666667,
+          "anatomical_signed_weight": -17.0,
+          "effective_signed_weight": -17.0,
+          "signed_event_load_proxy": -0.8500000000000001
+        }
+      ]
+    },
+    {
+      "target_body_id": "10347",
+      "target_type": "Ti extensor MN",
+      "target_rate_hz": 7.5,
+      "active_inputs": [
+        {
+          "body_id": "10093",
+          "type": "DNg100",
+          "rate_hz": 70.83333333333334,
+          "anatomical_signed_weight": 22.0,
+          "effective_signed_weight": 4.4,
+          "signed_event_load_proxy": 1870.0000000000005
+        },
+        {
+          "body_id": "12246",
+          "type": "IN19B003",
+          "rate_hz": 4.166666666666667,
+          "anatomical_signed_weight": 46.0,
+          "effective_signed_weight": 46.0,
+          "signed_event_load_proxy": 1150.0
+        },
+        {
+          "body_id": "10310",
+          "type": "IN19A014",
+          "rate_hz": 18.333333333333336,
+          "anatomical_signed_weight": 7.0,
+          "effective_signed_weight": 7.0,
+          "signed_event_load_proxy": 770.0000000000001
+        },
+        {
+          "body_id": "10091",
+          "type": "IN08B001",
+          "rate_hz": 6.666666666666667,
+          "anatomical_signed_weight": 15.0,
+          "effective_signed_weight": 15.0,
+          "signed_event_load_proxy": 600.0
+        },
+        {
+          "body_id": "10499",
+          "type": "IN19A010",
+          "rate_hz": 5.0,
+          "anatomical_signed_weight": 19.0,
+          "effective_signed_weight": 19.0,
+          "signed_event_load_proxy": 570.0
+        },
+        {
+          "body_id": "10498",
+          "type": "IN17A001",
+          "rate_hz": 4.166666666666667,
+          "anatomical_signed_weight": 15.0,
+          "effective_signed_weight": 15.0,
+          "signed_event_load_proxy": 375.0
+        },
+        {
+          "body_id": "12315",
+          "type": "INXXX466",
+          "rate_hz": 4.166666666666667,
+          "anatomical_signed_weight": 14.0,
+          "effective_signed_weight": 14.0,
+          "signed_event_load_proxy": 350.0
+        },
+        {
+          "body_id": "10215",
+          "type": "IN19A007",
+          "rate_hz": 4.166666666666667,
+          "anatomical_signed_weight": -26.0,
+          "effective_signed_weight": -26.0,
+          "signed_event_load_proxy": -108.33333333333334
+        },
+        {
+          "body_id": "10358",
+          "type": "IN19A005",
+          "rate_hz": 2.5,
+          "anatomical_signed_weight": -362.0,
+          "effective_signed_weight": -362.0,
+          "signed_event_load_proxy": -27.15
+        },
+        {
+          "body_id": "11501",
+          "type": "IN13A014",
+          "rate_hz": 4.166666666666667,
+          "anatomical_signed_weight": -125.0,
+          "effective_signed_weight": -125.0,
+          "signed_event_load_proxy": -15.625000000000002
+        },
+        {
+          "body_id": "11503",
+          "type": "IN08A007",
+          "rate_hz": 4.166666666666667,
+          "anatomical_signed_weight": -112.0,
+          "effective_signed_weight": -112.0,
+          "signed_event_load_proxy": -14.0
+        },
+        {
+          "body_id": "19111",
+          "type": "IN19A011",
+          "rate_hz": 1.6666666666666667,
+          "anatomical_signed_weight": -15.0,
+          "effective_signed_weight": -15.0,
+          "signed_event_load_proxy": -0.75
+        },
+        {
+          "body_id": "10617",
+          "type": "IN16B016",
+          "rate_hz": 1.6666666666666667,
+          "anatomical_signed_weight": -5.0,
+          "effective_signed_weight": -5.0,
+          "signed_event_load_proxy": -0.25
+        }
+      ]
+    },
+    {
+      "target_body_id": "13163",
+      "target_type": "Ti flexor MN",
+      "target_rate_hz": 16.666666666666668,
+      "active_inputs": [
+        {
+          "body_id": "10339",
+          "type": "DNg100",
+          "rate_hz": 70.83333333333334,
+          "anatomical_signed_weight": 7.0,
+          "effective_signed_weight": 7.0,
+          "signed_event_load_proxy": 2975.0000000000005
+        },
+        {
+          "body_id": "154691",
+          "type": "IN19B012",
+          "rate_hz": 8.333333333333334,
+          "anatomical_signed_weight": 54.0,
+          "effective_signed_weight": 54.0,
+          "signed_event_load_proxy": 2700.0
+        },
+        {
+          "body_id": "10385",
+          "type": "IN19B005",
+          "rate_hz": 7.5,
+          "anatomical_signed_weight": 19.0,
+          "effective_signed_weight": 19.0,
+          "signed_event_load_proxy": 855.0
+        },
+        {
+          "body_id": "11831",
+          "type": "IN03A004",
+          "rate_hz": 0.8333333333333334,
+          "anatomical_signed_weight": 169.0,
+          "effective_signed_weight": 169.0,
+          "signed_event_load_proxy": 845.0
+        },
+        {
+          "body_id": "13698",
+          "type": "INXXX466",
+          "rate_hz": 8.333333333333334,
+          "anatomical_signed_weight": 9.0,
+          "effective_signed_weight": 9.0,
+          "signed_event_load_proxy": 450.00000000000006
+        },
+        {
+          "body_id": "12233",
+          "type": "IN21A017",
+          "rate_hz": 1.6666666666666667,
+          "anatomical_signed_weight": 32.0,
+          "effective_signed_weight": 32.0,
+          "signed_event_load_proxy": 320.0
+        },
+        {
+          "body_id": "10731",
+          "type": "IN19A014",
+          "rate_hz": 5.833333333333334,
+          "anatomical_signed_weight": 6.0,
+          "effective_signed_weight": 6.0,
+          "signed_event_load_proxy": 210.00000000000003
+        },
+        {
+          "body_id": "10235",
+          "type": "IN13A001",
+          "rate_hz": 7.5,
+          "anatomical_signed_weight": -77.0,
+          "effective_signed_weight": -77.0,
+          "signed_event_load_proxy": -17.325
+        },
+        {
+          "body_id": "10370",
+          "type": "IN12B003",
+          "rate_hz": 40.0,
+          "anatomical_signed_weight": -7.0,
+          "effective_signed_weight": -7.0,
+          "signed_event_load_proxy": -8.4
+        },
+        {
+          "body_id": "11833",
+          "type": "IN19A021",
+          "rate_hz": 8.333333333333334,
+          "anatomical_signed_weight": -12.0,
+          "effective_signed_weight": -12.0,
+          "signed_event_load_proxy": -3.0
+        },
+        {
+          "body_id": "12479",
+          "type": "IN16B016",
+          "rate_hz": 8.333333333333334,
+          "anatomical_signed_weight": -9.0,
+          "effective_signed_weight": -9.0,
+          "signed_event_load_proxy": -2.2500000000000004
+        },
+        {
+          "body_id": "14975",
+          "type": "IN21A016",
+          "rate_hz": 0.8333333333333334,
+          "anatomical_signed_weight": -34.0,
+          "effective_signed_weight": -34.0,
+          "signed_event_load_proxy": -0.8500000000000001
+        },
+        {
+          "body_id": "11020",
+          "type": "AN14A003",
+          "rate_hz": 5.0,
+          "anatomical_signed_weight": -5.0,
+          "effective_signed_weight": -5.0,
+          "signed_event_load_proxy": -0.75
+        }
+      ]
+    },
+    {
+      "target_body_id": "11706",
+      "target_type": "Ti extensor MN",
+      "target_rate_hz": 17.5,
+      "active_inputs": [
+        {
+          "body_id": "11057",
+          "type": "IN19B003",
+          "rate_hz": 8.333333333333334,
+          "anatomical_signed_weight": 184.0,
+          "effective_signed_weight": 184.0,
+          "signed_event_load_proxy": 9200.0
+        },
+        {
+          "body_id": "13698",
+          "type": "INXXX466",
+          "rate_hz": 8.333333333333334,
+          "anatomical_signed_weight": 140.0,
+          "effective_signed_weight": 140.0,
+          "signed_event_load_proxy": 7000.000000000001
+        },
+        {
+          "body_id": "10339",
+          "type": "DNg100",
+          "rate_hz": 70.83333333333334,
+          "anatomical_signed_weight": 33.0,
+          "effective_signed_weight": 6.6000000000000005,
+          "signed_event_load_proxy": 2805.0000000000005
+        },
+        {
+          "body_id": "10010",
+          "type": "IN07B001",
+          "rate_hz": 15.833333333333334,
+          "anatomical_signed_weight": 28.0,
+          "effective_signed_weight": 28.0,
+          "signed_event_load_proxy": 2660.0
+        },
+        {
+          "body_id": "10205",
+          "type": "AN19B004",
+          "rate_hz": 10.833333333333334,
+          "anatomical_signed_weight": 21.0,
+          "effective_signed_weight": 21.0,
+          "signed_event_load_proxy": 1365.0
+        },
+        {
+          "body_id": "10089",
+          "type": "IN08B001",
+          "rate_hz": 5.833333333333334,
+          "anatomical_signed_weight": 37.0,
+          "effective_signed_weight": 37.0,
+          "signed_event_load_proxy": 1295.0000000000002
+        },
+        {
+          "body_id": "10018",
+          "type": "IN07B001",
+          "rate_hz": 12.5,
+          "anatomical_signed_weight": 11.0,
+          "effective_signed_weight": 11.0,
+          "signed_event_load_proxy": 825.0
+        },
+        {
+          "body_id": "10422",
+          "type": "IN19A012",
+          "rate_hz": 15.833333333333334,
+          "anatomical_signed_weight": 7.0,
+          "effective_signed_weight": 7.0,
+          "signed_event_load_proxy": 665.0
+        },
+        {
+          "body_id": "10427",
+          "type": "IN19A007",
+          "rate_hz": 8.333333333333334,
+          "anatomical_signed_weight": -66.0,
+          "effective_signed_weight": -66.0,
+          "signed_event_load_proxy": -550.0
+        },
+        {
+          "body_id": "10274",
+          "type": "INXXX464",
+          "rate_hz": 0.8333333333333334,
+          "anatomical_signed_weight": 85.0,
+          "effective_signed_weight": 85.0,
+          "signed_event_load_proxy": 425.0
+        },
+        {
+          "body_id": "14645",
+          "type": "IN17A052",
+          "rate_hz": 6.666666666666667,
+          "anatomical_signed_weight": 9.0,
+          "effective_signed_weight": 9.0,
+          "signed_event_load_proxy": 360.0
+        },
+        {
+          "body_id": "14797",
+          "type": "IN17A052",
+          "rate_hz": 8.333333333333334,
+          "anatomical_signed_weight": 7.0,
+          "effective_signed_weight": 7.0,
+          "signed_event_load_proxy": 350.0
+        },
+        {
+          "body_id": "12050",
+          "type": "IN03A010",
+          "rate_hz": 8.333333333333334,
+          "anatomical_signed_weight": 6.0,
+          "effective_signed_weight": 6.0,
+          "signed_event_load_proxy": 300.0
+        },
+        {
+          "body_id": "10259",
+          "type": "IN19A005",
+          "rate_hz": 9.166666666666668,
+          "anatomical_signed_weight": -767.0,
+          "effective_signed_weight": -767.0,
+          "signed_event_load_proxy": -210.925
+        },
+        {
+          "body_id": "12099",
+          "type": "IN08A007",
+          "rate_hz": 8.333333333333334,
+          "anatomical_signed_weight": -522.0,
+          "effective_signed_weight": -522.0,
+          "signed_event_load_proxy": -130.5
+        },
+        {
+          "body_id": "12790",
+          "type": "IN13A014",
+          "rate_hz": 8.333333333333334,
+          "anatomical_signed_weight": -382.0,
+          "effective_signed_weight": -382.0,
+          "signed_event_load_proxy": -95.5
+        },
+        {
+          "body_id": "12901",
+          "type": "IN03A013",
+          "rate_hz": 0.8333333333333334,
+          "anatomical_signed_weight": 18.0,
+          "effective_signed_weight": 18.0,
+          "signed_event_load_proxy": 90.0
+        },
+        {
+          "body_id": "172107",
+          "type": "IN19A011",
+          "rate_hz": 13.333333333333334,
+          "anatomical_signed_weight": -196.0,
+          "effective_signed_weight": -196.0,
+          "signed_event_load_proxy": -78.4
+        },
+        {
+          "body_id": "10213",
+          "type": "IN19A001",
+          "rate_hz": 10.833333333333334,
+          "anatomical_signed_weight": -32.0,
+          "effective_signed_weight": -32.0,
+          "signed_event_load_proxy": -10.4
+        },
+        {
+          "body_id": "13115",
+          "type": "Ti extensor MN",
+          "rate_hz": 8.333333333333334,
+          "anatomical_signed_weight": -19.0,
+          "effective_signed_weight": -19.0,
+          "signed_event_load_proxy": -4.75
+        },
+        {
+          "body_id": "10363",
+          "type": "IN19A004",
+          "rate_hz": 15.833333333333334,
+          "anatomical_signed_weight": -5.0,
+          "effective_signed_weight": -5.0,
+          "signed_event_load_proxy": -2.375
+        },
+        {
+          "body_id": "11020",
+          "type": "AN14A003",
+          "rate_hz": 5.0,
+          "anatomical_signed_weight": -12.0,
+          "effective_signed_weight": -12.0,
+          "signed_event_load_proxy": -1.7999999999999998
+        },
+        {
+          "body_id": "10354",
+          "type": "IN08A002",
+          "rate_hz": 8.333333333333334,
+          "anatomical_signed_weight": -5.0,
+          "effective_signed_weight": -5.0,
+          "signed_event_load_proxy": -1.25
+        },
+        {
+          "body_id": "10503",
+          "type": "IN19A002",
+          "rate_hz": 6.666666666666667,
+          "anatomical_signed_weight": -6.0,
+          "effective_signed_weight": -6.0,
+          "signed_event_load_proxy": -1.2
+        }
+      ]
+    },
+    {
+      "target_body_id": "13280",
+      "target_type": "Ti flexor MN",
+      "target_rate_hz": 8.333333333333334,
+      "active_inputs": [
+        {
+          "body_id": "11109",
+          "type": "IN19B012",
+          "rate_hz": 7.5,
+          "anatomical_signed_weight": 35.0,
+          "effective_signed_weight": 35.0,
+          "signed_event_load_proxy": 1575.0
+        },
+        {
+          "body_id": "10422",
+          "type": "IN19A012",
+          "rate_hz": 15.833333333333334,
+          "anatomical_signed_weight": 16.0,
+          "effective_signed_weight": 16.0,
+          "signed_event_load_proxy": 1520.0
+        },
+        {
+          "body_id": "10552",
+          "type": "IN19A014",
+          "rate_hz": 10.833333333333334,
+          "anatomical_signed_weight": 8.0,
+          "effective_signed_weight": 8.0,
+          "signed_event_load_proxy": 520.0
+        },
+        {
+          "body_id": "11964",
+          "type": "IN21A016",
+          "rate_hz": 20.0,
+          "anatomical_signed_weight": -17.0,
+          "effective_signed_weight": -17.0,
+          "signed_event_load_proxy": -10.2
+        },
+        {
+          "body_id": "10186",
+          "type": "IN13A001",
+          "rate_hz": 5.833333333333334,
+          "anatomical_signed_weight": -32.0,
+          "effective_signed_weight": -32.0,
+          "signed_event_load_proxy": -5.6000000000000005
+        },
+        {
+          "body_id": "11369",
+          "type": "IN19A021",
+          "rate_hz": 7.5,
+          "anatomical_signed_weight": -8.0,
+          "effective_signed_weight": -8.0,
+          "signed_event_load_proxy": -1.7999999999999998
+        },
+        {
+          "body_id": "11295",
+          "type": "IN16B016",
+          "rate_hz": 5.0,
+          "anatomical_signed_weight": -5.0,
+          "effective_signed_weight": -5.0,
+          "signed_event_load_proxy": -0.75
+        }
+      ]
+    },
+    {
+      "target_body_id": "10461",
+      "target_type": "Ti extensor MN",
+      "target_rate_hz": 10.833333333333334,
+      "active_inputs": [
+        {
+          "body_id": "10302",
+          "type": "IN19B003",
+          "rate_hz": 7.5,
+          "anatomical_signed_weight": 213.0,
+          "effective_signed_weight": 213.0,
+          "signed_event_load_proxy": 2875.5
+        },
+        {
+          "body_id": "10693",
+          "type": "IN19A012",
+          "rate_hz": 17.5,
+          "anatomical_signed_weight": 74.0,
+          "effective_signed_weight": 74.0,
+          "signed_event_load_proxy": 2331.0
+        },
+        {
+          "body_id": "10522",
+          "type": "IN19A010",
+          "rate_hz": 15.833333333333334,
+          "anatomical_signed_weight": 56.0,
+          "effective_signed_weight": 56.0,
+          "signed_event_load_proxy": 1595.9999999999998
+        },
+        {
+          "body_id": "12107",
+          "type": "INXXX466",
+          "rate_hz": 7.5,
+          "anatomical_signed_weight": 113.0,
+          "effective_signed_weight": 113.0,
+          "signed_event_load_proxy": 1525.4999999999998
+        },
+        {
+          "body_id": "100544",
+          "type": "INXXX464",
+          "rate_hz": 5.0,
+          "anatomical_signed_weight": 149.0,
+          "effective_signed_weight": 149.0,
+          "signed_event_load_proxy": 1341.0
+        },
+        {
+          "body_id": "10339",
+          "type": "DNg100",
+          "rate_hz": 70.83333333333334,
+          "anatomical_signed_weight": 37.0,
+          "effective_signed_weight": 7.4,
+          "signed_event_load_proxy": 943.5
+        },
+        {
+          "body_id": "12769",
+          "type": "IN03A010",
+          "rate_hz": 7.5,
+          "anatomical_signed_weight": 69.0,
+          "effective_signed_weight": 69.0,
+          "signed_event_load_proxy": 931.4999999999999
+        },
+        {
+          "body_id": "10010",
+          "type": "IN07B001",
+          "rate_hz": 15.833333333333334,
+          "anatomical_signed_weight": 31.0,
+          "effective_signed_weight": 31.0,
+          "signed_event_load_proxy": 883.5
+        },
+        {
+          "body_id": "10252",
+          "type": "IN19A007",
+          "rate_hz": 7.5,
+          "anatomical_signed_weight": -105.0,
+          "effective_signed_weight": -105.0,
+          "signed_event_load_proxy": -787.5
+        },
+        {
+          "body_id": "10262",
+          "type": "IN03A001",
+          "rate_hz": 4.166666666666667,
+          "anatomical_signed_weight": 58.0,
+          "effective_signed_weight": 58.0,
+          "signed_event_load_proxy": 435.0
+        },
+        {
+          "body_id": "15230",
+          "type": "IN17A052",
+          "rate_hz": 7.5,
+          "anatomical_signed_weight": 29.0,
+          "effective_signed_weight": 29.0,
+          "signed_event_load_proxy": 391.49999999999994
+        },
+        {
+          "body_id": "10089",
+          "type": "IN08B001",
+          "rate_hz": 5.833333333333334,
+          "anatomical_signed_weight": 36.0,
+          "effective_signed_weight": 36.0,
+          "signed_event_load_proxy": 378.0
+        },
+        {
+          "body_id": "10018",
+          "type": "IN07B001",
+          "rate_hz": 12.5,
+          "anatomical_signed_weight": 15.0,
+          "effective_signed_weight": 15.0,
+          "signed_event_load_proxy": 337.49999999999994
+        },
+        {
+          "body_id": "16344",
+          "type": "IN17A052",
+          "rate_hz": 7.5,
+          "anatomical_signed_weight": 22.0,
+          "effective_signed_weight": 22.0,
+          "signed_event_load_proxy": 296.99999999999994
+        },
+        {
+          "body_id": "10233",
+          "type": "IN19A005",
+          "rate_hz": 7.5,
+          "anatomical_signed_weight": -820.0,
+          "effective_signed_weight": -820.0,
+          "signed_event_load_proxy": -184.49999999999997
+        },
+        {
+          "body_id": "10072",
+          "type": "IN17A001",
+          "rate_hz": 7.5,
+          "anatomical_signed_weight": 9.0,
+          "effective_signed_weight": 9.0,
+          "signed_event_load_proxy": 121.5
+        },
+        {
+          "body_id": "12028",
+          "type": "IN08A007",
+          "rate_hz": 7.5,
+          "anatomical_signed_weight": -437.0,
+          "effective_signed_weight": -437.0,
+          "signed_event_load_proxy": -98.32499999999999
+        },
+        {
+          "body_id": "10875",
+          "type": "IN21A010",
+          "rate_hz": 0.8333333333333334,
+          "anatomical_signed_weight": 64.0,
+          "effective_signed_weight": 64.0,
+          "signed_event_load_proxy": 96.0
+        },
+        {
+          "body_id": "10173",
+          "type": "IN19A009",
+          "rate_hz": 8.333333333333334,
+          "anatomical_signed_weight": 6.0,
+          "effective_signed_weight": 6.0,
+          "signed_event_load_proxy": 90.0
+        },
+        {
+          "body_id": "10254",
+          "type": "IN19A011",
+          "rate_hz": 25.833333333333336,
+          "anatomical_signed_weight": -111.0,
+          "effective_signed_weight": -111.0,
+          "signed_event_load_proxy": -86.025
+        },
+        {
+          "body_id": "11538",
+          "type": "IN13A014",
+          "rate_hz": 7.5,
+          "anatomical_signed_weight": -370.0,
+          "effective_signed_weight": -370.0,
+          "signed_event_load_proxy": -83.25
+        },
+        {
+          "body_id": "11109",
+          "type": "IN19B012",
+          "rate_hz": 7.5,
+          "anatomical_signed_weight": 6.0,
+          "effective_signed_weight": 6.0,
+          "signed_event_load_proxy": 80.99999999999999
+        },
+        {
+          "body_id": "12073",
+          "type": "IN21A017",
+          "rate_hz": 1.6666666666666667,
+          "anatomical_signed_weight": 25.0,
+          "effective_signed_weight": 25.0,
+          "signed_event_load_proxy": 74.99999999999999
+        },
+        {
+          "body_id": "10488",
+          "type": "IN12B003",
+          "rate_hz": 35.833333333333336,
+          "anatomical_signed_weight": -64.0,
+          "effective_signed_weight": -64.0,
+          "signed_event_load_proxy": -68.8
+        },
+        {
+          "body_id": "10678",
+          "type": "IN08A005",
+          "rate_hz": 5.0,
+          "anatomical_signed_weight": -387.0,
+          "effective_signed_weight": -387.0,
+          "signed_event_load_proxy": -58.05
+        },
+        {
+          "body_id": "171493",
+          "type": "IN03B035",
+          "rate_hz": 9.166666666666668,
+          "anatomical_signed_weight": -43.0,
+          "effective_signed_weight": -43.0,
+          "signed_event_load_proxy": -11.825000000000001
+        },
+        {
+          "body_id": "10150",
+          "type": "IN19A001",
+          "rate_hz": 10.0,
+          "anatomical_signed_weight": -25.0,
+          "effective_signed_weight": -25.0,
+          "signed_event_load_proxy": -7.5
+        },
+        {
+          "body_id": "10580",
+          "type": "IN16B018",
+          "rate_hz": 7.5,
+          "anatomical_signed_weight": -28.0,
+          "effective_signed_weight": -28.0,
+          "signed_event_load_proxy": -6.3
+        },
+        {
+          "body_id": "10125",
+          "type": "IN19A008",
+          "rate_hz": 15.0,
+          "anatomical_signed_weight": -13.0,
+          "effective_signed_weight": -13.0,
+          "signed_event_load_proxy": -5.8500000000000005
+        },
+        {
+          "body_id": "11489",
+          "type": "Ti extensor MN",
+          "rate_hz": 20.0,
+          "anatomical_signed_weight": -9.0,
+          "effective_signed_weight": -9.0,
+          "signed_event_load_proxy": -5.4
+        },
+        {
+          "body_id": "10487",
+          "type": "IN26X001",
+          "rate_hz": 18.333333333333336,
+          "anatomical_signed_weight": -9.0,
+          "effective_signed_weight": -9.0,
+          "signed_event_load_proxy": -4.950000000000001
+        },
+        {
+          "body_id": "17188",
+          "type": "IN08A002",
+          "rate_hz": 7.5,
+          "anatomical_signed_weight": -18.0,
+          "effective_signed_weight": -18.0,
+          "signed_event_load_proxy": -4.050000000000001
+        },
+        {
+          "body_id": "10822",
+          "type": "AN14A003",
+          "rate_hz": 5.833333333333334,
+          "anatomical_signed_weight": -19.0,
+          "effective_signed_weight": -19.0,
+          "signed_event_load_proxy": -3.325
+        },
+        {
+          "body_id": "10191",
+          "type": "IN19A004",
+          "rate_hz": 18.333333333333336,
+          "anatomical_signed_weight": -6.0,
+          "effective_signed_weight": -6.0,
+          "signed_event_load_proxy": -3.3000000000000003
+        },
+        {
+          "body_id": "12745",
+          "type": "IN12B023",
+          "rate_hz": 0.8333333333333334,
+          "anatomical_signed_weight": -64.0,
+          "effective_signed_weight": -64.0,
+          "signed_event_load_proxy": -1.6
+        },
+        {
+          "body_id": "10186",
+          "type": "IN13A001",
+          "rate_hz": 5.833333333333334,
+          "anatomical_signed_weight": -8.0,
+          "effective_signed_weight": -8.0,
+          "signed_event_load_proxy": -1.4000000000000001
+        },
+        {
+          "body_id": "11754",
+          "type": "IN19A020",
+          "rate_hz": 7.5,
+          "anatomical_signed_weight": -6.0,
+          "effective_signed_weight": -6.0,
+          "signed_event_load_proxy": -1.3499999999999999
+        },
+        {
+          "body_id": "11993",
+          "type": "IN19A024",
+          "rate_hz": 2.5,
+          "anatomical_signed_weight": -16.0,
+          "effective_signed_weight": -16.0,
+          "signed_event_load_proxy": -1.2
+        },
+        {
+          "body_id": "10146",
+          "type": "IN19A002",
+          "rate_hz": 3.3333333333333335,
+          "anatomical_signed_weight": -9.0,
+          "effective_signed_weight": -9.0,
+          "signed_event_load_proxy": -0.9000000000000001
+        },
+        {
+          "body_id": "11295",
+          "type": "IN16B016",
+          "rate_hz": 5.0,
+          "anatomical_signed_weight": -6.0,
+          "effective_signed_weight": -6.0,
+          "signed_event_load_proxy": -0.8999999999999999
+        },
+        {
+          "body_id": "10738",
+          "type": "IN13B006",
+          "rate_hz": 3.3333333333333335,
+          "anatomical_signed_weight": -5.0,
+          "effective_signed_weight": -5.0,
+          "signed_event_load_proxy": -0.5
+        },
+        {
+          "body_id": "10305",
+          "type": "IN21A001",
+          "rate_hz": 1.6666666666666667,
+          "anatomical_signed_weight": -8.0,
+          "effective_signed_weight": -8.0,
+          "signed_event_load_proxy": -0.4
+        }
+      ]
+    },
+    {
+      "target_body_id": "18491",
+      "target_type": "Ti flexor MN",
+      "target_rate_hz": 21.666666666666668,
+      "active_inputs": [
+        {
+          "body_id": "10870",
+          "type": "IN03A004",
+          "rate_hz": 5.0,
+          "anatomical_signed_weight": 300.0,
+          "effective_signed_weight": 300.0,
+          "signed_event_load_proxy": 9000.0
+        },
+        {
+          "body_id": "11984",
+          "type": "IN19B012",
+          "rate_hz": 5.0,
+          "anatomical_signed_weight": 194.0,
+          "effective_signed_weight": 194.0,
+          "signed_event_load_proxy": 5820.0
+        },
+        {
+          "body_id": "10693",
+          "type": "IN19A012",
+          "rate_hz": 17.5,
+          "anatomical_signed_weight": 27.0,
+          "effective_signed_weight": 27.0,
+          "signed_event_load_proxy": 2835.0
+        },
+        {
+          "body_id": "10999",
+          "type": "AN18B003",
+          "rate_hz": 8.333333333333334,
+          "anatomical_signed_weight": 12.0,
+          "effective_signed_weight": 12.0,
+          "signed_event_load_proxy": 600.0
+        },
+        {
+          "body_id": "10558",
+          "type": "IN17A001",
+          "rate_hz": 5.0,
+          "anatomical_signed_weight": 12.0,
+          "effective_signed_weight": 12.0,
+          "signed_event_load_proxy": 360.0
+        },
+        {
+          "body_id": "11326",
+          "type": "IN12A003",
+          "rate_hz": 2.5,
+          "anatomical_signed_weight": 21.0,
+          "effective_signed_weight": 21.0,
+          "signed_event_load_proxy": 315.0
+        },
+        {
+          "body_id": "10384",
+          "type": "IN19A009",
+          "rate_hz": 7.5,
+          "anatomical_signed_weight": 5.0,
+          "effective_signed_weight": 5.0,
+          "signed_event_load_proxy": 225.0
+        },
+        {
+          "body_id": "10545",
+          "type": "IN18B005",
+          "rate_hz": 1.6666666666666667,
+          "anatomical_signed_weight": 5.0,
+          "effective_signed_weight": 5.0,
+          "signed_event_load_proxy": 50.0
+        },
+        {
+          "body_id": "10153",
+          "type": "IN13A001",
+          "rate_hz": 4.166666666666667,
+          "anatomical_signed_weight": -325.0,
+          "effective_signed_weight": -325.0,
+          "signed_event_load_proxy": -40.625
+        },
+        {
+          "body_id": "10513",
+          "type": "INXXX053",
+          "rate_hz": 5.0,
+          "anatomical_signed_weight": -250.0,
+          "effective_signed_weight": -250.0,
+          "signed_event_load_proxy": -37.5
+        },
+        {
+          "body_id": "11132",
+          "type": "IN21A006",
+          "rate_hz": 5.0,
+          "anatomical_signed_weight": -133.0,
+          "effective_signed_weight": -133.0,
+          "signed_event_load_proxy": -19.95
+        },
+        {
+          "body_id": "12531",
+          "type": "IN21A016",
+          "rate_hz": 9.166666666666668,
+          "anatomical_signed_weight": -56.0,
+          "effective_signed_weight": -56.0,
+          "signed_event_load_proxy": -15.400000000000002
+        },
+        {
+          "body_id": "10343",
+          "type": "IN19A015",
+          "rate_hz": 1.6666666666666667,
+          "anatomical_signed_weight": -261.0,
+          "effective_signed_weight": -261.0,
+          "signed_event_load_proxy": -13.05
+        },
+        {
+          "body_id": "11363",
+          "type": "IN19A021",
+          "rate_hz": 5.0,
+          "anatomical_signed_weight": -39.0,
+          "effective_signed_weight": -39.0,
+          "signed_event_load_proxy": -5.85
+        },
+        {
+          "body_id": "10968",
+          "type": "MNhl68",
+          "rate_hz": 31.666666666666668,
+          "anatomical_signed_weight": -5.0,
+          "effective_signed_weight": -5.0,
+          "signed_event_load_proxy": -4.75
+        },
+        {
+          "body_id": "10207",
+          "type": "IN19A004",
+          "rate_hz": 17.5,
+          "anatomical_signed_weight": -5.0,
+          "effective_signed_weight": -5.0,
+          "signed_event_load_proxy": -2.625
+        },
+        {
+          "body_id": "11716",
+          "type": "IN16B016",
+          "rate_hz": 5.0,
+          "anatomical_signed_weight": -17.0,
+          "effective_signed_weight": -17.0,
+          "signed_event_load_proxy": -2.55
+        },
+        {
+          "body_id": "10883",
+          "type": "IN21A003",
+          "rate_hz": 5.0,
+          "anatomical_signed_weight": -8.0,
+          "effective_signed_weight": -8.0,
+          "signed_event_load_proxy": -1.2
+        }
+      ]
+    },
+    {
+      "target_body_id": "10462",
+      "target_type": "Ti extensor MN",
+      "target_rate_hz": 12.5,
+      "active_inputs": [
+        {
+          "body_id": "10231",
+          "type": "IN19B003",
+          "rate_hz": 5.0,
+          "anatomical_signed_weight": 235.0,
+          "effective_signed_weight": 235.0,
+          "signed_event_load_proxy": 2114.9999999999995
+        },
+        {
+          "body_id": "10542",
+          "type": "IN19A010",
+          "rate_hz": 7.5,
+          "anatomical_signed_weight": 124.0,
+          "effective_signed_weight": 124.0,
+          "signed_event_load_proxy": 1674.0
+        },
+        {
+          "body_id": "10339",
+          "type": "DNg100",
+          "rate_hz": 70.83333333333334,
+          "anatomical_signed_weight": 65.0,
+          "effective_signed_weight": 13.0,
+          "signed_event_load_proxy": 1657.5000000000002
+        },
+        {
+          "body_id": "13011",
+          "type": "IN02A015",
+          "rate_hz": 9.166666666666668,
+          "anatomical_signed_weight": 79.0,
+          "effective_signed_weight": 79.0,
+          "signed_event_load_proxy": 1303.5
+        },
+        {
+          "body_id": "152696",
+          "type": "INXXX466",
+          "rate_hz": 5.0,
+          "anatomical_signed_weight": 138.0,
+          "effective_signed_weight": 138.0,
+          "signed_event_load_proxy": 1242.0
+        },
+        {
+          "body_id": "10552",
+          "type": "IN19A014",
+          "rate_hz": 10.833333333333334,
+          "anatomical_signed_weight": 62.0,
+          "effective_signed_weight": 62.0,
+          "signed_event_load_proxy": 1209.0
+        },
+        {
+          "body_id": "10089",
+          "type": "IN08B001",
+          "rate_hz": 5.833333333333334,
+          "anatomical_signed_weight": 83.0,
+          "effective_signed_weight": 83.0,
+          "signed_event_load_proxy": 871.5
+        },
+        {
+          "body_id": "10152",
+          "type": "IN01A001",
+          "rate_hz": 9.166666666666668,
+          "anatomical_signed_weight": 51.0,
+          "effective_signed_weight": 51.0,
+          "signed_event_load_proxy": 841.5000000000001
+        },
+        {
+          "body_id": "10558",
+          "type": "IN17A001",
+          "rate_hz": 5.0,
+          "anatomical_signed_weight": 77.0,
+          "effective_signed_weight": 77.0,
+          "signed_event_load_proxy": 693.0
+        },
+        {
+          "body_id": "10010",
+          "type": "IN07B001",
+          "rate_hz": 15.833333333333334,
+          "anatomical_signed_weight": 23.0,
+          "effective_signed_weight": 23.0,
+          "signed_event_load_proxy": 655.5
+        },
+        {
+          "body_id": "11659",
+          "type": "IN01A016",
+          "rate_hz": 0.8333333333333334,
+          "anatomical_signed_weight": 410.0,
+          "effective_signed_weight": 410.0,
+          "signed_event_load_proxy": 614.9999999999999
+        },
+        {
+          "body_id": "10018",
+          "type": "IN07B001",
+          "rate_hz": 12.5,
+          "anatomical_signed_weight": 27.0,
+          "effective_signed_weight": 27.0,
+          "signed_event_load_proxy": 607.4999999999999
+        },
+        {
+          "body_id": "10346",
+          "type": "IN19A007",
+          "rate_hz": 5.0,
+          "anatomical_signed_weight": -110.0,
+          "effective_signed_weight": -110.0,
+          "signed_event_load_proxy": -550.0
+        },
+        {
+          "body_id": "11325",
+          "type": "IN21A010",
+          "rate_hz": 0.8333333333333334,
+          "anatomical_signed_weight": 129.0,
+          "effective_signed_weight": 129.0,
+          "signed_event_load_proxy": 193.5
+        },
+        {
+          "body_id": "10999",
+          "type": "AN18B003",
+          "rate_hz": 8.333333333333334,
+          "anatomical_signed_weight": 7.0,
+          "effective_signed_weight": 7.0,
+          "signed_event_load_proxy": 104.99999999999999
+        },
+        {
+          "body_id": "10384",
+          "type": "IN19A009",
+          "rate_hz": 7.5,
+          "anatomical_signed_weight": 7.0,
+          "effective_signed_weight": 7.0,
+          "signed_event_load_proxy": 94.49999999999999
+        },
+        {
+          "body_id": "10184",
+          "type": "IN19A011",
+          "rate_hz": 22.5,
+          "anatomical_signed_weight": -109.0,
+          "effective_signed_weight": -109.0,
+          "signed_event_load_proxy": -73.575
+        },
+        {
+          "body_id": "11340",
+          "type": "IN08A007",
+          "rate_hz": 5.0,
+          "anatomical_signed_weight": -427.0,
+          "effective_signed_weight": -427.0,
+          "signed_event_load_proxy": -64.05
+        },
+        {
+          "body_id": "11277",
+          "type": "IN13A014",
+          "rate_hz": 5.0,
+          "anatomical_signed_weight": -383.0,
+          "effective_signed_weight": -383.0,
+          "signed_event_load_proxy": -57.45
+        },
+        {
+          "body_id": "15808",
+          "type": "IN17A052",
+          "rate_hz": 5.0,
+          "anatomical_signed_weight": 6.0,
+          "effective_signed_weight": 6.0,
+          "signed_event_load_proxy": 53.99999999999999
+        },
+        {
+          "body_id": "11984",
+          "type": "IN19B012",
+          "rate_hz": 5.0,
+          "anatomical_signed_weight": 5.0,
+          "effective_signed_weight": 5.0,
+          "signed_event_load_proxy": 45.0
+        },
+        {
+          "body_id": "10169",
+          "type": "IN19A001",
+          "rate_hz": 12.5,
+          "anatomical_signed_weight": -40.0,
+          "effective_signed_weight": -40.0,
+          "signed_event_load_proxy": -15.0
+        },
+        {
+          "body_id": "11716",
+          "type": "IN16B016",
+          "rate_hz": 5.0,
+          "anatomical_signed_weight": -86.0,
+          "effective_signed_weight": -86.0,
+          "signed_event_load_proxy": -12.9
+        },
+        {
+          "body_id": "152620",
+          "type": "Sternotrochanter MN",
+          "rate_hz": 19.166666666666668,
+          "anatomical_signed_weight": -11.0,
+          "effective_signed_weight": -11.0,
+          "signed_event_load_proxy": -6.324999999999999
+        },
+        {
+          "body_id": "13006",
+          "type": "Ti extensor MN",
+          "rate_hz": 20.833333333333336,
+          "anatomical_signed_weight": -10.0,
+          "effective_signed_weight": -10.0,
+          "signed_event_load_proxy": -6.250000000000001
+        },
+        {
+          "body_id": "10198",
+          "type": "IN08A002",
+          "rate_hz": 5.0,
+          "anatomical_signed_weight": -41.0,
+          "effective_signed_weight": -41.0,
+          "signed_event_load_proxy": -6.15
+        },
+        {
+          "body_id": "10497",
+          "type": "IN16B018",
+          "rate_hz": 5.0,
+          "anatomical_signed_weight": -37.0,
+          "effective_signed_weight": -37.0,
+          "signed_event_load_proxy": -5.549999999999999
+        },
+        {
+          "body_id": "10888",
+          "type": "IN13A010",
+          "rate_hz": 5.0,
+          "anatomical_signed_weight": -24.0,
+          "effective_signed_weight": -24.0,
+          "signed_event_load_proxy": -3.5999999999999996
+        },
+        {
+          "body_id": "10883",
+          "type": "IN21A003",
+          "rate_hz": 5.0,
+          "anatomical_signed_weight": -14.0,
+          "effective_signed_weight": -14.0,
+          "signed_event_load_proxy": -2.1
+        },
+        {
+          "body_id": "12531",
+          "type": "IN21A016",
+          "rate_hz": 9.166666666666668,
+          "anatomical_signed_weight": -5.0,
+          "effective_signed_weight": -5.0,
+          "signed_event_load_proxy": -1.3750000000000002
+        },
+        {
+          "body_id": "10153",
+          "type": "IN13A001",
+          "rate_hz": 4.166666666666667,
+          "anatomical_signed_weight": -10.0,
+          "effective_signed_weight": -10.0,
+          "signed_event_load_proxy": -1.25
+        },
+        {
+          "body_id": "10350",
+          "type": "IN13A003",
+          "rate_hz": 2.5,
+          "anatomical_signed_weight": -16.0,
+          "effective_signed_weight": -16.0,
+          "signed_event_load_proxy": -1.2
+        },
+        {
+          "body_id": "11299",
+          "type": "IN19A020",
+          "rate_hz": 5.0,
+          "anatomical_signed_weight": -8.0,
+          "effective_signed_weight": -8.0,
+          "signed_event_load_proxy": -1.2
+        },
+        {
+          "body_id": "10513",
+          "type": "INXXX053",
+          "rate_hz": 5.0,
+          "anatomical_signed_weight": -7.0,
+          "effective_signed_weight": -7.0,
+          "signed_event_load_proxy": -1.05
+        },
+        {
+          "body_id": "11363",
+          "type": "IN19A021",
+          "rate_hz": 5.0,
+          "anatomical_signed_weight": -6.0,
+          "effective_signed_weight": -6.0,
+          "signed_event_load_proxy": -0.8999999999999999
+        },
+        {
+          "body_id": "96565",
+          "type": "Tr flexor MN",
+          "rate_hz": 5.0,
+          "anatomical_signed_weight": -6.0,
+          "effective_signed_weight": -6.0,
+          "signed_event_load_proxy": -0.8999999999999999
+        },
+        {
+          "body_id": "11411",
+          "type": "IN19A016",
+          "rate_hz": 5.0,
+          "anatomical_signed_weight": -5.0,
+          "effective_signed_weight": -5.0,
+          "signed_event_load_proxy": -0.75
+        },
+        {
+          "body_id": "10411",
+          "type": "AN14A003",
+          "rate_hz": 4.166666666666667,
+          "anatomical_signed_weight": -5.0,
+          "effective_signed_weight": -5.0,
+          "signed_event_load_proxy": -0.625
+        },
+        {
+          "body_id": "10343",
+          "type": "IN19A015",
+          "rate_hz": 1.6666666666666667,
+          "anatomical_signed_weight": -8.0,
+          "effective_signed_weight": -8.0,
+          "signed_event_load_proxy": -0.4
+        },
+        {
+          "body_id": "10380",
+          "type": "IN09A002",
+          "rate_hz": 0.8333333333333334,
+          "anatomical_signed_weight": -12.0,
+          "effective_signed_weight": -12.0,
+          "signed_event_load_proxy": -0.3
+        }
+      ]
+    }
+  ]
+}

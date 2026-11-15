@@ -262,3 +262,11 @@ and namespace-qualified cell identities; zero multipliers are forbidden.
 Regression checks preserve structural counts and unrelated connections. This
 source/target-specific efficacy is an unknown physiological hypothesis, not an
 anatomical deletion or evidence of a measured fivefold release difference.
+
+The shared DNg100→Ti-extensor efficacy0.2 resolves the sampled E1-ablation bypass
+without the earlier per-cell right-middle/right-hind excitatory overrides. With
+those individual overrides removed, all12 inspected tibial MNs still receive
+activity in the intact network and all12 are silent after E1 ablation. The shared
+motor candidate is frozen in configs/manual-motor-bank-shared-r1.json. Some
+non-tibial MNs retain direct-command activity; silence of sampled tibial cells is
+not silently generalized to the entire motor population or all muscle channels.
