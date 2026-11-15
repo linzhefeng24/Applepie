@@ -1,0 +1,356 @@
+{
+  "condition": "BRK2s",
+  "bank_sha256": "b780f2b9626aa186ff3192f293b07e2be97b12096b08247f29fc11f11e735f36",
+  "numerical_failure": false,
+  "receptor_interventions": [],
+  "elapsed_s": 30.511011550999683,
+  "cells": [
+    {
+      "body_id": "10056",
+      "type": "DNg100",
+      "side": "R",
+      "segment": null,
+      "groups": [],
+      "windows": {
+        "baseline": {
+          "rate_hz": 0.0,
+          "soma_mV": -66.2642162407017,
+          "model_Ca_uM": 1.0609704910208746e-06,
+          "exc_pA": 0.0,
+          "inh_pA": 0.0
+        },
+        "BRK_on": {
+          "rate_hz": 0.0,
+          "soma_mV": -68.69038715487775,
+          "model_Ca_uM": 6.18819907382895e-07,
+          "exc_pA": 1.4794328796931384,
+          "inh_pA": -10.786558434365642
+        },
+        "after": {
+          "rate_hz": 0.0,
+          "soma_mV": -66.30616725703703,
+          "model_Ca_uM": 1.08992666555227e-06,
+          "exc_pA": 0.003707534306503027,
+          "inh_pA": -0.15921462400897413
+        }
+      }
+    },
+    {
+      "body_id": "10192",
+      "type": "DNg75",
+      "side": "L",
+      "segment": null,
+      "groups": [],
+      "windows": {
+        "baseline": {
+          "rate_hz": 0.0,
+          "soma_mV": -66.2642162407017,
+          "model_Ca_uM": 1.0609704910208746e-06,
+          "exc_pA": 0.0,
+          "inh_pA": 0.0
+        },
+        "BRK_on": {
+          "rate_hz": 0.0,
+          "soma_mV": -68.1999429050401,
+          "model_Ca_uM": 6.983356008151702e-07,
+          "exc_pA": 0.596580476489738,
+          "inh_pA": -8.168859563288173
+        },
+        "after": {
+          "rate_hz": 0.0,
+          "soma_mV": -66.30271337274235,
+          "model_Ca_uM": 1.0925181116904397e-06,
+          "exc_pA": 0.0012364735221919642,
+          "inh_pA": -0.1435821205337319
+        }
+      }
+    },
+    {
+      "body_id": "14113",
+      "type": "AN19A018",
+      "side": "R",
+      "segment": "T1",
+      "groups": [
+        "BRK"
+      ],
+      "windows": {
+        "baseline": {
+          "rate_hz": 0.0,
+          "soma_mV": -66.2642162407017,
+          "model_Ca_uM": 1.0609704910208746e-06,
+          "exc_pA": 0.0,
+          "inh_pA": 0.0
+        },
+        "BRK_on": {
+          "rate_hz": 76.0,
+          "soma_mV": -43.5615879356996,
+          "model_Ca_uM": 0.07155207515424894,
+          "exc_pA": 6.492757929858988,
+          "inh_pA": -26.90991007789615
+        },
+        "after": {
+          "rate_hz": 0.0,
+          "soma_mV": -66.30916716019104,
+          "model_Ca_uM": 0.002480872061468747,
+          "exc_pA": 0.04151888173222544,
+          "inh_pA": -0.12349867235551558
+        }
+      }
+    },
+    {
+      "body_id": "14863",
+      "type": "AN19A018",
+      "side": "R",
+      "segment": "A1",
+      "groups": [
+        "BRK"
+      ],
+      "windows": {
+        "baseline": {
+          "rate_hz": 0.0,
+          "soma_mV": -66.2642162407017,
+          "model_Ca_uM": 1.0609704910208746e-06,
+          "exc_pA": 0.0,
+          "inh_pA": 0.0
+        },
+        "BRK_on": {
+          "rate_hz": 69.5,
+          "soma_mV": -47.44588531105342,
+          "model_Ca_uM": 0.06666459883339296,
+          "exc_pA": 7.523306368701694,
+          "inh_pA": -65.83068189498165
+        },
+        "after": {
+          "rate_hz": 0.3333333333333333,
+          "soma_mV": -66.31821889511453,
+          "model_Ca_uM": 0.002542990561709885,
+          "exc_pA": 0.03984978050381096,
+          "inh_pA": -0.3615228459919032
+        }
+      }
+    },
+    {
+      "body_id": "14973",
+      "type": "AN19A018",
+      "side": "L",
+      "segment": "T1",
+      "groups": [
+        "BRK"
+      ],
+      "windows": {
+        "baseline": {
+          "rate_hz": 0.0,
+          "soma_mV": -66.2642162407017,
+          "model_Ca_uM": 1.0609704910208746e-06,
+          "exc_pA": 0.0,
+          "inh_pA": 0.0
+        },
+        "BRK_on": {
+          "rate_hz": 74.5,
+          "soma_mV": -44.05619258414224,
+          "model_Ca_uM": 0.07014228092860703,
+          "exc_pA": 6.364192227168649,
+          "inh_pA": -31.421131485896076
+        },
+        "after": {
+          "rate_hz": 0.0,
+          "soma_mV": -66.32098993363846,
+          "model_Ca_uM": 0.0025143536919991173,
+          "exc_pA": 0.03630565365491152,
+          "inh_pA": -0.1393301772884908
+        }
+      }
+    },
+    {
+      "body_id": "15105",
+      "type": "DNg55",
+      "side": "M",
+      "segment": "MD",
+      "groups": [],
+      "windows": {
+        "baseline": {
+          "rate_hz": 0.0,
+          "soma_mV": -67.78509753023388,
+          "model_Ca_uM": 6.002455488817892e-07,
+          "exc_pA": 0.0,
+          "inh_pA": 0.0
+        },
+        "BRK_on": {
+          "rate_hz": 0.0,
+          "soma_mV": -66.11647587814478,
+          "model_Ca_uM": 9.590002791722623e-07,
+          "exc_pA": 8.12725077290344,
+          "inh_pA": -0.8474167356295634
+        },
+        "after": {
+          "rate_hz": 0.0,
+          "soma_mV": -67.77802390178387,
+          "model_Ca_uM": 6.466026605909915e-07,
+          "exc_pA": 0.04904007040476326,
+          "inh_pA": -0.012930188372674192
+        }
+      }
+    },
+    {
+      "body_id": "16542",
+      "type": "AN19A018",
+      "side": "R",
+      "segment": "T2",
+      "groups": [
+        "BRK"
+      ],
+      "windows": {
+        "baseline": {
+          "rate_hz": 0.0,
+          "soma_mV": -66.2642162407017,
+          "model_Ca_uM": 1.0609704910208746e-06,
+          "exc_pA": 0.0,
+          "inh_pA": 0.0
+        },
+        "BRK_on": {
+          "rate_hz": 75.5,
+          "soma_mV": -43.864028881460804,
+          "model_Ca_uM": 0.07090607521651973,
+          "exc_pA": 5.125539711764912,
+          "inh_pA": -28.501483783369636
+        },
+        "after": {
+          "rate_hz": 0.0,
+          "soma_mV": -66.31070716988911,
+          "model_Ca_uM": 0.0026585093059826653,
+          "exc_pA": 0.023531662294170905,
+          "inh_pA": -0.1324565123981895
+        }
+      }
+    },
+    {
+      "body_id": "17510",
+      "type": "AN19A018",
+      "side": "L",
+      "segment": "T2",
+      "groups": [
+        "BRK"
+      ],
+      "windows": {
+        "baseline": {
+          "rate_hz": 0.0,
+          "soma_mV": -66.2642162407017,
+          "model_Ca_uM": 1.0609704910208746e-06,
+          "exc_pA": 0.0,
+          "inh_pA": 0.0
+        },
+        "BRK_on": {
+          "rate_hz": 74.5,
+          "soma_mV": -44.25724821220326,
+          "model_Ca_uM": 0.07029430656057602,
+          "exc_pA": 7.111801842050725,
+          "inh_pA": -34.25457830128616
+        },
+        "after": {
+          "rate_hz": 0.0,
+          "soma_mV": -66.32271047727542,
+          "model_Ca_uM": 0.0025411872492002064,
+          "exc_pA": 0.047016350133934216,
+          "inh_pA": -0.15362499854853515
+        }
+      }
+    },
+    {
+      "body_id": "39880",
+      "type": "IN27X001",
+      "side": "L",
+      "segment": "T1",
+      "groups": [
+        "BON1"
+      ],
+      "windows": {
+        "baseline": {
+          "rate_hz": 0.0,
+          "soma_mV": -67.7851449196761,
+          "model_Ca_uM": 4.648990082875661e-06,
+          "exc_pA": 0.0,
+          "inh_pA": 0.0
+        },
+        "BRK_on": {
+          "rate_hz": 74.0,
+          "soma_mV": -44.23036829895862,
+          "model_Ca_uM": 0.5165220756211504,
+          "exc_pA": 158.66406287496528,
+          "inh_pA": -6.361178307731651
+        },
+        "after": {
+          "rate_hz": 0.3333333333333333,
+          "soma_mV": -69.15976546037211,
+          "model_Ca_uM": 0.4610879532341628,
+          "exc_pA": 0.7302390458225387,
+          "inh_pA": -0.04625671024784788
+        }
+      }
+    },
+    {
+      "body_id": "523843",
+      "type": "AN19A018",
+      "side": "L",
+      "segment": "A1",
+      "groups": [
+        "BRK"
+      ],
+      "windows": {
+        "baseline": {
+          "rate_hz": 0.0,
+          "soma_mV": -66.2642162407017,
+          "model_Ca_uM": 1.0609704910208746e-06,
+          "exc_pA": 0.0,
+          "inh_pA": 0.0
+        },
+        "BRK_on": {
+          "rate_hz": 71.5,
+          "soma_mV": -46.670591848747385,
+          "model_Ca_uM": 0.06814652383466395,
+          "exc_pA": 7.315180500013201,
+          "inh_pA": -58.63313482643878
+        },
+        "after": {
+          "rate_hz": 0.0,
+          "soma_mV": -66.3367666184952,
+          "model_Ca_uM": 0.002463073755736374,
+          "exc_pA": 0.04484557979825574,
+          "inh_pA": -0.26795459089580503
+        }
+      }
+    },
+    {
+      "body_id": "800041",
+      "type": "IN27X001",
+      "side": "R",
+      "segment": "T1",
+      "groups": [
+        "BON1"
+      ],
+      "windows": {
+        "baseline": {
+          "rate_hz": 0.0,
+          "soma_mV": -67.7851449196761,
+          "model_Ca_uM": 4.648990082875661e-06,
+          "exc_pA": 0.0,
+          "inh_pA": 0.0
+        },
+        "BRK_on": {
+          "rate_hz": 74.0,
+          "soma_mV": -42.80807289548754,
+          "model_Ca_uM": 0.5076837478559186,
+          "exc_pA": 176.66909812923632,
+          "inh_pA": -9.350872094637
+        },
+        "after": {
+          "rate_hz": 0.3333333333333333,
+          "soma_mV": -69.13804941372292,
+          "model_Ca_uM": 0.4528174900678428,
+          "exc_pA": 0.8668505110152882,
+          "inh_pA": -0.06970391300284184
+        }
+      }
+    }
+  ],
+  "status": "complete simulation; inspect full traces before judging phenomena, no endpoint pass/fail threshold"
+}

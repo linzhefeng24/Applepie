@@ -22,6 +22,13 @@
       "bank_sha256": "16c89840108494da36d774b953b86559d12625dda255a70e86b3aa46704683e2",
       "raw_Ca_peak_uM": 1.0210896722343694,
       "indicator_peak_arbitrary_units": 0.9568525833959654
+    },
+    {
+      "result_folder": "bon1-local-BON1Ca2000",
+      "raw_result_sha256": "9165d4e9ff08ceca4fa7ad68778a215d26311302ac346ca84e38a412a3f441b8",
+      "bank_sha256": "b780f2b9626aa186ff3192f293b07e2be97b12096b08247f29fc11f11e735f36",
+      "raw_Ca_peak_uM": 0.8811517974860228,
+      "indicator_peak_arbitrary_units": 0.9401220524664077
     }
   ],
   "interpretation": "Neither a quantitative calcium fit nor proof of a uniquely identified biological removal time. Compare full rise and after-stimulus trace manually."

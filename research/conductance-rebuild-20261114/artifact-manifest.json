@@ -28,8 +28,8 @@
     },
     {
       "path": "MANUAL_MECHANISM.md",
-      "bytes": 14751,
-      "sha256": "7793464548649cf3289bb09390e42936b1e22994e763c3f7aa04935a12c0ddf7"
+      "bytes": 15865,
+      "sha256": "986621c1c8f78230f1e1dce4183a01473b34fe0b9db107114b4b9c1d80050d9d"
     },
     {
       "path": "MECHANISMS.md",
@@ -182,6 +182,11 @@
       "sha256": "145abeffdb777424f9fb90c2e717b8e561f67e1519ae9bc10dbfab2508608b4e"
     },
     {
+      "path": "configs/manual-neural-bank-BON1Ca2000.json",
+      "bytes": 5026,
+      "sha256": "efbbcf0e3b798fc285f3e15ea2f134718b1a1ead4d3b2539ad07a871793d2b48"
+    },
+    {
       "path": "configs/manual-neural-bank-BON1Ca3000.json",
       "bytes": 4906,
       "sha256": "e1eceaea1be2e12b199a7df41e9ee8978111681a1ca89aca260903f5a36529f3"
@@ -195,6 +200,11 @@
       "path": "configs/manual-neural-bank-BRKreleaseHalf.json",
       "bytes": 3949,
       "sha256": "a559fb66702fa6b1a6dba273610450cbb84be531f5c29cd12f7201dcba447f75"
+    },
+    {
+      "path": "configs/manual-neural-bank-LULT3K80.json",
+      "bytes": 5589,
+      "sha256": "8a6bd06a96c0e13bc9d2a1c7dbadc370fa4cf6e6d9d043244c464b3c4c4d5f29"
     },
     {
       "path": "configs/manual-neural-bank-LULT3K90.json",
@@ -230,6 +240,11 @@
       "path": "configs/manual-neural-bank-r7.json",
       "bytes": 4977,
       "sha256": "91eaf7a49864438e553874d3abd79be85fd34eba9b2e22af22d668d6d79f72e6"
+    },
+    {
+      "path": "configs/manual-neural-bank-r8.json",
+      "bytes": 5288,
+      "sha256": "6b7755d01629be85232bcbac94f9acb645a3068ecbdfc3cbea62768371a1f873"
     },
     {
       "path": "configs/mcns-steering-manual.json",
@@ -1507,6 +1522,11 @@
       "sha256": "cb074e5f97ca553d4b936448e5d1828589370eed91c94fd57c72bd320b89bb86"
     },
     {
+      "path": "results/bon1-local-BON1Ca2000.log",
+      "bytes": 72,
+      "sha256": "b0d3bd1869853c0ca54c7f7d06d0c0b493881c39b1f434a17862446e446de48b"
+    },
+    {
       "path": "results/bon1-local-BON1Ca3000.log",
       "bytes": 72,
       "sha256": "b0d3bd1869853c0ca54c7f7d06d0c0b493881c39b1f434a17862446e446de48b"
@@ -1523,18 +1543,18 @@
     },
     {
       "path": "results/bon1-timecourse/manual-timecourse.json",
-      "bytes": 1472,
-      "sha256": "141f585598a940d87c40b5824e9f707af683a7a75108ea5bd0214e48b4056d85"
+      "bytes": 1820,
+      "sha256": "414a5a1fe30842273f7a7779b14fae555e066adc3df0fbb73a1d09750130d11a"
     },
     {
       "path": "results/bon1-timecourse/manual-timecourse.npz",
-      "bytes": 476075,
-      "sha256": "4fdb40d9c78d116b58ed9f9b475855f760cdf9cea0f0e0688408dc06d2c7a130"
+      "bytes": 716668,
+      "sha256": "c08ba3458388ac78c91afa423683dd89749f054d3f0cc71afa555ad27948331d"
     },
     {
       "path": "results/bon1-timecourse/manual-timecourse.png",
-      "bytes": 195000,
-      "sha256": "0943231f006d58e16bd7a845eb4c542f5525e1da8be3c9b3602549ee8aeb3aba"
+      "bytes": 224818,
+      "sha256": "9eaa3306dd395ae06aca5c39c2d087860d573498847abcc166660008b00701c0"
     },
     {
       "path": "results/confirm-fine.log",
@@ -2095,6 +2115,21 @@
       "path": "results/frozen-neural-panel-BRKreleaseHalf/MDN.npz",
       "bytes": 10546054,
       "sha256": "e9760a0a9686d3e071b7b464f0debb818a3d18cb79ec2fe67ee3d33ed9cfd661"
+    },
+    {
+      "path": "results/frozen-neural-panel-bon1-local-BON1Ca2000/BRK2s-config.json",
+      "bytes": 4338,
+      "sha256": "095f628d01d40644c3252c956f71a0fb303357510ea6886d3dbb1a17631931c3"
+    },
+    {
+      "path": "results/frozen-neural-panel-bon1-local-BON1Ca2000/BRK2s-diagnosis.json",
+      "bytes": 9339,
+      "sha256": "d3a29e6da5b9c7c0bcdb1f164004fcff4eb827554e1d51d699201f00d71aa55f"
+    },
+    {
+      "path": "results/frozen-neural-panel-bon1-local-BON1Ca2000/BRK2s.npz",
+      "bytes": 6260899,
+      "sha256": "9165d4e9ff08ceca4fa7ad68778a215d26311302ac346ca84e38a412a3f441b8"
     },
     {
       "path": "results/frozen-neural-panel-bon1-local-BON1Ca3000/BRK2s-config.json",
@@ -2707,6 +2742,21 @@
       "sha256": "e59b6e5dd8df531532ddeafd710903bf6340ad4677986ccabfbe61e3debb7c17"
     },
     {
+      "path": "results/frozen-neural-panel-unified-LULT3K80/MDN-config.json",
+      "bytes": 6281,
+      "sha256": "2a7d58b93fab5c496e83655c47a9347dafab33098183270c609f6b2e1b78d70e"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-LULT3K80/MDN-diagnosis.json",
+      "bytes": 102853,
+      "sha256": "97c27d6add1eda450fe03481de29976f0020d24186c79a703e0bf908d3ef1843"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-LULT3K80/MDN.npz",
+      "bytes": 16448004,
+      "sha256": "acc9db12b239d598e7786dfcf5a6fc9b78bf66e240f4361a03e05bf1989b2ee2"
+    },
+    {
       "path": "results/frozen-neural-panel-unified-LULT3K90/MDN-config.json",
       "bytes": 6281,
       "sha256": "a5ba37f238601070cd9740cf5a50873a80cf6c7c9953dc882bdc324c6a3ca092"
@@ -3210,6 +3260,51 @@
       "path": "results/frozen-neural-panel-unified-r6/PFL3R.npz",
       "bytes": 16691828,
       "sha256": "0f7e35b0fe0de20680a5ab6fa489f2da76f478beaa68a2f937e192a8da384a29"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r7/P9+BB-config.json",
+      "bytes": 6034,
+      "sha256": "401aa5912ab299251531760352f7f4bbb3fc15c6d7d4cc02991206212e1e04bf"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r7/P9+BB-diagnosis.json",
+      "bytes": 102631,
+      "sha256": "abe0a9ae2a872b7f5a42cbc50fb241feb2957a71788583ee2794caccd82949e8"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r7/P9+BB.npz",
+      "bytes": 16359866,
+      "sha256": "fbbc3d5e7175d075e75c24f3fa807728f25ecf529d906254c585a2394e05a623"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r7/P9+FG-config.json",
+      "bytes": 6034,
+      "sha256": "751a4f3a98b1860656b39361110dead8891597347c5976634523eefa27b33a39"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r7/P9+FG-diagnosis.json",
+      "bytes": 102558,
+      "sha256": "5d0766f4c027d9f8ef16c0dcb021438d139d4ad9e6a9ebefb7343e18e9918a0b"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r7/P9+FG.npz",
+      "bytes": 16377646,
+      "sha256": "b385bd635968f20aa68af6b09d9d230da0f4715916f2556dbe7d6e1accbf521f"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r7/P9-config.json",
+      "bytes": 5925,
+      "sha256": "fe574692a875d2d0331c791cbf40141bc0fa764fa9283634cddad596e6d35916"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r7/P9-diagnosis.json",
+      "bytes": 102534,
+      "sha256": "36621e25e6b9648a5079de1bfb86de3017746914b63c3b284f3b775b2581d1be"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r7/P9.npz",
+      "bytes": 16373698,
+      "sha256": "f63ba2b30de729ca36dce10fe45287a8e37041adfbf20f8cd5953192a967a26d"
     },
     {
       "path": "results/full-baseline.json",
@@ -5162,6 +5257,11 @@
       "sha256": "d3c7f4b16c7c995bb56fa6d3755c5eae0277291ecd470708ff1e634b81724b60"
     },
     {
+      "path": "results/unified-LULT3K80-MDN.log",
+      "bytes": 526,
+      "sha256": "7515d0dfbe441a1c0189f28632046769712aff6c464e3a2f8b7db0af3112e2cb"
+    },
+    {
       "path": "results/unified-LULT3K90-MDN.log",
       "bytes": 529,
       "sha256": "97adb30a9206cc92aa9e553e64671e6440901468a4cac99f379ad56a72f1195a"
@@ -5325,6 +5425,21 @@
       "path": "results/unified-r6-PFL3R.log",
       "bytes": 531,
       "sha256": "3432ac2d2201d137e4c9eb9769c52eff687fdcbd75017b0007f64d0a39f1e86f"
+    },
+    {
+      "path": "results/unified-r7-P9+BB.log",
+      "bytes": 531,
+      "sha256": "cad21a9f856ed895ff556a8b3b786455c8fad85c63126b08c1e401b15ce53e43"
+    },
+    {
+      "path": "results/unified-r7-P9+FG.log",
+      "bytes": 530,
+      "sha256": "e17356beade23d73607e81facfbc1863c833e09c4b13837ddd42b90ecc8e8fa7"
+    },
+    {
+      "path": "results/unified-r7-P9.log",
+      "bytes": 528,
+      "sha256": "a4d9fc84320630058dd2dcba45b2562823b1e91b9cc979e580958a7dc04d2709"
     },
     {
       "path": "results/waveform-regression-tests.txt",

@@ -229,3 +229,19 @@ The MANC muscle diagnostic separately applies the same0.3 excitatory gain to
 both overdriven right middle/hind tibia extensor MNs. It does not claim proper
 antagonist phase or a tripod gait. Muscle readout remains secondary to neural
 experimental phenomena; residual coactivation is retained as a limitation.
+
+The2000ms BON1 local probe now gives a much more plausible prolonged response
+with the observation prior fixed;3000ms over-retains the tail. This is a manually
+inspected SHAPE comparison, not an amplitude fit or measured Ca-removal estimate.
+The r5 unified P9+FG effect on oDN1 was also weak; earlier smaller-context results
+must not be presented as if the unified graph had reproduced this selectivity.
+r6/r7 target-gain probes do not solve that conflict and are not main candidates.
+r8 starts from r5 plus BON1 effectiveCa2000ms and shared FG release2, without
+these postsynaptic changes. The hypothesis is direct FG→oDN1 inhibition, with
+turning and MDN responses to be checked using the same complete parameter bank.
+
+The Feng MF calcium protocol uses20s red light (Fig3 caption), unlike our short
+MDN recruitment probes. All MF segment comparisons remain provisional and cannot
+be reported as reproductions of the experimental time course. T3K0.8 gives a
+larger candidate-family Ca response while preserving LBL40, but exact MF09 EM
+identity and protocol remain unresolved, so this is not adopted into r8.
