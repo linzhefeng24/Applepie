@@ -42,6 +42,11 @@
       "sha256": "640996ba79f8d3a02c0d84fee773125411768c7a437c2c03247f7dad492cb2af"
     },
     {
+      "path": "NEXT_MANUAL_STAGE.md",
+      "bytes": 1679,
+      "sha256": "3a38146bb38109dac8fd9d824d955564a7b8973a46d6b9a5e2d671fb4c733703"
+    },
+    {
       "path": "README.md",
       "bytes": 7603,
       "sha256": "51ba6c63b798256067f539149c49c4c30daa140256d0575c54091c28a86f9fd4"
@@ -237,6 +242,11 @@
       "sha256": "c7e4356df64132016a1aeabe63ad4a8df1c9619ccaf233b45bb5fdcbbcdc6f75"
     },
     {
+      "path": "configs/manual-neural-bank-r10.json",
+      "bytes": 6210,
+      "sha256": "237f0bc03f6e162845e62506d7a02bc858a88863f8f26a43e03ae1b4527046e4"
+    },
+    {
       "path": "configs/manual-neural-bank-r4.json",
       "bytes": 3816,
       "sha256": "a09ab26f525c1aaf8383e6aa197eda551b8f06252b23a15f1c518b8ecec1aeae"
@@ -260,6 +270,11 @@
       "path": "configs/manual-neural-bank-r8.json",
       "bytes": 5543,
       "sha256": "348398bfe19ba546a69318c4e3767eb33a402ff40e047037813c25347b69b42d"
+    },
+    {
+      "path": "configs/manual-neural-bank-r9.json",
+      "bytes": 5722,
+      "sha256": "da43d0c15fda87e8e48b895b1d58d84588f1b8f89e6b91b309668d75010b5dc8"
     },
     {
       "path": "configs/mcns-steering-manual.json",
@@ -337,6 +352,11 @@
       "sha256": "55b17bed54ce5d88df426ec7fddead62b9f9c71e898c908dfc4367f670692810"
     },
     {
+      "path": "data/experimental-source/CPG-ablation-definition.json",
+      "bytes": 668,
+      "sha256": "872cfc70e60e779fdf045ba00db43db3356baf9d7bc645ae834648b7ad68cf2b"
+    },
+    {
       "path": "data/experimental-source/MDN-LBL40-LUL130-paper.xml",
       "bytes": 174515,
       "sha256": "e5019a3c4fdd2497f564e3985c079788d6324dcda292b9b595a3a27c4a995296"
@@ -382,9 +402,24 @@
       "sha256": "41c0f799193faf13477a7b537fa3d37d72d88c8cc048ad56f229536169c04d04"
     },
     {
+      "path": "data/experimental-source/chief9A-identity-provenance.json",
+      "bytes": 1125,
+      "sha256": "218a5a40b49ead45322186a03f290604c36708c21d6c21e1f391b27b6f4c5f69"
+    },
+    {
       "path": "data/experimental-source/dryad-classification-access.json",
       "bytes": 510,
       "sha256": "859d7d9fc26d0ff80c3d6e7e7da16b8cc5f5064724fa2c007dcef3256365d436"
+    },
+    {
+      "path": "data/experimental-source/dryad-current-dataset.json",
+      "bytes": 966,
+      "sha256": "b32d94e3c69e31e52b74acc39ad200c92ca0ad9f6341b92b4dea9315a41362a5"
+    },
+    {
+      "path": "data/experimental-source/dryad-current-versions.json",
+      "bytes": 957,
+      "sha256": "a0e6c32e761f8f42f3f3085315e826e4631c061d60357466ee74670499227934"
     },
     {
       "path": "data/experimental-source/feco-MOESM3.xlsx",
@@ -395,6 +430,26 @@
       "path": "data/experimental-source/feco-MOESM4.xlsx",
       "bytes": 29418,
       "sha256": "c6b03dce6f563bcc82d22268ed690c3d1d95bdd57834f89885f67c7580cde92e"
+    },
+    {
+      "path": "data/experimental-source/feco-dataone-access.txt",
+      "bytes": 371,
+      "sha256": "e18c6ca730436182f512a65a902bbc1e4a329c86f0e1322b7f95970d046428c4"
+    },
+    {
+      "path": "data/experimental-source/feco-public-landing-links.json",
+      "bytes": 1137,
+      "sha256": "269c48bc4d531379b9f8219164240550d1abda176f81e1e0ae20a14690d449e4"
+    },
+    {
+      "path": "data/experimental-source/feco-public-runner-access.json",
+      "bytes": 13334,
+      "sha256": "924d58f4910d57259406e3253e5dff157e352d20ac824aa2e9cbcd82ae5d6f88"
+    },
+    {
+      "path": "data/experimental-source/feco-session-access.json",
+      "bytes": 92,
+      "sha256": "d23bac8746ac135cd2f13cba7a15f38b58b179cdc4c1af5292395330280af8f7"
     },
     {
       "path": "data/experimental-source/feco-supplement-manifest.json",
@@ -547,6 +602,11 @@
       "sha256": "9d6ba9d25fc261b6012e0172c66598b2e5af207cb8cd83c783db89769256fd67"
     },
     {
+      "path": "inspect_e2_time_structure.py",
+      "bytes": 1954,
+      "sha256": "b7fbb2d6187d50797c71501249c4d4c012c499330a001864ef9430b9f0614b37"
+    },
+    {
       "path": "inspect_pulse_panel.py",
       "bytes": 1947,
       "sha256": "ea4220c9d7fb35a3a6b16bcdbd3f3669c70122cc02ff21b903a065bfc4cf2342"
@@ -598,8 +658,8 @@
     },
     {
       "path": "network.py",
-      "bytes": 5666,
-      "sha256": "648b157a5b7b2a3ba090bae9a6f384ff8a0fe4781cbc026b897dae466406210b"
+      "bytes": 6158,
+      "sha256": "2a17999c5873ddb2fb3cd321265f6ec58c23e4d80e40667b5a2c1a82fed38091"
     },
     {
       "path": "plot_manual_network.py",
@@ -657,6 +717,11 @@
       "sha256": "d08fed79f35a750e89cc814f33082658d2de974429536bd4a2ab901d84c3a3ab"
     },
     {
+      "path": "prepare_sensory_command_context.py",
+      "bytes": 2081,
+      "sha256": "b981df88a2578b7f70edca7c8b4e1008df98d667db583c920ede9aa40b1b3512"
+    },
+    {
       "path": "probe_all_legs.py",
       "bytes": 1254,
       "sha256": "3e0cbd0380bb9f2a9194250d33e5502e3b7af3255f2b0c4dea7504bcf31a98ff"
@@ -668,8 +733,8 @@
     },
     {
       "path": "pulse_neural_panel.py",
-      "bytes": 6062,
-      "sha256": "4fbd1db7737736781425f495e145ebdd125aedf4a22652fd6eea0b532f25632a"
+      "bytes": 6124,
+      "sha256": "b885f2af0724db72e00e093a39234ea1b9bd2dbae886ad1082d8c10dcb09337b"
     },
     {
       "path": "rank_command_inputs.py",
@@ -1925,6 +1990,11 @@
       "path": "results/fine-full-baseline-dt0.00625.npz",
       "bytes": 228609,
       "sha256": "73e2c59e9bb4f3b167a25473c085919a8fccd9df4f28435c83060e093c7a562a"
+    },
+    {
+      "path": "results/follower-selector-tests.txt",
+      "bytes": 99,
+      "sha256": "0a0e61e6918f32c183a368e83c0ae320999c0e3127fd6cb07455fcb80048d71a"
     },
     {
       "path": "results/frequency-refinement.json",
@@ -3717,6 +3787,51 @@
       "sha256": "369283fc7ca33d7ccf87ecf6f02498b31e4091433cf62d918fd72f9e5ebbd82b"
     },
     {
+      "path": "results/frozen-neural-panel-unified-r9/P9+BB-config.json",
+      "bytes": 6111,
+      "sha256": "72c61fff89f8d174c04705d48a738c026a9f1de5b955d6e1567c4be20add1df8"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r9/P9+BB-diagnosis.json",
+      "bytes": 102384,
+      "sha256": "efcf440e8e019c887755e3a822eedab81e1f2d2dc94623b05247bf6f34c70bf9"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r9/P9+BB.npz",
+      "bytes": 16404094,
+      "sha256": "fcc64f12bbb5a6048b7bd15d50e31a8e0792b3d682709e01e559e1b6a85929dc"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r9/P9-config.json",
+      "bytes": 6002,
+      "sha256": "fad57ee43c1a9d0658576fc4dd3a90fd1d1b35af2f8a7ff4a2624fcc955aedbe"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r9/P9-diagnosis.json",
+      "bytes": 102294,
+      "sha256": "bf4c14b20f0ae69caae57b636eeb8817a7954ac6f35a7bff218828f23db9f5c9"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r9/P9.npz",
+      "bytes": 16393731,
+      "sha256": "a5999598643eac9cf83a0c00dcdb7e7af2124da0aa15a417f0411f4b773ba00b"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r9/PFL3L-config.json",
+      "bytes": 6008,
+      "sha256": "7fb2333cb7c2b5c27d89a0ea115895086f5296e97d1a861cd5d93b772c2cee4b"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r9/PFL3L-diagnosis.json",
+      "bytes": 102555,
+      "sha256": "c785ed44aded1a47411bfd7d7d136f033c26b2db37fb0172e8e4d586ce55ee2d"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r9/PFL3L.npz",
+      "bytes": 16703773,
+      "sha256": "0648118a58d43a1af0d3ce0072ef62a843edc3ac02b838d42224ffa4d23bc486"
+    },
+    {
       "path": "results/full-baseline.json",
       "bytes": 3412045,
       "sha256": "597b4f9f9b50d429321cf7de8e0d57361a2f4ecc381fe2c11290409899977b7a"
@@ -4010,6 +4125,16 @@
       "path": "results/manual-mechanism/E1-residual-motor-spike-timing.json",
       "bytes": 2280,
       "sha256": "6597171c72a29e762a04584d0ba73cca0b5c77492e56b8bb842fd2633ce1ceb1"
+    },
+    {
+      "path": "results/manual-mechanism/E2-temporal-structure.json",
+      "bytes": 6143,
+      "sha256": "9dc2e6e107cd0ac587fc5cbb95581d93e06e41c11f223b88ada1a5c6982912e4"
+    },
+    {
+      "path": "results/manual-mechanism/E2-temporal-structure.png",
+      "bytes": 543667,
+      "sha256": "7974e05cfa890490c4f30cb284163d6978c5dcc9b6dc3c99a6317f4fe1188d64"
     },
     {
       "path": "results/manual-mechanism/causal-motor-readout-review.json",
@@ -5837,6 +5962,26 @@
       "sha256": "6baf6b0bad9a90995e7123e3427aba7fa84d8fcad6bd217b5d7b075710a23098"
     },
     {
+      "path": "results/sensory-command-context/connectivity.npz",
+      "bytes": 3223,
+      "sha256": "0ee20b7bce4f95da64eff6ab8bb327e02b76355bac7cca49a562430add7a2cee"
+    },
+    {
+      "path": "results/sensory-command-context/neurons.json",
+      "bytes": 39351,
+      "sha256": "b891cd63cf2c8422003b062744e50d1c6867bf6c58645553f0d108844c2e0943"
+    },
+    {
+      "path": "results/sensory-command-context/source-manifest.json",
+      "bytes": 775,
+      "sha256": "5a1e568f12d0948f98fa325b60a163cc222d1d0b0ad3263832103e6e305c5c1b"
+    },
+    {
+      "path": "results/sensory-command-prepare.log",
+      "bytes": 704,
+      "sha256": "4196d38a62ebe63f3ee9bb6b5fd0cc184805402fb74bed9346435d3fe2712930"
+    },
+    {
       "path": "results/shared-E2-plot.log",
       "bytes": 0,
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -6182,6 +6327,21 @@
       "sha256": "06e16afad1c170a33dff1ff16664d55591cfe0dcc1ebf1cb9a66a5ca45eb3069"
     },
     {
+      "path": "results/unified-r9-P9+BB.log",
+      "bytes": 531,
+      "sha256": "fa57d741e1c85d491e21804583ec136f25e9bd4c2d4e277e18dea361a2ee0873"
+    },
+    {
+      "path": "results/unified-r9-P9.log",
+      "bytes": 528,
+      "sha256": "efebde6ea410d76f6b8c718cb9d9cb277f8fc03377eb136598f43fe720f8b9db"
+    },
+    {
+      "path": "results/unified-r9-PFL3L.log",
+      "bytes": 531,
+      "sha256": "1a2b7490ad07034c39fd0e5c8ee8f55b8490e083355c11eefa2ef217a14f6d54"
+    },
+    {
       "path": "results/waveform-regression-tests.txt",
       "bytes": 100,
       "sha256": "525826929558a917873e16818b70ba172b033e9bad29a120d3715c59f39e1f1d"
@@ -6202,6 +6362,11 @@
       "sha256": "b90c60ab06c3ab5182ad47465db77d55294fae72337d523534d6e0fcb795dabc"
     },
     {
+      "path": "sensory_command_probe.py",
+      "bytes": 3337,
+      "sha256": "68c1928f6979e5443ef181c98d6c32175fcd887f0866f5a6e5c6a29cd55c119e"
+    },
+    {
       "path": "slow_rest_grid.py",
       "bytes": 1145,
       "sha256": "588946d1204238dffdfcaf50e726a63532cccb6b422f70a7d24ef5c6df359061"
@@ -6218,8 +6383,8 @@
     },
     {
       "path": "test_receptors.py",
-      "bytes": 2550,
-      "sha256": "078771e6159b5f00bb45b0ebf6ec19f2ab3a4b64859e4485a7d0359b24f9d9e3"
+      "bytes": 3400,
+      "sha256": "477bc550c63c9141ae0f8fe8e5d41cf54f6b4711eb034508cf5fcdb374f9b649"
     },
     {
       "path": "test_scientific_checks.py",

@@ -1,0 +1,10 @@
+[
+  {
+    "xhr": false,
+    "status": 403
+  },
+  {
+    "xhr": true,
+    "status": 403
+  }
+]

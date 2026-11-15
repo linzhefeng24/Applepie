@@ -1,0 +1,360 @@
+{
+  "dataset_doi": "10.5061/dryad.gqnk98t16",
+  "dataset_version_id": 393607,
+  "workflow_code_revision": "9fda13a9f0f2484879ad05e9992954e46a78845f",
+  "release_id": 445758875,
+  "records": [
+    {
+      "name": "claw_magnet_Mamiya2018.parquet",
+      "bytes": 849677,
+      "sha256": "7fc8a108258529d52815dc6e28b84958afffa073362ae41d75f551f2d83d01da",
+      "urls": [
+        "https://datadryad.org/api/v2/files/4330032/download",
+        "https://datadryad.org/stash/downloads/file_stream/4330032",
+        "https://datadryad.org/downloads/file_stream/4330032"
+      ],
+      "attempts": [
+        {
+          "public_url": "https://datadryad.org/api/v2/files/4330032/download",
+          "http_status": 401
+        },
+        {
+          "public_url": "https://datadryad.org/stash/downloads/file_stream/4330032",
+          "bytes": 4283,
+          "sha256": "692dcee43c0a0a0dced2fc8964537c4cbb4f63204141f26d9ddf0c0d8377f0e8"
+        },
+        {
+          "public_url": "https://datadryad.org/downloads/file_stream/4330032",
+          "bytes": 4283,
+          "sha256": "5e841baf68b144355d842c97dfb13881dff89dc72278160554add185d4002513"
+        }
+      ],
+      "status": "not_recovered"
+    },
+    {
+      "name": "claw_treadmill.parquet",
+      "bytes": 144092599,
+      "sha256": "73e7fe09f8b1b28d4a3aba74af9d5bded3881ec9152b9b5484fccd2e2c416ec2",
+      "urls": [
+        "https://datadryad.org/api/v2/files/4330022/download",
+        "https://datadryad.org/stash/downloads/file_stream/4330022",
+        "https://datadryad.org/downloads/file_stream/4330022"
+      ],
+      "attempts": [
+        {
+          "public_url": "https://datadryad.org/api/v2/files/4330022/download",
+          "http_status": 401
+        },
+        {
+          "public_url": "https://datadryad.org/stash/downloads/file_stream/4330022",
+          "bytes": 4282,
+          "sha256": "f79ab1efd1f588a85dc23a6cb30872726359384e97d31930d06d8038523925e7"
+        },
+        {
+          "public_url": "https://datadryad.org/downloads/file_stream/4330022",
+          "bytes": 4283,
+          "sha256": "9074afe0cc0f9889bb2b633e844315bc39aa22c8300f57380f3700868163f01f"
+        }
+      ],
+      "status": "not_recovered"
+    },
+    {
+      "name": "club_magnet_Mamiya2018.parquet",
+      "bytes": 389137,
+      "sha256": "1b5c797ff3d3242b096530e9b881f1e09a296e4af99cbfc03a98c94fe0341fe1",
+      "urls": [
+        "https://datadryad.org/api/v2/files/4330034/download",
+        "https://datadryad.org/stash/downloads/file_stream/4330034",
+        "https://datadryad.org/downloads/file_stream/4330034"
+      ],
+      "attempts": [
+        {
+          "public_url": "https://datadryad.org/api/v2/files/4330034/download",
+          "http_status": 401
+        },
+        {
+          "public_url": "https://datadryad.org/stash/downloads/file_stream/4330034",
+          "bytes": 4283,
+          "sha256": "efef2922f61a9613ebe4cc6b964e0bcb5bc1b98bff94a35b1c269d92f83b52cc"
+        },
+        {
+          "public_url": "https://datadryad.org/downloads/file_stream/4330034",
+          "bytes": 4283,
+          "sha256": "8e378240d4546252f2e151982c567a59eddcb44aa8c839d9b2328b4860708f10"
+        }
+      ],
+      "status": "not_recovered"
+    },
+    {
+      "name": "fanc_dn_information.csv",
+      "bytes": 2628,
+      "sha256": "f206325bc3c9f6158e85814fb532d93d8460e299b42b7f8075d00a50d224f583",
+      "urls": [
+        "https://datadryad.org/api/v2/files/4330044/download",
+        "https://datadryad.org/stash/downloads/file_stream/4330044",
+        "https://datadryad.org/downloads/file_stream/4330044"
+      ],
+      "attempts": [
+        {
+          "public_url": "https://datadryad.org/api/v2/files/4330044/download",
+          "http_status": 401
+        },
+        {
+          "public_url": "https://datadryad.org/stash/downloads/file_stream/4330044",
+          "bytes": 4283,
+          "sha256": "4c5bb99b8eeb975980a46d96ce8dfaa436958dadc9782a49b0313e07c8db7081"
+        },
+        {
+          "public_url": "https://datadryad.org/downloads/file_stream/4330044",
+          "bytes": 4283,
+          "sha256": "907dd401d72d888951f259a9d5899b5a3a4a92bef2c030fca314cfed79cb2506"
+        }
+      ],
+      "status": "not_recovered"
+    },
+    {
+      "name": "hook_flexion_01_magnet_Mamiya2018.parquet",
+      "bytes": 766556,
+      "sha256": "ea61eee2d26a5e6fddb7aebaee06e13e11c9b87427d0f70b350760ab0ae545be",
+      "urls": [
+        "https://datadryad.org/api/v2/files/4330033/download",
+        "https://datadryad.org/stash/downloads/file_stream/4330033",
+        "https://datadryad.org/downloads/file_stream/4330033"
+      ],
+      "attempts": [
+        {
+          "public_url": "https://datadryad.org/api/v2/files/4330033/download",
+          "http_status": 401
+        },
+        {
+          "public_url": "https://datadryad.org/stash/downloads/file_stream/4330033",
+          "bytes": 4283,
+          "sha256": "151c28972d6b7097e7c62839bd0e76292a83ff8cca2c69583952d0cb039e4b1e"
+        },
+        {
+          "public_url": "https://datadryad.org/downloads/file_stream/4330033",
+          "bytes": 4283,
+          "sha256": "3cff4ed579638383377790a37e7ca23f1719e4b1d3d96af68ab19064ec768e6d"
+        }
+      ],
+      "status": "not_recovered"
+    },
+    {
+      "name": "hook_flexion_02_treadmill.parquet",
+      "bytes": 101739362,
+      "sha256": "304b5e2554da4eb539fc9d6962b5f640c30a1b31173aa38cc0eac3b7cecc30b5",
+      "urls": [
+        "https://datadryad.org/api/v2/files/4330024/download",
+        "https://datadryad.org/stash/downloads/file_stream/4330024",
+        "https://datadryad.org/downloads/file_stream/4330024"
+      ],
+      "attempts": [
+        {
+          "public_url": "https://datadryad.org/api/v2/files/4330024/download",
+          "http_status": 401
+        },
+        {
+          "public_url": "https://datadryad.org/stash/downloads/file_stream/4330024",
+          "bytes": 4283,
+          "sha256": "d7cde1b34b110cc5313cc3c9ac0c97589546a52ede058e60a5b894de66b4f20b"
+        },
+        {
+          "public_url": "https://datadryad.org/downloads/file_stream/4330024",
+          "bytes": 4283,
+          "sha256": "31bd9a2a55fa5f0f05858440c228f917119250c6e5f04d659357bc6895d53c0f"
+        }
+      ],
+      "status": "not_recovered"
+    },
+    {
+      "name": "hook_flexion_03_bdn2.parquet",
+      "bytes": 290437,
+      "sha256": "fe8c05508abb5ee71f29920db4f65999c098dc08d4ac6f8c7b412773cba7d2ed",
+      "urls": [
+        "https://datadryad.org/api/v2/files/4330035/download",
+        "https://datadryad.org/stash/downloads/file_stream/4330035",
+        "https://datadryad.org/downloads/file_stream/4330035"
+      ],
+      "attempts": [
+        {
+          "public_url": "https://datadryad.org/api/v2/files/4330035/download",
+          "http_status": 401
+        },
+        {
+          "public_url": "https://datadryad.org/stash/downloads/file_stream/4330035",
+          "bytes": 4283,
+          "sha256": "6968bed13687eb22bfa82627577dc4647530858010fc3a92a0187ec7b191d5f7"
+        },
+        {
+          "public_url": "https://datadryad.org/downloads/file_stream/4330035",
+          "bytes": 4283,
+          "sha256": "2d6572d14885ce0272a27b212eef425ff575095c1fa4eea3552c5454a4b7cbcd"
+        }
+      ],
+      "status": "not_recovered"
+    },
+    {
+      "name": "manc_v1_classifications.csv",
+      "bytes": 548135,
+      "sha256": "f81572490e571e69eeaa625383f348bd48fbb5f0f75b2c29195aca4aa911357c",
+      "urls": [
+        "https://datadryad.org/api/v2/files/4330045/download",
+        "https://datadryad.org/stash/downloads/file_stream/4330045",
+        "https://datadryad.org/downloads/file_stream/4330045"
+      ],
+      "attempts": [
+        {
+          "public_url": "https://datadryad.org/api/v2/files/4330045/download",
+          "http_status": 401
+        },
+        {
+          "public_url": "https://datadryad.org/stash/downloads/file_stream/4330045",
+          "bytes": 4283,
+          "sha256": "7d820f1241ac9b01c4e58713abdc36976a574c0678df862b72e787ba10e330aa"
+        },
+        {
+          "public_url": "https://datadryad.org/downloads/file_stream/4330045",
+          "bytes": 4283,
+          "sha256": "fd1a60d3227138d0590adcb919f264f188c71b1567a3287b411362066f41efb5"
+        }
+      ],
+      "status": "not_recovered"
+    },
+    {
+      "name": "manc_v1_completeness.csv",
+      "bytes": 281432,
+      "sha256": "0b78cb59312fe4cff4f033cd3d7fbe3fefd152c974c43566ea99c4c592d7b06a",
+      "urls": [
+        "https://datadryad.org/api/v2/files/4330042/download",
+        "https://datadryad.org/stash/downloads/file_stream/4330042",
+        "https://datadryad.org/downloads/file_stream/4330042"
+      ],
+      "attempts": [
+        {
+          "public_url": "https://datadryad.org/api/v2/files/4330042/download",
+          "http_status": 401
+        },
+        {
+          "public_url": "https://datadryad.org/stash/downloads/file_stream/4330042",
+          "bytes": 4283,
+          "sha256": "8034390d5d2764c1fa6acd95b3711a9aa67ed2d1a46c59eac9a81bfef8ad5808"
+        },
+        {
+          "public_url": "https://datadryad.org/downloads/file_stream/4330042",
+          "bytes": 4283,
+          "sha256": "7fc3cfc4e52c27dbbfd2eae2cdadbe4b4050aa121e00aac696d584a555f47bd5"
+        }
+      ],
+      "status": "not_recovered"
+    },
+    {
+      "name": "manc_v1_connectivity.parquet",
+      "bytes": 13234923,
+      "sha256": "dddb20a6f3145ca801ad75a9b3aa9fe2db61ad87c78acd4b8cab0025d3556c0f",
+      "urls": [
+        "https://datadryad.org/api/v2/files/4330041/download",
+        "https://datadryad.org/stash/downloads/file_stream/4330041",
+        "https://datadryad.org/downloads/file_stream/4330041"
+      ],
+      "attempts": [
+        {
+          "public_url": "https://datadryad.org/api/v2/files/4330041/download",
+          "http_status": 401
+        },
+        {
+          "public_url": "https://datadryad.org/stash/downloads/file_stream/4330041",
+          "bytes": 4283,
+          "sha256": "55fb5ca7942884ac9a892f478f889f1df6a20f6498bd25a9ba36a52e95ae0785"
+        },
+        {
+          "public_url": "https://datadryad.org/downloads/file_stream/4330041",
+          "bytes": 4283,
+          "sha256": "bf24e59d88d51b66a0eacd06f872c5268c380b449505559f1ad8489c95c95be1"
+        }
+      ],
+      "status": "not_recovered"
+    },
+    {
+      "name": "pmt_control.parquet",
+      "bytes": 66442,
+      "sha256": "36bb23c472eb640f2ccc17a1d101cb3e3542463812f683bac8f594fd61c45dab",
+      "urls": [
+        "https://datadryad.org/api/v2/files/4330036/download",
+        "https://datadryad.org/stash/downloads/file_stream/4330036",
+        "https://datadryad.org/downloads/file_stream/4330036"
+      ],
+      "attempts": [
+        {
+          "public_url": "https://datadryad.org/api/v2/files/4330036/download",
+          "http_status": 401
+        },
+        {
+          "public_url": "https://datadryad.org/stash/downloads/file_stream/4330036",
+          "bytes": 4283,
+          "sha256": "f8f83774c1b9f8412d7d9a1e18adcf493f90548bcfc463f436e5b6f63294f434"
+        },
+        {
+          "public_url": "https://datadryad.org/downloads/file_stream/4330036",
+          "bytes": 4282,
+          "sha256": "e9a2239a8aa9ff7f05ada31cace3f247ca3e9461d3d3e70d8ea7b9482b45bc4c"
+        }
+      ],
+      "status": "not_recovered"
+    },
+    {
+      "name": "README.md",
+      "bytes": 10086,
+      "sha256": "a4927a16b15524bf8342bf0109fe7188257be2eb1036f94493ae780f8fd7762a",
+      "urls": [
+        "https://datadryad.org/api/v2/files/4330056/download",
+        "https://datadryad.org/stash/downloads/file_stream/4330056",
+        "https://datadryad.org/downloads/file_stream/4330056"
+      ],
+      "attempts": [
+        {
+          "public_url": "https://datadryad.org/api/v2/files/4330056/download",
+          "http_status": 401
+        },
+        {
+          "public_url": "https://datadryad.org/stash/downloads/file_stream/4330056",
+          "bytes": 4282,
+          "sha256": "2cda55c8a747de3dac5b71c09c6f17124e028a99c99b49f1b06d8f40139a088c"
+        },
+        {
+          "public_url": "https://datadryad.org/downloads/file_stream/4330056",
+          "bytes": 4283,
+          "sha256": "e7ecdd4bf28a5889ea29bb3780b2a18c26131d5a004ddcd9231c1c18e827c96a"
+        }
+      ],
+      "status": "not_recovered"
+    },
+    {
+      "name": "rna-seq.xlsx",
+      "bytes": 128694,
+      "sha256": "75f0ceb6504e645a31cd2d3e44f11ad1d9c6c6b0dfe7fe242e2c140b0d48d1ce",
+      "urls": [
+        "https://datadryad.org/api/v2/files/4330043/download",
+        "https://datadryad.org/stash/downloads/file_stream/4330043",
+        "https://datadryad.org/downloads/file_stream/4330043"
+      ],
+      "attempts": [
+        {
+          "public_url": "https://datadryad.org/api/v2/files/4330043/download",
+          "http_status": 401
+        },
+        {
+          "public_url": "https://datadryad.org/stash/downloads/file_stream/4330043",
+          "bytes": 4283,
+          "sha256": "ef7c6a1268d1a61127fab9a37c55ffb997059e38621364cbd9fe0f5f06a79b42"
+        },
+        {
+          "public_url": "https://datadryad.org/downloads/file_stream/4330043",
+          "bytes": 4283,
+          "sha256": "c267342ef0b141e7d3b35568a79300830e769044bb6e70b8f12ddb7e0f4d8f63"
+        }
+      ],
+      "status": "not_recovered"
+    }
+  ],
+  "interpretation": "Only verified_release_asset means recovered. Failed public downloads are not declared restored."
+}

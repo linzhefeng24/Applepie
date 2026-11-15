@@ -25,3 +25,9 @@ def test_type_pair_gain_is_namespace_specific_and_preserves_all_edges():
  rows=metadata();w=np.zeros((3,3));w[0,1]=2.;w[2,1]=-4.;w[0,2]=3.;x,r=type_pair_conductances(w,rows,[{'namespace':'test','source_type':'G','target_type':'target','gain':.2}]);assert x[0,1]==.4 and x[2,1]==-4 and x[0,2]==3 and w[0,1]==2;np.testing.assert_array_equal(x!=0,w!=0);assert r[0]['affected_existing_edges']==1
  with pytest.raises(ValueError):type_pair_conductances(w,rows,[{'namespace':'test','source_type':'G','target_type':'target','gain':0.}])
  with pytest.raises(KeyError):type_pair_conductances(w,rows,[{'namespace':'other','source_type':'G','target_type':'target','gain':.2}])
+
+def test_class_transmitter_selector_avoids_inhibitory_disinhibition_targets():
+ from network import type_pair_conductances
+ rows=[dict(bodyId=str(i),connectome_namespace='N',type=t,**{'class':c},predictedNt=nt) for i,t,c,nt in [(0,'BB','descending_neuron','gaba'),(1,'X','descending_neuron','acetylcholine'),(2,'Y','descending_neuron','acetylcholine'),(3,'I','descending_neuron','gaba'),(4,'E','cb_intrinsic','acetylcholine')]]
+ w=np.zeros((5,5));w[0,1:]=-2;rule={'namespace':'N','source_type':'BB','target_class':'descending neuron','target_nt':'acetylcholine','gain':1.5};x,r=type_pair_conductances(w,rows,[rule]);np.testing.assert_array_equal(x[0,1:],[-3,-3,-2,-2]);np.testing.assert_array_equal(w[0,1:],[-2]*4);assert r[0]['affected_existing_edges']==2
+ with pytest.raises(ValueError):type_pair_conductances(w,rows,[{**rule,'target_type':'X'}])

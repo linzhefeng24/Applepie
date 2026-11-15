@@ -25,8 +25,8 @@ def load(scope='motor',full_vnc=False):
 
 
 def type_pair_conductances(weights,metadata,parameters):
- """Unknown type-pair synaptic efficacy, separate from structural counts.
- Same source/target types in one namespace share a positive multiplier.
+ """Unknown group-pair synaptic efficacy, separate from structural counts.
+ Type or class selectors in one namespace share a positive multiplier.
  This permits testing a real direct-DN bypass without removing its edges.
  """
  if not parameters:return weights,[]
@@ -34,8 +34,17 @@ def type_pair_conductances(weights,metadata,parameters):
  for p in parameters:
   gain=float(p['gain'])
   if not np.isfinite(gain) or not .05<=gain<=5:raise ValueError('Type-pair conductance prior must be within0.05..5; no edge deletion')
-  pre=[i for i,x in enumerate(metadata) if x.get('connectome_namespace')==p['namespace'] and x.get('type')==p['source_type']]
-  post=[i for i,x in enumerate(metadata) if x.get('connectome_namespace')==p['namespace'] and x.get('type')==p['target_type']]
+  def matches(x,prefix):
+   fields=[k for k in ['type','class'] if prefix+'_'+k in p]
+   if len(fields)!=1:raise ValueError('Exactly one type or class selector required for '+prefix)
+   field=fields[0];expected=p[prefix+'_'+field]
+   if not isinstance(expected,str) or not expected:raise ValueError('Nonempty selector required')
+   actual=x.get(field)
+   if field=='class':actual=str(actual).replace('_',' ');expected=expected.replace('_',' ')
+   nt=p.get(prefix+'_nt')
+   return x.get('connectome_namespace')==p['namespace'] and actual==expected and (nt is None or str(x.get('predictedNt','')).lower()==nt.lower())
+  pre=[i for i,x in enumerate(metadata) if matches(x,'source')]
+  post=[i for i,x in enumerate(metadata) if matches(x,'target')]
   if not pre or not post:raise KeyError('Type pair absent from namespace')
   block=out[np.ix_(pre,post)];count=int(np.count_nonzero(block))
   if not count:raise ValueError('No structural connection for requested type pair')

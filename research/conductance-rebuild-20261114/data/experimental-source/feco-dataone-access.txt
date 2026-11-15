@@ -1,0 +1,19 @@
+{
+  "responseHeader":{
+    "zkConnected":true,
+    "status":0,
+    "QTime":424,
+    "params":{
+      "q":"\"10.5061/dryad.gqnk98t16\"",
+      "fl":"id,identifier,title,formatId,dataUrl,size,checksum,checksumAlgorithm,isPublic",
+      "rows":"100",
+      "wt":"json"
+    }
+  },
+  "response":{
+    "numFound":0,
+    "start":0,
+    "numFoundExact":true,
+    "docs":[ ]
+  }
+}

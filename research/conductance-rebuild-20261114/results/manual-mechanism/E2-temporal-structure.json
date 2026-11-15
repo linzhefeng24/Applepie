@@ -1,0 +1,299 @@
+{
+  "method": "Compare intact and E2-ablated temporal structure, not spike-count silence.\nThe published condition concerns rhythmicity. These traces permit scoped manual\njudgment and do not automatically declare an experimental pass.\n",
+  "records": [
+    {
+      "condition": "expanded-shared-extensor-direct-DN-weak",
+      "source_npz_sha256": "cb161ab5c3ece65b39bab0b7e17e51ae5ea81414ab7ada56629011ffc77a5a4a",
+      "cells": [
+        {
+          "body_id": "10707",
+          "type": "IN17A001",
+          "spike_times_ms": [
+            488,
+            628,
+            756,
+            882,
+            1008,
+            1135,
+            1261,
+            1387,
+            1513
+          ],
+          "ISI_ms_min_median_max": [
+            126.0,
+            126.0,
+            140.0
+          ]
+        },
+        {
+          "body_id": "13905",
+          "type": "IN16B036",
+          "spike_times_ms": [
+            500,
+            640,
+            767,
+            893,
+            1020,
+            1146,
+            1272,
+            1399,
+            1525
+          ],
+          "ISI_ms_min_median_max": [
+            126.0,
+            126.5,
+            140.0
+          ]
+        },
+        {
+          "body_id": "11657",
+          "type": "Ti extensor MN",
+          "spike_times_ms": [
+            497,
+            637,
+            765,
+            891,
+            1017,
+            1143,
+            1270,
+            1396,
+            1522
+          ],
+          "ISI_ms_min_median_max": [
+            126.0,
+            126.0,
+            140.0
+          ]
+        },
+        {
+          "body_id": "12134",
+          "type": "Ti flexor MN",
+          "spike_times_ms": [
+            502,
+            643,
+            770,
+            896,
+            1023,
+            1149,
+            1275,
+            1401,
+            1528
+          ],
+          "ISI_ms_min_median_max": [
+            126.0,
+            126.5,
+            141.0
+          ]
+        },
+        {
+          "body_id": "10690",
+          "type": "IN17A001",
+          "spike_times_ms": [
+            445,
+            572,
+            700,
+            824,
+            951,
+            1077,
+            1203,
+            1330,
+            1456,
+            1582
+          ],
+          "ISI_ms_min_median_max": [
+            124.0,
+            126.0,
+            128.0
+          ]
+        },
+        {
+          "body_id": "13163",
+          "type": "Ti flexor MN",
+          "spike_times_ms": [
+            458,
+            501,
+            585,
+            641,
+            713,
+            768,
+            837,
+            850,
+            895,
+            963,
+            1021,
+            1090,
+            1147,
+            1216,
+            1274,
+            1342,
+            1400,
+            1469,
+            1526,
+            1595
+          ],
+          "ISI_ms_min_median_max": [
+            13.0,
+            58.0,
+            84.0
+          ]
+        }
+      ]
+    },
+    {
+      "condition": "expanded-shared-extensor-direct-DN-weak-E2-silenced",
+      "source_npz_sha256": "659e6ec24de072494eea3039d130786715b2c2f6d4970eb3d6072b7804d7c925",
+      "cells": [
+        {
+          "body_id": "10707",
+          "type": "IN17A001",
+          "spike_times_ms": [
+            403,
+            432,
+            459,
+            502,
+            529,
+            558,
+            630,
+            670,
+            701,
+            740,
+            783,
+            813,
+            853,
+            895,
+            925,
+            965,
+            1007,
+            1037,
+            1077,
+            1119,
+            1150,
+            1175,
+            1203,
+            1231,
+            1259,
+            1288,
+            1316,
+            1344,
+            1371,
+            1400,
+            1428,
+            1473,
+            1512,
+            1555,
+            1583
+          ],
+          "ISI_ms_min_median_max": [
+            25.0,
+            30.0,
+            72.0
+          ]
+        },
+        {
+          "body_id": "13905",
+          "type": "IN16B036",
+          "spike_times_ms": [],
+          "ISI_ms_min_median_max": []
+        },
+        {
+          "body_id": "11657",
+          "type": "Ti extensor MN",
+          "spike_times_ms": [],
+          "ISI_ms_min_median_max": []
+        },
+        {
+          "body_id": "12134",
+          "type": "Ti flexor MN",
+          "spike_times_ms": [],
+          "ISI_ms_min_median_max": []
+        },
+        {
+          "body_id": "10690",
+          "type": "IN17A001",
+          "spike_times_ms": [
+            461,
+            489,
+            515,
+            544,
+            571,
+            599,
+            627,
+            670,
+            701,
+            740,
+            782,
+            813,
+            852,
+            894,
+            926,
+            965,
+            1007,
+            1037,
+            1077,
+            1119,
+            1161,
+            1189,
+            1217,
+            1245,
+            1273,
+            1301,
+            1329,
+            1358,
+            1385,
+            1413,
+            1441,
+            1469,
+            1512,
+            1542,
+            1567,
+            1596
+          ],
+          "ISI_ms_min_median_max": [
+            25.0,
+            29.0,
+            43.0
+          ]
+        },
+        {
+          "body_id": "13163",
+          "type": "Ti flexor MN",
+          "spike_times_ms": [
+            417,
+            446,
+            474,
+            516,
+            543,
+            643,
+            684,
+            715,
+            754,
+            797,
+            826,
+            867,
+            908,
+            979,
+            1021,
+            1051,
+            1091,
+            1133,
+            1163,
+            1190,
+            1274,
+            1386,
+            1443,
+            1487,
+            1526,
+            1568,
+            1597
+          ],
+          "ISI_ms_min_median_max": [
+            27.0,
+            41.0,
+            112.0
+          ]
+        }
+      ]
+    }
+  ],
+  "status": "manual review; residual activity is not itself a rhythmicity criterion"
+}

@@ -3,7 +3,7 @@ Only published-hash verified files enter the draft archive. Failures are retaine
 without recording cookies, credentials or signed storage redirect URLs.
 """
 from pathlib import Path
-import hashlib,json,os,subprocess,tempfile,urllib.request,urllib.error
+import hashlib,json,os,subprocess,tempfile,urllib.request,urllib.error,re
 R=Path(__file__).parent;TAG='public-feco-inputs-20261115'
 def gh(*args):return subprocess.check_output(['gh',*args],text=True)
 def sha(path):
@@ -18,6 +18,7 @@ def main():
  records=[]
  with tempfile.TemporaryDirectory() as directory:
   for item in manifest['inputs']:
+   if os.environ.get('FECO_ONLY') and item['name']!=os.environ['FECO_ONLY']:continue
    record={**item,'attempts':[],'status':'not_recovered'};path=Path(directory)/item['name'];assets=json.loads(gh('api',f'repos/{repo}/releases/{release["id"]}'))['assets'];existing=next((x for x in assets if x['name']==item['name']),None)
    if existing and existing.get('digest')=='sha256:'+item['sha256'] and existing['size']==item['bytes']:record.update(status='verified_release_asset',asset_id=existing['id'])
    else:
@@ -26,7 +27,7 @@ def main():
       request=urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0 (public scientific dataset reproducibility)'})
       with urllib.request.urlopen(request,timeout=25) as source,path.open('wb') as target:
        for chunk in iter(lambda:source.read(4*1024*1024),b''):target.write(chunk)
-      size=path.stat().st_size;digest=sha(path);record['attempts'].append({'public_url':url,'bytes':size,'sha256':digest})
+      size=path.stat().st_size;digest=sha(path);title=re.search(r'<title>(.*?)</title>',path.read_bytes()[:20000].decode(errors='replace'),re.S);heading=re.search(r'<h1[^>]*>(.*?)</h1>',path.read_bytes()[:20000].decode(errors='replace'),re.S);record['attempts'].append({'public_url':url,'bytes':size,'sha256':digest,'html_title':title.group(1).strip() if title else None,'html_heading':re.sub('<[^>]+>','',heading.group(1)).strip() if heading else None})
       if size!=item['bytes'] or digest!=item['sha256']:continue
       if existing:raise RuntimeError('Conflicting existing archive asset, never overwrite')
       gh('release','upload',TAG,str(path),'--repo',repo);assets=json.loads(gh('api',f'repos/{repo}/releases/{release["id"]}'))['assets'];asset=next(x for x in assets if x['name']==item['name']);assert asset['digest']=='sha256:'+item['sha256'];record.update(status='verified_release_asset',asset_id=asset['id'],asset_url=asset['browser_download_url']);break

@@ -21,4 +21,5 @@ jobs:
       - name: Verify publicly downloadable inputs
         env:
           GH_TOKEN: ${{ github.token }}
+          FECO_ONLY: manc_v1_classifications.csv
         run: python research/feco-public-recovery/recover.py

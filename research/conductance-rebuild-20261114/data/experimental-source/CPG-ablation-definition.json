@@ -1,0 +1,9 @@
+{
+  "DOI": "10.1038/s41586-026-11195-y",
+  "uploaded_file_name": "Connectome simulations identify a central(1).pdf",
+  "bytes": 31340676,
+  "sha256": "c05fa01a2060db60862c4bba0eaa7c4c2f0880bf2a9fd75a7a77cc7353bd99ec",
+  "finding": "Fig3j and associated text report abolition of rhythmicity after E1/E2 silencing; not a requirement that all spiking neurons become silent. Separate tonic spiking, burst envelope and selected MN readout.",
+  "source_text_line_reference": "pdftotext -layout, paragraphs around Fig3j",
+  "interpretation_boundary": "Expanded six-leg MANC residual activity must be examined temporally, not automatically counted as preserved CPG rhythm."
+}

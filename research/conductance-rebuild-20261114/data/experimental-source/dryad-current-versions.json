@@ -1,0 +1,33 @@
+{
+  "version_summaries": [
+    {
+      "_links": {
+        "self": {
+          "href": "/api/v2/versions/393607"
+        },
+        "stash:dataset": {
+          "href": "/api/v2/datasets/doi%3A10.5061%2Fdryad.gqnk98t16"
+        },
+        "stash:files": {
+          "href": "/api/v2/versions/393607/files"
+        },
+        "stash:download": {
+          "href": "/api/v2/versions/393607/download"
+        },
+        "curies": [
+          {
+            "name": "stash",
+            "href": "https://github.com/datadryad/dryad-app/blob/main/documentation/apis/link_relations.md#{rel}",
+            "templated": "true"
+          }
+        ]
+      },
+      "title": "Data from: Selective presynaptic inhibition of leg proprioception in behaving <em>Drosophila</em>",
+      "versionNumber": 5,
+      "versionStatus": "submitted",
+      "curationStatus": "Published",
+      "publicationDate": "2025-09-03",
+      "lastModificationDate": "2025-09-03"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "source_repository": "https://github.com/chrisjdallmann/feco-inhibition",
+  "source_notebook": "manc_9A_web_connectivity.ipynb",
+  "source_sha256": "61d40f1e30b90cec69e2fa62bb3297ac0717c09df8a308e6e4d236f75fa88083",
+  "identity_cells": [
+    {
+      "cell_index": 2,
+      "code": "# Select whether to analyze chief 9A or web connectivity\nsource_name = 'web' # 'web' # 'chief_9A', 'web'\n\n# For chief 9A neurons, select which specific neuron to analyze. For web, set source_index to 0. \nsource_index = 0 # 0, 1, 2, 3, 4, 5 for chief 9A neurons in L1, L2, L3, R1, R2, R3"
+    },
+    {
+      "cell_index": 4,
+      "code": "# Set neuron IDs\ndict_ids = {}\ndict_ids['chief_9A'] = [100513, 13157, 14517, 165560, 12443, 12804] # L1, L2, L3, R1, R2, R3\ndict_ids['web'] = [10107] # Left VNC\n\n# Add IDs of hook neurons\ncriteria = NC(type='SNpp38')\ndf_neuron, _= fetch_neurons(criteria)\ndict_ids['hook'] = df_neuron.bodyId.to_list()"
+    }
+  ],
+  "source_supplement": "data/experimental-source/feco-MOESM4.xlsx",
+  "caveat": "Legacy hook typeSNpp38 is not reassigned to a current body ID without a version crosswalk."
+}
