@@ -1,17 +1,17 @@
 {
-  "completed_updates": 152,
+  "completed_updates": 160,
   "minimum_updates": 1000,
   "complete": false,
   "best_training_step": 123,
-  "checkpoint_asset": "bptt-checkpoint-0152-6fbd090d77c1.zip",
-  "bytes": 900284,
-  "sha256": "6fbd090d77c1476d7fc84f272fbe07a7e0d2489ae67f0f1af5d12580ed78a545",
+  "checkpoint_asset": "bptt-checkpoint-0160-a0f68b7fd13c.zip",
+  "bytes": 900810,
+  "sha256": "a0f68b7fd13c00a67a5737b57c3fe5d5bd10b06741234a5e69fdcf7fed7232e8",
   "source_revision": "da9d0e17d1215879c894b9668dbc00cd77f03163",
   "model_sha256": "858d1818b8d8394c95bb62a6ce60474cb534a83b94265ef8615e367c110d262c",
   "best_training_objective": 0.3179161576251068,
   "best_holdout_mse": 0.2954985808671949,
   "best_max_relative_shift": 0.08194982023661163,
-  "run_url": "https://github.com/linzhefeng24/Applepie/actions/runs/43732011204",
+  "run_url": "https://github.com/linzhefeng24/Applepie/actions/runs/43733425210",
   "checkpoint_tag": "regularized-bptt-1000-20261115",
   "definition": "one complete 200\u20131100ms training-window forward/backward pass and one Adam update; previous short trials do not count"
 }
