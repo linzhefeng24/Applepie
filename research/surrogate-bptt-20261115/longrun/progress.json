@@ -1,0 +1,7 @@
+{
+  "status": "prepared_not_started",
+  "completed_updates": 0,
+  "minimum_updates": 1000,
+  "complete": false,
+  "note": "Previous short trials are not counted. Each epoch is a full training-window forward/backward and Adam update; durable exact optimizer resume is enabled."
+}

@@ -1,0 +1,86 @@
+name: Regularized surrogate BPTT minimum 1000 updates
+on:
+  workflow_dispatch:
+    inputs:
+      source_ref:
+        description: Immutable training code revision; blank starts at dispatch revision
+        required: false
+        default: ''
+      chunk_updates:
+        description: Updates in this job; automatically continues until at least1000
+        required: false
+        default: '50'
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: regularized-bptt-1000-20261115
+  cancel-in-progress: false
+jobs:
+  train:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    env:
+      GH_TOKEN: ${{ github.token }}
+      TRAIN_SOURCE_REF: ${{ inputs.source_ref || github.sha }}
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      NUMBA_NUM_THREADS: '1'
+      JAX_PLATFORMS: cpu
+      XLA_FLAGS: --xla_cpu_multi_thread_eigen=false --xla_cpu_enable_fast_math=false
+      PYTHONDONTWRITEBYTECODE: '1'
+      MPLCONFIGDIR: /tmp/bptt-plots
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: ${{ env.TRAIN_SOURCE_REF }}
+          persist-credentials: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /research/surrogate-bptt-20261115/
+            /research/single-model-delivery-20261115/
+            /research/conductance-rebuild-20261114/grouped_parameters.py
+            /research/conductance-rebuild-20261114/results/mcns-brake-extension/neurons.json
+            /research/conductance-rebuild-20261114/results/mcns-brake-extension/unsigned-connectivity.npz
+            /research/brake-retuning-20261115/results/terminal-r2/BRK.npz
+            /research/brake-retuning-20261115/configs/brake-terminal-r2.json
+            /research/conductance-rebuild-20261114/data/model-130-channel-candidate-crosswalk.csv
+            /research/conductance-rebuild-20261114/data/old-A-muscle-targets.npz
+            /research/conductance-rebuild-20261114/data/phenomena-inventory.json
+            /research/assets/flymimic-legacy-AB-twofile.zip
+            /research/conductance-rebuild-20261114/results/frozen-neural-panel-unified-r9/PFL3L-config.json
+            /research/conductance-rebuild-20261114/results/frozen-neural-panel-brake-extension-r9/BRK-config.json
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r research/surrogate-bptt-20261115/requirements-long.txt
+      - name: Rebuild immutable baseline and verified spike-event boundaries
+        run: |
+          python research/single-model-delivery-20261115/build.py
+          python research/surrogate-bptt-20261115/prepare.py
+      - name: Restore exact optimizer and update count
+        run: python research/surrogate-bptt-20261115/checkpoint_service.py restore
+      - name: Continue real BPTT updates toward minimum1000
+        env:
+          CHUNK_UPDATES: ${{ inputs.chunk_updates }}
+          BPTT_CONFIG: ${{ github.workspace }}/research/surrogate-bptt-20261115/config-1000.json
+        run: python research/surrogate-bptt-20261115/longrun.py --chunk-updates "$CHUNK_UPDATES"
+      - name: Save checkpoint and freshly verify GitHub progress commit
+        run: python research/surrogate-bptt-20261115/checkpoint_service.py publish
+      - name: Validate best candidate in original full hard network after1000
+        run: |
+          python - <<'PY'
+          import json,subprocess,sys
+          from pathlib import Path
+          r=Path('research/surrogate-bptt-20261115');d=json.loads((r/'cache/longrun/chunk-report.json').read_text())
+          if d['completed_updates']>=1000:
+              subprocess.run([sys.executable,str(r/'validate_full.py'),str(r/'cache/longrun/best-parameters.npz'),'longrun-best','DN_drive','quiet','BRK','PFL3_left','BPN_FG'],check=True)
+          PY
+      - name: Save final validated model and reports after1000
+        if: always()
+        run: |
+          if [ -f research/surrogate-bptt-20261115/cache/longrun/chunk-report.json ]; then
+            python research/surrogate-bptt-20261115/finalize_longrun.py
+          fi
+      - name: Continue automatically until at least1000 completed updates
+        run: python research/surrogate-bptt-20261115/checkpoint_service.py dispatch

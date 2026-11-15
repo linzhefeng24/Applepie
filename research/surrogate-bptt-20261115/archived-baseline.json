@@ -1,0 +1,12 @@
+{
+  "baseline_model_sha256": "858d1818b8d8394c95bb62a6ce60474cb534a83b94265ef8615e367c110d262c",
+  "original_full_neural_file_sha256": "4153fa8f1d29bb1bd987281d68d8407767bb9dd4e2ff1644673218b33e3fc027",
+  "binned_spikes_shape": [
+    1600,
+    3988
+  ],
+  "binned_spikes_dtype": "int16",
+  "binned_spikes_sha256": "83f4bc38e8fd9389a1049d9b9b80b43ef1f8dae9ad31d7568e987190ec2a9a4c",
+  "sparse_event_file_sha256": "70cbd97f96891ab6b3cb3aa0f5d9cd56dcb17709a552e38ea2d7c339f82dc732",
+  "scope": "Sparse events were recorded by instrumented original full-network HH and independently rebinned exactly; reconstruction of binned spikes does not restore missing voltage/state traces."
+}

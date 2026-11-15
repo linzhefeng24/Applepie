@@ -56,7 +56,7 @@ class DifferentiableHH:
    return j.where(small,k[2]+x/2,safe/(-j.expm1(-safe/k[2])))
   return k[0]*trap(v+k[1]),k[3]*j.exp(-(v+k[4])/k[5]),k[6]*j.exp(-(v+k[7])/k[8]),1/(1+j.exp(-(v+k[9])/k[10])),k[11]*trap(v+k[12]),k[13]*j.exp(-(v+k[14])/k[15])
 
- def forward(self,raw):
+ def forward(self,raw,end_ms=None):
   cell,_=self.parameters(raw);dt=self.dt;aux=self.aux
   ter,ted,tir,tid,ge,gi,gsk,alpha,kd,ena,ek,eca,ee,ei=self.p
   tpe=j.log(ted/ter)/(1/ter-1/ted);norme=1/(j.exp(-tpe/ted)-j.exp(-tpe/ter))
@@ -100,7 +100,8 @@ class DifferentiableHH:
    if self.cfg.get('surrogate_readout_clip'):clipped=value+lax.stop_gradient(clipped-value)
    return st,(clipped,counts)
   # Rematerialize each 1ms block during reverse mode, retaining full temporal gradients.
-  _,out=lax.scan(jax.checkpoint(ms_step),init,(j.arange(self.duration),self.external_e,self.external_i))
+  T=self.duration if end_ms is None else int(end_ms)
+  _,out=lax.scan(jax.checkpoint(ms_step),init,(j.arange(T),self.external_e[:T],self.external_i[:T]))
   return out
 
  def loss(self,raw):
