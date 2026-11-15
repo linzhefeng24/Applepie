@@ -1,0 +1,103 @@
+{
+  "status": "ok",
+  "message-type": "work-list",
+  "message-version": "1.0.0",
+  "message": {
+    "facets": {},
+    "total-results": 197114,
+    "items": [
+      {
+        "DOI": "10.2139/ssrn.4231429",
+        "title": [
+          "Effects of Late Braking Force in the Late Stance Phase on Walking Performance of Stroke Patients and the Kinetic and Kinematic Characteristics Causing it"
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2022
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.2139/ssrn.4231429",
+        "type": "posted-content"
+      },
+      {
+        "DOI": "10.7717/peerj.18940/fig-7",
+        "title": [
+          "Figure 7: Braking time as a percent of total stance time among shoeing conditions."
+        ],
+        "URL": "https://doi.org/10.7717/peerj.18940/fig-7",
+        "type": "component"
+      },
+      {
+        "DOI": "10.35455/brk123",
+        "title": [
+          "BRK Global Healthcare Journal"
+        ],
+        "URL": "https://doi.org/10.35455/brk123",
+        "type": "journal"
+      },
+      {
+        "DOI": "10.1007/978-1-4899-0821-6_9",
+        "title": [
+          "The Stance Phase and its Control by Sensory Information During Walking in Crustacea"
+        ],
+        "published": {
+          "date-parts": [
+            [
+              1988
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1007/978-1-4899-0821-6_9",
+        "type": "book-chapter"
+      },
+      {
+        "DOI": "10.7717/peerj.5517/table-3",
+        "title": [
+          "Table 3: Foot kinematics with three walking speeds in the stance phase of gait."
+        ],
+        "URL": "https://doi.org/10.7717/peerj.5517/table-3",
+        "type": "component"
+      },
+      {
+        "DOI": "10.26226/morressier.614ca2d987a68d83cb5d5db8",
+        "title": [
+          "The Effects of Stance-Control Knee-Ankle-Foot Orthoses on Walking Speed, Energy Expenditure and Satisfaction with Walking in Polio Survivors"
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2021,
+              10,
+              25
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.26226/morressier.614ca2d987a68d83cb5d5db8",
+        "type": "posted-content"
+      },
+      {
+        "DOI": "10.58837/chula.the.2010.836",
+        "title": [
+          "Tibiofemoral joint reaction force during stance phase of backward and forward walking at varied speed"
+        ],
+        "URL": "https://doi.org/10.58837/chula.the.2010.836",
+        "type": "dissertation"
+      },
+      {
+        "DOI": "10.7717/peerj.3613/fig-11",
+        "title": [
+          "Figure 11: Vertical ground reaction forces versus stance phase in loose sand and solid ground walking trials."
+        ],
+        "URL": "https://doi.org/10.7717/peerj.3613/fig-11",
+        "type": "component"
+      }
+    ],
+    "items-per-page": 8,
+    "query": {
+      "start-index": 0,
+      "search-terms": "Drosophila walking braking stance BRK"
+    }
+  }
+}

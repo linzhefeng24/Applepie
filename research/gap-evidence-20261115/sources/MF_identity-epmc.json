@@ -1,0 +1,15 @@
+{
+  "version": "6.9",
+  "hitCount": 0,
+  "request": {
+    "queryString": "Drosophila LUL130 LUL152 MF14",
+    "resultType": "core",
+    "cursorMark": "*",
+    "pageSize": 12,
+    "sort": "",
+    "synonym": false
+  },
+  "resultList": {
+    "result": []
+  }
+}

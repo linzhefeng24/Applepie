@@ -1,0 +1,3624 @@
+{
+  "version": "6.9",
+  "hitCount": 42,
+  "nextCursorMark": "AoIIQHQ/FCg0NzgwNzc3Nw==",
+  "nextPageUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=Drosophila+campaniform+sensilla+load+walking&cursorMark=AoIIQHQ%2FFCg0NzgwNzc3Nw%3D%3D&resultType=core&pageSize=12&format=json",
+  "request": {
+    "queryString": "Drosophila campaniform sensilla load walking",
+    "resultType": "core",
+    "cursorMark": "*",
+    "pageSize": 12,
+    "sort": "",
+    "synonym": false
+  },
+  "resultList": {
+    "result": [
+      {
+        "id": "PPR1286636",
+        "source": "PPR",
+        "doi": "10.64898/2026.07.22.740025",
+        "title": "Role of leg campaniform sensilla proprioceptive feedback in  <i>Drosophila melanogaster</i>  adaptive walking",
+        "authorString": "Custódio R, Pierzchlińska A, Haustein M, Godesberg V, Dübbert M, Bockemühl T, Gorostiza E, Büschges A.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Custódio R",
+              "lastName": "Custódio",
+              "firstName": "R.D.",
+              "initials": "R"
+            },
+            {
+              "fullName": "Pierzchlińska A",
+              "lastName": "Pierzchlińska",
+              "initials": "A",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-0185-971X"
+              }
+            },
+            {
+              "fullName": "Haustein M",
+              "lastName": "Haustein",
+              "initials": "M",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-4493-6161"
+              }
+            },
+            {
+              "fullName": "Godesberg V",
+              "lastName": "Godesberg",
+              "initials": "V",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-9903-0220"
+              }
+            },
+            {
+              "fullName": "Dübbert M",
+              "lastName": "Dübbert",
+              "initials": "M"
+            },
+            {
+              "fullName": "Bockemühl T",
+              "lastName": "Bockemühl",
+              "initials": "T"
+            },
+            {
+              "fullName": "Gorostiza E",
+              "lastName": "Gorostiza",
+              "firstName": "E.A.",
+              "initials": "E"
+            },
+            {
+              "fullName": "Büschges A",
+              "lastName": "Büschges",
+              "initials": "A"
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-0185-971X"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-1606-7918"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-3634-3393"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-6213-8107"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-9903-0220"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-2123-1900"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-2193-9909"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-4493-6161"
+            }
+          ]
+        },
+        "pubYear": "2026",
+        "abstractText": "<h4>Summary</h4>  With the newly uncovered access to a genetic line labeling all campaniform sensilla in  Drosophila melanogaster and the many insights gathered from larger insects, we analyzed the distribution and patterning of this class of proprioceptors throughout the fly nervous system and studied CS function in motor control.  We demonstrate via two-photon calcium imaging microscopy that campaniform sensilla activation induces activity in many leg muscles, showing that these proprioceptive stimuli can influence motor neuron activity. We then dissected how the lack of these proprioceptive stimuli influence walking behavior, leg kinematics, and interleg coordination in freely-walking flies using transient optogenetic inhibition and video tracking with high spatiotemporal resolution. We show that campaniform sensilla inhibition robustly affects  Drosophila melanogaster ’s ability to reach their typical walking speeds. Detailed analysis of leg kinematic suggests that shorter stance amplitudes characterized by their long-lasting duration were behind the speed deficits. Dissecting this phenotype also revealed the inability to maintain coordinated interleg stepping patterns as well as postural control in absence of proprioceptive force and load feedback.",
+        "pubTypeList": {
+          "pubType": [
+            "Preprint"
+          ]
+        },
+        "bookOrReportDetails": {
+          "publisher": "bioRxiv",
+          "yearOfPublication": 2026
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.64898/2026.07.22.740025"
+            }
+          ]
+        },
+        "isOpenAccess": "N",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "citedByCount": 0,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "N",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "N",
+        "hasData": "N",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCreation": "2026-07-28",
+        "firstPublicationDate": "2026-07-27",
+        "firstIndexDate": "2026-07-30",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "41805047",
+        "source": "MED",
+        "pmid": "41805047",
+        "pmcid": "PMC12975126",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12975126"
+          ]
+        },
+        "doi": "10.7554/elife.107867",
+        "title": "Peripheral anatomy and central connectivity of proprioceptive sensory neurons in the &lt;i&gt;Drosophila&lt;/i&gt; wing.",
+        "authorString": "Lesser E, Moussa AJ, Tuthill JC.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Lesser E",
+              "lastName": "Lesser",
+              "firstName": "Ellen",
+              "initials": "E",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-7929-0503"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurobiology and Biophysics, University of Washington, Seattle, United States."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Moussa AJ",
+              "lastName": "Moussa",
+              "firstName": "Anthony J",
+              "initials": "AJ",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-9538-2747"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurobiology and Biophysics, University of Washington, Seattle, United States."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Tuthill JC",
+              "lastName": "Tuthill",
+              "firstName": "John C",
+              "initials": "JC",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-5689-5806"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurobiology and Biophysics, University of Washington, Seattle, United States."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-7929-0503"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-5689-5806"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-9538-2747"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "related_data"
+          ]
+        },
+        "journalInfo": {
+          "volume": "14",
+          "journalIssueId": 4136724,
+          "dateOfPublication": "2026 Mar",
+          "monthOfPublication": 3,
+          "yearOfPublication": 2026,
+          "journal": {
+            "medlineAbbreviation": "Elife",
+            "title": "eLife",
+            "essn": "2050-084X",
+            "issn": "2050-084X",
+            "isoabbreviation": "Elife",
+            "nlmid": "101579614"
+          },
+          "printPublicationDate": "2026-03-01"
+        },
+        "pubYear": "2026",
+        "pageInfo": "RP107867",
+        "abstractText": "Recent advances in electron microscopy (EM) and automated image segmentation have produced synaptic wiring diagrams of the <i>Drosophila</i> central nervous system. A limitation of existing fly connectome datasets is that most sensory neurons are excised during sample preparation, creating a gap between the central and peripheral nervous systems. Here, we bridge this gap by reconstructing wing sensory axons from the Female Adult Nerve Cord (FANC) EM dataset and mapping them to peripheral sensory structures using genetic tools and light microscopy. We confirm the location and identity of known wing mechanosensory neurons and identify previously uncharacterized axons, including a novel population of putative proprioceptors that make monosynaptic connections onto wing steering motor neurons. We also find that adjacent campaniform sensilla on the wing have distinct axon morphologies and postsynaptic partners, suggesting a high degree of specialization in axon pathfinding and synaptic partner matching. The peripheral location and central projections of wing sensory neurons are stereotyped across flies, allowing this wing proprioceptor atlas and genetic toolkit to guide analysis of other fly connectome datasets.",
+        "affiliation": "Department of Neurobiology and Biophysics, University of Washington, Seattle, United States.",
+        "publicationStatus": "epublish",
+        "language": "eng",
+        "pubModel": "Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "NINDS NIH HHS",
+              "acronym": "NS",
+              "grantId": "U19NS104655",
+              "orderIn": 0
+            },
+            {
+              "agency": "NINDS NIH HHS",
+              "acronym": "NS",
+              "grantId": "R01NS102333",
+              "orderIn": 0
+            },
+            {
+              "agency": "New York Stem Cell Foundation",
+              "grantId": "Robertson Neuroscience Investigator Award",
+              "orderIn": 0
+            },
+            {
+              "agency": "NIH HHS",
+              "acronym": "NH",
+              "grantId": "T90DA032436",
+              "orderIn": 0
+            },
+            {
+              "agency": "McKnight Foundation",
+              "grantId": "Pecot Fellowship",
+              "orderIn": 0
+            },
+            {
+              "agency": "NIH HHS",
+              "acronym": "NH",
+              "grantId": "T32NS099578",
+              "orderIn": 0
+            }
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Axons",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "UL",
+                    "qualifierName": "ultrastructure"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Motor Neurons"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Animals"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Drosophila",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "AH",
+                    "qualifierName": "anatomy & histology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Drosophila melanogaster",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "AH",
+                    "qualifierName": "anatomy & histology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Microscopy, Electron"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Proprioception"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Female"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Sensory Receptor Cells",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "UL",
+                    "qualifierName": "ultrastructure"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Connectome"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Wings, Animal",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "AH",
+                    "qualifierName": "anatomy & histology"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "IR",
+                    "qualifierName": "innervation"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "keywordList": {
+          "keyword": [
+            "Proprioception",
+            "Flight",
+            "Neuroscience",
+            "Neural Circuits",
+            "D. Melanogaster"
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.7554/eLife.107867"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12975126"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12975126?pdf=render"
+            }
+          ]
+        },
+        "commentCorrectionList": {
+          "commentCorrection": [
+            {
+              "source": "MED",
+              "id": "40501889",
+              "reference": "bioRxiv. 2025 Jun 01:2025.05.29.656810. doi: 10.1101/2025.05.29.656810.",
+              "type": "Update of",
+              "orderIn": 1
+            }
+          ]
+        },
+        "isOpenAccess": "Y",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "citedByCount": 6,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "Y",
+        "hasBook": "N",
+        "hasSuppl": "Y",
+        "hasLabsLinks": "Y",
+        "hasData": "Y",
+        "license": "cc by",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCompletion": "2026-07-10",
+        "dateOfCreation": "2026-03-10",
+        "dateOfRevision": "2026-08-13",
+        "electronicPublicationDate": "2026-03-10",
+        "firstPublicationDate": "2026-03-10",
+        "firstIndexDate": "2026-03-11",
+        "fullTextReceivedDate": "2026-03-11",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "40329924",
+        "source": "MED",
+        "pmid": "40329924",
+        "pmcid": "PMC12056673",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12056673"
+          ]
+        },
+        "doi": "10.1098/rsif.2024.0559",
+        "title": "A parametric finite element model of leg campaniform sensilla in &lt;i&gt;Drosophila&lt;/i&gt; to study campaniform sensilla location and arrangement.",
+        "authorString": "Saltin BD, Goldsmith C, Haustein M, Büschges A, Szczecinski NS, Blanke A.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Saltin BD",
+              "lastName": "Saltin",
+              "firstName": "Brian D",
+              "initials": "BD",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-6668-962X"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Bonn Institute of Organismic Biology, University of Bonn, Bonn, Germany."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Goldsmith C",
+              "lastName": "Goldsmith",
+              "firstName": "Clarus",
+              "initials": "C",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-3193-520X"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Mechanical, Materials, and Aerospace Engineering, Benjamin M. Statler College of Engineering and Mineral Resources, West Virginia University, Morgantown, WV, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Haustein M",
+              "lastName": "Haustein",
+              "firstName": "Moritz",
+              "initials": "M",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-4493-6161"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Animal Physiology, Institute of Zoology, University of Cologne, Cologne, North Rhine-Westphalia, Germany."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Büschges A",
+              "lastName": "Büschges",
+              "firstName": "Ansgar",
+              "initials": "A",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-2123-1900"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Animal Physiology, Institute of Zoology, University of Cologne, Cologne, North Rhine-Westphalia, Germany."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Szczecinski NS",
+              "lastName": "Szczecinski",
+              "firstName": "Nicholas S",
+              "initials": "NS",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-6453-6475"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Mechanical, Materials, and Aerospace Engineering, Benjamin M. Statler College of Engineering and Mineral Resources, West Virginia University, Morgantown, WV, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Blanke A",
+              "lastName": "Blanke",
+              "firstName": "Alexander",
+              "initials": "A",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-4385-6039"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Bonn Institute of Organismic Biology, University of Bonn, Bonn, Germany."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-6668-962X"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-3193-520X"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-6453-6475"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-2123-1900"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-4385-6039"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-4493-6161"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics",
+            "related_data",
+            "supporting_data"
+          ]
+        },
+        "journalInfo": {
+          "issue": "226",
+          "volume": "22",
+          "journalIssueId": 3939017,
+          "dateOfPublication": "2025 May",
+          "monthOfPublication": 5,
+          "yearOfPublication": 2025,
+          "journal": {
+            "medlineAbbreviation": "J R Soc Interface",
+            "title": "Journal of the Royal Society, Interface",
+            "essn": "1742-5662",
+            "issn": "1742-5689",
+            "isoabbreviation": "J R Soc Interface",
+            "nlmid": "101217269"
+          },
+          "printPublicationDate": "2025-05-01"
+        },
+        "pubYear": "2025",
+        "pageInfo": "20240559",
+        "abstractText": "Campaniform sensilla (CS) are mechanosensors embedded in the cuticle of insects. They are often found at locations near the joints of leg segments. On legs, CS are generally considered to respond directionally to cuticle bending during legged locomotion. It is currently unclear how CS locations affect strain levels at the CS, but this information is crucial for understanding how CS respond to stimuli. Here we present a parametric finite element model of the femoral CS field for <i>Drosophila</i> hind legs with 12 general and seven CS-specific parameters each. This model allows testing how changes in CS location, orientation and material property affect strain levels at each CS. We used experimentally acquired kinematic data and computed ground reaction forces to simulate <i>in vivo</i>-like forward stepping. The displacements found in this study at the physiological CS field location near the trochanter-femur joint are smaller than those necessary for conformation changes of ion channels involved in signal elicitation. Also, variation of material properties of the CS had little influence on displacement magnitudes at the CS cap where the sensory neuron attaches. Thus, our results indicate that ground reaction forces alone are unlikely to serve CS field activation during forward walking.",
+        "affiliation": "Bonn Institute of Organismic Biology, University of Bonn, Bonn, Germany.",
+        "publicationStatus": "ppublish",
+        "language": "eng",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Research Support, Non-U.S. Gov't",
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "'C3NS' as part of the Next Generation Networks for Neuroscience Program",
+              "orderIn": 0
+            },
+            {
+              "agency": "grant for major equipment according to Art. 91b GG with the project",
+              "orderIn": 0
+            },
+            {
+              "agency": "‘C3NS’ as part of the Next Generation Networks for Neuroscience Program",
+              "orderIn": 0
+            },
+            {
+              "agency": "'iBehave' network funded by the Ministry of Culture and Science of the State of North Rhine-Westphalia",
+              "orderIn": 0
+            },
+            {
+              "agency": "Deutsche Forschungsgemeinschaft",
+              "orderIn": 0
+            },
+            {
+              "agency": "‘iBehave’ network funded by the Ministry of Culture and Science of the State of North Rhine-Westphalia",
+              "orderIn": 0
+            }
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Extremities",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Animals"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Drosophila",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "AH",
+                    "qualifierName": "anatomy & histology"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Drosophila melanogaster",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Locomotion",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Finite Element Analysis"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Models, Biological"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Sensilla",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "AH",
+                    "qualifierName": "anatomy & histology"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Biomechanical Phenomena"
+            }
+          ]
+        },
+        "keywordList": {
+          "keyword": [
+            "Membrane protein",
+            "Insect",
+            "Walking",
+            "Finite Element Analysis",
+            "Ground Reaction Force",
+            "Campaniform Sensilla"
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1098/rsif.2024.0559"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12056673"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12056673?pdf=render"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1098/rsif.2024.0559"
+            }
+          ]
+        },
+        "isOpenAccess": "N",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "citedByCount": 5,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "Y",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "Y",
+        "hasData": "Y",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "Y",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        },
+        "dateOfCompletion": "2025-05-07",
+        "dateOfCreation": "2025-05-07",
+        "dateOfRevision": "2026-08-24",
+        "electronicPublicationDate": "2025-05-07",
+        "firstPublicationDate": "2025-05-07",
+        "firstIndexDate": "2025-05-07",
+        "fullTextReceivedDate": "2026-05-20",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "42144469",
+        "source": "MED",
+        "pmid": "42144469",
+        "pmcid": "PMC13396126",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13396126"
+          ]
+        },
+        "doi": "10.1007/s00359-026-01815-3",
+        "title": "Attachment ability and mating behaviour of the black soldier fly Hermetia illucens (Diptera: Stratiomyidae).",
+        "authorString": "Rebora M, Petroni G, Saitta V, Piersanti S, Salerno G, Gorb S.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Rebora M",
+              "lastName": "Rebora",
+              "firstName": "Manuela",
+              "initials": "M",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-4271-6336"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Dipartimento di Chimica, Biologia e Biotecnologie, University of Perugia, via Elce di Sotto 8, 06123, Perugia, Italy."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Petroni G",
+              "lastName": "Petroni",
+              "firstName": "Giulia",
+              "initials": "G",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0007-4304-8687"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Dipartimento di Chimica, Biologia e Biotecnologie, University of Perugia, via Elce di Sotto 8, 06123, Perugia, Italy. giulia.petroni@dottorandi.unipg.it."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Saitta V",
+              "lastName": "Saitta",
+              "firstName": "Valerio",
+              "initials": "V",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-2073-627X"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Dipartimento di Scienze Agrarie, Alimentari e Ambientali, University of Perugia, Borgo XX Giugno 74, 06121, Perugia, Italy."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Piersanti S",
+              "lastName": "Piersanti",
+              "firstName": "Silvana",
+              "initials": "S",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-7956-9416"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Dipartimento di Chimica, Biologia e Biotecnologie, University of Perugia, via Elce di Sotto 8, 06123, Perugia, Italy."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Salerno G",
+              "lastName": "Salerno",
+              "firstName": "Gianandrea",
+              "initials": "G",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-8357-7598"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Dipartimento di Scienze Agrarie, Alimentari e Ambientali, University of Perugia, Borgo XX Giugno 74, 06121, Perugia, Italy."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Gorb S",
+              "lastName": "Gorb",
+              "firstName": "Stanislav",
+              "initials": "S",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-9712-7953"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Functional Morphology and Biomechanics, Zoological Institute, Kiel University, Am Botanischen Garten 9, 24098, Kiel, Germany."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-7956-9416"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-9712-7953"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-4271-6336"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-8357-7598"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-2073-627X"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0007-4304-8687"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "supporting_data"
+          ]
+        },
+        "journalInfo": {
+          "issue": "4",
+          "volume": "212",
+          "journalIssueId": 4232964,
+          "dateOfPublication": "2026 Jul",
+          "monthOfPublication": 7,
+          "yearOfPublication": 2026,
+          "journal": {
+            "medlineAbbreviation": "J Comp Physiol A Neuroethol Sens Neural Behav Physiol",
+            "title": "Journal of comparative physiology. A, Neuroethology, sensory, neural, and behavioral physiology",
+            "essn": "1432-1351",
+            "issn": "0340-7594",
+            "isoabbreviation": "J Comp Physiol A Neuroethol Sens Neural Behav Physiol",
+            "nlmid": "101141792"
+          },
+          "printPublicationDate": "2026-07-01"
+        },
+        "pubYear": "2026",
+        "pageInfo": "633-650",
+        "abstractText": "Hermetia illucens (Diptera: Stratiomyidae), also known as black soldier fly (BSF), offers an important sustainable approach to waste management and resource recovery, since its larvae can reduce organic waste volumes, transform them into biomass, and generate protein-rich feed, biodiesel precursors, and organic fertilizers. Despite the abundance of information on its larval stage, the reproductive biology of the adult is still poorly understood. The present study, through behavioural tests, cryo-scanning electron microscopy analysis and centrifugal force tester experiments, deepens the knowledge on the mechanical interaction between male tarsi and the body of conspecifics during mating and competition, describes the sexual dimorphism in BSF tarsal attachment devices and provides information on the attachment ability of both sexes to artificial surfaces with different features in terms of roughness and wettability. Further studies comparing adult behaviour in rearing conditions and in the wild are necessary to optimise BSF mass-rearing facilities.",
+        "affiliation": "Dipartimento di Chimica, Biologia e Biotecnologie, University of Perugia, via Elce di Sotto 8, 06123, Perugia, Italy.",
+        "publicationStatus": "ppublish",
+        "language": "eng",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "Università degli Studi di Perugia",
+              "orderIn": 0
+            }
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Animals"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Diptera",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "UL",
+                    "qualifierName": "ultrastructure"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Reproduction"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Sex Characteristics"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Female"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Male"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Sexual Behavior, Animal",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Biomechanical Phenomena"
+            }
+          ]
+        },
+        "keywordList": {
+          "keyword": [
+            "Reproduction",
+            "Biomechanics",
+            "Sexual Dimorphism",
+            "adhesive setae",
+            "Tarsi"
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1007/s00359-026-01815-3"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13396126"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13396126?pdf=render"
+            }
+          ]
+        },
+        "isOpenAccess": "Y",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "citedByCount": 1,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "Y",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "N",
+        "hasData": "Y",
+        "license": "cc by",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "Y",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        },
+        "dateOfCompletion": "2026-07-24",
+        "dateOfCreation": "2026-05-17",
+        "dateOfRevision": "2026-08-13",
+        "electronicPublicationDate": "2026-05-17",
+        "firstPublicationDate": "2026-05-17",
+        "firstIndexDate": "2026-05-19",
+        "fullTextReceivedDate": "2026-09-03",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "41680191",
+        "source": "MED",
+        "pmid": "41680191",
+        "pmcid": "PMC13009157",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13009157"
+          ]
+        },
+        "doi": "10.1038/s41467-026-69333-z",
+        "title": "Proprioceptive limit detectors contribute to sensorimotor control of the Drosophila leg.",
+        "authorString": "Pratt BG, Dallmann CJ, Chou GM, Siwanowicz I, Walling-Bell S, Cook A, Sustar A, Azevedo A, Tuthill JC.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Pratt BG",
+              "lastName": "Pratt",
+              "firstName": "Brandon G",
+              "initials": "BG",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurobiology and Biophysics, University of Washington, Seattle, WA, USA."
+                  },
+                  {
+                    "affiliation": "Allen Institute for Neural Dynamics, Seattle, WA, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Dallmann CJ",
+              "lastName": "Dallmann",
+              "firstName": "Chris J",
+              "initials": "CJ",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-4944-920X"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurobiology and Biophysics, University of Washington, Seattle, WA, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Chou GM",
+              "lastName": "Chou",
+              "firstName": "Grant M",
+              "initials": "GM",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurobiology and Biophysics, University of Washington, Seattle, WA, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Siwanowicz I",
+              "lastName": "Siwanowicz",
+              "firstName": "Igor",
+              "initials": "I",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus, Howard Hughes Medical Institute, Ashburn, VA, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Walling-Bell S",
+              "lastName": "Walling-Bell",
+              "firstName": "Sarah",
+              "initials": "S",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurobiology and Biophysics, University of Washington, Seattle, WA, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Cook A",
+              "lastName": "Cook",
+              "firstName": "Andrew",
+              "initials": "A",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurobiology and Biophysics, University of Washington, Seattle, WA, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Sustar A",
+              "lastName": "Sustar",
+              "firstName": "Anne",
+              "initials": "A",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurobiology and Biophysics, University of Washington, Seattle, WA, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Azevedo A",
+              "lastName": "Azevedo",
+              "firstName": "Anthony",
+              "initials": "A",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-8318-9678"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurobiology and Biophysics, University of Washington, Seattle, WA, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Tuthill JC",
+              "lastName": "Tuthill",
+              "firstName": "John C",
+              "initials": "JC",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-5689-5806"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurobiology and Biophysics, University of Washington, Seattle, WA, USA. tuthill@uw.edu."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-8318-9678"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-4944-920X"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-5689-5806"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics",
+            "related_data"
+          ]
+        },
+        "journalInfo": {
+          "issue": "1",
+          "volume": "17",
+          "journalIssueId": 4112748,
+          "dateOfPublication": "2026 Feb",
+          "monthOfPublication": 2,
+          "yearOfPublication": 2026,
+          "journal": {
+            "medlineAbbreviation": "Nat Commun",
+            "title": "Nature communications",
+            "essn": "2041-1723",
+            "issn": "2041-1723",
+            "isoabbreviation": "Nat Commun",
+            "nlmid": "101528555"
+          },
+          "printPublicationDate": "2026-02-01"
+        },
+        "pubYear": "2026",
+        "pageInfo": "2664",
+        "abstractText": "Many animals possess mechanosensory neurons that fire when a limb nears the limit of its physical range, but the function of these proprioceptive limit detectors remains poorly understood. Here, we investigate a class of proprioceptors on the Drosophila leg called hair plates. Using calcium imaging in behaving flies, we find that a hair plate on the fly coxa (CxHP8) detects the limits of anterior leg movement. By reconstructing CxHP8 axons in an electron microscopy dataset, we found that they are wired to excite posterior leg movement and inhibit anterior leg movement. Consistent with this connectivity, optogenetic activation of CxHP8 neurons elicited posterior postural reflexes, while silencing altered the swing-to-stance transition during walking. Finally, we use comprehensive reconstruction of peripheral morphology and downstream connectivity to predict the function of other hair plates distributed across the fly leg. Our results suggest that each hair plate is specialized to control specific sensorimotor reflexes that are matched to the joint limit it detects. They also illustrate the feasibility of predicting sensorimotor reflexes from a connectome with identified proprioceptive inputs and motor outputs.",
+        "affiliation": "Department of Neurobiology and Biophysics, University of Washington, Seattle, WA, USA.",
+        "publicationStatus": "epublish",
+        "language": "eng",
+        "pubModel": "Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "U.S. Department of Health & Human Services | NIH | National Institute of Neurological Disorders and Stroke (NINDS)",
+              "grantId": "R01NS128785",
+              "orderIn": 0
+            },
+            {
+              "agency": "NINDS NIH HHS",
+              "acronym": "NS",
+              "grantId": "R01 NS102333",
+              "orderIn": 0
+            },
+            {
+              "agency": "NINDS NIH HHS",
+              "acronym": "NS",
+              "grantId": "R01 NS145438",
+              "orderIn": 0
+            },
+            {
+              "agency": "NINDS NIH HHS",
+              "acronym": "NS",
+              "grantId": "R01 NS128785",
+              "orderIn": 0
+            },
+            {
+              "agency": "U.S. Department of Health & Human Services | NIH | National Institute of Neurological Disorders and Stroke (NINDS)",
+              "grantId": "R01NS102333",
+              "orderIn": 0
+            },
+            {
+              "agency": "U.S. Department of Health &amp; Human Services | NIH | National Institute of Neurological Disorders and Stroke",
+              "grantId": "R01NS102333",
+              "orderIn": 0
+            },
+            {
+              "agency": "U.S. Department of Health &amp; Human Services | NIH | National Institute of Neurological Disorders and Stroke",
+              "grantId": "R01NS128785",
+              "orderIn": 0
+            }
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Extremities",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "IR",
+                    "qualifierName": "innervation"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Axons",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Mechanoreceptors",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Animals"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Drosophila melanogaster",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Reflex",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Walking",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Proprioception",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Female"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Male"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Optogenetics"
+            }
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1038/s41467-026-69333-z"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13009157"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13009157?pdf=render"
+            }
+          ]
+        },
+        "commentCorrectionList": {
+          "commentCorrection": [
+            {
+              "source": "MED",
+              "id": "40475590",
+              "reference": "bioRxiv. 2025 May 19:2025.05.15.654260. doi: 10.1101/2025.05.15.654260.",
+              "type": "Update of",
+              "orderIn": 1
+            }
+          ]
+        },
+        "isOpenAccess": "Y",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "citedByCount": 13,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "Y",
+        "hasBook": "N",
+        "hasSuppl": "Y",
+        "hasLabsLinks": "Y",
+        "hasData": "Y",
+        "license": "cc by",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCompletion": "2026-07-07",
+        "dateOfCreation": "2026-02-12",
+        "dateOfRevision": "2026-11-01",
+        "electronicPublicationDate": "2026-02-12",
+        "firstPublicationDate": "2026-02-12",
+        "firstIndexDate": "2026-02-13",
+        "fullTextReceivedDate": "2026-03-25",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "38211340",
+        "source": "MED",
+        "pmid": "38211340",
+        "doi": "10.1088/1748-3190/ad1db9",
+        "title": "Mechanical modeling of mechanosensitive insect strain sensors as a tool to investigate exoskeletal interfaces.",
+        "authorString": "Dinges GF, Zyhowski WP, Lucci A, Friend J, Szczecinski NS.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Dinges GF",
+              "lastName": "Dinges",
+              "firstName": "Gesa F",
+              "initials": "GF",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-1759-738X"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Neuro-Mechanical Intelligence Laboratory, Department of Mechanical, Materials, and Aerospace Engineering, West Virginia University, Morgantown, WV, United States of America."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Zyhowski WP",
+              "lastName": "Zyhowski",
+              "firstName": "William P",
+              "initials": "WP",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Neuro-Mechanical Intelligence Laboratory, Department of Mechanical, Materials, and Aerospace Engineering, West Virginia University, Morgantown, WV, United States of America."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Lucci A",
+              "lastName": "Lucci",
+              "firstName": "Anastasia",
+              "initials": "A",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Lane Innovation Hub, West Virginia University, Morgantown, WV, United States of America."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Friend J",
+              "lastName": "Friend",
+              "firstName": "Jordan",
+              "initials": "J",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Lane Innovation Hub, West Virginia University, Morgantown, WV, United States of America."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Szczecinski NS",
+              "lastName": "Szczecinski",
+              "firstName": "Nicholas S",
+              "initials": "NS",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-6453-6475"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Neuro-Mechanical Intelligence Laboratory, Department of Mechanical, Materials, and Aerospace Engineering, West Virginia University, Morgantown, WV, United States of America."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-1759-738X"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-6453-6475"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "related_data"
+          ]
+        },
+        "journalInfo": {
+          "issue": "2",
+          "volume": "19",
+          "journalIssueId": 3706268,
+          "dateOfPublication": "2024 Feb",
+          "monthOfPublication": 2,
+          "yearOfPublication": 2024,
+          "journal": {
+            "medlineAbbreviation": "Bioinspir Biomim",
+            "title": "Bioinspiration & biomimetics",
+            "essn": "1748-3190",
+            "issn": "1748-3182",
+            "isoabbreviation": "Bioinspir Biomim",
+            "nlmid": "101292902"
+          },
+          "printPublicationDate": "2024-02-01"
+        },
+        "pubYear": "2024",
+        "abstractText": "During walking, sensory information is measured and monitored by sensory organs that can be found on and within various limb segments. Strain can be monitored by insect load sensors, campaniform sensilla (CS), which have components embedded within the exoskeleton. CS vary in eccentricity, size, and orientation, which can affect their sensitivity to specific strains. Directly investigating the mechanical interfaces that these sensors utilize to encode changes in load bears various obstacles, such as modeling of viscoelastic properties. To circumvent the difficulties of modeling and performing biological experiments in small insects, we developed 3-dimensional printed resin models based on high-resolution imaging of CS. Through the utilization of strain gauges and a motorized tensile tester, physiologically plausible strain can be mimicked while investigating the compression and tension forces that CS experience; here, this was performed for a field of femoral CS in<i>Drosophila melanogaster</i>. Different loading scenarios differentially affected CS compression and the likely neuronal activity of these sensors and elucidate population coding of stresses acting on the cuticle.",
+        "affiliation": "Neuro-Mechanical Intelligence Laboratory, Department of Mechanical, Materials, and Aerospace Engineering, West Virginia University, Morgantown, WV, United States of America.",
+        "publicationStatus": "epublish",
+        "language": "eng",
+        "pubModel": "Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Research Support, U.S. Gov't, Non-P.H.S.",
+            "Journal Article"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "NSF Collaborative Research in Computational Neuroscience Program",
+              "grantId": "IIS 2113028",
+              "orderIn": 0
+            },
+            {
+              "agency": "NSF/CIHR/DFG/FRQ/UKRI-MRC Next Generation Networks for Neuroscience Program",
+              "grantId": "DBI 2015317",
+              "orderIn": 0
+            },
+            {
+              "agency": "DFG",
+              "grantId": "500615768",
+              "orderIn": 0
+            }
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Extremities",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Animals"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Diptera"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Walking"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Sensilla",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Insecta",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "keywordList": {
+          "keyword": [
+            "Strain",
+            "Load",
+            "3D Printing",
+            "Strain Gauge",
+            "Campaniform Sensilla",
+            "Resin Printing"
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "doi",
+              "site": "Unpaywall",
+              "url": "https://doi.org/10.1088/1748-3190/ad1db9"
+            },
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1088/1748-3190/ad1db9"
+            }
+          ]
+        },
+        "isOpenAccess": "N",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "citedByCount": 2,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "N",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "Y",
+        "hasData": "Y",
+        "license": "cc by",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCompletion": "2024-02-08",
+        "dateOfCreation": "2024-01-11",
+        "dateOfRevision": "2025-08-12",
+        "electronicPublicationDate": "2024-02-07",
+        "firstPublicationDate": "2024-02-07",
+        "firstIndexDate": "2024-01-12",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "38166479",
+        "source": "MED",
+        "pmid": "38166479",
+        "pmcid": "PMC11286306",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC11286306"
+          ]
+        },
+        "doi": "10.1152/jn.00414.2023",
+        "title": "Mechanosensory encoding of forces in walking uphill and downhill: force feedback can stabilize leg movements in stick insects.",
+        "authorString": "Zill SN, Dallmann CJ, Zyhowski W, Chaudhry H, Gebehart C, Szczecinski NS.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Zill SN",
+              "lastName": "Zill",
+              "firstName": "Sasha N",
+              "initials": "SN",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-7472-8406"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Biomedical Sciences, Joan C. Edwards School of Medicine, Marshall University, Huntington, West Virginia, United States."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Dallmann CJ",
+              "lastName": "Dallmann",
+              "firstName": "Chris J",
+              "initials": "CJ",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-4944-920X"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurobiology and Genetics, Julius-Maximilians-Universität-Würzburg, Würzburg, Germany."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Zyhowski W",
+              "lastName": "Zyhowski",
+              "firstName": "William",
+              "initials": "W",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0006-5447-887X"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Mechanical and Aerospace Engineering, West Virginia University, Morgantown, West Virginia, United States."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Chaudhry H",
+              "lastName": "Chaudhry",
+              "firstName": "Hibba",
+              "initials": "H",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Biomedical Sciences, Joan C. Edwards School of Medicine, Marshall University, Huntington, West Virginia, United States."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Gebehart C",
+              "lastName": "Gebehart",
+              "firstName": "Corinna",
+              "initials": "C",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-4426-6225"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Champalimaud Foundation, Champalimaud Research, Lisbon, Portugal."
+                  },
+                  {
+                    "affiliation": "Department of Animal Physiology, Institute of Zoology, Biocenter Cologne, University of Cologne, Cologne, Germany."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Szczecinski NS",
+              "lastName": "Szczecinski",
+              "firstName": "Nicholas S",
+              "initials": "NS",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-6453-6475"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Mechanical and Aerospace Engineering, West Virginia University, Morgantown, West Virginia, United States."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-7472-8406"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-4944-920X"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-6453-6475"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-4426-6225"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0006-5447-887X"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "journalInfo": {
+          "issue": "2",
+          "volume": "131",
+          "journalIssueId": 3701871,
+          "dateOfPublication": "2024 Feb",
+          "monthOfPublication": 2,
+          "yearOfPublication": 2024,
+          "journal": {
+            "medlineAbbreviation": "J Neurophysiol",
+            "title": "Journal of neurophysiology",
+            "essn": "1522-1598",
+            "issn": "0022-3077",
+            "isoabbreviation": "J Neurophysiol",
+            "nlmid": "0375404"
+          },
+          "printPublicationDate": "2024-02-01"
+        },
+        "pubYear": "2024",
+        "pageInfo": "198-215",
+        "abstractText": "Force feedback could be valuable in adapting walking to diverse terrains, but the effects of changes in substrate inclination on discharges of sensory receptors that encode forces have rarely been examined. In insects, force feedback is provided by campaniform sensilla, mechanoreceptors that monitor forces as cuticular strains. We neurographically recorded responses of stick insect tibial campaniform sensilla to \"naturalistic\" forces (joint torques) that occur at the hind leg femur-tibia (FT) joint in uphill, downhill, and level walking. The FT joint torques, obtained in a previous study that used inverse dynamics to analyze data from freely moving stick insects, are quite variable during level walking (including changes in sign) but are larger in magnitude and more consistent when traversing sloped surfaces. Similar to vertebrates, insects used predominantly extension torque in propulsion on uphill slopes and flexion torques to brake forward motion when going downhill. Sensory discharges to joint torques reflected the torque direction but, unexpectedly, often occurred as multiple bursts that encoded the rate of change of positive forces (dF/d<i>t</i>) even when force levels were high. All discharges also showed hysteresis (history dependence), as firing substantially decreased or ceased during transient force decrements. These findings have been tested in simulation in a mathematical model of the sensilla (Szczecinski NS, Dallmann CJ, Quinn RD, Zill SN. <i>Bioinspir Biomim</i> 16: 065001, 2021) that accurately reproduced the biological data. Our results suggest the hypothesis that sensory feedback from the femoro-tibial joint indicating force dynamics (dF/d<i>t</i>) can be used to counter the instability in traversing sloped surfaces in animals and, potentially, in walking machines.<b>NEW & NOTEWORTHY</b> Discharges of sensory receptors (campaniform sensilla) in the hind legs of stick insects can differentially signal forces that occur in walking uphill versus walking downhill. Unexpectedly, sensory firing most closely reflects the rate of change of force (dF/d<i>t</i>) even when the force levels are high. These signals have been replicated in a mathematical model of the receptors and could be used to stabilize leg movements both in the animal and in a walking robot.",
+        "affiliation": "Department of Biomedical Sciences, Joan C. Edwards School of Medicine, Marshall University, Huntington, West Virginia, United States.",
+        "publicationStatus": "ppublish",
+        "language": "eng",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Research Support, U.S. Gov't, Non-P.H.S.",
+            "Journal Article"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "National Science Foundation",
+              "grantId": "2113028",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Science Foundation (NSF)",
+              "grantId": "2113028",
+              "orderIn": 0
+            }
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Extremities",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Leg"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Animals"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Walking"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Movement"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Feedback"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Biomechanical Phenomena"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Insecta",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "keywordList": {
+          "keyword": [
+            "Walking",
+            "Downhill",
+            "Uphill",
+            "Campaniform Sensilla",
+            "Force Encoding"
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1152/jn.00414.2023"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC11286306"
+            }
+          ]
+        },
+        "isOpenAccess": "Y",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "citedByCount": 4,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "N",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "Y",
+        "hasData": "N",
+        "license": "cc by",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCompletion": "2024-01-30",
+        "dateOfCreation": "2024-01-03",
+        "dateOfRevision": "2024-08-28",
+        "electronicPublicationDate": "2024-01-03",
+        "firstPublicationDate": "2024-01-03",
+        "firstIndexDate": "2024-01-03",
+        "fullTextReceivedDate": "2025-02-04",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "37279901",
+        "source": "MED",
+        "pmid": "37279901",
+        "pmcid": "PMC10445419",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC10445419"
+          ]
+        },
+        "doi": "10.1093/icb/icad057",
+        "title": "Mechanosensory Control of Locomotion in Animals and Robots: Moving Forward.",
+        "authorString": "Dallmann CJ, Dickerson BH, Simpson JH, Wyart C, Jayaram K.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Dallmann CJ",
+              "lastName": "Dallmann",
+              "firstName": "Chris J",
+              "initials": "CJ",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Physiology and Biophysics, University of Washington, Seattle, WA 98195, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Dickerson BH",
+              "lastName": "Dickerson",
+              "firstName": "Bradley H",
+              "initials": "BH",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-1185-3223"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Princeton Neuroscience Institute, Princeton University, Princeton, NJ 08544, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Simpson JH",
+              "lastName": "Simpson",
+              "firstName": "Julie H",
+              "initials": "JH",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-6793-7100"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Molecular, Cellular, and Developmental Biology and Neuroscience Research Institute, University of California Santa Barbara, Santa Barbara, CA 93106, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Wyart C",
+              "lastName": "Wyart",
+              "firstName": "Claire",
+              "initials": "C",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Institut du Cerveau et de la Moelle épinière (ICM), Sorbonne Université, Paris 75005, France."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Jayaram K",
+              "lastName": "Jayaram",
+              "firstName": "Kaushik",
+              "initials": "K",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-6958-7650"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Paul M Rady Department of Mechanical Engineering, University of Colorado Boulder, Boulder, CO 80309, USA."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-1185-3223"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-6793-7100"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-6958-7650"
+            }
+          ]
+        },
+        "journalInfo": {
+          "issue": "2",
+          "volume": "63",
+          "journalIssueId": 3618115,
+          "dateOfPublication": "2023 Aug",
+          "monthOfPublication": 8,
+          "yearOfPublication": 2023,
+          "journal": {
+            "medlineAbbreviation": "Integr Comp Biol",
+            "title": "Integrative and comparative biology",
+            "essn": "1557-7023",
+            "issn": "1540-7063",
+            "isoabbreviation": "Integr Comp Biol",
+            "nlmid": "101152341"
+          },
+          "printPublicationDate": "2023-08-01"
+        },
+        "pubYear": "2023",
+        "pageInfo": "450-463",
+        "abstractText": "While animals swim, crawl, walk, and fly with apparent ease, building robots capable of robust locomotion remains a significant challenge. In this review, we draw attention to mechanosensation-the sensing of mechanical forces generated within and outside the body-as a key sense that enables robust locomotion in animals. We discuss differences between mechanosensation in animals and current robots with respect to (1) the encoding properties and distribution of mechanosensors and (2) the integration and regulation of mechanosensory feedback. We argue that robotics would benefit greatly from a detailed understanding of these aspects in animals. To that end, we highlight promising experimental and engineering approaches to study mechanosensation, emphasizing the mutual benefits for biologists and engineers that emerge from moving forward together.",
+        "affiliation": "Department of Physiology and Biophysics, University of Washington, Seattle, WA 98195, USA.",
+        "publicationStatus": "ppublish",
+        "language": "eng",
+        "pubModel": "Print",
+        "pubTypeList": {
+          "pubType": [
+            "Research Support, Non-U.S. Gov't",
+            "research-article",
+            "Review",
+            "Research Support, U.S. Gov't, Non-P.H.S.",
+            "Journal Article",
+            "Research Support, N.I.H., Extramural"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "New York Stem Cell Foundation",
+              "grantId": "332",
+              "orderIn": 0
+            },
+            {
+              "agency": "NINDS NIH HHS",
+              "acronym": "NS",
+              "grantId": "U19 NS104653",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Institutes of Health",
+              "grantId": "R01-NS110866",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Science Foundation",
+              "grantId": "2221458",
+              "orderIn": 0
+            },
+            {
+              "agency": "European Union",
+              "grantId": "#813457",
+              "orderIn": 0
+            },
+            {
+              "agency": "NINDS NIH HHS",
+              "acronym": "NS",
+              "grantId": "R01 NS110866",
+              "orderIn": 0
+            },
+            {
+              "agency": "Fondation Bettencourt-Schueller",
+              "grantId": "FBS-don-0031",
+              "orderIn": 0
+            },
+            {
+              "agency": "New York Stem Cell Foundation",
+              "grantId": "NYSCF-R-NI39",
+              "orderIn": 0
+            },
+            {
+              "agency": "Meta Foundation",
+              "orderIn": 0
+            },
+            {
+              "agency": "European Research Council",
+              "acronym": "ERC_",
+              "grantId": "#101002870",
+              "orderIn": 0
+            },
+            {
+              "agency": "Army Research Office",
+              "grantId": "#W911NF-23-1-0039",
+              "orderIn": 0
+            },
+            {
+              "agency": "European Research Council",
+              "grantId": "101002870",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Institutes of Health",
+              "grantId": "1U19NS104653-01",
+              "orderIn": 0
+            },
+            {
+              "agency": "Fondation pour la Recherche Médicale",
+              "grantId": "FRM- EQU202003010612",
+              "orderIn": 0
+            }
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Animals"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Walking"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Locomotion",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Swimming"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Robotics",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "MT",
+                    "qualifierName": "methods"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1093/icb/icad057"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC10445419"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC10445419?pdf=render"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1093/icb/icad057"
+            }
+          ]
+        },
+        "isOpenAccess": "N",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "citedByCount": 11,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "Y",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "N",
+        "hasData": "N",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCompletion": "2023-08-24",
+        "dateOfCreation": "2023-06-06",
+        "dateOfRevision": "2024-10-07",
+        "firstPublicationDate": "2023-08-01",
+        "firstIndexDate": "2023-06-07",
+        "fullTextReceivedDate": "2025-02-05",
+        "embargoDate": "2024-06-05",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "40316553",
+        "source": "MED",
+        "pmid": "40316553",
+        "pmcid": "PMC12048489",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12048489"
+          ]
+        },
+        "doi": "10.1038/s41467-025-59302-3",
+        "title": "Divergent neural circuits for proprioceptive and exteroceptive sensing of the Drosophila leg.",
+        "authorString": "Lee SJ, Dallmann CJ, Cook A, Tuthill JC, Agrawal S.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Lee SJ",
+              "lastName": "Lee",
+              "firstName": "Su-Yee J",
+              "initials": "SJ",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurobiology and Biophysics, University of Washington, Seattle, WA, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Dallmann CJ",
+              "lastName": "Dallmann",
+              "firstName": "Chris J",
+              "initials": "CJ",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurobiology and Biophysics, University of Washington, Seattle, WA, USA."
+                  },
+                  {
+                    "affiliation": "Neurobiology and Genetics, Julius-Maximilians-University of Würzburg, Würzburg, Germany."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Cook A",
+              "lastName": "Cook",
+              "firstName": "Andrew",
+              "initials": "A",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-4349-2880"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurobiology and Biophysics, University of Washington, Seattle, WA, USA."
+                  },
+                  {
+                    "affiliation": "School of Neuroscience, Virginia Tech, Blacksburg, VA, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Tuthill JC",
+              "lastName": "Tuthill",
+              "firstName": "John C",
+              "initials": "JC",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-5689-5806"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurobiology and Biophysics, University of Washington, Seattle, WA, USA. tuthill@uw.edu."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Agrawal S",
+              "lastName": "Agrawal",
+              "firstName": "Sweta",
+              "initials": "S",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-0547-4099"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurobiology and Biophysics, University of Washington, Seattle, WA, USA. sweta@vt.edu."
+                  },
+                  {
+                    "affiliation": "School of Neuroscience, Virginia Tech, Blacksburg, VA, USA. sweta@vt.edu."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-4349-2880"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-5689-5806"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-0547-4099"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics",
+            "related_data"
+          ]
+        },
+        "journalInfo": {
+          "issue": "1",
+          "volume": "16",
+          "journalIssueId": 3934801,
+          "dateOfPublication": "2025 May",
+          "monthOfPublication": 5,
+          "yearOfPublication": 2025,
+          "journal": {
+            "medlineAbbreviation": "Nat Commun",
+            "title": "Nature communications",
+            "essn": "2041-1723",
+            "issn": "2041-1723",
+            "isoabbreviation": "Nat Commun",
+            "nlmid": "101528555"
+          },
+          "printPublicationDate": "2025-05-01"
+        },
+        "pubYear": "2025",
+        "pageInfo": "4105",
+        "abstractText": "Somatosensory neurons provide the nervous system with information about mechanical forces originating inside and outside the body. Here, we use connectomics from electron microscopy to reconstruct and analyze neural circuits downstream of the largest somatosensory organ in the Drosophila leg, the femoral chordotonal organ (FeCO). The FeCO has been proposed to support both proprioceptive sensing of the fly's femur-tibia joint and exteroceptive sensing of substrate vibrations, but it was unknown which sensory neurons and central circuits contribute to each of these functions. We found that different subtypes of FeCO sensory neurons feed into distinct proprioceptive and exteroceptive pathways. Position- and movement-encoding FeCO neurons connect to local leg motor control circuits in the ventral nerve cord (VNC), indicating a proprioceptive function. In contrast, signals from the vibration-encoding FeCO neurons are integrated across legs and transmitted to mechanosensory regions in the brain, indicating an exteroceptive function. Overall, our analyses reveal the structure of specialized circuits for processing proprioceptive and exteroceptive signals from the fly leg. These findings are consistent with a growing body of work in invertebrate and vertebrate species demonstrating the existence of specialized limb mechanosensory pathways for sensing external vibrations.",
+        "affiliation": "Department of Neurobiology and Biophysics, University of Washington, Seattle, WA, USA.",
+        "publicationStatus": "epublish",
+        "language": "eng",
+        "pubModel": "Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "Deutsche Forschungsgemeinschaft (German Research Foundation)",
+              "grantId": "432196121",
+              "orderIn": 0
+            },
+            {
+              "agency": "Deutsche Forschungsgemeinschaft",
+              "grantId": "432196121",
+              "orderIn": 0
+            },
+            {
+              "agency": "U.S. Department of Health & Human Services | NIH | National Institute of Neurological Disorders and Stroke (NINDS)",
+              "grantId": "R00NS117657",
+              "orderIn": 0
+            },
+            {
+              "agency": "NINDS NIH HHS",
+              "acronym": "NS",
+              "grantId": "U19 NS104655",
+              "orderIn": 0
+            },
+            {
+              "agency": "U.S. Department of Health &amp; Human Services | NIH | National Institute of Neurological Disorders and Stroke",
+              "grantId": "R00NS117657",
+              "orderIn": 0
+            },
+            {
+              "agency": "New York Stem Cell Foundation",
+              "orderIn": 0
+            },
+            {
+              "agency": "NINDS NIH HHS",
+              "acronym": "NS",
+              "grantId": "T32 NS099578",
+              "orderIn": 0
+            },
+            {
+              "agency": "NINDS NIH HHS",
+              "acronym": "NS",
+              "grantId": "K99 NS117657",
+              "orderIn": 0
+            },
+            {
+              "agency": "NINDS NIH HHS",
+              "acronym": "NS",
+              "grantId": "R01 NS128785",
+              "orderIn": 0
+            },
+            {
+              "agency": "U.S. Department of Health & Human Services | NIH | National Institute of Neurological Disorders and Stroke (NINDS)",
+              "grantId": "R01NS102333",
+              "orderIn": 0
+            },
+            {
+              "agency": "U.S. Department of Health & Human Services | NIH | National Institute of Neurological Disorders and Stroke (NINDS)",
+              "grantId": "T32 NS 99578-3",
+              "orderIn": 0
+            },
+            {
+              "agency": "U.S. Department of Health & Human Services | NIH | National Institute of Neurological Disorders and Stroke (NINDS)",
+              "grantId": "K99NS117657",
+              "orderIn": 0
+            },
+            {
+              "agency": "U.S. Department of Health &amp; Human Services | NIH | National Institute of Neurological Disorders and Stroke",
+              "grantId": "R01NS102333",
+              "orderIn": 0
+            },
+            {
+              "agency": "NINDS NIH HHS",
+              "acronym": "NS",
+              "grantId": "R25 NS117367",
+              "orderIn": 0
+            },
+            {
+              "agency": "U.S. Department of Health &amp; Human Services | NIH | National Institute of Neurological Disorders and Stroke",
+              "grantId": "T32 NS 99578-3",
+              "orderIn": 0
+            },
+            {
+              "agency": "U.S. Department of Health &amp; Human Services | NIH | National Institute of Neurological Disorders and Stroke",
+              "grantId": "U19NS104655",
+              "orderIn": 0
+            },
+            {
+              "agency": "U.S. Department of Health &amp; Human Services | NIH | National Institute of Neurological Disorders and Stroke",
+              "grantId": "K99NS117657",
+              "orderIn": 0
+            },
+            {
+              "agency": "NINDS NIH HHS",
+              "acronym": "NS",
+              "grantId": "R00 NS117657",
+              "orderIn": 0
+            },
+            {
+              "agency": "NINDS NIH HHS",
+              "acronym": "NS",
+              "grantId": "R01 NS102333",
+              "orderIn": 0
+            },
+            {
+              "agency": "NINDS NIH HHS",
+              "acronym": "NS",
+              "grantId": "RF1 NS128785",
+              "orderIn": 0
+            },
+            {
+              "agency": "U.S. Department of Health & Human Services | NIH | National Institute of Neurological Disorders and Stroke (NINDS)",
+              "grantId": "U19NS104655",
+              "orderIn": 0
+            }
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Extremities",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "IR",
+                    "qualifierName": "innervation"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Neural Pathways",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Animals"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Drosophila melanogaster",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Proprioception",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Vibration"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Female"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Sensory Receptor Cells",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Connectome"
+            }
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1038/s41467-025-59302-3"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12048489"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12048489?pdf=render"
+            }
+          ]
+        },
+        "commentCorrectionList": {
+          "commentCorrection": [
+            {
+              "source": "MED",
+              "id": "38712128",
+              "reference": "bioRxiv. 2024 Dec 07:2024.04.23.590808. doi: 10.1101/2024.04.23.590808.",
+              "type": "Update of",
+              "orderIn": 1
+            }
+          ]
+        },
+        "isOpenAccess": "Y",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "citedByCount": 23,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "Y",
+        "hasBook": "N",
+        "hasSuppl": "Y",
+        "hasLabsLinks": "Y",
+        "hasData": "Y",
+        "license": "cc by",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCompletion": "2025-05-03",
+        "dateOfCreation": "2025-05-02",
+        "dateOfRevision": "2026-09-25",
+        "electronicPublicationDate": "2025-05-02",
+        "firstPublicationDate": "2025-05-02",
+        "firstIndexDate": "2025-05-03",
+        "fullTextReceivedDate": "2025-11-27",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "40198854",
+        "source": "MED",
+        "pmid": "40198854",
+        "pmcid": "PMC13056230",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13056230"
+          ]
+        },
+        "doi": "10.1146/annurev-neuro-112723-042229",
+        "title": "Sensory Feedback and the Dynamic Control of Movement.",
+        "authorString": "Goulding M, Bollu T, Büschges A.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Goulding M",
+              "lastName": "Goulding",
+              "firstName": "Martyn",
+              "initials": "M",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Molecular Neurobiology Laboratory, The Salk Institute for Biological Studies, La Jolla, California, USA; email: goulding@salk.edu."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Bollu T",
+              "lastName": "Bollu",
+              "firstName": "Tejapratap",
+              "initials": "T",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-4945-3962"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Molecular Neurobiology Laboratory, The Salk Institute for Biological Studies, La Jolla, California, USA; email: goulding@salk.edu."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Büschges A",
+              "lastName": "Büschges",
+              "firstName": "Ansgar",
+              "initials": "A",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Institute of Zoology, University of Cologne, Cologne, Germany."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-4945-3962"
+            }
+          ]
+        },
+        "journalInfo": {
+          "issue": "1",
+          "volume": "48",
+          "journalIssueId": 3978851,
+          "dateOfPublication": "2025 Jul",
+          "monthOfPublication": 7,
+          "yearOfPublication": 2025,
+          "journal": {
+            "medlineAbbreviation": "Annu Rev Neurosci",
+            "title": "Annual review of neuroscience",
+            "essn": "1545-4126",
+            "issn": "0147-006X",
+            "isoabbreviation": "Annu Rev Neurosci",
+            "nlmid": "7804039"
+          },
+          "printPublicationDate": "2025-07-01"
+        },
+        "pubYear": "2025",
+        "pageInfo": "405-423",
+        "abstractText": "Motor systems in animals are highly dependent on sensory information for optimal control and precision, with mechanosensory feedback from the somatosensory system playing a critical role. These mechanosensory pathways are woven into the descending feedforward pathways and local central pattern generator circuits that control and generate movement, respectively. Somatosensory feedback in mammals and insects, the two animal classes this review touches upon, is complex due to the increased demands that limbed locomotion, weight-bearing, and corrective movements place on sensorimotor control. In this review, we outline the salient features of the proprioceptive and exteroceptive sensory feedback pathways animals rely on for controlling movement and highlight some of the key principles of sensory feedback that are shared across the animal kingdom.",
+        "affiliation": "Molecular Neurobiology Laboratory, The Salk Institute for Biological Studies, La Jolla, California, USA; email: goulding@salk.edu.",
+        "publicationStatus": "ppublish",
+        "language": "eng",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Research Support, Non-U.S. Gov't",
+            "research-article",
+            "Review",
+            "Journal Article",
+            "Research Support, N.I.H., Extramural"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "NINDS NIH HHS",
+              "acronym": "NS",
+              "grantId": "R35 NS111643",
+              "orderIn": 0
+            }
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Animals"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Humans"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Proprioception",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Movement",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Feedback, Sensory",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "keywordList": {
+          "keyword": [
+            "Spinal cord",
+            "Proprioception",
+            "Inhibition",
+            "Motor control",
+            "Ventral Nerve Cord",
+            "Somatosensory Feedback"
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1146/annurev-neuro-112723-042229"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13056230"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13056230?pdf=render"
+            }
+          ]
+        },
+        "isOpenAccess": "Y",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "citedByCount": 22,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "Y",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "N",
+        "hasData": "N",
+        "license": "cc by",
+        "authMan": "Y",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "Y",
+        "manuscriptId": "NIHMS2158019",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCompletion": "2025-07-16",
+        "dateOfCreation": "2025-04-08",
+        "dateOfRevision": "2026-08-13",
+        "electronicPublicationDate": "2025-04-08",
+        "firstPublicationDate": "2025-04-08",
+        "firstIndexDate": "2025-04-09",
+        "fullTextReceivedDate": "2026-04-08",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "39240573",
+        "source": "MED",
+        "pmid": "39240573",
+        "pmcid": "PMC11457947",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC11457947"
+          ]
+        },
+        "doi": "10.1093/genetics/iyae129",
+        "title": "An anatomical atlas of Drosophila melanogaster-the wild-type.",
+        "authorString": "Jürgens KJ, Drechsler M, Paululat A.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Jürgens KJ",
+              "lastName": "Jürgens",
+              "firstName": "Kai J",
+              "initials": "KJ",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0001-0491-8877"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Zoology and Developmental Biology, Osnabrück University, Osnabrück 49076, Germany."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Drechsler M",
+              "lastName": "Drechsler",
+              "firstName": "Maik",
+              "initials": "M",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-7484-6365"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Zoology and Developmental Biology, Osnabrück University, Osnabrück 49076, Germany."
+                  },
+                  {
+                    "affiliation": "Center of Cellular Nanoanalytics (CellNanOS), Osnabrück University, Osnabrück 49076, Germany."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Paululat A",
+              "lastName": "Paululat",
+              "firstName": "Achim",
+              "initials": "A",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-8845-6859"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Zoology and Developmental Biology, Osnabrück University, Osnabrück 49076, Germany."
+                  },
+                  {
+                    "affiliation": "Center of Cellular Nanoanalytics (CellNanOS), Osnabrück University, Osnabrück 49076, Germany."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-7484-6365"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-8845-6859"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0001-0491-8877"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "related_data"
+          ]
+        },
+        "journalInfo": {
+          "issue": "2",
+          "volume": "228",
+          "journalIssueId": 3837819,
+          "dateOfPublication": "2024 Oct",
+          "monthOfPublication": 10,
+          "yearOfPublication": 2024,
+          "journal": {
+            "medlineAbbreviation": "Genetics",
+            "title": "Genetics",
+            "essn": "1943-2631",
+            "issn": "0016-6731",
+            "isoabbreviation": "Genetics",
+            "nlmid": "0374636"
+          },
+          "printPublicationDate": "2024-10-01"
+        },
+        "pubYear": "2024",
+        "pageInfo": "iyae129",
+        "abstractText": "Scanning electron microscopy is the method of choice to visualize the surface structures of animals, fungi, plants, or inorganic objects at the highest resolution and often with impressive appeal. Numerous scanning electron microscope (SEM) images exist of Drosophila melanogaster, one of the most important model organisms in genetics and developmental biology, which have been taken partly for esthetics and often to solve scientific questions. Our work presents a collection of images comprising many prominent anatomical details of D. melanogaster in excellent quality to create a research and teaching resource for all Drosophilists.",
+        "affiliation": "Department of Zoology and Developmental Biology, Osnabrück University, Osnabrück 49076, Germany.",
+        "publicationStatus": "ppublish",
+        "language": "eng",
+        "pubModel": "Print",
+        "pubTypeList": {
+          "pubType": [
+            "Research Support, Non-U.S. Gov't",
+            "review-article",
+            "Journal Article"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "Deutsche Forschungsgemeinschaft",
+              "grantId": "13-2",
+              "orderIn": 0
+            },
+            {
+              "agency": "Deutsche Forschungsgemeinschaft",
+              "grantId": "1557",
+              "orderIn": 0
+            },
+            {
+              "agency": "Deutsche Forschungsgemeinschaft",
+              "grantId": "16-1",
+              "orderIn": 0
+            },
+            {
+              "agency": "Osnabrück University",
+              "orderIn": 0
+            },
+            {
+              "agency": "Deutsche Forschungsgemeinschaft",
+              "grantId": "517/12-2",
+              "orderIn": 0
+            },
+            {
+              "agency": "Deutsche Forschungsgemeinschaft",
+              "grantId": "944",
+              "orderIn": 0
+            },
+            {
+              "agency": "Open Access Publishing Fund",
+              "orderIn": 0
+            }
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Animals"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Drosophila melanogaster",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "GE",
+                    "qualifierName": "genetics"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Microscopy, Electron, Scanning"
+            }
+          ]
+        },
+        "keywordList": {
+          "keyword": [
+            "Morphology",
+            "Anatomy",
+            "Scanning electron microscopy",
+            "Flybook",
+            "External Markers"
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1093/genetics/iyae129"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC11457947"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC11457947?pdf=render"
+            }
+          ]
+        },
+        "isOpenAccess": "Y",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "citedByCount": 14,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "Y",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "Y",
+        "hasData": "Y",
+        "license": "cc by",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCompletion": "2024-10-07",
+        "dateOfCreation": "2024-09-06",
+        "dateOfRevision": "2026-09-23",
+        "firstPublicationDate": "2024-10-01",
+        "firstIndexDate": "2024-09-06",
+        "fullTextReceivedDate": "2025-02-05",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "36776993",
+        "source": "MED",
+        "pmid": "36776993",
+        "pmcid": "PMC9908954",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC9908954"
+          ]
+        },
+        "doi": "10.3389/fnbot.2023.1125171",
+        "title": "Adaptive load feedback robustly signals force dynamics in robotic model of <i>Carausius morosus</i> stepping.",
+        "authorString": "Zyhowski WP, Zill SN, Szczecinski NS.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Zyhowski WP",
+              "lastName": "Zyhowski",
+              "firstName": "William P",
+              "initials": "WP",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Mechanical and Aerospace Engineering, West Virginia University, Morgantown, WV, United States."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Zill SN",
+              "lastName": "Zill",
+              "firstName": "Sasha N",
+              "initials": "SN",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Biomedical Sciences, Marshall University, Huntington, WV, United States."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Szczecinski NS",
+              "lastName": "Szczecinski",
+              "firstName": "Nicholas S",
+              "initials": "NS",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-6453-6475"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Mechanical and Aerospace Engineering, West Virginia University, Morgantown, WV, United States."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-6453-6475"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "journalInfo": {
+          "volume": "17",
+          "journalIssueId": 3500596,
+          "dateOfPublication": "2023 ",
+          "monthOfPublication": 0,
+          "yearOfPublication": 2023,
+          "journal": {
+            "medlineAbbreviation": "Front Neurorobot",
+            "title": "Frontiers in neurorobotics",
+            "essn": "1662-5218",
+            "issn": "1662-5218",
+            "isoabbreviation": "Front Neurorobot",
+            "nlmid": "101477958"
+          },
+          "printPublicationDate": "2023-01-01"
+        },
+        "pubYear": "2023",
+        "pageInfo": "1125171",
+        "abstractText": "Animals utilize a number of neuronal systems to produce locomotion. One type of sensory organ that contributes in insects is the campaniform sensillum (CS) that measures the load on their legs. Groups of the receptors are found on high stress regions of the leg exoskeleton and they have significant effects in adapting walking behavior. Recording from these sensors in freely moving animals is limited by technical constraints. To better understand the load feedback signaled by CS to the nervous system, we have constructed a dynamically scaled robotic model of the <i>Carausius morosus</i> stick insect middle leg. The leg steps on a treadmill and supports weight during stance to simulate body weight. Strain gauges were mounted in the same positions and orientations as four key CS groups (Groups 3, 4, 6B, and 6A). Continuous data from the strain gauges were processed through a previously published dynamic computational model of CS discharge. Our experiments suggest that under different stepping conditions (e.g., changing \"body\" weight, phasic load stimuli, slipping foot), the CS sensory discharge robustly signals increases in force, such as at the beginning of stance, and decreases in force, such as at the end of stance or when the foot slips. Such signals would be crucial for an insect or robot to maintain intra- and inter-leg coordination while walking over extreme terrain.",
+        "affiliation": "Department of Mechanical and Aerospace Engineering, West Virginia University, Morgantown, WV, United States.",
+        "publicationStatus": "epublish",
+        "language": "eng",
+        "pubModel": "Electronic-eCollection",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "keywordList": {
+          "keyword": [
+            "Insects",
+            "Robotics",
+            "Legged Locomotion",
+            "Strain Gauges",
+            "Dynamic Scaling",
+            "Campaniform Sensilla"
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Unpaywall",
+              "url": "https://www.frontiersin.org/articles/10.3389/fnbot.2023.1125171/pdf"
+            },
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.3389/fnbot.2023.1125171"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC9908954"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC9908954?pdf=render"
+            }
+          ]
+        },
+        "isOpenAccess": "Y",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "citedByCount": 5,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "Y",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "Y",
+        "hasData": "N",
+        "license": "cc by",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCreation": "2023-02-13",
+        "dateOfRevision": "2023-02-14",
+        "electronicPublicationDate": "2023-01-26",
+        "firstPublicationDate": "2023-01-26",
+        "firstIndexDate": "2023-02-14",
+        "fullTextReceivedDate": "2025-02-04",
+        "hasEvaluations": "N"
+      }
+    ]
+  }
+}

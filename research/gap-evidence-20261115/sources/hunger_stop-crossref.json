@@ -1,0 +1,141 @@
+{
+  "status": "ok",
+  "message-type": "work-list",
+  "message-version": "1.0.0",
+  "message": {
+    "facets": {},
+    "total-results": 448541,
+    "items": [
+      {
+        "DOI": "10.18632/aging.101335",
+        "title": [
+          "Sexually dimorphic effects of dietary sugar on lifespan, feeding and starvation resistance in Drosophila"
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2017,
+              12,
+              4
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.18632/aging.101335",
+        "type": "journal-article"
+      },
+      {
+        "DOI": "10.64898/2026.01.29.702574",
+        "title": [
+          "Insulin receptor signaling in gustatory cells suppresses sugar taste sensitivity and feeding in\n                  <i>Drosophila</i>"
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2026,
+              2,
+              2
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.64898/2026.01.29.702574",
+        "type": "posted-content"
+      },
+      {
+        "DOI": "10.1101/2024.09.10.611925",
+        "title": [
+          "Rapamycin alters the feeding preference for amino acids and sugar in female\n                  <i>Drosophila</i>"
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2024,
+              9,
+              12
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1101/2024.09.10.611925",
+        "type": "posted-content"
+      },
+      {
+        "DOI": "10.1534/genetics.167.1.311",
+        "title": [
+          "Hemolymph Sugar Homeostasis and Starvation-Induced Hyperactivity Affected by Genetic Manipulations of the Adipokinetic Hormone-Encoding Gene in Drosophila melanogaster"
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2004,
+              5,
+              1
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1534/genetics.167.1.311",
+        "type": "journal-article"
+      },
+      {
+        "DOI": "10.4238/gmr.15017489",
+        "title": [
+          "Manipulation of components that control feeding behavior in Drosophila melanogaster increases sensitivity to amino acid starvation"
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2016
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.4238/gmr.15017489",
+        "type": "journal-article"
+      },
+      {
+        "DOI": "10.1258/002367700780384735",
+        "title": [
+          "Feeding sugar overnight maintains metabolic homeostasis in rats and is preferable to overnight starvation"
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2000,
+              7,
+              1
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1258/002367700780384735",
+        "type": "journal-article"
+      },
+      {
+        "DOI": "10.1101/2020.09.24.311159",
+        "title": [
+          "Influences of male age, mating history and starvation on female post mating aggression and feeding in\n                  <i>Drosophila</i>"
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2020,
+              9,
+              25
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1101/2020.09.24.311159",
+        "type": "posted-content"
+      },
+      {
+        "DOI": "10.1007/springerreference_89608",
+        "title": [
+          "Sugar-Feeding in Blood-Feeding Flies"
+        ],
+        "URL": "https://doi.org/10.1007/springerreference_89608",
+        "type": "reference-entry"
+      }
+    ],
+    "items-per-page": 8,
+    "query": {
+      "start-index": 0,
+      "search-terms": "Drosophila starvation sugar feeding walking stopping"
+    }
+  }
+}

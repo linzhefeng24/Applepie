@@ -1,0 +1,134 @@
+{
+  "status": "ok",
+  "message-type": "work-list",
+  "message-version": "1.0.0",
+  "message": {
+    "facets": {},
+    "total-results": 1428431,
+    "items": [
+      {
+        "DOI": "10.36934/t2020-201",
+        "title": [
+          "Effect of arousal on the optomotor performance and walking speed of Drosophila"
+        ],
+        "URL": "https://doi.org/10.36934/t2020-201",
+        "type": "dissertation"
+      },
+      {
+        "DOI": "10.7554/elife.102230.3.sa2",
+        "title": [
+          "Reviewer #2 (Public review): Neural circuit mechanisms for steering control in walking Drosophila"
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2025,
+              7,
+              21
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.7554/elife.102230.3.sa2",
+        "type": "peer-review"
+      },
+      {
+        "DOI": "10.7554/elife.102230.1.sa2",
+        "title": [
+          "Reviewer #2 (Public review): Neural circuit mechanisms for steering control in walking Drosophila"
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2024,
+              11,
+              27
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.7554/elife.102230.1.sa2",
+        "type": "peer-review"
+      },
+      {
+        "DOI": "10.7554/elife.102230.2.sa2",
+        "title": [
+          "Reviewer #2 (Public review): Neural circuit mechanisms for steering control in walking Drosophila"
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2025,
+              5,
+              2
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.7554/elife.102230.2.sa2",
+        "type": "peer-review"
+      },
+      {
+        "DOI": "10.7554/elife.102230.3.sa0",
+        "title": [
+          "eLife Assessment: Neural circuit mechanisms for steering control in walking Drosophila"
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2025,
+              7,
+              21
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.7554/elife.102230.3.sa0",
+        "type": "peer-review"
+      },
+      {
+        "DOI": "10.7554/elife.102230.2.sa3",
+        "title": [
+          "Reviewer #1 (Public review): Neural circuit mechanisms for steering control in walking Drosophila"
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2025,
+              5,
+              2
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.7554/elife.102230.2.sa3",
+        "type": "peer-review"
+      },
+      {
+        "DOI": "10.36934/t2020-092",
+        "title": [
+          "Effect of arousal on the optomotor performance and walking speed of Drosophila"
+        ],
+        "URL": "https://doi.org/10.36934/t2020-092",
+        "type": "dissertation"
+      },
+      {
+        "DOI": "10.7554/elife.102230.3.sa1",
+        "title": [
+          "Reviewer #1 (Public review): Neural circuit mechanisms for steering control in walking Drosophila"
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2025,
+              7,
+              21
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.7554/elife.102230.3.sa1",
+        "type": "peer-review"
+      }
+    ],
+    "items-per-page": 8,
+    "query": {
+      "start-index": 0,
+      "search-terms": "Drosophila DNg13 phase walking"
+    }
+  }
+}

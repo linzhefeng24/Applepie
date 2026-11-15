@@ -1,0 +1,148 @@
+{
+  "status": "ok",
+  "message-type": "work-list",
+  "message-version": "1.0.0",
+  "message": {
+    "facets": {},
+    "total-results": 185320,
+    "items": [
+      {
+        "DOI": "10.1097/bsd.0000000000001169",
+        "title": [
+          "Proximal Fixation in Adolescent Scoliosis Lenke 1 and 3 Treated by Posteromedial Translation Using Sublaminar Bands"
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2021,
+              3,
+              24
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1097/bsd.0000000000001169",
+        "type": "journal-article"
+      },
+      {
+        "DOI": "10.2307/2484165",
+        "title": [
+          "Carex kobomugi Ohwi at Sandy Hook, New Jersey"
+        ],
+        "published": {
+          "date-parts": [
+            [
+              1980,
+              7
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.2307/2484165",
+        "type": "journal-article"
+      },
+      {
+        "DOI": "10.2307/2475855",
+        "title": [
+          "Re-Discovery of Nymphaea elegans, Hook., at a New Station"
+        ],
+        "published": {
+          "date-parts": [
+            [
+              1888,
+              1,
+              5
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.2307/2475855",
+        "type": "journal-article"
+      },
+      {
+        "DOI": "10.2307/2480633",
+        "title": [
+          "The Origin and Development of the Vegetation of Sandy Hook"
+        ],
+        "published": {
+          "date-parts": [
+            [
+              1930,
+              3
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.2307/2480633",
+        "type": "journal-article"
+      },
+      {
+        "DOI": "10.2307/2482935",
+        "title": [
+          "Anatomy and Ecology of Pieris phillyreifolia (Hook.) DC."
+        ],
+        "published": {
+          "date-parts": [
+            [
+              1962,
+              9
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.2307/2482935",
+        "type": "journal-article"
+      },
+      {
+        "DOI": "10.2307/jj.8085211.12",
+        "title": [
+          "“LINE MAKES LIGHT!”"
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2023,
+              10,
+              1
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.2307/jj.8085211.12",
+        "type": "book-chapter"
+      },
+      {
+        "DOI": "10.2307/2484551",
+        "title": [
+          "Longevity of Phloem in Polyalthia longifolia Benth. &amp; Hook."
+        ],
+        "published": {
+          "date-parts": [
+            [
+              1979,
+              7
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.2307/2484551",
+        "type": "journal-article"
+      },
+      {
+        "DOI": "10.2307/jj.8085211.18",
+        "title": [
+          "APPENDIX 2"
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2023,
+              10,
+              1
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.2307/jj.8085211.18",
+        "type": "book-chapter"
+      }
+    ],
+    "items-per-page": 8,
+    "query": {
+      "start-index": 0,
+      "search-terms": "Drosophila 13Bb 10Ba club claw hook"
+    }
+  }
+}

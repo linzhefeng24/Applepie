@@ -1,0 +1,1710 @@
+{
+  "meta": {
+    "notice": "No API key, so this request shares one free daily budget ($0.10) with everyone on your network's IP address. Get a free key with its own $1/day at https://openalex.org/settings/api and add api_key=YOUR_KEY to your requests. An AI agent can get one for its user in one call: POST https://api.openalex.org/api-keys with {\"email\": \"<your user's email>\"}; we email them a link, and the key works once they click it. Docs for agents: https://help.openalex.org/llms.txt",
+    "count": 1,
+    "db_response_time_ms": 29,
+    "page": 1,
+    "per_page": 8,
+    "groups_count": null,
+    "x_query": {
+      "oql": "get works with (Drosophila LUL130 LUL152 MF14) in the title, abstract, or full text",
+      "x_new_oql": "get works with (Drosophila LUL130 LUL152 MF14) in the title, abstract, or full text",
+      "oqo": {
+        "get_rows": "works",
+        "filter_rows": [
+          {
+            "column_id": "fulltext.search",
+            "value": "Drosophila LUL130 LUL152 MF14",
+            "operator": "has"
+          }
+        ]
+      },
+      "url": "/works?filter=fulltext.search:Drosophila LUL130 LUL152 MF14&per_page=8",
+      "order": "best matches first",
+      "order_default": true
+    },
+    "cost_usd": 0.001
+  },
+  "results": [
+    {
+      "id": "https://openalex.org/W3108286875",
+      "doi": "https://doi.org/10.1038/s41467-020-19936-x",
+      "title": "Distributed control of motor circuits for backward walking in Drosophila",
+      "display_name": "Distributed control of motor circuits for backward walking in Drosophila",
+      "relevance_score": 49.08336,
+      "publication_year": 2020,
+      "publication_date": "2020-12-02",
+      "ids": {
+        "openalex": "https://openalex.org/W3108286875",
+        "doi": "https://doi.org/10.1038/s41467-020-19936-x",
+        "mag": "3108286875",
+        "pmid": "https://pubmed.ncbi.nlm.nih.gov/33268800",
+        "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/7710706"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.1038/s41467-020-19936-x",
+        "doi": "https://doi.org/10.1038/s41467-020-19936-x",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1038/s41467-020-19936-x",
+        "pdf_url": "https://www.nature.com/articles/s41467-020-19936-x.pdf",
+        "source": {
+          "id": "https://openalex.org/S64187185",
+          "display_name": "Nature Communications",
+          "issn_l": "2041-1723",
+          "issn": [
+            "2041-1723"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "listed_in": [
+            "anvur-class-a",
+            "anvur-scientific",
+            "cwts-core",
+            "doaj",
+            "dongbi-a",
+            "doyens",
+            "jufo-3",
+            "ki-jl-3",
+            "medline",
+            "norway-2",
+            "oarl",
+            "poland-200",
+            "russia-white-list-1",
+            "vabb-shw"
+          ],
+          "host_organization": "https://openalex.org/P4310319908",
+          "host_organization_name": "Nature Portfolio",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319908",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "Nature Portfolio",
+            "Springer Nature"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Nature Communications",
+        "raw_type": "journal-article"
+      },
+      "parent_works": [],
+      "lineage": [
+        "https://openalex.org/W3108286875"
+      ],
+      "child_works_count": 0,
+      "type": "article",
+      "is_traditional": true,
+      "indexed_in": [
+        "crossref",
+        "doaj",
+        "pubmed"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://www.nature.com/articles/s41467-020-19936-x.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5037593440",
+            "display_name": "Kai Feng",
+            "orcid": "https://orcid.org/0000-0002-5506-6889",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-5506-6889"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I165143802",
+              "display_name": "The University of Queensland",
+              "ror": "https://ror.org/00rqy9422",
+              "country_code": "AU",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I165143802"
+              ]
+            }
+          ],
+          "countries": [
+            "AU"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "Kai Feng",
+          "raw_affiliation_strings": [
+            "Queensland Brain Institute, University of Queensland, St Lucia, QLD, 4072, Australia. k.feng@uq.edu.au",
+            "Queensland Brain Institute, University of Queensland, St Lucia, QLD, 4072, Australia"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-5506-6889",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Queensland Brain Institute, University of Queensland, St Lucia, QLD, 4072, Australia. k.feng@uq.edu.au",
+              "institution_ids": [
+                "https://openalex.org/I165143802"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Queensland Brain Institute, University of Queensland, St Lucia, QLD, 4072, Australia",
+              "institution_ids": [
+                "https://openalex.org/I165143802"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5064564269",
+            "display_name": "Rajyashree Sen",
+            "orcid": "https://orcid.org/0000-0002-0117-6660",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-0117-6660"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I1344073410",
+              "display_name": "Howard Hughes Medical Institute",
+              "ror": "https://ror.org/006w34k90",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1344073410"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I195573530",
+              "display_name": "Janelia Research Campus",
+              "ror": "https://ror.org/013sk6x84",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1344073410",
+                "https://openalex.org/I195573530"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4405270606",
+              "display_name": "Mortimer B. Zuckerman Mind Brain Behavior Institute",
+              "ror": "https://ror.org/0110mmp98",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4405270606"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I78577930",
+              "display_name": "Columbia University",
+              "ror": "https://ror.org/00hj8s172",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I78577930"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Rajyashree Sen",
+          "raw_affiliation_strings": [
+            "Janelia Research Campus, Howard Hughes Medical Institute, 19700 Helix Drive, Ashburn, VA, 20147, USA",
+            "The Mortimer B. Zuckerman Mind Brain Behavior Institute, Department of Neuroscience, Columbia University, New York, NY, 10027, USA"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-0117-6660",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Janelia Research Campus, Howard Hughes Medical Institute, 19700 Helix Drive, Ashburn, VA, 20147, USA",
+              "institution_ids": [
+                "https://openalex.org/I1344073410",
+                "https://openalex.org/I195573530"
+              ]
+            },
+            {
+              "raw_affiliation_string": "The Mortimer B. Zuckerman Mind Brain Behavior Institute, Department of Neuroscience, Columbia University, New York, NY, 10027, USA",
+              "institution_ids": [
+                "https://openalex.org/I4405270606",
+                "https://openalex.org/I78577930"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5069413553",
+            "display_name": "Ryo Minegishi",
+            "orcid": "https://orcid.org/0000-0002-2895-9438",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-2895-9438"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I1344073410",
+              "display_name": "Howard Hughes Medical Institute",
+              "ror": "https://ror.org/006w34k90",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1344073410"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I195573530",
+              "display_name": "Janelia Research Campus",
+              "ror": "https://ror.org/013sk6x84",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1344073410",
+                "https://openalex.org/I195573530"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Ryo Minegishi",
+          "raw_affiliation_strings": [
+            "Janelia Research Campus, Howard Hughes Medical Institute, 19700 Helix Drive, Ashburn, VA, 20147, USA"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-2895-9438",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Janelia Research Campus, Howard Hughes Medical Institute, 19700 Helix Drive, Ashburn, VA, 20147, USA",
+              "institution_ids": [
+                "https://openalex.org/I1344073410",
+                "https://openalex.org/I195573530"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5017877070",
+            "display_name": "Michael Dübbert",
+            "orcid": "https://orcid.org/0000-0003-2193-9909",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-2193-9909"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I180923762",
+              "display_name": "University of Cologne",
+              "ror": "https://ror.org/00rcxh774",
+              "country_code": "DE",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I180923762"
+              ]
+            }
+          ],
+          "countries": [
+            "DE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Michael Dübbert",
+          "raw_affiliation_strings": [
+            "Institute for Zoology, Biocenter Cologne, University of Cologne, D-50674, Cologne, Germany"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0003-2193-9909",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Institute for Zoology, Biocenter Cologne, University of Cologne, D-50674, Cologne, Germany",
+              "institution_ids": [
+                "https://openalex.org/I180923762"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5057692054",
+            "display_name": "Till Bockemühl",
+            "orcid": "https://orcid.org/0000-0002-6213-8107",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-6213-8107"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I180923762",
+              "display_name": "University of Cologne",
+              "ror": "https://ror.org/00rcxh774",
+              "country_code": "DE",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I180923762"
+              ]
+            }
+          ],
+          "countries": [
+            "DE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Till Bockemühl",
+          "raw_affiliation_strings": [
+            "Institute for Zoology, Biocenter Cologne, University of Cologne, D-50674, Cologne, Germany"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-6213-8107",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Institute for Zoology, Biocenter Cologne, University of Cologne, D-50674, Cologne, Germany",
+              "institution_ids": [
+                "https://openalex.org/I180923762"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5050318328",
+            "display_name": "Ansgar Büschges",
+            "orcid": "https://orcid.org/0000-0003-2123-1900",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-2123-1900"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I180923762",
+              "display_name": "University of Cologne",
+              "ror": "https://ror.org/00rcxh774",
+              "country_code": "DE",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I180923762"
+              ]
+            }
+          ],
+          "countries": [
+            "DE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Ansgar Büschges",
+          "raw_affiliation_strings": [
+            "Institute for Zoology, Biocenter Cologne, University of Cologne, D-50674, Cologne, Germany"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0003-2123-1900",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Institute for Zoology, Biocenter Cologne, University of Cologne, D-50674, Cologne, Germany",
+              "institution_ids": [
+                "https://openalex.org/I180923762"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5039360877",
+            "display_name": "Barry J. Dickson",
+            "orcid": "https://orcid.org/0000-0003-0715-892X",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-0715-892X"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I1344073410",
+              "display_name": "Howard Hughes Medical Institute",
+              "ror": "https://ror.org/006w34k90",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1344073410"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I165143802",
+              "display_name": "The University of Queensland",
+              "ror": "https://ror.org/00rqy9422",
+              "country_code": "AU",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I165143802"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I195573530",
+              "display_name": "Janelia Research Campus",
+              "ror": "https://ror.org/013sk6x84",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1344073410",
+                "https://openalex.org/I195573530"
+              ]
+            }
+          ],
+          "countries": [
+            "AU",
+            "US"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "Barry J. Dickson",
+          "raw_affiliation_strings": [
+            "Janelia Research Campus, Howard Hughes Medical Institute, 19700 Helix Drive, Ashburn, VA, 20147, USA. b.dickson@uq.edu.au",
+            "Queensland Brain Institute, University of Queensland, St Lucia, QLD, 4072, Australia. b.dickson@uq.edu.au",
+            "Janelia Research Campus, Howard Hughes Medical Institute, 19700 Helix Drive, Ashburn, VA, 20147, USA"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0003-0715-892X",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Janelia Research Campus, Howard Hughes Medical Institute, 19700 Helix Drive, Ashburn, VA, 20147, USA. b.dickson@uq.edu.au",
+              "institution_ids": [
+                "https://openalex.org/I1344073410",
+                "https://openalex.org/I195573530"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Queensland Brain Institute, University of Queensland, St Lucia, QLD, 4072, Australia. b.dickson@uq.edu.au",
+              "institution_ids": [
+                "https://openalex.org/I165143802"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Janelia Research Campus, Howard Hughes Medical Institute, 19700 Helix Drive, Ashburn, VA, 20147, USA",
+              "institution_ids": [
+                "https://openalex.org/I1344073410",
+                "https://openalex.org/I195573530"
+              ]
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 3,
+      "institutions_distinct_count": 6,
+      "corresponding_author_ids": [
+        "https://openalex.org/A5037593440",
+        "https://openalex.org/A5039360877"
+      ],
+      "corresponding_institution_ids": [
+        "https://openalex.org/I1344073410",
+        "https://openalex.org/I165143802",
+        "https://openalex.org/I195573530"
+      ],
+      "apc_list": {
+        "value": 5380,
+        "currency": "USD",
+        "value_usd": 5380
+      },
+      "apc_paid": {
+        "value": 5380,
+        "currency": "USD",
+        "value_usd": 5380
+      },
+      "fwci": 2.4491,
+      "has_fulltext": true,
+      "cited_by_count": 69,
+      "citation_normalized_percentile": {
+        "value": 0.8965673,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": false
+      },
+      "cited_by_percentile_year": {
+        "min": 88,
+        "max": 100
+      },
+      "biblio": {
+        "volume": "11",
+        "issue": "1",
+        "first_page": "6166",
+        "last_page": "6166"
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T10423",
+        "display_name": "Neurobiology and Insect Physiology Research",
+        "score": 0.9984999895095825,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2804",
+          "display_name": "Cellular and Molecular Neuroscience"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/28",
+          "display_name": "Neuroscience"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/1",
+          "display_name": "Life Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T10423",
+          "display_name": "Neurobiology and Insect Physiology Research",
+          "score": 0.9984999895095825,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2804",
+            "display_name": "Cellular and Molecular Neuroscience"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/28",
+            "display_name": "Neuroscience"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10982",
+          "display_name": "Motor Control and Adaptation",
+          "score": 0.0005000000237487257,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2805",
+            "display_name": "Cognitive Neuroscience"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/28",
+            "display_name": "Neuroscience"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10879",
+          "display_name": "Robotic Locomotion and Control",
+          "score": 0.00039999998989515007,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2207",
+            "display_name": "Control and Systems Engineering"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/22",
+            "display_name": "Engineering"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/backward-walking",
+          "display_name": "backward walking",
+          "score": 0.9110000133514404
+        },
+        {
+          "id": "https://openalex.org/keywords/drosophila",
+          "display_name": "Drosophila",
+          "score": 0.8339999914169312
+        },
+        {
+          "id": "https://openalex.org/keywords/descending-motor-control",
+          "display_name": "descending motor control",
+          "score": 0.6859999895095825
+        },
+        {
+          "id": "https://openalex.org/keywords/population-coding",
+          "display_name": "population coding",
+          "score": 0.7760000228881836
+        },
+        {
+          "id": "https://openalex.org/keywords/leg-muscle-activity",
+          "display_name": "leg muscle activity",
+          "score": 0.6769999861717224
+        },
+        {
+          "id": "https://openalex.org/keywords/stance-and-swing-phases",
+          "display_name": "stance and swing phases",
+          "score": 0.8270000219345093
+        },
+        {
+          "id": "https://openalex.org/keywords/locomotor-control",
+          "display_name": "locomotion control",
+          "score": 0.3580000102519989
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C169760540",
+          "wikidata": "https://www.wikidata.org/wiki/Q207011",
+          "display_name": "Neuroscience",
+          "level": 1,
+          "score": 0.6955046653747559
+        },
+        {
+          "id": "https://openalex.org/C2776752467",
+          "wikidata": "https://www.wikidata.org/wiki/Q1133903",
+          "display_name": "Motor neuron",
+          "level": 3,
+          "score": 0.5324115753173828
+        },
+        {
+          "id": "https://openalex.org/C65655974",
+          "wikidata": "https://www.wikidata.org/wiki/Q14867674",
+          "display_name": "Swing",
+          "level": 2,
+          "score": 0.5267863869667053
+        },
+        {
+          "id": "https://openalex.org/C137813230",
+          "wikidata": "https://www.wikidata.org/wiki/Q2996165",
+          "display_name": "Motor control",
+          "level": 2,
+          "score": 0.5242462754249573
+        },
+        {
+          "id": "https://openalex.org/C89611455",
+          "wikidata": "https://www.wikidata.org/wiki/Q6804646",
+          "display_name": "Mechanism (biology)",
+          "level": 2,
+          "score": 0.488224059343338
+        },
+        {
+          "id": "https://openalex.org/C2778332238",
+          "wikidata": "https://www.wikidata.org/wiki/Q6918195",
+          "display_name": "Motor program",
+          "level": 2,
+          "score": 0.4522096514701843
+        },
+        {
+          "id": "https://openalex.org/C86803240",
+          "wikidata": "https://www.wikidata.org/wiki/Q420",
+          "display_name": "Biology",
+          "level": 0,
+          "score": 0.4415697753429413
+        },
+        {
+          "id": "https://openalex.org/C2908647359",
+          "wikidata": "https://www.wikidata.org/wiki/Q2625603",
+          "display_name": "Population",
+          "level": 2,
+          "score": 0.42265287041664124
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.36846962571144104
+        },
+        {
+          "id": "https://openalex.org/C121332964",
+          "wikidata": "https://www.wikidata.org/wiki/Q413",
+          "display_name": "Physics",
+          "level": 0,
+          "score": 0.13293731212615967
+        },
+        {
+          "id": "https://openalex.org/C71924100",
+          "wikidata": "https://www.wikidata.org/wiki/Q11190",
+          "display_name": "Medicine",
+          "level": 0,
+          "score": 0.12412554025650024
+        },
+        {
+          "id": "https://openalex.org/C99454951",
+          "wikidata": "https://www.wikidata.org/wiki/Q932068",
+          "display_name": "Environmental health",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C2780775167",
+          "wikidata": "https://www.wikidata.org/wiki/Q9606",
+          "display_name": "Spinal cord",
+          "level": 2,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C24890656",
+          "wikidata": "https://www.wikidata.org/wiki/Q82811",
+          "display_name": "Acoustics",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C62520636",
+          "wikidata": "https://www.wikidata.org/wiki/Q944",
+          "display_name": "Quantum mechanics",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "mesh": [
+        {
+          "descriptor_ui": "D000818",
+          "descriptor_name": "Animals",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D001696",
+          "descriptor_name": "Biomechanical Phenomena",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D001921",
+          "descriptor_name": "Brain",
+          "qualifier_ui": "Q000166",
+          "qualifier_name": "cytology",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D001921",
+          "descriptor_name": "Brain",
+          "qualifier_ui": "Q000502",
+          "qualifier_name": "physiology",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D004331",
+          "descriptor_name": "Drosophila melanogaster",
+          "qualifier_ui": "Q000166",
+          "qualifier_name": "cytology",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D004331",
+          "descriptor_name": "Drosophila melanogaster",
+          "qualifier_ui": "Q000502",
+          "qualifier_name": "physiology",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D005260",
+          "descriptor_name": "Female",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D009046",
+          "descriptor_name": "Motor Neurons",
+          "qualifier_ui": "Q000166",
+          "qualifier_name": "cytology",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D009046",
+          "descriptor_name": "Motor Neurons",
+          "qualifier_ui": "Q000502",
+          "qualifier_name": "physiology",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D009132",
+          "descriptor_name": "Muscles",
+          "qualifier_ui": "Q000294",
+          "qualifier_name": "innervation",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D009132",
+          "descriptor_name": "Muscles",
+          "qualifier_ui": "Q000502",
+          "qualifier_name": "physiology",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D009415",
+          "descriptor_name": "Nerve Net",
+          "qualifier_ui": "Q000502",
+          "qualifier_name": "physiology",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D016138",
+          "descriptor_name": "Walking",
+          "qualifier_ui": "Q000502",
+          "qualifier_name": "physiology",
+          "is_major_topic": true
+        }
+      ],
+      "locations_count": 7,
+      "locations": [
+        {
+          "id": "doi:10.1038/s41467-020-19936-x",
+          "doi": "https://doi.org/10.1038/s41467-020-19936-x",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1038/s41467-020-19936-x",
+          "pdf_url": "https://www.nature.com/articles/s41467-020-19936-x.pdf",
+          "source": {
+            "id": "https://openalex.org/S64187185",
+            "display_name": "Nature Communications",
+            "issn_l": "2041-1723",
+            "issn": [
+              "2041-1723"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_core": true,
+            "listed_in": [
+              "anvur-class-a",
+              "anvur-scientific",
+              "cwts-core",
+              "doaj",
+              "dongbi-a",
+              "doyens",
+              "jufo-3",
+              "ki-jl-3",
+              "medline",
+              "norway-2",
+              "oarl",
+              "poland-200",
+              "russia-white-list-1",
+              "vabb-shw"
+            ],
+            "host_organization": "https://openalex.org/P4310319908",
+            "host_organization_name": "Nature Portfolio",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319908",
+              "https://openalex.org/P4310319965"
+            ],
+            "host_organization_lineage_names": [
+              "Nature Portfolio",
+              "Springer Nature"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Nature Communications",
+          "raw_type": "journal-article"
+        },
+        {
+          "id": "doi:10.1101/2020.07.11.198663",
+          "doi": "https://doi.org/10.1101/2020.07.11.198663",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1101/2020.07.11.198663",
+          "pdf_url": "https://www.biorxiv.org/content/biorxiv/early/2020/07/12/2020.07.11.198663.full.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306402567",
+            "display_name": "bioRxiv (Cold Spring Harbor Laboratory)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I2750212522",
+            "host_organization_name": "Cold Spring Harbor Laboratory",
+            "host_organization_lineage": [
+              "https://openalex.org/I2750212522"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "bioRxiv",
+          "raw_type": "posted-content"
+        },
+        {
+          "id": "pmid:33268800",
+          "doi": null,
+          "is_oa": false,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/33268800",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306525036",
+            "display_name": "PubMed",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Nature communications",
+          "raw_type": "Journal Article"
+        },
+        {
+          "id": "pmh:oai:USBKOELN.ub.uni-koeln.de:30876",
+          "doi": null,
+          "is_oa": false,
+          "landing_page_url": "https://kups.ub.uni-koeln.de/30876/",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400371",
+            "display_name": "Kölner Universitäts PublikationsServer (Universität zu Köln)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I4210115942",
+            "host_organization_name": "Rhenish Institute for Environmental Research",
+            "host_organization_lineage": [
+              "https://openalex.org/I4210115942"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "",
+          "raw_type": "doc-type:article"
+        },
+        {
+          "id": "pmh:oai:pubmedcentral.nih.gov:7710706",
+          "doi": null,
+          "is_oa": true,
+          "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7710706/",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S2764455111",
+            "display_name": "PubMed Central",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Nat Commun",
+          "raw_type": "Text"
+        },
+        {
+          "id": "pmh:oai:RePEc:nat:natcom:v:11:y:2020:i:1:d:10.1038_s41467-020-19936-x",
+          "doi": null,
+          "is_oa": false,
+          "landing_page_url": "https://www.nature.com/articles/s41467-020-19936-x",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401271",
+            "display_name": "RePEc: Research Papers in Economics",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I77793887",
+            "host_organization_name": "Federal Reserve Bank of St. Louis",
+            "host_organization_lineage": [
+              "https://openalex.org/I77793887"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": null,
+          "raw_type": "article"
+        },
+        {
+          "id": "pmh:oai:doaj.org/article:271214a167c74f4894067fd85bb792aa",
+          "doi": null,
+          "is_oa": true,
+          "landing_page_url": "https://doaj.org/article/271214a167c74f4894067fd85bb792aa",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401280",
+            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by-sa",
+          "license_id": "https://openalex.org/licenses/cc-by-sa",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "Nature Communications, Vol 11, Iss 1, Pp 1-17 (2020)",
+          "raw_type": "article"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.1038/s41467-020-19936-x",
+        "doi": "https://doi.org/10.1038/s41467-020-19936-x",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1038/s41467-020-19936-x",
+        "pdf_url": "https://www.nature.com/articles/s41467-020-19936-x.pdf",
+        "source": {
+          "id": "https://openalex.org/S64187185",
+          "display_name": "Nature Communications",
+          "issn_l": "2041-1723",
+          "issn": [
+            "2041-1723"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "listed_in": [
+            "anvur-class-a",
+            "anvur-scientific",
+            "cwts-core",
+            "doaj",
+            "dongbi-a",
+            "doyens",
+            "jufo-3",
+            "ki-jl-3",
+            "medline",
+            "norway-2",
+            "oarl",
+            "poland-200",
+            "russia-white-list-1",
+            "vabb-shw"
+          ],
+          "host_organization": "https://openalex.org/P4310319908",
+          "host_organization_name": "Nature Portfolio",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319908",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "Nature Portfolio",
+            "Springer Nature"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Nature Communications",
+        "raw_type": "journal-article"
+      },
+      "sustainable_development_goals": [],
+      "study_designs": [],
+      "awards": [],
+      "funders": [
+        {
+          "id": "https://openalex.org/F4320306082",
+          "display_name": "Howard Hughes Medical Institute",
+          "ror": "https://ror.org/006w34k90"
+        },
+        {
+          "id": "https://openalex.org/F4320334705",
+          "display_name": "National Health and Medical Research Council",
+          "ror": "https://ror.org/011kf5r70"
+        }
+      ],
+      "has_content": {
+        "pdf": true,
+        "grobid_xml": true
+      },
+      "content_urls": {
+        "pdf": "https://content.openalex.org/works/W3108286875.pdf",
+        "grobid_xml": "https://content.openalex.org/works/W3108286875.grobid-xml"
+      },
+      "referenced_works_count": 69,
+      "referenced_works": [
+        "https://openalex.org/W1491075702",
+        "https://openalex.org/W1493583608",
+        "https://openalex.org/W1532702661",
+        "https://openalex.org/W1549313501",
+        "https://openalex.org/W1809771702",
+        "https://openalex.org/W1859490444",
+        "https://openalex.org/W1971993655",
+        "https://openalex.org/W1974183704",
+        "https://openalex.org/W1977331952",
+        "https://openalex.org/W1978157456",
+        "https://openalex.org/W1981024652",
+        "https://openalex.org/W1995179787",
+        "https://openalex.org/W1997543121",
+        "https://openalex.org/W2006821796",
+        "https://openalex.org/W2010401493",
+        "https://openalex.org/W2023064587",
+        "https://openalex.org/W2039918891",
+        "https://openalex.org/W2052868150",
+        "https://openalex.org/W2053308747",
+        "https://openalex.org/W2067286306",
+        "https://openalex.org/W2070083683",
+        "https://openalex.org/W2078590190",
+        "https://openalex.org/W2088960975",
+        "https://openalex.org/W2091599503",
+        "https://openalex.org/W2092098765",
+        "https://openalex.org/W2094968469",
+        "https://openalex.org/W2113563206",
+        "https://openalex.org/W2116239072",
+        "https://openalex.org/W2117794907",
+        "https://openalex.org/W2119432914",
+        "https://openalex.org/W2132354459",
+        "https://openalex.org/W2135563396",
+        "https://openalex.org/W2136120438",
+        "https://openalex.org/W2151834825",
+        "https://openalex.org/W2152255315",
+        "https://openalex.org/W2161730051",
+        "https://openalex.org/W2167279371",
+        "https://openalex.org/W2171332611",
+        "https://openalex.org/W2198632703",
+        "https://openalex.org/W2215040991",
+        "https://openalex.org/W2478562489",
+        "https://openalex.org/W2526378791",
+        "https://openalex.org/W2551561294",
+        "https://openalex.org/W2566875547",
+        "https://openalex.org/W2580319655",
+        "https://openalex.org/W2589289769",
+        "https://openalex.org/W2689722169",
+        "https://openalex.org/W2734838926",
+        "https://openalex.org/W2761788149",
+        "https://openalex.org/W2765562046",
+        "https://openalex.org/W2765915208",
+        "https://openalex.org/W2766255495",
+        "https://openalex.org/W2769460460",
+        "https://openalex.org/W2783823892",
+        "https://openalex.org/W2785502402",
+        "https://openalex.org/W2800199811",
+        "https://openalex.org/W2885496356",
+        "https://openalex.org/W2887114371",
+        "https://openalex.org/W2887832744",
+        "https://openalex.org/W2930827445",
+        "https://openalex.org/W2950100524",
+        "https://openalex.org/W2950205567",
+        "https://openalex.org/W2951628200",
+        "https://openalex.org/W2954634850",
+        "https://openalex.org/W2993783047",
+        "https://openalex.org/W3017594186",
+        "https://openalex.org/W3029268462",
+        "https://openalex.org/W3120038054",
+        "https://openalex.org/W4321595559"
+      ],
+      "related_works": [
+        "https://openalex.org/W2121880863",
+        "https://openalex.org/W1981024652",
+        "https://openalex.org/W4402557652",
+        "https://openalex.org/W7114914068",
+        "https://openalex.org/W7168159897",
+        "https://openalex.org/W2885496356",
+        "https://openalex.org/W2584194497",
+        "https://openalex.org/W4210832757",
+        "https://openalex.org/W4399366694",
+        "https://openalex.org/W7118211023"
+      ],
+      "abstract_inverted_index": {
+        "How": [
+          0
+        ],
+        "do": [
+          1
+        ],
+        "descending": [
+          2,
+          18,
+          34,
+          172
+        ],
+        "inputs": [
+          3
+        ],
+        "from": [
+          4
+        ],
+        "the": [
+          5,
+          86,
+          91,
+          103,
+          128,
+          138,
+          141,
+          157,
+          163,
+          178
+        ],
+        "brain": [
+          6
+        ],
+        "control": [
+          7,
+          39,
+          180
+        ],
+        "leg": [
+          8,
+          80,
+          104,
+          119
+        ],
+        "motor": [
+          9,
+          46,
+          70,
+          81,
+          105,
+          183
+        ],
+        "circuits": [
+          10
+        ],
+        "to": [
+          11,
+          22,
+          40,
+          66,
+          145
+        ],
+        "change": [
+          12,
+          44
+        ],
+        "how": [
+          13
+        ],
+        "an": [
+          14
+        ],
+        "animal": [
+          15
+        ],
+        "walks?": [
+          16
+        ],
+        "Conceptually,": [
+          17
+        ],
+        "neurons": [
+          19,
+          101,
+          126,
+          136,
+          173
+        ],
+        "are": [
+          20
+        ],
+        "thought": [
+          21
+        ],
+        "function": [
+          23
+        ],
+        "either": [
+          24
+        ],
+        "as": [
+          25
+        ],
+        "command-type": [
+          26,
+          92,
+          171
+        ],
+        "neurons,": [
+          27,
+          58,
+          152
+        ],
+        "in": [
+          28,
+          45,
+          64,
+          118
+        ],
+        "which": [
+          29,
+          78
+        ],
+        "a": [
+          30,
+          37,
+          42,
+          50,
+          55,
+          68
+        ],
+        "single": [
+          31
+        ],
+        "type": [
+          32
+        ],
+        "of": [
+          33,
+          57,
+          111,
+          143,
+          162,
+          181
+        ],
+        "neuron": [
+          35
+        ],
+        "exerts": [
+          36
+        ],
+        "high-level": [
+          38
+        ],
+        "elicit": [
+          41,
+          67
+        ],
+        "coordinated": [
+          43
+        ],
+        "output,": [
+          47
+        ],
+        "or": [
+          48
+        ],
+        "through": [
+          49,
+          177
+        ],
+        "population": [
+          51
+        ],
+        "coding": [
+          52
+        ],
+        "mechanism,": [
+          53
+        ],
+        "whereby": [
+          54
+        ],
+        "group": [
+          56
+        ],
+        "each": [
+          59
+        ],
+        "with": [
+          60
+        ],
+        "local": [
+          61,
+          182
+        ],
+        "effects,": [
+          62
+        ],
+        "act": [
+          63
+        ],
+        "combination": [
+          65
+        ],
+        "global": [
+          69
+        ],
+        "response.": [
+          71
+        ],
+        "The": [
+          72
+        ],
+        "Drosophila": [
+          73
+        ],
+        "Moonwalker": [
+          74
+        ],
+        "Descending": [
+          75
+        ],
+        "Neurons": [
+          76
+        ],
+        "(MDNs),": [
+          77
+        ],
+        "alter": [
+          79
+        ],
+        "circuit": [
+          82
+        ],
+        "dynamics": [
+          83
+        ],
+        "so": [
+          84
+        ],
+        "that": [
+          85,
+          109,
+          170
+        ],
+        "fly": [
+          87
+        ],
+        "walks": [
+          88
+        ],
+        "backwards,": [
+          89
+        ],
+        "exemplify": [
+          90
+        ],
+        "mechanism.": [
+          93
+        ],
+        "Here,": [
+          94
+        ],
+        "we": [
+          95
+        ],
+        "identify": [
+          96
+        ],
+        "several": [
+          97
+        ],
+        "dozen": [
+          98
+        ],
+        "MDN": [
+          99,
+          153
+        ],
+        "target": [
+          100
+        ],
+        "within": [
+          102
+        ],
+        "circuits,": [
+          106
+        ],
+        "and": [
+          107,
+          115,
+          159
+        ],
+        "show": [
+          108
+        ],
+        "two": [
+          110,
+          150
+        ],
+        "them": [
+          112
+        ],
+        "mediate": [
+          113
+        ],
+        "distinct": [
+          114
+        ],
+        "highly-specific": [
+          116
+        ],
+        "changes": [
+          117
+        ],
+        "muscle": [
+          120
+        ],
+        "activity": [
+          121
+        ],
+        "during": [
+          122,
+          132
+        ],
+        "backward": [
+          123,
+          164
+        ],
+        "walking:": [
+          124
+        ],
+        "LBL40": [
+          125
+        ],
+        "provide": [
+          127
+        ],
+        "hindleg": [
+          129
+        ],
+        "power": [
+          130
+        ],
+        "stroke": [
+          131
+        ],
+        "stance": [
+          133,
+          144,
+          158
+        ],
+        "phase;": [
+          134
+        ],
+        "LUL130": [
+          135
+        ],
+        "lift": [
+          137
+        ],
+        "legs": [
+          139
+        ],
+        "at": [
+          140
+        ],
+        "end": [
+          142
+        ],
+        "initiate": [
+          146
+        ],
+        "swing.": [
+          147
+        ],
+        "Through": [
+          148
+        ],
+        "these": [
+          149
+        ],
+        "effector": [
+          151
+        ],
+        "directly": [
+          154
+        ],
+        "controls": [
+          155
+        ],
+        "both": [
+          156
+        ],
+        "swing": [
+          160
+        ],
+        "phases": [
+          161
+        ],
+        "stepping": [
+          165
+        ],
+        "cycle.": [
+          166
+        ],
+        "These": [
+          167
+        ],
+        "findings": [
+          168
+        ],
+        "suggest": [
+          169
+        ],
+        "can": [
+          174
+        ],
+        "also": [
+          175
+        ],
+        "operate": [
+          176
+        ],
+        "distributed": [
+          179
+        ],
+        "circuits.": [
+          184
+        ]
+      },
+      "counts_by_year": [
+        {
+          "year": 2026,
+          "cited_by_count": 11
+        },
+        {
+          "year": 2025,
+          "cited_by_count": 7
+        },
+        {
+          "year": 2024,
+          "cited_by_count": 25
+        },
+        {
+          "year": 2023,
+          "cited_by_count": 8
+        },
+        {
+          "year": 2022,
+          "cited_by_count": 10
+        },
+        {
+          "year": 2021,
+          "cited_by_count": 7
+        },
+        {
+          "year": 2020,
+          "cited_by_count": 1
+        }
+      ],
+      "updated_date": "2026-11-13T13:42:25.865203",
+      "created_date": "2020-12-07T00:00:00"
+    }
+  ],
+  "group_by": []
+}

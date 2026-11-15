@@ -1,0 +1,150 @@
+{
+  "status": "ok",
+  "message-type": "work-list",
+  "message-version": "1.0.0",
+  "message": {
+    "facets": {},
+    "total-results": 427712,
+    "items": [
+      {
+        "DOI": "10.1002/cne.24987/v1/review2",
+        "title": [
+          "Review for \"Location and arrangement of campaniform sensilla in &lt;i&gt;Drosophila melanogaster&lt;/i&gt;\""
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2020,
+              5,
+              7
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1002/cne.24987/v1/review2",
+        "type": "peer-review"
+      },
+      {
+        "DOI": "10.1002/cne.24987/v1/review1",
+        "title": [
+          "Review for \"Location and arrangement of campaniform sensilla in &lt;i&gt;Drosophila melanogaster&lt;/i&gt;\""
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2020,
+              5,
+              5
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1002/cne.24987/v1/review1",
+        "type": "peer-review"
+      },
+      {
+        "DOI": "10.1002/cne.24987/v2/decision1",
+        "title": [
+          "Decision letter for \"Location and arrangement of campaniform sensilla in &lt;i&gt;Drosophila melanogaster&lt;/i&gt;\""
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2020,
+              7,
+              1
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1002/cne.24987/v2/decision1",
+        "type": "peer-review"
+      },
+      {
+        "DOI": "10.1002/cne.24987/v1/decision1",
+        "title": [
+          "Decision letter for \"Location and arrangement of campaniform sensilla in &lt;i&gt;Drosophila melanogaster&lt;/i&gt;\""
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2020,
+              5,
+              7
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1002/cne.24987/v1/decision1",
+        "type": "peer-review"
+      },
+      {
+        "DOI": "10.1101/2023.07.24.550300",
+        "title": [
+          "A parametric finite element model of leg campaniform sensilla in\n                  <i>Drosophila</i>\n                  to study CS location and arrangement"
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2023,
+              7,
+              26
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1101/2023.07.24.550300",
+        "type": "posted-content"
+      },
+      {
+        "DOI": "10.1007/bf00225823",
+        "title": [
+          "The central connections and actions during walking of tibial campaniform sensilla in the locust"
+        ],
+        "published": {
+          "date-parts": [
+            [
+              1996,
+              6
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1007/bf00225823",
+        "type": "journal-article"
+      },
+      {
+        "DOI": "10.64898/2026.07.22.740025",
+        "title": [
+          "Role of leg campaniform sensilla proprioceptive feedback in\n                  <i>Drosophila melanogaster</i>\n                  adaptive walking"
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2026,
+              7,
+              27
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.64898/2026.07.22.740025",
+        "type": "posted-content"
+      },
+      {
+        "DOI": "10.1016/s0006-8993(99)01156-7",
+        "title": [
+          "Load signalling by cockroach trochanteral campaniform sensilla"
+        ],
+        "published": {
+          "date-parts": [
+            [
+              1999,
+              3
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1016/s0006-8993(99)01156-7",
+        "type": "journal-article"
+      }
+    ],
+    "items-per-page": 8,
+    "query": {
+      "start-index": 0,
+      "search-terms": "Drosophila campaniform sensilla load walking"
+    }
+  }
+}

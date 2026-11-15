@@ -1,0 +1,130 @@
+{
+  "status": "ok",
+  "message-type": "work-list",
+  "message-version": "1.0.0",
+  "message": {
+    "facets": {},
+    "total-results": 98677,
+    "items": [
+      {
+        "DOI": "10.1364/igwo.1988.mf14",
+        "title": [
+          "All-optical Switching and Codirectional Mode Conversion in Nonlinear Gratings"
+        ],
+        "published": {
+          "date-parts": [
+            [
+              1988
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1364/igwo.1988.mf14",
+        "type": "proceedings-article"
+      },
+      {
+        "DOI": "10.1364/up.2000.mf14",
+        "title": [
+          "Generation of Relativistic Intensity Pulses at kHz"
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2000
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1364/up.2000.mf14",
+        "type": "proceedings-article"
+      },
+      {
+        "DOI": "10.1017/s0079497x00077999",
+        "title": [
+          "List of aiagnostic sherds from Itford Bottom"
+        ],
+        "published": {
+          "date-parts": [
+            [
+              1983
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1017/s0079497x00077999",
+        "type": "journal-article"
+      },
+      {
+        "DOI": "10.1364/oam.1987.mf14",
+        "title": [
+          "Transient optical phase conjugation in dynamic media"
+        ],
+        "published": {
+          "date-parts": [
+            [
+              1987
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1364/oam.1987.mf14",
+        "type": "proceedings-article"
+      },
+      {
+        "DOI": "10.1364/nlopm.1988.mf14",
+        "title": [
+          "Nonlinear Effects of Quantum Confinement Composite Materials in Planar Waveguide Structures"
+        ],
+        "published": {
+          "date-parts": [
+            [
+              1988
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1364/nlopm.1988.mf14",
+        "type": "proceedings-article"
+      },
+      {
+        "DOI": "10.1364/assp.2005.mf14",
+        "title": [
+          "Passive Q-switching at 1.54 µm of a Er-Yb:GdCa4O(BO3)3 Laser with a Co :MgAl2O4 Saturable Absorber"
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2005
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1364/assp.2005.mf14",
+        "type": "proceedings-article"
+      },
+      {
+        "DOI": "10.37473/dac/10.1007/s10340-021-01330-1",
+        "title": [
+          "Detection of the spotted wing drosophila, Drosophila suzukii, in continental sub-Saharan Africa"
+        ],
+        "URL": "https://doi.org/10.37473/dac/10.1007/s10340-021-01330-1",
+        "type": "component"
+      },
+      {
+        "DOI": "10.2307/1935157",
+        "title": [
+          "Preadult Competition between Drosophila Pavani and Drosophila Melanogaster, Drosophila Simulans, and Drosophila Willistoni"
+        ],
+        "published": {
+          "date-parts": [
+            [
+              1974,
+              5
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.2307/1935157",
+        "type": "journal-article"
+      }
+    ],
+    "items-per-page": 8,
+    "query": {
+      "start-index": 0,
+      "search-terms": "Drosophila LUL130 LUL152 MF14"
+    }
+  }
+}

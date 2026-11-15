@@ -1,0 +1,437 @@
+{
+  "version": "6.9",
+  "hitCount": 1,
+  "request": {
+    "queryString": "Drosophila 13Bb 10Ba club claw hook",
+    "resultType": "core",
+    "cursorMark": "*",
+    "pageSize": 12,
+    "sort": "",
+    "synonym": false
+  },
+  "resultList": {
+    "result": [
+      {
+        "id": "34637749",
+        "source": "MED",
+        "pmid": "34637749",
+        "pmcid": "PMC8665017",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC8665017"
+          ]
+        },
+        "doi": "10.1016/j.cub.2021.09.035",
+        "title": "Functional architecture of neural circuits for leg proprioception in Drosophila.",
+        "authorString": "Chen C, Agrawal S, Mark B, Mamiya A, Sustar A, Phelps JS, Lee WA, Dickson BJ, Card GM, Tuthill JC.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Chen C",
+              "lastName": "Chen",
+              "firstName": "Chenghao",
+              "initials": "C",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-4913-4213"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Physiology and Biophysics, University of Washington, 1705 N.E. Pacific Street, Seattle, WA 98195, USA; Janelia Research Campus, Howard Hughes Medical Institute, 19700 Helix Drive, Ashburn, VA 20147, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Agrawal S",
+              "lastName": "Agrawal",
+              "firstName": "Sweta",
+              "initials": "S",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-0547-4099"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Physiology and Biophysics, University of Washington, 1705 N.E. Pacific Street, Seattle, WA 98195, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Mark B",
+              "lastName": "Mark",
+              "firstName": "Brandon",
+              "initials": "B",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Physiology and Biophysics, University of Washington, 1705 N.E. Pacific Street, Seattle, WA 98195, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Mamiya A",
+              "lastName": "Mamiya",
+              "firstName": "Akira",
+              "initials": "A",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Physiology and Biophysics, University of Washington, 1705 N.E. Pacific Street, Seattle, WA 98195, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Sustar A",
+              "lastName": "Sustar",
+              "firstName": "Anne",
+              "initials": "A",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Physiology and Biophysics, University of Washington, 1705 N.E. Pacific Street, Seattle, WA 98195, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Phelps JS",
+              "lastName": "Phelps",
+              "firstName": "Jasper S",
+              "initials": "JS",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-8033-258X"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurobiology, Harvard Medical School, 220 Longwood Avenue, Boston, MA 02115, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Lee WA",
+              "lastName": "Lee",
+              "firstName": "Wei-Chung Allen",
+              "initials": "WA",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-4618-295X"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurobiology, Harvard Medical School, 220 Longwood Avenue, Boston, MA 02115, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Dickson BJ",
+              "lastName": "Dickson",
+              "firstName": "Barry J",
+              "initials": "BJ",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-0715-892X"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus, Howard Hughes Medical Institute, 19700 Helix Drive, Ashburn, VA 20147, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Card GM",
+              "lastName": "Card",
+              "firstName": "Gwyneth M",
+              "initials": "GM",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus, Howard Hughes Medical Institute, 19700 Helix Drive, Ashburn, VA 20147, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Tuthill JC",
+              "lastName": "Tuthill",
+              "firstName": "John C",
+              "initials": "JC",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-5689-5806"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Physiology and Biophysics, University of Washington, 1705 N.E. Pacific Street, Seattle, WA 98195, USA. Electronic address: tuthill@uw.edu."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-8033-258X"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-4618-295X"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-5689-5806"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-0547-4099"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-0715-892X"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-4913-4213"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics",
+            "supporting_data",
+            "related_data"
+          ]
+        },
+        "journalInfo": {
+          "issue": "23",
+          "volume": "31",
+          "journalIssueId": 3279209,
+          "dateOfPublication": "2021 Dec",
+          "monthOfPublication": 12,
+          "yearOfPublication": 2021,
+          "journal": {
+            "medlineAbbreviation": "Curr Biol",
+            "title": "Current biology : CB",
+            "essn": "1879-0445",
+            "issn": "0960-9822",
+            "isoabbreviation": "Curr Biol",
+            "nlmid": "9107782"
+          },
+          "printPublicationDate": "2021-12-01"
+        },
+        "pubYear": "2021",
+        "pageInfo": "5163-5175.e7",
+        "abstractText": "To effectively control their bodies, animals rely on feedback from proprioceptive mechanosensory neurons. In the Drosophila leg, different proprioceptor subtypes monitor joint position, movement direction, and vibration. Here, we investigate how these diverse sensory signals are integrated by central proprioceptive circuits. We find that signals for leg joint position and directional movement converge in second-order neurons, revealing pathways for local feedback control of leg posture. Distinct populations of second-order neurons integrate tibia vibration signals across pairs of legs, suggesting a role in detecting external substrate vibration. In each pathway, the flow of sensory information is dynamically gated and sculpted by inhibition. Overall, our results reveal parallel pathways for processing of internal and external mechanosensory signals, which we propose mediate feedback control of leg movement and vibration sensing, respectively. The existence of a functional connectivity map also provides a resource for interpreting connectomic reconstruction of neural circuits for leg proprioception.",
+        "affiliation": "Department of Physiology and Biophysics, University of Washington, 1705 N.E. Pacific Street, Seattle, WA 98195, USA; Janelia Research Campus, Howard Hughes Medical Institute, 19700 Helix Drive, Ashburn, VA 20147, USA.",
+        "publicationStatus": "ppublish",
+        "language": "eng",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Research Support, Non-U.S. Gov't",
+            "research-article",
+            "Journal Article",
+            "Research Support, N.I.H., Extramural"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "NIH HHS",
+              "acronym": "OD",
+              "grantId": "P40 OD018537",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Institutes of Health",
+              "grantId": "R01NS102333",
+              "orderIn": 0
+            },
+            {
+              "agency": "NINDS NIH HHS",
+              "acronym": "NS",
+              "grantId": "U19 NS104655",
+              "orderIn": 0
+            },
+            {
+              "agency": "NIMH NIH HHS",
+              "acronym": "MH",
+              "grantId": "RF1 MH117808",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Institutes of Health",
+              "grantId": "RF1MH117808",
+              "orderIn": 0
+            },
+            {
+              "agency": "Howard Hughes Medical Institute",
+              "acronym": "HHMI",
+              "orderIn": 0
+            },
+            {
+              "agency": "New York Stem Cell Foundation",
+              "orderIn": 0
+            },
+            {
+              "agency": "NINDS NIH HHS",
+              "acronym": "NS",
+              "grantId": "R01 NS102333",
+              "orderIn": 0
+            }
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Animals"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Drosophila"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Proprioception",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Movement"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Sensory Receptor Cells",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "keywordList": {
+          "keyword": [
+            "Drosophila",
+            "Proprioception",
+            "Motor control",
+            "Calcium imaging",
+            "Optogenetics",
+            "Neural Circuits",
+            "Ventral Nerve Cord"
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "doi",
+              "site": "Unpaywall",
+              "url": "https://doi.org/10.1016/j.cub.2021.09.035"
+            },
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1016/j.cub.2021.09.035"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC8665017"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC8665017?pdf=render"
+            }
+          ]
+        },
+        "commentCorrectionList": {
+          "commentCorrection": [
+            {
+              "source": "PPR",
+              "id": "PPR334798",
+              "type": "Preprint in",
+              "note": "CrossRef Pre-print loader",
+              "orderIn": 10002
+            }
+          ]
+        },
+        "isOpenAccess": "Y",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "citedByCount": 38,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "Y",
+        "hasBook": "N",
+        "hasSuppl": "Y",
+        "hasLabsLinks": "Y",
+        "hasData": "Y",
+        "license": "cc by",
+        "authMan": "Y",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "Y",
+        "manuscriptId": "NIHMS1748727",
+        "hasTMAccessionNumbers": "Y",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        },
+        "dateOfCompletion": "2022-04-08",
+        "dateOfCreation": "2021-10-12",
+        "dateOfRevision": "2022-04-08",
+        "electronicPublicationDate": "2021-10-11",
+        "firstPublicationDate": "2021-10-11",
+        "firstIndexDate": "2021-10-13",
+        "fullTextReceivedDate": "2025-02-02",
+        "hasEvaluations": "N"
+      }
+    ]
+  }
+}

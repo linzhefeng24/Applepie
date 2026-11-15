@@ -1,0 +1,5592 @@
+{
+  "version": "6.9",
+  "hitCount": 10,
+  "request": {
+    "queryString": "Drosophila DNg13 phase walking",
+    "resultType": "core",
+    "cursorMark": "*",
+    "pageSize": 12,
+    "sort": "",
+    "synonym": false
+  },
+  "resultList": {
+    "result": [
+      {
+        "id": "42474298",
+        "source": "MED",
+        "pmid": "42474298",
+        "pmcid": "PMC13384506",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13384506"
+          ]
+        },
+        "doi": "10.7554/elife.96084",
+        "title": "Organization of circuits linking descending input to motor output in the &lt;i&gt;Drosophila&lt;/i&gt; Male Adult Nerve Cord connectome.",
+        "authorString": "Cheong HSJ, Eichler K, Stürner T, Asinof SK, Champion AS, Marin EC, Oram TB, Sumathipala M, Venkatasubramanian L, Namiki S, Siwanowicz I, Costa M, Berg S, FlyEM Project Team J, Jefferis GSXE, Card GM.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Cheong HSJ",
+              "lastName": "Cheong",
+              "firstName": "Han S J",
+              "initials": "HSJ",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-5233-3438"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus, Howard Hughes Medical Institute, Ashburn, United States."
+                  },
+                  {
+                    "affiliation": "Zuckerman Institute, Columbia University, New York, United States."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Eichler K",
+              "lastName": "Eichler",
+              "firstName": "Katharina",
+              "initials": "K",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-7833-8621"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "<italic>Drosophila</italic> Connectomics Group, Department of Zoology, University of Cambridge, Cambridge, United Kingdom."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Stürner T",
+              "lastName": "Stürner",
+              "firstName": "Tomke",
+              "initials": "T",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-4054-0784"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "<italic>Drosophila</italic> Connectomics Group, Department of Zoology, University of Cambridge, Cambridge, United Kingdom."
+                  },
+                  {
+                    "affiliation": "Neurobiology Division, MRC Laboratory of Molecular Biology, Cambridge, United Kingdom."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Asinof SK",
+              "lastName": "Asinof",
+              "firstName": "Samuel K",
+              "initials": "SK",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0000-8793-4671"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus, Howard Hughes Medical Institute, Ashburn, United States."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Champion AS",
+              "lastName": "Champion",
+              "firstName": "Andrew S",
+              "initials": "AS",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-6883-0081"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "<italic>Drosophila</italic> Connectomics Group, Department of Zoology, University of Cambridge, Cambridge, United Kingdom."
+                  },
+                  {
+                    "affiliation": "Neurobiology Division, MRC Laboratory of Molecular Biology, Cambridge, United Kingdom."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Marin EC",
+              "lastName": "Marin",
+              "firstName": "Elizabeth C",
+              "initials": "EC",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-6333-0072"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "<italic>Drosophila</italic> Connectomics Group, Department of Zoology, University of Cambridge, Cambridge, United Kingdom."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Oram TB",
+              "lastName": "Oram",
+              "firstName": "Tess B",
+              "initials": "TB",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus, Howard Hughes Medical Institute, Ashburn, United States."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Sumathipala M",
+              "lastName": "Sumathipala",
+              "firstName": "Marissa",
+              "initials": "M",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus, Howard Hughes Medical Institute, Ashburn, United States."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Venkatasubramanian L",
+              "lastName": "Venkatasubramanian",
+              "firstName": "Lalanti",
+              "initials": "L",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "<italic>Drosophila</italic> Connectomics Group, Department of Zoology, University of Cambridge, Cambridge, United Kingdom."
+                  },
+                  {
+                    "affiliation": "Neurobiology Division, MRC Laboratory of Molecular Biology, Cambridge, United Kingdom."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Namiki S",
+              "lastName": "Namiki",
+              "firstName": "Shigehiro",
+              "initials": "S",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-1559-799X"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Research Center for Advanced Science and Technology, University of Tokyo, Tokyo, Japan."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Siwanowicz I",
+              "lastName": "Siwanowicz",
+              "firstName": "Igor",
+              "initials": "I",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-5819-1530"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus, Howard Hughes Medical Institute, Ashburn, United States."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Costa M",
+              "lastName": "Costa",
+              "firstName": "Marta",
+              "initials": "M",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-5948-3092"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "<italic>Drosophila</italic> Connectomics Group, Department of Zoology, University of Cambridge, Cambridge, United Kingdom."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Berg S",
+              "lastName": "Berg",
+              "firstName": "Stuart",
+              "initials": "S",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-0766-0488"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus, Howard Hughes Medical Institute, Ashburn, United States."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "FlyEM Project Team J",
+              "lastName": "FlyEM Project Team",
+              "firstName": "Janelia",
+              "initials": "J",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus, Howard Hughes Medical Institute, Ashburn, United States."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Jefferis GSXE",
+              "lastName": "Jefferis",
+              "firstName": "Gregory S X E",
+              "initials": "GSXE",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-0587-9355"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "<italic>Drosophila</italic> Connectomics Group, Department of Zoology, University of Cambridge, Cambridge, United Kingdom."
+                  },
+                  {
+                    "affiliation": "Neurobiology Division, MRC Laboratory of Molecular Biology, Cambridge, United Kingdom."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Card GM",
+              "lastName": "Card",
+              "firstName": "Gwyneth M",
+              "initials": "GM",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-7679-3639"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus, Howard Hughes Medical Institute, Ashburn, United States."
+                  },
+                  {
+                    "affiliation": "Zuckerman Institute, Columbia University, New York, United States."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-5233-3438"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-5819-1530"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-5948-3092"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-6333-0072"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-0587-9355"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-0766-0488"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-6883-0081"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-7679-3639"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-7833-8621"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-1559-799X"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-4054-0784"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0000-8793-4671"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "related_data",
+            "supporting_data"
+          ]
+        },
+        "journalInfo": {
+          "volume": "13",
+          "journalIssueId": 4226170,
+          "dateOfPublication": "2026 Jul",
+          "monthOfPublication": 7,
+          "yearOfPublication": 2026,
+          "journal": {
+            "medlineAbbreviation": "Elife",
+            "title": "eLife",
+            "essn": "2050-084X",
+            "issn": "2050-084X",
+            "nlmid": "101579614",
+            "isoabbreviation": "Elife"
+          },
+          "printPublicationDate": "2026-07-01"
+        },
+        "pubYear": "2026",
+        "pageInfo": "RP96084",
+        "abstractText": "In most animals, a small number of descending neurons (DNs) connect the brain to circuits and motor neurons (MNs) in the nerve cord. To understand how brain signals generate behavior, it is critical to understand the organization of the neural pathways linking DNs to MNs. In companion papers, we introduced a densely reconstructed connectome of the <i>Drosophila</i> Male Adult Nerve Cord (MANC; Takemura et al., 2024), including cell types and developmental lineages (Marin et al., 2024), which provides complete connectivity of the ventral nerve cord (VNC) at synaptic resolution. Here, we present a first look at the organization of the networks connecting DNs to MNs. We first proofread and curated all DNs and MNs, then systematically matched their morphology to light microscopy data. We report both broad organizational patterns of the entire network and fine-scale analysis of selected circuits of interest. We discover that direct DN-MN connections are infrequent and identify neuron communities putatively linked to control of different motor systems, including walking, flight steering and power generation, and coordinated action of wings and legs. Our analyses generate hypotheses for future functional experiments and empowers others to investigate these and other circuits of the VNC in richer mechanistic detail.",
+        "affiliation": "Janelia Research Campus, Howard Hughes Medical Institute, Ashburn, United States.",
+        "publicationStatus": "epublish",
+        "language": "eng",
+        "pubModel": "Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "Wellcome Trust",
+              "acronym": "WT_",
+              "grantId": "10.35802/220343",
+              "orderIn": 0
+            },
+            {
+              "agency": "Wellcome Trust",
+              "grantId": "220343",
+              "orderIn": 0
+            },
+            {
+              "agency": "Wellcome Trust",
+              "grantId": "220343/Z/20/Z",
+              "orderIn": 0
+            },
+            {
+              "agency": "MRC-LMB",
+              "grantId": "MC-U105188491",
+              "orderIn": 0
+            },
+            {
+              "agency": "Wellcome Trust",
+              "grantId": "221300/Z/20/Z",
+              "orderIn": 0
+            },
+            {
+              "agency": "Wellcome Trust",
+              "acronym": "WT_",
+              "grantId": "10.35802/221300",
+              "orderIn": 0
+            },
+            {
+              "agency": "Wellcome Trust",
+              "grantId": "221300",
+              "orderIn": 0
+            },
+            {
+              "agency": "Deutsche Forschungsgemeinschaft",
+              "grantId": "Walter-Benjamin-Fellowship STU 793/2-1",
+              "orderIn": 0
+            },
+            {
+              "agency": "Wellcome Trust",
+              "acronym": "WT_",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Science Foundation",
+              "grantId": "2127379",
+              "orderIn": 0
+            }
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Brain",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Nerve Net",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Neural Pathways",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Neurons",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Motor Neurons",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Animals"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Drosophila",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Drosophila melanogaster",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Male"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Connectome"
+            }
+          ]
+        },
+        "keywordList": {
+          "keyword": [
+            "Drosophila",
+            "Flight",
+            "Neuroscience",
+            "Walking",
+            "Connectome",
+            "Escape",
+            "Neural Circuit",
+            "D. Melanogaster"
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.7554/eLife.96084"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13384506"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13384506?pdf=render"
+            }
+          ]
+        },
+        "isOpenAccess": "Y",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "citedByCount": 35,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "Y",
+        "hasBook": "N",
+        "hasSuppl": "Y",
+        "hasLabsLinks": "Y",
+        "hasData": "Y",
+        "license": "cc by",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "Y",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        },
+        "dateOfCompletion": "2026-07-20",
+        "dateOfCreation": "2026-07-20",
+        "dateOfRevision": "2026-11-05",
+        "electronicPublicationDate": "2026-07-20",
+        "firstPublicationDate": "2026-07-20",
+        "firstIndexDate": "2026-07-21",
+        "fullTextReceivedDate": "2026-09-03",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "39293446",
+        "source": "MED",
+        "pmid": "39293446",
+        "pmcid": "PMC12778575",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12778575"
+          ]
+        },
+        "doi": "10.1016/j.cell.2024.08.033",
+        "title": "Fine-grained descending control of steering in walking Drosophila.",
+        "authorString": "Yang HH, Brezovec BE, Serratosa Capdevila L, Vanderbeck QX, Adachi A, Mann RS, Wilson RI.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Yang HH",
+              "lastName": "Yang",
+              "firstName": "Helen H",
+              "initials": "HH",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-5140-9664"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurobiology, Harvard Medical School, Boston, MA 02115, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Brezovec BE",
+              "lastName": "Brezovec",
+              "firstName": "Bella E",
+              "initials": "BE",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurobiology, Stanford University, Stanford, CA 94305, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Serratosa Capdevila L",
+              "lastName": "Serratosa Capdevila",
+              "firstName": "Laia",
+              "initials": "L",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Aelysia LTD, Bristol BS9 3BY, UK."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Vanderbeck QX",
+              "lastName": "Vanderbeck",
+              "firstName": "Quinn X",
+              "initials": "QX",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurobiology, Harvard Medical School, Boston, MA 02115, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Adachi A",
+              "lastName": "Adachi",
+              "firstName": "Atsuko",
+              "initials": "A",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Biochemistry and Molecular Biophysics, Department of Neuroscience, Zuckerman Mind Brain Behavior Institute, Columbia University, New York, NY 10027, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Mann RS",
+              "lastName": "Mann",
+              "firstName": "Richard S",
+              "initials": "RS",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-4749-2765"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Biochemistry and Molecular Biophysics, Department of Neuroscience, Zuckerman Mind Brain Behavior Institute, Columbia University, New York, NY 10027, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Wilson RI",
+              "lastName": "Wilson",
+              "firstName": "Rachel I",
+              "initials": "RI",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurobiology, Harvard Medical School, Boston, MA 02115, USA. Electronic address: rachel_wilson@hms.harvard.edu."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-5140-9664"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-4749-2765"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics",
+            "supporting_data",
+            "related_data"
+          ]
+        },
+        "journalInfo": {
+          "issue": "22",
+          "volume": "187",
+          "journalIssueId": 3845255,
+          "dateOfPublication": "2024 Oct",
+          "monthOfPublication": 10,
+          "yearOfPublication": 2024,
+          "journal": {
+            "medlineAbbreviation": "Cell",
+            "title": "Cell",
+            "essn": "1097-4172",
+            "issn": "0092-8674",
+            "nlmid": "0413066",
+            "isoabbreviation": "Cell"
+          },
+          "printPublicationDate": "2024-10-01"
+        },
+        "pubYear": "2024",
+        "pageInfo": "6290-6308.e27",
+        "abstractText": "Locomotion involves rhythmic limb movement patterns that originate in circuits outside the brain. Purposeful locomotion requires descending commands from the brain, but we do not understand how these commands are structured. Here, we investigate this issue, focusing on the control of steering in walking Drosophila. First, we describe different limb \"gestures\" associated with different steering maneuvers. Next, we identify a set of descending neurons whose activity predicts steering. Focusing on two descending cell types downstream of distinct brain networks, we show that they evoke specific limb gestures: one lengthens strides on the outside of a turn, while the other attenuates strides on the inside of a turn. Our results suggest that a single descending neuron can have opposite effects during different locomotor rhythm phases, and we identify networks positioned to implement this phase-specific gating. Together, our results show how purposeful locomotion emerges from specific, coordinated modulations of low-level patterns.",
+        "affiliation": "Department of Neurobiology, Harvard Medical School, Boston, MA 02115, USA.",
+        "publicationStatus": "ppublish",
+        "language": "eng",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "BRAIN Initiative",
+              "grantId": "MH117815",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Institutes of Health",
+              "grantId": "NS129759",
+              "orderIn": 0
+            },
+            {
+              "agency": "NIMH NIH HHS",
+              "acronym": "MH",
+              "grantId": "RF1 MH117815",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Institutes of Health",
+              "grantId": "NS104655",
+              "orderIn": 0
+            },
+            {
+              "agency": "BRAIN Initiative",
+              "grantId": "NS126935",
+              "orderIn": 0
+            },
+            {
+              "agency": "NINDS NIH HHS",
+              "acronym": "NS",
+              "grantId": "R00 NS129759",
+              "orderIn": 0
+            },
+            {
+              "agency": "NINDS NIH HHS",
+              "acronym": "NS",
+              "grantId": "U19 NS104655",
+              "orderIn": 0
+            },
+            {
+              "agency": "Jane Coffin Childs Memorial Fund for Medical Research",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Science Foundation",
+              "grantId": "NS070644",
+              "orderIn": 0
+            },
+            {
+              "agency": "NINDS NIH HHS",
+              "acronym": "NS",
+              "grantId": "R01 NS070644",
+              "orderIn": 0
+            },
+            {
+              "agency": "NINDS NIH HHS",
+              "acronym": "NS",
+              "grantId": "U24 NS126935",
+              "orderIn": 0
+            },
+            {
+              "agency": "Howard Hughes Medical Institute",
+              "acronym": "HHMI",
+              "orderIn": 0
+            },
+            {
+              "agency": "NINDS NIH HHS",
+              "acronym": "NS",
+              "grantId": "K99 NS129759",
+              "orderIn": 0
+            },
+            {
+              "agency": "HHMI",
+              "orderIn": 0
+            }
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Brain",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Neurons",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Animals"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Drosophila melanogaster",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Walking"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Locomotion",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "keywordList": {
+          "keyword": [
+            "Drosophila",
+            "Locomotion",
+            "Walking",
+            "Steering",
+            "Descending Neurons",
+            "Dna02",
+            "Dng13"
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1016/j.cell.2024.08.033"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12778575"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12778575?pdf=render"
+            }
+          ]
+        },
+        "commentCorrectionList": {
+          "commentCorrection": [
+            {
+              "source": "MED",
+              "id": "37904997",
+              "reference": "bioRxiv. 2023 Oct 30:2023.10.15.562426. doi: 10.1101/2023.10.15.562426.",
+              "type": "Update of",
+              "orderIn": 1
+            }
+          ]
+        },
+        "isOpenAccess": "Y",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "citedByCount": 56,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "Y",
+        "hasBook": "N",
+        "hasSuppl": "Y",
+        "hasLabsLinks": "Y",
+        "hasData": "Y",
+        "license": "cc by",
+        "authMan": "Y",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "Y",
+        "manuscriptId": "NIHMS2118063",
+        "hasTMAccessionNumbers": "Y",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "gen",
+            "doi"
+          ]
+        },
+        "dateOfCompletion": "2024-11-01",
+        "dateOfCreation": "2024-09-18",
+        "dateOfRevision": "2026-09-27",
+        "electronicPublicationDate": "2024-09-17",
+        "firstPublicationDate": "2024-09-17",
+        "firstIndexDate": "2024-09-19",
+        "fullTextReceivedDate": "2026-01-08",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "40244663",
+        "source": "MED",
+        "pmid": "40244663",
+        "pmcid": "PMC12037020",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12037020"
+          ]
+        },
+        "doi": "10.1073/pnas.2407626122",
+        "title": "Inhibitory control explains locomotor statistics in walking &lt;i&gt;Drosophila&lt;/i&gt;.",
+        "authorString": "Gattuso HC, van Hassel KA, Freed JD, Nuñez KM, de la Rea B, May CE, Ermentrout B, Victor JD, Nagel KI.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Gattuso HC",
+              "lastName": "Gattuso",
+              "firstName": "Hannah C",
+              "initials": "HC",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neuroscience, Neuroscience Institute, New York University School of Medicine, New York, NY 10016."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "van Hassel KA",
+              "lastName": "van Hassel",
+              "firstName": "Karin A",
+              "initials": "KA",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neuroscience, Neuroscience Institute, New York University School of Medicine, New York, NY 10016."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Freed JD",
+              "lastName": "Freed",
+              "firstName": "Jacob D",
+              "initials": "JD",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0009-4324-6418"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neuroscience, Neuroscience Institute, New York University School of Medicine, New York, NY 10016."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Nuñez KM",
+              "lastName": "Nuñez",
+              "firstName": "Kavin M",
+              "initials": "KM",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neuroscience, Neuroscience Institute, New York University School of Medicine, New York, NY 10016."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "de la Rea B",
+              "lastName": "de la Rea",
+              "firstName": "Beatriz",
+              "initials": "B",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neuroscience, Neuroscience Institute, New York University School of Medicine, New York, NY 10016."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "May CE",
+              "lastName": "May",
+              "firstName": "Christina E",
+              "initials": "CE",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-9366-8592"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neuroscience, Neuroscience Institute, New York University School of Medicine, New York, NY 10016."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Ermentrout B",
+              "lastName": "Ermentrout",
+              "firstName": "Bard",
+              "initials": "B",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-5854-0654"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Mathematics, University of Pittsburgh, Pittsburgh, PA 15213."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Victor JD",
+              "lastName": "Victor",
+              "firstName": "Jonathan D",
+              "initials": "JD",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-9293-0111"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Feil Family Brain and Mind Research Institute, Weill Cornell Medicine, New York, NY 10065."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Nagel KI",
+              "lastName": "Nagel",
+              "firstName": "Katherine I",
+              "initials": "KI",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-6701-3901"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neuroscience, Neuroscience Institute, New York University School of Medicine, New York, NY 10016."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-9366-8592"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-5854-0654"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-6701-3901"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-9293-0111"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0009-4324-6418"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "supporting_data",
+            "related_data"
+          ]
+        },
+        "journalInfo": {
+          "issue": "16",
+          "volume": "122",
+          "journalIssueId": 3928937,
+          "dateOfPublication": "2025 Apr",
+          "monthOfPublication": 4,
+          "yearOfPublication": 2025,
+          "journal": {
+            "medlineAbbreviation": "Proc Natl Acad Sci U S A",
+            "title": "Proceedings of the National Academy of Sciences of the United States of America",
+            "essn": "1091-6490",
+            "issn": "0027-8424",
+            "nlmid": "7505876",
+            "isoabbreviation": "Proc Natl Acad Sci U S A"
+          },
+          "printPublicationDate": "2025-04-01"
+        },
+        "pubYear": "2025",
+        "pageInfo": "e2407626122",
+        "abstractText": "In order to forage for food, many animals regulate not only specific limb movements but the statistics of locomotor behavior, switching between long-range dispersal and local search depending on resource availability. How premotor circuits regulate locomotor statistics is not clear. Here, we analyze and model locomotor statistics and their modulation by attractive food odor in walking <i>Drosophila</i>. Food odor evokes three motor regimes in flies: baseline walking, upwind running during odor, and search behavior following odor loss. During search, we find that flies adopt higher angular velocities and slower ground speeds and turn for longer periods in the same direction. We further find that flies adopt periods of different mean ground speed and that these state changes influence the length of odor-evoked runs. We next developed a simple model of neural locomotor control that suggests that contralateral inhibition plays a key role in regulating the statistical features of locomotion. As the fly connectome predicts decussating inhibitory neurons in the premotor lateral accessory lobe (LAL), we gained genetic access to a subset of these neurons and tested their effects on behavior. We identified one population whose activation induces all three signature of local search and that regulates angular velocity at odor offset. We identified a second population, including a single LAL neuron pair, that bidirectionally regulates ground speed. Together, our work develops a biologically plausible computational architecture that captures the statistical features of fly locomotion across behavioral states and identifies neural substrates of these computations.",
+        "affiliation": "Department of Neuroscience, Neuroscience Institute, New York University School of Medicine, New York, NY 10016.",
+        "publicationStatus": "ppublish",
+        "language": "eng",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "NIDCD NIH HHS",
+              "acronym": "DC",
+              "grantId": "F31 DC019553",
+              "orderIn": 0
+            },
+            {
+              "agency": "NSF | BIO | Division of Integrative Organismal Systems",
+              "grantId": "IOS 2014217",
+              "orderIn": 0
+            },
+            {
+              "agency": "HHS | NIH | BRAIN Initiative",
+              "grantId": "RF1 NS127129",
+              "orderIn": 0
+            },
+            {
+              "agency": "NINDS NIH HHS",
+              "acronym": "NS",
+              "grantId": "RF1 NS127129",
+              "orderIn": 0
+            },
+            {
+              "agency": "NSF | BIO | Division of Integrative Organismal Systems (IOS)",
+              "grantId": "IOS 2014217",
+              "orderIn": 0
+            },
+            {
+              "agency": "HHS | NIH | National Institute on Deafness and Other Communication Disorders",
+              "grantId": "R01 DC107979",
+              "orderIn": 0
+            },
+            {
+              "agency": "HHS | NIH | National Institute on Deafness and Other Communication Disorders (NIDCD)",
+              "grantId": "R01 DC107979",
+              "orderIn": 0
+            },
+            {
+              "agency": "HHS | NIH | National Institute on Deafness and Other Communication Disorders",
+              "grantId": "F31 DC019553",
+              "orderIn": 0
+            }
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Neurons",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Animals"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Drosophila",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Drosophila melanogaster",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Walking",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Locomotion",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Odorants"
+            }
+          ]
+        },
+        "keywordList": {
+          "keyword": [
+            "Drosophila",
+            "Neuroscience",
+            "Locomotion",
+            "olfaction",
+            "Computational Model"
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1073/pnas.2407626122"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12037020"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12037020?pdf=render"
+            }
+          ]
+        },
+        "commentCorrectionList": {
+          "commentCorrection": [
+            {
+              "source": "MED",
+              "id": "38659800",
+              "reference": "bioRxiv. 2024 Dec 03:2024.04.15.589655. doi: 10.1101/2024.04.15.589655.",
+              "type": "Update of",
+              "orderIn": 1
+            }
+          ]
+        },
+        "isOpenAccess": "Y",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "citedByCount": 8,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "Y",
+        "hasBook": "N",
+        "hasSuppl": "Y",
+        "hasLabsLinks": "Y",
+        "hasData": "Y",
+        "license": "cc by-nc-nd",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "Y",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        },
+        "dateOfCompletion": "2025-04-17",
+        "dateOfCreation": "2025-04-17",
+        "dateOfRevision": "2026-09-24",
+        "electronicPublicationDate": "2025-04-17",
+        "firstPublicationDate": "2025-04-17",
+        "firstIndexDate": "2025-04-18",
+        "fullTextReceivedDate": "2025-12-02",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "41389794",
+        "source": "MED",
+        "pmid": "41389794",
+        "pmcid": "PMC12977095",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12977095"
+          ]
+        },
+        "doi": "10.1016/j.cub.2025.11.035",
+        "title": "Drosophila DNp03 descending neurons serve as a hub within a flight saccade network.",
+        "authorString": "Croke H, Jang H, Ludlow BK, Leung A, Eichler K, Stürner T, Costa M, Cohen I, Ausborn J, von Reyn CR.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Croke H",
+              "lastName": "Croke",
+              "firstName": "Haley",
+              "initials": "H",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Biomedical Engineering, Science, and Health Systems, Drexel University, 3141 Chestnut Street, Philadelphia, PA 19104, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Jang H",
+              "lastName": "Jang",
+              "firstName": "HyoJong",
+              "initials": "H",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Biomedical Engineering, Science, and Health Systems, Drexel University, 3141 Chestnut Street, Philadelphia, PA 19104, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Ludlow BK",
+              "lastName": "Ludlow",
+              "firstName": "B Kemper",
+              "initials": "BK",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Physics, Cornell University, Ithaca, NY 14850, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Leung A",
+              "lastName": "Leung",
+              "firstName": "Abby",
+              "initials": "A",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Physics, Cornell University, Ithaca, NY 14850, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Eichler K",
+              "lastName": "Eichler",
+              "firstName": "Katharina",
+              "initials": "K",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-7833-8621"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Genetics Department, Institute of Biology, Leipzig University, Leipzig 04103, Germany; Department of Zoology, University of Cambridge, Cambridge CB2 3EJ, UK."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Stürner T",
+              "lastName": "Stürner",
+              "firstName": "Tomke",
+              "initials": "T",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Zoology, University of Cambridge, Cambridge CB2 3EJ, UK; Neurobiology Division, MRC Laboratory of Molecular Biology, Cambridge CB2 0QH, UK."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Costa M",
+              "lastName": "Costa",
+              "firstName": "Marta",
+              "initials": "M",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Zoology, University of Cambridge, Cambridge CB2 3EJ, UK."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Cohen I",
+              "lastName": "Cohen",
+              "firstName": "Itai",
+              "initials": "I",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Physics, Cornell University, Ithaca, NY 14850, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Ausborn J",
+              "lastName": "Ausborn",
+              "firstName": "Jessica",
+              "initials": "J",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurobiology and Anatomy, Drexel University College of Medicine, 2900 W. Queen Lane, Philadelphia, PA 19129, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "von Reyn CR",
+              "lastName": "von Reyn",
+              "firstName": "Catherine R",
+              "initials": "CR",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Biomedical Engineering, Science, and Health Systems, Drexel University, 3141 Chestnut Street, Philadelphia, PA 19104, USA; Department of Neurobiology and Anatomy, Drexel University College of Medicine, 2900 W. Queen Lane, Philadelphia, PA 19129, USA. Electronic address: crv33@drexel.edu."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-7833-8621"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics",
+            "related_data",
+            "supporting_data"
+          ]
+        },
+        "journalInfo": {
+          "issue": "1",
+          "volume": "36",
+          "journalIssueId": 4086601,
+          "dateOfPublication": "2026 Jan",
+          "monthOfPublication": 1,
+          "yearOfPublication": 2026,
+          "journal": {
+            "medlineAbbreviation": "Curr Biol",
+            "title": "Current biology : CB",
+            "essn": "1879-0445",
+            "issn": "0960-9822",
+            "nlmid": "9107782",
+            "isoabbreviation": "Curr Biol"
+          },
+          "printPublicationDate": "2026-01-01"
+        },
+        "pubYear": "2026",
+        "pageInfo": "133-150.e5",
+        "abstractText": "Animals rely on rapid sensorimotor processing to detect and respond to visual stimuli in their environment, yet how sensorimotor networks are organized to generate appropriate behaviors remains unclear. Here, we identify a bilateral pair of descending neurons (DNs), DNp03, as a hub for collision avoidance in flying flies. DNp03 receives visual information related to looming objects approaching on a collision course and connects directly and indirectly to motor neurons of the wings and neck, enabling the coordinated banked turn and head stabilization maneuvers of a rapid saccade. Although DNp03 can drive saccade-like behavior when optogenetically activated, naturalistic looming-evoked saccade behavior relies on a network of interconnected DNs that can partially compensate for DNp03 in its absence. The connectivity of this hierarchical network suggests DNp03 operates in parallel with two additional DN hubs that directly recruit subservient DNs to reinforce and expand behavioral outputs. We also find competition between the saccade network and descending pathways for landing behavior, where direct inhibitory connections from DNp03 reduce the likelihood a fly decides to land on, rather than turn away from, a looming object. Altogether, we provide a detailed mapping of one key sensorimotor pathway from visual inputs to motor outputs to demonstrate how even rapid, innate sensorimotor transformations rely on complex networks. These findings reveal intricate interconnectivity and hierarchy in descending pathways, a strategy that may represent a general principle of motor control across species.",
+        "affiliation": "School of Biomedical Engineering, Science, and Health Systems, Drexel University, 3141 Chestnut Street, Philadelphia, PA 19104, USA.",
+        "publicationStatus": "ppublish",
+        "language": "eng",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "NINDS NIH HHS",
+              "acronym": "NS",
+              "grantId": "R01 NS118562",
+              "orderIn": 0
+            },
+            {
+              "agency": "NIMH NIH HHS",
+              "acronym": "MH",
+              "grantId": "RF1 MH120679",
+              "orderIn": 0
+            }
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Neurons",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Motor Neurons",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Animals"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Drosophila melanogaster",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Flight, Animal",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Saccades",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Female"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Male"
+            }
+          ]
+        },
+        "keywordList": {
+          "keyword": [
+            "Drosophila",
+            "Aerodynamics",
+            "Motor control",
+            "Networks",
+            "Command Neuron",
+            "Flight Control",
+            "Saccades",
+            "Sensorimotor Transformation",
+            "Descending Neuron",
+            "Visual Projection Neuron"
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1016/j.cub.2025.11.035"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12977095"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12977095?pdf=render"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1016/j.cub.2025.11.035"
+            }
+          ]
+        },
+        "isOpenAccess": "N",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "citedByCount": 0,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "Y",
+        "hasBook": "N",
+        "hasSuppl": "Y",
+        "hasLabsLinks": "Y",
+        "hasData": "Y",
+        "authMan": "Y",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "Y",
+        "manuscriptId": "NIHMS2129763",
+        "hasTMAccessionNumbers": "Y",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        },
+        "dateOfCompletion": "2026-01-06",
+        "dateOfCreation": "2025-12-13",
+        "dateOfRevision": "2026-09-27",
+        "electronicPublicationDate": "2025-12-12",
+        "firstPublicationDate": "2025-12-12",
+        "firstIndexDate": "2025-12-14",
+        "fullTextReceivedDate": "2026-03-14",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "PPR1098763",
+        "source": "PPR",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PPR1098763"
+          ]
+        },
+        "doi": "10.1101/2025.10.09.680999",
+        "title": "Sexual dimorphism in the complete connectome of the  <i>Drosophila</i>  male central nervous system",
+        "authorString": "Berg S, Beckett IR, Costa M, Schlegel P, Januszewski M, Marin EC, Nern A, Preibisch S, Qiu W, Takemura S, Fragniere AMC, Champion AS, Adjavon D, Cook M, Gkantia M, Hayworth KJ, Huang GB, Kampf F, Katz WT, Lu Z, Ordish C, Paterson T, Stuerner T, Trautman ET, Whittle CR, Burnett LE, Hoeller J, Li F, Loesche F, Morris BJ, Pietzsch T, Pleijzier MW, Silva V, Yin Y, Ali I, Bates AS, Beresford RJ, Bogovic J, Brooks P, Cachero S, Canino BS, Chaisrisawatsuk B, Clements J, Crowe A, de Haan Vicente I, Dempsey G, Dona E, dos Santos M, Dreher M, Dunne CR, Eichler K, Finley-May S, Flynn MA, Hameed I, Hopkins GP, Hubbard PM, Kiassat L, Kovalyak J, Lauchie SA, Leonard M, Lohff A, Longden KD, Maldonado CA, Moitra I, Moon SS, Mooney C, Munnelly EJ, Okeoma N, Olbris DJ, Pai A, Patel B, Phillips EM, Plaza SM, Richards A, Rivas Salinas J, Roberts RJV, Rogers EM, Scott AL, Scuderi LA, Seenivasan P, Serratosa Capdevila L, Smith C, Svirskas R, Takemura S, Tastekin I, Thomson A, Umayam L, Walsh JJ, Whittome H, Xu CS, Yakal EA, Yang T, Zhao A, George R, Jain V, Jayaraman V, Korff W, Meissner GW, Romani S, Funke J, Knecht C, Saalfeld S, Scheffer LK, Waddell S, Card GM, Ribeiro C, Reiser MB, Hess HF, Rubin GM, Jefferis GSXE.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Berg S",
+              "lastName": "Berg",
+              "firstName": "Stuart",
+              "initials": "S",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  },
+                  {
+                    "affiliation": "Janelia FlyEM Project Team"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Beckett IR",
+              "lastName": "Beckett",
+              "firstName": "Isabella",
+              "initials": "IR",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0001-3527-6782"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Neurobiology Division, , ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Costa M",
+              "lastName": "Costa",
+              "firstName": "Marta",
+              "initials": "M",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-5948-3092"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Zoology, ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Schlegel P",
+              "lastName": "Schlegel",
+              "firstName": "Philipp",
+              "initials": "P",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-5633-1314"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Zoology, ,"
+                  },
+                  {
+                    "affiliation": "Neurobiology Division, , ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Januszewski M",
+              "lastName": "Januszewski",
+              "firstName": "Michal",
+              "initials": "M",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-3480-2744"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": ", ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Marin EC",
+              "lastName": "Marin",
+              "firstName": "Elizabeth",
+              "initials": "EC",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-6333-0072"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Zoology, ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Nern A",
+              "lastName": "Nern",
+              "firstName": "Aljoscha",
+              "initials": "A",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Preibisch S",
+              "lastName": "Preibisch",
+              "firstName": "Stephan",
+              "initials": "S",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-0276-494X"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  },
+                  {
+                    "affiliation": "Janelia FlyEM Project Team"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Qiu W",
+              "lastName": "Qiu",
+              "firstName": "Wei",
+              "initials": "W",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0008-1764-5928"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  },
+                  {
+                    "affiliation": "Janelia FlyEM Project Team"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Takemura S",
+              "lastName": "Takemura",
+              "firstName": "Shin-ya",
+              "initials": "S",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  },
+                  {
+                    "affiliation": "Janelia FlyEM Project Team"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Fragniere AMC",
+              "lastName": "Fragniere",
+              "firstName": "Alexandra",
+              "initials": "AMC",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Zoology, ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Champion AS",
+              "lastName": "Champion",
+              "firstName": "Andrew",
+              "initials": "AS",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Zoology, ,"
+                  },
+                  {
+                    "affiliation": "Neurobiology Division, , ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Adjavon D",
+              "lastName": "Adjavon",
+              "firstName": "Diane-Yayra",
+              "initials": "D",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Cook M",
+              "lastName": "Cook",
+              "firstName": "Michael",
+              "initials": "M",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  },
+                  {
+                    "affiliation": "Janelia FlyEM Project Team"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Gkantia M",
+              "lastName": "Gkantia",
+              "firstName": "Marina",
+              "initials": "M",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Zoology, ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Hayworth KJ",
+              "lastName": "Hayworth",
+              "firstName": "Kenneth",
+              "initials": "KJ",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  },
+                  {
+                    "affiliation": "Janelia FlyEM Project Team"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Huang GB",
+              "lastName": "Huang",
+              "firstName": "Gary",
+              "initials": "GB",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  },
+                  {
+                    "affiliation": "Janelia FlyEM Project Team"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Kampf F",
+              "lastName": "Kampf",
+              "firstName": "Florian",
+              "initials": "F",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  },
+                  {
+                    "affiliation": "Janelia FlyEM Project Team"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Katz WT",
+              "lastName": "Katz",
+              "firstName": "William",
+              "initials": "WT",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Neurobiology Division, , ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Lu Z",
+              "lastName": "Lu",
+              "firstName": "Zhiyuan",
+              "initials": "Z",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  },
+                  {
+                    "affiliation": "Janelia FlyEM Project Team"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Ordish C",
+              "lastName": "Ordish",
+              "firstName": "Christopher",
+              "initials": "C",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  },
+                  {
+                    "affiliation": "Janelia FlyEM Project Team"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Paterson T",
+              "lastName": "Paterson",
+              "firstName": "Tyler",
+              "initials": "T",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  },
+                  {
+                    "affiliation": "Janelia FlyEM Project Team"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Stuerner T",
+              "lastName": "Stuerner",
+              "firstName": "Tomke",
+              "initials": "T",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Neurobiology Division, , ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Trautman ET",
+              "lastName": "Trautman",
+              "firstName": "Eric",
+              "initials": "ET",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  },
+                  {
+                    "affiliation": "Janelia FlyEM Project Team"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Whittle CR",
+              "lastName": "Whittle",
+              "firstName": "Catherine",
+              "initials": "CR",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Neurobiology Division, , ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Burnett LE",
+              "lastName": "Burnett",
+              "firstName": "Laura",
+              "initials": "LE",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Hoeller J",
+              "lastName": "Hoeller",
+              "firstName": "Judith",
+              "initials": "J",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Li F",
+              "lastName": "Li",
+              "firstName": "Feng",
+              "initials": "F",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  },
+                  {
+                    "affiliation": "Janelia FlyEM Project Team"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Loesche F",
+              "lastName": "Loesche",
+              "firstName": "Frank",
+              "initials": "F",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-7780-6438"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Morris BJ",
+              "lastName": "Morris",
+              "firstName": "Billy",
+              "initials": "BJ",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Zoology, ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Pietzsch T",
+              "lastName": "Pietzsch",
+              "firstName": "Tobias",
+              "initials": "T",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Pleijzier MW",
+              "lastName": "Pleijzier",
+              "firstName": "Markus",
+              "initials": "MW",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Neurobiology Division, , ,"
+                  },
+                  {
+                    "affiliation": "Department of Zoology, ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Silva V",
+              "lastName": "Silva",
+              "firstName": "Valeria",
+              "initials": "V",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Centre for Neural Circuits and Behaviour, ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Yin Y",
+              "lastName": "Yin",
+              "firstName": "Yijie",
+              "initials": "Y",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Physiology, Development and Neuroscience, ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Ali I",
+              "lastName": "Ali",
+              "firstName": "Iris",
+              "initials": "I",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  },
+                  {
+                    "affiliation": "Janelia FlyEM Project Team"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Bates AS",
+              "lastName": "Bates",
+              "firstName": "Alexander Shakeel",
+              "initials": "AS",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Zoology, ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Beresford RJ",
+              "lastName": "Beresford",
+              "firstName": "Rory",
+              "initials": "RJ",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurobiology, Harvard Medical School, Boston, MA, USA"
+                  },
+                  {
+                    "affiliation": "Centre for Neural Circuits and Behaviour, ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Bogovic J",
+              "lastName": "Bogovic",
+              "firstName": "John",
+              "initials": "J",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": ", ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Brooks P",
+              "lastName": "Brooks",
+              "firstName": "Paul",
+              "initials": "P",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Cachero S",
+              "lastName": "Cachero",
+              "firstName": "Sebastian",
+              "initials": "S",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Zoology, ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Canino BS",
+              "lastName": "Canino",
+              "firstName": "Brandon",
+              "initials": "BS",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Neurobiology Division, , ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Chaisrisawatsuk B",
+              "lastName": "Chaisrisawatsuk",
+              "firstName": "Bhumpanya",
+              "initials": "B",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  },
+                  {
+                    "affiliation": "Janelia FlyEM Project Team"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Clements J",
+              "lastName": "Clements",
+              "firstName": "Jody",
+              "initials": "J",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Neurobiology Division, , ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Crowe A",
+              "lastName": "Crowe",
+              "firstName": "Arthur",
+              "initials": "A",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  },
+                  {
+                    "affiliation": "Janelia FlyEM Project Team"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "de Haan Vicente I",
+              "lastName": "de Haan Vicente",
+              "firstName": "Ines",
+              "initials": "I",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Dempsey G",
+              "lastName": "Dempsey",
+              "firstName": "Georgia",
+              "initials": "G",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": ", ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Dona E",
+              "lastName": "Dona",
+              "firstName": "Erika",
+              "initials": "E",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Centre for Neural Circuits and Behaviour, ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "dos Santos M",
+              "lastName": "dos Santos",
+              "firstName": "Marcia",
+              "initials": "M",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Institute of Neuroscience, , Vedano al Lambro (MB),"
+                  },
+                  {
+                    "affiliation": "Neurobiology Division, , ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Dreher M",
+              "lastName": "Dreher",
+              "firstName": "Marisa",
+              "initials": "M",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Zoology, ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Dunne CR",
+              "lastName": "Dunne",
+              "firstName": "Christopher",
+              "initials": "CR",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Eichler K",
+              "lastName": "Eichler",
+              "firstName": "Katharina",
+              "initials": "K",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Zoology, ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Finley-May S",
+              "lastName": "Finley-May",
+              "firstName": "Samantha",
+              "initials": "S",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Zoology, ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Flynn MA",
+              "lastName": "Flynn",
+              "firstName": "Miriam",
+              "initials": "MA",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  },
+                  {
+                    "affiliation": "Janelia FlyEM Project Team"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Hameed I",
+              "lastName": "Hameed",
+              "firstName": "Imran",
+              "initials": "I",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  },
+                  {
+                    "affiliation": "Janelia FlyEM Project Team"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Hopkins GP",
+              "lastName": "Hopkins",
+              "firstName": "Gary Patrick",
+              "initials": "GP",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  },
+                  {
+                    "affiliation": "Janelia FlyEM Project Team"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Hubbard PM",
+              "lastName": "Hubbard",
+              "firstName": "Philip",
+              "initials": "PM",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  },
+                  {
+                    "affiliation": "Janelia FlyEM Project Team"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Kiassat L",
+              "lastName": "Kiassat",
+              "firstName": "Ladann",
+              "initials": "L",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  },
+                  {
+                    "affiliation": "Janelia FlyEM Project Team"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Kovalyak J",
+              "lastName": "Kovalyak",
+              "firstName": "Julie",
+              "initials": "J",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Zoology, ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Lauchie SA",
+              "lastName": "Lauchie",
+              "firstName": "Shirley",
+              "initials": "SA",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  },
+                  {
+                    "affiliation": "Janelia FlyEM Project Team"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Leonard M",
+              "lastName": "Leonard",
+              "firstName": "Meghan",
+              "initials": "M",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  },
+                  {
+                    "affiliation": "Janelia FlyEM Project Team"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Lohff A",
+              "lastName": "Lohff",
+              "firstName": "Alanna",
+              "initials": "A",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  },
+                  {
+                    "affiliation": "Janelia FlyEM Project Team"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Longden KD",
+              "lastName": "Longden",
+              "firstName": "Kit",
+              "initials": "KD",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  },
+                  {
+                    "affiliation": "Janelia FlyEM Project Team"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Maldonado CA",
+              "lastName": "Maldonado",
+              "firstName": "Charli",
+              "initials": "CA",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Moitra I",
+              "lastName": "Moitra",
+              "firstName": "Ilina",
+              "initials": "I",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  },
+                  {
+                    "affiliation": "Janelia FlyEM Project Team"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Moon SS",
+              "lastName": "Moon",
+              "firstName": "Sung Soo",
+              "initials": "SS",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Zoology, ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Mooney C",
+              "lastName": "Mooney",
+              "firstName": "Caroline",
+              "initials": "C",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Zoology, ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Munnelly EJ",
+              "lastName": "Munnelly",
+              "firstName": "Eva",
+              "initials": "EJ",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  },
+                  {
+                    "affiliation": "Janelia FlyEM Project Team"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Okeoma N",
+              "lastName": "Okeoma",
+              "firstName": "Nneoma",
+              "initials": "N",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Zoology, ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Olbris DJ",
+              "lastName": "Olbris",
+              "firstName": "Donald",
+              "initials": "DJ",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  },
+                  {
+                    "affiliation": "Janelia FlyEM Project Team"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Pai A",
+              "lastName": "Pai",
+              "firstName": "Anika",
+              "initials": "A",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  },
+                  {
+                    "affiliation": "Janelia FlyEM Project Team"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Patel B",
+              "lastName": "Patel",
+              "firstName": "Birava",
+              "initials": "B",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Zoology, ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Phillips EM",
+              "lastName": "Phillips",
+              "firstName": "Emily",
+              "initials": "EM",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  },
+                  {
+                    "affiliation": "Janelia FlyEM Project Team"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Plaza SM",
+              "lastName": "Plaza",
+              "firstName": "Stephen",
+              "initials": "SM",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  },
+                  {
+                    "affiliation": "Janelia FlyEM Project Team"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Richards A",
+              "lastName": "Richards",
+              "firstName": "Alana",
+              "initials": "A",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  },
+                  {
+                    "affiliation": "Janelia FlyEM Project Team"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Rivas Salinas J",
+              "lastName": "Rivas Salinas",
+              "firstName": "Jennifer",
+              "initials": "J",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Zoology, ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Roberts RJV",
+              "lastName": "Roberts",
+              "firstName": "Ruairi",
+              "initials": "RJV",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  },
+                  {
+                    "affiliation": "Janelia FlyEM Project Team"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Rogers EM",
+              "lastName": "Rogers",
+              "firstName": "Edward",
+              "initials": "EM",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Aelysia Ltd., Bristol, UK"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Scott AL",
+              "lastName": "Scott",
+              "firstName": "Ashley",
+              "initials": "AL",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Scuderi LA",
+              "lastName": "Scuderi",
+              "firstName": "Louis",
+              "initials": "LA",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  },
+                  {
+                    "affiliation": "Janelia FlyEM Project Team"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Seenivasan P",
+              "lastName": "Seenivasan",
+              "firstName": "Pavithraa",
+              "initials": "P",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  },
+                  {
+                    "affiliation": "Janelia FlyEM Project Team"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Serratosa Capdevila L",
+              "lastName": "Serratosa Capdevila",
+              "firstName": "Laia",
+              "initials": "L",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Smith C",
+              "lastName": "Smith",
+              "firstName": "Claire",
+              "initials": "C",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Aelysia Ltd., Bristol, UK"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Svirskas R",
+              "lastName": "Svirskas",
+              "firstName": "Rob",
+              "initials": "R",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  },
+                  {
+                    "affiliation": "Janelia FlyEM Project Team"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Takemura S",
+              "lastName": "Takemura",
+              "firstName": "Satoko",
+              "initials": "S",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  },
+                  {
+                    "affiliation": "Janelia FlyEM Project Team"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Tastekin I",
+              "lastName": "Tastekin",
+              "firstName": "Ibrahim",
+              "initials": "I",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  },
+                  {
+                    "affiliation": "Janelia FlyEM Project Team"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Thomson A",
+              "lastName": "Thomson",
+              "firstName": "Alexander",
+              "initials": "A",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": ", ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Umayam L",
+              "lastName": "Umayam",
+              "firstName": "Lowell",
+              "initials": "L",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  },
+                  {
+                    "affiliation": "Janelia FlyEM Project Team"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Walsh JJ",
+              "lastName": "Walsh",
+              "firstName": "John",
+              "initials": "JJ",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  },
+                  {
+                    "affiliation": "Janelia FlyEM Project Team"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Whittome H",
+              "lastName": "Whittome",
+              "firstName": "Holly",
+              "initials": "H",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  },
+                  {
+                    "affiliation": "Janelia FlyEM Project Team"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Xu CS",
+              "lastName": "Xu",
+              "firstName": "Shan",
+              "initials": "CS",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Zoology, ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Yakal EA",
+              "lastName": "Yakal",
+              "firstName": "Emily",
+              "initials": "EA",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  },
+                  {
+                    "affiliation": "Janelia FlyEM Project Team"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Yang T",
+              "lastName": "Yang",
+              "firstName": "Tansy",
+              "initials": "T",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  },
+                  {
+                    "affiliation": "Janelia FlyEM Project Team"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Zhao A",
+              "lastName": "Zhao",
+              "firstName": "Arthur",
+              "initials": "A",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  },
+                  {
+                    "affiliation": "Janelia FlyEM Project Team"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "George R",
+              "lastName": "George",
+              "firstName": "Reed",
+              "initials": "R",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Jain V",
+              "lastName": "Jain",
+              "firstName": "Viren",
+              "initials": "V",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  },
+                  {
+                    "affiliation": "Janelia FlyEM Project Team"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Jayaraman V",
+              "lastName": "Jayaraman",
+              "firstName": "Vivek",
+              "initials": "V",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Google Research, Mountain View, CA, USA"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Korff W",
+              "lastName": "Korff",
+              "firstName": "Wyatt",
+              "initials": "W",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  },
+                  {
+                    "affiliation": "Janelia FlyEM Project Team"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Meissner GW",
+              "lastName": "Meissner",
+              "firstName": "Geoffrey",
+              "initials": "GW",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  },
+                  {
+                    "affiliation": "Janelia FlyEM Project Team"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Romani S",
+              "lastName": "Romani",
+              "firstName": "Sandro",
+              "initials": "S",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  },
+                  {
+                    "affiliation": "Janelia FlyEM Project Team"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Funke J",
+              "lastName": "Funke",
+              "firstName": "Jan",
+              "initials": "J",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Knecht C",
+              "lastName": "Knecht",
+              "firstName": "Christopher",
+              "initials": "C",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  },
+                  {
+                    "affiliation": "Janelia FlyEM Project Team"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Saalfeld S",
+              "lastName": "Saalfeld",
+              "firstName": "Stephan",
+              "initials": "S",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  },
+                  {
+                    "affiliation": "Janelia FlyEM Project Team"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Scheffer LK",
+              "lastName": "Scheffer",
+              "firstName": "Louis",
+              "initials": "LK",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Waddell S",
+              "lastName": "Waddell",
+              "firstName": "Scott",
+              "initials": "S",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  },
+                  {
+                    "affiliation": "Janelia FlyEM Project Team"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Card GM",
+              "lastName": "Card",
+              "firstName": "Gwyneth",
+              "initials": "GM",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Centre for Neural Circuits and Behaviour, ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Ribeiro C",
+              "lastName": "Ribeiro",
+              "firstName": "Carlos",
+              "initials": "C",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Zuckerman Institute, , , ,"
+                  },
+                  {
+                    "affiliation": "Janelia FlyEM Project Team"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Reiser MB",
+              "lastName": "Reiser",
+              "firstName": "Michael",
+              "initials": "MB",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": ", ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Hess HF",
+              "lastName": "Hess",
+              "firstName": "Harald",
+              "initials": "HF",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Rubin GM",
+              "lastName": "Rubin",
+              "firstName": "Gerald",
+              "initials": "GM",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  },
+                  {
+                    "affiliation": "Janelia FlyEM Project Team"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Jefferis GSXE",
+              "lastName": "Jefferis",
+              "firstName": "Gregory",
+              "initials": "GSXE",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus , , , ,"
+                  },
+                  {
+                    "affiliation": "Janelia FlyEM Project Team"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-5948-3092"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-6333-0072"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-0276-494X"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-3480-2744"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-5633-1314"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-7780-6438"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0001-3527-6782"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0008-1764-5928"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "supporting_data"
+          ]
+        },
+        "pubYear": "2025",
+        "abstractText": "Sex differences in behaviour exist across all animals, typically under strong genetic regulation. In  Drosophila ,  fruitless /  doublesex transcription factors can identify dimorphic neurons but their organisation into functional circuits remains unclear. We present the connectome of the entire  Drosophila male central nervous system. This contains 166,691 neurons spanning the brain and nerve cord, fully proofread and annotated including  fruitless /  doublesex expression and 11,691 types. We provide the first comprehensive comparison between male and female brain connectomes to synaptic resolution, finding 7,205 isomorphic, 114 dimorphic, 262 male-specific and 69 female-specific types. This resource enables analysis of full sensory-to-motor circuits underlying complex behaviours and the impact of dimorphic elements. Sex-specific/dimorphic neurons are concentrated in higher brain centres while the sensory and motor periphery are largely isomorphic. Within higher centres, male-specific connections are organised into hotspots defined by male-specific neurons or arbours. Numerous circuit switches reroute sensory information to form antagonistic circuits controlling opposing behaviours.",
+        "pubTypeList": {
+          "pubType": [
+            "Preprint"
+          ]
+        },
+        "bookOrReportDetails": {
+          "publisher": "bioRxiv",
+          "yearOfPublication": 2025
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "Wellcome Trust",
+              "grantId": "220343/Z/20/Z",
+              "orderIn": 0
+            },
+            {
+              "agency": "Wellcome Trust",
+              "grantId": "221300/Z/20/Z",
+              "orderIn": 0
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1101/2025.10.09.680999"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/article/PPR/PPR1098763"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/api/fulltextRepo?pprId=PPR1098763&type=FILE&fileName=EMS209781-pdf.pdf&mimeType=application/pdf"
+            }
+          ]
+        },
+        "isOpenAccess": "Y",
+        "inEPMC": "Y",
+        "inPMC": "N",
+        "citedByCount": 0,
+        "hasReferences": "N",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "Y",
+        "hasBook": "N",
+        "hasSuppl": "Y",
+        "hasLabsLinks": "N",
+        "hasData": "Y",
+        "license": "cc by",
+        "authMan": "N",
+        "epmcAuthMan": "Y",
+        "nihAuthMan": "N",
+        "manuscriptId": "EMS209781",
+        "hasTMAccessionNumbers": "Y",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        },
+        "dateOfCreation": "2025-10-11",
+        "firstPublicationDate": "2025-10-09",
+        "firstIndexDate": "2025-10-11",
+        "fullTextReceivedDate": "2025-12-02",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "PPR672035",
+        "source": "PPR",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PPR672035"
+          ]
+        },
+        "doi": "10.1101/2023.06.07.543976",
+        "title": "Transforming descending input into motor output: An analysis of the  <i>Drosophila</i>  Male Adult Nerve Cord connectome",
+        "authorString": "Cheong HSJ, Eichler K, Stürner T, Asinof SK, Champion AS, Marin EC, Oram TB, Sumathipala M, Venkatasubramanian L, Namiki S, Siwanowicz I, Costa M, Berg S, Janelia FlyEM Project Team, Jefferis GSXE, Card GM.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Cheong HSJ",
+              "lastName": "Cheong",
+              "initials": "HSJ",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-5233-3438"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": ", , ,"
+                  },
+                  {
+                    "affiliation": "Zuckerman Institute, , ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Eichler K",
+              "lastName": "Eichler",
+              "initials": "K",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Drosophila Connectomics Group, Department of Zoology, , Downing Street , ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Stürner T",
+              "lastName": "Stürner",
+              "initials": "T",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Neurobiology Division, , ,"
+                  },
+                  {
+                    "affiliation": "Drosophila Connectomics Group, Department of Zoology, , Downing Street , ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Asinof SK",
+              "lastName": "Asinof",
+              "initials": "SK",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0000-8793-4671"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": ", , ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Champion AS",
+              "lastName": "Champion",
+              "initials": "AS",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-6883-0081"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Drosophila Connectomics Group, Department of Zoology, , Downing Street , ,"
+                  },
+                  {
+                    "affiliation": "Neurobiology Division, , ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Marin EC",
+              "lastName": "Marin",
+              "initials": "EC",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-6333-0072"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Drosophila Connectomics Group, Department of Zoology, , Downing Street , ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Oram TB",
+              "lastName": "Oram",
+              "initials": "TB",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": ", , ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Sumathipala M",
+              "lastName": "Sumathipala",
+              "initials": "M",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": ", , ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Venkatasubramanian L",
+              "lastName": "Venkatasubramanian",
+              "initials": "L",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-9280-8335"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Neurobiology Division, , ,"
+                  },
+                  {
+                    "affiliation": "Drosophila Connectomics Group, Department of Zoology, , Downing Street , ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Namiki S",
+              "lastName": "Namiki",
+              "initials": "S",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Research Center for Advanced Science and Technology, , ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Siwanowicz I",
+              "lastName": "Siwanowicz",
+              "initials": "I",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": ", , ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Costa M",
+              "lastName": "Costa",
+              "initials": "M",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Drosophila Connectomics Group, Department of Zoology, , Downing Street , ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Berg S",
+              "lastName": "Berg",
+              "initials": "S",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": ", , ,"
+                  }
+                ]
+              }
+            },
+            {
+              "collectiveName": "Janelia FlyEM Project Team",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": ", , ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Jefferis GSXE",
+              "lastName": "Jefferis",
+              "initials": "GSXE",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Neurobiology Division, , ,"
+                  },
+                  {
+                    "affiliation": "Drosophila Connectomics Group, Department of Zoology, , Downing Street , ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Card GM",
+              "lastName": "Card",
+              "initials": "GM",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": ", , ,"
+                  },
+                  {
+                    "affiliation": "Zuckerman Institute, , ,"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-5233-3438"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-6333-0072"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-6883-0081"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-9280-8335"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0000-8793-4671"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "recommended_reviews",
+            "supporting_data"
+          ]
+        },
+        "pubYear": "2023",
+        "abstractText": "In most animals, a relatively small number of descending neurons (DNs) connect higher brain centers in the animal’s head to circuits and motor neurons (MNs) in the nerve cord of the animal’s body that effect movement of the limbs. To understand how brain signals generate behavior, it is critical to understand how these descending pathways are organized onto the body MNs. In the fly,  Drosophila melanogaster , MNs controlling muscles in the leg, wing, and other motor systems reside in a ventral nerve cord (VNC), analogous to the mammalian spinal cord. In companion papers, we introduced a densely-reconstructed connectome of the  Drosophila Male Adult Nerve Cord (MANC, (Takemura et al., 2024)), including cell type and developmental lineage annotation (Marin et al., 2024), which provides complete VNC connectivity at synaptic resolution. Here, we present a first look at the organization of the VNC networks connecting DNs to MNs based on this new connectome information. We proofread and curated all DNs and MNs to ensure accuracy and reliability, then systematically matched DN axon terminals and MN dendrites with light microscopy data to link their VNC morphology with their brain inputs or muscle targets. We report both broad organizational patterns of the entire network and fine-scale analysis of selected circuits of interest. We discover that direct DN-MN connections are infrequent and identify communities of intrinsic neurons linked to control of different motor systems, including putative ventral circuits for walking, dorsal circuits for flight steering and power generation, and intermediate circuits in the lower tectulum for coordinated action of wings and legs. Our analysis generates hypotheses for future functional experiments and, together with the MANC connectome, empowers others to investigate these and other circuits of the  Drosophila ventral nerve cord in richer mechanistic detail.",
+        "pubTypeList": {
+          "pubType": [
+            "Preprint"
+          ]
+        },
+        "bookOrReportDetails": {
+          "publisher": "bioRxiv",
+          "yearOfPublication": 2023
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "Wellcome Trust",
+              "grantId": "220343/Z/20/Z",
+              "orderIn": 0
+            },
+            {
+              "agency": "Wellcome Trust",
+              "grantId": "221300/Z/20/Z",
+              "orderIn": 0
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Unpaywall",
+              "url": "https://www.biorxiv.org/content/biorxiv/early/2023/06/07/2023.06.07.543976.full.pdf"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1101/2023.06.07.543976"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/article/PPR/PPR672035"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/api/fulltextRepo?pprId=PPR672035&type=FILE&fileName=EMS177277-pdf.pdf&mimeType=application/pdf"
+            }
+          ]
+        },
+        "isOpenAccess": "Y",
+        "inEPMC": "Y",
+        "inPMC": "N",
+        "citedByCount": 19,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "Y",
+        "hasBook": "N",
+        "hasSuppl": "Y",
+        "hasLabsLinks": "Y",
+        "hasData": "Y",
+        "license": "cc by",
+        "authMan": "N",
+        "epmcAuthMan": "Y",
+        "nihAuthMan": "N",
+        "manuscriptId": "EMS177277",
+        "hasTMAccessionNumbers": "Y",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        },
+        "dateOfCreation": "2023-06-09",
+        "firstPublicationDate": "2023-06-07",
+        "firstIndexDate": "2023-06-09",
+        "fullTextReceivedDate": "2025-06-07",
+        "hasEvaluations": "Y"
+      },
+      {
+        "id": "40690376",
+        "source": "MED",
+        "pmid": "40690376",
+        "pmcid": "PMC12279373",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12279373"
+          ]
+        },
+        "doi": "10.7554/elife.102230",
+        "title": "Neural circuit mechanisms for steering control in walking &lt;i&gt;Drosophila&lt;/i&gt;.",
+        "authorString": "Rayshubskiy A, Holtz SL, Bates AS, Vanderbeck QX, Serratosa Capdevila L, Rockwell V, Wilson R.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Rayshubskiy A",
+              "lastName": "Rayshubskiy",
+              "firstName": "Aleksandr",
+              "initials": "A",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0009-3139-7606"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurobiology, Harvard Medical School, Boston, United States."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Holtz SL",
+              "lastName": "Holtz",
+              "firstName": "Stephen L",
+              "initials": "SL",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurobiology, Harvard Medical School, Boston, United States."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Bates AS",
+              "lastName": "Bates",
+              "firstName": "Alexander S",
+              "initials": "AS",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurobiology, Harvard Medical School, Boston, United States."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Vanderbeck QX",
+              "lastName": "Vanderbeck",
+              "firstName": "Quinn X",
+              "initials": "QX",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurobiology, Harvard Medical School, Boston, United States."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Serratosa Capdevila L",
+              "lastName": "Serratosa Capdevila",
+              "firstName": "Laia",
+              "initials": "L",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Aelysia LTD, Bristol, United Kingdom."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Rockwell V",
+              "lastName": "Rockwell",
+              "firstName": "Victoria",
+              "initials": "V",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurobiology, Harvard Medical School, Boston, United States."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Wilson R",
+              "lastName": "Wilson",
+              "firstName": "Rachel",
+              "initials": "R",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-8573-9266"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurobiology, Harvard Medical School, Boston, United States."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-8573-9266"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0009-3139-7606"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "supporting_data",
+            "related_data"
+          ]
+        },
+        "journalInfo": {
+          "volume": "13",
+          "journalIssueId": 3968770,
+          "dateOfPublication": "2025 Jul",
+          "monthOfPublication": 7,
+          "yearOfPublication": 2025,
+          "journal": {
+            "medlineAbbreviation": "Elife",
+            "title": "eLife",
+            "essn": "2050-084X",
+            "issn": "2050-084X",
+            "nlmid": "101579614",
+            "isoabbreviation": "Elife"
+          },
+          "printPublicationDate": "2025-07-01"
+        },
+        "pubYear": "2025",
+        "pageInfo": "RP102230",
+        "abstractText": "Orienting behaviors provide a continuous stream of information about an organism's sensory experiences and plans. Thus, to study the links between sensation and action, it is useful to identify the neurons in the brain that control orienting behaviors. Here, we describe descending neurons in the <i>Drosophila</i> brain that predict and influence orientation (heading) during walking. We show that these cells have specialized functions: whereas one cell type predicts sustained low-gain steering, the other predicts transient high-gain steering. These latter cells integrate internally directed steering signals from the head direction system with stimulus-directed steering signals from multimodal sensory pathways. The inputs to these cells are organized to produce 'see-saw' steering commands, so that increasing output from one brain hemisphere is accompanied by decreasing output from the other hemisphere. Together, our results show that internal and external drives are integrated to produce descending motor commands with different timescales, for flexible and precise control of an organism's orientation in space.",
+        "affiliation": "Department of Neurobiology, Harvard Medical School, Boston, United States.",
+        "publicationStatus": "epublish",
+        "language": "eng",
+        "pubModel": "Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "NIDCD NIH HHS",
+              "acronym": "DC",
+              "grantId": "F31 DC015701",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Institute of Neurological Disorders and Stroke",
+              "grantId": "U19NS104655",
+              "orderIn": 0
+            },
+            {
+              "agency": "NINDS NIH HHS",
+              "acronym": "NS",
+              "grantId": "F31NS106982",
+              "orderIn": 0
+            },
+            {
+              "agency": "NINDS NIH HHS",
+              "acronym": "NS",
+              "grantId": "R01 NS101157",
+              "orderIn": 0
+            },
+            {
+              "agency": "NINDS NIH HHS",
+              "acronym": "NS",
+              "grantId": "R01NS101157",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Institute on Deafness and Other Communication Disorders",
+              "grantId": "R01DC008174",
+              "orderIn": 0
+            },
+            {
+              "agency": "NINDS NIH HHS",
+              "acronym": "NS",
+              "grantId": "U24 NS126935",
+              "orderIn": 0
+            },
+            {
+              "agency": "NIDCD NIH HHS",
+              "acronym": "DC",
+              "grantId": "R01DC008174",
+              "orderIn": 0
+            },
+            {
+              "agency": "NIMH NIH HHS",
+              "acronym": "MH",
+              "grantId": "RF1 MH117815",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Institute of Neurological Disorders and Stroke",
+              "grantId": "F31DC015701",
+              "orderIn": 0
+            },
+            {
+              "agency": "NIDCD NIH HHS",
+              "acronym": "DC",
+              "grantId": "R01 DC008174",
+              "orderIn": 0
+            },
+            {
+              "agency": "NIMH NIH HHS",
+              "acronym": "MH",
+              "grantId": "RF1 MH120679",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Institute of Neurological Disorders and Stroke",
+              "grantId": "F31NS106982",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Institute of Neurological Disorders and Stroke",
+              "grantId": "R01NS101157",
+              "orderIn": 0
+            },
+            {
+              "agency": "NINDS NIH HHS",
+              "acronym": "NS",
+              "grantId": "U19 NS104655",
+              "orderIn": 0
+            },
+            {
+              "agency": "NINDS NIH HHS",
+              "acronym": "NS",
+              "grantId": "F31DC015701",
+              "orderIn": 0
+            },
+            {
+              "agency": "NINDS NIH HHS",
+              "acronym": "NS",
+              "grantId": "F31 NS106982",
+              "orderIn": 0
+            },
+            {
+              "agency": "NINDS NIH HHS",
+              "acronym": "NS",
+              "grantId": "U19NS104655",
+              "orderIn": 0
+            }
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Brain",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CY",
+                    "qualifierName": "cytology"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Neural Pathways",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Neurons",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Animals"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Drosophila",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Drosophila melanogaster",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Walking",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Orientation"
+            }
+          ]
+        },
+        "keywordList": {
+          "keyword": [
+            "Neuroscience",
+            "Motor control",
+            "olfaction",
+            "Navigation",
+            "D. Melanogaster",
+            "Descending Neurons"
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "doi",
+              "site": "Unpaywall",
+              "url": "https://doi.org/10.7554/elife.102230"
+            },
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.7554/eLife.102230"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12279373"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12279373?pdf=render"
+            }
+          ]
+        },
+        "isOpenAccess": "Y",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "citedByCount": 56,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "Y",
+        "hasBook": "N",
+        "hasSuppl": "Y",
+        "hasLabsLinks": "Y",
+        "hasData": "Y",
+        "license": "cc by",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "Y",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        },
+        "dateOfCompletion": "2025-07-21",
+        "dateOfCreation": "2025-07-21",
+        "dateOfRevision": "2026-09-25",
+        "electronicPublicationDate": "2025-07-21",
+        "firstPublicationDate": "2025-07-21",
+        "firstIndexDate": "2025-07-22",
+        "fullTextReceivedDate": "2025-11-28",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "29943730",
+        "source": "MED",
+        "pmid": "29943730",
+        "pmcid": "PMC6019073",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC6019073"
+          ]
+        },
+        "doi": "10.7554/elife.34272",
+        "title": "The functional organization of descending sensory-motor pathways in <i>Drosophila</i>.",
+        "authorString": "Namiki S, Dickinson MH, Wong AM, Korff W, Card GM.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Namiki S",
+              "lastName": "Namiki",
+              "firstName": "Shigehiro",
+              "initials": "S",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-1559-799X"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus, Howard Hughes Medical Institute, Ashburn, United States."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Dickinson MH",
+              "lastName": "Dickinson",
+              "firstName": "Michael H",
+              "initials": "MH",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-8587-9936"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Division of Biology and Bioengineering, California Institute of Technology, Pasadena, United States."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Wong AM",
+              "lastName": "Wong",
+              "firstName": "Allan M",
+              "initials": "AM",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-8492-2162"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus, Howard Hughes Medical Institute, Ashburn, United States."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Korff W",
+              "lastName": "Korff",
+              "firstName": "Wyatt",
+              "initials": "W",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-8396-1533"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus, Howard Hughes Medical Institute, Ashburn, United States."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Card GM",
+              "lastName": "Card",
+              "firstName": "Gwyneth M",
+              "initials": "GM",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-7679-3639"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus, Howard Hughes Medical Institute, Ashburn, United States."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-8396-1533"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-7679-3639"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-8492-2162"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-8587-9936"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-1559-799X"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics",
+            "supporting_data",
+            "related_data"
+          ]
+        },
+        "journalInfo": {
+          "volume": "7",
+          "journalIssueId": 2690716,
+          "dateOfPublication": "2018 Jun",
+          "monthOfPublication": 6,
+          "yearOfPublication": 2018,
+          "journal": {
+            "medlineAbbreviation": "Elife",
+            "title": "eLife",
+            "essn": "2050-084X",
+            "issn": "2050-084X",
+            "nlmid": "101579614",
+            "isoabbreviation": "Elife"
+          },
+          "printPublicationDate": "2018-06-01"
+        },
+        "pubYear": "2018",
+        "pageInfo": "e34272",
+        "abstractText": "In most animals, the brain controls the body via a set of descending neurons (DNs) that traverse the neck. DN activity activates, maintains or modulates locomotion and other behaviors. Individual DNs have been well-studied in species from insects to primates, but little is known about overall connectivity patterns across the DN population. We systematically investigated DN anatomy in <i>Drosophila melanogaster</i> and created over 100 transgenic lines targeting individual cell types. We identified roughly half of all <i>Drosophila</i> DNs and comprehensively map connectivity between sensory and motor neuropils in the brain and nerve cord, respectively. We find the nerve cord is a layered system of neuropils reflecting the fly's capability for two largely independent means of locomotion -- walking and flight -- using distinct sets of appendages. Our results reveal the basic functional map of descending pathways in flies and provide tools for systematic interrogation of neural circuits.",
+        "affiliation": "Janelia Research Campus, Howard Hughes Medical Institute, Ashburn, United States.",
+        "publicationStatus": "epublish",
+        "language": "eng",
+        "pubModel": "Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Research Support, Non-U.S. Gov't",
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "Howard Hughes Medical Institute",
+              "acronym": "HHMI",
+              "orderIn": 0
+            }
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Brain",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "AH",
+                    "qualifierName": "anatomy & histology"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CY",
+                    "qualifierName": "cytology"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Efferent Pathways",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Neuropil",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CY",
+                    "qualifierName": "cytology"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Neurons",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CY",
+                    "qualifierName": "cytology"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Animals"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Animals, Genetically Modified"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Drosophila melanogaster",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "AH",
+                    "qualifierName": "anatomy & histology"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CY",
+                    "qualifierName": "cytology"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Drosophila Proteins",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "GE",
+                    "qualifierName": "genetics"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Transcription Factors",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "GE",
+                    "qualifierName": "genetics"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Locomotion",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Genes, Reporter"
+            }
+          ]
+        },
+        "keywordList": {
+          "keyword": [
+            "Brain",
+            "Anatomy",
+            "Neuroscience",
+            "D. Melanogaster",
+            "Ventral Nerve Cord",
+            "Sensory-motor",
+            "Descending Neuron",
+            "Split-gal4"
+          ]
+        },
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "Drosophila Proteins",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Transcription Factors",
+              "registryNumber": "0"
+            },
+            {
+              "name": "GAL4 protein, Drosophila",
+              "registryNumber": "0"
+            }
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "doi",
+              "site": "Unpaywall",
+              "url": "https://doi.org/10.7554/elife.34272"
+            },
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.7554/eLife.34272"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC6019073"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC6019073?pdf=render"
+            }
+          ]
+        },
+        "commentCorrectionList": {
+          "commentCorrection": [
+            {
+              "source": "MED",
+              "id": "29943732",
+              "reference": "Elife. 2018 Jun 26;7:e38410. doi: 10.7554/eLife.38410",
+              "type": "Comment in",
+              "orderIn": 1
+            },
+            {
+              "source": "PPR",
+              "id": "PPR21389",
+              "type": "Preprint in",
+              "note": "CrossRef Pre-print loader",
+              "orderIn": 10002
+            }
+          ]
+        },
+        "isOpenAccess": "Y",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "citedByCount": 314,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "Y",
+        "hasBook": "N",
+        "hasSuppl": "Y",
+        "hasLabsLinks": "Y",
+        "hasData": "Y",
+        "license": "cc by",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "Y",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        },
+        "dateOfCompletion": "2019-04-08",
+        "dateOfCreation": "2018-06-27",
+        "dateOfRevision": "2023-09-26",
+        "electronicPublicationDate": "2018-06-26",
+        "firstPublicationDate": "2018-06-26",
+        "firstIndexDate": "2018-06-27",
+        "fullTextReceivedDate": "2025-02-05",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "PPR139610",
+        "source": "PPR",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PPR139610"
+          ]
+        },
+        "doi": "10.1101/2020.04.04.024703",
+        "title": "Neural circuit mechanisms for steering control in  <i>walking Drosophila</i>",
+        "authorString": "Rayshubskiy A, Holtz SL, Bates AS, Vanderbeck QX, Capdevila LS, Rockwell V, Wilson RI.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Rayshubskiy A",
+              "lastName": "Rayshubskiy",
+              "firstName": "Aleksandr",
+              "initials": "A",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurobiology, , , ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Holtz SL",
+              "lastName": "Holtz",
+              "firstName": "Stephen",
+              "initials": "SL",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurobiology, , , ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Bates AS",
+              "lastName": "Bates",
+              "firstName": "Alexander",
+              "initials": "AS",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurobiology, , , ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Vanderbeck QX",
+              "lastName": "Vanderbeck",
+              "firstName": "Quinn",
+              "initials": "QX",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurobiology, , , ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Capdevila LS",
+              "lastName": "Capdevila",
+              "firstName": "Laia Serratosa",
+              "initials": "LS",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Aelysia LTD, Bristol, BS9 3BY UK"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Rockwell V",
+              "lastName": "Rockwell",
+              "firstName": "Victoria",
+              "initials": "V",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurobiology, , , ,"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Wilson RI",
+              "lastName": "Wilson",
+              "firstName": "Rachel",
+              "initials": "RI",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurobiology, , , ,"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-6302-6791"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-8573-9266"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "recommended_reviews"
+          ]
+        },
+        "pubYear": "2020",
+        "abstractText": "Orienting behaviors provide a continuous stream of information about an organism’s sensory experiences and plans. Thus, to study the links between sensation and action, it is useful to identify the neurons in the brain that control orienting behaviors. Here we describe descending neurons in the  Drosophila brain that predict and influence orientation (heading) during walking. We show that these cells have specialized functions: whereas one cell type predicts sustained low-gain steering, the other predicts transient high-gain steering. These latter cells integrate internally-directed steering signals from the head direction system with stimulus-directed steering signals from multimodal sensory pathways. The inputs to these cells are organized to produce “see-saw” steering commands, so that increasing output from one brain hemisphere is accompanied by decreasing output from the other hemisphere. Together, our results show that internal and external drives are integrated to produce descending motor commands with different timescales, for flexible and precise control of an organism’s orientation in space.",
+        "pubTypeList": {
+          "pubType": [
+            "Preprint"
+          ]
+        },
+        "bookOrReportDetails": {
+          "publisher": "bioRxiv",
+          "yearOfPublication": 2020
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Unpaywall",
+              "url": "https://www.biorxiv.org/content/biorxiv/early/2020/07/18/2020.04.04.024703.full.pdf"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1101/2020.04.04.024703"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/article/PPR/PPR139610"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/api/fulltextRepo?pprId=PPR139610&type=FILE&fileName=EMS204238-pdf.pdf&mimeType=application/pdf"
+            }
+          ]
+        },
+        "isOpenAccess": "Y",
+        "inEPMC": "Y",
+        "inPMC": "N",
+        "citedByCount": 27,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "Y",
+        "hasBook": "N",
+        "hasSuppl": "Y",
+        "hasLabsLinks": "Y",
+        "hasData": "Y",
+        "license": "cc by-nc-nd",
+        "authMan": "N",
+        "epmcAuthMan": "Y",
+        "nihAuthMan": "N",
+        "manuscriptId": "EMS204238",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCreation": "2020-04-07",
+        "firstPublicationDate": "2020-04-05",
+        "firstIndexDate": "2020-04-07",
+        "fullTextReceivedDate": "2025-04-02",
+        "hasEvaluations": "Y"
+      },
+      {
+        "id": "29943729",
+        "source": "MED",
+        "pmid": "29943729",
+        "pmcid": "PMC6031430",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC6031430"
+          ]
+        },
+        "doi": "10.7554/elife.34275",
+        "title": "Optogenetic dissection of descending behavioral control in <i>Drosophila</i>.",
+        "authorString": "Cande J, Namiki S, Qiu J, Korff W, Card GM, Shaevitz JW, Stern DL, Berman GJ.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Cande J",
+              "lastName": "Cande",
+              "firstName": "Jessica",
+              "initials": "J",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus, Howard Hughes Medical Institute, Ashburn, United States."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Namiki S",
+              "lastName": "Namiki",
+              "firstName": "Shigehiro",
+              "initials": "S",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-1559-799X"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus, Howard Hughes Medical Institute, Ashburn, United States."
+                  },
+                  {
+                    "affiliation": "Research Center for Advanced Science and Technology, University of Tokyo, Tokyo, Japan."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Qiu J",
+              "lastName": "Qiu",
+              "firstName": "Jirui",
+              "initials": "J",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Physics, Emory University, Atlanta, Georgia."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Korff W",
+              "lastName": "Korff",
+              "firstName": "Wyatt",
+              "initials": "W",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-8396-1533"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus, Howard Hughes Medical Institute, Ashburn, United States."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Card GM",
+              "lastName": "Card",
+              "firstName": "Gwyneth M",
+              "initials": "GM",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-7679-3639"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus, Howard Hughes Medical Institute, Ashburn, United States."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Shaevitz JW",
+              "lastName": "Shaevitz",
+              "firstName": "Joshua W",
+              "initials": "JW",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-8809-4723"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "The Lewis-Sigler Institute for Integrative Genomics, Princeton University, Princeton, United States."
+                  },
+                  {
+                    "affiliation": "Department of Physics, Princeton University, Princeton, United States."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Stern DL",
+              "lastName": "Stern",
+              "firstName": "David L",
+              "initials": "DL",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-1847-6483"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Janelia Research Campus, Howard Hughes Medical Institute, Ashburn, United States."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Berman GJ",
+              "lastName": "Berman",
+              "firstName": "Gordon J",
+              "initials": "GJ",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-3588-7820"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Physics, Emory University, Atlanta, Georgia."
+                  },
+                  {
+                    "affiliation": "Department of Biology, Emory University, Atlanta, Georgia."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-8396-1533"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-8809-4723"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-1847-6483"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-7679-3639"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-1559-799X"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-3588-7820"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "supporting_data",
+            "related_data"
+          ]
+        },
+        "journalInfo": {
+          "volume": "7",
+          "journalIssueId": 2690716,
+          "dateOfPublication": "2018 Jun",
+          "monthOfPublication": 6,
+          "yearOfPublication": 2018,
+          "journal": {
+            "medlineAbbreviation": "Elife",
+            "title": "eLife",
+            "essn": "2050-084X",
+            "issn": "2050-084X",
+            "nlmid": "101579614",
+            "isoabbreviation": "Elife"
+          },
+          "printPublicationDate": "2018-06-01"
+        },
+        "pubYear": "2018",
+        "pageInfo": "e34275",
+        "abstractText": "In most animals, the brain makes behavioral decisions that are transmitted by descending neurons to the nerve cord circuitry that produces behaviors. In insects, only a few descending neurons have been associated with specific behaviors. To explore how descending neurons control an insect's movements, we developed a novel method to systematically assay the behavioral effects of activating individual neurons on freely behaving terrestrial <i>D. melanogaster</i>. We calculated a two-dimensional representation of the entire behavior space explored by these flies, and we associated descending neurons with specific behaviors by identifying regions of this space that were visited with increased frequency during optogenetic activation. Applying this approach across a large collection of descending neurons, we found that (1) activation of most of the descending neurons drove stereotyped behaviors, (2) in many cases multiple descending neurons activated similar behaviors, and (3) optogenetically activated behaviors were often dependent on the behavioral state prior to activation.",
+        "affiliation": "Janelia Research Campus, Howard Hughes Medical Institute, Ashburn, United States.",
+        "publicationStatus": "epublish",
+        "language": "eng",
+        "pubModel": "Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Research Support, Non-U.S. Gov't",
+            "research-article",
+            "Journal Article",
+            "Research Support, N.I.H., Extramural"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "NIH HHS",
+              "acronym": "NH",
+              "grantId": "GM09809",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Institutes of Health",
+              "grantId": "GM09809",
+              "orderIn": 0
+            },
+            {
+              "agency": "NIGMS NIH HHS",
+              "acronym": "GM",
+              "grantId": "R01 GM098090",
+              "orderIn": 0
+            },
+            {
+              "agency": "Howard Hughes Medical Institute",
+              "acronym": "HHMI",
+              "orderIn": 0
+            }
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Brain",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "AH",
+                    "qualifierName": "anatomy & histology"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CY",
+                    "qualifierName": "cytology"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Efferent Pathways",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "AH",
+                    "qualifierName": "anatomy & histology"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CY",
+                    "qualifierName": "cytology"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Neurons",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CY",
+                    "qualifierName": "cytology"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Animals"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Drosophila melanogaster",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "AH",
+                    "qualifierName": "anatomy & histology"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CY",
+                    "qualifierName": "cytology"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Drosophila Proteins",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "GE",
+                    "qualifierName": "genetics"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Transcription Factors",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "GE",
+                    "qualifierName": "genetics"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Biological Assay"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Brain Mapping",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "MT",
+                    "qualifierName": "methods"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Behavior, Animal"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Spatial Behavior",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Locomotion",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Genes, Reporter"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Optogenetics",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "MT",
+                    "qualifierName": "methods"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "keywordList": {
+          "keyword": [
+            "Behavior",
+            "Descending interneurons",
+            "Neuroscience",
+            "Optogenetics",
+            "D. Melanogaster"
+          ]
+        },
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "Drosophila Proteins",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Transcription Factors",
+              "registryNumber": "0"
+            },
+            {
+              "name": "GAL4 protein, Drosophila",
+              "registryNumber": "0"
+            }
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.7554/eLife.34275"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC6031430"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC6031430?pdf=render"
+            }
+          ]
+        },
+        "commentCorrectionList": {
+          "commentCorrection": [
+            {
+              "source": "MED",
+              "id": "29943732",
+              "reference": "Elife. 2018 Jun 26;7:e38410. doi: 10.7554/eLife.38410",
+              "type": "Comment in",
+              "orderIn": 1
+            },
+            {
+              "source": "PPR",
+              "id": "PPR20140",
+              "type": "Preprint in",
+              "note": "CrossRef Pre-print loader",
+              "orderIn": 10002
+            }
+          ]
+        },
+        "isOpenAccess": "Y",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "citedByCount": 139,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "Y",
+        "hasBook": "N",
+        "hasSuppl": "Y",
+        "hasLabsLinks": "Y",
+        "hasData": "Y",
+        "license": "cc by",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "Y",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        },
+        "dateOfCompletion": "2019-04-08",
+        "dateOfCreation": "2018-06-27",
+        "dateOfRevision": "2019-06-10",
+        "electronicPublicationDate": "2018-06-26",
+        "firstPublicationDate": "2018-06-26",
+        "firstIndexDate": "2018-06-27",
+        "fullTextReceivedDate": "2025-02-05",
+        "hasEvaluations": "N"
+      }
+    ]
+  }
+}

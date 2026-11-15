@@ -1,0 +1,152 @@
+{
+  "status": "ok",
+  "message-type": "work-list",
+  "message-version": "1.0.0",
+  "message": {
+    "facets": {},
+    "total-results": 574339,
+    "items": [
+      {
+        "DOI": "10.7554/elife.40247.048",
+        "title": [
+          "Decision letter: Convergence of monosynaptic and polysynaptic sensory paths onto common motor outputs in a Drosophila feeding connectome"
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2018,
+              8,
+              23
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.7554/elife.40247.048",
+        "type": "peer-review"
+      },
+      {
+        "DOI": "10.7554/elife.02730.048",
+        "title": [
+          "Decision letter: Neuronal connectome of a sensory-motor circuit for visual navigation"
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2014,
+              4,
+              16
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.7554/elife.02730.048",
+        "type": "peer-review"
+      },
+      {
+        "DOI": "10.7554/elife.65745.sa1",
+        "title": [
+          "Decision letter: Unveiling the sensory and interneuronal pathways of the neuroendocrine connectome in Drosophila"
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2021,
+              2,
+              18
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.7554/elife.65745.sa1",
+        "type": "peer-review"
+      },
+      {
+        "DOI": "10.7554/elife.96084.2.sa3",
+        "title": [
+          "eLife Assessment: Transforming descending input into motor output: An analysis of the Drosophila Male Adult Nerve Cord connectome"
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2025,
+              7,
+              21
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.7554/elife.96084.2.sa3",
+        "type": "peer-review"
+      },
+      {
+        "DOI": "10.7554/elife.96084.2.sa2",
+        "title": [
+          "Reviewer #1 (Public review): Transforming descending input into motor output: An analysis of the Drosophila Male Adult Nerve Cord connectome"
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2025,
+              7,
+              21
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.7554/elife.96084.2.sa2",
+        "type": "peer-review"
+      },
+      {
+        "DOI": "10.7554/elife.96084.2.sa1",
+        "title": [
+          "Reviewer #2 (Public review): Transforming descending input into motor output: An analysis of the Drosophila Male Adult Nerve Cord connectome"
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2025,
+              7,
+              21
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.7554/elife.96084.2.sa1",
+        "type": "peer-review"
+      },
+      {
+        "DOI": "10.7554/elife.96084.3.sa2",
+        "title": [
+          "Reviewer #2 (Public review): Organization of circuits linking descending input to motor output in the Drosophila Male Adult Nerve Cord connectome"
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2026,
+              7,
+              20
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.7554/elife.96084.3.sa2",
+        "type": "peer-review"
+      },
+      {
+        "DOI": "10.7554/elife.96084.3.sa0",
+        "title": [
+          "eLife Assessment: Organization of circuits linking descending input to motor output in the Drosophila Male Adult Nerve Cord connectome"
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2026,
+              7,
+              20
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.7554/elife.96084.3.sa0",
+        "type": "peer-review"
+      }
+    ],
+    "items-per-page": 8,
+    "query": {
+      "start-index": 0,
+      "search-terms": "Drosophila proprioception sensory motor connectome"
+    }
+  }
+}
