@@ -17,7 +17,7 @@ Delivered single MaleCNS3988 R2 model; audit of existing traces, no new simulati
 | FG_BPN | FG候选GNG458→BPN下游→DNg100 | FG减弱前行指令 | partial | 刺激前32/32Hz、FG窗2.22/2.22Hz、之后20/20Hz；仍有残余，且不同时间窗比较，缺少R2 BPN单独的同时窗对照。未证明行为停止。 |
 | DN_MN_muscle | DNg100→MN801946/803314/801234→候选肌肉 | 神经重复波包驱动肌肉u | model_output_observed | 有直接兴奋边和实际MN/u记录；肌肉对应为候选映射。未通过切边证明这些直连的因果必要性，也未定位局部CPG。 |
 | CPG_origin | DNg100→E1/E2/I1/I2→MN | 局部回路生成并传递节律 | not_tested | 旧MANC E1=10707,E2=11751,I1=13905,I2=10242，不把这些ID移植到MaleCNS。 |
-| alternating_output | 上述MN池及左右/拮抗肌群 | 腿间和拮抗肌形成所需相位差 | not_achieved_in_inspected_examples | 不能由这三个肌肉外推所有130路；全六腿的正确协调尚未建立。 |
+| alternating_output | 上述MN池及左右/拮抗肌群 | 腿间和拮抗肌形成所需相位差 | not_verified | 三例不是已确认的拮抗或同名同功能配对，不能仅凭它们同相判定所有步相失败；全六腿及拮抗相位尚未验证。 |
 | CPG_ablation | E1/E2/I1/I2小回路 | E1/E2沉默取消节律；I1/I2单消融可保留 | not_tested | 最终MaleCNS模型没有对应完整消融验证；旧MANC局部结果单列。 |
 | DN_frequency | DNg100→节律回路 | 增强刺激使输出频率随之增加 | not_tested | 当前仅160pA协议；旧MANC模型曾非单调。 |
 | DNb08_motif | DNb08→E1/E2/E4/E5/I2 | 五细胞基序、负载依赖及选择性MN募集 | not_tested | DNb08标签有12044/12075/12189/12550；不能把全部同名细胞都当作论文驱动系精确覆盖。 |

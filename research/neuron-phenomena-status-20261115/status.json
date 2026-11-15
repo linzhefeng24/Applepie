@@ -140,7 +140,7 @@
     }
   },
   "PFL3_side_definition": "PFL3L/R groups use functional_output_side from pulse_neural_panel.py, not somaSide; source group IDs are preserved in the protocols.",
-  "audit_source_revision": "3e1fa6834ae2ad74f8f556ae52141c4c064bf953",
+  "audit_source_revision": "152c272a5165c045a24e86ccccbb04a88c5cbf64",
   "fully_reproduced_laboratory_experiments": [],
   "interpretation": "qualitative_response_supported is a scoped neural response, not a complete experimental reproduction, causal pathway validation or calibrated calcium fit. Entries overlap; not a success percentage.",
   "checks": [
@@ -383,7 +383,7 @@
       "id": "alternating_output",
       "structure": "上述MN池及左右/拮抗肌群",
       "expected": "腿间和拮抗肌形成所需相位差",
-      "status": "not_achieved_in_inspected_examples",
+      "status": "not_verified",
       "observed": "已检查的RM/RF/LM示例激活近同步，u多次饱和到1。",
       "namespace": "MaleCNS_v1.0 unless explicitly literature-only",
       "cell_ids": [
@@ -391,7 +391,7 @@
         "803314",
         "801234"
       ],
-      "limits": "不能由这三个肌肉外推所有130路；全六腿的正确协调尚未建立。",
+      "limits": "三例不是已确认的拮抗或同名同功能配对，不能仅凭它们同相判定所有步相失败；全六腿及拮抗相位尚未验证。",
       "literature_sources": []
     },
     {
