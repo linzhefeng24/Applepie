@@ -1,0 +1,1346 @@
+{
+  "input_sha256": "38cab73dd924be385692e227a04299fe7ce14a14b6f36f07b283098d4e6fcf11",
+  "scope": "actual old extended BRK run; all rows descriptive event loads, not causal current attribution",
+  "interpretation": "Direct BRK drive persists; early excitation from IN17A001/IN19A014/IN03A001 and other relays decays. BRK shared source_gain0.5 was inherited from brain tuning; test terminal-specific efficacy without raising every brain/VNC output.",
+  "targets": [
+    {
+      "target": "800051",
+      "type": "IN07B001",
+      "direct_BRK_inputs": [
+        {
+          "pre": "523843",
+          "pre_type": "AN19A018",
+          "structural_count": 27.0,
+          "source_gain": 0.5,
+          "early_Hz": 72.0,
+          "late_Hz": 66.66666666666667,
+          "weighted_event_change": -71.99999999999994
+        },
+        {
+          "pre": "16542",
+          "pre_type": "AN19A018",
+          "structural_count": 22.0,
+          "source_gain": 0.5,
+          "early_Hz": 76.0,
+          "late_Hz": 75.55555555555556,
+          "weighted_event_change": -4.8888888888888715
+        },
+        {
+          "pre": "44992",
+          "pre_type": "AN19A018",
+          "structural_count": 1.0,
+          "source_gain": 0.5,
+          "early_Hz": 4.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -2.0
+        },
+        {
+          "pre": "14863",
+          "pre_type": "AN19A018",
+          "structural_count": 25.0,
+          "source_gain": 0.5,
+          "early_Hz": 68.0,
+          "late_Hz": 68.88888888888889,
+          "weighted_event_change": 11.111111111111072
+        },
+        {
+          "pre": "17510",
+          "pre_type": "AN19A018",
+          "structural_count": 16.0,
+          "source_gain": 0.5,
+          "early_Hz": 72.0,
+          "late_Hz": 75.55555555555556,
+          "weighted_event_change": 28.444444444444457
+        },
+        {
+          "pre": "14113",
+          "pre_type": "AN19A018",
+          "structural_count": 19.0,
+          "source_gain": 0.5,
+          "early_Hz": 72.0,
+          "late_Hz": 75.55555555555556,
+          "weighted_event_change": 33.77777777777779
+        },
+        {
+          "pre": "14973",
+          "pre_type": "AN19A018",
+          "structural_count": 23.0,
+          "source_gain": 0.5,
+          "early_Hz": 72.0,
+          "late_Hz": 75.55555555555556,
+          "weighted_event_change": 40.88888888888891
+        }
+      ],
+      "declining_excitatory_sources": [
+        {
+          "pre": "800009",
+          "pre_type": "IN17A001",
+          "structural_count": 376.0,
+          "source_gain": 1.0,
+          "early_Hz": 16.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -6016.0
+        },
+        {
+          "pre": "803501",
+          "pre_type": "IN19A014",
+          "structural_count": 123.0,
+          "source_gain": 1.0,
+          "early_Hz": 32.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -3936.0
+        },
+        {
+          "pre": "800576",
+          "pre_type": "IN03A001",
+          "structural_count": 177.0,
+          "source_gain": 1.0,
+          "early_Hz": 20.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -3540.0
+        },
+        {
+          "pre": "56138",
+          "pre_type": "AN19B009",
+          "structural_count": 74.0,
+          "source_gain": 1.0,
+          "early_Hz": 12.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -888.0
+        },
+        {
+          "pre": "154726",
+          "pre_type": "AN18B003",
+          "structural_count": 32.0,
+          "source_gain": 1.0,
+          "early_Hz": 24.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -768.0
+        },
+        {
+          "pre": "800170",
+          "pre_type": "IN19A014",
+          "structural_count": 33.0,
+          "source_gain": 1.0,
+          "early_Hz": 20.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -660.0
+        },
+        {
+          "pre": "25985",
+          "pre_type": "DNge074",
+          "structural_count": 19.0,
+          "source_gain": 1.0,
+          "early_Hz": 24.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -456.0
+        },
+        {
+          "pre": "800053",
+          "pre_type": "IN07B001",
+          "structural_count": 38.0,
+          "source_gain": 1.0,
+          "early_Hz": 12.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -456.0
+        },
+        {
+          "pre": "10703",
+          "pre_type": "DNge036",
+          "structural_count": 24.0,
+          "source_gain": 1.0,
+          "early_Hz": 16.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -384.0
+        },
+        {
+          "pre": "513875",
+          "pre_type": "DNge003",
+          "structural_count": 31.0,
+          "source_gain": 1.0,
+          "early_Hz": 12.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -372.0
+        },
+        {
+          "pre": "532050",
+          "pre_type": "DNp23",
+          "structural_count": 88.0,
+          "source_gain": 1.0,
+          "early_Hz": 4.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -352.0
+        },
+        {
+          "pre": "802802",
+          "pre_type": "INXXX134",
+          "structural_count": 79.0,
+          "source_gain": 1.0,
+          "early_Hz": 4.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -316.0
+        }
+      ]
+    },
+    {
+      "target": "800053",
+      "type": "IN07B001",
+      "direct_BRK_inputs": [
+        {
+          "pre": "523843",
+          "pre_type": "AN19A018",
+          "structural_count": 40.0,
+          "source_gain": 0.5,
+          "early_Hz": 72.0,
+          "late_Hz": 66.66666666666667,
+          "weighted_event_change": -106.66666666666657
+        },
+        {
+          "pre": "16542",
+          "pre_type": "AN19A018",
+          "structural_count": 12.0,
+          "source_gain": 0.5,
+          "early_Hz": 76.0,
+          "late_Hz": 75.55555555555556,
+          "weighted_event_change": -2.666666666666657
+        },
+        {
+          "pre": "14863",
+          "pre_type": "AN19A018",
+          "structural_count": 34.0,
+          "source_gain": 0.5,
+          "early_Hz": 68.0,
+          "late_Hz": 68.88888888888889,
+          "weighted_event_change": 15.111111111111057
+        },
+        {
+          "pre": "17510",
+          "pre_type": "AN19A018",
+          "structural_count": 19.0,
+          "source_gain": 0.5,
+          "early_Hz": 72.0,
+          "late_Hz": 75.55555555555556,
+          "weighted_event_change": 33.77777777777779
+        },
+        {
+          "pre": "14973",
+          "pre_type": "AN19A018",
+          "structural_count": 30.0,
+          "source_gain": 0.5,
+          "early_Hz": 72.0,
+          "late_Hz": 75.55555555555556,
+          "weighted_event_change": 53.33333333333336
+        },
+        {
+          "pre": "14113",
+          "pre_type": "AN19A018",
+          "structural_count": 41.0,
+          "source_gain": 0.5,
+          "early_Hz": 72.0,
+          "late_Hz": 75.55555555555556,
+          "weighted_event_change": 72.88888888888891
+        }
+      ],
+      "declining_excitatory_sources": [
+        {
+          "pre": "803501",
+          "pre_type": "IN19A014",
+          "structural_count": 44.0,
+          "source_gain": 1.0,
+          "early_Hz": 32.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -1408.0
+        },
+        {
+          "pre": "800009",
+          "pre_type": "IN17A001",
+          "structural_count": 83.0,
+          "source_gain": 1.0,
+          "early_Hz": 16.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -1328.0
+        },
+        {
+          "pre": "800051",
+          "pre_type": "IN07B001",
+          "structural_count": 44.0,
+          "source_gain": 1.0,
+          "early_Hz": 28.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -1232.0
+        },
+        {
+          "pre": "154726",
+          "pre_type": "AN18B003",
+          "structural_count": 47.0,
+          "source_gain": 1.0,
+          "early_Hz": 24.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -1128.0
+        },
+        {
+          "pre": "25985",
+          "pre_type": "DNge074",
+          "structural_count": 42.0,
+          "source_gain": 1.0,
+          "early_Hz": 24.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -1008.0
+        },
+        {
+          "pre": "10163",
+          "pre_type": "DNge036",
+          "structural_count": 39.0,
+          "source_gain": 1.0,
+          "early_Hz": 20.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -780.0
+        },
+        {
+          "pre": "800576",
+          "pre_type": "IN03A001",
+          "structural_count": 38.0,
+          "source_gain": 1.0,
+          "early_Hz": 20.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -760.0
+        },
+        {
+          "pre": "56138",
+          "pre_type": "AN19B009",
+          "structural_count": 36.0,
+          "source_gain": 1.0,
+          "early_Hz": 12.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -432.0
+        },
+        {
+          "pre": "800170",
+          "pre_type": "IN19A014",
+          "structural_count": 18.0,
+          "source_gain": 1.0,
+          "early_Hz": 20.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -360.0
+        },
+        {
+          "pre": "513875",
+          "pre_type": "DNge003",
+          "structural_count": 28.0,
+          "source_gain": 1.0,
+          "early_Hz": 12.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -336.0
+        },
+        {
+          "pre": "532050",
+          "pre_type": "DNp23",
+          "structural_count": 71.0,
+          "source_gain": 1.0,
+          "early_Hz": 4.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -284.0
+        },
+        {
+          "pre": "10703",
+          "pre_type": "DNge036",
+          "structural_count": 15.0,
+          "source_gain": 1.0,
+          "early_Hz": 16.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -240.0
+        }
+      ]
+    },
+    {
+      "target": "801159",
+      "type": "IN18B011",
+      "direct_BRK_inputs": [
+        {
+          "pre": "44992",
+          "pre_type": "AN19A018",
+          "structural_count": 2.0,
+          "source_gain": 0.5,
+          "early_Hz": 4.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -4.0
+        },
+        {
+          "pre": "16542",
+          "pre_type": "AN19A018",
+          "structural_count": 16.0,
+          "source_gain": 0.5,
+          "early_Hz": 76.0,
+          "late_Hz": 75.55555555555556,
+          "weighted_event_change": -3.555555555555543
+        },
+        {
+          "pre": "46961",
+          "pre_type": "AN19A018",
+          "structural_count": 1.0,
+          "source_gain": 0.5,
+          "early_Hz": 0.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": 0.0
+        },
+        {
+          "pre": "14973",
+          "pre_type": "AN19A018",
+          "structural_count": 1.0,
+          "source_gain": 0.5,
+          "early_Hz": 72.0,
+          "late_Hz": 75.55555555555556,
+          "weighted_event_change": 1.7777777777777786
+        },
+        {
+          "pre": "14863",
+          "pre_type": "AN19A018",
+          "structural_count": 6.0,
+          "source_gain": 0.5,
+          "early_Hz": 68.0,
+          "late_Hz": 68.88888888888889,
+          "weighted_event_change": 2.666666666666657
+        },
+        {
+          "pre": "14113",
+          "pre_type": "AN19A018",
+          "structural_count": 2.0,
+          "source_gain": 0.5,
+          "early_Hz": 72.0,
+          "late_Hz": 75.55555555555556,
+          "weighted_event_change": 3.555555555555557
+        },
+        {
+          "pre": "17510",
+          "pre_type": "AN19A018",
+          "structural_count": 15.0,
+          "source_gain": 0.5,
+          "early_Hz": 72.0,
+          "late_Hz": 75.55555555555556,
+          "weighted_event_change": 26.66666666666668
+        }
+      ],
+      "declining_excitatory_sources": [
+        {
+          "pre": "13857",
+          "pre_type": "DNge139",
+          "structural_count": 14.0,
+          "source_gain": 1.0,
+          "early_Hz": 40.0,
+          "late_Hz": 17.77777777777778,
+          "weighted_event_change": -311.1111111111111
+        },
+        {
+          "pre": "513875",
+          "pre_type": "DNge003",
+          "structural_count": 25.0,
+          "source_gain": 1.0,
+          "early_Hz": 12.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -300.0
+        },
+        {
+          "pre": "13022",
+          "pre_type": "DNge139",
+          "structural_count": 12.0,
+          "source_gain": 1.0,
+          "early_Hz": 40.0,
+          "late_Hz": 31.11111111111111,
+          "weighted_event_change": -106.66666666666667
+        },
+        {
+          "pre": "10931",
+          "pre_type": "DNpe045",
+          "structural_count": 25.0,
+          "source_gain": 1.0,
+          "early_Hz": 4.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -100.0
+        },
+        {
+          "pre": "12885",
+          "pre_type": "DNpe020",
+          "structural_count": 19.0,
+          "source_gain": 1.0,
+          "early_Hz": 4.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -76.0
+        },
+        {
+          "pre": "154726",
+          "pre_type": "AN18B003",
+          "structural_count": 3.0,
+          "source_gain": 1.0,
+          "early_Hz": 24.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -72.0
+        },
+        {
+          "pre": "10558",
+          "pre_type": "DNp35",
+          "structural_count": 5.0,
+          "source_gain": 1.0,
+          "early_Hz": 12.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -60.0
+        },
+        {
+          "pre": "15306",
+          "pre_type": "DNpe020",
+          "structural_count": 13.0,
+          "source_gain": 1.0,
+          "early_Hz": 4.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -52.0
+        },
+        {
+          "pre": "56138",
+          "pre_type": "AN19B009",
+          "structural_count": 4.0,
+          "source_gain": 1.0,
+          "early_Hz": 12.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -48.0
+        },
+        {
+          "pre": "27714",
+          "pre_type": "ANXXX152",
+          "structural_count": 10.0,
+          "source_gain": 1.0,
+          "early_Hz": 4.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -40.0
+        },
+        {
+          "pre": "25985",
+          "pre_type": "DNge074",
+          "structural_count": 1.0,
+          "source_gain": 1.0,
+          "early_Hz": 24.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -24.0
+        },
+        {
+          "pre": "513134",
+          "pre_type": "ANXXX152",
+          "structural_count": 6.0,
+          "source_gain": 1.0,
+          "early_Hz": 4.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -24.0
+        }
+      ]
+    },
+    {
+      "target": "801262",
+      "type": "IN18B011",
+      "direct_BRK_inputs": [
+        {
+          "pre": "523843",
+          "pre_type": "AN19A018",
+          "structural_count": 4.0,
+          "source_gain": 0.5,
+          "early_Hz": 72.0,
+          "late_Hz": 66.66666666666667,
+          "weighted_event_change": -10.666666666666657
+        },
+        {
+          "pre": "44992",
+          "pre_type": "AN19A018",
+          "structural_count": 1.0,
+          "source_gain": 0.5,
+          "early_Hz": 4.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -2.0
+        },
+        {
+          "pre": "16542",
+          "pre_type": "AN19A018",
+          "structural_count": 2.0,
+          "source_gain": 0.5,
+          "early_Hz": 76.0,
+          "late_Hz": 75.55555555555556,
+          "weighted_event_change": -0.44444444444444287
+        },
+        {
+          "pre": "74742",
+          "pre_type": "AN19A018",
+          "structural_count": 2.0,
+          "source_gain": 0.5,
+          "early_Hz": 0.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": 0.0
+        },
+        {
+          "pre": "14863",
+          "pre_type": "AN19A018",
+          "structural_count": 4.0,
+          "source_gain": 0.5,
+          "early_Hz": 68.0,
+          "late_Hz": 68.88888888888889,
+          "weighted_event_change": 1.7777777777777715
+        },
+        {
+          "pre": "14113",
+          "pre_type": "AN19A018",
+          "structural_count": 3.0,
+          "source_gain": 0.5,
+          "early_Hz": 72.0,
+          "late_Hz": 75.55555555555556,
+          "weighted_event_change": 5.333333333333336
+        },
+        {
+          "pre": "14973",
+          "pre_type": "AN19A018",
+          "structural_count": 7.0,
+          "source_gain": 0.5,
+          "early_Hz": 72.0,
+          "late_Hz": 75.55555555555556,
+          "weighted_event_change": 12.44444444444445
+        },
+        {
+          "pre": "17510",
+          "pre_type": "AN19A018",
+          "structural_count": 8.0,
+          "source_gain": 0.5,
+          "early_Hz": 72.0,
+          "late_Hz": 75.55555555555556,
+          "weighted_event_change": 14.222222222222229
+        }
+      ],
+      "declining_excitatory_sources": [
+        {
+          "pre": "513875",
+          "pre_type": "DNge003",
+          "structural_count": 23.0,
+          "source_gain": 1.0,
+          "early_Hz": 12.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -276.0
+        },
+        {
+          "pre": "800805",
+          "pre_type": "IN18B005",
+          "structural_count": 12.0,
+          "source_gain": 1.0,
+          "early_Hz": 12.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -144.0
+        },
+        {
+          "pre": "800051",
+          "pre_type": "IN07B001",
+          "structural_count": 5.0,
+          "source_gain": 1.0,
+          "early_Hz": 28.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -140.0
+        },
+        {
+          "pre": "25985",
+          "pre_type": "DNge074",
+          "structural_count": 5.0,
+          "source_gain": 1.0,
+          "early_Hz": 24.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -120.0
+        },
+        {
+          "pre": "13857",
+          "pre_type": "DNge139",
+          "structural_count": 5.0,
+          "source_gain": 1.0,
+          "early_Hz": 40.0,
+          "late_Hz": 17.77777777777778,
+          "weighted_event_change": -111.11111111111111
+        },
+        {
+          "pre": "10931",
+          "pre_type": "DNpe045",
+          "structural_count": 19.0,
+          "source_gain": 1.0,
+          "early_Hz": 4.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -76.0
+        },
+        {
+          "pre": "12885",
+          "pre_type": "DNpe020",
+          "structural_count": 18.0,
+          "source_gain": 1.0,
+          "early_Hz": 4.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -72.0
+        },
+        {
+          "pre": "154726",
+          "pre_type": "AN18B003",
+          "structural_count": 3.0,
+          "source_gain": 1.0,
+          "early_Hz": 24.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -72.0
+        },
+        {
+          "pre": "15306",
+          "pre_type": "DNpe020",
+          "structural_count": 16.0,
+          "source_gain": 1.0,
+          "early_Hz": 4.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -64.0
+        },
+        {
+          "pre": "10558",
+          "pre_type": "DNp35",
+          "structural_count": 4.0,
+          "source_gain": 1.0,
+          "early_Hz": 12.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -48.0
+        },
+        {
+          "pre": "13022",
+          "pre_type": "DNge139",
+          "structural_count": 5.0,
+          "source_gain": 1.0,
+          "early_Hz": 40.0,
+          "late_Hz": 31.11111111111111,
+          "weighted_event_change": -44.44444444444444
+        },
+        {
+          "pre": "513134",
+          "pre_type": "ANXXX152",
+          "structural_count": 8.0,
+          "source_gain": 1.0,
+          "early_Hz": 4.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -32.0
+        }
+      ]
+    },
+    {
+      "target": "801426",
+      "type": "IN18B011",
+      "direct_BRK_inputs": [],
+      "declining_excitatory_sources": [
+        {
+          "pre": "11965",
+          "pre_type": "DNge053",
+          "structural_count": 5.0,
+          "source_gain": 1.0,
+          "early_Hz": 20.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -100.0
+        },
+        {
+          "pre": "10931",
+          "pre_type": "DNpe045",
+          "structural_count": 24.0,
+          "source_gain": 1.0,
+          "early_Hz": 4.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -96.0
+        },
+        {
+          "pre": "15811",
+          "pre_type": "DNg45",
+          "structural_count": 20.0,
+          "source_gain": 1.0,
+          "early_Hz": 4.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -80.0
+        },
+        {
+          "pre": "17093",
+          "pre_type": "DNg45",
+          "structural_count": 13.0,
+          "source_gain": 1.0,
+          "early_Hz": 4.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -52.0
+        },
+        {
+          "pre": "41114",
+          "pre_type": "AN08B015",
+          "structural_count": 3.0,
+          "source_gain": 1.0,
+          "early_Hz": 16.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -48.0
+        },
+        {
+          "pre": "800805",
+          "pre_type": "IN18B005",
+          "structural_count": 3.0,
+          "source_gain": 1.0,
+          "early_Hz": 12.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -36.0
+        },
+        {
+          "pre": "14469",
+          "pre_type": "AN10B018",
+          "structural_count": 2.0,
+          "source_gain": 1.0,
+          "early_Hz": 12.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -24.0
+        },
+        {
+          "pre": "902520",
+          "pre_type": "INXXX464",
+          "structural_count": 1.0,
+          "source_gain": 1.0,
+          "early_Hz": 20.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -20.0
+        },
+        {
+          "pre": "11614",
+          "pre_type": "DNpe032",
+          "structural_count": 3.0,
+          "source_gain": 1.0,
+          "early_Hz": 4.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -12.0
+        },
+        {
+          "pre": "10228",
+          "pre_type": "DNp06",
+          "structural_count": 2.0,
+          "source_gain": 1.0,
+          "early_Hz": 4.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -8.0
+        },
+        {
+          "pre": "27714",
+          "pre_type": "ANXXX152",
+          "structural_count": 2.0,
+          "source_gain": 1.0,
+          "early_Hz": 4.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -8.0
+        },
+        {
+          "pre": "800574",
+          "pre_type": "IN08B006",
+          "structural_count": 1.0,
+          "source_gain": 1.0,
+          "early_Hz": 4.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -4.0
+        }
+      ]
+    },
+    {
+      "target": "800959",
+      "type": "IN21A017",
+      "direct_BRK_inputs": [
+        {
+          "pre": "14863",
+          "pre_type": "AN19A018",
+          "structural_count": 1.0,
+          "source_gain": 0.5,
+          "early_Hz": 68.0,
+          "late_Hz": 68.88888888888889,
+          "weighted_event_change": 0.44444444444444287
+        }
+      ],
+      "declining_excitatory_sources": [
+        {
+          "pre": "21527",
+          "pre_type": "AN19B010",
+          "structural_count": 33.0,
+          "source_gain": 1.0,
+          "early_Hz": 20.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -660.0
+        },
+        {
+          "pre": "19612",
+          "pre_type": "ANXXX030",
+          "structural_count": 63.0,
+          "source_gain": 1.0,
+          "early_Hz": 8.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -504.0
+        },
+        {
+          "pre": "10221",
+          "pre_type": "DNge037",
+          "structural_count": 20.0,
+          "source_gain": 1.0,
+          "early_Hz": 16.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -320.0
+        },
+        {
+          "pre": "800012",
+          "pre_type": "AN19B001",
+          "structural_count": 15.0,
+          "source_gain": 1.0,
+          "early_Hz": 20.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -300.0
+        },
+        {
+          "pre": "801246",
+          "pre_type": "LBL40",
+          "structural_count": 7.0,
+          "source_gain": 1.0,
+          "early_Hz": 24.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -168.0
+        },
+        {
+          "pre": "11066",
+          "pre_type": "DNa13",
+          "structural_count": 16.0,
+          "source_gain": 1.0,
+          "early_Hz": 8.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -128.0
+        },
+        {
+          "pre": "808289",
+          "pre_type": "IN01A023",
+          "structural_count": 26.0,
+          "source_gain": 1.0,
+          "early_Hz": 4.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -104.0
+        },
+        {
+          "pre": "11365",
+          "pre_type": "DNbe007",
+          "structural_count": 6.0,
+          "source_gain": 1.0,
+          "early_Hz": 8.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -48.0
+        },
+        {
+          "pre": "902512",
+          "pre_type": "IN07B006",
+          "structural_count": 5.0,
+          "source_gain": 1.0,
+          "early_Hz": 8.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -40.0
+        },
+        {
+          "pre": "905415",
+          "pre_type": "IN07B006",
+          "structural_count": 2.0,
+          "source_gain": 1.0,
+          "early_Hz": 20.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -40.0
+        },
+        {
+          "pre": "10192",
+          "pre_type": "DNg75",
+          "structural_count": 2.0,
+          "source_gain": 1.0,
+          "early_Hz": 12.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -24.0
+        },
+        {
+          "pre": "10360",
+          "pre_type": "DNa02",
+          "structural_count": 2.0,
+          "source_gain": 1.0,
+          "early_Hz": 12.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -24.0
+        }
+      ]
+    },
+    {
+      "target": "802684",
+      "type": "IN21A017",
+      "direct_BRK_inputs": [
+        {
+          "pre": "14973",
+          "pre_type": "AN19A018",
+          "structural_count": 2.0,
+          "source_gain": 0.5,
+          "early_Hz": 72.0,
+          "late_Hz": 75.55555555555556,
+          "weighted_event_change": 3.555555555555557
+        },
+        {
+          "pre": "17510",
+          "pre_type": "AN19A018",
+          "structural_count": 10.0,
+          "source_gain": 0.5,
+          "early_Hz": 72.0,
+          "late_Hz": 75.55555555555556,
+          "weighted_event_change": 17.777777777777786
+        }
+      ],
+      "declining_excitatory_sources": [
+        {
+          "pre": "800170",
+          "pre_type": "IN19A014",
+          "structural_count": 72.0,
+          "source_gain": 1.0,
+          "early_Hz": 20.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -1440.0
+        },
+        {
+          "pre": "903819",
+          "pre_type": "IN08B001",
+          "structural_count": 78.0,
+          "source_gain": 1.0,
+          "early_Hz": 4.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -312.0
+        },
+        {
+          "pre": "800051",
+          "pre_type": "IN07B001",
+          "structural_count": 11.0,
+          "source_gain": 1.0,
+          "early_Hz": 28.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -308.0
+        },
+        {
+          "pre": "19217",
+          "pre_type": "AN23B003",
+          "structural_count": 25.0,
+          "source_gain": 1.0,
+          "early_Hz": 8.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -200.0
+        },
+        {
+          "pre": "22058",
+          "pre_type": "ANXXX030",
+          "structural_count": 14.0,
+          "source_gain": 1.0,
+          "early_Hz": 12.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -168.0
+        },
+        {
+          "pre": "10177",
+          "pre_type": "DNg16",
+          "structural_count": 20.0,
+          "source_gain": 1.0,
+          "early_Hz": 8.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -160.0
+        },
+        {
+          "pre": "17757",
+          "pre_type": "AN19B001",
+          "structural_count": 7.0,
+          "source_gain": 1.0,
+          "early_Hz": 16.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -112.0
+        },
+        {
+          "pre": "800053",
+          "pre_type": "IN07B001",
+          "structural_count": 9.0,
+          "source_gain": 1.0,
+          "early_Hz": 12.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -108.0
+        },
+        {
+          "pre": "520300",
+          "pre_type": "DNg75",
+          "structural_count": 6.0,
+          "source_gain": 1.0,
+          "early_Hz": 16.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -96.0
+        },
+        {
+          "pre": "800525",
+          "pre_type": "IN19A018",
+          "structural_count": 3.0,
+          "source_gain": 1.0,
+          "early_Hz": 20.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -60.0
+        },
+        {
+          "pre": "904022",
+          "pre_type": "IN19B010",
+          "structural_count": 5.0,
+          "source_gain": 1.0,
+          "early_Hz": 8.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -40.0
+        },
+        {
+          "pre": "30660",
+          "pre_type": "AN19B010",
+          "structural_count": 2.0,
+          "source_gain": 1.0,
+          "early_Hz": 12.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -24.0
+        }
+      ]
+    },
+    {
+      "target": "803799",
+      "type": "IN21A017",
+      "direct_BRK_inputs": [
+        {
+          "pre": "16542",
+          "pre_type": "AN19A018",
+          "structural_count": 4.0,
+          "source_gain": 0.5,
+          "early_Hz": 76.0,
+          "late_Hz": 75.55555555555556,
+          "weighted_event_change": -0.8888888888888857
+        },
+        {
+          "pre": "14113",
+          "pre_type": "AN19A018",
+          "structural_count": 1.0,
+          "source_gain": 0.5,
+          "early_Hz": 72.0,
+          "late_Hz": 75.55555555555556,
+          "weighted_event_change": 1.7777777777777786
+        }
+      ],
+      "declining_excitatory_sources": [
+        {
+          "pre": "800051",
+          "pre_type": "IN07B001",
+          "structural_count": 20.0,
+          "source_gain": 1.0,
+          "early_Hz": 28.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -560.0
+        },
+        {
+          "pre": "10440",
+          "pre_type": "DNg16",
+          "structural_count": 35.0,
+          "source_gain": 1.0,
+          "early_Hz": 8.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -280.0
+        },
+        {
+          "pre": "800805",
+          "pre_type": "IN18B005",
+          "structural_count": 14.0,
+          "source_gain": 1.0,
+          "early_Hz": 12.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -168.0
+        },
+        {
+          "pre": "801725",
+          "pre_type": "IN19B005",
+          "structural_count": 40.0,
+          "source_gain": 1.0,
+          "early_Hz": 4.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -160.0
+        },
+        {
+          "pre": "800012",
+          "pre_type": "AN19B001",
+          "structural_count": 7.0,
+          "source_gain": 1.0,
+          "early_Hz": 20.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -140.0
+        },
+        {
+          "pre": "800053",
+          "pre_type": "IN07B001",
+          "structural_count": 10.0,
+          "source_gain": 1.0,
+          "early_Hz": 12.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -120.0
+        },
+        {
+          "pre": "806690",
+          "pre_type": "IN08B058",
+          "structural_count": 28.0,
+          "source_gain": 1.0,
+          "early_Hz": 4.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -112.0
+        },
+        {
+          "pre": "800525",
+          "pre_type": "IN19A018",
+          "structural_count": 4.0,
+          "source_gain": 1.0,
+          "early_Hz": 20.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -80.0
+        },
+        {
+          "pre": "19612",
+          "pre_type": "ANXXX030",
+          "structural_count": 9.0,
+          "source_gain": 1.0,
+          "early_Hz": 8.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -72.0
+        },
+        {
+          "pre": "19753",
+          "pre_type": "AN23B003",
+          "structural_count": 18.0,
+          "source_gain": 1.0,
+          "early_Hz": 4.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -72.0
+        },
+        {
+          "pre": "10045",
+          "pre_type": "DNg100",
+          "structural_count": 8.0,
+          "source_gain": 1.0,
+          "early_Hz": 8.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -64.0
+        },
+        {
+          "pre": "25985",
+          "pre_type": "DNge074",
+          "structural_count": 2.0,
+          "source_gain": 1.0,
+          "early_Hz": 24.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -48.0
+        }
+      ]
+    },
+    {
+      "target": "903520",
+      "type": "IN21A017",
+      "direct_BRK_inputs": [],
+      "declining_excitatory_sources": [
+        {
+          "pre": "21527",
+          "pre_type": "AN19B010",
+          "structural_count": 12.0,
+          "source_gain": 1.0,
+          "early_Hz": 20.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -240.0
+        },
+        {
+          "pre": "10045",
+          "pre_type": "DNg100",
+          "structural_count": 21.0,
+          "source_gain": 1.0,
+          "early_Hz": 8.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -168.0
+        },
+        {
+          "pre": "19612",
+          "pre_type": "ANXXX030",
+          "structural_count": 21.0,
+          "source_gain": 1.0,
+          "early_Hz": 8.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -168.0
+        },
+        {
+          "pre": "12635",
+          "pre_type": "DNg19",
+          "structural_count": 36.0,
+          "source_gain": 1.0,
+          "early_Hz": 4.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -144.0
+        },
+        {
+          "pre": "800805",
+          "pre_type": "IN18B005",
+          "structural_count": 11.0,
+          "source_gain": 1.0,
+          "early_Hz": 12.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -132.0
+        },
+        {
+          "pre": "800051",
+          "pre_type": "IN07B001",
+          "structural_count": 4.0,
+          "source_gain": 1.0,
+          "early_Hz": 28.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -112.0
+        },
+        {
+          "pre": "10440",
+          "pre_type": "DNg16",
+          "structural_count": 11.0,
+          "source_gain": 1.0,
+          "early_Hz": 8.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -88.0
+        },
+        {
+          "pre": "10301",
+          "pre_type": "DNge050",
+          "structural_count": 19.0,
+          "source_gain": 1.0,
+          "early_Hz": 4.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -76.0
+        },
+        {
+          "pre": "806690",
+          "pre_type": "IN08B058",
+          "structural_count": 16.0,
+          "source_gain": 1.0,
+          "early_Hz": 4.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -64.0
+        },
+        {
+          "pre": "19753",
+          "pre_type": "AN23B003",
+          "structural_count": 14.0,
+          "source_gain": 1.0,
+          "early_Hz": 4.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -56.0
+        },
+        {
+          "pre": "10221",
+          "pre_type": "DNge037",
+          "structural_count": 3.0,
+          "source_gain": 1.0,
+          "early_Hz": 16.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -48.0
+        },
+        {
+          "pre": "80212",
+          "pre_type": "AN08B005",
+          "structural_count": 12.0,
+          "source_gain": 1.0,
+          "early_Hz": 4.0,
+          "late_Hz": 0.0,
+          "weighted_event_change": -48.0
+        }
+      ]
+    }
+  ]
+}
