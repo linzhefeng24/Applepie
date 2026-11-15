@@ -1,0 +1,286 @@
+{
+  "scope": "Only the two identified hindleg extensor routes and immediate cross-inhibitory candidates in the extracted MaleCNS3988 model; not a complete-brain symmetry claim.",
+  "purpose": "Explain whether concrete excitation/feedback/cross-inhibition can support phase alternation, not merely an amplitude bias.",
+  "model_sha256": "858d1818b8d8394c95bb62a6ce60474cb534a83b94265ef8615e367c110d262c",
+  "baseline_neural_sha256": "4153fa8f1d29bb1bd987281d68d8407767bb9dd4e2ff1644673218b33e3fc027",
+  "side_definition": "left/right names identify the destination hindleg; DNg100 projections in these paths cross sides.",
+  "mirrored_edges": [
+    {
+      "role": "DN_to_IN17",
+      "left_path": {
+        "pre": "10056",
+        "pre_type": "DNg100",
+        "post": "800003",
+        "post_type": "IN17A001",
+        "raw_synapse_count": 140,
+        "predicted_presynaptic_transmitter": "acetylcholine",
+        "current_model_sign": "excitatory",
+        "effective_signed_count": 140.0
+      },
+      "right_path": {
+        "pre": "10045",
+        "pre_type": "DNg100",
+        "post": "800114",
+        "post_type": "IN17A001",
+        "raw_synapse_count": 121,
+        "predicted_presynaptic_transmitter": "acetylcholine",
+        "current_model_sign": "excitatory",
+        "effective_signed_count": 121.0
+      }
+    },
+    {
+      "role": "IN17_to_INXXX464",
+      "left_path": {
+        "pre": "800003",
+        "pre_type": "IN17A001",
+        "post": "929612",
+        "post_type": "INXXX464",
+        "raw_synapse_count": 61,
+        "predicted_presynaptic_transmitter": "acetylcholine",
+        "current_model_sign": "excitatory",
+        "effective_signed_count": 61.0
+      },
+      "right_path": {
+        "pre": "800114",
+        "pre_type": "IN17A001",
+        "post": "902520",
+        "post_type": "INXXX464",
+        "raw_synapse_count": 69,
+        "predicted_presynaptic_transmitter": "acetylcholine",
+        "current_model_sign": "excitatory",
+        "effective_signed_count": 69.0
+      }
+    },
+    {
+      "role": "INXXX464_feedback_to_IN17",
+      "left_path": {
+        "pre": "929612",
+        "pre_type": "INXXX464",
+        "post": "800003",
+        "post_type": "IN17A001",
+        "raw_synapse_count": 205,
+        "predicted_presynaptic_transmitter": "acetylcholine",
+        "current_model_sign": "excitatory",
+        "effective_signed_count": 205.0
+      },
+      "right_path": {
+        "pre": "902520",
+        "pre_type": "INXXX464",
+        "post": "800114",
+        "post_type": "IN17A001",
+        "raw_synapse_count": 256,
+        "predicted_presynaptic_transmitter": "acetylcholine",
+        "current_model_sign": "excitatory",
+        "effective_signed_count": 256.0
+      }
+    },
+    {
+      "role": "INXXX464_to_MN",
+      "left_path": {
+        "pre": "929612",
+        "pre_type": "INXXX464",
+        "post": "800621",
+        "post_type": "Ti extensor MN",
+        "raw_synapse_count": 38,
+        "predicted_presynaptic_transmitter": "acetylcholine",
+        "current_model_sign": "excitatory",
+        "effective_signed_count": 38.0
+      },
+      "right_path": {
+        "pre": "902520",
+        "pre_type": "INXXX464",
+        "post": "800158",
+        "post_type": "Ti extensor MN",
+        "raw_synapse_count": 101,
+        "predicted_presynaptic_transmitter": "acetylcholine",
+        "current_model_sign": "excitatory",
+        "effective_signed_count": 101.0
+      }
+    },
+    {
+      "role": "DN_direct_to_MN",
+      "left_path": {
+        "pre": "10056",
+        "pre_type": "DNg100",
+        "post": "800621",
+        "post_type": "Ti extensor MN",
+        "raw_synapse_count": 8,
+        "predicted_presynaptic_transmitter": "acetylcholine",
+        "current_model_sign": "excitatory",
+        "effective_signed_count": 8.0
+      },
+      "right_path": {
+        "pre": "10045",
+        "pre_type": "DNg100",
+        "post": "800158",
+        "post_type": "Ti extensor MN",
+        "raw_synapse_count": 58,
+        "predicted_presynaptic_transmitter": "acetylcholine",
+        "current_model_sign": "excitatory",
+        "effective_signed_count": 58.0
+      }
+    },
+    {
+      "role": "E_to_cross_inhibitor",
+      "left_path": {
+        "pre": "929612",
+        "pre_type": "INXXX464",
+        "post": "800771",
+        "post_type": "IN07B013",
+        "raw_synapse_count": 115,
+        "predicted_presynaptic_transmitter": "acetylcholine",
+        "current_model_sign": "excitatory",
+        "effective_signed_count": 115.0
+      },
+      "right_path": {
+        "pre": "902520",
+        "pre_type": "INXXX464",
+        "post": "801113",
+        "post_type": "IN07B013",
+        "raw_synapse_count": 95,
+        "predicted_presynaptic_transmitter": "acetylcholine",
+        "current_model_sign": "excitatory",
+        "effective_signed_count": 95.0
+      }
+    },
+    {
+      "role": "cross_inhibitor_to_other_E",
+      "left_path": {
+        "pre": "800771",
+        "pre_type": "IN07B013",
+        "post": "902520",
+        "post_type": "INXXX464",
+        "raw_synapse_count": 7,
+        "predicted_presynaptic_transmitter": "glutamate",
+        "current_model_sign": "inhibitory_hypothesis",
+        "effective_signed_count": -7.0
+      },
+      "right_path": {
+        "pre": "801113",
+        "pre_type": "IN07B013",
+        "post": "929612",
+        "post_type": "INXXX464",
+        "raw_synapse_count": 4,
+        "predicted_presynaptic_transmitter": "glutamate",
+        "current_model_sign": "inhibitory_hypothesis",
+        "effective_signed_count": -4.0
+      }
+    }
+  ],
+  "bilateral_DN_mutual_excitation": [
+    {
+      "pre": "10045",
+      "pre_type": "DNg100",
+      "post": "10056",
+      "post_type": "DNg100",
+      "raw_synapse_count": 119,
+      "predicted_presynaptic_transmitter": "acetylcholine",
+      "current_model_sign": "excitatory",
+      "effective_signed_count": 119.0
+    },
+    {
+      "pre": "10056",
+      "pre_type": "DNg100",
+      "post": "10045",
+      "post_type": "DNg100",
+      "raw_synapse_count": 119,
+      "predicted_presynaptic_transmitter": "acetylcholine",
+      "current_model_sign": "excitatory",
+      "effective_signed_count": 119.0
+    }
+  ],
+  "additional_right_to_left_path": [
+    {
+      "pre": "800114",
+      "pre_type": "IN17A001",
+      "post": "801356",
+      "post_type": "IN14B005",
+      "raw_synapse_count": 8,
+      "predicted_presynaptic_transmitter": "acetylcholine",
+      "current_model_sign": "excitatory",
+      "effective_signed_count": 8.0
+    },
+    {
+      "pre": "801356",
+      "pre_type": "IN14B005",
+      "post": "800003",
+      "post_type": "IN17A001",
+      "raw_synapse_count": 4,
+      "predicted_presynaptic_transmitter": "glutamate",
+      "current_model_sign": "inhibitory_hypothesis",
+      "effective_signed_count": -4.0
+    }
+  ],
+  "additional_right_to_left_from_INXXX464": {
+    "pre": "902520",
+    "pre_type": "INXXX464",
+    "post": "801356",
+    "post_type": "IN14B005",
+    "raw_synapse_count": 2,
+    "predicted_presynaptic_transmitter": "acetylcholine",
+    "current_model_sign": "excitatory",
+    "effective_signed_count": 2.0
+  },
+  "observed_interneuron_spike_times_ms": {
+    "800771": [
+      218,
+      232,
+      430,
+      444,
+      647,
+      661,
+      858,
+      872,
+      1075,
+      1089,
+      1286,
+      1300,
+      1506,
+      1520
+    ],
+    "801113": [
+      221,
+      235,
+      433,
+      445,
+      650,
+      663,
+      861,
+      874,
+      1078,
+      1091,
+      1289,
+      1301,
+      1509,
+      1522
+    ],
+    "801356": [
+      214,
+      229,
+      426,
+      441,
+      460,
+      643,
+      658,
+      675,
+      854,
+      869,
+      889,
+      1071,
+      1086,
+      1282,
+      1297,
+      1315,
+      1502,
+      1517
+    ]
+  },
+  "interpretation": [
+    "Both selected branches contain excitatory IN17A001-INXXX464 positive feedback with different raw counts.",
+    "A two-step cross-inhibitory motif exists through IN07B013 if its glutamatergic outputs are inhibitory as assumed in the current model.",
+    "IN07B013 cells actually fire in near-coincident packets, e.g. left218/232ms versus right221/235ms; this does not establish half-cycle alternation.",
+    "DN mutual excitation is a candidate synchronizing route, not a demonstrated cause of synchrony.",
+    "An additional right-to-left IN14B005 route occurs in the selected local comparison. No mirror is asserted absent from the entire biological connectome."
+  ],
+  "sign_caution": "Raw counts are structural dataset values. ACh excitatory and especially glutamate inhibitory are current receptor/sign assumptions, not per-edge receptor measurements."
+}
