@@ -1,0 +1,19 @@
+{
+  "namespace": "MaleCNS_v1.0",
+  "nodes": 303,
+  "source_body_ids": [
+    "14113",
+    "14863",
+    "14973",
+    "16542",
+    "17510",
+    "523843"
+  ],
+  "target_body_ids": [
+    "39880",
+    "800041"
+  ],
+  "context": "All direct/two-hop BRK\u2192BON1 paths within previously extracted unified graph, induced edges retained. Local probe, not full-network validation.",
+  "parent_metadata_sha256": "c1d7b00efd51aeab7942ef9acf97360362a5cb6fd034a58ba880e2de7aeb199e",
+  "parent_connectivity_sha256": "9eb1f7c1544611e4c242267805b41d68a2cf2cb8ba07586fa5d39a9bb2b1f11e"
+}

@@ -19,6 +19,8 @@ for leg in ['LF','LM','LH','RF','RM','RH']:
   hits=[i for i,x in enumerate(cross) if x['leg']==leg and term==x['candidate_target_labels']]
   for i in hits[:1]:
    if pools[i]:record.append(pools[i][0])
+if mode.endswith('right-extensors-third'):
+ p['cell_parameters']={'MANC:10461':{'excitatory_gain':.3},'MANC:10462':{'excitatory_gain':.3}}
 if mode.endswith('RH-extensor-third'):
  p['cell_parameters']={'MANC:10462':{'excitatory_gain':.3}}
 if mode.endswith('RH-extensor-half'):

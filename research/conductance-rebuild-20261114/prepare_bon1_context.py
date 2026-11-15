@@ -1,0 +1,8 @@
+"""Same-MaleCNS local BRK→BON1 context for rapid calcium mechanism probes.
+Local results must be rechecked in the unified recurrent graph before adoption.
+"""
+from pathlib import Path
+import json,hashlib
+from scipy import sparse
+R=Path(__file__).parent;B=R/'results/mcns-unified';O=R/'results/mcns-bon1-local';O.mkdir(exist_ok=True);m=json.load(open(B/'neurons.json'));U=sparse.load_npz(B/'unsigned-connectivity.npz');W=sparse.load_npz(B/'signed-hypothesis-connectivity.npz');src={i for i,x in enumerate(m) if x['type']=='AN19A018' and x.get('mancBodyid') in [10788.,10564.,10528.,10449.,10282.,10351.]};dst={i for i,x in enumerate(m) if x.get('mancBodyid') in [10441.,10348.]};bridge=set(U[list(src)].nonzero()[1])&set(U[:,list(dst)].nonzero()[0]);keep=sorted(src|dst|bridge);assert len(src)==6 and len(dst)==2
+(O/'neurons.json').write_text(json.dumps([m[i] for i in keep],indent=2)+'\n');sparse.save_npz(O/'signed-hypothesis-connectivity.npz',W[keep][:,keep]);sparse.save_npz(O/'unsigned-connectivity.npz',U[keep][:,keep]);manifest={'namespace':'MaleCNS_v1.0','nodes':len(keep),'source_body_ids':[m[i]['bodyId'] for i in sorted(src)],'target_body_ids':[m[i]['bodyId'] for i in sorted(dst)],'context':'All direct/two-hop BRK→BON1 paths within previously extracted unified graph, induced edges retained. Local probe, not full-network validation.','parent_metadata_sha256':hashlib.sha256((B/'neurons.json').read_bytes()).hexdigest(),'parent_connectivity_sha256':hashlib.sha256((B/'signed-hypothesis-connectivity.npz').read_bytes()).hexdigest()};(O/'source-manifest.json').write_text(json.dumps(manifest,indent=2)+'\n');print(manifest)

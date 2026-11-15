@@ -28,8 +28,8 @@
     },
     {
       "path": "MANUAL_MECHANISM.md",
-      "bytes": 13059,
-      "sha256": "285db0cbde7ed673ad5b9d5abc5ab110e0499f079dec49f9bf736c962286b19a"
+      "bytes": 14751,
+      "sha256": "7793464548649cf3289bb09390e42936b1e22994e763c3f7aa04935a12c0ddf7"
     },
     {
       "path": "MECHANISMS.md",
@@ -182,6 +182,11 @@
       "sha256": "145abeffdb777424f9fb90c2e717b8e561f67e1519ae9bc10dbfab2508608b4e"
     },
     {
+      "path": "configs/manual-neural-bank-BON1Ca3000.json",
+      "bytes": 4906,
+      "sha256": "e1eceaea1be2e12b199a7df41e9ee8978111681a1ca89aca260903f5a36529f3"
+    },
+    {
       "path": "configs/manual-neural-bank-BRKrelayBalance.json",
       "bytes": 4115,
       "sha256": "e96e3696f864eb001c9d723a9f5b26e8469fb05baa6ed13442ac32e51b0abd4e"
@@ -190,6 +195,16 @@
       "path": "configs/manual-neural-bank-BRKreleaseHalf.json",
       "bytes": 3949,
       "sha256": "a559fb66702fa6b1a6dba273610450cbb84be531f5c29cd12f7201dcba447f75"
+    },
+    {
+      "path": "configs/manual-neural-bank-LULT3K90.json",
+      "bytes": 5452,
+      "sha256": "61c524d4faece35b06a973f34908a82719dc1a001d0eebe4e224c868d95bfeec"
+    },
+    {
+      "path": "configs/manual-neural-bank-LULbias2.json",
+      "bytes": 4798,
+      "sha256": "46e3bf51b512ec60ace50c783dade61cfd8ddfa3ce85da644f6847c6744a6e26"
     },
     {
       "path": "configs/manual-neural-bank-lul130-K90.json",
@@ -210,6 +225,11 @@
       "path": "configs/manual-neural-bank-r6.json",
       "bytes": 4879,
       "sha256": "07e5c6506e05cd6a205cca917e752209f2ede9e762c4911aa58f56b3e3f6e0d7"
+    },
+    {
+      "path": "configs/manual-neural-bank-r7.json",
+      "bytes": 4977,
+      "sha256": "91eaf7a49864438e553874d3abd79be85fd34eba9b2e22af22d668d6d79f72e6"
     },
     {
       "path": "configs/mcns-steering-manual.json",
@@ -487,6 +507,11 @@
       "sha256": "f81cb30024ea1d83ad0a343a69d50905b472b63b3cfa30953a030a815fa21805"
     },
     {
+      "path": "inspect_bon1_timecourse.py",
+      "bytes": 3421,
+      "sha256": "9d6ba9d25fc261b6012e0172c66598b2e5af207cb8cd83c783db89769256fd67"
+    },
+    {
       "path": "inspect_pulse_panel.py",
       "bytes": 1947,
       "sha256": "ea4220c9d7fb35a3a6b16bcdbd3f3669c70122cc02ff21b903a065bfc4cf2342"
@@ -555,6 +580,11 @@
       "path": "prepare.py",
       "bytes": 2033,
       "sha256": "514d0a7a1db53aee236c2522d9df3207890c272539426ab11d9487d4d1a54cfc"
+    },
+    {
+      "path": "prepare_bon1_context.py",
+      "bytes": 1638,
+      "sha256": "c5c843f16983b9da50e133dc9d4d7cd856faacd6bcdb7216e1ca8708a45395c1"
     },
     {
       "path": "prepare_experimental_panel.py",
@@ -1477,6 +1507,36 @@
       "sha256": "cb074e5f97ca553d4b936448e5d1828589370eed91c94fd57c72bd320b89bb86"
     },
     {
+      "path": "results/bon1-local-BON1Ca3000.log",
+      "bytes": 72,
+      "sha256": "b0d3bd1869853c0ca54c7f7d06d0c0b493881c39b1f434a17862446e446de48b"
+    },
+    {
+      "path": "results/bon1-local-prepare.log",
+      "bytes": 511,
+      "sha256": "bf7846b8ab65d8567bbd65c982d49418d9f41d5fbc68c1a3fc7530e522143a2c"
+    },
+    {
+      "path": "results/bon1-local-r5.log",
+      "bytes": 72,
+      "sha256": "b0d3bd1869853c0ca54c7f7d06d0c0b493881c39b1f434a17862446e446de48b"
+    },
+    {
+      "path": "results/bon1-timecourse/manual-timecourse.json",
+      "bytes": 1472,
+      "sha256": "141f585598a940d87c40b5824e9f707af683a7a75108ea5bd0214e48b4056d85"
+    },
+    {
+      "path": "results/bon1-timecourse/manual-timecourse.npz",
+      "bytes": 476075,
+      "sha256": "4fdb40d9c78d116b58ed9f9b475855f760cdf9cea0f0e0688408dc06d2c7a130"
+    },
+    {
+      "path": "results/bon1-timecourse/manual-timecourse.png",
+      "bytes": 195000,
+      "sha256": "0943231f006d58e16bd7a845eb4c542f5525e1da8be3c9b3602549ee8aeb3aba"
+    },
+    {
       "path": "results/confirm-fine.log",
       "bytes": 166,
       "sha256": "7a04d58575caf50edab743d4620b1bdee0d0270e4314681a9bb789e9b0ec62f1"
@@ -2035,6 +2095,36 @@
       "path": "results/frozen-neural-panel-BRKreleaseHalf/MDN.npz",
       "bytes": 10546054,
       "sha256": "e9760a0a9686d3e071b7b464f0debb818a3d18cb79ec2fe67ee3d33ed9cfd661"
+    },
+    {
+      "path": "results/frozen-neural-panel-bon1-local-BON1Ca3000/BRK2s-config.json",
+      "bytes": 4338,
+      "sha256": "cb1fbf0fccf46a068e6dbeefea57124204ae21edd94861da7833933543e5d787"
+    },
+    {
+      "path": "results/frozen-neural-panel-bon1-local-BON1Ca3000/BRK2s-diagnosis.json",
+      "bytes": 9306,
+      "sha256": "d188eb2771915a644f8da6e9953ef8a06be6f442f7faddcf2585f52e125b8e9b"
+    },
+    {
+      "path": "results/frozen-neural-panel-bon1-local-BON1Ca3000/BRK2s.npz",
+      "bytes": 6258847,
+      "sha256": "a73b2db100982b7a0c2d65002199a8e284287f0690b6fdf98f6c726794f58121"
+    },
+    {
+      "path": "results/frozen-neural-panel-bon1-local-r5/BRK2s-config.json",
+      "bytes": 4157,
+      "sha256": "738257b6332624d970857f6fb2a554d4ba767edbccf8f296a7a5d2e3508f70a3"
+    },
+    {
+      "path": "results/frozen-neural-panel-bon1-local-r5/BRK2s-diagnosis.json",
+      "bytes": 9329,
+      "sha256": "1ee316bcbc00230912d9bda67b3f27e4d586aba74c90189f036da900550cc153"
+    },
+    {
+      "path": "results/frozen-neural-panel-bon1-local-r5/BRK2s.npz",
+      "bytes": 6030279,
+      "sha256": "ec75c03cfe237e37c0138f4a9437ec3193e51eaf64d511ca6b55e55f4d6a7f5b"
     },
     {
       "path": "results/frozen-neural-panel-lul130-K90/MDN-config.json",
@@ -2617,6 +2707,36 @@
       "sha256": "e59b6e5dd8df531532ddeafd710903bf6340ad4677986ccabfbe61e3debb7c17"
     },
     {
+      "path": "results/frozen-neural-panel-unified-LULT3K90/MDN-config.json",
+      "bytes": 6281,
+      "sha256": "a5ba37f238601070cd9740cf5a50873a80cf6c7c9953dc882bdc324c6a3ca092"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-LULT3K90/MDN-diagnosis.json",
+      "bytes": 102833,
+      "sha256": "c0bfe075478dd9ac1619d01afbedeb9da4c68505bea9e2be1a9f093aefbd918a"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-LULT3K90/MDN.npz",
+      "bytes": 16441618,
+      "sha256": "f7a5fd607dff9a1ecdfe2a58fe8c5c7d684e07a693b0e9fe5bb5960b336eb417"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-LULbias2/MDN-config.json",
+      "bytes": 5895,
+      "sha256": "1d029d404e63d903e9866db3a45b7aaa20513c1979b505e28359c87f8867871f"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-LULbias2/MDN-diagnosis.json",
+      "bytes": 102290,
+      "sha256": "31340fbea19eaf2a675d71e30f25faa71c76e0dc828237d6bb21390ab33849f4"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-LULbias2/MDN.npz",
+      "bytes": 16461555,
+      "sha256": "4b88d0abb12858706a5131d9c6d5f7fa6d7a4e28b0cc9a3f28c36282157c2a2b"
+    },
+    {
       "path": "results/frozen-neural-panel-unified-r5/BPN+BB-config.json",
       "bytes": 5916,
       "sha256": "30e4d285c3f5eff0ece64d8ca700088d80952bf5ceac65b299926a2792397f80"
@@ -2677,9 +2797,34 @@
       "sha256": "e2aeb431d566c63cf94af6dca6d19285739baea101f76e7cecbfe52f073950ad"
     },
     {
+      "path": "results/frozen-neural-panel-unified-r5/BRK-config.json",
+      "bytes": 5807,
+      "sha256": "9586c3c0c9bad93d55c5b478ce9b0380110df42584783049b5d1ba2c1ac4fcab"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r5/BRK-diagnosis.json",
+      "bytes": 101333,
+      "sha256": "6b9d883adb03340c49ae03218f02a5f4f10d51069d06d17c8c76e19c09ad6b45"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r5/BRK.npz",
+      "bytes": 15427263,
+      "sha256": "39e943f0fad62629440380c7f534b87576d8bda275ebc1227cefd3c361bbad72"
+    },
+    {
       "path": "results/frozen-neural-panel-unified-r5/Fdg-config.json",
       "bytes": 5807,
       "sha256": "ceced6651eeb8c6f9a7906faaf82644a2e0e706dfb700b201f78a30fc5d8800a"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r5/Fdg-diagnosis.json",
+      "bytes": 102270,
+      "sha256": "7a01be2bfd096b9323b720fb03854085aa43e14eeff93eb429bc0d2c2ffcd57a"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r5/Fdg.npz",
+      "bytes": 16035825,
+      "sha256": "1496e6009fffc597c6ce418537ec4918b69a377a4732853b73b608058bd23bc5"
     },
     {
       "path": "results/frozen-neural-panel-unified-r5/MDN+BB-config.json",
@@ -2875,6 +3020,196 @@
       "path": "results/frozen-neural-panel-unified-r5/control.npz",
       "bytes": 560931,
       "sha256": "baa27ef5ed1c86b8dc0101d6c6359a28ade1791e1d8c988a0931460f8714b7ad"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r5/neural-overview.png",
+      "bytes": 429352,
+      "sha256": "da95a21ab42940f454263dc5fcbfa1afc0098af01fb7bef82057b5b6b98b7a7d"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r5/observations.json",
+      "bytes": 2100154,
+      "sha256": "ab3ee34a1ecc3e2069c81a866b76c7a8fec8ddf416246d24e427135895da0b0c"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r6/BPN+BRK-config.json",
+      "bytes": 6121,
+      "sha256": "9de31ccd22c3be799ce4c3eab1a1fc7987c477ed4ba0fff410905693fe2fbe6d"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r6/BPN+BRK-diagnosis.json",
+      "bytes": 103013,
+      "sha256": "d29b291a3634fc1055a4486754bd2fcf071a193ea1428452baa9d9890982124e"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r6/BPN+BRK.npz",
+      "bytes": 16519269,
+      "sha256": "d4734f099f6c41d2fad7aeccb6549b43c19d2b8c2632818e52208ea381c6e3cd"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r6/BPN+FG-config.json",
+      "bytes": 6119,
+      "sha256": "201d4e8c3eddd0bc5bc8e3649a9460a8288ea21bb56e6180377d0be7b8feee80"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r6/BPN+FG-diagnosis.json",
+      "bytes": 103166,
+      "sha256": "0611115e3fc7e00e8fc25acc26db1cd4dfa42c20ae2339feb5b2599e414255b7"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r6/BPN+FG.npz",
+      "bytes": 16492898,
+      "sha256": "f52bc0690674d4c8fd34811915638bf022934610e6789440723fea846ba744f1"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r6/BPN-config.json",
+      "bytes": 6010,
+      "sha256": "76940fbb0915dac14badc6590d55202fdc288ba4bdd834920d3f22bac48b1574"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r6/BPN-diagnosis.json",
+      "bytes": 103084,
+      "sha256": "f061e552d4ce8a03f587a2cdc4a05e3359d31727ab4814ca791814a8d8b79ed5"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r6/BPN.npz",
+      "bytes": 16498866,
+      "sha256": "8199dd35ed029e76dd700dad83b32bb2b8f11e22b245786df26978ee18dccbc6"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r6/MDN+BB-config.json",
+      "bytes": 6119,
+      "sha256": "6faf2e6e2dbd15adcde547edc6a7f1a42282f7411e53e124bd12bef0b4282971"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r6/MDN+BB-diagnosis.json",
+      "bytes": 102906,
+      "sha256": "64c030b5de8466306b0ac2c0ba370785f82d0e0ffa38576dff72c9730360a98b"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r6/MDN+BB.npz",
+      "bytes": 16423244,
+      "sha256": "25c5fb31537a98951e72868b8b8f83a75f71c9687ab803f3ac3a50e00156ce23"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r6/MDN+FG-config.json",
+      "bytes": 6119,
+      "sha256": "6423171203e627c5abf21aecfcb5db3499ca56fc3183f38af51a3e196e2b7daa"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r6/MDN+FG-diagnosis.json",
+      "bytes": 102843,
+      "sha256": "8c5a832c8407146cb35dd2c678271b6f907d7432f1d4b6fa1ffc8048ead6dd87"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r6/MDN+FG.npz",
+      "bytes": 16436961,
+      "sha256": "1f4e788d36027c39626eba5ed5117930d210eb22e379b581e1403c98958a4642"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r6/MDN-config.json",
+      "bytes": 6010,
+      "sha256": "742d57c85be541db08152ddd46a5da925539a3178a6718953684f508be684c16"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r6/MDN-diagnosis.json",
+      "bytes": 102866,
+      "sha256": "44a249aea95c16450b2e79fc8471cc5f03127d9b05a5f5988b963f06a3bfdcef"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r6/MDN.npz",
+      "bytes": 16389626,
+      "sha256": "87081b7de1ed8fa1a12bf3fc6328e7d03f4f0bb30eed124c8720ef173de1bd57"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r6/P9+BB-config.json",
+      "bytes": 6117,
+      "sha256": "dd2a1c41ee55efab214e9fd1058749150011f20955f6224caaacbc326cdebcac"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r6/P9+BB-diagnosis.json",
+      "bytes": 102937,
+      "sha256": "ee33959de02749099c67025f3f584ab674a2d9ab10b4c47ab72980161b530d08"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r6/P9+BB.npz",
+      "bytes": 16359415,
+      "sha256": "f4b551065137d0fe220efa2cb1af58f51747d93dc2d14f19e0ca91061efead23"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r6/P9+FG-config.json",
+      "bytes": 6117,
+      "sha256": "0e4b2e9d14a061554f507f7d2580b347e64ed96394ac538fd86560851db7f6e5"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r6/P9+FG-diagnosis.json",
+      "bytes": 102813,
+      "sha256": "d7cddf8cb5419720714db9b31421a928202182c14e73570ea178e7448f660a37"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r6/P9+FG.npz",
+      "bytes": 16363501,
+      "sha256": "e708e4d2a22a5bc2f85b086d9cc26b62d89af3a766d8545f7048158dacbc3a5e"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r6/P9-config.json",
+      "bytes": 6008,
+      "sha256": "beeaeb5a0994b5da118d55a3ee067c9e8e744ef8447d8da91fa64a54d751dbce"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r6/P9-diagnosis.json",
+      "bytes": 102816,
+      "sha256": "a26990324cdc718c5e932ad1f3dff7cdfa6444fdd548f744569164d496cd224e"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r6/P9.npz",
+      "bytes": 16370749,
+      "sha256": "d877a670b41cd9a00dce022b9a9e881b598fc8cb6043711d8f0ce07dcf9e37ef"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r6/PFL3L+PFL2-config.json",
+      "bytes": 6127,
+      "sha256": "21c0cf71fdcd624da7a837360d57b4932420d902f024340a8c52276981526604"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r6/PFL3L+PFL2-diagnosis.json",
+      "bytes": 103353,
+      "sha256": "d594f113133fa0e7d039c1c8a650a7117c0c1fc7a3023bb532202117ba4021cb"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r6/PFL3L+PFL2.npz",
+      "bytes": 16746648,
+      "sha256": "f69ef95bcbe2770f96ac365dcf67870b05a7138b8696fbf1a9d972b31616b6af"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r6/PFL3L-config.json",
+      "bytes": 6014,
+      "sha256": "a6acc8ce16447510a6c0c23604515291467d43667a665e41e1267825b530abc0"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r6/PFL3L-diagnosis.json",
+      "bytes": 103078,
+      "sha256": "01f1cc1d0313def01e825c6fb71f83569a9f874016e31d09eb22a33617f1da51"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r6/PFL3L.npz",
+      "bytes": 16668138,
+      "sha256": "5cc636e10afbb3fb5a20a726442e94e1fe904deca7026ea6cd959eeb650dadca"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r6/PFL3R-config.json",
+      "bytes": 6014,
+      "sha256": "8fd377d8608f08e1d2438a989032ef58b7e6acb0aec7182593ed930129b41640"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r6/PFL3R-diagnosis.json",
+      "bytes": 103119,
+      "sha256": "ee87c0022e5c3cc97a8c280d60f04dbd21f42712c770ed6adadea641a21b1f5f"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r6/PFL3R.npz",
+      "bytes": 16691828,
+      "sha256": "0f7e35b0fe0de20680a5ab6fa489f2da76f478beaa68a2f937e192a8da384a29"
     },
     {
       "path": "results/full-baseline.json",
@@ -3307,6 +3642,31 @@
       "sha256": "ffd68b60a74095d6d0219b998180c3ab2f3307c448e6b5b51707fd41c4114638"
     },
     {
+      "path": "results/manual-mechanism/expanded-right-extensors-third-config.json",
+      "bytes": 58927,
+      "sha256": "1a6b414e1f70fc05f0f86ec28e8b4569c7656146cfa14e7fffeede1d1976c96f"
+    },
+    {
+      "path": "results/manual-mechanism/expanded-right-extensors-third-currents.png",
+      "bytes": 346820,
+      "sha256": "fbc754fbbd313bf5dfc5db0afe4a8dbaa772e59dabe220db67a98dcd7d783b97"
+    },
+    {
+      "path": "results/manual-mechanism/expanded-right-extensors-third-diagnosis.json",
+      "bytes": 12119,
+      "sha256": "b7168f426253011852e5c623ca9c5aab6d67ade993710823aa47a0f5dc805361"
+    },
+    {
+      "path": "results/manual-mechanism/expanded-right-extensors-third-routes.png",
+      "bytes": 633542,
+      "sha256": "594f714480480673c0a504742839e44c8bb650b379f3a94ba28a4dd49a41944f"
+    },
+    {
+      "path": "results/manual-mechanism/expanded-right-extensors-third.npz",
+      "bytes": 7500181,
+      "sha256": "82afe2b5ad11f2af7c2bbe97dcd2eca795806901b92a427b3530519c13b7a5a2"
+    },
+    {
       "path": "results/manual-mechanism/expanded-trace-MN-config.json",
       "bytes": 58772,
       "sha256": "4f91b0dae186af28b7cd57c5c7439d90989ffbfa0af21d8e3b064f17d0413aaa"
@@ -3335,6 +3695,36 @@
       "path": "results/manual-release-regression-tests.txt",
       "bytes": 100,
       "sha256": "60a459f71d3d33dabb2d074b9a260afd5d34aac345e8d58028acbf916fa9fa8f"
+    },
+    {
+      "path": "results/manual-right-extensors-third-plot.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "results/manual-right-extensors-third.log",
+      "bytes": 190,
+      "sha256": "7a03f2e0a9feef361cb90e76a79d2fc81e157fc34e138992f8fe96ae080b6e3b"
+    },
+    {
+      "path": "results/mcns-bon1-local/neurons.json",
+      "bytes": 141196,
+      "sha256": "079a32986d71f9f1bd82c918cf19937715f95a5a6f04fe227eaab3358b169aa4"
+    },
+    {
+      "path": "results/mcns-bon1-local/signed-hypothesis-connectivity.npz",
+      "bytes": 27803,
+      "sha256": "fe0bebb4fe647113284911666ebed919599340b731d8b1fc42075a545ed5a712"
+    },
+    {
+      "path": "results/mcns-bon1-local/source-manifest.json",
+      "bytes": 570,
+      "sha256": "b8f3e1133400271a759489002e78fd7ccf6ea1841b76493e14397bb8c0ff1ef2"
+    },
+    {
+      "path": "results/mcns-bon1-local/unsigned-connectivity.npz",
+      "bytes": 30892,
+      "sha256": "dce275f5f64da34a588415ef074240e652c176800c98711543a3c52c6b0dae39"
     },
     {
       "path": "results/mcns-command-P9-K80-softI.log",
@@ -4772,6 +5162,16 @@
       "sha256": "d3c7f4b16c7c995bb56fa6d3755c5eae0277291ecd470708ff1e634b81724b60"
     },
     {
+      "path": "results/unified-LULT3K90-MDN.log",
+      "bytes": 529,
+      "sha256": "97adb30a9206cc92aa9e553e64671e6440901468a4cac99f379ad56a72f1195a"
+    },
+    {
+      "path": "results/unified-LULbias2-MDN.log",
+      "bytes": 529,
+      "sha256": "3b27164b1e3b7184ab1818d29381fa24f3bb5a667251616d6c021c178b896f52"
+    },
+    {
       "path": "results/unified-r5-BPN+BB.log",
       "bytes": 530,
       "sha256": "38ef5e4138ba618f4288f77be17c2743f9a15e02de009445f62618a81a772f5c"
@@ -4792,9 +5192,14 @@
       "sha256": "51f392eb338c1164358c1535bb56aaaf9fa8bc0de1e938865638a7a8abe1eb1f"
     },
     {
+      "path": "results/unified-r5-BRK.log",
+      "bytes": 514,
+      "sha256": "a08a3640f222ad2f75493eb6bc97d32092d79d313487b5108f9028e9c9bf275f"
+    },
+    {
       "path": "results/unified-r5-Fdg.log",
-      "bytes": 0,
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "bytes": 523,
+      "sha256": "19e1fd58481950a2400aa53e3fa955cd19e0238355d47ba71d132b81a0f31f80"
     },
     {
       "path": "results/unified-r5-MDN+BB.log",
@@ -4862,6 +5267,66 @@
       "sha256": "9eac353c651c08e14e02ac114893cd989eaf171196a4c94409939670b66384e1"
     },
     {
+      "path": "results/unified-r6-BPN+BRK.log",
+      "bytes": 533,
+      "sha256": "c4fad0769b12960001fce1baa0bbb61d24e1c6b461244770d6c2ab5fc6af7df3"
+    },
+    {
+      "path": "results/unified-r6-BPN+FG.log",
+      "bytes": 530,
+      "sha256": "0e2d30e317da3cbf4bb159c37093c0cc793be019c0fbbfb28fb31977b742fa67"
+    },
+    {
+      "path": "results/unified-r6-BPN.log",
+      "bytes": 529,
+      "sha256": "ba3dd5dd6f382addb7fc73089947705227660182c718c15bcaac01b059aefbde"
+    },
+    {
+      "path": "results/unified-r6-MDN+BB.log",
+      "bytes": 528,
+      "sha256": "23339c43b2105e9e66aea89067e17c5b6642b2a248a3eb515601646fcbdbe038"
+    },
+    {
+      "path": "results/unified-r6-MDN+FG.log",
+      "bytes": 530,
+      "sha256": "9e5f6b91f54b01a85f24a22f6e8cae78a547533bf564618d5456ede1a9556847"
+    },
+    {
+      "path": "results/unified-r6-MDN.log",
+      "bytes": 522,
+      "sha256": "46470483bcd6c645b578311e6c9000d648df786dafcf4c99d6409fe09ec0e961"
+    },
+    {
+      "path": "results/unified-r6-P9+BB.log",
+      "bytes": 531,
+      "sha256": "e097f8705a53fcff6305e84f90bcb2d1b2c821335efda90a3946fa4ea2f75ca1"
+    },
+    {
+      "path": "results/unified-r6-P9+FG.log",
+      "bytes": 531,
+      "sha256": "ccfb323a975743bd54dee6f845182f3958059a54402ac80edc91338a683effe8"
+    },
+    {
+      "path": "results/unified-r6-P9.log",
+      "bytes": 528,
+      "sha256": "ab4261a23969606de2fc7ec958f8bcd5962ac872030994c082211c77359067f5"
+    },
+    {
+      "path": "results/unified-r6-PFL3L+PFL2.log",
+      "bytes": 535,
+      "sha256": "41701811c990050eded415b7f3299a2c4b969c9f164265d8205be5531bb02f61"
+    },
+    {
+      "path": "results/unified-r6-PFL3L.log",
+      "bytes": 530,
+      "sha256": "25f577599fea1933f996db2783dfbe0433598f5dbca370ad1c7f96c42b022ead"
+    },
+    {
+      "path": "results/unified-r6-PFL3R.log",
+      "bytes": 531,
+      "sha256": "3432ac2d2201d137e4c9eb9769c52eff687fdcbd75017b0007f64d0a39f1e86f"
+    },
+    {
       "path": "results/waveform-regression-tests.txt",
       "bytes": 100,
       "sha256": "525826929558a917873e16818b70ba172b033e9bad29a120d3715c59f39e1f1d"
@@ -4908,8 +5373,8 @@
     },
     {
       "path": "trace_manual_network.py",
-      "bytes": 4932,
-      "sha256": "3562bf39b2e11b6d8dc706a27c2578ec70244a0612a494712234355a36128808"
+      "bytes": 5071,
+      "sha256": "96490d617e6e1a34732f9d0eaee7e7bb3cbde79e32162751a2064326f1b4ca05"
     },
     {
       "path": "trace_mcns_command.py",

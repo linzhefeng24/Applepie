@@ -202,3 +202,30 @@ GitHub draft Release; data/public-input-release-verified.json records fresh
 GitHub asset SHA-256 digests, byte counts, source URLs and code revisions.
 The first archive task failed by querying a draft through a published-tag
 endpoint; the corrected task succeeded. No cloud environment was published.
+
+## Manual conflict resolution and measured BON1 time course
+
+r6 preserves steering direction and strengthens BB-associated DNa02 inhibition,
+but P9+FG no longer reduces oDN1 firing rate. This conflict prevents adopting
+r6 wholesale. r7 withdraws the DNg97 target-receptor change and retains only the
+DNa02 GABAA response hypothesis; it still requires matching-baseline checks.
+
+A common INXXX468 axonal-bias+2pA probe failed to strengthen the T3 Ca contrast
+and is not adopted. A separate T3-only K0.9 cohort probe is explicit about the
+unresolved MF09 individual identity and about its segment-specific hypothesis.
+
+BON1 source fluorescence shows a long response after the2s stimulus. A303-cell
+same-MaleCNS BRK→BON1 local context permits rapid hand inspection. The100ms Ca
+removal prior decays much faster than the observed signal even with a fixed,
+uncalibrated GCaMP occupancy/binding proxy. A3000ms effective Ca-removal probe
+produces a sustained tail but now recovers too slowly in the displayed shape.
+Next manual change is2000ms, keeping the observation proxy fixed. There is no
+loss, learned fluorescence gain, per-time control, or automatic candidate rank.
+Peak normalization explicitly compares shape only; these observations do not
+identify a unique intrinsic Ca time constant. Local changes need full recurrent
+validation, including Ca/SK feedback, before adoption.
+
+The MANC muscle diagnostic separately applies the same0.3 excitatory gain to
+both overdriven right middle/hind tibia extensor MNs. It does not claim proper
+antagonist phase or a tripod gait. Muscle readout remains secondary to neural
+experimental phenomena; residual coactivation is retained as a limitation.

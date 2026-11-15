@@ -1,0 +1,28 @@
+{
+  "method": "Inspect measured BON1 fluorescence and fixed-observation-model predictions.\nNo optimizer or scalar loss. Peak normalization compares shape, not amplitude;\nGCaMP binding and intracellular calcium removal remain non-identifiable here.\n",
+  "source_data_sha256": "65f845f0ccaf2e20a6564106145802b946d6fbac97800340dcf0d13e8caca9af",
+  "source_DOI": "10.1038/s41586-024-07854-7",
+  "fixed_observation_prior": {
+    "Kd_uM": 0.15,
+    "Hill_coefficient": 2.0,
+    "binding_tau_ms": 600.0,
+    "status": "illustrative uncalibrated observation prior, not a measured indicator fit"
+  },
+  "runs": [
+    {
+      "result_folder": "bon1-local-r5",
+      "raw_result_sha256": "ec75c03cfe237e37c0138f4a9437ec3193e51eaf64d511ca6b55e55f4d6a7f5b",
+      "bank_sha256": "6611df406d3545fc50de9b3152ca2299396fab08f138be5155cb332a6ffa1e58",
+      "raw_Ca_peak_uM": 0.0754710254472135,
+      "indicator_peak_arbitrary_units": 0.16808743556914038
+    },
+    {
+      "result_folder": "bon1-local-BON1Ca3000",
+      "raw_result_sha256": "a73b2db100982b7a0c2d65002199a8e284287f0690b6fdf98f6c726794f58121",
+      "bank_sha256": "16c89840108494da36d774b953b86559d12625dda255a70e86b3aa46704683e2",
+      "raw_Ca_peak_uM": 1.0210896722343694,
+      "indicator_peak_arbitrary_units": 0.9568525833959654
+    }
+  ],
+  "interpretation": "Neither a quantitative calcium fit nor proof of a uniquely identified biological removal time. Compare full rise and after-stimulus trace manually."
+}
