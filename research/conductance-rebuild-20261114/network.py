@@ -24,6 +24,24 @@ def load(scope='motor',full_vnc=False):
  return matrix,roles,metadata
 
 
+def type_pair_conductances(weights,metadata,parameters):
+ """Unknown type-pair synaptic efficacy, separate from structural counts.
+ Same source/target types in one namespace share a positive multiplier.
+ This permits testing a real direct-DN bypass without removing its edges.
+ """
+ if not parameters:return weights,[]
+ out=np.array(weights,dtype=float,copy=True);records=[]
+ for p in parameters:
+  gain=float(p['gain'])
+  if not np.isfinite(gain) or not .05<=gain<=5:raise ValueError('Type-pair conductance prior must be within0.05..5; no edge deletion')
+  pre=[i for i,x in enumerate(metadata) if x.get('connectome_namespace')==p['namespace'] and x.get('type')==p['source_type']]
+  post=[i for i,x in enumerate(metadata) if x.get('connectome_namespace')==p['namespace'] and x.get('type')==p['target_type']]
+  if not pre or not post:raise KeyError('Type pair absent from namespace')
+  block=out[np.ix_(pre,post)];count=int(np.count_nonzero(block))
+  if not count:raise ValueError('No structural connection for requested type pair')
+  out[np.ix_(pre,post)]=block*gain;records.append({**p,'affected_existing_edges':count,'source_body_ids':[metadata[i]['bodyId'] for i in pre],'target_body_ids':[metadata[i]['bodyId'] for i in post]})
+ return out,records
+
 def receptor_conductances(weights,metadata,parameters):
  """Scale effective synaptic conductance, never the stored structural graph.
  GABAA and GluCl are target response hypotheses for negative GABA/glutamate
@@ -53,7 +71,9 @@ def simulate_network(weights,roles,metadata,params,drive=None,ablate=(),drive_wa
  if not np.isfinite(gains).all() or np.any(gains<=0):raise ValueError('Source conductance scales must be finite positive; no edge removal or sign flip')
  from grouped_parameters import resolve
  overrides,_=resolve(metadata,params.get('group_parameters',{}),params.get('individual_leak_offsets_mV',{}),params.get('class_parameters',{}),params.get('family_parameters',{}),params.get('cell_parameters',{}))
- effective,interventions=receptor_conductances(weights,metadata,params.get('target_receptor_gains',{}))
+ effective,pairs=type_pair_conductances(weights,metadata,params.get('type_pair_conductance_gains',[]))
+ effective,interventions=receptor_conductances(effective,metadata,params.get('target_receptor_gains',{}))
  result=simulate(effective,roles,params,drive=drive,ablate=ablate,source_gains=gains,cell_overrides=overrides,drive_waveform=drive_waveform,record_indices=record_indices)
  result['receptor_interventions']=interventions
+ result['type_pair_interventions']=pairs
  return result

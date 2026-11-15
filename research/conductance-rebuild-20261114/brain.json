@@ -247301,5 +247301,92 @@
       "raw_inputs_verified_archive": "data/public-input-release-verified.json",
       "scope_warning": "Individual assay context successes are not inherited by the unified recurrent context. Responses are partial qualitative constraints, not full behavioral replication or a majority-pass claim."
     }
+  },
+  "manual_joint_review_20261115": {
+    "implementation_origin": "new implementation and independent runs; historical chat results are not inherited",
+    "method": "manual inspection of full voltage/spike/Ca/current traces and real input routes; no automatic loss-ranked candidate",
+    "current_candidate": "configs/manual-neural-bank-r8.json",
+    "graph": "results/mcns-unified/source-manifest.json",
+    "results": "results/frozen-neural-panel-unified-r8",
+    "status": "same-bank checks in progress; no majority-pass claim",
+    "assessed_families": [
+      {
+        "id": "DNa02_opponent_response",
+        "evidence": "measured neuronal opponent responses plus anatomical pathway/model stimulus",
+        "status": "partial qualitative match in unified graph; complete recording protocol not replicated"
+      },
+      {
+        "id": "PFL2_bilateral_gain",
+        "evidence": "anatomy/model prediction",
+        "status": "bilateral recruitment present; gain requires condition-matched inspection"
+      },
+      {
+        "id": "MDN_LBL40_recruitment",
+        "evidence": "measured neuronal calcium response",
+        "status": "response direction present; short probe does not match20s imaging protocol"
+      },
+      {
+        "id": "BRK_BON1_response_and_tail",
+        "evidence": "measured GCaMP trace, source data included",
+        "status": "effectiveCa2000ms improves local shape with fixed uncalibrated observation prior; full unified2s protocol being checked",
+        "source": "data/experimental-source/BON1-ED5e.csv"
+      },
+      {
+        "id": "BPN_FG_BB_selectivity",
+        "evidence": "paper-model DN responses and measured behavioral interventions",
+        "status": "FG strongly suppresses DNg100 while BB does not; behavioral stopping not inferred"
+      },
+      {
+        "id": "P9_FG_BB_selectivity",
+        "evidence": "paper-model DN responses and behavioral interventions",
+        "status": "unresolved; FG effect on oDN1 improved in r8 but BB broad suppression remains weak"
+      },
+      {
+        "id": "MDN_FG_BB_preservation",
+        "evidence": "behavioral backward-walking intervention",
+        "status": "LBL40 retains activity during both pulses; neural proxy only, not behavioral reproduction"
+      },
+      {
+        "id": "BRK_brain_vs_stance_brake",
+        "evidence": "brain model plus measured stance-specific resistance",
+        "status": "excess DNg100 suppression reduced; stance-specific resistance untested without sensory/load feedback"
+      },
+      {
+        "id": "MF09_segment_response",
+        "evidence": "measured MF09/LUL130 calcium",
+        "status": "provisional INXXX468 family candidates only; T3K0.8 enhances T3 contrast but identity and20s protocol unresolved; not adopted"
+      },
+      {
+        "id": "MF14_segment_sign",
+        "evidence": "measured MF14/LUL152 T1/T2 excitation and T3 inhibition",
+        "status": "EM identity missing; no surrogate neuron assigned"
+      },
+      {
+        "id": "chief9A_hook_claw",
+        "evidence": "measured sensory axon gating",
+        "status": "not reproduced; exact sensory mapping and presynaptic compartments required"
+      },
+      {
+        "id": "MN_Rdl_walking",
+        "evidence": "adult receptor perturbation and walking kinematics",
+        "status": "not reproduced; receptor capability unit tests are not experimental phenotype tests"
+      },
+      {
+        "id": "DNa02_DNg13_step_phase",
+        "evidence": "measured phase relationships",
+        "status": "not tested; step-phase feedback absent"
+      },
+      {
+        "id": "starvation_sugar_GRN_FG",
+        "evidence": "measured hunger-dependent GRN responses",
+        "status": "not tested; Fdg activation is a downstream proxy, not a sugar-GRN or hunger assay"
+      },
+      {
+        "id": "muscle_activation_trends",
+        "evidence": "model-derived u(t), not laboratory neuronal ground truth",
+        "status": "secondary regional MANC readout; residual antagonist coactivation and mapping gaps, no full gait claim"
+      }
+    ],
+    "interpretation": "These overlapping families are not independent experiments and are not a denominator for a fabricated success percentage. Lab observations outrank model-only targets."
   }
 }

@@ -245,3 +245,20 @@ MDN recruitment probes. All MF segment comparisons remain provisional and cannot
 be reported as reproductions of the experimental time course. T3K0.8 gives a
 larger candidate-family Ca response while preserving LBL40, but exact MF09 EM
 identity and protocol remain unresolved, so this is not adopted into r8.
+
+## Causal muscle-path inspection
+
+All six E1 cells silenced:11of12 recorded tibial MNs stop spiking; right front
+extensor11706 instead fires tonically at47.5Hz. Its only remaining excitatory
+source in this ablation is DNg10010339 (33 anatomical synapses). Inhibition falls
+to zero, revealing a real direct-DN bypass, not residual E1/E2 rhythm propagation.
+This is diagnosed from actual presynaptic spikes and counts, not endpoint error.
+
+The next manual MANC probe reduces only the DNg100→Ti-extensor type-pair effective
+conductance to0.2, shared across all matching cells, while keeping the stored
+structural weights, signs and edges. CPG and premotor inputs retain their original
+conductance factors. A new type-pair efficacy interface records affected edges
+and namespace-qualified cell identities; zero multipliers are forbidden.
+Regression checks preserve structural counts and unrelated connections. This
+source/target-specific efficacy is an unknown physiological hypothesis, not an
+anatomical deletion or evidence of a measured fivefold release difference.
