@@ -1,0 +1,24 @@
+name: Recover public FeCO scientific inputs
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/recover-public-feco.yml', 'research/feco-public-recovery/**']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: public-feco-recovery
+  cancel-in-progress: false
+jobs:
+  recovery:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+          sparse-checkout: research/feco-public-recovery
+      - name: Verify publicly downloadable inputs
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python research/feco-public-recovery/recover.py
