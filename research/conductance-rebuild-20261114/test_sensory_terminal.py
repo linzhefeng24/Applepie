@@ -17,3 +17,9 @@ def test_passive_membrane_does_not_spike_without_mechanical_drive():
 def test_invalid_spike_input_and_geometry_rejected():
  with pytest.raises(ValueError):simulate(np.array([-1.]),config())
  with pytest.raises(ValueError):simulate(np.zeros(160),{**config(),'capacitance_pF':[1.]})
+
+def test_external_body_current_overrides_prescribed_motion_and_invalid_coverage_rejected():
+ p=config();n=round(p['duration_ms']/p['dt_ms']);I=np.zeros((n,4));angle=np.full(n,37.)
+ r=simulate(np.zeros(160),p,input_current_pA=I,angle_deg=angle)
+ assert not r['spikes'].any();np.testing.assert_array_equal(r['angle_deg'],37.);assert not r['input_current_pA'].any()
+ with pytest.raises(ValueError):simulate(np.zeros(160),p,input_current_pA=I[:-1],angle_deg=angle)

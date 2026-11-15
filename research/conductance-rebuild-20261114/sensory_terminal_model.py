@@ -16,7 +16,7 @@ def solve_cable(diagonal,rhs,k01,k12):
  return np.array([v0,v1,v2])
 
 @njit(cache=True)
-def kernel(source_spikes,constants,C,gna,gk,gl,gca,axial,dt,steps,stride):
+def kernel(source_spikes,constants,C,gna,gk,gl,gca,axial,dt,steps,stride,external_current,external_angle):
  EL,ENa,EK,ECa,EI,gsk,tc,alpha,kd,gpeak,tr,td,delay,rest,amp,period,on,off,cp,cv=constants
  v=np.full((4,3),-65.);mh=np.empty((4,3));hh=mh.copy();nh=mh.copy();ca=np.zeros((4,3));counts=np.zeros((int(np.ceil(steps*dt)),4,3),np.int16)
  for f in range(4):
@@ -33,6 +33,8 @@ def kernel(source_spikes,constants,C,gna,gk,gl,gca,axial,dt,steps,stride):
   if on<=tm<off:
    phase=2*np.pi*(tm-on)/period;theta=rest+amp*np.sin(phase);velocity=amp*2*np.pi/period*1000*np.cos(phase)
   input_current=np.array([cv*max(-velocity,0.),cv*max(velocity,0.),cp*max(rest-theta,0.),cp*max(theta-rest,0.)])
+  if len(external_current):
+   input_current=external_current[k];theta=external_angle[k]
   for f in range(4):
    diag=np.zeros(3);rhs=np.zeros(3);old=v[f].copy()
    for j in range(3):
@@ -51,7 +53,7 @@ def kernel(source_spikes,constants,C,gna,gk,gl,gca,axial,dt,steps,stride):
    r=k//stride;V[r]=v;CA[r]=ca;GI[r]=gi;TH[r]=theta;INPUT[r]=input_current
  return V,CA,GI,TH,INPUT,counts,bad
 
-def simulate(source_spikes,parameters):
+def simulate(source_spikes,parameters,*,input_current_pA=None,angle_deg=None):
  p=parameters
  source_spikes=np.asarray(source_spikes,dtype=float)
  if source_spikes.ndim!=1 or not np.isfinite(source_spikes).all() or np.any(source_spikes<0):raise ValueError('Nonnegative finite 1ms source spike counts required')
@@ -60,4 +62,9 @@ def simulate(source_spikes,parameters):
  if p['GABA_decay_ms']<=p['GABA_rise_ms'] or p['chief_compound_peak_nS']<0:raise ValueError('Invalid synapse kinetics')
  for key in ['capacitance_pF','gNa_nS','gK_nS','gLeak_nS','gCa_nS','axial_nS']:
   if len(p[key])!=(2 if key=='axial_nS' else 3) or not np.isfinite(p[key]).all() or min(p[key])<=0:raise ValueError(key)
- names=['ELeak_mV','ENa_mV','EK_mV','ECa_mV','EGABA_mV','gSK_nS','Ca_tau_ms','Ca_alpha','Ca_SK_Kd_uM','chief_compound_peak_nS','GABA_rise_ms','GABA_decay_ms','conduction_delay_ms','rest_angle_deg','movement_amplitude_deg','movement_period_ms','movement_start_ms','movement_end_ms','claw_current_pA_per_deg','hook_current_pA_per_deg_s'];dt=p['dt_ms'];steps=round(p['duration_ms']/dt);stride=max(1,round(p['record_interval_ms']/dt));out=kernel(np.asarray(source_spikes,dtype=float),np.array([p[x] for x in names]),*[np.array(p[x],dtype=float) for x in ['capacitance_pF','gNa_nS','gK_nS','gLeak_nS','gCa_nS','axial_nS']],dt,steps,stride);release=(out[1][:,:,2]**p['release_Hill'])/(p['release_Kd_uM']**p['release_Hill']+out[1][:,:,2]**p['release_Hill']);return dict(voltage=out[0],calcium=out[1],gaba_nS=out[2],angle_deg=out[3],input_current_pA=out[4],spikes=out[5],numerical_failure=bool(out[6]),terminal_release_proxy=release,time_ms=np.arange(len(out[0]))*stride*dt+dt)
+ external=np.empty((0,4));angles=np.empty(0)
+ if input_current_pA is not None:
+  external=np.asarray(input_current_pA,dtype=float);angles=np.asarray(angle_deg,dtype=float);n=round(p['duration_ms']/p['dt_ms'])
+  if external.shape!=(n,4) or angles.shape!=(n,) or not np.isfinite(external).all() or not np.isfinite(angles).all():raise ValueError('External current/angle must cover every integration step with finite values')
+ elif angle_deg is not None:raise ValueError('Angle requires external current')
+ names=['ELeak_mV','ENa_mV','EK_mV','ECa_mV','EGABA_mV','gSK_nS','Ca_tau_ms','Ca_alpha','Ca_SK_Kd_uM','chief_compound_peak_nS','GABA_rise_ms','GABA_decay_ms','conduction_delay_ms','rest_angle_deg','movement_amplitude_deg','movement_period_ms','movement_start_ms','movement_end_ms','claw_current_pA_per_deg','hook_current_pA_per_deg_s'];dt=p['dt_ms'];steps=round(p['duration_ms']/dt);stride=max(1,round(p['record_interval_ms']/dt));out=kernel(np.asarray(source_spikes,dtype=float),np.array([p[x] for x in names]),*[np.array(p[x],dtype=float) for x in ['capacitance_pF','gNa_nS','gK_nS','gLeak_nS','gCa_nS','axial_nS']],dt,steps,stride,external,angles);release=(out[1][:,:,2]**p['release_Hill'])/(p['release_Kd_uM']**p['release_Hill']+out[1][:,:,2]**p['release_Hill']);return dict(voltage=out[0],calcium=out[1],gaba_nS=out[2],angle_deg=out[3],input_current_pA=out[4],spikes=out[5],numerical_failure=bool(out[6]),terminal_release_proxy=release,time_ms=np.arange(len(out[0]))*stride*dt+dt)
