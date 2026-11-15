@@ -54,6 +54,8 @@
 
 这些是候选结构分支，不证明每个都必须在真实制动时放电。缺少实验身份/状态约束时，不以提高它们发放率作为优化目标。
 
+完整时间曲线还有一个关键问题：BRK持续刺激下，源细胞在200–450、500–950、1000–1450ms仍约72/71/73Hz，但T1 IN07B001从20降到2.2再到0Hz，胫节伸肌MN从16降到3.0再到0Hz。即**源没有停，运动端主要是短暂响应，未维持制动所需的持续状态**。该中继后期兴奋和抑制电导均下降，不能仅归咎于抑制过强；缺少感觉/状态驱动和未知细胞/突触参数仍需区分。见`diagnostics/BRK-sustained-source-transient-output.png`。
+
 图与逐细胞数据：`diagnostics/extended-brake-traces.png`、`BRK-premotor-probes.json`。
 
 ## 关键问题二：BB抑制P9输出为什么不完全
@@ -86,8 +88,8 @@
 
 ## 保存与复跑
 
-- 本地原始四条件全轨迹约104.6MB，位于`/workspace/exports/brake-extension-full-traces-20261115.tar.gz`。直接草稿Release上传HTTP401失败，保留本地；**不能声称这一份本地完整原始轨迹已在GitHub备份**。
-- 代码、参数、所有逐细胞诊断/小型探针/新对照结果与来源均常规提交；大型轨迹排除Git，待Release归档。
-- 增加正常仓库Actions独立远程复跑，和本地结果明确区分；实时状态及SHA见`full-trace-release.json`，不把远程重跑冒充本地文件备份。
+- 本地原始四条件全轨迹约104.6MB，位于`/workspace/exports/brake-extension-full-traces-20261115.tar.gz`。直接上传曾HTTP401失败；随后通过正常仓库Actions独立复跑、上传草稿Release并重新下载验证。四个原始NPZ的SHA与本地逐个完全相同，所有数组也逐项一致，**原始数据内容现已完整备份**。本地tar与远程tar容器不同，未声称上传了原本tar。
+- 代码、参数、所有逐细胞诊断/小型探针/新对照结果与来源均常规提交；大型轨迹排除Git，已归档至草稿Release，见`full-trace-release.json`。
+- 增加正常仓库Actions独立远程复跑，和本地结果明确区分；来源及SHA见`full-trace-release.json`，生成历史与本地区分；确认原始NPZ字节相同后才认定内容已备份。
 - 本地重跑大轨迹：`pulse_neural_panel.py CASE configs/manual-neural-bank-r9.json brake-extension-r9 results/mcns-brake-extension .0125 annotated-MN`，CASE为control/MDN/BRK/MDN+BRK。
 - 验证总表 `validation-summary.json`；来源记录 `evidence-registry.json`；每个原始运行config保存参数/模型/代码SHA、软件版本和刺激协议。

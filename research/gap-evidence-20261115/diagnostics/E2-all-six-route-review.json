@@ -1,0 +1,717 @@
+{
+  "status": "new all-six-leg inspection of existing saved MANC run; no new integration",
+  "source_npz_sha256": "659e6ec24de072494eea3039d130786715b2c2f6d4970eb3d6072b7804d7c925",
+  "E1_outputs": [
+    {
+      "body_id": "10707",
+      "segment": "T1",
+      "side": "LHS",
+      "rate_Hz": 29.166666666666668,
+      "spike_times_ms": [
+        403,
+        432,
+        459,
+        502,
+        529,
+        558,
+        630,
+        670,
+        701,
+        740,
+        783,
+        813,
+        853,
+        895,
+        925,
+        965,
+        1007,
+        1037,
+        1077,
+        1119,
+        1150,
+        1175,
+        1203,
+        1231,
+        1259,
+        1288,
+        1316,
+        1344,
+        1371,
+        1400,
+        1428,
+        1473,
+        1512,
+        1555,
+        1583
+      ],
+      "ISI_ms": [
+        29,
+        27,
+        43,
+        27,
+        29,
+        72,
+        40,
+        31,
+        39,
+        43,
+        30,
+        40,
+        42,
+        30,
+        40,
+        42,
+        30,
+        40,
+        42,
+        31,
+        25,
+        28,
+        28,
+        28,
+        29,
+        28,
+        28,
+        27,
+        29,
+        28,
+        45,
+        39,
+        43,
+        28
+      ],
+      "strongest_surviving_input_event_loads": [
+        {
+          "pre": "10093",
+          "type": "DNg100",
+          "signed_count": 187.0,
+          "source_rate_Hz": 70.83333333333334,
+          "signed_count_gain_event_rate": 13245.833333333336
+        },
+        {
+          "pre": "10196",
+          "type": "IN19A001",
+          "signed_count": -389.0,
+          "source_rate_Hz": 22.5,
+          "signed_count_gain_event_rate": -262.575
+        },
+        {
+          "pre": "101794",
+          "type": "IN19A011",
+          "signed_count": -240.0,
+          "source_rate_Hz": 30.0,
+          "signed_count_gain_event_rate": -215.99999999999997
+        },
+        {
+          "pre": "10450",
+          "type": "IN19B005",
+          "signed_count": 6.0,
+          "source_rate_Hz": 29.166666666666668,
+          "signed_count_gain_event_rate": 175.0
+        },
+        {
+          "pre": "11799",
+          "type": "IN19A020",
+          "signed_count": -154.0,
+          "source_rate_Hz": 25.0,
+          "signed_count_gain_event_rate": -115.5
+        },
+        {
+          "pre": "13358",
+          "type": "IN06B029",
+          "signed_count": -122.0,
+          "source_rate_Hz": 24.166666666666668,
+          "signed_count_gain_event_rate": -88.45
+        },
+        {
+          "pre": "12475",
+          "type": "IN19A029",
+          "signed_count": -96.0,
+          "source_rate_Hz": 25.0,
+          "signed_count_gain_event_rate": -72.0
+        },
+        {
+          "pre": "11744",
+          "type": "IN08A007",
+          "signed_count": -47.0,
+          "source_rate_Hz": 27.5,
+          "signed_count_gain_event_rate": -38.775
+        },
+        {
+          "pre": "10618",
+          "type": "IN19A004",
+          "signed_count": -28.0,
+          "source_rate_Hz": 29.166666666666668,
+          "signed_count_gain_event_rate": -24.5
+        },
+        {
+          "pre": "100524",
+          "type": "IN26X001",
+          "signed_count": -17.0,
+          "source_rate_Hz": 30.833333333333336,
+          "signed_count_gain_event_rate": -15.725000000000001
+        }
+      ]
+    },
+    {
+      "body_id": "10690",
+      "segment": "T1",
+      "side": "RHS",
+      "rate_Hz": 30.0,
+      "spike_times_ms": [
+        461,
+        489,
+        515,
+        544,
+        571,
+        599,
+        627,
+        670,
+        701,
+        740,
+        782,
+        813,
+        852,
+        894,
+        926,
+        965,
+        1007,
+        1037,
+        1077,
+        1119,
+        1161,
+        1189,
+        1217,
+        1245,
+        1273,
+        1301,
+        1329,
+        1358,
+        1385,
+        1413,
+        1441,
+        1469,
+        1512,
+        1542,
+        1567,
+        1596
+      ],
+      "ISI_ms": [
+        28,
+        26,
+        29,
+        27,
+        28,
+        28,
+        43,
+        31,
+        39,
+        42,
+        31,
+        39,
+        42,
+        32,
+        39,
+        42,
+        30,
+        40,
+        42,
+        42,
+        28,
+        28,
+        28,
+        28,
+        28,
+        28,
+        29,
+        27,
+        28,
+        28,
+        28,
+        43,
+        30,
+        25,
+        29
+      ],
+      "strongest_surviving_input_event_loads": [
+        {
+          "pre": "10339",
+          "type": "DNg100",
+          "signed_count": 217.0,
+          "source_rate_Hz": 70.83333333333334,
+          "signed_count_gain_event_rate": 15370.833333333336
+        },
+        {
+          "pre": "10213",
+          "type": "IN19A001",
+          "signed_count": -497.0,
+          "source_rate_Hz": 25.0,
+          "signed_count_gain_event_rate": -372.75
+        },
+        {
+          "pre": "172107",
+          "type": "IN19A011",
+          "signed_count": -276.0,
+          "source_rate_Hz": 25.833333333333336,
+          "signed_count_gain_event_rate": -213.9
+        },
+        {
+          "pre": "10385",
+          "type": "IN19B005",
+          "signed_count": 5.0,
+          "source_rate_Hz": 25.0,
+          "signed_count_gain_event_rate": 125.0
+        },
+        {
+          "pre": "13256",
+          "type": "IN06B029",
+          "signed_count": -156.0,
+          "source_rate_Hz": 26.666666666666668,
+          "signed_count_gain_event_rate": -124.8
+        },
+        {
+          "pre": "12871",
+          "type": "IN19A020",
+          "signed_count": -175.0,
+          "source_rate_Hz": 20.833333333333336,
+          "signed_count_gain_event_rate": -109.37500000000001
+        },
+        {
+          "pre": "12959",
+          "type": "IN06B029",
+          "signed_count": -133.0,
+          "source_rate_Hz": 26.666666666666668,
+          "signed_count_gain_event_rate": -106.39999999999999
+        },
+        {
+          "pre": "10173",
+          "type": "IN19A009",
+          "signed_count": 5.0,
+          "source_rate_Hz": 14.166666666666668,
+          "signed_count_gain_event_rate": 70.83333333333334
+        },
+        {
+          "pre": "10412",
+          "type": "IN03A001",
+          "signed_count": 6.0,
+          "source_rate_Hz": 10.0,
+          "signed_count_gain_event_rate": 60.0
+        },
+        {
+          "pre": "12679",
+          "type": "IN19A029",
+          "signed_count": -65.0,
+          "source_rate_Hz": 29.166666666666668,
+          "signed_count_gain_event_rate": -56.875
+        }
+      ]
+    },
+    {
+      "body_id": "10559",
+      "segment": "T2",
+      "side": "LHS",
+      "rate_Hz": 8.333333333333334,
+      "spike_times_ms": [
+        516,
+        544,
+        713,
+        740,
+        897,
+        1079,
+        1204,
+        1330,
+        1443,
+        1582
+      ],
+      "ISI_ms": [
+        28,
+        169,
+        27,
+        157,
+        182,
+        125,
+        126,
+        113,
+        139
+      ],
+      "strongest_surviving_input_event_loads": [
+        {
+          "pre": "10093",
+          "type": "DNg100",
+          "signed_count": 185.0,
+          "source_rate_Hz": 70.83333333333334,
+          "signed_count_gain_event_rate": 13104.166666666668
+        },
+        {
+          "pre": "11680",
+          "type": "IN19A007",
+          "signed_count": -490.0,
+          "source_rate_Hz": 6.666666666666667,
+          "signed_count_gain_event_rate": -3266.666666666667
+        },
+        {
+          "pre": "10308",
+          "type": "IN19A011",
+          "signed_count": -229.0,
+          "source_rate_Hz": 38.333333333333336,
+          "signed_count_gain_event_rate": -263.35
+        },
+        {
+          "pre": "10310",
+          "type": "IN19A014",
+          "signed_count": 10.0,
+          "source_rate_Hz": 23.333333333333336,
+          "signed_count_gain_event_rate": 233.33333333333337
+        },
+        {
+          "pre": "10288",
+          "type": "IN19A001",
+          "signed_count": -575.0,
+          "source_rate_Hz": 11.666666666666668,
+          "signed_count_gain_event_rate": -201.25000000000003
+        },
+        {
+          "pre": "11258",
+          "type": "IN01A009",
+          "signed_count": 27.0,
+          "source_rate_Hz": 3.3333333333333335,
+          "signed_count_gain_event_rate": 90.0
+        },
+        {
+          "pre": "12340",
+          "type": "IN06B029",
+          "signed_count": -167.0,
+          "source_rate_Hz": 13.333333333333334,
+          "signed_count_gain_event_rate": -66.8
+        },
+        {
+          "pre": "10730",
+          "type": "IN19A012",
+          "signed_count": 7.0,
+          "source_rate_Hz": 9.166666666666668,
+          "signed_count_gain_event_rate": 64.16666666666667
+        },
+        {
+          "pre": "10188",
+          "type": "IN19A004",
+          "signed_count": -61.0,
+          "source_rate_Hz": 29.166666666666668,
+          "signed_count_gain_event_rate": -53.375
+        },
+        {
+          "pre": "100821",
+          "type": "IN06B029",
+          "signed_count": -140.0,
+          "source_rate_Hz": 12.5,
+          "signed_count_gain_event_rate": -52.5
+        }
+      ]
+    },
+    {
+      "body_id": "10072",
+      "segment": "T2",
+      "side": "RHS",
+      "rate_Hz": 11.666666666666668,
+      "spike_times_ms": [
+        474,
+        502,
+        530,
+        558,
+        586,
+        783,
+        825,
+        853,
+        1008,
+        1050,
+        1077,
+        1205,
+        1330,
+        1513
+      ],
+      "ISI_ms": [
+        28,
+        28,
+        28,
+        28,
+        197,
+        42,
+        28,
+        155,
+        42,
+        27,
+        128,
+        125,
+        183
+      ],
+      "strongest_surviving_input_event_loads": [
+        {
+          "pre": "10339",
+          "type": "DNg100",
+          "signed_count": 192.0,
+          "source_rate_Hz": 70.83333333333334,
+          "signed_count_gain_event_rate": 13600.000000000002
+        },
+        {
+          "pre": "10252",
+          "type": "IN19A007",
+          "signed_count": -509.0,
+          "source_rate_Hz": 5.0,
+          "signed_count_gain_event_rate": -2545.0
+        },
+        {
+          "pre": "10254",
+          "type": "IN19A011",
+          "signed_count": -294.0,
+          "source_rate_Hz": 32.5,
+          "signed_count_gain_event_rate": -286.65000000000003
+        },
+        {
+          "pre": "10150",
+          "type": "IN19A001",
+          "signed_count": -566.0,
+          "source_rate_Hz": 14.166666666666668,
+          "signed_count_gain_event_rate": -240.55000000000004
+        },
+        {
+          "pre": "12281",
+          "type": "IN06B029",
+          "signed_count": -191.0,
+          "source_rate_Hz": 15.833333333333334,
+          "signed_count_gain_event_rate": -90.725
+        },
+        {
+          "pre": "12715",
+          "type": "IN06B029",
+          "signed_count": -166.0,
+          "source_rate_Hz": 15.833333333333334,
+          "signed_count_gain_event_rate": -78.85
+        },
+        {
+          "pre": "10191",
+          "type": "IN19A004",
+          "signed_count": -95.0,
+          "source_rate_Hz": 27.5,
+          "signed_count_gain_event_rate": -78.375
+        },
+        {
+          "pre": "11754",
+          "type": "IN19A020",
+          "signed_count": -175.0,
+          "source_rate_Hz": 11.666666666666668,
+          "signed_count_gain_event_rate": -61.25000000000001
+        },
+        {
+          "pre": "12028",
+          "type": "IN08A007",
+          "signed_count": -91.0,
+          "source_rate_Hz": 11.666666666666668,
+          "signed_count_gain_event_rate": -31.85
+        },
+        {
+          "pre": "10488",
+          "type": "IN12B003",
+          "signed_count": -24.0,
+          "source_rate_Hz": 35.0,
+          "signed_count_gain_event_rate": -25.2
+        }
+      ]
+    },
+    {
+      "body_id": "10498",
+      "segment": "T3",
+      "side": "LHS",
+      "rate_Hz": 5.0,
+      "spike_times_ms": [
+        433,
+        656,
+        979,
+        1147,
+        1386,
+        1442
+      ],
+      "ISI_ms": [
+        223,
+        323,
+        168,
+        239,
+        56
+      ],
+      "strongest_surviving_input_event_loads": [
+        {
+          "pre": "10093",
+          "type": "DNg100",
+          "signed_count": 130.0,
+          "source_rate_Hz": 70.83333333333334,
+          "signed_count_gain_event_rate": 9208.333333333334
+        },
+        {
+          "pre": "10215",
+          "type": "IN19A007",
+          "signed_count": -441.0,
+          "source_rate_Hz": 4.166666666666667,
+          "signed_count_gain_event_rate": -1837.5000000000002
+        },
+        {
+          "pre": "10471",
+          "type": "AN18B003",
+          "signed_count": 32.0,
+          "source_rate_Hz": 25.0,
+          "signed_count_gain_event_rate": 800.0
+        },
+        {
+          "pre": "10133",
+          "type": "IN19A001",
+          "signed_count": -637.0,
+          "source_rate_Hz": 22.5,
+          "signed_count_gain_event_rate": -429.97499999999997
+        },
+        {
+          "pre": "10108",
+          "type": "IN19A004",
+          "signed_count": -123.0,
+          "source_rate_Hz": 29.166666666666668,
+          "signed_count_gain_event_rate": -107.625
+        },
+        {
+          "pre": "11258",
+          "type": "IN01A009",
+          "signed_count": 21.0,
+          "source_rate_Hz": 3.3333333333333335,
+          "signed_count_gain_event_rate": 70.0
+        },
+        {
+          "pre": "11079",
+          "type": "IN01A009",
+          "signed_count": 55.0,
+          "source_rate_Hz": 0.8333333333333334,
+          "signed_count_gain_event_rate": 45.833333333333336
+        },
+        {
+          "pre": "13421",
+          "type": "IN06B029",
+          "signed_count": -180.0,
+          "source_rate_Hz": 8.333333333333334,
+          "signed_count_gain_event_rate": -45.0
+        },
+        {
+          "pre": "13260",
+          "type": "IN06B029",
+          "signed_count": -156.0,
+          "source_rate_Hz": 8.333333333333334,
+          "signed_count_gain_event_rate": -39.0
+        },
+        {
+          "pre": "100820",
+          "type": "IN21A010",
+          "signed_count": 11.0,
+          "source_rate_Hz": 2.5,
+          "signed_count_gain_event_rate": 27.5
+        }
+      ]
+    },
+    {
+      "body_id": "10558",
+      "segment": "T3",
+      "side": "RHS",
+      "rate_Hz": 5.833333333333334,
+      "spike_times_ms": [
+        419,
+        670,
+        966,
+        1161,
+        1206,
+        1400,
+        1456
+      ],
+      "ISI_ms": [
+        251,
+        296,
+        195,
+        45,
+        194,
+        56
+      ],
+      "strongest_surviving_input_event_loads": [
+        {
+          "pre": "10339",
+          "type": "DNg100",
+          "signed_count": 153.0,
+          "source_rate_Hz": 70.83333333333334,
+          "signed_count_gain_event_rate": 10837.500000000002
+        },
+        {
+          "pre": "10346",
+          "type": "IN19A007",
+          "signed_count": -493.0,
+          "source_rate_Hz": 4.166666666666667,
+          "signed_count_gain_event_rate": -2054.166666666667
+        },
+        {
+          "pre": "10999",
+          "type": "AN18B003",
+          "signed_count": 33.0,
+          "source_rate_Hz": 13.333333333333334,
+          "signed_count_gain_event_rate": 440.0
+        },
+        {
+          "pre": "10169",
+          "type": "IN19A001",
+          "signed_count": -660.0,
+          "source_rate_Hz": 18.333333333333336,
+          "signed_count_gain_event_rate": -363.00000000000006
+        },
+        {
+          "pre": "10184",
+          "type": "IN19A011",
+          "signed_count": -248.0,
+          "source_rate_Hz": 35.0,
+          "signed_count_gain_event_rate": -260.4
+        },
+        {
+          "pre": "10207",
+          "type": "IN19A004",
+          "signed_count": -88.0,
+          "source_rate_Hz": 31.666666666666668,
+          "signed_count_gain_event_rate": -83.6
+        },
+        {
+          "pre": "12645",
+          "type": "IN06B029",
+          "signed_count": -167.0,
+          "source_rate_Hz": 11.666666666666668,
+          "signed_count_gain_event_rate": -58.45
+        },
+        {
+          "pre": "11659",
+          "type": "IN01A016",
+          "signed_count": 33.0,
+          "source_rate_Hz": 0.8333333333333334,
+          "signed_count_gain_event_rate": 27.5
+        },
+        {
+          "pre": "11299",
+          "type": "IN19A020",
+          "signed_count": -133.0,
+          "source_rate_Hz": 4.166666666666667,
+          "signed_count_gain_event_rate": -16.625
+        },
+        {
+          "pre": "12367",
+          "type": "IN19A029",
+          "signed_count": -67.0,
+          "source_rate_Hz": 5.833333333333334,
+          "signed_count_gain_event_rate": -11.725
+        }
+      ]
+    }
+  ],
+  "silent_I1_body_ids": [
+    "12953",
+    "13186",
+    "13905",
+    "14096",
+    "17322",
+    "156245"
+  ],
+  "interpretation": "All6 I1 silent, LF/RF E1 mainly tonic; other four E1 retain sparse irregular spikes. Surviving input routes and exact time trains saved; cannot infer every expanded MN rhythm is abolished from the front-leg result."
+}

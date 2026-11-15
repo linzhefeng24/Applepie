@@ -1,9 +1,9 @@
 {
-  "status": "local bundle retained; direct Release upload failed HTTP401; code and diagnostics committed",
+  "status": "all four local raw NPZ files backed by independently rerun byte-identical copies in verified remote Release archive",
   "file": "brake-extension-full-traces-20261115.tar.gz",
   "bytes": 104550588,
   "sha256": "ee4b76d8a59322f538d9799cf1aa987500a117fe380c8162bc468b54044a882b",
-  "code_revision": "11104fb",
+  "code_revision": "11104fbcbcc51202cfdd4121865676a0e7e94318",
   "files": [
     {
       "path": "conductance-rebuild-20261114/results/frozen-neural-panel-brake-extension-r9/BRK.npz",
@@ -27,6 +27,13 @@
     }
   ],
   "release_tag": "brake-extension-traces-20261115",
-  "remote_local_trace_backup_verified": false,
-  "upload_failure": "HTTP401 Bad credentials at uploads.github.com; draft release exists but local bundle asset upload did not succeed"
+  "remote_local_trace_backup_verified": true,
+  "upload_failure": "HTTP401 Bad credentials at uploads.github.com; draft release exists but local bundle asset upload did not succeed",
+  "verification": "remote-local-equivalence.json",
+  "remote_archive": "brake-extension-remote-traces-20261115.tar.gz",
+  "remote_archive_sha256": "545b12f7da444497e03110e9ee4ec2dc11d2baa07174a8a8120b0db4c129ad96",
+  "source_url": "https://github.com/linzhefeng24/Applepie/releases/download/untagged-27b1f9f23a23e620463c/brake-extension-remote-traces-20261115.tar.gz",
+  "remote_workflow_revision": "14a6c660db41c92da2afce4ec0fb5ec87157dbe1",
+  "remote_archive_bytes": 104621980,
+  "local_integrator_source_revision": "8bc5a6357b348d3135f0adaca95ff65b0157fc88"
 }

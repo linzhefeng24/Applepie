@@ -8,8 +8,8 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 45,
-      "sha256": "975e444aea5a10403b305d3bd262d86a4774c2c9c9869fc70c23f921338f0337"
+      "bytes": 177,
+      "sha256": "0acfb9fdd874a031af08de4e111882c725b582ad82f0450a029e6d9811e7269d"
     },
     {
       "path": "ASYMMETRY.md",
@@ -18,8 +18,8 @@
     },
     {
       "path": "CURRENT_MANUAL_STATE.json",
-      "bytes": 2193,
-      "sha256": "82cf117da91998e24453504c6b4cdbd257cfe974a912e66eaeffa3ff84d84583"
+      "bytes": 2476,
+      "sha256": "9524916a290cc7bf247dd810f9c204b7b359288bf025167de8800e4e875cff93"
     },
     {
       "path": "EXPERIMENTAL_CONSTRAINTS.md",
@@ -113,8 +113,8 @@
     },
     {
       "path": "brain.json",
-      "bytes": 11360767,
-      "sha256": "e5672aeebfb33dcf369e3af670615903e284fdb2c2c17edc1e78891393f6b09a"
+      "bytes": 11363282,
+      "sha256": "ce418feb87c48f47e950834e8aa154fb4e4e89980637417f348e3762f92291ad"
     },
     {
       "path": "build_phenomena.py",
@@ -175,6 +175,26 @@
       "path": "configs/core-selected.json",
       "bytes": 971,
       "sha256": "4e6fba85baf89ce731e6d8025003899131ada0f63ca056c90bb997c6e6450046"
+    },
+    {
+      "path": "configs/diagnostic-DNg97-coupling18.json",
+      "bytes": 5779,
+      "sha256": "a5eb0f38b71baa7311eef036cd94cd1384f2644e904952eac78f5619a47b4bf0"
+    },
+    {
+      "path": "configs/diagnostic-E-minus10.json",
+      "bytes": 5760,
+      "sha256": "e71e37f0f12b4d03868139ebb28e04c797e539937743825d84c9e1334607f5c2"
+    },
+    {
+      "path": "configs/diagnostic-E-plus10.json",
+      "bytes": 5774,
+      "sha256": "ff4e99db13e6cd05b553d49ec8f7534375c9ef7d8c0c9fee3a1702b571fdbc9c"
+    },
+    {
+      "path": "configs/diagnostic-P9-DNg97-efficacy07.json",
+      "bytes": 6004,
+      "sha256": "d92a1982c580f8e5e0c4c5b1c2ca5e26afa6916ac9ba4cc600726583bbf99453"
     },
     {
       "path": "configs/downstream-selected.json",
@@ -788,8 +808,8 @@
     },
     {
       "path": "pulse_neural_panel.py",
-      "bytes": 6124,
-      "sha256": "b885f2af0724db72e00e093a39234ea1b9bd2dbae886ad1082d8c10dcb09337b"
+      "bytes": 6521,
+      "sha256": "ebe815b8fa384b04214f63fcc841286991dea65b8c6bedcbe86430f04c5b7889"
     },
     {
       "path": "rank_command_inputs.py",
@@ -850,6 +870,11 @@
       "path": "requirements.txt",
       "bytes": 74,
       "sha256": "21ad40cab4aad06b3002dc8fdf980dd0f1f6fe568564bf43c784e215d526fc9a"
+    },
+    {
+      "path": "results/BPN-P9-gap-validation.log",
+      "bytes": 532,
+      "sha256": "89a2f32fbd99b3b22a69deff5dd4530532fa4d2be58eb7859961f67fc9d8f72d"
     },
     {
       "path": "results/adaptation-probe.log",
@@ -1712,6 +1737,26 @@
       "sha256": "adcde30aaccbe130d4332c9b0bae8db547976915d68aa15096e3e398a5aef764"
     },
     {
+      "path": "results/brake-extension-BRK.log",
+      "bytes": 517,
+      "sha256": "0680a811531156e0376884943d4d398c63037dad8615bb9f1eb0295bae4e4339"
+    },
+    {
+      "path": "results/brake-extension-MDN+BRK.log",
+      "bytes": 527,
+      "sha256": "d18448b7171bf567981bb297f554a6f5eea25acf4e5e62eef547dbfa58fb309f"
+    },
+    {
+      "path": "results/brake-extension-MDN.log",
+      "bytes": 524,
+      "sha256": "2287e3871ca3d3465838a2d5cde7c737255664d740d95b29d761e1a575f3c122"
+    },
+    {
+      "path": "results/brake-extension-control.log",
+      "bytes": 515,
+      "sha256": "9eac353c651c08e14e02ac114893cd989eaf171196a4c94409939670b66384e1"
+    },
+    {
       "path": "results/causal-motor-readout-review.log",
       "bytes": 204,
       "sha256": "70cc847a7cddd32afda74db5537ce4ff94c0a7368f48aff5b9b5704d9d623cce"
@@ -1747,9 +1792,44 @@
       "sha256": "ea570abd36612f7228c99bffd23b92d970e4a0156ec7c49b46620d1bf07b3dbc"
     },
     {
+      "path": "results/coupling18-P9+BB.log",
+      "bytes": 530,
+      "sha256": "cb2e937e9aa78c0d24d554625e6a007be983f582ac0ff251c97fae9d4e23f608"
+    },
+    {
+      "path": "results/coupling18-P9.log",
+      "bytes": 528,
+      "sha256": "53d66267dcf0591d5b2452371996f9eb1650a891728d335779bd8713624de0b2"
+    },
+    {
       "path": "results/current-tracing-tests.txt",
       "bytes": 100,
       "sha256": "97c11da3f5e642df3253443e1f83e9c637115b0984742cee16fd647c36cc38c5"
+    },
+    {
+      "path": "results/diagnostic-PFL3L-E-minus10.log",
+      "bytes": 524,
+      "sha256": "5c3f3da21a74f5362a18c59c4b1b6ee030615abfad1b64ab49be71b0930ffcd2"
+    },
+    {
+      "path": "results/diagnostic-PFL3L-E-plus10.log",
+      "bytes": 531,
+      "sha256": "0ae48a6fdcaf5b55427767f003400eb3f41924a5266c4756b8b7a6884ea4814b"
+    },
+    {
+      "path": "results/diagnostic-efficacy07-P9+BB.log",
+      "bytes": 530,
+      "sha256": "980b3c59723c9e41da864d4de6542d18179c1192b8866f9ca1f7f02df8422d0d"
+    },
+    {
+      "path": "results/diagnostic-efficacy07-P9+FG.log",
+      "bytes": 529,
+      "sha256": "69201f163c44460e3454b44e9cc077b891ce10208cc411c8d30ea1fbdd718a31"
+    },
+    {
+      "path": "results/diagnostic-efficacy07-P9.log",
+      "bytes": 528,
+      "sha256": "22f95dd17d118b9d7ea3ca8ba4665e6f4245e75fa02d367883ae486c6615cb1d"
     },
     {
       "path": "results/downstream-tuning.json",
@@ -2397,6 +2477,46 @@
       "sha256": "ec75c03cfe237e37c0138f4a9437ec3193e51eaf64d511ca6b55e55f4d6a7f5b"
     },
     {
+      "path": "results/frozen-neural-panel-brake-extension-r9/BRK-config.json",
+      "bytes": 6151,
+      "sha256": "ad2a86619413e058cb929c31380ccb2e4b4fe3e18873e1df20e00ff4d602e945"
+    },
+    {
+      "path": "results/frozen-neural-panel-brake-extension-r9/BRK-diagnosis.json",
+      "bytes": 217505,
+      "sha256": "ff0407890f1101dc266428b36090a4f7270ce17bde01e60982150fea16dcb312"
+    },
+    {
+      "path": "results/frozen-neural-panel-brake-extension-r9/MDN+BRK-config.json",
+      "bytes": 6262,
+      "sha256": "ab5cc1f49b5743b75046abfac26646c4d97ff4b5b5c4ce2717961181476b954b"
+    },
+    {
+      "path": "results/frozen-neural-panel-brake-extension-r9/MDN+BRK-diagnosis.json",
+      "bytes": 218224,
+      "sha256": "7f3499d00076a7d0b3d21acdcdff9adbc0f2dec6eb21cd5f3267e1d4a292664f"
+    },
+    {
+      "path": "results/frozen-neural-panel-brake-extension-r9/MDN-config.json",
+      "bytes": 6151,
+      "sha256": "a0890eea126f1dc09651f2b791e5e49bf154ea8ebce1b3b9d4bac920a656b32a"
+    },
+    {
+      "path": "results/frozen-neural-panel-brake-extension-r9/MDN-diagnosis.json",
+      "bytes": 218340,
+      "sha256": "4dc084e1f36ccc0c863ec801bbaed837ebead8004f412080912f0ffaa3080893"
+    },
+    {
+      "path": "results/frozen-neural-panel-brake-extension-r9/control-config.json",
+      "bytes": 6045,
+      "sha256": "dd658401444cf93f23cf25f4b7dbf9f0119db284be4c196fbe12f1d193584b0b"
+    },
+    {
+      "path": "results/frozen-neural-panel-brake-extension-r9/control-diagnosis.json",
+      "bytes": 197489,
+      "sha256": "84efcb11c05207ed473901e184c3f8c221e622d526a3cfb4b015114aad195a8a"
+    },
+    {
       "path": "results/frozen-neural-panel-lul130-K90/MDN-config.json",
       "bytes": 4555,
       "sha256": "6bedae113efe3fadaea57cabbf78bbb88414f3299411847283a988b1923fcf68"
@@ -2975,6 +3095,81 @@
       "path": "results/frozen-neural-panel-r5/observations.json",
       "bytes": 1049196,
       "sha256": "e59b6e5dd8df531532ddeafd710903bf6340ad4677986ccabfbe61e3debb7c17"
+    },
+    {
+      "path": "results/frozen-neural-panel-r9-E-minus10/PFL3L-config.json",
+      "bytes": 6084,
+      "sha256": "cae21c3eef77c0479000d93d385cb8d05045d34327203260b2fd96c7f1f743a7"
+    },
+    {
+      "path": "results/frozen-neural-panel-r9-E-minus10/PFL3L-diagnosis.json",
+      "bytes": 102560,
+      "sha256": "594076ba80db15485db23e10bf51da1c26d164d67f09ed7b02f925dc6f828ea8"
+    },
+    {
+      "path": "results/frozen-neural-panel-r9-E-minus10/PFL3L.npz",
+      "bytes": 16577246,
+      "sha256": "66da116bbd661470493766097a1190e8e97b05eeb6a0937b43b9a4b7c2d11674"
+    },
+    {
+      "path": "results/frozen-neural-panel-r9-E-plus10/PFL3L-config.json",
+      "bytes": 6096,
+      "sha256": "f06eb2f9b01cce1dc28b4e0cbfbc381c088e3ec0a9e3991938143879b400377b"
+    },
+    {
+      "path": "results/frozen-neural-panel-r9-E-plus10/PFL3L-diagnosis.json",
+      "bytes": 102751,
+      "sha256": "6dd54fadd697810d26adc21178d6afa7c17010eaa14156f58ea498df0cbd967c"
+    },
+    {
+      "path": "results/frozen-neural-panel-r9-E-plus10/PFL3L.npz",
+      "bytes": 16787382,
+      "sha256": "a83b8bed34fbe3ca0737da80906800c76269b80c95afe268ac216de3e91a8919"
+    },
+    {
+      "path": "results/frozen-neural-panel-r9-P9-efficacy07-diagnostic/P9+BB-config.json",
+      "bytes": 6392,
+      "sha256": "e745554da8f71375fcdc11ad3c2c2aafbed96b8168594a45815111890c68bd9b"
+    },
+    {
+      "path": "results/frozen-neural-panel-r9-P9-efficacy07-diagnostic/P9+BB-diagnosis.json",
+      "bytes": 102704,
+      "sha256": "5d4c3b8cf444ff880e0955c1aa0cb3e332f02ba3e0d2a354528a4d246a5421b1"
+    },
+    {
+      "path": "results/frozen-neural-panel-r9-P9-efficacy07-diagnostic/P9+BB.npz",
+      "bytes": 16393330,
+      "sha256": "018b1e96b033f46b5c2b3906c3f73e2fb72b27cd701c4931367ad7cb5803b483"
+    },
+    {
+      "path": "results/frozen-neural-panel-r9-P9-efficacy07-diagnostic/P9+FG-config.json",
+      "bytes": 6392,
+      "sha256": "8a5e21ae4ff9cd0e946c8d3d8a545c880bc6e7e6886320fc52132b0776868833"
+    },
+    {
+      "path": "results/frozen-neural-panel-r9-P9-efficacy07-diagnostic/P9+FG-diagnosis.json",
+      "bytes": 102694,
+      "sha256": "d7811dc6c3f09f7be205b538269f4bedfccca3e71b1aaaeb3f8af6bb1647625d"
+    },
+    {
+      "path": "results/frozen-neural-panel-r9-P9-efficacy07-diagnostic/P9+FG.npz",
+      "bytes": 16383455,
+      "sha256": "961ed81bbba9598cdc7103e78dd461cb1eb821e3b1a3c7d3b1603b8dccfb6a42"
+    },
+    {
+      "path": "results/frozen-neural-panel-r9-P9-efficacy07-diagnostic/P9-config.json",
+      "bytes": 6283,
+      "sha256": "a4c9071b4779a61cd1e23264700fd6043a9a53d5d3dbcdca1842b270e0cd2452"
+    },
+    {
+      "path": "results/frozen-neural-panel-r9-P9-efficacy07-diagnostic/P9-diagnosis.json",
+      "bytes": 102679,
+      "sha256": "d30eca836ec7d6c74ea263a9dd8d01124f42f99c729db1febb092bbda1bf6964"
+    },
+    {
+      "path": "results/frozen-neural-panel-r9-P9-efficacy07-diagnostic/P9.npz",
+      "bytes": 16398486,
+      "sha256": "00ca812e7ebc80bca0d084256db719b48ec87aa7410e7963263a98b94837c8fe"
     },
     {
       "path": "results/frozen-neural-panel-unified-LULT3K80/MDN-config.json",
@@ -3890,6 +4085,51 @@
       "path": "results/frozen-neural-panel-unified-r8/steering-responses.png",
       "bytes": 500361,
       "sha256": "369283fc7ca33d7ccf87ecf6f02498b31e4091433cf62d918fd72f9e5ebbd82b"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r9-coupling18-diagnostic/P9+BB-config.json",
+      "bytes": 6164,
+      "sha256": "75b7afe1ee0075e620b45ac2f17c1fdff5d47a5ec876adf5d4c096a0afa71a97"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r9-coupling18-diagnostic/P9+BB-diagnosis.json",
+      "bytes": 102400,
+      "sha256": "2e0f4e3e0586abe686b7205af1a4d1640b5fc3c8c1d081bd92aa970b62ac09c5"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r9-coupling18-diagnostic/P9+BB.npz",
+      "bytes": 16411611,
+      "sha256": "d9e224977614a7d4f646d6423b383eccbd5e461764f2195c15781f18c29dea4f"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r9-coupling18-diagnostic/P9-config.json",
+      "bytes": 6055,
+      "sha256": "b8a6331aaf06ac26a143521433a982faa0245083153cca305c8b6809ddd8ff3a"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r9-coupling18-diagnostic/P9-diagnosis.json",
+      "bytes": 102303,
+      "sha256": "333fdfbe3fbec3619657c20eb34ea87aa1653f6318550772d39168e872136b9a"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r9-coupling18-diagnostic/P9.npz",
+      "bytes": 16422342,
+      "sha256": "8826b3f45d8e0e6ba34d25f98c123a68c5de325c01ec8e653081358a1c707446"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r9-gap-validation/BPN+P9-config.json",
+      "bytes": 6128,
+      "sha256": "e5f027dd0f941022cf266d02f37aa343443adc31681349a1b9e9d315c7a96410"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r9-gap-validation/BPN+P9-diagnosis.json",
+      "bytes": 102585,
+      "sha256": "9deddcd4ccaa55b7201f9a960383a7ccc4a6953cb14a9312616d6c7ffc0816e2"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r9-gap-validation/BPN+P9.npz",
+      "bytes": 16514686,
+      "sha256": "26f76939db48a3e2f5e36e0954f83ad17366423ff752922f4010e1544604be67"
     },
     {
       "path": "results/frozen-neural-panel-unified-r9/BPN+BB-config.json",
@@ -4905,6 +5145,26 @@
       "path": "results/mcns-bon1-local/unsigned-connectivity.npz",
       "bytes": 30892,
       "sha256": "dce275f5f64da34a588415ef074240e652c176800c98711543a3c52c6b0dae39"
+    },
+    {
+      "path": "results/mcns-brake-extension/neurons.json",
+      "bytes": 1999316,
+      "sha256": "30a2425f329a3155bf18f6d72f6d41d4b442afefa6fdad4547d65acfa165a9e1"
+    },
+    {
+      "path": "results/mcns-brake-extension/signed-hypothesis-connectivity.npz",
+      "bytes": 1262728,
+      "sha256": "0e1a6d75f750d6b9fe6147770232540dc6782fb7d45c66db53b1b6acea8b78e3"
+    },
+    {
+      "path": "results/mcns-brake-extension/source-manifest.json",
+      "bytes": 1083,
+      "sha256": "e1253000925bbe73758e78e76bea82ad7fdc583e5860ed27b47b575d219f608e"
+    },
+    {
+      "path": "results/mcns-brake-extension/unsigned-connectivity.npz",
+      "bytes": 1346000,
+      "sha256": "483fb955fb9636009197fa74a1b4bed593538d927b29bc3389b7611fed62a6db"
     },
     {
       "path": "results/mcns-command-P9-K80-softI.log",

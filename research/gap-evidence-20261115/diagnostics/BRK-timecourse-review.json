@@ -1,0 +1,75 @@
+{
+  "status": "post-hoc full-timecourse review of actual saved runs; no new integration",
+  "observations": {
+    "BRK_sources": [
+      {
+        "window_ms": [
+          200,
+          450
+        ],
+        "mean_Hz": 72.0
+      },
+      {
+        "window_ms": [
+          500,
+          950
+        ],
+        "mean_Hz": 71.11111111111111
+      },
+      {
+        "window_ms": [
+          1000,
+          1450
+        ],
+        "mean_Hz": 72.96296296296296
+      }
+    ],
+    "IN07B001_T1": [
+      {
+        "window_ms": [
+          200,
+          450
+        ],
+        "mean_Hz": 20.0
+      },
+      {
+        "window_ms": [
+          500,
+          950
+        ],
+        "mean_Hz": 2.2222222222222223
+      },
+      {
+        "window_ms": [
+          1000,
+          1450
+        ],
+        "mean_Hz": 0.0
+      }
+    ],
+    "Ti_extensor_MN": [
+      {
+        "window_ms": [
+          200,
+          450
+        ],
+        "mean_Hz": 16.0
+      },
+      {
+        "window_ms": [
+          500,
+          950
+        ],
+        "mean_Hz": 2.962962962962963
+      },
+      {
+        "window_ms": [
+          1000,
+          1450
+        ],
+        "mean_Hz": 0.0
+      }
+    ]
+  },
+  "interpretation": "BRK source does not stop. Selected relay excitation weakens and remains below firing threshold; overall inhibition also weakens, so pure stronger inhibition is not established. Missing sensory/state drive and uncalibrated intrinsic/synaptic properties remain competing explanations."
+}

@@ -1,0 +1,12 @@
+{
+  "workflow_run": "https://github.com/linzhefeng24/Applepie/actions/runs/43685704925",
+  "verified_download": true,
+  "manifest": {
+    "status": "independent GitHub-runner rerun; not a backup of the locally generated raw files",
+    "code_revision": "14a6c660db41c92da2afce4ec0fb5ec87157dbe1",
+    "bytes": 104621980,
+    "sha256": "545b12f7da444497e03110e9ee4ec2dc11d2baa07174a8a8120b0db4c129ad96"
+  },
+  "status": "independent remote rerun archived and downloaded; all four NPZ payloads verified byte-identical to local files",
+  "all_local_npz_payloads_backed": true
+}

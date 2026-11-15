@@ -1,0 +1,2 @@
+-r ../conductance-rebuild-20261114/requirements.txt
+pyarrow==19.0.1

@@ -1,0 +1,232 @@
+{
+  "status": "independent remote run compared field-by-field, not assumed equal",
+  "conditions": [
+    {
+      "condition": "control",
+      "fields": [
+        {
+          "field": "spikes",
+          "array_equal": true,
+          "max_abs_diff": 0.0
+        },
+        {
+          "field": "body_ids",
+          "array_equal": true,
+          "max_abs_diff": null
+        },
+        {
+          "field": "record_body_ids",
+          "array_equal": true,
+          "max_abs_diff": null
+        },
+        {
+          "field": "cell_parameters",
+          "array_equal": true,
+          "max_abs_diff": 0.0
+        },
+        {
+          "field": "voltage",
+          "array_equal": true,
+          "max_abs_diff": 0.0
+        },
+        {
+          "field": "calcium",
+          "array_equal": true,
+          "max_abs_diff": 0.0
+        },
+        {
+          "field": "currents_pA",
+          "array_equal": true,
+          "max_abs_diff": 0.0
+        },
+        {
+          "field": "conductances_nS",
+          "array_equal": true,
+          "max_abs_diff": 0.0
+        },
+        {
+          "field": "time_ms",
+          "array_equal": true,
+          "max_abs_diff": 0.0
+        }
+      ]
+    },
+    {
+      "condition": "MDN",
+      "fields": [
+        {
+          "field": "spikes",
+          "array_equal": true,
+          "max_abs_diff": 0.0
+        },
+        {
+          "field": "body_ids",
+          "array_equal": true,
+          "max_abs_diff": null
+        },
+        {
+          "field": "record_body_ids",
+          "array_equal": true,
+          "max_abs_diff": null
+        },
+        {
+          "field": "cell_parameters",
+          "array_equal": true,
+          "max_abs_diff": 0.0
+        },
+        {
+          "field": "voltage",
+          "array_equal": true,
+          "max_abs_diff": 0.0
+        },
+        {
+          "field": "calcium",
+          "array_equal": true,
+          "max_abs_diff": 0.0
+        },
+        {
+          "field": "currents_pA",
+          "array_equal": true,
+          "max_abs_diff": 0.0
+        },
+        {
+          "field": "conductances_nS",
+          "array_equal": true,
+          "max_abs_diff": 0.0
+        },
+        {
+          "field": "time_ms",
+          "array_equal": true,
+          "max_abs_diff": 0.0
+        }
+      ]
+    },
+    {
+      "condition": "BRK",
+      "fields": [
+        {
+          "field": "spikes",
+          "array_equal": true,
+          "max_abs_diff": 0.0
+        },
+        {
+          "field": "body_ids",
+          "array_equal": true,
+          "max_abs_diff": null
+        },
+        {
+          "field": "record_body_ids",
+          "array_equal": true,
+          "max_abs_diff": null
+        },
+        {
+          "field": "cell_parameters",
+          "array_equal": true,
+          "max_abs_diff": 0.0
+        },
+        {
+          "field": "voltage",
+          "array_equal": true,
+          "max_abs_diff": 0.0
+        },
+        {
+          "field": "calcium",
+          "array_equal": true,
+          "max_abs_diff": 0.0
+        },
+        {
+          "field": "currents_pA",
+          "array_equal": true,
+          "max_abs_diff": 0.0
+        },
+        {
+          "field": "conductances_nS",
+          "array_equal": true,
+          "max_abs_diff": 0.0
+        },
+        {
+          "field": "time_ms",
+          "array_equal": true,
+          "max_abs_diff": 0.0
+        }
+      ]
+    },
+    {
+      "condition": "MDN+BRK",
+      "fields": [
+        {
+          "field": "spikes",
+          "array_equal": true,
+          "max_abs_diff": 0.0
+        },
+        {
+          "field": "body_ids",
+          "array_equal": true,
+          "max_abs_diff": null
+        },
+        {
+          "field": "record_body_ids",
+          "array_equal": true,
+          "max_abs_diff": null
+        },
+        {
+          "field": "cell_parameters",
+          "array_equal": true,
+          "max_abs_diff": 0.0
+        },
+        {
+          "field": "voltage",
+          "array_equal": true,
+          "max_abs_diff": 0.0
+        },
+        {
+          "field": "calcium",
+          "array_equal": true,
+          "max_abs_diff": 0.0
+        },
+        {
+          "field": "currents_pA",
+          "array_equal": true,
+          "max_abs_diff": 0.0
+        },
+        {
+          "field": "conductances_nS",
+          "array_equal": true,
+          "max_abs_diff": 0.0
+        },
+        {
+          "field": "time_ms",
+          "array_equal": true,
+          "max_abs_diff": 0.0
+        }
+      ]
+    }
+  ],
+  "raw_file_hashes": [
+    {
+      "condition": "control",
+      "local_npz_sha256": "d10f76cb08ae8e703eabb4c9e3e1c92547efed3f2221445105723b9f608ed518",
+      "remote_npz_sha256": "d10f76cb08ae8e703eabb4c9e3e1c92547efed3f2221445105723b9f608ed518",
+      "raw_file_bytes_identical": true
+    },
+    {
+      "condition": "MDN",
+      "local_npz_sha256": "dafdf578b4d1acc70d66e700f112ad3a1e6df221ce752061cfa38413f88e327e",
+      "remote_npz_sha256": "dafdf578b4d1acc70d66e700f112ad3a1e6df221ce752061cfa38413f88e327e",
+      "raw_file_bytes_identical": true
+    },
+    {
+      "condition": "BRK",
+      "local_npz_sha256": "38cab73dd924be385692e227a04299fe7ce14a14b6f36f07b283098d4e6fcf11",
+      "remote_npz_sha256": "38cab73dd924be385692e227a04299fe7ce14a14b6f36f07b283098d4e6fcf11",
+      "raw_file_bytes_identical": true
+    },
+    {
+      "condition": "MDN+BRK",
+      "local_npz_sha256": "f817989bfcc7cc1a2a3c72bf7567b7ff8026cf2642f3f6702845b851b6d950f0",
+      "remote_npz_sha256": "f817989bfcc7cc1a2a3c72bf7567b7ff8026cf2642f3f6702845b851b6d950f0",
+      "raw_file_bytes_identical": true
+    }
+  ],
+  "all_local_raw_files_byte_identical_to_remote_assets": true
+}

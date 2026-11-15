@@ -45,6 +45,8 @@ if mode.endswith('stronger-E1'):
  p['group_parameters']={**p.get('group_parameters',{}),'intrinsic neuron|type:IN17A001':{'excitatory_gain':1.25}}
 if mode.endswith('E1-silenced'):
  ablate=[i for i,r in enumerate(roles) if r=='E1']
+elif mode.endswith('E2-I2-silenced'):
+ ablate=[i for i,r in enumerate(roles) if r in ['E2','I2']]
 elif mode.endswith('E2-silenced'):
  ablate=[i for i,r in enumerate(roles) if r=='E2']
 else:ablate=[]
