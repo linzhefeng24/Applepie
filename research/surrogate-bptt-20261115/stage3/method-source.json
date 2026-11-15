@@ -1,0 +1,7 @@
+{
+  "source_sha256": {
+    "jax_hh.py": "2e0aa080da833a05e0c266ff4c0202695e41906ed07dbaf85fa7bc0a99290944",
+    "train.py": "9d723e8bc2834f5856790908b7ed11634eab7681a681eac02daf5134462d3986"
+  },
+  "baseline_model_sha256": "858d1818b8d8394c95bb62a6ce60474cb534a83b94265ef8615e367c110d262c"
+}

@@ -59,6 +59,8 @@
     "jax_hh.py": "169cf899effb48adbbbf2157a6cf32d59fbc0cb757a630fa221fb593b4a72d77",
     "train.py": "880ec967f0f8c526fd501f872432e447f3b83cd844eaac186c2fd4c83ab3af75"
   },
-  "status": "in_progress at epoch8; training objective had not beaten baseline; preserved without adoption",
-  "reason_for_second_attempt": "Large long-horizon surrogate gradients and saturation; retain hard forward and change only backward approximation/truncation and optimizer step."
+  "status": "completed12updates; best objective remained epoch0 baseline; not adopted",
+  "reason_for_second_attempt": "Large long-horizon surrogate gradients and saturation; retain hard forward and change only backward approximation/truncation and optimizer step.",
+  "last_epoch": 12,
+  "best_training_objective": 0.3240344174048838
 }
