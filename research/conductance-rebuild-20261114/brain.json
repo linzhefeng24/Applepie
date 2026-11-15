@@ -247412,7 +247412,7 @@
     "observations": "results/frozen-neural-panel-unified-r8/observations.json",
     "condition_inventory": "results/manual-run-inventory.json"
   },
-  "latest_neural_review_namespace": "body_sensory_review_20261115",
+  "latest_neural_review_namespace": "gap_evidence_validation_20261115",
   "manual_completion_r9_20261115": {
     "evidence_status": "independently rerun model outputs; not lab measurements or restored historical artifacts",
     "report": "MANUAL_COMPLETION_R9.md",
@@ -247465,5 +247465,43 @@
       "BRK and BB/BPN constraints"
     ],
     "not_claimed": "most brain phenomena passed or whole-network closed loop"
+  },
+  "gap_evidence_validation_20261115": {
+    "status": "public-source evidence plus13 newly completed local network runs, not majority experimental replication",
+    "report": "../gap-evidence-20261115/RESULTS.md",
+    "evidence": "../gap-evidence-20261115/evidence-registry.json",
+    "actual_anatomical_routes": "../gap-evidence-20261115/routes/manifest.json",
+    "actual_validation": "../gap-evidence-20261115/validation-summary.json",
+    "extended_brake_graph": "results/mcns-brake-extension/source-manifest.json",
+    "main_brain_bank": "configs/manual-neural-bank-r9.json",
+    "main_bank_changed": false,
+    "corrections": [
+      {
+        "prior_claim": "BRK+MDN LBL40 activity means BRK failure",
+        "corrected": "Not a necessary experimental criterion; source paper supports VNC resistance braking without requiring LBL40 silence",
+        "source": "10.1038/s41586-024-07854-7",
+        "status": "proxy failure classification retracted; stopping behavior still untested"
+      },
+      {
+        "prior_model": "contact force saturation approximates CS",
+        "corrected": "engineering proxy only; finite-element abstract suggests ground forces alone insufficient for femoralCS, internal strain sources/material/orientation unresolved",
+        "source": "10.1098/rsif.2024.0559",
+        "reading_scope": "abstract only"
+      }
+    ],
+    "new_qualitative_checks": [
+      "BPN+P9 neural coactivation",
+      "PFL3 left dominance under ge±10%",
+      "actual BRK reaches legMN after restoring omitted anatomical paths"
+    ],
+    "unresolved": [
+      "full sensory→VNC→MN body closed loop",
+      "BRK stance/angle dependent resistance",
+      "residual P9 output under BB",
+      "exact MF14/LUL130 identity",
+      "individual CS strain tuning",
+      "hunger/grooming/flight/ascending-feedback states"
+    ],
+    "raw_trace_backup": "../gap-evidence-20261115/full-trace-release.json"
   }
 }

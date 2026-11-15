@@ -25,5 +25,8 @@
   "sensory_source_bank": "configs/sensory-command-r6.json",
   "sensory_terminal_bank": "configs/sensory-terminal-r2.json",
   "sensory_status": "Six chiefs recruited and Web-silenced in separate MANC assay; body mechanics drive HH sensory prototypes; identified sensory\u2192VNC output reconnection absent",
-  "latest_body_sensory_report": "../body-sensory-20261115/RESULTS.md"
+  "latest_body_sensory_report": "../body-sensory-20261115/RESULTS.md",
+  "latest_gap_evidence_report": "../gap-evidence-20261115/RESULTS.md",
+  "brake_extension": "results/mcns-brake-extension",
+  "brake_status": "real output routes restored and transmission verified; physical resistance behavior not yet reproduced; LBL40-silence criterion retracted"
 }

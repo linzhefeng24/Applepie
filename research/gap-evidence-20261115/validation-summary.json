@@ -1,0 +1,742 @@
+{
+  "status": "new independent local runs; no old chat result inherited",
+  "new_network_runs": 13,
+  "rows": [
+    {
+      "condition": "BPN+P9",
+      "tag": "unified-r9-gap-validation",
+      "status": "complete",
+      "numerical_failure": false,
+      "bank_sha256": "4c16d81c052a6e58a0b489559d08f43bc863d142817749ad8bcf4bc3aa3fa276",
+      "elapsed_s": 48.73060081300355,
+      "diagnosis_file": "conductance-rebuild-20261114/results/frozen-neural-panel-unified-r9-gap-validation/BPN+P9-diagnosis.json",
+      "diagnosis_sha256": "9deddcd4ccaa55b7201f9a960383a7ccc4a6953cb14a9312616d6c7ffc0816e2",
+      "selected_outputs": [
+        {
+          "body_id": "10045",
+          "type": "DNg100",
+          "side": "L",
+          "rate_hz_500_950": 35.55555555555556
+        },
+        {
+          "body_id": "10056",
+          "type": "DNg100",
+          "side": "R",
+          "rate_hz_500_950": 35.55555555555556
+        },
+        {
+          "body_id": "10360",
+          "type": "DNa02",
+          "side": "R",
+          "rate_hz_500_950": 22.22222222222222
+        },
+        {
+          "body_id": "13805",
+          "type": "DNg97",
+          "side": "L",
+          "rate_hz_500_950": 28.88888888888889
+        },
+        {
+          "body_id": "230783",
+          "type": "DNg97",
+          "side": "R",
+          "rate_hz_500_950": 26.666666666666664
+        },
+        {
+          "body_id": "523769",
+          "type": "DNa02",
+          "side": "L",
+          "rate_hz_500_950": 24.444444444444443
+        },
+        {
+          "body_id": "801214",
+          "type": "LBL40",
+          "side": "R",
+          "rate_hz_500_950": 22.22222222222222
+        },
+        {
+          "body_id": "801246",
+          "type": "LBL40",
+          "side": "L",
+          "rate_hz_500_950": 22.22222222222222
+        }
+      ]
+    },
+    {
+      "condition": "P9",
+      "tag": "unified-r9-coupling18-diagnostic",
+      "status": "complete",
+      "numerical_failure": false,
+      "bank_sha256": "883eaa0907ea9784fba3d51e281a412b3bb8b44108c3ba35d5c26386d819cbfb",
+      "elapsed_s": 47.29311255499488,
+      "diagnosis_file": "conductance-rebuild-20261114/results/frozen-neural-panel-unified-r9-coupling18-diagnostic/P9-diagnosis.json",
+      "diagnosis_sha256": "333fdfbe3fbec3619657c20eb34ea87aa1653f6318550772d39168e872136b9a",
+      "selected_outputs": [
+        {
+          "body_id": "10045",
+          "type": "DNg100",
+          "side": "L",
+          "rate_hz_500_950": 28.88888888888889
+        },
+        {
+          "body_id": "10056",
+          "type": "DNg100",
+          "side": "R",
+          "rate_hz_500_950": 31.11111111111111
+        },
+        {
+          "body_id": "10360",
+          "type": "DNa02",
+          "side": "R",
+          "rate_hz_500_950": 17.77777777777778
+        },
+        {
+          "body_id": "13805",
+          "type": "DNg97",
+          "side": "L",
+          "rate_hz_500_950": 26.666666666666664
+        },
+        {
+          "body_id": "230783",
+          "type": "DNg97",
+          "side": "R",
+          "rate_hz_500_950": 24.444444444444443
+        },
+        {
+          "body_id": "523769",
+          "type": "DNa02",
+          "side": "L",
+          "rate_hz_500_950": 28.88888888888889
+        },
+        {
+          "body_id": "801214",
+          "type": "LBL40",
+          "side": "R",
+          "rate_hz_500_950": 17.77777777777778
+        },
+        {
+          "body_id": "801246",
+          "type": "LBL40",
+          "side": "L",
+          "rate_hz_500_950": 20.0
+        }
+      ]
+    },
+    {
+      "condition": "P9+BB",
+      "tag": "unified-r9-coupling18-diagnostic",
+      "status": "complete",
+      "numerical_failure": false,
+      "bank_sha256": "883eaa0907ea9784fba3d51e281a412b3bb8b44108c3ba35d5c26386d819cbfb",
+      "elapsed_s": 45.75413912499789,
+      "diagnosis_file": "conductance-rebuild-20261114/results/frozen-neural-panel-unified-r9-coupling18-diagnostic/P9+BB-diagnosis.json",
+      "diagnosis_sha256": "2e0f4e3e0586abe686b7205af1a4d1640b5fc3c8c1d081bd92aa970b62ac09c5",
+      "selected_outputs": [
+        {
+          "body_id": "10045",
+          "type": "DNg100",
+          "side": "L",
+          "rate_hz_500_950": 26.666666666666664
+        },
+        {
+          "body_id": "10056",
+          "type": "DNg100",
+          "side": "R",
+          "rate_hz_500_950": 28.88888888888889
+        },
+        {
+          "body_id": "10360",
+          "type": "DNa02",
+          "side": "R",
+          "rate_hz_500_950": 8.88888888888889
+        },
+        {
+          "body_id": "13805",
+          "type": "DNg97",
+          "side": "L",
+          "rate_hz_500_950": 11.11111111111111
+        },
+        {
+          "body_id": "230783",
+          "type": "DNg97",
+          "side": "R",
+          "rate_hz_500_950": 17.77777777777778
+        },
+        {
+          "body_id": "523769",
+          "type": "DNa02",
+          "side": "L",
+          "rate_hz_500_950": 13.333333333333332
+        },
+        {
+          "body_id": "801214",
+          "type": "LBL40",
+          "side": "R",
+          "rate_hz_500_950": 8.88888888888889
+        },
+        {
+          "body_id": "801246",
+          "type": "LBL40",
+          "side": "L",
+          "rate_hz_500_950": 13.333333333333332
+        }
+      ]
+    },
+    {
+      "condition": "PFL3L",
+      "tag": "r9-E-minus10",
+      "status": "complete",
+      "numerical_failure": false,
+      "bank_sha256": "82f97671a13fa9c34b768e3d7aed6c689c7bed00da1c7440385e8011f35a7b17",
+      "elapsed_s": 39.34588475200144,
+      "diagnosis_file": "conductance-rebuild-20261114/results/frozen-neural-panel-r9-E-minus10/PFL3L-diagnosis.json",
+      "diagnosis_sha256": "594076ba80db15485db23e10bf51da1c26d164d67f09ed7b02f925dc6f828ea8",
+      "selected_outputs": [
+        {
+          "body_id": "10045",
+          "type": "DNg100",
+          "side": "L",
+          "rate_hz_500_950": 22.22222222222222
+        },
+        {
+          "body_id": "10056",
+          "type": "DNg100",
+          "side": "R",
+          "rate_hz_500_950": 22.22222222222222
+        },
+        {
+          "body_id": "10360",
+          "type": "DNa02",
+          "side": "R",
+          "rate_hz_500_950": 2.2222222222222223
+        },
+        {
+          "body_id": "13805",
+          "type": "DNg97",
+          "side": "L",
+          "rate_hz_500_950": 33.333333333333336
+        },
+        {
+          "body_id": "230783",
+          "type": "DNg97",
+          "side": "R",
+          "rate_hz_500_950": 44.44444444444444
+        },
+        {
+          "body_id": "523769",
+          "type": "DNa02",
+          "side": "L",
+          "rate_hz_500_950": 48.888888888888886
+        },
+        {
+          "body_id": "801214",
+          "type": "LBL40",
+          "side": "R",
+          "rate_hz_500_950": 11.11111111111111
+        },
+        {
+          "body_id": "801246",
+          "type": "LBL40",
+          "side": "L",
+          "rate_hz_500_950": 22.22222222222222
+        }
+      ]
+    },
+    {
+      "condition": "PFL3L",
+      "tag": "r9-E-plus10",
+      "status": "complete",
+      "numerical_failure": false,
+      "bank_sha256": "190943ddaad5a84c0b2633c3e364d319eaaef4b55580f759cc7a71ef28515a66",
+      "elapsed_s": 42.25444550400425,
+      "diagnosis_file": "conductance-rebuild-20261114/results/frozen-neural-panel-r9-E-plus10/PFL3L-diagnosis.json",
+      "diagnosis_sha256": "6dd54fadd697810d26adc21178d6afa7c17010eaa14156f58ea498df0cbd967c",
+      "selected_outputs": [
+        {
+          "body_id": "10045",
+          "type": "DNg100",
+          "side": "L",
+          "rate_hz_500_950": 24.444444444444443
+        },
+        {
+          "body_id": "10056",
+          "type": "DNg100",
+          "side": "R",
+          "rate_hz_500_950": 20.0
+        },
+        {
+          "body_id": "10360",
+          "type": "DNa02",
+          "side": "R",
+          "rate_hz_500_950": 11.11111111111111
+        },
+        {
+          "body_id": "13805",
+          "type": "DNg97",
+          "side": "L",
+          "rate_hz_500_950": 35.55555555555556
+        },
+        {
+          "body_id": "230783",
+          "type": "DNg97",
+          "side": "R",
+          "rate_hz_500_950": 51.11111111111111
+        },
+        {
+          "body_id": "523769",
+          "type": "DNa02",
+          "side": "L",
+          "rate_hz_500_950": 51.11111111111111
+        },
+        {
+          "body_id": "801214",
+          "type": "LBL40",
+          "side": "R",
+          "rate_hz_500_950": 17.77777777777778
+        },
+        {
+          "body_id": "801246",
+          "type": "LBL40",
+          "side": "L",
+          "rate_hz_500_950": 28.88888888888889
+        }
+      ]
+    },
+    {
+      "condition": "control",
+      "tag": "brake-extension-r9",
+      "status": "complete",
+      "numerical_failure": false,
+      "bank_sha256": "4c16d81c052a6e58a0b489559d08f43bc863d142817749ad8bcf4bc3aa3fa276",
+      "elapsed_s": 43.67924643399601,
+      "diagnosis_file": "conductance-rebuild-20261114/results/frozen-neural-panel-brake-extension-r9/control-diagnosis.json",
+      "diagnosis_sha256": "84efcb11c05207ed473901e184c3f8c221e622d526a3cfb4b015114aad195a8a",
+      "selected_outputs": [
+        {
+          "body_id": "10045",
+          "type": "DNg100",
+          "side": "L",
+          "rate_hz_500_950": 0.0
+        },
+        {
+          "body_id": "10056",
+          "type": "DNg100",
+          "side": "R",
+          "rate_hz_500_950": 0.0
+        },
+        {
+          "body_id": "10360",
+          "type": "DNa02",
+          "side": "R",
+          "rate_hz_500_950": 0.0
+        },
+        {
+          "body_id": "13805",
+          "type": "DNg97",
+          "side": "L",
+          "rate_hz_500_950": 0.0
+        },
+        {
+          "body_id": "230783",
+          "type": "DNg97",
+          "side": "R",
+          "rate_hz_500_950": 0.0
+        },
+        {
+          "body_id": "523769",
+          "type": "DNa02",
+          "side": "L",
+          "rate_hz_500_950": 0.0
+        },
+        {
+          "body_id": "801214",
+          "type": "LBL40",
+          "side": "R",
+          "rate_hz_500_950": 0.0
+        },
+        {
+          "body_id": "801246",
+          "type": "LBL40",
+          "side": "L",
+          "rate_hz_500_950": 0.0
+        }
+      ]
+    },
+    {
+      "condition": "MDN",
+      "tag": "brake-extension-r9",
+      "status": "complete",
+      "numerical_failure": false,
+      "bank_sha256": "4c16d81c052a6e58a0b489559d08f43bc863d142817749ad8bcf4bc3aa3fa276",
+      "elapsed_s": 59.2930312660028,
+      "diagnosis_file": "conductance-rebuild-20261114/results/frozen-neural-panel-brake-extension-r9/MDN-diagnosis.json",
+      "diagnosis_sha256": "4dc084e1f36ccc0c863ec801bbaed837ebead8004f412080912f0ffaa3080893",
+      "selected_outputs": [
+        {
+          "body_id": "10045",
+          "type": "DNg100",
+          "side": "L",
+          "rate_hz_500_950": 13.333333333333332
+        },
+        {
+          "body_id": "10056",
+          "type": "DNg100",
+          "side": "R",
+          "rate_hz_500_950": 13.333333333333332
+        },
+        {
+          "body_id": "10360",
+          "type": "DNa02",
+          "side": "R",
+          "rate_hz_500_950": 13.333333333333332
+        },
+        {
+          "body_id": "13805",
+          "type": "DNg97",
+          "side": "L",
+          "rate_hz_500_950": 17.77777777777778
+        },
+        {
+          "body_id": "230783",
+          "type": "DNg97",
+          "side": "R",
+          "rate_hz_500_950": 17.77777777777778
+        },
+        {
+          "body_id": "523769",
+          "type": "DNa02",
+          "side": "L",
+          "rate_hz_500_950": 17.77777777777778
+        },
+        {
+          "body_id": "801214",
+          "type": "LBL40",
+          "side": "R",
+          "rate_hz_500_950": 44.44444444444444
+        },
+        {
+          "body_id": "801246",
+          "type": "LBL40",
+          "side": "L",
+          "rate_hz_500_950": 44.44444444444444
+        }
+      ]
+    },
+    {
+      "condition": "BRK",
+      "tag": "brake-extension-r9",
+      "status": "complete",
+      "numerical_failure": false,
+      "bank_sha256": "4c16d81c052a6e58a0b489559d08f43bc863d142817749ad8bcf4bc3aa3fa276",
+      "elapsed_s": 63.214742888994806,
+      "diagnosis_file": "conductance-rebuild-20261114/results/frozen-neural-panel-brake-extension-r9/BRK-diagnosis.json",
+      "diagnosis_sha256": "ff0407890f1101dc266428b36090a4f7270ce17bde01e60982150fea16dcb312",
+      "selected_outputs": [
+        {
+          "body_id": "10045",
+          "type": "DNg100",
+          "side": "L",
+          "rate_hz_500_950": 2.2222222222222223
+        },
+        {
+          "body_id": "10056",
+          "type": "DNg100",
+          "side": "R",
+          "rate_hz_500_950": 2.2222222222222223
+        },
+        {
+          "body_id": "10360",
+          "type": "DNa02",
+          "side": "R",
+          "rate_hz_500_950": 2.2222222222222223
+        },
+        {
+          "body_id": "13805",
+          "type": "DNg97",
+          "side": "L",
+          "rate_hz_500_950": 2.2222222222222223
+        },
+        {
+          "body_id": "230783",
+          "type": "DNg97",
+          "side": "R",
+          "rate_hz_500_950": 2.2222222222222223
+        },
+        {
+          "body_id": "523769",
+          "type": "DNa02",
+          "side": "L",
+          "rate_hz_500_950": 0.0
+        },
+        {
+          "body_id": "801214",
+          "type": "LBL40",
+          "side": "R",
+          "rate_hz_500_950": 0.0
+        },
+        {
+          "body_id": "801246",
+          "type": "LBL40",
+          "side": "L",
+          "rate_hz_500_950": 0.0
+        }
+      ]
+    },
+    {
+      "condition": "MDN+BRK",
+      "tag": "brake-extension-r9",
+      "status": "complete",
+      "numerical_failure": false,
+      "bank_sha256": "4c16d81c052a6e58a0b489559d08f43bc863d142817749ad8bcf4bc3aa3fa276",
+      "elapsed_s": 58.95273537400499,
+      "diagnosis_file": "conductance-rebuild-20261114/results/frozen-neural-panel-brake-extension-r9/MDN+BRK-diagnosis.json",
+      "diagnosis_sha256": "7f3499d00076a7d0b3d21acdcdff9adbc0f2dec6eb21cd5f3267e1d4a292664f",
+      "selected_outputs": [
+        {
+          "body_id": "10045",
+          "type": "DNg100",
+          "side": "L",
+          "rate_hz_500_950": 0.0
+        },
+        {
+          "body_id": "10056",
+          "type": "DNg100",
+          "side": "R",
+          "rate_hz_500_950": 0.0
+        },
+        {
+          "body_id": "10360",
+          "type": "DNa02",
+          "side": "R",
+          "rate_hz_500_950": 2.2222222222222223
+        },
+        {
+          "body_id": "13805",
+          "type": "DNg97",
+          "side": "L",
+          "rate_hz_500_950": 2.2222222222222223
+        },
+        {
+          "body_id": "230783",
+          "type": "DNg97",
+          "side": "R",
+          "rate_hz_500_950": 2.2222222222222223
+        },
+        {
+          "body_id": "523769",
+          "type": "DNa02",
+          "side": "L",
+          "rate_hz_500_950": 11.11111111111111
+        },
+        {
+          "body_id": "801214",
+          "type": "LBL40",
+          "side": "R",
+          "rate_hz_500_950": 26.666666666666664
+        },
+        {
+          "body_id": "801246",
+          "type": "LBL40",
+          "side": "L",
+          "rate_hz_500_950": 51.11111111111111
+        }
+      ]
+    },
+    {
+      "condition": "P9",
+      "tag": "r9-P9-efficacy07-diagnostic",
+      "status": "complete",
+      "numerical_failure": false,
+      "bank_sha256": "164eaf719d96336a7fea5cf303f385d8730f2e1efc6f606e2eba7944f7d34660",
+      "elapsed_s": 50.39262365199829,
+      "diagnosis_file": "conductance-rebuild-20261114/results/frozen-neural-panel-r9-P9-efficacy07-diagnostic/P9-diagnosis.json",
+      "diagnosis_sha256": "d30eca836ec7d6c74ea263a9dd8d01124f42f99c729db1febb092bbda1bf6964",
+      "selected_outputs": [
+        {
+          "body_id": "10045",
+          "type": "DNg100",
+          "side": "L",
+          "rate_hz_500_950": 31.11111111111111
+        },
+        {
+          "body_id": "10056",
+          "type": "DNg100",
+          "side": "R",
+          "rate_hz_500_950": 31.11111111111111
+        },
+        {
+          "body_id": "10360",
+          "type": "DNa02",
+          "side": "R",
+          "rate_hz_500_950": 20.0
+        },
+        {
+          "body_id": "13805",
+          "type": "DNg97",
+          "side": "L",
+          "rate_hz_500_950": 22.22222222222222
+        },
+        {
+          "body_id": "230783",
+          "type": "DNg97",
+          "side": "R",
+          "rate_hz_500_950": 28.88888888888889
+        },
+        {
+          "body_id": "523769",
+          "type": "DNa02",
+          "side": "L",
+          "rate_hz_500_950": 22.22222222222222
+        },
+        {
+          "body_id": "801214",
+          "type": "LBL40",
+          "side": "R",
+          "rate_hz_500_950": 15.555555555555555
+        },
+        {
+          "body_id": "801246",
+          "type": "LBL40",
+          "side": "L",
+          "rate_hz_500_950": 20.0
+        }
+      ]
+    },
+    {
+      "condition": "P9+BB",
+      "tag": "r9-P9-efficacy07-diagnostic",
+      "status": "complete",
+      "numerical_failure": false,
+      "bank_sha256": "164eaf719d96336a7fea5cf303f385d8730f2e1efc6f606e2eba7944f7d34660",
+      "elapsed_s": 44.02006540699949,
+      "diagnosis_file": "conductance-rebuild-20261114/results/frozen-neural-panel-r9-P9-efficacy07-diagnostic/P9+BB-diagnosis.json",
+      "diagnosis_sha256": "5d4c3b8cf444ff880e0955c1aa0cb3e332f02ba3e0d2a354528a4d246a5421b1",
+      "selected_outputs": [
+        {
+          "body_id": "10045",
+          "type": "DNg100",
+          "side": "L",
+          "rate_hz_500_950": 28.88888888888889
+        },
+        {
+          "body_id": "10056",
+          "type": "DNg100",
+          "side": "R",
+          "rate_hz_500_950": 28.88888888888889
+        },
+        {
+          "body_id": "10360",
+          "type": "DNa02",
+          "side": "R",
+          "rate_hz_500_950": 8.88888888888889
+        },
+        {
+          "body_id": "13805",
+          "type": "DNg97",
+          "side": "L",
+          "rate_hz_500_950": 11.11111111111111
+        },
+        {
+          "body_id": "230783",
+          "type": "DNg97",
+          "side": "R",
+          "rate_hz_500_950": 13.333333333333332
+        },
+        {
+          "body_id": "523769",
+          "type": "DNa02",
+          "side": "L",
+          "rate_hz_500_950": 8.88888888888889
+        },
+        {
+          "body_id": "801214",
+          "type": "LBL40",
+          "side": "R",
+          "rate_hz_500_950": 8.88888888888889
+        },
+        {
+          "body_id": "801246",
+          "type": "LBL40",
+          "side": "L",
+          "rate_hz_500_950": 11.11111111111111
+        }
+      ]
+    },
+    {
+      "condition": "P9+FG",
+      "tag": "r9-P9-efficacy07-diagnostic",
+      "status": "complete",
+      "numerical_failure": false,
+      "bank_sha256": "164eaf719d96336a7fea5cf303f385d8730f2e1efc6f606e2eba7944f7d34660",
+      "elapsed_s": 43.568177263994585,
+      "diagnosis_file": "conductance-rebuild-20261114/results/frozen-neural-panel-r9-P9-efficacy07-diagnostic/P9+FG-diagnosis.json",
+      "diagnosis_sha256": "d7811dc6c3f09f7be205b538269f4bedfccca3e71b1aaaeb3f8af6bb1647625d",
+      "selected_outputs": [
+        {
+          "body_id": "10045",
+          "type": "DNg100",
+          "side": "L",
+          "rate_hz_500_950": 0.0
+        },
+        {
+          "body_id": "10056",
+          "type": "DNg100",
+          "side": "R",
+          "rate_hz_500_950": 0.0
+        },
+        {
+          "body_id": "10360",
+          "type": "DNa02",
+          "side": "R",
+          "rate_hz_500_950": 8.88888888888889
+        },
+        {
+          "body_id": "13805",
+          "type": "DNg97",
+          "side": "L",
+          "rate_hz_500_950": 15.555555555555555
+        },
+        {
+          "body_id": "230783",
+          "type": "DNg97",
+          "side": "R",
+          "rate_hz_500_950": 11.11111111111111
+        },
+        {
+          "body_id": "523769",
+          "type": "DNa02",
+          "side": "L",
+          "rate_hz_500_950": 17.77777777777778
+        },
+        {
+          "body_id": "801214",
+          "type": "LBL40",
+          "side": "R",
+          "rate_hz_500_950": 15.555555555555555
+        },
+        {
+          "body_id": "801246",
+          "type": "LBL40",
+          "side": "L",
+          "rate_hz_500_950": 17.77777777777778
+        }
+      ]
+    }
+  ],
+  "exact_relay_probe_rerun": {
+    "count": 1,
+    "all_spikes_identical": true,
+    "numerical_failure": false
+  },
+  "source_reading": "evidence-registry.json",
+  "conclusions": {
+    "BPN_P9": "Both forward-linked and turning-linked neural populations recruited; bilateral population assay, no unilateral/body behavior conclusion",
+    "E_10percent": "Left DNa02 dominance retained at ge\u00b110%; not a full perturbation or initial-state robustness claim",
+    "BB_route": "Actual GABA conductance rises, soma and axon hyperpolarize; source reaches target, persistent excitation and pulse timing still allow residual spikes",
+    "coupling18": "Not consistently improved across both homologues; not adopted",
+    "P9_efficacy07": "Some reduction of residual DNg97 firing but incomplete and not uniformly selective; exploratory only, no adopted new main bank",
+    "BRK_extended": "Stimulated BRK reaches real leg MNs and changes outputs; active joint resistance/angle dependence remains untested without physical feedback",
+    "BRK_relay": "Selected ACh relays receive conductance but remain largely subthreshold; not a proof that they must fire in vivo",
+    "BRK_failure_criterion_correction": "LBL40 silence is not an experimentally required proxy for BRK stopping"
+  }
+}

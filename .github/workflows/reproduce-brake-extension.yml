@@ -17,6 +17,12 @@ jobs:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
           persist-credentials: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /research/conductance-rebuild-20261114/*.py
+            /research/conductance-rebuild-20261114/requirements.txt
+            /research/conductance-rebuild-20261114/configs/manual-neural-bank-r9.json
+            /research/conductance-rebuild-20261114/results/mcns-brake-extension/
       - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
         with:
           python-version: '3.12'
