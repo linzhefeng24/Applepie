@@ -8,7 +8,7 @@ import numpy as np
 from scipy import sparse
 from grouped_parameters import group_key
 from network import simulate_network
-R=Path(__file__).parent;B=R/'results/sensory-command-context';O=R/'results/sensory-command-probes';O.mkdir(exist_ok=True);mode=sys.argv[1];m=json.load(open(B/'neurons.json'));W=sparse.load_npz(B/'connectivity.npz');p=json.load(open(R/'configs/manual-neural-bank-r9.json'))['parameters'];p=json.loads(json.dumps(p));available={group_key(x) for x in m};p['group_parameters']={k:v for k,v in p['group_parameters'].items() if k in available};p.update(duration_ms=1600.,onset_ms=200.,dt_ms=.0125)
+R=Path(__file__).parent;B=R/'results/sensory-command-context';O=R/'results/sensory-command-probes';O=O/sys.argv[3] if len(sys.argv)>3 else O;O.mkdir(parents=True,exist_ok=True);mode=sys.argv[1];m=json.load(open(B/'neurons.json'));W=sparse.load_npz(B/'connectivity.npz');p=json.load(open(R/(sys.argv[2] if len(sys.argv)>2 else 'configs/manual-neural-bank-r9.json')))['parameters'];p=json.loads(json.dumps(p));available={group_key(x) for x in m};p['group_parameters']={k:v for k,v in p['group_parameters'].items() if k in available};p.update(duration_ms=1600.,onset_ms=200.,dt_ms=.0125)
 for x in m:
  if x['bodyId'] in ['10093','10339','10107','10103']:
   key=group_key(x);p['group_parameters'][key]={**p['group_parameters'].get(key,{}),'K':.8,'axon_bias_pA':5.}

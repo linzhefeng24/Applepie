@@ -26,3 +26,17 @@ two-hop paths from DNg100/DNg74 to six published chief9A identities. This does n
 recover hook/claw EM identities. A compartmental sensory terminal mechanism can
 be tested separately as an explicitly unassigned biological prototype, not
 silently inserted as a newly discovered connectome neuron.
+
+The first82-cell source context correctly responds to DNg100 at the sensory-cell
+soma but all chief9A remain subthreshold (motor excitatory currents33–41pA).
+sensory-command-r2 shares K0.8 and+3pA axonal bias across the six known homologues,
+then tests recruitment and its suppression by DNg74. The original failed run is
+retained. The sensory-terminal prototype implements three electrically coupled
+HH/Ca/SK compartments per functional fiber, with actual chief spikes driving
+terminal GABA; mechanical inputs are identical across conditions. Four numerical/
+selectivity/receptor-block checks pass. It has no fabricated sensory EM IDs.
+
+The public Dryad download response was a browser-validation page, not the data.
+The checksum checks correctly reject it; no challenge bypass is attempted. The
+raw data are NOT reported as recovered. The DOI's public metadata and published
+source notebooks still provide the verified chief9A identity and motif.

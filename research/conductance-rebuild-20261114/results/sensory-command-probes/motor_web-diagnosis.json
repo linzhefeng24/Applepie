@@ -1,0 +1,37 @@
+{
+  "condition": "motor_web",
+  "numerical_failure": false,
+  "chief9A": [
+    {
+      "body_id": "100513",
+      "current_type": "IN09A012",
+      "rate_after400ms_hz": 0.0
+    },
+    {
+      "body_id": "13157",
+      "current_type": "IN09A012",
+      "rate_after400ms_hz": 0.0
+    },
+    {
+      "body_id": "14517",
+      "current_type": "IN09A012",
+      "rate_after400ms_hz": 0.0
+    },
+    {
+      "body_id": "165560",
+      "current_type": "IN09A012",
+      "rate_after400ms_hz": 0.0
+    },
+    {
+      "body_id": "12443",
+      "current_type": "IN09A012",
+      "rate_after400ms_hz": 0.0
+    },
+    {
+      "body_id": "12804",
+      "current_type": "IN09A012",
+      "rate_after400ms_hz": 0.0
+    }
+  ],
+  "status": "real-cell upstream simulation; sensory prototype not part of connectome count"
+}

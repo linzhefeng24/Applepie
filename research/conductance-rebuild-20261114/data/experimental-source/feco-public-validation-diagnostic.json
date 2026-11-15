@@ -1,0 +1,40 @@
+{
+  "dataset_doi": "10.5061/dryad.gqnk98t16",
+  "dataset_version_id": 393607,
+  "workflow_code_revision": "0c27249a1895b9c26e4b8acc2a53d6df8ef7aade",
+  "release_id": 445758875,
+  "records": [
+    {
+      "name": "manc_v1_classifications.csv",
+      "bytes": 548135,
+      "sha256": "f81572490e571e69eeaa625383f348bd48fbb5f0f75b2c29195aca4aa911357c",
+      "urls": [
+        "https://datadryad.org/api/v2/files/4330045/download",
+        "https://datadryad.org/stash/downloads/file_stream/4330045",
+        "https://datadryad.org/downloads/file_stream/4330045"
+      ],
+      "attempts": [
+        {
+          "public_url": "https://datadryad.org/api/v2/files/4330045/download",
+          "http_status": 401
+        },
+        {
+          "public_url": "https://datadryad.org/stash/downloads/file_stream/4330045",
+          "bytes": 4279,
+          "sha256": "cc1e0b3a3c6a7a0c1081a3177f60458337ab7c1eef42b533d8e8173d6be12fc1",
+          "html_title": "Validating...",
+          "html_heading": "Validating..."
+        },
+        {
+          "public_url": "https://datadryad.org/downloads/file_stream/4330045",
+          "bytes": 4279,
+          "sha256": "1da565ec880530fe33f273a12d67df62c6f4612751380728a43913315a291f59",
+          "html_title": "Validating...",
+          "html_heading": "Validating..."
+        }
+      ],
+      "status": "not_recovered"
+    }
+  ],
+  "interpretation": "API returns401 and public web download returns a browser-validation page rather than the expected file. No source data recovered or verification challenge bypassed. Model prototypes must not be described as raw-data reconstructions."
+}

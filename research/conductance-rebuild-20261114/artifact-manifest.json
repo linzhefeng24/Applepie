@@ -43,8 +43,8 @@
     },
     {
       "path": "NEXT_MANUAL_STAGE.md",
-      "bytes": 1679,
-      "sha256": "3a38146bb38109dac8fd9d824d955564a7b8973a46d6b9a5e2d671fb4c733703"
+      "bytes": 2631,
+      "sha256": "acd0a5f057ad50100a4df2ccd2aa46823bc4dd879802bf8223c439274de2e3d7"
     },
     {
       "path": "README.md",
@@ -292,6 +292,16 @@
       "sha256": "e733969c29f6e4a55fe901cacc56206abe6a2005724bc1848bb0957815e8da48"
     },
     {
+      "path": "configs/sensory-command-r2.json",
+      "bytes": 6082,
+      "sha256": "3bdb0add669f7eb212846847394a57e95615af9d874ac45a6d166e8742ae1b21"
+    },
+    {
+      "path": "configs/sensory-terminal-prototype.json",
+      "bytes": 1542,
+      "sha256": "3eb0368733a7b6d9a8d94915ae246a264709ceb45d039e378ef6817619af9e0c"
+    },
+    {
       "path": "configs/slow-MN-selected.json",
       "bytes": 1323,
       "sha256": "3784e778a3198558e76fb4e493aeba1c80f904233ca1ae3581e8549fa90a13b3"
@@ -445,6 +455,11 @@
       "path": "data/experimental-source/feco-public-runner-access.json",
       "bytes": 13334,
       "sha256": "924d58f4910d57259406e3253e5dff157e352d20ac824aa2e9cbcd82ae5d6f88"
+    },
+    {
+      "path": "data/experimental-source/feco-public-validation-diagnostic.json",
+      "bytes": 1624,
+      "sha256": "924928e50cdfc17dbfe6149aa25742b763887ad3517b8243b9c48e2dd053087c"
     },
     {
       "path": "data/experimental-source/feco-session-access.json",
@@ -2960,6 +2975,51 @@
       "path": "results/frozen-neural-panel-unified-LULbias2/MDN.npz",
       "bytes": 16461555,
       "sha256": "4b88d0abb12858706a5131d9c6d5f7fa6d7a4e28b0cc9a3f28c36282157c2a2b"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r10/P9+BB-config.json",
+      "bytes": 6345,
+      "sha256": "b470c9fcf5c6326cf4b9ff84020e652ed80f3f22059933ad7744421eed08d120"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r10/P9+BB-diagnosis.json",
+      "bytes": 107312,
+      "sha256": "50de8b3c54e29e5685de4bd7c8114fb56254aae6952506ce3699b173847d84ac"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r10/P9+BB.npz",
+      "bytes": 16401445,
+      "sha256": "1d4a91c72172e996d7d60edc8ea3c3ee4e20627aa8de06043c30b21d8943c7f1"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r10/P9+FG-config.json",
+      "bytes": 6345,
+      "sha256": "98e41e4234e682871a2b3639bfc3574dc762585f09df0b3da218e0621b10bca0"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r10/P9+FG-diagnosis.json",
+      "bytes": 107370,
+      "sha256": "ec8cc5ded6103fc1c733d5e26738468ed8438534e4d58cf740e959e2b912f926"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r10/P9+FG.npz",
+      "bytes": 16402175,
+      "sha256": "5fe56c5104fa1e457f6741d84598237404f18c0e42ab08f6e33805a81a043431"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r10/P9-config.json",
+      "bytes": 6236,
+      "sha256": "2d2db7390bb9037663d3d4a31e83dd6cec90d0a6cbc12bd8503767adda9bc80a"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r10/P9-diagnosis.json",
+      "bytes": 107278,
+      "sha256": "420e006603f7a217a0aa06659f476e34b1c86b9c8a6f72a046706106cb54e10f"
+    },
+    {
+      "path": "results/frozen-neural-panel-unified-r10/P9.npz",
+      "bytes": 16409143,
+      "sha256": "c00aa7f5f934dc6f1d61442a0859af1280ac5ef4aa6fef7e660d59843403d3ba"
     },
     {
       "path": "results/frozen-neural-panel-unified-r5/BPN+BB-config.json",
@@ -5962,6 +6022,11 @@
       "sha256": "6baf6b0bad9a90995e7123e3427aba7fa84d8fcad6bd217b5d7b075710a23098"
     },
     {
+      "path": "results/sensory-command-chief_LF.log",
+      "bytes": 636,
+      "sha256": "6756843a5292dc12cadc544e53ddf2f71c09186cced65756c080ec6e25c78953"
+    },
+    {
       "path": "results/sensory-command-context/connectivity.npz",
       "bytes": 3223,
       "sha256": "0ee20b7bce4f95da64eff6ab8bb327e02b76355bac7cca49a562430add7a2cee"
@@ -5977,9 +6042,109 @@
       "sha256": "5a1e568f12d0948f98fa325b60a163cc222d1d0b0ad3263832103e6e305c5c1b"
     },
     {
+      "path": "results/sensory-command-motor.log",
+      "bytes": 619,
+      "sha256": "c8b523397b48cd9e7cee03857b1e6383ad8df22d5a5fcf9f615b160343149305"
+    },
+    {
+      "path": "results/sensory-command-motor_chief_off.log",
+      "bytes": 629,
+      "sha256": "586925b07e771fc39bcd2c3ac4f8551f2e510317bd3af9d741ba38537e985e46"
+    },
+    {
+      "path": "results/sensory-command-motor_web.log",
+      "bytes": 623,
+      "sha256": "fc8c56bbf862c3af92cd1f23c4ef2991481af69b122f255567c6da0f523a3d37"
+    },
+    {
+      "path": "results/sensory-command-passive.log",
+      "bytes": 621,
+      "sha256": "1600320a82bddae81a5f50409fd6c85b62c88329428e134e9fe85bd69501df16"
+    },
+    {
       "path": "results/sensory-command-prepare.log",
       "bytes": 704,
       "sha256": "4196d38a62ebe63f3ee9bb6b5fd0cc184805402fb74bed9346435d3fe2712930"
+    },
+    {
+      "path": "results/sensory-command-probes/chief_LF-config.json",
+      "bytes": 3168,
+      "sha256": "abdda73a1dd0e9b569b5edf044a5fbbb5b63a0161b878d15b30e51cb64317cd5"
+    },
+    {
+      "path": "results/sensory-command-probes/chief_LF-diagnosis.json",
+      "bytes": 818,
+      "sha256": "2b7551f63d59b73478c64e7579434cf8c2daab53d233e64598358292c8494ddd"
+    },
+    {
+      "path": "results/sensory-command-probes/chief_LF.npz",
+      "bytes": 455384,
+      "sha256": "80a2b3304b223e7d8d001c1d0cdc5886120911ca4094f498dc3214b9bee193a9"
+    },
+    {
+      "path": "results/sensory-command-probes/motor-config.json",
+      "bytes": 3174,
+      "sha256": "e3c2f418802dec57ce221fe0021abd4c995af7880b0878ec9bdcb13a81bf338a"
+    },
+    {
+      "path": "results/sensory-command-probes/motor-diagnosis.json",
+      "bytes": 801,
+      "sha256": "0dda667f76e4bf04b484020bf3d8c74eb859add1fc704901c10b71a98f9b0a93"
+    },
+    {
+      "path": "results/sensory-command-probes/motor.npz",
+      "bytes": 8122114,
+      "sha256": "fea3d7045d77d6c376f5b943f3a8b6e8d8c3ad68b54823bf1ef5122429ff0ad8"
+    },
+    {
+      "path": "results/sensory-command-probes/motor_chief_off-config.json",
+      "bytes": 3276,
+      "sha256": "4ca190b28860b500156bf14642dd993584f6f522ed25532d73dc0f6923517dac"
+    },
+    {
+      "path": "results/sensory-command-probes/motor_chief_off-diagnosis.json",
+      "bytes": 811,
+      "sha256": "39e0fe35705cc3e78f27cc8b1ee29d6ce76d2aa9bd21ffdfe67ca19c47b0447e"
+    },
+    {
+      "path": "results/sensory-command-probes/motor_chief_off.npz",
+      "bytes": 7424937,
+      "sha256": "42b37b14d5f09c50b5ccac70b34ef69049efe18578c5d83edf178e3f6dd258a3"
+    },
+    {
+      "path": "results/sensory-command-probes/motor_web-config.json",
+      "bytes": 3208,
+      "sha256": "0bf83393c24d46a1629e8c70953fb226181ed582da57448879e1b24b2478c1dc"
+    },
+    {
+      "path": "results/sensory-command-probes/motor_web-diagnosis.json",
+      "bytes": 805,
+      "sha256": "a59c6b1b89146b61b22ac0ac1ada0a66e564666091985ebf254b89088cdaccb6"
+    },
+    {
+      "path": "results/sensory-command-probes/motor_web.npz",
+      "bytes": 9678822,
+      "sha256": "0170ee460971bbf577230dceafa4501a801b76773740c1ba89bc0507b44bb24a"
+    },
+    {
+      "path": "results/sensory-command-probes/passive-config.json",
+      "bytes": 3150,
+      "sha256": "078de3cadcc48c30069095aee68cf397649f139fa3125579d94895419bfa0c39"
+    },
+    {
+      "path": "results/sensory-command-probes/passive-diagnosis.json",
+      "bytes": 803,
+      "sha256": "9e3ad91febf4c2fc141d66b51c2ac6ef7c859480201a5b15c14822ed96c061c5"
+    },
+    {
+      "path": "results/sensory-command-probes/passive.npz",
+      "bytes": 345428,
+      "sha256": "bfedb38c867dce02decd08c5f63d41581442cf2b3abc969c146187b5eabcaabd"
+    },
+    {
+      "path": "results/sensory-terminal-tests.txt",
+      "bytes": 98,
+      "sha256": "5b5aa94abb828d12503d14e21d82745e17785ac897393ebf4ff90a4ed730377e"
     },
     {
       "path": "results/shared-E2-plot.log",
@@ -6060,6 +6225,21 @@
       "path": "results/unified-LULbias2-MDN.log",
       "bytes": 529,
       "sha256": "3b27164b1e3b7184ab1818d29381fa24f3bb5a667251616d6c021c178b896f52"
+    },
+    {
+      "path": "results/unified-r10-P9+BB.log",
+      "bytes": 531,
+      "sha256": "552264698ec9b6e93d873a14c50e0cd652fc4feacbdb72d212309a0f51410be2"
+    },
+    {
+      "path": "results/unified-r10-P9+FG.log",
+      "bytes": 529,
+      "sha256": "0b95e790c458ca5cbae8df0d968e646e956f365c4700df3d5c15aea8fe83f493"
+    },
+    {
+      "path": "results/unified-r10-P9.log",
+      "bytes": 528,
+      "sha256": "12ade0aaf30af70d8619ce2b3c475fe32a2f720a039db9e7d64bad9ca9946d4c"
     },
     {
       "path": "results/unified-r5-BPN+BB.log",
@@ -6363,8 +6543,18 @@
     },
     {
       "path": "sensory_command_probe.py",
-      "bytes": 3337,
-      "sha256": "68c1928f6979e5443ef181c98d6c32175fcd887f0866f5a6e5c6a29cd55c119e"
+      "bytes": 3430,
+      "sha256": "71dc04a75c99e5b87e8769897080587cc37d830c5f40a7be23b54ba407c234c9"
+    },
+    {
+      "path": "sensory_terminal_model.py",
+      "bytes": 4845,
+      "sha256": "92529ffc87f0f72be9459c98e3fc1932737c918bfe31b5063336a5d518b9f306"
+    },
+    {
+      "path": "sensory_terminal_probe.py",
+      "bytes": 2286,
+      "sha256": "c12a60450a85ce8986b7c3539eb339333a12c6912d66b42a29c80734089ec952"
     },
     {
       "path": "slow_rest_grid.py",
@@ -6390,6 +6580,11 @@
       "path": "test_scientific_checks.py",
       "bytes": 3073,
       "sha256": "80a710291f44c3e1aac4d45a7af1bb49bbe19c98d47188944b02076c31de1ee4"
+    },
+    {
+      "path": "test_sensory_terminal.py",
+      "bytes": 1554,
+      "sha256": "99db74b570dc192b810bd1fe7ae04bb3dd62f66102baa15313c2546ae23234f9"
     },
     {
       "path": "test_temporal_protocol.py",
