@@ -1,0 +1,24 @@
+name: Archive pinned public neural inputs
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/archive-public-neural-inputs.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: public-neural-input-archive
+  cancel-in-progress: false
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+          sparse-checkout: research/public-input-archive
+      - name: Download, verify and archive public sources
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python research/public-input-archive/archive.py
