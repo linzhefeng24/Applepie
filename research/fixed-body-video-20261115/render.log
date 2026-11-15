@@ -1,0 +1,16 @@
+{
+  "condition": "root rigidly fixed to initial pose; native legs and ground contacts",
+  "model_sha256": "858d1818b8d8394c95bb62a6ce60474cb534a83b94265ef8615e367c110d262c",
+  "neural_input_sha256": "4153fa8f1d29bb1bd987281d68d8407767bb9dd4e2ff1644673218b33e3fc027",
+  "neural_run_id": "99da331bc3ad86641802f1034237277ab9974b64dcfdd253427ddd37e68957ec",
+  "position_max_drift_native": 0.0,
+  "quaternion_max_drift": 0.0,
+  "ground_contact_sample_count": 203,
+  "ground_normal_force_max_native": 61.63974454913529,
+  "qpos_max_range": 8.800497375543786,
+  "native_contact_forces_retained": true,
+  "neural_parameters_changed": false,
+  "interpretation": "externally supported experiment; not free walking or balance"
+}
+Rendered 0 / 175
+Rendered 25 / 175

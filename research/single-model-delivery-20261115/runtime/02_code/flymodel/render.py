@@ -215,7 +215,7 @@ def render_videos(model, neural, body, trace, output):
             x, y = r["caption_margin"]
             draw.text(
                 (x, y),
-                f"DN-driven native body | body {ts:.3f}s | neural {nt:.1f}ms",
+                f"{'FIXED BODY' if body.fixed_root else 'FREE BODY'} | body {ts:.3f}s | neural {nt:.1f}ms",
                 fill="white",
                 font=font,
             )
@@ -227,7 +227,11 @@ def render_videos(model, neural, body, trace, output):
             )
             draw.text(
                 (x, y + r["caption_line_height"] * 2),
-                "Candidate MN-muscle mapping; no target motion or rescue force",
+                (
+                    "Fixed initial body pose; legs free; ground forces retained"
+                    if body.fixed_root
+                    else "Candidate MN-muscle mapping; no target motion or rescue force"
+                ),
                 fill="white",
                 font=font,
             )

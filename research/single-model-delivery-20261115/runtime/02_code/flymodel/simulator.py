@@ -253,13 +253,13 @@ class Model:
             filtered[k] = state
         return np.clip(filtered / p["rate_scale_Hz"], *p["excitation_bounds"])
 
-    def body(self):
-        return Body(self)
+    def body(self, fixed_root=False):
+        return Body(self, fixed_root=fixed_root)
 
-    def simulate_body(self, result=None):
+    def simulate_body(self, result=None, fixed_root=False):
         r = self.last_result if result is None else result
         u = self.muscle_excitation(r)
-        body = self.body()
+        body = self.body(fixed_root=fixed_root)
         p = self.config["demo"]
         step_ms = body.model.opt.timestep * self.config["units"]["ms_per_s"]
         steps = round(p["body_duration_ms"] / step_ms)
@@ -282,6 +282,7 @@ class Model:
         trace["model_sha256"] = np.array(self.sha256)
         trace["neural_run_id"] = r["run_id"]
         trace["experiment"] = r["experiment"]
+        trace["fixed_root"] = np.array(fixed_root)
         return body, trace
 
 
@@ -305,7 +306,7 @@ def _element(rec):
 
 
 class Body:
-    def __init__(self, model):
+    def __init__(self, model, fixed_root=False):
         self.owner = model
         cfg = model.config
         cache = Path(tempfile.gettempdir()) / "unified-fly-cache"
@@ -322,15 +323,46 @@ class Body:
             if hashlib.sha256(raw).hexdigest() != rec["sha256"]:
                 raise ValueError("Mesh checksum mismatch")
             assets[name] = raw
+        tree = _element(cfg["body"]["mjcf"])
         self.model = mujoco.MjModel.from_xml_string(
-            ET.tostring(_element(cfg["body"]["mjcf"]), encoding="unicode"), assets
+            ET.tostring(tree, encoding="unicode"), assets
         )
+        self.fixed_root = bool(fixed_root)
+        initial = cfg["body"]["initial"]
+        qpos = np.asarray(initial["qpos"])
+        qvel = np.asarray(initial["qvel"])
+        if self.fixed_root:
+            # Delete only the physical fly's free joint. This removes its six
+            # floating-body degrees of freedom exactly; legs, gravity, collision
+            # geometry, ground friction and contact solvers are unchanged.
+            # The unrelated hidden ghost body is not used as a support.
+            root_joint = self.model.joint("walker/").id
+            root_body = int(self.model.jnt_bodyid[root_joint])
+            if self.model.body_parentid[root_body] != 0:
+                raise ValueError("Fixed-root conversion requires a world-child root")
+            qa = int(self.model.jnt_qposadr[root_joint])
+            va = int(self.model.jnt_dofadr[root_joint])
+            root_element = next(
+                x
+                for x in tree.iter("body")
+                if x.get("name") == self.model.body(root_body).name
+            )
+            root_element.set("pos", " ".join(map(str, qpos[qa : qa + 3])))
+            root_element.set("quat", " ".join(map(str, qpos[qa + 3 : qa + 7])))
+            root_element.remove(
+                next(x for x in root_element if x.get("name") == "walker/")
+            )
+            self.model = mujoco.MjModel.from_xml_string(
+                ET.tostring(tree, encoding="unicode"), assets
+            )
+            qpos = np.delete(qpos, np.s_[qa : qa + 7])
+            qvel = np.delete(qvel, np.s_[va : va + 6])
         self.data = mujoco.MjData(self.model)
         self.indices = np.array([x["actuator_index"] for x in model.mapping])
         self.actadr = self.model.actuator_actadr[self.indices]
         initial = cfg["body"]["initial"]
-        self.data.qpos[:] = initial["qpos"]
-        self.data.qvel[:] = initial["qvel"]
+        self.data.qpos[:] = qpos
+        self.data.qvel[:] = qvel
         self.data.act[:] = initial["activation"]
         self.data.ctrl[:] = initial["controls"]
         self.data.time = initial["time_s"]
@@ -363,7 +395,22 @@ class Body:
 
     def observe(self):
         d = self.data
+        ground = [
+            c
+            for c in self.contacts()
+            if any(
+                "floor" in c[k].lower() or "ground" in c[k].lower()
+                for k in ("geom1", "geom2")
+            )
+        ]
         return {
+            "root_fixed": self.fixed_root,
+            "thorax_position_native": d.xpos[self.thorax].copy(),
+            "thorax_quaternion": d.xquat[self.thorax].copy(),
+            "ground_contact_count": len(ground),
+            "ground_contact_normal_force_native": float(
+                sum(abs(c["force_contact_frame_native"][0]) for c in ground)
+            ),
             "time_s": float(d.time),
             "qpos": d.qpos.copy(),
             "qvel": d.qvel.copy(),

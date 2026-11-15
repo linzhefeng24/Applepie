@@ -15,6 +15,11 @@ def main():
         "command",
         choices=["inspect", "neural", "demo", "render", "state", "connections"],
     )
+    p.add_argument(
+        "--fixed-body",
+        action="store_true",
+        help="Fix the body at its initial pose; keep leg and ground dynamics",
+    )
     p.add_argument("--model", type=Path, default=ROOT / "01_model/model.yaml")
     p.add_argument("--experiment", default="DN_drive")
     p.add_argument("--out", type=Path, default=ROOT / "04_results")
@@ -113,18 +118,20 @@ def main():
         if str(r["model_sha256"]) != model.sha256:
             raise ValueError("Neural result/model mismatch")
     if args.command == "demo":
-        body, trace = model.simulate_body(r)
+        body, trace = model.simulate_body(r, fixed_root=args.fixed_body)
         np.savez_compressed(data / "body_state.npz", **trace)
     else:
         with np.load(args.body or data / "body_state.npz", allow_pickle=False) as z:
             trace = {k: z[k] for k in z.files}
-        if str(trace["model_sha256"]) != model.sha256 or str(
-            trace.get("neural_run_id", "")
-        ) != str(r["run_id"]):
-            body, trace = model.simulate_body(r)
+        if (
+            str(trace["model_sha256"]) != model.sha256
+            or str(trace.get("neural_run_id", "")) != str(r["run_id"])
+            or (args.fixed_body and not bool(trace.get("fixed_root", False)))
+        ):
+            body, trace = model.simulate_body(r, fixed_root=args.fixed_body)
             np.savez_compressed(data / "body_state.npz", **trace)
         else:
-            body = model.body()
+            body = model.body(fixed_root=bool(trace.get("fixed_root", False)))
     from flymodel.render import render_videos
 
     videos = render_videos(model, r, body, trace, args.out / "videos")
@@ -161,6 +168,7 @@ def main():
         "physical_state_reset_during_integration": False,
         "sensory_to_neural_feedback": False,
         "stable_walking_verified": False,
+        "body_fixed_at_initial_pose": body.fixed_root,
         "muscle_mapping_scope": "candidate functional category mapping, not confirmed individual motor-unit anatomy",
         "network_video_scope": "schematic 3D layout, not reconstructed neuronal morphology",
         "videos": videos,

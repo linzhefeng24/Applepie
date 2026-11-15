@@ -41,6 +41,9 @@ python 02_code/run.py inspect --type DNg100
 python 02_code/run.py demo --experiment DN_drive
 ```
 
+固定身体实验可执行 `python 02_code/run.py demo --experiment DN_drive --fixed-body`。
+该模式移除身体根自由关节，将躯干固定在初始位置与姿态；腿关节及肌肉仍自由运动，地面碰撞、摩擦和接触力继续求解。固定支撑承担躯干反力，因此该模式不验证自由行走或平衡。
+
 `demo`从DN输入重新运行神经、肌肉及身体，再生成三段同步视频。默认记录所有细胞，首次Numba编译需要一些时间。输入协议及数值均在`model.yaml/experiments`。可选`BRK`、`MDN`、`MDN_BRK`、`PFL3_left`、`BPN_FG`、`quiet`，使用同一模型参数。
 
 只运行神经、读取中间状态、重渲染：
