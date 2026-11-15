@@ -1,0 +1,18 @@
+{
+  "minimum_actual_updates": 1000,
+  "short_trials_counted": false,
+  "pinned_source_revision": "da9d0e17d1215879c894b9668dbc00cd77f03163",
+  "first_successful_chunk_run": "https://github.com/linzhefeng24/Applepie/actions/runs/43729808008",
+  "successor_run": "https://github.com/linzhefeng24/Applepie/actions/runs/43729970457",
+  "verified_checkpoint_updates": 2,
+  "verified_checkpoint_sha256": "8737e4481a4d8d73a143968aae66677dff3f49dfc50958195e2dc894b30d9f4c",
+  "adam_moments_nonzero_and_preserved": true,
+  "automatic_dispatch_observed": true,
+  "complete_at_verification": false,
+  "progress_url": "https://github.com/linzhefeng24/Applepie/blob/main/research/surrogate-bptt-20261115/longrun/progress.json",
+  "scope": "Launch and durable-resume verification, not a claim that1000updates have finished.",
+  "initial_setup_attempt": {
+    "run": 43729710781,
+    "status": "checkout failed with short source ref before training; zero updates counted; replaced with full40-character immutable ref."
+  }
+}

@@ -1,3 +1,9 @@
+## 当前任务：至少1000轮
+
+用户最新要求已落实到 `config-1000.json` 和 `.github/workflows/train-bptt-1000.yml`。实际训练入口为 `longrun.py`，没有基于损失的提前停止；完整Adam状态、真实更新计数和最佳参数会自动备份并跨任务恢复。前面的12/16轮配置仅保留为预试验历史，不是本次长训练的停止条件。
+
+实时计数见 [longrun/progress.json](longrun/progress.json)，启动/恢复验证见 [longrun/launch-verification.json](longrun/launch-verification.json)。训练方法和轮数定义见 [longrun/README.md](longrun/README.md)。只有实际完成至少1000次更新，进度中的complete才允许为true；之后自动做原始完整硬脉冲网络检验。
+
 # 代理梯度 BPTT 拟合旧A版u(t)，约束接近原参数
 
 当前是新实验，不是既有模型已通过。基线为最终MaleCNS3988/R2，目标为已保存的130路旧A控制输入。统一3倍时间放缩，104个有MN候选池的通道参与训练；26个映射缺口单列，不以虚构连线填补。
