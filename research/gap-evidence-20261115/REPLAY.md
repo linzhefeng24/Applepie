@@ -34,4 +34,6 @@ python pulse_neural_panel.py MDN+BRK configs/manual-neural-bank-r9.json brake-ex
 
 随后从本目录运行`diagnose_routes.py`、`review_extended_brake.py`、`trace_brake_relays.py`、`summarize_validation.py`。额外中继探针的完整脉冲必须与原始BRK一致，否则程序拒绝认定为相同活动。主图符号/无符号子矩阵一致性由build脚本显式检查。
 
-本轮13个本地网络积分均确定性，无随机抽样。`.github/workflows/reproduce-brake-extension.yml`在正常GitHub runner独立复跑四条件；远程结果不是本地原始NPZ的副本，来源与SHA分别记录。
+本轮14个本地网络积分均确定性，无随机抽样。`.github/workflows/reproduce-brake-extension.yml`在正常GitHub runner独立复跑四条件；远程结果不是本地原始NPZ的副本，来源与SHA分别记录。
+
+E2/I2因果检验：从conductance目录执行 `python trace_manual_network.py expanded-shared-extensor-direct-DN-weak-E2-I2-silenced`，随后本目录执行 `compare_E2_I2.py`。程序验证与既有E2条件参数/图/驱动完全一致，只增加I2消融。

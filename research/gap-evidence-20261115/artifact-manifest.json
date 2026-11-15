@@ -1,0 +1,643 @@
+{
+  "status": "new literature retrieval, source identity and independently rerun/inspected artifacts",
+  "parent_revision": "1c25eee970efa68040b1bacfd493aa9c637f91c4",
+  "large_raw_data": "full-trace-release.json; remote-local-equivalence.json verifies identical NPZ bytes",
+  "randomness": "simulations deterministic; no random draws",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 133,
+      "sha256": "a12fe9a9410531b840d1cf87c2d9d0221e4829cbf949b4f3e10ff20c0d5f42a3"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 19,
+      "sha256": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793"
+    },
+    {
+      "path": "BRK-premotor-probes.log",
+      "bytes": 9080,
+      "sha256": "4764393719650bbf04c39b7e5baee8a962bfdec099663d1094a7dcea8d3c4e3e"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3069,
+      "sha256": "41c6e58553ccd1278c7c92dee97f40b5ee33d7def25901053e91757500ba15b6"
+    },
+    {
+      "path": "REPLAY.md",
+      "bytes": 2779,
+      "sha256": "589d2875fa25cbb05b434258fce822330a19e42d70831d2ef1ed628b8b1dc9be"
+    },
+    {
+      "path": "RESULTS.md",
+      "bytes": 10349,
+      "sha256": "16c93ad351dd135306d5a23cfd053e4e05c8fe50c795ec0e0a7aee1f4df1272b"
+    },
+    {
+      "path": "ancillary-fetch-manifest.json",
+      "bytes": 1344,
+      "sha256": "abf2d0f2229284a73a9f23bf41410a4a20aeae7b35bba9190a0dfdadccd3569c"
+    },
+    {
+      "path": "author-code/EM-analysis-code/DNg13DNa02FancAnalysisScript.m",
+      "bytes": 27695,
+      "sha256": "99633b7503df8e707cba74175377b46d05d2e327d5c669fc301ced52787bb7e0"
+    },
+    {
+      "path": "author-code/EM-analysis-code/DNg13DNa02FlyWireAnalysisScript.m",
+      "bytes": 13388,
+      "sha256": "040d63faba8ecfb6ca6cf120075a9f15e95ff13359be3b67bdbbec1ef1c834fc"
+    },
+    {
+      "path": "author-code/EM-analysis-code/MANC_DN_projAnalysis.m",
+      "bytes": 4836,
+      "sha256": "dc0445a52db18490446e8d8ed1a6d2a31d65b0596d9eb22df2bf002dded51361"
+    },
+    {
+      "path": "author-code/EM-analysis-code/braincircuitsIO_DNa02DNg13_inputs.m",
+      "bytes": 8357,
+      "sha256": "3e6323f20d4e37de01f39ba2de2ac54df97836ea2f4f4656c53850c312867134"
+    },
+    {
+      "path": "author-code/EM-analysis-code/filtDigraphBySynNum.m",
+      "bytes": 2213,
+      "sha256": "abaa01ed8b24d1524055d726aa2a8cb930eb8c5bdb5682e006eb23d048c2b2ef"
+    },
+    {
+      "path": "author-code/EM-analysis-code/getFANCcontributions.m",
+      "bytes": 3259,
+      "sha256": "5da65af5d06ff5fd532394fc1c11d346a2c33a2857ad0576dde183d0e5081338"
+    },
+    {
+      "path": "author-code/EM-analysis-code/getNTArrays.m",
+      "bytes": 1892,
+      "sha256": "e811692e90987acb4a4def91b417ec60e6e45228c3c0bb13af9c52bcfa44cc70"
+    },
+    {
+      "path": "author-code/EM-analysis-code/getNTLinLoc.m",
+      "bytes": 3337,
+      "sha256": "82d2cfcdb6dccdc9bff1dfbadbc2de224659627ca8904a52db62423c48accbb9"
+    },
+    {
+      "path": "author-code/EM-analysis-code/getNormSynWeight.m",
+      "bytes": 1258,
+      "sha256": "30fc73c6e7ed0156cb4ea2b9d1a8b6f488a02c46d9e5aa56645edba8dd7d12c6"
+    },
+    {
+      "path": "author-code/EM-analysis-code/getNumPostSyn.m",
+      "bytes": 1766,
+      "sha256": "5cbd4e155c56e5339a313c3f338bd3d7d7f872035ad6158827fcfbdbe6374bb8"
+    },
+    {
+      "path": "author-code/EM-analysis-code/getNumPreSyn.m",
+      "bytes": 1766,
+      "sha256": "54854c12be854e61ff0b3dca39920d3f13f428ae268aee96cc8a8e2f322bfd4e"
+    },
+    {
+      "path": "author-code/EM-analysis-code/isPreSyn.m",
+      "bytes": 3202,
+      "sha256": "25c6767c496099426a482fa9a441f747b81e35b40838142a70b787afb8cc3fde"
+    },
+    {
+      "path": "author-code/EM-analysis-code/nodeNameToInd.m",
+      "bytes": 1249,
+      "sha256": "cf3b53e4dde2c9e9fe1f75fed1efffa618e85acd560d0af57a5881fd4760e919"
+    },
+    {
+      "path": "author-code/EM-analysis-code/readNTFlyWire.m",
+      "bytes": 2516,
+      "sha256": "b41308899d5b67e10a30194f9ac893b619d7bf4d8e88cd3df73b004e6ec1adda"
+    },
+    {
+      "path": "author-code/EM-analysis-code/readPostsynConnFromCSV.m",
+      "bytes": 2745,
+      "sha256": "c012f8d172ce7abb76c40cb4c2f784d2ae7ee8c0abc4694bb67cb53b15cfa496"
+    },
+    {
+      "path": "author-code/EM-analysis-code/readPresynConnFromCSV.m",
+      "bytes": 2750,
+      "sha256": "3be4b356093d57e8269beb20096631ff714197dc6966d8a02b8a18e84d5d6a2d"
+    },
+    {
+      "path": "build_brake_extension.py",
+      "bytes": 3287,
+      "sha256": "4ecd27c4a52ed3faa5f7f30cf17e5ee4bd34e0ba4e8e48f64063ea6ca91c757a"
+    },
+    {
+      "path": "checkpoint_manifest.py",
+      "bytes": 856,
+      "sha256": "26775ee7b7bd13eaec90e5bfc021eac6d715cb2d9bfd18a4f25f10ffff89c80d"
+    },
+    {
+      "path": "compare_E2_I2.py",
+      "bytes": 2925,
+      "sha256": "7645b1fd121ef26150809d340223613b8a36739939513f3ead031634c07743fd"
+    },
+    {
+      "path": "diagnose_E2_routes.py",
+      "bytes": 3146,
+      "sha256": "afc058c1e0fe49a65d6c91b832724a552cab276d988e335e327417ac37bc9c89"
+    },
+    {
+      "path": "diagnose_frequency_transfer.py",
+      "bytes": 2147,
+      "sha256": "358b06f7a6bdbf4168b85d81a44a80cfaeabe2c5e6147d343d2a582a551fa75d"
+    },
+    {
+      "path": "diagnose_routes.py",
+      "bytes": 4199,
+      "sha256": "135495368b988515f56f0dec0c87be17ab781c76ad4a129fade6434555d07507"
+    },
+    {
+      "path": "diagnostics/BRK-premotor-probes.json",
+      "bytes": 18718,
+      "sha256": "cbc0493e7d487a34b3b40211c342c7964d795df7283bc38fc2a54906b3504b5d"
+    },
+    {
+      "path": "diagnostics/BRK-premotor-probes.npz",
+      "bytes": 3416471,
+      "sha256": "1950ab1206d2bc6b8aa1f11a9c9980499c6f53062015854bc1bbe701896c2538"
+    },
+    {
+      "path": "diagnostics/BRK-sustained-source-transient-output.png",
+      "bytes": 133906,
+      "sha256": "cd11574776940c609e0474c9369d4b2a4ce80170345d2cbcf24aef3ca5d8581e"
+    },
+    {
+      "path": "diagnostics/BRK-timecourse-review.json",
+      "bytes": 1498,
+      "sha256": "2258b358390f2cb477ae9b436117852a03737ef2b7e52063fa6921b7b45adafc"
+    },
+    {
+      "path": "diagnostics/DNg97-L-incoming-events.csv",
+      "bytes": 66208,
+      "sha256": "e19c0b3d508a2e9fe4b5373c4ef05eb85a6dfc2aa4afde64e825918180c1d0ff"
+    },
+    {
+      "path": "diagnostics/DNg97-R-incoming-events.csv",
+      "bytes": 67953,
+      "sha256": "23cc13f7a8095e5ae80e3872df3aee61896ab882d60bd767d500c99697d43ec6"
+    },
+    {
+      "path": "diagnostics/E2-I2-causal-review.json",
+      "bytes": 12432,
+      "sha256": "715cbfdd442194b924529279ac2d395e9cf88b95ad9488e9326d0aa4325ee4c8"
+    },
+    {
+      "path": "diagnostics/E2-all-six-core-traces.png",
+      "bytes": 676967,
+      "sha256": "c03c274443c8f65dab92462ba4b9ef2f13358fe1704cf01da807710036c91c45"
+    },
+    {
+      "path": "diagnostics/E2-all-six-route-review.json",
+      "bytes": 17088,
+      "sha256": "bf185e9d5e4688fb245745c8c61f8e489d06205f8066266135c1549918aaea89"
+    },
+    {
+      "path": "diagnostics/E2-versus-E2-I2-causal.png",
+      "bytes": 727438,
+      "sha256": "7aea3fc1f037386044baa2adab4ff5f4c9d4cfa06a5f6dbee8960c014a02feaf"
+    },
+    {
+      "path": "diagnostics/IN27X001-L-incoming-events.csv",
+      "bytes": 43766,
+      "sha256": "bb20a9539562abbbfaacde3224ebe0d30717e552da65dc699cb757373b0db105"
+    },
+    {
+      "path": "diagnostics/LBL40-L-incoming-events.csv",
+      "bytes": 24357,
+      "sha256": "bc9add4ac21a4dc638fbcafacca3fc30e1776b4ec92067bc0fd4c2e162f33852"
+    },
+    {
+      "path": "diagnostics/dose-transfer-core-traces.png",
+      "bytes": 494810,
+      "sha256": "e3e071b560f45a9274dc38405cc7146cfb2cfd1dd96a88622b4da4e91302d9b8"
+    },
+    {
+      "path": "diagnostics/dose-transfer-review.json",
+      "bytes": 13175,
+      "sha256": "097d9405d96f60b3e87f8d8f3a327da4de73b195b5148dada388d574b9a397e6"
+    },
+    {
+      "path": "diagnostics/extended-brake-review.json",
+      "bytes": 11085,
+      "sha256": "46aa3e3b877da5eaf3094299af5354abdffad45665e7d6fa76b650d62a19c5cb"
+    },
+    {
+      "path": "diagnostics/extended-brake-traces.png",
+      "bytes": 742827,
+      "sha256": "82108cd6338aa6278051f2e0c99023408c29f03b59eb12555fbbff048e3254d6"
+    },
+    {
+      "path": "diagnostics/key-route-traces.png",
+      "bytes": 1222639,
+      "sha256": "8b66e23aa63624b4572f80bb74a7724c767daeca381a41f3a6554389e513e3ef"
+    },
+    {
+      "path": "diagnostics/route-diagnosis.json",
+      "bytes": 31830,
+      "sha256": "3fa469eb660f0173408d08cce8d7469dff777609e793ef4362fd225908af4299"
+    },
+    {
+      "path": "diagnostics.log",
+      "bytes": 3498,
+      "sha256": "6517cbcc3e4eab6f85c24cd62641975cddd814d2ece9aa6469cc6bcf79fe1447"
+    },
+    {
+      "path": "evidence-registry.json",
+      "bytes": 21688,
+      "sha256": "96f8b2cd95caf09712fe14a8fdb9440c4f311fcdfb267a5c8c3a3105f10999fc"
+    },
+    {
+      "path": "extended-brake-review.log",
+      "bytes": 1806,
+      "sha256": "207b6c5e5fdefbe6be29db1ed5c9f43f24d133c2237b61da7e800ad92d2368c9"
+    },
+    {
+      "path": "extract_sensory_routes.py",
+      "bytes": 5269,
+      "sha256": "aa474d56294ab59932e3efc0d2bc38bd3ef8cfb7b42ef47b2a90080b4e8214c8"
+    },
+    {
+      "path": "fetch_fulltexts.py",
+      "bytes": 1170,
+      "sha256": "cbcce5ecc3cf0e4829e8e90147702f01e07579391a95a79cf47b814e2b847c6c"
+    },
+    {
+      "path": "finite-element-access.json",
+      "bytes": 682,
+      "sha256": "3eca073d9577d91e0a94b02959109cf78703272148d62eb1bde4eab4da29a0ae"
+    },
+    {
+      "path": "full-trace-release.json",
+      "bytes": 2065,
+      "sha256": "7203bc90363c1efbd2c44ddb62fe8176345988bfcdc50d4a296d588896f21064"
+    },
+    {
+      "path": "fulltext-manifest.json",
+      "bytes": 2928,
+      "sha256": "5cd735f3d8497fecde6b556b6ffd93f4adde9dcb808e9145a2e12db8bd4689dc"
+    },
+    {
+      "path": "inspect_brake_timecourse.py",
+      "bytes": 2019,
+      "sha256": "b08b7a437589c1a4f4d76a77bad4f1598f0cc8746aa75080406c369e69cc9a77"
+    },
+    {
+      "path": "regression-tests.txt",
+      "bytes": 99,
+      "sha256": "6a6c85d121ff4283990d6f3f321384937ac7b6c3a0e16403277df7b4a0549144"
+    },
+    {
+      "path": "release-remote-metadata.json",
+      "bytes": 1169,
+      "sha256": "7fd99341658ef6cd675fb406ba535c490459d2b37ceb8c8bacfc413466a4509f"
+    },
+    {
+      "path": "remote-local-equivalence.json",
+      "bytes": 5688,
+      "sha256": "62967755517a035d921a92e5929175101d1f8bdb1675237c382110c763964061"
+    },
+    {
+      "path": "remote-rerun-verified.json",
+      "bytes": 575,
+      "sha256": "0a2a2e3fd841c5e7e0bc7fae15f6ec1c5062ff07612d061cef4fbcd271c6529a"
+    },
+    {
+      "path": "requirements-evidence.txt",
+      "bytes": 68,
+      "sha256": "81cc4ce80a145158d729ad631200c3ff34115393831c64665ead6fcc7f98defb"
+    },
+    {
+      "path": "review_extended_brake.py",
+      "bytes": 3474,
+      "sha256": "6cbb643ffd2ea38e992d543064387c81eca49cf9927ad0637d22d1db87ba72c3"
+    },
+    {
+      "path": "routes/BRK-direct-MN.csv",
+      "bytes": 302,
+      "sha256": "bf69aad292bf3282f9b6a238a439a5a951c59fd414dbb87d1d79a962ee6693ec"
+    },
+    {
+      "path": "routes/BRK-identities.csv",
+      "bytes": 541,
+      "sha256": "cc71563e71550cf65ef8c5be3bb32648f063ac2de546157cd744aa92598c559a"
+    },
+    {
+      "path": "routes/BRK-twohop-MN.csv.gz",
+      "bytes": 74052,
+      "sha256": "3a2e2478d2826bd37f695fda36d7bb4dacbb8d0a0e19942daf67d1d0cd335857"
+    },
+    {
+      "path": "routes/leg-MN-identities.csv",
+      "bytes": 30925,
+      "sha256": "b64c0abfafbd5c2764eead3231ea8ff8b56a2a5866408b007209110618f6bc13"
+    },
+    {
+      "path": "routes/leg_campaniform-direct-MN.csv",
+      "bytes": 6793,
+      "sha256": "0267f16a43415356166c8600a835e6d3250b4b73002f43e211c4e3208eb3a22e"
+    },
+    {
+      "path": "routes/leg_campaniform-twohop-MN.csv.gz",
+      "bytes": 88154,
+      "sha256": "69be5b1c7aabc6b7e808bfc7f13b20ed05f3c57d0367cb15942e9adb43231cdd"
+    },
+    {
+      "path": "routes/leg_chordotonal-direct-MN.csv",
+      "bytes": 39324,
+      "sha256": "10a36cb6604f683375daf1df6c4894771fffb629d2e1c0d83233d99d0fe838a2"
+    },
+    {
+      "path": "routes/leg_chordotonal-twohop-MN.csv.gz",
+      "bytes": 1346538,
+      "sha256": "46181f7a3fdde07c7da653e53990b7a3f84c2bbe2dfd799ee5c2ea0cdfd8f382"
+    },
+    {
+      "path": "routes/manifest.json",
+      "bytes": 2561,
+      "sha256": "75917245dc7a7c44738d1c0c83ee142d2124b5f063970a7cda695745c063f97c"
+    },
+    {
+      "path": "routes/relay-identities.csv",
+      "bytes": 239638,
+      "sha256": "d7490522098adcabf33e3451e607fa4ef6b65b78c80a7a0bb02f7baa2c5dc655"
+    },
+    {
+      "path": "routes/sensory-identities.csv",
+      "bytes": 33219,
+      "sha256": "939e1e26ea77a58b3ff61b8f6ca54b8d265a97144780cf15a34dc1f2a6e85278"
+    },
+    {
+      "path": "search-manifest.json",
+      "bytes": 11026,
+      "sha256": "bf6749819e54adce2c7055031070cf52247b720d35acac4fdf43cfa128441b30"
+    },
+    {
+      "path": "search_public.py",
+      "bytes": 2134,
+      "sha256": "edb601f504927cd7415ac2be31ec4477376f656a375962d885932af963dda3d9"
+    },
+    {
+      "path": "sources/MF_identity-crossref.json",
+      "bytes": 3345,
+      "sha256": "13a9ab2aa921ab2be43974c87b7f6a07adec11f685cb7d15eeefe19e0707535f"
+    },
+    {
+      "path": "sources/MF_identity-epmc.json",
+      "bytes": 258,
+      "sha256": "cfe06f6225a78d2d52a692dd5ec5ef5021e88cb8b3547645aa54c80520f13cac"
+    },
+    {
+      "path": "sources/MF_identity-openalex.json",
+      "bytes": 51521,
+      "sha256": "c25d79631728bb1ec26ecac49cbab5af34da24f9072e5f98be302c4779307b37"
+    },
+    {
+      "path": "sources/PMC11446846.txt",
+      "bytes": 153261,
+      "sha256": "94e2be5e7a9faab6639c99cb3ed3c7cfa8d38131993b08f964ac4048dc2fef56"
+    },
+    {
+      "path": "sources/PMC11446846.xml",
+      "bytes": 251643,
+      "sha256": "b7f618e298d85621f09a1238c46a818ea7d725d4f3f4630c42f93e75211ae377"
+    },
+    {
+      "path": "sources/PMC12279373.txt",
+      "bytes": 224100,
+      "sha256": "a30142d5ec6a1b04181e7988e7195403fd2a6bab66136c132ad83b38f0b849aa"
+    },
+    {
+      "path": "sources/PMC12279373.xml",
+      "bytes": 408283,
+      "sha256": "10bc6ba38e60178f403a4e5fc31e437fce924a33629fa6f5be9f01886fb0f88d"
+    },
+    {
+      "path": "sources/PMC12778575.txt",
+      "bytes": 193090,
+      "sha256": "8d1697425e39c18ad90eca59f97c20782f746ad4c6f395970db0d1f7b8f16c5d"
+    },
+    {
+      "path": "sources/PMC12778575.xml",
+      "bytes": 387544,
+      "sha256": "869b7e2b57637e84dc3699c24144d0b64446da9cb7fc9a0a7712d1f1cdf9881e"
+    },
+    {
+      "path": "sources/PMC12975126.txt",
+      "bytes": 98190,
+      "sha256": "f48dbb4030828fd2d9a1f1a5a11641ac4dd3140994c96ddeac2465ff6925f67e"
+    },
+    {
+      "path": "sources/PMC12975126.xml",
+      "bytes": 271064,
+      "sha256": "89e1c8b8dc656303ed0bb1af09aef0fc346bde4ce22fbd8631e3ff928d9ff3cc"
+    },
+    {
+      "path": "sources/PMC13009157.txt",
+      "bytes": 94694,
+      "sha256": "73ff01d57ac217cf34965fd6aa21bf4f6efd9e5767f7f2be290040d677bcbd6d"
+    },
+    {
+      "path": "sources/PMC13009157.xml",
+      "bytes": 177433,
+      "sha256": "929e6858a56006c1b590aa52cf285f59141804e995427f1a1e5cf01079368268"
+    },
+    {
+      "path": "sources/PMC13384506.txt",
+      "bytes": 424027,
+      "sha256": "e58e0f3244d52e14bd0c370c5c67951c0071b54be928f63b419d7329fe3315b9"
+    },
+    {
+      "path": "sources/PMC13384506.xml",
+      "bytes": 640121,
+      "sha256": "bdfa3c9beb9e80d2bb178294938c7411518bbcb510bb5d003892e3f1779ab6e6"
+    },
+    {
+      "path": "sources/PMC8665017.txt",
+      "bytes": 87307,
+      "sha256": "4b5325d21e2055cdb37c7b4b31ed1f20b5032669b62830a1d4f00b615f875d3e"
+    },
+    {
+      "path": "sources/PMC8665017.xml",
+      "bytes": 177057,
+      "sha256": "9f7f80bb490957ed175345d3cd389120db35204180e560056c90c99fff0bfd24"
+    },
+    {
+      "path": "sources/adult_sensory-crossref.json",
+      "bytes": 3354,
+      "sha256": "688292b792bba6629a046056c8770fcf07403c4e3a80a856b43cdab6128dbf84"
+    },
+    {
+      "path": "sources/adult_sensory-epmc.json",
+      "bytes": 15039,
+      "sha256": "907f9bc8d1d1b31c31a1fef4524fa459fcd2c98aec14af8b3084df1270107aea"
+    },
+    {
+      "path": "sources/adult_sensory-openalex.json",
+      "bytes": 50255,
+      "sha256": "e938ff960295476563b180471da0482a0839e96264e09ec7ca2f21ac8be0e6e0"
+    },
+    {
+      "path": "sources/braking-crossref.json",
+      "bytes": 3039,
+      "sha256": "349947638011d987fd44960d65dbdea3b6df2487e53d4d62040583a0c6dbdd50"
+    },
+    {
+      "path": "sources/braking-epmc.json",
+      "bytes": 266,
+      "sha256": "78b1312e6528cde1e857109ce74530d4a484be92913a28d775a6b00316e2f3aa"
+    },
+    {
+      "path": "sources/braking-openalex.json",
+      "bytes": 1323,
+      "sha256": "b42601666c1447df960f0fcf2915e92fe7fbb447020b2f3fcec9929a29a90d8d"
+    },
+    {
+      "path": "sources/cheong-elife-article.json",
+      "bytes": 584999,
+      "sha256": "1fb351c6e783c948986f9b43e29fa55934beb22b7d056f1be09c782adbc96596"
+    },
+    {
+      "path": "sources/cheong-readme.txt",
+      "bytes": 105,
+      "sha256": "03186c17eb65a11991bbad92673170ce01ba7a5023443f3a4b637338980d7533"
+    },
+    {
+      "path": "sources/cheong-repository-tree.json",
+      "bytes": 5757,
+      "sha256": "24b12b984ef10f22d4e312e01ee0b01339c83aa7bfb572d5b3f8b23779e61bb0"
+    },
+    {
+      "path": "sources/cheong-supp1.csv",
+      "bytes": 152740,
+      "sha256": "e559a0e6759044c6a969dab53c56a843e3c1d8d957fbb3881b78488774dfb687"
+    },
+    {
+      "path": "sources/cheong-supp3.csv",
+      "bytes": 67297,
+      "sha256": "c46e3cec1a5114b8d981d5f0383012c8e7fcdebd6c4e3eaffe4ac3ba1def2e94"
+    },
+    {
+      "path": "sources/cheong-supp6.csv",
+      "bytes": 24898,
+      "sha256": "b56b0563f6a6000b2a43fbc7ebec46297668e8e3b6c6d596843d5ad5aab83a65"
+    },
+    {
+      "path": "sources/cheong-supp7.csv",
+      "bytes": 40273,
+      "sha256": "1f4023854b2a68dbac3b3cb6ec317c2e349fcb542ecd65841bbc05982819f89f"
+    },
+    {
+      "path": "sources/cheong-supp8.csv",
+      "bytes": 53163,
+      "sha256": "5c0535a0731ba234b80daa9a8fc9c21b7afcd7119b6d876554975854b9e1fde9"
+    },
+    {
+      "path": "sources/cheong-zenodo.txt",
+      "bytes": 4662,
+      "sha256": "5cc66db5cffbd6b4f9904e2344fdcee6b3c040814cafbcbd2be3d73324174a66"
+    },
+    {
+      "path": "sources/finite-element-crossref.txt",
+      "bytes": 15663,
+      "sha256": "5eed6e41ec1432be7b62750a56c04639c2ced6e691db71fa0ddf1941eb7700e4"
+    },
+    {
+      "path": "sources/hunger_stop-crossref.json",
+      "bytes": 3862,
+      "sha256": "c0299903a8b1bcaf28eb3d98bbbadfc662613c731f1435d5a5b140429c016da1"
+    },
+    {
+      "path": "sources/hunger_stop-epmc.json",
+      "bytes": 212244,
+      "sha256": "e9e990422b357ca3b806008565b13ff182c120823e1f5a63128ab716f07da59c"
+    },
+    {
+      "path": "sources/hunger_stop-openalex.json",
+      "bytes": 362217,
+      "sha256": "8cf9f689660c7a819702f0722a3dde474ad277137dc47156cb2e546ce2a384d5"
+    },
+    {
+      "path": "sources/load_feedback-crossref.json",
+      "bytes": 4008,
+      "sha256": "341286084c9772763bf2dbd2d953746293fc64b878832ada792a0be200dc20f9"
+    },
+    {
+      "path": "sources/load_feedback-epmc.json",
+      "bytes": 130103,
+      "sha256": "05f4b36da524469df0dcf9168d38c2dd566bbd0084d0ce7238b6764e37af9b27"
+    },
+    {
+      "path": "sources/load_feedback-openalex.json",
+      "bytes": 307441,
+      "sha256": "06ee550fdab87203a4128486089d05d950f86ec95cb38ad713e7387a1006fced"
+    },
+    {
+      "path": "sources/phase_gate-crossref.json",
+      "bytes": 3484,
+      "sha256": "c9ce14f6735da201ec15ac7ec95d6c0ac5d04e1a7f4329e3d5d6170c3e185762"
+    },
+    {
+      "path": "sources/phase_gate-epmc.json",
+      "bytes": 189783,
+      "sha256": "919429cbf8baa65a192670c39ffedc44d0f22de7c53d8b8ebd5e7c5b603c9d08"
+    },
+    {
+      "path": "sources/phase_gate-openalex.json",
+      "bytes": 644232,
+      "sha256": "4ef77b15416ec12202fb36082050bfc056d335ac174726faca81cd93a2cbf069"
+    },
+    {
+      "path": "sources/sensory_motor-crossref.json",
+      "bytes": 4108,
+      "sha256": "1f1fd143e194ba18912fb127232f229aa402f9a442eae890c0f9757a8da8aefe"
+    },
+    {
+      "path": "sources/sensory_motor-epmc.json",
+      "bytes": 122752,
+      "sha256": "7f6312ba0bb4c5703712190423d4322329bdce03595876ada168adb2a2de67dc"
+    },
+    {
+      "path": "sources/sensory_motor-openalex.json",
+      "bytes": 313887,
+      "sha256": "de954e190463baf9cfde21a168f02b37e701d447c4ed31dbbd4af7cefcec4ed9"
+    },
+    {
+      "path": "sources/steering-EM-analysis-code.zip",
+      "bytes": 30167,
+      "sha256": "a84861040cefe402bb66d2c45a6b8d52c066750f050cd72e6d786fa109ef5ba8"
+    },
+    {
+      "path": "sources/steering-zenodo.txt",
+      "bytes": 5690,
+      "sha256": "a2ebe29916a14e176f0a5b55deba0e9f600a96413a3254adeeaca9d6a8c981c4"
+    },
+    {
+      "path": "steering-code-manifest.json",
+      "bytes": 246,
+      "sha256": "4040872809323b63f490a83bdc76c980d440c9fd25c2abb71a38c8d44a3c7b2e"
+    },
+    {
+      "path": "summarize_validation.py",
+      "bytes": 2699,
+      "sha256": "0ed294d7d88ede64ba761200a81e51ea226faadda5391a013f675dcba6761cc0"
+    },
+    {
+      "path": "supplement-fetch-manifest.json",
+      "bytes": 1736,
+      "sha256": "788f80efc33ffbb847baa3954fc388d3cda7ba32da9ded2322561025dc366505"
+    },
+    {
+      "path": "trace_brake_relays.py",
+      "bytes": 3024,
+      "sha256": "212ccdeff90f3a72957fb8f720cff0bff105012a88bba32a22d6896a4e55e2ab"
+    },
+    {
+      "path": "validation-summary.json",
+      "bytes": 35548,
+      "sha256": "07db20c652bc833293dfda2b3a650806394532f08ae62a0d4c622c39214af19f"
+    }
+  ]
+}

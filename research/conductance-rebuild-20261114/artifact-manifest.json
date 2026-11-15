@@ -113,8 +113,8 @@
     },
     {
       "path": "brain.json",
-      "bytes": 11363282,
-      "sha256": "ce418feb87c48f47e950834e8aa154fb4e4e89980637417f348e3762f92291ad"
+      "bytes": 11364073,
+      "sha256": "01268812ef30e2ee39d8f7630dce1c763230fda75de635f2e7f06f09d38996d0"
     },
     {
       "path": "build_phenomena.py",
@@ -1865,6 +1865,11 @@
       "path": "results/excitation-probe.log",
       "bytes": 26,
       "sha256": "998343634c02c04c46d82682a33a173d3ce7ed9895d16644182862fd53f611a4"
+    },
+    {
+      "path": "results/expanded-E2-I2-silenced.log",
+      "bytes": 218,
+      "sha256": "733f14596b1c4e9c0da2147118f516787e04af178e6ff22afc9069c884baf7b4"
     },
     {
       "path": "results/expanded-right-extensors-third-direct-DN-weak-E1-silenced-input.log",
@@ -5012,6 +5017,21 @@
       "sha256": "7bdb2cdca80c33c03cd0257c10a33f646956e6cfbffbccc5ceb0f45d4e9afcdb"
     },
     {
+      "path": "results/manual-mechanism/expanded-shared-extensor-direct-DN-weak-E2-I2-silenced-config.json",
+      "bytes": 59885,
+      "sha256": "eda1d3c8e0b79ca91ccf9f9c22825917aeb6542a26c0bd3fbb664a6a87e13e25"
+    },
+    {
+      "path": "results/manual-mechanism/expanded-shared-extensor-direct-DN-weak-E2-I2-silenced-diagnosis.json",
+      "bytes": 11749,
+      "sha256": "e0ca2b06555242c13c46316d58111c63aa949e0bf36b059f2815fd3a86987002"
+    },
+    {
+      "path": "results/manual-mechanism/expanded-shared-extensor-direct-DN-weak-E2-I2-silenced.npz",
+      "bytes": 5495560,
+      "sha256": "4e12f51cf0c3a2ab6493b146a1ad73b07d75160a2a2623239810f475658d0cd2"
+    },
+    {
       "path": "results/manual-mechanism/expanded-shared-extensor-direct-DN-weak-E2-silenced-config.json",
       "bytes": 59804,
       "sha256": "1a9301f735ffd2a08a5a89208cc8fa5301a538174014ae4b7854aca4e7bd0a0b"
@@ -7828,8 +7848,8 @@
     },
     {
       "path": "trace_manual_network.py",
-      "bytes": 5926,
-      "sha256": "442e935b3eeba281f844254d72d5c26bc42240ab138b74cbd727c523547daf0a"
+      "bytes": 6024,
+      "sha256": "f69331aaee0a8bb898ac255be4f3c360eb81b9b55d49eb555b652f4818fa4363"
     },
     {
       "path": "trace_mcns_command.py",

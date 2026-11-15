@@ -247467,7 +247467,7 @@
     "not_claimed": "most brain phenomena passed or whole-network closed loop"
   },
   "gap_evidence_validation_20261115": {
-    "status": "public-source evidence plus13 newly completed local network runs, not majority experimental replication",
+    "status": "public-source evidence plus14 newly completed local network runs, not majority experimental replication",
     "report": "../gap-evidence-20261115/RESULTS.md",
     "evidence": "../gap-evidence-20261115/evidence-registry.json",
     "actual_anatomical_routes": "../gap-evidence-20261115/routes/manifest.json",
@@ -247522,6 +247522,19 @@
       ],
       "source": "../gap-evidence-20261115/diagnostics/BRK-timecourse-review.json",
       "not_claimed": "unique cause or experimental requirement that this specific relay must sustain firing"
+    },
+    "E2_I2_counterfactual": {
+      "evidence": "new model intervention, not in-vivo experiment",
+      "parameters_graph_drive_identical": true,
+      "only_add_I2_ablation": true,
+      "result": "middle-leg E1 slow modulation changes to faster sustained output, hindleg residual remains; I2 contributes but is not sole cause",
+      "data": "../gap-evidence-20261115/diagnostics/E2-I2-causal-review.json",
+      "not_claimed": "complete E2 necessity or complete silence"
+    },
+    "frequency_transfer_diagnosis": {
+      "evidence": "old T1 traces newly inspected, not new integration",
+      "result": "DN rate rises60→85Hz while E1/I1 output does not speed up; downstream transformation failure",
+      "data": "../gap-evidence-20261115/diagnostics/dose-transfer-review.json"
     }
   }
 }
