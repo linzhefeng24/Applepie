@@ -2,7 +2,7 @@ name: Archive pinned public neural inputs
 on:
   push:
     branches: [main]
-    paths: ['.github/workflows/archive-public-neural-inputs.yml']
+    paths: ['.github/workflows/archive-public-neural-inputs.yml', 'research/public-input-archive/**']
   workflow_dispatch:
 permissions:
   contents: write

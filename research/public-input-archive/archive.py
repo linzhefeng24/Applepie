@@ -18,19 +18,20 @@ def main():
  manifest=json.loads((ROOT/'inputs.json').read_text());repo=os.environ['GITHUB_REPOSITORY'];rev=os.environ['GITHUB_SHA']
  release=subprocess.run(['gh','release','view',TAG,'--repo',repo],stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
  if release.returncode:gh('release','create',TAG,'--repo',repo,'--draft','--target',rev,'--title','Pinned public neural research inputs','--notes','Raw public source inputs; SHA-256 and scientific code revision are recorded in the asset manifest. Draft archive only.')
+ releases=json.loads(gh('api',f'repos/{repo}/releases?per_page=100'));release_id=next(x['id'] for x in releases if x['tag_name']==TAG)
  verified=[]
  with tempfile.TemporaryDirectory() as directory:
   for item in manifest['inputs']:
    u=urlparse(item['source_url'])
    if u.scheme!='https' or u.hostname not in {'storage.googleapis.com','static-content.springer.com'}:raise ValueError('Unexpected source host')
    if Path(item['name']).name!=item['name']:raise ValueError('Unsafe asset name')
-   path=Path(directory)/item['name'];assets=json.loads(gh('api',f'repos/{repo}/releases/tags/{TAG}'))['assets'];existing=next((a for a in assets if a['name']==item['name']),None)
+   path=Path(directory)/item['name'];assets=json.loads(gh('api',f'repos/{repo}/releases/{release_id}'))['assets'];existing=next((a for a in assets if a['name']==item['name']),None)
    if not existing:
     with urllib.request.urlopen(item['source_url'],timeout=180) as src,path.open('wb') as dst:
      for chunk in iter(lambda:src.read(4*1024*1024),b''):dst.write(chunk)
     if path.stat().st_size!=item['bytes'] or sha(path)!=item['sha256']:raise ValueError('Public download identity mismatch: '+item['name'])
     gh('release','upload',TAG,str(path),'--repo',repo)
-    assets=json.loads(gh('api',f'repos/{repo}/releases/tags/{TAG}'))['assets'];existing=next(a for a in assets if a['name']==item['name'])
+    assets=json.loads(gh('api',f'repos/{repo}/releases/{release_id}'))['assets'];existing=next(a for a in assets if a['name']==item['name'])
    if existing['size']!=item['bytes']:raise ValueError('Existing asset size mismatch')
    if existing.get('digest')!='sha256:'+item['sha256']:
     gh('release','download',TAG,'--repo',repo,'--pattern',item['name'],'--dir',directory,'--clobber')
