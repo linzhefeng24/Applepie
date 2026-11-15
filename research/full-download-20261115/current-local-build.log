@@ -1,0 +1,10 @@
+{
+  "file": "UnifiedFlyModel_Full_20261115.zip",
+  "bytes": 73742390,
+  "sha256": "7160d39c9028f5e7f4a0d18f030f4e76e5259380a15cd713a6983841f458f583",
+  "code_revision": "f7c07c9917aefb43bba2f1836506cd250e5c102d",
+  "model_sha256": "858d1818b8d8394c95bb62a6ce60474cb534a83b94265ef8615e367c110d262c",
+  "contents": "one complete model.yaml with geometry/meshes/parameters; full runnable code; phenomena JSON; neural and muscle/body states; three fixed-body videos; provenance and per-file checksums",
+  "condition": "fixed initial body pose with native leg and ground contact dynamics",
+  "source_fixed_asset_sha256": "9198dc0782331101bfd5ddcb72cf02333a3a22cc1e8e0fcf46a4c9a6013e6d65"
+}

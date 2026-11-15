@@ -1,0 +1,36 @@
+{
+  "file": "UnifiedFlyModel_Full_20261115.zip",
+  "bytes": 73742382,
+  "sha256": "0392436195af2f8aafca5f8617a543b740b66f81b20ea9f740fb89cdee6f4af9",
+  "code_revision": "f7c07c9917aefb43bba2f1836506cd250e5c102d",
+  "model_sha256": "858d1818b8d8394c95bb62a6ce60474cb534a83b94265ef8615e367c110d262c",
+  "contents": "one complete model.yaml with geometry/meshes/parameters; full runnable code; phenomena JSON; neural and muscle/body states; three fixed-body videos; provenance and per-file checksums",
+  "condition": "fixed initial body pose with native leg and ground contact dynamics",
+  "source_fixed_asset_sha256": "9198dc0782331101bfd5ddcb72cf02333a3a22cc1e8e0fcf46a4c9a6013e6d65",
+  "source_url": "https://github.com/linzhefeng24/Applepie/releases/download/fixed-body-video-20261115/UnifiedFlyModel_Full_20261115.zip",
+  "public_download_verified": true,
+  "backup_status": "published GitHub asset; fresh unauthenticated full download verified",
+  "workflow_run": "https://github.com/linzhefeng24/Applepie/actions/runs/43697057161",
+  "verification": {
+    "status": "passed fresh extraction, full manifest and public interfaces",
+    "archive_sha256": "0392436195af2f8aafca5f8617a543b740b66f81b20ea9f740fb89cdee6f4af9",
+    "archive_bytes": 73742382,
+    "code_revision": "f7c07c9917aefb43bba2f1836506cd250e5c102d",
+    "model_sha256": "858d1818b8d8394c95bb62a6ce60474cb534a83b94265ef8615e367c110d262c",
+    "verified_files": 27,
+    "neurons": 3988,
+    "muscle_channels": 130,
+    "video_count": 3,
+    "state_fields": [
+      "actual_time_ms",
+      "neuron_ids",
+      "voltage",
+      "calcium",
+      "currents_pA",
+      "conductances_nS",
+      "gating_m_h_n"
+    ],
+    "independent_body_and_contact_interfaces": true,
+    "laboratory_experiments_newly_validated": []
+  }
+}
