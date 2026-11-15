@@ -1,0 +1,49 @@
+Running DN_drive with 3988 cells; all states recorded
+Neural integration finished in 54.02 seconds
+Rendered 0 / 175
+Rendered 25 / 175
+Rendered 50 / 175
+Rendered 75 / 175
+Rendered 100 / 175
+Rendered 125 / 175
+Rendered 150 / 175
+{
+  "model_sha256": "858d1818b8d8394c95bb62a6ce60474cb534a83b94265ef8615e367c110d262c",
+  "experiment": "DN_drive",
+  "python": "3.12.14",
+  "versions": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "numba": "0.68.1",
+    "mujoco": "3.3.2",
+    "PyYAML": "6.0.3",
+    "matplotlib": "3.11.2",
+    "imageio-ffmpeg": "0.6.0"
+  },
+  "command": [
+    "/workspace/unified-fly-env/bin/python",
+    "02_code/run.py",
+    "demo",
+    "--experiment",
+    "DN_drive"
+  ],
+  "neural_spikes": 14908,
+  "mapped_channels": 104,
+  "active_requested_muscle_channels": 85,
+  "body_duration_s": 1.3999999999998622,
+  "all_body_states_finite": true,
+  "body_configuration_changed": true,
+  "min_body_up_z": 0.5100572239393547,
+  "extra_applied_force": false,
+  "archived_AB_control_sequence_used": false,
+  "physical_state_reset_during_integration": false,
+  "sensory_to_neural_feedback": false,
+  "stable_walking_verified": false,
+  "muscle_mapping_scope": "candidate functional category mapping, not confirmed individual motor-unit anatomy",
+  "network_video_scope": "schematic 3D layout, not reconstructed neuronal morphology",
+  "videos": [
+    "/workspace/Applepie-research-sync/research/single-model-delivery-20261115/build/UnifiedFlyModel/04_results/videos/01_body_muscles.mp4",
+    "/workspace/Applepie-research-sync/research/single-model-delivery-20261115/build/UnifiedFlyModel/04_results/videos/02_neural_chain_3d.mp4",
+    "/workspace/Applepie-research-sync/research/single-model-delivery-20261115/build/UnifiedFlyModel/04_results/videos/03_synchronized.mp4"
+  ]
+}
