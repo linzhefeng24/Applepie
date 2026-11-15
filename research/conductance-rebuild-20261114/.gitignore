@@ -5,3 +5,6 @@ __pycache__/
 .cache/
 
 *.npz.tmp
+
+# Full brake-extension voltage/Ca traces are stored in a draft Release asset.
+results/frozen-neural-panel-brake-extension-r9/*.npz

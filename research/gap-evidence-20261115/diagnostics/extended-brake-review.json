@@ -1,0 +1,461 @@
+{
+  "status": "new independently rerun model test, not behavior replication",
+  "graph": "3988-cell same MaleCNS version; former signed and unsigned submatrices exactly retained",
+  "MN_scope": "381 legMN IDs from original annotations, not inferred from incomplete copied subclass fields",
+  "time_window_ms": [
+    500,
+    950
+  ],
+  "role_policy": "all annotated vnc_motor use adult300MOhm prior, other cells use previous policy; these MNs are not individually calibrated",
+  "critical_caution": "BRK behavioral stopping does not require LBL40 silence; reduced MN rate is not sufficient for joint resistance",
+  "conditions": [
+    {
+      "condition": "control",
+      "raw_trace_sha256": "d10f76cb08ae8e703eabb4c9e3e1c92547efed3f2221445105723b9f608ed518",
+      "leg_MNs_in_assay": 381,
+      "active_leg_MNs": 0,
+      "groups": [
+        {
+          "type": "Ti extensor MN",
+          "cells": 12,
+          "mean_rate_hz": 0.0,
+          "active": 0,
+          "mean_gE_nS": 0.0,
+          "mean_gI_nS": 0.0
+        },
+        {
+          "type": "Ti flexor MN",
+          "cells": 37,
+          "mean_rate_hz": 0.0,
+          "active": 0,
+          "mean_gE_nS": 0.0,
+          "mean_gI_nS": 0.0
+        },
+        {
+          "type": "Acc. ti flexor MN",
+          "cells": 47,
+          "mean_rate_hz": 0.0,
+          "active": 0,
+          "mean_gE_nS": 0.0,
+          "mean_gI_nS": 0.0
+        }
+      ],
+      "premotor_relays": [
+        {
+          "type": "IN07B001",
+          "cells": 2,
+          "predicted_transmitters": [
+            "acetylcholine"
+          ],
+          "rates_hz": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "type": "IN18B011",
+          "cells": 3,
+          "predicted_transmitters": [
+            "acetylcholine"
+          ],
+          "rates_hz": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "type": "IN19A001",
+          "cells": 6,
+          "predicted_transmitters": [
+            "gaba"
+          ],
+          "rates_hz": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "type": "IN03B019",
+          "cells": 4,
+          "predicted_transmitters": [
+            "gaba"
+          ],
+          "rates_hz": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "type": "IN03B032",
+          "cells": 4,
+          "predicted_transmitters": [
+            "gaba"
+          ],
+          "rates_hz": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "type": "IN21A017",
+          "cells": 4,
+          "predicted_transmitters": [
+            "acetylcholine"
+          ],
+          "rates_hz": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "numerical_failure": false
+    },
+    {
+      "condition": "MDN",
+      "raw_trace_sha256": "dafdf578b4d1acc70d66e700f112ad3a1e6df221ce752061cfa38413f88e327e",
+      "leg_MNs_in_assay": 381,
+      "active_leg_MNs": 221,
+      "groups": [
+        {
+          "type": "Ti extensor MN",
+          "cells": 12,
+          "mean_rate_hz": 21.111111111111114,
+          "active": 11,
+          "mean_gE_nS": 1.842578980348828,
+          "mean_gI_nS": 1.838495704814144
+        },
+        {
+          "type": "Ti flexor MN",
+          "cells": 37,
+          "mean_rate_hz": 10.930930930930929,
+          "active": 14,
+          "mean_gE_nS": 0.8667125369549492,
+          "mean_gI_nS": 0.4087235182942841
+        },
+        {
+          "type": "Acc. ti flexor MN",
+          "cells": 47,
+          "mean_rate_hz": 3.3569739952718676,
+          "active": 19,
+          "mean_gE_nS": 0.20420273586284857,
+          "mean_gI_nS": 0.1071558167882243
+        }
+      ],
+      "premotor_relays": [
+        {
+          "type": "IN07B001",
+          "cells": 2,
+          "predicted_transmitters": [
+            "acetylcholine"
+          ],
+          "rates_hz": [
+            28.88888888888889,
+            15.555555555555555
+          ]
+        },
+        {
+          "type": "IN18B011",
+          "cells": 3,
+          "predicted_transmitters": [
+            "acetylcholine"
+          ],
+          "rates_hz": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "type": "IN19A001",
+          "cells": 6,
+          "predicted_transmitters": [
+            "gaba"
+          ],
+          "rates_hz": [
+            33.333333333333336,
+            37.77777777777778,
+            33.333333333333336,
+            22.22222222222222,
+            26.666666666666664,
+            28.88888888888889
+          ]
+        },
+        {
+          "type": "IN03B019",
+          "cells": 4,
+          "predicted_transmitters": [
+            "gaba"
+          ],
+          "rates_hz": [
+            17.77777777777778,
+            22.22222222222222,
+            17.77777777777778,
+            20.0
+          ]
+        },
+        {
+          "type": "IN03B032",
+          "cells": 4,
+          "predicted_transmitters": [
+            "gaba"
+          ],
+          "rates_hz": [
+            8.88888888888889,
+            13.333333333333332,
+            4.444444444444445,
+            15.555555555555555
+          ]
+        },
+        {
+          "type": "IN21A017",
+          "cells": 4,
+          "predicted_transmitters": [
+            "acetylcholine"
+          ],
+          "rates_hz": [
+            0.0,
+            13.333333333333332,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "numerical_failure": false
+    },
+    {
+      "condition": "BRK",
+      "raw_trace_sha256": "38cab73dd924be385692e227a04299fe7ce14a14b6f36f07b283098d4e6fcf11",
+      "leg_MNs_in_assay": 381,
+      "active_leg_MNs": 171,
+      "groups": [
+        {
+          "type": "Ti extensor MN",
+          "cells": 12,
+          "mean_rate_hz": 2.9629629629629624,
+          "active": 10,
+          "mean_gE_nS": 0.22010981266650914,
+          "mean_gI_nS": 0.234418395535811
+        },
+        {
+          "type": "Ti flexor MN",
+          "cells": 37,
+          "mean_rate_hz": 0.5405405405405406,
+          "active": 7,
+          "mean_gE_nS": 0.06222463734144416,
+          "mean_gI_nS": 0.048975539960094204
+        },
+        {
+          "type": "Acc. ti flexor MN",
+          "cells": 47,
+          "mean_rate_hz": 0.3309692671394799,
+          "active": 6,
+          "mean_gE_nS": 0.022970636541390133,
+          "mean_gI_nS": 0.020599468337371096
+        }
+      ],
+      "premotor_relays": [
+        {
+          "type": "IN07B001",
+          "cells": 2,
+          "predicted_transmitters": [
+            "acetylcholine"
+          ],
+          "rates_hz": [
+            2.2222222222222223,
+            2.2222222222222223
+          ]
+        },
+        {
+          "type": "IN18B011",
+          "cells": 3,
+          "predicted_transmitters": [
+            "acetylcholine"
+          ],
+          "rates_hz": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "type": "IN19A001",
+          "cells": 6,
+          "predicted_transmitters": [
+            "gaba"
+          ],
+          "rates_hz": [
+            0.0,
+            2.2222222222222223,
+            2.2222222222222223,
+            2.2222222222222223,
+            0.0,
+            2.2222222222222223
+          ]
+        },
+        {
+          "type": "IN03B019",
+          "cells": 4,
+          "predicted_transmitters": [
+            "gaba"
+          ],
+          "rates_hz": [
+            0.0,
+            0.0,
+            2.2222222222222223,
+            0.0
+          ]
+        },
+        {
+          "type": "IN03B032",
+          "cells": 4,
+          "predicted_transmitters": [
+            "gaba"
+          ],
+          "rates_hz": [
+            2.2222222222222223,
+            2.2222222222222223,
+            2.2222222222222223,
+            2.2222222222222223
+          ]
+        },
+        {
+          "type": "IN21A017",
+          "cells": 4,
+          "predicted_transmitters": [
+            "acetylcholine"
+          ],
+          "rates_hz": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "numerical_failure": false
+    },
+    {
+      "condition": "MDN+BRK",
+      "raw_trace_sha256": "f817989bfcc7cc1a2a3c72bf7567b7ff8026cf2642f3f6702845b851b6d950f0",
+      "leg_MNs_in_assay": 381,
+      "active_leg_MNs": 194,
+      "groups": [
+        {
+          "type": "Ti extensor MN",
+          "cells": 12,
+          "mean_rate_hz": 10.0,
+          "active": 9,
+          "mean_gE_nS": 0.7363983924206622,
+          "mean_gI_nS": 1.2938605390824767
+        },
+        {
+          "type": "Ti flexor MN",
+          "cells": 37,
+          "mean_rate_hz": 10.03003003003003,
+          "active": 13,
+          "mean_gE_nS": 0.531028871911752,
+          "mean_gI_nS": 0.11099677167473297
+        },
+        {
+          "type": "Acc. ti flexor MN",
+          "cells": 47,
+          "mean_rate_hz": 1.2765957446808511,
+          "active": 13,
+          "mean_gE_nS": 0.09892840236302766,
+          "mean_gI_nS": 0.05267205878220119
+        }
+      ],
+      "premotor_relays": [
+        {
+          "type": "IN07B001",
+          "cells": 2,
+          "predicted_transmitters": [
+            "acetylcholine"
+          ],
+          "rates_hz": [
+            24.444444444444443,
+            8.88888888888889
+          ]
+        },
+        {
+          "type": "IN18B011",
+          "cells": 3,
+          "predicted_transmitters": [
+            "acetylcholine"
+          ],
+          "rates_hz": [
+            4.444444444444445,
+            2.2222222222222223,
+            0.0
+          ]
+        },
+        {
+          "type": "IN19A001",
+          "cells": 6,
+          "predicted_transmitters": [
+            "gaba"
+          ],
+          "rates_hz": [
+            17.77777777777778,
+            24.444444444444443,
+            22.22222222222222,
+            11.11111111111111,
+            8.88888888888889,
+            15.555555555555555
+          ]
+        },
+        {
+          "type": "IN03B019",
+          "cells": 4,
+          "predicted_transmitters": [
+            "gaba"
+          ],
+          "rates_hz": [
+            8.88888888888889,
+            15.555555555555555,
+            11.11111111111111,
+            11.11111111111111
+          ]
+        },
+        {
+          "type": "IN03B032",
+          "cells": 4,
+          "predicted_transmitters": [
+            "gaba"
+          ],
+          "rates_hz": [
+            2.2222222222222223,
+            6.666666666666666,
+            4.444444444444445,
+            17.77777777777778
+          ]
+        },
+        {
+          "type": "IN21A017",
+          "cells": 4,
+          "predicted_transmitters": [
+            "acetylcholine"
+          ],
+          "rates_hz": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "numerical_failure": false
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+{
+  "status": "newly retrieved evidence; no literature entry automatically passes simulation",
+  "records": [
+    {
+      "id": "BRK_active_brake",
+      "pmcid": "PMC11446846",
+      "source_sha256": "b7f618e298d85621f09a1238c46a818ea7d725d4f3f4630c42f93e75211ae377",
+      "reading_scope": "targeted full-text sections and methods, not entire article replication",
+      "evidence": "measured behavior/muscle plus proposed reflex mechanism",
+      "usable_information": "Specify stance-dependent joint resistance and angle-specific muscle recruitment; do not require LBL40 silence",
+      "still_unknown": "reflex gain, exact sensory/IN/MN implementation and force-to-strain remain unknown",
+      "source_locations": [
+        {
+          "paragraph_line": 76,
+          "excerpt": "The stepping cycle consists of a swing phase (leg in air) and stance phase (leg on ground). Given the strong ‘freezing-like’, BRK phenotype (Fig.  1g ), we wondered whether BRK could cause the legs to ‘freeze’ at any point during a stepping cycle similar to a recent report in mice 2 . We found that in case of BRK mid-swing stimulation, the leg finishes the swing phase in an unaltered manner, but freezes as soon as it lands on the ground (Fig.  4a ) when the femur–tibia (Fe–Ti) joint is in an ext"
+        },
+        {
+          "paragraph_line": 77,
+          "excerpt": "VNC-specific halting pathway for increasing resistance to leg movements in the brake mechanism. a , b , Front-leg Fe–Ti joint angle during optogenetic stimulation of BRK ( a ) or FG ( b ) in tethered walking flies (each row is one example fly) grouped by stimulation onset mid-swing (left) or mid-stance (right). Swing phase indicated by grey background  c , Probability (prob.) density of front-leg Fe–Ti joint angle if BRK or FG was stimulated mid-swing (left) or mid-stance (right).  d , Average s"
+        },
+        {
+          "paragraph_line": 78,
+          "excerpt": "a , b , Front-leg Fe–Ti joint angle during optogenetic stimulation of BRK ( a ) or FG ( b ) in tethered walking flies (each row is one example fly) grouped by stimulation onset mid-swing (left) or mid-stance (right). Swing phase indicated by grey background  c , Probability (prob.) density of front-leg Fe–Ti joint angle if BRK or FG was stimulated mid-swing (left) or mid-stance (right).  d , Average swing duration before and on mid-swing stimulation of BRK (left) or FG (right) for front legs (FL"
+        },
+        {
+          "paragraph_line": 80,
+          "excerpt": "This locking of joints during stance phase shows that the BRK phenotype is probably due to an active mechanism. We proposed that this could be driven by BRK VNC outputs upregulating the postural resistance reflex to lock the leg joints. The term ‘resistance reflex’ is used to describe postural reflexes in all legged animals that allow maintenance of posture while in a stationary state 36 . Upregulating such reflexes could lead to locking of leg joints while in stance phase as seen on BRK stimula"
+        },
+        {
+          "paragraph_line": 83,
+          "excerpt": "Resisting such movements, would require actively engaging specific leg muscles. We, therefore activated BRK and monitored front-leg femoral muscle activity with the Fe–Ti joint restrained in a flexed or extended position ( Methods ). In a flexed Fe–Ti position, activating BRK recruited accessory flexor-a and extensor. However, in an extended Fe–Ti position, BRK stimulation recruited accessory flexor-a and accessory flexor-b (Fig.  4k–n  and Supplementary Video  6 ). Based on the literature 37 , "
+        },
+        {
+          "paragraph_line": 91,
+          "excerpt": "To confirm this represents a resistance reflex-like activity, we passively flexed or extended the Fe–Ti joint and induced resistance reflex while monitoring muscle activity ( Methods ). Here, both control flies and BRK stimulated flies resisted these passive movements and showed a similar recruitment of muscles to that described above, with BRK stimulated flies showing a more robust response (Extended Data Fig.  7c ). Taken together, this suggests that BRK drives a resistance-like state in the f"
+        }
+      ],
+      "simulation_pass": false
+    },
+    {
+      "id": "DNg13_phase_gate",
+      "pmcid": "PMC12778575",
+      "source_sha256": "869b7e2b57637e84dc3699c24144d0b64446da9cb7fc9a0a7712d1f1cdf9881e",
+      "reading_scope": "targeted full-text sections and methods, not entire article replication",
+      "evidence": "measured perturbation plus anatomical hypothesis",
+      "usable_information": "Candidate phase-dependent premotor routing, NOT a measured gate function",
+      "still_unknown": "exact gating state and cell physiology remain unknown",
+      "source_locations": [
+        {
+          "paragraph_line": 114,
+          "excerpt": "DNg13 connectivity in the ventral nerve cord provides a mechanism to explain this phenomenon. DNg13 is positioned to flex and extend multiple leg joints via distinct interposed interneurons. It seems likely that these interposed interneurons are rhythmically locked to the step cycle, so that descending drive is re-routed to these effector pathways in an alternating manner, increasing the stride length in both phases of the step cycle."
+        },
+        {
+          "paragraph_line": 367,
+          "excerpt": "Figures 7E  and  7F  show the premotor and motor neurons downstream of DNg13 that were hypothesized to be active during the power ( Figure 7E ) and return ( Figure 7F ) phases of the stride cycle. Neurons were hypothesized to be active if their inferred effect on the leg (accounting for the sign of the connections) was consistent with the results of DNg13 perturbation ( Figure 4 ) during that phase."
+        }
+      ],
+      "simulation_pass": false
+    },
+    {
+      "id": "premotor_inhibition",
+      "pmcid": "PMC13384506",
+      "source_sha256": "bdfa3c9beb9e80d2bb178294938c7411518bbcb510bb5d003892e3f1779ab6e6",
+      "reading_scope": "targeted full-text sections and methods, not entire article replication",
+      "evidence": "connectomic anatomy and transmitter/receptor hypotheses",
+      "usable_information": "Specified inhibitory cell types upstream of antagonist MNs; serial leg mapping in supplements6/7/8",
+      "still_unknown": "synaptic efficacy, receptor sign especially glutamate and physiological recruitment unmeasured",
+      "source_locations": [
+        {
+          "paragraph_line": 21,
+          "excerpt": "In the Hemibrain project, advances in sample preparation, EM methods and acquisition, image stack alignment, autosegmentation, synapse prediction, and proofreading software and methods, in combination with efforts of a dedicated proofreading team, made practical the production of large densely reconstructed connectomes where users need only query neurons or circuits of interest through a web or software interface ( Plaza et al., 2022 ;  Scheffer et al., 2020 ). Using these advances, the Janelia "
+        },
+        {
+          "paragraph_line": 60,
+          "excerpt": "Less light microscopy data was available for leg MNs, so we used a different strategy to identify leg MNs and their muscle targets in three main steps. We first examined light microscopy stacks for previously reported neurons ( Enriquez et al., 2018 ), allowing us to assign several MNs of the T1 leg neuropil with relatively low confidences. We next transformed the T1 leg MNs from the FANC EM volume ( Azevedo et al., 2024 ) to MANC space and performed an NBLAST comparison between MNs from the two"
+        },
+        {
+          "paragraph_line": 68,
+          "excerpt": "Overall, the 733 MANC MNs were categorized into 168 types, composed of 319 groups with more than 1 member, and 14 singletons. We were able to identify 170 out of the 319 MN groups by light-level, EM-to-EM or serial homology matching methods. All MN and efferents with their light microscopy matches and accompanying references are listed in  Supplementary file 3 . Together, these identifications cover the majority of wing, haltere, and leg MNs, as well as several neck MNs, thus laying the groundwo"
+        },
+        {
+          "paragraph_line": 140,
+          "excerpt": "This modular and repeated organization means that we can use serial homology between leg neuropils to simplify the representation and analysis of leg circuits; this approach also helped us to overcome some inconsistencies in the reconstruction state of leg MNs. The standard leg connectome is therefore defined as the serially repeated units common to all legs including the presynaptic neurons directly upstream of serially identified leg MNs ( Figure 13C ). For this analysis, we grouped the serial"
+        },
+        {
+          "paragraph_line": 141,
+          "excerpt": "Neurotransmitter predictions in the dataset greatly assist in interpreting the circuit logic within this standard leg connectome ( Figure 13D ). For example, there are five GABAergic-restricted neuron sets that strongly inhibit MNs innervating the thorax muscles responsible for the rotation of the leg. Two of these GABAergic IN sets (2_GABA_sets: IN03B042 and IN08A006) inhibit the Sternal anterior rotator MNs that rotate the leg forwards during the swing phase of forward walking ( Azevedo et al."
+        },
+        {
+          "paragraph_line": 142,
+          "excerpt": "We also find many glutamatergic interactions. In the vertebrate CNS, glutamate is the major excitatory neurotransmitter; in  Drosophila  both excitatory and inhibitory receptors are present but existing evidence suggests that glutamate is principally inhibitory in the CNS ( Liu and Wilson, 2013 ;  Marin et al., 2024 ). There are two glutamatergic INs (grouped 2_GLU_sets: IN08A005, IN08A007) upstream of the Tibia extensor MNs and two upstream of the Tibia flexor MNs (IN14A004, IN21A002), and thes"
+        },
+        {
+          "paragraph_line": 266,
+          "excerpt": "Motor neurons and other neurons that enter or exit through VNC nerves were identified by direct annotation of bodies passing through nerves, or for certain MNs with degradation issues, by morphological identification or matching to MNs on opposite side of VNC, or by assessment of input/output ratio (assuming MNs have high input and low output synapse count). The initial segmentation for some MNs were considered poorer due to MN degradation issues. Thus, a limited resegmentation of MNs was carrie"
+        },
+        {
+          "paragraph_line": 493,
+          "excerpt": "Some strengths of the manuscript include the matching of new DN and MN types to light microscopy, including serial homology of leg motor neurons. This is a valuable contribution that will certainly open up future lines of experimental work. As well, the analysis of conserved connectivity patterns within each leg neuromere and interconnecting connectivity patterns between neuromeres will be incredibly valuable. The standard leg connectome is very nice. Finally, the finding of different connectivi"
+        }
+      ],
+      "simulation_pass": false
+    },
+    {
+      "id": "identified_sensory_interneurons",
+      "pmcid": "PMC8665017",
+      "source_sha256": "9f7f80bb490957ed175345d3cd389120db35204180e560056c90c99fff0bfd24",
+      "reading_scope": "targeted full-text sections and methods, not entire article replication",
+      "evidence": "functional activation/pharmacology and connectivity",
+      "usable_information": "Provides subtype-specific sensory functional map, not generic chief9A identity",
+      "still_unknown": "requires namespace-verified EM correspondence; passive tuning is not natural step-phase waveform",
+      "source_locations": [
+        {
+          "paragraph_line": 15,
+          "excerpt": "With improved tools to specifically target FeCO subtypes, we next sought to identify their downstream partners in the VNC. The VNC is composed of about 20,000 neurons that develop from 34 hemilineages. 25  Neurons within a hemilineage are anatomically 26  and transcriptionally 27 , 28  similar; they also use the same primary neurotransmitter. 29  By visually screening a collection of LexA driver lines, we identified 27 LexA lines that sparsely labeled VNC neurons from each hemilineage that anato"
+        },
+        {
+          "paragraph_line": 18,
+          "excerpt": "Overall, we identified 8 classes of VNC neurons from 6 lineages that responded to optogenetic stimulation of one or more subtypes of FeCO neurons: 8Aa; 8Ba; 9Ba; 10Ba; 13Ba; 13Bb; 19Aa; and 19Ab ( Figure 1C ). Of these, 2 neuron classes (9Ba and 10Ba) responded to stimulation of club neurons. The remaining 6 classes responded consistently to the stimulation of claw neurons ( Figure 1C ). In addition to responding to claw neurons, 8Aa and 13Bb neurons responded to stimulation of hook (flexion) an"
+        },
+        {
+          "paragraph_line": 23,
+          "excerpt": "We first examined connectivity between club axons and 9Ba neurons, a class of GABAergic interneurons local to each VNC segment ( Figure 2A , left). Single 9Ba neurons densely innervate the ipsilateral neuromere, but also extend a process contralaterally, across the midline ( Figure 2A , right). Identification and reconstruction of 9Ba and club neurons in an EM volume of the  Drosophila  VNC 17  revealed the existence of direct synaptic connections between club axons and ipsilateral 9Ba neurons ("
+        },
+        {
+          "paragraph_line": 24,
+          "excerpt": "To ask whether 9Ba neurons integrate club signals from multiple legs, we measured calcium responses from 9Ba neurons in the left prothoracic (T1) neuromere while stimulating club axons from the left (ipsilateral) or right (contralateral) T1 legs using spatially targeted optogenetic excitation. 9Ba neurons in the left T1 neuromere increased their calcium activity in response to excitation of club axons from either left or right T1 legs ( Figure 2C , bottom). These data suggest that 9Ba neurons in"
+        },
+        {
+          "paragraph_line": 25,
+          "excerpt": "To understand how 9Ba neurons encode leg movements  in vivo , we recorded 9Ba calcium signals while manipulating the femur-tibia joint of the fly’s left leg with a magnetic control system ( Figure 2F ). 19  We observed phasic calcium signals of 9Ba neurons in both ipsilateral and contralateral neuromeres, in response to passive tibia flexion and extension ( Figure 2G ). Similar to what we observed in the club Split-Gal4 line ( Figure S1D ), 9Ba also exhibited higher baseline activity when the ti"
+        },
+        {
+          "paragraph_line": 26,
+          "excerpt": "In summary, GABAergic 9Ba neurons integrate club signals from left and right legs in the same segment to encode tibia movement and high-frequency vibration ( Figure 2E ). 9Ba neurons are thus positioned to provide inhibition to other neurons in the vibration-processing pathway or to mediate interactions between movement and vibration pathways."
+        },
+        {
+          "paragraph_line": 27,
+          "excerpt": "We next switched our attention to 10Ba, the second candidate cell class whose anatomy suggests that it integrates club signals from multiple legs. A single 10Ba neuron with a cell body in T1 arborizes within one neuromere and then crosses the midline and arborizes in the contralateral T2 neuromere ( Figure 3A )."
+        },
+        {
+          "paragraph_line": 28,
+          "excerpt": "A subset of 10Ba neurons also project to the brain, arborizing in the contralateral antennal mechanosensory and motor center (AMMC) (data not shown). Previous work showed that optogenetic activation of 10Ba neurons caused walking flies to pause, 20  consistent with a role in detecting substrate vibration. 34"
+        }
+      ],
+      "simulation_pass": false
+    },
+    {
+      "id": "hairplate_limit",
+      "pmcid": "PMC13009157",
+      "source_sha256": "929e6858a56006c1b590aa52cf285f59141804e995427f1a1e5cf01079368268",
+      "reading_scope": "targeted full-text sections and methods, not entire article replication",
+      "evidence": "measured sensory/perturbation and anatomy",
+      "usable_information": "Anterior limit detector gives a specific new sensory constraint",
+      "still_unknown": "body coordinate calibration and exact circuit mapping need completion",
+      "source_locations": [
+        {
+          "paragraph_line": 3,
+          "excerpt": "Many animals possess mechanosensory neurons that fire when a limb nears the limit of its physical range, but the function of these proprioceptive limit detectors remains poorly understood. Here, we investigate a class of proprioceptors on the  Drosophila  leg called hair plates. Using calcium imaging in behaving flies, we find that a hair plate on the fly coxa (CxHP8) detects the limits of anterior leg movement. By reconstructing CxHP8 axons in an electron microscopy dataset, we found that they "
+        },
+        {
+          "paragraph_line": 9,
+          "excerpt": "The six  Drosophila  legs have 214 hair plate mechanosensory neurons that are clustered into 42 hair plates (Supplementary Fig.  S1A ) 40 – 42 . Investigating the physiology and function of each hair plate, one by one, would be experimentally intractable, even in the tiny fruit fly. Instead, we start by studying one specific hair plate on the coxa of the fly’s front legs (CxHP8) using in vivo calcium imaging (Fig.  1 ), connectomics (Fig.  2 ), and genetic manipulations during behavior (Figs.  3"
+        },
+        {
+          "paragraph_line": 10,
+          "excerpt": "On the fly’s front leg, three hair plates are located at the junction between the coxa (Cx) and thorax (Fig.  1A ). These hair plates (CxHP8, CxHP3, CxHP4) wrap the joint along the anterior-posterior axis. We screened Split-GAL4 driver lines to identify lines that label coxa hair plates (Supplementary Table  S1 ). The most specific and complete line we found 43  labeled CxHP8 neurons on the front and middle legs (6 and 3 out of 8 cells, respectively). Using this specific driver line, which we re"
+        },
+        {
+          "paragraph_line": 11,
+          "excerpt": "CxHP8 neurons encode the anterior limits of thorax-coxa joint angles. A  Left: schematic rendering of the fly’s front leg. Right: a confocal image of the three hair plates, CxHP3, CxHP4, and CxHP8, at the thorax-coxa joint (black dotted box) of the front leg.  B  Confocal images of genetically labeled CxHP8 neurons (6 of 8) in the coxa of the front leg and ventral nerve cord (VNC). CxHP8 cuticular hairs: gray autofluorescence; CxHP8 neurons: GFP; Ventral prothoracic nerve (VProN): magenta (nc82)"
+        },
+        {
+          "paragraph_line": 12,
+          "excerpt": "A  Left: schematic rendering of the fly’s front leg. Right: a confocal image of the three hair plates, CxHP3, CxHP4, and CxHP8, at the thorax-coxa joint (black dotted box) of the front leg.  B  Confocal images of genetically labeled CxHP8 neurons (6 of 8) in the coxa of the front leg and ventral nerve cord (VNC). CxHP8 cuticular hairs: gray autofluorescence; CxHP8 neurons: GFP; Ventral prothoracic nerve (VProN): magenta (nc82); CxHP8 cell bodies: magenta (redstinger). The expression of CxHP8 in "
+        },
+        {
+          "paragraph_line": 13,
+          "excerpt": "We used a setup 25  that combines 2-photon calcium imaging with high-speed video to simultaneously record the activity of CxHP8 axons in the fly’s ventral nerve cord (VNC) and 3D leg joint kinematics in CxHP8-GAL4 flies expressing GCaMP7f and tdTomato (Fig.  1C ). To overcome the slow temporal dynamics of GCaMP7f relative to the dynamics of active leg movement in flies, we passively (and slowly) moved the left front leg using a manually controlled 3-axis platform (Supplementary Video  1 ). We th"
+        },
+        {
+          "paragraph_line": 14,
+          "excerpt": "Based on the anterior position of CxHP8 at the thorax-coxa joint, we hypothesized that its hairs would be deflected during anterior and medial movements, and inward rotations of the coxa (Supplementary Video  2 ). A representative trial illustrates that calcium activity peaked when the coxa was inwardly rotated and adducted (Fig.  1F ). Across flies, we found similar tuning to coxa rotation and adduction (Fig.  1G ). Although with greater variability, CxHP8 axons showed higher activity when the "
+        },
+        {
+          "paragraph_line": 15,
+          "excerpt": "We next sought to determine the activity of CxHP8 neurons during different behaviors. We used a similar imaging setup 25  but replaced the platform with an air-supported ball and allowed the fly to spontaneously behave (Supplementary Video  3 ). We found that resting, walking, and grooming produced rotation and adduction coxa joint angles within the range that CxHP8 neurons were active (Fig.  1I ). As illustrated by a representative trace, calcium activity increased during grooming and walking c"
+        }
+      ],
+      "simulation_pass": false
+    },
+    {
+      "id": "CS_strain_model",
+      "doi": "10.1098/rsif.2024.0559",
+      "reading_scope": "abstract and publisher metadata; full-text requests500/403",
+      "evidence": "finite-element model result, not receptor electrophysiology",
+      "usable_information": "12 general and7 CS-specific parameters; position/orientation/material affect cap deformation; ground forces alone unlikely to explain CS activation",
+      "still_unknown": "full parameter files, internal muscle force transmission, channel transduction and individual CS force tuning",
+      "simulation_pass": false
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+# Preserve upstream source bytes; their whitespace is part of downloaded identity.
+sources/** -whitespace
+author-code/** -whitespace
