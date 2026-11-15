@@ -21,8 +21,9 @@ if not events_path.exists():
  simulator._kernel=mod._kernel
  print('Recording exact full-network baseline spike events',flush=True)
  r=m.run_neural(cfg['experiment'],record_ids=m.neuron_ids(type='DNg100'))
- step,cell=np.nonzero(r['spikes']);del r
+ step,cell=np.nonzero(r['spikes']);del r;m.last_result=None
  np.savez_compressed(events_path,step=step.astype(np.int32),cell=cell.astype(np.int32))
+shutil.copy2(events_path,R/'baseline-spike-events.npz')
 with np.load(events_path,allow_pickle=False) as z:step=z['step'];event_cell=z['cell']
 dt=m.config['neural']['solver']['dt_ms'];duration=m.config['experiments'][cfg['experiment']]['duration_ms'];steps=round(duration/dt)
 with np.load(ROOT/cfg['baseline_neural'],allow_pickle=False) as z:baseline_spikes=z['spikes']

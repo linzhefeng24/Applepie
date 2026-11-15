@@ -1,0 +1,96 @@
+"""Same two-compartment HH forward equations; surrogate derivatives for spikes.
+The differentiable stage is an explicitly boundary-replayed local network, not
+an assertion of full-network BPTT. All physiological values come from baseline.
+"""
+from pathlib import Path
+import json,sys
+import numpy as np
+import jax
+jax.config.update('jax_enable_x64',True)
+import jax.numpy as j
+from jax import lax
+R=Path(__file__).resolve().parent;ROOT=R.parents[1]
+sys.path.insert(0,str(ROOT/'research/single-model-delivery-20261115/runtime/02_code'))
+from flymodel import Model
+
+class DifferentiableHH:
+ def __init__(self):
+  self.cfg=json.loads((R/'config.json').read_text());c=self.cfg
+  self.model=Model(ROOT/c['baseline_model']);m=self.model;n=m.config['neural'];self.dt=n['solver']['dt_ms'];self.delay=max(1,round(n['solver']['delay_ms']/self.dt));self.substeps=round(n['solver']['spike_bin_ms']/self.dt)
+  with np.load(R/'cache/local_inputs.npz',allow_pickle=False) as z:self.data={k:z[k] for k in z.files}
+  d=self.data;self.base=j.asarray(d['cell']);self.assignment=j.asarray(d['assignment']);self.fields=j.asarray(c['train_fields']);self.eidx=j.asarray(d['ecols']);self.iidx=j.asarray(d['icols']);self.We=j.asarray(d['We']);self.Wi=j.asarray(d['Wi']);self.readout=j.asarray(d['readout']);self.kinetics=j.asarray(m.kinetics);self.aux=j.asarray(m.aux)
+  self.duration=len(d['target']);self.target=j.asarray(d['target']);self.mapped=j.asarray(d['mapped']);self.train_mask=j.asarray((np.arange(self.duration)>=c['target_start_ms'])&(np.arange(self.duration)<c['train_end_ms']));self.test_mask=j.asarray((np.arange(self.duration)>=c['train_end_ms'])&(np.arange(self.duration)<c['evaluation_end_ms']))
+  self.external_e=j.asarray(d['external_e'].reshape(self.duration,self.substeps,-1));self.external_i=j.asarray(d['external_i'].reshape(self.duration,self.substeps,-1));self.p=j.asarray(m.global_values)
+  self.dn=j.asarray(np.array([m.neurons[i]['type']=='DNg100' for i in d['local']]))
+  self.on=c['target_start_ms'];self.off=m.config['experiments'][c['experiment']]['events'][0]['off_ms'];self.drive=m.config['experiments'][c['experiment']]['events'][0]['current_pA']
+  nm=m.config['neuromuscular'];self.filter_decay=np.exp(-n['solver']['spike_bin_ms']/nm['filter_tau_ms']);self.rate_scale=nm['rate_scale_Hz'];self.bin_rate=1000/n['solver']['spike_bin_ms'];self.n_groups=int(d['assignment'].max()+1)
+  width=c['surrogate_width_mV'];threshold=float(m.aux[7])
+  @jax.custom_vjp
+  def spike(old,new):return ((old<threshold)&(new>=threshold)).astype(j.float64)
+  def sf(old,new):
+   return spike(old,new),(old,new)
+  def sb(res,g):
+   old,new=res;a=jax.nn.sigmoid((new-threshold)/width);b=jax.nn.sigmoid((threshold-old)/width)
+   return -g*a*b*(1-b)/width,g*b*a*(1-a)/width
+  spike.defvjp(sf,sb);self.spike=spike
+
+ def parameters(self,raw):
+  delta=self.cfg['relative_bound']*j.tanh(raw)
+  factors=delta[j.maximum(self.assignment,0)]*(self.assignment>=0)[:,None]
+  return self.base.at[:,self.fields].set(self.base[:,self.fields]*(1+factors)),delta
+
+ def gates(self,v):
+  k=self.kinetics
+  def trap(x):
+   small=j.abs(x)<k[16];safe=j.where(small,k[16],x)
+   return j.where(small,k[2]+x/2,safe/(-j.expm1(-safe/k[2])))
+  return k[0]*trap(v+k[1]),k[3]*j.exp(-(v+k[4])/k[5]),k[6]*j.exp(-(v+k[7])/k[8]),1/(1+j.exp(-(v+k[9])/k[10])),k[11]*trap(v+k[12]),k[13]*j.exp(-(v+k[14])/k[15])
+
+ def forward(self,raw):
+  cell,_=self.parameters(raw);dt=self.dt;aux=self.aux
+  ter,ted,tir,tid,ge,gi,gsk,alpha,kd,ena,ek,eca,ee,ei=self.p
+  tpe=j.log(ted/ter)/(1/ter-1/ted);norme=1/(j.exp(-tpe/ted)-j.exp(-tpe/ter))
+  tpi=j.log(tid/tir)/(1/tir-1/tid);normi=1/(j.exp(-tpi/tid)-j.exp(-tpi/tir))
+  de1=j.exp(-dt/ter);de2=j.exp(-dt/ted);di1=j.exp(-dt/tir);di2=j.exp(-dt/tid)
+  N=len(self.data['local']);v=cell[:,4];am,bm,ah,bh,an,bn=self.gates(v);zero=j.zeros(N)
+  # State: Vs,Va,m,h,n,Ca,xe,ye,xi,yi, delayed spikes, filtered MN rate.
+  init=(v,v,am/(am+bm),ah/(ah+bh),an/(an+bn),zero,zero,zero,zero,zero,j.zeros((self.delay+1,N)),j.zeros(len(self.model.mapping)))
+  def ms_step(state,inputs):
+   ms,be,bi=inputs
+   inj=self.dn*j.where((ms>=self.on)&(ms<self.off),self.drive,0.)
+   def micro(carry,inp):
+    st,bin_counts=carry;k0,ex,inh=inp
+    vs,va,m,h,n,ca,xe,ye,xi,yi,hist,filt=st;k=ms*self.substeps+k0
+    arriving=hist[k%(self.delay+1)]
+    inc_e=ge*norme*cell[:,5]*(ex+self.We@(arriving[self.eidx]*cell[self.eidx,12]))
+    inc_i=gi*normi*(inh+self.Wi@(arriving[self.iidx]*cell[self.iidx,6]*cell[self.iidx,12]))
+    xe=xe*de1+inc_e;ye=ye*de2+inc_e;xi=xi*di1+inc_i;yi=yi*di2+inc_i
+    am,bm,ah,bh,an,bn=self.gates(va)
+    m=am/(am+bm)+(m-am/(am+bm))*j.exp(-dt*(am+bm)*cell[:,11])
+    h=ah/(ah+bh)+(h-ah/(ah+bh))*j.exp(-dt*(ah+bh)*cell[:,11])
+    n=an/(an+bn)+(n-an/(an+bn))*j.exp(-dt*(an+bn)*cell[:,11])
+    gNa=cell[:,13]*m**3*h;gK=cell[:,14]*n**4;cainf=jax.nn.sigmoid((va+25.)/6.);gCa=cell[:,15]*cainf**2;gSK=gsk*cell[:,8]*ca/(ca+kd);gNaP=cell[:,9]*jax.nn.sigmoid((vs-aux[5])/aux[6])
+    Cs=cell[:,0];Ca=cell[:,1];gLs=cell[:,2];gLa=cell[:,3];gc=cell[:,7];excit=ye-xe;inhib=yi-xi
+    A=Cs/dt+gLs+gc+excit+inhib+gNaP;B=Ca/dt+gLa+gc+gNa+gK+gCa+gSK
+    r1=Cs/dt*vs+gLs*cell[:,4]+excit*ee+inhib*ei+gNaP*ena+inj
+    r2=Ca/dt*va+gLa*aux[0]+gNa*ena+(gK+gSK)*ek+gCa*eca+cell[:,10]
+    den=A*B-gc*gc;newvs=(r1*B+gc*r2)/den;newva=(r2*A+gc*r1)/den
+    ca=j.maximum(0.,ca+dt*(-alpha*gCa*(newva-eca)-ca/cell[:,16]))
+    spikes=self.spike(va,newva)
+    hist=hist.at[k%(self.delay+1)].set(0.).at[(k+self.delay)%(self.delay+1)].set(spikes)
+    return ((newvs,newva,m,h,n,ca,xe,ye,xi,yi,hist,filt),bin_counts+spikes),None
+   (st,counts),_=lax.scan(micro,(state,j.zeros(N)),(j.arange(self.substeps),be,bi))
+   filt=self.filter_decay*st[-1]+(1-self.filter_decay)*(self.readout@counts)*self.bin_rate
+   st=(*st[:-1],filt)
+   return st,(j.clip(filt/self.rate_scale,0.,1.),counts)
+  # Rematerialize each 1ms block during reverse mode, retaining full temporal gradients.
+  _,out=lax.scan(jax.checkpoint(ms_step),init,(j.arange(self.duration),self.external_e,self.external_i))
+  return out
+
+ def loss(self,raw):
+  (u,_)=self.forward(raw);_,delta=self.parameters(raw);sq=(u-self.target)**2
+  channel=self.mapped[None,:]
+  tr=j.sum(j.where(self.train_mask[:,None]&channel,sq,0.))/j.sum(self.train_mask)/j.sum(self.mapped)
+  te=j.sum(j.where(self.test_mask[:,None]&channel,sq,0.))/j.sum(self.test_mask)/j.sum(self.mapped)
+  reg=self.cfg['regularization_lambda']*j.mean(delta**2)
+  return tr+reg,(tr,te,reg)

@@ -1,0 +1,2 @@
+# Added to the already pinned unified-model environment.
+jax[cpu]==0.8.0
