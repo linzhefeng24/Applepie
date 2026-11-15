@@ -1,0 +1,32 @@
+{
+  "status": "local bundle retained; direct Release upload failed HTTP401; code and diagnostics committed",
+  "file": "brake-extension-full-traces-20261115.tar.gz",
+  "bytes": 104550588,
+  "sha256": "ee4b76d8a59322f538d9799cf1aa987500a117fe380c8162bc468b54044a882b",
+  "code_revision": "11104fb",
+  "files": [
+    {
+      "path": "conductance-rebuild-20261114/results/frozen-neural-panel-brake-extension-r9/BRK.npz",
+      "bytes": 33430495,
+      "sha256": "38cab73dd924be385692e227a04299fe7ce14a14b6f36f07b283098d4e6fcf11"
+    },
+    {
+      "path": "conductance-rebuild-20261114/results/frozen-neural-panel-brake-extension-r9/MDN+BRK.npz",
+      "bytes": 35359488,
+      "sha256": "f817989bfcc7cc1a2a3c72bf7567b7ff8026cf2642f3f6702845b851b6d950f0"
+    },
+    {
+      "path": "conductance-rebuild-20261114/results/frozen-neural-panel-brake-extension-r9/MDN.npz",
+      "bytes": 35425644,
+      "sha256": "dafdf578b4d1acc70d66e700f112ad3a1e6df221ce752061cfa38413f88e327e"
+    },
+    {
+      "path": "conductance-rebuild-20261114/results/frozen-neural-panel-brake-extension-r9/control.npz",
+      "bytes": 1186743,
+      "sha256": "d10f76cb08ae8e703eabb4c9e3e1c92547efed3f2221445105723b9f608ed518"
+    }
+  ],
+  "release_tag": "brake-extension-traces-20261115",
+  "remote_local_trace_backup_verified": false,
+  "upload_failure": "HTTP401 Bad credentials at uploads.github.com; draft release exists but local bundle asset upload did not succeed"
+}
