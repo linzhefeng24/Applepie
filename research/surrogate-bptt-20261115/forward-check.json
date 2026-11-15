@@ -1,0 +1,6 @@
+{
+  "spikes_identical_to_full_baseline": true,
+  "mismatched_ms_cell_bins": 0,
+  "forward_s": 15.992202688998077,
+  "model_scope": "local coupled circuit plus all candidate-mapped MNs; other cells replay frozen exact baseline spike events; candidate must be checked in original full hard-spike network"
+}

@@ -3,7 +3,7 @@ The differentiable stage is an explicitly boundary-replayed local network, not
 an assertion of full-network BPTT. All physiological values come from baseline.
 """
 from pathlib import Path
-import json,sys
+import json,sys,os
 import numpy as np
 import jax
 jax.config.update('jax_enable_x64',True)
@@ -15,7 +15,7 @@ from flymodel import Model
 
 class DifferentiableHH:
  def __init__(self):
-  self.cfg=json.loads((R/'config.json').read_text());c=self.cfg
+  self.config_path=Path(os.environ.get('BPTT_CONFIG',str(R/'config.json')));self.cfg=json.loads(self.config_path.read_text());c=self.cfg
   self.model=Model(ROOT/c['baseline_model']);m=self.model;n=m.config['neural'];self.dt=n['solver']['dt_ms'];self.delay=max(1,round(n['solver']['delay_ms']/self.dt));self.substeps=round(n['solver']['spike_bin_ms']/self.dt)
   with np.load(R/'cache/local_inputs.npz',allow_pickle=False) as z:self.data={k:z[k] for k in z.files}
   d=self.data;self.base=j.asarray(d['cell']);self.assignment=j.asarray(d['assignment']);self.fields=j.asarray(c['train_fields']);self.eidx=j.asarray(d['ecols']);self.iidx=j.asarray(d['icols']);self.We=j.asarray(d['We']);self.Wi=j.asarray(d['Wi']);self.readout=j.asarray(d['readout']);self.kinetics=j.asarray(m.kinetics);self.aux=j.asarray(m.aux)
@@ -30,7 +30,12 @@ class DifferentiableHH:
   def sf(old,new):
    return spike(old,new),(old,new)
   def sb(res,g):
-   old,new=res;a=jax.nn.sigmoid((new-threshold)/width);b=jax.nn.sigmoid((threshold-old)/width)
+   old,new=res
+   if c.get('backward_spike_rule')=='rising_fast_sigmoid':
+    slope=width/(width+j.abs(new-threshold))**2
+    gate=((old<threshold)&(new>old)).astype(j.float64)
+    return j.zeros_like(old),g*slope*gate
+   a=jax.nn.sigmoid((new-threshold)/width);b=jax.nn.sigmoid((threshold-old)/width)
    return -g*a*b*(1-b)/width,g*b*a*(1-a)/width
   spike.defvjp(sf,sb);self.spike=spike
 
@@ -82,7 +87,12 @@ class DifferentiableHH:
    (st,counts),_=lax.scan(micro,(state,j.zeros(N)),(j.arange(self.substeps),be,bi))
    filt=self.filter_decay*st[-1]+(1-self.filter_decay)*(self.readout@counts)*self.bin_rate
    st=(*st[:-1],filt)
-   return st,(j.clip(filt/self.rate_scale,0.,1.),counts)
+   if self.cfg.get('bptt_truncate_ms'):
+    boundary=((ms+1)%round(self.cfg['bptt_truncate_ms']))==0
+    st=jax.tree_util.tree_map(lambda x:j.where(boundary,lax.stop_gradient(x),x),st)
+   value=filt/self.rate_scale;clipped=j.clip(value,0.,1.)
+   if self.cfg.get('surrogate_readout_clip'):clipped=value+lax.stop_gradient(clipped-value)
+   return st,(clipped,counts)
   # Rematerialize each 1ms block during reverse mode, retaining full temporal gradients.
   _,out=lax.scan(jax.checkpoint(ms_step),init,(j.arange(self.duration),self.external_e,self.external_i))
   return out

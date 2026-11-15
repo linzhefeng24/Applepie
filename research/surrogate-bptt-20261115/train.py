@@ -1,12 +1,14 @@
 """Train only the declared shared relative factors, save every completed epoch."""
 from pathlib import Path
-import json,time,hashlib
+import json,time,hashlib,os
 import numpy as np
 import jax
 import jax.numpy as j
 from jax_hh import DifferentiableHH
-R=Path(__file__).resolve().parent
+ROOT=Path(__file__).resolve().parent;R=Path(os.environ.get('BPTT_OUTPUT',str(ROOT)));R.mkdir(parents=True,exist_ok=True)
 ctx=DifferentiableHH();cfg=ctx.cfg
+(R/'method-config.json').write_text(json.dumps(cfg,indent=2)+'\n')
+(R/'checkpoints').mkdir(exist_ok=True)
 forward=jax.jit(ctx.forward);vg=jax.jit(jax.value_and_grad(ctx.loss,has_aux=True))
 raw=j.zeros((ctx.n_groups,len(cfg['train_fields'])));start=time.perf_counter()
 print('Checking exact hard-spike local forward at baseline',flush=True)
@@ -22,6 +24,7 @@ for epoch in range(cfg['epochs']+1):
   (R/'training-failure.json').write_text(json.dumps({'epoch':epoch,'reason':'nonfinite surrogate BPTT gradient','finite_forward_loss':float(value)},indent=2)+'\n');raise FloatingPointError('Nonfinite gradient')
  tr,te,reg=map(float,aux);scale=max(1.,float(np.max(abs(g))));norm=float(np.linalg.norm(g/scale)*scale)
  row={'epoch':epoch,'train_mse':tr,'holdout_mse':te,'regularization':reg,'objective':float(value),'gradient_norm':norm,'max_relative_shift':float(np.max(abs(cfg['relative_bound']*np.tanh(np.asarray(raw))))),'seconds':time.perf_counter()-start}
+ np.savez_compressed(R/'checkpoints'/f'epoch-{epoch:03d}.npz',raw=np.asarray(raw),relative_factors=cfg['relative_bound']*np.tanh(np.asarray(raw)),epoch=epoch)
  history.append(row);(R/'training-history.json').write_text(json.dumps(history,indent=2)+'\n');print(json.dumps(row),flush=True)
  if float(value)<best:
   best=float(value);np.savez_compressed(R/'best-parameters.npz',raw=np.asarray(raw),relative_factors=cfg['relative_bound']*np.tanh(np.asarray(raw)),epoch=epoch)
