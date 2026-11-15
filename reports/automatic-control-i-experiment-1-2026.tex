@@ -1,21 +1,16 @@
 % !TeX program = xelatex
-\documentclass[11pt,a4paper]{article}
-\usepackage{fontspec}
-\setmainfont{Noto Serif CJK SC}
-\XeTeXlinebreaklocale "zh"
-\XeTeXlinebreakskip=0pt plus 1pt
-\usepackage[margin=25mm]{geometry}
-\usepackage{amsmath,amssymb,graphicx,booktabs,indentfirst}
-\renewcommand{\figurename}{图}
-\renewcommand{\tablename}{表}
-\renewcommand{\refname}{参考文献}
-\setlength{\parindent}{2em}
-\setlength{\emergencystretch}{2em}
-\linespread{1.25}
+\documentclass[12pt]{article}
+\usepackage[UTF8,fontset=none]{ctex}
+\setCJKmainfont{Noto Serif CJK SC}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\geometry{a4paper,margin=1in}
+\usepackage{graphicx}
+\usepackage{float}
 \newcommand{\unit}[1]{\,\mathrm{#1}}
-\title{自动控制原理Ⅰ实验一\\电机建模与二阶系统阶跃响应}
-\author{姓名：\underline{\hspace{20mm}}\quad 学号：\underline{\hspace{25mm}}}
-\date{实验日期：\underline{\hspace{25mm}}}
+\title{自动控制原理I实验一报告}
+\author{Zhefeng Lin}
+\date{}
 \begin{document}
 \maketitle
 \section{实验目的与装置}
@@ -134,18 +129,18 @@ $2\%$调节时间定义为响应进入$[0.98y_\infty,1.02y_\infty]$后不再越�
 \end{equation}
 该值由示波器游标读出，最终越界点的判断受照片分辨率限制。
 
-\begin{table}[htbp]
+\begin{table}[H]
 \centering
 \caption{单位增益位置闭环的理论与实验结果}
 \begin{tabular}{lcc}
-\toprule
+\hline
 指标 & 标称理论模型 & 硬件实验\\
-\midrule
+\hline
 稳态转角/$\mathrm{rad}$ & 1 & 1.158\\
 超调量/$\%$ & 33.99 & 10.3\\
 $2\%$调节时间/$\mathrm{s}$ & 0.796（近似）& 0.324（游标）\\
 稳态误差/$\mathrm{rad}$ & 0 & $-0.158$\\
-\bottomrule
+\hline
 \end{tabular}
 \label{tab:hardware}
 \end{table}
@@ -159,17 +154,17 @@ $2\%$调节时间/$\mathrm{s}$ & 0.796（近似）& 0.324（游标）\\
 \subsection{不同阻尼工况的仿真与硬件响应}
 三组蓝色理论响应的测量结果见表\ref{tab:damping}。其中，单调响应分别在绝对时间2.677和$2.165\unit{s}$达到最终值的$98\%$；欠阻尼响应峰值约为1.198，最后进入$0.98\sim1.02$误差带的游标时间为$1.767\unit{s}$。各时间均扣除$1\unit{s}$阶跃起始时间。
 
-\begin{table}[htbp]
+\begin{table}[H]
 \centering
 \caption{不同阻尼工况下的理论仿真响应读数}
 \begin{tabular}{lccc}
-\toprule
+\hline
 工况 & 峰值 & 超调量/$\%$ & $t_s(2\%)/\mathrm{s}$\\
-\midrule
+\hline
 过阻尼 & 无超调 & 约0 & 1.677\\
 临界阻尼附近 & 无超调 & 约0 & 1.165\\
 欠阻尼 & 1.198 & 19.8 & 0.767\\
-\bottomrule
+\hline
 \end{tabular}
 \label{tab:damping}
 \end{table}
@@ -237,6 +232,6 @@ $2\%$调节时间/$\mathrm{s}$ & 0.796（近似）& 0.324（游标）\\
 改变增益后，理论仿真呈现过阻尼、临界阻尼附近及欠阻尼三类响应，其调节时间分别约为1.677、1.165和$0.767\unit{s}$。低增益硬件工况未完成目标跟踪，欠阻尼参数组的硬件响应也存在稳态偏差。实验表明，比例增益的选择既需考虑理论阻尼与超调，也需考虑实际电机的低电压非线性。
 
 \begin{thebibliography}{9}
-\bibitem{guide} 自动控制原理Ⅰ实验教学资料．2026秋自动控制原理Ⅰ实验指示书：实验一．2026年10月12日，9--18．
+\bibitem{guide} 自动控制原理I实验教学资料．2026秋自动控制原理I实验指示书：实验一．2026年10月12日，9--18．
 \end{thebibliography}
 \end{document}
