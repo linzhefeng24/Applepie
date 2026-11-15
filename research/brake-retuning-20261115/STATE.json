@@ -1,0 +1,19 @@
+{
+  "status": "r1 four conditions completed; r2 selected manually after full-trace inspection",
+  "main_bank_replaced": false,
+  "r1": {
+    "shared_existing_AN19A018_to_IN07B001_efficacy": 2.5,
+    "BRK_late_left_Hz": 0.0,
+    "BRK_late_right_Hz": 15.555555555555555,
+    "late_window_ms": [1000, 1450],
+    "left_axon_max_mV": -57.68467806739485,
+    "control_all_spikes_identical": true,
+    "numerical_failures": false
+  },
+  "r2": {
+    "shared_efficacy": 3.5,
+    "reason": "left receives excitation but remains subthreshold; one shared terminal change, no imposed firing or separate left/right target rate",
+    "status": "prepared, results not yet claimed"
+  },
+  "scope": "candidate interneuron recruitment only, not a mandatory in-vivo single-cell criterion or whole-body braking pass"
+}

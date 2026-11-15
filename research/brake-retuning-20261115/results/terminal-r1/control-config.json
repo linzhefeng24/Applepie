@@ -1,0 +1,209 @@
+{
+  "case": "control",
+  "status": "started",
+  "parameters": {
+    "dt_ms": 0.0125,
+    "duration_ms": 1600.0,
+    "onset_ms": 200.0,
+    "drive_pA": 160.0,
+    "ge_nS_per_synapse": 0.012,
+    "gi_nS_per_synapse": 0.006,
+    "tau_e_rise_ms": 0.5,
+    "tau_e_decay_ms": 5.0,
+    "tau_i_rise_ms": 1.0,
+    "tau_i_decay_ms": 30.0,
+    "delay_ms": 1.5,
+    "c_soma_pF": 20.0,
+    "c_axon_pF": 2.5,
+    "rin_cpg_MOhm": 500.0,
+    "rin_mn_MOhm": 300.0,
+    "coupling_nS": 12.0,
+    "gNa_nS": 600.0,
+    "gK_nS": 180.0,
+    "gCa_nS": 0.3,
+    "gSK_nS": 1.0,
+    "gNaP_nS": 0.0,
+    "ca_tau_ms": 100.0,
+    "ca_alpha": 0.0002,
+    "ca_Kd_uM": 0.2,
+    "E_leak_mV": -65.0,
+    "E_Na_mV": 55.0,
+    "E_K_mV": -80.0,
+    "E_Ca_mV": 120.0,
+    "E_exc_mV": 0.0,
+    "E_inh_mV": -80.0,
+    "gate_speed": 1.0,
+    "inhibitory_gain": 1.0,
+    "I2_gain": 1.0,
+    "I2_leak_shift_mV": 0.0,
+    "mn_gain": 6.0,
+    "mn_leak_mV": -65.0,
+    "synaptic_delay_scope": "one global delay prior, not measured per edge",
+    "adult_scope": "Rin=300MOhm is unknown-type adult MN prior; fast/intermediate/slow exemplars tested separately",
+    "I1_gain": 1.0,
+    "background_exc_gain": 1.0,
+    "mn_SK_scale": 1.0,
+    "mn_profile": {
+      "leak_scale": 0.5719406364200305,
+      "mn_leak_mV": -50.857904405099035,
+      "coupling_nS": 4.0,
+      "gNaP_nS": 0.3,
+      "axon_bias_pA": 0.0,
+      "gate_speed": 1.0
+    },
+    "mn_profile_scope": "Unknown EM MN subtype: use adult intermediate reference, not a verified assignment",
+    "group_parameters": {
+      "ascending_neuron|type:AN19A018": {
+        "axon_bias_pA": 5.0,
+        "K": 0.8,
+        "source_gain": 0.5
+      },
+      "cb_intrinsic|type:CL210_a": {
+        "axon_bias_pA": 5.0,
+        "K": 0.8
+      },
+      "descending_neuron|type:DNg60": {
+        "axon_bias_pA": 5.0,
+        "K": 0.8,
+        "inhibitory_gain": 4.0
+      },
+      "descending_neuron|type:DNp09": {
+        "axon_bias_pA": 5.0,
+        "K": 0.8
+      },
+      "cb_intrinsic|type:GNG458": {
+        "axon_bias_pA": 5.0,
+        "K": 0.8,
+        "inhibitory_gain": 2.0
+      },
+      "cb_intrinsic|type:GNG588": {
+        "axon_bias_pA": 5.0,
+        "K": 0.8
+      },
+      "descending_neuron|type:MDN": {
+        "axon_bias_pA": 5.0,
+        "K": 0.8
+      },
+      "descending_neuron|type:DNg100": {
+        "excitatory_gain": 2.0
+      },
+      "descending_neuron|type:DNg97": {
+        "excitatory_gain": 2.0
+      },
+      "descending_neuron|type:DNge053": {
+        "excitatory_gain": 2.0
+      },
+      "cb_intrinsic|type:PFL2": {
+        "axon_bias_pA": 5.0
+      },
+      "cb_intrinsic|type:PFL3": {
+        "axon_bias_pA": 5.0
+      },
+      "ascending_neuron|type:AN05B007": {
+        "excitatory_gain": 0.5
+      },
+      "cb_intrinsic|type:GNG555": {
+        "excitatory_gain": 0.5
+      },
+      "ascending_neuron|type:IN27X001": {
+        "calcium_tau_ms": 2000.0
+      },
+      "vnc_intrinsic|type:IN27X001": {
+        "calcium_tau_ms": 2000.0
+      }
+    },
+    "family_parameters": {
+      "descending neuron|NT:acetylcholine": {
+        "K": 0.8,
+        "axon_bias_pA": 0.0
+      }
+    },
+    "type_pair_conductance_gains": [
+      {
+        "namespace": "MaleCNS_v1.0",
+        "source_type": "AN19A018",
+        "target_type": "IN07B001",
+        "gain": 2.5
+      }
+    ]
+  },
+  "parameter_sha256": "c1188052b9fb8cf0f36cc2cce39c253c194af1997831d0c411f577f0a8bbad11",
+  "source_bank_sha256": "69709cd402b068a14db0c2fe6815493a76ef3848bd07169281f69c23ec633a2a",
+  "input_hashes": {
+    "/workspace/Applepie-research-sync/research/conductance-rebuild-20261114/results/mcns-brake-extension/neurons.json": "30a2425f329a3155bf18f6d72f6d41d4b442afefa6fdad4547d65acfa165a9e1",
+    "/workspace/Applepie-research-sync/research/conductance-rebuild-20261114/results/mcns-brake-extension/signed-hypothesis-connectivity.npz": "0e1a6d75f750d6b9fe6147770232540dc6782fb7d45c66db53b1b6acea8b78e3",
+    "/workspace/Applepie-research-sync/research/conductance-rebuild-20261114/results/frozen-neural-panel-brake-extension-r9/control-config.json": "dd658401444cf93f23cf25f4b7dbf9f0119db284be4c196fbe12f1d193584b0b"
+  },
+  "code_hashes": {
+    "/workspace/Applepie-research-sync/research/brake-retuning-20261115/run_probe.py": "ec8858ec786ab3c8f303cad6bea68745e13e0697549339ac04e95a7f9f2e55fa",
+    "/workspace/Applepie-research-sync/research/conductance-rebuild-20261114/model.py": "934572b4c9958a726d46726d70d0cf04178d877766611ecc0ae9f2b8bc5c5bba",
+    "/workspace/Applepie-research-sync/research/conductance-rebuild-20261114/network.py": "2a17999c5873ddb2fb3cd321265f6ec58c23e4d80e40667b5a2c1a82fed38091",
+    "/workspace/Applepie-research-sync/research/conductance-rebuild-20261114/grouped_parameters.py": "cd1b05516f927bae1013319063f279cb5131a03b910ee913c11f6886b57e29db"
+  },
+  "protocol": [],
+  "record_body_ids": [
+    "10763",
+    "11288",
+    "11332",
+    "12348",
+    "14113",
+    "14863",
+    "14973",
+    "16542",
+    "17510",
+    "24115",
+    "39880",
+    "44992",
+    "46961",
+    "74742",
+    "516367",
+    "520135",
+    "523843",
+    "800003",
+    "800009",
+    "800041",
+    "800051",
+    "800053",
+    "800114",
+    "800158",
+    "800621",
+    "800636",
+    "800911",
+    "800959",
+    "801159",
+    "801262",
+    "801426",
+    "801637",
+    "802295",
+    "802684",
+    "803072",
+    "803147",
+    "803799",
+    "804257",
+    "804405",
+    "805568",
+    "806599",
+    "807165",
+    "809670",
+    "810098",
+    "817374",
+    "817509",
+    "830514",
+    "903520"
+  ],
+  "roles": "annotated vnc_motor=MN, existing shared adult-profile prior retained",
+  "versions": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "numba": "0.68.1"
+  },
+  "python": "3.12.14",
+  "command": [
+    "/workspace/server-motor-import/.venv/bin/python",
+    "run_probe.py",
+    "control",
+    "configs/brake-terminal-r1.json",
+    "terminal-r1"
+  ],
+  "randomness": "deterministic, no random draws"
+}
