@@ -12,6 +12,7 @@
     "sha256": "874bb49f9377ce3e047030bb045bf7fcf5c1d0bd173284df7630b6ef5c22f114",
     "raw_local_cache": "/workspace/exports/experimental-source-cache/MDN-MOESM1.pdf",
     "derived_tracked_text": "MDN-supplement.txt",
-    "raw_release_uploaded": false
+    "raw_release_uploaded": true,
+    "release_verification_manifest": "../public-input-release-verified.json"
   }
 ]

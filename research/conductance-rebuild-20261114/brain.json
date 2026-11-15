@@ -247290,6 +247290,16 @@
         "simulation_status": "not tested; identity unresolved"
       }
     },
-    "interpretation_correction": "BB is expected to suppress BPN less strongly than FG. BB stronger broad inhibition should be checked in P9 context; oDN1/DNg97 is a forward-promoting output, not a turn output. Published coactivation DN traces partly originate in a rate-model prediction, not direct electrophysiological measurements."
+    "interpretation_correction": "BB is expected to suppress BPN less strongly than FG. BB stronger broad inhibition should be checked in P9 context; oDN1/DNg97 is a forward-promoting output, not a turn output. Published coactivation DN traces partly originate in a rate-model prediction, not direct electrophysiological measurements.",
+    "follow_up": {
+      "r5": "configs/manual-neural-bank-r5.json",
+      "unified_graph": "results/mcns-unified/source-manifest.json",
+      "unified_results": "results/frozen-neural-panel-unified-r5",
+      "r6_probe": "configs/manual-neural-bank-r6.json",
+      "r6_status": "target GABAA response probe; not yet adopted",
+      "receptor_tests": "results/receptor-regression-tests.txt",
+      "raw_inputs_verified_archive": "data/public-input-release-verified.json",
+      "scope_warning": "Individual assay context successes are not inherited by the unified recurrent context. Responses are partial qualitative constraints, not full behavioral replication or a majority-pass claim."
+    }
   }
 }

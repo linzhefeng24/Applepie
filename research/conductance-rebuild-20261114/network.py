@@ -24,6 +24,28 @@ def load(scope='motor',full_vnc=False):
  return matrix,roles,metadata
 
 
+def receptor_conductances(weights,metadata,parameters):
+ """Scale effective synaptic conductance, never the stored structural graph.
+ GABAA and GluCl are target response hypotheses for negative GABA/glutamate
+ edges. Other GABA receptor kinetics and transmitter mixtures remain absent.
+ Namespace-qualified type groups prevent accidental cross-dataset transfer.
+ Zero permits an explicit receptor-block experiment; healthy gains are priors.
+ """
+ if not parameters:return weights,[]
+ from grouped_parameters import group_key
+ keys=[str(x.get('connectome_namespace',''))+'|'+group_key(x) for x in metadata]
+ unknown=set(parameters)-set(keys)
+ if unknown:raise KeyError('Receptor groups absent from graph: '+str(sorted(unknown)))
+ nt=np.array([str(x.get('predictedNt','')).lower() for x in metadata]);out=np.array(weights,dtype=float,copy=True);applied=[]
+ for key,values in parameters.items():
+  targets=np.array([i for i,k in enumerate(keys) if k==key]);record={'target_group':key,'target_body_ids':[metadata[i]['bodyId'] for i in targets],'receptors':{}}
+  for receptor,gain in values.items():
+   if receptor not in ['GABAA','GluCl']:raise ValueError('Unknown receptor '+receptor)
+   if not np.isfinite(gain) or not 0<=gain<=5:raise ValueError('Receptor response prior must be within0..5')
+   pre=np.flatnonzero(nt==('gaba' if receptor=='GABAA' else 'glutamate'));block=out[np.ix_(pre,targets)];negative=block<0;count=int(negative.sum());block[negative]*=gain;out[np.ix_(pre,targets)]=block;record['receptors'][receptor]={'gain':gain,'affected_negative_edges':count}
+  applied.append(record)
+ return out,applied
+
 def simulate_network(weights,roles,metadata,params,drive=None,ablate=(),drive_waveform=None,record_indices=None):
  from model import simulate
  source=params.get('source_gain_by_body_id',{})
@@ -31,4 +53,7 @@ def simulate_network(weights,roles,metadata,params,drive=None,ablate=(),drive_wa
  if not np.isfinite(gains).all() or np.any(gains<=0):raise ValueError('Source conductance scales must be finite positive; no edge removal or sign flip')
  from grouped_parameters import resolve
  overrides,_=resolve(metadata,params.get('group_parameters',{}),params.get('individual_leak_offsets_mV',{}),params.get('class_parameters',{}),params.get('family_parameters',{}),params.get('cell_parameters',{}))
- return simulate(weights,roles,params,drive=drive,ablate=ablate,source_gains=gains,cell_overrides=overrides,drive_waveform=drive_waveform,record_indices=record_indices)
+ effective,interventions=receptor_conductances(weights,metadata,params.get('target_receptor_gains',{}))
+ result=simulate(effective,roles,params,drive=drive,ablate=ablate,source_gains=gains,cell_overrides=overrides,drive_waveform=drive_waveform,record_indices=record_indices)
+ result['receptor_interventions']=interventions
+ return result

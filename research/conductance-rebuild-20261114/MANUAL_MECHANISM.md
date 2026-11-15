@@ -167,3 +167,38 @@ counts and signs intact. BRK→BON1 direct input is strong; a separate shared BR
 release reduction tests whether BON1 recruitment can remain while reducing
 unwanted ascending-network suppression. These are explicit unknown-release
 hypotheses, not literature-measured conductance values or loss optimization.
+
+## Recurrent context and target receptors
+
+The new unified MaleCNS graph has3474 neurons and455231 signed-hypothesis edges.
+Both previous graphs' signed AND unsigned induced submatrices match exactly.
+Cross-context edges are re-extracted from the original significant-only table;
+this remains a truncated graph, not the whole CNS. The same r5 parameter bank
+is being tested in every condition, with full pulse and recovery records.
+
+Unity changes the quantitative responses. PFL3 retains DNa02 directional
+excitation/opponent hyperpolarization. BPN+FG suppresses DNg100 strongly, whereas
+BB does not suppress it strongly. MDN→LBL40 survives FG/BB. BB's inhibition of
+P9-driven oDN1 weakens in the expanded context: old isolated-context success
+is not inherited as a new pass. Current reports distinguish neural directions,
+behavioral proxies and paper-model predictions.
+
+network.receptor_conductances adds an explicit target GABAA/GluCl response
+hypothesis. Previously inhibitory_gain was solely PRESYNAPTIC release. The new
+option multiplies effective event conductance on existing negative edges of the
+specified transmitter and target type. Structural matrices are left untouched;
+positive edges and other transmitters are unchanged. It does not represent
+receptor subtype kinetics, chloride homeostasis or metabotropic signalling.
+Namespace-qualified groups prevent transfer to an unrelated connectome.
+
+Four tests verify transmitter selectivity, preserved structural weights,
+namespace/bounds, and unchanged no-feedback source spikes with the expected
+postsynaptic conductance scaling. Together22 regression checks pass. r6 is a
+manual GABAA-responsex1.5 probe shared by DNa02 and DNg97 homologues, not an
+adopted improvement. It must preserve directional steering and FG/BB differences.
+
+All four large public raw inputs (606774958 bytes total) are now verified in a
+GitHub draft Release; data/public-input-release-verified.json records fresh
+GitHub asset SHA-256 digests, byte counts, source URLs and code revisions.
+The first archive task failed by querying a draft through a published-tag
+endpoint; the corrected task succeeded. No cloud environment was published.

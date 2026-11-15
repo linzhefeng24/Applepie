@@ -1,0 +1,53 @@
+{
+  "status": "Fresh remote asset read verified all four input byte counts and SHA-256 digests",
+  "release_id": 445708015,
+  "release_tag": "public-neural-inputs-20261115",
+  "is_draft": true,
+  "neural_code_revision": "7ccabc46e2cdd06f681c4dde71b0dc3b14d3e3a2",
+  "workflow_code_revision": "83a7414ffdc9e6ef7f95ab06a90217f1ba2b0ec1",
+  "successful_workflow_run": "https://github.com/linzhefeng24/Applepie/actions/runs/43659282145",
+  "failed_initial_workflow_run": "https://github.com/linzhefeng24/Applepie/actions/runs/43659221280",
+  "initial_failure_reason": "Draft release lookup through published-tag endpoint returned404; fixed by explicit release ID.",
+  "inputs": [
+    {
+      "name": "body-annotations-male-cns-v1.0-minconf-0.5.feather",
+      "source_url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/body-annotations-male-cns-v1.0-minconf-0.5.feather",
+      "bytes": 14483314,
+      "sha256": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2",
+      "asset_id": 749287300,
+      "release_asset_url": "https://github.com/linzhefeng24/Applepie/releases/download/untagged-f549f603094b5b997ebb/body-annotations-male-cns-v1.0-minconf-0.5.feather",
+      "api_url": "https://api.github.com/repos/linzhefeng24/Applepie/releases/assets/749287300",
+      "github_digest": "sha256:2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2"
+    },
+    {
+      "name": "connectome-weights-male-cns-v1.0-minconf-0.5-significant-only.feather",
+      "source_url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/connectome-weights-male-cns-v1.0-minconf-0.5-significant-only.feather",
+      "bytes": 502169298,
+      "sha256": "5c536423a62a688e59e7b441f9c04d6272c9a1f017e35814cf561f8c275d9e9e",
+      "asset_id": 749287654,
+      "release_asset_url": "https://github.com/linzhefeng24/Applepie/releases/download/untagged-f549f603094b5b997ebb/connectome-weights-male-cns-v1.0-minconf-0.5-significant-only.feather",
+      "api_url": "https://api.github.com/repos/linzhefeng24/Applepie/releases/assets/749287654",
+      "github_digest": "sha256:5c536423a62a688e59e7b441f9c04d6272c9a1f017e35814cf561f8c275d9e9e"
+    },
+    {
+      "name": "body-neurotransmitters-male-cns-v1.0.feather",
+      "source_url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/body-neurotransmitters-male-cns-v1.0.feather",
+      "bytes": 43282834,
+      "sha256": "95c9289220663abeb3409f3ad9e5a7f8a53f8093f5139d15502cd08da8879621",
+      "asset_id": 749288293,
+      "release_asset_url": "https://github.com/linzhefeng24/Applepie/releases/download/untagged-f549f603094b5b997ebb/body-neurotransmitters-male-cns-v1.0.feather",
+      "api_url": "https://api.github.com/repos/linzhefeng24/Applepie/releases/assets/749288293",
+      "github_digest": "sha256:95c9289220663abeb3409f3ad9e5a7f8a53f8093f5139d15502cd08da8879621"
+    },
+    {
+      "name": "MDN-MOESM1.pdf",
+      "source_url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-020-19936-x/MediaObjects/41467_2020_19936_MOESM1_ESM.pdf",
+      "bytes": 46839512,
+      "sha256": "874bb49f9377ce3e047030bb045bf7fcf5c1d0bd173284df7630b6ef5c22f114",
+      "asset_id": 749297420,
+      "release_asset_url": "https://github.com/linzhefeng24/Applepie/releases/download/untagged-f549f603094b5b997ebb/MDN-MOESM1.pdf",
+      "api_url": "https://api.github.com/repos/linzhefeng24/Applepie/releases/assets/749297420",
+      "github_digest": "sha256:874bb49f9377ce3e047030bb045bf7fcf5c1d0bd173284df7630b6ef5c22f114"
+    }
+  ]
+}
