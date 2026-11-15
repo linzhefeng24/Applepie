@@ -1,0 +1,8 @@
+{
+  "file": "UnifiedFlyModel_20261115.zip",
+  "bytes": 73202701,
+  "sha256": "3fafc3c64fef96747084ac699fdfbdc96d72e80fffacc75f2512d6c068b29e3f",
+  "code_revision": "0467d946d89afa34a4a326aeb64691824fe1cbef",
+  "model_sha256": "858d1818b8d8394c95bb62a6ce60474cb534a83b94265ef8615e367c110d262c",
+  "status": "actual integrated neural/body rerun with three decoded videos; not validated stable walking"
+}

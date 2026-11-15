@@ -1,0 +1,24 @@
+{
+  "file": "UnifiedFlyModel_20261115.zip",
+  "bytes": 73202701,
+  "sha256": "3fafc3c64fef96747084ac699fdfbdc96d72e80fffacc75f2512d6c068b29e3f",
+  "code_revision": "0467d946d89afa34a4a326aeb64691824fe1cbef",
+  "model_sha256": "858d1818b8d8394c95bb62a6ce60474cb534a83b94265ef8615e367c110d262c",
+  "status": "actual integrated neural/body rerun with three decoded videos; not validated stable walking",
+  "source_url": null,
+  "release_asset_url": null,
+  "local_delivery_path": "/workspace/exports/UnifiedFlyModel_20261115.zip",
+  "github_backup_status": "NOT_UPLOADED: current credential rejected HTTP 401",
+  "last_fresh_verified_remote_main": "4b1dba485846818e031c4d998f08cb544af4e7ac",
+  "remote_attempt": {
+    "workflow_run": "https://github.com/linzhefeng24/Applepie/actions/runs/43691572826",
+    "status": "failed at full neural/body/video step; detailed logs inaccessible after credential failure",
+    "exact_frozen_equivalence_step": "passed"
+  },
+  "not_pushed": [
+    "README additions, clean-distribution verification script and reports",
+    "final delivery manifest and final packaging log",
+    "ZIP, videos and recorded neural/body data as Release asset"
+  ],
+  "publication": "no cloud environment or public Release published"
+}
