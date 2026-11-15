@@ -43,7 +43,7 @@
  =\frac{K}{\tau s+1},\qquad
  K=\frac1{k_m},\quad \tau=\frac{J_{\mathrm{eq}}R_m}{k_tk_m}.
 \end{equation}
-由指导书给出的参数\cite{guide}，取
+由实验指示书第11页给出的参数，取
 \begin{equation}
  G_\omega(s)=\frac{23.8095}{0.0995s+1}.
 \end{equation}
@@ -89,7 +89,14 @@ $2\%$调节时间定义为响应进入$[0.98y_\infty,1.02y_\infty]$后不再越�
 
 \section{实验方法}
 \subsection{一阶模型与硬件对比（指导书3.2、3.3）}
-将相同电压同时输入理论传递函数和实际电机。实际电机编码器输出经弧度换算、微分及低通滤波后，与模型转速在同一示波器中比较。记录方波电压及两条转速响应的稳态平台和过渡过程。
+将相同电压同时输入理论传递函数和实际电机。实际电机编码器输出经弧度换算、微分及低通滤波后，与模型转速在同一示波器中比较。记录方波电压及两条转速响应的稳态平台和过渡过程。图\ref{fig:motor_model}为实验模型。
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.98\textwidth,trim=30 170 30 230,clip]{figs/control_experiment_1/motor_model.jpg}
+\caption{一阶电机模型与硬件对比结构}
+\label{fig:motor_model}
+\end{figure}
+
 
 \subsection{位置阶跃响应对比（指导书4.3第2步）}
 将理论位置闭环与实际电机闭环置于同一Simulink模型，施加$1\unit{rad}$阶跃参考。记录驱动信号及位置响应，并读取稳态值、峰值和误差带进入时间。单位增益时驱动电压与位置误差数值相同。
@@ -99,6 +106,13 @@ $2\%$调节时间定义为响应进入$[0.98y_\infty,1.02y_\infty]$后不再越�
 
 \section{实验结果}
 \subsection{电机转速响应}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.98\textwidth,trim=10 150 10 230,clip]{figs/control_experiment_1/motor_square_response.jpg}
+\caption{方波电压输入及转速响应}
+\label{fig:motor_square_response}
+\end{figure}
 方波输入下，两条转速曲线均表现出惯性上升和下降，平台约为120和104。以较高平台为基准，其相对差异为
 \begin{equation}
  \delta=\frac{120-104}{120}\times100\%\approx13.3\%.
@@ -111,23 +125,44 @@ $2\%$调节时间定义为响应进入$[0.98y_\infty,1.02y_\infty]$后不再越�
 \end{equation}
 标称计算值与记录平台不一致，表明需进一步校核实际使用的传递函数参数及速度换算比例。转速变化趋势与一阶惯性模型一致，但现有数据不支持认定标称模型的稳态幅值已得到验证。
 
-\subsection{单位增益位置响应：理论与硬件对比}
+\subsection{单位增益位置响应（4.3.2）}
 由式\eqref{eq:parameters}，$k_1=1$时有
 \begin{equation}
  T=0.06465\unit{s},\qquad \xi=0.32485.
 \end{equation}
 理论超调量约$33.99\%$，$2\%$调节时间近似为$0.796\unit{s}$。
 
-硬件位置响应的稳态值为$1.158\unit{rad}$，峰值为$1.277\unit{rad}$，故
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.98\textwidth,trim=10 230 10 190,clip]{figs/control_experiment_1/position_two_scopes.jpg}
+\caption{单位增益实验的驱动信号与位置响应}
+\label{fig:position_two_scopes}
+\end{figure}
+硬件位置响应见图\ref{fig:position_two_scopes}右侧示波器，峰值与稳态值的测量见图\ref{fig:position_peak}。稳态值为$1.158\unit{rad}$，峰值为$1.277\unit{rad}$，故
 \begin{equation}
  \sigma_{\mathrm{exp}}=
  \frac{1.277-1.158}{1.158}\times100\%\approx10.3\%.
 \end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.98\textwidth,trim=20 100 20 175,clip]{figs/control_experiment_1/position_peak.jpg}
+\caption{位置响应稳态值与峰值测量}
+\label{fig:position_peak}
+\end{figure}
 测量中采用的误差带上下限约为1.135和$1.181\unit{rad}$，与$1.158\unit{rad}$附近的$\pm2\%$范围相符。阶跃开始于$1.000\unit{s}$，游标标记的进入时间约为$1.324\unit{s}$，得到
 \begin{equation}
  t_{s,\mathrm{exp}}\approx1.324-1.000=0.324\unit{s}.
 \end{equation}
-该值由示波器游标读出，最终越界点的判断受照片分辨率限制。
+该值由图\ref{fig:position_settling}中的示波器游标读出，最终越界点的判断受照片分辨率限制。
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.98\textwidth,trim=20 100 20 175,clip]{figs/control_experiment_1/position_settling.jpg}
+\caption{位置响应的2\%误差带与调节时间测量}
+\label{fig:position_settling}
+\end{figure}
+
 
 \begin{table}[H]
 \centering
@@ -151,7 +186,7 @@ $2\%$调节时间/$\mathrm{s}$ & 0.796（近似）& 0.324（游标）\\
 \end{equation}
 在数值上相符。实测位置终值偏离参考，不能将该响应视为理想单位静态增益模型的完全复现。
 
-\subsection{不同阻尼工况的仿真与硬件响应}
+\subsection{不同增益下的阶跃响应（4.3.3）}
 三组蓝色理论响应的测量结果见表\ref{tab:damping}。其中，单调响应分别在绝对时间2.677和$2.165\unit{s}$达到最终值的$98\%$；欠阻尼响应峰值约为1.198，最后进入$0.98\sim1.02$误差带的游标时间为$1.767\unit{s}$。各时间均扣除$1\unit{s}$阶跃起始时间。
 
 \begin{table}[H]
@@ -169,6 +204,20 @@ $2\%$调节时间/$\mathrm{s}$ & 0.796（近似）& 0.324（游标）\\
 \label{tab:damping}
 \end{table}
 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.98\textwidth,trim=20 100 20 175,clip]{figs/control_experiment_1/overdamped.jpg}
+\caption{过阻尼参数组：仿真单调上升，实际转角接近零}
+\label{fig:overdamped}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.98\textwidth,trim=20 100 20 175,clip]{figs/control_experiment_1/critical.jpg}
+\caption{临界阻尼附近参数组：仿真调节时间约1.165 s}
+\label{fig:critical}
+\end{figure}
 \paragraph{临界阻尼判别。}
 临界阻尼阶跃响应为
 \begin{equation}
@@ -187,6 +236,20 @@ $2\%$调节时间/$\mathrm{s}$ & 0.796（近似）& 0.324（游标）\\
 \end{equation}
 因此，该理论曲线与过阻尼模型一致。此处增益为响应反算的等效值，原始增益设置未完整留存。
 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.98\textwidth,trim=20 100 20 175,clip]{figs/control_experiment_1/underdamped_peak.jpg}
+\caption{欠阻尼参数组的仿真峰值测量}
+\label{fig:underdamped_peak}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.98\textwidth,trim=20 100 20 175,clip]{figs/control_experiment_1/underdamped_settling.jpg}
+\caption{欠阻尼参数组的仿真2\%调节时间测量}
+\label{fig:underdamped_settling}
+\end{figure}
 \paragraph{欠阻尼判别。}
 由超调比例$M_p=0.198$可得
 \begin{equation}
@@ -195,7 +258,18 @@ $2\%$调节时间/$\mathrm{s}$ & 0.796（近似）& 0.324（游标）\\
 对应标称模型的等效比例增益约为0.50。取$k_1=0.5$时，理论超调量为$19.69\%$，近似调节时间为$0.796\unit{s}$，与记录中的$19.8\%$和$0.767\unit{s}$相近。
 
 \paragraph{硬件响应。}
-两组低增益工况下，红色实际位置曲线接近零，未达到$1\unit{rad}$目标。表\ref{tab:damping}中的调节时间仅属于理论仿真，不能列为硬件跟踪指标。欠阻尼工况下，实际位置终值约为$0.79\unit{rad}$，存在约$0.21\unit{rad}$稳态误差。该曲线的峰值与最终越界时间未作统一读数，本报告不将蓝色仿真曲线的数据代入实际响应。
+两组低增益工况下，红色实际位置曲线接近零，未达到$1\unit{rad}$目标。表\ref{tab:damping}中的调节时间仅属于理论仿真，不能列为硬件跟踪指标。欠阻尼工况下，实际位置的稳态值约为$0.792\unit{rad}$、峰值约为$0.809\unit{rad}$（图\ref{fig:underdamped_hardware_peak}），故相对实际稳态值的超调量约为
+\begin{equation}
+ \sigma_{\mathrm{hw}}=\frac{0.809-0.792}{0.792}\times100\%\approx2.1\%.
+\end{equation}
+相对参考值的稳态误差约为$0.208\unit{rad}$。该实际曲线的最终越界时间未准确记录，不以蓝色仿真曲线的调节时间代替。
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.98\textwidth,trim=20 100 20 175,clip]{figs/control_experiment_1/underdamped_hardware_peak.jpg}
+\caption{欠阻尼参数组的实际位置稳态值与峰值测量}
+\label{fig:underdamped_hardware_peak}
+\end{figure}
+
 
 \section{分析与讨论}
 \subsection{低增益下的实际电机响应}
@@ -205,7 +279,7 @@ $2\%$调节时间/$\mathrm{s}$ & 0.796（近似）& 0.324（游标）\\
 \end{equation}
 初始位置为零且参考为$1\unit{rad}$时，驱动电压数值约等于$k_1$。低增益工况的驱动电压很小，静摩擦及驱动死区因而不可忽略。实际转角接近零，而线性仿真仍缓慢趋近参考，说明简化模型无法描述这一低电压区间。现有记录未测量起动阈值，尚不能量化静摩擦与驱动死区各自的贡献。
 
-在静止平衡时，摩擦可抵消一定范围内的电磁转矩，使非零位置误差对应的控制电压仍不能驱动电机。位置偏差也可能包含反馈比例或偏置影响，故稳态值偏离1的原因不能仅凭曲线归结为某一个参数。
+静止时摩擦可平衡一定范围的电磁转矩，使系统保留非零位置误差。反馈比例与偏置也需校核。
 
 \subsection{比例增益与响应速度}
 增大比例增益使自然频率提高、阻尼比降低，响应由单调趋近转为带超调的振荡过程。但本模型中的$T$与$\xi$同时随增益变化，满足
@@ -229,9 +303,7 @@ $2\%$调节时间/$\mathrm{s}$ & 0.796（近似）& 0.324（游标）\\
 \section{实验结论}
 一阶模型能够描述电机转速的主要惯性特征，但记录平台与标称模型存在差异，需要校核参数及速度换算。单位增益位置实验中，实际响应的超调量约为$10.3\%$，相对实际稳态值的$2\%$调节时间约为$0.324\unit{s}$，稳态位置误差约为$-0.158\unit{rad}$。
 
-改变增益后，理论仿真呈现过阻尼、临界阻尼附近及欠阻尼三类响应，其调节时间分别约为1.677、1.165和$0.767\unit{s}$。低增益硬件工况未完成目标跟踪，欠阻尼参数组的硬件响应也存在稳态偏差。实验表明，比例增益的选择既需考虑理论阻尼与超调，也需考虑实际电机的低电压非线性。
+三组仿真的调节时间分别为1.677、1.165和$0.767\unit{s}$。低增益实际电机未完成跟踪，欠阻尼参数组也存在稳态偏差，说明增益选择需同时考虑理论动态性能与电机的低电压非线性。
 
-\begin{thebibliography}{9}
-\bibitem{guide} 自动控制原理I实验教学资料．2026秋自动控制原理I实验指示书：实验一．2026年10月12日，9--18．
-\end{thebibliography}
+
 \end{document}

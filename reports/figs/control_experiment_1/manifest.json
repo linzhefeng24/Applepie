@@ -1,0 +1,52 @@
+[
+  {
+    "file": "figs/control_experiment_1/motor_model.jpg",
+    "original_zip_member": "图图/56e6d33b6f2ea70b01cece444fac9467.jpg",
+    "sha256": "b7cb10328f9ec56889e33ee07542be592ab109c7d4784cfbcdad163423c62caf"
+  },
+  {
+    "file": "figs/control_experiment_1/motor_square_response.jpg",
+    "original_zip_member": "图图/deae5ba08ab0aae78cecb04f8442c124.jpg",
+    "sha256": "5f0d0dde82855bb1acb6411fbd6b95a3d6c5ed4d64fec0f37def996b76588241"
+  },
+  {
+    "file": "figs/control_experiment_1/position_two_scopes.jpg",
+    "original_zip_member": "图图/0fa893edb9725558691e6d63850e434e.jpg",
+    "sha256": "e49b8716950b945019543fe77c2519f878a37fc23a9bf2c02ca17bfe8ba7f199"
+  },
+  {
+    "file": "figs/control_experiment_1/position_peak.jpg",
+    "original_zip_member": "图图/5619179aad4ec33f850e5388ad7e9d33.jpg",
+    "sha256": "4f7f92f46ac4a81e5994bdafbf6281e2a1f803daf733bb5ba284b5abad7761f5"
+  },
+  {
+    "file": "figs/control_experiment_1/position_settling.jpg",
+    "original_zip_member": "图图/8fd4a636770b7b77d7e1490ba44c01b8.jpg",
+    "sha256": "fd28d203982b06c76218b9dafc7597a42376d3f311945869333b8d4ed5ac6827"
+  },
+  {
+    "file": "figs/control_experiment_1/overdamped.jpg",
+    "original_zip_member": "图图/5e54bee726df42363d15433d4798ea5a.jpg",
+    "sha256": "2e60d43b6590f8b3f56b41d4581285fe783bb278412503f7e0a44bb91e9ed1e9"
+  },
+  {
+    "file": "figs/control_experiment_1/critical.jpg",
+    "original_zip_member": "图图/19c3fb678418f9c911407fb6f49f8f96.jpg",
+    "sha256": "7fd9ab880688953c8c01e7a280c9e7e1e09622204a44d39911cef8b08183e35d"
+  },
+  {
+    "file": "figs/control_experiment_1/underdamped_peak.jpg",
+    "original_zip_member": "图图/0d49e2b3d1986d60706a87a171242e33.jpg",
+    "sha256": "84a173d15c47240320037c226c761eed6b11f89299e092972baf85a946949a7d"
+  },
+  {
+    "file": "figs/control_experiment_1/underdamped_settling.jpg",
+    "original_zip_member": "图图/3f0f97f941980960c42c404795035e69.jpg",
+    "sha256": "3789c94e84cd37b41e11e3ac99dafc6a586e8a6ab39e748e3eb586769b7ae9b1"
+  },
+  {
+    "file": "figs/control_experiment_1/underdamped_hardware_peak.jpg",
+    "original_zip_member": "图图/22f81979024b0eb2175fb62df66f6b77.jpg",
+    "sha256": "7f137194a149ce511a727e4754966c3b44bb343c3652409c55c9cab6f5133def"
+  }
+]
