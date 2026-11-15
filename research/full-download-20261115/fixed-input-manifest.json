@@ -1,0 +1,27 @@
+{
+  "file": "FixedBody_20261115.zip",
+  "bytes": 8310643,
+  "sha256": "9198dc0782331101bfd5ddcb72cf02333a3a22cc1e8e0fcf46a4c9a6013e6d65",
+  "code_revision": "22eedc3dc9001ed7a1e5f20042acf28912f82e7f",
+  "model_sha256": "858d1818b8d8394c95bb62a6ce60474cb534a83b94265ef8615e367c110d262c",
+  "neural_input_sha256": "4153fa8f1d29bb1bd987281d68d8407767bb9dd4e2ff1644673218b33e3fc027",
+  "condition": "root rigidly fixed to initial pose; native legs and ground contacts",
+  "contains": [
+    "3 videos",
+    "state data",
+    "verification report",
+    "updated runtime code"
+  ],
+  "not_included": "unchanged base model.yaml and neural_state.npz; use the original single-model package",
+  "source_url": "https://github.com/linzhefeng24/Applepie/releases/download/fixed-body-video-20261115/FixedBody_20261115.zip",
+  "supersedes_wrapper_sha256": "984e85a4176d03f7baef70383d5615f6b331cac792f3c1eefcb29810c2940626",
+  "comparison_with_previous_download": {
+    "body_state_npz_byte_identical": true,
+    "report_json_byte_identical": true,
+    "different_members": [
+      "videos/01_body_muscles.mp4",
+      "videos/03_synchronized.mp4"
+    ],
+    "interpretation": "Reuploaded same-condition render; full package pins current asset SHA and unchanged neural/body state identity."
+  }
+}

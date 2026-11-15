@@ -1,0 +1,9 @@
+[
+  {
+    "workflow_run": 43696811321,
+    "status": "failed safely before uploading full archive",
+    "reason": "Previously pinned fixed-body Release ZIP was replaced by a same-code independent rerun; outer ZIP SHA changed.",
+    "comparison": "Only two video files differed; report.json and body_state.npz were byte-identical.",
+    "resolution": "Pin the freshly verified current asset manifest; retain strict neural-state/model/run checks."
+  }
+]

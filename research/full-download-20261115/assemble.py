@@ -13,7 +13,7 @@ P=D/'build/UnifiedFlyModel'
 F=R/'build/fixed-results'
 F.mkdir(parents=True,exist_ok=True)
 asset=R/'build/FixedBody_20261115.zip'
-expected=json.loads((R.parent/'fixed-body-video-20261115/delivery-manifest.json').read_text())
+expected=json.loads((R/'fixed-input-manifest.json').read_text())
 sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
 assert sha(asset)==expected['sha256'] and asset.stat().st_size==expected['bytes']
 with zipfile.ZipFile(asset) as z:
