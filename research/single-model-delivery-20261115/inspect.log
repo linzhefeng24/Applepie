@@ -1,0 +1,63 @@
+{
+  "identity": {
+    "name": "MaleCNS3988_R2_legacy130",
+    "one_model_only": true,
+    "neural_namespace": "MaleCNS_v1.0",
+    "selected_revision": "1e8a9170d0e658ac7869620726938c940ca29d60",
+    "selection": "R2 preserves tested steering preference, recruits both selected relay homologues, no-input control identical; FG suppression partial; full braking/walking NOT established"
+  },
+  "model_sha256": "d3a8fb2b6b52c0e6bb84b010f9d4cf2c9819659a2c5aac97d8343e69db5b0652",
+  "neuron_count": 3988,
+  "fast_edges": 485045,
+  "muscles": 130,
+  "mapped_muscles": 84,
+  "experiments": [
+    "DN_drive",
+    "BRK",
+    "MDN",
+    "MDN_BRK",
+    "PFL3_left",
+    "BPN_FG",
+    "quiet"
+  ],
+  "cells": {
+    "10045": {
+      "capacitance_soma_pF": 20.0,
+      "capacitance_axon_pF": 2.5,
+      "leak_soma_nS": 1.707317073170732,
+      "leak_axon_nS": 0.3,
+      "leak_reversal_soma_mV": -65.0,
+      "excitatory_receptor_gain": 2.0,
+      "presynaptic_inhibitory_release_gain": 1.0,
+      "coupling_nS": 12.0,
+      "SK_multiplier": 1.0,
+      "NaP_nS": 0.0,
+      "axon_bias_pA": 0.0,
+      "gate_speed": 1.0,
+      "source_release_gain": 1.0,
+      "Na_nS": 600.0,
+      "K_nS": 144.0,
+      "Ca_nS": 0.3,
+      "calcium_tau_ms": 100.0
+    },
+    "10056": {
+      "capacitance_soma_pF": 20.0,
+      "capacitance_axon_pF": 2.5,
+      "leak_soma_nS": 1.707317073170732,
+      "leak_axon_nS": 0.3,
+      "leak_reversal_soma_mV": -65.0,
+      "excitatory_receptor_gain": 2.0,
+      "presynaptic_inhibitory_release_gain": 1.0,
+      "coupling_nS": 12.0,
+      "SK_multiplier": 1.0,
+      "NaP_nS": 0.0,
+      "axon_bias_pA": 0.0,
+      "gate_speed": 1.0,
+      "source_release_gain": 1.0,
+      "Na_nS": 600.0,
+      "K_nS": 144.0,
+      "Ca_nS": 0.3,
+      "calcium_tau_ms": 100.0
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "vnc2024": {
+    "title": "Connectomic reconstruction of a female Drosophila ventral nerve cord",
+    "doi": "10.1038/s41586-024-07389-x",
+    "url": "https://doi.org/10.1038/s41586-024-07389-x",
+    "evidence": "Supplementary Appendix A Table A1 nomenclature, Table A4 target evidence; Supplementary Table 1 nerve/count inventory",
+    "scope": "Female front-leg/FANC; not per-neuron MaleCNS mapping",
+    "sha256": "dcbb671d7831eb64f7554af4a32f59e3f2eb0dc1b1294e4876f2838a603076ba"
+  },
+  "flymimic2025": {
+    "title": "Musculoskeletal simulation of limb movement biomechanics in Drosophila melanogaster",
+    "url": "https://arxiv.org/abs/2509.06426",
+    "evidence": "Section 3.2, Appendix A.1, Table 2, optimization and limitations",
+    "scope": "Foreleg 15 MTUs / 12 of 19 anatomical dataset groups; midleg7/hindleg8 anatomical reconstructions only",
+    "sha256": "7a2438357b789b6de247a49e95ed82879e76529870bfd2335bc030eb1766f781"
+  },
+  "recruitment2020": {
+    "title": "A size principle for recruitment of Drosophila leg motor neurons",
+    "doi": "10.7554/eLife.56754",
+    "url": "https://doi.org/10.7554/eLife.56754",
+    "scope": "Mainly female front-leg tibia flexor motor units; cannot transfer one universal firing-rate-to-activation formula to all muscles",
+    "sha256": "d2025c1dc469166192320eb9d39e0aafaa3637fbb8a9ae31cfbefd42ef9c09f6"
+  },
+  "flymimic_code": {
+    "url": "https://github.com/gizemozd/FlyMimic",
+    "commit": "9ea1131626cd76f7203b74076ef8f0e9cab30bef",
+    "scope": "Exact repository snapshot, model-conditioned numerical parameters",
+    "sha256": "d67ff06d0c684599f00d5f33f8f8ac8ced01ab994c41341b551f8148b6d8aa0b"
+  },
+  "mujoco_dynamics": {
+    "url": "https://mujoco.readthedocs.io/en/3.3.7/modeling.html#muscle-actuators",
+    "scope": "Software activation and force model; not direct biological evidence"
+  },
+  "manc_circuits": {
+    "title": "Organization of circuits linking descending input to motor output in the Drosophila Male Adult Nerve Cord connectome",
+    "doi": "10.7554/eLife.96084",
+    "url": "https://doi.org/10.7554/eLife.96084",
+    "evidence": "Figure7; Supplementary files3/6; male MN muscle targets. T2/T3 partly serial-homology inference, not all identified.",
+    "sha256": "58d65d5e3b8af56732475e4b921efffc4665f6df84fcc99330c5fa2362fe2ebb"
+  },
+  "soler2004": {
+    "title": "Coordinated development of muscles and tendons of the Drosophila leg",
+    "doi": "10.1242/dev.01527",
+    "url": "https://doi.org/10.1242/dev.01527"
+  },
+  "xnh2020": {
+    "title": "Dense neuronal reconstruction through X-ray holographic nano-tomography",
+    "doi": "10.1038/s41593-020-0704-9",
+    "evidence": "Anatomical images and fiber/nerve tracing; no universal force calibration",
+    "sha256": "9a557f507e926a5339b0ae06d57ddaf2732f8e27fbc78e28fdc0cd5cebeb16bd"
+  },
+  "swank2012": {
+    "title": "Mechanical analysis of Drosophila indirect flight and jump muscles",
+    "doi": "10.1016/j.ymeth.2011.10.015",
+    "evidence": "Permeabilized jump muscle and IFM; cannot transfer blindly to all leg muscles",
+    "sha256": "c2e8861d9324eb34185c58b23a0883af2a22579aeb9af7b210f4dbc87c89cb29"
+  },
+  "jump2026": {
+    "title": "Drosophila jump muscle myofibrils: A new tool for investigating activation and relaxation",
+    "doi": "10.1016/j.bpr.2026.100268",
+    "evidence": "Table1; native and transgenic jump myofibrils; calcium-step force kinetics, not neural excitation-to-activation constants",
+    "sha256": "5542310332da0f174ef3622bcec348af0948e478b850077df2fb058461609ff8"
+  },
+  "resilin2026": {
+    "title": "Levels of elastic resilin modulate leg stiffness but not elasticity in Drosophila",
+    "doi": "10.1016/j.isci.2026.116404",
+    "evidence": "Intact leg compression/work-loop results; composite leg stiffness, not one muscle spring constant",
+    "sha256": "9c4c04397097f270cbf9157234ab047a2dfd2e8e7dc64e8732fb148355ecd052"
+  },
+  "diversity2026": {
+    "title": "Spatiotemporal control of myoblast identity drives muscle diversity in the Drosophila leg",
+    "doi": "10.1126/sciadv.aed0910",
+    "evidence": "Developmental identity and anatomical subdivisions; do not infer adult force constants from gene expression",
+    "sha256": "325d283a24f2b0fa3c80ea635e43f903cbe6e8f8e9bedc6dc15b62e342ef8d12"
+  },
+  "grooming_inhibition": {
+    "title": "Inhibitory circuits control leg movements during Drosophila grooming",
+    "doi": "10.7554/eLife.106446",
+    "evidence": "Behavior/circuit constraints; not a universal scalar rate-to-force conversion",
+    "sha256": "08a61aab098b359329a2341b30805688f1fdde93dd0d7be3928614c5a59bc308"
+  },
+  "proprioception2023": {
+    "title": "Biomechanical origins of proprioceptor feature selectivity and topographic maps in the Drosophila leg",
+    "doi": "10.1016/j.neuron.2023.07.009",
+    "evidence": "Leg mechanics and proprioceptive feedback; distinct from muscle activation measurement",
+    "sha256": "fc4978391ec1fa98b72d4e2c1bef785b84f50674d3bfcffad00c89b0d73bacee"
+  },
+  "xnh_tracing": {
+    "url": "https://radagast.hms.harvard.edu/catmaidvnc/?pid=61",
+    "scope": "verified traced annotation membership; overlapping labels; not complete biological fiber count"
+  }
+}

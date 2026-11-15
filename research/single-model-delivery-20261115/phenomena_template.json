@@ -1,0 +1,34 @@
+{
+  "schema": "single_model_phenomena_v1",
+  "interpretation": "模型功能、神经定性匹配、完整实验复现分开记录；不按单一指标自动判通过。旧MANC局部模型的结果不移植到本3988细胞模型。",
+  "fully_reproduced_laboratory_experiments": [],
+  "can_complete_in_stated_scope": [
+    {"id": "DN_to_muscle_forward_simulation", "kind": "model_functionality", "status": "requires_packaged_demo_verification", "description": "DN电流→真实CNS连接→MN脉冲→候选肌肉池→原生激活/刚体/接触仿真；不使用A/B控制曲线"},
+    {"id": "arbitrary_state_inspection", "kind": "software_capability", "status": "implemented", "description": "读取任意被记录神经元的胞体/轴突电位、m/h/n、Ca、输入电流与电导；默认记录全部细胞"},
+    {"id": "quiet_control", "kind": "scoped_model_check", "status": "supported_in_frozen_reference", "description": "R2无刺激全网脉冲与原对照逐元素一致；并非每个真实果蝇神经元静息都不发放"},
+    {"id": "BRK_selected_relay_sustained", "kind": "mechanistic_model_check", "status": "supported_in_frozen_reference", "description": "持续BRK输入下IN07B001左右晚期约17.8/24.4Hz；没有把该细胞必须持续放电当作实验事实"},
+    {"id": "PFL3_ipsilateral_DNa02", "kind": "qualitative_neural_match", "status": "supported_in_frozen_reference", "description": "同图R2左PFL3刺激下左DNa02强于右侧；不等于正确转向行为", "source": "10.1016/j.cell.2024.08.033"}
+  ],
+  "partially_complete": [
+    {"id": "FG_BPN_DNg100_suppression", "status": "partial", "description": "同图R2 FG使BPN招募的DNg100从约32降至约2.2Hz，仍有残余；DN层为神经代理", "source": "10.1038/s41586-024-07854-7"},
+    {"id": "MN_to_muscle_identity", "status": "estimated", "description": "按MANC候选靶肌类别与MaleCNS同源注释、motor类别及type共同筛选；不是逐运动单位确认的解剖边"},
+    {"id": "adult_MN_physiology", "status": "reference_calibration_only", "description": "成年中型MN参考模板经过输入电阻/静息校准；没有所有EM细胞快中慢身份和全部通道实测参数", "source": "10.7554/eLife.56754"}
+  ],
+  "cannot_complete_yet": [
+    {"id": "stable_six_leg_walking", "status": "not_verified", "missing": "当前神经输出未被验证产生稳定行走；视频会保留真实失败或失稳表现"},
+    {"id": "BRK_stance_angle_resistance", "status": "not_implemented", "missing": "角度/接触依赖的抗阻闭环；MN活动不等于制动，LBL40沉默不是必要判据"},
+    {"id": "sensory_VNC_closed_loop", "status": "not_implemented", "missing": "身体可读接触/受力，但此交付模型不把感觉信号接回已识别VNC感觉细胞"},
+    {"id": "all_130_activation_targets", "status": "not_reproduced", "missing": "映射缺口和运动单位权重；不通过任意相位/时间曲线强行恢复旧目标"},
+    {"id": "six_leg_phase_asymmetry", "status": "not_verified", "missing": "协调和拮抗相位仍不保证，不宣称已避免所有同侧同步"},
+    {"id": "E1_E2_I1_I2_necessity", "status": "not_validated_in_this_model", "missing": "旧区域MANC模型不是本唯一MaleCNS图；不能继承其消融通过结果"},
+    {"id": "stimulus_frequency_monotonic", "status": "not_met_in_previous_regional_model_not_retested_here", "missing": "DN之后的节律转换不单调；本模型没有独立完整剂量复现"},
+    {"id": "DNg13_step_phase_gate", "status": "not_implemented", "missing": "相位门控及反馈；文献给候选路由，不是完整实测门控函数"},
+    {"id": "MF14_LUL130_cross_segment", "status": "identity_unresolved", "missing": "精确EM映射和条件匹配；不强行将候选家族当作实验证实身份"},
+    {"id": "starvation_sugar_FG", "status": "not_implemented", "missing": "饥饿和糖GRN状态机制"},
+    {"id": "Rdl_walking_phenotype", "status": "not_reproduced", "missing": "受体干预到步态/速度的闭环行为"},
+    {"id": "club_CxHP8_reflex_reversal", "status": "not_implemented", "missing": "已识别感觉细胞、振动/关节极限转导、反射门控"},
+    {"id": "split_belt_compensation", "status": "not_implemented", "missing": "移动地面、已识别感觉闭环和适应机制"},
+    {"id": "grooming_flight_ascending_states", "status": "not_implemented", "missing": "理毛/飞行/求偶及上行视觉等状态和相关完整通路"},
+    {"id": "full_morphology_and_measured_channels", "status": "not_available", "missing": "双区室约化HH，不是完整EM多区室形态；大量通道参数为先验"}
+  ]
+}
