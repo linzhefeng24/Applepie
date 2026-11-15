@@ -5,7 +5,7 @@ Bounds below are modelling priors, not physiological confidence intervals.
 import numpy as np
 FIELDS={'capacitance_soma':0,'capacitance_axon':1,'leak_soma':2,'leak_axon':3,'E_leak_mV':4,'excitatory_gain':5,'inhibitory_gain':6,'coupling':7,'SK_scale':8,'NaP':9,'axon_bias_pA':10,'gate_speed':11,'source_gain':12,'Na':13,'K':14,'Ca':15,'calcium_tau':16}
 MULTIPLIER_BOUNDS=(.5,2.)
-FIELD_MULTIPLIER_BOUNDS={"excitatory_gain":(.1,5.)} # Effective receptor/release prior, not measured physiology
+FIELD_MULTIPLIER_BOUNDS={"excitatory_gain":(.1,5.),"inhibitory_gain":(.1,5.)} # Effective receptor/release prior, not measured physiology
 ABSOLUTE_FIELDS={'calcium_tau_ms':(16,10.,5000.,100.),'gCa_nS':(15,.01,3.,.3)}
 ADDITIVE_BOUNDS={'E_leak_mV':(-5.,5.),'axon_bias_pA':(-10.,10.)}
 
