@@ -1,0 +1,19 @@
+{
+  "file": "FixedBody_20261115.zip",
+  "bytes": 8614123,
+  "sha256": "62cce58941ba362ba1c90cfb00d8c978ccbba39d2fd48e2164b80eccec443bbc",
+  "code_revision": "22eedc3dc9001ed7a1e5f20042acf28912f82e7f",
+  "model_sha256": "858d1818b8d8394c95bb62a6ce60474cb534a83b94265ef8615e367c110d262c",
+  "neural_input_sha256": "4153fa8f1d29bb1bd987281d68d8407767bb9dd4e2ff1644673218b33e3fc027",
+  "condition": "root rigidly fixed to initial pose; native legs and ground contacts",
+  "contains": [
+    "3 videos",
+    "state data",
+    "verification report",
+    "updated runtime code"
+  ],
+  "not_included": "unchanged base model.yaml and neural_state.npz; use the original single-model package",
+  "scope": "exact local output; remote independent rerun is tracked separately",
+  "github_asset_status": "direct local upload failed HTTP 401 on uploads.github.com; remote rerun in progress",
+  "workflow_run": "https://github.com/linzhefeng24/Applepie/actions/runs/43693699814"
+}

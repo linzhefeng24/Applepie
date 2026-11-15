@@ -10,5 +10,50 @@
   "qpos_max_range": 8.800497375543786,
   "native_contact_forces_retained": true,
   "neural_parameters_changed": false,
-  "interpretation": "externally supported experiment; not free walking or balance"
+  "interpretation": "externally supported experiment; not free walking or balance",
+  "ground_contact_geometry_pairs": [
+    [
+      "groundplane",
+      "walker/tarsal_claw_T1_left_collision"
+    ],
+    [
+      "groundplane",
+      "walker/tarsal_claw_T1_right_collision"
+    ],
+    [
+      "groundplane",
+      "walker/tarsal_claw_T2_right_collision"
+    ],
+    [
+      "groundplane",
+      "walker/tarsal_claw_T3_left_collision"
+    ],
+    [
+      "groundplane",
+      "walker/tarsal_claw_T3_right_collision"
+    ],
+    [
+      "groundplane",
+      "walker/tarsus4_T1_left_collision"
+    ],
+    [
+      "groundplane",
+      "walker/tarsus4_T1_right_collision"
+    ]
+  ],
+  "versions": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "numba": "0.68.1",
+    "mujoco": "3.3.2",
+    "PyYAML": "6.0.3",
+    "matplotlib": "3.11.2",
+    "imageio-ffmpeg": "0.6.0"
+  },
+  "runtime_source_sha256": {
+    "simulator.py": "2e14f38641da9cf180f6808df05e2ed783f15b274cfb42b67edc25d5b8301dee",
+    "render.py": "cd179612f06e8c0d1392df6f3d38483f69803be4a9e7dc8bffd31139e6b35ff3",
+    "__init__.py": "f892705460d91cb1a184f69873cb5cf1026ae1d9601a99a4a50ce9c7d2e91025",
+    "dynamics.py": "6c7839a30e016775e3d338024d4d413c8e88df2344b400646f553f478f1ac27b"
+  }
 }
