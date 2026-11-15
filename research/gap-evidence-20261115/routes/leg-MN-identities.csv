@@ -1,0 +1,382 @@
+bodyId,type,superclass,subclass,somaNeuromere,somaSide,rootSide,entryNerve,mancBodyid,mancType,vfbId
+800061,Tergopleural/Pleural promotor MN,vnc_motor,fl,T1,L,,,12686.0,Tergopleural/Pleural promotor MN,VFB_jrmc0nm6
+800158,Ti extensor MN,vnc_motor,hl,T3,R,,,10462.0,Ti extensor MN,VFB_jrmc0nmu
+800175,Pleural remotor/abductor MN,vnc_motor,hl,T3,L,,,18286.0,Pleural remotor/abductor MN,VFB_jrmc1kny
+800230,MNml82,vnc_motor,ml,T2,R,,,13746.0,MNml82,VFB_jrmc20lq
+800290,Pleural remotor/abductor MN,vnc_motor,hl,T3,R,,,14596.0,Pleural remotor/abductor MN,VFB_jrmc1knz
+800316,Sternal anterior rotator MN,vnc_motor,hl,T3,R,,,11562.0,Sternal anterior rotator MN,VFB_jrmc1a6y
+800358,MNhl64,vnc_motor,hl,T3,R,,,13740.0,MNhl64,VFB_jrmc20kq
+800504,Sternotrochanter MN,vnc_motor,hl,T3,L,,,152642.0,Sternotrochanter MN,VFB_jrmc1a81
+800541,Pleural remotor/abductor MN,vnc_motor,ml,T2,L,,,219853.0,Pleural remotor/abductor MN,VFB_jrmc1knt
+800553,Pleural remotor/abductor MN,vnc_motor,hl,T3,R,,,15262.0,Pleural remotor/abductor MN,VFB_jrmc1knx
+800578,Fe reductor MN,vnc_motor,hl,T3,L,,,14020.0,Fe reductor MN,VFB_jrmc2t97
+800589,Tr flexor MN,vnc_motor,ml,T2,L,,,13817.0,Tr flexor MN,VFB_jrmc06xo
+800621,Ti extensor MN,vnc_motor,hl,T3,L,,,13075.0,Ti extensor MN,VFB_jrmc0nmp
+800636,Ti extensor MN,vnc_motor,fl,T1,L,,,12704.0,Ti extensor MN,VFB_jrmc0nmk
+800776,Pleural remotor/abductor MN,vnc_motor,ml,T2,R,,,41482.0,Pleural remotor/abductor MN,VFB_jrmc1ko4
+800851,Sternotrochanter MN,vnc_motor,hl,T3,L,,,157432.0,Sternotrochanter MN,VFB_jrmc1a82
+800911,Ti extensor MN,vnc_motor,ml,T2,L,,,,Ti extensor MN,VFB_jrmc0nms
+800962,Sternal posterior rotator MN,vnc_motor,ml,T2,R,,,16035.0,Sternal posterior rotator MN,VFB_jrmc1a7q
+801057,Tr flexor MN,vnc_motor,ml,T2,R,,,15006.0,Tr flexor MN,VFB_jrmc06y0
+801058,Tr flexor MN,vnc_motor,ml,T2,R,,,10461.0,Tr flexor MN,VFB_jrmc06xz
+801079,Sternotrochanter MN,vnc_motor,fl,T1,R,,,18440.0,Sternotrochanter MN,VFB_jrmc1a89
+801090,Sternotrochanter MN,vnc_motor,hl,T3,R,,,152620.0,Sternotrochanter MN,VFB_jrmc1a7x
+801148,Sternotrochanter MN,vnc_motor,hl,T3,R,,,152621.0,Sternotrochanter MN,VFB_jrmc1a7z
+801173,Tergopleural/Pleural promotor MN,vnc_motor,fl,T1,L,,,19319.0,Tergopleural/Pleural promotor MN,VFB_jrmc0nm4
+801234,Ti extensor MN,vnc_motor,ml,T2,L,,,11115.0,Ti extensor MN,VFB_jrmc0nmn
+801267,MNhl02,vnc_motor,hl,T3,R,,,11274.0,MNhl02,VFB_jrmc20kg
+801335,MNhl59,vnc_motor,hl,T3,R,,,13543.0,MNhl59,VFB_jrmc20kk
+801375,Sternotrochanter MN,vnc_motor,hl,T3,R,,,13069.0,Sternotrochanter MN,VFB_jrmc1a80
+801469,Sternal anterior rotator MN,vnc_motor,fl,T1,R,,,16209.0,Sternal anterior rotator MN,VFB_jrmc1a77
+801477,MNml81,vnc_motor,ml,T2,R,,,14828.0,MNml81,VFB_jrmc20ln
+801492,Sternal posterior rotator MN,vnc_motor,hl,T3,L,,,14168.0,Sternal posterior rotator MN,VFB_jrmc1a7j
+801548,Sternal anterior rotator MN,vnc_motor,hl,T3,L,,,18471.0,Sternal anterior rotator MN,VFB_jrmc1a70
+801637,Acc. ti flexor MN,vnc_motor,hl,T3,R,,,15550.0,Acc. ti flexor MN,VFB_jrmc3jfu
+801685,Sternotrochanter MN,vnc_motor,fl,T1,L,,,100515.0,Sternotrochanter MN,VFB_jrmc1a83
+801693,Fe reductor MN,vnc_motor,hl,T3,R,,,16633.0,Fe reductor MN,VFB_jrmc2t8y
+801715,Sternal posterior rotator MN,vnc_motor,hl,T3,L,,,18286.0,Sternal posterior rotator MN,VFB_jrmc1a7k
+801721,Tr flexor MN,vnc_motor,hl,T3,R,,,41439.0,Tr flexor MN,VFB_jrmc06xi
+801736,MNhl62,vnc_motor,hl,T3,L,,,11813.0,MNhl62,VFB_jrmc20ko
+801761,Sternal posterior rotator MN,vnc_motor,ml,T2,R,,,12196.0,Sternal posterior rotator MN,VFB_jrmc1a7n
+801768,Sternal posterior rotator MN,vnc_motor,ml,T2,L,,,15883.0,Sternal posterior rotator MN,VFB_jrmc1a7r
+801813,Sternal anterior rotator MN,vnc_motor,ml,T2,R,,,102786.0,Sternal anterior rotator MN,VFB_jrmc1a72
+801824,Tergopleural/Pleural promotor MN,vnc_motor,fl,T1,R,,,11706.0,Tergopleural/Pleural promotor MN,VFB_jrmc0nm5
+801915,Sternal posterior rotator MN,vnc_motor,fl,T1,L,,,19667.0,Sternal posterior rotator MN,VFB_jrmc1a7t
+801918,Sternal anterior rotator MN,vnc_motor,fl,T1,R,,,13300.0,Sternal anterior rotator MN,VFB_jrmc1a74
+801932,,vnc_motor,hl,T3,R,,,12758.0,,VFB_jrmc3krb
+801946,Sternal anterior rotator MN,vnc_motor,ml,T2,R,,,24669.0,Sternal anterior rotator MN,VFB_jrmc1a76
+802072,Tergopleural/Pleural promotor MN,vnc_motor,fl,T1,R,,,12628.0,Tergopleural/Pleural promotor MN,VFB_jrmc0nm7
+802215,Sternal anterior rotator MN,vnc_motor,hl,T3,L,,,164741.0,Sternal anterior rotator MN,VFB_jrmc1a6z
+802232,Tr flexor MN,vnc_motor,ml,T2,L,,,13817.0,Tr flexor MN,VFB_jrmc06xp
+802295,Ti flexor MN,vnc_motor,ml,T2,L,,,15623.0,Ti flexor MN,VFB_jrmc0nnu
+802361,Sternotrochanter MN,vnc_motor,fl,T1,L,,,18579.0,Sternotrochanter MN,VFB_jrmc1a88
+802407,Sternotrochanter MN,vnc_motor,ml,T2,L,,,166392.0,Sternotrochanter MN,VFB_jrmc1a87
+802509,Pleural remotor/abductor MN,vnc_motor,fl,T1,L,,,12096.0,Pleural remotor/abductor MN,VFB_jrmc1ko2
+802521,Sternal posterior rotator MN,vnc_motor,ml,T2,R,,,10305.0,Sternal posterior rotator MN,VFB_jrmc1a7o
+802552,Tergotr. MN,vnc_motor,fl,T1,L,,,19652.0,Tergotr. MN,VFB_jrmc0nm9
+802731,MNhl59,vnc_motor,hl,T3,L,,,11809.0,MNhl59,VFB_jrmc20kj
+802864,Sternotrochanter MN,vnc_motor,ml,T2,R,,,11297.0,Sternotrochanter MN,VFB_jrmc1a84
+802964,Sternal posterior rotator MN,vnc_motor,hl,T3,L,,,15278.0,Sternal posterior rotator MN,VFB_jrmc1a7l
+803072,Ti flexor MN,vnc_motor,hl,T3,R,,,18491.0,Ti flexor MN,VFB_jrmc0nns
+803086,MNml29,vnc_motor,ml,T2,L,,,19773.0,MNml29,VFB_jrmc20l4
+803147,Ti flexor MN,vnc_motor,hl,T3,L,,,176866.0,Ti flexor MN,VFB_jrmc0nn1
+803226,Sternal posterior rotator MN,vnc_motor,ml,T2,L,,,49886.0,Sternal posterior rotator MN,VFB_jrmc1a7s
+803237,Tergotr. MN,vnc_motor,fl,T1,L,,,166309.0,Tergotr. MN,VFB_jrmc0nmf
+803314,Pleural remotor/abductor MN,vnc_motor,fl,T1,R,,,16419.0,Pleural remotor/abductor MN,VFB_jrmc1knv
+803412,Tr extensor MN,vnc_motor,fl,T1,L,,,11657.0,Tr extensor MN,VFB_jrmc06wv
+803480,MNml82,vnc_motor,ml,T2,L,,,101909.0,MNml82,VFB_jrmc20lp
+803499,Pleural remotor/abductor MN,vnc_motor,ml,T2,R,,,19206.0,Pleural remotor/abductor MN,VFB_jrmc1ko0
+803523,ltm1-tibia MN,vnc_motor,ml,T2,R,,,19758.0,ltm1-tibia MN,VFB_jrmc02u3
+803698,Sternotrochanter MN,vnc_motor,fl,T1,R,,,13819.0,Sternotrochanter MN,VFB_jrmc1a7w
+803704,Sternal posterior rotator MN,vnc_motor,ml,T2,L,,,154769.0,Sternal posterior rotator MN,VFB_jrmc1a7f
+803803,Pleural remotor/abductor MN,vnc_motor,fl,T1,L,,,13628.0,Pleural remotor/abductor MN,VFB_jrmc1ko3
+803829,Tr flexor MN,vnc_motor,ml,T2,L,,,23364.0,Tr flexor MN,VFB_jrmc06xq
+803830,Fe reductor MN,vnc_motor,fl,T1,R,,,24050.0,Fe reductor MN,VFB_jrmc2t99
+804025,Fe reductor MN,vnc_motor,ml,T2,L,,,29187.0,Fe reductor MN,VFB_jrmc2t9b
+804078,MNhl29,vnc_motor,hl,T3,L,,,102123.0,MNhl29,VFB_jrmc20ki
+804257,Ti extensor MN,vnc_motor,fl,T1,R,,,13115.0,Ti extensor MN,VFB_jrmc0nmm
+804405,Ti flexor MN,vnc_motor,ml,T2,R,,,192299.0,Ti flexor MN,VFB_jrmc0nnv
+804465,Tergotr. MN,vnc_motor,fl,T1,L,,,21753.0,Tergotr. MN,VFB_jrmc0nmi
+804514,Tergotr. MN,vnc_motor,hl,T3,L,,,159762.0,Tergotr. MN,VFB_jrmc0nma
+804741,ltm1-tibia MN,vnc_motor,hl,T3,R,,,10811.0,ltm1-tibia MN,VFB_jrmc02ty
+804847,MNhl88,vnc_motor,hl,T3,L,,,17905.0,MNhl88,VFB_jrmc20kw
+804851,Sternal posterior rotator MN,vnc_motor,fl,T1,L,,,17546.0,Sternal posterior rotator MN,VFB_jrmc1a7v
+804866,Tergotr. MN,vnc_motor,fl,T1,R,,,19443.0,Tergotr. MN,VFB_jrmc0nm8
+804919,Ti flexor MN,vnc_motor,hl,T3,L,,,176866.0,Ti flexor MN,VFB_jrmc0nnb
+804941,Fe reductor MN,vnc_motor,fl,T1,L,,,156857.0,Fe reductor MN,VFB_jrmc2t96
+805010,Ti flexor MN,vnc_motor,ml,T2,R,,,13280.0,Ti flexor MN,VFB_jrmc0nnw
+805309,ltm2-femur MN,vnc_motor,fl,T1,L,,,20612.0,ltm2-femur MN,VFB_jrmc02u5
+805313,Pleural remotor/abductor MN,vnc_motor,fl,T1,R,,,21241.0,Pleural remotor/abductor MN,VFB_jrmc1knw
+805410,Sternal posterior rotator MN,vnc_motor,fl,T1,R,,,13942.0,Sternal posterior rotator MN,VFB_jrmc1a7b
+805477,Tr extensor MN,vnc_motor,ml,T2,L,,,13904.0,Tr extensor MN,VFB_jrmc06x0
+805568,Acc. ti flexor MN,vnc_motor,ml,T2,R,,,24443.0,Acc. ti flexor MN,VFB_jrmc3jg9
+805598,Fe reductor MN,vnc_motor,fl,T1,L,,,21944.0,Fe reductor MN,VFB_jrmc2t9a
+805741,Tergotr. MN,vnc_motor,fl,T1,L,,,155633.0,Tergotr. MN,VFB_jrmc0nmg
+805745,Tergopleural/Pleural promotor MN,vnc_motor,fl,T1,R,,,20386.0,Tergopleural/Pleural promotor MN,VFB_jrmc0nm2
+806204,Tergotr. MN,vnc_motor,ml,T2,R,,,175327.0,Tergotr. MN,VFB_jrmc0nmd
+806599,Acc. ti flexor MN,vnc_motor,fl,T1,L,,,101043.0,Acc. ti flexor MN,VFB_jrmc3jfy
+806898,Fe reductor MN,vnc_motor,fl,T1,R,,,18983.0,Fe reductor MN,VFB_jrmc2t91
+806923,Sternal anterior rotator MN,vnc_motor,fl,T1,L,,,26566.0,Sternal anterior rotator MN,VFB_jrmc1a71
+807160,MNhl01,vnc_motor,hl,T3,L,,,221983.0,MNhl01,VFB_jrmc20ke
+807165,Ti flexor MN,vnc_motor,fl,T1,L,,,12134.0,Ti flexor MN,VFB_jrmc0nmz
+807281,Tergopleural/Pleural promotor MN,vnc_motor,fl,T1,L,,,12396.0,Tergopleural/Pleural promotor MN,VFB_jrmc0nm0
+807395,MNml29,vnc_motor,ml,T2,R,,,104697.0,MNml29,VFB_jrmc20l5
+807640,Tr flexor MN,vnc_motor,hl,T3,R,,,28997.0,Tr flexor MN,VFB_jrmc06xd
+807854,Sternal adductor MN,vnc_motor,hl,T3,R,,,20667.0,Sternal adductor MN,VFB_jrmc1a6s
+807873,Acc. tr flexor MN,vnc_motor,fl,T1,R,,,16400.0,Acc. tr flexor MN,VFB_jrmc3jgw
+807906,Tr extensor MN,vnc_motor,fl,T1,L,,,19929.0,Tr extensor MN,VFB_jrmc06x1
+807972,ltm2-femur MN,vnc_motor,ml,T2,L,,,24725.0,ltm2-femur MN,VFB_jrmc02u6
+808011,Sternal posterior rotator MN,vnc_motor,fl,T1,R,,,21241.0,Sternal posterior rotator MN,VFB_jrmc1a7h
+808453,Tr extensor MN,vnc_motor,hl,T3,R,,,10866.0,Tr extensor MN,VFB_jrmc06wx
+808640,Sternal posterior rotator MN,vnc_motor,fl,T1,L,,,29689.0,Sternal posterior rotator MN,VFB_jrmc1a7p
+808685,Ti flexor MN,vnc_motor,hl,T3,R,,,13512.0,Ti flexor MN,VFB_jrmc0nnl
+809055,MNhl88,vnc_motor,hl,T3,R,,,13883.0,MNhl88,VFB_jrmc20kx
+809604,Acc. tr flexor MN,vnc_motor,hl,T3,L,,,162913.0,Acc. tr flexor MN,VFB_jrmc3jgh
+809670,Acc. ti flexor MN,vnc_motor,ml,T2,L,,,13784.0,Acc. ti flexor MN,VFB_jrmc3jfr
+809912,Ti flexor MN,vnc_motor,fl,T1,L,,,17133.0,Ti flexor MN,VFB_jrmc0nnc
+809935,Ti extensor MN,vnc_motor,hl,T3,R,,,13006.0,Ti extensor MN,VFB_jrmc0nmo
+810098,Ti flexor MN,vnc_motor,fl,T1,R,,,14848.0,Ti flexor MN,VFB_jrmc0nn9
+810535,Tergopleural/Pleural promotor MN,vnc_motor,fl,T1,R,,,13464.0,Tergopleural/Pleural promotor MN,VFB_jrmc0nm3
+810541,Ta levator MN,vnc_motor,fl,T1,L,,,22358.0,Ta levator MN,VFB_jrmc0nlz
+810639,Tr flexor MN,vnc_motor,fl,T1,L,,,19771.0,Tr flexor MN,VFB_jrmc06xt
+810720,Acc. tr flexor MN,vnc_motor,ml,T2,R,,,102019.0,Acc. tr flexor MN,VFB_jrmc3jgv
+811137,MNhl87,vnc_motor,hl,T3,L,,,17761.0,MNhl87,VFB_jrmc20kv
+811652,Fe reductor MN,vnc_motor,fl,T1,R,,,11226.0,Fe reductor MN,VFB_jrmc2t92
+812111,Fe reductor MN,vnc_motor,fl,T1,L,,,13920.0,Fe reductor MN,VFB_jrmc2t9c
+812531,Acc. ti flexor MN,vnc_motor,ml,T2,R,,,16495.0,Acc. ti flexor MN,VFB_jrmc3jg8
+812872,ltm MN,vnc_motor,ml,T2,R,,,26809.0,ltm MN,VFB_jrmc02tt
+812899,MNhl87,vnc_motor,hl,T3,R,,,15857.0,MNhl87,VFB_jrmc20ku
+812953,Ti extensor MN,vnc_motor,hl,T3,L,,,10347.0,Ti extensor MN,VFB_jrmc0nml
+813480,Sternal adductor MN,vnc_motor,fl,T1,L,,,155853.0,Sternal adductor MN,VFB_jrmc1a6v
+813566,Fe reductor MN,vnc_motor,fl,T1,R,,,12891.0,Fe reductor MN,VFB_jrmc2t93
+813603,ltm MN,vnc_motor,ml,T2,L,,,17964.0,ltm MN,VFB_jrmc02tj
+813629,Acc. ti flexor MN,vnc_motor,hl,T3,R,,,16228.0,Acc. ti flexor MN,VFB_jrmc3jfz
+813755,Tergotr. MN,vnc_motor,ml,T2,L,,,30650.0,Tergotr. MN,VFB_jrmc0nme
+814163,Fe reductor MN,vnc_motor,fl,T1,L,,,14949.0,Fe reductor MN,VFB_jrmc2t95
+814489,Tr flexor MN,vnc_motor,fl,T1,L,,,163686.0,Tr flexor MN,VFB_jrmc06x7
+814942,Tr extensor MN,vnc_motor,ml,T2,R,,,17930.0,Tr extensor MN,VFB_jrmc06wz
+814983,MNml78,vnc_motor,ml,T2,R,,,162868.0,MNml78,VFB_jrmc20lc
+815097,ltm MN,vnc_motor,hl,T3,R,,,166393.0,ltm MN,VFB_jrmc02tg
+815246,Acc. ti flexor MN,vnc_motor,fl,T1,L,,,17885.0,Acc. ti flexor MN,VFB_jrmc3jf7
+815344,Ti extensor MN,vnc_motor,fl,T1,L,,,10256.0,Ti extensor MN,VFB_jrmc0nmv
+815498,ltm2-femur MN,vnc_motor,hl,T3,L,,,158889.0,ltm2-femur MN,VFB_jrmc02u8
+815678,Ti extensor MN,vnc_motor,fl,T1,R,,,22126.0,Ti extensor MN,VFB_jrmc0nmr
+815854,Sternal adductor MN,vnc_motor,fl,T1,R,,,21718.0,Sternal adductor MN,VFB_jrmc1a6x
+815958,Acc. tr flexor MN,vnc_motor,hl,T3,R,,,17693.0,Acc. tr flexor MN,VFB_jrmc3jgf
+816018,Sternal adductor MN,vnc_motor,ml,T2,L,,,156233.0,Sternal adductor MN,VFB_jrmc1a6u
+816022,MNhl29,vnc_motor,hl,T3,R,,,14649.0,MNhl29,VFB_jrmc20kh
+816215,Acc. ti flexor MN,vnc_motor,fl,T1,L,,,18412.0,Acc. ti flexor MN,VFB_jrmc3jf8
+816222,Ti flexor MN,vnc_motor,ml,T2,R,,,18448.0,Ti flexor MN,VFB_jrmc0nnq
+816404,Acc. ti flexor MN,vnc_motor,fl,T1,L,,,23698.0,Acc. ti flexor MN,VFB_jrmc3jf9
+816501,MNhl02,vnc_motor,hl,T3,L,,,27479.0,MNhl02,VFB_jrmc20kf
+816648,Tr flexor MN,vnc_motor,fl,T1,R,,,39951.0,Tr flexor MN,VFB_jrmc06x3
+817210,Ta levator MN,vnc_motor,fl,T1,R,,,16346.0,Ta levator MN,VFB_jrmc0nly
+817283,Acc. ti flexor MN,vnc_motor,fl,T1,L,,,15023.0,Acc. ti flexor MN,VFB_jrmc3jfa
+817347,Tergotr. MN,vnc_motor,fl,T1,R,,,23553.0,Tergotr. MN,VFB_jrmc0nmb
+817374,Acc. ti flexor MN,vnc_motor,hl,T3,L,,,163009.0,Acc. ti flexor MN,VFB_jrmc3jfq
+817509,Acc. ti flexor MN,vnc_motor,fl,T1,R,,,12761.0,Acc. ti flexor MN,VFB_jrmc3jf0
+817595,Fe reductor MN,vnc_motor,fl,T1,R,,,29484.0,Fe reductor MN,VFB_jrmc2t8t
+817640,Tr flexor MN,vnc_motor,fl,T1,R,,,14783.0,Tr flexor MN,VFB_jrmc06xu
+817655,Ta depressor MN,vnc_motor,fl,T1,L,,,,Ta depressor MN,VFB_jrmc0nls
+817681,Tr flexor MN,vnc_motor,ml,T2,R,,,157207.0,Tr flexor MN,VFB_jrmc06xf
+817990,MNml78,vnc_motor,ml,T2,R,,,35950.0,MNml78,VFB_jrmc20le
+818057,Ti flexor MN,vnc_motor,fl,T1,L,,,15321.0,Ti flexor MN,VFB_jrmc0nnd
+818295,Ti flexor MN,vnc_motor,ml,T2,L,,,16635.0,Ti flexor MN,VFB_jrmc0nnf
+818389,Tr flexor MN,vnc_motor,fl,T1,L,,,23299.0,Tr flexor MN,VFB_jrmc06x8
+818399,Sternal posterior rotator MN,vnc_motor,hl,T3,L,,,27258.0,Sternal posterior rotator MN,VFB_jrmc1a7a
+818553,ltm1-tibia MN,vnc_motor,fl,T1,L,,,13952.0,ltm1-tibia MN,VFB_jrmc02tx
+818719,Tr flexor MN,vnc_motor,fl,T1,R,,,41353.0,Tr flexor MN,VFB_jrmc06xv
+818842,Tr extensor MN,vnc_motor,fl,T1,R,,,27028.0,Tr extensor MN,VFB_jrmc06ws
+818996,Sternal posterior rotator MN,vnc_motor,ml,T2,R,,,21120.0,Sternal posterior rotator MN,VFB_jrmc1a7d
+819112,Ti flexor MN,vnc_motor,hl,T3,L,,,15893.0,Ti flexor MN,VFB_jrmc0nn2
+819203,Tr flexor MN,vnc_motor,ml,T2,R,,,19983.0,Tr flexor MN,VFB_jrmc06xg
+819278,Ta depressor MN,vnc_motor,fl,T1,L,,,18554.0,Ta depressor MN,VFB_jrmc0nlt
+819384,Ti flexor MN,vnc_motor,fl,T1,L,,,17885.0,Ti flexor MN,VFB_jrmc0nne
+819674,Acc. ti flexor MN,vnc_motor,ml,T2,L,,,17070.0,Acc. ti flexor MN,VFB_jrmc3jg3
+819869,Acc. ti flexor MN,vnc_motor,fl,T1,L,,,13397.0,Acc. ti flexor MN,VFB_jrmc3jfb
+820110,Ta levator MN,vnc_motor,fl,T1,R,,,19751.0,Ta levator MN,VFB_jrmc0nlv
+820130,Tr flexor MN,vnc_motor,fl,T1,R,,,41933.0,Tr flexor MN,VFB_jrmc06xw
+820350,Fe reductor MN,vnc_motor,hl,T3,L,,,21665.0,Fe reductor MN,VFB_jrmc2t8w
+820574,MNml83,vnc_motor,ml,T2,R,,,200065.0,MNml83,VFB_jrmc20lr
+820632,MNml80,vnc_motor,ml,T2,L,,,17697.0,MNml80,VFB_jrmc20lk
+820668,Tr flexor MN,vnc_motor,fl,T1,R,,,19886.0,Tr flexor MN,VFB_jrmc06x4
+820764,Fe reductor MN,vnc_motor,ml,T2,L,,,45494.0,Fe reductor MN,VFB_jrmc2t8v
+820896,Ta levator MN,vnc_motor,fl,T1,R,,,15446.0,Ta levator MN,VFB_jrmc0nlw
+821154,Acc. tr flexor MN,vnc_motor,hl,T3,L,,,13095.0,Acc. tr flexor MN,VFB_jrmc3jgk
+821291,Acc. tr flexor MN,vnc_motor,fl,T1,L,,,25475.0,Acc. tr flexor MN,VFB_jrmc3jgi
+821375,Acc. tr flexor MN,vnc_motor,ml,T2,L,,,155216.0,Acc. tr flexor MN,VFB_jrmc3jgs
+821449,ltm2-femur MN,vnc_motor,hl,T3,R,,,16356.0,ltm2-femur MN,VFB_jrmc02u7
+821494,MNml79,vnc_motor,ml,T2,L,,,,MNml79,VFB_jrmc20lf
+821635,Ti flexor MN,vnc_motor,fl,T1,R,,,13399.0,Ti flexor MN,VFB_jrmc0nmw
+821769,Fe reductor MN,vnc_motor,ml,T2,R,,,42738.0,Fe reductor MN,VFB_jrmc2t8x
+822013,Ti flexor MN,vnc_motor,ml,T2,R,,,162827.0,Ti flexor MN,VFB_jrmc0nnr
+822047,ltm1-tibia MN,vnc_motor,fl,T1,L,,,19092.0,ltm1-tibia MN,VFB_jrmc02tv
+822092,ltm MN,vnc_motor,fl,T1,L,,,24139.0,ltm MN,VFB_jrmc02tn
+822185,MNml77,vnc_motor,ml,T2,L,,,103416.0,MNml77,VFB_jrmc20l7
+822252,MNhl64,vnc_motor,hl,T3,L,,,29474.0,MNhl64,VFB_jrmc20kp
+822274,ltm MN,vnc_motor,fl,T1,L,,,14069.0,ltm MN,VFB_jrmc02to
+822742,MNml80,vnc_motor,ml,T2,L,,,14775.0,MNml80,VFB_jrmc20lh
+822945,Ti flexor MN,vnc_motor,hl,T3,L,,,,Ti flexor MN,VFB_jrmc0nnj
+823132,Fe reductor MN,vnc_motor,ml,T2,R,,,35432.0,Fe reductor MN,VFB_jrmc2t90
+823168,Tr flexor MN,vnc_motor,fl,T1,L,,,16963.0,Tr flexor MN,VFB_jrmc06xy
+823281,Tr flexor MN,vnc_motor,fl,T1,L,,,153142.0,Tr flexor MN,VFB_jrmc06x9
+823405,ltm MN,vnc_motor,hl,T3,L,,,19074.0,ltm MN,VFB_jrmc02td
+823665,Ti flexor MN,vnc_motor,hl,T3,R,,,12758.0,Ti flexor MN,VFB_jrmc0nnm
+823739,Ti flexor MN,vnc_motor,ml,T2,L,,,100707.0,Ti flexor MN,VFB_jrmc0nng
+824041,Ti flexor MN,vnc_motor,ml,T2,L,,,14665.0,Ti flexor MN,VFB_jrmc0nnh
+824104,ltm MN,vnc_motor,hl,T3,L,,,21963.0,ltm MN,VFB_jrmc02tm
+824315,Tr flexor MN,vnc_motor,ml,T2,R,,,171948.0,Tr flexor MN,VFB_jrmc06xh
+824689,ltm MN,vnc_motor,ml,T2,L,,,17419.0,ltm MN,VFB_jrmc02ts
+824997,ltm MN,vnc_motor,ml,T2,R,,,162830.0,ltm MN,VFB_jrmc02tl
+825485,Acc. ti flexor MN,vnc_motor,ml,T2,L,,,14213.0,Acc. ti flexor MN,VFB_jrmc3jfo
+825516,Acc. ti flexor MN,vnc_motor,fl,T1,L,,,29554.0,Acc. ti flexor MN,VFB_jrmc3jfc
+825681,ltm MN,vnc_motor,ml,T2,L,,,15873.0,ltm MN,VFB_jrmc02tu
+825721,Ta depressor MN,vnc_motor,fl,T1,R,,,15434.0,Ta depressor MN,VFB_jrmc0nlm
+826996,ltm2-femur MN,vnc_motor,ml,T2,L,,,25447.0,ltm2-femur MN,VFB_jrmc02u9
+827188,Ti flexor MN,vnc_motor,fl,T1,R,,,,Ti flexor MN,VFB_jrmc0nna
+827968,Ti flexor MN,vnc_motor,hl,T3,R,,,37220.0,Ti flexor MN,VFB_jrmc0nnt
+828238,,vnc_motor,hl,T3,R,,,,,VFB_jrmc3krf
+828939,Tr flexor MN,vnc_motor,fl,T1,L,,,17226.0,Tr flexor MN,VFB_jrmc06xa
+828978,Sternotrochanter MN,vnc_motor,hl,T3,L,,,157503.0,Sternotrochanter MN,VFB_jrmc1a7y
+829873,Acc. ti flexor MN,vnc_motor,hl,T3,L,,,,Acc. ti flexor MN,VFB_jrmc3jfg
+830039,ltm2-femur MN,vnc_motor,fl,T1,R,,,17050.0,ltm2-femur MN,VFB_jrmc02ub
+830480,Acc. ti flexor MN,vnc_motor,ml,T2,L,,,24828.0,Acc. ti flexor MN,VFB_jrmc3jfx
+830514,Ti extensor MN,vnc_motor,ml,T2,R,,,11489.0,Ti extensor MN,VFB_jrmc0nmt
+832490,Sternal anterior rotator MN,vnc_motor,ml,T2,L,,,16295.0,Sternal anterior rotator MN,VFB_jrmc1a75
+833140,Acc. ti flexor MN,vnc_motor,fl,T1,R,,,16897.0,Acc. ti flexor MN,VFB_jrmc3jf1
+835074,Fe reductor MN,vnc_motor,fl,T1,R,,,28884.0,Fe reductor MN,VFB_jrmc2t8u
+837745,Acc. ti flexor MN,vnc_motor,fl,T1,R,,,15367.0,Acc. ti flexor MN,VFB_jrmc3jf2
+838321,Tr extensor MN,vnc_motor,fl,T1,R,,,14536.0,Tr extensor MN,VFB_jrmc06wu
+840530,Tr extensor MN,vnc_motor,ml,T2,R,,,162833.0,Tr extensor MN,VFB_jrmc06wy
+840740,Ti flexor MN,vnc_motor,hl,T3,R,,,12504.0,Ti flexor MN,VFB_jrmc0nnn
+840981,Tr extensor MN,vnc_motor,hl,T3,L,,,162912.0,Tr extensor MN,VFB_jrmc06ww
+843389,Acc. ti flexor MN,vnc_motor,hl,T3,L,,,21186.0,Acc. ti flexor MN,VFB_jrmc3jfh
+852673,ltm2-femur MN,vnc_motor,ml,T2,R,,,13033.0,ltm2-femur MN,VFB_jrmc02ud
+852881,,vnc_motor,hl,T3,R,,,23390.0,,VFB_jrmc3krc
+856359,Sternotrochanter MN,vnc_motor,ml,T2,R,,,18716.0,Sternotrochanter MN,VFB_jrmc1a85
+857751,ltm2-femur MN,vnc_motor,hl,T3,L,,,,ltm2-femur MN,VFB_jrmc02u4
+858248,ltm1-tibia MN,vnc_motor,hl,T3,L,,,,ltm1-tibia MN,VFB_jrmc02tz
+860084,ltm MN,vnc_motor,fl,T1,R,,,11786.0,ltm MN,VFB_jrmc02tr
+867630,Acc. ti flexor MN,vnc_motor,fl,T1,L,,,13156.0,Acc. ti flexor MN,VFB_jrmc3jfd
+867926,Acc. tr flexor MN,vnc_motor,ml,T2,R,,,218885.0,Acc. tr flexor MN,VFB_jrmc3jgq
+869369,MNhl65,vnc_motor,hl,T3,R,,,13144.0,MNhl65,VFB_jrmc20kt
+876504,,vnc_motor,hl,T3,L,,,,,VFB_jrmc3kr8
+890541,ltm MN,vnc_motor,hl,T3,L,,,23016.0,ltm MN,VFB_jrmc02te
+895449,MNml78,vnc_motor,ml,T2,L,,,20551.0,MNml78,VFB_jrmc20l9
+896719,Acc. tr flexor MN,vnc_motor,hl,T3,L,,,34004.0,Acc. tr flexor MN,VFB_jrmc3jgl
+902310,Pleural remotor/abductor MN,vnc_motor,hl,T3,L,,,15278.0,Pleural remotor/abductor MN,VFB_jrmc1kns
+902492,Pleural remotor/abductor MN,vnc_motor,ml,T2,L,,,17091.0,Pleural remotor/abductor MN,VFB_jrmc1ko5
+902719,Pleural remotor/abductor MN,vnc_motor,ml,T2,R,,,166337.0,Pleural remotor/abductor MN,VFB_jrmc1ko1
+902962,Fe reductor MN,vnc_motor,hl,T3,R,,,12113.0,Fe reductor MN,VFB_jrmc2t98
+903010,Tr flexor MN,vnc_motor,fl,T1,R,,,21612.0,Tr flexor MN,VFB_jrmc06x5
+903090,MNhl62,vnc_motor,hl,T3,R,,,17970.0,MNhl62,VFB_jrmc20kn
+903158,Tr flexor MN,vnc_motor,ml,T2,L,,,19704.0,Tr flexor MN,VFB_jrmc06xm
+903159,Tr flexor MN,vnc_motor,ml,T2,L,,,155218.0,Tr flexor MN,VFB_jrmc06xr
+903298,Acc. ti flexor MN,vnc_motor,fl,T1,L,,,16632.0,Acc. ti flexor MN,VFB_jrmc3jfe
+903363,Ti flexor MN,vnc_motor,ml,T2,R,,,167438.0,Ti flexor MN,VFB_jrmc0nn8
+903508,MNml81,vnc_motor,ml,T2,L,,,13036.0,MNml81,VFB_jrmc20lo
+903579,Tr flexor MN,vnc_motor,ml,T2,L,,,167442.0,Tr flexor MN,VFB_jrmc06xn
+903642,Sternal posterior rotator MN,vnc_motor,hl,T3,R,,,17947.0,Sternal posterior rotator MN,VFB_jrmc1a7c
+903643,Sternal posterior rotator MN,vnc_motor,hl,T3,R,,,11400.0,Sternal posterior rotator MN,VFB_jrmc1a7m
+903689,Sternal anterior rotator MN,vnc_motor,ml,T2,L,,,20119.0,Sternal anterior rotator MN,VFB_jrmc1a79
+903844,MNml80,vnc_motor,ml,T2,R,,,15616.0,MNml80,VFB_jrmc20lm
+904184,Sternal adductor MN,vnc_motor,hl,T3,L,,,29483.0,Sternal adductor MN,VFB_jrmc1a6t
+904657,Sternotrochanter MN,vnc_motor,ml,T2,L,,,26132.0,Sternotrochanter MN,VFB_jrmc1a86
+905145,Fe reductor MN,vnc_motor,ml,T2,R,,,16552.0,Fe reductor MN,VFB_jrmc2t94
+905235,Acc. ti flexor MN,vnc_motor,ml,T2,R,,,,Acc. ti flexor MN,VFB_jrmc3jga
+905236,MNml80,vnc_motor,ml,T2,R,,,16497.0,MNml80,VFB_jrmc20lj
+905421,Pleural remotor/abductor MN,vnc_motor,ml,T2,L,,,21255.0,Pleural remotor/abductor MN,VFB_jrmc1knu
+905487,ltm MN,vnc_motor,ml,T2,R,,,35735.0,ltm MN,VFB_jrmc02tk
+905559,MNml79,vnc_motor,ml,T2,R,,,32253.0,MNml79,VFB_jrmc20lg
+905586,Acc. tr flexor MN,vnc_motor,hl,T3,R,,,19613.0,Acc. tr flexor MN,VFB_jrmc3jgm
+905661,Tr extensor MN,vnc_motor,hl,T3,R,,,165340.0,Tr extensor MN,VFB_jrmc06wt
+905792,MNhl01,vnc_motor,hl,T3,R,,,15735.0,MNhl01,VFB_jrmc20kd
+905849,Tergotr. MN,vnc_motor,hl,T3,R,,,13434.0,Tergotr. MN,VFB_jrmc0nmh
+905928,Tr flexor MN,vnc_motor,hl,T3,R,,,26883.0,Tr flexor MN,VFB_jrmc06xj
+906235,Sternal anterior rotator MN,vnc_motor,hl,T3,R,,,11022.0,Sternal anterior rotator MN,VFB_jrmc1a78
+907256,Sternal posterior rotator MN,vnc_motor,hl,T3,R,,,154133.0,Sternal posterior rotator MN,VFB_jrmc1a7u
+907387,MNml77,vnc_motor,ml,T2,R,,,30781.0,MNml77,VFB_jrmc20l8
+907422,MNml78,vnc_motor,ml,T2,L,,,25956.0,MNml78,VFB_jrmc20lb
+907443,ltm1-tibia MN,vnc_motor,ml,T2,L,,,101736.0,ltm1-tibia MN,VFB_jrmc02tw
+907848,Acc. ti flexor MN,vnc_motor,ml,T2,R,,,14849.0,Acc. ti flexor MN,VFB_jrmc3jg6
+908094,Acc. ti flexor MN,vnc_motor,ml,T2,L,,,25212.0,Acc. ti flexor MN,VFB_jrmc3jfp
+908673,ltm2-femur MN,vnc_motor,ml,T2,R,,,28532466490.0,ltm2-femur MN,VFB_jrmc02ue
+908762,Ti flexor MN,vnc_motor,hl,T3,L,,,14468.0,Ti flexor MN,VFB_jrmc0nn3
+909078,Tr extensor MN,vnc_motor,ml,T2,L,,,30306.0,Tr extensor MN,VFB_jrmc06x2
+909255,Acc. ti flexor MN,vnc_motor,ml,T2,R,,,39941.0,Acc. ti flexor MN,VFB_jrmc3jg2
+909371,Sternal adductor MN,vnc_motor,ml,T2,R,,,171055.0,Sternal adductor MN,VFB_jrmc1a6w
+909521,Tergotr. MN,vnc_motor,fl,T1,R,,,37234.0,Tergotr. MN,VFB_jrmc0nmj
+909618,Acc. tr flexor MN,vnc_motor,fl,T1,L,,,26588.0,Acc. tr flexor MN,VFB_jrmc3jgj
+909713,Acc. ti flexor MN,vnc_motor,fl,T1,R,,,16492.0,Acc. ti flexor MN,VFB_jrmc3jf3
+909831,Ti flexor MN,vnc_motor,fl,T1,L,,,14798.0,Ti flexor MN,VFB_jrmc0nn0
+910095,Tr flexor MN,vnc_motor,ml,T2,R,,,34115.0,Tr flexor MN,VFB_jrmc06y1
+910178,Ti flexor MN,vnc_motor,hl,T3,R,,,12800.0,Ti flexor MN,VFB_jrmc0nno
+910296,Acc. ti flexor MN,vnc_motor,hl,T3,R,,,19260.0,Acc. ti flexor MN,VFB_jrmc3jfm
+910334,ltm MN,vnc_motor,fl,T1,L,,,47642.0,ltm MN,VFB_jrmc02tp
+911134,Acc. tr flexor MN,vnc_motor,fl,T1,L,,,23048.0,Acc. tr flexor MN,VFB_jrmc3jgb
+911453,ltm MN,vnc_motor,fl,T1,L,,,173560.0,ltm MN,VFB_jrmc02tc
+912694,ltm1-tibia MN,vnc_motor,hl,T3,L,,,15712.0,ltm1-tibia MN,VFB_jrmc02u0
+914655,Tr flexor MN,vnc_motor,fl,T1,R,,,20673.0,Tr flexor MN,VFB_jrmc06xx
+914837,ltm1-tibia MN,vnc_motor,hl,T3,R,,,15380.0,ltm1-tibia MN,VFB_jrmc02u2
+914852,Acc. tr flexor MN,vnc_motor,hl,T3,R,,,17693.0,Acc. tr flexor MN,VFB_jrmc3jgp
+919509,Sternal anterior rotator MN,vnc_motor,fl,T1,L,,,17176.0,Sternal anterior rotator MN,VFB_jrmc1a73
+924142,Tr flexor MN,vnc_motor,ml,T2,R,,,158769.0,Tr flexor MN,VFB_jrmc06xc
+924189,ltm MN,vnc_motor,fl,T1,R,,,154803.0,ltm MN,VFB_jrmc02tq
+924716,Tergotr. MN,vnc_motor,fl,T1,R,,,,Tergotr. MN,VFB_jrmc0nmc
+927808,Ti flexor MN,vnc_motor,ml,T2,L,,,153335.0,Ti flexor MN,VFB_jrmc0nni
+927828,Acc. tr flexor MN,vnc_motor,ml,T2,L,,,156180.0,Acc. tr flexor MN,VFB_jrmc3jgg
+928579,Ti extensor MN,vnc_motor,ml,T2,R,,,,Ti extensor MN,VFB_jrmc0nmq
+929376,Ti flexor MN,vnc_motor,hl,T3,L,,,14339.0,Ti flexor MN,VFB_jrmc0nn4
+934091,Tergopleural/Pleural promotor MN,vnc_motor,fl,T1,L,,,13490.0,Tergopleural/Pleural promotor MN,VFB_jrmc0nm1
+934519,Acc. ti flexor MN,vnc_motor,hl,T3,L,,,25599.0,Acc. ti flexor MN,VFB_jrmc3jfi
+936696,MNhl65,vnc_motor,hl,T3,L,,,19480.0,MNhl65,VFB_jrmc20ks
+939950,MNhl60,vnc_motor,hl,T3,R,,,27205.0,MNhl60,VFB_jrmc20km
+1050003192,Acc. ti flexor MN,vnc_motor,hl,T3,L,,,14226.0,Acc. ti flexor MN,VFB_jrmc3jfj
+1050005026,Acc. ti flexor MN,vnc_motor,fl,T1,R,,,154804.0,Acc. ti flexor MN,VFB_jrmc3jf4
+1050013311,Ti flexor MN,vnc_motor,hl,T3,R,,,22465.0,Ti flexor MN,VFB_jrmc0nn7
+1050013851,ltm MN,vnc_motor,fl,T1,R,,,15317.0,ltm MN,VFB_jrmc02ta
+1050015101,ltm MN,vnc_motor,fl,T1,R,,,27078.0,ltm MN,VFB_jrmc02tb
+1050031705,Ti flexor MN,vnc_motor,fl,T1,R,,,,Ti flexor MN,VFB_jrmc0nmx
+1050032839,Acc. ti flexor MN,vnc_motor,hl,T3,R,,,,Acc. ti flexor MN,VFB_jrmc3jfv
+1050038433,Acc. tr flexor MN,vnc_motor,hl,T3,L,,,37741.0,Acc. tr flexor MN,VFB_jrmc3jgd
+1050046221,MNml80,vnc_motor,ml,T2,L,,,25956.0,MNml80,VFB_jrmc20ll
+1050080384,ltm MN,vnc_motor,hl,T3,L,,,14343.0,ltm MN,VFB_jrmc02tf
+1050088257,Ti flexor MN,vnc_motor,hl,T3,L,,,,Ti flexor MN,VFB_jrmc0nn5
+1050091102,ltm MN,vnc_motor,hl,T3,R,,,11480.0,ltm MN,VFB_jrmc02th
+1050091581,Acc. ti flexor MN,vnc_motor,fl,T1,R,,,18963.0,Acc. ti flexor MN,VFB_jrmc3jf5
+1050098047,Tr flexor MN,vnc_motor,hl,T3,R,,,40443.0,Tr flexor MN,VFB_jrmc06xk
+1050100010,Ti flexor MN,vnc_motor,hl,T3,L,,,12585.0,Ti flexor MN,VFB_jrmc0nnk
+1050102118,Acc. tr flexor MN,vnc_motor,hl,T3,R,,,96565.0,Acc. tr flexor MN,VFB_jrmc3jgn
+1050111955,Ta levator MN,vnc_motor,fl,T1,L,,,25674.0,Ta levator MN,VFB_jrmc0nlx
+1050115387,Acc. ti flexor MN,vnc_motor,fl,T1,L,,,15791.0,Acc. ti flexor MN,VFB_jrmc3jff
+1050119039,MNml78,vnc_motor,ml,T2,L,,,30709.0,MNml78,VFB_jrmc20la
+1050123559,Acc. ti flexor MN,vnc_motor,hl,T3,L,,,27733.0,Acc. ti flexor MN,VFB_jrmc3jfk
+1050126678,Acc. ti flexor MN,vnc_motor,fl,T1,R,,,14824.0,Acc. ti flexor MN,VFB_jrmc3jg5
+1050139141,Acc. tr flexor MN,vnc_motor,hl,T3,L,,,22487.0,Acc. tr flexor MN,VFB_jrmc3jgr
+1050151215,MNml78,vnc_motor,ml,T2,L,,,167919.0,MNml78,VFB_jrmc20ld
+1050156705,Acc. ti flexor MN,vnc_motor,fl,T1,R,,,19048.0,Acc. ti flexor MN,VFB_jrmc3jfs
+1050160514,Acc. ti flexor MN,vnc_motor,hl,T3,R,,,20593.0,Acc. ti flexor MN,VFB_jrmc3jg0
+1050160593,MNml76,vnc_motor,ml,T2,R,,,156505.0,MNml76,VFB_jrmc20l6
+1050166426,Ti flexor MN,vnc_motor,hl,T3,L,,,15038.0,Ti flexor MN,VFB_jrmc0nn6
+1050174251,ltm2-femur MN,vnc_motor,hl,T3,R,,,14773.0,ltm2-femur MN,VFB_jrmc02uf
+1050189039,Ti flexor MN,vnc_motor,fl,T1,R,,,13283.0,Ti flexor MN,VFB_jrmc0nmy
+1050194310,Tr flexor MN,vnc_motor,hl,T3,L,,,166171.0,Tr flexor MN,VFB_jrmc06xe
+1050202259,MNhl65,vnc_motor,hl,T3,L,,,,MNhl65,VFB_jrmc20kr
+1050202461,Acc. ti flexor MN,vnc_motor,hl,T3,R,,,12725.0,Acc. ti flexor MN,VFB_jrmc3jg1
+1050203465,ltm MN,vnc_motor,hl,T3,R,,,29950.0,ltm MN,VFB_jrmc02ti
+1050233038,Acc. ti flexor MN,vnc_motor,hl,T3,L,,,25885.0,Acc. ti flexor MN,VFB_jrmc3jfl
+1050239701,Acc. tr flexor MN,vnc_motor,hl,T3,L,,,,Acc. tr flexor MN,VFB_jrmc3jgo
+1050248133,Ta depressor MN,vnc_motor,fl,T1,R,,,20373.0,Ta depressor MN,VFB_jrmc0nln
+1050251718,ltm2-femur MN,vnc_motor,fl,T1,R,,,15720.0,ltm2-femur MN,VFB_jrmc02uc
+1050263576,Acc. ti flexor MN,vnc_motor,hl,T3,L,,,12759.0,Acc. ti flexor MN,VFB_jrmc3jft
+1050268065,Acc. ti flexor MN,vnc_motor,fl,T1,R,,,20605.0,Acc. ti flexor MN,VFB_jrmc3jf6
+1050272154,,vnc_motor,hl,T3,L,,,,,VFB_jrmc3kra
+1050274189,MNhl60,vnc_motor,hl,T3,L,,,100824.0,MNhl60,VFB_jrmc20kl
+1050303231,Ti flexor MN,vnc_motor,hl,T3,R,,,12474.0,Ti flexor MN,VFB_jrmc0nnp
+1050306082,Acc. tr flexor MN,vnc_motor,fl,T1,R,,,13563.0,Acc. tr flexor MN,VFB_jrmc3jgt
+1050335829,Sternal posterior rotator MN,vnc_motor,fl,T1,L,,,,Sternal posterior rotator MN,VFB_jrmc1a7i
+1050340850,,vnc_motor,fl,T1,R,,,16658.0,,VFB_jrmc3kre
+1050349786,Acc. tr flexor MN,vnc_motor,fl,T1,R,,,22729.0,Acc. tr flexor MN,VFB_jrmc3jgu
+1050380236,Ta depressor MN,vnc_motor,fl,T1,R,,,26658.0,Ta depressor MN,VFB_jrmc0nlo
+1050403926,Ta depressor MN,vnc_motor,fl,T1,L,,,15023.0,Ta depressor MN,VFB_jrmc0nlq
+1050460102,Acc. ti flexor MN,vnc_motor,hl,T3,R,,,21991.0,Acc. ti flexor MN,VFB_jrmc3jfw
+1050493413,Sternal posterior rotator MN,vnc_motor,hl,T3,R,,,28219.0,Sternal posterior rotator MN,VFB_jrmc1a7e
+1050607195,Fe reductor MN,vnc_motor,ml,T2,L,,,158681.0,Fe reductor MN,VFB_jrmc2t8z
+1050615112,ltm2-femur MN,vnc_motor,fl,T1,L,,,15818.0,ltm2-femur MN,VFB_jrmc02ua
+1050660827,Ta depressor MN,vnc_motor,fl,T1,L,,,166374.0,Ta depressor MN,VFB_jrmc0nlu
+1050669248,Tr flexor MN,vnc_motor,ml,T2,L,,,153315.0,Tr flexor MN,VFB_jrmc06xs
+1050673969,MNml80,vnc_motor,ml,T2,R,,,18664.0,MNml80,VFB_jrmc20li
+1050730563,Acc. tr flexor MN,vnc_motor,hl,T3,L,,,24668.0,Acc. tr flexor MN,VFB_jrmc3jge
+1050815462,Ta depressor MN,vnc_motor,fl,T1,R,,,26777.0,Ta depressor MN,VFB_jrmc0nlp
+1050938258,Tr flexor MN,vnc_motor,hl,T3,R,,,17137.0,Tr flexor MN,VFB_jrmc06xl
+1051054875,Sternal posterior rotator MN,vnc_motor,ml,T2,L,,,172408.0,Sternal posterior rotator MN,VFB_jrmc1a7g
+1051062549,Ta depressor MN,vnc_motor,fl,T1,L,,,,Ta depressor MN,VFB_jrmc0nlr
+1051236875,Acc. tr flexor MN,vnc_motor,hl,T3,L,,,23117.0,Acc. tr flexor MN,VFB_jrmc3jgc
+1051356801,Acc. ti flexor MN,vnc_motor,ml,T2,L,,,21262.0,Acc. ti flexor MN,VFB_jrmc3jg4
+1051367796,Tr flexor MN,vnc_motor,fl,T1,L,,,158694.0,Tr flexor MN,VFB_jrmc06x6
+1051670893,Tr flexor MN,vnc_motor,fl,T1,L,,,26613.0,Tr flexor MN,VFB_jrmc06xb
+1051680335,,vnc_motor,hl,T3,L,,,13192.0,,VFB_jrmc3kr9
+1052407897,,vnc_motor,fl,T1,R,,,16203.0,,VFB_jrmc3krd
+1052521030,Acc. ti flexor MN,vnc_motor,ml,T2,R,,,16017.0,Acc. ti flexor MN,VFB_jrmc3jg7
+1057471940,ltm1-tibia MN,vnc_motor,fl,T1,R,,,166385.0,ltm1-tibia MN,VFB_jrmc02u1
+1059707690,Acc. ti flexor MN,vnc_motor,hl,T3,R,,,13170.0,Acc. ti flexor MN,VFB_jrmc3jfn

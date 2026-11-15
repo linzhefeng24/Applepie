@@ -1,0 +1,955 @@
+{
+  "method": "Trace observed source\u2192target transmission and whole-cell input balance.\n\nEvent loads are descriptive approximations from real saved spikes/counts, not\ncausal attribution. Saved total conductances/currents provide actual integration\noutputs; a smaller inhibitory current need not mean less inhibition because\nhyperpolarization reduces chloride driving force. No score or automatic fit.\n",
+  "scope": "existing saved r9 runs independently inspected; no new experiment claimed for these four conditions",
+  "graph_sha256": "9eb1f7c1544611e4c242267805b41d68a2cf2cb8ba07586fa5d39a9bb2b1f11e",
+  "targets": [
+    {
+      "baseline": "P9",
+      "case": "P9+BB",
+      "target_type": "DNg97",
+      "side": "L",
+      "conditions": [
+        {
+          "condition": "P9",
+          "target_rate_hz": 24.444444444444443,
+          "mean_soma_mV": -62.619081635277,
+          "mean_axon_mV": -64.11188122128402,
+          "mean_ge_nS": 4.1461012257067065,
+          "mean_gi_nS": 10.662893306646286,
+          "mean_exc_current_pA": 214.22244699215523,
+          "mean_inh_current_pA": -192.39975342707805,
+          "mean_axon_to_soma_coupling_current_pA": -17.913595032084274,
+          "input_sha256": "a5999598643eac9cf83a0c00dcdb7e7af2124da0aa15a417f0411f4b773ba00b"
+        },
+        {
+          "condition": "P9+BB",
+          "target_rate_hz": 13.333333333333332,
+          "mean_soma_mV": -68.1850493547048,
+          "mean_axon_mV": -68.09205140447236,
+          "mean_ge_nS": 2.7140649706037725,
+          "mean_gi_nS": 14.166224273751014,
+          "mean_exc_current_pA": 165.43020803887646,
+          "mean_inh_current_pA": -171.8863508830231,
+          "mean_axon_to_soma_coupling_current_pA": 1.1159754027892308,
+          "input_sha256": "fcc64f12bbb5a6048b7bd15d50e31a8e0792b3d682709e01e559e1b6a85929dc"
+        }
+      ],
+      "target_body_id": "13805",
+      "largest_case_inputs": [
+        {
+          "condition": "P9+BB",
+          "pre": "11374",
+          "pre_type": "DNg60",
+          "pre_NT": "gaba",
+          "post": "13805",
+          "signed_synapse_count": -71.0,
+          "pre_rate_hz": 75.55555555555556,
+          "peak_conductance_event_load_nS_per_s": 128.74666666666667
+        },
+        {
+          "condition": "P9+BB",
+          "pre": "11177",
+          "pre_type": "DNp09",
+          "pre_NT": "acetylcholine",
+          "post": "13805",
+          "signed_synapse_count": 51.0,
+          "pre_rate_hz": 73.33333333333333,
+          "peak_conductance_event_load_nS_per_s": 89.75999999999999
+        },
+        {
+          "condition": "P9+BB",
+          "pre": "11982",
+          "pre_type": "GNG127",
+          "pre_NT": "gaba",
+          "post": "13805",
+          "signed_synapse_count": -165.0,
+          "pre_rate_hz": 31.11111111111111,
+          "peak_conductance_event_load_nS_per_s": 30.8
+        },
+        {
+          "condition": "P9+BB",
+          "pre": "10872",
+          "pre_type": "CB0677",
+          "pre_NT": "gaba",
+          "post": "13805",
+          "signed_synapse_count": -248.0,
+          "pre_rate_hz": 20.0,
+          "peak_conductance_event_load_nS_per_s": 29.759999999999998
+        },
+        {
+          "condition": "P9+BB",
+          "pre": "188947",
+          "pre_type": "DNg60",
+          "pre_NT": "gaba",
+          "post": "13805",
+          "signed_synapse_count": -17.0,
+          "pre_rate_hz": 71.11111111111111,
+          "peak_conductance_event_load_nS_per_s": 29.013333333333335
+        },
+        {
+          "condition": "P9+BB",
+          "pre": "578647",
+          "pre_type": "VES089",
+          "pre_NT": "acetylcholine",
+          "post": "13805",
+          "signed_synapse_count": 166.0,
+          "pre_rate_hz": 6.666666666666666,
+          "peak_conductance_event_load_nS_per_s": 26.56
+        },
+        {
+          "condition": "P9+BB",
+          "pre": "12223",
+          "pre_type": "DNpe027",
+          "pre_NT": "acetylcholine",
+          "post": "13805",
+          "signed_synapse_count": 155.0,
+          "pre_rate_hz": 6.666666666666666,
+          "peak_conductance_event_load_nS_per_s": 24.8
+        },
+        {
+          "condition": "P9+BB",
+          "pre": "13327",
+          "pre_type": "VES005",
+          "pre_NT": "acetylcholine",
+          "post": "13805",
+          "signed_synapse_count": 229.0,
+          "pre_rate_hz": 4.444444444444445,
+          "peak_conductance_event_load_nS_per_s": 24.42666666666667
+        },
+        {
+          "condition": "P9+BB",
+          "pre": "12724",
+          "pre_type": "LAL014",
+          "pre_NT": "acetylcholine",
+          "post": "13805",
+          "signed_synapse_count": 65.0,
+          "pre_rate_hz": 15.555555555555555,
+          "peak_conductance_event_load_nS_per_s": 24.266666666666666
+        },
+        {
+          "condition": "P9+BB",
+          "pre": "19753",
+          "pre_type": "AN23B003",
+          "pre_NT": "acetylcholine",
+          "post": "13805",
+          "signed_synapse_count": 103.0,
+          "pre_rate_hz": 6.666666666666666,
+          "peak_conductance_event_load_nS_per_s": 16.479999999999997
+        },
+        {
+          "condition": "P9+BB",
+          "pre": "520177",
+          "pre_type": "AN05B097",
+          "pre_NT": "acetylcholine",
+          "post": "13805",
+          "signed_synapse_count": 147.0,
+          "pre_rate_hz": 4.444444444444445,
+          "peak_conductance_event_load_nS_per_s": 15.680000000000001
+        },
+        {
+          "condition": "P9+BB",
+          "pre": "805362",
+          "pre_type": "AN27X011",
+          "pre_NT": "acetylcholine",
+          "post": "13805",
+          "signed_synapse_count": 42.0,
+          "pre_rate_hz": 15.555555555555555,
+          "peak_conductance_event_load_nS_per_s": 15.68
+        },
+        {
+          "condition": "P9+BB",
+          "pre": "10329",
+          "pre_type": "PVLP137",
+          "pre_NT": "acetylcholine",
+          "post": "13805",
+          "signed_synapse_count": 90.0,
+          "pre_rate_hz": 6.666666666666666,
+          "peak_conductance_event_load_nS_per_s": 14.4
+        },
+        {
+          "condition": "P9+BB",
+          "pre": "11222",
+          "pre_type": "DNg111",
+          "pre_NT": "glutamate",
+          "post": "13805",
+          "signed_synapse_count": -170.0,
+          "pre_rate_hz": 13.333333333333332,
+          "peak_conductance_event_load_nS_per_s": 13.6
+        },
+        {
+          "condition": "P9+BB",
+          "pre": "10177",
+          "pre_type": "DNg16",
+          "pre_NT": "acetylcholine",
+          "post": "13805",
+          "signed_synapse_count": 37.0,
+          "pre_rate_hz": 13.333333333333332,
+          "peak_conductance_event_load_nS_per_s": 11.84
+        }
+      ],
+      "direct_stimulated_source_inputs": [
+        {
+          "condition": "P9+BB",
+          "pre": "11374",
+          "pre_type": "DNg60",
+          "pre_NT": "gaba",
+          "post": "13805",
+          "signed_synapse_count": -71.0,
+          "pre_rate_hz": 75.55555555555556,
+          "peak_conductance_event_load_nS_per_s": 128.74666666666667
+        },
+        {
+          "condition": "P9+BB",
+          "pre": "188947",
+          "pre_type": "DNg60",
+          "pre_NT": "gaba",
+          "post": "13805",
+          "signed_synapse_count": -17.0,
+          "pre_rate_hz": 71.11111111111111,
+          "peak_conductance_event_load_nS_per_s": 29.013333333333335
+        },
+        {
+          "condition": "P9+BB",
+          "pre": "11288",
+          "pre_type": "MDN",
+          "pre_NT": "acetylcholine",
+          "post": "13805",
+          "signed_synapse_count": 2.0,
+          "pre_rate_hz": 15.555555555555555,
+          "peak_conductance_event_load_nS_per_s": 0.7466666666666667
+        },
+        {
+          "condition": "P9+BB",
+          "pre": "14973",
+          "pre_type": "AN19A018",
+          "pre_NT": "acetylcholine",
+          "post": "13805",
+          "signed_synapse_count": 1.0,
+          "pre_rate_hz": 8.88888888888889,
+          "peak_conductance_event_load_nS_per_s": 0.10666666666666667
+        }
+      ]
+    },
+    {
+      "baseline": "P9",
+      "case": "P9+BB",
+      "target_type": "DNg97",
+      "side": "R",
+      "conditions": [
+        {
+          "condition": "P9",
+          "target_rate_hz": 24.444444444444443,
+          "mean_soma_mV": -61.91843275570099,
+          "mean_axon_mV": -63.847578260607264,
+          "mean_ge_nS": 4.707037868051464,
+          "mean_gi_nS": 10.586402875355494,
+          "mean_exc_current_pA": 228.11906120212504,
+          "mean_inh_current_pA": -199.63926183876893,
+          "mean_axon_to_soma_coupling_current_pA": -23.149746058875277,
+          "input_sha256": "a5999598643eac9cf83a0c00dcdb7e7af2124da0aa15a417f0411f4b773ba00b"
+        },
+        {
+          "condition": "P9+BB",
+          "target_rate_hz": 13.333333333333332,
+          "mean_soma_mV": -68.46319421328573,
+          "mean_axon_mV": -68.43403371839891,
+          "mean_ge_nS": 2.6452882627677194,
+          "mean_gi_nS": 13.588144277884505,
+          "mean_exc_current_pA": 157.27520694537975,
+          "mean_inh_current_pA": -163.6271957073647,
+          "mean_axon_to_soma_coupling_current_pA": 0.34992593864201077,
+          "input_sha256": "fcc64f12bbb5a6048b7bd15d50e31a8e0792b3d682709e01e559e1b6a85929dc"
+        }
+      ],
+      "target_body_id": "230783",
+      "largest_case_inputs": [
+        {
+          "condition": "P9+BB",
+          "pre": "188947",
+          "pre_type": "DNg60",
+          "pre_NT": "gaba",
+          "post": "230783",
+          "signed_synapse_count": -53.0,
+          "pre_rate_hz": 71.11111111111111,
+          "peak_conductance_event_load_nS_per_s": 90.45333333333333
+        },
+        {
+          "condition": "P9+BB",
+          "pre": "10783",
+          "pre_type": "DNp09",
+          "pre_NT": "acetylcholine",
+          "post": "230783",
+          "signed_synapse_count": 70.0,
+          "pre_rate_hz": 40.0,
+          "peak_conductance_event_load_nS_per_s": 67.2
+        },
+        {
+          "condition": "P9+BB",
+          "pre": "10243",
+          "pre_type": "VES104",
+          "pre_NT": "gaba",
+          "post": "230783",
+          "signed_synapse_count": -476.0,
+          "pre_rate_hz": 13.333333333333332,
+          "peak_conductance_event_load_nS_per_s": 38.08
+        },
+        {
+          "condition": "P9+BB",
+          "pre": "11374",
+          "pre_type": "DNg60",
+          "pre_NT": "gaba",
+          "post": "230783",
+          "signed_synapse_count": -21.0,
+          "pre_rate_hz": 75.55555555555556,
+          "peak_conductance_event_load_nS_per_s": 38.08
+        },
+        {
+          "condition": "P9+BB",
+          "pre": "521191",
+          "pre_type": "VES005",
+          "pre_NT": "acetylcholine",
+          "post": "230783",
+          "signed_synapse_count": 229.0,
+          "pre_rate_hz": 6.666666666666666,
+          "peak_conductance_event_load_nS_per_s": 36.64
+        },
+        {
+          "condition": "P9+BB",
+          "pre": "10329",
+          "pre_type": "PVLP137",
+          "pre_NT": "acetylcholine",
+          "post": "230783",
+          "signed_synapse_count": 208.0,
+          "pre_rate_hz": 6.666666666666666,
+          "peak_conductance_event_load_nS_per_s": 33.279999999999994
+        },
+        {
+          "condition": "P9+BB",
+          "pre": "578647",
+          "pre_type": "VES089",
+          "pre_NT": "acetylcholine",
+          "post": "230783",
+          "signed_synapse_count": 206.0,
+          "pre_rate_hz": 6.666666666666666,
+          "peak_conductance_event_load_nS_per_s": 32.959999999999994
+        },
+        {
+          "condition": "P9+BB",
+          "pre": "516820",
+          "pre_type": "GNG127",
+          "pre_NT": "gaba",
+          "post": "230783",
+          "signed_synapse_count": -195.0,
+          "pre_rate_hz": 24.444444444444443,
+          "peak_conductance_event_load_nS_per_s": 28.599999999999998
+        },
+        {
+          "condition": "P9+BB",
+          "pre": "805362",
+          "pre_type": "AN27X011",
+          "pre_NT": "acetylcholine",
+          "post": "230783",
+          "signed_synapse_count": 42.0,
+          "pre_rate_hz": 15.555555555555555,
+          "peak_conductance_event_load_nS_per_s": 15.68
+        },
+        {
+          "condition": "P9+BB",
+          "pre": "515029",
+          "pre_type": "DNpe027",
+          "pre_NT": "acetylcholine",
+          "post": "230783",
+          "signed_synapse_count": 146.0,
+          "pre_rate_hz": 4.444444444444445,
+          "peak_conductance_event_load_nS_per_s": 15.573333333333334
+        },
+        {
+          "condition": "P9+BB",
+          "pre": "19217",
+          "pre_type": "AN23B003",
+          "pre_NT": "acetylcholine",
+          "post": "230783",
+          "signed_synapse_count": 87.0,
+          "pre_rate_hz": 6.666666666666666,
+          "peak_conductance_event_load_nS_per_s": 13.92
+        },
+        {
+          "condition": "P9+BB",
+          "pre": "12297",
+          "pre_type": "LAL169",
+          "pre_NT": "acetylcholine",
+          "post": "230783",
+          "signed_synapse_count": 64.0,
+          "pre_rate_hz": 8.88888888888889,
+          "peak_conductance_event_load_nS_per_s": 13.653333333333334
+        },
+        {
+          "condition": "P9+BB",
+          "pre": "11982",
+          "pre_type": "GNG127",
+          "pre_NT": "gaba",
+          "post": "230783",
+          "signed_synapse_count": -71.0,
+          "pre_rate_hz": 31.11111111111111,
+          "peak_conductance_event_load_nS_per_s": 13.253333333333332
+        },
+        {
+          "condition": "P9+BB",
+          "pre": "10215",
+          "pre_type": "CB0677",
+          "pre_NT": "gaba",
+          "post": "230783",
+          "signed_synapse_count": -244.0,
+          "pre_rate_hz": 8.88888888888889,
+          "peak_conductance_event_load_nS_per_s": 13.013333333333334
+        },
+        {
+          "condition": "P9+BB",
+          "pre": "242405",
+          "pre_type": "DNge046",
+          "pre_NT": "gaba",
+          "post": "230783",
+          "signed_synapse_count": -76.0,
+          "pre_rate_hz": 26.666666666666664,
+          "peak_conductance_event_load_nS_per_s": 12.16
+        }
+      ],
+      "direct_stimulated_source_inputs": [
+        {
+          "condition": "P9+BB",
+          "pre": "188947",
+          "pre_type": "DNg60",
+          "pre_NT": "gaba",
+          "post": "230783",
+          "signed_synapse_count": -53.0,
+          "pre_rate_hz": 71.11111111111111,
+          "peak_conductance_event_load_nS_per_s": 90.45333333333333
+        },
+        {
+          "condition": "P9+BB",
+          "pre": "11374",
+          "pre_type": "DNg60",
+          "pre_NT": "gaba",
+          "post": "230783",
+          "signed_synapse_count": -21.0,
+          "pre_rate_hz": 75.55555555555556,
+          "peak_conductance_event_load_nS_per_s": 38.08
+        }
+      ]
+    },
+    {
+      "baseline": "MDN",
+      "case": "MDN+BRK",
+      "target_type": "LBL40",
+      "side": "L",
+      "conditions": [
+        {
+          "condition": "MDN",
+          "target_rate_hz": 15.555555555555555,
+          "mean_soma_mV": -53.90151570979916,
+          "mean_axon_mV": -59.113624273362845,
+          "mean_ge_nS": 2.0706006419268697,
+          "mean_gi_nS": 1.0462938586531882,
+          "mean_exc_current_pA": 108.35484454916117,
+          "mean_inh_current_pA": -27.006192059263686,
+          "mean_axon_to_soma_coupling_current_pA": -62.54530276276407,
+          "input_sha256": "885d94ed0f218d2826390c82902af573e6ba17fe8824c5555b5999433c7aa2e4"
+        },
+        {
+          "condition": "MDN+BRK",
+          "target_rate_hz": 33.333333333333336,
+          "mean_soma_mV": -52.89666359719856,
+          "mean_axon_mV": -58.09312100092992,
+          "mean_ge_nS": 2.340205000809924,
+          "mean_gi_nS": 1.3195472163639854,
+          "mean_exc_current_pA": 118.00219321236787,
+          "mean_inh_current_pA": -34.59287807994821,
+          "mean_axon_to_soma_coupling_current_pA": -62.35748884477631,
+          "input_sha256": "1746b18aa5a1d59beb33f5ed0eadc52fb3d0da274f9f1dd8c3e698228348cf11"
+        }
+      ],
+      "target_body_id": "801246",
+      "largest_case_inputs": [
+        {
+          "condition": "MDN+BRK",
+          "pre": "10763",
+          "pre_type": "MDN",
+          "pre_NT": "acetylcholine",
+          "post": "801246",
+          "signed_synapse_count": 129.0,
+          "pre_rate_hz": 80.0,
+          "peak_conductance_event_load_nS_per_s": 123.84
+        },
+        {
+          "condition": "MDN+BRK",
+          "pre": "11332",
+          "pre_type": "MDN",
+          "pre_NT": "acetylcholine",
+          "post": "801246",
+          "signed_synapse_count": 117.0,
+          "pre_rate_hz": 73.33333333333333,
+          "peak_conductance_event_load_nS_per_s": 102.96000000000001
+        },
+        {
+          "condition": "MDN+BRK",
+          "pre": "10885",
+          "pre_type": "DNg88",
+          "pre_NT": "acetylcholine",
+          "post": "801246",
+          "signed_synapse_count": 222.0,
+          "pre_rate_hz": 13.333333333333332,
+          "peak_conductance_event_load_nS_per_s": 35.519999999999996
+        },
+        {
+          "condition": "MDN+BRK",
+          "pre": "802951",
+          "pre_type": "IN07B010",
+          "pre_NT": "acetylcholine",
+          "post": "801246",
+          "signed_synapse_count": 85.0,
+          "pre_rate_hz": 26.666666666666664,
+          "peak_conductance_event_load_nS_per_s": 27.2
+        },
+        {
+          "condition": "MDN+BRK",
+          "pre": "29086",
+          "pre_type": "DNge023",
+          "pre_NT": "acetylcholine",
+          "post": "801246",
+          "signed_synapse_count": 167.0,
+          "pre_rate_hz": 6.666666666666666,
+          "peak_conductance_event_load_nS_per_s": 13.36
+        },
+        {
+          "condition": "MDN+BRK",
+          "pre": "525960",
+          "pre_type": "DNa13",
+          "pre_NT": "acetylcholine",
+          "post": "801246",
+          "signed_synapse_count": 90.0,
+          "pre_rate_hz": 8.88888888888889,
+          "peak_conductance_event_load_nS_per_s": 9.600000000000001
+        },
+        {
+          "condition": "MDN+BRK",
+          "pre": "555726",
+          "pre_type": "DNa13",
+          "pre_NT": "acetylcholine",
+          "post": "801246",
+          "signed_synapse_count": 83.0,
+          "pre_rate_hz": 8.88888888888889,
+          "peak_conductance_event_load_nS_per_s": 8.853333333333333
+        },
+        {
+          "condition": "MDN+BRK",
+          "pre": "801214",
+          "pre_type": "LBL40",
+          "pre_NT": "acetylcholine",
+          "post": "801246",
+          "signed_synapse_count": 33.0,
+          "pre_rate_hz": 17.77777777777778,
+          "peak_conductance_event_load_nS_per_s": 7.040000000000001
+        },
+        {
+          "condition": "MDN+BRK",
+          "pre": "800003",
+          "pre_type": "IN17A001",
+          "pre_NT": "acetylcholine",
+          "post": "801246",
+          "signed_synapse_count": 19.0,
+          "pre_rate_hz": 26.666666666666664,
+          "peak_conductance_event_load_nS_per_s": 6.08
+        },
+        {
+          "condition": "MDN+BRK",
+          "pre": "13030",
+          "pre_type": "DNge006",
+          "pre_NT": "acetylcholine",
+          "post": "801246",
+          "signed_synapse_count": 23.0,
+          "pre_rate_hz": 20.0,
+          "peak_conductance_event_load_nS_per_s": 5.5200000000000005
+        },
+        {
+          "condition": "MDN+BRK",
+          "pre": "10218",
+          "pre_type": "DNg35",
+          "pre_NT": "acetylcholine",
+          "post": "801246",
+          "signed_synapse_count": 185.0,
+          "pre_rate_hz": 2.2222222222222223,
+          "peak_conductance_event_load_nS_per_s": 4.933333333333334
+        },
+        {
+          "condition": "MDN+BRK",
+          "pre": "227102",
+          "pre_type": "AN14A003",
+          "pre_NT": "glutamate",
+          "post": "801246",
+          "signed_synapse_count": -55.0,
+          "pre_rate_hz": 11.11111111111111,
+          "peak_conductance_event_load_nS_per_s": 3.6666666666666665
+        },
+        {
+          "condition": "MDN+BRK",
+          "pre": "10131",
+          "pre_type": "DNg74_a",
+          "pre_NT": "gaba",
+          "post": "801246",
+          "signed_synapse_count": -34.0,
+          "pre_rate_hz": 15.555555555555555,
+          "peak_conductance_event_load_nS_per_s": 3.1733333333333333
+        },
+        {
+          "condition": "MDN+BRK",
+          "pre": "10581",
+          "pre_type": "IN06B012",
+          "pre_NT": "gaba",
+          "post": "801246",
+          "signed_synapse_count": -202.0,
+          "pre_rate_hz": 2.2222222222222223,
+          "peak_conductance_event_load_nS_per_s": 2.6933333333333334
+        },
+        {
+          "condition": "MDN+BRK",
+          "pre": "10577",
+          "pre_type": "DNg96",
+          "pre_NT": "glutamate",
+          "post": "801246",
+          "signed_synapse_count": -64.0,
+          "pre_rate_hz": 6.666666666666666,
+          "peak_conductance_event_load_nS_per_s": 2.5599999999999996
+        }
+      ],
+      "direct_stimulated_source_inputs": [
+        {
+          "condition": "MDN+BRK",
+          "pre": "10763",
+          "pre_type": "MDN",
+          "pre_NT": "acetylcholine",
+          "post": "801246",
+          "signed_synapse_count": 129.0,
+          "pre_rate_hz": 80.0,
+          "peak_conductance_event_load_nS_per_s": 123.84
+        },
+        {
+          "condition": "MDN+BRK",
+          "pre": "11332",
+          "pre_type": "MDN",
+          "pre_NT": "acetylcholine",
+          "post": "801246",
+          "signed_synapse_count": 117.0,
+          "pre_rate_hz": 73.33333333333333,
+          "peak_conductance_event_load_nS_per_s": 102.96000000000001
+        }
+      ]
+    },
+    {
+      "baseline": "MDN",
+      "case": "MDN+BRK",
+      "target_type": "IN27X001",
+      "side": "L",
+      "conditions": [
+        {
+          "condition": "MDN",
+          "target_rate_hz": 8.88888888888889,
+          "mean_soma_mV": -64.85351340874784,
+          "mean_axon_mV": -66.49440021127126,
+          "mean_ge_nS": 0.6739658901920837,
+          "mean_gi_nS": 0.6934768426980085,
+          "mean_exc_current_pA": 33.92251602657976,
+          "mean_inh_current_pA": -13.878708050071639,
+          "mean_axon_to_soma_coupling_current_pA": -19.690641630280993,
+          "input_sha256": "885d94ed0f218d2826390c82902af573e6ba17fe8824c5555b5999433c7aa2e4"
+        },
+        {
+          "condition": "MDN+BRK",
+          "target_rate_hz": 64.44444444444444,
+          "mean_soma_mV": -46.51365808081126,
+          "mean_axon_mV": -54.755446292191856,
+          "mean_ge_nS": 3.59242165134035,
+          "mean_gi_nS": 0.9930570096853665,
+          "mean_exc_current_pA": 162.94427744779827,
+          "mean_inh_current_pA": -32.509767801065976,
+          "mean_axon_to_soma_coupling_current_pA": -98.90145853656718,
+          "input_sha256": "1746b18aa5a1d59beb33f5ed0eadc52fb3d0da274f9f1dd8c3e698228348cf11"
+        }
+      ],
+      "target_body_id": "39880",
+      "largest_case_inputs": [
+        {
+          "condition": "MDN+BRK",
+          "pre": "14113",
+          "pre_type": "AN19A018",
+          "pre_NT": "acetylcholine",
+          "post": "39880",
+          "signed_synapse_count": 230.0,
+          "pre_rate_hz": 73.33333333333333,
+          "peak_conductance_event_load_nS_per_s": 101.2
+        },
+        {
+          "condition": "MDN+BRK",
+          "pre": "14973",
+          "pre_type": "AN19A018",
+          "pre_NT": "acetylcholine",
+          "post": "39880",
+          "signed_synapse_count": 198.0,
+          "pre_rate_hz": 73.33333333333333,
+          "peak_conductance_event_load_nS_per_s": 87.11999999999999
+        },
+        {
+          "condition": "MDN+BRK",
+          "pre": "523843",
+          "pre_type": "AN19A018",
+          "pre_NT": "acetylcholine",
+          "post": "39880",
+          "signed_synapse_count": 192.0,
+          "pre_rate_hz": 68.88888888888889,
+          "peak_conductance_event_load_nS_per_s": 79.36
+        },
+        {
+          "condition": "MDN+BRK",
+          "pre": "17510",
+          "pre_type": "AN19A018",
+          "pre_NT": "acetylcholine",
+          "post": "39880",
+          "signed_synapse_count": 157.0,
+          "pre_rate_hz": 71.11111111111111,
+          "peak_conductance_event_load_nS_per_s": 66.98666666666668
+        },
+        {
+          "condition": "MDN+BRK",
+          "pre": "14863",
+          "pre_type": "AN19A018",
+          "pre_NT": "acetylcholine",
+          "post": "39880",
+          "signed_synapse_count": 169.0,
+          "pre_rate_hz": 64.44444444444444,
+          "peak_conductance_event_load_nS_per_s": 65.34666666666666
+        },
+        {
+          "condition": "MDN+BRK",
+          "pre": "16542",
+          "pre_type": "AN19A018",
+          "pre_NT": "acetylcholine",
+          "post": "39880",
+          "signed_synapse_count": 118.0,
+          "pre_rate_hz": 75.55555555555556,
+          "peak_conductance_event_load_nS_per_s": 53.49333333333333
+        },
+        {
+          "condition": "MDN+BRK",
+          "pre": "13022",
+          "pre_type": "DNge139",
+          "pre_NT": "acetylcholine",
+          "post": "39880",
+          "signed_synapse_count": 87.0,
+          "pre_rate_hz": 33.333333333333336,
+          "peak_conductance_event_load_nS_per_s": 34.800000000000004
+        },
+        {
+          "condition": "MDN+BRK",
+          "pre": "13857",
+          "pre_type": "DNge139",
+          "pre_NT": "acetylcholine",
+          "post": "39880",
+          "signed_synapse_count": 78.0,
+          "pre_rate_hz": 24.444444444444443,
+          "peak_conductance_event_load_nS_per_s": 22.88
+        },
+        {
+          "condition": "MDN+BRK",
+          "pre": "17757",
+          "pre_type": "AN19B001",
+          "pre_NT": "acetylcholine",
+          "post": "39880",
+          "signed_synapse_count": 89.0,
+          "pre_rate_hz": 8.88888888888889,
+          "peak_conductance_event_load_nS_per_s": 9.493333333333334
+        },
+        {
+          "condition": "MDN+BRK",
+          "pre": "800012",
+          "pre_type": "AN19B001",
+          "pre_NT": "acetylcholine",
+          "post": "39880",
+          "signed_synapse_count": 60.0,
+          "pre_rate_hz": 8.88888888888889,
+          "peak_conductance_event_load_nS_per_s": 6.4
+        },
+        {
+          "condition": "MDN+BRK",
+          "pre": "800041",
+          "pre_type": "IN27X001",
+          "pre_NT": "gaba",
+          "post": "39880",
+          "signed_synapse_count": -12.0,
+          "pre_rate_hz": 66.66666666666667,
+          "peak_conductance_event_load_nS_per_s": 4.800000000000001
+        },
+        {
+          "condition": "MDN+BRK",
+          "pre": "15105",
+          "pre_type": "DNg55",
+          "pre_NT": "gaba",
+          "post": "39880",
+          "signed_synapse_count": -110.0,
+          "pre_rate_hz": 6.666666666666666,
+          "peak_conductance_event_load_nS_per_s": 4.3999999999999995
+        },
+        {
+          "condition": "MDN+BRK",
+          "pre": "13685",
+          "pre_type": "DNge008",
+          "pre_NT": "acetylcholine",
+          "post": "39880",
+          "signed_synapse_count": 38.0,
+          "pre_rate_hz": 8.88888888888889,
+          "peak_conductance_event_load_nS_per_s": 4.053333333333334
+        },
+        {
+          "condition": "MDN+BRK",
+          "pre": "71940",
+          "pre_type": "AN14A003",
+          "pre_NT": "glutamate",
+          "post": "39880",
+          "signed_synapse_count": -26.0,
+          "pre_rate_hz": 22.22222222222222,
+          "peak_conductance_event_load_nS_per_s": 3.4666666666666663
+        },
+        {
+          "condition": "MDN+BRK",
+          "pre": "154726",
+          "pre_type": "AN18B003",
+          "pre_NT": "acetylcholine",
+          "post": "39880",
+          "signed_synapse_count": 25.0,
+          "pre_rate_hz": 11.11111111111111,
+          "peak_conductance_event_load_nS_per_s": 3.333333333333333
+        }
+      ],
+      "direct_stimulated_source_inputs": [
+        {
+          "condition": "MDN+BRK",
+          "pre": "14113",
+          "pre_type": "AN19A018",
+          "pre_NT": "acetylcholine",
+          "post": "39880",
+          "signed_synapse_count": 230.0,
+          "pre_rate_hz": 73.33333333333333,
+          "peak_conductance_event_load_nS_per_s": 101.2
+        },
+        {
+          "condition": "MDN+BRK",
+          "pre": "14973",
+          "pre_type": "AN19A018",
+          "pre_NT": "acetylcholine",
+          "post": "39880",
+          "signed_synapse_count": 198.0,
+          "pre_rate_hz": 73.33333333333333,
+          "peak_conductance_event_load_nS_per_s": 87.11999999999999
+        },
+        {
+          "condition": "MDN+BRK",
+          "pre": "523843",
+          "pre_type": "AN19A018",
+          "pre_NT": "acetylcholine",
+          "post": "39880",
+          "signed_synapse_count": 192.0,
+          "pre_rate_hz": 68.88888888888889,
+          "peak_conductance_event_load_nS_per_s": 79.36
+        },
+        {
+          "condition": "MDN+BRK",
+          "pre": "17510",
+          "pre_type": "AN19A018",
+          "pre_NT": "acetylcholine",
+          "post": "39880",
+          "signed_synapse_count": 157.0,
+          "pre_rate_hz": 71.11111111111111,
+          "peak_conductance_event_load_nS_per_s": 66.98666666666668
+        },
+        {
+          "condition": "MDN+BRK",
+          "pre": "14863",
+          "pre_type": "AN19A018",
+          "pre_NT": "acetylcholine",
+          "post": "39880",
+          "signed_synapse_count": 169.0,
+          "pre_rate_hz": 64.44444444444444,
+          "peak_conductance_event_load_nS_per_s": 65.34666666666666
+        },
+        {
+          "condition": "MDN+BRK",
+          "pre": "16542",
+          "pre_type": "AN19A018",
+          "pre_NT": "acetylcholine",
+          "post": "39880",
+          "signed_synapse_count": 118.0,
+          "pre_rate_hz": 75.55555555555556,
+          "peak_conductance_event_load_nS_per_s": 53.49333333333333
+        },
+        {
+          "condition": "MDN+BRK",
+          "pre": "44992",
+          "pre_type": "AN19A018",
+          "pre_NT": "acetylcholine",
+          "post": "39880",
+          "signed_synapse_count": 86.0,
+          "pre_rate_hz": 2.2222222222222223,
+          "peak_conductance_event_load_nS_per_s": 1.1466666666666667
+        },
+        {
+          "condition": "MDN+BRK",
+          "pre": "24115",
+          "pre_type": "AN19A018",
+          "pre_NT": "acetylcholine",
+          "post": "39880",
+          "signed_synapse_count": 83.0,
+          "pre_rate_hz": 0.0,
+          "peak_conductance_event_load_nS_per_s": 0.0
+        },
+        {
+          "condition": "MDN+BRK",
+          "pre": "46961",
+          "pre_type": "AN19A018",
+          "pre_NT": "acetylcholine",
+          "post": "39880",
+          "signed_synapse_count": 28.0,
+          "pre_rate_hz": 0.0,
+          "peak_conductance_event_load_nS_per_s": 0.0
+        },
+        {
+          "condition": "MDN+BRK",
+          "pre": "74742",
+          "pre_type": "AN19A018",
+          "pre_NT": "acetylcholine",
+          "post": "39880",
+          "signed_synapse_count": 76.0,
+          "pre_rate_hz": 0.0,
+          "peak_conductance_event_load_nS_per_s": 0.0
+        },
+        {
+          "condition": "MDN+BRK",
+          "pre": "516367",
+          "pre_type": "AN19A018",
+          "pre_NT": "acetylcholine",
+          "post": "39880",
+          "signed_synapse_count": 37.0,
+          "pre_rate_hz": 0.0,
+          "peak_conductance_event_load_nS_per_s": 0.0
+        },
+        {
+          "condition": "MDN+BRK",
+          "pre": "520135",
+          "pre_type": "AN19A018",
+          "pre_NT": "acetylcholine",
+          "post": "39880",
+          "signed_synapse_count": 91.0,
+          "pre_rate_hz": 0.0,
+          "peak_conductance_event_load_nS_per_s": 0.0
+        }
+      ]
+    }
+  ]
+}

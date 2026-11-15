@@ -1,0 +1,39 @@
+[
+  {
+    "id": "finite-element-ncbi-oa",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC12056673",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "id": "finite-element-oai",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC12056673",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "id": "cheong-readme",
+    "url": "https://raw.githubusercontent.com/gmcard/Cheong_et_al_2024_eLife/main/README.md",
+    "status": 200,
+    "content_type": "text/plain; charset=utf-8",
+    "sha256": "03186c17eb65a11991bbad92673170ce01ba7a5023443f3a4b637338980d7533",
+    "bytes": 105,
+    "file": "research/gap-evidence-20261115/sources/cheong-readme.txt"
+  },
+  {
+    "id": "cheong-zenodo",
+    "url": "https://zenodo.org/api/records/20532929",
+    "status": 200,
+    "content_type": "application/json",
+    "sha256": "5cc66db5cffbd6b4f9904e2344fdcee6b3c040814cafbcbd2be3d73324174a66",
+    "bytes": 4662,
+    "file": "research/gap-evidence-20261115/sources/cheong-zenodo.txt"
+  },
+  {
+    "id": "steering-zenodo",
+    "url": "https://zenodo.org/api/records/12775493",
+    "status": 200,
+    "content_type": "application/json",
+    "sha256": "a2ebe29916a14e176f0a5b55deba0e9f600a96413a3254adeeaca9d6a8c981c4",
+    "bytes": 5690,
+    "file": "research/gap-evidence-20261115/sources/steering-zenodo.txt"
+  }
+]

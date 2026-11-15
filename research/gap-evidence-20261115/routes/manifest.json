@@ -1,0 +1,56 @@
+{
+  "namespace": "MaleCNS_v1.0",
+  "query": "explicit vnc_sensory, leg entry nerve; no hook/claw subclass inference; positive significant structural synapse counts only",
+  "source_hashes": {
+    "/workspace/exports/malecns-source/body-annotations-male-cns-v1.0-minconf-0.5.feather": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2",
+    "/workspace/exports/malecns-source/connectome-weights-male-cns-v1.0-minconf-0.5-significant-only.feather": "5c536423a62a688e59e7b441f9c04d6272c9a1f017e35814cf561f8c275d9e9e",
+    "/workspace/Applepie-research-sync/research/conductance-rebuild-20261114/results/mcns-unified/neurons.json": "c1d7b00efd51aeab7942ef9acf97360362a5cb6fd034a58ba880e2de7aeb199e",
+    "/workspace/Applepie-research-sync/research/gap-evidence-20261115/extract_sensory_routes.py": "aa474d56294ab59932e3efc0d2bc38bd3ef8cfb7b42ef47b2a90080b4e8214c8"
+  },
+  "source_archive": "../conductance-rebuild-20261114/data/public-input-release-verified.json",
+  "python": "3.12.14",
+  "pyarrow": "19.0.1",
+  "summary": [
+    {
+      "source_class": "leg_campaniform",
+      "annotated_sources": 12,
+      "sources_reaching_MN_within2edges": 12,
+      "direct_edges_to_MN": 166,
+      "two_edge_paths_via_vnc_intrinsic": 11896,
+      "intermediate_neurons": 372,
+      "leg_MNs_reached": 368,
+      "direct_edges_retained_in3474graph": 0,
+      "twohop_paths_retained_in3474graph": 0
+    },
+    {
+      "source_class": "leg_chordotonal",
+      "annotated_sources": 403,
+      "sources_reaching_MN_within2edges": 403,
+      "direct_edges_to_MN": 946,
+      "two_edge_paths_via_vnc_intrinsic": 174411,
+      "intermediate_neurons": 2859,
+      "leg_MNs_reached": 381,
+      "direct_edges_retained_in3474graph": 0,
+      "twohop_paths_retained_in3474graph": 0
+    },
+    {
+      "source_class": "BRK",
+      "annotated_sources": 6,
+      "sources_reaching_MN_within2edges": 6,
+      "direct_edges_to_MN": 8,
+      "two_edge_paths_via_vnc_intrinsic": 9870,
+      "intermediate_neurons": 428,
+      "leg_MNs_reached": 374,
+      "direct_edges_retained_in3474graph": 0,
+      "twohop_paths_retained_in3474graph": 85
+    }
+  ],
+  "current_model_coverage": {
+    "full_annotation_leg_MN_count": 381,
+    "leg_MNs_in_current3474graph": 2,
+    "annotated_sensory_in_current_graph": 0,
+    "BRK_present": 6,
+    "note": "graph inclusion alone does not provide sensory transduction or body feedback"
+  },
+  "count_caution": "traced significant-edge subset; not all biological receptors; shortest paths restricted to0/1 intrinsic relay; no rates inferred"
+}

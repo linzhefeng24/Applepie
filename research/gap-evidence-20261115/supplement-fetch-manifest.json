@@ -1,0 +1,52 @@
+[
+  {
+    "url": "https://cdn.elifesciences.org/articles/96084/elife-96084-supp1-v2.csv",
+    "id": "cheong-supp1",
+    "status": 200,
+    "content_type": "text/csv",
+    "file": "sources/cheong-supp1.csv",
+    "sha256": "e559a0e6759044c6a969dab53c56a843e3c1d8d957fbb3881b78488774dfb687",
+    "bytes": 152740
+  },
+  {
+    "url": "https://cdn.elifesciences.org/articles/96084/elife-96084-supp3-v2.csv",
+    "id": "cheong-supp3",
+    "status": 200,
+    "content_type": "text/csv",
+    "file": "sources/cheong-supp3.csv",
+    "sha256": "c46e3cec1a5114b8d981d5f0383012c8e7fcdebd6c4e3eaffe4ac3ba1def2e94",
+    "bytes": 67297
+  },
+  {
+    "url": "https://cdn.elifesciences.org/articles/96084/elife-96084-supp6-v2.csv",
+    "id": "cheong-supp6",
+    "status": 200,
+    "content_type": "text/csv",
+    "file": "sources/cheong-supp6.csv",
+    "sha256": "b56b0563f6a6000b2a43fbc7ebec46297668e8e3b6c6d596843d5ad5aab83a65",
+    "bytes": 24898
+  },
+  {
+    "url": "https://cdn.elifesciences.org/articles/96084/elife-96084-supp7-v2.csv",
+    "id": "cheong-supp7",
+    "status": 200,
+    "content_type": "text/csv",
+    "file": "sources/cheong-supp7.csv",
+    "sha256": "1f4023854b2a68dbac3b3cb6ec317c2e349fcb542ecd65841bbc05982819f89f",
+    "bytes": 40273
+  },
+  {
+    "url": "https://cdn.elifesciences.org/articles/96084/elife-96084-supp8-v2.csv",
+    "id": "cheong-supp8",
+    "status": 200,
+    "content_type": "text/csv",
+    "file": "sources/cheong-supp8.csv",
+    "sha256": "5c0535a0731ba234b80daa9a8fc9c21b7afcd7119b6d876554975854b9e1fde9",
+    "bytes": 53163
+  },
+  {
+    "url": "https://royalsocietypublishing.org/doi/full-xml/10.1098/rsif.2024.0559",
+    "id": "finite-element-publisher-xml",
+    "error": "HTTP Error 403: Forbidden"
+  }
+]

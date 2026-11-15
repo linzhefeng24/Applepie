@@ -1,0 +1,68 @@
+[
+  {
+    "pmcid": "PMC12056673",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12056673/fullTextXML",
+    "error": "HTTP Error 500: Internal Server Error"
+  },
+  {
+    "pmcid": "PMC13384506",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13384506/fullTextXML",
+    "sha256": "bdfa3c9beb9e80d2bb178294938c7411518bbcb510bb5d003892e3f1779ab6e6",
+    "bytes": 640121,
+    "file": "sources/PMC13384506.xml",
+    "title": "Organization of circuits linking descending input to motor output in the  Drosophila  Male Adult Nerve Cord connectome"
+  },
+  {
+    "pmcid": "PMC12778575",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12778575/fullTextXML",
+    "sha256": "869b7e2b57637e84dc3699c24144d0b64446da9cb7fc9a0a7712d1f1cdf9881e",
+    "bytes": 387544,
+    "file": "sources/PMC12778575.xml",
+    "title": "Fine-grained descending control of steering in walking  Drosophila"
+  },
+  {
+    "pmcid": "PMC11446846",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11446846/fullTextXML",
+    "sha256": "b7f618e298d85621f09a1238c46a818ea7d725d4f3f4630c42f93e75211ae377",
+    "bytes": 251643,
+    "file": "sources/PMC11446846.xml",
+    "title": "Neural circuit mechanisms underlying context-specific halting in  Drosophila"
+  },
+  {
+    "pmcid": "PMC8665017",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8665017/fullTextXML",
+    "sha256": "9f7f80bb490957ed175345d3cd389120db35204180e560056c90c99fff0bfd24",
+    "bytes": 177057,
+    "file": "sources/PMC8665017.xml",
+    "title": "Functional architecture of neural circuits for leg proprioception in  Drosophila"
+  },
+  {
+    "pmcid": "PMC11348827",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11348827/fullTextXML",
+    "error": "HTTP Error 500: Internal Server Error"
+  },
+  {
+    "pmcid": "PMC12279373",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12279373/fullTextXML",
+    "sha256": "10bc6ba38e60178f403a4e5fc31e437fce924a33629fa6f5be9f01886fb0f88d",
+    "bytes": 408283,
+    "file": "sources/PMC12279373.xml",
+    "title": "Neural circuit mechanisms for steering control in walking  Drosophila"
+  },
+  {
+    "pmcid": "PMC13009157",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13009157/fullTextXML",
+    "sha256": "929e6858a56006c1b590aa52cf285f59141804e995427f1a1e5cf01079368268",
+    "bytes": 177433,
+    "file": "sources/PMC13009157.xml",
+    "title": "Proprioceptive limit detectors contribute to sensorimotor control of the  Drosophila  leg"
+  },
+  {
+    "pmcid": "PMC12975126",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12975126/fullTextXML",
+    "sha256": "89e1c8b8dc656303ed0bb1af09aef0fc346bde4ce22fbd8631e3ff928d9ff3cc",
+    "bytes": 271064,
+    "file": "sources/PMC12975126.xml",
+    "title": "Peripheral anatomy and central connectivity of proprioceptive sensory neurons in the  Drosophila  wing"
+  }
+]

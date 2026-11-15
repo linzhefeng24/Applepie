@@ -1,0 +1,947 @@
+pre,post,count,pre_type,post_type
+815843,801173,32,SNpp51,Tergopleural/Pleural promotor MN
+809476,800911,31,SNpp50,Ti extensor MN
+806491,800553,31,SNpp51,Pleural remotor/abductor MN
+805712,800553,30,SNpp51,Pleural remotor/abductor MN
+819822,800911,30,SNpp50,Ti extensor MN
+813644,800504,30,SNpp41,Sternotrochanter MN
+819524,905661,29,SNpp41,Tr extensor MN
+805712,801375,27,SNpp51,Sternotrochanter MN
+814742,800230,27,SNpp51,MNml82
+808826,800911,26,SNpp50,Ti extensor MN
+809102,802407,26,SNpp41,Sternotrochanter MN
+806491,902962,24,SNpp51,Fe reductor MN
+818930,902962,23,SNpp51,Fe reductor MN
+807931,802295,23,SNpp51,Ti flexor MN
+908277,800158,23,SNpp50,Ti extensor MN
+815843,803237,23,SNpp51,Tergotr. MN
+808491,800911,23,SNpp50,Ti extensor MN
+806491,803072,23,SNpp51,Ti flexor MN
+812527,801375,22,SNpp51,Sternotrochanter MN
+806859,801375,22,SNpp51,Sternotrochanter MN
+806859,800553,21,SNpp51,Pleural remotor/abductor MN
+902316,800541,21,SNpp51,Pleural remotor/abductor MN
+815843,807165,21,SNpp51,Ti flexor MN
+807970,802407,20,SNpp41,Sternotrochanter MN
+811608,800541,20,SNpp51,Pleural remotor/abductor MN
+813147,801148,20,SNpp41,Sternotrochanter MN
+813147,905661,20,SNpp41,Tr extensor MN
+814949,800911,20,SNpp50,Ti extensor MN
+909379,800158,20,SNpp48,Ti extensor MN
+804542,805010,19,SNpp39,Ti flexor MN
+806491,903090,19,SNpp51,MNhl62
+807931,800541,19,SNpp51,Pleural remotor/abductor MN
+808592,800158,19,SNpp50,Ti extensor MN
+813850,800911,19,SNpp49,Ti extensor MN
+936031,800962,19,SNpp41,Sternal posterior rotator MN
+812228,800158,19,SNpp41,Ti extensor MN
+806859,801148,18,SNpp51,Sternotrochanter MN
+814742,805010,18,SNpp51,Ti flexor MN
+813147,801375,18,SNpp41,Sternotrochanter MN
+808491,801768,18,SNpp50,Sternal posterior rotator MN
+805712,905792,18,SNpp51,MNhl01
+812228,801148,18,SNpp41,Sternotrochanter MN
+809027,856359,18,SNpp41,Sternotrochanter MN
+813147,800158,17,SNpp41,Ti extensor MN
+811189,801375,17,SNpp44,Sternotrochanter MN
+806491,801375,17,SNpp51,Sternotrochanter MN
+814905,802295,17,SNpp39,Ti flexor MN
+817992,927808,17,SNpp51,Ti flexor MN
+908773,801057,17,SNpp50,Tr flexor MN
+805712,902962,16,SNpp51,Fe reductor MN
+832162,830514,16,SNpp50,Ti extensor MN
+832162,801057,16,SNpp50,Tr flexor MN
+909548,907848,15,SNpp39,Acc. ti flexor MN
+819524,801375,15,SNpp41,Sternotrochanter MN
+814881,813629,15,SNpp39,Acc. ti flexor MN
+935383,801173,15,SNpp51,Tergopleural/Pleural promotor MN
+805712,905849,15,SNpp51,Tergotr. MN
+808826,801234,15,SNpp50,Ti extensor MN
+814335,802407,15,SNpp44,Sternotrochanter MN
+911942,802407,15,SNpp41,Sternotrochanter MN
+903831,830514,15,SNpp50,Ti extensor MN
+808991,800158,14,SNpp48,Ti extensor MN
+809353,856359,14,SNpp41,Sternotrochanter MN
+808077,801768,14,SNpp50,Sternal posterior rotator MN
+807931,813755,14,SNpp51,Tergotr. MN
+813286,800158,14,SNpp50,Ti extensor MN
+817992,802295,14,SNpp51,Ti flexor MN
+819524,800158,14,SNpp41,Ti extensor MN
+819822,801768,14,SNpp50,Sternal posterior rotator MN
+806859,905849,14,SNpp51,Tergotr. MN
+822975,801375,13,SNpp51,Sternotrochanter MN
+824431,802295,13,SNpp51,Ti flexor MN
+935383,809912,13,SNpp51,Ti flexor MN
+806491,905792,13,SNpp51,MNhl01
+817992,813755,13,SNpp51,Tergotr. MN
+908603,905559,13,SNpp51,MNml79
+817680,800061,13,SNpp51,Tergopleural/Pleural promotor MN
+807785,802295,13,SNpp51,Ti flexor MN
+807931,821494,13,SNpp51,MNml79
+807931,927808,13,SNpp51,Ti flexor MN
+808077,800911,13,SNpp50,Ti extensor MN
+909548,812531,13,SNpp39,Acc. ti flexor MN
+805712,803072,13,SNpp51,Ti flexor MN
+808576,856359,13,SNpp41,Sternotrochanter MN
+912413,905849,13,SNpp43,Tergotr. MN
+911942,801234,13,SNpp41,Ti extensor MN
+815569,815246,12,SNpp39,Acc. ti flexor MN
+911307,802864,12,SNpp51,Sternotrochanter MN
+909477,819674,12,SNpp39,Acc. ti flexor MN
+802350,800851,12,SNpp51,Sternotrochanter MN
+814628,800504,12,SNpp41,Sternotrochanter MN
+807931,802407,12,SNpp51,Sternotrochanter MN
+908773,830514,12,SNpp50,Ti extensor MN
+908603,800230,12,SNpp51,MNml82
+908278,905928,12,SNpp50,Tr flexor MN
+818930,800553,12,SNpp51,Pleural remotor/abductor MN
+818930,803072,12,SNpp51,Ti flexor MN
+822975,902962,12,SNpp51,Fe reductor MN
+824431,802407,12,SNpp51,Sternotrochanter MN
+811919,801761,12,SNpp50,Sternal posterior rotator MN
+805712,801148,12,SNpp51,Sternotrochanter MN
+812228,800290,12,SNpp41,Pleural remotor/abductor MN
+814742,856359,11,SNpp51,Sternotrochanter MN
+812228,801375,11,SNpp41,Sternotrochanter MN
+935383,800061,11,SNpp51,Tergopleural/Pleural promotor MN
+802350,800504,11,SNpp51,Sternotrochanter MN
+810643,800158,11,SNpp50,Ti extensor MN
+819524,800290,11,SNpp41,Pleural remotor/abductor MN
+911307,805010,11,SNpp51,Ti flexor MN
+822975,800553,11,SNpp51,Pleural remotor/abductor MN
+808576,803499,11,SNpp41,Pleural remotor/abductor MN
+909549,812531,11,SNpp39,Acc. ti flexor MN
+909549,907848,11,SNpp39,Acc. ti flexor MN
+909548,905235,11,SNpp39,Acc. ti flexor MN
+807900,905235,11,SNpp39,Acc. ti flexor MN
+807785,802407,11,SNpp51,Sternotrochanter MN
+908603,905235,11,SNpp51,Acc. ti flexor MN
+804542,907848,11,SNpp39,Acc. ti flexor MN
+806859,801090,11,SNpp51,Sternotrochanter MN
+806491,905849,11,SNpp51,Tergotr. MN
+903831,801057,10,SNpp50,Tr flexor MN
+903209,803147,10,SNpp39,Ti flexor MN
+807900,812531,10,SNpp39,Acc. ti flexor MN
+807931,803480,10,SNpp51,MNml82
+909548,805568,10,SNpp39,Acc. ti flexor MN
+808576,814942,10,SNpp41,Tr extensor MN
+911307,800230,10,SNpp51,MNml82
+911307,905559,10,SNpp51,MNml79
+809278,813629,10,SNpp39,Acc. ti flexor MN
+820887,856359,10,SNpp41,Sternotrochanter MN
+819524,801148,10,SNpp41,Sternotrochanter MN
+809932,803147,10,SNpp39,Ti flexor MN
+818930,903090,10,SNpp51,MNhl62
+913882,812531,10,SNpp39,Acc. ti flexor MN
+935383,807165,10,SNpp51,Ti flexor MN
+813147,800290,10,SNpp41,Pleural remotor/abductor MN
+813147,800316,10,SNpp41,Sternal anterior rotator MN
+813286,1050460102,10,SNpp50,Acc. ti flexor MN
+1053563856,801768,10,SNpp50,Sternal posterior rotator MN
+813911,803147,9,SNpp39,Ti flexor MN
+813011,800158,9,SNpp50,Ti extensor MN
+812527,801090,9,SNpp51,Sternotrochanter MN
+816388,803147,9,SNpp39,Ti flexor MN
+811348,800911,9,SNpp50,Ti extensor MN
+810800,800290,9,SNpp51,Pleural remotor/abductor MN
+810526,803147,9,SNpp39,Ti flexor MN
+810187,910296,9,SNpp39,Acc. ti flexor MN
+810041,812531,9,SNpp39,Acc. ti flexor MN
+819559,800158,9,SNpp41,Ti extensor MN
+822523,905849,9,SNpp51,Tergotr. MN
+809102,801234,9,SNpp41,Ti extensor MN
+807785,821494,9,SNpp51,MNml79
+804542,812531,9,SNpp39,Acc. ti flexor MN
+804542,905235,9,SNpp39,Acc. ti flexor MN
+908603,805010,9,SNpp51,Ti flexor MN
+908603,856359,9,SNpp51,Sternotrochanter MN
+909549,905235,9,SNpp39,Acc. ti flexor MN
+913882,819203,9,SNpp39,Tr flexor MN
+935383,802361,9,SNpp51,Sternotrochanter MN
+935383,807281,9,SNpp51,Tergopleural/Pleural promotor MN
+806491,801148,8,SNpp51,Sternotrochanter MN
+909549,805010,8,SNpp39,Ti flexor MN
+802350,800578,8,SNpp51,Fe reductor MN
+910015,903159,8,SNpp40,Tr flexor MN
+808592,905928,8,SNpp50,Tr flexor MN
+808592,1050460102,8,SNpp50,Acc. ti flexor MN
+910406,800504,8,SNpp51,Sternotrochanter MN
+811889,800911,8,SNpp49,Ti extensor MN
+813850,801234,8,SNpp49,Ti extensor MN
+817680,807165,8,SNpp51,Ti flexor MN
+807900,805010,8,SNpp39,Ti flexor MN
+805712,903090,8,SNpp51,MNhl62
+912317,810541,8,SNpp50,Ta levator MN
+807805,869369,8,SNpp48,MNhl65
+809398,802295,8,SNpp39,Ti flexor MN
+819524,907256,8,SNpp41,Sternal posterior rotator MN
+819559,801375,8,SNpp41,Sternotrochanter MN
+815843,919509,8,SNpp51,Sternal anterior rotator MN
+810445,812531,8,SNpp39,Acc. ti flexor MN
+824107,800504,8,SNpp41,Sternotrochanter MN
+823347,803072,8,SNpp39,Ti flexor MN
+822523,800553,8,SNpp51,Pleural remotor/abductor MN
+822285,856359,8,SNpp41,Sternotrochanter MN
+821947,801736,8,SNpp51,MNhl62
+933121,830514,8,SNpp50,Ti extensor MN
+821363,813629,8,SNpp50,Acc. ti flexor MN
+812527,801148,8,SNpp51,Sternotrochanter MN
+935383,903298,8,SNpp51,Acc. ti flexor MN
+935383,803412,8,SNpp51,Tr extensor MN
+935383,803237,8,SNpp51,Tergotr. MN
+812527,800553,7,SNpp51,Pleural remotor/abductor MN
+815569,816215,7,SNpp39,Acc. ti flexor MN
+824431,800541,7,SNpp51,Pleural remotor/abductor MN
+907742,803072,7,SNpp39,Ti flexor MN
+907744,813629,7,SNpp39,Acc. ti flexor MN
+812848,803072,7,SNpp39,Ti flexor MN
+809595,1050460102,7,SNpp50,Acc. ti flexor MN
+819822,801234,7,SNpp50,Ti extensor MN
+815843,800061,7,SNpp51,Tergopleural/Pleural promotor MN
+812228,905661,7,SNpp41,Tr extensor MN
+906018,830514,7,SNpp50,Ti extensor MN
+810683,903642,7,SNpp50,Sternal posterior rotator MN
+809476,801234,7,SNpp50,Ti extensor MN
+819559,800290,7,SNpp41,Pleural remotor/abductor MN
+809353,803499,7,SNpp41,Pleural remotor/abductor MN
+810800,800553,7,SNpp51,Pleural remotor/abductor MN
+810800,801090,7,SNpp51,Sternotrochanter MN
+814881,1050938258,7,SNpp39,Tr flexor MN
+818930,905849,7,SNpp51,Tergotr. MN
+809102,904657,7,SNpp41,Sternotrochanter MN
+805712,823665,7,SNpp51,Ti flexor MN
+813147,801090,7,SNpp41,Sternotrochanter MN
+908603,903844,7,SNpp51,MNml80
+807970,801234,7,SNpp41,Ti extensor MN
+908773,801058,7,SNpp50,Tr flexor MN
+911307,806204,7,SNpp51,Tergotr. MN
+813286,905928,7,SNpp50,Tr flexor MN
+808826,801768,7,SNpp50,Sternal posterior rotator MN
+811919,830514,7,SNpp50,Ti extensor MN
+905219,801234,7,SNpp50,Ti extensor MN
+811889,813755,7,SNpp49,Tergotr. MN
+910406,800175,7,SNpp51,Pleural remotor/abductor MN
+802350,801736,7,SNpp51,MNhl62
+808491,801234,7,SNpp50,Ti extensor MN
+808463,812531,7,SNpp49,Acc. ti flexor MN
+909549,805568,7,SNpp39,Acc. ti flexor MN
+806491,801267,7,SNpp51,MNhl02
+806491,801090,7,SNpp51,Sternotrochanter MN
+909477,802295,6,SNpp39,Ti flexor MN
+808491,809670,6,SNpp50,Acc. ti flexor MN
+808576,800962,6,SNpp41,Sternal posterior rotator MN
+813450,800578,6,SNpp50,Fe reductor MN
+813850,813755,6,SNpp49,Tergotr. MN
+808077,801234,6,SNpp50,Ti extensor MN
+902316,821494,6,SNpp51,MNml79
+902316,802295,6,SNpp51,Ti flexor MN
+902316,803480,6,SNpp51,MNml82
+908773,802521,6,SNpp50,Sternal posterior rotator MN
+807970,904657,6,SNpp41,Sternotrochanter MN
+911942,909078,6,SNpp41,Tr extensor MN
+809027,814942,6,SNpp41,Tr extensor MN
+809027,814983,6,SNpp41,MNml78
+908603,907848,6,SNpp51,Acc. ti flexor MN
+912444,800158,6,SNpp50,Ti extensor MN
+807785,904657,6,SNpp51,Sternotrochanter MN
+807785,813755,6,SNpp51,Tergotr. MN
+809353,814983,6,SNpp41,MNml78
+913886,905235,6,SNpp39,Acc. ti flexor MN
+903471,800158,6,SNpp50,Ti extensor MN
+828811,803480,6,SNpp51,MNml82
+815843,803412,6,SNpp51,Tr extensor MN
+812869,800158,6,SNpp50,Ti extensor MN
+812869,800553,6,SNpp50,Pleural remotor/abductor MN
+809595,905928,6,SNpp50,Tr flexor MN
+822523,801375,6,SNpp51,Sternotrochanter MN
+820887,807395,6,SNpp41,MNml29
+814628,902310,6,SNpp41,Pleural remotor/abductor MN
+810643,809935,6,SNpp50,Ti extensor MN
+810643,905928,6,SNpp50,Tr flexor MN
+814742,804405,6,SNpp51,Ti flexor MN
+814742,903844,6,SNpp51,MNml80
+814742,905235,6,SNpp51,Acc. ti flexor MN
+804542,819203,6,SNpp39,Tr flexor MN
+810800,801375,6,SNpp51,Sternotrochanter MN
+810800,801148,6,SNpp51,Sternotrochanter MN
+806859,803072,6,SNpp51,Ti flexor MN
+806859,800290,6,SNpp51,Pleural remotor/abductor MN
+814881,910296,6,SNpp39,Acc. ti flexor MN
+818930,801148,6,SNpp51,Sternotrochanter MN
+811112,801234,6,SNpp50,Ti extensor MN
+817680,809912,6,SNpp51,Ti flexor MN
+905218,802295,6,SNpp39,Ti flexor MN
+811348,801234,6,SNpp50,Ti extensor MN
+811889,801234,6,SNpp49,Ti extensor MN
+811608,927808,6,SNpp51,Ti flexor MN
+1061501467,800541,6,SNpp51,Pleural remotor/abductor MN
+814949,803226,5,SNpp50,Sternal posterior rotator MN
+814949,801768,5,SNpp50,Sternal posterior rotator MN
+806859,801267,5,SNpp51,MNhl02
+806859,902962,5,SNpp51,Fe reductor MN
+814742,907848,5,SNpp51,Acc. ti flexor MN
+903831,801761,5,SNpp50,Sternal posterior rotator MN
+903831,801058,5,SNpp50,Tr flexor MN
+815697,801736,5,SNpp48,MNhl62
+907742,910296,5,SNpp39,Acc. ti flexor MN
+907742,1050938258,5,SNpp39,Tr flexor MN
+908277,809935,5,SNpp50,Ti extensor MN
+908277,905928,5,SNpp50,Tr flexor MN
+908277,903643,5,SNpp50,Sternal posterior rotator MN
+908277,807640,5,SNpp50,Tr flexor MN
+908278,800158,5,SNpp50,Ti extensor MN
+908278,903643,5,SNpp50,Sternal posterior rotator MN
+908278,1050460102,5,SNpp50,Acc. ti flexor MN
+805712,800290,5,SNpp51,Pleural remotor/abductor MN
+908603,806204,5,SNpp51,Tergotr. MN
+807931,823739,5,SNpp51,Ti flexor MN
+807970,805477,5,SNpp41,Tr extensor MN
+908773,801761,5,SNpp50,Sternal posterior rotator MN
+808077,803226,5,SNpp50,Sternal posterior rotator MN
+808077,803704,5,SNpp50,Sternal posterior rotator MN
+909379,905792,5,SNpp48,MNhl01
+909379,905849,5,SNpp48,Tergotr. MN
+813644,804078,5,SNpp41,MNhl29
+909548,805010,5,SNpp39,Ti flexor MN
+808463,814983,5,SNpp49,MNml78
+808463,830514,5,SNpp49,Ti extensor MN
+802350,800175,5,SNpp51,Pleural remotor/abductor MN
+802350,803147,5,SNpp51,Ti flexor MN
+808576,807395,5,SNpp41,MNml29
+808576,814983,5,SNpp41,MNml78
+808592,807640,5,SNpp50,Tr flexor MN
+813450,800175,5,SNpp50,Pleural remotor/abductor MN
+910406,804514,5,SNpp51,Tergotr. MN
+816362,801761,5,SNpp41,Sternal posterior rotator MN
+808757,819674,5,SNpp39,Acc. ti flexor MN
+808757,802295,5,SNpp39,Ti flexor MN
+808826,803704,5,SNpp50,Sternal posterior rotator MN
+808826,809670,5,SNpp50,Acc. ti flexor MN
+902316,822742,5,SNpp51,MNml80
+813286,903643,5,SNpp50,Sternal posterior rotator MN
+911307,903844,5,SNpp51,MNml80
+813147,907256,5,SNpp41,Sternal posterior rotator MN
+809102,805477,5,SNpp41,Tr extensor MN
+875542,800230,5,SNpp51,MNml82
+912317,815344,5,SNpp50,Ti extensor MN
+912317,1050111955,5,SNpp50,Ta levator MN
+809230,813603,5,SNpp50,ltm MN
+809353,814942,5,SNpp41,Tr extensor MN
+913881,807395,5,SNpp44,MNml29
+913881,800962,5,SNpp44,Sternal posterior rotator MN
+913882,805010,5,SNpp39,Ti flexor MN
+812928,800553,5,SNpp50,Pleural remotor/abductor MN
+809476,801768,5,SNpp50,Sternal posterior rotator MN
+828811,821494,5,SNpp51,MNml79
+816782,1050091581,5,SNpp39,Acc. ti flexor MN
+809595,800158,5,SNpp50,Ti extensor MN
+826324,800851,5,SNpp51,Sternotrochanter MN
+824940,830514,5,SNpp50,Ti extensor MN
+824431,927808,5,SNpp51,Ti flexor MN
+824431,803480,5,SNpp51,MNml82
+822975,803072,5,SNpp51,Ti flexor MN
+822523,905792,5,SNpp51,MNhl01
+822523,902962,5,SNpp51,Fe reductor MN
+936031,810720,5,SNpp41,Acc. tr flexor MN
+936031,817681,5,SNpp41,Tr flexor MN
+810683,905928,5,SNpp50,Tr flexor MN
+810800,803072,5,SNpp51,Ti flexor MN
+818930,905792,5,SNpp51,MNhl01
+811112,803704,5,SNpp50,Sternal posterior rotator MN
+811919,801057,5,SNpp50,Tr flexor MN
+804010,801492,5,SNpp50,Sternal posterior rotator MN
+1053563856,800911,5,SNpp50,Ti extensor MN
+817992,904657,5,SNpp51,Sternotrochanter MN
+817992,803480,5,SNpp51,MNml82
+817680,805741,4,SNpp51,Tergotr. MN
+817680,806599,4,SNpp51,Acc. ti flexor MN
+817680,801685,4,SNpp51,Sternotrochanter MN
+818930,801375,4,SNpp51,Sternotrochanter MN
+818930,801267,4,SNpp51,MNhl02
+819524,800316,4,SNpp41,Sternal anterior rotator MN
+819559,907256,4,SNpp41,Sternal posterior rotator MN
+819559,1050938258,4,SNpp41,Tr flexor MN
+819633,800621,4,SNpp50,Ti extensor MN
+819822,903158,4,SNpp50,Tr flexor MN
+820887,800962,4,SNpp41,Sternal posterior rotator MN
+821947,800578,4,SNpp51,Fe reductor MN
+822285,819203,4,SNpp41,Tr flexor MN
+822975,905849,4,SNpp51,Tergotr. MN
+823935,800230,4,SNpp51,MNml82
+824431,822742,4,SNpp51,MNml80
+826386,801761,4,SNpp41,Sternal posterior rotator MN
+832162,801058,4,SNpp50,Tr flexor MN
+875542,805010,4,SNpp51,Ti flexor MN
+875542,801813,4,SNpp51,Sternal anterior rotator MN
+816580,800504,4,SNpp41,Sternotrochanter MN
+902316,927808,4,SNpp51,Ti flexor MN
+816362,800962,4,SNpp41,Sternal posterior rotator MN
+816362,801058,4,SNpp41,Tr flexor MN
+816304,907848,4,SNpp51,Acc. ti flexor MN
+816304,856359,4,SNpp51,Sternotrochanter MN
+805712,801267,4,SNpp51,MNhl02
+903831,802521,4,SNpp50,Sternal posterior rotator MN
+806491,906235,4,SNpp51,Sternal anterior rotator MN
+905218,819674,4,SNpp39,Acc. ti flexor MN
+814949,1050669248,4,SNpp50,Tr flexor MN
+814881,803072,4,SNpp39,Ti flexor MN
+806859,903090,4,SNpp51,MNhl62
+906018,812531,4,SNpp50,Acc. ti flexor MN
+907742,905586,4,SNpp39,Acc. tr flexor MN
+907744,803072,4,SNpp39,Ti flexor MN
+908603,803499,4,SNpp51,Pleural remotor/abductor MN
+807931,903689,4,SNpp51,Sternal anterior rotator MN
+807931,822742,4,SNpp51,MNml80
+807970,813755,4,SNpp41,Tergotr. MN
+909035,800175,4,SNpp50,Pleural remotor/abductor MN
+909379,905928,4,SNpp48,Tr flexor MN
+813644,934519,4,SNpp41,Acc. ti flexor MN
+813644,804514,4,SNpp41,Tergotr. MN
+909478,802295,4,SNpp39,Ti flexor MN
+909478,819674,4,SNpp39,Acc. ti flexor MN
+909548,819203,4,SNpp39,Tr flexor MN
+910406,800851,4,SNpp51,Sternotrochanter MN
+910406,801736,4,SNpp51,MNhl62
+808822,813755,4,SNpp43,Tergotr. MN
+813286,807640,4,SNpp50,Tr flexor MN
+911307,907848,4,SNpp51,Acc. ti flexor MN
+911942,904657,4,SNpp41,Sternotrochanter MN
+809027,800962,4,SNpp41,Sternal posterior rotator MN
+809102,909078,4,SNpp41,Tr extensor MN
+809120,905849,4,SNpp43,Tergotr. MN
+912317,800636,4,SNpp50,Ti extensor MN
+809250,802295,4,SNpp39,Ti flexor MN
+809278,801637,4,SNpp39,Acc. ti flexor MN
+809278,1050938258,4,SNpp39,Tr flexor MN
+809353,800962,4,SNpp41,Sternal posterior rotator MN
+913882,905235,4,SNpp39,Acc. ti flexor MN
+809476,813603,4,SNpp50,ltm MN
+812869,905928,4,SNpp50,Tr flexor MN
+809932,801736,4,SNpp39,MNhl62
+810041,905235,4,SNpp39,Acc. ti flexor MN
+810085,813755,4,SNpp43,Tergotr. MN
+936031,803499,4,SNpp41,Pleural remotor/abductor MN
+810187,801637,4,SNpp39,Acc. ti flexor MN
+810187,813629,4,SNpp39,Acc. ti flexor MN
+810187,1050938258,4,SNpp39,Tr flexor MN
+810526,801736,4,SNpp39,MNhl62
+810643,807640,4,SNpp50,Tr flexor MN
+810683,800158,4,SNpp50,Ti extensor MN
+810683,903643,4,SNpp50,Sternal posterior rotator MN
+811889,820632,4,SNpp49,MNml80
+811608,802295,4,SNpp51,Ti flexor MN
+811608,813755,3,SNpp51,Tergotr. MN
+811608,802407,3,SNpp51,Sternotrochanter MN
+811889,800541,3,SNpp49,Pleural remotor/abductor MN
+811348,800541,3,SNpp50,Pleural remotor/abductor MN
+811189,800316,3,SNpp44,Sternal anterior rotator MN
+811124,800578,3,SNpp50,Fe reductor MN
+810800,905849,3,SNpp51,Tergotr. MN
+812228,800316,3,SNpp41,Sternal anterior rotator MN
+812527,1050938258,3,SNpp51,Tr flexor MN
+812527,905849,3,SNpp51,Tergotr. MN
+810041,819203,3,SNpp39,Tr flexor MN
+810041,805010,3,SNpp39,Ti flexor MN
+810041,805568,3,SNpp39,Acc. ti flexor MN
+812610,800578,3,SNpp50,Fe reductor MN
+812610,890541,3,SNpp50,ltm MN
+812869,800316,3,SNpp50,Sternal anterior rotator MN
+812869,906235,3,SNpp50,Sternal anterior rotator MN
+809476,800541,3,SNpp50,Pleural remotor/abductor MN
+809353,817990,3,SNpp41,MNml78
+809230,801234,3,SNpp50,Ti extensor MN
+809230,800541,3,SNpp50,Pleural remotor/abductor MN
+809120,905792,3,SNpp43,MNhl01
+809102,804025,3,SNpp41,Fe reductor MN
+813147,1050938258,3,SNpp41,Tr flexor MN
+809027,819203,3,SNpp41,Tr flexor MN
+808991,807640,3,SNpp48,Tr flexor MN
+808826,1050669248,3,SNpp50,Tr flexor MN
+808826,813603,3,SNpp50,ltm MN
+808826,803226,3,SNpp50,Sternal posterior rotator MN
+808592,809935,3,SNpp50,Ti extensor MN
+808592,803072,3,SNpp50,Ti flexor MN
+813500,803480,3,SNpp48,MNml82
+813516,802521,3,SNpp50,Sternal posterior rotator MN
+808463,802864,3,SNpp49,Sternotrochanter MN
+813644,800851,3,SNpp41,Sternotrochanter MN
+813911,800175,3,SNpp39,Pleural remotor/abductor MN
+807970,909078,3,SNpp41,Tr extensor MN
+807970,903689,3,SNpp41,Sternal anterior rotator MN
+807970,804025,3,SNpp41,Fe reductor MN
+807931,832490,3,SNpp51,Sternal anterior rotator MN
+807805,905586,3,SNpp48,Acc. tr flexor MN
+807785,927808,3,SNpp51,Ti flexor MN
+814335,803086,3,SNpp44,MNml29
+814628,802215,3,SNpp41,Sternal anterior rotator MN
+806859,905661,3,SNpp51,Tr extensor MN
+806859,905792,3,SNpp51,MNhl01
+814881,801637,3,SNpp39,Acc. ti flexor MN
+815697,800621,3,SNpp48,Ti extensor MN
+815843,807281,3,SNpp51,Tergopleural/Pleural promotor MN
+805712,914852,3,SNpp51,Acc. tr flexor MN
+805712,840740,3,SNpp51,Ti flexor MN
+805712,808685,3,SNpp51,Ti flexor MN
+805712,800358,3,SNpp51,MNhl64
+805712,801090,3,SNpp51,Sternotrochanter MN
+816362,903844,3,SNpp41,MNml80
+816580,802215,3,SNpp41,Sternal anterior rotator MN
+817245,1050091581,3,SNpp39,Acc. ti flexor MN
+817298,805741,3,SNpp41,Tergotr. MN
+817356,800316,3,SNpp44,Sternal anterior rotator MN
+817356,801375,3,SNpp44,Sternotrochanter MN
+817356,1050938258,3,SNpp44,Tr flexor MN
+804542,805568,3,SNpp39,Acc. ti flexor MN
+817680,802361,3,SNpp51,Sternotrochanter MN
+817680,807281,3,SNpp51,Tergopleural/Pleural promotor MN
+817680,903298,3,SNpp51,Acc. ti flexor MN
+817992,802407,3,SNpp51,Sternotrochanter MN
+804010,801715,3,SNpp50,Sternal posterior rotator MN
+818930,801090,3,SNpp51,Sternotrochanter MN
+819219,800175,3,SNpp50,Pleural remotor/abductor MN
+819559,801148,3,SNpp41,Sternotrochanter MN
+819559,800316,3,SNpp41,Sternal anterior rotator MN
+819559,905661,3,SNpp41,Tr extensor MN
+819559,905586,3,SNpp41,Acc. tr flexor MN
+819655,830514,3,SNpp50,Ti extensor MN
+820328,801715,3,SNpp50,Sternal posterior rotator MN
+821363,800553,3,SNpp50,Pleural remotor/abductor MN
+822285,814942,3,SNpp41,Tr extensor MN
+822523,808685,3,SNpp51,Ti flexor MN
+822523,907256,3,SNpp51,Sternal posterior rotator MN
+822975,800158,3,SNpp51,Ti extensor MN
+822975,808453,3,SNpp51,Tr extensor MN
+823347,1050938258,3,SNpp39,Tr flexor MN
+823935,805010,3,SNpp51,Ti flexor MN
+823935,905235,3,SNpp51,Acc. ti flexor MN
+824431,821494,3,SNpp51,MNml79
+824940,928579,3,SNpp50,Ti extensor MN
+826324,803147,3,SNpp51,Ti flexor MN
+826386,801058,3,SNpp41,Tr flexor MN
+828434,800316,3,SNpp50,Sternal anterior rotator MN
+828811,813755,3,SNpp51,Tergotr. MN
+828811,927808,3,SNpp51,Ti flexor MN
+832162,801761,3,SNpp50,Sternal posterior rotator MN
+832162,928579,3,SNpp50,Ti extensor MN
+875542,905559,3,SNpp51,MNml79
+902316,804025,3,SNpp51,Fe reductor MN
+902316,905421,3,SNpp51,Pleural remotor/abductor MN
+903209,800175,3,SNpp39,Pleural remotor/abductor MN
+903471,800553,3,SNpp50,Pleural remotor/abductor MN
+903471,1050460102,3,SNpp50,Acc. ti flexor MN
+903831,800962,3,SNpp50,Sternal posterior rotator MN
+905668,1050091581,3,SNpp39,Acc. ti flexor MN
+907742,801637,3,SNpp39,Acc. ti flexor MN
+907744,1050938258,3,SNpp39,Tr flexor MN
+908166,812872,3,SNpp59,ltm MN
+908277,1050460102,3,SNpp50,Acc. ti flexor MN
+908603,804405,3,SNpp51,Ti flexor MN
+908723,800621,3,SNpp50,Ti extensor MN
+908723,802964,3,SNpp50,Sternal posterior rotator MN
+908774,830514,3,SNpp50,Ti extensor MN
+909240,800621,3,SNpp50,Ti extensor MN
+909379,801693,3,SNpp48,Fe reductor MN
+909478,830480,3,SNpp39,Acc. ti flexor MN
+909478,903579,3,SNpp39,Tr flexor MN
+909549,1052521030,3,SNpp39,Acc. ti flexor MN
+911780,812531,3,SNpp48,Acc. ti flexor MN
+912317,800061,3,SNpp50,Tergopleural/Pleural promotor MN
+912317,805598,3,SNpp50,Fe reductor MN
+913881,801946,3,SNpp44,Sternal anterior rotator MN
+913881,812872,3,SNpp44,ltm MN
+914543,800553,3,SNpp50,Pleural remotor/abductor MN
+935383,807906,3,SNpp51,Tr extensor MN
+936031,807395,3,SNpp41,MNml29
+939462,801492,3,SNpp50,Sternal posterior rotator MN
+1058841949,801492,3,SNpp50,Sternal posterior rotator MN
+1066481166,804078,3,SNpp44,MNhl29
+1061501467,813755,2,SNpp51,Tergotr. MN
+1061501467,802407,2,SNpp51,Sternotrochanter MN
+1053563856,1050669248,2,SNpp50,Tr flexor MN
+1053563856,803226,2,SNpp50,Sternal posterior rotator MN
+936785,904184,2,SNpp43,Sternal adductor MN
+935383,909831,2,SNpp51,Ti flexor MN
+935383,806923,2,SNpp51,Sternal anterior rotator MN
+935383,805598,2,SNpp51,Fe reductor MN
+935383,801685,2,SNpp51,Sternotrochanter MN
+933121,812531,2,SNpp50,Acc. ti flexor MN
+914543,800158,2,SNpp50,Ti extensor MN
+913886,812531,2,SNpp39,Acc. ti flexor MN
+913886,819203,2,SNpp39,Tr flexor MN
+913886,805568,2,SNpp39,Acc. ti flexor MN
+913052,909521,2,SNpp51,Tergotr. MN
+913052,810098,2,SNpp51,Ti flexor MN
+912444,903643,2,SNpp50,Sternal posterior rotator MN
+912317,910334,2,SNpp50,ltm MN
+911942,903579,2,SNpp41,Tr flexor MN
+911780,800230,2,SNpp48,MNml82
+911307,804405,2,SNpp51,Ti flexor MN
+911307,803499,2,SNpp51,Pleural remotor/abductor MN
+910836,802295,2,SNpp39,Ti flexor MN
+910408,801736,2,SNpp50,MNhl62
+910406,902310,2,SNpp51,Pleural remotor/abductor MN
+910406,807160,2,SNpp51,MNhl01
+910406,803147,2,SNpp51,Ti flexor MN
+909548,1052521030,2,SNpp39,Acc. ti flexor MN
+909548,903844,2,SNpp39,MNml80
+909478,802232,2,SNpp39,Tr flexor MN
+909379,906235,2,SNpp48,Sternal anterior rotator MN
+909379,869369,2,SNpp48,MNhl65
+909379,815097,2,SNpp48,ltm MN
+909379,807640,2,SNpp48,Tr flexor MN
+909379,807854,2,SNpp48,Sternal adductor MN
+909036,802964,2,SNpp50,Sternal posterior rotator MN
+909035,800578,2,SNpp50,Fe reductor MN
+908774,801057,2,SNpp50,Tr flexor MN
+908773,928579,2,SNpp50,Ti extensor MN
+908723,821154,2,SNpp50,Acc. tr flexor MN
+908723,801492,2,SNpp50,Sternal posterior rotator MN
+908702,803480,2,SNpp50,MNml82
+908603,802864,2,SNpp51,Sternotrochanter MN
+908278,809935,2,SNpp50,Ti extensor MN
+908278,803072,2,SNpp50,Ti flexor MN
+908277,803072,2,SNpp50,Ti flexor MN
+907744,905586,2,SNpp39,Acc. tr flexor MN
+907742,813629,2,SNpp39,Acc. ti flexor MN
+905219,803226,2,SNpp50,Sternal posterior rotator MN
+905219,803480,2,SNpp50,MNml82
+905219,803704,2,SNpp50,Sternal posterior rotator MN
+905219,804025,2,SNpp50,Fe reductor MN
+905219,801768,2,SNpp50,Sternal posterior rotator MN
+905218,903579,2,SNpp39,Tr flexor MN
+903471,813629,2,SNpp50,Acc. ti flexor MN
+903377,803147,2,SNpp50,Ti flexor MN
+903377,800621,2,SNpp50,Ti extensor MN
+902316,802407,2,SNpp51,Sternotrochanter MN
+875542,903844,2,SNpp51,MNml80
+875542,802864,2,SNpp51,Sternotrochanter MN
+847034,800158,2,SNpp50,Ti extensor MN
+832162,802521,2,SNpp50,Sternal posterior rotator MN
+828811,832490,2,SNpp51,Sternal anterior rotator MN
+828811,822742,2,SNpp51,MNml80
+828434,813629,2,SNpp50,Acc. ti flexor MN
+824431,1050046221,2,SNpp51,MNml80
+824107,812953,2,SNpp41,Ti extensor MN
+823935,856359,2,SNpp51,Sternotrochanter MN
+823935,804405,2,SNpp51,Ti flexor MN
+823347,801637,2,SNpp39,Acc. ti flexor MN
+822975,801090,2,SNpp51,Sternotrochanter MN
+822975,801267,2,SNpp51,MNhl02
+822285,803499,2,SNpp41,Pleural remotor/abductor MN
+821363,800290,2,SNpp50,Pleural remotor/abductor MN
+820887,803499,2,SNpp41,Pleural remotor/abductor MN
+820328,890541,2,SNpp50,ltm MN
+819822,803226,2,SNpp50,Sternal posterior rotator MN
+819822,803704,2,SNpp50,Sternal posterior rotator MN
+819655,801058,2,SNpp50,Tr flexor MN
+819633,812953,2,SNpp50,Ti extensor MN
+819559,801090,2,SNpp41,Sternotrochanter MN
+819524,1050938258,2,SNpp41,Tr flexor MN
+819524,905849,2,SNpp41,Tergotr. MN
+819524,801090,2,SNpp41,Sternotrochanter MN
+819500,801492,2,SNpp50,Sternal posterior rotator MN
+819219,801715,2,SNpp50,Sternal posterior rotator MN
+818930,910178,2,SNpp51,Ti flexor MN
+818930,808453,2,SNpp51,Tr extensor MN
+818478,813629,2,SNpp50,Acc. ti flexor MN
+817992,807972,2,SNpp51,ltm2-femur MN
+817680,814163,2,SNpp51,Fe reductor MN
+817680,801173,2,SNpp51,Tergopleural/Pleural promotor MN
+817298,813480,2,SNpp41,Sternal adductor MN
+817245,1050126678,2,SNpp39,Acc. ti flexor MN
+816580,804078,2,SNpp41,MNhl29
+816304,905235,2,SNpp51,Acc. ti flexor MN
+815843,909831,2,SNpp51,Ti flexor MN
+815843,814489,2,SNpp51,Tr flexor MN
+815843,809912,2,SNpp51,Ti flexor MN
+815843,804465,2,SNpp51,Tergotr. MN
+815843,801685,2,SNpp51,Sternotrochanter MN
+815697,1050239701,2,SNpp48,Acc. tr flexor MN
+814905,819674,2,SNpp39,Acc. ti flexor MN
+814742,802864,2,SNpp51,Sternotrochanter MN
+814742,803499,2,SNpp51,Pleural remotor/abductor MN
+813911,801736,2,SNpp39,MNhl62
+813850,803704,2,SNpp49,Sternal posterior rotator MN
+813644,902310,2,SNpp41,Pleural remotor/abductor MN
+813516,830514,2,SNpp50,Ti extensor MN
+813450,801548,2,SNpp50,Sternal anterior rotator MN
+813286,903642,2,SNpp50,Sternal posterior rotator MN
+813147,905586,2,SNpp41,Acc. tr flexor MN
+813147,905792,2,SNpp41,MNhl01
+813011,905928,2,SNpp50,Tr flexor MN
+813011,809935,2,SNpp50,Ti extensor MN
+812928,902962,2,SNpp50,Fe reductor MN
+812928,903643,2,SNpp50,Sternal posterior rotator MN
+812928,906235,2,SNpp50,Sternal anterior rotator MN
+812869,800290,2,SNpp50,Pleural remotor/abductor MN
+812848,905586,2,SNpp39,Acc. tr flexor MN
+812848,813629,2,SNpp39,Acc. ti flexor MN
+812422,803147,2,SNpp39,Ti flexor MN
+811919,800962,2,SNpp50,Sternal posterior rotator MN
+811608,823739,2,SNpp51,Ti flexor MN
+811608,824041,2,SNpp51,Ti flexor MN
+811608,804025,2,SNpp51,Fe reductor MN
+811532,1050160593,2,SNpp49,MNml76
+811532,801057,2,SNpp49,Tr flexor MN
+811532,801058,2,SNpp49,Tr flexor MN
+811348,801768,2,SNpp50,Sternal posterior rotator MN
+811348,803226,2,SNpp50,Sternal posterior rotator MN
+811313,819203,2,SNpp39,Tr flexor MN
+811313,812531,2,SNpp39,Acc. ti flexor MN
+811313,805010,2,SNpp39,Ti flexor MN
+811189,905661,2,SNpp44,Tr extensor MN
+811189,905586,2,SNpp44,Acc. tr flexor MN
+811112,903159,2,SNpp50,Tr flexor MN
+811112,802295,2,SNpp50,Ti flexor MN
+810800,905792,2,SNpp51,MNhl01
+810643,1050460102,2,SNpp50,Acc. ti flexor MN
+810643,902962,2,SNpp50,Fe reductor MN
+810445,905235,2,SNpp39,Acc. ti flexor MN
+809932,800175,2,SNpp39,Pleural remotor/abductor MN
+809398,819674,2,SNpp39,Acc. ti flexor MN
+809375,939950,2,SNpp40,MNhl60
+809353,807395,2,SNpp41,MNml29
+809278,910296,2,SNpp39,Acc. ti flexor MN
+809230,809670,2,SNpp50,Acc. ti flexor MN
+809230,804025,2,SNpp50,Fe reductor MN
+809230,801768,2,SNpp50,Sternal posterior rotator MN
+809230,800911,2,SNpp50,Ti extensor MN
+809102,813755,2,SNpp41,Tergotr. MN
+809102,803226,2,SNpp41,Sternal posterior rotator MN
+808991,815097,2,SNpp48,ltm MN
+808991,905928,2,SNpp48,Tr flexor MN
+808991,801693,2,SNpp48,Fe reductor MN
+808818,802964,2,SNpp50,Sternal posterior rotator MN
+808818,803147,2,SNpp50,Ti flexor MN
+808818,801492,2,SNpp50,Sternal posterior rotator MN
+808757,908094,2,SNpp39,Acc. ti flexor MN
+808491,903159,2,SNpp50,Tr flexor MN
+808491,813603,2,SNpp50,ltm MN
+808463,928579,2,SNpp49,Ti extensor MN
+808463,802521,2,SNpp49,Sternal posterior rotator MN
+807970,907422,2,SNpp41,MNml78
+807970,803226,2,SNpp41,Sternal posterior rotator MN
+807931,902492,2,SNpp51,Pleural remotor/abductor MN
+807900,819203,2,SNpp39,Tr flexor MN
+807805,902962,2,SNpp48,Fe reductor MN
+807785,805477,2,SNpp51,Tr extensor MN
+806859,906235,2,SNpp51,Sternal anterior rotator MN
+806491,800290,2,SNpp51,Pleural remotor/abductor MN
+804010,821154,2,SNpp50,Acc. tr flexor MN
+804010,802964,2,SNpp50,Sternal posterior rotator MN
+802350,807160,2,SNpp51,MNhl01
+802350,804514,2,SNpp51,Tergotr. MN
+802350,801492,1,SNpp51,Sternal posterior rotator MN
+802350,804919,1,SNpp51,Ti flexor MN
+802350,819112,1,SNpp51,Ti flexor MN
+802350,1050730563,1,SNpp51,Acc. tr flexor MN
+804010,800621,1,SNpp50,Ti extensor MN
+805712,801932,1,SNpp51,
+805712,869369,1,SNpp51,MNhl65
+805712,905928,1,SNpp51,Tr flexor MN
+805712,1050938258,1,SNpp51,Tr flexor MN
+806491,808685,1,SNpp51,Ti flexor MN
+806491,1050938258,1,SNpp51,Tr flexor MN
+806859,808453,1,SNpp51,Tr extensor MN
+806859,840740,1,SNpp51,Ti flexor MN
+807785,908094,1,SNpp51,Acc. ti flexor MN
+807900,907848,1,SNpp39,Acc. ti flexor MN
+807931,904657,1,SNpp51,Sternotrochanter MN
+807931,813603,1,SNpp51,ltm MN
+807931,1050607195,1,SNpp51,Fe reductor MN
+808077,903508,1,SNpp50,MNml81
+808463,801057,1,SNpp49,Tr flexor MN
+808463,903844,1,SNpp49,MNml80
+808491,803226,1,SNpp50,Sternal posterior rotator MN
+808491,800541,1,SNpp50,Pleural remotor/abductor MN
+808491,822185,1,SNpp50,MNml77
+808576,910095,1,SNpp41,Tr flexor MN
+808592,903643,1,SNpp50,Sternal posterior rotator MN
+808757,1051356801,1,SNpp39,Acc. ti flexor MN
+808757,802232,1,SNpp39,Tr flexor MN
+808818,801715,1,SNpp50,Sternal posterior rotator MN
+808818,812953,1,SNpp50,Ti extensor MN
+808826,903159,1,SNpp50,Tr flexor MN
+808991,803072,1,SNpp48,Ti flexor MN
+808991,809935,1,SNpp48,Ti extensor MN
+808991,869369,1,SNpp48,MNhl65
+809027,807395,1,SNpp41,MNml29
+809027,817990,1,SNpp41,MNml78
+809102,800541,1,SNpp41,Pleural remotor/abductor MN
+809230,803704,1,SNpp50,Sternal posterior rotator MN
+809230,803829,1,SNpp50,Tr flexor MN
+809230,903159,1,SNpp50,Tr flexor MN
+809250,903579,1,SNpp39,Tr flexor MN
+809476,803226,1,SNpp50,Sternal posterior rotator MN
+809476,903159,1,SNpp50,Tr flexor MN
+809595,800290,1,SNpp50,Pleural remotor/abductor MN
+809595,807640,1,SNpp50,Tr flexor MN
+810041,907848,1,SNpp39,Acc. ti flexor MN
+810187,803072,1,SNpp39,Ti flexor MN
+810445,805010,1,SNpp39,Ti flexor MN
+810526,809604,1,SNpp39,Acc. tr flexor MN
+810683,803072,1,SNpp50,Ti flexor MN
+810800,801932,1,SNpp51,
+810800,1050938258,1,SNpp51,Tr flexor MN
+811112,800911,1,SNpp50,Ti extensor MN
+811189,800290,1,SNpp44,Pleural remotor/abductor MN
+811189,801148,1,SNpp44,Sternotrochanter MN
+811313,905235,1,SNpp39,Acc. ti flexor MN
+811348,803480,1,SNpp50,MNml82
+811348,803829,1,SNpp50,Tr flexor MN
+811348,804025,1,SNpp50,Fe reductor MN
+811348,813603,1,SNpp50,ltm MN
+811348,1050669248,1,SNpp50,Tr flexor MN
+811532,802864,1,SNpp49,Sternotrochanter MN
+811532,814983,1,SNpp49,MNml78
+811532,819203,1,SNpp49,Tr flexor MN
+811532,830514,1,SNpp49,Ti extensor MN
+811532,812531,1,SNpp49,Acc. ti flexor MN
+811608,809670,1,SNpp51,Acc. ti flexor MN
+811889,804025,1,SNpp49,Fe reductor MN
+811889,809670,1,SNpp49,Acc. ti flexor MN
+811919,802521,1,SNpp50,Sternal posterior rotator MN
+811919,801058,1,SNpp50,Tr flexor MN
+812228,905586,1,SNpp41,Acc. tr flexor MN
+812527,803072,1,SNpp51,Ti flexor MN
+812527,800158,1,SNpp51,Ti extensor MN
+812527,869369,1,SNpp51,MNhl65
+812527,914852,1,SNpp51,Acc. tr flexor MN
+812848,801637,1,SNpp39,Acc. ti flexor MN
+813011,800290,1,SNpp50,Pleural remotor/abductor MN
+813011,800553,1,SNpp50,Pleural remotor/abductor MN
+813011,813629,1,SNpp50,Acc. ti flexor MN
+813011,1050460102,1,SNpp50,Acc. ti flexor MN
+813286,809935,1,SNpp50,Ti extensor MN
+813516,812531,1,SNpp50,Acc. ti flexor MN
+813516,928579,1,SNpp50,Ti extensor MN
+813644,802964,1,SNpp41,Sternal posterior rotator MN
+813644,812953,1,SNpp41,Ti extensor MN
+814335,903579,1,SNpp44,Tr flexor MN
+814484,800578,1,SNpp50,Fe reductor MN
+814628,800175,1,SNpp41,Pleural remotor/abductor MN
+814628,804078,1,SNpp41,MNhl29
+814628,823405,1,SNpp41,ltm MN
+814742,819203,1,SNpp51,Tr flexor MN
+814742,806204,1,SNpp51,Tergotr. MN
+814742,905559,1,SNpp51,MNml79
+814881,905586,1,SNpp39,Acc. tr flexor MN
+814905,903579,1,SNpp39,Tr flexor MN
+814949,801234,1,SNpp50,Ti extensor MN
+814949,800541,1,SNpp50,Pleural remotor/abductor MN
+814949,902492,1,SNpp50,Pleural remotor/abductor MN
+815569,816404,1,SNpp39,Acc. ti flexor MN
+815843,805741,1,SNpp51,Tergotr. MN
+816304,800230,1,SNpp51,MNml82
+816304,804405,1,SNpp51,Ti flexor MN
+816304,928579,1,SNpp51,Ti extensor MN
+816304,840530,1,SNpp51,Tr extensor MN
+816362,807395,1,SNpp41,MNml29
+816362,800776,1,SNpp41,Pleural remotor/abductor MN
+816362,867926,1,SNpp41,Acc. tr flexor MN
+816362,810720,1,SNpp41,Acc. tr flexor MN
+816388,800175,1,SNpp39,Pleural remotor/abductor MN
+816580,902310,1,SNpp41,Pleural remotor/abductor MN
+816782,1050126678,1,SNpp39,Acc. ti flexor MN
+816782,1050268065,1,SNpp39,Acc. ti flexor MN
+817680,803237,1,SNpp51,Tergotr. MN
+817680,803412,1,SNpp51,Tr extensor MN
+817680,1051062549,1,SNpp51,Ta depressor MN
+817680,805598,1,SNpp51,Fe reductor MN
+817680,807906,1,SNpp51,Tr extensor MN
+818712,807160,1,SNpp48,MNhl01
+818712,890541,1,SNpp48,ltm MN
+818930,800358,1,SNpp51,MNhl64
+818930,1050938258,1,SNpp51,Tr flexor MN
+818930,905928,1,SNpp51,Tr flexor MN
+818930,903643,1,SNpp51,Sternal posterior rotator MN
+819219,801548,1,SNpp50,Sternal anterior rotator MN
+819524,905586,1,SNpp41,Acc. tr flexor MN
+819633,802964,1,SNpp50,Sternal posterior rotator MN
+819633,803147,1,SNpp50,Ti flexor MN
+819822,809670,1,SNpp50,Acc. ti flexor MN
+819822,822185,1,SNpp50,MNml77
+820328,800578,1,SNpp50,Fe reductor MN
+820887,909371,1,SNpp41,Sternal adductor MN
+820887,819203,1,SNpp41,Tr flexor MN
+821363,800316,1,SNpp50,Sternal anterior rotator MN
+821947,800851,1,SNpp51,Sternotrochanter MN
+821947,803147,1,SNpp51,Ti flexor MN
+821947,804514,1,SNpp51,Tergotr. MN
+822523,800358,1,SNpp51,MNhl64
+822523,803072,1,SNpp51,Ti flexor MN
+822523,801267,1,SNpp51,MNhl02
+822523,906235,1,SNpp51,Sternal anterior rotator MN
+822975,801148,1,SNpp51,Sternotrochanter MN
+822975,903090,1,SNpp51,MNhl62
+822975,903643,1,SNpp51,Sternal posterior rotator MN
+822975,905792,1,SNpp51,MNhl01
+823935,907848,1,SNpp51,Acc. ti flexor MN
+823935,903844,1,SNpp51,MNml80
+823935,905559,1,SNpp51,MNml79
+823935,1050673969,1,SNpp51,MNml80
+824107,902310,1,SNpp41,Pleural remotor/abductor MN
+824431,813755,1,SNpp51,Tergotr. MN
+824940,801057,1,SNpp50,Tr flexor MN
+824940,812531,1,SNpp50,Acc. ti flexor MN
+826324,804514,1,SNpp51,Tergotr. MN
+826324,1050272154,1,SNpp51,
+826386,800962,1,SNpp41,Sternal posterior rotator MN
+826386,905235,1,SNpp41,Acc. ti flexor MN
+828811,802295,1,SNpp51,Ti flexor MN
+828811,802407,1,SNpp51,Sternotrochanter MN
+828811,1050046221,1,SNpp51,MNml80
+875542,1050673969,1,SNpp51,MNml80
+875542,905145,1,SNpp51,Fe reductor MN
+875542,856359,1,SNpp51,Sternotrochanter MN
+875542,806204,1,SNpp51,Tergotr. MN
+902316,818295,1,SNpp51,Ti flexor MN
+902316,902492,1,SNpp51,Pleural remotor/abductor MN
+903377,1050239701,1,SNpp50,Acc. tr flexor MN
+903471,800290,1,SNpp50,Pleural remotor/abductor MN
+905340,909618,1,SNpp59,Acc. tr flexor MN
+905340,813480,1,SNpp59,Sternal adductor MN
+906018,802521,1,SNpp50,Sternal posterior rotator MN
+906018,814983,1,SNpp50,MNml78
+907744,905792,1,SNpp39,MNhl01
+908603,819203,1,SNpp51,Tr flexor MN
+908702,802295,1,SNpp50,Ti flexor MN
+908702,902492,1,SNpp50,Pleural remotor/abductor MN
+908723,803147,1,SNpp50,Ti flexor MN
+908773,800962,1,SNpp50,Sternal posterior rotator MN
+909036,801736,1,SNpp50,MNhl62
+909240,803147,1,SNpp50,Ti flexor MN
+909477,802232,1,SNpp39,Tr flexor MN
+910406,800578,1,SNpp51,Fe reductor MN
+910408,801492,1,SNpp50,Sternal posterior rotator MN
+910408,812953,1,SNpp50,Ti extensor MN
+910413,801736,1,SNpp39,MNhl62
+911307,800776,1,SNpp51,Pleural remotor/abductor MN
+911942,800541,1,SNpp41,Pleural remotor/abductor MN
+911942,813755,1,SNpp41,Tergotr. MN
+912317,808640,1,SNpp50,Sternal posterior rotator MN
+913052,801079,1,SNpp51,Sternotrochanter MN
+913052,802072,1,SNpp51,Tergopleural/Pleural promotor MN
+913052,803830,1,SNpp51,Fe reductor MN
+913052,803698,1,SNpp51,Sternotrochanter MN
+913881,819203,1,SNpp44,Tr flexor MN
+913882,805568,1,SNpp39,Acc. ti flexor MN
+914543,813629,1,SNpp50,Acc. ti flexor MN
+933121,802521,1,SNpp50,Sternal posterior rotator MN
+935383,802552,1,SNpp51,Tergotr. MN
+935383,804941,1,SNpp51,Fe reductor MN
+935383,805741,1,SNpp51,Tergotr. MN
+935383,814163,1,SNpp51,Fe reductor MN
+935383,818057,1,SNpp51,Ti flexor MN
+935383,812111,1,SNpp51,Fe reductor MN
+935383,1051062549,1,SNpp51,Ta depressor MN
+935541,815246,1,SNpp39,Acc. ti flexor MN
+935541,816215,1,SNpp39,Acc. ti flexor MN
+935541,816404,1,SNpp39,Acc. ti flexor MN
+936785,801715,1,SNpp43,Sternal posterior rotator MN
+936785,804514,1,SNpp43,Tergotr. MN
+939462,821154,1,SNpp50,Acc. tr flexor MN
+1053563856,801234,1,SNpp50,Ti extensor MN
+1053563856,803704,1,SNpp50,Sternal posterior rotator MN
+1053563856,809670,1,SNpp50,Acc. ti flexor MN
+1053563856,903159,1,SNpp50,Tr flexor MN

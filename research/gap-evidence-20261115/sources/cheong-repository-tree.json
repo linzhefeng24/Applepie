@@ -1,0 +1,140 @@
+{
+  "sha": "56723c657797601fe692d8e6c89610ecc2c97cf5",
+  "url": "https://api.github.com/repos/gmcard/Cheong_et_al_2024_eLife/git/trees/56723c657797601fe692d8e6c89610ecc2c97cf5",
+  "tree": [
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10fabd90118f7ce38bb2e4753e105e744442a429",
+      "size": 18658,
+      "url": "https://api.github.com/repos/gmcard/Cheong_et_al_2024_eLife/git/blobs/10fabd90118f7ce38bb2e4753e105e744442a429"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ac2aba4fa101b45081bf927ec493fa12bc24596",
+      "size": 105,
+      "url": "https://api.github.com/repos/gmcard/Cheong_et_al_2024_eLife/git/blobs/6ac2aba4fa101b45081bf927ec493fa12bc24596"
+    },
+    {
+      "path": "dn_indirect_connectivity_lateralized",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "871c819d85af75fd9afc0c45f870787d6f9003f4",
+      "url": "https://api.github.com/repos/gmcard/Cheong_et_al_2024_eLife/git/trees/871c819d85af75fd9afc0c45f870787d6f9003f4"
+    },
+    {
+      "path": "dn_indirect_connectivity_lateralized/dn_to_mn_indirect_example_graph.R",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "36c5875ceadf51250f1839207865dcb58524f7e4",
+      "size": 6856,
+      "url": "https://api.github.com/repos/gmcard/Cheong_et_al_2024_eLife/git/blobs/36c5875ceadf51250f1839207865dcb58524f7e4"
+    },
+    {
+      "path": "dn_indirect_connectivity_lateralized/get_partners_by_multistep_conn_fun.R",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c9b4dae30355cb20d4200a01e8f276ee85e5b6e3",
+      "size": 16011,
+      "url": "https://api.github.com/repos/gmcard/Cheong_et_al_2024_eLife/git/blobs/c9b4dae30355cb20d4200a01e8f276ee85e5b6e3"
+    },
+    {
+      "path": "dn_indirect_connectivity_lateralized/notes.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "296d79b313674bbac304c8dc3210b8d56e50b50f",
+      "size": 344,
+      "url": "https://api.github.com/repos/gmcard/Cheong_et_al_2024_eLife/git/blobs/296d79b313674bbac304c8dc3210b8d56e50b50f"
+    },
+    {
+      "path": "dn_indirect_connectivity_lateralized/wing_dn_indirect_connectivity_lateralized.R",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d9b37883a6880593538d53fc646ab1f6a6b72ed",
+      "size": 11114,
+      "url": "https://api.github.com/repos/gmcard/Cheong_et_al_2024_eLife/git/blobs/1d9b37883a6880593538d53fc646ab1f6a6b72ed"
+    },
+    {
+      "path": "effective_connectivity_strength",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fbc7813b3ab516515855a4415f8ca6f79c243b70",
+      "url": "https://api.github.com/repos/gmcard/Cheong_et_al_2024_eLife/git/trees/fbc7813b3ab516515855a4415f8ca6f79c243b70"
+    },
+    {
+      "path": "effective_connectivity_strength/MANC_effective_connectivity_code.R",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4486740649fae1097b59ac33f66956180c0dc9c8",
+      "size": 11789,
+      "url": "https://api.github.com/repos/gmcard/Cheong_et_al_2024_eLife/git/blobs/4486740649fae1097b59ac33f66956180c0dc9c8"
+    },
+    {
+      "path": "effective_connectivity_strength/notes.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "544663079720f774c17b3ee564d424fac1ac1ef0",
+      "size": 101,
+      "url": "https://api.github.com/repos/gmcard/Cheong_et_al_2024_eLife/git/blobs/544663079720f774c17b3ee564d424fac1ac1ef0"
+    },
+    {
+      "path": "electrical_neuron_contact_area",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4192cd3c4aa193caad56237a72b0318b0dcd5c13",
+      "url": "https://api.github.com/repos/gmcard/Cheong_et_al_2024_eLife/git/trees/4192cd3c4aa193caad56237a72b0318b0dcd5c13"
+    },
+    {
+      "path": "electrical_neuron_contact_area/blender_calc_intersection.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "133fa8abd46dc0b29c9ba8d545e73a5772901817",
+      "size": 3409,
+      "url": "https://api.github.com/repos/gmcard/Cheong_et_al_2024_eLife/git/blobs/133fa8abd46dc0b29c9ba8d545e73a5772901817"
+    },
+    {
+      "path": "electrical_neuron_contact_area/blender_fatten_meshes.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac1605a6963ab3e9926b52fb91b15f7e6fd8bdec",
+      "size": 1089,
+      "url": "https://api.github.com/repos/gmcard/Cheong_et_al_2024_eLife/git/blobs/ac1605a6963ab3e9926b52fb91b15f7e6fd8bdec"
+    },
+    {
+      "path": "electrical_neuron_contact_area/blender_recalc_intersection.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dbd01e736851bd4a759ed383c9bdaf854bf6b4af",
+      "size": 856,
+      "url": "https://api.github.com/repos/gmcard/Cheong_et_al_2024_eLife/git/blobs/dbd01e736851bd4a759ed383c9bdaf854bf6b4af"
+    },
+    {
+      "path": "electrical_neuron_contact_area/get_mn_and_elec_in_meshes.R",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "00683923d38ae72285540b0f0457178cfbe9eacc",
+      "size": 2621,
+      "url": "https://api.github.com/repos/gmcard/Cheong_et_al_2024_eLife/git/blobs/00683923d38ae72285540b0f0457178cfbe9eacc"
+    },
+    {
+      "path": "electrical_neuron_contact_area/notes.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "27b0fcc3fc95ae44830a514bff08e88f4fee71fe",
+      "size": 828,
+      "url": "https://api.github.com/repos/gmcard/Cheong_et_al_2024_eLife/git/blobs/27b0fcc3fc95ae44830a514bff08e88f4fee71fe"
+    },
+    {
+      "path": "electrical_neuron_contact_area/sup_file5_putative_elec_in_by_pre_over_vol.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4843995e90d1ea0617903b3eb10b67e324237398",
+      "size": 158021,
+      "url": "https://api.github.com/repos/gmcard/Cheong_et_al_2024_eLife/git/blobs/4843995e90d1ea0617903b3eb10b67e324237398"
+    }
+  ],
+  "truncated": false
+}

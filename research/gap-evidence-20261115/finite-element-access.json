@@ -1,0 +1,21 @@
+[
+  {
+    "url": "https://pmc.ncbi.nlm.nih.gov/utils/oa/oa.fcgi?id=PMC12056673",
+    "id": "finite-element-PMC-oa-correct-host",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://europepmc.org/articles/PMC12056673",
+    "id": "finite-element-EuropePMC-page",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://api.crossref.org/works/10.1098/rsif.2024.0559",
+    "id": "finite-element-crossref",
+    "status": 200,
+    "content_type": "application/json",
+    "file": "research/gap-evidence-20261115/sources/finite-element-crossref.txt",
+    "bytes": 15663,
+    "sha256": "5eed6e41ec1432be7b62750a56c04639c2ced6e691db71fa0ddf1941eb7700e4"
+  }
+]

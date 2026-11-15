@@ -1,0 +1,15 @@
+{
+  "status": "new same-animal structural extension; no sensory-to-VNC physiological feedback implemented",
+  "nodes": 3988,
+  "signed_edges": 485045,
+  "added_cells": 514,
+  "old_submatrices": "signed and unsigned exactly preserved",
+  "leg_MNs": 381,
+  "sources": {
+    "/workspace/Applepie-research-sync/research/conductance-rebuild-20261114/results/mcns-unified/neurons.json": "c1d7b00efd51aeab7942ef9acf97360362a5cb6fd034a58ba880e2de7aeb199e",
+    "/workspace/exports/malecns-source/connectome-weights-male-cns-v1.0-minconf-0.5-significant-only.feather": "5c536423a62a688e59e7b441f9c04d6272c9a1f017e35814cf561f8c275d9e9e",
+    "/workspace/Applepie-research-sync/research/gap-evidence-20261115/routes/BRK-twohop-MN.csv.gz": "3a2e2478d2826bd37f695fda36d7bb4dacbb8d0a0e19942daf67d1d0cd335857",
+    "/workspace/Applepie-research-sync/research/gap-evidence-20261115/build_brake_extension.py": "4ecd27c4a52ed3faa5f7f30cf17e5ee4bd34e0ba4e8e48f64063ea6ca91c757a"
+  },
+  "sign_caution": "GABA negative, ACh positive, Glu negative receptor hypothesis; other transmitters only unsigned"
+}
