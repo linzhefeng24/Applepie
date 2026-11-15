@@ -1,0 +1,99 @@
+{
+  "parameters": {
+    "status": "manual terminal prototype r2; longer/weaker distal coupling and position-current adjustment, not EM reconstruction",
+    "duration_ms": 1600.0,
+    "dt_ms": 0.0125,
+    "record_interval_ms": 0.5,
+    "capacitance_pF": [
+      5.0,
+      5.0,
+      2.5
+    ],
+    "gNa_nS": [
+      600.0,
+      600.0,
+      300.0
+    ],
+    "gK_nS": [
+      180.0,
+      180.0,
+      90.0
+    ],
+    "gLeak_nS": [
+      1.5,
+      1.5,
+      0.75
+    ],
+    "gCa_nS": [
+      0.3,
+      0.3,
+      0.15
+    ],
+    "axial_nS": [
+      12.0,
+      1.0
+    ],
+    "ELeak_mV": -54.4,
+    "ENa_mV": 55.0,
+    "EK_mV": -80.0,
+    "ECa_mV": 120.0,
+    "EGABA_mV": -65.0,
+    "gSK_nS": 0.2,
+    "Ca_tau_ms": 100.0,
+    "Ca_alpha": 0.0002,
+    "Ca_SK_Kd_uM": 0.2,
+    "chief_compound_peak_nS": 30.0,
+    "GABA_rise_ms": 1.0,
+    "GABA_decay_ms": 20.0,
+    "conduction_delay_ms": 1.5,
+    "rest_angle_deg": 80.0,
+    "movement_amplitude_deg": 35.0,
+    "movement_period_ms": 600.0,
+    "movement_start_ms": 400.0,
+    "movement_end_ms": 1300.0,
+    "claw_current_pA_per_deg": 6.0,
+    "hook_current_pA_per_deg_s": 0.5,
+    "release_Kd_uM": 0.1,
+    "release_Hill": 3.0,
+    "hook_source_body_id": "100513",
+    "prototype_compartments": [
+      "proximal_axon",
+      "branch_axon",
+      "distal_terminal"
+    ],
+    "prototype_fibers": [
+      "hook_flexion",
+      "hook_extension",
+      "claw_flexion",
+      "claw_extension"
+    ],
+    "anatomical_prior": "Chief9A supplies most inhibitory input to hook; presynaptic partners of claw differ. Chief9A-to-claw is absent in this isolated motif, not a claim that claw has no inhibitory inputs.",
+    "unknowns": "Effective aggregate GABA conductance, axial geometry, channels and mechanical encoding gains are uncalibrated hypotheses; no individual sensory EM body IDs assigned.",
+    "manual_reason": "Initial terminal shunt also reduced proximal hook firing and claw drive was subthreshold. Weaken distal axial coupling to limit retrograde loading; increase the shared position-transduction prior so passive claw is genuinely active. Identical changes in every condition."
+  },
+  "parameter_sha256": "9a8d866dea58aa949c887db634f39710982ada1e1d9360ceb99be5c6c1743f8c",
+  "source_case": "chief_LF",
+  "source_spike_file_sha256": "71a5929315b82bed7fa4aeae00d57f88b49b1b79201b6f5668c4afd9521812d2",
+  "real_source_body_id": "100513",
+  "prototype_identity": "four functional sensory fibers; no sensory EM body IDs assigned",
+  "code_hashes": {
+    "sensory_terminal_model.py": "92529ffc87f0f72be9459c98e3fc1932737c918bfe31b5063336a5d518b9f306",
+    "sensory_terminal_probe.py": "c3810aa797ef8363bb842d1ff19f0c7a4f6a47080c2b184d844f01a9ab207327",
+    "model.py": "934572b4c9958a726d46726d70d0cf04178d877766611ecc0ae9f2b8bc5c5bba"
+  },
+  "command": [
+    "/workspace/server-motor-import/.venv/bin/python",
+    "sensory_terminal_probe.py",
+    "chief_LF",
+    "configs/sensory-terminal-r2.json",
+    "chain-r3",
+    "r3"
+  ],
+  "python": "3.12.14",
+  "versions": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "numba": "0.68.1"
+  },
+  "randomness": "deterministic; identical external joint motion in every condition"
+}

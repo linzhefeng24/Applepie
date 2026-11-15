@@ -1,0 +1,222 @@
+{
+  "status": "newly rerun compartmental mechanism; sensory geometry and physiology estimated; not whole-animal reconstruction",
+  "conditions": [
+    {
+      "mode": "passive",
+      "numerical_failure": false,
+      "chief_source_rate_hz": 0.0,
+      "fiber_observations": [
+        {
+          "prototype_type": "hook_flexion",
+          "proximal_spikes": 12,
+          "terminal_spikes": 12,
+          "mean_terminal_Ca_uM": 0.005860960715270321,
+          "mean_release_proxy": 0.002197484914232935
+        },
+        {
+          "prototype_type": "hook_extension",
+          "proximal_spikes": 18,
+          "terminal_spikes": 18,
+          "mean_terminal_Ca_uM": 0.00993558119276768,
+          "mean_release_proxy": 0.003527816338287878
+        },
+        {
+          "prototype_type": "claw_flexion",
+          "proximal_spikes": 14,
+          "terminal_spikes": 14,
+          "mean_terminal_Ca_uM": 0.00789300284754258,
+          "mean_release_proxy": 0.004594400534727136
+        },
+        {
+          "prototype_type": "claw_extension",
+          "proximal_spikes": 28,
+          "terminal_spikes": 28,
+          "mean_terminal_Ca_uM": 0.0134022308697618,
+          "mean_release_proxy": 0.008752160334114875
+        }
+      ],
+      "status": "new mechanism hypothesis; not a recovered sensory connectome or a calibrated fluorescence fit"
+    },
+    {
+      "mode": "motor",
+      "numerical_failure": false,
+      "chief_source_rate_hz": 40.0,
+      "fiber_observations": [
+        {
+          "prototype_type": "hook_flexion",
+          "proximal_spikes": 8,
+          "terminal_spikes": 0,
+          "mean_terminal_Ca_uM": 8.950228149009927e-07,
+          "mean_release_proxy": 7.231059998636071e-16
+        },
+        {
+          "prototype_type": "hook_extension",
+          "proximal_spikes": 16,
+          "terminal_spikes": 0,
+          "mean_terminal_Ca_uM": 9.106442247594423e-07,
+          "mean_release_proxy": 7.604500717445546e-16
+        },
+        {
+          "prototype_type": "claw_flexion",
+          "proximal_spikes": 14,
+          "terminal_spikes": 14,
+          "mean_terminal_Ca_uM": 0.00789300284754258,
+          "mean_release_proxy": 0.004594400534727136
+        },
+        {
+          "prototype_type": "claw_extension",
+          "proximal_spikes": 28,
+          "terminal_spikes": 28,
+          "mean_terminal_Ca_uM": 0.0134022308697618,
+          "mean_release_proxy": 0.008752160334114875
+        }
+      ],
+      "status": "new mechanism hypothesis; not a recovered sensory connectome or a calibrated fluorescence fit"
+    },
+    {
+      "mode": "motor_web",
+      "numerical_failure": false,
+      "chief_source_rate_hz": 0.0,
+      "fiber_observations": [
+        {
+          "prototype_type": "hook_flexion",
+          "proximal_spikes": 12,
+          "terminal_spikes": 12,
+          "mean_terminal_Ca_uM": 0.00586096289920692,
+          "mean_release_proxy": 0.0021974850076709896
+        },
+        {
+          "prototype_type": "hook_extension",
+          "proximal_spikes": 18,
+          "terminal_spikes": 18,
+          "mean_terminal_Ca_uM": 0.009935534281523826,
+          "mean_release_proxy": 0.0035277790067070798
+        },
+        {
+          "prototype_type": "claw_flexion",
+          "proximal_spikes": 14,
+          "terminal_spikes": 14,
+          "mean_terminal_Ca_uM": 0.00789300284754258,
+          "mean_release_proxy": 0.004594400534727136
+        },
+        {
+          "prototype_type": "claw_extension",
+          "proximal_spikes": 28,
+          "terminal_spikes": 28,
+          "mean_terminal_Ca_uM": 0.0134022308697618,
+          "mean_release_proxy": 0.008752160334114875
+        }
+      ],
+      "status": "new mechanism hypothesis; not a recovered sensory connectome or a calibrated fluorescence fit"
+    },
+    {
+      "mode": "motor_chief_off",
+      "numerical_failure": false,
+      "chief_source_rate_hz": 0.0,
+      "fiber_observations": [
+        {
+          "prototype_type": "hook_flexion",
+          "proximal_spikes": 12,
+          "terminal_spikes": 12,
+          "mean_terminal_Ca_uM": 0.005860960715270321,
+          "mean_release_proxy": 0.002197484914232935
+        },
+        {
+          "prototype_type": "hook_extension",
+          "proximal_spikes": 18,
+          "terminal_spikes": 18,
+          "mean_terminal_Ca_uM": 0.00993558119276768,
+          "mean_release_proxy": 0.003527816338287878
+        },
+        {
+          "prototype_type": "claw_flexion",
+          "proximal_spikes": 14,
+          "terminal_spikes": 14,
+          "mean_terminal_Ca_uM": 0.00789300284754258,
+          "mean_release_proxy": 0.004594400534727136
+        },
+        {
+          "prototype_type": "claw_extension",
+          "proximal_spikes": 28,
+          "terminal_spikes": 28,
+          "mean_terminal_Ca_uM": 0.0134022308697618,
+          "mean_release_proxy": 0.008752160334114875
+        }
+      ],
+      "status": "new mechanism hypothesis; not a recovered sensory connectome or a calibrated fluorescence fit"
+    },
+    {
+      "mode": "chief_LF",
+      "numerical_failure": false,
+      "chief_source_rate_hz": 80.0,
+      "fiber_observations": [
+        {
+          "prototype_type": "hook_flexion",
+          "proximal_spikes": 9,
+          "terminal_spikes": 0,
+          "mean_terminal_Ca_uM": 8.864308085426357e-07,
+          "mean_release_proxy": 6.972362776650142e-16
+        },
+        {
+          "prototype_type": "hook_extension",
+          "proximal_spikes": 16,
+          "terminal_spikes": 0,
+          "mean_terminal_Ca_uM": 8.940667266456505e-07,
+          "mean_release_proxy": 7.151503842676823e-16
+        },
+        {
+          "prototype_type": "claw_flexion",
+          "proximal_spikes": 14,
+          "terminal_spikes": 14,
+          "mean_terminal_Ca_uM": 0.00789300284754258,
+          "mean_release_proxy": 0.004594400534727136
+        },
+        {
+          "prototype_type": "claw_extension",
+          "proximal_spikes": 28,
+          "terminal_spikes": 28,
+          "mean_terminal_Ca_uM": 0.0134022308697618,
+          "mean_release_proxy": 0.008752160334114875
+        }
+      ],
+      "status": "new mechanism hypothesis; not a recovered sensory connectome or a calibrated fluorescence fit"
+    },
+    {
+      "mode": "motor",
+      "numerical_failure": false,
+      "chief_source_rate_hz": 40.0,
+      "fiber_observations": [
+        {
+          "prototype_type": "hook_flexion",
+          "proximal_spikes": 12,
+          "terminal_spikes": 12,
+          "mean_terminal_Ca_uM": 0.005860960715270321,
+          "mean_release_proxy": 0.002197484914232935
+        },
+        {
+          "prototype_type": "hook_extension",
+          "proximal_spikes": 18,
+          "terminal_spikes": 18,
+          "mean_terminal_Ca_uM": 0.00993558119276768,
+          "mean_release_proxy": 0.003527816338287878
+        },
+        {
+          "prototype_type": "claw_flexion",
+          "proximal_spikes": 14,
+          "terminal_spikes": 14,
+          "mean_terminal_Ca_uM": 0.00789300284754258,
+          "mean_release_proxy": 0.004594400534727136
+        },
+        {
+          "prototype_type": "claw_extension",
+          "proximal_spikes": 28,
+          "terminal_spikes": 28,
+          "mean_terminal_Ca_uM": 0.0134022308697618,
+          "mean_release_proxy": 0.008752160334114875
+        }
+      ],
+      "status": "new mechanism hypothesis; not a recovered sensory connectome or a calibrated fluorescence fit"
+    }
+  ],
+  "inspection_code_sha256": "2e203badf55d8af83033cf4989f29766e30d9fe6d15f307d4b5fc0b71d90d87e"
+}

@@ -247412,5 +247412,31 @@
     "observations": "results/frozen-neural-panel-unified-r8/observations.json",
     "condition_inventory": "results/manual-run-inventory.json"
   },
-  "latest_neural_review_namespace": "manual_joint_review_20261115"
+  "latest_neural_review_namespace": "manual_completion_r9_20261115",
+  "manual_completion_r9_20261115": {
+    "evidence_status": "independently rerun model outputs; not lab measurements or restored historical artifacts",
+    "report": "MANUAL_COMPLETION_R9.md",
+    "neural_bank": "configs/manual-neural-bank-r9.json",
+    "neural_conditions_complete": 18,
+    "sensory_causal_review": "results/sensory-terminal-probes/chain-r3/causal-review.json",
+    "sensory_scope": "MANC 82-cell actual upstream graph plus new functional sensory-terminal prototype; not unified whole-animal graph",
+    "qualitative_matches": [
+      "PFL3 left/right DNa02 preference",
+      "PFL2 increases ipsilateral output under PFL3 drive",
+      "FG suppresses BPN-recruited DNg100 while MDN-LBL40 activity remains",
+      "BB reduces P9-recruited DNg97 firing",
+      "DNg100 recruits LF chief9A and suppresses modeled hook terminal response while claw response remains",
+      "DNg74 activation or chief9A ablation restores modeled hook response"
+    ],
+    "unresolved": [
+      "BB/BPN selectivity",
+      "BRK downstream stopping",
+      "full six-leg chief recruitment",
+      "quantitative claw population U-shape",
+      "identified sensory EM body mapping",
+      "calibrated sensory physiology and raw traces",
+      "whole-network rhythm elimination under E2 ablation"
+    ],
+    "not_claimed": "Most brain.json phenomena passed; walking reproduced; exact biological parameters recovered"
+  }
 }

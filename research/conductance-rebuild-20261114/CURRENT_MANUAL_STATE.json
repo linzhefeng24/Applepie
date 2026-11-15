@@ -1,9 +1,9 @@
 {
-  "stage": "r8 same-graph review and shared-MANC causal checks completed",
+  "stage": "r9 full neural panel and sensory causal mechanism rerun",
   "not_claimed": "No majority of brain.json phenomena or complete behavioral replication",
   "r4_completed_conditions": 18,
   "r4_bank": "configs/manual-neural-bank-r4.json",
-  "candidate_bank": "configs/manual-neural-bank-r8.json",
+  "candidate_bank": "configs/manual-neural-bank-r9.json",
   "completed_results": "Each complete simulation has a -diagnosis.json alongside atomic .npz. Config-only entries represent started/incomplete experiments.",
   "mechanism_updates": [
     "BRK release0.5 and extra inhibitory-relay excitation0.5 preserve more BPN downstream activity",
@@ -17,8 +17,12 @@
   "unified_graph": "results/mcns-unified/source-manifest.json",
   "completed_condition_inventory": "results/manual-run-inventory.json",
   "priority": "Measured neural interventions and complete temporal traces before muscle or paper-model-only predictions",
-  "report": "MANUAL_RESULTS_20261115.md",
+  "report": "MANUAL_COMPLETION_R9.md",
   "motor_candidate": "configs/manual-motor-bank-shared-r1.json",
   "r8_complete_conditions": 18,
-  "regression_checks_passed": 23
+  "regression_checks_passed": 28,
+  "r9_complete_conditions": 18,
+  "sensory_source_bank": "configs/sensory-command-r3.json",
+  "sensory_terminal_bank": "configs/sensory-terminal-r2.json",
+  "sensory_status": "New mechanism hypothesis with six completed causal conditions, not recovered sensory EM cells or calibrated physiology"
 }
