@@ -1,0 +1,26 @@
+{
+  "evidence_kind": "user-pasted Windows-local WSL terminal output; not independently rerun on user hardware",
+  "environment": "WSL2 Ubuntu26.04 x86_64",
+  "python": "3.12.16",
+  "versions": {
+    "numpy": "2.5.4",
+    "jax": "0.5.3",
+    "jaxlib": "0.5.3",
+    "mujoco": "3.3.2",
+    "mujoco-mjx": "3.3.2"
+  },
+  "dependencies_installation": "user output reports success",
+  "mjx_patch": "user output reports completed",
+  "bundle_verified_files": 116,
+  "model_and_optimizer_load_check": "user output reports completed successfully",
+  "optimizer_updates_in_this_check": 0,
+  "jax_device": "TFRT_CPU_0",
+  "wsl_memory_total_kib": 7836316,
+  "windows_physical_memory_gib": null,
+  "hardware_speed_measured": false,
+  "export_name": "20261116T143036Z-check-265feb.zip",
+  "user_reported_export_sha256": "799fd338ad2c0ff03f2a62107b6cfdc90d2c0672be48067096bc8993b11ad3d8",
+  "export_independently_downloaded": false,
+  "remaining_issue": "Windows PowerShell memory-query command was executed in bash; syntax error does not invalidate successful installation or model check",
+  "next_step": "Query physical memory in Windows PowerShell, then decide WSL memory allocation before full BPTT benchmark"
+}
