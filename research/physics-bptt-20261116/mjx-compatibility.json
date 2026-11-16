@@ -1,0 +1,27 @@
+{
+  "mujoco": "3.3.2",
+  "jax": "0.8.0",
+  "integrator": "mjtIntegrator.mjINT_EULER",
+  "nq": 116,
+  "nv": 114,
+  "na": 141,
+  "nu": 141,
+  "solver_iterations": 100,
+  "solver_tolerance": 1e-08,
+  "transmissions": [
+    [
+      "mjtTrn.mjTRN_JOINT",
+      3
+    ],
+    [
+      "mjtTrn.mjTRN_TENDON",
+      132
+    ],
+    [
+      "mjtTrn.mjTRN_BODY",
+      6
+    ]
+  ],
+  "MJX_put_model": "failed",
+  "reason": "NotImplementedError: [<mjtTrn.mjTRN_BODY: 5>] not supported"
+}
