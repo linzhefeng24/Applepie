@@ -1,5 +1,7 @@
 # Epoch 123 versus epoch 1000: actual fixed-body replay
 
+> Native AB comparisons now use [the restored original AB protocol](../restore-native-AB-20261116/README.md). These earlier videos used modified initial state/neutral auxiliary controls and are retained for provenance, not as an original AB baseline.
+
 This is a new full-network rerun, not the training surrogate or archived AB control replay. Epoch 123 uses `best_raw` from the immutable completed optimizer checkpoint; epoch 1000 uses `raw` from the same file. They are asserted distinct. The former is additionally checked against the previously independently validated full parameter matrix. Parameters are model fits, not measured physiology.
 
 The source checkpoint SHA-256 is `44304aa747c7078755cb16720d39a32ec839cc5e4953b47fcb3bf2fbd888fe70`. The unchanged base YAML SHA-256 is `858d1818b8d8394c95bb62a6ce60474cb534a83b94265ef8615e367c110d262c`. Shared factors are exactly `0.2*tanh(raw)` on archived fields `[5,7,8,11,12,13,14,15,16]`, applied by the original group key to the entire network.

@@ -9,3 +9,7 @@
 `python finalize.py`解码检查全部视频、校验状态和唯一模型身份，再生成ZIP及SHA清单。`verify_distribution.py <zip> --report <json>`从全新临时目录解压，核对每个文件并测试公开状态、肌肉驱动和接触接口。
 
 GitHub独立重跑工作流：`.github/workflows/build-single-model-delivery.yml`。最终附件保存在`unified-fly-model-20261115`草稿Release；不发布云环境或公开Release。`delivery-manifest.json`记录最终附件的实际URL、字节数、SHA及代码版本（重跑完成后写入）。本地早期打包与GitHub独立重跑分别记录，不将两者的ZIP哈希混用。
+
+## Native AB comparison protocol
+
+The originally delivered neural demo inherits A pose but intentionally zeroes velocity/activation and neutralizes auxiliary controls. It does not reproduce native AB conditions. For archived AB or checkpoint-to-AB body comparisons, use [the restored canonical replay](../restore-native-AB-20261116/README.md): complete initial state/warmstart, all11 auxiliary controls, native0.4s physics, and the declared neural-output clock map. Existing baseline hashes/checkpoints remain immutable.
