@@ -10,7 +10,7 @@ if version('mujoco')!='3.3.2' or version('mujoco-mjx')!='3.3.2':raise RuntimeErr
 root=Path(distribution('mujoco-mjx').locate_file('mujoco/mjx/_src'))
 records=[]
 source=R.parent/'physics-bptt-20261116/source'
-baselines={name:(R/'mjx-smooth-upstream.py.txt').read_text() if name=='smooth.py' else (source/('mjx__mujoco__mjx___src__'+name)).read_text() for name in ['types.py','smooth.py','solver.py','io.py']}
+baselines={name:(R/'mjx-smooth-upstream.py.txt').read_text() if name=='smooth.py' else (R/'mjx-collision-driver-upstream.py.txt').read_text() if name=='collision_driver.py' else (source/('mjx__mujoco__mjx___src__'+name)).read_text() for name in ['types.py','smooth.py','solver.py','io.py','collision_driver.py']}
 texts=dict(baselines)
 def change(name,old,new):
  s=texts[name]
@@ -41,7 +41,14 @@ branch='''    elif trntype == TrnType.BODY:
 '''
 change('smooth.py','    elif trntype == TrnType.TENDON:\n',branch+'    elif trntype == TrnType.TENDON:\n')
 change('solver.py','    ctx = jax.lax.while_loop(cond, body, ctx)','    # Same stopping condition/budget, masked scan permits reverse-mode AD.\n    ctx = _while_loop_scan(cond, jax.checkpoint(body), ctx, m.opt.iterations)')
-change('io.py', "  if m.opt.cone == types.ConeType.ELLIPTIC and np.any(contact.dim == 1):\n    raise NotImplementedError(\n        'condim=1 with ConeType.ELLIPTIC not implemented.'\n    )", "  # Mixed frictionless/elliptic rows use existing constraint/solver paths; tested below.")
+change('io.py', "  if m.opt.cone == types.ConeType.ELLIPTIC and np.any(contact.dim == 1):\n    raise NotImplementedError(\n        'condim=1 with ConeType.ELLIPTIC not implemented.'\n    )", "  # Mixed frictionless/elliptic rows use existing constraint/solver paths; validation required.")
+# Algebraically identical Hessian without a dense nefc-by-nefc temporary.
+change('solver.py', "      cm = jp.diag(d.efc_D * ctx.active)", "      h = (d.efc_J.T * d.efc_D * ctx.active) @ d.efc_J")
+change('solver.py', "        cm = cm.at[addr : addr + condim, addr : addr + condim].add(h_cone)\n      h = d.efc_J.T @ cm @ d.efc_J", "        block = d.efc_J[addr : addr + condim]\n        h = h + block.T @ h_cone @ block")
+# Solver contact buffer capacity, not a physical model change. Adapter aborts
+# whenever capacity is reached, so valid contacts must never be discarded.
+change('collision_driver.py', "  id_ = support.name2id(m, mujoco.mjtObj.mjOBJ_NUMERIC, name)", "  if name == 'max_contact_points':\n    return 64  # checked overflow guard in AB adapter\n  id_ = support.name2id(m, mujoco.mjtObj.mjOBJ_NUMERIC, name)")
+change('collision_driver.py', "        _, idx = jax.lax.top_k(-contact.dist, k=max_contact_points)", "        gap = jp.maximum(m.geom_gap[contact.geom[:, 0]], m.geom_gap[contact.geom[:, 1]])\n        priority = contact.dist - contact.includemargin - gap\n        _, idx = jax.lax.top_k(-priority, k=max_contact_points)")
 for name,text in texts.items():
  (root/name).write_text(text)
  records.append({'file':name,'before_sha256':hashlib.sha256(baselines[name].encode()).hexdigest(),'after_sha256':hashlib.sha256(text.encode()).hexdigest()})

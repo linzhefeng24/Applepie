@@ -1,0 +1,18 @@
+{
+  "upstream_tag": "3.3.2",
+  "license": "../physics-bptt-20261116/source/LICENSE",
+  "sources": [
+    {
+      "file": "mjx-smooth-upstream.py.txt",
+      "url": "https://raw.githubusercontent.com/google-deepmind/mujoco/3.3.2/mjx/mujoco/mjx/_src/smooth.py",
+      "sha256": "b63b59d92354dfc09d58bf7787104b63ff358bed0fb78849732d527226f48eb0",
+      "bytes": 36273
+    },
+    {
+      "file": "mjx-collision-driver-upstream.py.txt",
+      "url": "https://raw.githubusercontent.com/google-deepmind/mujoco/3.3.2/mjx/mujoco/mjx/_src/collision_driver.py",
+      "sha256": "7111093745dfabd652d6fab9eb19be14b86ee0872276b8a67ccc515271193baf",
+      "bytes": 16362
+    }
+  ]
+}
