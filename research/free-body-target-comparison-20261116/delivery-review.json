@@ -1,0 +1,149 @@
+{
+  "all_remote_asset_hashes_verified": true,
+  "all_three_initial_states_exactly_equal": true,
+  "neural_drives_identical_to_fixed_body_runs": true,
+  "all_time_axes_monotonic_and_complete_1_4s": true,
+  "no_extra_applied_forces": true,
+  "summary": [
+    {
+      "condition": "Epoch123",
+      "final_up_z": 0.44882435306548807,
+      "min_up_z": 0.413054543999988,
+      "initial_thorax_z_native": 0.1278,
+      "final_thorax_z_native": 0.05418135172570868,
+      "min_thorax_z_native": 0.05416714276385274
+    },
+    {
+      "condition": "Epoch1000",
+      "final_up_z": 0.4574071395361436,
+      "min_up_z": 0.4377858737776567,
+      "initial_thorax_z_native": 0.1278,
+      "final_thorax_z_native": 0.05367017517660934,
+      "min_thorax_z_native": 0.053615391792505504
+    },
+    {
+      "condition": "TargetU",
+      "final_up_z": -0.21057837252784667,
+      "min_up_z": -0.6279054997089281,
+      "initial_thorax_z_native": 0.1278,
+      "final_thorax_z_native": 0.05375265661477636,
+      "min_thorax_z_native": 0.04380499689731953
+    }
+  ],
+  "manifest": {
+    "report": {
+      "code_revision": "e2d370a992f44fd3b09b219025b9ac9242dd4df2",
+      "command": [
+        "research/free-body-target-comparison-20261116/render.py"
+      ],
+      "versions": {
+        "numpy": "2.5.4",
+        "mujoco": "3.3.2",
+        "matplotlib": "3.11.2",
+        "imageio-ffmpeg": "0.6.0"
+      },
+      "conditions": [
+        {
+          "condition": "Epoch123",
+          "base_model_sha256": "858d1818b8d8394c95bb62a6ce60474cb534a83b94265ef8615e367c110d262c",
+          "initial_state_sha256": "a9eefd51e7cd7881778f5ab2ee86b101e1caf3808d6ca68c68334c9291a69cd7",
+          "input_u_sha256": "bde8c8cc17a16e5b280e12eec68bfab28723a58d5594d1c0420a7150b7ef30a2",
+          "origin": {
+            "epoch": 123,
+            "neural_run_id": "99da331bc3ad86641802f1034237277ab9974b64dcfdd253427ddd37e68957ec-epoch123-d416c2e16f5e59cb",
+            "effective_cell_array_sha256": "d416c2e16f5e59cb2af2d1996d83ecab3722c4897fc6daf4fb4876c5d72f2f7d",
+            "channels_with_candidate_MN_mapping": 104
+          },
+          "fixed_root": false,
+          "max_thorax_displacement_native": 0.14384603665507026,
+          "min_body_up_z": 0.413054543999988,
+          "max_ground_contacts": 8,
+          "ground_normal_force_max_native": 3.3712053440673166,
+          "body_duration_s": 1.3999999999998622,
+          "no_sensory_to_neural_feedback": true,
+          "free_walking_success_not_assumed": true
+        },
+        {
+          "condition": "Epoch1000",
+          "base_model_sha256": "858d1818b8d8394c95bb62a6ce60474cb534a83b94265ef8615e367c110d262c",
+          "initial_state_sha256": "a9eefd51e7cd7881778f5ab2ee86b101e1caf3808d6ca68c68334c9291a69cd7",
+          "input_u_sha256": "362321fcf11e0dc5c8916118521780fd336f90f1e2056535c54d9278d33ed001",
+          "origin": {
+            "epoch": 1000,
+            "neural_run_id": "99da331bc3ad86641802f1034237277ab9974b64dcfdd253427ddd37e68957ec-epoch1000-ded030d10d7ee68d",
+            "effective_cell_array_sha256": "ded030d10d7ee68d7c4b6e87688a63ff7734a8ee697a8e54e0e51f4958be5b5e",
+            "channels_with_candidate_MN_mapping": 104
+          },
+          "fixed_root": false,
+          "max_thorax_displacement_native": 0.14415615377580387,
+          "min_body_up_z": 0.4377858737776567,
+          "max_ground_contacts": 7,
+          "ground_normal_force_max_native": 3.3712053440673166,
+          "body_duration_s": 1.3999999999998622,
+          "no_sensory_to_neural_feedback": true,
+          "free_walking_success_not_assumed": true
+        },
+        {
+          "condition": "TargetU",
+          "base_model_sha256": "858d1818b8d8394c95bb62a6ce60474cb534a83b94265ef8615e367c110d262c",
+          "initial_state_sha256": "a9eefd51e7cd7881778f5ab2ee86b101e1caf3808d6ca68c68334c9291a69cd7",
+          "input_u_sha256": "9219af09cfd683ecd4da0ee42eab4186c7ee2bd54a67ec81ebb6917aa9b5ba53",
+          "origin": {
+            "target_sha256": "f9f888bdfe2ce296fcc05edb719289d05ba051d1dda79be9aea66ade6f5b949b",
+            "input": "target_u, not target_a",
+            "time_mapping": "target_ms=(neural_ms-200)/3; same mapping as training; hold last sample after 1.2 s body time",
+            "channels": 130,
+            "neural_network_bypassed": true
+          },
+          "fixed_root": false,
+          "max_thorax_displacement_native": 0.22973344980097593,
+          "min_body_up_z": -0.6279054997089281,
+          "max_ground_contacts": 7,
+          "ground_normal_force_max_native": 3.3712053440673166,
+          "body_duration_s": 1.3999999999998622,
+          "no_sensory_to_neural_feedback": true,
+          "free_walking_success_not_assumed": true
+        }
+      ],
+      "limitations": "All cases use the current body and initial state. Target replay does not reproduce the old AB model/initial state; time stretch matches fitting, not native-speed old walking. Neural conditions have 26 unmapped channels whereas direct target drives all130. Fixed camera can lose a moving/falling body. No sensory feedback, stabilization or success inference."
+    },
+    "assets": [
+      {
+        "name": "FreeBody_Comparison.mp4",
+        "bytes": 3023584,
+        "sha256": "2a95956810c1a2b6e69f23944c81a1ee47f24d21185c691790c8ff76dba004e8",
+        "url": "https://github.com/linzhefeng24/Applepie/releases/download/fixed-body-video-20261115/FreeBody_Comparison.mp4"
+      },
+      {
+        "name": "FreeBody_Comparison_Bundle.zip",
+        "bytes": 12243258,
+        "sha256": "0852ef006088c8df8b35022d6a9022d0bfc61fc089cef779b19fe25ca037547b",
+        "url": "https://github.com/linzhefeng24/Applepie/releases/download/fixed-body-video-20261115/FreeBody_Comparison_Bundle.zip"
+      },
+      {
+        "name": "FreeBody_Epoch1000.mp4",
+        "bytes": 951420,
+        "sha256": "64c7cf3b36b57250cac1ceff78bdc486c65ee38898cf335af9aa9cec12c2e306",
+        "url": "https://github.com/linzhefeng24/Applepie/releases/download/fixed-body-video-20261115/FreeBody_Epoch1000.mp4"
+      },
+      {
+        "name": "FreeBody_Epoch123.mp4",
+        "bytes": 959558,
+        "sha256": "f16318b218f194527422fa22c70e2fab16cb36bfe1e4a7c92772955f003dafe6",
+        "url": "https://github.com/linzhefeng24/Applepie/releases/download/fixed-body-video-20261115/FreeBody_Epoch123.mp4"
+      },
+      {
+        "name": "FreeBody_TargetU.mp4",
+        "bytes": 1277582,
+        "sha256": "3bf6b0aa006fabc1f40c9d02c70335c13958bc8d8f954e88200a0f7a64f2a286",
+        "url": "https://github.com/linzhefeng24/Applepie/releases/download/fixed-body-video-20261115/FreeBody_TargetU.mp4"
+      },
+      {
+        "name": "FreeBody_preview.jpg",
+        "bytes": 229185,
+        "sha256": "3000aaad8102605b7fd02dac7606bb45ad709160ded3969bdb42d3e561a99297",
+        "url": "https://github.com/linzhefeng24/Applepie/releases/download/fixed-body-video-20261115/FreeBody_preview.jpg"
+      }
+    ]
+  }
+}
