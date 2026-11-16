@@ -1,0 +1,100 @@
+[
+  {
+    "step": 0,
+    "errors": {
+      "actuator_force": 1.2434497875801753e-14,
+      "qfrc_actuator": 3.720981855970251e-16,
+      "qfrc_passive": 8.673617379884035e-19,
+      "qfrc_bias": 2.220446049250313e-16,
+      "qfrc_constraint": 2.3037127760972e-15,
+      "qacc": 3.8562575355172157e-10,
+      "qacc_warmstart": 0.0
+    },
+    "contacts": 7,
+    "solver_iterations": 7
+  },
+  {
+    "step": 9,
+    "errors": {
+      "actuator_force": 1.5987211554602254e-14,
+      "qfrc_actuator": 4.891920202254596e-16,
+      "qfrc_passive": 6.938893903907228e-18,
+      "qfrc_bias": 1.1102230246251565e-16,
+      "qfrc_constraint": 5.273559366969494e-16,
+      "qacc": 4.856701707467437e-10,
+      "qacc_warmstart": 0.0
+    },
+    "contacts": 7,
+    "solver_iterations": 10
+  },
+  {
+    "step": 19,
+    "errors": {
+      "actuator_force": 4.263256414560601e-14,
+      "qfrc_actuator": 5.828670879282072e-16,
+      "qfrc_passive": 3.469446951953614e-18,
+      "qfrc_bias": 3.3306690738754696e-16,
+      "qfrc_constraint": 2.1094237467877974e-15,
+      "qacc": 5.481979314936325e-10,
+      "qacc_warmstart": 0.0
+    },
+    "contacts": 7,
+    "solver_iterations": 8
+  },
+  {
+    "step": 49,
+    "errors": {
+      "actuator_force": 4.440892098500626e-14,
+      "qfrc_actuator": 4.516786250574611e-16,
+      "qfrc_passive": 1.3010426069826053e-17,
+      "qfrc_bias": 2.220446049250313e-16,
+      "qfrc_constraint": 3.913536161803677e-15,
+      "qacc": 4.3655745685100555e-10,
+      "qacc_warmstart": 0.0
+    },
+    "contacts": 7,
+    "solver_iterations": 6
+  },
+  {
+    "step": 99,
+    "errors": {
+      "actuator_force": 8.881784197001252e-15,
+      "qfrc_actuator": 5.169475958410885e-16,
+      "qfrc_passive": 6.938893903907228e-18,
+      "qfrc_bias": 1.1102230246251565e-16,
+      "qfrc_constraint": 1.0269562977782698e-15,
+      "qacc": 4.547473508864641e-10,
+      "qacc_warmstart": 0.0
+    },
+    "contacts": 8,
+    "solver_iterations": 6
+  },
+  {
+    "step": 149,
+    "errors": {
+      "actuator_force": 2.842170943040401e-14,
+      "qfrc_actuator": 1.0243542125643046e-15,
+      "qfrc_passive": 7.806255641895632e-18,
+      "qfrc_bias": 3.3306690738754696e-16,
+      "qfrc_constraint": 4.9960036108132044e-15,
+      "qacc": 6.766640581190586e-10,
+      "qacc_warmstart": 0.0
+    },
+    "contacts": 9,
+    "solver_iterations": 6
+  },
+  {
+    "step": 199,
+    "errors": {
+      "actuator_force": 1.0658141036401503e-14,
+      "qfrc_actuator": 6.930220286527344e-16,
+      "qfrc_passive": 9.540979117872439e-18,
+      "qfrc_bias": 1.1102230246251565e-16,
+      "qfrc_constraint": 2.3314683517128287e-15,
+      "qacc": 4.3655745685100555e-10,
+      "qacc_warmstart": 0.0
+    },
+    "contacts": 9,
+    "solver_iterations": 6
+  }
+]

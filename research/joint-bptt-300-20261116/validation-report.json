@@ -1,0 +1,45 @@
+{
+  "training_allowed": true,
+  "derivative_class": "piecewise analytic/implicit approximation, not exact differentiation of iterative stopping decisions",
+  "strict_20ms_random_projection_gate_passed": false,
+  "strict_20ms_max_relative_error": 0.13277297607383481,
+  "native_descent_prediction_ratios": [
+    0.9995799895208423,
+    0.9989397436308828,
+    0.9976140588093422,
+    0.9929602794148964
+  ],
+  "acceptance_basis": "exact full AB forward and full neural parity; finite adjoint; initial1ms strict derivative check;20ms negative-adjoint native loss descent at four magnitudes, predicted changes within10%; force parity along20ms",
+  "limitation": "Individual20ms random directional errors reach13.3%, and small perturbations are affected by native branch/tolerance sensitivity. Do not report exact gradients or verified full400ms adjoint accuracy. Neural gradients are surrogate and200ms-truncated.",
+  "parameter_anchor": "pre-BPTT manually tuned bank; raw0",
+  "completed_main_updates": 0,
+  "reports": {
+    "native-forward-identity.json": "4811a539f4a40f07aff6ea7ada7470fbc76c5169d4e9ec9fd519ff15a102e0ef",
+    "neural-forward-1400ms.json": "5cd0b638d89e99f0ddc684ada9699681730b4fa242ff8e1b0a5cc3e52ca2c292",
+    "whitebox-validation-10.json": "34b216c13e5e5b6001b0d34e2a2e2659a0677c78fc6aaea5cc7b49173d937e6d",
+    "whitebox-validation-200.json": "7e2f12961dbc69a9058da2cf1e5079885a0994dd305ad3c54fc7a16194ebfba5",
+    "physical-descent-check.json": "07f02b7c5c69c9c5751efc8fa190acc3f8c75fd9d9bf149406017ca2d4c0fcca",
+    "trajectory-force-audit.json": "d4d023479a79f56409aafdffe9d5407d51cbc94dc05fd553c5c0c4b14703ec23"
+  },
+  "critical_source_sha256": {
+    "audit_trajectory_forces.py": "07fe50b39781be71b83d67045df101df28741a4f2e9d0a278f56caf23f8f9d93",
+    "full_hh.py": "6c63172bbb355276426e0c86ffd44eef9ae844d3016810d71ca13ccba8f94929",
+    "check_full_neural.py": "09a4b82dfe1893ef086acc1d167aa0b84a38748af60dc146594759ed6daa7564",
+    "validation_gate.py": "6be885e7f463053dea8643f1d0bfec462322e1da8289ab00f62927d95d53028c",
+    "validate_native_identity.py": "88e81699835eb0880b762d75bdd300b614080bef913c81e9d6e5d387a1bded8e",
+    "contact_geometry.py": "ab589aefcd495ad3cfaa87ee6c7ffe6660f78a512ce0be8ee4d6b82074784db5",
+    "probe_step_jvp.py": "d3d5f1721ec612317c6ce5a5fb8e2b91d9b33613cab2eb80b18739632c84f5ae",
+    "noslip.py": "831f297ccef834ddd1a69340add2ff163c69d38140eced43c200e8170a2f583f",
+    "patch_mjx.py": "4b2499657c46ee7487386aed78809704d2ce56052228d019f35af6e2327aa7c1",
+    "check_physical_descent.py": "fc080c3b54c0c839ddef084cd85642fbae68d28dbc8940fc6843423874e3e9f8",
+    "mjx_smoke.py": "654f4b6f5a8eedcf303d1e75d920ef62421ced270573571133dd69e2ed495baa",
+    "probe_geometry_grad.py": "b0dc7d84a5187d5b144df51cc9685d608c3c1f995243c8d2929bed8570dfd1f6",
+    "training_context.py": "8edfb0a21fed7cae15cc80fbaf2582a1b426c58140fc60b9b62a7e4436a24caa",
+    "validate_native_whitebox.py": "f0011468f121ffb165945367282809f3c113f8d0fd20f5c2081521bc2b734b4f",
+    "native_whitebox.py": "5c37b78dc636c2f0eddf673b78357a32c8463eabb9c6cb9ce216fa7fe30356d1",
+    "implicit_solver.py": "2a2475af6eab2e915bc161cfe04aa5dde0f677e48cb332ab0433a633399ff195",
+    "stage_probe.py": "ad9aebf4fe5cae14f32095a53b565035f6af1a2f18fab1383b86ee1bdf8fa58e",
+    "refine_direction_check.py": "666f4f6a315660e702295a4f044df8fb43668f2d3d88c018ec6a5ba710f2a40c",
+    "physics.py": "04efd62f2b15e741fef6f7ba6f33f46ab9cc7e63ed61742df3c8cfb09973a11a"
+  }
+}

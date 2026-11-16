@@ -1,14 +1,11 @@
 {
-  "method": "same hard HH forward; rising fast-sigmoid surrogate, 200ms truncated BPTT and clipped per-ms state adjoints",
   "baseline_model": "research/single-model-delivery-20261115/build/UnifiedFlyModel/01_model/model.yaml",
   "baseline_neural": "research/single-model-delivery-20261115/build/UnifiedFlyModel/04_results/data/neural_state.npz",
-  "target_file": "research/conductance-rebuild-20261114/data/old-A-muscle-targets.npz",
   "experiment": "DN_drive",
   "target_start_ms": 200.0,
-  "target_time_stretch": 3.0,
-  "target_duration_ms": 400.0,
-  "train_end_ms": 1100.0,
-  "evaluation_end_ms": 1400.0,
+  "frozen_types": [
+    "DNg100"
+  ],
   "train_fields": [
     5,
     7,
@@ -20,49 +17,11 @@
     15,
     16
   ],
-  "parameter_group_policy": "class and annotated type; same factors for homologues; no side or per-cell free offsets",
-  "local_types": [
-    "DNg100",
-    "IN17A001",
-    "INXXX464",
-    "IN07B013",
-    "IN14B005"
-  ],
-  "frozen_types": [
-    "DNg100"
-  ],
   "relative_bound": 0.2,
-  "regularization_lambda": 0.1,
   "surrogate_width_mV": 10.0,
-  "learning_rate": 0.003,
-  "epochs": 300,
-  "gradient_clip_norm": 1.0,
-  "jax_x64": true,
-  "seed": 42,
-  "checkpoint_chunk_ms": 1.0,
-  "scope": "Full3988 cells, all actual edges, no external baseline spike boundaries",
-  "selection": "native joint-only objective; no u loss",
-  "frozen": [
-    "anatomical graph and counts",
-    "transmitter signs",
-    "global ionic/synaptic parameters",
-    "DN external drive",
-    "MN-muscle pools",
-    "NMJ rate filter and scale",
-    "body parameters"
-  ],
-  "missing_mapping_policy": "26 unmapped channels remain zero requested input; excluded from optimized loss and reported separately in all130 error",
-  "backward_spike_rule": "rising_fast_sigmoid",
   "surrogate_readout_clip": true,
   "bptt_truncate_ms": 200.0,
   "backward_state_clip": 10.0,
-  "minimum_epochs": 300,
-  "learning_rate_floor_fraction": 0.1,
-  "chunk_updates": 50,
-  "full_forward_eval_every": 25,
-  "warm_start": "pre-BPTT manually tuned baseline; group raw factors all zero",
-  "optimizer": "Adam with cosine learning-rate decay; no early stopping",
-  "epoch_definition": "one complete 200\u20131100ms training-window forward/backward pass and one Adam update; previous short trials do not count",
-  "training_prefix_end_ms": 1400,
-  "durable_checkpoint_every": 10
+  "method": "Full3988-cell hard HH forward; surrogate spikes,200ms truncated reverse, fixed per-ms adjoint clipping; Adam schedule and joint loss are exclusively in config.json",
+  "missing_mapping_policy": "26 unmapped neural muscle controls remain zero; all physical joint outputs remain in the joint loss"
 }

@@ -14,6 +14,7 @@ class JointContext:
   os.environ['BPTT_CONFIG']=str(R/'neural-config.json')
   from full_hh import FullDifferentiableHH
   self.neural=FullDifferentiableHH();assert self.neural.model.sha256==c['baseline_model_sha256']
+  assert hashlib.sha256(np.asarray(self.neural.model.cells).tobytes()).hexdigest()==c['manual_cell_array_sha256'],'Manual cell bank changed; do not anchor to a fitted checkpoint'
   # Original group factors equal1 in the manually tuned baseline; raw=0.
   self.reference=j.zeros((self.neural.n_groups,len(self.neural.cfg['train_fields'])),dtype=j.float64)
   assert c['start_from_manual_parameters'] and self.neural.model.sha256==c['anchor_model_sha256']

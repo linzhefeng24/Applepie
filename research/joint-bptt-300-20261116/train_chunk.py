@@ -18,10 +18,13 @@ def main():
  parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--updates',type=int,default=10);a=parser.parse_args();ctx=JointContext();cfg=ctx.cfg
  validation=R/'validation-report.json'
  if not validation.exists() or not json.loads(validation.read_text()).get('training_allowed',False):raise RuntimeError('Physics/gradient parity gate has not passed; zero updates counted')
+ for name,digest in json.loads(validation.read_text())['critical_source_sha256'].items():assert sha(R/name)==digest,'Unvalidated source: '+name
  source=os.environ.get('TRAIN_SOURCE_REF',subprocess.check_output(['git','rev-parse','HEAD'],cwd=R,text=True).strip())
  identity={'source_revision':source,'body_archive_sha256':cfg['body_archive_sha256'],'manual_anchor_model_sha256':cfg['anchor_model_sha256'],'reference_raw_sha256':hashlib.sha256(np.asarray(ctx.reference).tobytes()).hexdigest(),'config_sha256':sha(R/'config.json'),'neural_config_sha256':sha(R/'neural-config.json'),'physics_validation_sha256':sha(validation),'python':platform.python_version(),'versions':{n:version(n) for n in ['numpy','jax','jaxlib','mujoco','mujoco-mjx']},'seed':cfg['seed'],'command':sys.argv}
  state_path=OUT/'optimizer.npz';history_path=OUT/'history.json';history=json.loads(history_path.read_text()) if history_path.exists() else []
  if state_path.exists():
+  previous=json.loads((OUT/'run-identity.json').read_text())
+  for key in ['source_revision','config_sha256','neural_config_sha256','physics_validation_sha256','reference_raw_sha256']:assert previous[key]==identity[key],'Resume identity mismatch: '+key
   with np.load(state_path,allow_pickle=False) as z:
    raw=j.asarray(z['raw']);mt=j.asarray(z['adam_m']);vt=j.asarray(z['adam_v']);updates=int(z['completed_updates']);phase=str(z['phase']);pilot=int(z['pilot_index']);phase_step=int(z['phase_updates']);selected=float(z['selected_coefficient']);best=float(z['best_score']);best_raw=j.asarray(z['best_raw']);trials=json.loads(str(z['trials_json']));assert str(z['reference_raw_sha256'])==identity['reference_raw_sha256']
  else:raw=ctx.reference;mt=j.zeros_like(raw);vt=j.zeros_like(raw);updates=0;phase='pilot';pilot=0;phase_step=0;selected=float('nan');best=float('inf');best_raw=raw;trials=[]

@@ -1,0 +1,127 @@
+{
+  "steps": 200,
+  "baseline_loss": 0.000554534422250584,
+  "checks": [
+    {
+      "direction": 0,
+      "epsilon": 1e-05,
+      "adjoint": 9.930961151740396e-06,
+      "native_finite_difference": 1.003642101067917e-05,
+      "relative_error": 0.010507715731191395,
+      "changed_topology_steps": 0
+    },
+    {
+      "direction": 0,
+      "epsilon": 3e-05,
+      "adjoint": 9.930961151740396e-06,
+      "native_finite_difference": 9.414840391672175e-06,
+      "relative_error": 0.05197087695562798,
+      "changed_topology_steps": 0
+    },
+    {
+      "direction": 0,
+      "epsilon": 0.0001,
+      "adjoint": 9.930961151740396e-06,
+      "native_finite_difference": 8.838240791900036e-06,
+      "relative_error": 0.11003168204407503,
+      "changed_topology_steps": 0
+    },
+    {
+      "direction": 0,
+      "epsilon": 0.0003,
+      "adjoint": 9.930961151740396e-06,
+      "native_finite_difference": 9.103433223354938e-06,
+      "relative_error": 0.08332808030775897,
+      "changed_topology_steps": 0
+    },
+    {
+      "direction": 0,
+      "epsilon": 0.001,
+      "adjoint": 9.930961151740396e-06,
+      "native_finite_difference": 9.52024335493934e-06,
+      "relative_error": 0.04135730575575544,
+      "changed_topology_steps": 0
+    },
+    {
+      "direction": 1,
+      "epsilon": 1e-05,
+      "adjoint": -1.747362230351016e-05,
+      "native_finite_difference": -1.803133745830257e-05,
+      "relative_error": 0.030930326498637577,
+      "changed_topology_steps": 0
+    },
+    {
+      "direction": 1,
+      "epsilon": 3e-05,
+      "adjoint": -1.747362230351016e-05,
+      "native_finite_difference": -1.8016383200490763e-05,
+      "relative_error": 0.030125963182544874,
+      "changed_topology_steps": 0
+    },
+    {
+      "direction": 1,
+      "epsilon": 0.0001,
+      "adjoint": -1.747362230351016e-05,
+      "native_finite_difference": -1.7672487277286923e-05,
+      "relative_error": 0.011252800506035747,
+      "changed_topology_steps": 0
+    },
+    {
+      "direction": 1,
+      "epsilon": 0.0003,
+      "adjoint": -1.747362230351016e-05,
+      "native_finite_difference": -1.7501863992905493e-05,
+      "relative_error": 0.0016136389476448189,
+      "changed_topology_steps": 0
+    },
+    {
+      "direction": 1,
+      "epsilon": 0.001,
+      "adjoint": -1.747362230351016e-05,
+      "native_finite_difference": -1.7525364778641327e-05,
+      "relative_error": 0.0029524335604259764,
+      "changed_topology_steps": 0
+    },
+    {
+      "direction": 2,
+      "epsilon": 1e-05,
+      "adjoint": 4.960746488547739e-06,
+      "native_finite_difference": 3.8800672635778966e-06,
+      "relative_error": 0.21784608979004924,
+      "changed_topology_steps": 0
+    },
+    {
+      "direction": 2,
+      "epsilon": 3e-05,
+      "adjoint": 4.960746488547739e-06,
+      "native_finite_difference": 3.4055638264568937e-06,
+      "relative_error": 0.31349770960501666,
+      "changed_topology_steps": 0
+    },
+    {
+      "direction": 2,
+      "epsilon": 0.0001,
+      "adjoint": 4.960746488547739e-06,
+      "native_finite_difference": 3.343225049015283e-06,
+      "relative_error": 0.3260641202421102,
+      "changed_topology_steps": 0
+    },
+    {
+      "direction": 2,
+      "epsilon": 0.0003,
+      "adjoint": 4.960746488547739e-06,
+      "native_finite_difference": 3.910398198101138e-06,
+      "relative_error": 0.21173190221903299,
+      "changed_topology_steps": 0
+    },
+    {
+      "direction": 2,
+      "epsilon": 0.001,
+      "adjoint": 4.960746488547739e-06,
+      "native_finite_difference": 4.30209341371543e-06,
+      "relative_error": 0.13277297607383481,
+      "changed_topology_steps": 0
+    }
+  ],
+  "purpose": "Diagnose gradient mismatch; does not waive the training gate"
+}

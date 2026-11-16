@@ -23,5 +23,55 @@
     "jax": "0.5.3",
     "numpy": "2.5.4"
   },
-  "training_allowed": false
+  "training_allowed": false,
+  "joint_loss": 0.0005545344222505841,
+  "gradient_norm": 5.229614399425076e-05,
+  "gradient_seconds": 310.45136543099943,
+  "all_gradients_finite": true,
+  "directional_checks": [
+    {
+      "direction": 0,
+      "epsilon": 0.001,
+      "adjoint": 9.930961151740396e-06,
+      "native_finite_difference": 9.52024335493934e-06,
+      "relative_error": 0.04135730575575544
+    },
+    {
+      "direction": 0,
+      "epsilon": 0.003,
+      "adjoint": 9.930961151740396e-06,
+      "native_finite_difference": 9.55009123870679e-06,
+      "relative_error": 0.03835176748897647
+    },
+    {
+      "direction": 1,
+      "epsilon": 0.001,
+      "adjoint": -1.747362230351016e-05,
+      "native_finite_difference": -1.7525364778641327e-05,
+      "relative_error": 0.0029524335604259764
+    },
+    {
+      "direction": 1,
+      "epsilon": 0.003,
+      "adjoint": -1.747362230351016e-05,
+      "native_finite_difference": -1.7705740806647746e-05,
+      "relative_error": 0.01310978770515137
+    },
+    {
+      "direction": 2,
+      "epsilon": 0.001,
+      "adjoint": 4.960746488547739e-06,
+      "native_finite_difference": 4.30209341371543e-06,
+      "relative_error": 0.13277297607383481
+    },
+    {
+      "direction": 2,
+      "epsilon": 0.003,
+      "adjoint": 4.960746488547739e-06,
+      "native_finite_difference": 4.361427898921047e-06,
+      "relative_error": 0.1208121783707884
+    }
+  ],
+  "max_directional_relative_error": 0.13277297607383481,
+  "gradient_gate_passed": false
 }

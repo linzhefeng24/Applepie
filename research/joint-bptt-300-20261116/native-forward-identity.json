@@ -1,0 +1,69 @@
+{
+  "cases": {
+    "A": {
+      "max_abs_errors": {
+        "qpos": 0.0,
+        "qvel": 0.0,
+        "activation": 0.0,
+        "final_warmstart": 0.0
+      },
+      "steps": 4000,
+      "max_contacts_by_condim": [
+        7,
+        15
+      ],
+      "seconds": 6.403636023002036,
+      "archived_native_metrics": {
+        "case": "A",
+        "duration_s": 0.39999999999997227,
+        "path_angle_rmse_deg": 9.328350971292931,
+        "terminal_angle_rmse_deg": 11.894855693203347,
+        "max_terminal_error_deg": 44.863932576893696,
+        "root_displacement_mm": [
+          1.4121096286211856,
+          0.2175867712779005,
+          -0.2628897463544805
+        ],
+        "min_body_up_z": 0.9889104691726948,
+        "extra_applied_forces": false,
+        "model_parameters_refit": false,
+        "long_term_stable_walking_established": false
+      }
+    },
+    "B": {
+      "max_abs_errors": {
+        "qpos": 0.0,
+        "qvel": 0.0,
+        "activation": 0.0,
+        "final_warmstart": 0.0
+      },
+      "steps": 4000,
+      "max_contacts_by_condim": [
+        7,
+        11
+      ],
+      "seconds": 5.034961375000421,
+      "archived_native_metrics": {
+        "case": "B",
+        "duration_s": 0.39999999999997227,
+        "path_angle_rmse_deg": 9.371994251011172,
+        "terminal_angle_rmse_deg": 13.95943055054072,
+        "max_terminal_error_deg": 45.99413253157588,
+        "root_displacement_mm": [
+          1.219031415304532,
+          0.13766468679493526,
+          -0.18619823686819373
+        ],
+        "min_body_up_z": 0.9636000224467784,
+        "extra_applied_forces": false,
+        "model_parameters_refit": false,
+        "long_term_stable_walking_established": false
+      }
+    }
+  },
+  "source_sha256": {
+    "physics.py": "04efd62f2b15e741fef6f7ba6f33f46ab9cc7e63ed61742df3c8cfb09973a11a",
+    "native_whitebox.py": "5c37b78dc636c2f0eddf673b78357a32c8463eabb9c6cb9ce216fa7fe30356d1"
+  },
+  "passed": true
+}

@@ -29,3 +29,11 @@ The manual R2 bank is the only initialization and regularization anchor. Epoch12
 The native NoSlip5-sweep stage and native inertia-box fluid terms are now reproduced in the white-box backward equations. At the audited initial step, muscle/actuator/constraint/passive-force errors are respectively1.25e-14,3.73e-16,2.31e-15,8.68e-19; acceleration error3.86e-10. These are numerical parity tests, not training results.
 
 The inactive zero-width muscle-smoothing branch is protected against0/0 in reverse mode without changing its forward formula. The native-forward10-step (1ms) directional gradient check passes: maximum relative error0.002648 across three directions and two perturbation sizes. Full1400ms neural forward parity also passes. The longer200-step (20ms) physics gradient check is still pending; training remains gated. Current environment is isolated physics-bptt-053-env (JAX0.5.3); original AB model remains unchanged.
+
+## Approximate-adjoint training acceptance
+
+The strict20ms random directional test FAILED (maximum relative error13.28%). Reducing finite perturbations does not remove the discrepancy; this failure is preserved in whitebox-validation-200.json and direction-refinement-200.json. It must not be presented as a strict pass.
+
+The practical training acceptance instead requires exact complete AB forward, exact full neural baseline, finite derivatives, force parity along the trajectory, the passed1ms strict test, and actual native loss descent along the negative physical gradient. All four20ms descent trials pass; actual/predicted improvement ratios0.99958,0.99894,0.99761,0.99296. This justifies exploratory approximate-gradient optimization, not a claim of exact differentiability of native contact/stopping decisions or validated400ms adjoint accuracy. Source hashes and limitations are in validation-report.json.
+
+The manual bank is also verified by a runtime SHA256 check on the complete3988-cell parameter array. Configuration no longer contains misleading old123/1000 training-window or optimizer settings. A new workflow trains only this manual-anchor joint objective, saves and freshly re-downloads every update checkpoint, and continues automatically until300 actual main updates. Five updates for each of three coefficient trials are additional and do not count toward300. No main updates completed yet.
