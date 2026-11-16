@@ -1,0 +1,10 @@
+{
+  "neural_checkpoint_block_ms": 20,
+  "expected_full_hh_sha256": "6c63172bbb355276426e0c86ffd44eef9ae844d3016810d71ca13ccba8f94929",
+  "expected_server_sha256": "e66d030b60c880e00b372717ee5c47cc6da183947b05d8e09b7ed51ae8ead20d",
+  "strategy": "Sequential isolated forward/physics-VJP/neural-VJP workers, nested neural rematerialization; original loss and Adam update unchanged",
+  "precision": "float64",
+  "neural_truncation_ms": 200,
+  "physical_steps": 4000,
+  "neural_duration_ms": 1400
+}

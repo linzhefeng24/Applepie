@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "steps": 1,
+      "max_gradient_abs_error": 0.0,
+      "loss_abs_error": 0.0
+    },
+    {
+      "steps": 19,
+      "max_gradient_abs_error": 0.0,
+      "loss_abs_error": 0.0
+    },
+    {
+      "steps": 20,
+      "max_gradient_abs_error": 0.0,
+      "loss_abs_error": 0.0
+    },
+    {
+      "steps": 37,
+      "max_gradient_abs_error": 1.7763568394002505e-15,
+      "loss_abs_error": 0.0
+    },
+    {
+      "steps": 200,
+      "max_gradient_abs_error": 3.552713678800501e-15,
+      "loss_abs_error": 2.2737367544323206e-13
+    }
+  ],
+  "scope": "Nested storage and adjoint algebra only; not a full-network/physics validation"
+}
