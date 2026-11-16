@@ -1,0 +1,47 @@
+{
+  "name": "Applepie_Server_JointBPTT.zip",
+  "sha256": "e04da81a0552629c01f6ebb6f23c0b255bbbde1144d5fe0d504d0c705b0ae714",
+  "bytes": 47345324,
+  "code_revision": "75d8741f5fcfb3e91fca024693e794b36ebf1053",
+  "training_source_revision": "1847a4d706b8e73c09c9c25c6e92b4d74fdd3de5",
+  "source_url": "https://github.com/linzhefeng24/Applepie/releases/download/server-joint-bptt-20261116/Applepie_Server_JointBPTT.zip",
+  "input_checkpoint": {
+    "completed_updates": 0,
+    "required_updates": 300,
+    "complete": false,
+    "phase": "pilot",
+    "pilot_index": 2,
+    "phase_updates": 0,
+    "selected_coefficient": null,
+    "parameter_anchor": "pre-BPTT manually tuned bank",
+    "manual_model_sha256": "858d1818b8d8394c95bb62a6ce60474cb534a83b94265ef8615e367c110d262c",
+    "source_revision": "1847a4d706b8e73c09c9c25c6e92b4d74fdd3de5",
+    "checkpoint_asset": "joint-pilot-e0000-p2-0-a722986329c3.zip",
+    "sha256": "a722986329c3d311e146f7e98752219596bec2ced8d7aad4f3dc15afab86cf4f",
+    "bytes": 12518,
+    "checkpoint_tag": "joint-trajectory-bptt-300-20261116",
+    "checkpoint_url": "https://github.com/linzhefeng24/Applepie/releases/download/joint-trajectory-bptt-300-20261116/joint-pilot-e0000-p2-0-a722986329c3.zip",
+    "draft_asset": true,
+    "fresh_asset_download_verified": true,
+    "run_url": "https://github.com/linzhefeng24/Applepie/actions/runs/43863184332",
+    "last": {
+      "phase": "pilot",
+      "coefficient": 1.0,
+      "phase_updates": 5,
+      "completed_main_updates": 0,
+      "objective_before_update": 0.11683437551500114,
+      "joint_mse_before_update": 0.11681680091019006,
+      "regularization_before_update": 1.7574604811075596e-05,
+      "gradient_norm": 6157.839915302646,
+      "max_parameter_drift_after_update": 0.009705583746221894,
+      "max_raw_update": 0.009688285675267534,
+      "seconds": 491.314412961,
+      "max_contacts": [
+        8,
+        15
+      ]
+    },
+    "epoch_definition": "One complete continuous native0.4s reference joint-trajectory forward/backward pass plus one actual Adam update. Pilot updates do not count toward300."
+  },
+  "standalone_model_and_optimizer_load_test": "passed;0 optimizer updates"
+}
