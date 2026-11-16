@@ -1,0 +1,18 @@
+{
+  "checked_utc": "2026-11-16T12:15:54.653570+00:00",
+  "purpose": "Independent server benchmark requested by user; GitHub training must continue",
+  "endpoint": {
+    "host": "166.111.72.113",
+    "port": 22
+  },
+  "connectivity_test": "Python socket TCP connect with8-second timeout",
+  "result": "ConnectionRefusedError errno111: connection refused",
+  "authentication_attempted": false,
+  "server_hardware_verified": false,
+  "benchmark_updates_performed": 0,
+  "speedup_measured": false,
+  "github_training_status": "in_progress",
+  "github_training_run": "https://github.com/linzhefeng24/Applepie/actions/runs/43863184332",
+  "github_training_stopped_or_modified": false,
+  "next_requirement": "A reachable SSH endpoint or applicable campus/VPN access; no evidence identifies whether server service, firewall, or network path caused refusal"
+}
