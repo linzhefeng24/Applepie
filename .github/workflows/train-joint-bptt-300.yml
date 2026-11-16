@@ -61,7 +61,18 @@ jobs:
           python research/single-model-delivery-20261115/build.py
           python research/joint-bptt-300-20261116/patch_mjx.py
       - name: Restore exact optimizer, immutable source, and actual update counts
-        run: python research/joint-bptt-300-20261116/checkpoint_service.py restore
+        env:
+          SYNC_SERVICE_REF: ${{ github.sha }}
+        run: |
+          python - <<'PY'
+          import subprocess,json,base64,os,hashlib
+          from pathlib import Path
+          name='research/joint-bptt-300-20261116/checkpoint_service.py'
+          data=json.loads(subprocess.check_output(['gh','api',f"repos/{os.environ['GITHUB_REPOSITORY']}/contents/{name}?ref={os.environ['SYNC_SERVICE_REF']}"],text=True))
+          raw=base64.b64decode(data['content']);Path(name).write_bytes(raw)
+          print('Synchronization service revision:',os.environ['SYNC_SERVICE_REF'],'SHA256:',hashlib.sha256(raw).hexdigest())
+          PY
+          python research/joint-bptt-300-20261116/checkpoint_service.py restore
       - name: Train on native0.4s joint trajectories from manual anchor
         env:
           SYNC_EVERY_SAVE: '1'

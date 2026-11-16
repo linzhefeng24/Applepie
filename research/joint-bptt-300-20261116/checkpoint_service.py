@@ -2,7 +2,7 @@
 Only task-owned progress.json is updated; no force push or credentials in files.
 """
 from pathlib import Path
-import base64,hashlib,json,os,subprocess,sys,zipfile
+import base64,hashlib,json,os,subprocess,sys,zipfile,time
 R=Path(__file__).resolve().parent;OUT=R/'cache/train';OUT.mkdir(parents=True,exist_ok=True)
 REPO=os.environ['GITHUB_REPOSITORY'];SOURCE=os.environ['TRAIN_SOURCE_REF'];TAG='joint-trajectory-bptt-300-20261116';PROGRESS='research/joint-bptt-300-20261116/progress.json'
 def gh(*args,check=True):return subprocess.run(['gh',*args],check=check,text=True,capture_output=True)
@@ -14,6 +14,9 @@ def release():
   return None
  return json.loads(r.stdout)
 def write(p,v):p.write_text(json.dumps(v,indent=2)+'\n')
+def progress_read():
+ # Read a fresh blob SHA after conflicts; never reuse a cached main response.
+ return gh('api','-H','Cache-Control: no-cache',f'repos/{REPO}/contents/{PROGRESS}?ref=main&sync_nonce={time.time_ns()}',check=False)
 mode=sys.argv[1]
 if mode=='restore':
  data=release();tmp=R/'cache/resume';tmp.mkdir(parents=True,exist_ok=True)
@@ -45,14 +48,20 @@ elif mode=='publish':
  verify=R/'cache/remote-verify';verify.mkdir(exist_ok=True);gh('release','download',TAG,'--repo',REPO,'--pattern',asset,'--dir',str(verify),'--clobber');assert sha(verify/asset)==sha(archive);(verify/asset).unlink()
  meta={'completed_updates':count,'required_updates':300,'complete':count>=300,'phase':phase,'pilot_index':report['pilot_index'],'phase_updates':report['phase_updates'],'selected_coefficient':report['selected_coefficient'],'parameter_anchor':'pre-BPTT manually tuned bank','manual_model_sha256':report['manual_anchor_model_sha256'],'source_revision':SOURCE,'checkpoint_asset':asset,'sha256':sha(archive),'bytes':archive.stat().st_size,'checkpoint_tag':TAG,'checkpoint_url':f'https://github.com/{REPO}/releases/download/{TAG}/{asset}','draft_asset':True,'fresh_asset_download_verified':True,'run_url':f"https://github.com/{REPO}/actions/runs/{os.environ.get('GITHUB_RUN_ID','local')}",'last':report['last'],'epoch_definition':report['epoch_definition']}
  latest=R/'cache/latest.json';write(latest,meta);gh('release','upload',TAG,str(latest),'--repo',REPO,'--clobber')
- for attempt in range(4):
-  old=gh('api',f'repos/{REPO}/contents/{PROGRESS}?ref=main',check=False);payload={'message':f'Save native joint BPTT {phase} main{count}/300','branch':'main','content':base64.b64encode(latest.read_bytes()).decode()}
-  if old.returncode==0:payload['sha']=json.loads(old.stdout)['sha']
+ for attempt in range(8):
+  old=progress_read();payload={'message':f'Save native joint BPTT {phase} main{count}/300','branch':'main','content':base64.b64encode(latest.read_bytes()).decode()}
+  if old.returncode==0:
+   existing=json.loads(old.stdout)
+   if base64.b64decode(existing['content'])==latest.read_bytes():break
+   payload['sha']=existing['sha']
   elif '404' not in old.stderr:raise RuntimeError(old.stderr)
   request=R/'cache/progress-payload.json';write(request,payload);answer=gh('api','--method','PUT',f'repos/{REPO}/contents/{PROGRESS}','--input',str(request),check=False)
   if answer.returncode==0:break
-  if attempt==3:raise RuntimeError(answer.stderr)
- fresh=json.loads(gh('api',f'repos/{REPO}/contents/{PROGRESS}?ref=main').stdout);fresh=json.loads(base64.b64decode(fresh['content']));assert fresh['sha256']==meta['sha256'] and fresh['completed_updates']==count
+  if attempt==7:raise RuntimeError(answer.stderr)
+  time.sleep(min(2**attempt,8))
+ fresh_result=progress_read()
+ if fresh_result.returncode:raise RuntimeError(fresh_result.stderr)
+ fresh=json.loads(fresh_result.stdout);fresh=json.loads(base64.b64decode(fresh['content']));assert fresh['sha256']==meta['sha256'] and fresh['completed_updates']==count
  print('Fresh remote checkpoint confirmed',json.dumps(meta),flush=True)
 elif mode=='dispatch':
  report=json.loads((OUT/'chunk-report.json').read_text())

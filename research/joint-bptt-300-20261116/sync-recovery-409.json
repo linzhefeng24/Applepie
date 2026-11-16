@@ -1,0 +1,12 @@
+{
+  "failure_run": 43848029276,
+  "reason": "GitHub progress Contents API HTTP409 blob SHA conflict during synchronization, not a numerical training failure",
+  "recovery_checkpoint": "joint-pilot-e0000-p1-3-e0fedef057df.zip",
+  "checkpoint_sha256": "e0fedef057dfe18f908c03a2dbaefb82261623f76c9fac61ae78c9511f05f8c5",
+  "checkpoint_bytes": 15468,
+  "completed_pilot_updates": 8,
+  "completed_main_updates": 0,
+  "training_source_revision": "1847a4d706b8e73c09c9c25c6e92b4d74fdd3de5",
+  "model_and_optimizer_code_changed": false,
+  "repair": "Fresh cache-busted progress reads, idempotent commit detection, backoff retries; workflow loads transport-only repair while keeping immutable numerical training source and optimizer identity"
+}
