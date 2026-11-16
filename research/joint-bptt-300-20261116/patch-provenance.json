@@ -1,0 +1,26 @@
+{
+  "mujoco": "3.3.2",
+  "mjx": "3.3.2",
+  "patches": [
+    {
+      "file": "types.py",
+      "before_sha256": "e9efb927a443237a25f3b866479dbc2bace06e96e3d596767f5dac82c6ee292b",
+      "after_sha256": "2a52dfd883fa958f787ee41020f3f65d2960348039757e69f5d9804b9e2b17e7"
+    },
+    {
+      "file": "smooth.py",
+      "before_sha256": "b63b59d92354dfc09d58bf7787104b63ff358bed0fb78849732d527226f48eb0",
+      "after_sha256": "1bb980134cc697a07ed2fd930a624d889e92ab65c7d0b9b7d8fb823bc89bd749"
+    },
+    {
+      "file": "solver.py",
+      "before_sha256": "029138867e13293b6aabb718bdad9341c14a7378916d21ea100abcff040d2492",
+      "after_sha256": "685d76eb43eb8020e28aebc283fdf0b15cfb8c032ce34718a3d6af4a12bd3314"
+    },
+    {
+      "file": "io.py",
+      "before_sha256": "48022415742025c6ead9994c21af4176b52d4b4172e08f9633d4b7f3c9006a9a",
+      "after_sha256": "4d8e8e1f892fbaf98407342c673f16e636851d593f87ec57a351207bec1bd7d0"
+    }
+  ]
+}
