@@ -1,0 +1,22 @@
+{
+  "status": "independently rerun unchanged AB and compare to pre-existing historical final states",
+  "mujoco": "3.3.2",
+  "current_numpy": "2.5.4",
+  "historical_numpy": "2.2.6",
+  "conditions": [
+    {
+      "case": "A",
+      "prior_manifest": "research/body-sensory-20261115/results/A-ground/manifest.json",
+      "prior_manifest_sha256": "b09e0df096f03e17523368d79a91b6af01d8ad087b3563fa81b8c5af5d8ea024",
+      "final_qpos_max_abs_delta": 0.0,
+      "final_qpos_elementwise_exact": true
+    },
+    {
+      "case": "B",
+      "prior_manifest": "research/body-sensory-20261115/results/B-ground/manifest.json",
+      "prior_manifest_sha256": "d0f8bde580ff58725c07c1db787c100b5f5544c743fda4a6101ec197bfe2fcd4",
+      "final_qpos_max_abs_delta": 0.0,
+      "final_qpos_elementwise_exact": true
+    }
+  ]
+}
