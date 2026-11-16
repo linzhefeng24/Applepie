@@ -1,0 +1,31 @@
+{
+  "standalone_offline_physics_rerun": true,
+  "repository_inputs_used": false,
+  "network_used": false,
+  "conditions": [
+    {
+      "condition": "A",
+      "all_controls_reconstructed_exactly": true,
+      "full_state_max_abs_difference": 0.0,
+      "full_state_elementwise_exact": true
+    },
+    {
+      "condition": "B",
+      "all_controls_reconstructed_exactly": true,
+      "full_state_max_abs_difference": 0.0,
+      "full_state_elementwise_exact": true
+    },
+    {
+      "condition": "Epoch123",
+      "all_controls_reconstructed_exactly": true,
+      "full_state_max_abs_difference": 0.0,
+      "full_state_elementwise_exact": true
+    },
+    {
+      "condition": "Epoch1000",
+      "all_controls_reconstructed_exactly": true,
+      "full_state_max_abs_difference": 0.0,
+      "full_state_elementwise_exact": true
+    }
+  ]
+}

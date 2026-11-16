@@ -1,0 +1,252 @@
+{
+  "remote_asset_bytes_and_hashes_verified": true,
+  "original_simulator_and_yaml_unchanged": true,
+  "initial_full_state_warmstart_and_auxiliary_controls_identical": true,
+  "all_four_physics_time_axes_native_and_continuous": true,
+  "original_AB_full_state_matches_archived_replayer": true,
+  "standalone_bundle_contains_exact_model_driver_and_inputs": true,
+  "manifest": {
+    "report": {
+      "code_revision": "752248f75ff96df5c4bf75a00d89f39ac58aa3ad",
+      "command": [
+        "research/restore-native-AB-20261116/replay_compare.py"
+      ],
+      "python": "3.12.16",
+      "versions": {
+        "numpy": "2.5.4",
+        "mujoco": "3.3.2",
+        "PyYAML": "6.0.3",
+        "Pillow": "12.0.0",
+        "imageio-ffmpeg": "0.6.0"
+      },
+      "config": {
+        "legacy_archive": {
+          "path": "research/assets/flymimic-legacy-AB-twofile.zip",
+          "sha256": "60a720b2a367556c7408b82d6d63998039b091dab3652ea027fe42f4cb37267a"
+        },
+        "model_files": {
+          "parameters.yaml": "3e02efcddc83c80ce45a0eb5c77a50dcabc1fd249b063a9444b08af30d82315d",
+          "simulation.py": "d01641fe7c9562bf4a08dc58dfc7bbf0df0d9ab94a26373ccefbe97b28195325"
+        },
+        "neural_output_source": {
+          "name": "FreeBody_Comparison_Bundle.zip",
+          "bytes": 12243258,
+          "sha256": "0852ef006088c8df8b35022d6a9022d0bfc61fc089cef779b19fe25ca037547b",
+          "url": "https://github.com/linzhefeng24/Applepie/releases/download/fixed-body-video-20261115/FreeBody_Comparison_Bundle.zip"
+        },
+        "neural_outputs": {
+          "Epoch123": {
+            "u_sha256": "bde8c8cc17a16e5b280e12eec68bfab28723a58d5594d1c0420a7150b7ef30a2",
+            "origin": {
+              "epoch": 123,
+              "neural_run_id": "99da331bc3ad86641802f1034237277ab9974b64dcfdd253427ddd37e68957ec-epoch123-d416c2e16f5e59cb",
+              "effective_cell_array_sha256": "d416c2e16f5e59cb2af2d1996d83ecab3722c4897fc6daf4fb4876c5d72f2f7d",
+              "channels_with_candidate_MN_mapping": 104
+            }
+          },
+          "Epoch1000": {
+            "u_sha256": "362321fcf11e0dc5c8916118521780fd336f90f1e2056535c54d9278d33ed001",
+            "origin": {
+              "epoch": 1000,
+              "neural_run_id": "99da331bc3ad86641802f1034237277ab9974b64dcfdd253427ddd37e68957ec-epoch1000-ded030d10d7ee68d",
+              "effective_cell_array_sha256": "ded030d10d7ee68d7c4b6e87688a63ff7734a8ee697a8e54e0e51f4958be5b5e",
+              "channels_with_candidate_MN_mapping": 104
+            }
+          }
+        },
+        "timing": {
+          "neural_start_ms": 200.0,
+          "neural_ms_per_body_ms": 3.0,
+          "u_bin_ms": 1.0,
+          "policy": "Compress the saved neural u clock into native AB physical time; never slow gravity, body, contact or archived auxiliary controls."
+        },
+        "software": {
+          "mujoco": "3.3.2",
+          "numpy": "2.5.4",
+          "PyYAML": "6.0.3",
+          "Pillow": "12.0.0",
+          "imageio-ffmpeg": "0.6.0"
+        },
+        "scope": "Saved checkpoints were trained on A only. B is an additional comparison, not a B-trained checkpoint. Neural dynamics run on their original clock; the permitted global clock mapping is an interface time warp, not native-time biological frequency validation.",
+        "training_target_identity": {
+          "file": "research/conductance-rebuild-20261114/data/old-A-muscle-targets.npz",
+          "file_sha256": "f9f888bdfe2ce296fcc05edb719289d05ba051d1dda79be9aea66ade6f5b949b",
+          "native_A_muscle_matrix_sha256": "00abb9fba76229c51c456a48cb8b74802b57a6ce7cb9cab6bc2f998d6e91a9db",
+          "reordered_training_u_sha256": "00abb9fba76229c51c456a48cb8b74802b57a6ce7cb9cab6bc2f998d6e91a9db",
+          "elementwise_exact": true,
+          "shape": [
+            4000,
+            130
+          ]
+        }
+      },
+      "conditions": {
+        "A": {
+          "duration_s": 0.39999999999997227,
+          "min_body_up_z": 0.9889104691726948,
+          "root_displacement_mm": [
+            1.4121096286211856,
+            0.2175867712779005,
+            -0.2628897463544805
+          ],
+          "finite_continuous_physics": true,
+          "extra_applied_forces": false,
+          "archived_replayer_exact_state_equality": true,
+          "original_replay_metrics": {
+            "case": "A",
+            "duration_s": 0.39999999999997227,
+            "path_angle_rmse_deg": 9.328350971292931,
+            "terminal_angle_rmse_deg": 11.894855693203347,
+            "max_terminal_error_deg": 44.863932576893696,
+            "root_displacement_mm": [
+              1.4121096286211856,
+              0.2175867712779005,
+              -0.2628897463544805
+            ],
+            "min_body_up_z": 0.9889104691726948,
+            "extra_applied_forces": false,
+            "model_parameters_refit": false,
+            "long_term_stable_walking_established": false
+          },
+          "controls_sha256": "d3eeef94fcca9c0cbae21328f0b761bfe4713f745e5dd6ab2fe60ec280e33b68",
+          "full_state_sha256": "dd908f3e70df2b450d8d3a57314fa55731d5407394a133381d33adae54650741",
+          "auxiliary_controls_exactly_archived": true,
+          "initial_full_state_sha256": "b14de33d88d1109a465ceb068e1d3e85292cd0741112f52739da5f6be63d084e",
+          "warmstart_sha256": "33126e2382337d664a6b8c593e2c00f6c92bc0bccfdc1290aec92e5326762aca",
+          "muscle_u_rmse_to_native_A": 0.0,
+          "muscle_u_rmse_to_native_B": 0.045032894973492846
+        },
+        "B": {
+          "duration_s": 0.39999999999997227,
+          "min_body_up_z": 0.9636000224467784,
+          "root_displacement_mm": [
+            1.219031415304532,
+            0.13766468679493526,
+            -0.18619823686819373
+          ],
+          "finite_continuous_physics": true,
+          "extra_applied_forces": false,
+          "archived_replayer_exact_state_equality": true,
+          "original_replay_metrics": {
+            "case": "B",
+            "duration_s": 0.39999999999997227,
+            "path_angle_rmse_deg": 9.371994251011172,
+            "terminal_angle_rmse_deg": 13.95943055054072,
+            "max_terminal_error_deg": 45.99413253157588,
+            "root_displacement_mm": [
+              1.219031415304532,
+              0.13766468679493526,
+              -0.18619823686819373
+            ],
+            "min_body_up_z": 0.9636000224467784,
+            "extra_applied_forces": false,
+            "model_parameters_refit": false,
+            "long_term_stable_walking_established": false
+          },
+          "controls_sha256": "c0173edbd9750ad972deae2c7a18ab3c8aa6a9bc6f0d85f7ff77eb0c242ede20",
+          "full_state_sha256": "367faba9143f87a91f02d0e6de63655c45bed3d9bde1e05293d7c3c747088c1c",
+          "auxiliary_controls_exactly_archived": true,
+          "initial_full_state_sha256": "b14de33d88d1109a465ceb068e1d3e85292cd0741112f52739da5f6be63d084e",
+          "warmstart_sha256": "33126e2382337d664a6b8c593e2c00f6c92bc0bccfdc1290aec92e5326762aca",
+          "muscle_u_rmse_to_native_A": 0.045032894973492846,
+          "muscle_u_rmse_to_native_B": 0.0
+        },
+        "Epoch123": {
+          "duration_s": 0.39999999999997227,
+          "min_body_up_z": 0.95245730243153,
+          "root_displacement_mm": [
+            -0.08114824272913823,
+            0.28424930285240974,
+            -0.30176689460073225
+          ],
+          "finite_continuous_physics": true,
+          "extra_applied_forces": false,
+          "controls_sha256": "d7604ba1270f8c657c7245ee692aa78fa4002ac20f6a7dfcc8b9c5c871bacc88",
+          "full_state_sha256": "2c4425ded52625dbb3f73422f514bd2038126b603dd65b2cbbd7ece6911d1289",
+          "auxiliary_controls_exactly_archived": true,
+          "initial_full_state_sha256": "b14de33d88d1109a465ceb068e1d3e85292cd0741112f52739da5f6be63d084e",
+          "warmstart_sha256": "33126e2382337d664a6b8c593e2c00f6c92bc0bccfdc1290aec92e5326762aca",
+          "muscle_u_rmse_to_native_A": 0.5400026541216771,
+          "muscle_u_rmse_to_native_B": 0.5368151493652155
+        },
+        "Epoch1000": {
+          "duration_s": 0.39999999999997227,
+          "min_body_up_z": 0.9638216954530653,
+          "root_displacement_mm": [
+            -0.17432231209371452,
+            0.25386420976561774,
+            -0.3698239740296587
+          ],
+          "finite_continuous_physics": true,
+          "extra_applied_forces": false,
+          "controls_sha256": "5921e67cfb565de13e28eff02a4bd0aeb9e7205f8d38254407186d9077d9e238",
+          "full_state_sha256": "d26baf1c43d45a488a1a67f606d979b9dceea682dd4c20c44dc090e9f60c0144",
+          "auxiliary_controls_exactly_archived": true,
+          "initial_full_state_sha256": "b14de33d88d1109a465ceb068e1d3e85292cd0741112f52739da5f6be63d084e",
+          "warmstart_sha256": "33126e2382337d664a6b8c593e2c00f6c92bc0bccfdc1290aec92e5326762aca",
+          "muscle_u_rmse_to_native_A": 0.5467854850820254,
+          "muscle_u_rmse_to_native_B": 0.5432468161990051
+        }
+      },
+      "matched_simulation_verified": true,
+      "target_substitution_identity_exact": true,
+      "limits": "Short0.4s native AB replay, not long-term walking. Both neural checkpoints were trained on A only, with 26 missing MN mappings. Time warp is a neural-output interface convention, not native biological frequency. Auxiliary adhesion/head/abdomen controls remain archived, not neural-generated."
+    },
+    "assets": [
+      {
+        "name": "NativeAB_A.mp4",
+        "bytes": 385466,
+        "sha256": "e0066d13cf45bedba7dc2f54fd3f52f740597edf0a93d9d8c7d6514659462d05",
+        "url": "https://github.com/linzhefeng24/Applepie/releases/download/fixed-body-video-20261115/NativeAB_A.mp4"
+      },
+      {
+        "name": "NativeAB_B.mp4",
+        "bytes": 389136,
+        "sha256": "e5035cde1b89cff283c7447e581b3718068da30b9572f9321e0d35cbb9bc23cc",
+        "url": "https://github.com/linzhefeng24/Applepie/releases/download/fixed-body-video-20261115/NativeAB_B.mp4"
+      },
+      {
+        "name": "NativeAB_Comparison.mp4",
+        "bytes": 1378985,
+        "sha256": "10b58593a78e8283056033d1ae5855a11a3ea2695878625b18e530fe54d16999",
+        "url": "https://github.com/linzhefeng24/Applepie/releases/download/fixed-body-video-20261115/NativeAB_Comparison.mp4"
+      },
+      {
+        "name": "NativeAB_Epoch1000.mp4",
+        "bytes": 311436,
+        "sha256": "a79ade919f8bc802f3167f1716c4de1311e710f58a73c0fd40a96c8539c6b824",
+        "url": "https://github.com/linzhefeng24/Applepie/releases/download/fixed-body-video-20261115/NativeAB_Epoch1000.mp4"
+      },
+      {
+        "name": "NativeAB_Epoch123.mp4",
+        "bytes": 310226,
+        "sha256": "feeccf716805a0df4b305da2a95733c69b7ca21e9afb0641597de8be10b6be41",
+        "url": "https://github.com/linzhefeng24/Applepie/releases/download/fixed-body-video-20261115/NativeAB_Epoch123.mp4"
+      },
+      {
+        "name": "NativeAB_Reproduction_Bundle.zip",
+        "bytes": 48244536,
+        "sha256": "b0a525f4908f3a7477e3a86959c4b3c8d0e3990bdcab90e89b4ea78b3b2e3c7f",
+        "url": "https://github.com/linzhefeng24/Applepie/releases/download/fixed-body-video-20261115/NativeAB_Reproduction_Bundle.zip"
+      },
+      {
+        "name": "NativeAB_preview_000.jpg",
+        "bytes": 123549,
+        "sha256": "011def1ae448803e22a5870185dc6a47afefa3ef4d05813f3278aad381c3ec95",
+        "url": "https://github.com/linzhefeng24/Applepie/releases/download/fixed-body-video-20261115/NativeAB_preview_000.jpg"
+      },
+      {
+        "name": "NativeAB_preview_060.jpg",
+        "bytes": 121139,
+        "sha256": "cf62a49a794abf2a07304f68199a736e0b142c7ab41c4d4ab268b25b6e14843e",
+        "url": "https://github.com/linzhefeng24/Applepie/releases/download/fixed-body-video-20261115/NativeAB_preview_060.jpg"
+      },
+      {
+        "name": "NativeAB_preview_119.jpg",
+        "bytes": 120611,
+        "sha256": "8e3f9752a2092d1cc3dc1578b76d6b45b5a64eded29bf45bc6e792778e620229",
+        "url": "https://github.com/linzhefeng24/Applepie/releases/download/fixed-body-video-20261115/NativeAB_preview_119.jpg"
+      }
+    ]
+  }
+}

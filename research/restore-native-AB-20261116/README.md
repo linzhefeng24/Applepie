@@ -12,4 +12,24 @@ To retain the exact trained time correspondence while preserving original AB phy
 
 Run `python replay_compare.py` after putting the pinned `FreeBody_Comparison_Bundle.zip` in `cache/` and installing the versions in `config.json`. The GitHub workflow runs the same experiment, packages the unchanged model, original simulator, precise neural inputs and complete result states/videos, and backs them up to the existing public video Release. The standalone ZIP includes `RUN.txt` with an offline reproduction command.
 
-Video layout: upper-left originalA; upper-right originalB; lower-left epoch123; lower-right epoch1000. Physical duration0.4s, original0.05x playback. Results pending.
+Video layout: upper-left originalA; upper-right originalB; lower-left epoch123; lower-right epoch1000. Physical duration0.4s, original0.05x playback. Completed: [GitHub run](https://github.com/linzhefeng24/Applepie/actions/runs/43811446167). Remote files were downloaded and SHA-256/byte counts verified. Every public video/bundle URL returned HTTP200 without authentication. The standalone bundle was extracted into a temporary folder and all four full physical state trajectories recomputed using only packaged files, with elementwise exact results (maximum difference0). It replays saved neural outputs; it does not retrain or rerun the full neural network offline. See `offline-reproduction-check.json` and `delivery-review.json`.
+
+Original A/B final qpos also exactly match the pre-existing November15 historical records (`historical-recovery-check.json`), not merely another call to the new driver. Original model/simulator bytes remain unchanged. All cases share the exact complete initial state, warmstart and11 auxiliary schedules. Only130 muscle columns differ. The substituted exact A target reproduces original A full-state trajectories exactly.
+
+| Condition | Forward displacement in0.4s (mm) | Minimum body-up-z |
+|---|---:|---:|
+| Original A |1.4121|0.98891|
+| Original B |1.2190|0.96360|
+| Epoch123 |−0.0811|0.95246|
+| Epoch1000 |−0.1743|0.96382|
+
+Both neural candidates remain upright over the restored0.4s, but fail to reproduce AB forward progression. Retained auxiliary adhesion/head/abdomen inputs are archived controls, not neural-generated outputs. This does not prove long-term stability, successful muscle fitting or neural walking. The all130 u-RMSE to A is0.5400/0.5468 for epoch123/1000, including26 unmapped channels.
+
+- [Matched four-panel video](https://github.com/linzhefeng24/Applepie/releases/download/fixed-body-video-20261115/NativeAB_Comparison.mp4)
+- [Restored original A](https://github.com/linzhefeng24/Applepie/releases/download/fixed-body-video-20261115/NativeAB_A.mp4)
+- [Restored original B](https://github.com/linzhefeng24/Applepie/releases/download/fixed-body-video-20261115/NativeAB_B.mp4)
+- [Epoch123 on original AB physics](https://github.com/linzhefeng24/Applepie/releases/download/fixed-body-video-20261115/NativeAB_Epoch123.mp4)
+- [Epoch1000 on original AB physics](https://github.com/linzhefeng24/Applepie/releases/download/fixed-body-video-20261115/NativeAB_Epoch1000.mp4)
+- [Offline physical replay bundle: model, original engine, precise inputs, states, videos and RUN.txt](https://github.com/linzhefeng24/Applepie/releases/download/fixed-body-video-20261115/NativeAB_Reproduction_Bundle.zip)
+
+![Final0.4s frame: originalA/B above, epoch123/1000 below](comparison-preview.jpg)
