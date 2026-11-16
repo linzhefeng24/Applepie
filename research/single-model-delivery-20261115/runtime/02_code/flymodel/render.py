@@ -68,7 +68,8 @@ class Video:
             raise RuntimeError("Video encoder failed")
 
 
-def render_videos(model, neural, body, trace, output):
+def render_videos(model, neural, body, trace, output, epoch_label=""):
+    """epoch_label changes captions only; dynamics and timing are untouched."""
     output = Path(output)
     output.mkdir(parents=True, exist_ok=True)
     r = model.config["render"]
@@ -215,7 +216,7 @@ def render_videos(model, neural, body, trace, output):
             x, y = r["caption_margin"]
             draw.text(
                 (x, y),
-                f"{'FIXED BODY' if body.fixed_root else 'FREE BODY'} | body {ts:.3f}s | neural {nt:.1f}ms",
+                f"{epoch_label + ' | ' if epoch_label else ''}{'FIXED BODY' if body.fixed_root else 'FREE BODY'} | body {ts:.3f}s | neural {nt:.1f}ms",
                 fill="white",
                 font=font,
             )
@@ -259,7 +260,7 @@ def render_videos(model, neural, body, trace, output):
             )
             nmj.set_color(nc)
             label.set_text(
-                f"Neural {nt:.1f}ms | nodes: net input, size: firing | edges: RED E / GREEN I"
+                f"{epoch_label + ' | ' if epoch_label else ''}Neural {nt:.1f}ms | nodes: net input, size: firing | edges: RED E / GREEN I"
             )
             fig.canvas.draw()
             graph_image = np.asarray(fig.canvas.buffer_rgba())[:, :, :3].copy()
