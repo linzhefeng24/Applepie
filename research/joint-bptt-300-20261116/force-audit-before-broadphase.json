@@ -1,0 +1,262 @@
+{
+  "mass_max_difference": 2.168404344971009e-19,
+  "native_contacts": [
+    {
+      "geom": [
+        0,
+        79
+      ],
+      "dist": -0.003211963671634404,
+      "exclude": 0
+    },
+    {
+      "geom": [
+        0,
+        95
+      ],
+      "dist": -0.0029915430711921647,
+      "exclude": 0
+    },
+    {
+      "geom": [
+        0,
+        111
+      ],
+      "dist": -0.004081528161549185,
+      "exclude": 0
+    },
+    {
+      "geom": [
+        0,
+        127
+      ],
+      "dist": -0.004108707853967871,
+      "exclude": 0
+    },
+    {
+      "geom": [
+        0,
+        143
+      ],
+      "dist": -0.0045707763911255325,
+      "exclude": 0
+    },
+    {
+      "geom": [
+        0,
+        159
+      ],
+      "dist": -0.004461251373430258,
+      "exclude": 0
+    },
+    {
+      "geom": [
+        19,
+        21
+      ],
+      "dist": 5.124237441335401e-05,
+      "exclude": 1
+    }
+  ],
+  "mjx_contacts": [
+    {
+      "geom": [
+        5,
+        37
+      ],
+      "dist": -0.026420887916607738,
+      "dim": 1
+    },
+    {
+      "geom": [
+        5,
+        31
+      ],
+      "dist": -0.026420312446933054,
+      "dim": 1
+    },
+    {
+      "geom": [
+        5,
+        29
+      ],
+      "dist": -0.021751146464874326,
+      "dim": 1
+    },
+    {
+      "geom": [
+        5,
+        35
+      ],
+      "dist": -0.021749441795475964,
+      "dim": 1
+    },
+    {
+      "geom": [
+        19,
+        21
+      ],
+      "dist": 0.00018234752065617008,
+      "dim": 1
+    },
+    {
+      "geom": [
+        0,
+        143
+      ],
+      "dist": -0.004570776391125552,
+      "dim": 3
+    },
+    {
+      "geom": [
+        0,
+        159
+      ],
+      "dist": -0.004461251373430223,
+      "dim": 3
+    },
+    {
+      "geom": [
+        0,
+        127
+      ],
+      "dist": -0.004108707853967887,
+      "dim": 3
+    },
+    {
+      "geom": [
+        0,
+        111
+      ],
+      "dist": -0.004081528161549148,
+      "dim": 3
+    },
+    {
+      "geom": [
+        0,
+        79
+      ],
+      "dist": -0.0032119636716343857,
+      "dim": 3
+    },
+    {
+      "geom": [
+        0,
+        95
+      ],
+      "dist": -0.0029915430711921855,
+      "dim": 3
+    }
+  ],
+  "fwd_velocity_qfrc_bias_max_difference": 2.220446049250313e-16,
+  "fwd_velocity_qfrc_passive_max_difference": 0.0002795112987233747,
+  "fwd_velocity_qfrc_actuator_max_difference": 0.006024367141530249,
+  "fwd_velocity_qacc_smooth_max_difference": 23910.659526880634,
+  "fwd_velocity_qacc_max_difference": 44318.403918266304,
+  "fwd_velocity_qfrc_constraint_max_difference": 3.3036398295494767,
+  "fwd_actuation_qfrc_bias_max_difference": 2.220446049250313e-16,
+  "fwd_actuation_qfrc_passive_max_difference": 0.0002795112987233747,
+  "fwd_actuation_qfrc_actuator_max_difference": 3.616898447411643e-16,
+  "fwd_actuation_qacc_smooth_max_difference": 23910.659526880634,
+  "fwd_actuation_qacc_max_difference": 44318.403918266304,
+  "fwd_actuation_qfrc_constraint_max_difference": 3.3036398295494767,
+  "fwd_acceleration_qfrc_bias_max_difference": 2.220446049250313e-16,
+  "fwd_acceleration_qfrc_passive_max_difference": 0.0002795112987233747,
+  "fwd_acceleration_qfrc_actuator_max_difference": 3.616898447411643e-16,
+  "fwd_acceleration_qacc_smooth_max_difference": 0.00027924041899915226,
+  "fwd_acceleration_qacc_max_difference": 44318.403918266304,
+  "fwd_acceleration_qfrc_constraint_max_difference": 3.3036398295494767,
+  "solve_qfrc_bias_max_difference": 2.220446049250313e-16,
+  "solve_qfrc_passive_max_difference": 0.0002795112987233747,
+  "solve_qfrc_actuator_max_difference": 3.616898447411643e-16,
+  "solve_qacc_smooth_max_difference": 0.00027924041899915226,
+  "solve_qacc_max_difference": 8266271.772747029,
+  "solve_qfrc_constraint_max_difference": 9.684936920958986,
+  "worst_acc_dofs": [
+    {
+      "dof": 29,
+      "joint": "walker/abdomen_2",
+      "native": -12925.107631206549,
+      "mjx": -294078.3825126112
+    },
+    {
+      "dof": 27,
+      "joint": "walker/abdomen",
+      "native": -21427.15948969087,
+      "mjx": -461182.49466150545
+    },
+    {
+      "dof": 23,
+      "joint": "walker/wing_yaw_right",
+      "native": 691.1471456101657,
+      "mjx": -454845.83207673446
+    },
+    {
+      "dof": 20,
+      "joint": "walker/wing_yaw_left",
+      "native": 467.07694330420406,
+      "mjx": -459202.7628412955
+    },
+    {
+      "dof": 4,
+      "joint": "walker/",
+      "native": 226.8153269647637,
+      "mjx": 497921.23777035397
+    },
+    {
+      "dof": 8,
+      "joint": "walker/head",
+      "native": -7984.745517341292,
+      "mjx": -3098007.5379090738
+    },
+    {
+      "dof": 25,
+      "joint": "walker/wing_pitch_right",
+      "native": 1011.8256888173057,
+      "mjx": -3829759.2032077606
+    },
+    {
+      "dof": 22,
+      "joint": "walker/wing_pitch_left",
+      "native": 987.6035362426069,
+      "mjx": -3831234.9310011934
+    },
+    {
+      "dof": 24,
+      "joint": "walker/wing_roll_right",
+      "native": 3731.750915985215,
+      "mjx": 8267329.635727756
+    },
+    {
+      "dof": 21,
+      "joint": "walker/wing_roll_left",
+      "native": 3764.720249041957,
+      "mjx": 8270036.4929960705
+    }
+  ],
+  "solver_iterations": {
+    "native": [
+      7,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "mjx": 0
+  }
+}

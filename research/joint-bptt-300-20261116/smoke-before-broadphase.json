@@ -1,0 +1,11 @@
+{
+  "compile_and_step_seconds": 41.44733238220215,
+  "qpos_max_error": 0.07910563150956396,
+  "qvel_max_error": 791.0563150956406,
+  "activation_max_error": 1.3877787807814457e-17,
+  "actuator_force_max_error": 1.2434497875801753e-14,
+  "moment_max_error": 8.326672684688674e-17,
+  "adhesion_moment_max_error": 8.326672684688674e-17,
+  "qfrc_constraint_max_error": 9.684936920959014,
+  "source_sha256": "654f4b6f5a8eedcf303d1e75d920ef62421ced270573571133dd69e2ed495baa"
+}

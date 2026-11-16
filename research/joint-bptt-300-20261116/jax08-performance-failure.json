@@ -1,0 +1,9 @@
+{
+  "mujoco": "3.3.2",
+  "mjx": "3.3.2",
+  "jax": "0.8.0",
+  "observed": "whole-step execution and separate kinematics stall for multiple minutes on CPU; basic114x114 Cholesky finishes0.3s",
+  "stage_log": "START mujoco.mjx._src.smooth kinematics\n",
+  "updates": 0,
+  "next": "isolated MJX-release-era JAX0.5.3 compatibility test, keep all original environments intact"
+}

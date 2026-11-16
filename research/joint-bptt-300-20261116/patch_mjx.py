@@ -40,7 +40,7 @@ branch='''    elif trntype == TrnType.BODY:
         moment = jp.zeros(m.nv)
 '''
 change('smooth.py','    elif trntype == TrnType.TENDON:\n',branch+'    elif trntype == TrnType.TENDON:\n')
-change('solver.py','    ctx = jax.lax.while_loop(cond, body, ctx)','    # Same stopping condition/budget, masked scan permits reverse-mode AD.\n    ctx = _while_loop_scan(cond, jax.checkpoint(body), ctx, m.opt.iterations)')
+# Native stopping while loop retained; external implicit differentiation handles reverse mode.
 change('io.py', "  if m.opt.cone == types.ConeType.ELLIPTIC and np.any(contact.dim == 1):\n    raise NotImplementedError(\n        'condim=1 with ConeType.ELLIPTIC not implemented.'\n    )", "  # Mixed frictionless/elliptic rows use existing constraint/solver paths; validation required.")
 # Algebraically identical Hessian without a dense nefc-by-nefc temporary.
 change('solver.py', "      cm = jp.diag(d.efc_D * ctx.active)", "      h = (d.efc_J.T * d.efc_D * ctx.active) @ d.efc_J")
@@ -49,6 +49,10 @@ change('solver.py', "        cm = cm.at[addr : addr + condim, addr : addr + cond
 # whenever capacity is reached, so valid contacts must never be discarded.
 change('collision_driver.py', "  id_ = support.name2id(m, mujoco.mjtObj.mjOBJ_NUMERIC, name)", "  if name == 'max_contact_points':\n    return 64  # checked overflow guard in AB adapter\n  id_ = support.name2id(m, mujoco.mjtObj.mjOBJ_NUMERIC, name)")
 change('collision_driver.py', "        _, idx = jax.lax.top_k(-contact.dist, k=max_contact_points)", "        gap = jp.maximum(m.geom_gap[contact.geom[:, 0]], m.geom_gap[contact.geom[:, 1]])\n        priority = contact.dist - contact.includemargin - gap\n        _, idx = jax.lax.top_k(-priority, k=max_contact_points)")
+# Native conservative bounding-sphere broadphase rejects impossible pairs.
+# MJX's approximate ellipsoid SDF can report false overlap for distant shapes.
+change('collision_driver.py', "    # collapse contacts together, ensuring they are grouped by condim", "    # collapse contacts together, ensuring they are grouped by condim") if False else None
+change('collision_driver.py', "    groups[key] = contact.replace(dist=dist, pos=pos, frame=frame)", "    if not set(key.types) & _GEOM_NO_BROADPHASE:\n      center_delta = d.geom_xpos[contact.geom[:, 1]] - d.geom_xpos[contact.geom[:, 0]]\n      separation = jp.sqrt(jp.maximum(jp.sum(center_delta**2, axis=-1), 1e-30)) - m.geom_rbound[contact.geom[:, 0]] - m.geom_rbound[contact.geom[:, 1]]\n      gap = jp.maximum(m.geom_gap[contact.geom[:, 0]], m.geom_gap[contact.geom[:, 1]])\n      dist = jp.where(separation > contact.includemargin + gap, separation, dist)\n    groups[key] = contact.replace(dist=dist, pos=pos, frame=frame)")
 for name,text in texts.items():
  (root/name).write_text(text)
  records.append({'file':name,'before_sha256':hashlib.sha256(baselines[name].encode()).hexdigest(),'after_sha256':hashlib.sha256(text.encode()).hexdigest()})

@@ -1,0 +1,7 @@
+{
+  "experiment": "first full MJX step with masked solver scan",
+  "completed": false,
+  "reason": "no single-step result after more than10 minutes; CPU runtime, not an accepted training epoch",
+  "optimizer_updates": 0,
+  "next": "retain native stopping loop for forward and implement implicit differentiation of contact stationarity"
+}
