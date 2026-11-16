@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "scope": "Added low-memory entry to the exact publicly delivered original ZIP; original manifest hash checks and checkpoint restore passed, no optimizer updates executed",
+  "original_bundle_sha256": "e04da81a0552629c01f6ebb6f23c0b255bbbde1144d5fe0d504d0c705b0ae714",
+  "original_files_overwritten": false,
+  "optimizer_updates": 0
+}

@@ -26,6 +26,7 @@ tail -f lowmem.log
 ```
 
 只启动一份本地计算。GitHub那一路训练不受影响。
+低内存入口默认限制4个逻辑CPU，避免22线程电脑的并行编译增加内存峰值；该上限不改变模型方程。
 新目录名称含 `lowmem-benchmark`，与普通测速目录区分。报告 `cache/train/low-memory-last.json` 含每阶段峰值内存、耗时，以及主进程与最大子进程峰值之和的保守上限。
 它不是整个Windows系统占用；WSL内其它进程和系统开销还需要内存。
 
