@@ -1,0 +1,16 @@
+{
+  "model_and_optimizer_load": "passed",
+  "git_discovery_blocked_at_package_root": true,
+  "tampered_file_rejected": true,
+  "original_inputs_verified_after_restore": true,
+  "optimizer_updates_during_test": 0,
+  "server_benchmark_completed": false,
+  "scope": "Local test of newly implemented standalone package; actual remote server remains inaccessible",
+  "wrapper_source_hashes": {
+    "server.py": "e66d030b60c880e00b372717ee5c47cc6da183947b05d8e09b7ed51ae8ead20d",
+    "package-config.json": "cb5f6a544a82d536662284d97c7e75b8bfa548944ac9576309b6b1c75d54831d",
+    "README_zh.md": "993d0394d6dae3224b13adc29e50d2de78ac8fc7833a5525d39ac3c65fd8d384",
+    "run.sh": "b01b796cc5cea341a8711bb2566684995c4b0b2dd993dbf2422892765fef92c0",
+    "setup.sh": "20b6dd9e3bd380234ce85415ac733f568ec864b932f349b70588754e3b145225"
+  }
+}

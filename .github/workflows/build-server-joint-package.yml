@@ -1,0 +1,71 @@
+name: Build complete server joint-BPTT package
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: build-server-joint-package-20261116
+  cancel-in-progress: false
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      GH_TOKEN: ${{ github.token }}
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      JAX_PLATFORMS: cpu
+      XLA_FLAGS: --xla_cpu_multi_thread_eigen=false --xla_cpu_enable_fast_math=false
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /research/joint-bptt-300-20261116/
+            /research/physics-bptt-20261116/source/
+            /research/surrogate-bptt-20261115/input-identity.json
+            /research/surrogate-bptt-20261115/archived-baseline.json
+            /research/surrogate-bptt-20261115/baseline-spike-events.npz
+            /research/single-model-delivery-20261115/
+            /research/conductance-rebuild-20261114/grouped_parameters.py
+            /research/conductance-rebuild-20261114/results/mcns-brake-extension/neurons.json
+            /research/conductance-rebuild-20261114/results/mcns-brake-extension/unsigned-connectivity.npz
+            /research/brake-retuning-20261115/results/terminal-r2/BRK.npz
+            /research/brake-retuning-20261115/configs/brake-terminal-r2.json
+            /research/conductance-rebuild-20261114/data/model-130-channel-candidate-crosswalk.csv
+            /research/conductance-rebuild-20261114/data/phenomena-inventory.json
+            /research/assets/flymimic-legacy-AB-twofile.zip
+            /research/conductance-rebuild-20261114/results/frozen-neural-panel-unified-r9/PFL3L-config.json
+            /research/conductance-rebuild-20261114/results/frozen-neural-panel-brake-extension-r9/BRK-config.json
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r research/joint-bptt-300-20261116/requirements.txt
+      - name: Build exact baseline and snapshot latest immutable optimizer
+        run: |
+          python research/single-model-delivery-20261115/build.py
+          python research/joint-bptt-300-20261116/patch_mjx.py
+          python - <<'PY'
+          from pathlib import Path
+          import json,subprocess,sys
+          r=Path('research/joint-bptt-300-20261116');d=r/'cache/server-package';d.mkdir(parents=True,exist_ok=True)
+          subprocess.run(['gh','release','download','joint-trajectory-bptt-300-20261116','--repo','${{ github.repository }}','--pattern','latest.json','--dir',str(d),'--clobber'],check=True)
+          m=json.loads((d/'latest.json').read_text());subprocess.run(['gh','release','download',m['checkpoint_tag'],'--repo','${{ github.repository }}','--pattern',m['checkpoint_asset'],'--dir',str(d),'--clobber'],check=True)
+          subprocess.run([sys.executable,str(r/'build_server_package.py'),'--checkpoint',str(d/m['checkpoint_asset']),'--metadata',str(d/'latest.json'),'--out',str(d/'out')],check=True)
+          PY
+      - name: Verify standalone ZIP inputs and model/optimizer loading without git
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json,subprocess,sys,zipfile,os
+          d=Path('research/joint-bptt-300-20261116/cache/server-package/out');unpacked=d/'unpacked'
+          with zipfile.ZipFile(d/'Applepie_Server_JointBPTT.zip') as z:
+              assert z.testzip() is None
+              z.extractall(unpacked)
+          env=os.environ.copy();env['GIT_CEILING_DIRECTORIES']=str(unpacked.resolve())
+          subprocess.run([sys.executable,str(unpacked/'server.py'),'check'],check=True,env=env)
+          m=d/'server-package-manifest.json';data=json.loads(m.read_text());data['standalone_model_and_optimizer_load_test']='passed;0 optimizer updates';m.write_text(json.dumps(data,indent=2)+'\n')
+          PY
+      - name: Publish public downloadable ZIP and freshly verified repository manifest
+        run: python research/joint-bptt-300-20261116/publish_server_package.py research/joint-bptt-300-20261116/cache/server-package/out

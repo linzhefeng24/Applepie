@@ -1,0 +1,7 @@
+{
+  "training_source_revision": "1847a4d706b8e73c09c9c25c6e92b4d74fdd3de5",
+  "trainer_original_sha256": "2c0a2336737049975ac3c83c62e67191fe46ff286d1d0716900c46e6d3834444",
+  "baseline_model_sha256": "858d1818b8d8394c95bb62a6ce60474cb534a83b94265ef8615e367c110d262c",
+  "github_release_tag": "server-joint-bptt-20261116",
+  "bundle_name": "Applepie_Server_JointBPTT.zip"
+}
