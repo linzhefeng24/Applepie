@@ -1,0 +1,15 @@
+{
+  "neural_ms": 1400,
+  "cells": 3988,
+  "edges": 485045,
+  "parameter_anchor": "manual raw0",
+  "completed_optimizer_updates": 0,
+  "test_objective": "mean neural u squared; plumbing check only, not training objective",
+  "test_value": 0.08662738231815216,
+  "gradient_norm": 7005.3802549572,
+  "all_gradients_finite": true,
+  "nonzero_shared_groups": 23,
+  "seconds": 450.20306570499815,
+  "full_hh_sha256": "6c63172bbb355276426e0c86ffd44eef9ae844d3016810d71ca13ccba8f94929",
+  "neural_config_sha256": "4e9f55ab074ff5a3647f4df93d4f564a9355fe9446c7717937d04ff3002321a7"
+}
