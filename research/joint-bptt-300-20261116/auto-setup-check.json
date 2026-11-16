@@ -16,12 +16,17 @@
       "exit_code": 9
     }
   ],
-  "scope": "Shell integration with realPython3.12 and simulated unsupported-system-Python/uv-download paths. No nativePython3.14 numerical training claimed. No dependency installation or optimizer update performed.",
-  "jaxlib053_pypi_wheel_tags": [
-    "cp310",
-    "cp311",
-    "cp312",
-    "cp313"
-  ],
-  "jaxlib053_cp314_wheels": 0
+  "scope": "Automatic interpreter selection and child-only public-pip configuration tested with realPython3.12 and simulated unsupported runtime/download paths; no model or optimizer change",
+  "private_index_not_inherited": true,
+  "global_or_user_pip_files_modified": false,
+  "optimizer_updates": 0,
+  "public_pypi_version_metadata_verified": {
+    "numpy": "2.5.4",
+    "scipy": "1.17.0",
+    "numba": "0.68.1",
+    "matplotlib": "3.11.2",
+    "PyYAML": "6.0.3",
+    "mujoco-mjx": "3.3.2",
+    "jaxlib": "0.5.3"
+  }
 }

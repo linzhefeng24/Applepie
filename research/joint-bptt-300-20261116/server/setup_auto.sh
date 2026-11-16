@@ -57,4 +57,10 @@ if [[ -x .venv/bin/python ]] && ! is_python312 "$PWD/.venv/bin/python"; then
   mv .venv "$backup"
   printf 'Preserved incompatible project environment as %s\n' "$backup"
 fi
+# Public dependencies must not inherit an unreachable private pip mirror.
+# Scope this choice to the installer process; do not edit system/user pip files.
+unset PIP_INDEX_URL PIP_EXTRA_INDEX_URL PIP_NO_INDEX PIP_FIND_LINKS
+export PIP_CONFIG_FILE=/dev/null
+export PIP_INDEX_URL="${APPLEPIE_PIP_INDEX_URL:-https://pypi.org/simple}"
+printf 'Installing dependencies using the project package index.\n'
 PYTHON="$python_bin" bash setup.sh
