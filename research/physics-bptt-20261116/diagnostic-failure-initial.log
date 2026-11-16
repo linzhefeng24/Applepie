@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/workspace/Applepie-research-sync/research/physics-bptt-20261116/diagnose_20ms.py", line 26, in <module>
+    for c in sim.load_ab('A')['controls'][:len(u)]:sim.data.ctrl[:]=c;sim.step_excitation(c,interval_s=sim.model.opt.timestep)
+                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Applepie-research-sync/research/physics-bptt-20261116/cache/model/simulation.py", line 139, in step_excitation
+    self.data.ctrl[:]=self._controls(values)
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Applepie-research-sync/research/physics-bptt-20261116/cache/model/simulation.py", line 117, in _controls
+    if np.any(vector[limited]<bounds[limited,0]) or np.any(vector[limited]>bounds[limited,1]):raise ValueError('Control exceeds archived actuator range')
+                                                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Control exceeds archived actuator range

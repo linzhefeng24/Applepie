@@ -1,0 +1,229 @@
+{
+  "command": [
+    "research/physics-bptt-20261116/diagnose_20ms.py"
+  ],
+  "source_sha256": "a3877d86fe7ffc854e71d8ad4032b5643c78eecfcaf41f5591a41478a6745567",
+  "solver_changed": false,
+  "force_formula_max_abs_error": 0.0,
+  "dynamics_residual_norm": 6.96233941911724e-16,
+  "dynamics_residual_relative": 7.312281661073704e-16,
+  "diagnostic": [
+    {
+      "direction": 0,
+      "epsilon": 0.1,
+      "adjoint": 2.707583280451922e-07,
+      "finite_rollout_gradient": 2.5976831101914757e-07,
+      "relative_error": 0.04058976543912736,
+      "contact_topology_samples_changed": 0,
+      "solver_iteration_samples_changed": 1
+    },
+    {
+      "direction": 0,
+      "epsilon": 0.03,
+      "adjoint": 2.707583280451922e-07,
+      "finite_rollout_gradient": 2.5540500323566835e-07,
+      "relative_error": 0.05670490330019045,
+      "contact_topology_samples_changed": 0,
+      "solver_iteration_samples_changed": 0
+    },
+    {
+      "direction": 0,
+      "epsilon": 0.01,
+      "adjoint": 2.707583280451922e-07,
+      "finite_rollout_gradient": 2.4638351367261245e-07,
+      "relative_error": 0.09002424615545482,
+      "contact_topology_samples_changed": 0,
+      "solver_iteration_samples_changed": 0
+    },
+    {
+      "direction": 0,
+      "epsilon": 0.003,
+      "adjoint": 2.707583280451922e-07,
+      "finite_rollout_gradient": 2.395779559619925e-07,
+      "relative_error": 0.1151594202413431,
+      "contact_topology_samples_changed": 0,
+      "solver_iteration_samples_changed": 0
+    },
+    {
+      "direction": 0,
+      "epsilon": 0.001,
+      "adjoint": 2.707583280451922e-07,
+      "finite_rollout_gradient": 2.5710652541439255e-07,
+      "relative_error": 0.05042061948514119,
+      "contact_topology_samples_changed": 0,
+      "solver_iteration_samples_changed": 0
+    },
+    {
+      "direction": 0,
+      "epsilon": 0.0003,
+      "adjoint": 2.707583280451922e-07,
+      "finite_rollout_gradient": 2.742449540030223e-07,
+      "relative_error": 0.012713546436998971,
+      "contact_topology_samples_changed": 0,
+      "solver_iteration_samples_changed": 0
+    },
+    {
+      "direction": 0,
+      "epsilon": 0.0001,
+      "adjoint": 2.707583280451922e-07,
+      "finite_rollout_gradient": 2.7249456760036067e-07,
+      "relative_error": 0.006371648324801885,
+      "contact_topology_samples_changed": 0,
+      "solver_iteration_samples_changed": 0
+    },
+    {
+      "direction": 0,
+      "epsilon": 1e-05,
+      "adjoint": 2.707583280451922e-07,
+      "finite_rollout_gradient": 2.9915060229326884e-07,
+      "relative_error": 0.0949096342458391,
+      "contact_topology_samples_changed": 0,
+      "solver_iteration_samples_changed": 0
+    },
+    {
+      "direction": 1,
+      "epsilon": 0.1,
+      "adjoint": -5.412702346837072e-07,
+      "finite_rollout_gradient": -5.485322120417531e-07,
+      "relative_error": 0.013238925989442327,
+      "contact_topology_samples_changed": 0,
+      "solver_iteration_samples_changed": 1
+    },
+    {
+      "direction": 1,
+      "epsilon": 0.03,
+      "adjoint": -5.412702346837072e-07,
+      "finite_rollout_gradient": -5.424536814183929e-07,
+      "relative_error": 0.002181654904785968,
+      "contact_topology_samples_changed": 0,
+      "solver_iteration_samples_changed": 0
+    },
+    {
+      "direction": 1,
+      "epsilon": 0.01,
+      "adjoint": -5.412702346837072e-07,
+      "finite_rollout_gradient": -5.418820316722625e-07,
+      "relative_error": 0.0011290224676157835,
+      "contact_topology_samples_changed": 0,
+      "solver_iteration_samples_changed": 0
+    },
+    {
+      "direction": 1,
+      "epsilon": 0.003,
+      "adjoint": -5.412702346837072e-07,
+      "finite_rollout_gradient": -5.475173115813506e-07,
+      "relative_error": 0.011409825343422421,
+      "contact_topology_samples_changed": 0,
+      "solver_iteration_samples_changed": 0
+    },
+    {
+      "direction": 1,
+      "epsilon": 0.001,
+      "adjoint": -5.412702346837072e-07,
+      "finite_rollout_gradient": -5.577616680693155e-07,
+      "relative_error": 0.029567168792170948,
+      "contact_topology_samples_changed": 0,
+      "solver_iteration_samples_changed": 0
+    },
+    {
+      "direction": 1,
+      "epsilon": 0.0003,
+      "adjoint": -5.412702346837072e-07,
+      "finite_rollout_gradient": -5.588952378517721e-07,
+      "relative_error": 0.031535432715100946,
+      "contact_topology_samples_changed": 0,
+      "solver_iteration_samples_changed": 0
+    },
+    {
+      "direction": 1,
+      "epsilon": 0.0001,
+      "adjoint": -5.412702346837072e-07,
+      "finite_rollout_gradient": -5.580076076769705e-07,
+      "relative_error": 0.029994883157493598,
+      "contact_topology_samples_changed": 0,
+      "solver_iteration_samples_changed": 0
+    },
+    {
+      "direction": 1,
+      "epsilon": 1e-05,
+      "adjoint": -5.412702346837072e-07,
+      "finite_rollout_gradient": -5.308337807947289e-07,
+      "relative_error": 0.019281411059074657,
+      "contact_topology_samples_changed": 0,
+      "solver_iteration_samples_changed": 0
+    },
+    {
+      "direction": 2,
+      "epsilon": 0.1,
+      "adjoint": 1.280257910488735e-07,
+      "finite_rollout_gradient": 1.1454612335363122e-07,
+      "relative_error": 0.10528868898061684,
+      "contact_topology_samples_changed": 0,
+      "solver_iteration_samples_changed": 0
+    },
+    {
+      "direction": 2,
+      "epsilon": 0.03,
+      "adjoint": 1.280257910488735e-07,
+      "finite_rollout_gradient": 1.1051044193784686e-07,
+      "relative_error": 0.1368110985101448,
+      "contact_topology_samples_changed": 0,
+      "solver_iteration_samples_changed": 0
+    },
+    {
+      "direction": 2,
+      "epsilon": 0.01,
+      "adjoint": 1.280257910488735e-07,
+      "finite_rollout_gradient": 9.872217052089155e-08,
+      "relative_error": 0.22888841605981855,
+      "contact_topology_samples_changed": 0,
+      "solver_iteration_samples_changed": 0
+    },
+    {
+      "direction": 2,
+      "epsilon": 0.003,
+      "adjoint": 1.280257910488735e-07,
+      "finite_rollout_gradient": 8.847578617732337e-08,
+      "relative_error": 0.30892216753772705,
+      "contact_topology_samples_changed": 0,
+      "solver_iteration_samples_changed": 0
+    },
+    {
+      "direction": 2,
+      "epsilon": 0.001,
+      "adjoint": 1.280257910488735e-07,
+      "finite_rollout_gradient": 8.818450868619196e-08,
+      "relative_error": 0.31119731451198174,
+      "contact_topology_samples_changed": 0,
+      "solver_iteration_samples_changed": 0
+    },
+    {
+      "direction": 2,
+      "epsilon": 0.0003,
+      "adjoint": 1.280257910488735e-07,
+      "finite_rollout_gradient": 1.0341177350201015e-07,
+      "relative_error": 0.19225827347137434,
+      "contact_topology_samples_changed": 0,
+      "solver_iteration_samples_changed": 0
+    },
+    {
+      "direction": 2,
+      "epsilon": 0.0001,
+      "adjoint": 1.280257910488735e-07,
+      "finite_rollout_gradient": 1.0563740366394819e-07,
+      "relative_error": 0.17487404062497536,
+      "contact_topology_samples_changed": 0,
+      "solver_iteration_samples_changed": 0
+    },
+    {
+      "direction": 2,
+      "epsilon": 1e-05,
+      "adjoint": 1.280257910488735e-07,
+      "finite_rollout_gradient": 9.54656384326291e-08,
+      "relative_error": 0.25432494772724856,
+      "contact_topology_samples_changed": 0,
+      "solver_iteration_samples_changed": 0
+    }
+  ],
+  "interpretation": "Different perturbation scales probe solver/contact branch sensitivity; this does not prove all full-length gradients are correct."
+}

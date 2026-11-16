@@ -1,0 +1,21 @@
+{
+  "command": [
+    "research/physics-bptt-20261116/forward_parity.py"
+  ],
+  "source_sha256": "e56a1b618ca8f6dcf5d85092d26812bda851fc943b52b74ab5508b9fa5db6292",
+  "native_augmented_forward_elementwise_exact": true,
+  "conditions": [
+    {
+      "case": "A",
+      "physical_steps": 4000,
+      "duration_s": 0.39999999999997227,
+      "qpos_qvel_activation_warmstart_time_max_difference": 0.0
+    },
+    {
+      "case": "B",
+      "physical_steps": 4000,
+      "duration_s": 0.39999999999997227,
+      "qpos_qvel_activation_warmstart_time_max_difference": 0.0
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+numpy==2.5.4
+mujoco==3.3.2
+mujoco-mjx==3.3.2
+jax==0.8.0
+jaxlib==0.8.0
+PyYAML==6.0.3

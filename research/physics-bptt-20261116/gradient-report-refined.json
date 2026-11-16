@@ -1,0 +1,289 @@
+{
+  "command": [
+    "research/physics-bptt-20261116/check_gradients.py",
+    "--steps",
+    "10",
+    "--tag",
+    "refined"
+  ],
+  "python": "3.12.14",
+  "versions": {
+    "numpy": "2.5.4",
+    "mujoco": "3.3.2",
+    "jax": "0.8.0"
+  },
+  "seed": 42,
+  "model_archive_sha256": "60a720b2a367556c7408b82d6d63998039b091dab3652ea027fe42f4cb37267a",
+  "config": {
+    "mujoco": "3.3.2",
+    "jax": "0.8.0",
+    "mujoco_mjx": "3.3.2",
+    "model_archive": "research/assets/flymimic-legacy-AB-twofile.zip",
+    "model_archive_sha256": "60a720b2a367556c7408b82d6d63998039b091dab3652ea027fe42f4cb37267a",
+    "pilot_physics_steps": 10,
+    "jacobian_epsilon": 1e-06,
+    "directional_epsilon": [
+      0.0001,
+      1e-05
+    ],
+    "state": "q tangent, qvel, all141 activation states, all114 solver warmstart values",
+    "physics_forward": "unchanged native AB with archived initial state and original11 auxiliary controls",
+    "objective": "mean squared joint angle error in radians to archived reference, not muscle u fitting",
+    "derivative_backend": "central local finite difference Jacobians plus discrete adjoint BPTT; not fully analytic/MJX",
+    "scope": "short component/gradient test; not full0.4s neural parameter training"
+  },
+  "physical_horizon_s": 0.001,
+  "reference_joint_count": 66,
+  "state_tangent_dimensions": 483,
+  "jacobian_evaluation_seconds": 3.9213251329965715,
+  "joint_loss": 5.183913416439121e-07,
+  "gradient_norm": 5.077021371630211e-07,
+  "directional_checks": [
+    {
+      "direction": 0,
+      "epsilon": 0.0001,
+      "adjoint": 5.230273994675565e-09,
+      "full_rollout_difference": 5.2301214093810456e-09,
+      "absolute_error": 1.5258529451939567e-13,
+      "relative_error": 2.917348014171494e-05
+    },
+    {
+      "direction": 0,
+      "epsilon": 1e-05,
+      "adjoint": 5.230273994675565e-09,
+      "full_rollout_difference": 5.230121203975555e-09,
+      "absolute_error": 1.5279070000993202e-13,
+      "relative_error": 2.921275255664874e-05
+    },
+    {
+      "direction": 1,
+      "epsilon": 0.0001,
+      "adjoint": -1.0433219953764391e-08,
+      "full_rollout_difference": -1.0433181016069823e-08,
+      "absolute_error": 3.8937694568394156e-14,
+      "relative_error": 3.7320879595129325e-06
+    },
+    {
+      "direction": 1,
+      "epsilon": 1e-05,
+      "adjoint": -1.0433219953764391e-08,
+      "full_rollout_difference": -1.0433181049951139e-08,
+      "absolute_error": 3.8903813252158346e-14,
+      "relative_error": 3.7288405137209374e-06
+    },
+    {
+      "direction": 2,
+      "epsilon": 0.0001,
+      "adjoint": -1.3224424323401838e-09,
+      "full_rollout_difference": -1.3224526336856919e-09,
+      "absolute_error": 1.0201345508057145e-14,
+      "relative_error": 7.713959084966143e-06
+    },
+    {
+      "direction": 2,
+      "epsilon": 1e-05,
+      "adjoint": -1.3224424323401838e-09,
+      "full_rollout_difference": -1.3224526935073936e-09,
+      "absolute_error": 1.0261167209750185e-14,
+      "relative_error": 7.759194155017853e-06
+    }
+  ],
+  "muscle_analytic_AD_checks": [
+    {
+      "actuator": 11,
+      "force_error": 0.0,
+      "activation_derivative_error": 0.0,
+      "force_gradient_max_error": 3.7909661010360196e-07,
+      "force_gradient_relative_error": 2.5105111231885805e-08,
+      "force_gradient_AD": [
+        -1.7663142602976762,
+        -4.359545678389731,
+        -14.854123358309822
+      ],
+      "force_gradient_FD": [
+        -1.7663143567099224,
+        -4.359546057486341,
+        -14.854123357554982
+      ]
+    },
+    {
+      "actuator": 24,
+      "force_error": 0.0,
+      "activation_derivative_error": 0.0,
+      "force_gradient_max_error": 1.0495150215561466e-07,
+      "force_gradient_relative_error": 1.6164773840150934e-08,
+      "force_gradient_AD": [
+        -0.06799574286592158,
+        -1.143396827738664,
+        -6.414171060850031
+      ],
+      "force_gradient_FD": [
+        -0.0679957517136493,
+        -1.143396932690166,
+        -6.414171060731277
+      ]
+    },
+    {
+      "actuator": 37,
+      "force_error": 0.0,
+      "activation_derivative_error": 0.0,
+      "force_gradient_max_error": 8.287805881579402e-07,
+      "force_gradient_relative_error": 3.477891522117882e-08,
+      "force_gradient_AD": [
+        -17.967533537089846,
+        -4.416554736931045,
+        -15.048368275231221
+      ],
+      "force_gradient_FD": [
+        -17.967533503658785,
+        -4.416555565711633,
+        -15.048368275039081
+      ]
+    },
+    {
+      "actuator": 50,
+      "force_error": 0.0,
+      "activation_derivative_error": 0.0,
+      "force_gradient_max_error": 2.1287437208528104e-06,
+      "force_gradient_relative_error": 1.8590355361265306e-08,
+      "force_gradient_AD": [
+        111.11586466836917,
+        -4.890689095262563,
+        -27.46022950928564
+      ],
+      "force_gradient_FD": [
+        111.11586460229641,
+        -4.890686966518842,
+        -27.460229507170197
+      ]
+    },
+    {
+      "actuator": 63,
+      "force_error": 0.0,
+      "activation_derivative_error": 0.0,
+      "force_gradient_max_error": 1.5763183669131765e-05,
+      "force_gradient_relative_error": 2.0980944710060476e-06,
+      "force_gradient_AD": [
+        0.0,
+        -2.115853362649804,
+        -7.20927114324989
+      ],
+      "force_gradient_FD": [
+        -1.5763183669131765e-05,
+        -2.1158534924126116,
+        -7.209271143171492
+      ]
+    },
+    {
+      "actuator": 76,
+      "force_error": 0.0,
+      "activation_derivative_error": 0.0,
+      "force_gradient_max_error": 4.453433386174143e-05,
+      "force_gradient_relative_error": 2.555123739651553e-06,
+      "force_gradient_AD": [
+        0.0,
+        -2.2824968839613926,
+        -17.279326224205537
+      ],
+      "force_gradient_FD": [
+        -4.453433386174143e-05,
+        -2.282496858185823,
+        -17.279326224084457
+      ]
+    },
+    {
+      "actuator": 89,
+      "force_error": 0.0,
+      "activation_derivative_error": 0.0,
+      "force_gradient_max_error": 3.800061457694471e-05,
+      "force_gradient_relative_error": 6.389317524640811e-06,
+      "force_gradient_AD": [
+        0.0,
+        -2.044428974949445,
+        -5.585100620737782
+      ],
+      "force_gradient_FD": [
+        -3.800061457694471e-05,
+        -2.044428959457889,
+        -5.585100620542072
+      ]
+    },
+    {
+      "actuator": 102,
+      "force_error": 0.0,
+      "activation_derivative_error": 0.0,
+      "force_gradient_max_error": 2.1444251897829266e-05,
+      "force_gradient_relative_error": 5.616877857113913e-06,
+      "force_gradient_AD": [
+        0.0,
+        -1.544272439550561,
+        -3.491579767101431
+      ],
+      "force_gradient_FD": [
+        -2.1444251897829266e-05,
+        -1.5442723766412314,
+        -3.4915797669787807
+      ]
+    },
+    {
+      "actuator": 115,
+      "force_error": 0.0,
+      "activation_derivative_error": 0.0,
+      "force_gradient_max_error": 2.8258201236194374e-05,
+      "force_gradient_relative_error": 1.210873688231237e-06,
+      "force_gradient_AD": [
+        0.0,
+        -3.0479408446574157,
+        -23.13827941079847
+      ],
+      "force_gradient_FD": [
+        -2.8258201236194374e-05,
+        -3.047940566602847,
+        -23.138279410694906
+      ]
+    },
+    {
+      "actuator": 128,
+      "force_error": 0.0,
+      "activation_derivative_error": 0.0,
+      "force_gradient_max_error": 6.252152397862334e-05,
+      "force_gradient_relative_error": 7.616716525302026e-06,
+      "force_gradient_AD": [
+        0.0,
+        -3.087334245614494,
+        -7.605758134120863
+      ],
+      "force_gradient_FD": [
+        -6.252152397862334e-05,
+        -3.0873343881410165,
+        -7.605758133966134
+      ]
+    }
+  ],
+  "jax_callback_test_skipped": false,
+  "jax_custom_vjp_gradient": 1.234178548404342e-09,
+  "jax_expected_gradient": 1.2341785484043423e-09,
+  "jax_callback_max_error": 2.0679515313825692e-25,
+  "joint_loss_direction_steps": [
+    {
+      "step_size": 0.02,
+      "joint_loss": 5.065229609312668e-07,
+      "improved": true
+    },
+    {
+      "step_size": 0.01,
+      "joint_loss": 5.124481725477199e-07,
+      "improved": true
+    },
+    {
+      "step_size": 0.005,
+      "joint_loss": 5.154178315681492e-07,
+      "improved": true
+    }
+  ],
+  "source_sha256": {
+    "check_gradients.py": "00e4dfa1622714a402ee37165659083132e8757fa52804d4f682fc11b867d483",
+    "physics_adjoint.py": "ce95b342bd07cec9716ad388defd1137dfee37f60374b07ec5842a4f355b97ee"
+  },
+  "scope": "new short component test; interior controls derived from A, not epoch123/1000 training; local physics Jacobians are finite differences, not fully analytic"
+}

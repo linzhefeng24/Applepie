@@ -1,0 +1,20 @@
+{
+  "scope": "new physics-gradient feasibility/reference implementation, not recovered neural training and not completed full neural joint fitting",
+  "native_full_AB_forward_parity": true,
+  "muscle_force_value_error": 0.0,
+  "force_balance_relative_residual": 7.312281661073704e-16,
+  "short_1ms_max_relative_gradient_error": 2.921275255664874e-05,
+  "long_20ms_max_relative_gradient_error": 0.25432494772724856,
+  "20ms_criterion_passed": false,
+  "20ms_exit_code": 1,
+  "20ms_joint_loss_before": 0.000554534422250584,
+  "20ms_joint_loss_after_trial": 0.0005447240083912299,
+  "gradient_reference_backend": "local central finite differences plus full-state adjoint; includes114 warmstart states",
+  "final_white_box_AD_backend_completed": false,
+  "full_neural_parameter_training_completed": false,
+  "full_0_4s_joint_BPTT_completed": false,
+  "MJX_original_AB_BODY_support": false,
+  "diagnostic_initial_error": "strict step_excitation rejected archived auxiliary controls outside declared ranges; corrected to exact original raw ctrl+mj_step replay. No baseline controls changed.",
+  "contact_pair_topology_changed_in_diagnostic": false,
+  "cause_not_yet_proven": "Contact pairs stayed the same in sampled probes, but friction active states, solver branch/termination, local Jacobian numerical scale and accumulated linearization errors remain to be isolated."
+}
