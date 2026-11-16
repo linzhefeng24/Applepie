@@ -13,3 +13,7 @@
 prepare.py只提高基线事件观察分辨率，要求重新分箱后与原始全网脉冲逐元素一致。可微模型保留双区室HH/Ca/SK、电导突触和延迟；硬上穿脉冲前向、平滑代理导数反向，无阈值重置。随后须检验局部前向一致性，以及原始3988细胞硬脉冲网络的完整候选回放。不得把训练边界回放结果当作整网自由运行结果。
 
 配置、输入身份、失败、训练曲线和候选补丁持续保存；不会自动替换交付模型。共享时间放缩及训练/留出时段预先固定，留出数据不选择参数。没有仿真/训练完成前不得写成功。
+
+## Native AB body comparison (restored 2026-11-16)
+
+Use [the restored canonical native AB replay](../restore-native-AB-20261116/README.md) for body evaluation of epoch123 and epoch1000. The training target is elementwise identical to native A's130 muscle controls. Training fitted u(t) without a body solver; archived checkpoints/configuration are unchanged. The declared map is neural_ms=200+3*physical_ms: the fitted0–900ms window corresponds to physical0–300ms, and the300ms neural holdout to physical300–400ms. Original AB full state, warmstart,11 auxiliary schedules, model/contact parameters and physical0.4s clock must be retained for every case. Both existing checkpoints are A-trained; B is a separate comparison.
