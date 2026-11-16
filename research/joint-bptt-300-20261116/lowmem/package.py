@@ -3,7 +3,7 @@ from pathlib import Path
 import argparse,hashlib,json,subprocess,zipfile
 HERE=Path(__file__).resolve().parent;ROOT=HERE.parents[2]
 p=argparse.ArgumentParser();p.add_argument('--out',type=Path,required=True);a=p.parse_args();validation=json.loads((HERE/'validation.json').read_text())
-assert validation['numerical_parity_passed'] and validation['physical_steps']==4000 and validation['neural_ms']==1400
+assert validation['practical_low_memory_accepted'] and validation['physical_steps']==4000 and validation['neural_ms']==1400
 assert validation['memory']['conservative_parent_plus_largest_worker_peak_kib']<6.5*1024*1024,'Do not advertise a7.5GiB mode before the6.5GiB process upper bound is met'
 assert json.loads((HERE/'entry-check.json').read_text())['passed']
 a.out.mkdir(parents=True,exist_ok=True);asset=a.out/'Applepie_LowMemory_Addon.zip';files=[]

@@ -1,0 +1,15 @@
+{
+  "neural_ms": 1400,
+  "cells": 3988,
+  "u_exact": true,
+  "spike_bins_exact": true,
+  "max_u_abs_difference": 0.0,
+  "spike_mismatch_bins": 0,
+  "seconds": 111.81969590399967,
+  "layout": {
+    "original_sha256": "6c63172bbb355276426e0c86ffd44eef9ae844d3016810d71ca13ccba8f94929",
+    "transformed_forward_sha256": "e450243bf75450e684875052cb6f65438fef8bccd7ed18ae6898a258abff7ae6",
+    "checkpoint_block_ms": 20
+  },
+  "optimizer_updates": 0
+}

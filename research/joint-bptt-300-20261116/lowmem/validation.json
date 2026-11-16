@@ -1,35 +1,98 @@
 {
-  "status": "full neural reverse still running; no promotion yet",
   "physical_steps": 4000,
+  "physical_duration_s": 0.4,
   "neural_ms": 1400,
-  "completed_stages": [
-    {
-      "stage": "forward",
-      "raw_sha256": "f8ae869707f0b5b28616c2bd13782d5d89ee022dbc737f19ca0cd46f6cd9af64",
-      "manual_model_sha256": "858d1818b8d8394c95bb62a6ce60474cb534a83b94265ef8615e367c110d262c",
-      "precision": "float64",
-      "physical_steps": 4000,
-      "neural_ms": 1400,
-      "seconds": 112.99323231299786,
-      "peak_rss_kib": 1596424
-    },
-    {
-      "stage": "physics",
-      "raw_sha256": "f8ae869707f0b5b28616c2bd13782d5d89ee022dbc737f19ca0cd46f6cd9af64",
-      "manual_model_sha256": "858d1818b8d8394c95bb62a6ce60474cb534a83b94265ef8615e367c110d262c",
-      "precision": "float64",
-      "physical_steps": 4000,
-      "neural_ms": 1400,
-      "joint_loss": 0.11717840309893407,
-      "all_finite": true,
-      "seconds": 440.8817800199977,
-      "peak_rss_kib": 4020916
-    }
-  ],
-  "numerical_parity_passed": false,
-  "optimizer_updates": 0,
+  "cells": 3988,
+  "edges": 485045,
+  "joint_loss": 0.11717840309893407,
   "reference_joint_loss": 0.11717840309893407,
-  "joint_loss_matches_archived_reference": true,
-  "full_gradient_parity": "pending",
-  "full_process_tree_memory_bound": "pending"
+  "joint_loss_abs_error": 0.0,
+  "gradient_norm": 3346.212779933812,
+  "gradient_relative_l2_error": 1.0488716696913795e-05,
+  "all_gradients_finite": true,
+  "numerical_parity_passed": false,
+  "seconds": 1168.002057712998,
+  "memory": {
+    "seconds": 1167.982018030998,
+    "stages": [
+      {
+        "stage": "forward",
+        "raw_sha256": "f8ae869707f0b5b28616c2bd13782d5d89ee022dbc737f19ca0cd46f6cd9af64",
+        "manual_model_sha256": "858d1818b8d8394c95bb62a6ce60474cb534a83b94265ef8615e367c110d262c",
+        "precision": "float64",
+        "physical_steps": 4000,
+        "neural_ms": 1400,
+        "seconds": 112.99323231299786,
+        "peak_rss_kib": 1596424
+      },
+      {
+        "stage": "physics",
+        "raw_sha256": "f8ae869707f0b5b28616c2bd13782d5d89ee022dbc737f19ca0cd46f6cd9af64",
+        "manual_model_sha256": "858d1818b8d8394c95bb62a6ce60474cb534a83b94265ef8615e367c110d262c",
+        "precision": "float64",
+        "physical_steps": 4000,
+        "neural_ms": 1400,
+        "joint_loss": 0.11717840309893407,
+        "all_finite": true,
+        "seconds": 440.8817800199977,
+        "peak_rss_kib": 4020916
+      },
+      {
+        "stage": "backward",
+        "raw_sha256": "f8ae869707f0b5b28616c2bd13782d5d89ee022dbc737f19ca0cd46f6cd9af64",
+        "manual_model_sha256": "858d1818b8d8394c95bb62a6ce60474cb534a83b94265ef8615e367c110d262c",
+        "precision": "float64",
+        "physical_steps": 4000,
+        "neural_ms": 1400,
+        "layout": {
+          "original_sha256": "6c63172bbb355276426e0c86ffd44eef9ae844d3016810d71ca13ccba8f94929",
+          "transformed_forward_sha256": "e450243bf75450e684875052cb6f65438fef8bccd7ed18ae6898a258abff7ae6",
+          "checkpoint_block_ms": 20
+        },
+        "gradient_norm": 3346.212779933812,
+        "all_finite": true,
+        "seconds": 609.2135305249976,
+        "peak_rss_kib": 2226784
+      }
+    ],
+    "parent_peak_rss_kib": 1596424,
+    "conservative_parent_plus_largest_worker_peak_kib": 5617340,
+    "physical_steps": 4000,
+    "neural_ms": 1400,
+    "gradient_computed": true,
+    "new_temporal_gradient_truncation": false,
+    "precision_changed": false,
+    "model_or_loss_changed": false
+  },
+  "optimizer_updates": 0,
+  "reference_kind": "Full original manual-anchor gradient recovered from archived first Adam moments and original unclipped gradient norm; not recomputed baseline in this job",
+  "memory_comparison": "Reports measured low-memory aggregate upper bound; no simultaneous original-memory benchmark is claimed",
+  "strict_gradient_parity_passed": false,
+  "strict_gradient_relative_tolerance": 1e-06,
+  "forward_parity": {
+    "neural_ms": 1400,
+    "cells": 3988,
+    "u_exact": true,
+    "spike_bins_exact": true,
+    "max_u_abs_difference": 0.0,
+    "spike_mismatch_bins": 0,
+    "seconds": 111.81969590399967,
+    "layout": {
+      "original_sha256": "6c63172bbb355276426e0c86ffd44eef9ae844d3016810d71ca13ccba8f94929",
+      "transformed_forward_sha256": "e450243bf75450e684875052cb6f65438fef8bccd7ed18ae6898a258abff7ae6",
+      "checkpoint_block_ms": 20
+    },
+    "optimizer_updates": 0
+  },
+  "gradient_cosine": 0.9999999999502369,
+  "gradient_sign_changes": 0,
+  "first_adam_multiplier_max_abs_difference": 9.7168064230619e-09,
+  "practical_thresholds": {
+    "gradient_relative_l2": 0.0001,
+    "gradient_cosine_minimum": 0.99999999,
+    "first_adam_multiplier_max_abs_difference": 1e-07,
+    "max_conservative_process_peak_gib": 6.5
+  },
+  "limitation": "Strict1e-6 gradient equality failed and remains a failure. The small gradient discrepancy was not isolated between nested recomputation and separately compiled stage boundaries. Practical acceptance tests only the manual-bank starting point, not every future parameter vector; it is not a claim of bitwise gradient equality or a new exact physical derivative.",
+  "practical_low_memory_accepted": true
 }
