@@ -1,0 +1,61 @@
+{
+  "legacy_archive": {
+    "path": "research/assets/flymimic-legacy-AB-twofile.zip",
+    "sha256": "60a720b2a367556c7408b82d6d63998039b091dab3652ea027fe42f4cb37267a"
+  },
+  "model_files": {
+    "parameters.yaml": "3e02efcddc83c80ce45a0eb5c77a50dcabc1fd249b063a9444b08af30d82315d",
+    "simulation.py": "d01641fe7c9562bf4a08dc58dfc7bbf0df0d9ab94a26373ccefbe97b28195325"
+  },
+  "neural_output_source": {
+    "name": "FreeBody_Comparison_Bundle.zip",
+    "bytes": 12243258,
+    "sha256": "0852ef006088c8df8b35022d6a9022d0bfc61fc089cef779b19fe25ca037547b",
+    "url": "https://github.com/linzhefeng24/Applepie/releases/download/fixed-body-video-20261115/FreeBody_Comparison_Bundle.zip"
+  },
+  "neural_outputs": {
+    "Epoch123": {
+      "u_sha256": "bde8c8cc17a16e5b280e12eec68bfab28723a58d5594d1c0420a7150b7ef30a2",
+      "origin": {
+        "epoch": 123,
+        "neural_run_id": "99da331bc3ad86641802f1034237277ab9974b64dcfdd253427ddd37e68957ec-epoch123-d416c2e16f5e59cb",
+        "effective_cell_array_sha256": "d416c2e16f5e59cb2af2d1996d83ecab3722c4897fc6daf4fb4876c5d72f2f7d",
+        "channels_with_candidate_MN_mapping": 104
+      }
+    },
+    "Epoch1000": {
+      "u_sha256": "362321fcf11e0dc5c8916118521780fd336f90f1e2056535c54d9278d33ed001",
+      "origin": {
+        "epoch": 1000,
+        "neural_run_id": "99da331bc3ad86641802f1034237277ab9974b64dcfdd253427ddd37e68957ec-epoch1000-ded030d10d7ee68d",
+        "effective_cell_array_sha256": "ded030d10d7ee68d7c4b6e87688a63ff7734a8ee697a8e54e0e51f4958be5b5e",
+        "channels_with_candidate_MN_mapping": 104
+      }
+    }
+  },
+  "timing": {
+    "neural_start_ms": 200.0,
+    "neural_ms_per_body_ms": 3.0,
+    "u_bin_ms": 1.0,
+    "policy": "Compress the saved neural u clock into native AB physical time; never slow gravity, body, contact or archived auxiliary controls."
+  },
+  "software": {
+    "mujoco": "3.3.2",
+    "numpy": "2.5.4",
+    "PyYAML": "6.0.3",
+    "Pillow": "12.0.0",
+    "imageio-ffmpeg": "0.6.0"
+  },
+  "scope": "Saved checkpoints were trained on A only. B is an additional comparison, not a B-trained checkpoint. Neural dynamics run on their original clock; the permitted global clock mapping is an interface time warp, not native-time biological frequency validation.",
+  "training_target_identity": {
+    "file": "research/conductance-rebuild-20261114/data/old-A-muscle-targets.npz",
+    "file_sha256": "f9f888bdfe2ce296fcc05edb719289d05ba051d1dda79be9aea66ade6f5b949b",
+    "native_A_muscle_matrix_sha256": "00abb9fba76229c51c456a48cb8b74802b57a6ce7cb9cab6bc2f998d6e91a9db",
+    "reordered_training_u_sha256": "00abb9fba76229c51c456a48cb8b74802b57a6ce7cb9cab6bc2f998d6e91a9db",
+    "elementwise_exact": true,
+    "shape": [
+      4000,
+      130
+    ]
+  }
+}
