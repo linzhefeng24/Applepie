@@ -39,5 +39,6 @@
   "initial_checkpoint_archive_role": "comparison only; not an optimization input",
   "manual_cell_array_sha256": "c4d83f204c0ed79cddafd40ebf269f8d9059d6330be38e6b90254a3d36f79ac8",
   "jax": "0.5.3",
-  "contact_derivative_backend": "implicit stationary contact equations; unchanged forward stopping loop"
+  "contact_derivative_backend": "white-box implicit contact derivative evaluated at native constraint acceleration; muscle/rigid/contact derivatives in patched MJX",
+  "physical_forward": "exact original native MuJoCo3.3.2 with complete AB state and auxiliary schedule"
 }

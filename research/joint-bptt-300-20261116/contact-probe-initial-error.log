@@ -18,4 +18,4 @@ Traceback (most recent call last):
   File "/workspace/Applepie-research-sync/research/joint-bptt-300-20261116/stage_probe.py", line 35, in <module>
     pairs.append({'geom':list(map(int,nc.geom)),'frame_max_diff':float(abs(nc.frame-np.asarray(d.contact.frame)[slot]).max()),'jac_max_diff':float(abs(nativeJ[aa:aa+dim]-np.asarray(d.efc_J)[bb:bb+dim]).max()),'nativeD':native.efc_D[aa:aa+dim].tolist(),'mjxD':np.asarray(d.efc_D)[bb:bb+dim].tolist(),'native_aref':native.efc_aref[aa:aa+dim].tolist(),'mjx_aref':np.asarray(d.efc_aref)[bb:bb+dim].tolist()})
                                                                            ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-ValueError: operands could not be broadcast together with shapes (9,) (3,3) 
+ValueError: operands could not be broadcast together with shapes (9,) (3,3)

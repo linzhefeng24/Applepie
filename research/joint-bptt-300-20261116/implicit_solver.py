@@ -26,3 +26,20 @@ def solve(m,d):
 
 def install():
  if solver.solve is not solve:solver.solve=solve
+
+def solve_at_native_acceleration(m,d,native_acceleration):
+ """Evaluate the implicit physical derivative at the actual native solution.
+ Native warmstart after constraint solving stores pre-Euler acceleration
+ (engine_forward.c:760), so no numerical stopping-loop derivative is needed.
+ The primal state is supplied by native MuJoCo, never by this shadow solver.
+ """
+ def residual(a):
+  ctx=solver.Context.create(m,d.replace(qacc=a),grad=False)
+  return support.mul_m(m,d,a)-d.qfrc_smooth-ctx.qfrc_constraint
+ def use_native_root(unused_f,unused_guess):return native_acceleration
+ def tangent_solve(operator,rhs):
+  h=jax.vmap(operator)(j.eye(m.nv,dtype=rhs.dtype)).T
+  return j.linalg.solve(h,rhs)
+ a=jax.lax.custom_root(residual,native_acceleration,use_native_root,tangent_solve)
+ ctx=solver.Context.create(m,d.replace(qacc=a),grad=False)
+ return d.replace(qacc=a,qacc_warmstart=a,qfrc_constraint=ctx.qfrc_constraint,efc_force=ctx.efc_force)

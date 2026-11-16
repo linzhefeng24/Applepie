@@ -1,0 +1,18 @@
+{
+  "physical_neural_model_sha256": "858d1818b8d8394c95bb62a6ce60474cb534a83b94265ef8615e367c110d262c",
+  "neural_ms": 1400,
+  "cells": 3988,
+  "edges": 485045,
+  "shared_variables": 207,
+  "seconds": 100.60826790599822,
+  "spike_mismatch_bins": 0,
+  "spikes_exactly_equal": true,
+  "u_finite": true,
+  "total_spikes": 12755,
+  "reference_spikes": 12755,
+  "source_sha256": "6c63172bbb355276426e0c86ffd44eef9ae844d3016810d71ca13ccba8f94929",
+  "versions": {
+    "jax": "0.5.3",
+    "numpy": "2.5.4"
+  }
+}

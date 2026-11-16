@@ -13,6 +13,12 @@
       "url": "https://raw.githubusercontent.com/google-deepmind/mujoco/3.3.2/mjx/mujoco/mjx/_src/collision_driver.py",
       "sha256": "7111093745dfabd652d6fab9eb19be14b86ee0872276b8a67ccc515271193baf",
       "bytes": 16362
+    },
+    {
+      "file": "engine-util-solve-upstream.c.txt",
+      "url": "https://raw.githubusercontent.com/google-deepmind/mujoco/3.3.2/src/engine/engine_util_solve.c",
+      "sha256": "a8d0f48933cf7d957164ae39afd6f3db32f564f5d781630304caddd477141239",
+      "bytes": 39037
     }
   ]
 }

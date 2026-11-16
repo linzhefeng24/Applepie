@@ -1,58 +1,58 @@
 [
   {
     "stage": "kinematics",
-    "seconds": 10.136707544326782
+    "seconds": 10.413190364837646
   },
   {
     "stage": "com_pos",
-    "seconds": 0.5634136199951172
+    "seconds": 0.5618550777435303
   },
   {
     "stage": "camlight",
-    "seconds": 0.19580602645874023
+    "seconds": 0.18029260635375977
   },
   {
     "stage": "tendon",
-    "seconds": 1.7196903228759766
+    "seconds": 1.4445843696594238
   },
   {
     "stage": "crb",
-    "seconds": 0.633697509765625
+    "seconds": 0.25984668731689453
   },
   {
     "stage": "factor_m",
-    "seconds": 0.8352410793304443
+    "seconds": 0.5076165199279785
   },
   {
     "stage": "collision",
-    "seconds": 8.624693393707275
+    "seconds": 8.370539665222168
   },
   {
     "stage": "make_constraint",
-    "seconds": 1.1401689052581787
+    "seconds": 1.2490947246551514
   },
   {
     "stage": "transmission",
-    "seconds": 0.6939136981964111
+    "seconds": 0.6846880912780762
   },
   {
     "stage": "fwd_velocity",
-    "seconds": 2.9928553104400635
+    "seconds": 2.36051607131958
   },
   {
     "stage": "fwd_actuation",
-    "seconds": 0.2401587963104248
+    "seconds": 0.227372407913208
   },
   {
     "stage": "fwd_acceleration",
-    "seconds": 0.8096675872802734
+    "seconds": 0.882103681564331
   },
   {
     "stage": "solve",
-    "seconds": 3.008831024169922
+    "seconds": 3.315300464630127
   },
   {
     "stage": "euler",
-    "seconds": 0.8760585784912109
+    "seconds": 0.90805983543396
   }
 ]

@@ -1,0 +1,77 @@
+{
+  "command": [
+    "research/joint-bptt-300-20261116/validate_native_whitebox.py",
+    "--steps",
+    "10"
+  ],
+  "steps": 10,
+  "force_max_abs_errors": {
+    "actuator_force": 1.2434497875801753e-14,
+    "qfrc_actuator": 3.720981855970251e-16,
+    "qfrc_constraint": 0.022402197911343145,
+    "qfrc_passive": 0.0002795112987233747,
+    "qacc": 2342.806657318655
+  },
+  "force_audit_seconds": 18.544329005999316,
+  "source_sha256": {
+    "native_whitebox.py": "9ab51d11e7918b27d4603b8d3088c553254cad7f79abf6d309f4a7e64631a8aa",
+    "contact_geometry.py": "ab589aefcd495ad3cfaa87ee6c7ffe6660f78a512ce0be8ee4d6b82074784db5",
+    "implicit_solver.py": "2a2475af6eab2e915bc161cfe04aa5dde0f677e48cb332ab0433a633399ff195",
+    "physics.py": "09c56876086da4d2d60129965715f3c0ef552029f815021e434f4c218df68c54"
+  },
+  "versions": {
+    "jax": "0.5.3",
+    "numpy": "2.5.4"
+  },
+  "training_allowed": false,
+  "joint_loss": 5.18391341643912e-07,
+  "gradient_norm": NaN,
+  "gradient_seconds": 246.09874283300087,
+  "all_gradients_finite": false,
+  "directional_checks": [
+    {
+      "direction": 0,
+      "epsilon": 0.001,
+      "adjoint": NaN,
+      "native_finite_difference": 5.10987229738711e-08,
+      "relative_error": NaN
+    },
+    {
+      "direction": 0,
+      "epsilon": 0.003,
+      "adjoint": NaN,
+      "native_finite_difference": 5.110405114701083e-08,
+      "relative_error": NaN
+    },
+    {
+      "direction": 1,
+      "epsilon": 0.001,
+      "adjoint": NaN,
+      "native_finite_difference": -1.2599277967461886e-07,
+      "relative_error": NaN
+    },
+    {
+      "direction": 1,
+      "epsilon": 0.003,
+      "adjoint": NaN,
+      "native_finite_difference": -1.259835628669919e-07,
+      "relative_error": NaN
+    },
+    {
+      "direction": 2,
+      "epsilon": 0.001,
+      "adjoint": NaN,
+      "native_finite_difference": -1.5206090227852015e-08,
+      "relative_error": NaN
+    },
+    {
+      "direction": 2,
+      "epsilon": 0.003,
+      "adjoint": NaN,
+      "native_finite_difference": -1.51655753449127e-08,
+      "relative_error": NaN
+    }
+  ],
+  "max_directional_relative_error": NaN,
+  "gradient_gate_passed": false
+}

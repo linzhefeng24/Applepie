@@ -22,6 +22,16 @@ def csr(value):
  value=value.tocsr();value.sort_indices()
  return CSR((j.asarray(value.data),j.asarray(value.indices),j.asarray(value.indptr)),shape=value.shape)
 
+def linear_sparse_operator(matrix):
+ """Exact linear VJP even when the sparse zero-input forward is skipped."""
+ transpose=matrix.T
+ @jax.custom_vjp
+ def apply(x):return lax.cond(j.any(x!=0),lambda value:matrix@value,lambda value:j.zeros(matrix.shape[0],dtype=value.dtype),x)
+ def fwd(x):return apply(x),None
+ def bwd(res,g):return (lax.cond(j.any(g!=0),lambda value:transpose@value,lambda value:j.zeros(matrix.shape[1],dtype=value.dtype),g),)
+ apply.defvjp(fwd,bwd)
+ return apply
+
 class FullDifferentiableHH:
  def __init__(self):
   self.cfg=json.loads((R/'neural-config.json').read_text());c=self.cfg;self.model=Model(ROOT/c['baseline_model']);m=self.model;n=m.config['neural'];self.dt=n['solver']['dt_ms'];self.delay=max(1,round(n['solver']['delay_ms']/self.dt));self.substeps=round(n['solver']['spike_bin_ms']/self.dt)
@@ -29,6 +39,7 @@ class FullDifferentiableHH:
   self.assignment=j.asarray(np.array([group_ids.get(group_key(row),-1) if row['type'] not in c['frozen_types'] else -1 for row in m.neurons],dtype=np.int32));self.n_groups=len(self.groups)
   self.base=j.asarray(m.cells);self.fields=j.asarray(c['train_fields']);self.kinetics=j.asarray(m.kinetics);self.aux=j.asarray(m.aux);self.p=j.asarray(m.global_values)
   N=len(m.ids);positive=m.weight>0;self.We=csr(sparse.coo_matrix((m.weight[positive],(m.post[positive],m.pre[positive])),shape=(N,N)));self.Wi=csr(sparse.coo_matrix((-m.weight[~positive],(m.post[~positive],m.pre[~positive])),shape=(N,N)))
+  self.exc_operator=linear_sparse_operator(self.We);self.inh_operator=linear_sparse_operator(self.Wi)
   self.eidx=j.arange(N);self.iidx=j.arange(N);self.data={'local':np.arange(N)}
   row=[];col=[];value=[]
   for k,pool in enumerate(m.mapping):
@@ -78,8 +89,8 @@ class FullDifferentiableHH:
     st,bin_counts=carry;k0=inp;ex=j.zeros(N);inh=j.zeros(N)
     vs,va,m,h,n,ca,xe,ye,xi,yi,hist,filt=st;k=ms*self.substeps+k0
     arriving=hist[k%(self.delay+1)]
-    inc_e=ge*norme*cell[:,5]*(ex+self.We@(arriving[self.eidx]*cell[self.eidx,12]))
-    inc_i=gi*normi*(inh+self.Wi@(arriving[self.iidx]*cell[self.iidx,6]*cell[self.iidx,12]))
+    inc_e=ge*norme*cell[:,5]*(ex+self.exc_operator(arriving[self.eidx]*cell[self.eidx,12]))
+    inc_i=gi*normi*(inh+self.inh_operator(arriving[self.iidx]*cell[self.iidx,6]*cell[self.iidx,12]))
     xe=xe*de1+inc_e;ye=ye*de2+inc_e;xi=xi*di1+inc_i;yi=yi*di2+inc_i
     am,bm,ah,bh,an,bn=self.gates(va)
     m=am/(am+bm)+(m-am/(am+bm))*j.exp(-dt*(am+bm)*cell[:,11])
@@ -93,6 +104,8 @@ class FullDifferentiableHH:
     den=A*B-gc*gc;newvs=(r1*B+gc*r2)/den;newva=(r2*A+gc*r1)/den
     ca=j.maximum(0.,ca+dt*(-alpha*gCa*(newva-eca)-ca/cell[:,16]))
     spikes=self.spike(va,newva)
+    valid=j.all(j.isfinite(newvs)&j.isfinite(newva)&(newvs>=aux[1])&(newvs<=aux[2])&(newva>=aux[1])&(newva<=aux[2]))
+    spikes=j.where(valid,spikes,j.nan)
     hist=hist.at[k%(self.delay+1)].set(0.).at[(k+self.delay)%(self.delay+1)].set(spikes)
     return ((newvs,newva,m,h,n,ca,xe,ye,xi,yi,hist,filt),bin_counts+spikes),None
    (st,counts),_=lax.scan(micro,(state,j.zeros(N)),j.arange(self.substeps))
@@ -109,4 +122,3 @@ class FullDifferentiableHH:
   T=self.duration if end_ms is None else int(end_ms)
   _,out=lax.scan(jax.checkpoint(ms_step),init,j.arange(T))
   return out
-
