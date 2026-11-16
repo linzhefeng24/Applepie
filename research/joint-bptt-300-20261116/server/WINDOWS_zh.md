@@ -16,6 +16,7 @@ wsl --install -d Ubuntu-24.04
 这不是之前服务器的账号，密码输入时不显示字符是正常现象。
 已有WSL时可先用 `wsl -l -v` 查看；目标Ubuntu应使用WSL版本2。
 请使用Ubuntu24.04，因为它默认是本程序所需的Python3.12。不要把后续Linux命令粘贴进PowerShell。
+如果进入的是Ubuntu26.04、setup报 `Please use Python3.12`，无需重新下载模型，按同目录 `PYTHON312_RECOVERY_zh.md` 用独立Python3.12继续。
 
 ## 2. Ubuntu终端：安装、下载并检查
 
