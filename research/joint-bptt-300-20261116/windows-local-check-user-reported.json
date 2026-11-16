@@ -16,11 +16,14 @@
   "optimizer_updates_in_this_check": 0,
   "jax_device": "TFRT_CPU_0",
   "wsl_memory_total_kib": 7836316,
-  "windows_physical_memory_gib": null,
+  "windows_physical_memory_gib": 15.4,
   "hardware_speed_measured": false,
   "export_name": "20261116T143036Z-check-265feb.zip",
   "user_reported_export_sha256": "799fd338ad2c0ff03f2a62107b6cfdc90d2c0672be48067096bc8993b11ad3d8",
   "export_independently_downloaded": false,
   "remaining_issue": "Windows PowerShell memory-query command was executed in bash; syntax error does not invalidate successful installation or model check",
-  "next_step": "Query physical memory in Windows PowerShell, then decide WSL memory allocation before full BPTT benchmark"
+  "next_step": "Preserve existing WSL config, optionally apply10GB/8GB after stopping local WSL jobs, then benchmark two updates",
+  "suggested_wsl_limit_gb": 10,
+  "suggested_swap_gb": 8,
+  "memory_configuration_applied": "not verified; pending user action"
 }
