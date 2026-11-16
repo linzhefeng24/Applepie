@@ -1,0 +1,92 @@
+{
+  "all_release_asset_hashes_verified": true,
+  "epoch123_spikes_exactly_reproduce_prior_full_validation": true,
+  "epochs_have_distinct_spikes_excitation_and_activation": true,
+  "fixed_body_and_nonzero_ground_contact_verified_for_both": true,
+  "manifest": {
+    "code_revision": "c2766770f06b7ee0eda7a1e24870bb1c0e4a9f03",
+    "python": "3.12.16",
+    "versions": {
+      "numpy": "2.5.4",
+      "numba": "0.68.1",
+      "mujoco": "3.3.2",
+      "matplotlib": "3.11.2",
+      "imageio-ffmpeg": "0.6.0"
+    },
+    "command": [
+      "research/bptt123-1000-videos-20261116/render_checkpoints.py"
+    ],
+    "reports": [
+      {
+        "epoch": 123,
+        "role": "best training objective",
+        "base_model_sha256": "858d1818b8d8394c95bb62a6ce60474cb534a83b94265ef8615e367c110d262c",
+        "effective_cell_array_sha256": "d416c2e16f5e59cb2af2d1996d83ecab3722c4897fc6daf4fb4876c5d72f2f7d",
+        "optimizer_raw_sha256": "71b663371ccab601c93f6770d4d77871f787f7b8f77d1f688ae6587eaf7c2407",
+        "checkpoint_sha256": "44304aa747c7078755cb16720d39a32ec839cc5e4953b47fcb3bf2fbd888fe70",
+        "changed_cells": 341,
+        "max_relative_parameter_change": 0.08194982023661163,
+        "spikes": 19232,
+        "fixed_body": true,
+        "max_thorax_position_drift_native": 0.0,
+        "max_ground_contacts": 6,
+        "max_ground_normal_force_native": 212.90083966644903,
+        "extra_applied_force": false,
+        "neural_protocol": "Original DN_drive; DNg100 10045/10056, 160 pA, 200\u20131500 ms",
+        "body_duration_s": 1.3999999999998622,
+        "scope": "Fixed body, native legs and ground forces; not evidence of free walking or correct left/right alternation"
+      },
+      {
+        "epoch": 1000,
+        "role": "last optimizer state",
+        "base_model_sha256": "858d1818b8d8394c95bb62a6ce60474cb534a83b94265ef8615e367c110d262c",
+        "effective_cell_array_sha256": "ded030d10d7ee68d7c4b6e87688a63ff7734a8ee697a8e54e0e51f4958be5b5e",
+        "optimizer_raw_sha256": "11c759ee2e817bc04728859aa107a5012085ab98064bb4b35fcc49ea8c2caa53",
+        "checkpoint_sha256": "44304aa747c7078755cb16720d39a32ec839cc5e4953b47fcb3bf2fbd888fe70",
+        "changed_cells": 341,
+        "max_relative_parameter_change": 0.18800220513498578,
+        "spikes": 16000,
+        "fixed_body": true,
+        "max_thorax_position_drift_native": 0.0,
+        "max_ground_contacts": 8,
+        "max_ground_normal_force_native": 84.63067453511519,
+        "extra_applied_force": false,
+        "neural_protocol": "Original DN_drive; DNg100 10045/10056, 160 pA, 200\u20131500 ms",
+        "body_duration_s": 1.3999999999998622,
+        "scope": "Fixed body, native legs and ground forces; not evidence of free walking or correct left/right alternation"
+      }
+    ],
+    "assets": [
+      {
+        "name": "BPTT_Epoch123_FixedBody.mp4",
+        "bytes": 1308048,
+        "sha256": "1a108fdcd980829b0463fcdda9c88461cf2b84e97faa65825a17cd48f71016f0",
+        "url": "https://github.com/linzhefeng24/Applepie/releases/download/fixed-body-video-20261115/BPTT_Epoch123_FixedBody.mp4"
+      },
+      {
+        "name": "BPTT_Epoch123_vs_1000.mp4",
+        "bytes": 2518713,
+        "sha256": "5e72daf97d6bf6a97c0e470e9b771a5d6ba0ae8969399ef291558a5150136b94",
+        "url": "https://github.com/linzhefeng24/Applepie/releases/download/fixed-body-video-20261115/BPTT_Epoch123_vs_1000.mp4"
+      },
+      {
+        "name": "BPTT_Epoch1000_FixedBody.mp4",
+        "bytes": 1334752,
+        "sha256": "69af5091e76126fabbc20e06500e1ffd2379e6b9731c99bf48bc3f9997c377b5",
+        "url": "https://github.com/linzhefeng24/Applepie/releases/download/fixed-body-video-20261115/BPTT_Epoch1000_FixedBody.mp4"
+      },
+      {
+        "name": "BPTT_Epoch123_1000_State.zip",
+        "bytes": 95072385,
+        "sha256": "375594694d2d199aca8da485e7b82be14ba5a44db63556e9c3f43f61f7b5a820",
+        "url": "https://github.com/linzhefeng24/Applepie/releases/download/fixed-body-video-20261115/BPTT_Epoch123_1000_State.zip"
+      },
+      {
+        "name": "BPTT_Epoch123_1000_Videos.zip",
+        "bytes": 19668927,
+        "sha256": "08b43942edddc21513c7bb92c2506d6be0d737a99fb5348b2176d3fe27368002",
+        "url": "https://github.com/linzhefeng24/Applepie/releases/download/fixed-body-video-20261115/BPTT_Epoch123_1000_Videos.zip"
+      }
+    ]
+  }
+}

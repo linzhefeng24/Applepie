@@ -22,6 +22,7 @@ assert np.array_equal(a['spikes'],original['spikes'])
 assert not np.array_equal(a['spikes'],b['spikes'])
 assert not np.array_equal(ta['muscle_u_requested'],tb['muscle_u_requested'])
 assert not np.array_equal(ta['muscle_activation'],tb['muscle_activation'])
+assert not np.array_equal(ta['qpos'],tb['qpos'])
 for t in [ta,tb]:
  assert bool(t['fixed_root']) and np.isfinite(t['qpos']).all()
  assert np.ptp(t['thorax_position_native'],axis=0).max()==0
