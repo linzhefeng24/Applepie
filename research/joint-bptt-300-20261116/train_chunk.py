@@ -31,6 +31,7 @@ def main():
   dump(history_path,history)
   report={**identity,'completed_updates':updates,'required_updates':cfg['required_updates'],'complete':updates>=cfg['required_updates'],'phase':phase,'pilot_index':pilot,'phase_updates':phase_step,'selected_coefficient':None if not np.isfinite(selected) else selected,'best_score':None if not np.isfinite(best) else best,'history_rows':len(history),'epoch_definition':cfg['epoch_definition'],'last':history[-1] if history else None,'parameter_anchor':cfg['parameter_anchor']}
   dump(OUT/'chunk-report.json',report);dump(OUT/'run-identity.json',identity)
+  if os.environ.get('SYNC_EVERY_SAVE')=='1':subprocess.run([sys.executable,str(R/'checkpoint_service.py'),'publish'],check=True)
  save();print('Starting phase',phase,'main updates',updates,flush=True)
  for k in range(a.updates):
   if updates>=cfg['required_updates']:break

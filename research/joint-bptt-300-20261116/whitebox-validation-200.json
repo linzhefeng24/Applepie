@@ -1,0 +1,27 @@
+{
+  "command": [
+    "research/joint-bptt-300-20261116/validate_native_whitebox.py",
+    "--steps",
+    "200"
+  ],
+  "steps": 200,
+  "force_max_abs_errors": {
+    "actuator_force": 1.2434497875801753e-14,
+    "qfrc_actuator": 3.720981855970251e-16,
+    "qfrc_constraint": 2.3037127760972e-15,
+    "qfrc_passive": 8.673617379884035e-19,
+    "qacc": 3.8562575355172157e-10
+  },
+  "force_audit_seconds": 9.296781583001575,
+  "source_sha256": {
+    "native_whitebox.py": "5c37b78dc636c2f0eddf673b78357a32c8463eabb9c6cb9ce216fa7fe30356d1",
+    "contact_geometry.py": "ab589aefcd495ad3cfaa87ee6c7ffe6660f78a512ce0be8ee4d6b82074784db5",
+    "implicit_solver.py": "2a2475af6eab2e915bc161cfe04aa5dde0f677e48cb332ab0433a633399ff195",
+    "physics.py": "04efd62f2b15e741fef6f7ba6f33f46ab9cc7e63ed61742df3c8cfb09973a11a"
+  },
+  "versions": {
+    "jax": "0.5.3",
+    "numpy": "2.5.4"
+  },
+  "training_allowed": false
+}

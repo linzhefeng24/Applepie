@@ -10,6 +10,7 @@ import jax.numpy as j
 import mujoco
 from mujoco.mjx._src import forward,smooth,constraint
 from contact_geometry import attach
+from noslip import apply as apply_noslip
 from implicit_solver import solve_at_native_acceleration
 
 class NativeWhitebox:
@@ -49,6 +50,7 @@ class NativeWhitebox:
   d=attach(p.m,d,jax.lax.stop_gradient(contacts),jax.lax.stop_gradient(geoms));d=constraint.make_constraint(p.m,d);d=smooth.transmission(p.m,d)
   d=forward.fwd_velocity(p.m,d);d=forward.fwd_actuation(p.m,d);d=forward.fwd_acceleration(p.m,d)
   d=solve_at_native_acceleration(p.m,d,jax.lax.stop_gradient(native_acceleration))
+  d=apply_noslip(p.m,d,iterations=int(self.m.opt.noslip_iterations),tolerance=float(self.m.opt.noslip_tolerance))
   return d
  def whitebox_transition(self,state,k,u,native_acceleration,contacts,geoms):
   p=self.p;d=self.whitebox_data(state,k,u,native_acceleration,contacts,geoms)

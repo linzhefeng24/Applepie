@@ -34,7 +34,7 @@ checks=[];rng=np.random.default_rng(42)
 for d in range(3):
  direction=rng.normal(size=u.shape);direction/=abs(direction).max();ad=float(np.sum(gradient*direction))
  for eps in [.001,.003]:
-  fd=(native_value(u+eps*direction)-native_value(u-eps*direction))/(2*eps);checks.append({'direction':d,'epsilon':eps,'adjoint':ad,'native_finite_difference':fd,'relative_error':abs(ad-fd)/max(abs(ad),abs(fd),1e-20)})
-report['directional_checks']=checks;report['max_directional_relative_error']=max(x['relative_error'] for x in checks);report['gradient_gate_passed']=report['all_gradients_finite'] and report['max_directional_relative_error']<.05
+  fd=float((native_value(u+eps*direction)-native_value(u-eps*direction))/(2*eps));checks.append({'direction':d,'epsilon':eps,'adjoint':ad,'native_finite_difference':fd,'relative_error':abs(ad-fd)/max(abs(ad),abs(fd),1e-20)})
+report['directional_checks']=checks;report['max_directional_relative_error']=float(max(x['relative_error'] for x in checks));report['gradient_gate_passed']=bool(report['all_gradients_finite'] and report['max_directional_relative_error']<.05)
 (R/f'whitebox-validation-{a.steps}.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report,indent=2),flush=True)
 assert report['gradient_gate_passed'],'No joint updates before the physical gradient gate passes'

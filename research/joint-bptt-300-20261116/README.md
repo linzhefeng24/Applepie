@@ -21,3 +21,11 @@ Neural training code is now expanded to all3988 cells and all485045 actual signe
 Full-network manual-bank forward parity passed for1400ms: all12755 spike counts match the native baseline elementwise, with all3988 cells/485045 edges simulated (no boundary replay). Raw group factors start at0.
 
 Physical forward now uses original native MuJoCo callbacks with complete carried state and native contact primals; backward differentiates explicit muscle/rigid/contact equations at those native witnesses. Analytic convex active-feature geometry KKT replaces upstream approximate SDF derivatives. Initial gradient check is not yet valid (nonfinite gradient) and source inspection identified a missing native post-solver NoSlip stage: original AB runs5 sweeps, MJX omits them. Native warmstart stores acceleration before NoSlip, so confusing it with final acceleration caused the observed2342.8 acceleration discrepancy. A faithful differentiable NoSlip port is required before any update. Failures remain preserved; main updates still0/300.
+
+## Current verified state
+
+The manual R2 bank is the only initialization and regularization anchor. Epoch123/1000 archives are comparison metadata only; all207 shared factors start at multiplier1. No main optimizer updates have run (0/300).
+
+The native NoSlip5-sweep stage and native inertia-box fluid terms are now reproduced in the white-box backward equations. At the audited initial step, muscle/actuator/constraint/passive-force errors are respectively1.25e-14,3.73e-16,2.31e-15,8.68e-19; acceleration error3.86e-10. These are numerical parity tests, not training results.
+
+The inactive zero-width muscle-smoothing branch is protected against0/0 in reverse mode without changing its forward formula. The native-forward10-step (1ms) directional gradient check passes: maximum relative error0.002648 across three directions and two perturbation sizes. Full1400ms neural forward parity also passes. The longer200-step (20ms) physics gradient check is still pending; training remains gated. Current environment is isolated physics-bptt-053-env (JAX0.5.3); original AB model remains unchanged.

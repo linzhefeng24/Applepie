@@ -10,7 +10,7 @@ if version('mujoco')!='3.3.2' or version('mujoco-mjx')!='3.3.2':raise RuntimeErr
 root=Path(distribution('mujoco-mjx').locate_file('mujoco/mjx/_src'))
 records=[]
 source=R.parent/'physics-bptt-20261116/source'
-baselines={name:(R/'mjx-smooth-upstream.py.txt').read_text() if name=='smooth.py' else (R/'mjx-collision-driver-upstream.py.txt').read_text() if name=='collision_driver.py' else (source/('mjx__mujoco__mjx___src__'+name)).read_text() for name in ['types.py','smooth.py','solver.py','io.py','collision_driver.py']}
+baselines={name:(R/'mjx-smooth-upstream.py.txt').read_text() if name=='smooth.py' else (R/'mjx-collision-driver-upstream.py.txt').read_text() if name=='collision_driver.py' else (R/'mjx-passive-upstream.py.txt').read_text() if name=='passive.py' else (source/('mjx__mujoco__mjx___src__'+name)).read_text() for name in ['types.py','smooth.py','solver.py','io.py','collision_driver.py','passive.py','support.py']}
 texts=dict(baselines)
 def change(name,old,new):
  s=texts[name]
@@ -54,6 +54,11 @@ change('collision_driver.py', "        _, idx = jax.lax.top_k(-contact.dist, k=m
 change('collision_driver.py', "    # collapse contacts together, ensuring they are grouped by condim", "    # collapse contacts together, ensuring they are grouped by condim") if False else None
 change('collision_driver.py', "    groups[key] = contact.replace(dist=dist, pos=pos, frame=frame)", "    if not set(key.types) & _GEOM_NO_BROADPHASE:\n      center_delta = d.geom_xpos[contact.geom[:, 1]] - d.geom_xpos[contact.geom[:, 0]]\n      separation = jp.sqrt(jp.maximum(jp.sum(center_delta**2, axis=-1), 1e-30)) - m.geom_rbound[contact.geom[:, 0]] - m.geom_rbound[contact.geom[:, 1]]\n      gap = jp.maximum(m.geom_gap[contact.geom[:, 0]], m.geom_gap[contact.geom[:, 1]])\n      dist = jp.where(separation > contact.includemargin + gap, separation, dist)\n    groups[key] = contact.replace(dist=dist, pos=pos, frame=frame)")
 change('solver.py', "      qacc_warmstart=ctx.qacc,", "      solver_niter=ctx.solver_niter,\n      qacc_warmstart=ctx.qacc,")
+# Native inertia-box fluid uses mjMINVAL1e-15 and true positive body mass.
+change('passive.py', "  box = 6.0 * jp.clip(jp.sum(box, axis=-1), a_min=1e-12)\n  box = jp.sqrt(box / jp.maximum(mass, 1e-12)) * (mass > 0.0)", "  box = 6.0 * jp.maximum(jp.sum(box, axis=-1), 1e-15)\n  box = jp.sqrt(box / jp.where(mass > 0.0, mass, 1.0)) * (mass > 0.0)")
+# Keep hard muscle dynamics at width0; avoid0/0 in an UNUSED soft branch
+# contaminating reverse-mode0/0 even though all primal forces are finite.
+change('support.py', "      dctrl / smoothing_width + 0.5", "      dctrl / jp.where(smoothing_width < mujoco.mjMINVAL, 1.0, smoothing_width) + 0.5")
 for name,text in texts.items():
  (root/name).write_text(text)
  records.append({'file':name,'before_sha256':hashlib.sha256(baselines[name].encode()).hexdigest(),'after_sha256':hashlib.sha256(text.encode()).hexdigest()})

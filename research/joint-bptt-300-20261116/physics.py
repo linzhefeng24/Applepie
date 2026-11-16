@@ -1,4 +1,4 @@
-"""White-box MJX3.3.2 AB dynamics with BODY adhesion and reverse solver scan.
+"""Immutable native AB data and white-box derivative templates.
 Parameters/initial conditions come only from the immutable original AB archive.
 Contact capacity is guarded: reaching it invalidates a rollout/update.
 """
@@ -13,8 +13,6 @@ R=Path(__file__).resolve().parent;ROOT=R.parents[1]
 
 class ABPhysics:
  def __init__(self,config):
-  from implicit_solver import install
-  install()
   self.cfg=config;p=ROOT/config['body_archive'];assert hashlib.sha256(p.read_bytes()).hexdigest()==config['body_archive_sha256']
   directory=R/'cache/model';directory.mkdir(parents=True,exist_ok=True)
   with zipfile.ZipFile(p) as z:
@@ -33,23 +31,3 @@ class ABPhysics:
   # Every field below is immutable physical data. Templates are reset to the
   # current carried physical state; carried state itself is never reset.
   self.template=self.template.replace(mocap_pos=j.asarray(self.native.data.mocap_pos),mocap_quat=j.asarray(self.native.data.mocap_quat),eq_active=j.asarray(self.native.data.eq_active))
- def step(self,state,inputs):
-  k,u=inputs;q,v,a,w=state
-  ctrl=self.controls[k].at[self.muscles].set(u)
-  d=self.template.replace(time=k*self.dt,qpos=q,qvel=v,act=a,qacc_warmstart=w,ctrl=ctrl)
-  d=mjx.step(self.m,d)
-  g1,g2=d.contact.geom[:,0],d.contact.geom[:,1]
-  gap=j.maximum(self.m.geom_gap[g1],self.m.geom_gap[g2]);valid=(d.contact.dist<d.contact.includemargin+gap)&(g1>=0)&(g2>=0)
-  counts=j.stack([j.sum(valid*(self.contact_dims==dim)) for dim in sorted(set(self.contact_dims))]);overflow=j.any(counts>=self.cfg['contact_capacity_per_dim'])
-  finite=j.all(j.isfinite(d.qpos))&j.all(j.isfinite(d.qvel))&j.all(j.isfinite(d.act))
-  state=(d.qpos,d.qvel,d.act,d.qacc_warmstart)
-  return state,(d.qpos,overflow,finite,counts)
- def rollout(self,physical_u):
-  steps=physical_u.shape[0]
-  final,output=jax.lax.scan(jax.checkpoint(self.step),self.initial,(j.arange(steps),physical_u))
-  return final,output
- def objective(self,physical_u):
-  final,(q,overflow,finite,counts)=self.rollout(physical_u);loss=j.mean((q[:,self.joint_ids]-self.target[:len(physical_u)])**2)
-  valid=j.all(finite)&~j.any(overflow)
-  loss=j.where(valid,loss,j.nan)
-  return loss,{'joint_q':q[:,self.joint_ids],'overflow':j.any(overflow),'finite':j.all(finite),'max_contacts':j.max(counts,axis=0)}

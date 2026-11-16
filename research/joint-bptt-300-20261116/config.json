@@ -7,9 +7,6 @@
   ],
   "pilot_updates_each": 5,
   "coefficient_selection_score_lambda": 1.0,
-  "initial_checkpoint_epoch": null,
-  "initial_checkpoint_archive": "bptt-checkpoint-1000-44304aa747c7.zip",
-  "initial_checkpoint_archive_sha256": "44304aa747c7078755cb16720d39a32ec839cc5e4953b47fcb3bf2fbd888fe70",
   "body_archive": "research/assets/flymimic-legacy-AB-twofile.zip",
   "body_archive_sha256": "60a720b2a367556c7408b82d6d63998039b091dab3652ea027fe42f4cb37267a",
   "baseline_model_sha256": "858d1818b8d8394c95bb62a6ce60474cb534a83b94265ef8615e367c110d262c",
@@ -31,14 +28,19 @@
   "save_every_updates": 1,
   "epoch_definition": "One complete continuous native0.4s reference joint-trajectory forward/backward pass plus one actual Adam update. Pilot updates do not count toward300.",
   "objective": "Joint-angle trajectory MSE(rad\u00b2) plus lambda*mean(actual fractional neural parameter change from pre-BPTT manually tuned baseline squared); no u target loss",
-  "scope": "Full3988-cell hard-forward surrogate HH BPTT on all485045 real signed edges; no outer spike replay. Shared207 variables on manual parameter bank. Full native-model MJX physical BPTT; body/auxiliary schedules frozen.",
+  "scope": "Full3988-cell hard-forward surrogate HH BPTT on all485045 real signed edges; no outer spike replay. Shared207 variables on manual parameter bank. Exact native AB forward with white-box analytic/implicit physical BPTT; body/auxiliary schedules frozen.",
   "complete": false,
   "parameter_anchor": "pre-BPTT manually tuned UnifiedFlyModel858d1818 baseline",
   "start_from_manual_parameters": true,
   "anchor_model_sha256": "858d1818b8d8394c95bb62a6ce60474cb534a83b94265ef8615e367c110d262c",
-  "initial_checkpoint_archive_role": "comparison only; not an optimization input",
   "manual_cell_array_sha256": "c4d83f204c0ed79cddafd40ebf269f8d9059d6330be38e6b90254a3d36f79ac8",
   "jax": "0.5.3",
   "contact_derivative_backend": "white-box implicit contact derivative evaluated at native constraint acceleration; muscle/rigid/contact derivatives in patched MJX",
-  "physical_forward": "exact original native MuJoCo3.3.2 with complete AB state and auxiliary schedule"
+  "physical_forward": "exact original native MuJoCo3.3.2 with complete AB state and auxiliary schedule",
+  "historical_checkpoint_comparison": {
+    "initial_checkpoint_epoch": null,
+    "initial_checkpoint_archive": "bptt-checkpoint-1000-44304aa747c7.zip",
+    "initial_checkpoint_archive_sha256": "44304aa747c7078755cb16720d39a32ec839cc5e4953b47fcb3bf2fbd888fe70",
+    "initial_checkpoint_archive_role": "comparison only; not an optimization input"
+  }
 }
