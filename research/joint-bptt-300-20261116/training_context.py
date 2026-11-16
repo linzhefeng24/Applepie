@@ -12,9 +12,8 @@ class JointContext:
  def __init__(self):
   self.cfg=json.loads((R/'config.json').read_text());c=self.cfg
   os.environ['BPTT_CONFIG']=str(R/'neural-config.json')
-  sys.path.insert(0,str(ROOT/'research/surrogate-bptt-20261115'))
-  from jax_hh import DifferentiableHH
-  self.neural=DifferentiableHH();assert self.neural.model.sha256==c['baseline_model_sha256']
+  from full_hh import FullDifferentiableHH
+  self.neural=FullDifferentiableHH();assert self.neural.model.sha256==c['baseline_model_sha256']
   # Original group factors equal1 in the manually tuned baseline; raw=0.
   self.reference=j.zeros((self.neural.n_groups,len(self.neural.cfg['train_fields'])),dtype=j.float64)
   assert c['start_from_manual_parameters'] and self.neural.model.sha256==c['anchor_model_sha256']

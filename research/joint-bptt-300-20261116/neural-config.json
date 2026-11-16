@@ -40,7 +40,7 @@
   "jax_x64": true,
   "seed": 42,
   "checkpoint_chunk_ms": 1.0,
-  "scope": "Local260-cell surrogate HH BPTT with baseline spike boundaries; full3988 hard network validation required. Full white-box patched MJX physical BPTT; body/auxiliary schedules frozen.",
+  "scope": "Full3988 cells, all actual edges, no external baseline spike boundaries",
   "selection": "native joint-only objective; no u loss",
   "frozen": [
     "anatomical graph and counts",

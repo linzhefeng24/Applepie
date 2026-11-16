@@ -53,6 +53,7 @@ change('collision_driver.py', "        _, idx = jax.lax.top_k(-contact.dist, k=m
 # MJX's approximate ellipsoid SDF can report false overlap for distant shapes.
 change('collision_driver.py', "    # collapse contacts together, ensuring they are grouped by condim", "    # collapse contacts together, ensuring they are grouped by condim") if False else None
 change('collision_driver.py', "    groups[key] = contact.replace(dist=dist, pos=pos, frame=frame)", "    if not set(key.types) & _GEOM_NO_BROADPHASE:\n      center_delta = d.geom_xpos[contact.geom[:, 1]] - d.geom_xpos[contact.geom[:, 0]]\n      separation = jp.sqrt(jp.maximum(jp.sum(center_delta**2, axis=-1), 1e-30)) - m.geom_rbound[contact.geom[:, 0]] - m.geom_rbound[contact.geom[:, 1]]\n      gap = jp.maximum(m.geom_gap[contact.geom[:, 0]], m.geom_gap[contact.geom[:, 1]])\n      dist = jp.where(separation > contact.includemargin + gap, separation, dist)\n    groups[key] = contact.replace(dist=dist, pos=pos, frame=frame)")
+change('solver.py', "      qacc_warmstart=ctx.qacc,", "      solver_niter=ctx.solver_niter,\n      qacc_warmstart=ctx.qacc,")
 for name,text in texts.items():
  (root/name).write_text(text)
  records.append({'file':name,'before_sha256':hashlib.sha256(baselines[name].encode()).hexdigest(),'after_sha256':hashlib.sha256(text.encode()).hexdigest()})

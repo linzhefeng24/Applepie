@@ -1,1 +1,10 @@
-{"completed_updates":0,"required_updates":300,"complete":false,"stage":"differentiable physics implementation and parity validation","optimizer_started":false}
+{
+  "completed_updates": 0,
+  "required_updates": 300,
+  "complete": false,
+  "stage": "full-graph and physical parity validation; no optimizer updates",
+  "optimizer_started": false,
+  "parameter_anchor": "pre-BPTT manually tuned R2 bank",
+  "full_neural_graph_cells": 3988,
+  "source_edges": 485045
+}
