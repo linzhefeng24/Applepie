@@ -1,0 +1,48 @@
+{
+  "A": {
+    "duration_s": 0.39999999999997227,
+    "min_body_up_z": 0.9889104691726948,
+    "root_displacement_mm": [
+      1.4121096286211856,
+      0.2175867712779005,
+      -0.2628897463544805
+    ],
+    "finite_continuous_physics": true,
+    "extra_applied_forces": false,
+    "exact_archive_replay": true
+  },
+  "B": {
+    "duration_s": 0.39999999999997227,
+    "min_body_up_z": 0.9636000224467784,
+    "root_displacement_mm": [
+      1.219031415304532,
+      0.13766468679493526,
+      -0.18619823686819373
+    ],
+    "finite_continuous_physics": true,
+    "extra_applied_forces": false,
+    "exact_archive_replay": true
+  },
+  "Epoch123": {
+    "duration_s": 0.39999999999997227,
+    "min_body_up_z": 0.95245730243153,
+    "root_displacement_mm": [
+      -0.08114824272913823,
+      0.28424930285240974,
+      -0.30176689460073225
+    ],
+    "finite_continuous_physics": true,
+    "extra_applied_forces": false
+  },
+  "Epoch1000": {
+    "duration_s": 0.39999999999997227,
+    "min_body_up_z": 0.9638216954530653,
+    "root_displacement_mm": [
+      -0.17432231209371452,
+      0.25386420976561774,
+      -0.3698239740296587
+    ],
+    "finite_continuous_physics": true,
+    "extra_applied_forces": false
+  }
+}
