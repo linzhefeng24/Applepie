@@ -1,0 +1,218 @@
+{
+  "scope": "Freshly downloaded and SHA-verified GitHub artifacts; analysis only, not a new simulation or training run.",
+  "completed_updates": 1000,
+  "best_training_step": 123,
+  "history_update_indices": 1001,
+  "upstream_training_source_revision": "da9d0e17d1215879c894b9668dbc00cd77f03163",
+  "input_sha256": {
+    "full_validation_zip": "569e64258dac14739684725603af5c5565b762bc04b29f03d6b2985a3415b4bf",
+    "optimizer_checkpoint_zip": "44304aa747c7078755cb16720d39a32ec839cc5e4953b47fcb3bf2fbd888fe70"
+  },
+  "audit_script_sha256": "ca3125c7a5454bbe83ea3aa98181dda25f3a7ae4479d92daa2fd7c480b1abf48",
+  "full_network_validation_status": "completed",
+  "mapped_channels": 104,
+  "unmapped_channels": 26,
+  "metrics": {
+    "train_mse_mapped": {
+      "baseline": 0.32403441740488376,
+      "candidate": 0.3031156464864754,
+      "relative_reduction_percent": 6.455725007837732
+    },
+    "holdout_mse_mapped": {
+      "baseline": 0.3044851753140659,
+      "candidate": 0.2983496032158033,
+      "relative_reduction_percent": 2.0150643104164163
+    },
+    "holdout_mse_all130": {
+      "baseline": 0.2822950991076803,
+      "candidate": 0.2773866414290702,
+      "relative_reduction_percent": 1.7387682939326476
+    }
+  },
+  "max_relative_parameter_change": 0.08194982023661163,
+  "rms_relative_parameter_change": 0.046031933858315215,
+  "affected_cells": 341,
+  "quiet_spikes": 0,
+  "PFL3_DNa02_Hz": {
+    "523769": 53.33333333333333,
+    "10360": 8.88888888888889
+  },
+  "BRK_BON1_candidate_Hz": {
+    "39880": 60.0,
+    "800041": 62.22222222222222
+  },
+  "FG_window_DNg100_Hz": {
+    "10045": 6.666666666666666,
+    "10056": 4.444444444444445
+  },
+  "FG_baseline_reference_Hz": {
+    "10045": 2.2222222222222223,
+    "10056": 2.2222222222222223
+  },
+  "FG_comparison_scope": "Same saved R2 BPN+FG protocol; residual firing increases after fit. This is not a matched BPN-alone causal assay or proof of behavioural stopping.",
+  "selected_homologous_pairs": [
+    {
+      "left_muscle": "LH:tibia_extensor",
+      "right_muscle": "RH:tibia_extensor",
+      "window_ms": [
+        400,
+        1400
+      ],
+      "left_mean_u": 0.11597155750007998,
+      "right_mean_u": 0.30071709977993455,
+      "zero_lag_correlation": 0.7508706419368103,
+      "interpretation": "Descriptive selected-pair activity; not proof of stable opposite-phase coordination."
+    },
+    {
+      "left_muscle": "LH:pleural_remotor_and_abductor",
+      "right_muscle": "RH:pleural_remotor_and_abductor",
+      "window_ms": [
+        400,
+        1400
+      ],
+      "left_mean_u": 0.430533184813862,
+      "right_mean_u": 0.4444245082277883,
+      "zero_lag_correlation": 0.862842627324807,
+      "interpretation": "Descriptive selected-pair activity; not proof of stable opposite-phase coordination."
+    }
+  ],
+  "selected_spike_times_ms": {
+    "929612": [
+      212,
+      235,
+      344,
+      382,
+      582,
+      605,
+      712,
+      764,
+      803,
+      851,
+      890,
+      1080,
+      1104,
+      1272,
+      1295,
+      1398
+    ],
+    "902520": [
+      213,
+      228,
+      240,
+      276,
+      304,
+      333,
+      344,
+      383,
+      583,
+      599,
+      610,
+      717,
+      763,
+      803,
+      849,
+      887,
+      1081,
+      1096,
+      1111,
+      1274,
+      1289,
+      1301,
+      1404
+    ],
+    "800771": [
+      218,
+      233,
+      341,
+      379,
+      588,
+      603,
+      717,
+      761,
+      800,
+      847,
+      889,
+      1086,
+      1101,
+      1279,
+      1293,
+      1397
+    ],
+    "801113": [
+      222,
+      235,
+      339,
+      379,
+      592,
+      606,
+      720,
+      760,
+      799,
+      846,
+      883,
+      1090,
+      1103,
+      1282,
+      1296,
+      1403
+    ],
+    "800621": [
+      216,
+      240,
+      298,
+      326,
+      349,
+      386,
+      586,
+      610,
+      717,
+      769,
+      810,
+      856,
+      897,
+      1084,
+      1109,
+      1276,
+      1300,
+      1405
+    ],
+    "800158": [
+      207,
+      218,
+      230,
+      244,
+      280,
+      308,
+      338,
+      349,
+      386,
+      421,
+      577,
+      588,
+      601,
+      614,
+      694,
+      721,
+      756,
+      768,
+      789,
+      807,
+      852,
+      890,
+      924,
+      1074,
+      1085,
+      1098,
+      1111,
+      1267,
+      1278,
+      1291,
+      1304,
+      1384,
+      1406
+    ]
+  },
+  "left_right_alternation_established": false,
+  "full_laboratory_phenomena_reproduction_claimed": false,
+  "adoption": "Keep as fitted candidate; waveform fit improves but phase coordination and all neural constraints have not passed."
+}
