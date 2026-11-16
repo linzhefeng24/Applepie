@@ -1,0 +1,27 @@
+{
+  "cases": [
+    {
+      "case": "existing312",
+      "passed": true,
+      "exit_code": 0
+    },
+    {
+      "case": "simulated314",
+      "passed": true,
+      "exit_code": 0
+    },
+    {
+      "case": "failed_runtime_download",
+      "passed": true,
+      "exit_code": 9
+    }
+  ],
+  "scope": "Shell integration with realPython3.12 and simulated unsupported-system-Python/uv-download paths. No nativePython3.14 numerical training claimed. No dependency installation or optimizer update performed.",
+  "jaxlib053_pypi_wheel_tags": [
+    "cp310",
+    "cp311",
+    "cp312",
+    "cp313"
+  ],
+  "jaxlib053_cp314_wheels": 0
+}

@@ -7,6 +7,20 @@ ZIP已下载、解压成功，可以沿用原目录。Docker软件源签名错�
 以下在现有 **Ubuntu/WSL终端** 执行，不在Windows PowerShell执行。
 使用uv提供的独立Python3.12，不替换系统Python，也不需要重装WSL。
 
+## 自动处理版本（推荐）
+
+```bash
+cd ~/applepie_local
+wget -O setup_auto.sh https://raw.githubusercontent.com/linzhefeng24/Applepie/main/research/joint-bptt-300-20261116/server/setup_auto.sh
+bash setup_auto.sh
+```
+
+脚本自动寻找Python3.12；没有时自动准备uv及项目专用Python3.12，然后调用原始setup。
+现有系统Python3.14保留，不需要手工选择解释器。自动脚本是新增文件，不覆盖原包已校验的setup.sh、模型或训练文件。
+当前固定依赖jaxlib0.5.3的公开安装包只有cp310～cp313，没有cp314；这不是删除一个版本检查就能解决的。
+
+## 手动处理（自动脚本无法下载时）
+
 ```bash
 cd ~/applepie_local
 
