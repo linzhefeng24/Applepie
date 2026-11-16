@@ -1,0 +1,40 @@
+{
+  "evidence_kind": "user-pasted local WSL benchmark output; not independently executed or downloaded by assistant",
+  "run_basename": "20261116T152132Z-lowmem-benchmark-573e43",
+  "system_memory_kib": 7836316,
+  "cpu_limit": 4,
+  "jax_device": "TFRT_CPU_0",
+  "full_physical_steps": 4000,
+  "neural_ms": 1400,
+  "manual_model_sha256": "858d1818b8d8394c95bb62a6ce60474cb534a83b94265ef8615e367c110d262c",
+  "completed_updates_in_this_benchmark": 1,
+  "phase": "pilot",
+  "coefficient": 10.0,
+  "formal_main_updates": 0,
+  "first_update_seconds": 1629.0878444560003,
+  "first_joint_mse_before_update": 0.11717840309893401,
+  "first_gradient_norm": 3346.212779933863,
+  "max_fractional_parameter_drift_after_first_update": 0.00199993329947355,
+  "first_stage_seconds": {
+    "forward": 151.0155454709993,
+    "physics": 687.3753997289996,
+    "backward": 776.8677406799998
+  },
+  "first_stage_peak_rss_kib": {
+    "forward": 1600652,
+    "physics": 4014712,
+    "backward": 2185640
+  },
+  "first_parent_peak_rss_kib": 1597124,
+  "conservative_process_peak_upper_kib": 5611836,
+  "conservative_process_peak_upper_gib": 5.351863861083984,
+  "second_joint_mse_before_update": 0.1162081419764149,
+  "second_forward_seconds": 145.10380785100006,
+  "second_physics_seconds": 677.5468696839998,
+  "status_at_end_of_paste": "Second backward stage started; no second-update timing or completion shown",
+  "first_physics_compile_alarm": "4m34s compile warning; stage subsequently completed",
+  "second_physics_compile_alarm": "4m33s compile warning; stage subsequently completed",
+  "interpretation": "Low-memory mode completed one real update under current WSL budget; repeated physical-worker compilation is expected from process isolation, not a runtime error. Steady second-update total time still unconfirmed.",
+  "export_independently_verified": false,
+  "speed_comparison_limit": "Do not attribute the whole difference versus standard GitHub training to hardware: the low-memory algorithm recomputes and recompiles more."
+}
