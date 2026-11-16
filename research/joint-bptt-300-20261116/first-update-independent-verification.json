@@ -1,0 +1,15 @@
+{
+  "independently_downloaded_checkpoint_sha256": "f58fc4de05c2950297dcaa3d174a35e1e489d2af14063c91788d7c47d2ce3181",
+  "bytes": 12407,
+  "pilot_coefficient": 0.1,
+  "actual_pilot_updates": 1,
+  "actual_main_updates": 0,
+  "required_main_updates": 300,
+  "nonzero_raw_and_optimizer_moments_verified": true,
+  "max_fractional_change_from_manual": 0.001999933299473436,
+  "joint_mse_before_first_update": 0.11717840309893407,
+  "first_update_seconds": 817.243620033,
+  "training_source_revision": "1847a4d706b8e73c09c9c25c6e92b4d74fdd3de5",
+  "run_url": "https://github.com/linzhefeng24/Applepie/actions/runs/43848029276",
+  "improvement_after_update": "not evaluated yet; do not infer improvement from finite nonzero gradient"
+}
