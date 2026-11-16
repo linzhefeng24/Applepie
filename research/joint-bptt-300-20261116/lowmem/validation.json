@@ -1,0 +1,35 @@
+{
+  "status": "full neural reverse still running; no promotion yet",
+  "physical_steps": 4000,
+  "neural_ms": 1400,
+  "completed_stages": [
+    {
+      "stage": "forward",
+      "raw_sha256": "f8ae869707f0b5b28616c2bd13782d5d89ee022dbc737f19ca0cd46f6cd9af64",
+      "manual_model_sha256": "858d1818b8d8394c95bb62a6ce60474cb534a83b94265ef8615e367c110d262c",
+      "precision": "float64",
+      "physical_steps": 4000,
+      "neural_ms": 1400,
+      "seconds": 112.99323231299786,
+      "peak_rss_kib": 1596424
+    },
+    {
+      "stage": "physics",
+      "raw_sha256": "f8ae869707f0b5b28616c2bd13782d5d89ee022dbc737f19ca0cd46f6cd9af64",
+      "manual_model_sha256": "858d1818b8d8394c95bb62a6ce60474cb534a83b94265ef8615e367c110d262c",
+      "precision": "float64",
+      "physical_steps": 4000,
+      "neural_ms": 1400,
+      "joint_loss": 0.11717840309893407,
+      "all_finite": true,
+      "seconds": 440.8817800199977,
+      "peak_rss_kib": 4020916
+    }
+  ],
+  "numerical_parity_passed": false,
+  "optimizer_updates": 0,
+  "reference_joint_loss": 0.11717840309893407,
+  "joint_loss_matches_archived_reference": true,
+  "full_gradient_parity": "pending",
+  "full_process_tree_memory_bound": "pending"
+}
