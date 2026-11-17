@@ -1,0 +1,53 @@
+{
+  "source_kind": "Independent read and SHA256 verification of persisted training history; no new simulation",
+  "source_checkpoint": {
+    "completed_updates": 80,
+    "required_updates": 300,
+    "complete": false,
+    "phase": "main",
+    "pilot_index": 3,
+    "phase_updates": 80,
+    "selected_coefficient": 10.0,
+    "parameter_anchor": "pre-BPTT manually tuned bank",
+    "manual_model_sha256": "858d1818b8d8394c95bb62a6ce60474cb534a83b94265ef8615e367c110d262c",
+    "source_revision": "1847a4d706b8e73c09c9c25c6e92b4d74fdd3de5",
+    "checkpoint_asset": "joint-main-e0080-p3-80-1c552714d327.zip",
+    "sha256": "1c552714d327277088c47bf7d6ccccd3aceb5b4f80c74a551f3236efc2f60ead",
+    "bytes": 30952,
+    "checkpoint_tag": "joint-trajectory-bptt-300-20261116",
+    "checkpoint_url": "https://github.com/linzhefeng24/Applepie/releases/download/joint-trajectory-bptt-300-20261116/joint-main-e0080-p3-80-1c552714d327.zip",
+    "draft_asset": true,
+    "fresh_asset_download_verified": true,
+    "run_url": "https://github.com/linzhefeng24/Applepie/actions/runs/43998417893",
+    "last": {
+      "phase": "main",
+      "coefficient": 10.0,
+      "phase_updates": 80,
+      "completed_main_updates": 80,
+      "objective_before_update": 0.1275093592028077,
+      "joint_mse_before_update": 0.11432333290656449,
+      "regularization_before_update": 0.013186026296243209,
+      "gradient_norm": 3285.3987897481584,
+      "max_parameter_drift_after_update": 0.09533437941574846,
+      "max_raw_update": 0.010939451641213072,
+      "seconds": 493.9942389890002,
+      "max_contacts": [
+        8,
+        7
+      ]
+    },
+    "epoch_definition": "One complete continuous native0.4s reference joint-trajectory forward/backward pass plus one actual Adam update. Pilot updates do not count toward300."
+  },
+  "checkpoint_sha256_verified": true,
+  "saved_completed_main_updates": 80,
+  "manual_baseline_joint_mse_rad2": 0.11717840309893407,
+  "lowest_evaluated_joint_mse_rad2": 0.11160650691369296,
+  "mse_reduction_percent": 4.7550538647780805,
+  "rmse_reduction_percent": 2.4064827279896006,
+  "parameter_updates_at_best_evaluation": 68,
+  "history_row_update_number": 69,
+  "evaluation_timing": "Before update69, thus after68 actual updates; best measured joint MSE, not regularized selection score",
+  "best_pilot_endpoint_mse_rad2": 0.11394052323192345,
+  "full_300_updates_complete": false,
+  "latest_post_update_parameters_not_necessarily_evaluated_yet": true
+}
