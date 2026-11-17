@@ -1,0 +1,87 @@
+{
+  "scope": "full400ms native physical loss; same cached VJP and directions as physics.json; smaller perturbations",
+  "checks": [
+    {
+      "direction": "random0",
+      "epsilon": 1e-07,
+      "adjoint_projection": -0.0013666167171429839,
+      "native_central_difference": -0.0012262970500165338,
+      "relative_error": 0.10267667983734241,
+      "loss_plus": 0.09540468416585553,
+      "loss_minus": 0.09540468441111494
+    },
+    {
+      "direction": "random0",
+      "epsilon": 1e-06,
+      "adjoint_projection": -0.0013666167171429839,
+      "native_central_difference": -0.001226286419631073,
+      "relative_error": 0.10268445845246356,
+      "loss_plus": 0.0954046830754981,
+      "loss_minus": 0.09540468552807094
+    },
+    {
+      "direction": "random0",
+      "epsilon": 3e-06,
+      "adjoint_projection": -0.0013666167171429839,
+      "native_central_difference": -0.001216436208706373,
+      "relative_error": 0.10989219329218708,
+      "loss_plus": 0.09540468065078817,
+      "loss_minus": 0.09540468794940542
+    },
+    {
+      "direction": "random1",
+      "epsilon": 1e-07,
+      "adjoint_projection": -0.0010985742869032249,
+      "native_central_difference": -0.0010735270311590384,
+      "relative_error": 0.02279978335811255,
+      "loss_plus": 0.09540468418148851,
+      "loss_minus": 0.09540468439619391
+    },
+    {
+      "direction": "random1",
+      "epsilon": 1e-06,
+      "adjoint_projection": -0.0010985742869032249,
+      "native_central_difference": -0.001085133927158921,
+      "relative_error": 0.01223436585448477,
+      "loss_plus": 0.0954046832158134,
+      "loss_minus": 0.09540468538608125
+    },
+    {
+      "direction": "random1",
+      "epsilon": 3e-06,
+      "adjoint_projection": -0.0010985742869032249,
+      "native_central_difference": -0.0010706959323777039,
+      "relative_error": 0.025376849665858625,
+      "loss_plus": 0.09540468111462412,
+      "loss_minus": 0.09540468753879972
+    },
+    {
+      "direction": "negative_gradient",
+      "epsilon": 1e-07,
+      "adjoint_projection": -0.1337787465341706,
+      "native_central_difference": -0.12443202343503934,
+      "relative_error": 0.06986702552743579,
+      "loss_plus": 0.09540467187942532,
+      "loss_minus": 0.09540469676583001
+    },
+    {
+      "direction": "negative_gradient",
+      "epsilon": 1e-06,
+      "adjoint_projection": -0.1337787465341706,
+      "native_central_difference": -0.12457764596990328,
+      "relative_error": 0.06877849286707971,
+      "loss_plus": 0.09540455983481368,
+      "loss_minus": 0.09540480899010562
+    },
+    {
+      "direction": "negative_gradient",
+      "epsilon": 3e-06,
+      "adjoint_projection": -0.1337787465341706,
+      "native_central_difference": -0.48815175273988115,
+      "relative_error": 0.7259484457787934,
+      "loss_plus": 0.09540198909932433,
+      "loss_minus": 0.09540491800984077
+    }
+  ],
+  "seconds": 71.03185357200027
+}

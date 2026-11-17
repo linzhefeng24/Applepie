@@ -13,3 +13,7 @@ python audit.py algebra
 python ../joint-bptt-physical-bounds-20261117/patch_mjx.py
 python audit.py physics --replay /path/to/Joint_BestUpdate16_Replay.zip
 ```
+
+Small-step refinement completed in physics-precision.json. At1e-7..1e-6, random0 shows about10-11% error, random1 about1-3%, and the negative-gradient projection about7%. At3e-6 the negative-gradient estimate changes abruptly (about73% disagreement), showing contact/solver branch sensitivity. These results are not a strict pass.
+
+Optimizer audit reproduces the36->37 Adam update exactly (max difference0) and the second moment within8.7e-19. Manual regularizer norm0.0833 versus combined approximate gradient15648 suggests weak relative influence. This is a scaling issue, not a wrong regularizer center.

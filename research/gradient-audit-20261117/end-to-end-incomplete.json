@@ -1,0 +1,25 @@
+{
+  "point": "best16",
+  "coefficient": 10,
+  "parameter_direction": "negative actual clipped-backward surrogate direction at16, before Adam momentum",
+  "predicted_total_directional_derivative": -41723.036592439305,
+  "source_archives": [
+    {
+      "name": "joint-main-e0016-p0-16-22ecd8152b9a.zip",
+      "sha256": "22ecd8152b9ae59ba195474cc118da62d8296d8c74e9bb61e9a89e5e4b10f96b",
+      "bytes": 23399
+    },
+    {
+      "name": "joint-main-e0017-p0-17-ff95f34dc05a.zip",
+      "sha256": "ff95f34dc05a9cb9bf9455c8e90115c723ec44a1687566df7c420f86ce36c63d",
+      "bytes": 23492
+    }
+  ],
+  "checks": [],
+  "comparison_caveat": "Hard spike finite differences need not match a surrogate with temporal truncation and nonlinear cotangent clipping. Direct descent or ascent is measured rather than assumed.",
+  "baseline": {
+    "joint_mse": 0.09540468428846048,
+    "regularization": 0.023650879848012254,
+    "total": 0.11905556413647274
+  }
+}

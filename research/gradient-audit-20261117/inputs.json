@@ -22,6 +22,15 @@
   "source_revision_at_audit_start": "f474304669ed21b8364cd10fc63adc3cf4dec424",
   "seed": 42,
   "parameter_scope": "best16 physics; manual regularizer algebra; actual Adam36->37",
-  "incomplete_experiment": "physics full400ms running; no pass inferred from finite gradient",
-  "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 JAX_PLATFORMS=cpu XLA_FLAGS=\"--xla_cpu_multi_thread_eigen=false --xla_cpu_enable_fast_math=false\" python audit.py physics --replay Joint_BestUpdate16_Replay.zip"
+  "incomplete_experiment": "full physics and small-step refinement finished; end-to-end parameter perturbations still running",
+  "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 JAX_PLATFORMS=cpu XLA_FLAGS=\"--xla_cpu_multi_thread_eigen=false --xla_cpu_enable_fast_math=false\" python audit.py physics --replay Joint_BestUpdate16_Replay.zip",
+  "software": {
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "jax": "0.5.3",
+    "jaxlib": "0.5.3",
+    "mujoco": "3.3.2",
+    "mujoco-mjx": "3.3.2",
+    "scipy": "1.17.0"
+  }
 }
