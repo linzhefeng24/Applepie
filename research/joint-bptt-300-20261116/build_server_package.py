@@ -17,6 +17,8 @@ for p in R.iterdir():
  if p.is_file() and p.suffix in ['.py','.json','.txt','.md']:copy(p)
 for p in (R/'server').iterdir():
  if p.is_file():copy(p)
+for p in (R/'reference').iterdir():
+ if p.is_file():copy(p)
 for directory in ['research/physics-bptt-20261116/source','research/single-model-delivery-20261115/runtime']:
  for p in (ROOT/directory).rglob('*'):
   if p.is_file() and '__pycache__' not in p.parts:copy(p)

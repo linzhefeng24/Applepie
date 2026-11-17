@@ -11,6 +11,7 @@ import mujoco
 from PIL import Image,ImageDraw
 import imageio_ffmpeg
 from training_context import JointContext
+from reference_panel import load as load_reference_panel
 R=Path(__file__).resolve().parent;OUT=R/'cache/train';D=R/'cache/final';D.mkdir(parents=True,exist_ok=True)
 report=json.loads((OUT/'chunk-report.json').read_text());assert report['completed_updates']>=300
 ctx=JointContext();body=ctx.native_physics;native=ctx.physics.native;p=ctx.physics
@@ -31,16 +32,20 @@ for label,raw in banks.items():
 # Archived direct-A input is a separate mechanical comparison, never copied
 # into any of the neural muscle controls above.
 reference=native.replay_ab('A');panels['DirectAB_A']=reference['full_state'][24::25];metrics['DirectAB_A']=reference['metrics']
-labels=['DirectAB_A','Manual','Best','Epoch300'];video=D/'Joint300_Comparison.mp4';writer=imageio_ffmpeg.write_frames(str(video),(1280,1024),fps=20,codec='libx264',quality=7);writer.send(None)
+panels['Reference_kinematic'],reference_details=load_reference_panel(native,p.target)
+labels=['Reference_kinematic','DirectAB_A','Manual','Best','Epoch300'];video=D/'Joint300_Comparison.mp4';writer=imageio_ffmpeg.write_frames(str(video),(1920,1024),fps=20,codec='libx264',quality=7);writer.send(None)
 try:
  for k in range(min(len(panels[x]) for x in labels)):
-  canvas=Image.new('RGB',(1280,1024),'white');draw=ImageDraw.Draw(canvas)
+  canvas=Image.new('RGB',(1920,1024),'white');draw=ImageDraw.Draw(canvas)
   for i,label in enumerate(labels):
-   image=Image.fromarray(native._image(panels[label][k])).convert('RGB').resize((640,480));x=(i%2)*640;y=(i//2)*512;canvas.paste(image,(x,y+32));draw.text((x+10,y+8),label,fill='black')
+   image=Image.fromarray(native._image(panels[label][k])).convert('RGB').resize((640,480));x=(i%3)*640;y=(i//3)*512;canvas.paste(image,(x,y+32));draw.text((x+10,y+3),label,fill='black')
+   if i==0:draw.text((x+10,y+17),'Prescribed reference; original root motion NOT in loss',fill='black')
   writer.send(np.asarray(canvas))
 finally:writer.close()
 revision=subprocess.run(['git','rev-parse','HEAD'],text=True,capture_output=True)
 result={'completed_main_updates':300,'coefficient_trials':json.loads((OUT/'coefficient-trials.json').read_text()),'selected_coefficient':report['selected_coefficient'],'best_update':best_epoch,'metrics':metrics,'anchor':json.loads((R/'manual-anchor.json').read_text()),'training_source_revision':report['source_revision'],'evaluation_code_revision':revision.stdout.strip() if revision.returncode==0 else 'offline-bundle','limitations':json.loads((R/'validation-report.json').read_text())['limitation'],'physical_body':'free native AB body, same initial state and11 auxiliary schedules, no rescue forces','video':'four panels at10x slow motion; all0.4s physical rollouts are displayed without resets'}
+result['reference_panel']=reference_details
+result['video']='five panels including exact-target kinematic reference, nativeA/manual/best/epoch300;10x slow of full0.4s'
 (D/'evaluation.json').write_text(json.dumps(result,indent=2)+'\n')
 if '--local' in sys.argv:
  print(json.dumps(result,indent=2));sys.exit(0)
@@ -52,6 +57,7 @@ with zipfile.ZipFile(archive,'w',zipfile.ZIP_DEFLATED) as z:
  root=R.parents[1]
  runtime=[p for p in (root/'research/single-model-delivery-20261115/runtime').rglob('*') if p.is_file() and '__pycache__' not in p.parts]
  runtime+=[p for p in R.iterdir() if p.is_file() and p.suffix in ['.py','.json','.md','.txt']]
+ runtime+=[p for p in (R/'reference').iterdir() if p.is_file()]
  runtime+=[p for p in (root/'research/physics-bptt-20261116/source').iterdir() if p.is_file()]
  runtime +=[root/name for name in ['research/single-model-delivery-20261115/build/UnifiedFlyModel/01_model/model.yaml','research/conductance-rebuild-20261114/grouped_parameters.py','research/surrogate-bptt-20261115/input-identity.json','research/assets/flymimic-legacy-AB-twofile.zip']]
  runtime +=[p for p in OUT.iterdir() if p.is_file() and p.suffix in ['.json','.npz']]
