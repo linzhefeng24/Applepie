@@ -1,0 +1,23 @@
+{
+  "updates": [
+    36,
+    37
+  ],
+  "immutable_inputs": [
+    {
+      "name": "joint-main-e0036-p0-36-335bb225242f.zip",
+      "sha256": "335bb225242f895a47982fe2f6d469629acfa6d03ad1d2b8b952d4f7eebc3957"
+    },
+    {
+      "name": "joint-main-e0037-p0-37-7f5f28cf16ca.zip",
+      "sha256": "7f5f28cf16cab46a56c1bd802d470ff2a82e594046426ba937ce9a26b45ed2ec"
+    }
+  ],
+  "adam_update_max_error": 0.0,
+  "second_moment_max_error": 8.673617379884035e-19,
+  "clipped_combined_gradient_norm": 0.9999999999999997,
+  "manual_regularizer_gradient_norm_at_update36": 0.08328688086388553,
+  "logged_combined_gradient_norm_at_update36": 15648.114332636424,
+  "regularizer_to_combined_gradient_norm_ratio": 5.322486728651937e-06,
+  "note": "Combined norm includes surrogate/cotangent-clipped neural path, not an exact hard-forward derivative. A small norm ratio suggests weak regularizer gradient influence; it does not prove every coordinate is dominated."
+}
