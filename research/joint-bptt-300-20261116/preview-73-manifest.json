@@ -1,0 +1,37 @@
+{
+  "completed_main_updates": 73,
+  "render_code_revision": "0ce7add1d20bf5c9433ad682a3eec403624c140e",
+  "source_checkpoint_sha256": "69a3e33ab78dfb154dbc1e7efb87fcc004397632961fdade64255428c2fa6da3",
+  "assets": [
+    {
+      "name": "Joint_Epoch73_Comparison.mp4",
+      "sha256": "668363093f683603ab7b125e0cce420f227486508462781d43b5698dcbe5c4be",
+      "bytes": 1575514,
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/joint-preview-20261117-e0073/Joint_Epoch73_Comparison.mp4"
+    },
+    {
+      "name": "comparison-preview.jpg",
+      "sha256": "7e1a22bcb506ab0fc350d4cbf8793ed608d841c65397bfd532d0ffb18822c158",
+      "bytes": 65571,
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/joint-preview-20261117-e0073/comparison-preview.jpg"
+    },
+    {
+      "name": "Joint_Epoch73.mp4",
+      "sha256": "6bb5c8f3b8bd614a2eb24277ed389928c3cf32fbdeaa481dbf4e28689fafd4d4",
+      "bytes": 502128,
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/joint-preview-20261117-e0073/Joint_Epoch73.mp4"
+    },
+    {
+      "name": "Joint_Epoch73_Replay.zip",
+      "sha256": "29af84343e3fdf98b1e5c4c7605c4f1cc6c4ec12f9d2ee021afb3182ab8865f7",
+      "bytes": 37459925,
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/joint-preview-20261117-e0073/Joint_Epoch73_Replay.zip"
+    },
+    {
+      "name": "evaluation.json",
+      "sha256": "55a808e856d0d06fcfca3094391f83a77cf4fbf3bfd073455de2c79f84072fdb",
+      "bytes": 4147,
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/joint-preview-20261117-e0073/evaluation.json"
+    }
+  ]
+}
