@@ -1,0 +1,37 @@
+{
+  "completed_main_updates": 73,
+  "render_code_revision": "519aefe04f88fac2676bbf8ebfd419b6e72c3d6e",
+  "source_checkpoint_sha256": "69a3e33ab78dfb154dbc1e7efb87fcc004397632961fdade64255428c2fa6da3",
+  "assets": [
+    {
+      "name": "Joint_Epoch73_WithReference.mp4",
+      "sha256": "51550f0a60bcfc44b227bd12057863974f3fb3c0bfe0a132c4e49b4b34e1eb86",
+      "bytes": 2275702,
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/joint-preview-20261117-e0073-reference/Joint_Epoch73_WithReference.mp4"
+    },
+    {
+      "name": "Joint_Epoch73_WithReference.zip",
+      "sha256": "e95f1e416fb2314b1a11daba749880678e4d06f13e6bb872a3f014831aa3e7c5",
+      "bytes": 3202518,
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/joint-preview-20261117-e0073-reference/Joint_Epoch73_WithReference.zip"
+    },
+    {
+      "name": "Training_Reference.mp4",
+      "sha256": "9b1b9118d2cf70c12c49afa707128dc06fb1481f8a35b3bb17c316c8f0c5e9ca",
+      "bytes": 694704,
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/joint-preview-20261117-e0073-reference/Training_Reference.mp4"
+    },
+    {
+      "name": "reference-comparison-preview.jpg",
+      "sha256": "5f29075655a088e1c89d7636bc7cbc0c6422f474e861876bcb8cf691e974943e",
+      "bytes": 96665,
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/joint-preview-20261117-e0073-reference/reference-comparison-preview.jpg"
+    },
+    {
+      "name": "evaluation.json",
+      "sha256": "16ffcdd3727467cf15ff4a4498b9dc8fa68affb719a835219296f51ec06aaf49",
+      "bytes": 6671,
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/joint-preview-20261117-e0073-reference/evaluation.json"
+    }
+  ]
+}
