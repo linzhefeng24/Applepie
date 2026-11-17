@@ -1,0 +1,27 @@
+{
+  "inputs": [
+    {
+      "name": "Joint_BestUpdate16_Replay.zip",
+      "bytes": 38057458,
+      "sha256": "7d4ae781c581d97392187f3188c403d556e425ecd13c36494859b92305d0e612",
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/joint-physical-best-20261117-e0016/Joint_BestUpdate16_Replay.zip"
+    },
+    {
+      "name": "joint-main-e0036-p0-36-335bb225242f.zip",
+      "bytes": 25260,
+      "sha256": "335bb225242f895a47982fe2f6d469629acfa6d03ad1d2b8b952d4f7eebc3957",
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/joint-physical-bounds-20261117/joint-main-e0036-p0-36-335bb225242f.zip"
+    },
+    {
+      "name": "joint-main-e0037-p0-37-7f5f28cf16ca.zip",
+      "bytes": 25342,
+      "sha256": "7f5f28cf16cab46a56c1bd802d470ff2a82e594046426ba937ce9a26b45ed2ec",
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/joint-physical-bounds-20261117/joint-main-e0037-p0-37-7f5f28cf16ca.zip"
+    }
+  ],
+  "source_revision_at_audit_start": "f474304669ed21b8364cd10fc63adc3cf4dec424",
+  "seed": 42,
+  "parameter_scope": "best16 physics; manual regularizer algebra; actual Adam36->37",
+  "incomplete_experiment": "physics full400ms running; no pass inferred from finite gradient",
+  "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 JAX_PLATFORMS=cpu XLA_FLAGS=\"--xla_cpu_multi_thread_eigen=false --xla_cpu_enable_fast_math=false\" python audit.py physics --replay Joint_BestUpdate16_Replay.zip"
+}
