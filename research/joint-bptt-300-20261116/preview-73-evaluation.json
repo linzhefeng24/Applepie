@@ -1,0 +1,104 @@
+{
+  "completed_main_updates": 73,
+  "selected_bank": "latest raw after update; not best_raw",
+  "source_checkpoint": {
+    "completed_updates": 73,
+    "required_updates": 300,
+    "complete": false,
+    "phase": "main",
+    "pilot_index": 3,
+    "phase_updates": 73,
+    "selected_coefficient": 10.0,
+    "parameter_anchor": "pre-BPTT manually tuned bank",
+    "manual_model_sha256": "858d1818b8d8394c95bb62a6ce60474cb534a83b94265ef8615e367c110d262c",
+    "source_revision": "1847a4d706b8e73c09c9c25c6e92b4d74fdd3de5",
+    "checkpoint_asset": "joint-main-e0073-p3-73-69a3e33ab78d.zip",
+    "sha256": "69a3e33ab78dfb154dbc1e7efb87fcc004397632961fdade64255428c2fa6da3",
+    "bytes": 30356,
+    "checkpoint_tag": "joint-trajectory-bptt-300-20261116",
+    "checkpoint_url": "https://github.com/linzhefeng24/Applepie/releases/download/joint-trajectory-bptt-300-20261116/joint-main-e0073-p3-73-69a3e33ab78d.zip",
+    "draft_asset": true,
+    "fresh_asset_download_verified": true,
+    "run_url": "https://github.com/linzhefeng24/Applepie/actions/runs/43998417893",
+    "last": {
+      "phase": "main",
+      "coefficient": 10.0,
+      "phase_updates": 73,
+      "completed_main_updates": 73,
+      "objective_before_update": 0.12664849126092526,
+      "joint_mse_before_update": 0.11568937004583309,
+      "regularization_before_update": 0.010959121215092175,
+      "gradient_norm": 6648.484510897959,
+      "max_parameter_drift_after_update": 0.08754305002700069,
+      "max_raw_update": 0.011825297742407731,
+      "seconds": 455.5265112089992,
+      "max_contacts": [
+        8,
+        10
+      ]
+    },
+    "epoch_definition": "One complete continuous native0.4s reference joint-trajectory forward/backward pass plus one actual Adam update. Pilot updates do not count toward300."
+  },
+  "training_source_revision": "1847a4d706b8e73c09c9c25c6e92b4d74fdd3de5",
+  "render_code_revision": "0ce7add1d20bf5c9433ad682a3eec403624c140e",
+  "manual_anchor_model_sha256": "858d1818b8d8394c95bb62a6ce60474cb534a83b94265ef8615e367c110d262c",
+  "body_archive_sha256": "60a720b2a367556c7408b82d6d63998039b091dab3652ea027fe42f4cb37267a",
+  "metrics": {
+    "Manual": {
+      "actual_parameter_update": 0,
+      "joint_mse_rad2": 0.11717840309893408,
+      "joint_rmse_deg": 19.613108009120246,
+      "root_displacement_mm": [
+        0.019886237849564295,
+        0.13292367719039416,
+        -0.27845100347517804
+      ],
+      "min_body_up_z_sampled_1ms": 0.9473378847732189,
+      "max_parameter_fractional_change_from_manual": 0.0,
+      "all_states_finite": true,
+      "seconds": 153.61591641999996
+    },
+    "Epoch73": {
+      "actual_parameter_update": 73,
+      "joint_mse_rad2": 0.1154421887246381,
+      "joint_rmse_deg": 19.467263552037718,
+      "root_displacement_mm": [
+        0.19598828994542505,
+        0.18493272666371519,
+        -0.22724371176338715
+      ],
+      "min_body_up_z_sampled_1ms": 0.9364235989603169,
+      "max_parameter_fractional_change_from_manual": 0.08754305002700069,
+      "all_states_finite": true,
+      "seconds": 165.02783695600004
+    },
+    "DirectAB_A": {
+      "case": "A",
+      "duration_s": 0.39999999999997227,
+      "path_angle_rmse_deg": 9.328350971292931,
+      "terminal_angle_rmse_deg": 11.894855693203347,
+      "max_terminal_error_deg": 44.863932576893696,
+      "root_displacement_mm": [
+        1.4121096286211856,
+        0.2175867712779005,
+        -0.2628897463544805
+      ],
+      "min_body_up_z": 0.9889104691726948,
+      "extra_applied_forces": false,
+      "model_parameters_refit": false,
+      "long_term_stable_walking_established": false
+    }
+  },
+  "physical_duration_s": 0.4,
+  "physical_dt_s": 0.0001,
+  "physical_steps": 4000,
+  "neural_ms": 1400,
+  "body": "free body with original floor/contact/NoSlip/fluid and all11 original auxiliary schedules; no extra forces or state resets",
+  "video": "80 frames at20fps;10x slow motion of the complete0.4s rollout",
+  "validation_scope": "New hard neural forward and native physical replay; not evidence that all brain.json phenomena are satisfied",
+  "versions": {
+    "jax": "0.5.3",
+    "numpy": "2.5.4",
+    "mujoco": "3.3.2"
+  }
+}
