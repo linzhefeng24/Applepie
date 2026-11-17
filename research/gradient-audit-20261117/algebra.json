@@ -1,0 +1,18 @@
+{
+  "source_revision": "f474304669ed21b8364cd10fc63adc3cf4dec424",
+  "regularizer_max_gradient_error": 1.734723475976807e-18,
+  "regularizer_directional_relative_error": 1.8843779510665493e-10,
+  "parameter_map_directional_relative_error": 5.657601812164876e-09,
+  "state_clip_vjp_at_6": [
+    6.0
+  ],
+  "state_clip_vjp_at_12": [
+    10.0
+  ],
+  "state_clip_additivity_error": 2.0,
+  "state_clip_is_linear_vjp": false,
+  "hard_spike_local_finite_difference": 0.0,
+  "surrogate_spike_gradient": 0.0980296049406921,
+  "manual_center_regularizer": 0.0,
+  "conclusion": "Smooth parameter mapping and manual regularizer audited independently. Cotangent clipping violates VJP linearity; hard-spike surrogate is intentionally not exact hard-forward derivative. Full reverse is also200ms-truncated."
+}
