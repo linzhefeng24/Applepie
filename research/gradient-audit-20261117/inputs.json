@@ -22,7 +22,6 @@
   "source_revision_at_audit_start": "f474304669ed21b8364cd10fc63adc3cf4dec424",
   "seed": 42,
   "parameter_scope": "best16 physics; manual regularizer algebra; actual Adam36->37",
-  "incomplete_experiment": "full physics and small-step refinement finished; end-to-end parameter perturbations still running",
   "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 JAX_PLATFORMS=cpu XLA_FLAGS=\"--xla_cpu_multi_thread_eigen=false --xla_cpu_enable_fast_math=false\" python audit.py physics --replay Joint_BestUpdate16_Replay.zip",
   "software": {
     "python": "3.12.14",
@@ -32,5 +31,18 @@
     "mujoco": "3.3.2",
     "mujoco-mjx": "3.3.2",
     "scipy": "1.17.0"
-  }
+  },
+  "status": "completed: algebra, exact optimizer recovery, full400ms physics, small-step physical refinement and full-chain forward interventions",
+  "additional_parameter_archives": [
+    {
+      "name": "joint-main-e0016-p0-16-22ecd8152b9a.zip",
+      "sha256": "22ecd8152b9ae59ba195474cc118da62d8296d8c74e9bb61e9a89e5e4b10f96b",
+      "bytes": 23399
+    },
+    {
+      "name": "joint-main-e0017-p0-17-ff95f34dc05a.zip",
+      "sha256": "ff95f34dc05a9cb9bf9455c8e90115c723ec44a1687566df7c420f86ce36c63d",
+      "bytes": 23492
+    }
+  ]
 }

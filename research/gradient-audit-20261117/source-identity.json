@@ -1,0 +1,16 @@
+{
+  "audited_training_source_revision": "5e07e510aaaec984365075fe92377115a1311d1d",
+  "critical_source_matches_saved_training_validation": {
+    "full_hh.py": true,
+    "contact_geometry.py": true,
+    "noslip.py": true,
+    "patch_mjx.py": true,
+    "training_context.py": true,
+    "native_whitebox.py": true,
+    "implicit_solver.py": true,
+    "physics.py": true
+  },
+  "baseline_model_sha256": "858d1818b8d8394c95bb62a6ce60474cb534a83b94265ef8615e367c110d262c",
+  "training_numerics_modified_by_audit": false,
+  "scope": "Provenance only; hash agreement is not a gradient correctness test"
+}

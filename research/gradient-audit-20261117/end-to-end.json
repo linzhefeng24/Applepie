@@ -1,0 +1,61 @@
+{
+  "point": "best16",
+  "coefficient": 10,
+  "parameter_direction": "negative actual clipped-backward surrogate direction at16, before Adam momentum",
+  "predicted_total_directional_derivative": -41723.036592439305,
+  "source_archives": [
+    {
+      "name": "joint-main-e0016-p0-16-22ecd8152b9a.zip",
+      "sha256": "22ecd8152b9ae59ba195474cc118da62d8296d8c74e9bb61e9a89e5e4b10f96b",
+      "bytes": 23399
+    },
+    {
+      "name": "joint-main-e0017-p0-17-ff95f34dc05a.zip",
+      "sha256": "ff95f34dc05a9cb9bf9455c8e90115c723ec44a1687566df7c420f86ce36c63d",
+      "bytes": 23492
+    }
+  ],
+  "checks": [
+    {
+      "epsilon": 0.0001,
+      "negative_gradient_direction_point": {
+        "joint_mse": 0.09538458981680602,
+        "regularization": 0.023654480514152774,
+        "total": 0.11903907033095878
+      },
+      "opposite_direction_point": {
+        "joint_mse": 0.09540403591293474,
+        "regularization": 0.023647282812899743,
+        "total": 0.11905131872583448
+      },
+      "negative_direction_total_change": -1.649380551395352e-05,
+      "negative_direction_joint_change": -2.0094471654463764e-05,
+      "central_finite_difference_total": -0.06124197437847034,
+      "same_sign_as_surrogate_projection": true
+    },
+    {
+      "epsilon": 0.001,
+      "negative_gradient_direction_point": {
+        "joint_mse": 0.09580959572673842,
+        "regularization": 0.023687049956323845,
+        "total": 0.11949664568306226
+      },
+      "opposite_direction_point": {
+        "joint_mse": 0.09534536732025732,
+        "regularization": 0.023615072842600532,
+        "total": 0.11896044016285785
+      },
+      "negative_direction_total_change": 0.0004410815465895196,
+      "negative_direction_joint_change": 0.00040491143827793563,
+      "central_finite_difference_total": 0.26810276010220263,
+      "same_sign_as_surrogate_projection": false
+    }
+  ],
+  "comparison_caveat": "Hard spike finite differences need not match a surrogate with temporal truncation and nonlinear cotangent clipping. Direct descent or ascent is measured rather than assumed.",
+  "baseline": {
+    "joint_mse": 0.09540468428846048,
+    "regularization": 0.023650879848012254,
+    "total": 0.11905556413647274
+  },
+  "seconds": 541.6918990140002
+}

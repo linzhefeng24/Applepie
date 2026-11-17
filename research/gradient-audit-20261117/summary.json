@@ -1,0 +1,23 @@
+{
+  "completed": true,
+  "exact_end_to_end_gradient_verified": false,
+  "smooth_parameter_mapping_check_passed": true,
+  "manual_center_regularizer_check_passed": true,
+  "adam_state_recovery_check_passed": true,
+  "state_cotangent_clip_linear_vjp": false,
+  "full400ms_physical_strict_5percent_gate_passed": false,
+  "negative_surrogate_direction_total_loss_improved_at_1e4": true,
+  "negative_surrogate_direction_total_loss_improved_at_1e3": false,
+  "spike_gradient": "intentional surrogate, not exact hard-spike derivative",
+  "time_gradient": "200ms truncated",
+  "running_training_numeric_source_changed": false,
+  "files": [
+    "algebra.json",
+    "optimizer.json",
+    "physics.json",
+    "physics-precision.json",
+    "end-to-end.json",
+    "source-identity.json",
+    "REPORT_zh.md"
+  ]
+}
