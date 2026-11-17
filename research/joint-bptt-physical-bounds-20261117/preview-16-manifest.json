@@ -1,0 +1,37 @@
+{
+  "completed_main_updates": 16,
+  "render_code_revision": "e216d1106bf4ff0a35074596d4bde298aea96f46",
+  "source_checkpoint_sha256": "7f5f28cf16cab46a56c1bd802d470ff2a82e594046426ba937ce9a26b45ed2ec",
+  "assets": [
+    {
+      "name": "comparison-preview.jpg",
+      "sha256": "6884480cc6c664f2a36b1cfdad3c30788e3dccb225a1500a5b40856ff4f47307",
+      "bytes": 89774,
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/joint-physical-best-20261117-e0016/comparison-preview.jpg"
+    },
+    {
+      "name": "Joint_BestUpdate16_Replay.zip",
+      "sha256": "7d4ae781c581d97392187f3188c403d556e425ecd13c36494859b92305d0e612",
+      "bytes": 38057458,
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/joint-physical-best-20261117-e0016/Joint_BestUpdate16_Replay.zip"
+    },
+    {
+      "name": "Joint_BestUpdate16.mp4",
+      "sha256": "2739c681167aacca2f6c34a95433d3712c371407d7112e6379b2565964f4c1c4",
+      "bytes": 521535,
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/joint-physical-best-20261117-e0016/Joint_BestUpdate16.mp4"
+    },
+    {
+      "name": "Joint_BestUpdate16_Comparison.mp4",
+      "sha256": "7332ac4f7cde37273997489198882c92290b6ec5d78ef5c75d0e3ba47bc734ed",
+      "bytes": 2288488,
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/joint-physical-best-20261117-e0016/Joint_BestUpdate16_Comparison.mp4"
+    },
+    {
+      "name": "evaluation.json",
+      "sha256": "741a79eb79a428546d0505f3bc544c81b114d9a04ea3731c53c3611d68eb6b67",
+      "bytes": 6032,
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/joint-physical-best-20261117-e0016/evaluation.json"
+    }
+  ]
+}
