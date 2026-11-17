@@ -59,9 +59,16 @@ elif mode=='publish':
   if answer.returncode==0:break
   if attempt==7:raise RuntimeError(answer.stderr)
   time.sleep(min(2**attempt,8))
- fresh_result=progress_read()
- if fresh_result.returncode:raise RuntimeError(fresh_result.stderr)
- fresh=json.loads(fresh_result.stdout);fresh=json.loads(base64.b64decode(fresh['content']));assert fresh['sha256']==meta['sha256'] and fresh['completed_updates']==count
+ # A successful Contents PUT can precede a consistent read from every replica.
+ # Retry the actual hash/count check; do not weaken or skip remote validation.
+ for verify_attempt in range(8):
+  fresh_result=progress_read();fresh=None
+  if fresh_result.returncode==0:
+   response=json.loads(fresh_result.stdout);fresh=json.loads(base64.b64decode(response['content']))
+   if fresh.get('sha256')==meta['sha256'] and fresh.get('completed_updates')==count:break
+  if verify_attempt==7:
+   raise RuntimeError('Remote progress did not converge to uploaded checkpoint: expected_count='+str(count)+', observed_count='+str(None if fresh is None else fresh.get('completed_updates')))
+  time.sleep(min(2**verify_attempt,8))
  print('Fresh remote checkpoint confirmed',json.dumps(meta),flush=True)
 elif mode=='dispatch':
  report=json.loads((OUT/'chunk-report.json').read_text())

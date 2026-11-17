@@ -1,0 +1,12 @@
+{
+  "failed_run": 43979080703,
+  "saved_completed_main_updates": 73,
+  "checkpoint_sha256": "e879bb574a89c47e4c003c3c7361a9f13dea15f18b1858c52c7c824c284c76c7",
+  "failure_stage": "Immediate progress read-back hash/count assertion after upload and Contents update",
+  "evidence": "GitHub job log traceback; current independent progress read shows73 and correct asset identity",
+  "not_a_reported_numerical_failure": true,
+  "root_cause_limit": "The failing read values were not logged; transient stale/read-after-write inconsistency is plausible, not proven",
+  "repair": "Retry fresh hash/count readback with bounded backoff; matching check remains mandatory",
+  "numerical_training_code_changed": false,
+  "training_source_revision": "1847a4d706b8e73c09c9c25c6e92b4d74fdd3de5"
+}
