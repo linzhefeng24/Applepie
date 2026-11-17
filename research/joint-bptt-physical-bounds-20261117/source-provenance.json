@@ -1,0 +1,33 @@
+{
+  "training_source_revision": "5e07e510aaaec984365075fe92377115a1311d1d",
+  "inherited_physics": {
+    "physics.py": {
+      "unchanged": true,
+      "sha256": "04efd62f2b15e741fef6f7ba6f33f46ab9cc7e63ed61742df3c8cfb09973a11a"
+    },
+    "native_whitebox.py": {
+      "unchanged": true,
+      "sha256": "5c37b78dc636c2f0eddf673b78357a32c8463eabb9c6cb9ce216fa7fe30356d1"
+    },
+    "contact_geometry.py": {
+      "unchanged": true,
+      "sha256": "ab589aefcd495ad3cfaa87ee6c7ffe6660f78a512ce0be8ee4d6b82074784db5"
+    },
+    "noslip.py": {
+      "unchanged": true,
+      "sha256": "831f297ccef834ddd1a69340add2ff163c69d38140eced43c200e8170a2f583f"
+    },
+    "implicit_solver.py": {
+      "unchanged": true,
+      "sha256": "2a2475af6eab2e915bc161cfe04aa5dde0f677e48cb332ab0433a633399ff195"
+    },
+    "patch_mjx.py": {
+      "unchanged": true,
+      "sha256": "4b2499657c46ee7487386aed78809704d2ce56052228d019f35af6e2327aa7c1"
+    }
+  },
+  "parameterization_validation": "parameterization-check.json",
+  "launch_run_url": "https://github.com/linzhefeng24/Applepie/actions/runs/44015285177",
+  "required_new_updates": 300,
+  "status_at_launch": "in_progress; dependency installation, no new update yet verified"
+}
