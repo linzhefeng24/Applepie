@@ -54,7 +54,7 @@ jobs:
           python - <<'PY'
           from pathlib import Path
           import json,subprocess,sys
-          r=Path('research/joint-bptt-300-20261116');m=json.loads((r/'preview-snapshot.json').read_text());d=r/'cache/preview';d.mkdir(parents=True,exist_ok=True)
+          r=Path('research/joint-bptt-physical-bounds-20261117');m=json.loads((r/'preview-snapshot.json').read_text());d=r/'cache/preview';d.mkdir(parents=True,exist_ok=True)
           subprocess.run(['gh','release','download',m['checkpoint_tag'],'--repo','${{ github.repository }}','--pattern',m['checkpoint_asset'],'--dir',str(d),'--clobber'],check=True)
           subprocess.run([sys.executable,str(r/'render_best.py'),'--snapshot',str(r/'preview-snapshot.json'),'--archive',str(d/m['checkpoint_asset']),'--out',str(d/'result')],check=True)
           PY
