@@ -1,7 +1,7 @@
 """Public intermediate-video assets and fresh-download-verified provenance."""
 from pathlib import Path
 import base64,hashlib,json,os,subprocess,sys,time
-out=Path(sys.argv[1]);report=json.loads((out/'evaluation.json').read_text());epoch=report['completed_main_updates'];repo=os.environ['GITHUB_REPOSITORY'];tag=f'joint-preview-20261117-e{epoch:04d}'
+out=Path(sys.argv[1]);report=json.loads((out/'evaluation.json').read_text());epoch=report['completed_main_updates'];repo=os.environ['GITHUB_REPOSITORY'];variant='-reference' if report.get('reference_added') else '';tag=f'joint-preview-20261117-e{epoch:04d}'+variant
 def gh(*args,check=True):return subprocess.run(['gh',*args],check=check,capture_output=True,text=True)
 assets=[p for p in out.iterdir() if p.suffix in ['.mp4','.zip','.jpg','.json']];manifest={'completed_main_updates':epoch,'render_code_revision':report['render_code_revision'],'source_checkpoint_sha256':report['source_checkpoint']['sha256'],'assets':[{'name':p.name,'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'bytes':p.stat().st_size,'url':f'https://github.com/{repo}/releases/download/{tag}/{p.name}'} for p in assets]}
 mp=out/'manifest.json';mp.write_text(json.dumps(manifest,indent=2)+'\n');assets.append(mp)
@@ -11,7 +11,7 @@ verify=out/'verify';verify.mkdir(exist_ok=True)
 for item in manifest['assets']:
  gh('release','download',tag,'--repo',repo,'--pattern',item['name'],'--dir',str(verify),'--clobber');assert hashlib.sha256((verify/item['name']).read_bytes()).hexdigest()==item['sha256']
 gh('release','edit',tag,'--repo',repo,'--draft=false')
-for local,name in [(mp,f'preview-{epoch}-manifest.json'),(out/'evaluation.json',f'preview-{epoch}-evaluation.json')]:
+for local,name in [(mp,f'preview-{epoch}{variant}-manifest.json'),(out/'evaluation.json',f'preview-{epoch}{variant}-evaluation.json')]:
  path='research/joint-bptt-300-20261116/'+name
  for attempt in range(8):
   old=gh('api','-H','Cache-Control: no-cache',f'repos/{repo}/contents/{path}?ref=main&nonce={time.time_ns()}',check=False);payload={'message':f'Save native video preview at actual update{epoch}','branch':'main','content':base64.b64encode(local.read_bytes()).decode()}
