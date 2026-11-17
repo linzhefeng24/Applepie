@@ -1,0 +1,28 @@
+{
+  "source_kind": "Recovered original half-speed simulated-reference data; not experimental fly video",
+  "source_file_basename": "retimed_reference_5000Hz.npz",
+  "source_file_sha256": "2b4798f09a9f657d5805e46571ce3436214d5e91e7ce46d6c990433ad29d60ff",
+  "source_file_bytes": 3410970,
+  "canonical_model_archive_sha256": "60a720b2a367556c7408b82d6d63998039b091dab3652ea027fe42f4cb37267a",
+  "reference_joint_table_shape": [
+    2001,
+    66
+  ],
+  "full_source_joint_table_elementwise_exact": true,
+  "max_joint_angle_abs_difference": 0.0,
+  "reference_joint_table_sha256": "7aa80b157b8fa83b336b2c8bda0faf5c33b69e5cb0ecb70ee074443130a894ed",
+  "video_frames": 80,
+  "video_sample_times_s": [
+    0.005,
+    0.4
+  ],
+  "sample_selection": "Original reference frames25,50,...,2000, no pose interpolation at video samples",
+  "frame_asset": {
+    "path": "research/joint-bptt-300-20261116/reference/target-video-frames.npz",
+    "sha256": "c02d2d6639f68fb8aa2a302190daa5f6a3e7f333ffd9804f5eb2570a4d490f8d",
+    "bytes": 138594
+  },
+  "root_motion": "Full original qpos and qvel used; root translation/rotation not synthesized and not frozen",
+  "render_kind": "Kinematic prescribed reference poses, not new muscle-driven forward dynamics",
+  "training_loss_scope": "Only reference leg joint angles; original reference root trajectory is displayed for context but is not in current loss"
+}

@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "states_shape": [
+    80,
+    372
+  ],
+  "target_frame_max_abs_error": 0.0,
+  "all_states_finite": true,
+  "integration_performed": false,
+  "training_modified": false
+}

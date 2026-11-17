@@ -1,0 +1,40 @@
+{
+  "completed_updates": 37,
+  "required_updates": 300,
+  "complete": false,
+  "phase": "main",
+  "pilot_index": 0,
+  "phase_updates": 37,
+  "selected_coefficient": 10.0,
+  "parameter_anchor": "pre-BPTT manually tuned bank",
+  "manual_model_sha256": "858d1818b8d8394c95bb62a6ce60474cb534a83b94265ef8615e367c110d262c",
+  "source_revision": "5e07e510aaaec984365075fe92377115a1311d1d",
+  "checkpoint_asset": "joint-main-e0037-p0-37-7f5f28cf16ca.zip",
+  "sha256": "7f5f28cf16cab46a56c1bd802d470ff2a82e594046426ba937ce9a26b45ed2ec",
+  "bytes": 25342,
+  "checkpoint_tag": "joint-physical-bounds-20261117",
+  "checkpoint_url": "https://github.com/linzhefeng24/Applepie/releases/download/joint-physical-bounds-20261117/joint-main-e0037-p0-37-7f5f28cf16ca.zip",
+  "draft_asset": true,
+  "fresh_asset_download_verified": true,
+  "run_url": "https://github.com/linzhefeng24/Applepie/actions/runs/44059112350",
+  "last": {
+    "phase": "main",
+    "coefficient": 10.0,
+    "phase_updates": 37,
+    "completed_main_updates": 37,
+    "objective_before_update": 0.13549824182132927,
+    "joint_mse_before_update": 0.1002437901937873,
+    "evaluated_parameter_updates": 36,
+    "parent_start_update": 87,
+    "regularization_before_update": 0.035254451627541955,
+    "gradient_norm": 15648.114332636424,
+    "max_parameter_drift_after_update": 0.1355723738848643,
+    "max_raw_update": 0.002108869688934714,
+    "seconds": 599.8589960009995,
+    "max_contacts": [
+      7,
+      12
+    ]
+  },
+  "epoch_definition": "One full native0.4s joint trajectory gradient and actual Adam update; new counter starts0 from parent weights87; no pilots"
+}

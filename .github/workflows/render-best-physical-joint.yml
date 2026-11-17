@@ -1,0 +1,62 @@
+name: Render best physical-range joint BPTT weights
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: render-best-physical-joint
+  cancel-in-progress: false
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      GH_TOKEN: ${{ github.token }}
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      JAX_PLATFORMS: cpu
+      MUJOCO_GL: egl
+      XLA_FLAGS: --xla_cpu_multi_thread_eigen=false --xla_cpu_enable_fast_math=false
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /research/joint-bptt-physical-bounds-20261117/
+            /research/physics-bptt-20261116/source/
+            /research/surrogate-bptt-20261115/input-identity.json
+            /research/surrogate-bptt-20261115/archived-baseline.json
+            /research/surrogate-bptt-20261115/baseline-spike-events.npz
+            /research/single-model-delivery-20261115/
+            /research/conductance-rebuild-20261114/grouped_parameters.py
+            /research/conductance-rebuild-20261114/results/mcns-brake-extension/neurons.json
+            /research/conductance-rebuild-20261114/results/mcns-brake-extension/unsigned-connectivity.npz
+            /research/brake-retuning-20261115/results/terminal-r2/BRK.npz
+            /research/brake-retuning-20261115/configs/brake-terminal-r2.json
+            /research/conductance-rebuild-20261114/data/model-130-channel-candidate-crosswalk.csv
+            /research/conductance-rebuild-20261114/data/phenomena-inventory.json
+            /research/assets/flymimic-legacy-AB-twofile.zip
+            /research/conductance-rebuild-20261114/results/frozen-neural-panel-unified-r9/PFL3L-config.json
+            /research/conductance-rebuild-20261114/results/frozen-neural-panel-brake-extension-r9/BRK-config.json
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - name: Install exact numerical runtime and headless renderer
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libegl1 libgl1-mesa-dri libgl1
+          python -m pip install -r research/joint-bptt-physical-bounds-20261117/requirements.txt
+      - name: Build immutable model and download the selected checkpoint
+        run: |
+          python research/single-model-delivery-20261115/build.py
+          python research/joint-bptt-physical-bounds-20261117/patch_mjx.py
+          python - <<'PY'
+          from pathlib import Path
+          import json,subprocess,sys
+          r=Path('research/joint-bptt-300-20261116');m=json.loads((r/'preview-snapshot.json').read_text());d=r/'cache/preview';d.mkdir(parents=True,exist_ok=True)
+          subprocess.run(['gh','release','download',m['checkpoint_tag'],'--repo','${{ github.repository }}','--pattern',m['checkpoint_asset'],'--dir',str(d),'--clobber'],check=True)
+          subprocess.run([sys.executable,str(r/'render_best.py'),'--snapshot',str(r/'preview-snapshot.json'),'--archive',str(d/m['checkpoint_asset']),'--out',str(d/'result')],check=True)
+          PY
+      - name: Publish public videos, state bundle and verified provenance
+        run: python research/joint-bptt-physical-bounds-20261117/publish_best_video.py research/joint-bptt-physical-bounds-20261117/cache/preview/result
