@@ -1,0 +1,22 @@
+{
+  "completed_updates": 0,
+  "required_updates": 300,
+  "complete": false,
+  "phase": "main",
+  "pilot_index": 0,
+  "phase_updates": 0,
+  "selected_coefficient": 10.0,
+  "parameter_anchor": "pre-BPTT manually tuned bank",
+  "manual_model_sha256": "858d1818b8d8394c95bb62a6ce60474cb534a83b94265ef8615e367c110d262c",
+  "source_revision": "5e07e510aaaec984365075fe92377115a1311d1d",
+  "checkpoint_asset": "joint-main-e0000-p0-0-4c30d7f9978d.zip",
+  "sha256": "4c30d7f9978dd0ca0377846c3d5d06756230ee5d8d178c6a5a043c16492e8fd7",
+  "bytes": 14189,
+  "checkpoint_tag": "joint-physical-bounds-20261117",
+  "checkpoint_url": "https://github.com/linzhefeng24/Applepie/releases/download/joint-physical-bounds-20261117/joint-main-e0000-p0-0-4c30d7f9978d.zip",
+  "draft_asset": true,
+  "fresh_asset_download_verified": true,
+  "run_url": "https://github.com/linzhefeng24/Applepie/actions/runs/44015285177",
+  "last": null,
+  "epoch_definition": "One full native0.4s joint trajectory gradient and actual Adam update; new counter starts0 from parent weights87; no pilots"
+}
