@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "actual_cell_parameter_max_absolute_difference": 4.440892098500626e-16,
+  "initial_joint_mse_archived_not_yet_rerun": 0.10746249083268701,
+  "initial_regularizer_lambda10": 0.015775478301503602,
+  "manual_regularizer": 0.0,
+  "positive_fields_checked_all_cells": true,
+  "50_percent_increase_allowed": true,
+  "shape": [
+    23,
+    9
+  ],
+  "initialization_sha256": "ad1fad675280c528e0c2eb1e6a1d4d3a58b80676ed141003e078359344ad9226"
+}

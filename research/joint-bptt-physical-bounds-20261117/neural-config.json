@@ -1,0 +1,27 @@
+{
+  "baseline_model": "research/single-model-delivery-20261115/build/UnifiedFlyModel/01_model/model.yaml",
+  "baseline_neural": "research/single-model-delivery-20261115/build/UnifiedFlyModel/04_results/data/neural_state.npz",
+  "experiment": "DN_drive",
+  "target_start_ms": 200.0,
+  "frozen_types": [
+    "DNg100"
+  ],
+  "train_fields": [
+    5,
+    7,
+    8,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "surrogate_width_mV": 10.0,
+  "surrogate_readout_clip": true,
+  "bptt_truncate_ms": 200.0,
+  "backward_state_clip": 10.0,
+  "method": "Full3988-cell hard HH forward; surrogate spikes,200ms truncated reverse, fixed per-ms adjoint clipping; Adam schedule and joint loss are exclusively in config.json",
+  "missing_mapping_policy": "26 unmapped neural muscle controls remain zero; all physical joint outputs remain in the joint loss",
+  "parameterization": "exp(log_multiplier)"
+}

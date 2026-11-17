@@ -1,0 +1,6 @@
+{
+  "replacement": "research/joint-bptt-physical-bounds-20261117",
+  "last_saved_parent_updates": 88,
+  "selected_start_weights_after_update": 87,
+  "reason": "user requests physical ranges rather than percent caps; manual regularizer center retained"
+}

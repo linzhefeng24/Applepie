@@ -1,0 +1,18 @@
+{
+  "train_fields": {
+    "5": "excitatory_receptor_gain",
+    "7": "coupling_nS",
+    "8": "SK_multiplier",
+    "11": "gate_speed",
+    "12": "source_release_gain",
+    "13": "Na_nS",
+    "14": "K_nS",
+    "15": "Ca_nS",
+    "16": "calcium_decay_time_ms"
+  },
+  "rule": "Nonnegative baseline conductances/gains multiplied by strictly positive exp(theta); coupling, gate speed and calcium decay time remain positive. Exact baseline zeros stay zero. No uniform relative upper/lower percentage bound.",
+  "center": "theta=0 means original manual cell bank",
+  "regularizer": "lambda * mean(expm1(theta)**2)",
+  "scope": "23 shared cell-type groups x9 fields; original frozen cells and all other fields unchanged",
+  "unmeasured_upper_limits": "Unknown; no invented upper cap. Numerical nonfinite loss/gradient/scale aborts without counting an update."
+}

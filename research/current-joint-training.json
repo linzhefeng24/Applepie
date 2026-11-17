@@ -1,0 +1,7 @@
+{
+  "experiment": "research/joint-bptt-physical-bounds-20261117",
+  "workflow": "train-joint-physical-bounds.yml",
+  "parent_best_update": 87,
+  "regularizer_center": "original manual bank",
+  "required_new_updates": 300
+}
