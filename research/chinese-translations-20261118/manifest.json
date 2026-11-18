@@ -1,5 +1,5 @@
 {
-  "status": "translation_complete_and_local_PDF_Word_HTML_rendering_passed; public_release_upload_pending",
+  "status": "complete_public_release_uploaded_and_freshly_download_verified",
   "total_pages": 54,
   "documents": {
     "benton": {
@@ -112,5 +112,26 @@
       "url": "https://github.com/linzhefeng24/Applepie/releases/download/paper-translations-zh-20261118/Dorkenwald_2024_Chinese_Full.md"
     }
   ],
-  "local_upload_failure": "gh release upload: HTTP401 at uploads.github.com; official GitHub Actions upload is prepared"
+  "local_upload_failure": "gh release upload: HTTP401 at uploads.github.com; official GitHub Actions upload is prepared",
+  "release_url": "https://github.com/linzhefeng24/Applepie/releases/tag/paper-translations-zh-20261118",
+  "delivery_source_revision": "03002e92f5feecf89843f9f99ffdceebc9fea8f4",
+  "fresh_download_verified_assets": [
+    "Dorkenwald_2024_Chinese_Full.pdf",
+    "Two_Papers_Chinese_Full_Translations.zip",
+    "Benton_2025_Chinese_Full.html",
+    "Translation_Notes_and_Sources.json",
+    "Benton_2025_Chinese_Full.docx",
+    "Benton_2025_Chinese_Full.md",
+    "Dorkenwald_2024_Chinese_Full.html",
+    "Benton_2025_Chinese_Full.pdf",
+    "Dorkenwald_2024_Chinese_Full.docx",
+    "Dorkenwald_2024_Chinese_Full.md"
+  ],
+  "public_unauthenticated_pdf_and_bundle_access": "HTTP200 for both PDFs and the ZIP",
+  "local_upload_failure_resolution": "Resolved using official GitHub Actions upload; no translation assets remain unpushed",
+  "rendering_software": {
+    "python": "3.12.14",
+    "PyMuPDF": "1.26.6",
+    "python-docx": "1.2.0"
+  }
 }

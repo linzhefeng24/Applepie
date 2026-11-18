@@ -9,3 +9,13 @@
 PDF采用MuPDF本地排版，内嵌中文字体；Word和HTML同样附原页。HTML可展开每段英文。PDF将中文译文置前、原页图版置于附录；Word与HTML逐页对照。译稿页数包含中文排版及原页图版，不能与原文22/32页直接比较。大文件存入GitHub Release，来源、资产哈希、实际上传状态见manifest.json。
 
 重建：提供同一哈希的两份源PDF，使用translate.py extract生成原页图片；assemble_manual.py --document all汇总已保存译文，再以translate.py render生成交付文件。代码不向第三方翻译服务发送论文段落。
+
+## 已完成交付
+
+公开下载已核对为HTTP200；全部10个交付文件均由发布任务重新下载并核验SHA256。
+
+- [Benton2025中文PDF](https://github.com/linzhefeng24/Applepie/releases/download/paper-translations-zh-20261118/Benton_2025_Chinese_Full.pdf)
+- [Dorkenwald2024中文PDF](https://github.com/linzhefeng24/Applepie/releases/download/paper-translations-zh-20261118/Dorkenwald_2024_Chinese_Full.pdf)
+- [两篇完整压缩包，含PDF、Word、HTML和Markdown](https://github.com/linzhefeng24/Applepie/releases/download/paper-translations-zh-20261118/Two_Papers_Chinese_Full_Translations.zip)
+
+具体身份、字节数、来源和校验见manifest.json与delivery-status.json。正文、方法和图注均在译稿中；原页作为核对依据。未修改神经模型、参数或训练。
