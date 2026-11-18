@@ -1,0 +1,38 @@
+{
+  "completed_main_updates": 200,
+  "selected_bank": "latest raw after update; not best_raw",
+  "render_code_revision": "426200b1be3dbd86c5ccb8100f1b6cac139db7fa",
+  "source_checkpoint_sha256": "e57381ea9b51ba9602c3706d821f4fdaf203907de2c204df50ace8642d30c63f",
+  "assets": [
+    {
+      "name": "comparison-preview.jpg",
+      "sha256": "fb2031c2e70a5dca709da971914ce78aa2f103a21f324ed56b95d1a1484d5e05",
+      "bytes": 89790,
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/joint-physical-latest-20261118-e0200/comparison-preview.jpg"
+    },
+    {
+      "name": "Joint_LatestEpoch200_Replay.zip",
+      "sha256": "907abe507699f304c793b1587c11a432b6a7c694d9d3fee56574eb93e13d7d44",
+      "bytes": 37952668,
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/joint-physical-latest-20261118-e0200/Joint_LatestEpoch200_Replay.zip"
+    },
+    {
+      "name": "Joint_LatestEpoch200_Comparison.mp4",
+      "sha256": "06b875e743e5a143004552ec8977d84d6ffea457c493cbe4e936f077975c7972",
+      "bytes": 2295071,
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/joint-physical-latest-20261118-e0200/Joint_LatestEpoch200_Comparison.mp4"
+    },
+    {
+      "name": "Joint_LatestEpoch200.mp4",
+      "sha256": "6a9cee2fa918d1fd99c37e007dea661174999b1b7d2657981f702fab78f58018",
+      "bytes": 526621,
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/joint-physical-latest-20261118-e0200/Joint_LatestEpoch200.mp4"
+    },
+    {
+      "name": "evaluation.json",
+      "sha256": "26e20e275c126eec507690be98a4446e81af7906515df8e3b653560fe21b0a9c",
+      "bytes": 6015,
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/joint-physical-latest-20261118-e0200/evaluation.json"
+    }
+  ]
+}
