@@ -4,7 +4,7 @@
   "documents": {
     "benton": {
       "source_pages": 22,
-      "pdf_pages_including_original_facsimiles": 64,
+      "pdf_pages_including_original_facsimiles": 51,
       "source_page_images_retained": 22,
       "translated_or_preserved_segments": 46,
       "required_markers_present": [
@@ -13,11 +13,11 @@
         "RNA FISH",
         "数据可用性"
       ],
-      "pdf_text_characters": 43893
+      "pdf_text_characters": 44786
     },
     "dorkenwald": {
       "source_pages": 32,
-      "pdf_pages_including_original_facsimiles": 76,
+      "pdf_pages_including_original_facsimiles": 62,
       "source_page_images_retained": 32,
       "translated_or_preserved_segments": 82,
       "required_markers_present": [
@@ -30,7 +30,7 @@
         "扩展数据图10",
         "报告摘要"
       ],
-      "pdf_text_characters": 58463
+      "pdf_text_characters": 58602
     }
   },
   "known_format_choices": [
@@ -39,5 +39,6 @@
     "Scanned appendix checkbox states retained in original images; explanatory translated form text included"
   ],
   "translation_engine": "Assistant-authored within current conversation; failed offline MT samples not used",
-  "figures_redrawn": false
+  "figures_redrawn": false,
+  "pdf_layout": "Chinese text first; original54 page facsimiles in per-document appendix"
 }

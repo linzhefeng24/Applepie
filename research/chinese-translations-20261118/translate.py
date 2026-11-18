@@ -97,11 +97,15 @@ def render():
   h='<html lang="zh-CN"><meta charset="utf-8"><title>'+html.escape(m['title'])+'</title><style>'+css+'</style><h1>'+html.escape(m['title'])+'</h1><p>'+html.escape(m['english'])+'</p><p>'+html.escape(m['authors'])+'</p><p>原文：https://doi.org/'+m['doi']+'</p><p>'+intro+'</p>'+''.join(sections)+'</html>'
   hp=out/(name+'.html');hp.write_text(h)
   pdf_html=re.sub(r'<details class="english">.*?</details>','',h,flags=re.S)
-  image_no=iter([p['page'] for p in d['pages']])
-  pdf_html=re.sub(r'src="data:image/jpeg;base64,[^"]+"',lambda match:'src="'+key+'/page-'+str(next(image_no)).zfill(2)+'.jpg"',pdf_html)
-  story=fitz.Story(pdf_html,archive=fitz.Archive(str(CACHE)))
+  pdf_html=re.sub(r'<h3>原页图版.*?</h3><img[^>]+>','',pdf_html,flags=re.S)
+  story=fitz.Story(pdf_html)
   paper=fitz.paper_rect('a4');area=paper+(36,36,-36,-36)
-  pdf=story.write_with_links(lambda n,filled:(paper,area,None));pdf.save(out/(name+'.pdf'),garbage=4,deflate=True)
+  pdf=story.write_with_links(lambda n,filled:(paper,area,None))
+  for original in d['pages']:
+   page=pdf.new_page(width=paper.width,height=paper.height)
+   page.insert_text((28,27),'Original PDF page '+str(original['page'])+' | doi:'+m['doi'],fontsize=9)
+   page.insert_image(fitz.Rect(24,42,paper.width-24,paper.height-24),filename=str(CACHE/key/f"page-{original['page']:02d}.jpg"),keep_proportion=True)
+  pdf.save(out/(name+'.pdf'),garbage=4,deflate=True)
   print('Rendered',name,flush=True)
  dump(out/'Translation_Notes_and_Sources.json',{'translation':'unofficial full reading draft','source_manifest':{k:d['metadata'] for k,d in data['documents'].items()},'method':data['engine'],'all_segments_complete':not data['failed_segments'],'references':'kept verbatim','figures':'original page images retained; caption/body text translated','ocr_pages':{k:[p['page'] for p in d['pages'] if p['ocr']] for k,d in data['documents'].items()}})
  bundle=out/'Two_Papers_Chinese_Full_Translations.zip'

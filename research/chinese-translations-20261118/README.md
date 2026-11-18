@@ -6,6 +6,6 @@
 
 译文由助手在当前对话内按原文逐段译写。外部段落翻译调用被自动审批拦截，两个本地模型试译也因术语/数值错误未通过质量检查，均未用于完整译稿。失败记录和实际覆盖独立保存。
 
-PDF采用MuPDF本地排版，内嵌中文字体；Word和HTML同样附原页。HTML可展开每段英文。PDF总页数64与76包含译文及原页，不能与原文22/32页直接比较。大文件存入GitHub Release，来源、资产哈希、实际上传状态见manifest.json。
+PDF采用MuPDF本地排版，内嵌中文字体；Word和HTML同样附原页。HTML可展开每段英文。PDF将中文译文置前、原页图版置于附录；Word与HTML逐页对照。译稿页数包含中文排版及原页图版，不能与原文22/32页直接比较。大文件存入GitHub Release，来源、资产哈希、实际上传状态见manifest.json。
 
 重建：提供同一哈希的两份源PDF，使用translate.py extract生成原页图片；assemble_manual.py --document all汇总已保存译文，再以translate.py render生成交付文件。代码不向第三方翻译服务发送论文段落。
