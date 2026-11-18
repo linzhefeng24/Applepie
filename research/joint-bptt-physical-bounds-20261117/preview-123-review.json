@@ -1,0 +1,42 @@
+{
+  "selected_parameter_update": 123,
+  "release_url": "https://github.com/linzhefeng24/Applepie/releases/tag/joint-physical-best-20261117-e0123",
+  "manifest_assets_sha256": {
+    "comparison-preview.jpg": "8c583d300751c8663887911c49bcd14a0b4a744beaae35a2fa07c7e58fac72cb",
+    "Joint_BestUpdate123_Comparison.mp4": "6e4741b7233359896fe94b526915342d1bc1a0e7b87ec033fb61af0831ccd4a2",
+    "Joint_BestUpdate123.mp4": "2f9a0a7befa0d940f6b0a30fee1bca1d68e5f8a800cd34e66f4f2ffa7acadc6f",
+    "Joint_BestUpdate123_Replay.zip": "8bc3056864dac33e5eec0a4e34070a775e457c5a005c7ad719307ff4b1848736",
+    "evaluation.json": "5aef3c24552bb2e9f7ce0ce9e560673b3b3fe5f22f1c68004f35726e9d277feb"
+  },
+  "independently_viewed_native_video_frames_s": [
+    0.055,
+    0.205,
+    0.4
+  ],
+  "visual_findings": [
+    "Leg configurations change across sampled times; this alone does not establish periodic gait.",
+    "Body becomes lower through the replay; best123 remains visibly lower than the reference and directAB at0.4s.",
+    "No claim of recovered normal walking or long-term stability."
+  ],
+  "metrics": {
+    "actual_parameter_update": 123,
+    "joint_mse_rad2": 0.0862585477066448,
+    "joint_rmse_deg": 16.82765902180587,
+    "root_displacement_mm": [
+      0.12247374879550812,
+      0.05111887831829527,
+      -0.22298350127158792
+    ],
+    "min_body_up_z_sampled_1ms": 0.928392223155983,
+    "max_parameter_fractional_change_from_manual": 0.37254560684736027,
+    "all_states_finite": true,
+    "seconds": 112.729716862
+  },
+  "comparison": {
+    "manual_joint_rmse_deg": 19.613108009120246,
+    "directAB_forward_displacement_mm": 1.4121096286211856
+  },
+  "release_is_public_verified": true,
+  "downloaded_video_and_evaluation_match_manifest": true,
+  "training_numerical_code_changed": false
+}
