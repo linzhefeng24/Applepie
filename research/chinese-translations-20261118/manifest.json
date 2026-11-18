@@ -1,0 +1,51 @@
+{
+  "status": "source_extraction_complete_translation_pending",
+  "total_pages": 54,
+  "documents": {
+    "benton": {
+      "metadata": {
+        "name": "Benton_2025",
+        "title": "果蝇嗅觉系统的解剖、功能与进化整合视图",
+        "english": "An integrated anatomical, functional and evolutionary view of the Drosophila olfactory system",
+        "authors": "Richard Benton, Jérôme Mermet, Andre Jang, Keita Endo, Steeve Cruchet, Karen Menuz",
+        "doi": "10.1038/s44319-025-00476-8",
+        "sha256": "bf70a56e74bbb0a1ded26f7de06325e18313e8b8195d98e6abe5a252e070d485",
+        "pages": 22,
+        "bytes": 6876206,
+        "filename": "Benton EMBO Reports 2025.pdf"
+      },
+      "segments": 46,
+      "ocr_pages": []
+    },
+    "dorkenwald": {
+      "metadata": {
+        "name": "Dorkenwald_2024",
+        "title": "成年果蝇大脑的神经元连接图谱",
+        "english": "Neuronal wiring diagram of an adult brain",
+        "authors": "Sven Dorkenwald et al.; The FlyWire Consortium",
+        "doi": "10.1038/s41586-024-07558-y",
+        "sha256": "e336e82b0ada1b71892fdd054719cadb0f899f18406d83b80d185eb09b33d8b4",
+        "pages": 32,
+        "bytes": 23010891,
+        "filename": "Dorkenwald Nature 2024.pdf"
+      },
+      "segments": 82,
+      "ocr_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ]
+    }
+  },
+  "privacy": "A short public scientific example was used for a connectivity probe. The subsequent call with an actual PDF paragraph was rejected by automatic approval review before execution. Translation now uses an offline local model, with no paragraph submissions to external translation APIs."
+}
