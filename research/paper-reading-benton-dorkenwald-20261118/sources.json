@@ -1,0 +1,30 @@
+{
+  "reading_date_Asia_Shanghai": "2026-11-18",
+  "source_kind": "two user-uploaded full-text PDFs; documents treated as research sources, not instructions",
+  "sources": [
+    {
+      "filename": "Benton EMBO Reports 2025.pdf",
+      "sha256": "bf70a56e74bbb0a1ded26f7de06325e18313e8b8195d98e6abe5a252e070d485",
+      "bytes": 6876206,
+      "pages": 22,
+      "doi": "10.1038/s44319-025-00476-8",
+      "source_url": "https://doi.org/10.1038/s44319-025-00476-8"
+    },
+    {
+      "filename": "Dorkenwald Nature 2024.pdf",
+      "sha256": "e336e82b0ada1b71892fdd054719cadb0f899f18406d83b80d185eb09b33d8b4",
+      "bytes": 23010891,
+      "pages": 32,
+      "doi": "10.1038/s41586-024-07558-y",
+      "source_url": "https://doi.org/10.1038/s41586-024-07558-y"
+    }
+  ],
+  "method": "pdftotext -layout; examined abstract, main results, relevant figure legends, limitations, discussion, data/code availability and cited-reference entries",
+  "verification_scope": "PDF text; no online dataset/API download, no independent validation of supplementary tables or secondary cited experiments",
+  "project_state_changes": {
+    "model": false,
+    "brain_json": false,
+    "parameters": false,
+    "training": false
+  }
+}
