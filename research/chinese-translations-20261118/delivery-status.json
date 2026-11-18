@@ -1,0 +1,79 @@
+{
+  "complete": true,
+  "source_revision": "03002e92f5feecf89843f9f99ffdceebc9fea8f4",
+  "release_url": "https://github.com/linzhefeng24/Applepie/releases/tag/paper-translations-zh-20261118",
+  "fresh_download_sha256_verified_assets": [
+    "Dorkenwald_2024_Chinese_Full.pdf",
+    "Two_Papers_Chinese_Full_Translations.zip",
+    "Benton_2025_Chinese_Full.html",
+    "Translation_Notes_and_Sources.json",
+    "Benton_2025_Chinese_Full.docx",
+    "Benton_2025_Chinese_Full.md",
+    "Dorkenwald_2024_Chinese_Full.html",
+    "Benton_2025_Chinese_Full.pdf",
+    "Dorkenwald_2024_Chinese_Full.docx",
+    "Dorkenwald_2024_Chinese_Full.md"
+  ],
+  "assets": [
+    {
+      "name": "Dorkenwald_2024_Chinese_Full.pdf",
+      "bytes": 9066777,
+      "sha256": "ed081018ea9182b0a2f9f6b43c7d77864e1587d5d923ffb98e83ce72478f6fb1",
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/paper-translations-zh-20261118/Dorkenwald_2024_Chinese_Full.pdf"
+    },
+    {
+      "name": "Two_Papers_Chinese_Full_Translations.zip",
+      "bytes": 37123610,
+      "sha256": "f51e47208effa77526f37aacc6a7a43c335c3ae77d81f4fdd19216dd9fb9a176",
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/paper-translations-zh-20261118/Two_Papers_Chinese_Full_Translations.zip"
+    },
+    {
+      "name": "Benton_2025_Chinese_Full.html",
+      "bytes": 6040713,
+      "sha256": "5a8e2a600ea7d574df94825be381e3c08c0399b56f9335af490500a8fcf54de2",
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/paper-translations-zh-20261118/Benton_2025_Chinese_Full.html"
+    },
+    {
+      "name": "Translation_Notes_and_Sources.json",
+      "bytes": 1629,
+      "sha256": "dc070c4e934db2b194d8c5a1c2c78df5775edd5be2d115ed6772aa32ed00d077",
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/paper-translations-zh-20261118/Translation_Notes_and_Sources.json"
+    },
+    {
+      "name": "Benton_2025_Chinese_Full.docx",
+      "bytes": 4366663,
+      "sha256": "ded333a296b55e35cdd9e839f5895b22cf98d895d3d10ec324f4eccad9b7e49c",
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/paper-translations-zh-20261118/Benton_2025_Chinese_Full.docx"
+    },
+    {
+      "name": "Benton_2025_Chinese_Full.md",
+      "bytes": 70013,
+      "sha256": "64e17eba836477d5954c1fad9e76c61664a6299c0d5bf2e6a850a4a7c3614c4e",
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/paper-translations-zh-20261118/Benton_2025_Chinese_Full.md"
+    },
+    {
+      "name": "Dorkenwald_2024_Chinese_Full.html",
+      "bytes": 9083479,
+      "sha256": "cefa0a61e1a8da2a9b405e1ae0ec938d1cc29a8347d84c51922af87eb0e6e7eb",
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/paper-translations-zh-20261118/Dorkenwald_2024_Chinese_Full.html"
+    },
+    {
+      "name": "Benton_2025_Chinese_Full.pdf",
+      "bytes": 6509127,
+      "sha256": "cdd4a22c956befcc5080eea85ea0461efbe4a7fdfe8f341317ab5d36252a0a1d",
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/paper-translations-zh-20261118/Benton_2025_Chinese_Full.pdf"
+    },
+    {
+      "name": "Dorkenwald_2024_Chinese_Full.docx",
+      "bytes": 6505134,
+      "sha256": "263afbaebeeb861cb77ec54935ddd05dfeb9df66f37e9b0caf5e610a5f7cde53",
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/paper-translations-zh-20261118/Dorkenwald_2024_Chinese_Full.docx"
+    },
+    {
+      "name": "Dorkenwald_2024_Chinese_Full.md",
+      "bytes": 106366,
+      "sha256": "19f8a5a4138402bf1084cbf9aed849332b4442aeda8c7c05259b3891269485a2",
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/paper-translations-zh-20261118/Dorkenwald_2024_Chinese_Full.md"
+    }
+  ]
+}
