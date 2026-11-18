@@ -1,5 +1,5 @@
 {
-  "status": "Benton complete, first3 Nature pages translated; full two-paper delivery still in progress",
+  "status": "translation_complete_and_local_PDF_Word_HTML_rendering_passed; public_release_upload_pending",
   "total_pages": 54,
   "documents": {
     "benton": {
@@ -48,5 +48,68 @@
     }
   },
   "privacy": "A short public scientific example was used for a connectivity probe. The subsequent call with an actual PDF paragraph was rejected by automatic approval review before execution. Translation now uses an offline local model, with no paragraph submissions to external translation APIs.",
-  "final_translation_method": "Assistant-authored translation inside current conversation. Both local MT trials were rejected for terminology and numeric accuracy; neither was used for full translation."
+  "final_translation_method": "Translated directly by the assistant within the conversation; reference bibliographic entries and figure identifiers preserved; failed local model trials not used",
+  "quality_check": "quality-check.json",
+  "delivery_assets": [
+    {
+      "name": "Dorkenwald_2024_Chinese_Full.pdf",
+      "bytes": 9147486,
+      "sha256": "983d8f7bec1bcc5427e6700ee8bade1f68e772b5537ecb355dd1e55daf8abf38",
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/paper-translations-zh-20261118/Dorkenwald_2024_Chinese_Full.pdf"
+    },
+    {
+      "name": "Two_Papers_Chinese_Full_Translations.zip",
+      "bytes": 37210444,
+      "sha256": "bc2b7534e31a01ec55fdf93eee783118c428ad3b1f695697e5101a5f339a3050",
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/paper-translations-zh-20261118/Two_Papers_Chinese_Full_Translations.zip"
+    },
+    {
+      "name": "Benton_2025_Chinese_Full.html",
+      "bytes": 6040713,
+      "sha256": "5a8e2a600ea7d574df94825be381e3c08c0399b56f9335af490500a8fcf54de2",
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/paper-translations-zh-20261118/Benton_2025_Chinese_Full.html"
+    },
+    {
+      "name": "Translation_Notes_and_Sources.json",
+      "bytes": 1629,
+      "sha256": "dc070c4e934db2b194d8c5a1c2c78df5775edd5be2d115ed6772aa32ed00d077",
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/paper-translations-zh-20261118/Translation_Notes_and_Sources.json"
+    },
+    {
+      "name": "Benton_2025_Chinese_Full.docx",
+      "bytes": 4366663,
+      "sha256": "35b568e56610d3b2a09504b06e69ff4ac94fa06dbfe1d41beeb5592f175241d8",
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/paper-translations-zh-20261118/Benton_2025_Chinese_Full.docx"
+    },
+    {
+      "name": "Benton_2025_Chinese_Full.md",
+      "bytes": 70013,
+      "sha256": "64e17eba836477d5954c1fad9e76c61664a6299c0d5bf2e6a850a4a7c3614c4e",
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/paper-translations-zh-20261118/Benton_2025_Chinese_Full.md"
+    },
+    {
+      "name": "Dorkenwald_2024_Chinese_Full.html",
+      "bytes": 9083479,
+      "sha256": "cefa0a61e1a8da2a9b405e1ae0ec938d1cc29a8347d84c51922af87eb0e6e7eb",
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/paper-translations-zh-20261118/Dorkenwald_2024_Chinese_Full.html"
+    },
+    {
+      "name": "Benton_2025_Chinese_Full.pdf",
+      "bytes": 6515894,
+      "sha256": "e66744eb00374cbad2e092a098c28e5a3aafb9e1cd50ecef452bef34293f28b9",
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/paper-translations-zh-20261118/Benton_2025_Chinese_Full.pdf"
+    },
+    {
+      "name": "Dorkenwald_2024_Chinese_Full.docx",
+      "bytes": 6505134,
+      "sha256": "aeab38499b5eeac92080395bcc30869a62e4a87f8b2ed9dd8c6dd5001211ba14",
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/paper-translations-zh-20261118/Dorkenwald_2024_Chinese_Full.docx"
+    },
+    {
+      "name": "Dorkenwald_2024_Chinese_Full.md",
+      "bytes": 106366,
+      "sha256": "19f8a5a4138402bf1084cbf9aed849332b4442aeda8c7c05259b3891269485a2",
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/paper-translations-zh-20261118/Dorkenwald_2024_Chinese_Full.md"
+    }
+  ]
 }
