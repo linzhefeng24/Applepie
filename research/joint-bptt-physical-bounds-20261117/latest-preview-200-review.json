@@ -1,0 +1,46 @@
+{
+  "selected_parameter_update": 200,
+  "selected_bank": "latest raw after update; not historical best",
+  "release_url": "https://github.com/linzhefeng24/Applepie/releases/tag/joint-physical-latest-20261118-e0200",
+  "manifest_asset_hashes": {
+    "comparison-preview.jpg": "fb2031c2e70a5dca709da971914ce78aa2f103a21f324ed56b95d1a1484d5e05",
+    "Joint_LatestEpoch200_Replay.zip": "907abe507699f304c793b1587c11a432b6a7c694d9d3fee56574eb93e13d7d44",
+    "Joint_LatestEpoch200_Comparison.mp4": "06b875e743e5a143004552ec8977d84d6ffea457c493cbe4e936f077975c7972",
+    "Joint_LatestEpoch200.mp4": "6a9cee2fa918d1fd99c37e007dea661174999b1b7d2657981f702fab78f58018",
+    "evaluation.json": "26e20e275c126eec507690be98a4446e81af7906515df8e3b653560fe21b0a9c"
+  },
+  "viewed_video_frame_times_s": [
+    0.055,
+    0.205,
+    0.4
+  ],
+  "visual_findings": [
+    "Leg positions change, but sampled frames do not establish coordinated periodic walking.",
+    "Body remains visibly tilted; no restoration of directAB-like walking is established."
+  ],
+  "metrics": {
+    "actual_parameter_update": 200,
+    "joint_mse_rad2": 0.10574635678352702,
+    "joint_rmse_deg": 18.631822550130998,
+    "root_displacement_mm": [
+      0.2677133167293963,
+      -0.03881396835337398,
+      -0.10658882282775312
+    ],
+    "min_body_up_z_sampled_1ms": 0.9007053399607109,
+    "max_parameter_fractional_change_from_manual": 0.5764273362480392,
+    "all_states_finite": true,
+    "seconds": 116.97431637800003
+  },
+  "comparison": {
+    "best123_joint_rmse_deg": 16.82765902180587,
+    "best123_forward_mm": 0.12247374879550812,
+    "best123_min_body_up_z": 0.928392223155983,
+    "directAB_joint_rmse_deg": 9.328350971292931,
+    "directAB_forward_mm": 1.4121096286211856
+  },
+  "interpretation": "Latest200 has worse joint tracking and larger maximum sampled body tilt than best123, but larger forward displacement and smaller root height drop. It remains far below directAB displacement; neither angle loss nor this short replay establishes stable walking.",
+  "public_release_verified": true,
+  "downloaded_video_and_report_sha256_verified": true,
+  "training_numerics_modified": false
+}
