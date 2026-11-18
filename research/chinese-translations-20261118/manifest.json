@@ -1,5 +1,5 @@
 {
-  "status": "source_extraction_complete_translation_pending",
+  "status": "Benton complete, first3 Nature pages translated; full two-paper delivery still in progress",
   "total_pages": 54,
   "documents": {
     "benton": {
@@ -47,5 +47,6 @@
       ]
     }
   },
-  "privacy": "A short public scientific example was used for a connectivity probe. The subsequent call with an actual PDF paragraph was rejected by automatic approval review before execution. Translation now uses an offline local model, with no paragraph submissions to external translation APIs."
+  "privacy": "A short public scientific example was used for a connectivity probe. The subsequent call with an actual PDF paragraph was rejected by automatic approval review before execution. Translation now uses an offline local model, with no paragraph submissions to external translation APIs.",
+  "final_translation_method": "Assistant-authored translation inside current conversation. Both local MT trials were rejected for terminology and numeric accuracy; neither was used for full translation."
 }
