@@ -1,0 +1,18 @@
+{
+  "status": "prepared_for_release",
+  "delivery_assets": [
+    {
+      "name": "MaleCNS_Olfactory_Structure_and_Physiology.zip",
+      "bytes": 4440557,
+      "sha256": "e10a9c836b3a34b560510e8cfafcb36086994b973435ad71b4e1bedc34534f69",
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/malecns-olfactory-priors-20261119/MaleCNS_Olfactory_Structure_and_Physiology.zip"
+    },
+    {
+      "name": "edges.npz",
+      "bytes": 4438692,
+      "sha256": "e4d01a3a13b92e6b5131edfea0250acad68eb51df896e642a5dacd596af8077c",
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/malecns-olfactory-priors-20261119/edges.npz"
+    }
+  ],
+  "scope": "structural extraction and parameter priors; not a functioning full olfactory simulation"
+}
