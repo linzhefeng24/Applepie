@@ -1,0 +1,44 @@
+{
+  "complete": true,
+  "source_revision": "4587c3dc0c9c9943253dbd17b05f2616941e0ef2",
+  "release_url": "https://github.com/linzhefeng24/Applepie/releases/tag/benton-illustrated-zh-20261119",
+  "fresh_download_sha256_verified_assets": [
+    "Benton_2025_Chinese_Illustrated.docx",
+    "Benton_2025_Chinese_Illustrated.html",
+    "Benton_2025_Chinese_Illustrated.pdf",
+    "Benton_2025_Chinese_Illustrated.zip",
+    "Sources_and_Layout.json"
+  ],
+  "assets": [
+    {
+      "name": "Benton_2025_Chinese_Illustrated.docx",
+      "bytes": 4633152,
+      "sha256": "ad2000965d2e7667b4ea7a1123ba62d910a6acd6588552fffec9e1bc71af2d5e",
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/benton-illustrated-zh-20261119/Benton_2025_Chinese_Illustrated.docx"
+    },
+    {
+      "name": "Benton_2025_Chinese_Illustrated.html",
+      "bytes": 6537911,
+      "sha256": "ab82a342739fc1c3f79544c4c68bb3b635571f759c026753ec30510619ec6c56",
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/benton-illustrated-zh-20261119/Benton_2025_Chinese_Illustrated.html"
+    },
+    {
+      "name": "Benton_2025_Chinese_Illustrated.pdf",
+      "bytes": 6876317,
+      "sha256": "50808d0021f464e4db16f28f127c35ca7f6c65b52be63744d411d91f668fab34",
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/benton-illustrated-zh-20261119/Benton_2025_Chinese_Illustrated.pdf"
+    },
+    {
+      "name": "Benton_2025_Chinese_Illustrated.zip",
+      "bytes": 15905530,
+      "sha256": "e443c7871e524f0fba53000b18226ed0c7f97204a5c638d38e22d22747f922a5",
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/benton-illustrated-zh-20261119/Benton_2025_Chinese_Illustrated.zip"
+    },
+    {
+      "name": "Sources_and_Layout.json",
+      "bytes": 2649,
+      "sha256": "e568e259dc9a46a714c03214f9b47b498c87654d371b98d55cb7ecc1ed28f09e",
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/benton-illustrated-zh-20261119/Sources_and_Layout.json"
+    }
+  ]
+}
