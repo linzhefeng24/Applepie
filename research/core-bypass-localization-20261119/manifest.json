@@ -1,5 +1,5 @@
 {
-  "status": "local_verified_pending_publication",
+  "status": "public_release_uploaded_and_fresh_download_sha256_verified",
   "source_revision": "4731a3e2ff16a072b74acd606c51bb765103664b",
   "input_model_sha256": "38b07321a54694dc875aebfaa82c930cd752bd0d25f2940ef7087fa45a44e4fa",
   "input_model_asset": {
@@ -28,5 +28,7 @@
       "url": "https://github.com/linzhefeng24/Applepie/releases/download/core-bypass-localization-20261119/phenomena_status.json"
     }
   ],
-  "scope": "29 independent diagnostic conditions, original full-resolution states and exact event logs; previous canonical model unchanged; local model slow rhythm is not full-network behavior reproduction."
+  "scope": "29 independent diagnostic conditions, original full-resolution states and exact event logs; previous canonical model unchanged; local model slow rhythm is not full-network behavior reproduction.",
+  "release_url": "https://github.com/linzhefeng24/Applepie/releases/tag/core-bypass-localization-20261119",
+  "verification": "All3 public assets freshly downloaded and SHA256 verified by GitHub Actions; durable status in delivery-status.json"
 }
