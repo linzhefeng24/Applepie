@@ -1,0 +1,1274 @@
+[
+  {
+    "bodyId": "10065",
+    "type": "DNb05",
+    "template_bodyId": "12044",
+    "template_type": "DNb08",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "10118",
+    "type": "DNb05",
+    "template_bodyId": "12044",
+    "template_type": "DNb08",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "10513",
+    "type": "Delta7",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "receptor_assumption_test_with_sign_zero"
+  },
+  {
+    "bodyId": "10539",
+    "type": "EPG",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "10888",
+    "type": "DNb06",
+    "template_bodyId": "12044",
+    "template_type": "DNb08",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "11067",
+    "type": "DNb06",
+    "template_bodyId": "12044",
+    "template_type": "DNb08",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "11184",
+    "type": "Delta7",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "receptor_assumption_test_with_sign_zero"
+  },
+  {
+    "bodyId": "11307",
+    "type": "EPG",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "11503",
+    "type": "EPG",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "11874",
+    "type": "EPG",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "11987",
+    "type": "EPG",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "11989",
+    "type": "EPG",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "12449",
+    "type": "EPG",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "13217",
+    "type": "EPG",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "14507",
+    "type": "EPG",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "14509",
+    "type": "Delta7",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "receptor_assumption_test_with_sign_zero"
+  },
+  {
+    "bodyId": "14686",
+    "type": "DNg11",
+    "template_bodyId": "11074",
+    "template_type": "DNg13",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "14727",
+    "type": "EPG",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "14806",
+    "type": "Delta7",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "receptor_assumption_test_with_sign_zero"
+  },
+  {
+    "bodyId": "14816",
+    "type": "Delta7",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "receptor_assumption_test_with_sign_zero"
+  },
+  {
+    "bodyId": "15398",
+    "type": "Delta7",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "receptor_assumption_test_with_sign_zero"
+  },
+  {
+    "bodyId": "15399",
+    "type": "Delta7",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "receptor_assumption_test_with_sign_zero"
+  },
+  {
+    "bodyId": "15409",
+    "type": "Delta7",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "receptor_assumption_test_with_sign_zero"
+  },
+  {
+    "bodyId": "15495",
+    "type": "Delta7",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "receptor_assumption_test_with_sign_zero"
+  },
+  {
+    "bodyId": "15568",
+    "type": "DNg11",
+    "template_bodyId": "11074",
+    "template_type": "DNg13",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "15616",
+    "type": "EPG",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "15654",
+    "type": "Delta7",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "receptor_assumption_test_with_sign_zero"
+  },
+  {
+    "bodyId": "15713",
+    "type": "EPG",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "15837",
+    "type": "Delta7",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "receptor_assumption_test_with_sign_zero"
+  },
+  {
+    "bodyId": "15839",
+    "type": "Delta7",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "receptor_assumption_test_with_sign_zero"
+  },
+  {
+    "bodyId": "15851",
+    "type": "Delta7",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "receptor_assumption_test_with_sign_zero"
+  },
+  {
+    "bodyId": "15904",
+    "type": "Delta7",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "receptor_assumption_test_with_sign_zero"
+  },
+  {
+    "bodyId": "16110",
+    "type": "Delta7",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "receptor_assumption_test_with_sign_zero"
+  },
+  {
+    "bodyId": "16180",
+    "type": "Delta7",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "receptor_assumption_test_with_sign_zero"
+  },
+  {
+    "bodyId": "16234",
+    "type": "Delta7",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "receptor_assumption_test_with_sign_zero"
+  },
+  {
+    "bodyId": "16360",
+    "type": "EPG",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "16399",
+    "type": "DNg11",
+    "template_bodyId": "11074",
+    "template_type": "DNg13",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "16412",
+    "type": "Delta7",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "receptor_assumption_test_with_sign_zero"
+  },
+  {
+    "bodyId": "16476",
+    "type": "Delta7",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "receptor_assumption_test_with_sign_zero"
+  },
+  {
+    "bodyId": "16540",
+    "type": "Delta7",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "receptor_assumption_test_with_sign_zero"
+  },
+  {
+    "bodyId": "16553",
+    "type": "Delta7",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "receptor_assumption_test_with_sign_zero"
+  },
+  {
+    "bodyId": "16869",
+    "type": "Delta7",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "receptor_assumption_test_with_sign_zero"
+  },
+  {
+    "bodyId": "17024",
+    "type": "Delta7",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "receptor_assumption_test_with_sign_zero"
+  },
+  {
+    "bodyId": "17143",
+    "type": "Delta7",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "receptor_assumption_test_with_sign_zero"
+  },
+  {
+    "bodyId": "17379",
+    "type": "Delta7",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "receptor_assumption_test_with_sign_zero"
+  },
+  {
+    "bodyId": "17386",
+    "type": "DNg12_d",
+    "template_bodyId": "11074",
+    "template_type": "DNg13",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "17753",
+    "type": "Delta7",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "receptor_assumption_test_with_sign_zero"
+  },
+  {
+    "bodyId": "17804",
+    "type": "Delta7",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "receptor_assumption_test_with_sign_zero"
+  },
+  {
+    "bodyId": "18562",
+    "type": "DNg11",
+    "template_bodyId": "11074",
+    "template_type": "DNg13",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "18616",
+    "type": "DNg12_a",
+    "template_bodyId": "11074",
+    "template_type": "DNg13",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "18639",
+    "type": "Delta7",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "receptor_assumption_test_with_sign_zero"
+  },
+  {
+    "bodyId": "18823",
+    "type": "Delta7",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "receptor_assumption_test_with_sign_zero"
+  },
+  {
+    "bodyId": "19125",
+    "type": "EPG",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "19268",
+    "type": "DNg12_c",
+    "template_bodyId": "11074",
+    "template_type": "DNg13",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "19441",
+    "type": "DNg12_a",
+    "template_bodyId": "11074",
+    "template_type": "DNg13",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "19455",
+    "type": "DNg12_h",
+    "template_bodyId": "11074",
+    "template_type": "DNg13",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "19631",
+    "type": "DNg12_h",
+    "template_bodyId": "11074",
+    "template_type": "DNg13",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "19633",
+    "type": "DNg11",
+    "template_bodyId": "11074",
+    "template_type": "DNg13",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "19825",
+    "type": "EPG",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "19946",
+    "type": "DNg12_c",
+    "template_bodyId": "11074",
+    "template_type": "DNg13",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "20129",
+    "type": "DNg12_e",
+    "template_bodyId": "11074",
+    "template_type": "DNg13",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "20288",
+    "type": "DNg12_c",
+    "template_bodyId": "11074",
+    "template_type": "DNg13",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "20473",
+    "type": "DNg12_c",
+    "template_bodyId": "11074",
+    "template_type": "DNg13",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "20788",
+    "type": "DNg12_c",
+    "template_bodyId": "11074",
+    "template_type": "DNg13",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "21624",
+    "type": "DNg12_a",
+    "template_bodyId": "11074",
+    "template_type": "DNg13",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "22033",
+    "type": "DNg12_c",
+    "template_bodyId": "11074",
+    "template_type": "DNg13",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "22080",
+    "type": "DNg12_g",
+    "template_bodyId": "11074",
+    "template_type": "DNg13",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "22128",
+    "type": "DNg12_g",
+    "template_bodyId": "11074",
+    "template_type": "DNg13",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "22190",
+    "type": "DNg12_e",
+    "template_bodyId": "11074",
+    "template_type": "DNg13",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "22474",
+    "type": "DNg12_e",
+    "template_bodyId": "11074",
+    "template_type": "DNg13",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "22564",
+    "type": "DNg12_e",
+    "template_bodyId": "11074",
+    "template_type": "DNg13",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "22596",
+    "type": "DNg12_e",
+    "template_bodyId": "11074",
+    "template_type": "DNg13",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "23628",
+    "type": "DNg12_a",
+    "template_bodyId": "11074",
+    "template_type": "DNg13",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "23960",
+    "type": "DNg12_c",
+    "template_bodyId": "11074",
+    "template_type": "DNg13",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "24619",
+    "type": "DNg12_c",
+    "template_bodyId": "11074",
+    "template_type": "DNg13",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "24880",
+    "type": "DNg12_f",
+    "template_bodyId": "11074",
+    "template_type": "DNg13",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "24961",
+    "type": "DNg12_a",
+    "template_bodyId": "11074",
+    "template_type": "DNg13",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "25180",
+    "type": "DNg12_a",
+    "template_bodyId": "11074",
+    "template_type": "DNg13",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "26441",
+    "type": "DNg12_f",
+    "template_bodyId": "11074",
+    "template_type": "DNg13",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "32413",
+    "type": "DNg12_f",
+    "template_bodyId": "11074",
+    "template_type": "DNg13",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "35324",
+    "type": "Delta7",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "receptor_assumption_test_with_sign_zero"
+  },
+  {
+    "bodyId": "36379",
+    "type": "DNg12_b",
+    "template_bodyId": "11074",
+    "template_type": "DNg13",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "37686",
+    "type": "DNg12_b",
+    "template_bodyId": "11074",
+    "template_type": "DNg13",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "40701",
+    "type": "DNg12_b",
+    "template_bodyId": "11074",
+    "template_type": "DNg13",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "40768",
+    "type": "EPGt",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "44836",
+    "type": "DNg12_b",
+    "template_bodyId": "11074",
+    "template_type": "DNg13",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "47102",
+    "type": "DNg12_b",
+    "template_bodyId": "11074",
+    "template_type": "DNg13",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "47285",
+    "type": "DNg12_b",
+    "template_bodyId": "11074",
+    "template_type": "DNg13",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "48408",
+    "type": "DNg12_b",
+    "template_bodyId": "11074",
+    "template_type": "DNg13",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "55021",
+    "type": "DNg12_e",
+    "template_bodyId": "11074",
+    "template_type": "DNg13",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "55630",
+    "type": "EPGt",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "57591",
+    "type": "EPGt",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "63287",
+    "type": "DNg12_b",
+    "template_bodyId": "11074",
+    "template_type": "DNg13",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "84758",
+    "type": "EPG",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "88342",
+    "type": "EPG",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "92188",
+    "type": "EPG",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "107195",
+    "type": "EPG",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "131313",
+    "type": "EPG",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "322714",
+    "type": "DNg12_b",
+    "template_bodyId": "11074",
+    "template_type": "DNg13",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "326964",
+    "type": "DNg12_a",
+    "template_bodyId": "11074",
+    "template_type": "DNg13",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "434891",
+    "type": "Delta7",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "receptor_assumption_test_with_sign_zero"
+  },
+  {
+    "bodyId": "482128",
+    "type": "DNg12_b",
+    "template_bodyId": "11074",
+    "template_type": "DNg13",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "511841",
+    "type": "Delta7",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "receptor_assumption_test_with_sign_zero"
+  },
+  {
+    "bodyId": "512305",
+    "type": "EPG",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "512513",
+    "type": "EPG",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "512514",
+    "type": "EPG",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "512928",
+    "type": "EPG",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "513033",
+    "type": "EPG",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "513284",
+    "type": "EPG",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "513463",
+    "type": "EPG",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "513464",
+    "type": "EPG",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "513517",
+    "type": "EPG",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "513520",
+    "type": "EPG",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "514126",
+    "type": "EPG",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "515294",
+    "type": "Delta7",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "receptor_assumption_test_with_sign_zero"
+  },
+  {
+    "bodyId": "515675",
+    "type": "EPG",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "515961",
+    "type": "Delta7",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "receptor_assumption_test_with_sign_zero"
+  },
+  {
+    "bodyId": "517417",
+    "type": "Delta7",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "receptor_assumption_test_with_sign_zero"
+  },
+  {
+    "bodyId": "519140",
+    "type": "EPG",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "519144",
+    "type": "EPG",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "519328",
+    "type": "EPG",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "519331",
+    "type": "Delta7",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "receptor_assumption_test_with_sign_zero"
+  },
+  {
+    "bodyId": "519332",
+    "type": "Delta7",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "receptor_assumption_test_with_sign_zero"
+  },
+  {
+    "bodyId": "519941",
+    "type": "EPG",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "520581",
+    "type": "EPG",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "520812",
+    "type": "EPG",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "520818",
+    "type": "EPG",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "521409",
+    "type": "EPG",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "521812",
+    "type": "EPG",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "521813",
+    "type": "EPG",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "522994",
+    "type": "Delta7",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "receptor_assumption_test_with_sign_zero"
+  },
+  {
+    "bodyId": "523786",
+    "type": "EPG",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "524073",
+    "type": "EPG",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "524074",
+    "type": "Delta7",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "receptor_assumption_test_with_sign_zero"
+  },
+  {
+    "bodyId": "529318",
+    "type": "Delta7",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "receptor_assumption_test_with_sign_zero"
+  },
+  {
+    "bodyId": "531434",
+    "type": "DNg12_a",
+    "template_bodyId": "11074",
+    "template_type": "DNg13",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "533725",
+    "type": "Delta7",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "receptor_assumption_test_with_sign_zero"
+  },
+  {
+    "bodyId": "543506",
+    "type": "EPGt",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "544361",
+    "type": "DNg12_d",
+    "template_bodyId": "11074",
+    "template_type": "DNg13",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "556346",
+    "type": "EPG",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "556347",
+    "type": "EPG",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "568155",
+    "type": "Delta7",
+    "template_bodyId": "15210",
+    "template_type": "PFL3",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "receptor_assumption_test_with_sign_zero"
+  },
+  {
+    "bodyId": "800173",
+    "type": "IN17A001",
+    "template_bodyId": "800003",
+    "template_type": "IN17A001",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "800288",
+    "type": "IN17A001",
+    "template_bodyId": "800003",
+    "template_type": "IN17A001",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "800863",
+    "type": "INXXX466",
+    "template_bodyId": "800003",
+    "template_type": "IN17A001",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "801149",
+    "type": "INXXX466",
+    "template_bodyId": "800003",
+    "template_type": "IN17A001",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "801257",
+    "type": "IN16B036",
+    "template_bodyId": "800004",
+    "template_type": "IN07B007",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "receptor_assumption_test_with_sign_zero"
+  },
+  {
+    "bodyId": "801429",
+    "type": "INXXX466",
+    "template_bodyId": "800003",
+    "template_type": "IN17A001",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "801728",
+    "type": "INXXX466",
+    "template_bodyId": "800003",
+    "template_type": "IN17A001",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "801884",
+    "type": "IN16B036",
+    "template_bodyId": "800004",
+    "template_type": "IN07B007",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "receptor_assumption_test_with_sign_zero"
+  },
+  {
+    "bodyId": "801916",
+    "type": "IN16B036",
+    "template_bodyId": "800004",
+    "template_type": "IN07B007",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "receptor_assumption_test_with_sign_zero"
+  },
+  {
+    "bodyId": "802025",
+    "type": "INXXX466",
+    "template_bodyId": "800003",
+    "template_type": "IN17A001",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "803183",
+    "type": "IN16B036",
+    "template_bodyId": "800004",
+    "template_type": "IN07B007",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "receptor_assumption_test_with_sign_zero"
+  },
+  {
+    "bodyId": "818556",
+    "type": "IN17A001",
+    "template_bodyId": "800003",
+    "template_type": "IN17A001",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "818789",
+    "type": "DNg12_f",
+    "template_bodyId": "11074",
+    "template_type": "DNg13",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "903139",
+    "type": "IN16B036",
+    "template_bodyId": "800004",
+    "template_type": "IN07B007",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "receptor_assumption_test_with_sign_zero"
+  },
+  {
+    "bodyId": "903216",
+    "type": "INXXX466",
+    "template_bodyId": "800003",
+    "template_type": "IN17A001",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  },
+  {
+    "bodyId": "904079",
+    "type": "IN16B036",
+    "template_bodyId": "800004",
+    "template_type": "IN07B007",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "receptor_assumption_test_with_sign_zero"
+  },
+  {
+    "bodyId": "909612",
+    "type": "DNg11",
+    "template_bodyId": "11074",
+    "template_type": "DNg13",
+    "origin": "borrowed_manual_model_prior_not_measured",
+    "sign_status": "NT_prediction_not_receptor_measurement"
+  }
+]

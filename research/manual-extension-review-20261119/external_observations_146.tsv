@@ -1,0 +1,147 @@
+id	item	external_procedure	external_observation	external_verdict
+1	structure:DNg100:0	刺激 DNg100（160 pA）	158/245 个 MN 被激活，MN 群体 5.0 Hz 节律（0.203），85/130 肌肉振荡、68 强；六腿同相，身体 0.4 s 不走	部分符合
+2	structure:DNg100:1	查来源	933 DN 筛查是 Pugliese 的 MANC 局部模型结果，本模型不做该筛查	无法验证（外部筛查）
+3	structure:DNg100:2	40/80/160/240/320 pA	40/80 pA→0 MN；160→158 MN/5.0 Hz；240→166/7.5；320→162/9.2	部分符合（剂量↑频率↑）
+4	structure:DNg100:3	查连接组	DNg100→9A 26 条兴奋边/1105 突触；hook 缺失	部分符合
+5	structure:DNb08:0	刺激 DNb08	173/245 MN，7.5 Hz（0.198），89/130 肌肉振荡、53 强	部分符合
+6	structure:DNb08:1	查 E1-E2-E4-E5-I2	细胞不存在	无法验证（细胞缺失）
+7	structure:DNp09:0	刺激 DNp09	175/245 MN，8.3 Hz（0.149），83/130 肌肉振荡	部分符合
+8	structure:DNp09:1	刺激 DNp09	强节律输出；方向不可测	部分符合
+9	structure:DNp09:2	刺激 DNp09	求偶行为不在模型	无法验证（行为缺失）
+10	structure:DNp09:3	查下游	98 个下游 DN 类型（不是约 23）	不符合
+11	structure:MDN:0	刺激 MDN	162/245 MN，10.0 Hz（0.172），69/130 肌肉振荡	部分符合
+12	structure:MDN:1	刺激 MDN	沉默+后退速度不可测	无法验证（行为）
+13	structure:MDN:2	查触角输入	触角感觉细胞不在模型	无法验证（感觉缺失）
+14	structure:MDN:3	刺激 MDN	飞行状态不在模型	无法验证（行为缺失）
+15	structure:DNa01:0	刺激 DNa01	自身 71.7 Hz，仅 5/245 MN、0/130 肌肉节律	无法验证相关性；观察：几乎不传向肌肉
+16	structure:DNa02:0	刺激 DNa02	173/245 MN，5.0 Hz（0.231），86/130 肌肉振荡、73 强	部分符合
+17	structure:DNa02:1	刺激 DNa02	角速度预测不可测	无法验证（行为）
+18	structure:DNa02:2	刺激 DNa02	自身 23.8 Hz；无步态相位	无法验证（步态）
+19	structure:DNa02:3	查连接组	PFL3→DNa02 24 边/736 突触；PFL2→DNa02 4 边；跨中线不可查	部分符合
+20	structure:DNg13:0	刺激 DNg13	108/245 MN，但节律 0.003、0/130 肌肉节律	部分符合（不产生节律）
+21	structure:DNg13:1	刺激 DNg13	步幅不可测；肌肉节律 0	无法验证（步态）
+22	structure:DNg13:2	刺激 DNg13	行为领先不可测；自身 72.9 Hz	无法验证（行为）
+23	structure:DNg13:3	查连接组	PFL3→DNg13 3 条兴奋边、PFL2→DNg13 0 条；跨中线不可查	相反/部分
+24	structure:DNb05_DNb06:0	查细胞表	细胞不存在	无法验证（细胞缺失）
+25	structure:DNa03:0	刺激 DNa03	175/245 MN，5.8 Hz（0.191），91/130 肌肉振荡、71 强	部分符合
+26	structure:DNa03:1	查连接组+刺激	PFL3→DNa03 24 边/468 突触；LAL121 未单独验证	部分符合
+27	structure:DNg75:0	刺激 DNg75	175/245 MN，5.0 Hz（0.220），91/130 肌肉振荡、76 强	部分符合（行为不可测）
+28	structure:DNg75:1	DNg100+DNg75	172/245 MN，峰值 10.0 Hz（5.0→10.0）	部分符合（频率↑）
+29	structure:DNg75:2	查连接组	FeCO/CPG 不在模型	无法验证（细胞缺失）
+30	structure:DNg97:0	刺激 DNg97	164/245 MN，5.0 Hz（0.234），88/130 肌肉振荡、74 强	部分符合
+31	structure:DNg97:1	DNg100+DNg97	170/245 MN，峰值 10.0 Hz（5.0→10.0）	部分符合（频率↑）
+32	structure:DNg97:2	刺激 DNg97；查相位	LF-RF 相位 −0.01 周（同相），无左右交替	不符合
+33	structure:DNg55:0	刺激 DNg55	93 脉冲、0 MN	符合（不驱动运动）
+34	structure:DNg55:1	DNg100+DNg55	峰值 10.8 Hz，但节律强度 0.203→0.094	部分符合（频率↑、节律↓）
+35	structure:DNg16:0	刺激 DNg16	163/245 MN，5.0 Hz（0.229），90/130 肌肉振荡、76 强	部分符合
+36	structure:DNg16:1	DNg100+DNg16	161/245 MN，0.238（DNg100 0.203），MN 7.7 vs 6.6 Hz，略升	不符合（文献说下降）
+37	structure:DNg74:0	查连接组+刺激	DNg74→9A 28 条抑制边；刺激时 9A 0 Hz	支持（抑制 9A）
+38	structure:DNg74:1	查连接组+刺激	DNg100→9A 26 条兴奋边；DNg100 驱动时 9A 3.5 Hz；hook 缺失	部分支持
+39	structure:DNg11_DNg12:0	刺激 DNg111	186 脉冲、0 MN；DNg111 与 DNg11 对应关系无注释	无法确认身份
+40	structure:DNg11_DNg12:1	查细胞表	DNg12 不存在	无法验证（细胞缺失）
+41	structure:DopaMeander:0	查细胞表	不存在	无法验证（细胞缺失）
+42	structure:DopaMeander:1	查细胞表	不存在	无法验证（细胞缺失）
+43	structure:BPN:0	查细胞表+包里协议	无 BPN 类型；包里 BPN_FG 用 CL210_a，刺激得 174/245 MN、9.2 Hz（0.316）	无法直接验证；代理强驱动
+44	structure:BPN:1	同上	「快速直线长行走」不可测	无法验证（行为）
+45	structure:PFL3_EPG_CX:0	查细胞表	EPG/Δ7 不存在	无法验证（细胞缺失）
+46	structure:PFL3_EPG_CX:1	查细胞表	同上	无法验证（细胞缺失）
+47	structure:PFL3_EPG_CX:2	查细胞表	同上	无法验证（细胞缺失）
+48	structure:PFL3_EPG_CX:3	连接组+双侧刺激	736 兴奋突触；左投射→DNa02 左 51.7/右 8.3；镜像反转 53.3/6.7	部分支持（同侧兴奋）
+49	structure:PFL3_EPG_CX:4	刺激 PFL2	167/245 MN，10.8 Hz（0.097）；DNa02 左 40.0/右 34.2（比 PFL3 对称）	部分支持（增益样）
+50	structure:MAN:0	查细胞表	无 MAN；DNg30 是 SPN，不是 MAN；SPN 刺激 0 MN	无法验证（MAN 缺失）
+51	structure:MAN:1	查细胞表	无 MAN	无法验证（细胞缺失）
+52	structure:DN_population:0	quiet/DN驱动统计	quiet 430 个 DN 全 0；驱动后 253 个活动、249 个 >1 Hz	部分符合
+53	structure:DN_population:1	quiet/DN驱动	无气味刺激	无法验证（语境缺失）
+54	structure:E1_E2_I1:0	查细胞表	不存在	无法验证（细胞缺失）
+55	structure:E1_E2_I1:1	查连接组	不存在	无法验证（细胞缺失）
+56	structure:E1_E2_I1:2	查细胞表	不存在	无法验证（细胞缺失）
+57	structure:E1_E2_I1:3	查细胞表	不存在	无法验证（细胞缺失）
+58	structure:E1_E2_I1:4	查细胞表	不存在	无法验证（细胞缺失）
+59	structure:E1_E2_E4_E5_I2:0	查细胞表	不存在	无法验证（细胞缺失）
+60	structure:19B_19A:0	连接组+刺激 19B	168 条边全为兴奋；19A 从 4.9→14.1 Hz	不符合（方向相反）
+61	structure:19B_19A:1	查节段分布	模型 T1 16/T2 11/T3 6；文献 8/63/27	不符合
+62	structure:19B_19A:2	双侧 19A 刺激	156/245 MN，5.8 Hz（0.078），60/130 肌肉振荡	部分符合
+63	structure:19B_19A:3	刺激 19A/19B	前腿去除、FeCO 缺失	无法验证
+64	structure:9A:0	查连接组	9A→腿 MN 有直接边；hook 缺失	无法验证（hook 缺失）
+65	structure:9A:1	查细胞表	hook 缺失	无法验证（hook 缺失）
+66	structure:9A:2	刺激 9A（GABA 能）	自身 71 Hz，0 MN、0/130 肌肉节律	无法验证（行为）；观察：不传向肌肉
+67	structure:9A:3	查细胞表	hook/claw 缺失	无法验证（细胞缺失）
+68	structure:9A:4	刺激 9A	4625 脉冲、0 MN	无法验证（行为）；观察：无输出
+69	structure:FeCO:0	查细胞表	不存在	无法验证（感觉缺失）
+70	structure:FeCO:1	查细胞表	不存在	无法验证（感觉缺失）
+71	structure:13Balpha_10Balpha:0	刺激 13B	1209 脉冲、0 MN	无法验证（角度/行为）
+72	structure:13Balpha_10Balpha:1	刺激 10B	109/245 MN，但节律 0.002、2/130 肌肉	部分符合（无节律）
+73	structure:leg_MN_size_principle:0	quiet+查参数	全 0 脉冲；383 MN 同一参数（RMP −50.9、606 MΩ、NaP 0.3），无分类	不符合（30 Hz 不成立）
+74	structure:leg_MN_size_principle:1	查参数	无快/中/慢分类	无法验证（无分类）
+75	structure:leg_MN_size_principle:2	0.4 s 回放	93/116 关节 >1°、最大 95.7°；窗口分辨率 2.5 Hz	无法验证（窗口/行为）
+76	structure:tripod_coordination:0	各条件腿相位	所有强节律条件腿间相位差≈0（同相），非对侧 0.5	不符合
+77	structure:tripod_coordination:1	TCS 指标	无步态相	无法验证（无步态）
+78	structure:tripod_coordination:2	不同强度	相位都≈0，不随强度变	不符合/无法验证
+79	structure:walking_kinematics:0	0.4 s 回放	根位移 0.002/0.013/−0.028，up_z 最低 0.947，不走	无法验证（不走）
+80	structure:walking_kinematics:1	0.4 s 回放	无支撑/摆动相	无法验证（不走）
+81	structure:walking_kinematics:2	负载实验	无负载协议	无法验证
+82	vnc:chief_9A_hook_gating	刺激 9A+查 DNg74→9A	0 MN；DNg74→9A 抑制；hook 缺失	部分支持
+83	vnc:LBL40	刺激 LBL40（胆碱能）	2231 脉冲、0 MN（尽管 253 条兴奋边到 MN）	未见（无 MN 输出）
+84	vnc:LUL130	查细胞表	不存在	无法验证（细胞缺失）
+85	vnc:CxHP8	查细胞表	不存在	无法验证（细胞缺失）
+86	vnc:5HT_VNC	刺激 5-HT（2 个）	186 脉冲、0 MN	未见（无输出）
+87	vnc:13Balpha_9Aalpha_10Balpha	刺激 13B/9A/10B	13B 0 MN；9A 0 MN；10B 109 MN 但无节律	未见
+88	vnc:FeCO_pathway_divergence	查细胞表	不存在	无法验证（感觉缺失）
+89	vnc:putative_three_cell_CPG	查细胞表	无 CPG 细胞	无法验证（细胞缺失）
+90	vnc:mechanosensory_split_belt_feedback	查细胞表	感觉通路缺失	无法验证（感觉缺失）
+91	vnc:dMAN_pushdown	查细胞表	不存在	无法验证（细胞缺失）
+92	vnc:BRK_behavioral_activity	刺激 BRK	160/245 MN，2.5 Hz（0.108），78/130 肌肉振荡	部分符合
+93	vnc:BRK_stance_gated_braking	刺激 BRK	支撑相门控不可测	无法验证（无步态）
+94	vnc:BRK_joint_angle_muscle_recruitment	刺激 BRK	关节角依赖不可测	无法验证（无行为）
+95	vnc:hemilineage9A_population_activation	刺激 9A（GABA 能）	4625 脉冲、0 MN、0/130 肌肉节律	未见（不传向肌肉）
+96	vnc:hemilineage21A_posture	刺激 21A	5834 脉冲、18/245 MN、节律 0.000	未见
+97	vnc:hemilineage10B_population_activation	刺激 10B	109/245 MN、节律 0.002、2/130 肌肉	未见（无节律）
+98	vnc:MN_recruitment_and_rest	quiet	全部 MN 0 脉冲；无分类	不符合（30 Hz 不成立）
+99	vnc:MN_reflex_reversal	查感觉通路	感觉反馈未接	无法验证（感觉缺失）
+100	vnc:MN_selective_derecruitment	剂量序列	160→240→320 pA：158→166→162 MN、5.0→7.5→9.2 Hz，无选择性去募集	无法验证（无分类）
+101	vnc:campaniform_load_feedback_2026	查细胞表	感觉缺失	无法验证（感觉缺失）
+102	vnc:fCO_subsets_kinematics_vs_coordination	查细胞表	FeCO 缺失	无法验证（感觉缺失）
+103	vnc:central_peripheral_coordination_2026	查感觉通路	闭环未接	无法验证（感觉缺失）
+104	vnc:BANC_local_feedback_architecture	查来源	模型是 MaleCNS，不含 BANC	无法验证（数据集不同）
+105	vnc:sensorimotor_delay_model	查感觉通路	无反馈回路	无法验证（感觉缺失）
+106	vnc:VNC_population_walking_grooming	刺激 VNC 群体	DNg100 驱动下 323/999 VNC 内在细胞活跃；理毛不可测	部分符合
+107	vnc:BDN2_DNg100_activity_correction	刺激 DNg100	synonym 即 BDN2；与包内 DN_drive 一致	支持（身份一致）
+108	vnc:hemilineage1A_forward	刺激 1A	165/245 MN，7.5 Hz（0.088），57/130 肌肉振荡	部分符合（节律弱）
+109	vnc:hemilineage13B_tonic_posture	刺激 13B	1209 脉冲、0 MN	未见（无输出）
+110	vnc:hemilineage19A_segmental_movement	刺激 19A	156/245 MN，5.8 Hz（0.078），60/130 肌肉振荡	部分符合（弱节律）
+111	vnc:hemilineage23B_intersegmental_movement	刺激 23B	2750 脉冲、0 MN	未见（无输出）
+112	vnc:chordotonal_silencing_all_speed_kinematics	查细胞表	弦音器缺失	无法验证（感觉缺失）
+113	vnc:CPG_pruning_solution_variability	查来源	属另一模型	无法验证（另一模型）
+114	vnc:DNb08_load_dependent_rhythmic_output	刺激 DNb08	7.5 Hz（0.198），89/130 肌肉；无负载协议	部分符合
+115	vnc:CPG_screen_metric_version	—	属另一模型流程	不适用
+116	vnc:BRK_processed_example_alignment	—	数据处理，不是现象	不适用
+117	vnc:MN_Rdl_GABAA_inhibition_walking	查受体	无 Rdl	无法验证（受体缺失）
+118	vnc:MN_subset_Rdl_differential_kinematics	查受体	无 Rdl	无法验证（受体缺失）
+119	vnc:LAL_PS_ANcontra_walking_activity	查细胞表	LAL 208/PS 101，无逐一身份注释	无法验证（身份未定）
+120	vnc:LAL_PS_ANcontra_stride_contribution	查细胞表	身份未定	无法验证（身份未定）
+121	vnc:active_passive_stride_signal_context	—	需主动/被动运动语境	无法验证（行为缺失）
+122	vnc:9Ba_bilateral_club_integration	刺激 09B	165/245 MN，5.0 Hz（0.123），78/130 肌肉振荡、34 强	部分符合
+123	vnc:10Ba_intersegmental_functional_map	刺激 10B	109/245 MN、节律 0.002、2/130 肌肉	未见（无节律）
+124	vnc:13Bb_position_movement_convergence	刺激 13B	0 MN	未见（无输出）
+125	vnc:inhibition_gates_sensory_adaptation	查感觉通路	缺失	无法验证（感觉缺失）
+126	vnc:BRK_BON1_functional_excitation	刺激 BRK	2.5 Hz、78/130 肌肉；BON1 未标注	部分符合
+127	chat:PFL3_steering	连接组+双侧刺激	736 兴奋突触；同侧 DNa02 51.7 vs 8.3，镜像反转	支持（同侧兴奋）
+128	chat:DNa02_push_pull	查连接组	无 DNa02→DNa02 直接边	部分支持（无直接互抑）
+129	chat:PFL2_gain	连接组+刺激	PFL2→DNa02 4 边；DNa02 左 40.0/右 34.2，双侧对称	部分支持（增益样）
+130	chat:DNa02_DNg13_phase	刺激两者	DNa02 驱动 5.0 Hz（0.231）；DNg13 驱动 0.003	部分支持（无步态相位）
+131	chat:DNg13_phase_gate	刺激 DNg13	108 MN 但 0/130 肌肉节律	无法验证（无步态）
+132	chat:MDN_two_branches	连接组+刺激 LBL40	MDN→LBL40 4 边/463 突触；LBL40→MN 253 边；单独刺激 0 MN	结构支持
+133	chat:DNg74_9A_hook	连接组+刺激	DNg74→9A 28 抑制边；刺激时 9A 0 Hz；hook 缺失	部分支持
+134	chat:MDN_MF14_segment	查细胞表	MF14 不存在	无法验证（细胞缺失）
+135	chat:P9_population	查细胞表	无 P9；附带的 6 个 pIP9/aSP9 细胞刺激弱（64 MN、0.022）	无法验证（P9 缺失）
+136	chat:BPN_P9_combination	查细胞表	BPN、P9 都不在模型	无法验证（细胞缺失）
+137	chat:FG_BB_BRK_direction	GNG458/BRK/DNg100+GNG458	GNG458 单独 0 MN；DNg100+GNG458 时 DNg100 15.8→0 Hz；BRK 2.5 Hz；BB 缺失	部分支持
+138	chat:FG_hunger	刺激 GNG458	饥饿状态不在模型	无法验证（状态缺失）
+139	chat:coordination_speed	各条件腿相位	腿间相位差≈0，不随驱动变	不符合
+140	chat:split_belt	查感觉通路	缺失	无法验证（感觉缺失）
+141	chat:grooming_13AB	刺激 13A/13B	13A 744 脉冲/0 MN；13B 1209 脉冲/0 MN	无法验证（行为）；观察：无输出
+142	chat:turning_abstract	—	行为不在模型	无法验证（行为缺失）
+143	chat:slow_MN_rest	quiet+手工调参	全 0；手工调参稳定态只有 0 或 58–100 Hz；383 MN 同参数	不符合（无 30 Hz）
+144	chat:core_vs_intact_frequency	DNg100 剂量	160→240→320 pA：5.0→7.5→9.2 Hz；DNg100 自身 15.8→27.5→38.8 Hz	支持
+145	chat:I1_I2_redundancy	查细胞表	无 I1/I2	无法验证（细胞缺失）
+146	chat:muscle_targets	查映射表	104/130 有候选 MN 池、26 无；候选池非逐单位连接	符合

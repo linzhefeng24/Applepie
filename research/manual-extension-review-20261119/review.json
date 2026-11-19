@@ -1,0 +1,14 @@
+{
+ "status": "external_claims_reviewed; targeted_independent_checks_in_progress",
+ "claims": [
+  {"claim":"E1/E2/I1 are fictional units that cannot be mapped to connectome cells", "review":"incorrect", "evidence":"Author CoreCPG keepOnly indices 277/617/1167 resolve to MANC 10707/11751/13905; official MaleCNS mancBodyid crosswalk resolves to 800173/800863/801884 respectively. These are absent from frozen R2.", "scope":"Left T1 exact crosswalk; serial/type counterparts must not be confused with the same individual across animals."},
+  {"claim":"Inhibitory cells stimulated alone in a silent network produce no MN output, therefore function fails", "review":"insufficient_test", "reason":"Need active excitatory background and target-specific suppression/disinhibition assay; quiet stimulation is not a test of braking."},
+  {"claim":"Rdl missing from cell names means inhibitory receptor function absent", "review":"category_error", "reason":"Rdl is receptor/gene; generic inhibitory conductance exists but receptor subtype and distribution are not modeled."},
+  {"claim":"All glutamatergic central synapses inhibitory", "review":"unresolved_receptor_assumption", "reason":"Presynaptic NT does not identify postsynaptic receptor; preserve baseline assumption explicitly and run sensitivity, do not call it physiology."},
+  {"claim":"146 rows constitute 146 verified independent phenomena", "review":"incorrect", "reason":"Repeated scopes, literature assertions, structural queries and untested behaviors are included; retain original verdicts as external reports only."},
+  {"claim":"144 proposed cells exist and are absent in R2", "review":"independently_confirmed", "evidence":"Official MaleCNS annotation exact bodyId/type selection; build manifest records hashes."},
+  {"claim":"More DN partners than a paper reports disproves recruitment", "review":"not_comparable_without_protocol", "reason":"Dataset/subset, threshold, direct versus indirect reachability and recording conditions must match."},
+  {"claim":"Repeated flashing proves the walking CPG drives muscles", "review":"not_established", "evidence":"Our previous causal interventions locate tonic-driven DN bursting with distributed feedback inhibition, not a uniquely identified walking CPG. Exact T1 paper core was missing."}
+ ],
+ "author_source": {"repository":"https://github.com/smpuglie/Pugliese_2026", "revision":"10e7661bf414ba7b4c2edf795cd36d0f878c17c0", "protocol":"configs/experiment/DNg100_Stim_CoreCPG.yaml", "table":"data/manc t1 connectome data/wTable_20250813_DNtoMN_unsorted_withModules.csv"}
+}
