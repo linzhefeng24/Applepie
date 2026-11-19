@@ -1,0 +1,8 @@
+"""Add exact-step spike logging to the frozen HH implementation without changing equations."""
+from pathlib import Path
+import hashlib,json
+R=Path(__file__).resolve().parent;P=R.parents[1]/'research/manual-full-rerun-20261119/cache/extracted/Manual_FreeBody';source=P/'02_code/flymodel/dynamics.py';s=source.read_text();original=hashlib.sha256(source.read_bytes()).hexdigest()
+a='    bad = 0\n';b='    bad = 0\n    event_log = np.empty((1000000, 2), dtype=np.int32)\n    event_count = 0\n    event_overflow = 0\n';assert s.count(a)==1;s=s.replace(a,b)
+a='            if v < aux[7] and newva >= aux[7]:\n';b=a+'                if event_count < len(event_log):\n                    event_log[event_count, 0] = k\n                    event_log[event_count, 1] = j\n                    event_count += 1\n                else:\n                    event_overflow = 1\n';assert s.count(a)==1;s=s.replace(a,b)
+a='        finali,\n    )\n';b='        finali,\n        event_log[:event_count],\n        event_overflow,\n    )\n';assert s.count(a)==1;s=s.replace(a,b)
+(R/'instrumented_dynamics.py').write_text(s);manifest={'original_code_sha256':original,'instrumented_code_sha256':hashlib.sha256(s.encode()).hexdigest(),'modification':'Only log discrete spike-crossing step and cell index; append event log/overflow to return. All original equations/operations unchanged.','event_capacity':1000000,'validation':'Must match previous selected-model spikes and u exactly before mechanistic attribution.','event_time_convention':'spike crossing after step k: (k+1)*dt; delay queue processes at step k+delay_steps. Conductance contribution is zero at arrival step, then decays on following steps.'};(R/'instrumentation_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')

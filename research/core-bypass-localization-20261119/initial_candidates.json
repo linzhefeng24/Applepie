@@ -1,0 +1,53 @@
+[
+  {
+    "target": "800061",
+    "first_spike_bin_ms": 208,
+    "early_excitatory_parents": [
+      {
+        "pre": "10056",
+        "type": "DNg100",
+        "count": 29.0,
+        "earliest_spike_bin_ms": 202
+      },
+      {
+        "pre": "800173",
+        "type": "IN17A001",
+        "count": 10.0,
+        "earliest_spike_bin_ms": 207
+      }
+    ],
+    "limitation": "1ms bin ranking only; exact arrivals and causal cuts required"
+  },
+  {
+    "target": "801173",
+    "first_spike_bin_ms": 208,
+    "early_excitatory_parents": [
+      {
+        "pre": "10056",
+        "type": "DNg100",
+        "count": 26.0,
+        "earliest_spike_bin_ms": 202
+      },
+      {
+        "pre": "800173",
+        "type": "IN17A001",
+        "count": 1.0,
+        "earliest_spike_bin_ms": 207
+      }
+    ],
+    "limitation": "1ms bin ranking only; exact arrivals and causal cuts required"
+  },
+  {
+    "target": "802072",
+    "first_spike_bin_ms": 206,
+    "early_excitatory_parents": [
+      {
+        "pre": "10045",
+        "type": "DNg100",
+        "count": 65.0,
+        "earliest_spike_bin_ms": 202
+      }
+    ],
+    "limitation": "1ms bin ranking only; exact arrivals and causal cuts required"
+  }
+]

@@ -1,0 +1,3 @@
+cache/
+results/*.npz
+__pycache__/
