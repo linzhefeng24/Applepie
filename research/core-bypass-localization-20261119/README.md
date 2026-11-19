@@ -39,3 +39,17 @@ python experiment.py baseline cut_E2_I1 E2_silenced cut_DN_MN E2_silenced_cut_DN
 图：`local-core-rhythm.png`、`I1-convergent-routes.png`、`MN-bypass-timelines.png`。逐神经元原始时刻和实际参数覆盖见 `results/*.json`，全分辨率状态与精确事件日志以Release压缩包保存；来源/哈希见 `manifest.json`。本轮没有修改原R2或上一轮主候选。
 
 `phenomena_status.json` 明确区分最小模型成立、完整网络尚未成立，以及本轮未重测的实验现象。不存在新增“已完整复现实验行为”的计数。
+
+## 在其他机器上重跑
+
+先解压上一轮 `Selected_Core_Extension.zip`，记其目录为 `/path/to/selected`；当前诊断源码目录与该目录可分开放置：
+
+```bash
+export MANUAL_R2_PACKAGE=/path/to/selected
+export CORE_MODEL_PATH=/path/to/selected/01_model/model.yaml
+export CORE_REFERENCE_RESULTS=/path/to/selected/04_results
+python experiment.py baseline cut_E2_I1 cut_E3_I1 cut_E2_E3_I1
+python experiment.py T1L_core3 T1L_core3_I1_silenced T1L_core3_4s
+```
+
+依赖沿用上一轮 Python/numpy/numba/PyYAML，画图另外需要matplotlib。参考数据仅供baseline/E2_silenced的逐元素验证；积分始终从初态重新计算。其余输入和当前源码均在数据包内，模型及全部原始参数引用上一轮已经校验的发行资产，未重复存放。

@@ -12,7 +12,7 @@ PLAN=json.loads((R/'cases.json').read_text())
 def digest(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
 def match(neurons,q):return np.array([all(n.get(k)==v for k,v in q.items()) for n in neurons])
 def run(name):
- spec=PLAN['cases'][name];m=Model(ROOT/'research/manual-extension-review-20261119/cache/selected_manual_model.yaml');assert m.sha256==PLAN['model_sha256'];changes=[]
+ spec=PLAN['cases'][name];m=Model(Path(os.environ.get('CORE_MODEL_PATH',str(ROOT/'research/manual-extension-review-20261119/cache/selected_manual_model.yaml'))));assert m.sha256==PLAN['model_sha256'];changes=[]
  if 'duration_ms' in spec:
   m.config['experiments']['DN_drive']['duration_ms']=spec['duration_ms']
   for event in m.config['experiments']['DN_drive']['events']:event['off_ms']=spec['drive_off_ms']
@@ -32,7 +32,7 @@ def run(name):
  start=time.monotonic();r=m.run_neural(record_ids=record,record_interval_ms=0.1,ablate_ids=ablate);u=m.muscle_excitation(r);elapsed=time.monotonic()-start
  out=R/'results';out.mkdir(exist_ok=True);raw=out/(name+'.npz');np.savez_compressed(raw,spikes=r['spikes'],events_step_cell=saved['events'],voltage=r['voltage'],time_ms=r['time_ms'],currents_pA=r['currents_pA'],conductances_nS=r['conductances_nS'],record_indices=r['record_indices'],body_ids=np.array(m.ids),u=u)
  if name in {'baseline','E2_silenced'}:
-  ref='I1_exc_x2' if name=='baseline' else 'I1_exc_x2_E2_silenced';z=np.load(ROOT/'research/manual-extension-review-20261119/results'/f'{ref}.npz');assert np.array_equal(r['spikes'],z['spikes']) and np.array_equal(u,z['u']), 'Observational logger changed dynamics';validation={'previous_condition':ref,'spikes_array_equal':True,'u_array_equal':True}
+  ref='I1_exc_x2' if name=='baseline' else 'I1_exc_x2_E2_silenced';z=np.load(Path(os.environ.get('CORE_REFERENCE_RESULTS',str(ROOT/'research/manual-extension-review-20261119/results')))/f'{ref}.npz');assert np.array_equal(r['spikes'],z['spikes']) and np.array_equal(u,z['u']), 'Observational logger changed dynamics';validation={'previous_condition':ref,'spikes_array_equal':True,'u_array_equal':True}
  else:validation=None
  ev=saved['events'];dt=m.config['neural']['solver']['dt_ms'];summ={}
  for bid in record:

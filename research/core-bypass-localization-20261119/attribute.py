@@ -7,7 +7,7 @@ import json,sys,os,numpy as np
 R=Path(__file__).resolve().parent;ROOT=R.parents[1];P=Path(os.environ.get('MANUAL_R2_PACKAGE',str(ROOT/'research/manual-full-rerun-20261119/cache/extracted/Manual_FreeBody')));sys.path.insert(0,str(P/'02_code'));from flymodel import Model
 PLAN=json.loads((R/'cases.json').read_text())
 def model(case):
- m=Model(ROOT/'research/manual-extension-review-20261119/cache/selected_manual_model.yaml')
+ m=Model(Path(os.environ.get('CORE_MODEL_PATH',str(ROOT/'research/manual-extension-review-20261119/cache/selected_manual_model.yaml'))))
  for q in PLAN['cases'][case].get('terminal_gain',[]):
   src=np.array([all(n.get(k[7:])==v for k,v in q.items() if k.startswith('source_')) for n in m.neurons]);dst=np.array([all(n.get(k[7:])==v for k,v in q.items() if k.startswith('target_')) for n in m.neurons]);m.weight[src[m.pre]&dst[m.post]]*=q['factor']
  for q in PLAN['cases'][case].get('cell_set',[]):

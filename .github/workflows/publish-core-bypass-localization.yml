@@ -1,0 +1,31 @@
+name: Publish exact core bypass and local rhythm diagnostics
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: publish-core-bypass-localization-20261119
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      GH_TOKEN: ${{ github.token }}
+      TRANSLATION_DELIVERY_ROOT: research/core-bypass-localization-20261119
+      TRANSLATION_RELEASE_TAG: core-bypass-localization-20261119
+      TRANSLATION_BUNDLE: Core_Bypass_Transport.zip
+      TRANSLATION_RELEASE_TITLE: 'Core bypass localization and feedback-dependent local slow rhythm'
+      TRANSLATION_RELEASE_NOTES: 'Twenty-nine from-initial-state conditions with exact integration-step spike logs and source-resolved conductance checks. Four-second minimal DN E1 E2 I1 motif supports feedback-dependent about13Hz activity under fast tonic DN spikes; full-network parallel paths and unsuccessful manual gain trials explicitly retained. Not a claim of laboratory or six-leg behavior reproduction. Working model unchanged; input model references the prior verified public asset.'
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+          sparse-checkout: |
+            research/chinese-translations-20261118
+            research/core-bypass-localization-20261119
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - name: Reconstruct, publish and freshly verify diagnostic bundle
+        run: python research/chinese-translations-20261118/publish.py publish
