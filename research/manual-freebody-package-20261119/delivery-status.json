@@ -1,0 +1,44 @@
+{
+  "complete": true,
+  "source_revision": "6b0018d8be394d9a5a6b3e5d2596be868255a336",
+  "release_url": "https://github.com/linzhefeng24/Applepie/releases/tag/manual-r2-freebody-20261119",
+  "fresh_download_sha256_verified_assets": [
+    "Manual_R2_FreeBody.mp4",
+    "Manual_R2_FreeBody_Complete.zip",
+    "Manual_R2_Neural_Chain.mp4",
+    "Manual_R2_Synchronized.mp4",
+    "verification.json"
+  ],
+  "assets": [
+    {
+      "name": "Manual_R2_FreeBody.mp4",
+      "bytes": 585817,
+      "sha256": "167b0ea6fc289717ac37728b2ae3c4af7d4d336e5fd5c57e724507c894b12961",
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/manual-r2-freebody-20261119/Manual_R2_FreeBody.mp4"
+    },
+    {
+      "name": "Manual_R2_FreeBody_Complete.zip",
+      "bytes": 93826446,
+      "sha256": "6c20c425c853edc7840f40e55028aa29523bf1472046b751bff30033bb743f85",
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/manual-r2-freebody-20261119/Manual_R2_FreeBody_Complete.zip"
+    },
+    {
+      "name": "Manual_R2_Neural_Chain.mp4",
+      "bytes": 764186,
+      "sha256": "2a12f4e5ff95ff4819ec8ec4a60415621022c36e3b2cdb268fdd2bd63d435d74",
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/manual-r2-freebody-20261119/Manual_R2_Neural_Chain.mp4"
+    },
+    {
+      "name": "Manual_R2_Synchronized.mp4",
+      "bytes": 1325074,
+      "sha256": "97d79fd5fabd69d71b4d03582c6b9a8e6e97fdff1b7f84cd39b3cb554d39dde0",
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/manual-r2-freebody-20261119/Manual_R2_Synchronized.mp4"
+    },
+    {
+      "name": "verification.json",
+      "bytes": 1379,
+      "sha256": "1f7e52aa9f167a186eb703f917835dacbf6acf972e8536567230d740a4eead0d",
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/manual-r2-freebody-20261119/verification.json"
+    }
+  ]
+}
