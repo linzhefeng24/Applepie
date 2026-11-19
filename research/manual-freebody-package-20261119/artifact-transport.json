@@ -1,0 +1,189 @@
+{
+  "repo": "linzhefeng24/Applepie",
+  "release_tag": "manual-r2-freebody-20261119",
+  "source_revision": "6b0018d8be394d9a5a6b3e5d2596be868255a336",
+  "bundle": {
+    "name": "Manual_FreeBody_Delivery_Transport.zip",
+    "bytes": 96503548,
+    "sha256": "55afa4c59c2017a828db9ec3899fcdca49b90bbb24147aee5501d5adae03fffc"
+  },
+  "chunks": [
+    {
+      "index": 0,
+      "git_blob_sha": "edd1c8fc392403d39b45dafff53681a9164a8387",
+      "sha256": "8d5b60785fe4dadd10f247a59bdf2583f3b91cf67e54cf18046e38b97678abcd",
+      "bytes": 4194304
+    },
+    {
+      "index": 1,
+      "git_blob_sha": "69c9041f6b473767cec6f0f38124ed0142c450e1",
+      "sha256": "4a26a6227602328f2fca4cf4e08ad263b57c010793f1a400d225cb8adec427bd",
+      "bytes": 4194304
+    },
+    {
+      "index": 2,
+      "git_blob_sha": "c49c000aedaf23220fe3be85a75d648805778c5e",
+      "sha256": "d501650e36db63103ff3e26a5d6f186f00841561feb3ca50190e9ba97cb2a3c3",
+      "bytes": 4194304
+    },
+    {
+      "index": 3,
+      "git_blob_sha": "fe1f27600d43b2b7f1ba194e50fe6541b4dcd1e3",
+      "sha256": "7d8d0e4affcf8a1af4bafe80faca0b9e231318fdfae7a11b355ae6608d7722a2",
+      "bytes": 4194304
+    },
+    {
+      "index": 4,
+      "git_blob_sha": "e63a9649591c533e6100df108f7156e61e520908",
+      "sha256": "57c12523c981e723c2e404d775b0670a1965fe905e70e906b2d111c34f63a002",
+      "bytes": 4194304
+    },
+    {
+      "index": 5,
+      "git_blob_sha": "812b2145c290ed5bc394c27c4eb1b78289a263f1",
+      "sha256": "c09ac5fa35111b2ee6d3c9d1825c99b86895c1b1e52ca90051226b36378a7d92",
+      "bytes": 4194304
+    },
+    {
+      "index": 6,
+      "git_blob_sha": "cada385b66212cf71e1a68e82604f5ebec42d655",
+      "sha256": "fccc74e66335f28e1c753ecbe6be221aedeeaa1eb66092ff69ff2f7959a622d3",
+      "bytes": 4194304
+    },
+    {
+      "index": 7,
+      "git_blob_sha": "6f7b297e707237b0ca182c479ff36e963033aa82",
+      "sha256": "bd13263b95f54c89adc65b0a8b50db844b530c328b5487c5e09818e49cf9d821",
+      "bytes": 4194304
+    },
+    {
+      "index": 8,
+      "git_blob_sha": "744c1f0a89f67a7215cb01dfce4a572c3cce3d52",
+      "sha256": "7079de5fc0171e931afde2432c8c536fe7c0b04ce3c0a28ce0dabd5ed20e6cc6",
+      "bytes": 4194304
+    },
+    {
+      "index": 9,
+      "git_blob_sha": "bda097e3d8defe9b6fdbecfdf27cd9eb3a29d010",
+      "sha256": "0e0d96ce7e3589f781d6490aed9c161bdaa8c382e16bbc55a226a3b2eb2e9aa5",
+      "bytes": 4194304
+    },
+    {
+      "index": 10,
+      "git_blob_sha": "e9423e9391a464b256bce1965d84c87978e152b6",
+      "sha256": "655dc0ad72f82d70047202e0cefd439f5a67313c7d1176434772f59a88debedb",
+      "bytes": 4194304
+    },
+    {
+      "index": 11,
+      "git_blob_sha": "51c9255c11e6dcb80a7bb05a94ad717f89236cee",
+      "sha256": "29392bdc569eb37143f570ec8d7c850ecf1100851e65c0f47bacaacb03ac43f3",
+      "bytes": 4194304
+    },
+    {
+      "index": 12,
+      "git_blob_sha": "b4928ffbcf8f95259195dcabd9fd5e96772309e3",
+      "sha256": "0eeb51873eb4c0662caa76c714b453cc3c24b7c5d79353ba63138138f3326249",
+      "bytes": 4194304
+    },
+    {
+      "index": 13,
+      "git_blob_sha": "cb0a738bdf0008b9b2a5e6bb18ee5a7c6160a926",
+      "sha256": "9123b7bb516db10fbd7599073db4853e2cf636d5ada70c870280a645025c6fed",
+      "bytes": 4194304
+    },
+    {
+      "index": 14,
+      "git_blob_sha": "9488a4974a690d8fdfb363ccaaa733e174e67147",
+      "sha256": "9e3f897cd739775943d033f376eb2aed07dadb3eb5d592117584d2ad125a07f9",
+      "bytes": 4194304
+    },
+    {
+      "index": 15,
+      "git_blob_sha": "d06ac35045d5b569c7541ad0d85a059e045b362c",
+      "sha256": "d94c3c690b547aa36034428b4b34cd57f3319129be882b1ca38bfafb76851f60",
+      "bytes": 4194304
+    },
+    {
+      "index": 16,
+      "git_blob_sha": "9b361bf96df9ab16f49fc64782329e8829e67c10",
+      "sha256": "30b8de082e865a95868919e54ea0c6dde057299453d1073cdd27bb20d9d12d30",
+      "bytes": 4194304
+    },
+    {
+      "index": 17,
+      "git_blob_sha": "b01ac0b506c3a0a8bfa0a1a283ef90bbc18e81c4",
+      "sha256": "097628a346dc934f904d4186a5effdd1b5fd631bcce71ef5369695fa85a143d8",
+      "bytes": 4194304
+    },
+    {
+      "index": 18,
+      "git_blob_sha": "5d58dab6affc31fe1aec2239e405adce28f29f1f",
+      "sha256": "8bffd2ef6565b13e9982ba655f5069ab4c192e197875308501d8bc7f6d66246d",
+      "bytes": 4194304
+    },
+    {
+      "index": 19,
+      "git_blob_sha": "302c3a260921ca0e47163f87bbe14616ac2d1c5f",
+      "sha256": "b46a4f9a852f6d2aab23bc6279b1c4cd7a6a4866e05aad8554ce2780df191747",
+      "bytes": 4194304
+    },
+    {
+      "index": 20,
+      "git_blob_sha": "959869e747f27eced0991dbd6c36983101d02d0f",
+      "sha256": "7582c1227eb230d730213471732a3b1558e458ed537bd26aae92c3cff0a0fb19",
+      "bytes": 4194304
+    },
+    {
+      "index": 21,
+      "git_blob_sha": "6838b9974b3f2a9ad453369ccc4cf8d407748fa6",
+      "sha256": "cf08b6a7eb4cf0a61aa5ae481a77b8c4c4fb13b4ca0f7d3f0a5d580bc24ffe33",
+      "bytes": 4194304
+    },
+    {
+      "index": 22,
+      "git_blob_sha": "63d9a7ec95f1d38246f37b05f4e513aaa1aa0046",
+      "sha256": "f3a0ae55a873b64a31c0ab896ac7bd430afc079a335b3fd609dd486f51c3f3d7",
+      "bytes": 4194304
+    },
+    {
+      "index": 23,
+      "git_blob_sha": "c3e689e329591998157228fb04712e4921c9dc8a",
+      "sha256": "5ae973fcf27126fef3ad6bb4b7d8d1455da4c4516cbac69beeca7292eb5b5254",
+      "bytes": 34556
+    }
+  ],
+  "assets": [
+    {
+      "name": "Manual_R2_FreeBody.mp4",
+      "bytes": 585817,
+      "sha256": "167b0ea6fc289717ac37728b2ae3c4af7d4d336e5fd5c57e724507c894b12961",
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/manual-r2-freebody-20261119/Manual_R2_FreeBody.mp4"
+    },
+    {
+      "name": "Manual_R2_FreeBody_Complete.zip",
+      "bytes": 93826446,
+      "sha256": "6c20c425c853edc7840f40e55028aa29523bf1472046b751bff30033bb743f85",
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/manual-r2-freebody-20261119/Manual_R2_FreeBody_Complete.zip"
+    },
+    {
+      "name": "Manual_R2_Neural_Chain.mp4",
+      "bytes": 764186,
+      "sha256": "2a12f4e5ff95ff4819ec8ec4a60415621022c36e3b2cdb268fdd2bd63d435d74",
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/manual-r2-freebody-20261119/Manual_R2_Neural_Chain.mp4"
+    },
+    {
+      "name": "Manual_R2_Synchronized.mp4",
+      "bytes": 1325074,
+      "sha256": "97d79fd5fabd69d71b4d03582c6b9a8e6e97fdff1b7f84cd39b3cb554d39dde0",
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/manual-r2-freebody-20261119/Manual_R2_Synchronized.mp4"
+    },
+    {
+      "name": "verification.json",
+      "bytes": 1379,
+      "sha256": "1f7e52aa9f167a186eb703f917835dacbf6acf972e8536567230d740a4eead0d",
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/manual-r2-freebody-20261119/verification.json"
+    }
+  ],
+  "transport": "unreferenced Git blobs; no large-file commit to branch history"
+}

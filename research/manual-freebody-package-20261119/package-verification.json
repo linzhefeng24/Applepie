@@ -37,5 +37,8 @@
       "sha256": "1f7e52aa9f167a186eb703f917835dacbf6acf972e8536567230d740a4eead0d",
       "url": "https://github.com/linzhefeng24/Applepie/releases/download/manual-r2-freebody-20261119/verification.json"
     }
-  ]
+  ],
+  "clean_extracted_package_physical_replay": "passed; run_manual.py from freshly extracted ZIP, same manual MSE and free joint checks",
+  "walking_training_workflow": "still disabled_manually; no training restarted",
+  "visual_review": "Inspected synchronized final frame: MANUAL R2, FREE BODY, neural time1400ms, physical time0.4s; body and neural-muscle panels present"
 }
