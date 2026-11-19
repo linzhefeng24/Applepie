@@ -1,0 +1,37 @@
+{
+  "status": "local analytic equation check only",
+  "cases": [
+    {
+      "component": "fast",
+      "rate_Hz": 10,
+      "analytic_asymptote": 0.31243117516458807,
+      "last_pulse_resource": 0.312431189619347,
+      "all_states_bounded": true,
+      "note": "f is remaining fraction, not depleted fraction"
+    },
+    {
+      "component": "fast",
+      "rate_Hz": 50,
+      "analytic_asymptote": 0.08029303073542345,
+      "last_pulse_resource": 0.08029398270888077,
+      "all_states_bounded": true,
+      "note": "f is remaining fraction, not depleted fraction"
+    },
+    {
+      "component": "slow",
+      "rate_Hz": 10,
+      "analytic_asymptote": 0.6569042519230861,
+      "last_pulse_resource": 0.656905649022804,
+      "all_states_bounded": true,
+      "note": "f is remaining fraction, not depleted fraction"
+    },
+    {
+      "component": "slow",
+      "rate_Hz": 50,
+      "analytic_asymptote": 0.2641492559485058,
+      "last_pulse_resource": 0.26567392198530215,
+      "all_states_bounded": true,
+      "note": "f is remaining fraction, not depleted fraction"
+    }
+  ]
+}

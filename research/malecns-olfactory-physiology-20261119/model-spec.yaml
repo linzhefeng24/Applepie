@@ -1,0 +1,65 @@
+status: structural_and_physiological_design_not_calibrated_network
+structural_dataset: MaleCNS_v1.0_minconf0.5_significant_only
+identity_table: neurons.csv
+parameter_registry: parameter-evidence.yaml
+published_KC_joint_fits: KC-WT-published-fits.json
+shared_parameter_policy: share within identified cell type; allow limited individual variation only when recordings warrant it
+simulator_selection:
+  detailed_reference: NEURON
+  rationale: morphology, conductance channels, spatial synapses and graded compartments
+  reduced_network: derive electrotonically checked reductions from detailed cells; do not assume one uniform LIF
+  integration: implicit cable integration plus channel-state integration; timestep must pass convergence tests
+cell_models:
+  ORN:
+    dynamics: ligand-receptor-specific transduction/adaptation plus spiking generator
+    evidence: ORN2011
+    unresolved: odor concentration, raw temporal responses and type-specific transduction filters
+  PN:
+    dynamics: passive morphology with active spike-initiation/axon compartments; adaptation if supported
+    passive_priors: PN.passive_joint_fit_1 through PN.passive_joint_fit_3
+    calibration_targets: PN.Rin and PN.corrected_rest
+    unresolved: type-specific active conductances and transfer to MaleCNS geometry
+  LN:
+    dynamics: separate identified spiking/graded subtypes; conductance synapses plus adaptation and presynaptic modulation
+    unresolved: subtype mapping and membrane/channel/receptor physiology
+  KC:
+    dynamics: morphology-based NaT/NaP/K conductance model for gamma-KC reference
+    prior: adult-fitted WT alternatives from KC2025; artificial NaChBac conductance disabled
+    unresolved: source-script/workbook reconciliation, MaleCNS SIZ placement, other KC subtype physiology
+    caution: borrowed channel gate kinetics remain assumptions despite adult fit
+  APL:
+    dynamics: nonspiking branched cable with voltage/calcium-dependent graded GABA release
+    spatial_target: APL.effective_space_constant
+    unresolved: absolute passive parameters, active currents and release kinetics
+    caution: 50um is normalized effective propagation fit, not measured per-segment electrical length
+  MBON:
+    dynamics: passive dendritic tree plus active initiation/axon compartment
+    reference: MBON-alpha3 / MBON14
+    priors: MBON.alpha3.passive_fit
+    calibration_targets: MBON.alpha3.Rin, MBON.alpha3.tau, MBON.alpha3.C, MBON.alpha3.Vrest
+    unresolved: type-specific SIZ channels; transfer to other MBON types not assumed
+  DAN:
+    dynamics: conductance-based adaptive spiking with separate dopamine release/clearance state
+    unresolved: intrinsic/channel parameters for each PAM/PPL1 type; modulatory compartment mapping
+synapses:
+  ordinary_current: I_syn = g(t) * (E_rev - V_post)
+  anatomical_count: constrains number/relative strength; does not specify measured conductance
+  ORN_PN:
+    receptor_model: separate fast and slow nicotinic components
+    depression_reference: AL2015 Figure2 event-driven fits
+    resource_recovery: dA/dt = (1-A)/tau_recovery
+    resource_jump: A_after = f * A_before
+    inhibition: terminal modulation affects release and resource depletion; retain postsynaptic inhibition separately
+    caution: original nS amplitudes refer to functional unitary ORN connection, not each EM synapse
+  glutamate:
+    sign_policy: receptor and pathway specific; unresolved by default
+    M6_PAM_gamma5: NMDA-related excitatory feedback is experimentally supported in specified courtship preparation; verify MaleCNS cell identities first
+  dopamine:
+    ordinary_sign: not assigned from transmitter label alone
+    modulation: release/clearance, receptor occupancy, local eligibility and compartment-specific KC-MBON plasticity
+plasticity:
+  reference_protocols:
+    - Hige2015 gamma1pedc brief pairing depresses CS+ response; alpha2 needs longer pairing
+    - Huang2024 gamma1 feedback gates alpha3 learning; spacing and reexposure depend on valence/timing
+  unresolved: learning rate, eligibility times and compartment-specific dopamine response
+  prohibited_shortcut: do not mark arbitrary 1h/6h/48h passive recovery constants as measured memory mechanisms

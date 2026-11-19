@@ -1,0 +1,11 @@
+# Numerical protocol settings are exploratory reproduction choices, not biological fits.
+ORN_PN_depression:
+  rates_Hz: [10, 50]
+  pulse_count: 50
+  components:
+    fast:
+      f_parameter: ORN_PN.fast.remainder_per_spike
+      recovery_parameter: ORN_PN.fast.recovery
+    slow:
+      f_parameter: ORN_PN.slow.remainder_per_spike
+      recovery_parameter: ORN_PN.slow.recovery

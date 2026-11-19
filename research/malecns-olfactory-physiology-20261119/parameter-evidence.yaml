@@ -1,0 +1,558 @@
+status: evidence registry, not fully initialized network parameters
+references:
+  PN2009:
+    doi: 10.1523/JNEUROSCI.0764-09.2009
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC2709801/
+    read: full-text methods/results/Tables1–2
+    species_stage: adult Drosophila PN
+    retrieved_sha256: 9cdee8c7917ef2943087fc1dd7190cdf153f1592fdb2ef2c325cc5ce8cd0b46c
+    retrieved_bytes: 226535
+  KC2025:
+    doi: 10.1113/JP288790
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12487611/
+    read: full-text methods/Figures1,3,9; author code and fitted workbook
+    species_stage: adult Drosophila KC; use WT control only
+    retrieved_sha256: f822ab53f0c26a5c33e2ca8556eab1ed178e5eb27b75c0014cff04acdecc05a3
+    retrieved_bytes: 506510
+  MBON2023:
+    doi: 10.7554/eLife.77578
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC10069864/
+    read: full-text physiological measurements and fitted/synaptic parameter table
+    species_stage: adult Drosophila MBON-alpha3
+    retrieved_sha256: 0c5fe6939eb1ce68b07c93c437e32240cfd8735e8063d604f8ee76e56142154e
+    retrieved_bytes: 446188
+  APL2020:
+    doi: 10.7554/eLife.56954
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC7541083/
+    read: full-text Figure8 and connectome analysis/discussion
+    species_stage: adult Drosophila APL
+    retrieved_sha256: 536c023edb383a42594987ab228ed90674a5215b95b14dea60d374b1ad846d2c
+    retrieved_bytes: 430811
+  AL2015:
+    doi: 10.1038/nn.3895
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4289142/
+    read: full-text Figures1–2,7–8 and model methods
+    species_stage: adult Drosophila ORN-PN, principally DM6/VM2; response datasets
+      also VM7
+    retrieved_sha256: cc8475b703c271d13b7c5bd4f1d08178baf8fc72b71b58ba8003fe7d0693b771
+    retrieved_bytes: 260354
+  ORN2011:
+    doi: 10.1038/nn.2725
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC3030680/
+    read: full-text receptor/ligand-dependent transduction filters
+    species_stage: adult Drosophila ORN
+    retrieved_sha256: 8d2dd2937cd83c7d85b74a7b72fe5e06f296e511bd75f89268ea4ac530b504ba
+    retrieved_bytes: 229307
+  Hige2015:
+    doi: 10.1016/j.neuron.2015.11.003
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4674068/
+    read: full-text compartment-specific plasticity protocols
+    species_stage: adult Drosophila MBON/DAN
+    retrieved_sha256: 4a13744f337711840b12a6ff54786a5db44185685f99715160bc4fed7107399f
+    retrieved_bytes: 243834
+parameters:
+- id: PN.Rin
+  value: 598.0
+  unit: MOhm
+  evidence: adult_measured
+  source: PN2009
+  location: resting potential / seal-conductance results
+  applicable_scope: recorded PNs; antennae removed
+  caveat: Not assumed identical across glomeruli; 69.3 is published uncertainty, not
+    a per-cell range
+  uncertainty:
+    reported_plus_minus: 69.3
+    n: 14
+- id: PN.corrected_rest
+  value: -57.8
+  unit: mV
+  evidence: adult_inferred_from_recordings
+  source: PN2009
+  location: Figure7C–D
+  applicable_scope: PN somatic voltage matching cell-attached firing
+  caveat: Corrected whole-cell value, not leak reversal; raw whole-cell value was
+    -47.8mV
+  uncertainty:
+    reported_plus_minus: 1.5
+    n: 12
+- id: PN.passive_joint_fit_1
+  value:
+    Rm_kOhm_cm2: 8.3
+    Cm_uF_cm2: 2.6
+    Ra_Ohm_cm: 163.9
+  unit: mixed_labeled
+  evidence: adult_morphoelectric_fit
+  source: PN2009
+  location: Table1
+  applicable_scope: three original fitted PN reconstructions
+  caveat: Keep correlated triplets intact; transfer to MaleCNS geometry must recheck
+    Rin/tau; these are specific properties, not whole-cell Rin/C
+  uncertainty: null
+- id: PN.passive_joint_fit_2
+  value:
+    Rm_kOhm_cm2: 20.4
+    Cm_uF_cm2: 1.5
+    Ra_Ohm_cm: 102.5
+  unit: mixed_labeled
+  evidence: adult_morphoelectric_fit
+  source: PN2009
+  location: Table1
+  applicable_scope: three original fitted PN reconstructions
+  caveat: Keep correlated triplets intact; transfer to MaleCNS geometry must recheck
+    Rin/tau; these are specific properties, not whole-cell Rin/C
+  uncertainty: null
+- id: PN.passive_joint_fit_3
+  value:
+    Rm_kOhm_cm2: 20.8
+    Cm_uF_cm2: 0.8
+    Ra_Ohm_cm: 266.1
+  unit: mixed_labeled
+  evidence: adult_morphoelectric_fit
+  source: PN2009
+  location: Table1
+  applicable_scope: three original fitted PN reconstructions
+  caveat: Keep correlated triplets intact; transfer to MaleCNS geometry must recheck
+    Rin/tau; these are specific properties, not whole-cell Rin/C
+  uncertainty: null
+- id: KC.gamma.control_C
+  value: 14.7
+  unit: pF
+  evidence: adult_measured
+  source: KC2025
+  location: Figure1I legend
+  applicable_scope: gamma-KC WT control voltage-clamp subset
+  caveat: Sample mean not universal KC capacitance; not NaChBac group
+  uncertainty:
+    SD: 4.4
+    n: 4
+- id: KC.gamma.example_Rin
+  value: 1.36
+  unit: GOhm
+  evidence: adult_measured_example
+  source: KC2025
+  location: Figure1B–C legend
+  applicable_scope: one illustrated WT gamma-KC
+  caveat: Example cell, not population mean
+  uncertainty: null
+- id: KC.gamma.example_C
+  value: 17.2
+  unit: pF
+  evidence: adult_measured_example
+  source: KC2025
+  location: Figure1B–C legend
+  applicable_scope: same illustrated WT gamma-KC
+  caveat: Pair only with example Rin if deriving an effective tau
+  uncertainty: null
+- id: KC.current_clamp_hold
+  value: -60
+  unit: mV
+  evidence: experimental_protocol
+  source: KC2025
+  location: whole-cell methods
+  applicable_scope: current clamp holding target
+  caveat: Applied current maintained this voltage; do not call it native resting voltage
+    or leak reversal
+  uncertainty: null
+- id: KC.passive_Ra_search_bounds
+  value:
+  - 30
+  - 400
+  unit: Ohm_cm
+  evidence: literature_model_search_bounds
+  source: KC2025
+  location: computational methods
+  applicable_scope: bounds used by original model optimization
+  caveat: Not measured adult KC confidence interval
+  uncertainty: null
+- id: KC.passive_Cm_search_bounds
+  value:
+  - 0.6
+  - 2.6
+  unit: uF_cm2
+  evidence: literature_model_search_bounds
+  source: KC2025
+  location: computational methods
+  applicable_scope: bounds used by original model optimization
+  caveat: Not measured whole-cell capacitance; not confidence interval
+  uncertainty: null
+- id: MBON.alpha3.Vrest
+  value: -56.7
+  unit: mV
+  evidence: adult_measured
+  source: MBON2023
+  location: physiological characterization
+  applicable_scope: MBON-alpha3 / MBON14
+  caveat: Ex vivo preparation, cannot pool indiscriminately with PN corrected voltage
+  uncertainty:
+    reported_plus_minus: 2.0
+    n: 5
+- id: MBON.alpha3.Rin
+  value: 926
+  unit: MOhm
+  evidence: adult_measured
+  source: MBON2023
+  location: physiological characterization
+  applicable_scope: MBON14
+  caveat: Whole-cell resistance, not specific Rm
+  uncertainty:
+    reported_plus_minus: 55
+    n: 5
+- id: MBON.alpha3.tau
+  value: 16.06
+  unit: ms
+  evidence: adult_measured
+  source: MBON2023
+  location: current step characterization
+  applicable_scope: MBON14
+  caveat: Measured somatic effective tau
+  uncertainty:
+    reported_plus_minus: 2.3
+    n: 5
+- id: MBON.alpha3.C
+  value: 16.76
+  unit: pF
+  evidence: adult_derived_from_individual_recordings
+  source: MBON2023
+  location: C=tau/R calculation
+  applicable_scope: MBON14
+  caveat: Reported mean of individual estimates; ratio of the published mean tau/R
+    need not equal this number
+  uncertainty:
+    reported_plus_minus: 1.9
+    n: 5
+- id: MBON.alpha3.spontaneous
+  value: 12.1
+  unit: Hz
+  evidence: adult_measured
+  source: MBON2023
+  location: baseline recordings
+  applicable_scope: MBON14
+  caveat: Baseline target for matching preparation; not imposed Poisson drive automatically
+  uncertainty: null
+- id: MBON.alpha3.passive_fit
+  value:
+    Ra_Ohm_cm: 85.41
+    Cm_uF_cm2: 0.6961
+    g_pas_S_cm2: 9.399e-06
+    E_pas_mV: -55.64
+  unit: mixed_labeled
+  evidence: adult_morphoelectric_fit
+  source: MBON2023
+  location: fitted parameter table
+  applicable_scope: original reconstructed MBON-alpha3
+  caveat: Morphology-specific fit; preserve as a coherent set, refit on MaleCNS; Epas
+    differs from Vrest
+  uncertainty: null
+- id: KC_to_MBON.alpha_time_to_peak
+  value: 0.44
+  unit: ms
+  evidence: borrowed_synapse_template
+  source: MBON2023
+  location: synaptic parameter table and synaptic modeling
+  applicable_scope: original model cholinergic KC→MBON contacts
+  caveat: Imported prior literature, not directly measured for each MaleCNS contact;
+    time to alpha peak is not exponential decay tau
+  uncertainty: null
+- id: KC_to_MBON.Erev
+  value: 8.9
+  unit: mV
+  evidence: borrowed_synapse_template
+  source: MBON2023
+  location: synaptic modeling
+  applicable_scope: original model cholinergic synapse
+  caveat: Other PN papers use -10mV under other conditions; do not average blindly
+  uncertainty: null
+- id: KC_to_MBON.gmax
+  value: 1.56e-11
+  unit: S
+  evidence: calibrated_model_contact
+  source: MBON2023
+  location: synaptic modeling
+  applicable_scope: original individual contact alpha-function model
+  caveat: Not measured release conductance per MaleCNS EM contact; must revalidate
+    normalization
+  uncertainty: null
+- id: APL.effective_space_constant
+  value: 50
+  unit: um
+  evidence: adult_spatial_response_fit
+  source: APL2020
+  location: Figure8F / fit discussion
+  applicable_scope: normalized neurite propagation on hemibrain APL
+  caveat: Tested 25/50/75um; reflects calcium/stimulus-spread model, not direct resting
+    passive cable measurement; anatomy dependence
+  uncertainty: null
+- id: APL.space_constant_sensitivity
+  value:
+  - 25
+  - 50
+  - 75
+  unit: um
+  evidence: published_comparison_grid
+  source: APL2020
+  location: Figure8F
+  applicable_scope: spatial propagation validation
+  caveat: Sensitivity points, not a statistical confidence interval
+  uncertainty: null
+- id: APL.Rm_over_Ra
+  value: 0.025
+  unit: m
+  evidence: derived_spatial_model_ratio
+  source: APL2020
+  location: Discussion
+  applicable_scope: effective ratio for their 50um fit
+  caveat: Neither Rm nor Ra separately measured; do not infer a unique pair
+  uncertainty: null
+- id: ORN_PN.fast.remainder_per_spike
+  value: 0.77
+  unit: dimensionless
+  evidence: adult_synaptic_fit
+  source: AL2015
+  location: Figure2 pharmacological component fits
+  applicable_scope: 10Hz fast IMI-resistant component
+  caveat: Resource update A_after=f*A_before; depletion fraction is 1-f, not f
+  uncertainty: null
+- id: ORN_PN.fast.recovery
+  value: 1006
+  unit: ms
+  evidence: adult_synaptic_fit
+  source: AL2015
+  location: Figure2 fits
+  applicable_scope: same fast component
+  caveat: Not synaptic conductance decay time
+  uncertainty: null
+- id: ORN_PN.slow.remainder_per_spike
+  value: 0.91
+  unit: dimensionless
+  evidence: adult_synaptic_fit
+  source: AL2015
+  location: Figure2 fits
+  applicable_scope: 10Hz slow curare-resistant component
+  caveat: Same f convention; do not mix with Figure7 fitted rate model
+  uncertainty: null
+- id: ORN_PN.slow.recovery
+  value: 629
+  unit: ms
+  evidence: adult_synaptic_fit
+  source: AL2015
+  location: Figure2 fits
+  applicable_scope: same slow component
+  caveat: Figure7 uses different fit and much longer recovery; distinguish model variants
+  uncertainty: null
+- id: ORN_PN.fast.peak
+  value: 0.22
+  unit: nS
+  evidence: calibrated_unitary_connection
+  source: AL2015
+  location: Figure2 modeling methods
+  applicable_scope: unitary ORN→PN response
+  caveat: Per functional ORN connection/event, NOT per EM anatomical synapse
+  uncertainty: null
+- id: ORN_PN.slow.peak
+  value: 0.06
+  unit: nS
+  evidence: calibrated_unitary_connection
+  source: AL2015
+  location: Figure2 modeling methods
+  applicable_scope: unitary ORN→PN response
+  caveat: Sum gives0.28nS; do not multiply each value by EM count without calibration
+  uncertainty: null
+- id: ORN_PN.rate_model.fast
+  value:
+    depletion_per_spike: 0.23
+    recovery_ms: 1006
+    k_nS_per_spike: 20
+    conductance_tau_ms: 9.3
+  unit: mixed_labeled
+  evidence: published_rate_model_fit
+  source: AL2015
+  location: Figure7–8 / Equation3–4 methods
+  applicable_scope: separate rate-driven model variant
+  caveat: Use original equation and spike/ms convention; k is population-input gain,
+    not contact gmax
+  uncertainty: null
+- id: ORN_PN.rate_model.slow
+  value:
+    depletion_per_spike: 0.0073
+    recovery_ms: 33247
+    k_nS_per_spike: 1.8
+    conductance_tau_ms: 80
+  unit: mixed_labeled
+  evidence: published_rate_model_fit
+  source: AL2015
+  location: Figure7–8 methods
+  applicable_scope: fitted to disinhibited odor responses
+  caveat: Different variant from Figure2; not universally measured receptor constants
+  uncertainty: null
+- id: LN.inhibition_kernel_peak
+  value: 25
+  unit: ms
+  evidence: published_effective_kernel
+  source: AL2015
+  location: Figure7–8 methods
+  applicable_scope: LN spike activity→functional presynaptic inhibition alpha kernel
+  caveat: Not single GABA receptor decay; terminals and resource depletion both modulated
+  uncertainty: null
+- id: PN.rate_model.passive
+  value:
+    Rin_MOhm: 800
+    tau_ms: 5
+    Eleak_mV: -70
+    Eexc_mV: -10
+  unit: mixed_labeled
+  evidence: published_effective_model
+  source: AL2015
+  location: passive integrator methods
+  applicable_scope: original simplified PN model
+  caveat: Retain only as baseline alternative; not combine with PN2009 membrane triplets
+  uncertainty: null
+- id: ORN.ligand_receptor_transduction_filters
+  value: null
+  unit: unresolved
+  evidence: not_yet_identified
+  source: null
+  location: null
+  applicable_scope: ORN
+  caveat: Do not silently replace with a uniform generic value; fit with cell-type
+    sharing and experimental priors
+  uncertainty: null
+- id: ORN.baseline_and_concentration_response
+  value: null
+  unit: unresolved
+  evidence: not_yet_identified
+  source: null
+  location: null
+  applicable_scope: ORN
+  caveat: Do not silently replace with a uniform generic value; fit with cell-type
+    sharing and experimental priors
+  uncertainty: null
+- id: LN.type_specific_Rin_C
+  value: null
+  unit: unresolved
+  evidence: not_yet_identified
+  source: null
+  location: null
+  applicable_scope: LN
+  caveat: Do not silently replace with a uniform generic value; fit with cell-type
+    sharing and experimental priors
+  uncertainty: null
+- id: LN.spiking_or_graded_identity
+  value: null
+  unit: unresolved
+  evidence: not_yet_identified
+  source: null
+  location: null
+  applicable_scope: LN
+  caveat: Do not silently replace with a uniform generic value; fit with cell-type
+    sharing and experimental priors
+  uncertainty: null
+- id: LN.GABA_receptor_gmax_kinetics
+  value: null
+  unit: unresolved
+  evidence: not_yet_identified
+  source: null
+  location: null
+  applicable_scope: LN
+  caveat: Do not silently replace with a uniform generic value; fit with cell-type
+    sharing and experimental priors
+  uncertainty: null
+- id: PN.active_SIZ_channels
+  value: null
+  unit: unresolved
+  evidence: not_yet_identified
+  source: null
+  location: null
+  applicable_scope: PN
+  caveat: Do not silently replace with a uniform generic value; fit with cell-type
+    sharing and experimental priors
+  uncertainty: null
+- id: KC_other_subtypes.active_channel_densities
+  value: null
+  unit: unresolved
+  evidence: not_yet_identified
+  source: null
+  location: null
+  applicable_scope: KC_other_subtypes
+  caveat: Do not silently replace with a uniform generic value; fit with cell-type
+    sharing and experimental priors
+  uncertainty: null
+- id: APL.Cm
+  value: null
+  unit: unresolved
+  evidence: not_yet_identified
+  source: null
+  location: null
+  applicable_scope: APL
+  caveat: Do not silently replace with a uniform generic value; fit with cell-type
+    sharing and experimental priors
+  uncertainty: null
+- id: APL.Ra_and_Rm_separately
+  value: null
+  unit: unresolved
+  evidence: not_yet_identified
+  source: null
+  location: null
+  applicable_scope: APL
+  caveat: Do not silently replace with a uniform generic value; fit with cell-type
+    sharing and experimental priors
+  uncertainty: null
+- id: APL.graded_release_Vhalf_slope_tau
+  value: null
+  unit: unresolved
+  evidence: not_yet_identified
+  source: null
+  location: null
+  applicable_scope: APL
+  caveat: Do not silently replace with a uniform generic value; fit with cell-type
+    sharing and experimental priors
+  uncertainty: null
+- id: MBON_other_types.passive_and_active_parameters
+  value: null
+  unit: unresolved
+  evidence: not_yet_identified
+  source: null
+  location: null
+  applicable_scope: MBON_other_types
+  caveat: Do not silently replace with a uniform generic value; fit with cell-type
+    sharing and experimental priors
+  uncertainty: null
+- id: DAN.type_specific_intrinsic_parameters
+  value: null
+  unit: unresolved
+  evidence: not_yet_identified
+  source: null
+  location: null
+  applicable_scope: DAN
+  caveat: Do not silently replace with a uniform generic value; fit with cell-type
+    sharing and experimental priors
+  uncertainty: null
+- id: DAN.NMDA_GluCl_receptor_balance
+  value: null
+  unit: unresolved
+  evidence: not_yet_identified
+  source: null
+  location: null
+  applicable_scope: DAN
+  caveat: Do not silently replace with a uniform generic value; fit with cell-type
+    sharing and experimental priors
+  uncertainty: null
+- id: DAN.spike_to_DA_release_clearance
+  value: null
+  unit: unresolved
+  evidence: not_yet_identified
+  source: null
+  location: null
+  applicable_scope: DAN
+  caveat: Do not silently replace with a uniform generic value; fit with cell-type
+    sharing and experimental priors
+  uncertainty: null
+- id: plasticity.compartment_specific_eligibility_and_DA_receptor_rates
+  value: null
+  unit: unresolved
+  evidence: not_yet_identified
+  source: null
+  location: null
+  applicable_scope: plasticity
+  caveat: Do not silently replace with a uniform generic value; fit with cell-type
+    sharing and experimental priors
+  uncertainty: null

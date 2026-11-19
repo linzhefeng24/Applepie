@@ -1,0 +1,80 @@
+{
+  "repo": "https://github.com/AusbornLab/KC_NaChBac_Model",
+  "revision": "b799ccd7bd37dc080d717d8ca2b75699bf94eae2",
+  "path": "Datafiles/Simulation Passive and Active properties.xlsx",
+  "sha256": "a6846077bbab3891e4d3dcb4e14b24b16acc4f51a189cfbe9f5ba66ab75c5e9a",
+  "rows": [
+    {
+      "Type_simulation": "WT",
+      "flynum": 8.0,
+      "Axial_Resistivity": 110.0,
+      "Leak_Reversal": -78.25,
+      "Leak_conductance": 0.00011,
+      "Capacitance": 2.0,
+      "nat_siz": 0.088,
+      "nat_axon": 0.066,
+      "nap_siz": 0.000414,
+      "nachbac_soma": 0.0,
+      "nachbac_siz": 0.0,
+      "nachbac_everywhere": 0.0,
+      "K_siz": 0.8,
+      "K_axon": 0.06,
+      "normalized?": "no",
+      "strege optimized": "na"
+    },
+    {
+      "Type_simulation": "WT",
+      "flynum": 9.0,
+      "Axial_Resistivity": 100.0,
+      "Leak_Reversal": -71.25,
+      "Leak_conductance": 0.0001115,
+      "Capacitance": 2.0,
+      "nat_siz": 0.04,
+      "nat_axon": 0.03,
+      "nap_siz": 0.00018,
+      "nachbac_soma": 0.0,
+      "nachbac_siz": 0.0,
+      "nachbac_everywhere": 0.0,
+      "K_siz": 0.2,
+      "K_axon": 0.015,
+      "normalized?": "yes ",
+      "strege optimized": "na"
+    },
+    {
+      "Type_simulation": "WT",
+      "flynum": 10.0,
+      "Axial_Resistivity": 128.0,
+      "Leak_Reversal": -80.25,
+      "Leak_conductance": 0.00011,
+      "Capacitance": 2.0,
+      "nat_siz": 0.08,
+      "nat_axon": 0.06,
+      "nap_siz": 0.00036,
+      "nachbac_soma": 0.0,
+      "nachbac_siz": 0.0,
+      "nachbac_everywhere": 0.0,
+      "K_siz": 0.53,
+      "K_axon": 0.03975,
+      "normalized?": "yes ",
+      "strege optimized": "na"
+    }
+  ],
+  "units": {
+    "Axial_Resistivity": "Ohm cm",
+    "Leak_Reversal": "mV",
+    "Leak_conductance": "S/cm2",
+    "Capacitance": "uF/cm2",
+    "nat_siz": "S/cm2",
+    "nat_axon": "S/cm2",
+    "nap_siz": "S/cm2",
+    "K_siz": "S/cm2",
+    "K_axon": "S/cm2"
+  },
+  "status": "published joint-fit alternatives, not rerun or transferred to MaleCNS",
+  "caveats": [
+    "Do not include NaChBac artificial channel in WT",
+    "Original shape is FlyWire gamma-KC, not MaleCNS morphology",
+    "Gating templates include Gunay2015 source; not all gate rates measured in adult KC",
+    "Workbook and default script conductances differ; select and reproduce an explicit fit before network use"
+  ]
+}

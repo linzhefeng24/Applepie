@@ -1,0 +1,27 @@
+{
+  "status": "structural_subnetwork_extracted_and_parameter_sources_reviewed; whole-network dynamics not yet implemented or validated",
+  "date": "2026-11-19",
+  "KC_author_model": {
+    "url": "https://github.com/AusbornLab/KC_NaChBac_Model",
+    "revision": "b799ccd7bd37dc080d717d8ca2b75699bf94eae2",
+    "read_files": [
+      "README.md",
+      "Datafiles/Simulation Passive and Active properties.xlsx",
+      "Simulations/Final_KC_sim_file.py",
+      "Simulations/nat.mod",
+      "Simulations/nap.mod",
+      "Simulations/ks_gunay.mod"
+    ],
+    "execution": "not run; no artificial NaChBac parameters adopted"
+  },
+  "retrieval_limits": [
+    "EuropePMC several fullTextXML requests timed out; successful full articles retrieved via public PMC HTML",
+    "eLife direct pages returned generic HTML, not used as evidence"
+  ],
+  "parameter_counts": {
+    "total_entries": 48,
+    "numerical_entries": 33,
+    "unresolved_entries": 15
+  },
+  "note": "Entries may be joint parameter vectors; counts are not independent free parameters. Experimental hold voltages, model fits and measured properties are distinguished."
+}
