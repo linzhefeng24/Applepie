@@ -1,0 +1,14 @@
+# Replay protocol, matched to the previous manually tuned native-AB evaluation.
+# These are saved experiment settings, not newly optimized neural parameters.
+case: A
+body_duration_ms: 400.0
+record_interval_ms: 5.0
+neural_start_ms: 200.0
+neural_ms_per_physical_ms: 3.0
+video_frames: 80
+expected_manual_joint_mse_rad2: 0.11717840309893408
+expected_mse_relative_tolerance: 0.000001
+expected_mse_absolute_tolerance: 0.00000001
+neural_model_sha256: 858d1818b8d8394c95bb62a6ce60474cb534a83b94265ef8615e367c110d262c
+manual_cell_array_sha256: c4d83f204c0ed79cddafd40ebf269f8d9059d6330be38e6b90254a3d36f79ac8
+neural_data_sha256: 4153fa8f1d29bb1bd987281d68d8407767bb9dd4e2ff1644673218b33e3fc027

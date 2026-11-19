@@ -1,0 +1,11 @@
+{
+  "manual_model_sha256": "858d1818b8d8394c95bb62a6ce60474cb534a83b94265ef8615e367c110d262c",
+  "manual_cells_sha256": "c4d83f204c0ed79cddafd40ebf269f8d9059d6330be38e6b90254a3d36f79ac8",
+  "saved_neural_sha256": "4153fa8f1d29bb1bd987281d68d8407767bb9dd4e2ff1644673218b33e3fc027",
+  "native_body_archive_sha256": "60a720b2a367556c7408b82d6d63998039b091dab3652ea027fe42f4cb37267a",
+  "native_body_yaml_sha256": "3e02efcddc83c80ce45a0eb5c77a50dcabc1fd249b063a9444b08af30d82315d",
+  "native_body_code_sha256": "d01641fe7c9562bf4a08dc58dfc7bbf0df0d9ab94a26373ccefbe97b28195325",
+  "manual_parameter_origin": "Pre-BPTT R2, research/brake-retuning-20261115/results/terminal-r2/BRK.npz; no optimizer checkpoint used",
+  "source_scope": "Canonical AB body and its initial/warmstart/all11 auxiliary schedules; neural muscle controls replace130 muscle channels",
+  "old_package_note": "FixedBody_20261115.zip was an add-on and did not contain model.yaml; this standalone package does"
+}
