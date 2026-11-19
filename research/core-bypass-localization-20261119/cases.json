@@ -207,6 +207,37 @@
       ],
       "scope": "diagnostic DN+VNC restriction; not an exact copy of the author MANC T1 model and not a replacement full network",
       "ablate_type": "INXXX466"
+    },
+    "I1_silenced": {
+      "ablate_types": [
+        "IN16B036"
+      ],
+      "record_additional_ids": [
+        "800374",
+        "800411"
+      ],
+      "scope": "matched full-network I1/I2 redundancy probe; residual DN bursting does not establish autonomous CPG redundancy"
+    },
+    "I2_silenced": {
+      "ablate_types": [
+        "IN19A007"
+      ],
+      "record_additional_ids": [
+        "800374",
+        "800411"
+      ],
+      "scope": "matched full-network I1/I2 redundancy probe; residual DN bursting does not establish autonomous CPG redundancy"
+    },
+    "I1_I2_silenced": {
+      "ablate_types": [
+        "IN16B036",
+        "IN19A007"
+      ],
+      "record_additional_ids": [
+        "800374",
+        "800411"
+      ],
+      "scope": "matched full-network I1/I2 redundancy probe; residual DN bursting does not establish autonomous CPG redundancy"
     }
   }
 }

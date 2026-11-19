@@ -1,0 +1,86 @@
+[
+  {
+    "pre": "800863",
+    "pre_type": "INXXX466",
+    "post": "800216",
+    "post_type": "IN19B012",
+    "effective_signed_count": 358.0
+  },
+  {
+    "pre": "800216",
+    "pre_type": "IN19B012",
+    "post": "801884",
+    "post_type": "IN16B036",
+    "effective_signed_count": 40.0
+  },
+  {
+    "pre": "800863",
+    "pre_type": "INXXX466",
+    "post": "801884",
+    "post_type": "IN16B036",
+    "effective_signed_count": 38.0
+  },
+  {
+    "pre": "903216",
+    "pre_type": "INXXX466",
+    "post": "801061",
+    "post_type": "IN19B012",
+    "effective_signed_count": 287.0
+  },
+  {
+    "pre": "801061",
+    "pre_type": "IN19B012",
+    "post": "803183",
+    "post_type": "IN16B036",
+    "effective_signed_count": 48.0
+  },
+  {
+    "pre": "903216",
+    "pre_type": "INXXX466",
+    "post": "803183",
+    "post_type": "IN16B036",
+    "effective_signed_count": 27.0
+  },
+  {
+    "pre": "10056",
+    "pre_type": "DNg100",
+    "post": "800286",
+    "post_type": "INXXX464",
+    "effective_signed_count": 104.0
+  },
+  {
+    "pre": "800286",
+    "pre_type": "INXXX464",
+    "post": "800061",
+    "post_type": "Tergopleural/Pleural promotor MN",
+    "effective_signed_count": 191.0
+  },
+  {
+    "pre": "800286",
+    "pre_type": "INXXX464",
+    "post": "801173",
+    "post_type": "Tergopleural/Pleural promotor MN",
+    "effective_signed_count": 111.0
+  },
+  {
+    "pre": "11074",
+    "pre_type": "DNg13",
+    "post": "802072",
+    "post_type": "Tergopleural/Pleural promotor MN",
+    "effective_signed_count": 60.0
+  },
+  {
+    "pre": "10444",
+    "pre_type": "DNge035",
+    "post": "802072",
+    "post_type": "Tergopleural/Pleural promotor MN",
+    "effective_signed_count": 42.0
+  },
+  {
+    "pre": "13805",
+    "pre_type": "DNg97",
+    "post": "802072",
+    "post_type": "Tergopleural/Pleural promotor MN",
+    "effective_signed_count": 20.0
+  }
+]

@@ -18,12 +18,14 @@ def run(name):
  for q in spec.get('cell_set',[]):
   mask=match(m.neurons,{k:v for k,v in q.items() if k not in ['parameter','value']});assert mask.any();j=m.config['neural']['cell_parameter_columns'].index(q['parameter']);m.cells[mask,j]=q['value'];changes.append({**q,'cells':int(mask.sum())})
  ablate=m.neuron_ids(type=spec['ablate_type']) if 'ablate_type' in spec else [];saved={}
+ for typ in spec.get('ablate_types',[]):ablate+=m.neuron_ids(type=typ)
  if 'retain_superclasses' in spec:
   ablate=list(set(ablate)|{n['bodyId'] for n in m.neurons if n.get('superclass') not in spec['retain_superclasses'] and n['bodyId'] not in spec.get('retain_ids',[])})
  def logger(*args):
   output=_kernel(*args);assert not output[14],'Exact spike log overflow';saved['events']=output[13];return output[:13]
  simulator._kernel=logger
  record=['10045','10056','800173','800288','800863','903216','801884','803183','800061','801173','802072']
+ record+=spec.get('record_additional_ids',[])
  start=time.monotonic();r=m.run_neural(record_ids=record,record_interval_ms=0.1,ablate_ids=ablate);u=m.muscle_excitation(r);elapsed=time.monotonic()-start
  out=R/'results';out.mkdir(exist_ok=True);raw=out/(name+'.npz');np.savez_compressed(raw,spikes=r['spikes'],events_step_cell=saved['events'],voltage=r['voltage'],time_ms=r['time_ms'],currents_pA=r['currents_pA'],conductances_nS=r['conductances_nS'],record_indices=r['record_indices'],body_ids=np.array(m.ids),u=u)
  if name in {'baseline','E2_silenced'}:
