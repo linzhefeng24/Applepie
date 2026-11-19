@@ -1,0 +1,484 @@
+{
+  "status": "completed_from_scratch_and_compared",
+  "neural_neurons": 3988,
+  "neural_duration_ms": 1600.0,
+  "neural_spike_bins": 1600,
+  "recorded_spikes": 14908,
+  "neural_spikes_exact": true,
+  "all_neural_arrays_exact": true,
+  "all_recorded_body_arrays_exact": true,
+  "all_full_physics_arrays_exact": true,
+  "muscle_u_exact": true,
+  "muscle_u_max_absolute_difference": 0.0,
+  "manual_model_sha256": "858d1818b8d8394c95bb62a6ce60474cb534a83b94265ef8615e367c110d262c",
+  "neural": {
+    "spikes": {
+      "shape": [
+        1600,
+        3988
+      ],
+      "dtype": "int16",
+      "exact_equal": true,
+      "different_elements": 0,
+      "max_absolute_difference": 0.0,
+      "all_finite": true
+    },
+    "voltage": {
+      "shape": [
+        161,
+        3988,
+        2
+      ],
+      "dtype": "float64",
+      "exact_equal": true,
+      "different_elements": 0,
+      "max_absolute_difference": 0.0,
+      "all_finite": true
+    },
+    "final_soma_mV": {
+      "shape": [
+        3988
+      ],
+      "dtype": "float64",
+      "exact_equal": true,
+      "different_elements": 0,
+      "max_absolute_difference": 0.0,
+      "all_finite": true
+    },
+    "final_axon_mV": {
+      "shape": [
+        3988
+      ],
+      "dtype": "float64",
+      "exact_equal": true,
+      "different_elements": 0,
+      "max_absolute_difference": 0.0,
+      "all_finite": true
+    },
+    "final_Ca_uM": {
+      "shape": [
+        3988
+      ],
+      "dtype": "float64",
+      "exact_equal": true,
+      "different_elements": 0,
+      "max_absolute_difference": 0.0,
+      "all_finite": true
+    },
+    "calcium": {
+      "shape": [
+        161,
+        3988
+      ],
+      "dtype": "float64",
+      "exact_equal": true,
+      "different_elements": 0,
+      "max_absolute_difference": 0.0,
+      "all_finite": true
+    },
+    "currents_pA": {
+      "shape": [
+        161,
+        3988,
+        4
+      ],
+      "dtype": "float64",
+      "exact_equal": true,
+      "different_elements": 0,
+      "max_absolute_difference": 0.0,
+      "all_finite": true
+    },
+    "conductances_nS": {
+      "shape": [
+        161,
+        3988,
+        2
+      ],
+      "dtype": "float64",
+      "exact_equal": true,
+      "different_elements": 0,
+      "max_absolute_difference": 0.0,
+      "all_finite": true
+    },
+    "gating_m_h_n": {
+      "shape": [
+        161,
+        3988,
+        3
+      ],
+      "dtype": "float64",
+      "exact_equal": true,
+      "different_elements": 0,
+      "max_absolute_difference": 0.0,
+      "all_finite": true
+    },
+    "time_ms": {
+      "shape": [
+        161
+      ],
+      "dtype": "float64",
+      "exact_equal": true,
+      "different_elements": 0,
+      "max_absolute_difference": 0.0,
+      "all_finite": true
+    },
+    "record_indices": {
+      "shape": [
+        3988
+      ],
+      "dtype": "int64",
+      "exact_equal": true,
+      "different_elements": 0,
+      "max_absolute_difference": 0.0,
+      "all_finite": true
+    },
+    "body_ids": {
+      "shape": [
+        3988
+      ],
+      "dtype": "<U10",
+      "exact_equal": true,
+      "different_elements": 0
+    },
+    "model_sha256": {
+      "shape": [],
+      "dtype": "<U64",
+      "exact_equal": true,
+      "different_elements": 0
+    },
+    "experiment": {
+      "shape": [],
+      "dtype": "<U8",
+      "exact_equal": true,
+      "different_elements": 0
+    },
+    "run_id": {
+      "shape": [],
+      "dtype": "<U64",
+      "exact_equal": true,
+      "different_elements": 0
+    }
+  },
+  "recorded_body": {
+    "root_fixed": {
+      "shape": [
+        80
+      ],
+      "dtype": "bool",
+      "exact_equal": true,
+      "different_elements": 0,
+      "max_absolute_difference": 0.0,
+      "all_finite": true
+    },
+    "thorax_position_native": {
+      "shape": [
+        80,
+        3
+      ],
+      "dtype": "float64",
+      "exact_equal": true,
+      "different_elements": 0,
+      "max_absolute_difference": 0.0,
+      "all_finite": true
+    },
+    "thorax_quaternion": {
+      "shape": [
+        80,
+        4
+      ],
+      "dtype": "float64",
+      "exact_equal": true,
+      "different_elements": 0,
+      "max_absolute_difference": 0.0,
+      "all_finite": true
+    },
+    "ground_contact_count": {
+      "shape": [
+        80
+      ],
+      "dtype": "int64",
+      "exact_equal": true,
+      "different_elements": 0,
+      "max_absolute_difference": 0.0,
+      "all_finite": true
+    },
+    "ground_contact_normal_force_native": {
+      "shape": [
+        80
+      ],
+      "dtype": "float64",
+      "exact_equal": true,
+      "different_elements": 0,
+      "max_absolute_difference": 0.0,
+      "all_finite": true
+    },
+    "time_s": {
+      "shape": [
+        80
+      ],
+      "dtype": "float64",
+      "exact_equal": true,
+      "different_elements": 0,
+      "max_absolute_difference": 0.0,
+      "all_finite": true
+    },
+    "qpos": {
+      "shape": [
+        80,
+        116
+      ],
+      "dtype": "float64",
+      "exact_equal": true,
+      "different_elements": 0,
+      "max_absolute_difference": 0.0,
+      "all_finite": true
+    },
+    "qvel": {
+      "shape": [
+        80,
+        114
+      ],
+      "dtype": "float64",
+      "exact_equal": true,
+      "different_elements": 0,
+      "max_absolute_difference": 0.0,
+      "all_finite": true
+    },
+    "all_activation": {
+      "shape": [
+        80,
+        141
+      ],
+      "dtype": "float64",
+      "exact_equal": true,
+      "different_elements": 0,
+      "max_absolute_difference": 0.0,
+      "all_finite": true
+    },
+    "muscle_activation": {
+      "shape": [
+        80,
+        130
+      ],
+      "dtype": "float64",
+      "exact_equal": true,
+      "different_elements": 0,
+      "max_absolute_difference": 0.0,
+      "all_finite": true
+    },
+    "muscle_u_requested": {
+      "shape": [
+        80,
+        130
+      ],
+      "dtype": "float64",
+      "exact_equal": true,
+      "different_elements": 0,
+      "max_absolute_difference": 0.0,
+      "all_finite": true
+    },
+    "muscle_u_applied": {
+      "shape": [
+        80,
+        130
+      ],
+      "dtype": "float64",
+      "exact_equal": true,
+      "different_elements": 0,
+      "max_absolute_difference": 0.0,
+      "all_finite": true
+    },
+    "muscle_force_native": {
+      "shape": [
+        80,
+        130
+      ],
+      "dtype": "float64",
+      "exact_equal": true,
+      "different_elements": 0,
+      "max_absolute_difference": 0.0,
+      "all_finite": true
+    },
+    "body_up_z": {
+      "shape": [
+        80
+      ],
+      "dtype": "float64",
+      "exact_equal": true,
+      "different_elements": 0,
+      "max_absolute_difference": 0.0,
+      "all_finite": true
+    },
+    "extra_applied_force": {
+      "shape": [
+        80
+      ],
+      "dtype": "bool",
+      "exact_equal": true,
+      "different_elements": 0,
+      "max_absolute_difference": 0.0,
+      "all_finite": true
+    },
+    "neural_time_ms": {
+      "shape": [
+        80
+      ],
+      "dtype": "float64",
+      "exact_equal": true,
+      "different_elements": 0,
+      "max_absolute_difference": 0.0,
+      "all_finite": true
+    },
+    "model_sha256": {
+      "shape": [],
+      "dtype": "<U64",
+      "exact_equal": true,
+      "different_elements": 0
+    },
+    "neural_run_id": {
+      "shape": [],
+      "dtype": "<U64",
+      "exact_equal": true,
+      "different_elements": 0
+    },
+    "experiment": {
+      "shape": [],
+      "dtype": "<U8",
+      "exact_equal": true,
+      "different_elements": 0
+    },
+    "fixed_root": {
+      "shape": [],
+      "dtype": "bool",
+      "exact_equal": true,
+      "different_elements": 0,
+      "max_absolute_difference": 0.0,
+      "all_finite": true
+    }
+  },
+  "full_physics": {
+    "qpos": {
+      "shape": [
+        4000,
+        116
+      ],
+      "dtype": "float64",
+      "exact_equal": true,
+      "different_elements": 0,
+      "max_absolute_difference": 0.0,
+      "all_finite": true
+    },
+    "controls": {
+      "shape": [
+        4000,
+        141
+      ],
+      "dtype": "float64",
+      "exact_equal": true,
+      "different_elements": 0,
+      "max_absolute_difference": 0.0,
+      "all_finite": true
+    },
+    "initial_qpos": {
+      "shape": [
+        116
+      ],
+      "dtype": "float64",
+      "exact_equal": true,
+      "different_elements": 0,
+      "max_absolute_difference": 0.0,
+      "all_finite": true
+    },
+    "target_joint_angles": {
+      "shape": [
+        4000,
+        66
+      ],
+      "dtype": "float64",
+      "exact_equal": true,
+      "different_elements": 0,
+      "max_absolute_difference": 0.0,
+      "all_finite": true
+    },
+    "joint_qpos_indices": {
+      "shape": [
+        66
+      ],
+      "dtype": "int64",
+      "exact_equal": true,
+      "different_elements": 0,
+      "max_absolute_difference": 0.0,
+      "all_finite": true
+    },
+    "dt_s": {
+      "shape": [],
+      "dtype": "float64",
+      "exact_equal": true,
+      "different_elements": 0,
+      "max_absolute_difference": 0.0,
+      "all_finite": true
+    }
+  },
+  "fresh_replay_report": {
+    "condition": "manual R2 parameters, native AB free body; no BPTT weights",
+    "manual_model_sha256": "858d1818b8d8394c95bb62a6ce60474cb534a83b94265ef8615e367c110d262c",
+    "manual_cell_array_sha256": "c4d83f204c0ed79cddafd40ebf269f8d9059d6330be38e6b90254a3d36f79ac8",
+    "hand_parameters_included": true,
+    "neural_source": "independently recomputed this run",
+    "neural_input_sha256": "4153fa8f1d29bb1bd987281d68d8407767bb9dd4e2ff1644673218b33e3fc027",
+    "neural_run_id": "99da331bc3ad86641802f1034237277ab9974b64dcfdd253427ddd37e68957ec",
+    "physical_replay": "newly integrated this run",
+    "fixed_root": false,
+    "root_joint_type": "free",
+    "extra_applied_forces": false,
+    "state_resets_during_rollout": false,
+    "native_auxiliary_schedules_retained": 11,
+    "physical_duration_s": 0.4,
+    "neural_clock_scale": 3.0,
+    "joint_mse_rad2": 0.11717840309739241,
+    "joint_rmse_deg": 19.613108008991222,
+    "root_displacement_native": [
+      0.0019886237850997484,
+      0.013292367763402856,
+      -0.027845100343038845
+    ],
+    "min_body_up_z_sampled": 0.9474383799047915,
+    "ground_contact_samples": 80,
+    "ground_normal_force_max_native": 4.907640591401937,
+    "validation": "matches archived manual native-AB joint loss; not a claim of stable walking",
+    "software": {
+      "python": "3.12.14",
+      "numpy": "2.5.4",
+      "mujoco": "3.3.2"
+    }
+  },
+  "new_neural_archive": {
+    "bytes": 45908648,
+    "sha256": "4153fa8f1d29bb1bd987281d68d8407767bb9dd4e2ff1644673218b33e3fc027"
+  },
+  "videos": [
+    {
+      "name": "01_body_muscles.mp4",
+      "bytes": 585817,
+      "sha256": "167b0ea6fc289717ac37728b2ae3c4af7d4d336e5fd5c57e724507c894b12961",
+      "already_published_url": "https://github.com/linzhefeng24/Applepie/releases/download/manual-r2-freebody-20261119/Manual_R2_FreeBody.mp4",
+      "same_bytes_as_delivered": true
+    },
+    {
+      "name": "02_neural_chain_3d.mp4",
+      "bytes": 764186,
+      "sha256": "2a12f4e5ff95ff4819ec8ec4a60415621022c36e3b2cdb268fdd2bd63d435d74",
+      "already_published_url": "https://github.com/linzhefeng24/Applepie/releases/download/manual-r2-freebody-20261119/Manual_R2_Neural_Chain.mp4",
+      "same_bytes_as_delivered": true
+    },
+    {
+      "name": "03_synchronized.mp4",
+      "bytes": 1325074,
+      "sha256": "97d79fd5fabd69d71b4d03582c6b9a8e6e97fdff1b7f84cd39b3cb554d39dde0",
+      "already_published_url": "https://github.com/linzhefeng24/Applepie/releases/download/manual-r2-freebody-20261119/Manual_R2_Synchronized.mp4",
+      "same_bytes_as_delivered": true
+    }
+  ],
+  "scope": "Single unchanged software environment and one DN_drive trial; not validation of all brain.json phenomena or long-term walking",
+  "optimization": "No BPTT or tuning performed"
+}
