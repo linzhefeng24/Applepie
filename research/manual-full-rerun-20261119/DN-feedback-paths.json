@@ -1,0 +1,415 @@
+{
+  "direct_pairs": [
+    {
+      "pre": "10045",
+      "pre_type": "DNg100",
+      "post": "11006",
+      "post_type": "DNge129",
+      "manual_effective_signed_weight": 40.0,
+      "note": "model-effective synapse-count-scaled weight, not measured current/conductance"
+    },
+    {
+      "pre": "11006",
+      "pre_type": "DNge129",
+      "post": "10045",
+      "post_type": "DNg100",
+      "manual_effective_signed_weight": -521.0,
+      "note": "model-effective synapse-count-scaled weight, not measured current/conductance"
+    },
+    {
+      "pre": "10045",
+      "pre_type": "DNg100",
+      "post": "10856",
+      "post_type": "DNge129",
+      "manual_effective_signed_weight": 48.0,
+      "note": "model-effective synapse-count-scaled weight, not measured current/conductance"
+    },
+    {
+      "pre": "10856",
+      "pre_type": "DNge129",
+      "post": "10045",
+      "post_type": "DNg100",
+      "manual_effective_signed_weight": -417.0,
+      "note": "model-effective synapse-count-scaled weight, not measured current/conductance"
+    },
+    {
+      "pre": "10045",
+      "pre_type": "DNg100",
+      "post": "516820",
+      "post_type": "GNG127",
+      "manual_effective_signed_weight": 29.0,
+      "note": "model-effective synapse-count-scaled weight, not measured current/conductance"
+    },
+    {
+      "pre": "516820",
+      "pre_type": "GNG127",
+      "post": "10045",
+      "post_type": "DNg100",
+      "manual_effective_signed_weight": -310.0,
+      "note": "model-effective synapse-count-scaled weight, not measured current/conductance"
+    },
+    {
+      "pre": "10045",
+      "pre_type": "DNg100",
+      "post": "11982",
+      "post_type": "GNG127",
+      "manual_effective_signed_weight": 125.0,
+      "note": "model-effective synapse-count-scaled weight, not measured current/conductance"
+    },
+    {
+      "pre": "11982",
+      "pre_type": "GNG127",
+      "post": "10045",
+      "post_type": "DNg100",
+      "manual_effective_signed_weight": -262.0,
+      "note": "model-effective synapse-count-scaled weight, not measured current/conductance"
+    },
+    {
+      "pre": "10056",
+      "pre_type": "DNg100",
+      "post": "11006",
+      "post_type": "DNge129",
+      "manual_effective_signed_weight": 45.0,
+      "note": "model-effective synapse-count-scaled weight, not measured current/conductance"
+    },
+    {
+      "pre": "11006",
+      "pre_type": "DNge129",
+      "post": "10056",
+      "post_type": "DNg100",
+      "manual_effective_signed_weight": -460.0,
+      "note": "model-effective synapse-count-scaled weight, not measured current/conductance"
+    },
+    {
+      "pre": "10056",
+      "pre_type": "DNg100",
+      "post": "10856",
+      "post_type": "DNge129",
+      "manual_effective_signed_weight": 42.0,
+      "note": "model-effective synapse-count-scaled weight, not measured current/conductance"
+    },
+    {
+      "pre": "10856",
+      "pre_type": "DNge129",
+      "post": "10056",
+      "post_type": "DNg100",
+      "manual_effective_signed_weight": -481.0,
+      "note": "model-effective synapse-count-scaled weight, not measured current/conductance"
+    },
+    {
+      "pre": "10056",
+      "pre_type": "DNg100",
+      "post": "516820",
+      "post_type": "GNG127",
+      "manual_effective_signed_weight": 96.0,
+      "note": "model-effective synapse-count-scaled weight, not measured current/conductance"
+    },
+    {
+      "pre": "516820",
+      "pre_type": "GNG127",
+      "post": "10056",
+      "post_type": "DNg100",
+      "manual_effective_signed_weight": -270.0,
+      "note": "model-effective synapse-count-scaled weight, not measured current/conductance"
+    },
+    {
+      "pre": "10056",
+      "pre_type": "DNg100",
+      "post": "11982",
+      "post_type": "GNG127",
+      "manual_effective_signed_weight": 19.0,
+      "note": "model-effective synapse-count-scaled weight, not measured current/conductance"
+    },
+    {
+      "pre": "11982",
+      "pre_type": "GNG127",
+      "post": "10056",
+      "post_type": "DNg100",
+      "manual_effective_signed_weight": -253.0,
+      "note": "model-effective synapse-count-scaled weight, not measured current/conductance"
+    }
+  ],
+  "recorded_DN_currents": {
+    "10045": [
+      {
+        "time_ms": 200.0125,
+        "exc_pA": 0.0,
+        "inh_pA": -0.0,
+        "external_pA": 160.0
+      },
+      {
+        "time_ms": 210.0125,
+        "exc_pA": 120.08516601631594,
+        "inh_pA": -46.13001104132665,
+        "external_pA": 160.0
+      },
+      {
+        "time_ms": 220.0125,
+        "exc_pA": 547.9140324099825,
+        "inh_pA": -414.5652373823901,
+        "external_pA": 160.0
+      },
+      {
+        "time_ms": 230.0125,
+        "exc_pA": 819.8383365762494,
+        "inh_pA": -710.2186482968417,
+        "external_pA": 160.0
+      },
+      {
+        "time_ms": 240.0125,
+        "exc_pA": 596.73363052863,
+        "inh_pA": -687.1457657638005,
+        "external_pA": 160.0
+      },
+      {
+        "time_ms": 250.0125,
+        "exc_pA": 157.52224495488952,
+        "inh_pA": -309.9243682651481,
+        "external_pA": 160.0
+      },
+      {
+        "time_ms": 260.0125,
+        "exc_pA": 33.0609271755271,
+        "inh_pA": -188.1877292203163,
+        "external_pA": 160.0
+      },
+      {
+        "time_ms": 270.0125,
+        "exc_pA": 8.172630097106058,
+        "inh_pA": -174.24678930041185,
+        "external_pA": 160.0
+      },
+      {
+        "time_ms": 280.0125,
+        "exc_pA": 1.1516867736612162,
+        "inh_pA": -156.14670746366258,
+        "external_pA": 160.0
+      },
+      {
+        "time_ms": 290.0125,
+        "exc_pA": 0.14791969985191084,
+        "inh_pA": -143.8114568747545,
+        "external_pA": 160.0
+      },
+      {
+        "time_ms": 300.0125,
+        "exc_pA": 0.018856604903945088,
+        "inh_pA": -127.77159691575244,
+        "external_pA": 160.0
+      },
+      {
+        "time_ms": 310.0125,
+        "exc_pA": 0.0024064117732814196,
+        "inh_pA": -107.94835230582227,
+        "external_pA": 160.0
+      },
+      {
+        "time_ms": 320.0125,
+        "exc_pA": 0.0003093185877793567,
+        "inh_pA": -87.10192786043761,
+        "external_pA": 160.0
+      },
+      {
+        "time_ms": 330.0125,
+        "exc_pA": 4.0022038805852395e-05,
+        "inh_pA": -68.22037062239859,
+        "external_pA": 160.0
+      },
+      {
+        "time_ms": 340.0125,
+        "exc_pA": 5.216069908426795e-06,
+        "inh_pA": -52.23110542215367,
+        "external_pA": 160.0
+      },
+      {
+        "time_ms": 350.0125,
+        "exc_pA": 6.848238791134569e-07,
+        "inh_pA": -39.29239020736621,
+        "external_pA": 160.0
+      },
+      {
+        "time_ms": 360.0125,
+        "exc_pA": 9.053500712696899e-08,
+        "inh_pA": -29.159849272497045,
+        "external_pA": 160.0
+      },
+      {
+        "time_ms": 370.0125,
+        "exc_pA": 1.2037861295402526e-08,
+        "inh_pA": -21.426709917209443,
+        "external_pA": 160.0
+      },
+      {
+        "time_ms": 380.0125,
+        "exc_pA": 1.6053483067024134e-09,
+        "inh_pA": -15.665551033240533,
+        "external_pA": 160.0
+      },
+      {
+        "time_ms": 390.0125,
+        "exc_pA": 2.136480020157723e-10,
+        "inh_pA": -11.476099679902712,
+        "external_pA": 160.0
+      },
+      {
+        "time_ms": 400.0125,
+        "exc_pA": 2.8416363938341516e-11,
+        "inh_pA": -8.406278126740405,
+        "external_pA": 160.0
+      },
+      {
+        "time_ms": 410.0125,
+        "exc_pA": 3.950950860840515e-12,
+        "inh_pA": -5.818228761556075,
+        "external_pA": 160.0
+      },
+      {
+        "time_ms": 420.0125,
+        "exc_pA": 77.03118096167199,
+        "inh_pA": -5.323237594003809,
+        "external_pA": 160.0
+      }
+    ],
+    "10056": [
+      {
+        "time_ms": 200.0125,
+        "exc_pA": 0.0,
+        "inh_pA": -0.0,
+        "external_pA": 160.0
+      },
+      {
+        "time_ms": 210.0125,
+        "exc_pA": 132.23226811408867,
+        "inh_pA": -43.77538393558761,
+        "external_pA": 160.0
+      },
+      {
+        "time_ms": 220.0125,
+        "exc_pA": 529.9067001360788,
+        "inh_pA": -415.17109935934633,
+        "external_pA": 160.0
+      },
+      {
+        "time_ms": 230.0125,
+        "exc_pA": 810.3158456053849,
+        "inh_pA": -703.9165901819185,
+        "external_pA": 160.0
+      },
+      {
+        "time_ms": 240.0125,
+        "exc_pA": 595.1597097820143,
+        "inh_pA": -624.893164504705,
+        "external_pA": 160.0
+      },
+      {
+        "time_ms": 250.0125,
+        "exc_pA": 151.7574760250066,
+        "inh_pA": -303.76698194659815,
+        "external_pA": 160.0
+      },
+      {
+        "time_ms": 260.0125,
+        "exc_pA": 28.355718353895934,
+        "inh_pA": -187.15029752300896,
+        "external_pA": 160.0
+      },
+      {
+        "time_ms": 270.0125,
+        "exc_pA": 8.172960216790084,
+        "inh_pA": -174.80957812952082,
+        "external_pA": 160.0
+      },
+      {
+        "time_ms": 280.0125,
+        "exc_pA": 1.1554759889197883,
+        "inh_pA": -157.06033263043193,
+        "external_pA": 160.0
+      },
+      {
+        "time_ms": 290.0125,
+        "exc_pA": 0.14855250540991738,
+        "inh_pA": -144.88596580665484,
+        "external_pA": 160.0
+      },
+      {
+        "time_ms": 300.0125,
+        "exc_pA": 0.01894634221246739,
+        "inh_pA": -129.16153441003888,
+        "external_pA": 160.0
+      },
+      {
+        "time_ms": 310.0125,
+        "exc_pA": 0.0024167131679094676,
+        "inh_pA": -109.62846731532987,
+        "external_pA": 160.0
+      },
+      {
+        "time_ms": 320.0125,
+        "exc_pA": 0.0003104714351903666,
+        "inh_pA": -88.73376377141881,
+        "external_pA": 160.0
+      },
+      {
+        "time_ms": 330.0125,
+        "exc_pA": 4.0144050520384995e-05,
+        "inh_pA": -69.66683396401447,
+        "external_pA": 160.0
+      },
+      {
+        "time_ms": 340.0125,
+        "exc_pA": 5.2289286290381965e-06,
+        "inh_pA": -53.42650268157347,
+        "external_pA": 160.0
+      },
+      {
+        "time_ms": 350.0125,
+        "exc_pA": 6.861817324508625e-07,
+        "inh_pA": -40.23733824876648,
+        "external_pA": 160.0
+      },
+      {
+        "time_ms": 360.0125,
+        "exc_pA": 9.066490371124367e-08,
+        "inh_pA": -29.891766563968016,
+        "external_pA": 160.0
+      },
+      {
+        "time_ms": 370.0125,
+        "exc_pA": 1.2044355565360564e-08,
+        "inh_pA": -21.99473713365003,
+        "external_pA": 160.0
+      },
+      {
+        "time_ms": 380.0125,
+        "exc_pA": 1.604465910128304e-09,
+        "inh_pA": -16.105335451232474,
+        "external_pA": 160.0
+      },
+      {
+        "time_ms": 390.0125,
+        "exc_pA": 2.1379911880833056e-10,
+        "inh_pA": -11.779073465080042,
+        "external_pA": 160.0
+      },
+      {
+        "time_ms": 400.0125,
+        "exc_pA": 2.8683222942476284e-11,
+        "inh_pA": -8.535286518018788,
+        "external_pA": 160.0
+      },
+      {
+        "time_ms": 410.0125,
+        "exc_pA": 3.981686049446131e-12,
+        "inh_pA": -5.915570490928751,
+        "external_pA": 160.0
+      },
+      {
+        "time_ms": 420.0125,
+        "exc_pA": 63.09603550122841,
+        "inh_pA": -4.453041979834225,
+        "external_pA": 160.0
+      }
+    ]
+  },
+  "causal_limit": "anatomy plus recorded activity; individual cell necessity not ablated here"
+}
