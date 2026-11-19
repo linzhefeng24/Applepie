@@ -1,0 +1,123 @@
+{
+  "repo": "linzhefeng24/Applepie",
+  "release_tag": "manual-core-extension-20261119",
+  "source_revision": "fc8b1b6cd2a16732ea05ffd16aa6d256d7f899d9",
+  "bundle": {
+    "name": "Core_Extension_Transport.zip",
+    "bytes": 60591703,
+    "sha256": "db1e3d0cbbe09975b93b034f4d87aaa14c5694bf161901282a8e4ef7f2434446"
+  },
+  "chunks": [
+    {
+      "index": 0,
+      "git_blob_sha": "2fd5261ebf83c450e35492361d25a7cece89b30b",
+      "sha256": "e9330b5703ac2edec0166f8c15a898283ec8f891cbf3967822bee7a49b67bc49",
+      "bytes": 4194304
+    },
+    {
+      "index": 1,
+      "git_blob_sha": "6a676413d4e9e33e7963bd6cef74e0be5fd8c45d",
+      "sha256": "04fed89f402feff4b6b242f83b49f5b8f898a6cfccdac0072d8432d7726aa123",
+      "bytes": 4194304
+    },
+    {
+      "index": 2,
+      "git_blob_sha": "598ed2531aa1ffb8b7fad354d541c3eb3a415d17",
+      "sha256": "2d8d596407e3d2eece16ec646759adf4c9cd11996b29ca26f42d64facbecbe83",
+      "bytes": 4194304
+    },
+    {
+      "index": 3,
+      "git_blob_sha": "27a0acfd2feaf6d65a440213388c3d5724635b7f",
+      "sha256": "231da4a50779cb4cf2f9545cf4dba85c5b6dd2a3dc17e6a9493ac896f9452fec",
+      "bytes": 4194304
+    },
+    {
+      "index": 4,
+      "git_blob_sha": "e829b6a03f4c099fd0edf6a5f4d939aec8c3a505",
+      "sha256": "1cfea6f171ea0087ea008f66b2493caf47f18bb79ea9355a3e1abf7be3e9280f",
+      "bytes": 4194304
+    },
+    {
+      "index": 5,
+      "git_blob_sha": "cfd4d0e9b37fa6ddfacab90d167f7e42c91641b7",
+      "sha256": "440b6b80d9618794fede8050880ba87912d733d3dead9c786b5ae7ea21c755ce",
+      "bytes": 4194304
+    },
+    {
+      "index": 6,
+      "git_blob_sha": "792cdf47a81584659b19f4643dc26fc996bd7660",
+      "sha256": "a4bf287b148af28bd7ba3370ab8feceda6985892579471c93214daee06384d9c",
+      "bytes": 4194304
+    },
+    {
+      "index": 7,
+      "git_blob_sha": "f19737aa1537410ebf209e50cd3671b2f5d4d5eb",
+      "sha256": "3474a613645b8b239350144634829b5ceb174845bd4f8999818eb27bd22289ed",
+      "bytes": 4194304
+    },
+    {
+      "index": 8,
+      "git_blob_sha": "929671dd214f29b348e01049f9f6b34ce6e07a44",
+      "sha256": "67b348fd11d156f7e57921e3c7137b4f4813a7cd42057cfba79ca0741f1a9c31",
+      "bytes": 4194304
+    },
+    {
+      "index": 9,
+      "git_blob_sha": "017599313dd86c49c762b5d6b962d5e09149807d",
+      "sha256": "fe6a3e935fe92e7197a0b671be5af94df37ff35bfa6ae3ce5f2d13beb7f909f4",
+      "bytes": 4194304
+    },
+    {
+      "index": 10,
+      "git_blob_sha": "fc7536e77a1976db961b63d246b057cd6c467a66",
+      "sha256": "d29ce70d3233ed646041d43e51f5932476074f650f9121df166fb280f62b852d",
+      "bytes": 4194304
+    },
+    {
+      "index": 11,
+      "git_blob_sha": "247b1202cc90b0e477fe846eb99b274ab10453a6",
+      "sha256": "b889ee9f02e5c37d5415d79b9017fcec784c752e1447e53b699ec120884d9db2",
+      "bytes": 4194304
+    },
+    {
+      "index": 12,
+      "git_blob_sha": "1144e35546db47368edcd9eeec7f200e9babd55f",
+      "sha256": "cb920c95dad80c4455f61caa0674a9296b47b36a8a40b78bec1507c3b4c9915f",
+      "bytes": 4194304
+    },
+    {
+      "index": 13,
+      "git_blob_sha": "283d36df084ca0ab73e7980fecf687b53de6ffbc",
+      "sha256": "7f38e6f7b26b5df7a3ad931841655c8b3993bdd162c9e40874e152eac4eccda1",
+      "bytes": 4194304
+    },
+    {
+      "index": 14,
+      "git_blob_sha": "aa3070d404e00a291577f64acd2c101deb397438",
+      "sha256": "3c61f6d7b00d4e56f9a5ab1f5bcc3cee10ec7657f5875009781fd9f25f48dfb4",
+      "bytes": 1871447
+    }
+  ],
+  "assets": [
+    {
+      "name": "Selected_Core_Extension.zip",
+      "bytes": 58604100,
+      "sha256": "b7dc5c6fc197755ad0b75abe8c6f0a184db381dc4b9697ef04e9f024c2004a1d",
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/manual-core-extension-20261119/Selected_Core_Extension.zip"
+    },
+    {
+      "name": "core-and-muscle-traces.png",
+      "bytes": 1983079,
+      "sha256": "9108149b9fcb36f8c34425d26e50073ff6a8e090a1237b4e316eb47069a9ebaf",
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/manual-core-extension-20261119/core-and-muscle-traces.png"
+    },
+    {
+      "name": "phenomena_status.json",
+      "bytes": 4126,
+      "sha256": "92f5458b04448a641b2f11a4eec2b7f30740f1e51e602945091c2547b174f0b7",
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/manual-core-extension-20261119/phenomena_status.json"
+    }
+  ],
+  "transport": "unreferenced Git blobs; no large-file commit to branch history"
+}
