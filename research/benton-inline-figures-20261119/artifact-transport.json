@@ -1,0 +1,69 @@
+{
+  "repo": "linzhefeng24/Applepie",
+  "release_tag": "benton-illustrated-zh-20261119",
+  "source_revision": "4587c3dc0c9c9943253dbd17b05f2616941e0ef2",
+  "bundle": {
+    "name": "Benton_2025_Chinese_Illustrated.zip",
+    "bytes": 15905530,
+    "sha256": "e443c7871e524f0fba53000b18226ed0c7f97204a5c638d38e22d22747f922a5"
+  },
+  "chunks": [
+    {
+      "index": 0,
+      "git_blob_sha": "8b8614f9ec297fcb39f1ffd46e48e5f8a5c0e81f",
+      "sha256": "d03a22d4cc21c566eba0bce7f06872dda30c66a90a0ec3c46e506cdd3eb02468",
+      "bytes": 4194304
+    },
+    {
+      "index": 1,
+      "git_blob_sha": "e333bc23e2d48e4cabd55898724f684d3bedebb5",
+      "sha256": "d2a3d006e297200d0f0631f0f59453d1367c088858711a967114acadc7be549c",
+      "bytes": 4194304
+    },
+    {
+      "index": 2,
+      "git_blob_sha": "45b5012fcd2581fabfda8121dda2ec974516e0ee",
+      "sha256": "3d3ef4881af11c558a081480aec678bfaba188d1176f25ded76af3b58932ae30",
+      "bytes": 4194304
+    },
+    {
+      "index": 3,
+      "git_blob_sha": "af11b2b05c7cafcbe956b71aaa9b24f297942f82",
+      "sha256": "6411e0b70704f76b7c8b86539cd665e0982ed87b2dd7baafe0c3181fd9426687",
+      "bytes": 3322618
+    }
+  ],
+  "assets": [
+    {
+      "name": "Benton_2025_Chinese_Illustrated.docx",
+      "bytes": 4633152,
+      "sha256": "ad2000965d2e7667b4ea7a1123ba62d910a6acd6588552fffec9e1bc71af2d5e",
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/benton-illustrated-zh-20261119/Benton_2025_Chinese_Illustrated.docx"
+    },
+    {
+      "name": "Benton_2025_Chinese_Illustrated.html",
+      "bytes": 6537911,
+      "sha256": "ab82a342739fc1c3f79544c4c68bb3b635571f759c026753ec30510619ec6c56",
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/benton-illustrated-zh-20261119/Benton_2025_Chinese_Illustrated.html"
+    },
+    {
+      "name": "Benton_2025_Chinese_Illustrated.pdf",
+      "bytes": 6876317,
+      "sha256": "50808d0021f464e4db16f28f127c35ca7f6c65b52be63744d411d91f668fab34",
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/benton-illustrated-zh-20261119/Benton_2025_Chinese_Illustrated.pdf"
+    },
+    {
+      "name": "Benton_2025_Chinese_Illustrated.zip",
+      "bytes": 15905530,
+      "sha256": "e443c7871e524f0fba53000b18226ed0c7f97204a5c638d38e22d22747f922a5",
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/benton-illustrated-zh-20261119/Benton_2025_Chinese_Illustrated.zip"
+    },
+    {
+      "name": "Sources_and_Layout.json",
+      "bytes": 2649,
+      "sha256": "e568e259dc9a46a714c03214f9b47b498c87654d371b98d55cb7ecc1ed28f09e",
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/benton-illustrated-zh-20261119/Sources_and_Layout.json"
+    }
+  ],
+  "transport": "unreferenced Git blobs; no large-file commit to branch history"
+}
