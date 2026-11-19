@@ -1,0 +1,188 @@
+{
+  "neurons": [
+    {
+      "id": "11006",
+      "type": "DNge129",
+      "somaSide": "L",
+      "model_transmitter": "gaba",
+      "first_cycle_spike_times_ms": [
+        211,
+        228
+      ],
+      "calcium_tau_ms": 100.0,
+      "SK_multiplier": 1.0
+    },
+    {
+      "id": "10856",
+      "type": "DNge129",
+      "somaSide": "R",
+      "model_transmitter": "gaba",
+      "first_cycle_spike_times_ms": [
+        210,
+        228
+      ],
+      "calcium_tau_ms": 100.0,
+      "SK_multiplier": 1.0
+    },
+    {
+      "id": "11982",
+      "type": "GNG127",
+      "somaSide": "R",
+      "model_transmitter": "gaba",
+      "first_cycle_spike_times_ms": [
+        207,
+        221,
+        234
+      ],
+      "calcium_tau_ms": 100.0,
+      "SK_multiplier": 1.0
+    },
+    {
+      "id": "516820",
+      "type": "GNG127",
+      "somaSide": "L",
+      "model_transmitter": "gaba",
+      "first_cycle_spike_times_ms": [
+        208,
+        229
+      ],
+      "calcium_tau_ms": 100.0,
+      "SK_multiplier": 1.0
+    },
+    {
+      "id": "26344",
+      "type": "GNG458",
+      "somaSide": "R",
+      "model_transmitter": "gaba",
+      "first_cycle_spike_times_ms": [
+        268
+      ],
+      "calcium_tau_ms": 100.0,
+      "SK_multiplier": 1.0
+    }
+  ],
+  "direct_edges": [
+    {
+      "pre": "11006",
+      "post": "10045",
+      "manual_effective_signed_weight": -521.0,
+      "note": "Signed model-effective synapse-count weight; not a measured physiological conductance"
+    },
+    {
+      "pre": "10045",
+      "post": "11006",
+      "manual_effective_signed_weight": 40.0,
+      "note": "Signed model-effective synapse-count weight; not a measured physiological conductance"
+    },
+    {
+      "pre": "11006",
+      "post": "10056",
+      "manual_effective_signed_weight": -460.0,
+      "note": "Signed model-effective synapse-count weight; not a measured physiological conductance"
+    },
+    {
+      "pre": "10056",
+      "post": "11006",
+      "manual_effective_signed_weight": 45.0,
+      "note": "Signed model-effective synapse-count weight; not a measured physiological conductance"
+    },
+    {
+      "pre": "10856",
+      "post": "10045",
+      "manual_effective_signed_weight": -417.0,
+      "note": "Signed model-effective synapse-count weight; not a measured physiological conductance"
+    },
+    {
+      "pre": "10045",
+      "post": "10856",
+      "manual_effective_signed_weight": 48.0,
+      "note": "Signed model-effective synapse-count weight; not a measured physiological conductance"
+    },
+    {
+      "pre": "10856",
+      "post": "10056",
+      "manual_effective_signed_weight": -481.0,
+      "note": "Signed model-effective synapse-count weight; not a measured physiological conductance"
+    },
+    {
+      "pre": "10056",
+      "post": "10856",
+      "manual_effective_signed_weight": 42.0,
+      "note": "Signed model-effective synapse-count weight; not a measured physiological conductance"
+    },
+    {
+      "pre": "11982",
+      "post": "10045",
+      "manual_effective_signed_weight": -262.0,
+      "note": "Signed model-effective synapse-count weight; not a measured physiological conductance"
+    },
+    {
+      "pre": "10045",
+      "post": "11982",
+      "manual_effective_signed_weight": 125.0,
+      "note": "Signed model-effective synapse-count weight; not a measured physiological conductance"
+    },
+    {
+      "pre": "11982",
+      "post": "10056",
+      "manual_effective_signed_weight": -253.0,
+      "note": "Signed model-effective synapse-count weight; not a measured physiological conductance"
+    },
+    {
+      "pre": "10056",
+      "post": "11982",
+      "manual_effective_signed_weight": 19.0,
+      "note": "Signed model-effective synapse-count weight; not a measured physiological conductance"
+    },
+    {
+      "pre": "516820",
+      "post": "10045",
+      "manual_effective_signed_weight": -310.0,
+      "note": "Signed model-effective synapse-count weight; not a measured physiological conductance"
+    },
+    {
+      "pre": "10045",
+      "post": "516820",
+      "manual_effective_signed_weight": 29.0,
+      "note": "Signed model-effective synapse-count weight; not a measured physiological conductance"
+    },
+    {
+      "pre": "516820",
+      "post": "10056",
+      "manual_effective_signed_weight": -270.0,
+      "note": "Signed model-effective synapse-count weight; not a measured physiological conductance"
+    },
+    {
+      "pre": "10056",
+      "post": "516820",
+      "manual_effective_signed_weight": 96.0,
+      "note": "Signed model-effective synapse-count weight; not a measured physiological conductance"
+    },
+    {
+      "pre": "26344",
+      "post": "10045",
+      "manual_effective_signed_weight": -493.0,
+      "note": "Signed model-effective synapse-count weight; not a measured physiological conductance"
+    },
+    {
+      "pre": "10045",
+      "post": "26344",
+      "manual_effective_signed_weight": 1.0,
+      "note": "Signed model-effective synapse-count weight; not a measured physiological conductance"
+    },
+    {
+      "pre": "26344",
+      "post": "10056",
+      "manual_effective_signed_weight": -512.0,
+      "note": "Signed model-effective synapse-count weight; not a measured physiological conductance"
+    },
+    {
+      "pre": "10056",
+      "post": "26344",
+      "manual_effective_signed_weight": 1.0,
+      "note": "Signed model-effective synapse-count weight; not a measured physiological conductance"
+    }
+  ],
+  "interpretation": "Recorded active feedback participants; causal route/silencing cases separate necessity from contribution",
+  "baseline_global_inhibitory_decay_ms": 30.0
+}

@@ -1,0 +1,350 @@
+{
+  "case": "i_decay_60ms",
+  "intervention": {
+    "global_overrides": {
+      "tau_i_decay_ms": 60.0
+    }
+  },
+  "model_sha256": "858d1818b8d8394c95bb62a6ce60474cb534a83b94265ef8615e367c110d262c",
+  "source_code_sha256": "6c7839a30e016775e3d338024d4d413c8e88df2344b400646f553f478f1ac27b",
+  "original_directed_edges": 485045,
+  "removed_edges": 0,
+  "silenced_cells": [],
+  "physical_or_neural_parameters_optimized": false,
+  "duration_ms": 1600.0,
+  "input": [
+    {
+      "neuron_ids": [
+        "10045",
+        "10056"
+      ],
+      "on_ms": 200,
+      "off_ms": 1500,
+      "current_pA": 160
+    }
+  ],
+  "seconds": 46.29067867399863,
+  "neurons": {
+    "10045": {
+      "type": "DNg100",
+      "spike_count": 10,
+      "spike_times_ms": [
+        202.0,
+        215.0,
+        224.0,
+        657.0,
+        667.0,
+        677.0,
+        685.0,
+        1112.0,
+        1124.0,
+        1135.0
+      ],
+      "burst_gap_definition_ms": 60,
+      "burst_onsets_ms": [
+        202.0,
+        657.0,
+        1112.0
+      ],
+      "burst_intervals_ms": [
+        455.0,
+        455.0
+      ],
+      "median_interval_ms": 455.0,
+      "max_ISI_ms": 433.0
+    },
+    "10056": {
+      "type": "DNg100",
+      "spike_count": 10,
+      "spike_times_ms": [
+        202.0,
+        214.0,
+        225.0,
+        658.0,
+        669.0,
+        680.0,
+        1113.0,
+        1124.0,
+        1135.0,
+        1146.0
+      ],
+      "burst_gap_definition_ms": 60,
+      "burst_onsets_ms": [
+        202.0,
+        658.0,
+        1113.0
+      ],
+      "burst_intervals_ms": [
+        456.0,
+        455.0
+      ],
+      "median_interval_ms": 455.5,
+      "max_ISI_ms": 433.0
+    },
+    "11006": {
+      "type": "DNge129",
+      "spike_count": 6,
+      "spike_times_ms": [
+        211.0,
+        228.0,
+        666.0,
+        683.0,
+        1122.0,
+        1138.0
+      ],
+      "burst_gap_definition_ms": 60,
+      "burst_onsets_ms": [
+        211.0,
+        666.0,
+        1122.0
+      ],
+      "burst_intervals_ms": [
+        455.0,
+        456.0
+      ],
+      "median_interval_ms": 455.5,
+      "max_ISI_ms": 439.0
+    },
+    "10856": {
+      "type": "DNge129",
+      "spike_count": 6,
+      "spike_times_ms": [
+        210.0,
+        228.0,
+        665.0,
+        683.0,
+        1121.0,
+        1139.0
+      ],
+      "burst_gap_definition_ms": 60,
+      "burst_onsets_ms": [
+        210.0,
+        665.0,
+        1121.0
+      ],
+      "burst_intervals_ms": [
+        455.0,
+        456.0
+      ],
+      "median_interval_ms": 455.5,
+      "max_ISI_ms": 438.0
+    },
+    "11982": {
+      "type": "GNG127",
+      "spike_count": 7,
+      "spike_times_ms": [
+        207.0,
+        221.0,
+        234.0,
+        662.0,
+        685.0,
+        1118.0,
+        1141.0
+      ],
+      "burst_gap_definition_ms": 60,
+      "burst_onsets_ms": [
+        207.0,
+        662.0,
+        1118.0
+      ],
+      "burst_intervals_ms": [
+        455.0,
+        456.0
+      ],
+      "median_interval_ms": 455.5,
+      "max_ISI_ms": 433.0
+    },
+    "516820": {
+      "type": "GNG127",
+      "spike_count": 6,
+      "spike_times_ms": [
+        208.0,
+        229.0,
+        663.0,
+        684.0,
+        1119.0,
+        1139.0
+      ],
+      "burst_gap_definition_ms": 60,
+      "burst_onsets_ms": [
+        208.0,
+        663.0,
+        1119.0
+      ],
+      "burst_intervals_ms": [
+        455.0,
+        456.0
+      ],
+      "median_interval_ms": 455.5,
+      "max_ISI_ms": 435.0
+    },
+    "26344": {
+      "type": "GNG458",
+      "spike_count": 0,
+      "spike_times_ms": [],
+      "burst_gap_definition_ms": 60,
+      "burst_onsets_ms": [],
+      "burst_intervals_ms": [],
+      "median_interval_ms": null,
+      "max_ISI_ms": null
+    },
+    "800003": {
+      "type": "IN17A001",
+      "spike_count": 7,
+      "spike_times_ms": [
+        207.0,
+        220.0,
+        663.0,
+        676.0,
+        698.0,
+        1118.0,
+        1131.0
+      ],
+      "burst_gap_definition_ms": 60,
+      "burst_onsets_ms": [
+        207.0,
+        663.0,
+        1118.0
+      ],
+      "burst_intervals_ms": [
+        456.0,
+        455.0
+      ],
+      "median_interval_ms": 455.5,
+      "max_ISI_ms": 443.0
+    },
+    "800009": {
+      "type": "IN17A001",
+      "spike_count": 8,
+      "spike_times_ms": [
+        207.0,
+        232.0,
+        663.0,
+        674.0,
+        686.0,
+        1118.0,
+        1129.0,
+        1140.0
+      ],
+      "burst_gap_definition_ms": 60,
+      "burst_onsets_ms": [
+        207.0,
+        663.0,
+        1118.0
+      ],
+      "burst_intervals_ms": [
+        456.0,
+        455.0
+      ],
+      "median_interval_ms": 455.5,
+      "max_ISI_ms": 432.0
+    },
+    "800114": {
+      "type": "IN17A001",
+      "spike_count": 9,
+      "spike_times_ms": [
+        208.0,
+        219.0,
+        229.0,
+        663.0,
+        674.0,
+        685.0,
+        1118.0,
+        1129.0,
+        1140.0
+      ],
+      "burst_gap_definition_ms": 60,
+      "burst_onsets_ms": [
+        208.0,
+        663.0,
+        1118.0
+      ],
+      "burst_intervals_ms": [
+        455.0,
+        455.0
+      ],
+      "median_interval_ms": 455.0,
+      "max_ISI_ms": 434.0
+    },
+    "800061": {
+      "type": "Tergopleural/Pleural promotor MN",
+      "spike_count": 12,
+      "spike_times_ms": [
+        208.0,
+        219.0,
+        230.0,
+        242.0,
+        664.0,
+        675.0,
+        686.0,
+        699.0,
+        1119.0,
+        1130.0,
+        1141.0,
+        1152.0
+      ],
+      "burst_gap_definition_ms": 60,
+      "burst_onsets_ms": [
+        208.0,
+        664.0,
+        1119.0
+      ],
+      "burst_intervals_ms": [
+        456.0,
+        455.0
+      ],
+      "median_interval_ms": 455.5,
+      "max_ISI_ms": 422.0
+    },
+    "800072": {
+      "type": "INXXX464",
+      "spike_count": 6,
+      "spike_times_ms": [
+        211.0,
+        227.0,
+        666.0,
+        682.0,
+        1121.0,
+        1136.0
+      ],
+      "burst_gap_definition_ms": 60,
+      "burst_onsets_ms": [
+        211.0,
+        666.0,
+        1121.0
+      ],
+      "burst_intervals_ms": [
+        455.0,
+        455.0
+      ],
+      "median_interval_ms": 455.0,
+      "max_ISI_ms": 439.0
+    },
+    "800211": {
+      "type": "INXXX464",
+      "spike_count": 3,
+      "spike_times_ms": [
+        218.0,
+        671.0,
+        1127.0
+      ],
+      "burst_gap_definition_ms": 60,
+      "burst_onsets_ms": [
+        218.0,
+        671.0,
+        1127.0
+      ],
+      "burst_intervals_ms": [
+        453.0,
+        456.0
+      ],
+      "median_interval_ms": 454.5,
+      "max_ISI_ms": 456.0
+    }
+  },
+  "output_npz": {
+    "name": "i_decay_60ms.npz",
+    "sha256": "e065398fba4421ee9a8d6a6b4e743179dbaa7acf5bc77b989657a3fcbb926ae3",
+    "bytes": 98530
+  }
+}
