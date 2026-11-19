@@ -1,0 +1,30 @@
+{
+  "complete": true,
+  "source_revision": "32e9d23221ad034cddae6ba40e00d10ffcfc6c9f",
+  "release_url": "https://github.com/linzhefeng24/Applepie/releases/tag/dn-rhythm-localization-20261119",
+  "fresh_download_sha256_verified_assets": [
+    "DN_Rhythm_Localization_Data.zip",
+    "localization.png",
+    "summary.json"
+  ],
+  "assets": [
+    {
+      "name": "DN_Rhythm_Localization_Data.zip",
+      "sha256": "5d9b4c2a7eb23c21139b6a7092626beb2468c3624d9cb9d0b2806512e8147f7f",
+      "bytes": 2866142,
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/dn-rhythm-localization-20261119/DN_Rhythm_Localization_Data.zip"
+    },
+    {
+      "name": "localization.png",
+      "sha256": "d40d6927ca9dbee97542d5af97670f8011c20f8429f95c3c837b60348da120fa",
+      "bytes": 135747,
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/dn-rhythm-localization-20261119/localization.png"
+    },
+    {
+      "name": "summary.json",
+      "sha256": "9e40b075bd45b944e2f1298f0ebbd258c43d2f0c481a49750cbb42fad3596a85",
+      "bytes": 82742,
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/dn-rhythm-localization-20261119/summary.json"
+    }
+  ]
+}
