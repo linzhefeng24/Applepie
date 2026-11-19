@@ -34,7 +34,7 @@ def build(package,sources=None):
    else:cand=[i for i,n in enumerate(m.neurons) if n.get('type')==kind]
    if not cand:raise ValueError(('Missing semantic prior',t,kind))
    ref=min(cand,key=lambda i:int(m.ids[i]));q={k:a.get(k) for k in m.neurons[0] if k in a};q.update(bodyId=str(a['bodyId']),predictedNt=nt[a['bodyId']]['consensus_nt'] or nt[a['bodyId']]['predicted_nt'],nt_confidence=nt[a['bodyId']]['predicted_nt_confidence'],connectome_namespace='MaleCNS_v1.0')
-   neurons.append(q);rows.append(m.cells[ref].copy());signs.append({'acetylcholine':1,'gaba':-1,'glutamate':-1}.get(q['predictedNt'],0))
+   q.update({k:a.get(k) for k in ['entryNerve','subclass','supertype','statusLabel']});neurons.append(q);rows.append(m.cells[ref].copy());signs.append({'acetylcholine':1,'gaba':-1,'glutamate':-1}.get(q['predictedNt'],0))
    prior.append(dict(bodyId=q['bodyId'],type=t,template_bodyId=m.ids[ref],template_type=m.neurons[ref]['type'],origin='borrowed_manual_model_prior_not_measured',sign_status='receptor_assumption_test_with_sign_zero' if q['predictedNt']=='glutamate' else 'NT_prediction_not_receptor_measurement'))
   ids=m.ids+[x['bodyId'] for x in neurons];lookup={int(b):i for i,b in enumerate(ids)}
   tab=feather.read_table(wp,columns=['body_pre','body_post','weight']);a=tab['body_pre'].to_numpy();b=tab['body_post'].to_numpy();w=tab['weight'].to_numpy();allids=np.array(list(lookup),dtype=np.int64);newids=np.array([int(x['bodyId']) for x in neurons])

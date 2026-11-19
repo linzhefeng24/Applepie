@@ -5,7 +5,7 @@ from pathlib import Path
 import json,hashlib,sys,os,csv
 import numpy as np
 R=Path(__file__).resolve().parent;ROOT=R.parents[1];P=ROOT/'research/manual-full-rerun-20261119/cache/extracted/Manual_FreeBody';sys.path.insert(0,str(P/'02_code'));from flymodel import Model
-m=Model(R/'cache/expanded_model.yaml');old=Model(ROOT/'research/manual-extension-review-20261119/cache/selected_manual_model.yaml');src=P/'03_phenomena/phenomena.json';items=json.loads(src.read_text())['additional_literature_inventory'];assert len(items)==146
+m=Model(R/'cache/component_model.yaml');old=Model(ROOT/'research/manual-extension-review-20261119/cache/selected_manual_model.yaml');src=P/'03_phenomena/phenomena.json';items=json.loads(src.read_text())['additional_literature_inventory'];assert len(items)==146
 aliases={}
 def group(name,types=None,prefix=None,ids=None,confidence='official_type',note='',source='MaleCNS v1.0 annotation'):
  sel=[n for n in m.neurons if (n.get('type') in (types or []) or (prefix and (n.get('type') or '').startswith(prefix)) or n['bodyId'] in (ids or []))];aliases[name]={'body_ids':[n['bodyId'] for n in sel],'original_count':sum(n['bodyId'] in old.lookup for n in sel),'expanded_count':len(sel),'identity_status':confidence,'note':note,'source':source};return aliases[name]

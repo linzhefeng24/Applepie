@@ -1,0 +1,9 @@
+{
+  "model_sha256": "77d3d132e3fc6a645cf28e6fcdc3e1ffcc5137f2810ea09c8b2ea11f4705ce58",
+  "neurons": 5218,
+  "afferents_with_axon_terminal_inputs": 726,
+  "source_kernel_sha256": "a64bd4c0393660b8c19607376068e504747044810db1f4342bfae86b0bfb60fc",
+  "runtime_kernel_sha256": "b4f330c1032d24c5b92ac7cc1551c9a72678b9bd565312ab0d2a0dc21c60e435",
+  "legacy_compatibility_required": "With terminal_targets allFalse, spikes andu must match prior selected model bitwise.",
+  "new_model_validation": "Must be independently rerun; no old pass inherited."
+}

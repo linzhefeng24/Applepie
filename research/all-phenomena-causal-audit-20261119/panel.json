@@ -1,0 +1,600 @@
+{
+  "model_sha256": "77d3d132e3fc6a645cf28e6fcdc3e1ffcc5137f2810ea09c8b2ea11f4705ce58",
+  "duration_ms": 1600,
+  "drive_on_ms": 200,
+  "drive_off_ms": 1500,
+  "current_pA": 160,
+  "modulator_on_ms": 600,
+  "modulator_off_ms": 1100,
+  "probe_on_ms": 400,
+  "probe_off_ms": 1200,
+  "record_interval_ms": 1,
+  "cases": {
+    "quiet": {
+      "sources": [],
+      "kind": "neural_component_probe",
+      "scope": "No behavioral, calcium-indicator or gene-expression equivalence inferred from current injection."
+    },
+    "DNg100": {
+      "sources": [
+        "DNg100"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "No behavioral, calcium-indicator or gene-expression equivalence inferred from current injection."
+    },
+    "DNb08": {
+      "sources": [
+        "DNb08"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "No behavioral, calcium-indicator or gene-expression equivalence inferred from current injection."
+    },
+    "P9": {
+      "sources": [
+        "P9"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "No behavioral, calcium-indicator or gene-expression equivalence inferred from current injection."
+    },
+    "MDN": {
+      "sources": [
+        "MDN"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "No behavioral, calcium-indicator or gene-expression equivalence inferred from current injection."
+    },
+    "BPN": {
+      "sources": [
+        "BPN"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "No behavioral, calcium-indicator or gene-expression equivalence inferred from current injection."
+    },
+    "BRK": {
+      "sources": [
+        "BRK"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "No behavioral, calcium-indicator or gene-expression equivalence inferred from current injection."
+    },
+    "FG": {
+      "sources": [
+        "FG"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "No behavioral, calcium-indicator or gene-expression equivalence inferred from current injection."
+    },
+    "BB": {
+      "sources": [
+        "BB"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "No behavioral, calcium-indicator or gene-expression equivalence inferred from current injection."
+    },
+    "LBL40": {
+      "sources": [
+        "LBL40"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "No behavioral, calcium-indicator or gene-expression equivalence inferred from current injection."
+    },
+    "DNg75": {
+      "sources": [
+        "DNg75"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "No behavioral, calcium-indicator or gene-expression equivalence inferred from current injection."
+    },
+    "DNg97": {
+      "sources": [
+        "DNg97"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "No behavioral, calcium-indicator or gene-expression equivalence inferred from current injection."
+    },
+    "DNg55": {
+      "sources": [
+        "DNg55"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "No behavioral, calcium-indicator or gene-expression equivalence inferred from current injection."
+    },
+    "DNg16": {
+      "sources": [
+        "DNg16"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "No behavioral, calcium-indicator or gene-expression equivalence inferred from current injection."
+    },
+    "DNg74": {
+      "sources": [
+        "DNg74"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "No behavioral, calcium-indicator or gene-expression equivalence inferred from current injection."
+    },
+    "DNg11": {
+      "sources": [
+        "DNg11"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "No behavioral, calcium-indicator or gene-expression equivalence inferred from current injection."
+    },
+    "BPN_P9": {
+      "sources": [
+        "BPN",
+        "P9"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "No behavioral, calcium-indicator or gene-expression equivalence inferred from current injection."
+    },
+    "DNg100_DNg75": {
+      "sources": [
+        "DNg100",
+        "DNg75"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "No behavioral, calcium-indicator or gene-expression equivalence inferred from current injection."
+    },
+    "DNg100_DNg97": {
+      "sources": [
+        "DNg100",
+        "DNg97"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "No behavioral, calcium-indicator or gene-expression equivalence inferred from current injection."
+    },
+    "DNg100_DNg55": {
+      "sources": [
+        "DNg100",
+        "DNg55"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "No behavioral, calcium-indicator or gene-expression equivalence inferred from current injection."
+    },
+    "DNg100_DNg16": {
+      "sources": [
+        "DNg100",
+        "DNg16"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "No behavioral, calcium-indicator or gene-expression equivalence inferred from current injection."
+    },
+    "DNg100_DNg74": {
+      "sources": [
+        "DNg100",
+        "DNg74"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "No behavioral, calcium-indicator or gene-expression equivalence inferred from current injection."
+    },
+    "MDN_BRK": {
+      "sources": [
+        "MDN"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "No behavioral, calcium-indicator or gene-expression equivalence inferred from current injection.",
+      "modulator": "BRK"
+    },
+    "MDN_FG": {
+      "sources": [
+        "MDN"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "No behavioral, calcium-indicator or gene-expression equivalence inferred from current injection.",
+      "modulator": "FG"
+    },
+    "MDN_BB": {
+      "sources": [
+        "MDN"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "No behavioral, calcium-indicator or gene-expression equivalence inferred from current injection.",
+      "modulator": "BB"
+    },
+    "P9_BRK": {
+      "sources": [
+        "P9"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "No behavioral, calcium-indicator or gene-expression equivalence inferred from current injection.",
+      "modulator": "BRK"
+    },
+    "P9_FG": {
+      "sources": [
+        "P9"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "No behavioral, calcium-indicator or gene-expression equivalence inferred from current injection.",
+      "modulator": "FG"
+    },
+    "P9_BB": {
+      "sources": [
+        "P9"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "No behavioral, calcium-indicator or gene-expression equivalence inferred from current injection.",
+      "modulator": "BB"
+    },
+    "PFL3_L": {
+      "sources": [
+        "PFL3"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "Soma-side stimulation; not an inferred heading cue or behavioral turn direction.",
+      "source_soma_side": "L"
+    },
+    "PFL3_R": {
+      "sources": [
+        "PFL3"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "Soma-side stimulation; not an inferred heading cue or behavioral turn direction.",
+      "source_soma_side": "R"
+    },
+    "PFL2_L": {
+      "sources": [
+        "PFL2"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "Soma-side stimulation; not an inferred heading cue or behavioral turn direction.",
+      "source_soma_side": "L"
+    },
+    "PFL2_R": {
+      "sources": [
+        "PFL2"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "Soma-side stimulation; not an inferred heading cue or behavioral turn direction.",
+      "source_soma_side": "R"
+    },
+    "DNa02_L": {
+      "sources": [
+        "DNa02"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "Soma-side stimulation; not an inferred heading cue or behavioral turn direction.",
+      "source_soma_side": "L"
+    },
+    "DNa02_R": {
+      "sources": [
+        "DNa02"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "Soma-side stimulation; not an inferred heading cue or behavioral turn direction.",
+      "source_soma_side": "R"
+    },
+    "DNg13_L": {
+      "sources": [
+        "DNg13"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "Soma-side stimulation; not an inferred heading cue or behavioral turn direction.",
+      "source_soma_side": "L"
+    },
+    "DNg13_R": {
+      "sources": [
+        "DNg13"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "Soma-side stimulation; not an inferred heading cue or behavioral turn direction.",
+      "source_soma_side": "R"
+    },
+    "DNg100_E1_off": {
+      "sources": [
+        "DNg100"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "No behavioral, calcium-indicator or gene-expression equivalence inferred from current injection.",
+      "ablate_group": "E1"
+    },
+    "DNg100_E2_off": {
+      "sources": [
+        "DNg100"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "No behavioral, calcium-indicator or gene-expression equivalence inferred from current injection.",
+      "ablate_group": "E2"
+    },
+    "DNg100_I1_off": {
+      "sources": [
+        "DNg100"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "No behavioral, calcium-indicator or gene-expression equivalence inferred from current injection.",
+      "ablate_group": "I1"
+    },
+    "DNg100_I2_off": {
+      "sources": [
+        "DNg100"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "No behavioral, calcium-indicator or gene-expression equivalence inferred from current injection.",
+      "ablate_group": "I2"
+    },
+    "DNg100_I1I2_off": {
+      "sources": [
+        "DNg100"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "No behavioral, calcium-indicator or gene-expression equivalence inferred from current injection.",
+      "ablate_groups": [
+        "I1",
+        "I2"
+      ]
+    },
+    "DNb08_E1_off": {
+      "sources": [
+        "DNb08"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "No behavioral, calcium-indicator or gene-expression equivalence inferred from current injection.",
+      "ablate_group": "E1"
+    },
+    "DNb08_E2_off": {
+      "sources": [
+        "DNb08"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "No behavioral, calcium-indicator or gene-expression equivalence inferred from current injection.",
+      "ablate_group": "E2"
+    },
+    "DNb08_E4_off": {
+      "sources": [
+        "DNb08"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "No behavioral, calcium-indicator or gene-expression equivalence inferred from current injection.",
+      "ablate_group": "E4"
+    },
+    "DNb08_E5_off": {
+      "sources": [
+        "DNb08"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "No behavioral, calcium-indicator or gene-expression equivalence inferred from current injection.",
+      "ablate_group": "E5"
+    },
+    "group_01A": {
+      "sources": [
+        "01A"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "Listed annotated population; not assumed identical to a specific split-GAL4 alpha/beta driver."
+    },
+    "group_09A": {
+      "sources": [
+        "09A"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "Listed annotated population; not assumed identical to a specific split-GAL4 alpha/beta driver."
+    },
+    "group_10B": {
+      "sources": [
+        "10B"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "Listed annotated population; not assumed identical to a specific split-GAL4 alpha/beta driver."
+    },
+    "group_13A": {
+      "sources": [
+        "13A"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "Listed annotated population; not assumed identical to a specific split-GAL4 alpha/beta driver."
+    },
+    "group_13B": {
+      "sources": [
+        "13B"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "Listed annotated population; not assumed identical to a specific split-GAL4 alpha/beta driver."
+    },
+    "group_19A": {
+      "sources": [
+        "19A"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "Listed annotated population; not assumed identical to a specific split-GAL4 alpha/beta driver."
+    },
+    "group_19B": {
+      "sources": [
+        "19B"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "Listed annotated population; not assumed identical to a specific split-GAL4 alpha/beta driver."
+    },
+    "group_21A": {
+      "sources": [
+        "21A"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "Listed annotated population; not assumed identical to a specific split-GAL4 alpha/beta driver."
+    },
+    "group_23B": {
+      "sources": [
+        "23B"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "Listed annotated population; not assumed identical to a specific split-GAL4 alpha/beta driver."
+    },
+    "group_chief_9A": {
+      "sources": [
+        "chief_9A"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "Listed annotated population; not assumed identical to a specific split-GAL4 alpha/beta driver."
+    },
+    "hook_probe": {
+      "sources": [
+        "hook"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "Direct current into explicitly annotated right-hindleg afferents; not a calibrated passive motion input.",
+      "source_window": "probe"
+    },
+    "hook_chief": {
+      "sources": [
+        "hook"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "Same afferent current with real chief9A activation; inspect terminal voltage/current and outputs.",
+      "source_window": "probe",
+      "modulator": "chief_9A"
+    },
+    "claw_probe": {
+      "sources": [
+        "claw"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "Direct current into explicitly annotated right-hindleg afferents; not a calibrated passive motion input.",
+      "source_window": "probe"
+    },
+    "claw_chief": {
+      "sources": [
+        "claw"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "Same afferent current with real chief9A activation; inspect terminal voltage/current and outputs.",
+      "source_window": "probe",
+      "modulator": "chief_9A"
+    },
+    "club_probe": {
+      "sources": [
+        "club"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "Direct current into explicitly annotated right-hindleg afferents; not a calibrated passive motion input.",
+      "source_window": "probe"
+    },
+    "club_chief": {
+      "sources": [
+        "club"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "Same afferent current with real chief9A activation; inspect terminal voltage/current and outputs.",
+      "source_window": "probe",
+      "modulator": "chief_9A"
+    },
+    "hook_DNg100": {
+      "sources": [
+        "DNg100"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "No behavioral, calcium-indicator or gene-expression equivalence inferred from current injection.",
+      "additional_probe": "hook"
+    },
+    "hook_DNg100_chief_off": {
+      "sources": [
+        "DNg100"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "No behavioral, calcium-indicator or gene-expression equivalence inferred from current injection.",
+      "additional_probe": "hook",
+      "ablate_group": "chief_9A"
+    },
+    "claw_DNg100": {
+      "sources": [
+        "DNg100"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "No behavioral, calcium-indicator or gene-expression equivalence inferred from current injection.",
+      "additional_probe": "claw"
+    },
+    "claw_DNg100_chief_off": {
+      "sources": [
+        "DNg100"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "No behavioral, calcium-indicator or gene-expression equivalence inferred from current injection.",
+      "additional_probe": "claw",
+      "ablate_group": "chief_9A"
+    },
+    "DNg100_80": {
+      "sources": [
+        "DNg100"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "No behavioral, calcium-indicator or gene-expression equivalence inferred from current injection.",
+      "amplitude_pA": 80
+    },
+    "DNg100_240": {
+      "sources": [
+        "DNg100"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "No behavioral, calcium-indicator or gene-expression equivalence inferred from current injection.",
+      "amplitude_pA": 240
+    },
+    "DNg100_320": {
+      "sources": [
+        "DNg100"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "No behavioral, calcium-indicator or gene-expression equivalence inferred from current injection.",
+      "amplitude_pA": 320
+    },
+    "DNg100_cut_DNge129": {
+      "sources": [
+        "DNg100"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "No behavioral, calcium-indicator or gene-expression equivalence inferred from current injection.",
+      "cut_inhibitory_sources_to_DN": [
+        "11006",
+        "10856"
+      ]
+    },
+    "DNg100_cut_GNG127": {
+      "sources": [
+        "DNg100"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "No behavioral, calcium-indicator or gene-expression equivalence inferred from current injection.",
+      "cut_inhibitory_sources_to_DN": [
+        "11982",
+        "516820"
+      ]
+    },
+    "DNg100_cut_GNG458": {
+      "sources": [
+        "DNg100"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "No behavioral, calcium-indicator or gene-expression equivalence inferred from current injection.",
+      "cut_inhibitory_sources_to_DN": [
+        "26344"
+      ]
+    },
+    "DNg100_cut_top5": {
+      "sources": [
+        "DNg100"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "No behavioral, calcium-indicator or gene-expression equivalence inferred from current injection.",
+      "cut_inhibitory_sources_to_DN": [
+        "11006",
+        "10856",
+        "11982",
+        "516820",
+        "26344"
+      ]
+    },
+    "DNg100_cut_all_I_to_DN": {
+      "sources": [
+        "DNg100"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "No behavioral, calcium-indicator or gene-expression equivalence inferred from current injection.",
+      "cut_all_inhibition_to_DN": true
+    },
+    "DNg100_MN_GABA_half": {
+      "sources": [
+        "DNg100"
+      ],
+      "kind": "neural_component_probe",
+      "scope": "Unmeasured receptor efficacy sensitivity, not a calibrated Rdl genetic knockdown.",
+      "motor_GABA_factor": 0.5
+    }
+  }
+}

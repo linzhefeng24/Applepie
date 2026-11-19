@@ -1,0 +1,4 @@
+from pathlib import Path
+import json,numpy as np,time,sys
+from runtime import Model
+R=Path(__file__).resolve().parent;ROOT=R.parents[1];m=Model(ROOT/'research/manual-extension-review-20261119/cache/selected_manual_model.yaml');assert not m.terminal_targets.any();start=time.monotonic();r=m.run_neural(record_ids=['10045','10056','800173','800863','801884']);u=m.muscle_excitation(r);z=np.load(ROOT/'research/manual-extension-review-20261119/results/I1_exc_x2.npz');report={'model_sha256':m.sha256,'terminal_targets_all_false':True,'spikes_equal':bool(np.array_equal(r['spikes'],z['spikes'])),'u_equal':bool(np.array_equal(u,z['u'])),'seconds':time.monotonic()-start};assert report['spikes_equal'] and report['u_equal'];(R/'compatibility.json').write_text(json.dumps(report,indent=2)+'\n');print(report)

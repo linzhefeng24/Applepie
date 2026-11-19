@@ -1,0 +1,7 @@
+{
+  "development_notes": [
+    "First metadata export omitted peripheral entryNerve/subclass fields. Fixed export and regenerated model before any new-model panel was run; initial zero-terminal assignment was not treated as validated.",
+    "New terminal kernel with all flags false matches previous selected-model spikes/u bitwise, as compatibility.json records.",
+    "146 original records overlap and mix experimental/model/structural scopes; no automatic full phenotype pass from electrical stimulation."
+  ]
+}
