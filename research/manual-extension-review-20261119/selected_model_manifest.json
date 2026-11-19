@@ -1,0 +1,15 @@
+{
+  "selected_model_sha256": "38b07321a54694dc875aebfaa82c930cd752bd0d25f2940ef7087fa45a44e4fa",
+  "cell_array_sha256": "11302755dafc33e5e4d7e765334dbb87261f8d4a392f1ed0cf5312f98183c5a7",
+  "matches_run": "I1_exc_x2",
+  "changed_ids": [
+    "801257",
+    "801884",
+    "801916",
+    "803183",
+    "903139",
+    "904079"
+  ],
+  "parameter_origin": "manual_not_measured",
+  "not_a_replacement_for_original_R2": true
+}

@@ -1,0 +1,9 @@
+{
+  "independently_rerun_materialized_model_sha256": "38b07321a54694dc875aebfaa82c930cd752bd0d25f2940ef7087fa45a44e4fa",
+  "matches_trial": "I1_exc_x2",
+  "spikes_array_equal": true,
+  "u_array_equal": true,
+  "elapsed_seconds": 49.301879203998396,
+  "spike_count": 19772,
+  "source": "from initial membrane state; no cached neural-state replay"
+}

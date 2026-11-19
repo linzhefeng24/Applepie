@@ -1,0 +1,25 @@
+{
+ "scope":"本轮精确细胞/路径层面的模型检验；不把模型活动当作实验行为复现。未独立重跑外部146条全部条件。",
+ "model_demonstrated":[
+  {"phenomenon":"持续DNg100输入招募前腿E1→E2", "neurons":["10056","800173","800863","10045","800288","903216"],"evidence":"core_structure.json + results/DN_drive.json + 原始脉冲；左侧首轮207→211ms。方向按实际连边，不按DN胞体侧简单命名同侧。"},
+  {"phenomenon":"E2能够招募I1", "neurons":["800863","801884","903216","803183"],"condition":"I1 excitatory_receptor_gain=2，其他参数与扩展基线一致", "evidence":"I1_exc_x2 中左右I1为15/14脉冲；相同参数下沉默所有INXXX466，同两细胞均0。左侧首轮E2 211ms→I1 217ms。"},
+  {"phenomenon":"I1反馈实际影响E1/E2时序", "neurons":["801884","800173","800863","803183","800288","903216"],"evidence":"相同gain2下仅切IN16B036→IN17A001/INXXX466，左E1抑制电流最负值约-455.7变为-358.4pA，后续簇起始发生变化。","limit":"分布式网络反馈下的因果贡献；并不证明该三细胞组独立产生整个网络节律。"},
+  {"phenomenon":"E2→MN通路具有作用但存在并行通路", "neurons":["800863","800061","801173","903216","802072"],"evidence":"同gain2仅切INXXX466→vnc_motor；总脉冲19772→17579，记录对应MN全部发放时刻与肌肉u(t)。","limit":"不能将总脉冲减少当成特定肌肉拟合改善；部分MN不降反升，需读具体轨迹。"},
+  {"phenomenon":"零输入静默对照", "evidence":"quiet：4159细胞0脉冲，130路u均0。不是生理静息放电复现。"}
+ ],
+ "not_satisfied_or_not_established":[
+  {"phenomenon":"E1/E2对完整网络下游节律的必要性", "neurons":["IN17A001全6细胞","INXXX466全6细胞","800061","802072"],"status":"尚未满足论文所需消融表型", "evidence":"沉默E2后，800061/802072分别仍32/32脉冲且有反复成簇活动；原始时刻见matched_route_comparisons.json。","scope_note":"这是本HH子网络实验，不等同于作者MANC局部rate模型协议，不能称文献被否定。"},
+  {"phenomenon":"核心三细胞独立起搏", "status":"未证明", "reason":"DNg100本身受到上游分布式反馈而成簇，尚未通过隔离局部回路/匹配持续局部驱动证明独立振荡。"},
+  {"phenomenon":"六腿稳定交替、瞬时左右不对称", "status":"未证明/未修复", "reason":"只观察到候选池驱动的u(t)，不能用总活动或时间均值判断协调；保留直接轨迹供检查，不声明符合。"},
+  {"phenomenon":"慢MN静息活动和快中慢募集", "status":"未实现细胞分型标定", "reason":"仍沿用原383腿MN参数及候选池，未新增有实测支持的逐运动单位分类。"}
+ ],
+ "not_tested_or_incomplete":[
+  {"phenomenon":"EPG/EPGt/Delta7方向环/罗盘与转向", "status":"结构已补，相关功能未检验", "reason":"EPG_left及DN_plus_Delta7只是招募探针，未输入角度相关感觉/运动信号，没有基于形态的环角坐标，不能检验定向行为。"},
+  {"phenomenon":"DNg11、DNg12、DNb05/06的特定行为", "status":"真实细胞和选定网络内连接已补，功能未验证", "reason":"需匹配原实验具体激活细胞、条件及下游靶标；DNg11不可混同DNg111。"},
+  {"phenomenon":"9A⊣hook、负载反馈、分带补偿、理毛姿势", "status":"关键感觉/动作通路仍不完整", "reason":"9A共刺激使全体MN总活动上升，不能据此判断9A→特定靶细胞的抑制失效或成功；未补全SNpp感觉细胞/外界受力闭环。"},
+  {"phenomenon":"BPN/P9/MAN/LUL130等文献命名对应", "status":"需细胞身份跨数据集核验", "reason":"未按字符串相似度臆造连接或将别的细胞冒充该细胞。"},
+  {"phenomenon":"饥饿/奖励/受体分型等状态依赖实验", "status":"未实现", "reason":"神经调制、受体分布与相应任务尚未建模。"}
+ ],
+ "fully_reproduced_laboratory_experiments":[],
+ "unchanged_mapping_limit":"104/130路有候选MN池，26路仍无候选；不是逐运动单位解剖验证。"
+}

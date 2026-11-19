@@ -8,7 +8,7 @@ R=Path(__file__).resolve().parent
 P=Path(os.environ.get('MANUAL_R2_PACKAGE',str(R.parents[1]/'research/manual-full-rerun-20261119/cache/extracted/Manual_FreeBody')))
 sys.path.insert(0,str(P/'02_code'))
 from flymodel import Model
-CASES=['quiet','DN_drive','core_silenced','new_glutamate_zero','core_release_x2','EPG_left','DN_plus_9A','DN_plus_Delta7','E1_silenced','E2_silenced','I1_silenced','I2_silenced','I1_exc_x2','I1_exc_x4','I1_exc_x2_cut_feedback','I1_exc_x2_E2_silenced']
+CASES=['quiet','DN_drive','core_silenced','new_glutamate_zero','core_release_x2','EPG_left','DN_plus_9A','DN_plus_Delta7','E1_silenced','E2_silenced','I1_silenced','I2_silenced','I1_exc_x2','I1_exc_x4','I1_exc_x2_cut_feedback','I1_exc_x2_E2_silenced','I1_exc_x2_cut_E2_MN']
 def run(case):
  m=Model(R/'cache/extended_model.yaml');oldn=3988;new=np.arange(len(m.ids))>=oldn;core=np.array([(n.get('type') in {'IN17A001','INXXX466','IN16B036'}) for n in m.neurons]);events=list(m.config['experiments']['DN_drive']['events']);silenced=[];changes=[]
  if case=='quiet':events=[]
@@ -17,10 +17,12 @@ def run(case):
  if case=='core_silenced':silenced=[m.ids[i] for i in np.flatnonzero(core)];changes.append({'ablate_ids':silenced})
  if case=='new_glutamate_zero':
   mask=new&np.array([n.get('predictedNt')=='glutamate' for n in m.neurons]);m.weight[mask[m.pre]]=0;changes.append({'new_glutamate_outgoing_sign':0,'note':'uncertainty sensitivity, not presumed correct receptor'})
- if case in {'I1_exc_x2','I1_exc_x4','I1_exc_x2_cut_feedback','I1_exc_x2_E2_silenced'}:
+ if case in {'I1_exc_x2','I1_exc_x4','I1_exc_x2_cut_feedback','I1_exc_x2_E2_silenced','I1_exc_x2_cut_E2_MN'}:
   factor=4 if case=='I1_exc_x4' else 2;mask=np.array([n.get('type')=='IN16B036' for n in m.neurons]);m.cells[mask,5]*=factor;changes.append({'cell_type':'IN16B036','parameter':'excitatory_receptor_gain','multiplier':factor,'reason':'T1 I1 is weakly recruited while E1/E2 fire; increase postsynaptic excitation without inventing connections','origin':'manual_trial_not_measured'})
  if case=='I1_exc_x2_cut_feedback':
   src=np.array([n.get('type')=='IN16B036' for n in m.neurons]);dst=np.array([n.get('type') in {'IN17A001','INXXX466'} for n in m.neurons]);mask=src[m.pre]&dst[m.post];m.weight[mask]=0;changes.append({'cut':'IN16B036 -> IN17A001/INXXX466','directed_edges':int(mask.sum()),'reason':'matched causal test of recruited I1 feedback'})
+ if case=='I1_exc_x2_cut_E2_MN':
+  src=np.array([n.get('type')=='INXXX466' for n in m.neurons]);dst=np.array([n.get('superclass')=='vnc_motor' for n in m.neurons]);mask=src[m.pre]&dst[m.post];m.weight[mask]=0;changes.append({'cut':'INXXX466 -> vnc_motor','directed_edges':int(mask.sum()),'reason':'matched direct rhythm-to-MN route test'})
  if case=='I1_exc_x2_E2_silenced':silenced=m.neuron_ids(type='INXXX466');changes.append({'ablate_ids':silenced,'reason':'matched E2 necessity under I1 gain2 prior'})
  if case=='core_release_x2':
   # Manual trial suggested by absent/subthreshold newly added core output, to be assessed against baseline.

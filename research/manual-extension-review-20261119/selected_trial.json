@@ -1,0 +1,7 @@
+{
+ "selection_scope": "working candidate for further core-circuit diagnostics; not best across all brain.json phenomena",
+ "base_model_sha256": "5891c76f84ef3c876496efcf70828fc4cf7f4154e31659c77f92051b87e48314",
+ "experiment": "I1_exc_x2",
+ "updates": [{"type":"IN16B036", "parameter":"excitatory_receptor_gain", "value":2.0, "origin":"manual adjustment of unmeasured prior", "reason":"Recruit both T1 I1 cells with smaller parameter change than gain4; preserve all original R2 cell parameters"}],
+ "unresolved": ["E1/E2 necessity in full network", "independent local CPG generation versus upstream bursting", "interleg alternating activation", "sensory feedback", "receptor-specific glutamate signs", "experimental behavior reproduction"]
+}
