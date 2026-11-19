@@ -604,7 +604,8 @@
   },
   "output_npz": {
     "name": "cut_GNG458_DN.npz",
-    "sha256": "5ceffa27ecf92743589cfabc5bc494415bc8e927cd2b86cf57c7a501e6cf735e",
-    "bytes": 122723
-  }
+    "sha256": "8a891c77914dada9d91580aba094ded1724e5a4e1beb683088163c11d4d0adbd",
+    "bytes": 123280
+  },
+  "raw_trace_alignment": "unused zero tail removed, explicit160point time axis added; no neuronal state changed"
 }

@@ -576,7 +576,8 @@
   },
   "output_npz": {
     "name": "cut_DNge129_DN.npz",
-    "sha256": "06993c7fdc05b29ece76a6297b52bc6a2d630fe573b2ac852ae8bbb63c84bf9f",
-    "bytes": 125138
-  }
+    "sha256": "5926ea7c4bcff156894b64de3772031a8fc9d1a06027ed573f0c38bf915f0b5b",
+    "bytes": 125698
+  },
+  "raw_trace_alignment": "unused zero tail removed, explicit160point time axis added; no neuronal state changed"
 }

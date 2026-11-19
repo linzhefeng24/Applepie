@@ -758,7 +758,8 @@
   },
   "output_npz": {
     "name": "retain_DNge129_inhibitory_DN.npz",
-    "sha256": "74b93443dc697e668b01a134da20f4db065061998729417110ca2069b943c9ec",
-    "bytes": 134451
-  }
+    "sha256": "e7b024b7d341a4a0ef63f6ab210c501ee5f5d0e0c636d3e4dcd50b72b250d262",
+    "bytes": 135010
+  },
+  "raw_trace_alignment": "unused zero tail removed, explicit160point time axis added; no neuronal state changed"
 }

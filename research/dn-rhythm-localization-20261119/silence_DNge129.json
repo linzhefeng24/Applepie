@@ -523,7 +523,8 @@
   },
   "output_npz": {
     "name": "silence_DNge129.npz",
-    "sha256": "6d4a2915bf42f02cc150cc2e6323df1d2ddc17c230880318d4460dce0f8394b1",
-    "bytes": 113364
-  }
+    "sha256": "a82051c8def474cfd251f65426745e42394a082a691a77ac494dc915c98e3a71",
+    "bytes": 113921
+  },
+  "raw_trace_alignment": "unused zero tail removed, explicit160point time axis added; no neuronal state changed"
 }

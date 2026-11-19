@@ -527,7 +527,8 @@
   },
   "output_npz": {
     "name": "silence_GNG127.npz",
-    "sha256": "f81312c9dec9c7f70c3fd2e39eac1cddcfed96c84db76e2d448134c32fd34642",
-    "bytes": 110765
-  }
+    "sha256": "412761098b1f53c2f1dacf0d3c67eabca3b9b209bd3ca9a6f9c2363db4ba6bd6",
+    "bytes": 111325
+  },
+  "raw_trace_alignment": "unused zero tail removed, explicit160point time axis added; no neuronal state changed"
 }

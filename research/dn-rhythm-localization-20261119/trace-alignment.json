@@ -1,0 +1,137 @@
+{
+  "operation": "remove unused allocation only; no simulation rerun or numerical-state alteration",
+  "cases": [
+    {
+      "case": "cut_10856_DN",
+      "before_sha256": "e18b737af006519f813aab10c830829f6a1c44d9ec07dff6b59cb9d0f9aae90d",
+      "after_sha256": "9c75d15a6598fe31180284e5a713571a9e863e2677139902345bf3c618c1daf5",
+      "actual_record_points": 160
+    },
+    {
+      "case": "cut_11006_DN",
+      "before_sha256": "70ef0710effbcb5fc82cd5f7005f521fbc43b65978276c558de76a903a52c96e",
+      "after_sha256": "c1c94cd83068bc8dd5f0e20247227e2ec2790fdefa82d05e39a014178dc8d628",
+      "actual_record_points": 160
+    },
+    {
+      "case": "cut_11982_DN",
+      "before_sha256": "faa62fc9a0b87f5d8832b33a027acd2efd5c1e627e0cc63a9bd7c76d09b97b3c",
+      "after_sha256": "256797d861b342bc3cf41fae90d87e4e464877b3912bcb58cd315a2ec339315c",
+      "actual_record_points": 160
+    },
+    {
+      "case": "cut_516820_DN",
+      "before_sha256": "d071ae31f0b60f4c5ff287d1d3b6b2586b2ec0afd23b1bbd2b65752e91df1663",
+      "after_sha256": "ab873663a0dff45186032cb21d9a80a41ece0919437c1d220e918cfe515e83d4",
+      "actual_record_points": 160
+    },
+    {
+      "case": "cut_DNge129_DN",
+      "before_sha256": "06993c7fdc05b29ece76a6297b52bc6a2d630fe573b2ac852ae8bbb63c84bf9f",
+      "after_sha256": "5926ea7c4bcff156894b64de3772031a8fc9d1a06027ed573f0c38bf915f0b5b",
+      "actual_record_points": 160
+    },
+    {
+      "case": "cut_GNG127_DN",
+      "before_sha256": "8a847cbe9eda2afb33ea412ecada9fe294db0074324c5053d1f805dc1845faf7",
+      "after_sha256": "0f742dd26a0f7928673d09bd0f0e01f1a9085b80593b7b0303df6eb3e78a88d5",
+      "actual_record_points": 160
+    },
+    {
+      "case": "cut_GNG458_DN",
+      "before_sha256": "5ceffa27ecf92743589cfabc5bc494415bc8e927cd2b86cf57c7a501e6cf735e",
+      "after_sha256": "8a891c77914dada9d91580aba094ded1724e5a4e1beb683088163c11d4d0adbd",
+      "actual_record_points": 160
+    },
+    {
+      "case": "cut_all_inhibitory_DN",
+      "before_sha256": "1ab441f68c52ff534f59125f0a6f06dfde4190e3301bf64ee35062172d405e42",
+      "after_sha256": "adf78bc60f4d4aa5c733d79e806774950f3ca457f040551e27b638fcd040beb9",
+      "actual_record_points": 160
+    },
+    {
+      "case": "cut_gaba_inhibitory_DN",
+      "before_sha256": "b5f35ecffa980a1a64ac4ac8790499bd06229a48863cc1166c304c578adc3b60",
+      "after_sha256": "23a9ad98c276218dd6396c1ae795a1de67da2e1eaa35bbcc8b316ed41752b174",
+      "actual_record_points": 160
+    },
+    {
+      "case": "cut_glutamate_inhibitory_DN",
+      "before_sha256": "76907eec798d4957bcbd73312f143d03e96cb21df782ca9456dea8f87e9a08d7",
+      "after_sha256": "97b5376616b048d942803fe4b3386f4627d0dc6f9de03bed62017ab9ac0330f4",
+      "actual_record_points": 160
+    },
+    {
+      "case": "cut_top5_DN",
+      "before_sha256": "6d9fe1e3f3f4a3a4f8a93b29d34f219e470c17b48dee78c470c87bd5e1117217",
+      "after_sha256": "c8a163b995550c7e0d5af1df42e3cd08b23c65a1542eef00159b8b5c302d98d3",
+      "actual_record_points": 160
+    },
+    {
+      "case": "cut_top7_DN",
+      "before_sha256": "bcfd8418f6172d2b3fab39a14d23a8607c2e02aa08eec5e1e1bb5ec85cebe566",
+      "after_sha256": "760db3dd5db9f9868d553d463ea6c9b6311acf706d681df7c647d518c9a95799",
+      "actual_record_points": 160
+    },
+    {
+      "case": "i_decay_15ms",
+      "before_sha256": "adf3257b96a22d271795c6bc2fda2b2bb348061812deb0b074d87d28ef4c6a33",
+      "after_sha256": "982e86f6277cf046795769a380a47a69f226f74aae0a41c695bfefcf7de587fd",
+      "actual_record_points": 160
+    },
+    {
+      "case": "i_decay_60ms",
+      "before_sha256": "e065398fba4421ee9a8d6a6b4e743179dbaa7acf5bc77b989657a3fcbb926ae3",
+      "after_sha256": "6697cad7bc13bb6d459edd56481bb068996bc6ec2b5eb7ba80b5681f21b1a084",
+      "actual_record_points": 160
+    },
+    {
+      "case": "retain_DNge129_inhibitory_DN",
+      "before_sha256": "74b93443dc697e668b01a134da20f4db065061998729417110ca2069b943c9ec",
+      "after_sha256": "e7b024b7d341a4a0ef63f6ab210c501ee5f5d0e0c636d3e4dcd50b72b250d262",
+      "actual_record_points": 160
+    },
+    {
+      "case": "retain_GNG127_inhibitory_DN",
+      "before_sha256": "08c604fca211475c0bdf199a1f4428c08e32640c4c0bd899253bac2cc9031dd6",
+      "after_sha256": "625b0eb225e3e507b16b195b0a611929c7ca809c98f3de8022ebb38991112fba",
+      "actual_record_points": 160
+    },
+    {
+      "case": "retain_GNG458_inhibitory_DN",
+      "before_sha256": "9bafeddf3c5b5f983f9626312d2f800acb8900449d6c338724fa90752bd73982",
+      "after_sha256": "cdfa46f8d8f7440ec764f58498f9936f191cf4af824151f5d0154ebfccfd3895",
+      "actual_record_points": 160
+    },
+    {
+      "case": "retain_top5_inhibitory_DN",
+      "before_sha256": "431e793193a77fb4046322a87ccd2d8ce18269f8994595510f01f2e83bc47ea2",
+      "after_sha256": "2fba61954cc8a49d7f9d51c3154a1418e1c561472416cdf521a962fd8ca0bb78",
+      "actual_record_points": 160
+    },
+    {
+      "case": "retain_top7_inhibitory_DN",
+      "before_sha256": "ff26f76a3854bf06ba0b21ba55de9e398f2c91a39e82895be947e623f49b6543",
+      "after_sha256": "1d1aec7447d29d1e809fb962f9a82bc8138e96248fdba47a4be21b8982671334",
+      "actual_record_points": 160
+    },
+    {
+      "case": "silence_DNge129",
+      "before_sha256": "6d4a2915bf42f02cc150cc2e6323df1d2ddc17c230880318d4460dce0f8394b1",
+      "after_sha256": "a82051c8def474cfd251f65426745e42394a082a691a77ac494dc915c98e3a71",
+      "actual_record_points": 160
+    },
+    {
+      "case": "silence_GNG127",
+      "before_sha256": "f81312c9dec9c7f70c3fd2e39eac1cddcfed96c84db76e2d448134c32fd34642",
+      "after_sha256": "412761098b1f53c2f1dacf0d3c67eabca3b9b209bd3ca9a6f9c2363db4ba6bd6",
+      "actual_record_points": 160
+    },
+    {
+      "case": "silence_GNG458",
+      "before_sha256": "803847c569b61a37cebe8c65afb459b54982bb4682e856ea61b384d3d2183f97",
+      "after_sha256": "06ed901647f675b3b7e8848b5be6687c95766921f8374d891e03c70ddcc8361c",
+      "actual_record_points": 160
+    }
+  ]
+}

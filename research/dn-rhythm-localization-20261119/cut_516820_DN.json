@@ -566,7 +566,8 @@
   },
   "output_npz": {
     "name": "cut_516820_DN.npz",
-    "sha256": "d071ae31f0b60f4c5ff287d1d3b6b2586b2ec0afd23b1bbd2b65752e91df1663",
-    "bytes": 121759
-  }
+    "sha256": "ab873663a0dff45186032cb21d9a80a41ece0919437c1d220e918cfe515e83d4",
+    "bytes": 122319
+  },
+  "raw_trace_alignment": "unused zero tail removed, explicit160point time axis added; no neuronal state changed"
 }

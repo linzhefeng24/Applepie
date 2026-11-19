@@ -1,0 +1,246 @@
+{
+  "silence_GNG458": [
+    {
+      "id": "10180",
+      "type": "AN02A002",
+      "predicted_nt": "glutamate",
+      "spikes": 4,
+      "baseline_spikes": 3,
+      "conductance_impulse_proxy_nS": 19.368000000000002
+    },
+    {
+      "id": "10365",
+      "type": "GNG114",
+      "predicted_nt": "gaba",
+      "spikes": 15,
+      "baseline_spikes": 12,
+      "conductance_impulse_proxy_nS": 15.930000000000001
+    },
+    {
+      "id": "26564",
+      "type": "AN00A006",
+      "predicted_nt": "gaba",
+      "spikes": 5,
+      "baseline_spikes": 6,
+      "conductance_impulse_proxy_nS": 15.87
+    },
+    {
+      "id": "12039",
+      "type": "DNge135",
+      "predicted_nt": "gaba",
+      "spikes": 8,
+      "baseline_spikes": 7,
+      "conductance_impulse_proxy_nS": 13.728
+    },
+    {
+      "id": "10671",
+      "type": "AN02A002",
+      "predicted_nt": "glutamate",
+      "spikes": 3,
+      "baseline_spikes": 3,
+      "conductance_impulse_proxy_nS": 13.716000000000001
+    },
+    {
+      "id": "12000",
+      "type": "DNge099",
+      "predicted_nt": "glutamate",
+      "spikes": 8,
+      "baseline_spikes": 6,
+      "conductance_impulse_proxy_nS": 13.632
+    },
+    {
+      "id": "572814",
+      "type": "GNG586",
+      "predicted_nt": "gaba",
+      "spikes": 7,
+      "baseline_spikes": 6,
+      "conductance_impulse_proxy_nS": 12.726
+    },
+    {
+      "id": "22047",
+      "type": "AN00A006",
+      "predicted_nt": "gaba",
+      "spikes": 5,
+      "baseline_spikes": 4,
+      "conductance_impulse_proxy_nS": 11.61
+    },
+    {
+      "id": "513499",
+      "type": "GNG114",
+      "predicted_nt": "gaba",
+      "spikes": 10,
+      "baseline_spikes": 7,
+      "conductance_impulse_proxy_nS": 11.340000000000002
+    },
+    {
+      "id": "12175",
+      "type": "DNge099",
+      "predicted_nt": "glutamate",
+      "spikes": 8,
+      "baseline_spikes": 6,
+      "conductance_impulse_proxy_nS": 11.328
+    },
+    {
+      "id": "519773",
+      "type": "DNge119",
+      "predicted_nt": "glutamate",
+      "spikes": 9,
+      "baseline_spikes": 6,
+      "conductance_impulse_proxy_nS": 11.016
+    },
+    {
+      "id": "12612",
+      "type": "GNG581",
+      "predicted_nt": "gaba",
+      "spikes": 3,
+      "baseline_spikes": 0,
+      "conductance_impulse_proxy_nS": 9.306
+    },
+    {
+      "id": "524363",
+      "type": "GNG031",
+      "predicted_nt": "gaba",
+      "spikes": 7,
+      "baseline_spikes": 6,
+      "conductance_impulse_proxy_nS": 8.442
+    },
+    {
+      "id": "14906",
+      "type": "GNG523",
+      "predicted_nt": "glutamate",
+      "spikes": 8,
+      "baseline_spikes": 6,
+      "conductance_impulse_proxy_nS": 7.68
+    },
+    {
+      "id": "520862",
+      "type": "GNG031",
+      "predicted_nt": "gaba",
+      "spikes": 7,
+      "baseline_spikes": 6,
+      "conductance_impulse_proxy_nS": 7.392
+    }
+  ],
+  "cut_top5_DN": [
+    {
+      "id": "10180",
+      "type": "AN02A002",
+      "predicted_nt": "glutamate",
+      "spikes": 7,
+      "baseline_spikes": 3,
+      "conductance_impulse_proxy_nS": 33.894000000000005
+    },
+    {
+      "id": "10671",
+      "type": "AN02A002",
+      "predicted_nt": "glutamate",
+      "spikes": 7,
+      "baseline_spikes": 3,
+      "conductance_impulse_proxy_nS": 32.004
+    },
+    {
+      "id": "572814",
+      "type": "GNG586",
+      "predicted_nt": "gaba",
+      "spikes": 9,
+      "baseline_spikes": 6,
+      "conductance_impulse_proxy_nS": 16.362000000000002
+    },
+    {
+      "id": "10365",
+      "type": "GNG114",
+      "predicted_nt": "gaba",
+      "spikes": 15,
+      "baseline_spikes": 12,
+      "conductance_impulse_proxy_nS": 15.930000000000001
+    },
+    {
+      "id": "12039",
+      "type": "DNge135",
+      "predicted_nt": "gaba",
+      "spikes": 9,
+      "baseline_spikes": 7,
+      "conductance_impulse_proxy_nS": 15.443999999999999
+    },
+    {
+      "id": "12000",
+      "type": "DNge099",
+      "predicted_nt": "glutamate",
+      "spikes": 9,
+      "baseline_spikes": 6,
+      "conductance_impulse_proxy_nS": 15.336
+    },
+    {
+      "id": "12175",
+      "type": "DNge099",
+      "predicted_nt": "glutamate",
+      "spikes": 9,
+      "baseline_spikes": 6,
+      "conductance_impulse_proxy_nS": 12.744
+    },
+    {
+      "id": "12612",
+      "type": "GNG581",
+      "predicted_nt": "gaba",
+      "spikes": 4,
+      "baseline_spikes": 0,
+      "conductance_impulse_proxy_nS": 12.408
+    },
+    {
+      "id": "22047",
+      "type": "AN00A006",
+      "predicted_nt": "gaba",
+      "spikes": 5,
+      "baseline_spikes": 4,
+      "conductance_impulse_proxy_nS": 11.61
+    },
+    {
+      "id": "513499",
+      "type": "GNG114",
+      "predicted_nt": "gaba",
+      "spikes": 10,
+      "baseline_spikes": 7,
+      "conductance_impulse_proxy_nS": 11.340000000000002
+    },
+    {
+      "id": "519773",
+      "type": "DNge119",
+      "predicted_nt": "glutamate",
+      "spikes": 9,
+      "baseline_spikes": 6,
+      "conductance_impulse_proxy_nS": 11.016
+    },
+    {
+      "id": "14906",
+      "type": "GNG523",
+      "predicted_nt": "glutamate",
+      "spikes": 9,
+      "baseline_spikes": 6,
+      "conductance_impulse_proxy_nS": 8.64
+    },
+    {
+      "id": "520862",
+      "type": "GNG031",
+      "predicted_nt": "gaba",
+      "spikes": 8,
+      "baseline_spikes": 6,
+      "conductance_impulse_proxy_nS": 8.448
+    },
+    {
+      "id": "524363",
+      "type": "GNG031",
+      "predicted_nt": "gaba",
+      "spikes": 7,
+      "baseline_spikes": 6,
+      "conductance_impulse_proxy_nS": 8.442
+    },
+    {
+      "id": "14296",
+      "type": "GNG523",
+      "predicted_nt": "glutamate",
+      "spikes": 9,
+      "baseline_spikes": 6,
+      "conductance_impulse_proxy_nS": 7.074
+    }
+  ]
+}

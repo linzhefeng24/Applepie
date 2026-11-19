@@ -755,7 +755,8 @@
   },
   "output_npz": {
     "name": "retain_GNG458_inhibitory_DN.npz",
-    "sha256": "9bafeddf3c5b5f983f9626312d2f800acb8900449d6c338724fa90752bd73982",
-    "bytes": 139316
-  }
+    "sha256": "cdfa46f8d8f7440ec764f58498f9936f191cf4af824151f5d0154ebfccfd3895",
+    "bytes": 139875
+  },
+  "raw_trace_alignment": "unused zero tail removed, explicit160point time axis added; no neuronal state changed"
 }

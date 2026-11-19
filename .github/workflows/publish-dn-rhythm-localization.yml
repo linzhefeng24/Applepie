@@ -1,0 +1,31 @@
+name: Publish DN rhythm causal localization data
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: publish-dn-rhythm-localization-20261119
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      GH_TOKEN: ${{ github.token }}
+      TRANSLATION_DELIVERY_ROOT: research/dn-rhythm-localization-20261119
+      TRANSLATION_RELEASE_TAG: dn-rhythm-localization-20261119
+      TRANSLATION_BUNDLE: DN_Rhythm_Localization_Data.zip
+      TRANSLATION_RELEASE_TITLE: 'Manual model DN rhythm: causal localization diagnostics'
+      TRANSLATION_RELEASE_NOTES: 'From-initial-state causal interventions in the unchanged manual neural model, comparing specific source-to-DN route cuts, cell silencing, limited feedback reconstitution and inhibitory time-scale perturbations. Raw spike/selected-state traces, identities, code and results included. Model-only findings, not physiological proof or parameter optimization; no training restarted.'
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+          sparse-checkout: |
+            research/chinese-translations-20261118
+            research/dn-rhythm-localization-20261119
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - name: Reconstruct and freshly verify causal-test assets
+        run: python research/chinese-translations-20261118/publish.py publish

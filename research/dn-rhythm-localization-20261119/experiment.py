@@ -24,6 +24,10 @@ CASES={
 }
 CASES['i_decay_15ms']={'global_overrides':{'tau_i_decay_ms':15.0}}
 CASES['i_decay_60ms']={'global_overrides':{'tau_i_decay_ms':60.0}}
+CASES['cut_top7_DN']={'cut_to_DN':sum(GROUPS.values(),[])+['10180','10671']}
+CASES['cut_glutamate_inhibitory_DN']={'cut_nt_inhibitory_DN':'glutamate'}
+CASES['cut_gaba_inhibitory_DN']={'cut_nt_inhibitory_DN':'gaba'}
+CASES['retain_top7_inhibitory_DN']={'retain_inhibitory_DN':sum(GROUPS.values(),[])+['10180','10671']}
 # Single-cell cuts and constrained reconstitutions are available for adaptive follow-up.
 for id in sum(GROUPS.values(),[]):CASES['cut_'+id+'_DN']={'cut_to_DN':[id]}
 for name,ids in GROUPS.items():CASES['retain_'+name+'_inhibitory_DN']={'retain_inhibitory_DN':ids}
@@ -39,6 +43,8 @@ def run(name):
  dn=np.array([m.lookup[x] for x in ['10045','10056']]);keep=np.ones(len(m.pre),bool);target=np.isin(m.post,dn)
  if 'cut_to_DN' in spec:keep&=~(np.isin(m.pre,[m.lookup[x] for x in spec['cut_to_DN']])&target)
  if spec.get('cut_all_inhibitory_DN'):keep&=~(target&(m.weight<0))
+ if 'cut_nt_inhibitory_DN' in spec:
+  pres=np.array([x.get('predictedNt')==spec['cut_nt_inhibitory_DN'] for x in m.neurons]);keep&=~(target&(m.weight<0)&pres[m.pre])
  if 'retain_inhibitory_DN' in spec:keep&=~(target&(m.weight<0)&~np.isin(m.pre,[m.lookup[x] for x in spec['retain_inhibitory_DN']]))
  if 'retain_all_input_DN' in spec:keep&=~(target&~np.isin(m.pre,[m.lookup[x] for x in spec['retain_all_input_DN']]))
  pre=m.pre[keep];post=m.post[keep];w=m.weight[keep];offset=np.r_[0,np.cumsum(np.bincount(pre,minlength=n))];abl=np.array([id in spec.get('silence',[]) for id in m.ids]);wave=np.zeros((round(proto['duration_ms']/s['input_sample_ms'])+1,n))
@@ -47,7 +53,7 @@ def run(name):
  ids=['10045','10056','11006','10856','11982','516820','26344','800003','800009','800114','800061','800072','800211'];rec=np.array([m.lookup[x] for x in ids]);start=time.monotonic()
  out=_kernel(n,pre,post,w,np.zeros(n),np.zeros(n),abl,s['dt_ms'],round(proto['duration_ms']/s['dt_ms']),0,round(s['delay_ms']/s['dt_ms']),global_values,m.cells,round(s['record_interval_ms']/s['dt_ms']),wave,s['input_sample_ms'],rec,offset,m.kinetics,m.aux)
  if out[5]:raise RuntimeError('Voltage guard tripped; not a valid ablation result')
- cache=R/'cache';cache.mkdir(exist_ok=True);raw=cache/(name+'.npz');np.savez_compressed(raw,spikes=out[0],voltage=out[1],currents_pA=out[7],record_indices=rec)
+ cache=R/'cache';cache.mkdir(exist_ok=True);raw=cache/(name+'.npz');stride=round(s['record_interval_ms']/s['dt_ms']);valid=(round(proto['duration_ms']/s['dt_ms'])+stride-1)//stride;np.savez_compressed(raw,spikes=out[0],voltage=out[1][:valid],currents_pA=out[7][:valid],record_indices=rec,record_time_ms=np.arange(valid)*stride*s['dt_ms']+s['dt_ms'])
  report={'case':name,'intervention':spec,'model_sha256':m.sha256,'source_code_sha256':hashlib.sha256((P/'02_code/flymodel/dynamics.py').read_bytes()).hexdigest(),'original_directed_edges':len(m.pre),'removed_edges':int((~keep).sum()),'silenced_cells':spec.get('silence',[]),'physical_or_neural_parameters_optimized':False,'duration_ms':proto['duration_ms'],'input':proto['events'],'seconds':time.monotonic()-start,'neurons':{id:{'type':m.neurons[i]['type'],**summary(out[0],i,s['spike_bin_ms'])} for id,i in zip(ids,rec)},'output_npz':{'name':raw.name,'sha256':hashlib.sha256(raw.read_bytes()).hexdigest(),'bytes':raw.stat().st_size}}
  (R/(name+'.json')).write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n');print(name,json.dumps({id:{'count':v['spike_count'],'onsets':v['burst_onsets_ms']} for id,v in report['neurons'].items() if id in ['10045','10056','800061']},ensure_ascii=False),flush=True);return report
 if __name__=='__main__':

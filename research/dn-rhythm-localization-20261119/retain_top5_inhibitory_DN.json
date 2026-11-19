@@ -618,7 +618,8 @@
   },
   "output_npz": {
     "name": "retain_top5_inhibitory_DN.npz",
-    "sha256": "431e793193a77fb4046322a87ccd2d8ce18269f8994595510f01f2e83bc47ea2",
-    "bytes": 131126
-  }
+    "sha256": "2fba61954cc8a49d7f9d51c3154a1418e1c561472416cdf521a962fd8ca0bb78",
+    "bytes": 131685
+  },
+  "raw_trace_alignment": "unused zero tail removed, explicit160point time axis added; no neuronal state changed"
 }

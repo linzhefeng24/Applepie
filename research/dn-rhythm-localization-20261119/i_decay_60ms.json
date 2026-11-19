@@ -344,7 +344,8 @@
   },
   "output_npz": {
     "name": "i_decay_60ms.npz",
-    "sha256": "e065398fba4421ee9a8d6a6b4e743179dbaa7acf5bc77b989657a3fcbb926ae3",
-    "bytes": 98530
-  }
+    "sha256": "6697cad7bc13bb6d459edd56481bb068996bc6ec2b5eb7ba80b5681f21b1a084",
+    "bytes": 99088
+  },
+  "raw_trace_alignment": "unused zero tail removed, explicit160point time axis added; no neuronal state changed"
 }

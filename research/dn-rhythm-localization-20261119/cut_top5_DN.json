@@ -643,7 +643,8 @@
   },
   "output_npz": {
     "name": "cut_top5_DN.npz",
-    "sha256": "6d9fe1e3f3f4a3a4f8a93b29d34f219e470c17b48dee78c470c87bd5e1117217",
-    "bytes": 125205
-  }
+    "sha256": "c8a163b995550c7e0d5af1df42e3cd08b23c65a1542eef00159b8b5c302d98d3",
+    "bytes": 125765
+  },
+  "raw_trace_alignment": "unused zero tail removed, explicit160point time axis added; no neuronal state changed"
 }
