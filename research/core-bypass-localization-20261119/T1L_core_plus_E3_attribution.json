@@ -1,0 +1,71 @@
+[
+  {
+    "target": "800061",
+    "clamped_by_diagnostic": true,
+    "contributors": [],
+    "first_spike_time_ms": null
+  },
+  {
+    "target": "801173",
+    "clamped_by_diagnostic": true,
+    "contributors": [],
+    "first_spike_time_ms": null
+  },
+  {
+    "target": "802072",
+    "clamped_by_diagnostic": true,
+    "contributors": [],
+    "first_spike_time_ms": null
+  },
+  {
+    "target": "801884",
+    "type": "IN16B036",
+    "first_spike_time_ms": 218.26250000000002,
+    "sample_ms": 218.3125,
+    "sample_vs_first_ms": 0.04999999999998295,
+    "axon_mV": 18.583289779951297,
+    "soma_mV": -46.232638326930186,
+    "source_decomposition_sum_nS": [
+      1.313455509487044,
+      0
+    ],
+    "recorded_conductances_nS": [
+      1.3134555094870297,
+      0.0
+    ],
+    "validated_reconstruction": true,
+    "contributors": [
+      {
+        "pre": "800216",
+        "type": "IN19B012",
+        "sign": "exc",
+        "effective_signed_count": 40.0,
+        "conductance_nS": 0.8631259785317789,
+        "last_arrival_ms": 216.0625
+      },
+      {
+        "pre": "800863",
+        "type": "INXXX466",
+        "sign": "exc",
+        "effective_signed_count": 38.0,
+        "conductance_nS": 0.4175102381070188,
+        "last_arrival_ms": 212.60000000000002
+      },
+      {
+        "pre": "800173",
+        "type": "IN17A001",
+        "sign": "exc",
+        "effective_signed_count": 6.0,
+        "conductance_nS": 0.03281929284824635,
+        "last_arrival_ms": 209.1125
+      }
+    ],
+    "limitation": "Attribution at the nearest recorded 0.1ms sample, not a claim that the largest source alone is sufficient."
+  },
+  {
+    "target": "803183",
+    "clamped_by_diagnostic": true,
+    "contributors": [],
+    "first_spike_time_ms": null
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "provenance": "New independent runs, not recovered historical results. Previous baseline matches are explicit assertions.",
+  "development_notes": [
+    "Case definitions were appended as concrete pathways were identified. Every case report includes its actual intervention spec and raw SHA; source/case file hashes record file state when the report was written. Earlier runs predate later appended case definitions.",
+    "The initial4s report inherited a1.3s count window; the report was corrected and the4s condition independently rerun from initial state. Final raw output and report hashes supersede that provisional summary. Neural equations were unchanged.",
+    "No gradient training, random search or fitting loss used; efficacy/gain variants were manually specified after checking actual pathways.",
+    "All source-resolved conductance decompositions were checked against recorded conductances; clamped diagnostic targets are explicitly excluded from reconstruction."
+  ]
+}

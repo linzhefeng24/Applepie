@@ -1,0 +1,18 @@
+{
+ "scope":"New independently integrated mechanistic tests in the same selected HH model. Diagnostic reductions are explicitly separated from the complete network.",
+ "demonstrated_in_model":[
+  {"id":"local_core_slow_activity","neurons":["10056 DNg100","800173 E1","800863 E2","801884 I1"],"condition":"Retain these four cells only; original160pA tonic DN input, I1 excitatory gain2 inherited from prior selected model","observation":"4s run: DN continuous about77.82Hz; sequential E1/E2/I1 about13.4/13.4/13.5Hz. At1–3.9s E1 intervals64.44–89.06ms; not claimed perfectly periodic.","source":"local_rhythm_report.json + results/T1L_core3_4s.json","limit":"MN clamped in this reduced condition, so this does not establish muscle or whole-body reproduction."},
+  {"id":"local_inhibitory_feedback_role","neurons":["801884→800173/800863"],"condition":"Same reduced motif, silenceI1 or cut its return edges","observation":"Slow13Hz core mode replaced by E1/E2 about39Hz. With E2 silence, I1 stops and E1 is about39Hz.","limit":"I1 output sign follows inherited glutamate receptor assumption."},
+  {"id":"E2_direct_relay_convergence","neurons":["800863→801884","800863→800216→801884","903216→803183","903216→801061→803183"],"condition":"Full network; cut specified type-pair edges","observation":"Left/right I1 spikes:baseline15/14; E2→I1 cut0/7; IN19B012→I1 cut8/0; joint cut0/0. Source-resolved conductance reconstruction matches recorded conductances.","limit":"These are all matching type-pair cuts in the selected network, not single-edge or laboratory manipulations."},
+  {"id":"direct_DN_motor_bypass","neurons":["10056→800061/801173","10045→802072"],"observation":"First MN responses are driven by direct DN excitation and precede E2. Removing167 direct DN→MN edges delays these responses; exact timing is logged at0.0125ms integration steps."},
+  {"id":"parallel_routes_after_direct_cut","neurons":["10056→800286 INXXX464→800061/801173","11074 DNg13/10444 DNge035/13805 DNg97→802072"],"condition":"E2 silenced and direct DN→MN cut","observation":"Relay-to-MN targeted cuts further delay left response212.51→217.38ms and right response221.29→236.14ms. Additional inputs still rescue later activity.","limit":"Parallel pathways identified rather than declaring residual output an unexplained failure."}
+ ],
+ "not_satisfied_or_not_established":[
+  {"id":"full_network_E2_necessity","status":"not_satisfied","reason":"Full network retains repeated concrete MN output after E2 silence. Reduced core success does not transfer this necessity to the full brain/VNC network."},
+  {"id":"I1_I2_partial_redundancy","neurons":["IN16B036","IN19A007","E1/E2","800061/802072"],"status":"tested_but_expected_complete_ablation_pattern_not_established","reason":"Single and combined silencing were run. Full-network and DN+VNC conditions still have alternative neuronal/MN output after combined silencing; persisted upstream DN activity confounds simple firing-count conclusions."},
+  {"id":"interleg_alternation","status":"not_reproduced_by_this_round","reason":"Manual efficacy/gain variants change recruitment but no demonstrated stable alternating six-leg pattern. Reduced four-cell conditions have no active MN."},
+  {"id":"other_laboratory_behaviors","status":"not_retested_this_round","reason":"Turning, braking, sensory load, grooming, hunger and individual fast/slow MN phenotypes require their specific protocols; these routing tests do not validate them."}
+ ],
+ "fully_reproduced_laboratory_experiments":[],
+ "working_model_update":"Previous selected candidate retained; interventions and unsuccessful parameter trials are durably saved without overwriting the original model."
+}

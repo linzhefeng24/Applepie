@@ -13,6 +13,9 @@ def digest(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
 def match(neurons,q):return np.array([all(n.get(k)==v for k,v in q.items()) for n in neurons])
 def run(name):
  spec=PLAN['cases'][name];m=Model(ROOT/'research/manual-extension-review-20261119/cache/selected_manual_model.yaml');assert m.sha256==PLAN['model_sha256'];changes=[]
+ if 'duration_ms' in spec:
+  m.config['experiments']['DN_drive']['duration_ms']=spec['duration_ms']
+  for event in m.config['experiments']['DN_drive']['events']:event['off_ms']=spec['drive_off_ms']
  for q in spec.get('terminal_gain',[]):
   src=match(m.neurons,{k[7:]:v for k,v in q.items() if k.startswith('source_')});dst=match(m.neurons,{k[7:]:v for k,v in q.items() if k.startswith('target_')});mask=src[m.pre]&dst[m.post];assert mask.any();m.weight[mask]*=q['factor'];changes.append({**q,'edges':int(mask.sum())})
  for q in spec.get('cell_set',[]):
@@ -33,8 +36,8 @@ def run(name):
  else:validation=None
  ev=saved['events'];dt=m.config['neural']['solver']['dt_ms'];summ={}
  for bid in record:
-  i=m.lookup[bid];t=(ev[ev[:,1]==i,0]+1)*dt;t=t[(t>=200)&(t<1500)];summ[bid]={'type':m.neurons[i]['type'],'spike_times_ms':t.tolist(),'count':len(t),'first_ms':float(t[0]) if len(t) else None}
- report={'case':name,'spec':spec,'applied_changes':changes,'model_sha256':m.sha256,'cell_array_sha256':hashlib.sha256(m.cells.tobytes()).hexdigest(),'effective_weights_sha256':hashlib.sha256(m.weight.tobytes()).hexdigest(),'logger_source_sha256':digest(R/'instrumented_dynamics.py'),'runner_sha256':digest(__file__),'cases_sha256':digest(R/'cases.json'),'seconds':elapsed,'spikes_total':int(r['spikes'].sum()),'neurons':summ,'anatomical_counts_changed':False,'validation':validation,'raw':{'name':raw.name,'bytes':raw.stat().st_size,'sha256':digest(raw)},'scope':'model-only causal/parameter experiment; no physical body or laboratory behavior validation'}
+  i=m.lookup[bid];t=(ev[ev[:,1]==i,0]+1)*dt;t=t[(t>=m.config['experiments']['DN_drive']['events'][0]['on_ms'])&(t<m.config['experiments']['DN_drive']['events'][0]['off_ms'])];summ[bid]={'type':m.neurons[i]['type'],'spike_times_ms':t.tolist(),'count':len(t),'first_ms':float(t[0]) if len(t) else None}
+ report={'case':name,'spec':spec,'applied_changes':changes,'model_sha256':m.sha256,'cell_array_sha256':hashlib.sha256(m.cells.tobytes()).hexdigest(),'effective_weights_sha256':hashlib.sha256(m.weight.tobytes()).hexdigest(),'logger_source_sha256':digest(R/'instrumented_dynamics.py'),'runner_sha256':digest(__file__),'cases_sha256':digest(R/'cases.json'),'seconds':elapsed,'spikes_total':int(r['spikes'].sum()),'neurons':summ,'anatomical_counts_changed':False,'actual_protocol':m.config['experiments']['DN_drive'],'validation':validation,'raw':{'name':raw.name,'bytes':raw.stat().st_size,'sha256':digest(raw)},'scope':'model-only causal/parameter experiment; no physical body or laboratory behavior validation'}
  (out/(name+'.json')).write_text(json.dumps(report,indent=2)+'\n');print(name,report['spikes_total'],{b:(summ[b]['count'],summ[b]['first_ms']) for b in ['801884','803183','800061','802072']},round(elapsed,1),flush=True)
 if __name__=='__main__':
  p=argparse.ArgumentParser();p.add_argument('cases',nargs='+',choices=PLAN['cases']);a=p.parse_args()

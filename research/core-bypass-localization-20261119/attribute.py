@@ -19,7 +19,10 @@ def compute(case):
  for step,i in ev:by[i].append(step)
  by=[np.asarray(q,dtype=np.int32) for q in by];out=[]
  for bid in ['800061','801173','802072','801884','803183']:
-  j=m.lookup[bid];ts=times[(ev[:,1]==j)&(times>=200)&(times<1500)];wanted=ts[0] if len(ts) else (218 if bid in {'801884','803183'} else 210);ridx=list(z['record_indices']).index(j);sample=int(np.argmin(abs(z['time_ms']-wanted)));t=float(z['time_ms'][sample]);step=round(t/dt)-1;rows=[]
+  j=m.lookup[bid];spec=PLAN['cases'][case];n=m.neurons[j];clamped=(n.get('type')==spec.get('ablate_type') or n.get('type') in spec.get('ablate_types',[]) or ('retain_superclasses' in spec and n.get('superclass') not in spec['retain_superclasses'] and bid not in spec.get('retain_ids',[])))
+  if clamped:
+   out.append({'target':bid,'clamped_by_diagnostic':True,'contributors':[],'first_spike_time_ms':None});continue
+  ts=times[(ev[:,1]==j)&(times>=200)&(times<1500)];wanted=ts[0] if len(ts) else (218 if bid in {'801884','803183'} else 210);ridx=list(z['record_indices']).index(j);sample=int(np.argmin(abs(z['time_ms']-wanted)));t=float(z['time_ms'][sample]);step=round(t/dt)-1;rows=[]
   for k in np.flatnonzero(m.post==j):
    i=m.pre[k];w=m.weight[k]
    if w==0:continue

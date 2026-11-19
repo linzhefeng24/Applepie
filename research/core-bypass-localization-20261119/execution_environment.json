@@ -15,11 +15,18 @@
     "simulator.py": "2e14f38641da9cf180f6808df05e2ed783f15b274cfb42b67edc25d5b8301dee",
     "dynamics.py": "6c7839a30e016775e3d338024d4d413c8e88df2344b400646f553f478f1ac27b"
   },
-  "commands": [
+  "previous_condition_archive": "https://github.com/linzhefeng24/Applepie/releases/download/manual-core-extension-20261119/Selected_Core_Extension.zip",
+  "current_experiment": "exact-step logging and manually specified bypass/receptor interventions",
+  "prior_environment_commands": [
     "PYTHONPATH=/tmp/olfactory-deps /workspace/unified-fly-env/bin/python research/manual-extension-review-20261119/build.py --sources /workspace/exports/malecns-source",
     "/workspace/unified-fly-env/bin/python research/manual-extension-review-20261119/experiment.py quiet DN_drive core_silenced new_glutamate_zero core_release_x2 EPG_left",
     "/workspace/unified-fly-env/bin/python research/manual-extension-review-20261119/experiment.py DN_plus_9A DN_plus_Delta7 E1_silenced E2_silenced I1_silenced I2_silenced"
   ],
-  "previous_condition_archive": "https://github.com/linzhefeng24/Applepie/releases/download/manual-core-extension-20261119/Selected_Core_Extension.zip",
-  "current_experiment": "exact-step logging and manually specified bypass/receptor interventions"
+  "commands": [
+    "/workspace/unified-fly-env/bin/python research/core-bypass-localization-20261119/setup_instrumentation.py",
+    "/workspace/unified-fly-env/bin/python research/core-bypass-localization-20261119/experiment.py <case names from cases.json>",
+    "/workspace/unified-fly-env/bin/python research/core-bypass-localization-20261119/verify.py",
+    "/workspace/unified-fly-env/bin/python research/core-bypass-localization-20261119/attribute.py <case names>",
+    "/workspace/unified-fly-env/bin/python research/core-bypass-localization-20261119/local_rhythm.py"
+  ]
 }

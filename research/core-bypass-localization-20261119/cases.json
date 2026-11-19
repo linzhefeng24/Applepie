@@ -290,6 +290,51 @@
         "800374",
         "800411"
       ]
+    },
+    "T1L_core3_I1_silenced": {
+      "retain_superclasses": [],
+      "retain_ids": [
+        "10056",
+        "800173",
+        "800863",
+        "801884"
+      ],
+      "scope": "diagnostic sufficiency test of exact left T1 minimal 4-cell DN/core motif; MN clamped, not a muscle/body simulation",
+      "ablate_type": "IN16B036"
+    },
+    "T1L_core3_cut_feedback": {
+      "retain_superclasses": [],
+      "retain_ids": [
+        "10056",
+        "800173",
+        "800863",
+        "801884"
+      ],
+      "scope": "diagnostic sufficiency test of exact left T1 minimal 4-cell DN/core motif; MN clamped, not a muscle/body simulation",
+      "terminal_gain": [
+        {
+          "source_type": "IN16B036",
+          "target_type": "IN17A001",
+          "factor": 0
+        },
+        {
+          "source_type": "IN16B036",
+          "target_type": "INXXX466",
+          "factor": 0
+        }
+      ]
+    },
+    "T1L_core3_4s": {
+      "retain_superclasses": [],
+      "retain_ids": [
+        "10056",
+        "800173",
+        "800863",
+        "801884"
+      ],
+      "scope": "diagnostic sufficiency test of exact left T1 minimal 4-cell DN/core motif; MN clamped, not a muscle/body simulation",
+      "duration_ms": 4000,
+      "drive_off_ms": 3900
     }
   }
 }

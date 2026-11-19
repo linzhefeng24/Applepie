@@ -1,0 +1,11 @@
+{
+ "canonical_working_candidate":"previous I1 gain2 selected model remains unchanged",
+ "model_sha256":"38b07321a54694dc875aebfaa82c930cd752bd0d25f2940ef7087fa45a44e4fa",
+ "manual_trials":[
+  {"conditions":["DN_MN_half","DN_MN_quarter"],"adjustment":"DNg100→vnc_motor effective terminal transmission ×0.5/0.25; real counts untouched","observation":"Delayed direct MN recruitment. At quarter gain right MN802072 first-response conductance is dominated by E2, but its E2-silenced response is rescued by DNg13/DNge035/DNg97. Quarter+E2 silence also allows late residual I1 spikes (left2/right1), absent in the original matched E2-silenced condition.","decision":"retained as experimental candidates; not adopted as a global improvement"},
+  {"conditions":["MN_gain3","MN_gain1p5"],"adjustment":"shared MN excitatory receptor gain from6 to3/1.5","observation":"Changes recruitment thresholds and reduces active muscle channels; concrete promotor MN still fire with E2 silenced because strong parallel inputs remain.","decision":"not adopted; lowering total activity did not solve the identified routing issue"}
+ ],
+ "diagnostic_cuts":"All zero-efficacy cuts and retained-cell conditions are experimental probes only; none replaces a real connection in the working model.",
+ "new_positive_result":"Without further parameter changes, the exact DN+E1+E2+I1 motif produces sustained about13Hz sequential core spiking under about78Hz tonic DN spiking; I1 feedback loss removes this slow mode. Four-second independently integrated diagnostic. This is model-level partial reproduction, not laboratory or full-network behavior validation.",
+ "unresolved":"Full-network E2 necessity, interleg alternation and experimental I1/I2 redundancy remain unproven; weak broad gain changes do not remove identified parallel pathways."
+}

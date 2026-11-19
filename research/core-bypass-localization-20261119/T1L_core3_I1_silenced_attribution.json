@@ -1,0 +1,32 @@
+[
+  {
+    "target": "800061",
+    "clamped_by_diagnostic": true,
+    "contributors": [],
+    "first_spike_time_ms": null
+  },
+  {
+    "target": "801173",
+    "clamped_by_diagnostic": true,
+    "contributors": [],
+    "first_spike_time_ms": null
+  },
+  {
+    "target": "802072",
+    "clamped_by_diagnostic": true,
+    "contributors": [],
+    "first_spike_time_ms": null
+  },
+  {
+    "target": "801884",
+    "clamped_by_diagnostic": true,
+    "contributors": [],
+    "first_spike_time_ms": null
+  },
+  {
+    "target": "803183",
+    "clamped_by_diagnostic": true,
+    "contributors": [],
+    "first_spike_time_ms": null
+  }
+]
