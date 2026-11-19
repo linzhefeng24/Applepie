@@ -1,0 +1,23 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "software": {
+    "numpy": "2.5.4",
+    "numba": "0.68.1",
+    "PyYAML": "6.0.3",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+  },
+  "deterministic": true,
+  "random_sampling": "none",
+  "initial_state": "kernel membrane initialization at configured leak reversal; gates steady at initial voltage; zero calcium and synaptic states",
+  "core_source_sha256": {
+    "simulator.py": "2e14f38641da9cf180f6808df05e2ed783f15b274cfb42b67edc25d5b8301dee",
+    "dynamics.py": "6c7839a30e016775e3d338024d4d413c8e88df2344b400646f553f478f1ac27b"
+  },
+  "commands": [
+    "PYTHONPATH=/tmp/olfactory-deps /workspace/unified-fly-env/bin/python research/manual-extension-review-20261119/build.py --sources /workspace/exports/malecns-source",
+    "/workspace/unified-fly-env/bin/python research/manual-extension-review-20261119/experiment.py quiet DN_drive core_silenced new_glutamate_zero core_release_x2 EPG_left",
+    "/workspace/unified-fly-env/bin/python research/manual-extension-review-20261119/experiment.py DN_plus_9A DN_plus_Delta7 E1_silenced E2_silenced I1_silenced I2_silenced"
+  ]
+}
