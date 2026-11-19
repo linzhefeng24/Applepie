@@ -1,5 +1,5 @@
 {
-  "status": "local_bundle_verified_pending_publication",
+  "status": "public_release_uploaded_and_fresh_download_sha256_verified",
   "source_revision": "fc8b1b6cd2a16732ea05ffd16aa6d256d7f899d9",
   "delivery_assets": [
     {
@@ -26,5 +26,7 @@
     "bytes": 93825131,
     "sha256": "e7b47bb6804f2f7f121b5569fa8b45e287d3a0d827e93195bd9f54a76e5a8cb8"
   },
-  "scope": "one selected network model, code, 17 raw conditions; no newly rendered body video"
+  "scope": "one selected network model, code, 17 raw conditions; no newly rendered body video",
+  "release_url": "https://github.com/linzhefeng24/Applepie/releases/tag/manual-core-extension-20261119",
+  "verification": "GitHub Actions downloaded all published assets and verified their SHA256; status stored in delivery-status.json"
 }
