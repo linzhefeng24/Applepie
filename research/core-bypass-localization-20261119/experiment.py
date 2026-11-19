@@ -18,6 +18,8 @@ def run(name):
  for q in spec.get('cell_set',[]):
   mask=match(m.neurons,{k:v for k,v in q.items() if k not in ['parameter','value']});assert mask.any();j=m.config['neural']['cell_parameter_columns'].index(q['parameter']);m.cells[mask,j]=q['value'];changes.append({**q,'cells':int(mask.sum())})
  ablate=m.neuron_ids(type=spec['ablate_type']) if 'ablate_type' in spec else [];saved={}
+ if 'retain_superclasses' in spec:
+  ablate=list(set(ablate)|{n['bodyId'] for n in m.neurons if n.get('superclass') not in spec['retain_superclasses'] and n['bodyId'] not in spec.get('retain_ids',[])})
  def logger(*args):
   output=_kernel(*args);assert not output[14],'Exact spike log overflow';saved['events']=output[13];return output[:13]
  simulator._kernel=logger

@@ -135,6 +135,78 @@
     "E3_silenced": {
       "ablate_type": "IN19B012",
       "scope": "test contribution of E2-recruited IN19B012 relay"
+    },
+    "E2_silenced_cut_DN_and_left_relay_MN": {
+      "ablate_type": "INXXX466",
+      "terminal_gain": [
+        {
+          "source_type": "DNg100",
+          "target_superclass": "vnc_motor",
+          "factor": 0
+        },
+        {
+          "source_bodyId": "800286",
+          "target_bodyId": "800061",
+          "factor": 0
+        },
+        {
+          "source_bodyId": "800286",
+          "target_bodyId": "801173",
+          "factor": 0
+        }
+      ],
+      "scope": "diagnostic cut of two concrete relay-to-promotor edges"
+    },
+    "E2_silenced_cut_DN_and_right_DNs_MN": {
+      "ablate_type": "INXXX466",
+      "terminal_gain": [
+        {
+          "source_type": "DNg100",
+          "target_superclass": "vnc_motor",
+          "factor": 0
+        },
+        {
+          "source_bodyId": "11074",
+          "target_bodyId": "802072",
+          "factor": 0
+        },
+        {
+          "source_bodyId": "10444",
+          "target_bodyId": "802072",
+          "factor": 0
+        },
+        {
+          "source_bodyId": "13805",
+          "target_bodyId": "802072",
+          "factor": 0
+        }
+      ],
+      "scope": "diagnostic cut of three concrete recruited-DN-to-promotor edges"
+    },
+    "DN_VNC_only": {
+      "retain_superclasses": [
+        "vnc_intrinsic",
+        "vnc_motor",
+        "vnc_sensory"
+      ],
+      "retain_ids": [
+        "10045",
+        "10056"
+      ],
+      "scope": "diagnostic DN+VNC restriction; not an exact copy of the author MANC T1 model and not a replacement full network"
+    },
+    "DN_VNC_only_E2_silenced": {
+      "retain_superclasses": [
+        "vnc_intrinsic",
+        "vnc_motor",
+        "vnc_sensory"
+      ],
+      "retain_ids": [
+        "10045",
+        "10056"
+      ],
+      "scope": "diagnostic DN+VNC restriction; not an exact copy of the author MANC T1 model and not a replacement full network",
+      "ablate_type": "INXXX466"
     }
   }
 }

@@ -1,0 +1,451 @@
+[
+  {
+    "target": "800061",
+    "type": "Tergopleural/Pleural promotor MN",
+    "first_spike_time_ms": 212.51250000000002,
+    "sample_ms": 212.5125,
+    "sample_vs_first_ms": -2.842170943040401e-14,
+    "axon_mV": 4.005790798596111,
+    "soma_mV": -34.118324847081446,
+    "source_decomposition_sum_nS": [
+      13.787051786014917,
+      0.011997811787966562
+    ],
+    "recorded_conductances_nS": [
+      13.787051786014832,
+      0.011997811787966387
+    ],
+    "validated_reconstruction": true,
+    "contributors": [
+      {
+        "pre": "800286",
+        "type": "INXXX464",
+        "sign": "exc",
+        "effective_signed_count": 191.0,
+        "conductance_nS": 13.121652905250368,
+        "last_arrival_ms": 210.65
+      },
+      {
+        "pre": "800173",
+        "type": "IN17A001",
+        "sign": "exc",
+        "effective_signed_count": 10.0,
+        "conductance_nS": 0.5223060086892194,
+        "last_arrival_ms": 209.1125
+      },
+      {
+        "pre": "802438",
+        "type": "IN01A002",
+        "sign": "exc",
+        "effective_signed_count": 2.0,
+        "conductance_nS": 0.14309287207532936,
+        "last_arrival_ms": 211.4
+      },
+      {
+        "pre": "800685",
+        "type": "IN09A002",
+        "sign": "inh",
+        "effective_signed_count": -2.0,
+        "conductance_nS": 0.011997811787966562,
+        "last_arrival_ms": 208.88750000000002
+      }
+    ],
+    "limitation": "Attribution at the nearest recorded 0.1ms sample, not a claim that the largest source alone is sufficient."
+  },
+  {
+    "target": "801173",
+    "type": "Tergopleural/Pleural promotor MN",
+    "first_spike_time_ms": 213.03750000000002,
+    "sample_ms": 213.0125,
+    "sample_vs_first_ms": -0.025000000000034106,
+    "axon_mV": -4.561311601454992,
+    "soma_mV": -40.40451033464255,
+    "source_decomposition_sum_nS": [
+      7.214041410009767,
+      0.03334892608589917
+    ],
+    "recorded_conductances_nS": [
+      7.214041410009709,
+      0.03334892608589894
+    ],
+    "validated_reconstruction": true,
+    "contributors": [
+      {
+        "pre": "800286",
+        "type": "INXXX464",
+        "sign": "exc",
+        "effective_signed_count": 111.0,
+        "conductance_nS": 7.048490848679925,
+        "last_arrival_ms": 210.65
+      },
+      {
+        "pre": "800053",
+        "type": "IN07B001",
+        "sign": "exc",
+        "effective_signed_count": 3.0,
+        "conductance_nS": 0.11822856634846432,
+        "last_arrival_ms": 212.72500000000002
+      },
+      {
+        "pre": "800173",
+        "type": "IN17A001",
+        "sign": "exc",
+        "effective_signed_count": 1.0,
+        "conductance_nS": 0.04732199498137795,
+        "last_arrival_ms": 209.1125
+      },
+      {
+        "pre": "10856",
+        "type": "DNge129",
+        "sign": "inh",
+        "effective_signed_count": -6.0,
+        "conductance_nS": 0.026891400531476504,
+        "last_arrival_ms": 211.875
+      },
+      {
+        "pre": "800256",
+        "type": "IN08A002",
+        "sign": "inh",
+        "effective_signed_count": -3.0,
+        "conductance_nS": 0.006457525554422666,
+        "last_arrival_ms": 212.625
+      }
+    ],
+    "limitation": "Attribution at the nearest recorded 0.1ms sample, not a claim that the largest source alone is sufficient."
+  },
+  {
+    "target": "802072",
+    "type": "Tergopleural/Pleural promotor MN",
+    "first_spike_time_ms": 221.28750000000002,
+    "sample_ms": 221.3125,
+    "sample_vs_first_ms": 0.024999999999977263,
+    "axon_mV": 10.838800375360115,
+    "soma_mV": -39.0276533356837,
+    "source_decomposition_sum_nS": [
+      9.038185108066445,
+      0.9740310782201088
+    ],
+    "recorded_conductances_nS": [
+      9.03818510806639,
+      0.9740310782200927
+    ],
+    "validated_reconstruction": true,
+    "contributors": [
+      {
+        "pre": "11074",
+        "type": "DNg13",
+        "sign": "exc",
+        "effective_signed_count": 60.0,
+        "conductance_nS": 4.315887709074322,
+        "last_arrival_ms": 219.9625
+      },
+      {
+        "pre": "10444",
+        "type": "DNge035",
+        "sign": "exc",
+        "effective_signed_count": 42.0,
+        "conductance_nS": 2.730245044075848,
+        "last_arrival_ms": 219.0875
+      },
+      {
+        "pre": "13805",
+        "type": "DNg97",
+        "sign": "exc",
+        "effective_signed_count": 20.0,
+        "conductance_nS": 1.0941409859414684,
+        "last_arrival_ms": 218.15
+      },
+      {
+        "pre": "10301",
+        "type": "DNge050",
+        "sign": "exc",
+        "effective_signed_count": 15.0,
+        "conductance_nS": 0.7777168810418619,
+        "last_arrival_ms": 217.875
+      },
+      {
+        "pre": "10247",
+        "type": "DNg74_a",
+        "sign": "inh",
+        "effective_signed_count": -60.0,
+        "conductance_nS": 0.35035150128921455,
+        "last_arrival_ms": 218.8375
+      },
+      {
+        "pre": "800369",
+        "type": "IN19A011",
+        "sign": "inh",
+        "effective_signed_count": -50.0,
+        "conductance_nS": 0.29140491215931486,
+        "last_arrival_ms": 216.10000000000002
+      },
+      {
+        "pre": "555457",
+        "type": "DNge079",
+        "sign": "inh",
+        "effective_signed_count": -22.0,
+        "conductance_nS": 0.13079913802185664,
+        "last_arrival_ms": 218.45000000000002
+      },
+      {
+        "pre": "800529",
+        "type": "IN19A018",
+        "sign": "exc",
+        "effective_signed_count": 5.0,
+        "conductance_nS": 0.09437791632987849,
+        "last_arrival_ms": 212.8125
+      },
+      {
+        "pre": "10895",
+        "type": "DNg90",
+        "sign": "inh",
+        "effective_signed_count": -11.0,
+        "conductance_nS": 0.06529184096347035,
+        "last_arrival_ms": 216.8625
+      },
+      {
+        "pre": "902262",
+        "type": "IN26X001",
+        "sign": "inh",
+        "effective_signed_count": -7.0,
+        "conductance_nS": 0.039449695179838276,
+        "last_arrival_ms": 214.9625
+      },
+      {
+        "pre": "800411",
+        "type": "IN19A007",
+        "sign": "inh",
+        "effective_signed_count": -6.0,
+        "conductance_nS": 0.034271688596555404,
+        "last_arrival_ms": 215.4
+      },
+      {
+        "pre": "800288",
+        "type": "IN17A001",
+        "sign": "exc",
+        "effective_signed_count": 2.0,
+        "conductance_nS": 0.025816571603066694,
+        "last_arrival_ms": 210.91250000000002
+      },
+      {
+        "pre": "10124",
+        "type": "DNg105",
+        "sign": "inh",
+        "effective_signed_count": -4.0,
+        "conductance_nS": 0.023971167690006165,
+        "last_arrival_ms": 217.51250000000002
+      },
+      {
+        "pre": "904674",
+        "type": "IN19A001",
+        "sign": "inh",
+        "effective_signed_count": -2.0,
+        "conductance_nS": 0.011993979067573619,
+        "last_arrival_ms": 217.9625
+      },
+      {
+        "pre": "933913",
+        "type": "IN19A004",
+        "sign": "inh",
+        "effective_signed_count": -2.0,
+        "conductance_nS": 0.011466724579358293,
+        "last_arrival_ms": 215.525
+      },
+      {
+        "pre": "13445",
+        "type": "DNge046",
+        "sign": "inh",
+        "effective_signed_count": -1.0,
+        "conductance_nS": 0.005974053709333239,
+        "last_arrival_ms": 218.26250000000002
+      },
+      {
+        "pre": "800004",
+        "type": "IN07B007",
+        "sign": "inh",
+        "effective_signed_count": -3.0,
+        "conductance_nS": 0.004651578706649133,
+        "last_arrival_ms": 221.05
+      },
+      {
+        "pre": "36691",
+        "type": "ANXXX130",
+        "sign": "inh",
+        "effective_signed_count": -1.0,
+        "conductance_nS": 0.004404798256938259,
+        "last_arrival_ms": 220.2125
+      }
+    ],
+    "limitation": "Attribution at the nearest recorded 0.1ms sample, not a claim that the largest source alone is sufficient."
+  },
+  {
+    "target": "801884",
+    "type": "IN16B036",
+    "first_spike_time_ms": null,
+    "sample_ms": 218.0125,
+    "sample_vs_first_ms": null,
+    "axon_mV": -61.01035559389031,
+    "soma_mV": -60.243929953036094,
+    "source_decomposition_sum_nS": [
+      0.7969248613249129,
+      0.17434343068168187
+    ],
+    "recorded_conductances_nS": [
+      0.7969248613249038,
+      0.17434343068167876
+    ],
+    "validated_reconstruction": true,
+    "contributors": [
+      {
+        "pre": "800216",
+        "type": "IN19B012",
+        "sign": "exc",
+        "effective_signed_count": 40.0,
+        "conductance_nS": 0.729427323960979,
+        "last_arrival_ms": 214.85000000000002
+      },
+      {
+        "pre": "800157",
+        "type": "IN19A004",
+        "sign": "inh",
+        "effective_signed_count": -23.0,
+        "conductance_nS": 0.13797483556161547,
+        "last_arrival_ms": 214.38750000000002
+      },
+      {
+        "pre": "800173",
+        "type": "IN17A001",
+        "sign": "exc",
+        "effective_signed_count": 6.0,
+        "conductance_nS": 0.03484872297410509,
+        "last_arrival_ms": 209.1125
+      },
+      {
+        "pre": "802438",
+        "type": "IN01A002",
+        "sign": "exc",
+        "effective_signed_count": 2.0,
+        "conductance_nS": 0.018354917847873933,
+        "last_arrival_ms": 211.4
+      },
+      {
+        "pre": "800256",
+        "type": "IN08A002",
+        "sign": "inh",
+        "effective_signed_count": -3.0,
+        "conductance_nS": 0.017400249556558816,
+        "last_arrival_ms": 212.625
+      },
+      {
+        "pre": "256420",
+        "type": "DNge050",
+        "sign": "exc",
+        "effective_signed_count": 1.0,
+        "conductance_nS": 0.01429389654195486,
+        "last_arrival_ms": 217.6875
+      },
+      {
+        "pre": "800618",
+        "type": "IN12B003",
+        "sign": "inh",
+        "effective_signed_count": -2.0,
+        "conductance_nS": 0.010135028524180852,
+        "last_arrival_ms": 208.41250000000002
+      },
+      {
+        "pre": "801173",
+        "type": "Tergopleural/Pleural promotor MN",
+        "sign": "inh",
+        "effective_signed_count": -1.0,
+        "conductance_nS": 0.0059998080861235915,
+        "last_arrival_ms": 214.53750000000002
+      },
+      {
+        "pre": "13130",
+        "type": "DNg105",
+        "sign": "inh",
+        "effective_signed_count": -1.0,
+        "conductance_nS": 0.0024251816307914354,
+        "last_arrival_ms": 217.5625
+      },
+      {
+        "pre": "800326",
+        "type": "IN19A001",
+        "sign": "inh",
+        "effective_signed_count": -1.0,
+        "conductance_nS": 0.0004083273224117209,
+        "last_arrival_ms": 217.95000000000002
+      }
+    ],
+    "limitation": "Attribution at the nearest recorded 0.1ms sample, not a claim that the largest source alone is sufficient."
+  },
+  {
+    "target": "803183",
+    "type": "IN16B036",
+    "first_spike_time_ms": null,
+    "sample_ms": 218.0125,
+    "sample_vs_first_ms": null,
+    "axon_mV": -68.18711338974363,
+    "soma_mV": -67.79542673019385,
+    "source_decomposition_sum_nS": [
+      0.01567135006175173,
+      0.2174856159470141
+    ],
+    "recorded_conductances_nS": [
+      0.01567135006175153,
+      0.2174856159470111
+    ],
+    "validated_reconstruction": true,
+    "contributors": [
+      {
+        "pre": "933913",
+        "type": "IN19A004",
+        "sign": "inh",
+        "effective_signed_count": -23.0,
+        "conductance_nS": 0.13440765874245933,
+        "last_arrival_ms": 215.525
+      },
+      {
+        "pre": "902262",
+        "type": "IN26X001",
+        "sign": "inh",
+        "effective_signed_count": -13.0,
+        "conductance_nS": 0.07766269822133211,
+        "last_arrival_ms": 214.9625
+      },
+      {
+        "pre": "800288",
+        "type": "IN17A001",
+        "sign": "exc",
+        "effective_signed_count": 1.0,
+        "conductance_nS": 0.008324927420484452,
+        "last_arrival_ms": 210.91250000000002
+      },
+      {
+        "pre": "10301",
+        "type": "DNge050",
+        "sign": "exc",
+        "effective_signed_count": 1.0,
+        "conductance_nS": 0.007346422641267277,
+        "last_arrival_ms": 217.875
+      },
+      {
+        "pre": "941319",
+        "type": "IN12B003",
+        "sign": "inh",
+        "effective_signed_count": -1.0,
+        "conductance_nS": 0.005086498606975095,
+        "last_arrival_ms": 208.525
+      },
+      {
+        "pre": "904674",
+        "type": "IN19A001",
+        "sign": "inh",
+        "effective_signed_count": -1.0,
+        "conductance_nS": 0.0003287603762475735,
+        "last_arrival_ms": 217.9625
+      }
+    ],
+    "limitation": "Attribution at the nearest recorded 0.1ms sample, not a claim that the largest source alone is sufficient."
+  }
+]
