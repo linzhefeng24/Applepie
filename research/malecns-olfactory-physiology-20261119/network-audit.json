@@ -1,0 +1,64 @@
+{
+  "dataset": "MaleCNS v1.0 minconf0.5 significant-only",
+  "status": "structural candidate extraction; not physiological simulation",
+  "source_annotation_rows": 211577,
+  "source_directed_pairs": 25568639,
+  "candidate_nodes": 8286,
+  "candidate_directed_pairs": 1492168,
+  "candidate_anatomical_synapses": 6411933,
+  "groups": {
+    "KC": 4064,
+    "ORN": 2639,
+    "PN": 686,
+    "LN": 420,
+    "DAN_candidate": 340,
+    "MBON": 97,
+    "ALIN": 24,
+    "ALON": 14,
+    "APL": 2
+  },
+  "transmitter_counts": {
+    "acetylcholine": 7377,
+    "gaba": 355,
+    "dopamine": 338,
+    "glutamate": 141,
+    "unclear": 73,
+    "octopamine": 2
+  },
+  "APL_ids": [
+    10540,
+    10977
+  ],
+  "all_DAN_annotation_count": 340,
+  "selected_DAN_count": 340,
+  "caveats": [
+    "annotations cover more bodies than the reconstructed connected network; source_annotation_rows is not validated whole-CNS neuron count",
+    "class olfactory, ALPN etc are annotation selectors, not a guarantee every neuron responds to our chosen odors",
+    "DAN candidates may include nonolfactory/multifunctional neurons",
+    "DAN anatomical synapses do not enumerate all volume transmission",
+    "significant-only missing edge is not confirmed biological absence",
+    "No synapse coordinates or morphology read in this step; compartment placement unresolved",
+    "No edge assigned a sign from glutamate or dopamine alone"
+  ],
+  "outputs": {
+    "neurons.csv": {
+      "bytes": 632155,
+      "sha256": "13ec31213eb5c7c87606d0ec0bdcb682511ad8f287ea47eef1ca5eede813155e"
+    },
+    "group-connectivity.csv": {
+      "bytes": 1316,
+      "sha256": "5a8e56816edbf2ba32176b1970f834344f2a2ad7f686cb3ccae80bb334f92b10"
+    },
+    "edges.npz": {
+      "bytes": 4438692,
+      "sha256": "e4d01a3a13b92e6b5131edfea0250acad68eb51df896e642a5dacd596af8077c"
+    }
+  },
+  "software": {
+    "python": "3.12.14",
+    "pandas": "2.2.3",
+    "numpy": "2.3.5",
+    "pyarrow": "20.0.0"
+  },
+  "command": "PYTHONPATH=/tmp/olfactory-deps python research/malecns-olfactory-physiology-20261119/extract_network.py /workspace/exports/malecns-source"
+}
