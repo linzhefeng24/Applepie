@@ -15,8 +15,8 @@
     },
     {
       "name": "Manual_R2_FreeBody_Complete.zip",
-      "bytes": 93826446,
-      "sha256": "6c20c425c853edc7840f40e55028aa29523bf1472046b751bff30033bb743f85",
+      "bytes": 93825131,
+      "sha256": "e7b47bb6804f2f7f121b5569fa8b45e287d3a0d827e93195bd9f54a76e5a8cb8",
       "url": "https://github.com/linzhefeng24/Applepie/releases/download/manual-r2-freebody-20261119/Manual_R2_FreeBody_Complete.zip"
     },
     {
@@ -37,8 +37,5 @@
       "sha256": "1f7e52aa9f167a186eb703f917835dacbf6acf972e8536567230d740a4eead0d",
       "url": "https://github.com/linzhefeng24/Applepie/releases/download/manual-r2-freebody-20261119/verification.json"
     }
-  ],
-  "clean_extracted_package_physical_replay": "passed; run_manual.py from freshly extracted ZIP, same manual MSE and free joint checks",
-  "walking_training_workflow": "still disabled_manually; no training restarted",
-  "visual_review": "Inspected synchronized final frame: MANUAL R2, FREE BODY, neural time1400ms, physical time0.4s; body and neural-muscle panels present"
+  ]
 }
