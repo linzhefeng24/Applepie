@@ -1,5 +1,5 @@
 {
-  "status": "prepared_for_public_release",
+  "status": "public_release_uploaded_and_fresh_download_sha256_verified",
   "delivery_assets": [
     {
       "name": "Manual_R2_FreeBody.mp4",
@@ -31,5 +31,7 @@
       "sha256": "1f7e52aa9f167a186eb703f917835dacbf6acf972e8536567230d740a4eead0d",
       "url": "https://github.com/linzhefeng24/Applepie/releases/download/manual-r2-freebody-20261119/verification.json"
     }
-  ]
+  ],
+  "source_revision": "2f6cc3c6d8a6c19f483d5857617cbb9282a53318",
+  "release_url": "https://github.com/linzhefeng24/Applepie/releases/tag/manual-r2-freebody-20261119"
 }
