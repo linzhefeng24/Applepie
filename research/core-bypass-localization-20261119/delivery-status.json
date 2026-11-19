@@ -1,0 +1,30 @@
+{
+  "complete": true,
+  "source_revision": "4731a3e2ff16a072b74acd606c51bb765103664b",
+  "release_url": "https://github.com/linzhefeng24/Applepie/releases/tag/core-bypass-localization-20261119",
+  "fresh_download_sha256_verified_assets": [
+    "Core_Bypass_Diagnostics.zip",
+    "local-core-rhythm.png",
+    "phenomena_status.json"
+  ],
+  "assets": [
+    {
+      "name": "Core_Bypass_Diagnostics.zip",
+      "bytes": 217842909,
+      "sha256": "8be51b7a9c7075601dd15644b58dfa3b0f26f3e22867cc234bd67fe380081d43",
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/core-bypass-localization-20261119/Core_Bypass_Diagnostics.zip"
+    },
+    {
+      "name": "local-core-rhythm.png",
+      "bytes": 95298,
+      "sha256": "d9df95d64bf3c346d7fdc7dbccf707ec5b9d041624ac71a4a30845c86d7c3582",
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/core-bypass-localization-20261119/local-core-rhythm.png"
+    },
+    {
+      "name": "phenomena_status.json",
+      "bytes": 3717,
+      "sha256": "ad516de27db5441fb93d1a384bf778db254016d62e8cc649a175b64a38f388d9",
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/core-bypass-localization-20261119/phenomena_status.json"
+    }
+  ]
+}
