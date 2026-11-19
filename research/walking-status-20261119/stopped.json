@@ -1,0 +1,24 @@
+{
+  "checked_utc": "2026-11-19T04:41:24.514333+00:00",
+  "user_instruction": "Stop walking optimization; preserve manual parameters and checkpoints",
+  "workflow": "train-joint-physical-bounds.yml",
+  "workflow_state": "disabled_manually",
+  "run_id": 44457444334,
+  "run_status": "completed",
+  "conclusion": "cancelled",
+  "last_durable_updates": 281,
+  "required_updates_pre_stop": 300,
+  "training_complete": false,
+  "checkpoint_asset": "joint-main-e0281-p0-281-f286b95ff9ef.zip",
+  "checkpoint_sha256": "f286b95ff9efbc32338762f9052296b6de08ebf4e80eb24ae1676390a8ad2b4d",
+  "checkpoint_release": "joint-physical-bounds-20261117",
+  "manual_model_sha256": "858d1818b8d8394c95bb62a6ce60474cb534a83b94265ef8615e367c110d262c",
+  "preserved": [
+    "manual model and parameter bank",
+    "all existing checkpoints including best123",
+    "existing videos"
+  ],
+  "active_model_replaced": false,
+  "automatic_continuation": "Disabled workflow prevents self-dispatch continuation",
+  "note": "Graceful cancel completed; subsequent force-cancel returned409 because run already completed. No training data deleted."
+}
