@@ -1,0 +1,119 @@
+{
+  "source_sha256": "bf70a56e74bbb0a1ded26f7de06325e18313e8b8195d98e6abe5a252e070d485",
+  "translation_sha256": "be13ff6ce8bba296853e6f97c78e2bb61bb296ffa7e7d5ebfca146139ef02dcd",
+  "figures": [
+    {
+      "label": "1",
+      "source_page": 2,
+      "crop_pdf_points": [
+        40,
+        75,
+        555,
+        615
+      ],
+      "anchor_segment": "benton-p03-s002",
+      "sha256": "1fee94a7a6d3a1b33f5538b96f72bf3beab6717ca3d66de96e0f520875f5bab8"
+    },
+    {
+      "label": "2",
+      "source_page": 4,
+      "crop_pdf_points": [
+        40,
+        75,
+        555,
+        748
+      ],
+      "anchor_segment": "benton-p05-s002",
+      "sha256": "6e48f0f67fe03591ee641c66b30d33e83b2f4e65a79dc2717ae4b0837452ac3c"
+    },
+    {
+      "label": "3",
+      "source_page": 6,
+      "crop_pdf_points": [
+        40,
+        75,
+        555,
+        748
+      ],
+      "anchor_segment": "benton-p07-s002",
+      "sha256": "9729ca598e00e837c3f9f7798e2d228ae7bf084e11c2afb9aac4f6104a2965d6"
+    },
+    {
+      "label": "4",
+      "source_page": 8,
+      "crop_pdf_points": [
+        40,
+        75,
+        555,
+        748
+      ],
+      "anchor_segment": "benton-p09-s002",
+      "sha256": "d1aa15d09a1ff1a17da9237fa04f04493146c481d8a83a6be79283b4ce3dab15"
+    },
+    {
+      "label": "5",
+      "source_page": 10,
+      "crop_pdf_points": [
+        40,
+        75,
+        555,
+        748
+      ],
+      "anchor_segment": "benton-p11-s002",
+      "sha256": "3905fbc3b78f5df09f3a2535cb55e08caa0d7e60505eb5afeb53e313062089a2"
+    },
+    {
+      "label": "6",
+      "source_page": 12,
+      "crop_pdf_points": [
+        40,
+        75,
+        555,
+        537
+      ],
+      "anchor_segment": "benton-p12-s001",
+      "sha256": "a09ef78f7d5476783946f2566e5a62cae08ebd6cc10951ef36cabb2907cf93b8"
+    },
+    {
+      "label": "EV1",
+      "source_page": 20,
+      "crop_pdf_points": [
+        40,
+        100,
+        555,
+        568
+      ],
+      "anchor_segment": "benton-p20-s000",
+      "sha256": "10669812631d598faa72b9f33207a48dadcd8ce66f28d34e34de98bde620a238"
+    },
+    {
+      "label": "EV2",
+      "source_page": 21,
+      "crop_pdf_points": [
+        40,
+        75,
+        555,
+        748
+      ],
+      "anchor_segment": "benton-p22-s000",
+      "sha256": "23d818b7e819f97eb3e3aad972a4cbaa60f441062d418a7f6999df51b068ae13"
+    }
+  ],
+  "pdf_pages": 33,
+  "pdf_image_placements": 8,
+  "caption_order": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "EV1",
+    "EV2"
+  ],
+  "all_original_translation_segments_retained": 46,
+  "versions": {
+    "PyMuPDF": "1.26.6"
+  },
+  "status": "rendered_and_structurally_checked"
+}

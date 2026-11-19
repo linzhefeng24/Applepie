@@ -6,13 +6,14 @@ No credentials are saved in requests, manifests or archives.
 """
 from pathlib import Path
 import argparse,base64,hashlib,json,os,subprocess,zipfile,time
-R=Path(__file__).resolve().parent;CACHE=R/'cache';REPO='linzhefeng24/Applepie';TAG='paper-translations-zh-20261118'
+R=Path(os.environ.get('TRANSLATION_DELIVERY_ROOT',Path(__file__).resolve().parent));CACHE=R/'cache';REPO='linzhefeng24/Applepie';TAG=os.environ.get('TRANSLATION_RELEASE_TAG','paper-translations-zh-20261118')
+BUNDLE=os.environ.get('TRANSLATION_BUNDLE','Two_Papers_Chinese_Full_Translations.zip')
 def sha(b):return hashlib.sha256(b).hexdigest()
 def gh(*args):return subprocess.check_output(['gh',*args],text=True)
 def dump(p,x):p.write_text(json.dumps(x,ensure_ascii=False,indent=2)+'\n')
 p=argparse.ArgumentParser();p.add_argument('mode',choices=['transport','publish']);a=p.parse_args()
 if a.mode=='transport':
- bundle=CACHE/'delivery/Two_Papers_Chinese_Full_Translations.zip';raw=bundle.read_bytes();manifest={'repo':REPO,'release_tag':TAG,'source_revision':gh('api',f'repos/{REPO}/git/ref/heads/main','--jq','.object.sha').strip(),'bundle':{'name':bundle.name,'bytes':len(raw),'sha256':sha(raw)},'chunks':[],'assets':json.loads((R/'manifest.json').read_text())['delivery_assets'],'transport':'unreferenced Git blobs; no large-file commit to branch history'}
+ bundle=CACHE/'delivery'/BUNDLE;raw=bundle.read_bytes();manifest={'repo':REPO,'release_tag':TAG,'source_revision':gh('api',f'repos/{REPO}/git/ref/heads/main','--jq','.object.sha').strip(),'bundle':{'name':bundle.name,'bytes':len(raw),'sha256':sha(raw)},'chunks':[],'assets':json.loads((R/'manifest.json').read_text())['delivery_assets'],'transport':'unreferenced Git blobs; no large-file commit to branch history'}
  progress=CACHE/'transport-progress.json'
  if progress.exists():
   old=json.loads(progress.read_text())
@@ -37,7 +38,7 @@ else:
  files=[]
  for item in manifest['assets']:
   f=directory/item['name'];assert f.exists() and sha(f.read_bytes())==item['sha256'] and f.stat().st_size==item['bytes'];files.append(f)
- gh('release','edit',TAG,'--repo',REPO,'--target',manifest['source_revision'],'--title','Two papers: complete Chinese reading translations','--notes','User-requested unofficial Chinese reading translations of Benton2025 and Dorkenwald2024. Assistant-authored within the session, with54 original page facsimiles, English source paragraphs and original bibliographic entries. Includes PDF, Word, HTML and Markdown. Not author-approved translations; original papers CC BY4.0, changes are translation and layout.')
+ gh('release','edit',TAG,'--repo',REPO,'--target',manifest['source_revision'],'--title',os.environ.get('TRANSLATION_RELEASE_TITLE','Two papers: complete Chinese reading translations'),'--notes',os.environ.get('TRANSLATION_RELEASE_NOTES','User-requested unofficial Chinese reading translations. Original papers CC BY4.0; changes are translation and layout.'))
  gh('release','upload',TAG,*map(str,files),'--repo',REPO,'--clobber')
  verified=[];verify=CACHE/'release-verify';verify.mkdir(exist_ok=True)
  for item in manifest['assets']:
@@ -45,7 +46,7 @@ else:
  gh('release','edit',TAG,'--repo',REPO,'--draft=false')
  status={'complete':True,'source_revision':manifest['source_revision'],'release_url':f'https://github.com/{REPO}/releases/tag/{TAG}','fresh_download_sha256_verified_assets':verified,'assets':manifest['assets']};dump(directory/'delivery-status.json',status)
  gh('release','upload',TAG,str(directory/'delivery-status.json'),'--repo',REPO,'--clobber')
- path='research/chinese-translations-20261118/delivery-status.json'
+ path=str(R.resolve().relative_to(Path.cwd().resolve())/'delivery-status.json')
  for attempt in range(8):
   old=subprocess.run(['gh','api','-H','Cache-Control: no-cache',f'repos/{REPO}/contents/{path}?ref=main&nonce={time.time_ns()}'],capture_output=True,text=True);payload={'message':'Save verified complete Chinese translation delivery','branch':'main','content':base64.b64encode((directory/'delivery-status.json').read_bytes()).decode()}
   if old.returncode==0:payload['sha']=json.loads(old.stdout)['sha']
