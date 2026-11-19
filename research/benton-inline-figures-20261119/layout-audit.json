@@ -115,5 +115,7 @@
   "versions": {
     "PyMuPDF": "1.26.6"
   },
-  "status": "rendered_and_structurally_checked"
+  "status": "rendered_and_structurally_checked",
+  "pdf_text_comparison": "46/46 complete segments match after NFKC/whitespace/minus-sign normalization",
+  "visual_review": "All eight figure pages inspected; captions directly follow figures; superscript P values rendered with explicit sup elements"
 }

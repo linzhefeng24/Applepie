@@ -40,6 +40,7 @@ def main():
     pdfbody.append('<div class="figure"><h3>'+label+'</h3>'+img+path.name+'"></div>');captions.append(f['label'])
    text=segment['translation'];doc.add_paragraph(text)
    paragraphs=''.join('<p>'+html.escape(x).replace('\n','<br>')+'</p>' for x in text.split('\n\n'))
+   paragraphs=re.sub(r'[⁻⁰¹²³⁴⁵⁶⁷⁸⁹]+',lambda m:'<sup>'+m.group().translate(str.maketrans('⁻⁰¹²³⁴⁵⁶⁷⁸⁹','-0123456789'))+'</sup>',paragraphs)
    body.append(paragraphs+'<details><summary>核对本段英文</summary><pre>'+html.escape(segment['source'])+'</pre></details>');pdfbody.append(paragraphs)
  css='body{font-family:sans-serif;font-size:10.5pt;line-height:1.5}h1{font-size:22pt}h2{font-size:14pt}h3{font-size:11pt}h2,h3{page-break-after:avoid}.figure{page-break-inside:avoid}img{display:block;max-width:100%;margin:auto}pre{white-space:pre-wrap}details{color:#555}p{overflow-wrap:anywhere}'
  def document(content):return '<html lang="zh"><meta charset="utf-8"><style>'+css+'</style>'+head+''.join(content)+'</html>'
@@ -49,7 +50,7 @@ def main():
  reopened=fitz.open(out/(name+'.pdf'));images=sum(len(p.get_image_info()) for p in reopened);text=''.join(p.get_text() for p in reopened)
  assert images==8,(images,len(reopened))
  assert all(t in text for t in ['图1图注','图2图注','图3图注','图EV1','图EV2','数据可用性'])
- audit={'source_sha256':m['sha256'],'translation_sha256':sha(SOURCE/'translated.json'),'figures':[{k:v for k,v in f.items() if k!='path'} for f in figs.values()],'pdf_pages':len(reopened),'pdf_image_placements':images,'caption_order':captions,'all_original_translation_segments_retained':46,'versions':{'PyMuPDF':fitz.VersionBind},'status':'rendered_and_structurally_checked'}
+ audit={'source_sha256':m['sha256'],'translation_sha256':sha(SOURCE/'translated.json'),'figures':[{k:v for k,v in f.items() if k!='path'} for f in figs.values()],'pdf_pages':len(reopened),'pdf_image_placements':images,'caption_order':captions,'all_original_translation_segments_retained':sum(len(pg['segments']) for pg in data['pages']),'versions':{'PyMuPDF':fitz.VersionBind},'status':'rendered_and_structurally_checked'}
  (R/'layout-audit.json').write_text(json.dumps(audit,ensure_ascii=False,indent=2)+'\n')
  (out/'Sources_and_Layout.json').write_text(json.dumps(audit,ensure_ascii=False,indent=2)+'\n')
  bundle=out/'Benton_2025_Chinese_Illustrated.zip'
