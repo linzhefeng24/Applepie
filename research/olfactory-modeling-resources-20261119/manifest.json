@@ -1,0 +1,40 @@
+{
+  "date": "2026-11-19",
+  "task": "Find sources for adult Drosophila olfactory modeling",
+  "scope": "bibliographic search, selected full-text resource inspection, repository README/revision verification; no simulations or code tests",
+  "search_provider": "Europe PMC REST search title queries; GitHub repository API",
+  "public_fulltext_identities": [
+    {
+      "pmcid": "PMC4766438",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4766438/fullTextXML",
+      "bytes": 172195,
+      "sha256": "c8758282e1fd8c85e929d0fa731bef0225b7ff124149cfbc40877bf2b0caaa6d"
+    },
+    {
+      "pmcid": "PMC12187929",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12187929/fullTextXML",
+      "bytes": 313493,
+      "sha256": "d7c505f42f2b1004047557e588eeb68d4a3d191bbd9c2703ae0fdd6eb52293e9"
+    },
+    {
+      "pmcid": "PMC11446845",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11446845/fullTextXML",
+      "bytes": 186265,
+      "sha256": "c768deaabdca930274b4a4aa5fa4c6d082b827522839c9ed1889a6d6339369a4"
+    },
+    {
+      "pmcid": "PMC7909955",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7909955/fullTextXML",
+      "bytes": 1138120,
+      "sha256": "94f46bb8c8f06bed98c7c53f297a6fa716341d7734469fcf0100e19a467085fd"
+    }
+  ],
+  "repository_revisions": "repositories.json",
+  "failed_attempts": [
+    "Initial execution environment not ready; waited until ready",
+    "Several guessed repository paths404; corrected via GitHub search, no guessed links retained as verified",
+    "Initial urllib full-text retrieval timed out; curl retrieval of four full-text XMLs succeeded",
+    "Direct Springer CDN EV1 XLSX download returned HTTP error; table not downloaded or inspected"
+  ],
+  "source_notes": "Benton supplemental filenames checked in full text; no large datasets downloaded; no claim that metadata-only literature was read in full"
+}

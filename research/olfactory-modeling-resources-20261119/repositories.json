@@ -1,0 +1,44 @@
+[
+  {
+    "repo": "ropensci/DoOR.data",
+    "url": "https://github.com/ropensci/DoOR.data",
+    "revision": "db323a496577c4b4a72b5c2fcd1859e07521ffb5",
+    "default_branch": "master",
+    "readme_reviewed": true
+  },
+  {
+    "repo": "ropensci/DoOR.functions",
+    "url": "https://github.com/ropensci/DoOR.functions",
+    "revision": "15e415e4d84dfbbba6febefdfd0f2c1ddcf31cd6",
+    "default_branch": "master",
+    "readme_reviewed": true
+  },
+  {
+    "repo": "philshiu/Drosophila_brain_model",
+    "url": "https://github.com/philshiu/Drosophila_brain_model",
+    "revision": "91bdd1e7dcf193f3e7ca5a8933497fcef63b7960",
+    "default_branch": "main",
+    "readme_reviewed": true
+  },
+  {
+    "repo": "natverse/malecns",
+    "url": "https://github.com/natverse/malecns",
+    "revision": "daf8e2a9849cc77695b14bb6b9d4c02456cd3b3c",
+    "default_branch": "master",
+    "readme_reviewed": true
+  },
+  {
+    "repo": "flyconnectome/neuprint-python",
+    "url": "https://github.com/flyconnectome/neuprint-python",
+    "revision": "0b9d90328735118a8402d53e0f080a57817b2756",
+    "default_branch": "master",
+    "readme_reviewed": true
+  },
+  {
+    "repo": "navis-org/fafbseg-py",
+    "url": "https://github.com/navis-org/fafbseg-py",
+    "revision": "b62bed6572afb98ac6e64e738b8805341e7ee027",
+    "default_branch": "master",
+    "readme_reviewed": true
+  }
+]
