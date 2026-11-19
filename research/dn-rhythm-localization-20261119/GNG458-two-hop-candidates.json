@@ -1,0 +1,370 @@
+{
+  "status": "anatomical active two-hop candidates; relays not individually ablated",
+  "candidates": [
+    {
+      "DN": "10045",
+      "relay_id": "13327",
+      "relay_type": "VES005",
+      "DN_relay_weight": 14.0,
+      "relay_GNG458_weight": 10.0,
+      "relay_first_cycle_spikes_ms": [
+        225
+      ]
+    },
+    {
+      "DN": "10056",
+      "relay_id": "578647",
+      "relay_type": "VES089",
+      "DN_relay_weight": 11.0,
+      "relay_GNG458_weight": 7.0,
+      "relay_first_cycle_spikes_ms": [
+        229
+      ]
+    },
+    {
+      "DN": "10056",
+      "relay_id": "13327",
+      "relay_type": "VES005",
+      "DN_relay_weight": 5.0,
+      "relay_GNG458_weight": 10.0,
+      "relay_first_cycle_spikes_ms": [
+        225
+      ]
+    },
+    {
+      "DN": "10045",
+      "relay_id": "10440",
+      "relay_type": "DNg16",
+      "DN_relay_weight": 11.0,
+      "relay_GNG458_weight": 3.0,
+      "relay_first_cycle_spikes_ms": [
+        215,
+        225
+      ]
+    },
+    {
+      "DN": "10045",
+      "relay_id": "578647",
+      "relay_type": "VES089",
+      "DN_relay_weight": 3.0,
+      "relay_GNG458_weight": 7.0,
+      "relay_first_cycle_spikes_ms": [
+        229
+      ]
+    },
+    {
+      "DN": "10056",
+      "relay_id": "10440",
+      "relay_type": "DNg16",
+      "DN_relay_weight": 19.0,
+      "relay_GNG458_weight": 3.0,
+      "relay_first_cycle_spikes_ms": [
+        215,
+        225
+      ]
+    },
+    {
+      "DN": "10045",
+      "relay_id": "10987",
+      "relay_type": "CL311",
+      "DN_relay_weight": 2.0,
+      "relay_GNG458_weight": 32.0,
+      "relay_first_cycle_spikes_ms": [
+        212
+      ]
+    },
+    {
+      "DN": "10045",
+      "relay_id": "11297",
+      "relay_type": "DNbe003",
+      "DN_relay_weight": 59.0,
+      "relay_GNG458_weight": 2.0,
+      "relay_first_cycle_spikes_ms": [
+        211,
+        230
+      ]
+    },
+    {
+      "DN": "10045",
+      "relay_id": "11713",
+      "relay_type": "DNg101",
+      "DN_relay_weight": 2.0,
+      "relay_GNG458_weight": 4.0,
+      "relay_first_cycle_spikes_ms": [
+        231
+      ]
+    },
+    {
+      "DN": "10056",
+      "relay_id": "10434",
+      "relay_type": "AN19B019",
+      "DN_relay_weight": 2.0,
+      "relay_GNG458_weight": 2.0,
+      "relay_first_cycle_spikes_ms": [
+        233
+      ]
+    },
+    {
+      "DN": "10056",
+      "relay_id": "12995",
+      "relay_type": "DNde003",
+      "DN_relay_weight": 2.0,
+      "relay_GNG458_weight": 17.0,
+      "relay_first_cycle_spikes_ms": [
+        223
+      ]
+    },
+    {
+      "DN": "10045",
+      "relay_id": "10056",
+      "relay_type": "DNg100",
+      "DN_relay_weight": 119.0,
+      "relay_GNG458_weight": 1.0,
+      "relay_first_cycle_spikes_ms": [
+        202,
+        214,
+        224
+      ]
+    },
+    {
+      "DN": "10045",
+      "relay_id": "10103",
+      "relay_type": "GNG104",
+      "DN_relay_weight": 1.0,
+      "relay_GNG458_weight": 1.0,
+      "relay_first_cycle_spikes_ms": [
+        217
+      ]
+    },
+    {
+      "DN": "10045",
+      "relay_id": "10191",
+      "relay_type": "GNG661",
+      "DN_relay_weight": 1.0,
+      "relay_GNG458_weight": 1.0,
+      "relay_first_cycle_spikes_ms": [
+        235
+      ]
+    },
+    {
+      "DN": "10045",
+      "relay_id": "10420",
+      "relay_type": "GNG667",
+      "DN_relay_weight": 231.0,
+      "relay_GNG458_weight": 1.0,
+      "relay_first_cycle_spikes_ms": [
+        206,
+        220
+      ]
+    },
+    {
+      "DN": "10045",
+      "relay_id": "10434",
+      "relay_type": "AN19B019",
+      "DN_relay_weight": 1.0,
+      "relay_GNG458_weight": 2.0,
+      "relay_first_cycle_spikes_ms": [
+        233
+      ]
+    },
+    {
+      "DN": "10045",
+      "relay_id": "11182",
+      "relay_type": "DNp101",
+      "DN_relay_weight": 1.0,
+      "relay_GNG458_weight": 10.0,
+      "relay_first_cycle_spikes_ms": [
+        213
+      ]
+    },
+    {
+      "DN": "10045",
+      "relay_id": "11610",
+      "relay_type": "DNae007",
+      "DN_relay_weight": 1.0,
+      "relay_GNG458_weight": 3.0,
+      "relay_first_cycle_spikes_ms": [
+        227
+      ]
+    },
+    {
+      "DN": "10045",
+      "relay_id": "12590",
+      "relay_type": "DNg22",
+      "DN_relay_weight": 1.0,
+      "relay_GNG458_weight": 1.0,
+      "relay_first_cycle_spikes_ms": [
+        223,
+        239
+      ]
+    },
+    {
+      "DN": "10045",
+      "relay_id": "13022",
+      "relay_type": "DNge139",
+      "DN_relay_weight": 1.0,
+      "relay_GNG458_weight": 1.0,
+      "relay_first_cycle_spikes_ms": [
+        219,
+        238
+      ]
+    },
+    {
+      "DN": "10045",
+      "relay_id": "14157",
+      "relay_type": "DNge173",
+      "DN_relay_weight": 1.0,
+      "relay_GNG458_weight": 9.0,
+      "relay_first_cycle_spikes_ms": [
+        261
+      ]
+    },
+    {
+      "DN": "10045",
+      "relay_id": "15326",
+      "relay_type": "DNg109",
+      "DN_relay_weight": 1.0,
+      "relay_GNG458_weight": 1.0,
+      "relay_first_cycle_spikes_ms": [
+        221
+      ]
+    },
+    {
+      "DN": "10045",
+      "relay_id": "521317",
+      "relay_type": "DNp104",
+      "DN_relay_weight": 1.0,
+      "relay_GNG458_weight": 2.0,
+      "relay_first_cycle_spikes_ms": [
+        229,
+        244
+      ]
+    },
+    {
+      "DN": "10045",
+      "relay_id": "521763",
+      "relay_type": "CL339",
+      "DN_relay_weight": 1.0,
+      "relay_GNG458_weight": 1.0,
+      "relay_first_cycle_spikes_ms": [
+        232,
+        249
+      ]
+    },
+    {
+      "DN": "10056",
+      "relay_id": "10045",
+      "relay_type": "DNg100",
+      "DN_relay_weight": 119.0,
+      "relay_GNG458_weight": 1.0,
+      "relay_first_cycle_spikes_ms": [
+        202,
+        215,
+        224
+      ]
+    },
+    {
+      "DN": "10056",
+      "relay_id": "10103",
+      "relay_type": "GNG104",
+      "DN_relay_weight": 18.0,
+      "relay_GNG458_weight": 1.0,
+      "relay_first_cycle_spikes_ms": [
+        217
+      ]
+    },
+    {
+      "DN": "10056",
+      "relay_id": "10191",
+      "relay_type": "GNG661",
+      "DN_relay_weight": 1.0,
+      "relay_GNG458_weight": 1.0,
+      "relay_first_cycle_spikes_ms": [
+        235
+      ]
+    },
+    {
+      "DN": "10056",
+      "relay_id": "10420",
+      "relay_type": "GNG667",
+      "DN_relay_weight": 28.0,
+      "relay_GNG458_weight": 1.0,
+      "relay_first_cycle_spikes_ms": [
+        206,
+        220
+      ]
+    },
+    {
+      "DN": "10056",
+      "relay_id": "10544",
+      "relay_type": "DNg88",
+      "DN_relay_weight": 1.0,
+      "relay_GNG458_weight": 5.0,
+      "relay_first_cycle_spikes_ms": [
+        218
+      ]
+    },
+    {
+      "DN": "10056",
+      "relay_id": "10971",
+      "relay_type": "DNa11",
+      "DN_relay_weight": 15.0,
+      "relay_GNG458_weight": 1.0,
+      "relay_first_cycle_spikes_ms": [
+        234
+      ]
+    },
+    {
+      "DN": "10056",
+      "relay_id": "11297",
+      "relay_type": "DNbe003",
+      "DN_relay_weight": 1.0,
+      "relay_GNG458_weight": 2.0,
+      "relay_first_cycle_spikes_ms": [
+        211,
+        230
+      ]
+    },
+    {
+      "DN": "10056",
+      "relay_id": "12027",
+      "relay_type": "DNp101",
+      "DN_relay_weight": 1.0,
+      "relay_GNG458_weight": 11.0,
+      "relay_first_cycle_spikes_ms": [
+        214
+      ]
+    },
+    {
+      "DN": "10056",
+      "relay_id": "15192",
+      "relay_type": "AN05B097",
+      "DN_relay_weight": 2.0,
+      "relay_GNG458_weight": 1.0,
+      "relay_first_cycle_spikes_ms": [
+        235
+      ]
+    },
+    {
+      "DN": "10056",
+      "relay_id": "15326",
+      "relay_type": "DNg109",
+      "DN_relay_weight": 1.0,
+      "relay_GNG458_weight": 1.0,
+      "relay_first_cycle_spikes_ms": [
+        221
+      ]
+    },
+    {
+      "DN": "10056",
+      "relay_id": "521763",
+      "relay_type": "CL339",
+      "DN_relay_weight": 1.0,
+      "relay_GNG458_weight": 1.0,
+      "relay_first_cycle_spikes_ms": [
+        232,
+        249
+      ]
+    }
+  ]
+}
