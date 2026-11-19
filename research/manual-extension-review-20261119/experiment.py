@@ -5,13 +5,15 @@ from pathlib import Path
 import argparse,hashlib,json,sys,time,os
 import numpy as np
 R=Path(__file__).resolve().parent
-P=Path(os.environ.get('MANUAL_R2_PACKAGE',str(R.parents[1]/'research/manual-full-rerun-20261119/cache/extracted/Manual_FreeBody'))))
+P=Path(os.environ.get('MANUAL_R2_PACKAGE',str(R.parents[1]/'research/manual-full-rerun-20261119/cache/extracted/Manual_FreeBody')))
 sys.path.insert(0,str(P/'02_code'))
 from flymodel import Model
-CASES=['quiet','DN_drive','core_silenced','new_glutamate_zero','core_release_x2','EPG_left','DN_plus_9A','DN_plus_Delta7']
+CASES=['quiet','DN_drive','core_silenced','new_glutamate_zero','core_release_x2','EPG_left','DN_plus_9A','DN_plus_Delta7','E1_silenced','E2_silenced','I1_silenced','I2_silenced']
 def run(case):
  m=Model(R/'cache/extended_model.yaml');oldn=3988;new=np.arange(len(m.ids))>=oldn;core=np.array([(n.get('type') in {'IN17A001','INXXX466','IN16B036'}) for n in m.neurons]);events=list(m.config['experiments']['DN_drive']['events']);silenced=[];changes=[]
  if case=='quiet':events=[]
+ if case in {'E1_silenced','E2_silenced','I1_silenced','I2_silenced'}:
+  target={'E1_silenced':'IN17A001','E2_silenced':'INXXX466','I1_silenced':'IN16B036','I2_silenced':'IN19A007'}[case];silenced=m.neuron_ids(type=target);changes.append({'ablate_type':target,'ablate_ids':silenced})
  if case=='core_silenced':silenced=[m.ids[i] for i in np.flatnonzero(core)];changes.append({'ablate_ids':silenced})
  if case=='new_glutamate_zero':
   mask=new&np.array([n.get('predictedNt')=='glutamate' for n in m.neurons]);m.weight[mask[m.pre]]=0;changes.append({'new_glutamate_outgoing_sign':0,'note':'uncertainty sensitivity, not presumed correct receptor'})
@@ -33,7 +35,7 @@ def run(case):
  # Exact directed motif edges are read from effective graph; zeros from sensitivity are retained explicitly.
  ids=['10045','10056','800173','800288','800863','903216','801884','803183'];idx=np.array([m.lookup[b] for b in ids]);sel=np.isin(m.pre,idx)&np.isin(m.post,idx)
  edges=[{'pre':m.ids[a],'post':m.ids[b],'effective_signed_count':float(w)} for a,b,w in zip(m.pre[sel],m.post[sel],m.weight[sel])]
- mn=np.array([n.get('superclass')=='motor_neuron' for n in m.neurons]);report={'case':case,'events':events,'changes':changes,'model_sha256':m.sha256,'cell_parameters_sha256':hashlib.sha256(m.cells.tobytes()).hexdigest(),'effective_weights_sha256':hashlib.sha256(m.weight.tobytes()).hexdigest(),'elapsed_seconds':elapsed,'spikes_total':int(sp.sum()),'MN_count':int(mn.sum()),'active_MN':int((sp[200:1500,mn].sum(axis=0)>0).sum()),'MN_spikes_before_during_after':[int(sp[a:b,mn].sum()) for a,b in [(200,600),(600,1100),(1100,1500)]],'groups':groups,'core_direct_edges':edges,'raw_output':{'name':raw.name,'sha256':hashlib.sha256(raw.read_bytes()).hexdigest(),'bytes':raw.stat().st_size},'scope':'model mechanistic test; no experimental behavior validation; no sensory/body closed loop'}
+ mn=np.array([n.get('superclass')=='vnc_motor' for n in m.neurons]);report={'case':case,'events':events,'changes':changes,'model_sha256':m.sha256,'cell_parameters_sha256':hashlib.sha256(m.cells.tobytes()).hexdigest(),'effective_weights_sha256':hashlib.sha256(m.weight.tobytes()).hexdigest(),'elapsed_seconds':elapsed,'spikes_total':int(sp.sum()),'MN_count':int(mn.sum()),'active_MN':int((sp[200:1500,mn].sum(axis=0)>0).sum()),'MN_spikes_before_during_after':[int(sp[a:b,mn].sum()) for a,b in [(200,600),(600,1100),(1100,1500)]],'groups':groups,'core_direct_edges':edges,'raw_output':{'name':raw.name,'sha256':hashlib.sha256(raw.read_bytes()).hexdigest(),'bytes':raw.stat().st_size},'scope':'model mechanistic test; no experimental behavior validation; no sensory/body closed loop'}
  (out/(case+'.json')).write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n');print(case,report['spikes_total'],report['active_MN'],round(elapsed,1),flush=True)
 if __name__=='__main__':
  p=argparse.ArgumentParser();p.add_argument('cases',nargs='+',choices=CASES);a=p.parse_args()

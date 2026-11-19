@@ -1,0 +1,12 @@
+{
+  "failed_attempts": [
+    {
+      "stage": "initial_runner_invocation",
+      "reason": "unmatched parenthesis in package-path expression; fixed and py_compile passed; no simulation produced"
+    },
+    {
+      "stage": "159-cell-extension assays",
+      "reason": "stopped before completing condition to add source-identified I2 IN19A007 and E3 IN19B012, and fix MN diagnostic selector vnc_motor; no results promoted"
+    }
+  ]
+}

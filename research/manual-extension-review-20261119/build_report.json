@@ -1,8 +1,8 @@
 {
   "base_sha256": "858d1818b8d8394c95bb62a6ce60474cb534a83b94265ef8615e367c110d262c",
-  "extended_sha256": "0d1ef12081269a1da6f5c8e4a271b6bdcb88dbbd880abfa566eea5c3f36a0481",
+  "extended_sha256": "5891c76f84ef3c876496efcf70828fc4cf7f4154e31659c77f92051b87e48314",
   "original_cells": 3988,
-  "added_cells": 159,
+  "added_cells": 171,
   "added_types": {
     "DNb05": 2,
     "Delta7": 42,
@@ -18,16 +18,18 @@
     "DNg12_f": 4,
     "DNg12_b": 10,
     "EPGt": 4,
+    "IN19B012": 6,
+    "IN19A007": 6,
     "IN17A001": 3,
     "INXXX466": 6,
     "IN16B036": 6
   },
   "original_stored_edges": 534428,
-  "added_stored_edges": 13002,
-  "extended_effective_edges": 497601,
+  "added_stored_edges": 14911,
+  "extended_effective_edges": 499395,
   "original_effective_edges": 485045,
   "original_arrays_unchanged": true,
-  "render_positions": 4147,
+  "render_positions": 4159,
   "model_path": "cache/extended_model.yaml",
   "template_status": "unmeasured borrowed priors",
   "extension_status": "built_not_functionally_validated"

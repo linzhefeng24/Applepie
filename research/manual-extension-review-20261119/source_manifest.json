@@ -20,6 +20,6 @@
       "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/body-neurotransmitters-male-cns-v1.0.feather"
     }
   ],
-  "delta_sha256": "591412bd5eba2ddaf025f3012f20df12c78846635aabf781253a98d944a7d30d",
+  "delta_sha256": "95a102fcd8f01c032ee8add30764bbc1291ad46c2cd66df11af8f09cebc2546d",
   "absence_scope": "significant-only minconf0.5; absence is not biological absence"
 }

@@ -16,6 +16,22 @@
     "present_in_original": true
   },
   {
+    "bodyId": 800089,
+    "type": "IN19B012",
+    "mancBodyid": 10790.0,
+    "somaSide": "R",
+    "somaNeuromere": "T3",
+    "present_in_original": false
+  },
+  {
+    "bodyId": 800103,
+    "type": "IN19A007",
+    "mancBodyid": 10252.0,
+    "somaSide": "R",
+    "somaNeuromere": "T2",
+    "present_in_original": false
+  },
+  {
     "bodyId": 800114,
     "type": "IN17A001",
     "mancBodyid": 10558.0,
@@ -24,11 +40,35 @@
     "present_in_original": true
   },
   {
+    "bodyId": 800119,
+    "type": "IN19A007",
+    "mancBodyid": 10346.0,
+    "somaSide": "R",
+    "somaNeuromere": "T3",
+    "present_in_original": false
+  },
+  {
     "bodyId": 800173,
     "type": "IN17A001",
     "mancBodyid": 10707.0,
     "somaSide": "L",
     "somaNeuromere": "T1",
+    "present_in_original": false
+  },
+  {
+    "bodyId": 800216,
+    "type": "IN19B012",
+    "mancBodyid": 10715.0,
+    "somaSide": "R",
+    "somaNeuromere": "T1",
+    "present_in_original": false
+  },
+  {
+    "bodyId": 800233,
+    "type": "IN19A007",
+    "mancBodyid": 11680.0,
+    "somaSide": "L",
+    "somaNeuromere": "T2",
     "present_in_original": false
   },
   {
@@ -40,9 +80,65 @@
     "present_in_original": false
   },
   {
+    "bodyId": 800374,
+    "type": "IN19A007",
+    "mancBodyid": 10242.0,
+    "somaSide": "L",
+    "somaNeuromere": "T1",
+    "present_in_original": false
+  },
+  {
+    "bodyId": 800411,
+    "type": "IN19A007",
+    "mancBodyid": 10427.0,
+    "somaSide": "R",
+    "somaNeuromere": "T1",
+    "present_in_original": false
+  },
+  {
+    "bodyId": 800494,
+    "type": "IN19A007",
+    "mancBodyid": 10215.0,
+    "somaSide": "L",
+    "somaNeuromere": "T3",
+    "present_in_original": false
+  },
+  {
+    "bodyId": 800583,
+    "type": "IN19B012",
+    "mancBodyid": 11109.0,
+    "somaSide": "L",
+    "somaNeuromere": "T2",
+    "present_in_original": false
+  },
+  {
+    "bodyId": 800837,
+    "type": "IN19B012",
+    "mancBodyid": 11093.0,
+    "somaSide": "R",
+    "somaNeuromere": "T2",
+    "present_in_original": false
+  },
+  {
     "bodyId": 800863,
     "type": "INXXX466",
     "mancBodyid": 11751.0,
+    "somaSide": "L",
+    "somaNeuromere": "T1",
+    "present_in_original": false
+  },
+  {
+    "bodyId": 800879,
+    "type": "IN19B012",
+    "mancBodyid": 11984.0,
+    "somaSide": "L",
+    "somaNeuromere": "T3",
+    "present_in_original": false
+  },
+  {
+    "bodyId": 801061,
+    "type": "IN19B012",
+    "mancBodyid": 154691.0,
     "somaSide": "L",
     "somaNeuromere": "T1",
     "present_in_original": false

@@ -10,7 +10,7 @@ import yaml
 R=Path(__file__).resolve().parent
 BASE_SHA='858d1818b8d8394c95bb62a6ce60474cb534a83b94265ef8615e367c110d262c'
 DEFAULT=R.parents[1]/'research/manual-full-rerun-20261119/cache/extracted/Manual_FreeBody'
-TYPES={'EPG','EPGt','Delta7','DNb05','DNb06','DNg11','IN17A001','INXXX466','IN16B036'}
+TYPES={'EPG','EPGt','Delta7','DNb05','DNb06','DNg11','IN17A001','INXXX466','IN16B036','IN19A007','IN19B012'}
 def digest(p): return hashlib.sha256(Path(p).read_bytes()).hexdigest()
 def encode(**arrays):
  b=io.BytesIO();np.savez_compressed(b,**arrays);raw=b.getvalue()
@@ -26,7 +26,7 @@ def build(package,sources=None):
   ntrows=feather.read_table(npth,columns=['body','consensus_nt','predicted_nt','predicted_nt_confidence']).to_pylist();wanted={a['bodyId'] for a in selected};nt={x['body']:x for x in ntrows if x['body'] in wanted}
   neurons=[];prior=[];rows=[];signs=[]
   for a in selected:
-   t=a['type'];kind='PFL3' if t in {'EPG','EPGt','Delta7'} else 'DNb08' if t in {'DNb05','DNb06'} else 'IN17A001' if t in {'IN17A001','INXXX466'} else 'DNg13' if t.startswith('DNg') else None
+   t=a['type'];kind='PFL3' if t in {'EPG','EPGt','Delta7'} else 'DNb08' if t in {'DNb05','DNb06'} else 'IN17A001' if t in {'IN17A001','INXXX466','IN19B012'} else 'DNg13' if t.startswith('DNg') else None
    # Inhibitory VNC template is selected by explicit NT/class identity, not a sorted unique-row number.
    cand=[i for i,n in enumerate(m.neurons) if (n.get('type')==kind if kind else n.get('superclass')=='vnc_intrinsic' and n.get('predictedNt')=='glutamate')]
    if not cand:raise ValueError(('Missing semantic prior',t,kind))
@@ -38,7 +38,7 @@ def build(package,sources=None):
   keep=np.isin(a,allids)&np.isin(b,allids)&(np.isin(a,newids)|np.isin(b,newids));aa=a[keep];bb=b[keep]
   delta=dict(pre=np.array([lookup[int(v)] for v in aa],dtype=np.int32),post=np.array([lookup[int(v)] for v in bb],dtype=np.int32),synapse_count=w[keep],cells=np.array(rows),sign=np.array(signs,dtype=m.edges['transmitter_sign'].dtype))
   np.savez_compressed(R/'extension_delta.npz',**delta);save('new_neurons.json',neurons);save('parameter_priors.json',prior)
-  core=[{k:a[k] for k in ['bodyId','type','mancBodyid','somaSide','somaNeuromere']}|{'present_in_original':str(a['bodyId']) in m.lookup} for a in ann if a['type'] in {'IN17A001','INXXX466','IN16B036'}];save('paper_core_crosswalk.json',core)
+  core=[{k:a[k] for k in ['bodyId','type','mancBodyid','somaSide','somaNeuromere']}|{'present_in_original':str(a['bodyId']) in m.lookup} for a in ann if a['type'] in {'IN17A001','INXXX466','IN16B036','IN19A007','IN19B012'}];save('paper_core_crosswalk.json',core)
   save('source_manifest.json',{'base_model_sha256':BASE_SHA,'sources':[{'name':p.name,'bytes':p.stat().st_size,'sha256':digest(p),'url':'https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/'+p.name} for p in [ap,wp,npth]],'delta_sha256':digest(R/'extension_delta.npz'),'absence_scope':'significant-only minconf0.5; absence is not biological absence'})
  else:
   neurons=json.loads((R/'new_neurons.json').read_text());delta=dict(np.load(R/'extension_delta.npz',allow_pickle=False));assert digest(R/'extension_delta.npz')==json.loads((R/'source_manifest.json').read_text())['delta_sha256']
