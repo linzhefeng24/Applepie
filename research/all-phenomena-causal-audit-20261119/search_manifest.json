@@ -1,0 +1,126 @@
+[
+  {
+    "query": "Drosophila MF14 LUL152",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?format=json&pageSize=8&query=Drosophila%20MF14%20LUL152",
+    "provider": "Europe PMC",
+    "retrieval_UTC": "2026-11-19T12:16:56.426667+00:00",
+    "file": "epmc-62088ff453.json",
+    "sha256": "d3adf348b646f15663990a85051fd7220e937a2b1ac430a9765f5f2aa4019ecb",
+    "bytes": 184,
+    "hits": []
+  },
+  {
+    "query": "Drosophila LUL130 connectome",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?format=json&pageSize=8&query=Drosophila%20LUL130%20connectome",
+    "provider": "Europe PMC",
+    "retrieval_UTC": "2026-11-19T12:16:58.248179+00:00",
+    "file": "epmc-6ccd1fc2c5.json",
+    "sha256": "a451f589f8d1d49e57900dfa09de8eb5cc6ba0a6a96dd70fb6605624acdf2ec1",
+    "bytes": 190,
+    "hits": []
+  },
+  {
+    "query": "Drosophila moonwalker ascending MAN connectome",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?format=json&pageSize=8&query=Drosophila%20moonwalker%20ascending%20MAN%20connectome",
+    "provider": "Europe PMC",
+    "retrieval_UTC": "2026-11-19T12:17:05.473784+00:00",
+    "file": "epmc-bb2a0f0d12.json",
+    "sha256": "95a8c27b87a2fea558fcaf92b4b2e80e73403575e18a4dc4e4c03a99bcbc5149",
+    "bytes": 3647,
+    "hits": [
+      {
+        "title": "Neural circuit mechanisms underlying context-specific halting in  <i>Drosophila</i>",
+        "doi": "10.1101/2023.09.25.559438",
+        "pmcid": null,
+        "id": "PPR731665"
+      },
+      {
+        "title": "Neural circuit mechanisms underlying context-specific halting in Drosophila.",
+        "doi": "10.1038/s41586-024-07854-7",
+        "pmcid": "PMC11446846",
+        "id": "39358520"
+      },
+      {
+        "title": "The &lt;i&gt;Drosophila&lt;/i&gt; Split Gal4 System for Neural Circuit Mapping.",
+        "doi": "10.3389/fncir.2020.603397",
+        "pmcid": "PMC7680822",
+        "id": "33240047"
+      },
+      {
+        "title": "Olfactory stimuli and moonwalker SEZ neurons can drive backward locomotion in Drosophila.",
+        "doi": "10.1016/j.cub.2022.01.035",
+        "pmcid": "PMC8926844",
+        "id": "35139358"
+      }
+    ]
+  },
+  {
+    "query": "Drosophila CxHP8 connectome hair plate",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?format=json&pageSize=8&query=Drosophila%20CxHP8%20connectome%20hair%20plate",
+    "provider": "Europe PMC",
+    "retrieval_UTC": "2026-11-19T12:17:08.366580+00:00",
+    "file": "epmc-83273e1091.json",
+    "sha256": "79e914b78cdb2a70dde78d8da7d6cf3f0526de41407f8b20d9ae0dfeeb5e7d53",
+    "bytes": 1716,
+    "hits": [
+      {
+        "title": "Proprioceptive limit detectors contribute to sensorimotor control of the Drosophila leg.",
+        "doi": "10.1038/s41467-026-69333-z",
+        "pmcid": "PMC13009157",
+        "id": "41680191"
+      },
+      {
+        "title": "Proprioceptive limit detectors mediate sensorimotor control of the  <i>Drosophila</i>  leg",
+        "doi": "10.1101/2025.05.15.654260",
+        "pmcid": null,
+        "id": "PPR1022895"
+      }
+    ]
+  },
+  {
+    "query": "Drosophila DopaMeander",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?format=json&pageSize=8&query=Drosophila%20DopaMeander",
+    "provider": "Europe PMC",
+    "retrieval_UTC": "2026-11-19T12:17:18.130216+00:00",
+    "file": "epmc-a18e97442a.json",
+    "sha256": "224a37c9c37023e8767828ca9bddc124116dc4f70cf20febe4e1208c55bc0eda",
+    "bytes": 2396,
+    "hits": [
+      {
+        "title": "Control of walking direction by descending and dopaminergic neurons in Drosophila.",
+        "doi": "10.1016/j.cub.2026.06.045",
+        "pmcid": null,
+        "id": "42442357"
+      },
+      {
+        "title": "Control of walking direction by descending and dopaminergic neurons in  <i>Drosophila</i>",
+        "doi": "10.1101/2025.07.22.666129",
+        "pmcid": null,
+        "id": "PPR1055921"
+      },
+      {
+        "title": "Connectomes: a re-emerging hub dataset for neuroscience",
+        "doi": null,
+        "pmcid": "PMC13659455",
+        "id": "PMC13659455"
+      }
+    ]
+  },
+  {
+    "query": "Drosophila presynaptic inhibition hook claw chief 9A",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?format=json&pageSize=8&query=Drosophila%20presynaptic%20inhibition%20hook%20claw%20chief%209A",
+    "provider": "Europe PMC",
+    "retrieval_UTC": "2026-11-19T12:17:27.592150+00:00",
+    "file": "epmc-7def82ef38.json",
+    "sha256": "6b68a5e171bb9a0b26f9e1cdff988127461572cd56a3feca2344d0d1433c81fd",
+    "bytes": 1077,
+    "hits": [
+      {
+        "title": "Selective presynaptic inhibition of leg proprioception in behaving Drosophila.",
+        "doi": "10.1038/s41586-025-09554-2",
+        "pmcid": "PMC13070307",
+        "id": "40963018"
+      }
+    ]
+  }
+]

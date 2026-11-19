@@ -1,0 +1,1084 @@
+{
+  "DNg100": {
+    "body_ids": [
+      "10045",
+      "10056"
+    ],
+    "original_count": 2,
+    "expanded_count": 2,
+    "identity_status": "official_type",
+    "note": "",
+    "source": "MaleCNS v1.0 annotation"
+  },
+  "DNb08": {
+    "body_ids": [
+      "12044",
+      "12075",
+      "12189",
+      "12550"
+    ],
+    "original_count": 4,
+    "expanded_count": 4,
+    "identity_status": "official_type",
+    "note": "",
+    "source": "MaleCNS v1.0 annotation"
+  },
+  "DNp09": {
+    "body_ids": [
+      "10783",
+      "11177"
+    ],
+    "original_count": 2,
+    "expanded_count": 2,
+    "identity_status": "official_type",
+    "note": "",
+    "source": "MaleCNS v1.0 annotation"
+  },
+  "MDN": {
+    "body_ids": [
+      "10763",
+      "11288",
+      "11332",
+      "12348"
+    ],
+    "original_count": 4,
+    "expanded_count": 4,
+    "identity_status": "official_type",
+    "note": "",
+    "source": "MaleCNS v1.0 annotation"
+  },
+  "DNa01": {
+    "body_ids": [
+      "10442",
+      "10760"
+    ],
+    "original_count": 2,
+    "expanded_count": 2,
+    "identity_status": "official_type",
+    "note": "",
+    "source": "MaleCNS v1.0 annotation"
+  },
+  "DNa02": {
+    "body_ids": [
+      "10360",
+      "523769"
+    ],
+    "original_count": 2,
+    "expanded_count": 2,
+    "identity_status": "official_type",
+    "note": "",
+    "source": "MaleCNS v1.0 annotation"
+  },
+  "DNa03": {
+    "body_ids": [
+      "10975",
+      "519624"
+    ],
+    "original_count": 2,
+    "expanded_count": 2,
+    "identity_status": "official_type",
+    "note": "",
+    "source": "MaleCNS v1.0 annotation"
+  },
+  "DNg13": {
+    "body_ids": [
+      "11074",
+      "512006"
+    ],
+    "original_count": 2,
+    "expanded_count": 2,
+    "identity_status": "official_type",
+    "note": "",
+    "source": "MaleCNS v1.0 annotation"
+  },
+  "DNb05": {
+    "body_ids": [
+      "10065",
+      "10118"
+    ],
+    "original_count": 2,
+    "expanded_count": 2,
+    "identity_status": "official_type",
+    "note": "",
+    "source": "MaleCNS v1.0 annotation"
+  },
+  "DNb06": {
+    "body_ids": [
+      "10888",
+      "11067"
+    ],
+    "original_count": 2,
+    "expanded_count": 2,
+    "identity_status": "official_type",
+    "note": "",
+    "source": "MaleCNS v1.0 annotation"
+  },
+  "DNg75": {
+    "body_ids": [
+      "10192",
+      "520300"
+    ],
+    "original_count": 2,
+    "expanded_count": 2,
+    "identity_status": "official_type",
+    "note": "",
+    "source": "MaleCNS v1.0 annotation"
+  },
+  "DNg97": {
+    "body_ids": [
+      "13805",
+      "230783"
+    ],
+    "original_count": 2,
+    "expanded_count": 2,
+    "identity_status": "official_type",
+    "note": "",
+    "source": "MaleCNS v1.0 annotation"
+  },
+  "DNg55": {
+    "body_ids": [
+      "15105"
+    ],
+    "original_count": 1,
+    "expanded_count": 1,
+    "identity_status": "official_type",
+    "note": "",
+    "source": "MaleCNS v1.0 annotation"
+  },
+  "DNg16": {
+    "body_ids": [
+      "10177",
+      "10440"
+    ],
+    "original_count": 2,
+    "expanded_count": 2,
+    "identity_status": "official_type",
+    "note": "",
+    "source": "MaleCNS v1.0 annotation"
+  },
+  "DNg74": {
+    "body_ids": [],
+    "original_count": 0,
+    "expanded_count": 0,
+    "identity_status": "official_type",
+    "note": "",
+    "source": "MaleCNS v1.0 annotation"
+  },
+  "DNg11": {
+    "body_ids": [
+      "14686",
+      "15568",
+      "16399",
+      "18562",
+      "19633",
+      "909612"
+    ],
+    "original_count": 6,
+    "expanded_count": 6,
+    "identity_status": "official_type",
+    "note": "",
+    "source": "MaleCNS v1.0 annotation"
+  },
+  "PFL2": {
+    "body_ids": [
+      "11557",
+      "11673",
+      "13031",
+      "13490",
+      "14729",
+      "19715",
+      "27492",
+      "511842",
+      "513034",
+      "518375",
+      "520573",
+      "522853"
+    ],
+    "original_count": 12,
+    "expanded_count": 12,
+    "identity_status": "official_type",
+    "note": "",
+    "source": "MaleCNS v1.0 annotation"
+  },
+  "PFL3": {
+    "body_ids": [
+      "15210",
+      "17000",
+      "17286",
+      "17290",
+      "18327",
+      "18803",
+      "18851",
+      "19009",
+      "23159",
+      "26038",
+      "26488",
+      "29836",
+      "35322",
+      "79549",
+      "108478",
+      "513032",
+      "513266",
+      "518378",
+      "519346",
+      "519351",
+      "520811",
+      "523032",
+      "530071",
+      "567101"
+    ],
+    "original_count": 24,
+    "expanded_count": 24,
+    "identity_status": "official_type",
+    "note": "",
+    "source": "MaleCNS v1.0 annotation"
+  },
+  "EPG": {
+    "body_ids": [
+      "10539",
+      "11307",
+      "11503",
+      "11874",
+      "11987",
+      "11989",
+      "12449",
+      "13217",
+      "14507",
+      "14727",
+      "15616",
+      "15713",
+      "16360",
+      "19125",
+      "19825",
+      "84758",
+      "88342",
+      "92188",
+      "107195",
+      "131313",
+      "512305",
+      "512513",
+      "512514",
+      "512928",
+      "513033",
+      "513284",
+      "513463",
+      "513464",
+      "513517",
+      "513520",
+      "514126",
+      "515675",
+      "519140",
+      "519144",
+      "519328",
+      "519941",
+      "520581",
+      "520812",
+      "520818",
+      "521409",
+      "521812",
+      "521813",
+      "523786",
+      "524073",
+      "556346",
+      "556347"
+    ],
+    "original_count": 46,
+    "expanded_count": 46,
+    "identity_status": "official_type",
+    "note": "",
+    "source": "MaleCNS v1.0 annotation"
+  },
+  "Delta7": {
+    "body_ids": [
+      "10513",
+      "11184",
+      "14509",
+      "14806",
+      "14816",
+      "15398",
+      "15399",
+      "15409",
+      "15495",
+      "15654",
+      "15837",
+      "15839",
+      "15851",
+      "15904",
+      "16110",
+      "16180",
+      "16234",
+      "16412",
+      "16476",
+      "16540",
+      "16553",
+      "16869",
+      "17024",
+      "17143",
+      "17379",
+      "17753",
+      "17804",
+      "18639",
+      "18823",
+      "35324",
+      "434891",
+      "511841",
+      "515294",
+      "515961",
+      "517417",
+      "519331",
+      "519332",
+      "522994",
+      "524074",
+      "529318",
+      "533725",
+      "568155"
+    ],
+    "original_count": 42,
+    "expanded_count": 42,
+    "identity_status": "official_type",
+    "note": "",
+    "source": "MaleCNS v1.0 annotation"
+  },
+  "LAL010": {
+    "body_ids": [
+      "14986",
+      "519129"
+    ],
+    "original_count": 2,
+    "expanded_count": 2,
+    "identity_status": "official_type",
+    "note": "",
+    "source": "MaleCNS v1.0 annotation"
+  },
+  "LBL40": {
+    "body_ids": [
+      "801214",
+      "801246"
+    ],
+    "original_count": 2,
+    "expanded_count": 2,
+    "identity_status": "official_type",
+    "note": "",
+    "source": "MaleCNS v1.0 annotation"
+  },
+  "P9": {
+    "body_ids": [
+      "10783",
+      "11177"
+    ],
+    "original_count": 2,
+    "expanded_count": 2,
+    "identity_status": "official_type",
+    "note": "Does not include DNp71 or pIP9/aSP9 names.",
+    "source": "Bidaye2020 P9=DNp09; MaleCNS exact type"
+  },
+  "BPN": {
+    "body_ids": [
+      "32983",
+      "35104",
+      "35781",
+      "36513",
+      "60694",
+      "63848",
+      "122182",
+      "519569",
+      "520058",
+      "520064"
+    ],
+    "original_count": 10,
+    "expanded_count": 10,
+    "identity_status": "candidate_type_family",
+    "note": "Male CL210_a candidate population, not exact female driver coverage.",
+    "source": "Prior source crosswalk; Bidaye2020/Sapkal2024 cell-type annotations"
+  },
+  "FG": {
+    "body_ids": [
+      "26344",
+      "520884"
+    ],
+    "original_count": 2,
+    "expanded_count": 2,
+    "identity_status": "official_type",
+    "note": "type-level homolog",
+    "source": "Sapkal2024 SupplementaryTable3 CB0890→MaleCNS GNG458"
+  },
+  "BB": {
+    "body_ids": [
+      "11374",
+      "188947"
+    ],
+    "original_count": 2,
+    "expanded_count": 2,
+    "identity_status": "official_type",
+    "note": "",
+    "source": "Sapkal2024 SupplementaryTable3"
+  },
+  "BRK": {
+    "body_ids": [
+      "14113",
+      "14863",
+      "14973",
+      "16542",
+      "17510",
+      "523843"
+    ],
+    "original_count": 6,
+    "expanded_count": 6,
+    "identity_status": "official_type",
+    "note": "",
+    "source": "Sapkal2024 SupplementaryTable3; type-guarded MANC crosswalk"
+  },
+  "BON1": {
+    "body_ids": [
+      "39880",
+      "800041"
+    ],
+    "original_count": 2,
+    "expanded_count": 2,
+    "identity_status": "official_type",
+    "note": "",
+    "source": "Sapkal2024 SupplementaryTable3; type-guarded MANC crosswalk"
+  },
+  "E1": {
+    "body_ids": [
+      "800003",
+      "800009",
+      "800114",
+      "800173",
+      "800288",
+      "818556"
+    ],
+    "original_count": 6,
+    "expanded_count": 6,
+    "identity_status": "official_type",
+    "note": "",
+    "source": "Pugliese2026 exact role type mapping"
+  },
+  "E2": {
+    "body_ids": [
+      "800863",
+      "801149",
+      "801429",
+      "801728",
+      "802025",
+      "903216"
+    ],
+    "original_count": 6,
+    "expanded_count": 6,
+    "identity_status": "official_type",
+    "note": "",
+    "source": "Pugliese2026 exact role type mapping"
+  },
+  "I1": {
+    "body_ids": [
+      "801257",
+      "801884",
+      "801916",
+      "803183",
+      "903139",
+      "904079"
+    ],
+    "original_count": 6,
+    "expanded_count": 6,
+    "identity_status": "official_type",
+    "note": "",
+    "source": "Pugliese2026 exact role type mapping"
+  },
+  "I2": {
+    "body_ids": [
+      "800103",
+      "800119",
+      "800233",
+      "800374",
+      "800411",
+      "800494"
+    ],
+    "original_count": 6,
+    "expanded_count": 6,
+    "identity_status": "official_type",
+    "note": "",
+    "source": "Pugliese2026 exact role type mapping"
+  },
+  "E3": {
+    "body_ids": [
+      "800089",
+      "800216",
+      "800583",
+      "800837",
+      "800879",
+      "801061"
+    ],
+    "original_count": 6,
+    "expanded_count": 6,
+    "identity_status": "official_type",
+    "note": "",
+    "source": "Pugliese2026 exact role type mapping"
+  },
+  "E4": {
+    "body_ids": [
+      "800403",
+      "800646",
+      "800897",
+      "800557",
+      "800663",
+      "903211"
+    ],
+    "original_count": 3,
+    "expanded_count": 6,
+    "identity_status": "official_type",
+    "note": "",
+    "source": "Pugliese2026 exact role type mapping"
+  },
+  "E5": {
+    "body_ids": [
+      "800072",
+      "800211",
+      "800286",
+      "902520",
+      "929612",
+      "800375"
+    ],
+    "original_count": 5,
+    "expanded_count": 6,
+    "identity_status": "official_type",
+    "note": "",
+    "source": "Pugliese2026 exact role type mapping"
+  },
+  "chief_9A": {
+    "body_ids": [
+      "805450",
+      "805777",
+      "802115",
+      "803114",
+      "804940",
+      "805004"
+    ],
+    "original_count": 2,
+    "expanded_count": 6,
+    "identity_status": "official_type",
+    "note": "",
+    "source": "Dallmann2025 author MANC code plus MaleCNS type-guarded crosswalk"
+  },
+  "01A": {
+    "body_ids": [
+      "800079",
+      "800101",
+      "801067",
+      "801084",
+      "801312",
+      "801550",
+      "801579",
+      "802438",
+      "802472",
+      "802483",
+      "802975",
+      "803421",
+      "803427",
+      "803502",
+      "804028",
+      "804117",
+      "804378",
+      "804473",
+      "804516",
+      "804529",
+      "804551",
+      "804845",
+      "805168",
+      "805543",
+      "806122",
+      "806370",
+      "806827",
+      "806881",
+      "807059",
+      "807489",
+      "807492",
+      "807725",
+      "807845",
+      "807872",
+      "808289",
+      "808359",
+      "808620",
+      "809135",
+      "809378",
+      "809395",
+      "809722",
+      "809744",
+      "810506",
+      "810887",
+      "811201",
+      "811225",
+      "811265",
+      "811357",
+      "811625",
+      "817719",
+      "818970",
+      "820975",
+      "822110",
+      "860565",
+      "902619",
+      "903079",
+      "903487",
+      "906187",
+      "906682",
+      "911838",
+      "934946"
+    ],
+    "original_count": 61,
+    "expanded_count": 61,
+    "identity_status": "hemilineage_population_not_identified_subtype",
+    "note": "",
+    "source": "MaleCNS v1.0 annotation"
+  },
+  "09A": {
+    "body_ids": [
+      "800126",
+      "800153",
+      "800296",
+      "800424",
+      "800434",
+      "800685",
+      "800716",
+      "800833",
+      "800876",
+      "800922",
+      "801120",
+      "801202",
+      "801758",
+      "801890",
+      "802664",
+      "805450",
+      "805777",
+      "806139",
+      "808481",
+      "809673",
+      "810826",
+      "810936",
+      "810983",
+      "811547",
+      "811731",
+      "811740",
+      "812303",
+      "812489",
+      "812907",
+      "813277",
+      "813413",
+      "814212",
+      "815951",
+      "816196",
+      "819028",
+      "820075",
+      "822189",
+      "902404",
+      "903665",
+      "903784",
+      "904766",
+      "905414",
+      "909557",
+      "909593",
+      "910430",
+      "911404",
+      "912190",
+      "914632",
+      "802115",
+      "803114",
+      "804940",
+      "805004"
+    ],
+    "original_count": 48,
+    "expanded_count": 52,
+    "identity_status": "hemilineage_population_not_identified_subtype",
+    "note": "",
+    "source": "MaleCNS v1.0 annotation"
+  },
+  "09B": {
+    "body_ids": [
+      "800984"
+    ],
+    "original_count": 1,
+    "expanded_count": 1,
+    "identity_status": "hemilineage_population_not_identified_subtype",
+    "note": "",
+    "source": "MaleCNS v1.0 annotation"
+  },
+  "10B": {
+    "body_ids": [
+      "800033",
+      "800363",
+      "800382",
+      "801302",
+      "801359",
+      "802138",
+      "803041",
+      "807433",
+      "905170",
+      "913390",
+      "913931"
+    ],
+    "original_count": 11,
+    "expanded_count": 11,
+    "identity_status": "hemilineage_population_not_identified_subtype",
+    "note": "",
+    "source": "MaleCNS v1.0 annotation"
+  },
+  "13A": {
+    "body_ids": [
+      "802499",
+      "802546",
+      "806191",
+      "904838",
+      "906376",
+      "908380",
+      "910769",
+      "912554"
+    ],
+    "original_count": 8,
+    "expanded_count": 8,
+    "identity_status": "hemilineage_population_not_identified_subtype",
+    "note": "",
+    "source": "MaleCNS v1.0 annotation"
+  },
+  "13B": {
+    "body_ids": [
+      "800356",
+      "801258",
+      "801718",
+      "802046",
+      "802892",
+      "803834",
+      "803997",
+      "805222",
+      "805550",
+      "903652",
+      "903693",
+      "903720",
+      "904586"
+    ],
+    "original_count": 13,
+    "expanded_count": 13,
+    "identity_status": "hemilineage_population_not_identified_subtype",
+    "note": "",
+    "source": "MaleCNS v1.0 annotation"
+  },
+  "19A": {
+    "body_ids": [
+      "800020",
+      "800090",
+      "800150",
+      "800157",
+      "800163",
+      "800170",
+      "800212",
+      "800252",
+      "800326",
+      "800330",
+      "800369",
+      "800392",
+      "800430",
+      "800461",
+      "800525",
+      "800526",
+      "800529",
+      "800531",
+      "800596",
+      "800622",
+      "800656",
+      "800687",
+      "800769",
+      "801027",
+      "801253",
+      "801458",
+      "801771",
+      "801786",
+      "802010",
+      "802613",
+      "802959",
+      "803501",
+      "809317",
+      "814625",
+      "819541",
+      "903602",
+      "904674",
+      "904812",
+      "905068",
+      "911243",
+      "926154",
+      "933913",
+      "1053775329",
+      "800103",
+      "800119",
+      "800233",
+      "800374",
+      "800411",
+      "800494"
+    ],
+    "original_count": 49,
+    "expanded_count": 49,
+    "identity_status": "hemilineage_population_not_identified_subtype",
+    "note": "",
+    "source": "MaleCNS v1.0 annotation"
+  },
+  "19B": {
+    "body_ids": [
+      "800796",
+      "800807",
+      "801251",
+      "801482",
+      "801725",
+      "802523",
+      "805608",
+      "806019",
+      "809464",
+      "809886",
+      "810345",
+      "810863",
+      "903108",
+      "904022",
+      "905025",
+      "907728",
+      "800089",
+      "800216",
+      "800583",
+      "800837",
+      "800879",
+      "801061"
+    ],
+    "original_count": 22,
+    "expanded_count": 22,
+    "identity_status": "hemilineage_population_not_identified_subtype",
+    "note": "",
+    "source": "MaleCNS v1.0 annotation"
+  },
+  "21A": {
+    "body_ids": [
+      "800317",
+      "800371",
+      "800480",
+      "800816",
+      "800959",
+      "801002",
+      "801103",
+      "801192",
+      "801425",
+      "801453",
+      "801580",
+      "801584",
+      "801822",
+      "802090",
+      "802175",
+      "802239",
+      "802416",
+      "802619",
+      "802621",
+      "802684",
+      "802895",
+      "803799",
+      "804617",
+      "809071",
+      "813556",
+      "821592",
+      "902825",
+      "903520",
+      "904743",
+      "905168",
+      "905618",
+      "907818",
+      "926837",
+      "941298"
+    ],
+    "original_count": 34,
+    "expanded_count": 34,
+    "identity_status": "hemilineage_population_not_identified_subtype",
+    "note": "",
+    "source": "MaleCNS v1.0 annotation"
+  },
+  "23B": {
+    "body_ids": [
+      "800206",
+      "801937",
+      "802204",
+      "805115"
+    ],
+    "original_count": 4,
+    "expanded_count": 4,
+    "identity_status": "hemilineage_population_not_identified_subtype",
+    "note": "",
+    "source": "MaleCNS v1.0 annotation"
+  },
+  "hook": {
+    "body_ids": [
+      "812228",
+      "812848",
+      "819524",
+      "819559",
+      "907742"
+    ],
+    "original_count": 0,
+    "expanded_count": 5,
+    "identity_status": "explicit_official_annotation_partial_coverage",
+    "note": "Explicit cells are right hindleg only; no automatic transfer to all legs.",
+    "source": "MaleCNS v1.0 annotation"
+  },
+  "claw": {
+    "body_ids": [
+      "808592",
+      "809595",
+      "810643",
+      "810683",
+      "812869",
+      "813011",
+      "813286",
+      "818478",
+      "822975",
+      "903471",
+      "908277",
+      "908278",
+      "912444"
+    ],
+    "original_count": 0,
+    "expanded_count": 13,
+    "identity_status": "explicit_official_annotation_partial_coverage",
+    "note": "Explicit cells are right hindleg only; no automatic transfer to all legs.",
+    "source": "MaleCNS v1.0 annotation"
+  },
+  "club": {
+    "body_ids": [
+      "807459",
+      "809375",
+      "810876",
+      "810980",
+      "811516",
+      "811918",
+      "812659",
+      "814658",
+      "815864",
+      "815949",
+      "817331",
+      "905526",
+      "905633",
+      "908862",
+      "936153"
+    ],
+    "original_count": 0,
+    "expanded_count": 15,
+    "identity_status": "explicit_official_annotation_partial_coverage",
+    "note": "Explicit cells are right hindleg only; no automatic transfer to all legs.",
+    "source": "MaleCNS v1.0 annotation"
+  },
+  "LUL130": {
+    "body_ids": [
+      "800100",
+      "800946",
+      "801127",
+      "802099",
+      "802328",
+      "802450",
+      "802675",
+      "803063",
+      "803268",
+      "803675",
+      "904183",
+      "904926"
+    ],
+    "original_count": 12,
+    "expanded_count": 12,
+    "identity_status": "unresolved_candidate_family",
+    "note": "Candidate family already present; exact experimental-driver identity not confirmed.",
+    "source": "MaleCNS v1.0 annotation"
+  },
+  "MF14": {
+    "body_ids": [],
+    "original_count": 0,
+    "expanded_count": 0,
+    "identity_status": "unresolved_exact_cell_identity",
+    "note": "Missing identity cannot be repaired by arbitrary similarly named cell substitution.",
+    "source": "MaleCNS v1.0 annotation"
+  },
+  "MAN": {
+    "body_ids": [],
+    "original_count": 0,
+    "expanded_count": 0,
+    "identity_status": "unresolved_exact_cell_identity",
+    "note": "Missing identity cannot be repaired by arbitrary similarly named cell substitution.",
+    "source": "MaleCNS v1.0 annotation"
+  },
+  "dMAN": {
+    "body_ids": [],
+    "original_count": 0,
+    "expanded_count": 0,
+    "identity_status": "unresolved_exact_cell_identity",
+    "note": "Missing identity cannot be repaired by arbitrary similarly named cell substitution.",
+    "source": "MaleCNS v1.0 annotation"
+  },
+  "CxHP8": {
+    "body_ids": [],
+    "original_count": 0,
+    "expanded_count": 0,
+    "identity_status": "unresolved_exact_cell_identity",
+    "note": "Missing identity cannot be repaired by arbitrary similarly named cell substitution.",
+    "source": "MaleCNS v1.0 annotation"
+  },
+  "DopaMeander": {
+    "body_ids": [],
+    "original_count": 0,
+    "expanded_count": 0,
+    "identity_status": "unresolved_exact_cell_identity",
+    "note": "Missing identity cannot be repaired by arbitrary similarly named cell substitution.",
+    "source": "MaleCNS v1.0 annotation"
+  },
+  "LUM9": {
+    "body_ids": [],
+    "original_count": 0,
+    "expanded_count": 0,
+    "identity_status": "unresolved_exact_cell_identity",
+    "note": "Missing identity cannot be repaired by arbitrary similarly named cell substitution.",
+    "source": "MaleCNS v1.0 annotation"
+  },
+  "13Balpha": {
+    "body_ids": [],
+    "original_count": 0,
+    "expanded_count": 0,
+    "identity_status": "unresolved_exact_cell_identity",
+    "note": "Missing identity cannot be repaired by arbitrary similarly named cell substitution.",
+    "source": "MaleCNS v1.0 annotation"
+  },
+  "10Balpha": {
+    "body_ids": [],
+    "original_count": 0,
+    "expanded_count": 0,
+    "identity_status": "unresolved_exact_cell_identity",
+    "note": "Missing identity cannot be repaired by arbitrary similarly named cell substitution.",
+    "source": "MaleCNS v1.0 annotation"
+  },
+  "9Ba_Chen2021": {
+    "body_ids": [],
+    "original_count": 0,
+    "expanded_count": 0,
+    "identity_status": "unresolved_exact_cell_identity",
+    "note": "Missing identity cannot be repaired by arbitrary similarly named cell substitution.",
+    "source": "MaleCNS v1.0 annotation"
+  },
+  "10Ba_Chen2021": {
+    "body_ids": [],
+    "original_count": 0,
+    "expanded_count": 0,
+    "identity_status": "unresolved_exact_cell_identity",
+    "note": "Missing identity cannot be repaired by arbitrary similarly named cell substitution.",
+    "source": "MaleCNS v1.0 annotation"
+  },
+  "13Bb_Chen2021": {
+    "body_ids": [],
+    "original_count": 0,
+    "expanded_count": 0,
+    "identity_status": "unresolved_exact_cell_identity",
+    "note": "Missing identity cannot be repaired by arbitrary similarly named cell substitution.",
+    "source": "MaleCNS v1.0 annotation"
+  },
+  "LAL_PS_ANcontra": {
+    "body_ids": [],
+    "original_count": 0,
+    "expanded_count": 0,
+    "identity_status": "unresolved_exact_cell_identity",
+    "note": "Missing identity cannot be repaired by arbitrary similarly named cell substitution.",
+    "source": "MaleCNS v1.0 annotation"
+  }
+}

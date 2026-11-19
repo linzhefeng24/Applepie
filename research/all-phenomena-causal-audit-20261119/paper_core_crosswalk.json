@@ -1,0 +1,242 @@
+[
+  {
+    "bodyId": 800003,
+    "type": "IN17A001",
+    "mancBodyid": 10498.0,
+    "somaSide": "L",
+    "somaNeuromere": "T3",
+    "present_in_original": true
+  },
+  {
+    "bodyId": 800009,
+    "type": "IN17A001",
+    "mancBodyid": 10559.0,
+    "somaSide": "L",
+    "somaNeuromere": "T2",
+    "present_in_original": true
+  },
+  {
+    "bodyId": 800089,
+    "type": "IN19B012",
+    "mancBodyid": 10790.0,
+    "somaSide": "R",
+    "somaNeuromere": "T3",
+    "present_in_original": true
+  },
+  {
+    "bodyId": 800103,
+    "type": "IN19A007",
+    "mancBodyid": 10252.0,
+    "somaSide": "R",
+    "somaNeuromere": "T2",
+    "present_in_original": true
+  },
+  {
+    "bodyId": 800114,
+    "type": "IN17A001",
+    "mancBodyid": 10558.0,
+    "somaSide": "R",
+    "somaNeuromere": "T3",
+    "present_in_original": true
+  },
+  {
+    "bodyId": 800119,
+    "type": "IN19A007",
+    "mancBodyid": 10346.0,
+    "somaSide": "R",
+    "somaNeuromere": "T3",
+    "present_in_original": true
+  },
+  {
+    "bodyId": 800173,
+    "type": "IN17A001",
+    "mancBodyid": 10707.0,
+    "somaSide": "L",
+    "somaNeuromere": "T1",
+    "present_in_original": true
+  },
+  {
+    "bodyId": 800216,
+    "type": "IN19B012",
+    "mancBodyid": 10715.0,
+    "somaSide": "R",
+    "somaNeuromere": "T1",
+    "present_in_original": true
+  },
+  {
+    "bodyId": 800233,
+    "type": "IN19A007",
+    "mancBodyid": 11680.0,
+    "somaSide": "L",
+    "somaNeuromere": "T2",
+    "present_in_original": true
+  },
+  {
+    "bodyId": 800288,
+    "type": "IN17A001",
+    "mancBodyid": 10690.0,
+    "somaSide": "R",
+    "somaNeuromere": "T1",
+    "present_in_original": true
+  },
+  {
+    "bodyId": 800374,
+    "type": "IN19A007",
+    "mancBodyid": 10242.0,
+    "somaSide": "L",
+    "somaNeuromere": "T1",
+    "present_in_original": true
+  },
+  {
+    "bodyId": 800411,
+    "type": "IN19A007",
+    "mancBodyid": 10427.0,
+    "somaSide": "R",
+    "somaNeuromere": "T1",
+    "present_in_original": true
+  },
+  {
+    "bodyId": 800494,
+    "type": "IN19A007",
+    "mancBodyid": 10215.0,
+    "somaSide": "L",
+    "somaNeuromere": "T3",
+    "present_in_original": true
+  },
+  {
+    "bodyId": 800583,
+    "type": "IN19B012",
+    "mancBodyid": 11109.0,
+    "somaSide": "L",
+    "somaNeuromere": "T2",
+    "present_in_original": true
+  },
+  {
+    "bodyId": 800837,
+    "type": "IN19B012",
+    "mancBodyid": 11093.0,
+    "somaSide": "R",
+    "somaNeuromere": "T2",
+    "present_in_original": true
+  },
+  {
+    "bodyId": 800863,
+    "type": "INXXX466",
+    "mancBodyid": 11751.0,
+    "somaSide": "L",
+    "somaNeuromere": "T1",
+    "present_in_original": true
+  },
+  {
+    "bodyId": 800879,
+    "type": "IN19B012",
+    "mancBodyid": 11984.0,
+    "somaSide": "L",
+    "somaNeuromere": "T3",
+    "present_in_original": true
+  },
+  {
+    "bodyId": 801061,
+    "type": "IN19B012",
+    "mancBodyid": 154691.0,
+    "somaSide": "L",
+    "somaNeuromere": "T1",
+    "present_in_original": true
+  },
+  {
+    "bodyId": 801149,
+    "type": "INXXX466",
+    "mancBodyid": 12315.0,
+    "somaSide": "L",
+    "somaNeuromere": "T3",
+    "present_in_original": true
+  },
+  {
+    "bodyId": 801257,
+    "type": "IN16B036",
+    "mancBodyid": 12953.0,
+    "somaSide": "L",
+    "somaNeuromere": "T3",
+    "present_in_original": true
+  },
+  {
+    "bodyId": 801429,
+    "type": "INXXX466",
+    "mancBodyid": 152696.0,
+    "somaSide": "R",
+    "somaNeuromere": "T3",
+    "present_in_original": true
+  },
+  {
+    "bodyId": 801728,
+    "type": "INXXX466",
+    "mancBodyid": 11767.0,
+    "somaSide": "L",
+    "somaNeuromere": "T2",
+    "present_in_original": true
+  },
+  {
+    "bodyId": 801884,
+    "type": "IN16B036",
+    "mancBodyid": 13905.0,
+    "somaSide": "L",
+    "somaNeuromere": "T1",
+    "present_in_original": true
+  },
+  {
+    "bodyId": 801916,
+    "type": "IN16B036",
+    "mancBodyid": 156245.0,
+    "somaSide": "R",
+    "somaNeuromere": "T3",
+    "present_in_original": true
+  },
+  {
+    "bodyId": 802025,
+    "type": "INXXX466",
+    "mancBodyid": 12107.0,
+    "somaSide": "R",
+    "somaNeuromere": "T2",
+    "present_in_original": true
+  },
+  {
+    "bodyId": 803183,
+    "type": "IN16B036",
+    "mancBodyid": 14096.0,
+    "somaSide": "R",
+    "somaNeuromere": "T1",
+    "present_in_original": true
+  },
+  {
+    "bodyId": 818556,
+    "type": "IN17A001",
+    "mancBodyid": 10072.0,
+    "somaSide": "R",
+    "somaNeuromere": "T2",
+    "present_in_original": true
+  },
+  {
+    "bodyId": 903139,
+    "type": "IN16B036",
+    "mancBodyid": 13186.0,
+    "somaSide": "L",
+    "somaNeuromere": "T2",
+    "present_in_original": true
+  },
+  {
+    "bodyId": 903216,
+    "type": "INXXX466",
+    "mancBodyid": 13698.0,
+    "somaSide": "R",
+    "somaNeuromere": "T1",
+    "present_in_original": true
+  },
+  {
+    "bodyId": 904079,
+    "type": "IN16B036",
+    "mancBodyid": 17322.0,
+    "somaSide": "R",
+    "somaNeuromere": "T2",
+    "present_in_original": true
+  }
+]
