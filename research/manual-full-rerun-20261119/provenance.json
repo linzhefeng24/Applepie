@@ -1,0 +1,10 @@
+{
+  "status": "started_from_published_archive",
+  "input_release_url": "https://github.com/linzhefeng24/Applepie/releases/download/manual-r2-freebody-20261119/Manual_R2_FreeBody_Complete.zip",
+  "input_archive_sha256": "e7b47bb6804f2f7f121b5569fa8b45e287d3a0d827e93195bd9f54a76e5a8cb8",
+  "input_archive_bytes": 93825131,
+  "code_sha256": "17fb68b76d0c70841a5b4cea05120854ae223a5d6c517f18f3532ad1686c3c1c",
+  "model_sha256": "858d1818b8d8394c95bb62a6ce60474cb534a83b94265ef8615e367c110d262c",
+  "command": "MUJOCO_GL=egl /workspace/unified-fly-env/bin/python research/manual-full-rerun-20261119/cache/extracted/Manual_FreeBody/02_code/run_manual.py --recompute-neural --render",
+  "scope": "Actual unmodified packaged runner, fresh neural initialization and full neural integration; no BPTT optimization or parameter changes; compare saved baseline only after run"
+}
