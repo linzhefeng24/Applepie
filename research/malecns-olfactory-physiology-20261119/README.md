@@ -49,3 +49,7 @@
 已运行：官方数据完整性、节点唯一性、候选子网真实边提取和组计数。另以文献快慢资源参数执行10/50Hz、50脉冲协议，使用精确事件间恢复，输出`depression-probe.csv/json`。资源均在[0,1]且趋近解析固定点；这是方程与单位解释检查，不是对原始实验轨迹重新拟合、不是全网功能复现。
 
 未做：作者KC模型独立复现、MaleCNS形态重标定、完整LN/DAN生理拟合、全网气味编码、学习和行为验证。其他KC/MBON类型的参数、受体特异抑制反转电位/释放常数、多巴胺释放及分区可塑性参数仍明确待定。
+
+## 下载
+
+[结构与参数证据压缩包](https://github.com/linzhefeng24/Applepie/releases/download/malecns-olfactory-priors-20261119/MaleCNS_Olfactory_Structure_and_Physiology.zip)。含完整候选边、节点、提取程序、参数依据及局部检查；已从Release重新下载并核对SHA256。尚不包含已标定的完整网络仿真。
