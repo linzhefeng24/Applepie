@@ -238,6 +238,58 @@
         "800411"
       ],
       "scope": "matched full-network I1/I2 redundancy probe; residual DN bursting does not establish autonomous CPG redundancy"
+    },
+    "T1L_core3": {
+      "retain_superclasses": [],
+      "retain_ids": [
+        "10056",
+        "800173",
+        "800863",
+        "801884"
+      ],
+      "scope": "diagnostic sufficiency test of exact left T1 minimal 4-cell DN/core motif; MN clamped, not a muscle/body simulation"
+    },
+    "T1L_core3_E2_silenced": {
+      "retain_superclasses": [],
+      "retain_ids": [
+        "10056",
+        "800173",
+        "800863",
+        "801884"
+      ],
+      "scope": "diagnostic sufficiency test of exact left T1 minimal 4-cell DN/core motif; MN clamped, not a muscle/body simulation",
+      "ablate_type": "INXXX466"
+    },
+    "T1L_core_plus_E3": {
+      "retain_superclasses": [],
+      "retain_ids": [
+        "10056",
+        "800173",
+        "800863",
+        "801884",
+        "800216"
+      ],
+      "scope": "diagnostic sufficiency test of exact left T1 minimal 4-cell DN/core motif; MN clamped, not a muscle/body simulation"
+    },
+    "DN_VNC_only_I1_I2_silenced": {
+      "retain_superclasses": [
+        "vnc_intrinsic",
+        "vnc_motor",
+        "vnc_sensory"
+      ],
+      "retain_ids": [
+        "10045",
+        "10056"
+      ],
+      "scope": "diagnostic DN+VNC restriction; not an exact copy of the author MANC T1 model and not a replacement full network",
+      "ablate_types": [
+        "IN16B036",
+        "IN19A007"
+      ],
+      "record_additional_ids": [
+        "800374",
+        "800411"
+      ]
     }
   }
 }
