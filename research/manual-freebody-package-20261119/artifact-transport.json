@@ -1,17 +1,17 @@
 {
   "repo": "linzhefeng24/Applepie",
   "release_tag": "manual-r2-freebody-20261119",
-  "source_revision": "6b0018d8be394d9a5a6b3e5d2596be868255a336",
+  "source_revision": "2f6cc3c6d8a6c19f483d5857617cbb9282a53318",
   "bundle": {
     "name": "Manual_FreeBody_Delivery_Transport.zip",
-    "bytes": 96503548,
-    "sha256": "55afa4c59c2017a828db9ec3899fcdca49b90bbb24147aee5501d5adae03fffc"
+    "bytes": 96502233,
+    "sha256": "169f0e22245ca71e4b3d772143aa168d69f1b3560bdf446b3662e37d49f45c7a"
   },
   "chunks": [
     {
       "index": 0,
-      "git_blob_sha": "edd1c8fc392403d39b45dafff53681a9164a8387",
-      "sha256": "8d5b60785fe4dadd10f247a59bdf2583f3b91cf67e54cf18046e38b97678abcd",
+      "git_blob_sha": "641f0f4b6ff228ef72c5e32f166bdf6fd13f10af",
+      "sha256": "32416b0b7a68b27921038efcc50fed54229de5f306fd6102af89ab812834f551",
       "bytes": 4194304
     },
     {
@@ -34,123 +34,123 @@
     },
     {
       "index": 4,
-      "git_blob_sha": "e63a9649591c533e6100df108f7156e61e520908",
-      "sha256": "57c12523c981e723c2e404d775b0670a1965fe905e70e906b2d111c34f63a002",
+      "git_blob_sha": "38e85b2362b7e308115a2f02f77ea952b71c447a",
+      "sha256": "44993abc18497d6d5d3a829db50e65f3b60987ec41e40b5bd19cbbf4df969c9f",
       "bytes": 4194304
     },
     {
       "index": 5,
-      "git_blob_sha": "812b2145c290ed5bc394c27c4eb1b78289a263f1",
-      "sha256": "c09ac5fa35111b2ee6d3c9d1825c99b86895c1b1e52ca90051226b36378a7d92",
+      "git_blob_sha": "8c1caf3298fcbbc3be06a45a33272046f028bde7",
+      "sha256": "8add6afd4b18ce24982e07bf52fcd0a15281aa4205a7660b240b54bf4643af13",
       "bytes": 4194304
     },
     {
       "index": 6,
-      "git_blob_sha": "cada385b66212cf71e1a68e82604f5ebec42d655",
-      "sha256": "fccc74e66335f28e1c753ecbe6be221aedeeaa1eb66092ff69ff2f7959a622d3",
+      "git_blob_sha": "7ee4eb65ce89c6df5912df6883033c1a96376de4",
+      "sha256": "2288335fa099b4724a015cfd98f7d0bc2eaf0f2e86adf37a5178327cc752a3eb",
       "bytes": 4194304
     },
     {
       "index": 7,
-      "git_blob_sha": "6f7b297e707237b0ca182c479ff36e963033aa82",
-      "sha256": "bd13263b95f54c89adc65b0a8b50db844b530c328b5487c5e09818e49cf9d821",
+      "git_blob_sha": "3d204458a70ef9d05665a11b1a4e49f80adbc1e7",
+      "sha256": "97ab562df026793ef8f3e79521023fce369e2e23b8fb4a4fee00861431bdf002",
       "bytes": 4194304
     },
     {
       "index": 8,
-      "git_blob_sha": "744c1f0a89f67a7215cb01dfce4a572c3cce3d52",
-      "sha256": "7079de5fc0171e931afde2432c8c536fe7c0b04ce3c0a28ce0dabd5ed20e6cc6",
+      "git_blob_sha": "09d7b85b8e2cd5cde8b3daee7a89deb76d68c249",
+      "sha256": "873313ca64fb7b8e13f2e6fc23f4e35068e468013ba7b58cd91509de0fad356d",
       "bytes": 4194304
     },
     {
       "index": 9,
-      "git_blob_sha": "bda097e3d8defe9b6fdbecfdf27cd9eb3a29d010",
-      "sha256": "0e0d96ce7e3589f781d6490aed9c161bdaa8c382e16bbc55a226a3b2eb2e9aa5",
+      "git_blob_sha": "a35763e18e60bf4fe27694166453948a71b579da",
+      "sha256": "e9691840018d7f2ed32baee6fcc476195859920b9932167dc17c68e2dfec633e",
       "bytes": 4194304
     },
     {
       "index": 10,
-      "git_blob_sha": "e9423e9391a464b256bce1965d84c87978e152b6",
-      "sha256": "655dc0ad72f82d70047202e0cefd439f5a67313c7d1176434772f59a88debedb",
+      "git_blob_sha": "617a3fd81db79fb3a58f3e0ff76c48886f1a5ac6",
+      "sha256": "8560222caf7ec202e121debd32997a233251c4802c872e396abc059ff6aa5a65",
       "bytes": 4194304
     },
     {
       "index": 11,
-      "git_blob_sha": "51c9255c11e6dcb80a7bb05a94ad717f89236cee",
-      "sha256": "29392bdc569eb37143f570ec8d7c850ecf1100851e65c0f47bacaacb03ac43f3",
+      "git_blob_sha": "74df9213d59594d32441a9fae5e43d8cfcdad0a0",
+      "sha256": "f153824903fe73d5c47543085caaba73c95fc6408e97db1c130e740a42e5e763",
       "bytes": 4194304
     },
     {
       "index": 12,
-      "git_blob_sha": "b4928ffbcf8f95259195dcabd9fd5e96772309e3",
-      "sha256": "0eeb51873eb4c0662caa76c714b453cc3c24b7c5d79353ba63138138f3326249",
+      "git_blob_sha": "4eea2443d97392e599885226475d4a64daa2a9ea",
+      "sha256": "4f3090319c3d60b478aa4c5a2bed321517ca11047c72fb69b525ab499977de79",
       "bytes": 4194304
     },
     {
       "index": 13,
-      "git_blob_sha": "cb0a738bdf0008b9b2a5e6bb18ee5a7c6160a926",
-      "sha256": "9123b7bb516db10fbd7599073db4853e2cf636d5ada70c870280a645025c6fed",
+      "git_blob_sha": "57d48b591562515c91a78a0baddb182de4093bcb",
+      "sha256": "292e8bbfc659e829b6b29d94ba2413f47db5106744a7f93aecf20b87eed569dc",
       "bytes": 4194304
     },
     {
       "index": 14,
-      "git_blob_sha": "9488a4974a690d8fdfb363ccaaa733e174e67147",
-      "sha256": "9e3f897cd739775943d033f376eb2aed07dadb3eb5d592117584d2ad125a07f9",
+      "git_blob_sha": "2eebb35f06afdd865bdec5ad096442f9af3ebe04",
+      "sha256": "6dfe6337a3c3e68fdd4e67d681ee4038862237ab3ff262251158f7dc761b23b4",
       "bytes": 4194304
     },
     {
       "index": 15,
-      "git_blob_sha": "d06ac35045d5b569c7541ad0d85a059e045b362c",
-      "sha256": "d94c3c690b547aa36034428b4b34cd57f3319129be882b1ca38bfafb76851f60",
+      "git_blob_sha": "1ba79974faba9f15de7ee55423430e9844a75aff",
+      "sha256": "25acb8e10b990f1cbb34a752ae137c9af05df65822a914b831bce48e08df892f",
       "bytes": 4194304
     },
     {
       "index": 16,
-      "git_blob_sha": "9b361bf96df9ab16f49fc64782329e8829e67c10",
-      "sha256": "30b8de082e865a95868919e54ea0c6dde057299453d1073cdd27bb20d9d12d30",
+      "git_blob_sha": "771bd7ac8fb25407f8efe814aaef39a49a49c26e",
+      "sha256": "bb2923bd6735c8bb819bfc798d6ae9a1740507622fff4c0815bc472555fe0dff",
       "bytes": 4194304
     },
     {
       "index": 17,
-      "git_blob_sha": "b01ac0b506c3a0a8bfa0a1a283ef90bbc18e81c4",
-      "sha256": "097628a346dc934f904d4186a5effdd1b5fd631bcce71ef5369695fa85a143d8",
+      "git_blob_sha": "e2038ec3b91db5ee0610362d212dbf8d0a946b84",
+      "sha256": "82a88c22f23d1a42af1a7b60f988b2485f20b1bc0b84851dbec6e2ee9549ed3a",
       "bytes": 4194304
     },
     {
       "index": 18,
-      "git_blob_sha": "5d58dab6affc31fe1aec2239e405adce28f29f1f",
-      "sha256": "8bffd2ef6565b13e9982ba655f5069ab4c192e197875308501d8bc7f6d66246d",
+      "git_blob_sha": "e60c45d6f77944c50a052c005b5750381a6ac02d",
+      "sha256": "fe95cf9bcbcf82e2f35a1b260ce90e0b81e695f2337f32ec598d89acf23ad1c6",
       "bytes": 4194304
     },
     {
       "index": 19,
-      "git_blob_sha": "302c3a260921ca0e47163f87bbe14616ac2d1c5f",
-      "sha256": "b46a4f9a852f6d2aab23bc6279b1c4cd7a6a4866e05aad8554ce2780df191747",
+      "git_blob_sha": "5237852a3325dd68504c977ab8c06bd71146dffe",
+      "sha256": "671fcf9cd924a871852b7ab2494ec542999f6d8f29fea8a9200c50f05d74ca99",
       "bytes": 4194304
     },
     {
       "index": 20,
-      "git_blob_sha": "959869e747f27eced0991dbd6c36983101d02d0f",
-      "sha256": "7582c1227eb230d730213471732a3b1558e458ed537bd26aae92c3cff0a0fb19",
+      "git_blob_sha": "ab29b71e9238027d1e8abe3b1d6e1fe92f5a20e1",
+      "sha256": "99b76604ab57a2346540fe4785058a205f2a7e7e1e98cb9c05646566d6537f9a",
       "bytes": 4194304
     },
     {
       "index": 21,
-      "git_blob_sha": "6838b9974b3f2a9ad453369ccc4cf8d407748fa6",
-      "sha256": "cf08b6a7eb4cf0a61aa5ae481a77b8c4c4fb13b4ca0f7d3f0a5d580bc24ffe33",
+      "git_blob_sha": "82b4f31c9869887d334057fc743ca083527934c0",
+      "sha256": "37dc7df0addf17e675075587e6997c5722e9fc261e0a4939ae6e01e6a37b67f7",
       "bytes": 4194304
     },
     {
       "index": 22,
-      "git_blob_sha": "63d9a7ec95f1d38246f37b05f4e513aaa1aa0046",
-      "sha256": "f3a0ae55a873b64a31c0ab896ac7bd430afc079a335b3fd609dd486f51c3f3d7",
+      "git_blob_sha": "e3e399f12fd283dd9e76f1b7d49f8cd2b7fd65e7",
+      "sha256": "89f107d69eb31762fd98abadd2c7b7489692d810cc074da4b3ea06797d70e8a5",
       "bytes": 4194304
     },
     {
       "index": 23,
-      "git_blob_sha": "c3e689e329591998157228fb04712e4921c9dc8a",
-      "sha256": "5ae973fcf27126fef3ad6bb4b7d8d1455da4c4516cbac69beeca7292eb5b5254",
-      "bytes": 34556
+      "git_blob_sha": "a553e545a80d4696001e4323b2e50346f045a709",
+      "sha256": "9906a9e39c10c8db5a5ca69a741840eb6707ee5b413ea82aaa1e94f923ac1406",
+      "bytes": 33241
     }
   ],
   "assets": [
@@ -162,8 +162,8 @@
     },
     {
       "name": "Manual_R2_FreeBody_Complete.zip",
-      "bytes": 93826446,
-      "sha256": "6c20c425c853edc7840f40e55028aa29523bf1472046b751bff30033bb743f85",
+      "bytes": 93825131,
+      "sha256": "e7b47bb6804f2f7f121b5569fa8b45e287d3a0d827e93195bd9f54a76e5a8cb8",
       "url": "https://github.com/linzhefeng24/Applepie/releases/download/manual-r2-freebody-20261119/Manual_R2_FreeBody_Complete.zip"
     },
     {
