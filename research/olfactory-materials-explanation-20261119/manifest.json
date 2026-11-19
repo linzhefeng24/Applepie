@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-19",
+  "scope": "document explanation and public-source crosscheck; no simulation/code audit or raw MAT verification",
+  "inputs": [
+    {
+      "name": "Drosophila_Olfactory_Calcium_Data_Explorer.html",
+      "bytes": 4048227,
+      "sha256": "6f06ebbfb1b2ec732d7254afd872df1d1101c575c1147b83b2bfecaf70d0ec94"
+    },
+    {
+      "name": "Olfactory_modeling_drosophila_meeting.pdf",
+      "bytes": 3557751,
+      "sha256": "610aadafca418338bb9e24b888e7619489d1fafd110ae0aa4c280e77c1755bc2"
+    }
+  ],
+  "uploaded_paper_status": "Attachment transfer rejected by 32MiB tool limit; read same-title public Europe PMC full text instead; uploaded PDF binary not independently inspected",
+  "public_sources": [
+    {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11525173/fullTextXML",
+      "sha256": "ecab3ebe9fe9917dd911a765e2ccc9d3aedf2a365327a57b51d0df1a474316d9"
+    },
+    {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5800849/fullTextXML",
+      "sha256": "3bad5a29996d8f75bcd94d74261eecf6dbb573bf1b5a7ffc0081c5aa7c6a6a7d"
+    },
+    {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11199952/fullTextXML",
+      "sha256": "7ba5c00c8fd88d779f6787337014811da3692110210a55e8cbe430031fc40422"
+    }
+  ],
+  "data_privacy": "Original HTML, individual traces, local source paths and unpublished slide binary not copied into repository; explanatory notes and identities only",
+  "failed_attempts": [
+    "Third attachment over 32 MiB transfer limit",
+    "bs4 and requests unavailable; used standard-library JSON/HTML parsing and curl",
+    "EuropePMC invalid sort parameter queries returned HTTP errors; retried with supported query parameters"
+  ]
+}
