@@ -1,0 +1,12 @@
+{
+  "status": "prepared_for_causal_diagnostics",
+  "scope": "Localize the feedback-dependent ~210ms bursting in the existing manual neural model; not model optimization or physiological proof",
+  "base_package": "https://github.com/linzhefeng24/Applepie/releases/download/manual-r2-freebody-20261119/Manual_R2_FreeBody_Complete.zip",
+  "base_package_sha256": "e7b47bb6804f2f7f121b5569fa8b45e287d3a0d827e93195bd9f54a76e5a8cb8",
+  "model_sha256": "858d1818b8d8394c95bb62a6ce60474cb534a83b94265ef8615e367c110d262c",
+  "first_stage": ["cut_DNge129_DN", "cut_GNG127_DN", "cut_GNG458_DN", "cut_top5_DN", "silence_DNge129", "silence_GNG127", "silence_GNG458", "cut_all_inhibitory_DN"],
+  "selection_reason": "Actual inhibitory inputs to the two DNg100 cells, ranked using observed spike counts, signed edges and per-source release/receptor factors; includes delayed GNG458 rather than only highest synapse-count rows",
+  "controls": "Original two DNg100160pA200–1500ms protocol and all intrinsic parameters retained; distinguish selective DN-route cuts from whole-cell silence",
+  "seed": "deterministic kernel, no random stimulus used",
+  "repeated_check_policy": "Adaptive follow-up only when initial perturbations reveal unresolved mechanisms; no training restarted"
+}
