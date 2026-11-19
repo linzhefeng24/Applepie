@@ -1,5 +1,5 @@
 {
-  "status": "rendered_pending_publication",
+  "status": "complete_public_release_uploaded_and_freshly_download_verified",
   "delivery_assets": [
     {
       "name": "Benton_2025_Chinese_Illustrated.docx",
@@ -31,5 +31,15 @@
       "sha256": "e568e259dc9a46a714c03214f9b47b498c87654d371b98d55cb7ecc1ed28f09e",
       "url": "https://github.com/linzhefeng24/Applepie/releases/download/benton-illustrated-zh-20261119/Sources_and_Layout.json"
     }
-  ]
+  ],
+  "release_url": "https://github.com/linzhefeng24/Applepie/releases/tag/benton-illustrated-zh-20261119",
+  "verified_assets": [
+    "Benton_2025_Chinese_Illustrated.docx",
+    "Benton_2025_Chinese_Illustrated.html",
+    "Benton_2025_Chinese_Illustrated.pdf",
+    "Benton_2025_Chinese_Illustrated.zip",
+    "Sources_and_Layout.json"
+  ],
+  "pdf_unauthenticated_http_status": 200,
+  "source_revision": "d1cc91b665e12ced2d18b444deb241fa4e31325d"
 }
