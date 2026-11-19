@@ -1,18 +1,140 @@
 {
- "model_sha256":"38b07321a54694dc875aebfaa82c930cd752bd0d25f2940ef7087fa45a44e4fa",
- "selection_rationale":"Target direct DNg100→MN bypass and E2→I1 transmission, then manually reduce unknown terminal efficacy or common MN excitatory gain without changing anatomical counts.",
- "cases":{
-  "baseline":{},
-  "cut_E2_I1":{"terminal_gain":[{"source_type":"INXXX466","target_type":"IN16B036","factor":0}],"scope":"diagnostic cut, not a candidate model"},
-  "E2_silenced":{"ablate_type":"INXXX466"},
-  "cut_DN_MN":{"terminal_gain":[{"source_type":"DNg100","target_superclass":"vnc_motor","factor":0}],"scope":"diagnostic cut, not a candidate model"},
-  "E2_silenced_cut_DN_MN":{"ablate_type":"INXXX466","terminal_gain":[{"source_type":"DNg100","target_superclass":"vnc_motor","factor":0}],"scope":"diagnostic cut, not a candidate model"},
-  "DN_MN_half":{"terminal_gain":[{"source_type":"DNg100","target_superclass":"vnc_motor","factor":0.5}],"origin":"manual unmeasured efficacy trial, preserves all real edges"},
-  "DN_MN_quarter":{"terminal_gain":[{"source_type":"DNg100","target_superclass":"vnc_motor","factor":0.25}],"origin":"manual unmeasured efficacy trial, preserves all real edges"},
-  "DN_MN_quarter_E2_silenced":{"ablate_type":"INXXX466","terminal_gain":[{"source_type":"DNg100","target_superclass":"vnc_motor","factor":0.25}]},
-  "MN_gain3":{"cell_set":[{"superclass":"vnc_motor","parameter":"excitatory_receptor_gain","value":3}],"origin":"manual shared MN receptor-gain trial, original 6; no change to resting input resistance"},
-  "MN_gain3_E2_silenced":{"ablate_type":"INXXX466","cell_set":[{"superclass":"vnc_motor","parameter":"excitatory_receptor_gain","value":3}]},
-  "MN_gain1p5":{"cell_set":[{"superclass":"vnc_motor","parameter":"excitatory_receptor_gain","value":1.5}],"origin":"manual shared MN receptor-gain trial, original 6; all pathways scaled consistently"},
-  "MN_gain1p5_E2_silenced":{"ablate_type":"INXXX466","cell_set":[{"superclass":"vnc_motor","parameter":"excitatory_receptor_gain","value":1.5}]}
- }
+  "model_sha256": "38b07321a54694dc875aebfaa82c930cd752bd0d25f2940ef7087fa45a44e4fa",
+  "selection_rationale": "Target direct DNg100\u2192MN bypass and E2\u2192I1 transmission, then manually reduce unknown terminal efficacy or common MN excitatory gain without changing anatomical counts.",
+  "cases": {
+    "baseline": {},
+    "cut_E2_I1": {
+      "terminal_gain": [
+        {
+          "source_type": "INXXX466",
+          "target_type": "IN16B036",
+          "factor": 0
+        }
+      ],
+      "scope": "diagnostic cut, not a candidate model"
+    },
+    "E2_silenced": {
+      "ablate_type": "INXXX466"
+    },
+    "cut_DN_MN": {
+      "terminal_gain": [
+        {
+          "source_type": "DNg100",
+          "target_superclass": "vnc_motor",
+          "factor": 0
+        }
+      ],
+      "scope": "diagnostic cut, not a candidate model"
+    },
+    "E2_silenced_cut_DN_MN": {
+      "ablate_type": "INXXX466",
+      "terminal_gain": [
+        {
+          "source_type": "DNg100",
+          "target_superclass": "vnc_motor",
+          "factor": 0
+        }
+      ],
+      "scope": "diagnostic cut, not a candidate model"
+    },
+    "DN_MN_half": {
+      "terminal_gain": [
+        {
+          "source_type": "DNg100",
+          "target_superclass": "vnc_motor",
+          "factor": 0.5
+        }
+      ],
+      "origin": "manual unmeasured efficacy trial, preserves all real edges"
+    },
+    "DN_MN_quarter": {
+      "terminal_gain": [
+        {
+          "source_type": "DNg100",
+          "target_superclass": "vnc_motor",
+          "factor": 0.25
+        }
+      ],
+      "origin": "manual unmeasured efficacy trial, preserves all real edges"
+    },
+    "DN_MN_quarter_E2_silenced": {
+      "ablate_type": "INXXX466",
+      "terminal_gain": [
+        {
+          "source_type": "DNg100",
+          "target_superclass": "vnc_motor",
+          "factor": 0.25
+        }
+      ]
+    },
+    "MN_gain3": {
+      "cell_set": [
+        {
+          "superclass": "vnc_motor",
+          "parameter": "excitatory_receptor_gain",
+          "value": 3
+        }
+      ],
+      "origin": "manual shared MN receptor-gain trial, original 6; no change to resting input resistance"
+    },
+    "MN_gain3_E2_silenced": {
+      "ablate_type": "INXXX466",
+      "cell_set": [
+        {
+          "superclass": "vnc_motor",
+          "parameter": "excitatory_receptor_gain",
+          "value": 3
+        }
+      ]
+    },
+    "MN_gain1p5": {
+      "cell_set": [
+        {
+          "superclass": "vnc_motor",
+          "parameter": "excitatory_receptor_gain",
+          "value": 1.5
+        }
+      ],
+      "origin": "manual shared MN receptor-gain trial, original 6; all pathways scaled consistently"
+    },
+    "MN_gain1p5_E2_silenced": {
+      "ablate_type": "INXXX466",
+      "cell_set": [
+        {
+          "superclass": "vnc_motor",
+          "parameter": "excitatory_receptor_gain",
+          "value": 1.5
+        }
+      ]
+    },
+    "cut_E3_I1": {
+      "terminal_gain": [
+        {
+          "source_type": "IN19B012",
+          "target_type": "IN16B036",
+          "factor": 0
+        }
+      ],
+      "scope": "diagnostic cut of candidate indirect relay input"
+    },
+    "cut_E2_E3_I1": {
+      "terminal_gain": [
+        {
+          "source_type": "INXXX466",
+          "target_type": "IN16B036",
+          "factor": 0
+        },
+        {
+          "source_type": "IN19B012",
+          "target_type": "IN16B036",
+          "factor": 0
+        }
+      ],
+      "scope": "diagnostic combined direct and relay input cut"
+    },
+    "E3_silenced": {
+      "ablate_type": "IN19B012",
+      "scope": "test contribution of E2-recruited IN19B012 relay"
+    }
+  }
 }
