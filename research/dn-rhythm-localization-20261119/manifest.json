@@ -1,5 +1,5 @@
 {
-  "status": "prepared_for_release",
+  "status": "public_release_uploaded_and_fresh_download_sha256_verified",
   "delivery_assets": [
     {
       "name": "DN_Rhythm_Localization_Data.zip",
@@ -20,5 +20,7 @@
       "url": "https://github.com/linzhefeng24/Applepie/releases/download/dn-rhythm-localization-20261119/summary.json"
     }
   ],
-  "scope": "22 full-network diagnostic interventions plus6small circuits; no parameter optimization"
+  "scope": "22 full-network diagnostic interventions plus6small circuits; no parameter optimization",
+  "source_revision": "32e9d23221ad034cddae6ba40e00d10ffcfc6c9f",
+  "release_url": "https://github.com/linzhefeng24/Applepie/releases/tag/dn-rhythm-localization-20261119"
 }

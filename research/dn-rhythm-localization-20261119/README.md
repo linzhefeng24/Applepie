@@ -44,3 +44,5 @@ DNg100直接兴奋DNge129和GNG127，后两类抑制回到DN。26344对DN有直�
 切断主要五细胞后，AN02A002（10180、10671）在200–1400ms从各3次放电增加至各7次。再切断这两者到DN的边仍有成簇，说明不能把剩余机制压缩成这两个细胞。模型把这些谷氨酸能细胞的输出视为抑制；该连接的受体符号未经本次生理验证。另做“切全部GABA来源抑制到DN”和“切全部谷氨酸来源抑制到DN”对照，两者单独切断均仍有不规则成簇，不能将剩余振荡视为已确认的GABA回路生理机制。具体补偿记录与来源见compensation.json。
 
 原始kernel为记录数组多分配一行；归档时只保留实际写入的160个记录点，并附record_time_ms。移除未写入尾行不改变任何积分、脉冲、消融结果。对齐前后哈希见trace-alignment.json。
+
+[全部原始干预记录、代码与报告压缩包](https://github.com/linzhefeng24/Applepie/releases/download/dn-rhythm-localization-20261119/DN_Rhythm_Localization_Data.zip)（约2.9MB）。发布文件已从GitHub重新下载并核对SHA256。
