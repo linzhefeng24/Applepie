@@ -1,0 +1,28 @@
+{
+  "checked_utc": "2026-11-19T04:34:21.130561+00:00",
+  "checkpoint_sha256_verified": "c0ead9ba0bd2d695410c36369d12a94f0127d66a2373c0b9dfc69fcf072992e9",
+  "checkpoint_asset": "joint-main-e0280-p0-280-c0ead9ba0bd2.zip",
+  "source_training_revision": "5e07e510aaaec984365075fe92377115a1311d1d",
+  "saved_updates": 280,
+  "target_updates": 300,
+  "action_status_checked": "in_progress",
+  "run_url": "https://github.com/linzhefeng24/Applepie/actions/runs/44457444334",
+  "best_actual_parameter_update": 123,
+  "best_joint_mse_rad2": 0.08625854770664479,
+  "manual_joint_mse_rad2": 0.11717840309893408,
+  "improvement_percent": 26.386991608158006,
+  "best_rmse_deg": 16.827659021805868,
+  "manual_rmse_deg": 19.613108009120246,
+  "last_evaluated_actual_update": 279,
+  "last_evaluated_joint_mse_rad2": 0.09528959148782538,
+  "last10_mean_seconds": 571.3155339767999,
+  "latest_existing_video_update": 200,
+  "best_existing_video_update": 123,
+  "interpretation": "best has not improved since123; latest raw280 saved but its loss is evaluated by next update; no new replay performed",
+  "limitations": [
+    "joint-angle-only reference objective plus manual-centered regularizer, not root motion fitting",
+    "surrogate spikes and200ms truncated neural adjoint; physical gradient approximation with previously failed strict20ms random-direction check, not exact full400ms gradient",
+    "0.4s rollout not long-term stable walking evidence"
+  ],
+  "training_mutated_in_this_check": false
+}
