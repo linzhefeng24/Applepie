@@ -1,6 +1,6 @@
 {
   "complete": true,
-  "source_revision": "6b0018d8be394d9a5a6b3e5d2596be868255a336",
+  "source_revision": "2f6cc3c6d8a6c19f483d5857617cbb9282a53318",
   "release_url": "https://github.com/linzhefeng24/Applepie/releases/tag/manual-r2-freebody-20261119",
   "fresh_download_sha256_verified_assets": [
     "Manual_R2_FreeBody.mp4",
@@ -18,8 +18,8 @@
     },
     {
       "name": "Manual_R2_FreeBody_Complete.zip",
-      "bytes": 93826446,
-      "sha256": "6c20c425c853edc7840f40e55028aa29523bf1472046b751bff30033bb743f85",
+      "bytes": 93825131,
+      "sha256": "e7b47bb6804f2f7f121b5569fa8b45e287d3a0d827e93195bd9f54a76e5a8cb8",
       "url": "https://github.com/linzhefeng24/Applepie/releases/download/manual-r2-freebody-20261119/Manual_R2_FreeBody_Complete.zip"
     },
     {
