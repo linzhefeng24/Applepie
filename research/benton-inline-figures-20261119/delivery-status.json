@@ -1,6 +1,6 @@
 {
   "complete": true,
-  "source_revision": "4587c3dc0c9c9943253dbd17b05f2616941e0ef2",
+  "source_revision": "d1cc91b665e12ced2d18b444deb241fa4e31325d",
   "release_url": "https://github.com/linzhefeng24/Applepie/releases/tag/benton-illustrated-zh-20261119",
   "fresh_download_sha256_verified_assets": [
     "Benton_2025_Chinese_Illustrated.docx",
@@ -13,25 +13,25 @@
     {
       "name": "Benton_2025_Chinese_Illustrated.docx",
       "bytes": 4633152,
-      "sha256": "ad2000965d2e7667b4ea7a1123ba62d910a6acd6588552fffec9e1bc71af2d5e",
+      "sha256": "e30bb79e8b1ac1a9ef7be7909a0c99c03b9b2af69c1661d0652376c436bd7d69",
       "url": "https://github.com/linzhefeng24/Applepie/releases/download/benton-illustrated-zh-20261119/Benton_2025_Chinese_Illustrated.docx"
     },
     {
       "name": "Benton_2025_Chinese_Illustrated.html",
-      "bytes": 6537911,
-      "sha256": "ab82a342739fc1c3f79544c4c68bb3b635571f759c026753ec30510619ec6c56",
+      "bytes": 6538030,
+      "sha256": "238cf4188752a74ecf5e2f93611dd5bba9aa366da1f911866e824f8f7ece786a",
       "url": "https://github.com/linzhefeng24/Applepie/releases/download/benton-illustrated-zh-20261119/Benton_2025_Chinese_Illustrated.html"
     },
     {
       "name": "Benton_2025_Chinese_Illustrated.pdf",
-      "bytes": 6876317,
-      "sha256": "50808d0021f464e4db16f28f127c35ca7f6c65b52be63744d411d91f668fab34",
+      "bytes": 6876363,
+      "sha256": "52044e798ff6436cd1cf58e94fd606114973ac7e4de97fa1cf03e5052a08ab12",
       "url": "https://github.com/linzhefeng24/Applepie/releases/download/benton-illustrated-zh-20261119/Benton_2025_Chinese_Illustrated.pdf"
     },
     {
       "name": "Benton_2025_Chinese_Illustrated.zip",
-      "bytes": 15905530,
-      "sha256": "e443c7871e524f0fba53000b18226ed0c7f97204a5c638d38e22d22747f922a5",
+      "bytes": 15905655,
+      "sha256": "b534a486a7f377443faa7e01496df01aa16b7b055b3c7c8f3af25b28140019dd",
       "url": "https://github.com/linzhefeng24/Applepie/releases/download/benton-illustrated-zh-20261119/Benton_2025_Chinese_Illustrated.zip"
     },
     {
