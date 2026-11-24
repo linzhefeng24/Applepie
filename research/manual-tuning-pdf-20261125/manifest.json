@@ -1,0 +1,93 @@
+{
+  "scope": "Document creation and static extraction only; no simulations or parameter changes",
+  "date_client": "2026-11-25",
+  "source_code_revision": "e46cec25517c2bd002ff84f5562a5d6ebb5c419d",
+  "input_release": {
+    "url": "https://github.com/linzhefeng24/Applepie/releases/download/new/flybody_male_full.zip",
+    "bytes": 356569241,
+    "sha256": "0450edb9313b1cd502ea4cc38ecd6efad34ffb482e7dd09dc614c225bd166846"
+  },
+  "inputs": [
+    {
+      "name": "01_model/model.yaml",
+      "bytes": 54788655,
+      "sha256": "58b2c141f9f307ee7e551d48534fa74bb8a99e44c55287945b5b8542bd21db0c"
+    },
+    {
+      "name": "README.md",
+      "bytes": 25046,
+      "sha256": "08be470c0bdc9d423aa81c5a8b4f68be10ace7659ee24059998c7e988dfddd74"
+    },
+    {
+      "name": "03_phenomena/phenomena.json",
+      "bytes": 321295,
+      "sha256": "e84e2bf6138e19e570ed45322e56d141e2f01a17f5fdf6127027c28f87a101d9"
+    }
+  ],
+  "command": "python build_report.py --package /path/to/flybody_male_full",
+  "seed": null,
+  "software": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "numpy": "2.3.5",
+    "PyYAML": "6.0.3",
+    "PyMuPDF": [
+      "PyMuPDF 1.26.6: Python bindings for the MuPDF 1.26.11 library (rebased implementation).",
+      "Python 3.12 running on linux (64-bit)."
+    ],
+    "pandoc": "pandoc 3.1.11.1",
+    "chromium": "Chromium 155.0.8059.79 built on Debian GNU/Linux 13 (trixie)"
+  },
+  "outputs": [
+    {
+      "name": "Manual_Tuning_Detailed_Report.pdf",
+      "bytes": 1424891,
+      "sha256": "dc781123db6321425cdbbba906ea248cad35d3d4773c3729a4ddf1aa42132f28"
+    },
+    {
+      "name": "README.md",
+      "bytes": 2426,
+      "sha256": "e8575e7f124fc6eb9800a4a4d6d441ada859d3f05987c76b6949ecb2b32dce7b"
+    },
+    {
+      "name": "build_report.py",
+      "bytes": 19551,
+      "sha256": "f66d0e1c7c75be45cc189e33c3da12cfdf99d22dca7accbcd3caf3aa5afa9fe7"
+    },
+    {
+      "name": "cell_parameter_groups.csv",
+      "bytes": 2574,
+      "sha256": "87744000761a3a2962f6245a808d3fe380540a22ada6e163e9bcb0177881fb0e"
+    },
+    {
+      "name": "muscles_130.csv",
+      "bytes": 41743,
+      "sha256": "f5127c43124bc8244fd449ae5abe713b4aa4bd33121dbe60a6e4575578582b78"
+    },
+    {
+      "name": "phenomena_146_source.json",
+      "bytes": 302437,
+      "sha256": "e84229dba4483408f1a86d191dfb6b1cd455fceadc8e0032860e70b7aa388246"
+    },
+    {
+      "name": "qa.json",
+      "bytes": 317,
+      "sha256": "f7797e310ee578050a6595dfcf0642870db356f65c3af575cd50936bf3c75427"
+    },
+    {
+      "name": "report.css",
+      "bytes": 1001,
+      "sha256": "884872463bed324144264c6637be1746b0e151958867d32125d854e303fec5e2"
+    },
+    {
+      "name": "report.html",
+      "bytes": 265319,
+      "sha256": "18383eb4d15c458332adbe5b6534f36ece0fd7617caee8660e4c47f650ec3795"
+    },
+    {
+      "name": "report.md",
+      "bytes": 164935,
+      "sha256": "cbc392c281b6f5abad6d5b9e09d74db62ad38ed66594210a4da905e7adf1d783"
+    }
+  ],
+  "verification": "146/146 phenomenon headings present; no blank pages; zero out-of-page text blocks; visual review of pages 1,4,19,30,55,93"
+}
