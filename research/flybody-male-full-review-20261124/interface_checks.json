@@ -1,0 +1,287 @@
+{
+  "model_sha256": "58b2c141f9f307ee7e551d48534fa74bb8a99e44c55287945b5b8542bd21db0c",
+  "protocol_selector_checks": [
+    {
+      "protocol": "quiet_400",
+      "source_counts": [],
+      "nonempty_all_defined_sources": true,
+      "full_simulation_retested": true
+    },
+    {
+      "protocol": "DN_drive",
+      "source_counts": [
+        2
+      ],
+      "nonempty_all_defined_sources": true,
+      "full_simulation_retested": false
+    },
+    {
+      "protocol": "DNg100_40",
+      "source_counts": [
+        2
+      ],
+      "nonempty_all_defined_sources": true,
+      "full_simulation_retested": false
+    },
+    {
+      "protocol": "DNg100_80",
+      "source_counts": [
+        2
+      ],
+      "nonempty_all_defined_sources": true,
+      "full_simulation_retested": false
+    },
+    {
+      "protocol": "DNg100_160",
+      "source_counts": [
+        2
+      ],
+      "nonempty_all_defined_sources": true,
+      "full_simulation_retested": false
+    },
+    {
+      "protocol": "DNg100_240",
+      "source_counts": [
+        2
+      ],
+      "nonempty_all_defined_sources": true,
+      "full_simulation_retested": false
+    },
+    {
+      "protocol": "DNg100_320",
+      "source_counts": [
+        2
+      ],
+      "nonempty_all_defined_sources": true,
+      "full_simulation_retested": false
+    },
+    {
+      "protocol": "chord_0",
+      "source_counts": [
+        380
+      ],
+      "nonempty_all_defined_sources": true,
+      "full_simulation_retested": false
+    },
+    {
+      "protocol": "chord_80",
+      "source_counts": [
+        380
+      ],
+      "nonempty_all_defined_sources": true,
+      "full_simulation_retested": false
+    },
+    {
+      "protocol": "chord_160",
+      "source_counts": [
+        380
+      ],
+      "nonempty_all_defined_sources": true,
+      "full_simulation_retested": false
+    },
+    {
+      "protocol": "chord_plus_tiflex_bg",
+      "source_counts": [
+        380,
+        1
+      ],
+      "nonempty_all_defined_sources": true,
+      "full_simulation_retested": false
+    },
+    {
+      "protocol": "chord_pulses",
+      "source_counts": [
+        380,
+        380,
+        380,
+        380,
+        380
+      ],
+      "nonempty_all_defined_sources": true,
+      "full_simulation_retested": false
+    },
+    {
+      "protocol": "twentyoneA_alone",
+      "source_counts": [
+        409
+      ],
+      "nonempty_all_defined_sources": true,
+      "full_simulation_retested": false
+    },
+    {
+      "protocol": "thirteenB_dng100",
+      "source_counts": [
+        2,
+        441
+      ],
+      "nonempty_all_defined_sources": true,
+      "full_simulation_retested": false
+    },
+    {
+      "protocol": "nineA_dng100",
+      "source_counts": [
+        2,
+        548
+      ],
+      "nonempty_all_defined_sources": true,
+      "full_simulation_retested": false
+    },
+    {
+      "protocol": "dna02_left",
+      "source_counts": [
+        1
+      ],
+      "nonempty_all_defined_sources": true,
+      "full_simulation_retested": false
+    },
+    {
+      "protocol": "dna02_right",
+      "source_counts": [
+        1
+      ],
+      "nonempty_all_defined_sources": true,
+      "full_simulation_retested": false
+    },
+    {
+      "protocol": "JO_160",
+      "source_counts": [
+        672
+      ],
+      "nonempty_all_defined_sources": true,
+      "full_simulation_retested": false
+    },
+    {
+      "protocol": "EPG_160",
+      "source_counts": [
+        46
+      ],
+      "nonempty_all_defined_sources": true,
+      "full_simulation_retested": false
+    },
+    {
+      "protocol": "Delta7_160",
+      "source_counts": [
+        42
+      ],
+      "nonempty_all_defined_sources": true,
+      "full_simulation_retested": false
+    },
+    {
+      "protocol": "PFL3_160",
+      "source_counts": [
+        24
+      ],
+      "nonempty_all_defined_sources": true,
+      "full_simulation_retested": false
+    },
+    {
+      "protocol": "DNa02_160",
+      "source_counts": [
+        2
+      ],
+      "nonempty_all_defined_sources": true,
+      "full_simulation_retested": false
+    },
+    {
+      "protocol": "LBL40_160",
+      "source_counts": [
+        2
+      ],
+      "nonempty_all_defined_sources": true,
+      "full_simulation_retested": false
+    },
+    {
+      "protocol": "LBL40_160_boost10",
+      "source_counts": [
+        2
+      ],
+      "nonempty_all_defined_sources": true,
+      "full_simulation_retested": false
+    },
+    {
+      "protocol": "chord_SK10Ca4",
+      "source_counts": [
+        380,
+        380,
+        380,
+        380,
+        380
+      ],
+      "nonempty_all_defined_sources": true,
+      "full_simulation_retested": false
+    },
+    {
+      "protocol": "BRK_dng100",
+      "source_counts": [
+        2,
+        6
+      ],
+      "nonempty_all_defined_sources": true,
+      "full_simulation_retested": false
+    }
+  ],
+  "all26_selector_definitions_resolve": true,
+  "state_API_example": {
+    "actual_time_ms": 220.0125,
+    "neuron_ids": [
+      "10045",
+      "10056"
+    ],
+    "voltage": [
+      [
+        -39.01028098083025,
+        -60.61986278354596
+      ],
+      [
+        -39.601292644593414,
+        -59.72090169766171
+      ]
+    ],
+    "calcium": [
+      0.018935640029095056,
+      0.018844126682700562
+    ],
+    "currents_pA": [
+      [
+        588.938142524559,
+        -503.64005137308493,
+        -259.3149816325885,
+        160.0
+      ],
+      [
+        588.268219747221,
+        -521.5315534732446,
+        -241.43530863681954,
+        160.0
+      ]
+    ],
+    "conductances_nS": [
+      [
+        15.096998219878616,
+        12.286984722621458
+      ],
+      [
+        14.854773176893623,
+        12.909609926007883
+      ]
+    ],
+    "gating_m_h_n": [
+      [
+        0.08193752480831175,
+        0.2196554291163943,
+        0.5546672322748369
+      ],
+      [
+        0.09098470192823185,
+        0.2329784824894061,
+        0.541118277842614
+      ]
+    ]
+  },
+  "DN_outgoing_connection_counts": {
+    "10045": 1416,
+    "10056": 1434
+  },
+  "cell_parameter_count": 17,
+  "note": "Selector preflight is not a run of all26 protocols; only listed actual runs qualify."
+}

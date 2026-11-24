@@ -36,6 +36,18 @@
       "issue": "historical_and_conditional_phenomena",
       "evidence": "146-row table includes historical model readouts and temporary edge/cell boosts not adopted in the canonical model.",
       "scope": "Counts of support/partial support do not establish146 independently rerun checks on current SHA."
+    },
+    {
+      "issue": "rerun_report_hash_uses_cached_file",
+      "file": "02_code/run_manual.py",
+      "consequence": "Original --recompute-neural report hashes neural_state.npz rather than neural_state_recomputed.npz; actual independent-state SHA is separately recorded by this review.",
+      "fix": "Report the actual selected state filename hash; no numerical change."
+    },
+    {
+      "issue": "neural_video_only_has_legacy_node_positions",
+      "displayed_nodes": 3988,
+      "simulated_nodes": 26885,
+      "fix": "Explicitly label displayed/simulated counts and slice display-only colors/sizes. No EM morphology or new nodes invented."
     }
   ],
   "canonical_metadata_model_hash_matches": true,

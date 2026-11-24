@@ -1,0 +1,28 @@
+{
+  "expected_model_sha256": "58b2c141f9f307ee7e551d48534fa74bb8a99e44c55287945b5b8542bd21db0c",
+  "expected_body_sha256": "31a916557995350fa72bacd10f52c65d63d46618d69ec808d104d525bd3c1e30",
+  "fixes": [
+    {
+      "file": "run_demo.sh",
+      "original_sha256": "4891ee5099b4d6a474ec0c1cb4c3e1f70bb805fe3e3bbd0410463a23b1f79809",
+      "fixed_sha256": "f3ccf80c6b051ae2646af56041286c1253a81399fecf8149e4fbc0d35ed6eaa4"
+    },
+    {
+      "file": "07_protocols/run_protocol.py",
+      "original_sha256": "d4722e4add0764ed2a8f9d90702c3ad995dc3e1dc608f9e20f183c9e322ea483",
+      "fixed_sha256": "5a0dc07b1de624f2f55ea0d096e479d7bd305aec16782a922a2468a9c266c312"
+    },
+    {
+      "file": "02_code/flymodel/render.py",
+      "original_sha256": "e0f333a502fded14faf724b292136f0098bc54420fe09c93a8783973ff2fcfb3",
+      "fixed_sha256": "816b14649a25293b255c32adb073a5857bbd76db68d2700171fae5ca8eb01faf"
+    },
+    {
+      "file": "02_code/run_manual.py",
+      "original_sha256": "23121dea4142782f5529760b508081ea5865e186d24dacabb0bb563fbf4a0bdc",
+      "fixed_sha256": "48485107a4d851b734e44635bc46d8318c847a232d667a97069f51bb544cbe7e"
+    }
+  ],
+  "physiological_and_physical_model_changes": false,
+  "scope": "Launcher LF/interpreter/argument forwarding; correct min_up orientation metric; mark3988-node subset and18 external AB channels explicitly. Also report actual freshly computed-state hash when --recompute-neural is used."
+}

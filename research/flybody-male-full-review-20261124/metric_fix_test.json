@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "fixed_body_metrics": {
+    "stance": {
+      "LF": 1.0,
+      "RF": 0.54,
+      "LM": 1.0,
+      "RM": 1.0,
+      "LH": 1.0,
+      "RH": 1.0
+    },
+    "TCS": [
+      0,
+      0.0
+    ],
+    "min_up": 0.965,
+    "min_root_height_native": 0.119564,
+    "root_disp": [
+      0.0171,
+      0.0313,
+      -0.0083
+    ],
+    "yaw": 0.3529
+  },
+  "input_model_sha256": "58b2c141f9f307ee7e551d48534fa74bb8a99e44c55287945b5b8542bd21db0c",
+  "note": "min_up now reads thorax upright axis; root height is separate. No new neural simulation needed for this reporting-only test."
+}

@@ -2,5 +2,11 @@
   "manifest_entries": 60,
   "mismatched_files": [],
   "bundled_compiled_caches_excluded": true,
-  "sha256": "0450edb9313b1cd502ea4cc38ecd6efad34ffb482e7dd09dc614c225bd166846"
+  "sha256": "0450edb9313b1cd502ea4cc38ecd6efad34ffb482e7dd09dc614c225bd166846",
+  "files_not_listed_in_internal_manifest": [
+    "03_phenomena/\u73b0\u8c61\u9a8c\u8bc1\u8868.pdf",
+    "07_protocols/protocols.json",
+    "07_protocols/README.md",
+    "07_protocols/run_protocol.py"
+  ]
 }

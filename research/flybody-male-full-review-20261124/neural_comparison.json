@@ -1,0 +1,177 @@
+{
+  "source_asset_url": "https://github.com/linzhefeng24/Applepie/releases/download/new/flybody_male_full.zip",
+  "base_state_member": "flybody_male_full/04_results/data/neural_state.npz",
+  "base_state_sha256": "867ab2a7701202bc8d0698e79cdc710c7e75718abb4bfc024814713fa677b2c2",
+  "independent_state_sha256": "8c05d012d50a78d6eba839b2693ce208d16c1a78f2507ae5d5ecc95bfad8255c",
+  "arrays": {
+    "spikes": {
+      "dtype": "<i2",
+      "shape": [
+        1600,
+        26885
+      ],
+      "array_equal": false,
+      "new_array_bytes_sha256": "90fd3290adf266329604594a435adca5ba380d9e9c6fb05450f243178401b211",
+      "different_bytes": 2,
+      "max_abs_error": 1.0,
+      "all_finite": true
+    },
+    "voltage": {
+      "dtype": "<f8",
+      "shape": [
+        161,
+        26885,
+        2
+      ],
+      "array_equal": false,
+      "new_array_bytes_sha256": "1c60b4a031d3a00dbc03b392dfe65dcf85f428f1806d388757d153c6ad101c13",
+      "different_bytes": 448362,
+      "max_abs_error": 10.906739144816356,
+      "all_finite": true
+    },
+    "final_soma_mV": {
+      "dtype": "<f8",
+      "shape": [
+        26885
+      ],
+      "array_equal": false,
+      "new_array_bytes_sha256": "aa1d76628236d882a1967d4a4b39bef0394c3ec6603d6187c78343c717f6a645",
+      "different_bytes": 1271,
+      "max_abs_error": 3.436897699747931,
+      "all_finite": true
+    },
+    "final_axon_mV": {
+      "dtype": "<f8",
+      "shape": [
+        26885
+      ],
+      "array_equal": false,
+      "new_array_bytes_sha256": "9466c9d8cd4aad14af400e4525149b4c06dffded612117e62a429d2ae3e2a74d",
+      "different_bytes": 1398,
+      "max_abs_error": 10.906739144816356,
+      "all_finite": true
+    },
+    "final_Ca_uM": {
+      "dtype": "<f8",
+      "shape": [
+        26885
+      ],
+      "array_equal": false,
+      "new_array_bytes_sha256": "a617bf4a0504cc0475e6c3b7baa048894c6257905036126d2a16ecc9b4971ceb",
+      "different_bytes": 6537,
+      "max_abs_error": 2.4246512224469774e-05,
+      "all_finite": true
+    },
+    "calcium": {
+      "dtype": "<f8",
+      "shape": [
+        161,
+        26885
+      ],
+      "array_equal": false,
+      "new_array_bytes_sha256": "8b33ee9017e4ec1bf030f6f359174dca10f3b0e643a43a8b02c9c87af3d24320",
+      "different_bytes": 1177907,
+      "max_abs_error": 2.4246512224469774e-05,
+      "all_finite": true
+    },
+    "currents_pA": {
+      "dtype": "<f8",
+      "shape": [
+        161,
+        26885,
+        4
+      ],
+      "array_equal": false,
+      "new_array_bytes_sha256": "b48489f299c99f3924b981c91f71426c01d161aa6d72c50366267b77d9ab05e8",
+      "different_bytes": 758331,
+      "max_abs_error": 89.6380973408211,
+      "all_finite": true
+    },
+    "conductances_nS": {
+      "dtype": "<f8",
+      "shape": [
+        161,
+        26885,
+        2
+      ],
+      "array_equal": true,
+      "new_array_bytes_sha256": "9d6972675aece9a47a9418f31b1ae24ecd428d7d5577c9f43ceca5cb1b8ccb12",
+      "different_bytes": 0,
+      "max_abs_error": 0.0,
+      "all_finite": true
+    },
+    "gating_m_h_n": {
+      "dtype": "<f8",
+      "shape": [
+        161,
+        26885,
+        3
+      ],
+      "array_equal": false,
+      "new_array_bytes_sha256": "942ad6e776ac5b18db579d6cb7aa502c3ae7637b7857a32ce09f3ed10af9c5a1",
+      "different_bytes": 1011728,
+      "max_abs_error": 0.21973921309012728,
+      "all_finite": true
+    },
+    "time_ms": {
+      "dtype": "<f8",
+      "shape": [
+        161
+      ],
+      "array_equal": true,
+      "new_array_bytes_sha256": "c57b43a0c888516464bbfebfb871ed4f3aa5d549f49678565bbed8e4716f8761",
+      "different_bytes": 0,
+      "max_abs_error": 0.0,
+      "all_finite": true
+    },
+    "record_indices": {
+      "dtype": "<i8",
+      "shape": [
+        26885
+      ],
+      "array_equal": true,
+      "new_array_bytes_sha256": "05970653e8bc2fd8aa3ce08081ae43df93275a40983b8a34a62c3f44ce73c53d",
+      "different_bytes": 0,
+      "max_abs_error": 0.0,
+      "all_finite": true
+    },
+    "body_ids": {
+      "dtype": "<U10",
+      "shape": [
+        26885
+      ],
+      "array_equal": true,
+      "new_array_bytes_sha256": "2d705a16d942a65ada7c6c07e3f4840b02574d4a55abc89a9345ced5a490a09b",
+      "different_bytes": 0
+    },
+    "model_sha256": {
+      "dtype": "<U64",
+      "shape": [],
+      "array_equal": true,
+      "new_array_bytes_sha256": "fac1c7aa31cd6224ce11ce558565c05c718eee8895889d7b4193b9f375e5ccc9",
+      "different_bytes": 0
+    },
+    "experiment": {
+      "dtype": "<U8",
+      "shape": [],
+      "array_equal": true,
+      "new_array_bytes_sha256": "a2d377535af56686f6719ed05b38765a4c556f99b8ade2380c5966116ab3c0ac",
+      "different_bytes": 0
+    },
+    "run_id": {
+      "dtype": "<U64",
+      "shape": [],
+      "array_equal": true,
+      "new_array_bytes_sha256": "232b1abe5568574d27cd377f3cb60d9b1c8d4053808b297a3744313277487ceb",
+      "different_bytes": 0
+    }
+  },
+  "spikes_total": 53155,
+  "delta": {
+    "name": "neural_rerun_delta.npz",
+    "bytes": 7852043,
+    "sha256": "42bad29f542ad1b590a0d5569a43f30419d7faf903958f6ab8ecd6c686db52c0"
+  },
+  "all_exact_delta_roundtrips_verified": true,
+  "meaning": "A zero delta means the independent rerun reproduced that array exactly; restore with restore_neural_delta.py using the original base archive."
+}

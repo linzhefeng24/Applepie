@@ -1,0 +1,24 @@
+{
+  "cached_total_spikes": 53155,
+  "rerun_total_spikes": 53155,
+  "different_spike_entries": 2,
+  "differences": [
+    {
+      "time_bin_ms": 1483,
+      "bodyId": "12398",
+      "type": "AN27X013",
+      "cached": 0,
+      "new": 1
+    },
+    {
+      "time_bin_ms": 1484,
+      "bodyId": "12398",
+      "type": "AN27X013",
+      "cached": 1,
+      "new": 0
+    }
+  ],
+  "u_array_equal": true,
+  "u_max_abs_error": 0.0,
+  "scope": "Different upstream spike bins can exist even when the mapped MN excitation and physical replay match exactly."
+}

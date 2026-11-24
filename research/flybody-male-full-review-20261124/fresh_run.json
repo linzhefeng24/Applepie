@@ -1,0 +1,33 @@
+{
+  "condition": "manual R2 parameters, native AB free body; no BPTT weights",
+  "manual_model_sha256": "58b2c141f9f307ee7e551d48534fa74bb8a99e44c55287945b5b8542bd21db0c",
+  "manual_cell_array_sha256": "9efe35750bd2e0687d56d8351e42f4d5775735e893bf4dad839af1e232b50da5",
+  "hand_parameters_included": true,
+  "neural_source": "independently recomputed this run",
+  "neural_input_sha256": "867ab2a7701202bc8d0698e79cdc710c7e75718abb4bfc024814713fa677b2c2",
+  "neural_run_id": "a2a0ce3d13b10f41e974ba93ab4d885edc32c40c951f2d0535d54001d102dedf",
+  "physical_replay": "newly integrated this run",
+  "fixed_root": false,
+  "root_joint_type": "free",
+  "extra_applied_forces": false,
+  "state_resets_during_rollout": false,
+  "native_auxiliary_schedules_retained": 11,
+  "physical_duration_s": 0.4,
+  "neural_clock_scale": 3.0,
+  "joint_mse_rad2": 0.06317817557945274,
+  "joint_rmse_deg": 14.401448398490492,
+  "root_displacement_native": [
+    0.017130488634895236,
+    0.03131197333991988,
+    -0.008348627781102583
+  ],
+  "min_body_up_z_sampled": 0.9648295725001704,
+  "ground_contact_samples": 80,
+  "ground_normal_force_max_native": 5.703224757724442,
+  "validation": "matches archived manual native-AB joint loss; not a claim of stable walking",
+  "software": {
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "mujoco": "3.3.2"
+  }
+}
