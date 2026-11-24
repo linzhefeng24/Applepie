@@ -1,0 +1,11 @@
+{
+  "file": "run_demo.sh",
+  "original_sha256": "4891ee5099b4d6a474ec0c1cb4c3e1f70bb805fe3e3bbd0410463a23b1f79809",
+  "patched_sha256": "f3ccf80c6b051ae2646af56041286c1253a81399fecf8149e4fbc0d35ed6eaa4",
+  "original_error": "set: pipefail\\r: invalid option name",
+  "changes": [
+    "Use Unix LF instead of CRLF",
+    "Forward CLI arguments; allow explicit PYTHON interpreter"
+  ],
+  "physiological_or_body_parameters_changed": false
+}

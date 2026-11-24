@@ -1,0 +1,27 @@
+{
+  "case": "background_only",
+  "model_sha256": "58b2c141f9f307ee7e551d48534fa74bb8a99e44c55287945b5b8542bd21db0c",
+  "events": [
+    {
+      "current_pA": 160,
+      "on_ms": 0,
+      "off_ms": 1200,
+      "neuron_ids": [
+        "802295"
+      ]
+    }
+  ],
+  "target_body_id": "802295",
+  "target_type": "Ti flexor MN",
+  "target_rate_300_1100ms_Hz": 87.5,
+  "target_rate_300_1200ms_Hz": 86.66666666666667,
+  "TiFlex_mean_rate_300_1100ms_Hz": 2.364864864864865,
+  "spikes_total": 104,
+  "seconds": 250.5195017760002,
+  "raw": {
+    "name": "background_only.npz",
+    "sha256": "6e9b2d759e0cc78be4e2d3864bc371445cb6ddca67146309d4b6048868774e08",
+    "bytes": 103249
+  },
+  "interpretation": "Artificial current-context neuronal component test; no natural movement or reflex biomechanics equivalence."
+}

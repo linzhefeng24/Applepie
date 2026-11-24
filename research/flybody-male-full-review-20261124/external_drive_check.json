@@ -1,0 +1,26 @@
+{
+  "channels": 18,
+  "source": "06_AB/A/best_overall/excitation_u_10000Hz.csv",
+  "max_abs_error": 0.0,
+  "per_channel_errors": {
+    "LF:coxa_levator_muscle_2": 0.0,
+    "LF:trochanter_reductor_muscle_2": 0.0,
+    "LF:tibial_depressor_muscle_2": 0.0,
+    "RF:coxa_levator_muscle_2": 0.0,
+    "RF:trochanter_reductor_muscle_2": 0.0,
+    "RF:tibial_depressor_muscle_2": 0.0,
+    "LM:tergopleural_promotor": 0.0,
+    "LM:pleural_promotor": 0.0,
+    "LM:tarsus_retro_depressor": 0.0,
+    "RM:tergopleural_promotor": 0.0,
+    "RM:pleural_promotor": 0.0,
+    "RM:tarsus_retro_depressor": 0.0,
+    "LH:tergopleural_promotor": 0.0,
+    "LH:pleural_promotor": 0.0,
+    "LH:tarsus_retro_depressor": 0.0,
+    "RH:tergopleural_promotor": 0.0,
+    "RH:pleural_promotor": 0.0,
+    "RH:tarsus_retro_depressor": 0.0
+  },
+  "scope": "18 channels bypass neural output during physical replay; same fallback also runs in body=true protocols."
+}

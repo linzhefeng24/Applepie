@@ -1,0 +1,48 @@
+{
+  "scope": "Default cached-neural replay versus original archived physical arrays",
+  "arrays": {
+    "qpos": {
+      "shape": [
+        4000,
+        116
+      ],
+      "array_equal": false,
+      "max_abs_error": 1.0224647705170398e-05
+    },
+    "controls": {
+      "shape": [
+        4000,
+        141
+      ],
+      "array_equal": true,
+      "max_abs_error": 0.0
+    },
+    "initial_qpos": {
+      "shape": [
+        116
+      ],
+      "array_equal": true,
+      "max_abs_error": 0.0
+    },
+    "target_joint_angles": {
+      "shape": [
+        4000,
+        66
+      ],
+      "array_equal": true,
+      "max_abs_error": 0.0
+    },
+    "joint_qpos_indices": {
+      "shape": [
+        66
+      ],
+      "array_equal": true,
+      "max_abs_error": 0.0
+    },
+    "dt_s": {
+      "shape": [],
+      "array_equal": true,
+      "max_abs_error": 0.0
+    }
+  }
+}

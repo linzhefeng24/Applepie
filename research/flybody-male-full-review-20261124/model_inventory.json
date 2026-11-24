@@ -1,0 +1,122 @@
+{
+  "model_sha256": "58b2c141f9f307ee7e551d48534fa74bb8a99e44c55287945b5b8542bd21db0c",
+  "neurons": 26885,
+  "unique_body_ids": 26885,
+  "stored_edges": 4472090,
+  "effective_edges": 4257201,
+  "cell_parameters": [
+    26885,
+    17
+  ],
+  "unique_parameter_rows": 21,
+  "superclasses": {
+    "descending_neuron": 1314,
+    "cb_intrinsic": 1869,
+    "ascending_neuron": 1846,
+    "visual_centrifugal": 36,
+    "cb_motor": 64,
+    "vnc_intrinsic": 13161,
+    "visual_projection": 22,
+    "efferent_ascending": 8,
+    "null": 1,
+    "cb_sensory": 733,
+    "vnc_motor": 708,
+    "vnc_sensory": 6370,
+    "sensory_ascending": 537,
+    "sensory_descending": 6,
+    "efferent_descending": 4,
+    "cb_endocrine": 16,
+    "vnc_efferent": 94,
+    "vnc_endocrine": 22,
+    "vnc_tbc": 38,
+    "vnc_sensory_tbc": 36
+  },
+  "mapped_channels": 112,
+  "unmapped_channels": 18,
+  "external_drive_channels": 18,
+  "external_drive_matches_unmapped": true,
+  "embedded_external_drive_all_finite": true,
+  "external_array_shapes": {
+    "LF:coxa_levator_muscle_2": [
+      4000
+    ],
+    "LF:trochanter_reductor_muscle_2": [
+      4000
+    ],
+    "LF:tibial_depressor_muscle_2": [
+      4000
+    ],
+    "RF:coxa_levator_muscle_2": [
+      4000
+    ],
+    "RF:trochanter_reductor_muscle_2": [
+      4000
+    ],
+    "RF:tibial_depressor_muscle_2": [
+      4000
+    ],
+    "LM:tergopleural_promotor": [
+      4000
+    ],
+    "LM:pleural_promotor": [
+      4000
+    ],
+    "LM:tarsus_retro_depressor": [
+      4000
+    ],
+    "RM:tergopleural_promotor": [
+      4000
+    ],
+    "RM:pleural_promotor": [
+      4000
+    ],
+    "RM:tarsus_retro_depressor": [
+      4000
+    ],
+    "LH:tergopleural_promotor": [
+      4000
+    ],
+    "LH:pleural_promotor": [
+      4000
+    ],
+    "LH:tarsus_retro_depressor": [
+      4000
+    ],
+    "RH:tergopleural_promotor": [
+      4000
+    ],
+    "RH:pleural_promotor": [
+      4000
+    ],
+    "RH:tarsus_retro_depressor": [
+      4000
+    ]
+  },
+  "phenomena_header_coverage": {
+    "mapped_candidate_channels": 104,
+    "unmapped_channels": 26
+  },
+  "phenomena_reported_distribution": {
+    "部分支持": 73,
+    "无法验证": 33,
+    "不符合": 17,
+    "未见": 11,
+    "其他": 4,
+    "支持": 8
+  },
+  "phenomena_entries": 146,
+  "state_interfaces": [
+    true,
+    true,
+    true,
+    true
+  ],
+  "software": {
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "numba": "0.68.1",
+    "mujoco": "3.3.2",
+    "PyYAML": "6.0.3",
+    "scipy": "1.18.1"
+  }
+}
