@@ -1,5 +1,5 @@
 {
-  "status": "local_bundle_verified_pending_publication",
+  "status": "public_release_uploaded_and_fresh_download_sha256_verified",
   "source_revision": "4c41826cd840c15080ef97f1e1f60ce2cdb61e52",
   "original_user_model": {
     "asset_url": "https://github.com/linzhefeng24/Applepie/releases/download/new/flybody_male_full.zip",
@@ -30,5 +30,7 @@
       "url": "https://github.com/linzhefeng24/Applepie/releases/download/flybody-review-20261124/review_frame.png"
     }
   ],
-  "scope": "Scoped independent validation, reporting-only patches and regenerated labeled videos. Canonical neural/body parameters unchanged. Original reference plus exact XOR delta restores the independently rerun state."
+  "scope": "Scoped independent validation, reporting-only patches and regenerated labeled videos. Canonical neural/body parameters unchanged. Original reference plus exact XOR delta restores the independently rerun state.",
+  "release_url": "https://github.com/linzhefeng24/Applepie/releases/tag/flybody-review-20261124",
+  "verification": "All3 delivery assets freshly downloaded and SHA256 checked by GitHub Actions; original new Release asset unchanged."
 }

@@ -41,3 +41,10 @@ bash run_demo.sh
 ```
 
 Windows bat未在Windows实机执行。05_fake/FlyBody政策示例及06_AB历史验证脚本依赖包外目录/额外依赖，不属于已验证的自包含主入口，也未启动任何训练。
+
+## 下载
+
+- [修复、核查报告、重算差分与视频完整包（19.1MB）](https://github.com/linzhefeng24/Applepie/releases/download/flybody-review-20261124/Flybody_Review_And_Fixes.zip)
+- [重新生成并标明显示范围的同步视频](https://github.com/linzhefeng24/Applepie/releases/download/flybody-review-20261124/03_synchronized.mp4)
+
+发行资产均重新下载校验SHA，见delivery-status.json。用户原始new Release保持不变。
