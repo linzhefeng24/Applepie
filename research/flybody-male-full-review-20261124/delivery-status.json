@@ -1,0 +1,30 @@
+{
+  "complete": true,
+  "source_revision": "4c41826cd840c15080ef97f1e1f60ce2cdb61e52",
+  "release_url": "https://github.com/linzhefeng24/Applepie/releases/tag/flybody-review-20261124",
+  "fresh_download_sha256_verified_assets": [
+    "Flybody_Review_And_Fixes.zip",
+    "03_synchronized.mp4",
+    "review_frame.png"
+  ],
+  "assets": [
+    {
+      "name": "Flybody_Review_And_Fixes.zip",
+      "sha256": "7fa5bb8c9a5768068b66b98bf2038665502742c8702d4bf5d84b5619f3217b5e",
+      "bytes": 19071567,
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/flybody-review-20261124/Flybody_Review_And_Fixes.zip"
+    },
+    {
+      "name": "03_synchronized.mp4",
+      "sha256": "8b992e2fc912f54910aca4ee112da3860749e3e20c027276e454b5d44f637a1c",
+      "bytes": 1477045,
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/flybody-review-20261124/03_synchronized.mp4"
+    },
+    {
+      "name": "review_frame.png",
+      "sha256": "80e052383959f920aff6ac0bb727d0f991188657119c80562f1592358236e748",
+      "bytes": 691810,
+      "url": "https://github.com/linzhefeng24/Applepie/releases/download/flybody-review-20261124/review_frame.png"
+    }
+  ]
+}
