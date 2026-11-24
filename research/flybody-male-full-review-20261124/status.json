@@ -1,0 +1,23 @@
+{
+  "artifact_name": "flybody_male_full.zip",
+  "requested_work": "Inspect the updated model and parameters, review phenomenon-validation evidence, and independently test runnable entry points.",
+  "status": "blocked_artifact_unavailable",
+  "attachment_transfer": {
+    "tool": "download_file",
+    "result": "file exceeds the executor transfer limit of 32 MiB",
+    "bytes": null,
+    "sha256": null,
+    "archive_contents_inspected": false
+  },
+  "fallback_checks": {
+    "workspace_matching_filename_found": false,
+    "github_repository": "linzhefeng24/Applepie",
+    "main_tree_matching_flybody_male_or_male_full": [],
+    "release_assets_matching_flybody_male_or_male_full": [],
+    "method": "Current remote main recursive tree and paginated release asset names, inspected 2026-11-24. Name search cannot establish identity of differently named artifacts."
+  },
+  "independently_executed_updated_model": false,
+  "runnable_claim": "No conclusion possible before obtaining the uploaded artifact.",
+  "needed_input": "A downloadable GitHub Release URL for this exact ZIP, or split uploaded parts each within32MiB.",
+  "unrelated_workspace_changes": "Preserved in the previous worktree; review uses a clean branch based on current remote main."
+}
