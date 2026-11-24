@@ -1,0 +1,42 @@
+{
+  "patched_launcher_exit_code": 0,
+  "videos": [
+    {
+      "name": "01_body_muscles.mp4",
+      "bytes": 613781,
+      "sha256": "430ad25e563e9d509e1de7fb9fe1e07c7b73cc728209e582c872f79f9553a429",
+      "stream": {
+        "width": 960,
+        "height": 720,
+        "r_frame_rate": "25/1",
+        "duration": "3.200000",
+        "nb_read_frames": "80"
+      }
+    },
+    {
+      "name": "02_neural_chain_3d.mp4",
+      "bytes": 913200,
+      "sha256": "0b751609271a9964d45e2951bb835551e23e9774c1145ae45baeb8b9e0228619",
+      "stream": {
+        "width": 1280,
+        "height": 720,
+        "r_frame_rate": "25/1",
+        "duration": "3.200000",
+        "nb_read_frames": "80"
+      }
+    },
+    {
+      "name": "03_synchronized.mp4",
+      "bytes": 1477045,
+      "sha256": "8b992e2fc912f54910aca4ee112da3860749e3e20c027276e454b5d44f637a1c",
+      "stream": {
+        "width": 2240,
+        "height": 720,
+        "r_frame_rate": "25/1",
+        "duration": "3.200000",
+        "nb_read_frames": "80"
+      }
+    }
+  ],
+  "label_scope": "3988 legacy nodes of26885 simulated;112 neural and18 AB muscle channels explicitly labeled"
+}

@@ -1,0 +1,31 @@
+name: Publish updated flybody review and minimal fixes
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: publish-flybody-review-20261124
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      GH_TOKEN: ${{ github.token }}
+      TRANSLATION_DELIVERY_ROOT: research/flybody-male-full-review-20261124
+      TRANSLATION_RELEASE_TAG: flybody-review-20261124
+      TRANSLATION_BUNDLE: Flybody_Review_Transport.zip
+      TRANSLATION_RELEASE_TITLE: 'Updated flybody package: independent runtime verification and minimal fixes'
+      TRANSLATION_RELEASE_NOTES: 'Original user package independently executed from initial neural state, native free-body physics and video rendering. Includes scoped matched-current reflex probe, exact neural-state XOR delta, and launcher/reporting/display-label fixes without changing model parameters. Neuro-output u matches cached reference exactly;146 phenomenological claims were not all revalidated. Original new Release asset is referenced and unchanged.'
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+          sparse-checkout: |
+            research/chinese-translations-20261118
+            research/flybody-male-full-review-20261124
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - name: Reconstruct, publish and freshly verify diagnostic bundle
+        run: python research/chinese-translations-20261118/publish.py publish

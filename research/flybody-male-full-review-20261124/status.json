@@ -1,11 +1,40 @@
 {
   "artifact_name": "flybody_male_full.zip",
-  "status": "downloaded_and_integrity_checked_testing_in_progress",
-  "source_release": "new",
-  "source_asset_id": 787658056,
-  "model_sha256": "58b2c141f9f307ee7e551d48534fa74bb8a99e44c55287945b5b8542bd21db0c",
-  "manifest_checked_entries": 60,
-  "manifest_mismatches": 0,
-  "compiled_caches_excluded": true,
-  "model_tests_complete": false
+  "status": "completed_scoped_run_review",
+  "input_manifest": "input_manifest.json",
+  "original_python_cached_entrypoint": "passed",
+  "original_python_recompute_and_render": "passed",
+  "patched_bash_entrypoint": "passed",
+  "model_parameters_changed": false,
+  "original_quiet_400_protocol": {
+    "spikes": 0,
+    "status": "passed"
+  },
+  "representative_reflex_proxy": {
+    "body_id": "802295",
+    "background_Hz": 87.5,
+    "sensory_plus_background_Hz": 60.0,
+    "scope": "artificial current-context component probe"
+  },
+  "all146_independently_retested": false,
+  "neural_outputs": {
+    "total_spikes": 53155,
+    "one_AN_spike_shifted_one_bin": true,
+    "muscle_u_bitwise_equal_to_cached": true,
+    "state_delta_exact_reconstruction_verified": true
+  },
+  "physical_joint_mse_rad2": 0.06317817557945274,
+  "physical_joint_rmse_deg": 14.401448398490492,
+  "videos": {
+    "count": 3,
+    "frames_each": 80,
+    "physical_duration_s": 0.4
+  },
+  "remaining_limits": [
+    "18 muscles use external AB reference inputs",
+    "3D neural diagram displays3988 legacy locations, not all26885 nodes",
+    "146 statuses mix historical/conditional/proxy observations; not full laboratory reproduction",
+    "05_fake and historical06_AB validator require missing external assets/dependencies",
+    "Windows not independently executed"
+  ]
 }

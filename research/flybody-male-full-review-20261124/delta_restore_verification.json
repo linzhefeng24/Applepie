@@ -1,0 +1,6 @@
+{
+  "all_arrays_restored_exactly": true,
+  "npz_container_sha256": "8c05d012d50a78d6eba839b2693ce208d16c1a78f2507ae5d5ecc95bfad8255c",
+  "reference_container_sha256": "8c05d012d50a78d6eba839b2693ce208d16c1a78f2507ae5d5ecc95bfad8255c",
+  "note": "NPZ compression metadata can vary across Python/NumPy/zlib versions; every restored array is individually hash-verified."
+}
