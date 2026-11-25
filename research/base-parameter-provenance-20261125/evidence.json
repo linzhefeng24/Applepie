@@ -1,0 +1,40 @@
+{
+  "scope": "Read-only base parameter provenance audit; no new experiments",
+  "date": "2026-11-25",
+  "code_revision": "36ad84ed0d7ac5073afe58e5fec722d90a5bc89c",
+  "sources": [
+    {
+      "path": "research/conductance-rebuild-20261114/model.py",
+      "bytes": 9529,
+      "sha256": "934572b4c9958a726d46726d70d0cf04178d877766611ecc0ae9f2b8bc5c5bba"
+    },
+    {
+      "path": "research/conductance-rebuild-20261114/MECHANISMS.md",
+      "bytes": 3630,
+      "sha256": "640996ba79f8d3a02c0d84fee773125411768c7a437c2c03247f7dad492cb2af"
+    },
+    {
+      "path": "research/conductance-rebuild-20261114/calibrate_adult.py",
+      "bytes": 2188,
+      "sha256": "f8371d53e69d46bb25c778420b4417b5219724c3cfc7c5f66e952f45e8c32b2c"
+    },
+    {
+      "path": "research/conductance-rebuild-20261114/refine_intermediate.py",
+      "bytes": 1544,
+      "sha256": "e68fcb72ba338dd32fb37f22f8787e7c308549172e062ed063882bb7ee6b6523"
+    },
+    {
+      "path": "research/conductance-rebuild-20261114/configs/intermediate-adult-selected.json",
+      "bytes": 1378,
+      "sha256": "cfb3094b528bca5ee31026b5b8f16b08adcffca634acdcaf612d830d5b3ccb7d"
+    },
+    {
+      "path": "research/manual-extension-review-20261119/parameter_priors.json",
+      "bytes": 40096,
+      "sha256": "dba5ea08a7f750d5a7bf347d6a7d9bdccf26a319fae3a39d26636c227a10114f"
+    }
+  ],
+  "current_model_sha256": "58b2c141f9f307ee7e551d48534fa74bb8a99e44c55287945b5b8542bd21db0c",
+  "current_model_source": "https://github.com/linzhefeng24/Applepie/releases/download/new/flybody_male_full.zip",
+  "seed": null
+}
