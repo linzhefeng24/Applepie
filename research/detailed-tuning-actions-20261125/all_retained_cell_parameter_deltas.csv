@@ -1,0 +1,399 @@
+﻿MaleCNS_ID,type,superclass,parameter,R2_value,full_model_value,direction,ratio_if_defined,provenance
+10512,ANXXX109,ascending_neuron,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+10512,ANXXX109,ascending_neuron,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+10512,ANXXX109,ascending_neuron,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+11486,DNd03,descending_neuron,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+11486,DNd03,descending_neuron,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+11486,DNd03,descending_neuron,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+11557,PFL2,cb_intrinsic,excitatory_receptor_gain,1.0,5.0,↑,5.0,本次逐数组快照比较；不是恢复的逐次调节日志
+11673,PFL2,cb_intrinsic,excitatory_receptor_gain,1.0,5.0,↑,5.0,本次逐数组快照比较；不是恢复的逐次调节日志
+11693,DNd03,descending_neuron,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+11693,DNd03,descending_neuron,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+11693,DNd03,descending_neuron,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+13031,PFL2,cb_intrinsic,excitatory_receptor_gain,1.0,5.0,↑,5.0,本次逐数组快照比较；不是恢复的逐次调节日志
+13490,PFL2,cb_intrinsic,excitatory_receptor_gain,1.0,5.0,↑,5.0,本次逐数组快照比较；不是恢复的逐次调节日志
+14729,PFL2,cb_intrinsic,excitatory_receptor_gain,1.0,5.0,↑,5.0,本次逐数组快照比较；不是恢复的逐次调节日志
+15210,PFL3,cb_intrinsic,excitatory_receptor_gain,1.0,5.0,↑,5.0,本次逐数组快照比较；不是恢复的逐次调节日志
+15550,ANXXX002,ascending_neuron,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+15550,ANXXX002,ascending_neuron,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+15550,ANXXX002,ascending_neuron,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+17000,PFL3,cb_intrinsic,excitatory_receptor_gain,1.0,5.0,↑,5.0,本次逐数组快照比较；不是恢复的逐次调节日志
+17286,PFL3,cb_intrinsic,excitatory_receptor_gain,1.0,5.0,↑,5.0,本次逐数组快照比较；不是恢复的逐次调节日志
+17290,PFL3,cb_intrinsic,excitatory_receptor_gain,1.0,5.0,↑,5.0,本次逐数组快照比较；不是恢复的逐次调节日志
+18327,PFL3,cb_intrinsic,excitatory_receptor_gain,1.0,5.0,↑,5.0,本次逐数组快照比较；不是恢复的逐次调节日志
+18803,PFL3,cb_intrinsic,excitatory_receptor_gain,1.0,5.0,↑,5.0,本次逐数组快照比较；不是恢复的逐次调节日志
+18851,PFL3,cb_intrinsic,excitatory_receptor_gain,1.0,5.0,↑,5.0,本次逐数组快照比较；不是恢复的逐次调节日志
+19009,PFL3,cb_intrinsic,excitatory_receptor_gain,1.0,5.0,↑,5.0,本次逐数组快照比较；不是恢复的逐次调节日志
+19715,PFL2,cb_intrinsic,excitatory_receptor_gain,1.0,5.0,↑,5.0,本次逐数组快照比较；不是恢复的逐次调节日志
+22247,AN07B013,ascending_neuron,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+22247,AN07B013,ascending_neuron,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+22247,AN07B013,ascending_neuron,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+23159,PFL3,cb_intrinsic,excitatory_receptor_gain,1.0,5.0,↑,5.0,本次逐数组快照比较；不是恢复的逐次调节日志
+24888,AN03B011,ascending_neuron,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+24888,AN03B011,ascending_neuron,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+24888,AN03B011,ascending_neuron,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+26012,AN03B011,ascending_neuron,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+26012,AN03B011,ascending_neuron,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+26012,AN03B011,ascending_neuron,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+26038,PFL3,cb_intrinsic,excitatory_receptor_gain,1.0,5.0,↑,5.0,本次逐数组快照比较；不是恢复的逐次调节日志
+26488,PFL3,cb_intrinsic,excitatory_receptor_gain,1.0,5.0,↑,5.0,本次逐数组快照比较；不是恢复的逐次调节日志
+27373,AN03B009,ascending_neuron,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+27373,AN03B009,ascending_neuron,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+27373,AN03B009,ascending_neuron,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+27492,PFL2,cb_intrinsic,excitatory_receptor_gain,1.0,5.0,↑,5.0,本次逐数组快照比较；不是恢复的逐次调节日志
+29836,PFL3,cb_intrinsic,excitatory_receptor_gain,1.0,5.0,↑,5.0,本次逐数组快照比较；不是恢复的逐次调节日志
+30664,AN14A003,ascending_neuron,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+30664,AN14A003,ascending_neuron,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+30664,AN14A003,ascending_neuron,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+35322,PFL3,cb_intrinsic,excitatory_receptor_gain,1.0,5.0,↑,5.0,本次逐数组快照比较；不是恢复的逐次调节日志
+71940,AN14A003,ascending_neuron,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+71940,AN14A003,ascending_neuron,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+71940,AN14A003,ascending_neuron,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+79549,PFL3,cb_intrinsic,excitatory_receptor_gain,1.0,5.0,↑,5.0,本次逐数组快照比较；不是恢复的逐次调节日志
+108478,PFL3,cb_intrinsic,excitatory_receptor_gain,1.0,5.0,↑,5.0,本次逐数组快照比较；不是恢复的逐次调节日志
+227102,AN14A003,ascending_neuron,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+227102,AN14A003,ascending_neuron,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+227102,AN14A003,ascending_neuron,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+511842,PFL2,cb_intrinsic,excitatory_receptor_gain,1.0,5.0,↑,5.0,本次逐数组快照比较；不是恢复的逐次调节日志
+513032,PFL3,cb_intrinsic,excitatory_receptor_gain,1.0,5.0,↑,5.0,本次逐数组快照比较；不是恢复的逐次调节日志
+513034,PFL2,cb_intrinsic,excitatory_receptor_gain,1.0,5.0,↑,5.0,本次逐数组快照比较；不是恢复的逐次调节日志
+513266,PFL3,cb_intrinsic,excitatory_receptor_gain,1.0,5.0,↑,5.0,本次逐数组快照比较；不是恢复的逐次调节日志
+518375,PFL2,cb_intrinsic,excitatory_receptor_gain,1.0,5.0,↑,5.0,本次逐数组快照比较；不是恢复的逐次调节日志
+518378,PFL3,cb_intrinsic,excitatory_receptor_gain,1.0,5.0,↑,5.0,本次逐数组快照比较；不是恢复的逐次调节日志
+519346,PFL3,cb_intrinsic,excitatory_receptor_gain,1.0,5.0,↑,5.0,本次逐数组快照比较；不是恢复的逐次调节日志
+519351,PFL3,cb_intrinsic,excitatory_receptor_gain,1.0,5.0,↑,5.0,本次逐数组快照比较；不是恢复的逐次调节日志
+520573,PFL2,cb_intrinsic,excitatory_receptor_gain,1.0,5.0,↑,5.0,本次逐数组快照比较；不是恢复的逐次调节日志
+520811,PFL3,cb_intrinsic,excitatory_receptor_gain,1.0,5.0,↑,5.0,本次逐数组快照比较；不是恢复的逐次调节日志
+522853,PFL2,cb_intrinsic,excitatory_receptor_gain,1.0,5.0,↑,5.0,本次逐数组快照比较；不是恢复的逐次调节日志
+523032,PFL3,cb_intrinsic,excitatory_receptor_gain,1.0,5.0,↑,5.0,本次逐数组快照比较；不是恢复的逐次调节日志
+530071,PFL3,cb_intrinsic,excitatory_receptor_gain,1.0,5.0,↑,5.0,本次逐数组快照比较；不是恢复的逐次调节日志
+567101,PFL3,cb_intrinsic,excitatory_receptor_gain,1.0,5.0,↑,5.0,本次逐数组快照比较；不是恢复的逐次调节日志
+800004,IN07B007,vnc_intrinsic,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+800004,IN07B007,vnc_intrinsic,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+800004,IN07B007,vnc_intrinsic,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+800020,IN19A001,vnc_intrinsic,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+800020,IN19A001,vnc_intrinsic,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+800020,IN19A001,vnc_intrinsic,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+800030,IN12B002,vnc_intrinsic,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+800030,IN12B002,vnc_intrinsic,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+800030,IN12B002,vnc_intrinsic,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+800150,IN19A001,vnc_intrinsic,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+800150,IN19A001,vnc_intrinsic,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+800150,IN19A001,vnc_intrinsic,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+800158,Ti extensor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+800158,Ti extensor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+800163,IN19A002,vnc_intrinsic,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+800163,IN19A002,vnc_intrinsic,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+800163,IN19A002,vnc_intrinsic,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+800296,IN09A002,vnc_intrinsic,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+800296,IN09A002,vnc_intrinsic,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+800296,IN09A002,vnc_intrinsic,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+800326,IN19A001,vnc_intrinsic,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+800326,IN19A001,vnc_intrinsic,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+800326,IN19A001,vnc_intrinsic,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+800330,IN19A001,vnc_intrinsic,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+800330,IN19A001,vnc_intrinsic,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+800330,IN19A001,vnc_intrinsic,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+800343,IN05B003,vnc_intrinsic,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+800343,IN05B003,vnc_intrinsic,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+800343,IN05B003,vnc_intrinsic,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+800392,IN19A004,vnc_intrinsic,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+800392,IN19A004,vnc_intrinsic,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+800392,IN19A004,vnc_intrinsic,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+800430,IN19A005,vnc_intrinsic,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+800430,IN19A005,vnc_intrinsic,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+800430,IN19A005,vnc_intrinsic,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+800480,IN21A014,vnc_intrinsic,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+800480,IN21A014,vnc_intrinsic,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+800480,IN21A014,vnc_intrinsic,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+800621,Ti extensor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+800621,Ti extensor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+800722,IN08A006,vnc_intrinsic,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+800722,IN08A006,vnc_intrinsic,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+800722,IN08A006,vnc_intrinsic,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+800726,IN08A008,vnc_intrinsic,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+800726,IN08A008,vnc_intrinsic,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+800726,IN08A008,vnc_intrinsic,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+800772,IN08A005,vnc_intrinsic,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+800772,IN08A005,vnc_intrinsic,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+800772,IN08A005,vnc_intrinsic,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+800827,IN12B003,vnc_intrinsic,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+800827,IN12B003,vnc_intrinsic,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+800827,IN12B003,vnc_intrinsic,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+800833,IN09A004,vnc_intrinsic,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+800833,IN09A004,vnc_intrinsic,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+800833,IN09A004,vnc_intrinsic,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+800922,IN09A004,vnc_intrinsic,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+800922,IN09A004,vnc_intrinsic,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+800922,IN09A004,vnc_intrinsic,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+801023,INXXX065,vnc_intrinsic,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+801023,INXXX065,vnc_intrinsic,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+801023,INXXX065,vnc_intrinsic,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+801057,Tr flexor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+801057,Tr flexor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+801085,IN12B003,vnc_intrinsic,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+801085,IN12B003,vnc_intrinsic,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+801085,IN12B003,vnc_intrinsic,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+801120,IN09A006,vnc_intrinsic,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+801120,IN09A006,vnc_intrinsic,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+801120,IN09A006,vnc_intrinsic,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+801187,IN06B024,vnc_intrinsic,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+801187,IN06B024,vnc_intrinsic,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+801187,IN06B024,vnc_intrinsic,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+801233,IN03B021,vnc_intrinsic,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+801233,IN03B021,vnc_intrinsic,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+801233,IN03B021,vnc_intrinsic,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+801356,IN14B005,vnc_intrinsic,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+801356,IN14B005,vnc_intrinsic,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+801356,IN14B005,vnc_intrinsic,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+801366,IN03B021,vnc_intrinsic,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+801366,IN03B021,vnc_intrinsic,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+801366,IN03B021,vnc_intrinsic,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+801371,INXXX471,vnc_intrinsic,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+801371,INXXX471,vnc_intrinsic,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+801371,INXXX471,vnc_intrinsic,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+801384,IN03B036,vnc_intrinsic,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+801384,IN03B036,vnc_intrinsic,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+801384,IN03B036,vnc_intrinsic,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+801420,IN16B030,vnc_intrinsic,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+801420,IN16B030,vnc_intrinsic,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+801420,IN16B030,vnc_intrinsic,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+801457,IN03B035,vnc_intrinsic,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+801457,IN03B035,vnc_intrinsic,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+801457,IN03B035,vnc_intrinsic,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+801629,IN08A008,vnc_intrinsic,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+801629,IN08A008,vnc_intrinsic,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+801629,IN08A008,vnc_intrinsic,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+802046,IN13B006,vnc_intrinsic,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+802046,IN13B006,vnc_intrinsic,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+802046,IN13B006,vnc_intrinsic,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+802175,IN21A013,vnc_intrinsic,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+802175,IN21A013,vnc_intrinsic,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+802175,IN21A013,vnc_intrinsic,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+802416,IN21A013,vnc_intrinsic,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+802416,IN21A013,vnc_intrinsic,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+802416,IN21A013,vnc_intrinsic,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+802546,IN13A014,vnc_intrinsic,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+802546,IN13A014,vnc_intrinsic,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+802546,IN13A014,vnc_intrinsic,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+802613,IN19A026,vnc_intrinsic,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+802613,IN19A026,vnc_intrinsic,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+802613,IN19A026,vnc_intrinsic,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+803523,ltm1-tibia MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+803523,ltm1-tibia MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+803829,Tr flexor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+803829,Tr flexor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+804025,Fe reductor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+804025,Fe reductor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+804148,IN03B036,vnc_intrinsic,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+804148,IN03B036,vnc_intrinsic,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+804148,IN03B036,vnc_intrinsic,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+804866,Tergotr. MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+804866,Tergotr. MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+805529,IN12B027,vnc_intrinsic,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+805529,IN12B027,vnc_intrinsic,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+805529,IN12B027,vnc_intrinsic,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+807873,Acc. tr flexor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+807873,Acc. tr flexor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+808192,IN16B108,vnc_intrinsic,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+808192,IN16B108,vnc_intrinsic,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+808192,IN16B108,vnc_intrinsic,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+809071,IN21A058,vnc_intrinsic,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+809071,IN21A058,vnc_intrinsic,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+809071,IN21A058,vnc_intrinsic,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+809322,IN16B105,vnc_intrinsic,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+809322,IN16B105,vnc_intrinsic,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+809322,IN16B105,vnc_intrinsic,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+809549,IN16B105,vnc_intrinsic,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+809549,IN16B105,vnc_intrinsic,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+809549,IN16B105,vnc_intrinsic,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+809912,Ti flexor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+809912,Ti flexor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+809935,Ti extensor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+809935,Ti extensor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+810098,Ti flexor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+810098,Ti flexor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+810541,Ta levator MN,vnc_motor,leak_soma_nS,1.652272949657866,1.1896365237536637,↓,0.7200000000000001,本次逐数组快照比较；不是恢复的逐次调节日志
+810541,Ta levator MN,vnc_motor,excitatory_receptor_gain,6.0,24.3,↑,4.05,本次逐数组快照比较；不是恢复的逐次调节日志
+810639,Tr flexor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+810639,Tr flexor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+810712,IN16B118,vnc_intrinsic,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+810712,IN16B118,vnc_intrinsic,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+810712,IN16B118,vnc_intrinsic,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+810720,Acc. tr flexor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+810720,Acc. tr flexor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+810795,IN12B066_f,vnc_intrinsic,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+810795,IN12B066_f,vnc_intrinsic,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+810795,IN12B066_f,vnc_intrinsic,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+812872,ltm MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+812872,ltm MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+812953,Ti extensor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+812953,Ti extensor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+814489,Tr flexor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+814489,Tr flexor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+814625,IN19A005,vnc_intrinsic,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+814625,IN19A005,vnc_intrinsic,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+814625,IN19A005,vnc_intrinsic,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+814942,Tr extensor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+814942,Tr extensor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+815246,Acc. ti flexor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+815246,Acc. ti flexor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+816018,Sternal adductor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+816018,Sternal adductor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+816215,Acc. ti flexor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+816215,Acc. ti flexor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+816404,Acc. ti flexor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+816404,Acc. ti flexor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+817210,Ta levator MN,vnc_motor,leak_soma_nS,1.652272949657866,1.4870456546920796,↓,0.9000000000000001,本次逐数组快照比较；不是恢复的逐次调节日志
+817210,Ta levator MN,vnc_motor,excitatory_receptor_gain,6.0,8.100000000000001,↑,1.3500000000000003,本次逐数组快照比较；不是恢复的逐次调节日志
+817283,Acc. ti flexor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+817283,Acc. ti flexor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+817509,Acc. ti flexor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+817509,Acc. ti flexor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+817655,Ta depressor MN,vnc_motor,leak_soma_nS,1.652272949657866,2.147954834555226,↑,1.3000000000000003,本次逐数组快照比较；不是恢复的逐次调节日志
+817655,Ta depressor MN,vnc_motor,excitatory_receptor_gain,6.0,3.9000000000000004,↓,0.65,本次逐数组快照比较；不是恢复的逐次调节日志
+817655,Ta depressor MN,vnc_motor,NaP_nS,0.3,0.21,↓,0.7,本次逐数组快照比较；不是恢复的逐次调节日志
+817655,Ta depressor MN,vnc_motor,axon_bias_pA,0.0,-0.25,↓,基线零，不能作比例,本次逐数组快照比较；不是恢复的逐次调节日志
+817681,Tr flexor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+817681,Tr flexor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+818057,Ti flexor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+818057,Ti flexor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+818389,Tr flexor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+818389,Tr flexor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+818553,ltm1-tibia MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+818553,ltm1-tibia MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+819203,Tr flexor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+819203,Tr flexor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+819278,Ta depressor MN,vnc_motor,leak_soma_nS,1.652272949657866,2.147954834555226,↑,1.3000000000000003,本次逐数组快照比较；不是恢复的逐次调节日志
+819278,Ta depressor MN,vnc_motor,excitatory_receptor_gain,6.0,3.9000000000000004,↓,0.65,本次逐数组快照比较；不是恢复的逐次调节日志
+819278,Ta depressor MN,vnc_motor,NaP_nS,0.3,0.21,↓,0.7,本次逐数组快照比较；不是恢复的逐次调节日志
+819278,Ta depressor MN,vnc_motor,axon_bias_pA,0.0,-0.25,↓,基线零，不能作比例,本次逐数组快照比较；不是恢复的逐次调节日志
+819869,Acc. ti flexor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+819869,Acc. ti flexor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+820110,Ta levator MN,vnc_motor,leak_soma_nS,1.652272949657866,1.4870456546920796,↓,0.9000000000000001,本次逐数组快照比较；不是恢复的逐次调节日志
+820110,Ta levator MN,vnc_motor,excitatory_receptor_gain,6.0,8.100000000000001,↑,1.3500000000000003,本次逐数组快照比较；不是恢复的逐次调节日志
+820764,Fe reductor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+820764,Fe reductor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+820896,Ta levator MN,vnc_motor,leak_soma_nS,1.652272949657866,1.4870456546920796,↓,0.9000000000000001,本次逐数组快照比较；不是恢复的逐次调节日志
+820896,Ta levator MN,vnc_motor,excitatory_receptor_gain,6.0,8.100000000000001,↑,1.3500000000000003,本次逐数组快照比较；不是恢复的逐次调节日志
+821375,Acc. tr flexor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+821375,Acc. tr flexor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+821635,Ti flexor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+821635,Ti flexor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+821769,Fe reductor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+821769,Fe reductor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+822047,ltm1-tibia MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+822047,ltm1-tibia MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+822092,ltm MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+822092,ltm MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+822274,ltm MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+822274,ltm MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+823132,Fe reductor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+823132,Fe reductor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+823168,Tr flexor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+823168,Tr flexor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+823281,Tr flexor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+823281,Tr flexor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+824315,Tr flexor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+824315,Tr flexor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+824997,ltm MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+824997,ltm MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+825721,Ta depressor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.7183638676441808,↑,1.04,本次逐数组快照比较；不是恢复的逐次调节日志
+825721,Ta depressor MN,vnc_motor,excitatory_receptor_gain,6.0,11.700000000000001,↑,1.9500000000000002,本次逐数组快照比较；不是恢复的逐次调节日志
+825721,Ta depressor MN,vnc_motor,NaP_nS,0.3,0.21,↓,0.7,本次逐数组快照比较；不是恢复的逐次调节日志
+825721,Ta depressor MN,vnc_motor,axon_bias_pA,0.0,-0.25,↓,基线零，不能作比例,本次逐数组快照比较；不是恢复的逐次调节日志
+828939,Tr flexor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+828939,Tr flexor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+837745,Acc. ti flexor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+837745,Acc. ti flexor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+840530,Tr extensor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+840530,Tr extensor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+860084,ltm MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+860084,ltm MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+903158,Tr flexor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+903158,Tr flexor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+903159,Tr flexor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+903159,Tr flexor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+903298,Acc. ti flexor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+903298,Acc. ti flexor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+903579,Tr flexor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+903579,Tr flexor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+903665,IN09A010,vnc_intrinsic,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+903665,IN09A010,vnc_intrinsic,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+903665,IN09A010,vnc_intrinsic,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+905145,Fe reductor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+905145,Fe reductor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+905487,ltm MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+905487,ltm MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+906475,IN16B077,vnc_intrinsic,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+906475,IN16B077,vnc_intrinsic,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+906475,IN16B077,vnc_intrinsic,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+908762,Ti flexor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+908762,Ti flexor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+909831,Ti flexor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+909831,Ti flexor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+910095,Tr flexor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+910095,Tr flexor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+910334,ltm MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+910334,ltm MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+910769,IN13A038,vnc_intrinsic,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+910769,IN13A038,vnc_intrinsic,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+910769,IN13A038,vnc_intrinsic,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+913397,IN06B016,vnc_intrinsic,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+913397,IN06B016,vnc_intrinsic,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+913397,IN06B016,vnc_intrinsic,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+924142,Tr flexor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+924142,Tr flexor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+924189,ltm MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+924189,ltm MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+926154,IN19A011,vnc_intrinsic,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+926154,IN19A011,vnc_intrinsic,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+926154,IN19A011,vnc_intrinsic,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+927828,Acc. tr flexor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+927828,Acc. tr flexor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+941298,IN21A016,vnc_intrinsic,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+941298,IN21A016,vnc_intrinsic,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+941298,IN21A016,vnc_intrinsic,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+941319,IN12B003,vnc_intrinsic,excitatory_receptor_gain,1.0,0.5,↓,0.5,本次逐数组快照比较；不是恢复的逐次调节日志
+941319,IN12B003,vnc_intrinsic,presynaptic_inhibitory_release_gain,1.0,8.0,↑,8.0,本次逐数组快照比较；不是恢复的逐次调节日志
+941319,IN12B003,vnc_intrinsic,source_release_gain,1.0,20.0,↑,20.0,本次逐数组快照比较；不是恢复的逐次调节日志
+1050015101,ltm MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+1050015101,ltm MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+1050091581,Acc. ti flexor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+1050091581,Acc. ti flexor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+1050100010,Ti flexor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+1050100010,Ti flexor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+1050115387,Acc. ti flexor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+1050115387,Acc. ti flexor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+1050126678,Acc. ti flexor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+1050126678,Acc. ti flexor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+1050156705,Acc. ti flexor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+1050156705,Acc. ti flexor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+1050189039,Ti flexor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+1050189039,Ti flexor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+1050268065,Acc. ti flexor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+1050268065,Acc. ti flexor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+1050349786,Acc. tr flexor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+1050349786,Acc. tr flexor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+1050403926,Ta depressor MN,vnc_motor,leak_soma_nS,1.652272949657866,2.147954834555226,↑,1.3000000000000003,本次逐数组快照比较；不是恢复的逐次调节日志
+1050403926,Ta depressor MN,vnc_motor,excitatory_receptor_gain,6.0,3.9000000000000004,↓,0.65,本次逐数组快照比较；不是恢复的逐次调节日志
+1050403926,Ta depressor MN,vnc_motor,NaP_nS,0.3,0.21,↓,0.7,本次逐数组快照比较；不是恢复的逐次调节日志
+1050403926,Ta depressor MN,vnc_motor,axon_bias_pA,0.0,-0.25,↓,基线零，不能作比例,本次逐数组快照比较；不是恢复的逐次调节日志
+1050607195,Fe reductor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+1050607195,Fe reductor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+1050660827,Ta depressor MN,vnc_motor,leak_soma_nS,1.652272949657866,2.147954834555226,↑,1.3000000000000003,本次逐数组快照比较；不是恢复的逐次调节日志
+1050660827,Ta depressor MN,vnc_motor,excitatory_receptor_gain,6.0,3.9000000000000004,↓,0.65,本次逐数组快照比较；不是恢复的逐次调节日志
+1050660827,Ta depressor MN,vnc_motor,NaP_nS,0.3,0.21,↓,0.7,本次逐数组快照比较；不是恢复的逐次调节日志
+1050660827,Ta depressor MN,vnc_motor,axon_bias_pA,0.0,-0.25,↓,基线零，不能作比例,本次逐数组快照比较；不是恢复的逐次调节日志
+1050669248,Tr flexor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+1050669248,Tr flexor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+1051062549,Ta depressor MN,vnc_motor,leak_soma_nS,1.652272949657866,2.147954834555226,↑,1.3000000000000003,本次逐数组快照比较；不是恢复的逐次调节日志
+1051062549,Ta depressor MN,vnc_motor,excitatory_receptor_gain,6.0,3.9000000000000004,↓,0.65,本次逐数组快照比较；不是恢复的逐次调节日志
+1051062549,Ta depressor MN,vnc_motor,NaP_nS,0.3,0.21,↓,0.7,本次逐数组快照比较；不是恢复的逐次调节日志
+1051062549,Ta depressor MN,vnc_motor,axon_bias_pA,0.0,-0.25,↓,基线零，不能作比例,本次逐数组快照比较；不是恢复的逐次调节日志
+1051367796,Tr flexor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+1051367796,Tr flexor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+1051670893,Tr flexor MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+1051670893,Tr flexor MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志
+1057471940,ltm1-tibia MN,vnc_motor,leak_soma_nS,1.652272949657866,1.321818359726293,↓,0.8,本次逐数组快照比较；不是恢复的逐次调节日志
+1057471940,ltm1-tibia MN,vnc_motor,excitatory_receptor_gain,6.0,18.0,↑,3.0,本次逐数组快照比较；不是恢复的逐次调节日志

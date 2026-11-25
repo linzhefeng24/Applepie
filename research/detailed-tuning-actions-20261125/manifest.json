@@ -1,0 +1,310 @@
+{
+  "scope": "Revised detailed manual-action audit; static snapshots, no new simulation or model changes",
+  "date": "2026-11-25",
+  "source_code_revision": "2450fe900ce8640ad61d95a44705378f23608083",
+  "inputs": {
+    "original_R2": {
+      "sha256": "858d1818b8d8394c95bb62a6ce60474cb534a83b94265ef8615e367c110d262c",
+      "bytes": 29457949
+    },
+    "final_model": {
+      "sha256": "58b2c141f9f307ee7e551d48534fa74bb8a99e44c55287945b5b8542bd21db0c",
+      "bytes": 54788655
+    },
+    "user_package_source": "https://github.com/linzhefeng24/Applepie/releases/download/new/flybody_male_full.zip",
+    "user_package_sha256": "0450edb9313b1cd502ea4cc38ecd6efad34ffb482e7dd09dc614c225bd166846",
+    "sources": {
+      "research/conductance-rebuild-20261114/configs/manual-neural-bank-BBrelease2.json": {
+        "sha256": "1efa77b0452a674cb711413623a677c22dc1339f1aee2da276b03c4056574b04",
+        "bytes": 3932
+      },
+      "research/conductance-rebuild-20261114/configs/manual-neural-bank-LULT3K80.json": {
+        "sha256": "8a6bd06a96c0e13bc9d2a1c7dbadc370fa4cf6e6d9d043244c464b3c4c4d5f29",
+        "bytes": 5589
+      },
+      "research/conductance-rebuild-20261114/configs/manual-neural-bank-BRKreleaseHalf.json": {
+        "sha256": "a559fb66702fa6b1a6dba273610450cbb84be531f5c29cd12f7201dcba447f75",
+        "bytes": 3949
+      },
+      "research/conductance-rebuild-20261114/configs/manual-neural-bank-r8.json": {
+        "sha256": "348398bfe19ba546a69318c4e3767eb33a402ff40e047037813c25347b69b42d",
+        "bytes": 5543
+      },
+      "research/conductance-rebuild-20261114/configs/manual-neural-bank-r9.json": {
+        "sha256": "da43d0c15fda87e8e48b895b1d58d84588f1b8f89e6b91b309668d75010b5dc8",
+        "bytes": 5722
+      },
+      "research/conductance-rebuild-20261114/configs/manual-neural-bank-r7.json": {
+        "sha256": "91eaf7a49864438e553874d3abd79be85fd34eba9b2e22af22d668d6d79f72e6",
+        "bytes": 4977
+      },
+      "research/conductance-rebuild-20261114/configs/manual-neural-bank-r5.json": {
+        "sha256": "fa598b1d0230a6d58608c265f05024abea770e9270a2761dfa97e78b577e46f1",
+        "bytes": 4501
+      },
+      "research/conductance-rebuild-20261114/configs/manual-neural-bank-LULbias2.json": {
+        "sha256": "46e3bf51b512ec60ace50c783dade61cfd8ddfa3ce85da644f6847c6744a6e26",
+        "bytes": 4798
+      },
+      "research/conductance-rebuild-20261114/configs/manual-neural-bank-BRKrelayBalance.json": {
+        "sha256": "e96e3696f864eb001c9d723a9f5b26e8469fb05baa6ed13442ac32e51b0abd4e",
+        "bytes": 4115
+      },
+      "research/conductance-rebuild-20261114/configs/manual-neural-bank-lul130-K90.json": {
+        "sha256": "c7e4356df64132016a1aeabe63ad4a8df1c9619ccaf233b45bb5fdcbbcdc6f75",
+        "bytes": 4154
+      },
+      "research/conductance-rebuild-20261114/configs/manual-neural-bank-r10.json": {
+        "sha256": "237f0bc03f6e162845e62506d7a02bc858a88863f8f26a43e03ae1b4527046e4",
+        "bytes": 6210
+      },
+      "research/conductance-rebuild-20261114/configs/manual-neural-bank-BON1Ca2000.json": {
+        "sha256": "efbbcf0e3b798fc285f3e15ea2f134718b1a1ead4d3b2539ad07a871793d2b48",
+        "bytes": 5026
+      },
+      "research/conductance-rebuild-20261114/configs/manual-neural-bank-BBrelease4.json": {
+        "sha256": "145abeffdb777424f9fb90c2e717b8e561f67e1519ae9bc10dbfab2508608b4e",
+        "bytes": 4128
+      },
+      "research/conductance-rebuild-20261114/configs/manual-motor-bank-shared-r1.json": {
+        "sha256": "213168fe76663536f071ac09cce925dc233e4bbe1e455158b6327c2c72ad254b",
+        "bytes": 3221
+      },
+      "research/conductance-rebuild-20261114/configs/manual-neural-bank-r4.json": {
+        "sha256": "a09ab26f525c1aaf8383e6aa197eda551b8f06252b23a15f1c518b8ecec1aeae",
+        "bytes": 3816
+      },
+      "research/conductance-rebuild-20261114/configs/manual-neural-bank-BON1Ca3000.json": {
+        "sha256": "e1eceaea1be2e12b199a7df41e9ee8978111681a1ca89aca260903f5a36529f3",
+        "bytes": 4906
+      },
+      "research/conductance-rebuild-20261114/configs/manual-neural-bank-LULT3K90.json": {
+        "sha256": "61c524d4faece35b06a973f34908a82719dc1a001d0eebe4e224c868d95bfeec",
+        "bytes": 5452
+      },
+      "research/conductance-rebuild-20261114/configs/manual-neural-bank-r6.json": {
+        "sha256": "07e5c6506e05cd6a205cca917e752209f2ede9e762c4911aa58f56b3e3f6e0d7",
+        "bytes": 4879
+      },
+      "research/conductance-rebuild-20261114/results/manual-mechanism/expanded-right-extensors-third-direct-DN-weak-E1-silenced-diagnosis.json": {
+        "sha256": "3a9b085d086596eb309aeebffac83cfecdc645b3c159b789be02fc8bebbe341b",
+        "bytes": 11576
+      },
+      "research/conductance-rebuild-20261114/results/manual-mechanism/expanded-right-extensors-third-direct-DN-weak-E2-silenced-diagnosis.json": {
+        "sha256": "66ea5fc47f13380c96dcfad360d0f9cb6f874e0e621d8b5c40a4f2caa5edbfc5",
+        "bytes": 12171
+      },
+      "research/conductance-rebuild-20261114/results/manual-mechanism/expanded-shared-extensor-direct-DN-weak-E1-silenced-diagnosis.json": {
+        "sha256": "ad9999f8655ef586bbb654d10f9de148e6946fc7bcc25f9b78323b3fe9a7805b",
+        "bytes": 11578
+      },
+      "research/conductance-rebuild-20261114/results/manual-mechanism/expanded-right-extensors-third-direct-DN-weak-input-diagnosis.json": {
+        "sha256": "27763b62f8e92ddc21d01bcd6c0e0f4ea1b00f6e6cab31f1ddff1035c2884052",
+        "bytes": 50916
+      },
+      "research/conductance-rebuild-20261114/results/manual-mechanism/expanded-shared-extensor-direct-DN-weak-E2-I2-silenced-diagnosis.json": {
+        "sha256": "e0ca2b06555242c13c46316d58111c63aa949e0bf36b059f2815fd3a86987002",
+        "bytes": 11749
+      },
+      "research/conductance-rebuild-20261114/results/manual-mechanism/expanded-shared-extensor-direct-DN-weak-E2-silenced-diagnosis.json": {
+        "sha256": "04fa66e1ed315cfff3918f22343c670d29e2ab098be843074dbf137cdff36905",
+        "bytes": 12162
+      },
+      "research/conductance-rebuild-20261114/results/manual-mechanism/expanded-right-extensors-third-E1-silenced-input-diagnosis.json": {
+        "sha256": "d5fba50afcd50db93053e80725b65e31cfb75e2f93585b22abbbf3bdf9691eb8",
+        "bytes": 4861
+      },
+      "research/conductance-rebuild-20261114/results/manual-mechanism/expanded-baseline-diagnosis.json": {
+        "sha256": "9dba7e1b57f16a4abb1c76f420f7bb48ad5c3b3e6f91734ae6fb0393b55de1ce",
+        "bytes": 11490
+      },
+      "research/conductance-rebuild-20261114/results/manual-mechanism/expanded-RH-extensor-half-diagnosis.json": {
+        "sha256": "82ce6d217122fa58ad170a26789a1cd979ec7c45b987dba7a1e83baaa03db4a0",
+        "bytes": 12105
+      },
+      "research/conductance-rebuild-20261114/results/manual-mechanism/direct-baseline-diagnosis.json": {
+        "sha256": "2615bcdbce28a9755b661cb7b4b7cfb48059cfede731cd96bd9ed3fa8894c71a",
+        "bytes": 11106
+      },
+      "research/conductance-rebuild-20261114/results/manual-mechanism/expanded-right-extensors-third-diagnosis.json": {
+        "sha256": "b7168f426253011852e5c623ca9c5aab6d67ade993710823aa47a0f5dc805361",
+        "bytes": 12119
+      },
+      "research/conductance-rebuild-20261114/results/manual-mechanism/expanded-right-extensors-third-direct-DN-weak-E2-silenced-input-diagnosis.json": {
+        "sha256": "beaf4323b2de43e8cd72c610983c95ad2970ae9e9afe2e1989c99a052a390509",
+        "bytes": 35992
+      },
+      "research/conductance-rebuild-20261114/results/manual-mechanism/expanded-extensor-gain-diagnosis.json": {
+        "sha256": "fe8719781a43af80f0fe6d9b460e255895fb32f457efcaa172f4e2d5b5e66070",
+        "bytes": 12106
+      },
+      "research/conductance-rebuild-20261114/results/manual-mechanism/expanded-RH-extensor-third-diagnosis.json": {
+        "sha256": "948365c1f63da1d0f72a3818252967ed535a66676f32a68bb6e905a3b86a59ef",
+        "bytes": 12120
+      },
+      "research/conductance-rebuild-20261114/results/manual-mechanism/expanded-shared-extensor-direct-DN-weak-diagnosis.json": {
+        "sha256": "17b9a1c56ba8981689b25851325bb52beb25115b4b14019bd8b74bf53fce5f60",
+        "bytes": 12609
+      },
+      "research/conductance-rebuild-20261114/results/manual-mechanism/expanded-right-extensors-third-direct-DN-weak-diagnosis.json": {
+        "sha256": "559d0b13dcbfbc4a7c7a291e5ab570ce4292eca560fa4622c5f83df2a7e49041",
+        "bytes": 12613
+      },
+      "research/conductance-rebuild-20261114/results/manual-mechanism/expanded-right-extensors-third-direct-DN-weak-E1-silenced-input-diagnosis.json": {
+        "sha256": "9a638b6a556d3d2598237b67d3c0b50085f663c1236be78b5df6a542dfcd1c38",
+        "bytes": 5114
+      },
+      "research/conductance-rebuild-20261114/results/manual-mechanism/expanded-trace-MN-diagnosis.json": {
+        "sha256": "7e7daf2dfce71567d48a0603922b409b9eb3d6899fb2ca697d0b4257b09d7256",
+        "bytes": 12116
+      },
+      "research/conductance-rebuild-20261114/results/manual-mechanism/expanded-right-extensors-third-E1-silenced-diagnosis.json": {
+        "sha256": "64eed1c9a0f27f26c534ffdf6132eaefc8e17e88842820de4143322e0421374a",
+        "bytes": 11074
+      },
+      "research/conductance-rebuild-20261114/results/manual-mechanism/expanded-premotor-inhibition-diagnosis.json": {
+        "sha256": "cbab6c90741924846fb70f7bc383a1fb3bd09e6efc0930deed9587dcb050f13d",
+        "bytes": 12213
+      },
+      "research/conductance-rebuild-20261114/results/manual-mechanism/expanded-right-extensors-third-E2-silenced-diagnosis.json": {
+        "sha256": "28b3f2bd92df8dc2cfda188a9853cb74d63ca9dab927fbcc6b600999fc80f316",
+        "bytes": 11672
+      },
+      "research/conductance-rebuild-20261114/asymmetry_refinement.py": {
+        "sha256": "1191a6cbe69b46ba3d7eb8e091c0b657db654809314280050eb2bb611f22d62c",
+        "bytes": 6090
+      },
+      "research/conductance-rebuild-20261114/asymmetry_guard_refine.py": {
+        "sha256": "90d40ec73c3735ee2823949294aabc54a2a51d94e5666d6a9c0ba5f705e177f1",
+        "bytes": 1317
+      },
+      "research/conductance-rebuild-20261114/trace_manual_network.py": {
+        "sha256": "f69331aaee0a8bb898ac255be4f3c360eb81b9b55d49eb555b652f4818fa4363",
+        "bytes": 6024
+      },
+      "research/conductance-rebuild-20261114/grouped_parameters.py": {
+        "sha256": "cd1b05516f927bae1013319063f279cb5131a03b910ee913c11f6886b57e29db",
+        "bytes": 4429
+      },
+      "research/conductance-rebuild-20261114/ASYMMETRY.md": {
+        "sha256": "89b76d0a10ded519dc6cac2fd5c1cf748b06c3db0976d2efb2995a00366d0b74",
+        "bytes": 6113
+      },
+      "research/conductance-rebuild-20261114/MANUAL_RESULTS_20261115.md": {
+        "sha256": "8ab4421d46b5adfe78077ab02c0f024965657b77bafaeab0b33942e245bd1092",
+        "bytes": 5334
+      },
+      "research/body-sensory-20261115/RESULTS.md": {
+        "sha256": "de8233024f110d81ac878915291eef48c7e49e492dfbc3d0eabf3b06db93ac7c",
+        "bytes": 4120
+      },
+      "research/manual-extension-review-20261119/selected_trial.json": {
+        "sha256": "a8587b5a1ee92f299e3203e515c45dfd4ab581fe4bdcdb0ac52baaae08c9f2f4",
+        "bytes": 742
+      },
+      "research/core-bypass-localization-20261119/candidate_decision.json": {
+        "sha256": "126da230b9ed8b8e08b00f7c1d11808a408c16aad8ef36b9954467a5365074b1",
+        "bytes": 1817
+      },
+      "research/brake-retuning-20261115/configs/brake-terminal-r2.json": {
+        "sha256": "f28bd77e57ac8ab887bccdbdee56b5bc53526d5318db77953a0c44955c01bdeb",
+        "bytes": 6012
+      }
+    },
+    "README.md": {
+      "sha256": "08be470c0bdc9d423aa81c5a8b4f68be10ace7659ee24059998c7e988dfddd74",
+      "bytes": 25046
+    },
+    "03_phenomena/phenomena.json": {
+      "sha256": "e84e2bf6138e19e570ed45322e56d141e2f01a17f5fdf6127027c28f87a101d9",
+      "bytes": 321295
+    }
+  },
+  "command": "python build_report.py --package /path/to/flybody_male_full --r2 /path/to/Manual_FreeBody/01_model/model.yaml",
+  "software": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "numpy": "2.3.5",
+    "PyYAML": "6.0.3",
+    "pandoc": "pandoc 3.1.11.1",
+    "chromium": "Chromium 155.0.8059.79 built on Debian GNU/Linux 13 (trixie)"
+  },
+  "random_seed": null,
+  "limitations": [
+    "Historical decisions not fully logged",
+    "snapshot diffs cannot recover intention/order",
+    "74 MN IDs and 24 muscles are explicitly recorded and independently signature-checked; per-step screening traces remain missing",
+    "only direct changed inputs are enumerated; presence is not activity/causation"
+  ],
+  "outputs": [
+    {
+      "name": ".gitattributes",
+      "bytes": 13,
+      "sha256": "547f59603028195ff9f8a87d04c4651551e8bd0d68f075257dfd549cd846b25b"
+    },
+    {
+      "name": ".gitignore",
+      "bytes": 19,
+      "sha256": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793"
+    },
+    {
+      "name": "Detailed_Tuning_Actions_Revised.pdf",
+      "bytes": 2028941,
+      "sha256": "6a32fb61524aed3c5b935e9da1ebb5dcbd594ce795b2fbc50abf40a943521ad5"
+    },
+    {
+      "name": "README.md",
+      "bytes": 3195,
+      "sha256": "7ff7f3e91effb3dccf44548c3ccc520c219a7717d8dcda0dac3ce09a86315b19"
+    },
+    {
+      "name": "action_catalog.py",
+      "bytes": 42477,
+      "sha256": "bf43f4e05c5302641d4890940a05d2addf9b71c54a52078562b7b70014f24db5"
+    },
+    {
+      "name": "actions.json",
+      "bytes": 60751,
+      "sha256": "68f7f14ada4d76817ace72665e73915ade1e7c47ef0f68249d1903e28484ea71"
+    },
+    {
+      "name": "all_retained_cell_parameter_deltas.csv",
+      "bytes": 56278,
+      "sha256": "7d6d4ddd0d005f50d297cd3adfbec9eb910403ee835b83cfd01f53fb362d49f7"
+    },
+    {
+      "name": "build_report.py",
+      "bytes": 29253,
+      "sha256": "2f23c3dee12ae5b41451cf0e0d1d6438c21c2657a7cddc97dcda8afc73292852"
+    },
+    {
+      "name": "muscle_layer_actions_130.csv",
+      "bytes": 47089,
+      "sha256": "22bd531dd1fda134f81ed6477b41bce7d47dfac4fac659e35fd32a9516867150"
+    },
+    {
+      "name": "qa.json",
+      "bytes": 509,
+      "sha256": "5f263312dcd6dde6378861902dea539f7af81bb43518254060d964e1c6dbe81c"
+    },
+    {
+      "name": "report.css",
+      "bytes": 898,
+      "sha256": "68790f31f509974042c5c5f045256a1e742839075238689e6a79c3ebf2301f3a"
+    },
+    {
+      "name": "report.html",
+      "bytes": 538172,
+      "sha256": "2f33233fbdb2b84f221933219905f4051c7c29a48c3393ead8775002cef45c00"
+    },
+    {
+      "name": "report.md",
+      "bytes": 383447,
+      "sha256": "12354b3e8bcb8dcf8a77f3774c60167db96067adac38beedb7f5bdafa0b3d966"
+    },
+    {
+      "name": "snapshot_comparison.json",
+      "bytes": 5196,
+      "sha256": "9826cb7437623a533f1a6f34535131f153c9f2b03383c1e86e8bb994364f7ebb"
+    }
+  ]
+}

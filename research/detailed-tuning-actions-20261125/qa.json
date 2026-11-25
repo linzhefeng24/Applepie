@@ -1,0 +1,18 @@
+{
+  "pages": 165,
+  "actions": 41,
+  "muscles": 130,
+  "inferred_74": 74,
+  "compared_changed_cells": 180,
+  "changed_MN": 82,
+  "changed_non_MN": 98,
+  "recorded_24_targets_found": 24,
+  "74_signature_matches_source_ids": true,
+  "collateral_channels_from_shared_MN": 5,
+  "all_action_headings": true,
+  "blank_pages": [],
+  "overflow_pages": [],
+  "replacement_chars": 0,
+  "pdf_outline_entries": 184,
+  "visual_review": "抽查详细决策、具体肌肉与参数差异表；中文可读，无裁切。"
+}
