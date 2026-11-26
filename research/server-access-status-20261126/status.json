@@ -1,0 +1,28 @@
+{
+  "date_client": "2026-11-26",
+  "task": "Read-only inspection of the user-designated server directory",
+  "target": "Previously provided server; address, username and full directory path omitted from public record",
+  "transport": "SSH",
+  "port_tested": 22,
+  "attempts": [
+    {
+      "scope": "normal sandbox, system SSH configuration",
+      "result": "local SSH system configuration ownership/permissions error"
+    },
+    {
+      "scope": "normal sandbox, no system SSH configuration",
+      "result": "local socket creation not permitted"
+    },
+    {
+      "scope": "outside command sandbox, same host and port, no system SSH configuration",
+      "result": "Connection refused before authentication"
+    }
+  ],
+  "authentication_attempted": false,
+  "directory_read": false,
+  "files_downloaded": false,
+  "remote_changes": false,
+  "status": "blocked_pending_current_SSH_address_port_or_service_availability",
+  "credentials_recorded": false,
+  "source_code_revision": "36d951822972254b989550eda7e1e5e5962ed140"
+}
