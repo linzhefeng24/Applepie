@@ -24,5 +24,17 @@
   "remote_changes": false,
   "status": "blocked_pending_current_SSH_address_port_or_service_availability",
   "credentials_recorded": false,
-  "source_code_revision": "36d951822972254b989550eda7e1e5e5962ed140"
+  "source_code_revision": "36d951822972254b989550eda7e1e5e5962ed140",
+  "retries": [
+    {
+      "time_utc": "2026-11-26T03:04:21.838413+00:00",
+      "trigger": "user requested retry",
+      "transport": "SSH",
+      "port": 22,
+      "scope": "outside command sandbox, strict host-key verification, connection timeout12s",
+      "result": "Connection refused before authentication",
+      "authentication_attempted": false,
+      "directory_read": false
+    }
+  ]
 }
